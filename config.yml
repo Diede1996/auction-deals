@@ -1,0 +1,66 @@
+# Technical settings. Your watchlist and profit targets live in watchlist.yml.
+
+# An auction counts as a bankruptcy sale when its title or description contains one of these.
+# Add "executie" to also include forced sales (executieveilingen).
+bankruptcy_keywords:
+  - faillissement
+  - failliet
+  - faillite
+  - curator
+  - bankrupt
+  - insolvent
+  - insolventie
+
+# Buyer's costs per site, used to work out what you really pay.
+#   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
+#   vat        VAT charged on bid + premium
+#   fixed_fee  fixed costs per lot (excl. VAT), if the site charges them
+sites:
+  troostwijk:
+    enabled: true
+    countries: [nl]      # add be, de, ... to include lots in other countries
+    premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
+    vat: 0.21
+    fixed_fee: 0
+  proveiling:
+    enabled: true
+    premium: 0.16        # "Het opgeld bedraagt 16% over de bieding"
+    vat: 0.21
+  hnvi:
+    enabled: true
+    premium: 0.19        # HNVI veilingcondities: 19% excl. VAT
+    vat: 0.21
+  plaatsjebod:
+    enabled: true
+    premium: 0.22        # "Je bod wordt verhoogd met 22% opgeld en 21% BTW"
+    vat: 0.21
+  onlineveilingmeester:
+    enabled: true
+    premium: 0.17        # 17% + VAT for VAT items up to €10.000
+    vat: 0.21
+
+# The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)
+digest:
+  enabled: true
+  per_section: 8                # lots listed under "closing within 24 hours" and "new"
+  warn_after_failed_scans: 2    # warn in Telegram when a site failed this many daily scans in a row
+  ignore_closing_after_days: 30
+
+# Telegram commands are checked every 15 minutes; they never contact the auction sites.
+commands:
+  max_extra_scans_per_day: 3    # how often /scan may start an extra scan per day
+
+dashboard:
+  url: ""                       # leave empty to use the GitHub Pages address of this repository
+
+marktplaats:
+  enabled: true
+  cache_days: 3                 # reuse a lot's Marktplaats price for this many days (1 = check daily)
+  fallback_days: 14             # if Marktplaats blocks the check, show saved prices up to this old
+  min_listings: 4               # need at least this many comparable listings for a price
+  max_lookups_per_run: 40       # at most this many Marktplaats searches per scan
+  delay_seconds: 4              # pause between Marktplaats searches...
+  extra_random_delay: 3         # ...plus a random 0-3 seconds
+
+http:
+  delay_seconds: 1.5            # pause between requests to the same site

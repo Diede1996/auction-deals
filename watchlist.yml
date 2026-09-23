@@ -1,0 +1,49 @@
+# Your watchlist. Edit it here on GitHub or send commands to your Telegram bot (/help).
+#
+# settings:
+#   target_return  the return you want on what you pay: 0.30 = 30% profit on bid + premium + VAT
+#   min_profit     and at least this many euros profit per lot
+#   resale_factor  you'll likely sell below the average asking price; 0.85 = 85% of the Marktplaats median
+#
+# items: one entry per thing you want to find
+#   name               label used in messages and on the dashboard
+#   keywords           search phrases; a lot matches when its title contains all words of one phrase
+#   exclude            lots whose title contains any of these words are skipped
+#   max_price          (optional) never suggest paying more than this in total (bid + premium + VAT)
+#   market_price       (optional) your own resale value; skips the Marktplaats lookup
+#   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
+#   min_profit         (optional) overrides the default above for this item
+
+settings:
+  target_return: 0.3
+  min_profit: 25
+  resale_factor: 0.85
+items:
+- name: iPhone
+  keywords: [iphone]
+  exclude: [hoesje, case, screenprotector, oplader, kabel, houder]
+- name: MacBook
+  keywords: [macbook]
+  exclude: [hoes, sleeve, oplader, adapter, lader]
+- name: iPad
+  keywords: [ipad]
+  exclude: [hoes, case, cover, houder, standaard]
+- name: PlayStation 5
+  keywords: [playstation 5, ps5]
+  exclude: [controller, game, games, spel, headset, oplaadstation]
+- name: Nintendo Switch
+  keywords: [nintendo switch]
+  exclude: [game, games, spel, hoes, case]
+- name: DJI drone
+  keywords: [dji]
+  exclude: [propeller, propellers, tas]
+- name: Dyson
+  keywords: [dyson]
+  exclude: [filter, onderdeel, houder]
+- name: Festool
+  keywords: [festool]
+- name: Hilti
+  keywords: [hilti]
+- name: Sonos
+  keywords: [sonos]
+  exclude: [beugel, muurbeugel, standaard]

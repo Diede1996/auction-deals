@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auction deals</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f5fbf'/%3E%3Cpath d='M9 22h14M12 18l8-8m-5-2 7 7m-11 1 4 4' stroke='white' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f6f5f1; --surface: #ffffff; --surface-2: #f1f0ea; --border: #e4e2da; --border-strong: #cfccc2;
+  --text: #1b1b1a; --text-2: #55544f; --text-3: #7d7c75;
+  --accent: #1f5fbf; --accent-hover: #174a96; --accent-bg: #e9f0fb;
+  --good: #0ca30c; --good-text: #006300; --good-bg: #e7f4e5;
+  --critical: #d03b3b; --critical-text: #a02525; --critical-bg: #fbecea;
+  --warning: #fab219; --warning-text: #6e4a00; --warning-bg: #fff3d6;
+  --neutral-bg: #efeee8;
+  --bar: #2a78d6; --bar-hover: #1c5cab; --grid: #e1e0d9; --axis: #c3c2b7;
+  --radius: 12px; --shadow: 0 1px 2px rgba(20, 20, 18, .06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111110; --surface: #1a1a19; --surface-2: #222220; --border: #2d2d2a; --border-strong: #45443f;
+    --text: #edece7; --text-2: #b4b3ac; --text-3: #8b8a83;
+    --accent: #86b4ff; --accent-hover: #a9c9ff; --accent-bg: #1b2940;
+    --good-text: #6fd66f; --good-bg: #15301a;
+    --critical-text: #ff8d85; --critical-bg: #3a1d1b;
+    --warning-text: #fab219; --warning-bg: #372c10;
+    --neutral-bg: #262624;
+    --bar: #5598e7; --bar-hover: #86b6ef; --grid: #2c2c2a; --axis: #45443f;
+    --shadow: none;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111110; --surface: #1a1a19; --surface-2: #222220; --border: #2d2d2a; --border-strong: #45443f;
+  --text: #edece7; --text-2: #b4b3ac; --text-3: #8b8a83;
+  --accent: #86b4ff; --accent-hover: #a9c9ff; --accent-bg: #1b2940;
+  --good-text: #6fd66f; --good-bg: #15301a;
+  --critical-text: #ff8d85; --critical-bg: #3a1d1b;
+  --warning-text: #fab219; --warning-bg: #372c10;
+  --neutral-bg: #262624;
+  --bar: #5598e7; --bar-hover: #86b6ef; --grid: #2c2c2a; --axis: #45443f;
+  --shadow: none;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select { font: inherit; color: inherit; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+
+/* header */
+.top { padding: 28px 0 8px; }
+.top h1 { margin: 0; font-size: 26px; font-weight: 650; letter-spacing: -.01em; }
+.sub { margin: 4px 0 0; color: var(--text-2); }
+.sites { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text-2); font-size: 13px;
+}
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); flex: none; }
+.chip.bad { background: var(--critical-bg); border-color: transparent; color: var(--critical-text); }
+.chip.bad .dot { background: var(--critical); }
+.banner {
+  margin: 16px 0 0; padding: 10px 14px; border-radius: var(--radius);
+  background: var(--warning-bg); color: var(--warning-text);
+}
+
+/* KPI tiles */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 20px 0; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.tile .label { color: var(--text-2); font-size: 13px; }
+.tile .value { font-size: 30px; font-weight: 600; margin-top: 2px; line-height: 1.15; }
+.tile .note { color: var(--text-3); font-size: 12.5px; margin-top: 2px; }
+.tile.primary { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* controls */
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.controls { padding: 16px; margin-bottom: 16px; }
+.targets { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-end; }
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--text-2); }
+.field .inline { display: flex; align-items: center; gap: 8px; color: var(--text); font-size: 15px; }
+.field input[type=number] { width: 76px; }
+.field input[type=range] { width: 160px; accent-color: var(--accent); }
+input[type=number], input[type=search], select {
+  height: 36px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface);
+}
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.unit { color: var(--text-2); font-size: 14px; }
+.help { margin: 12px 0 0; color: var(--text-2); font-size: 13.5px; max-width: 820px; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.filters input[type=search] { flex: 1 1 200px; min-width: 0; }
+.filters select { flex: 1 1 150px; max-width: 100%; }
+.check { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--text-2); white-space: nowrap; }
+.check input { width: 16px; height: 16px; accent-color: var(--accent); }
+.btn-link { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: 13.5px; }
+.btn-link:hover { text-decoration: underline; }
+
+/* list */
+.list { overflow: hidden; }
+.row {
+  display: grid; gap: 16px; align-items: center; padding: 14px 16px; border-top: 1px solid var(--border);
+  grid-template-columns: 72px minmax(0, 2.3fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1.25fr) 136px;
+  grid-template-areas: "thumb main closes bid value maxbid status";
+}
+.row.head { border-top: 0; padding-top: 10px; padding-bottom: 10px; color: var(--text-3); font-size: 12.5px; background: var(--surface-2); }
+.row.is-hidden { opacity: .55; }
+.row.is-over .c-maxbid .big { color: var(--text-3); }
+.c-thumb { grid-area: thumb; }
+.c-main { grid-area: main; min-width: 0; }
+.c-closes { grid-area: closes; }
+.c-bid { grid-area: bid; }
+.c-value { grid-area: value; }
+.c-maxbid { grid-area: maxbid; }
+.c-status { grid-area: status; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.thumb { width: 72px; height: 72px; border-radius: 8px; object-fit: cover; background: var(--surface-2); display: block; }
+.thumb.empty { display: grid; place-items: center; color: var(--text-3); font-size: 22px; }
+.title { font-weight: 560; color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.title:hover { color: var(--accent); }
+.meta { margin-top: 4px; color: var(--text-2); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.meta .auction { color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.tag { display: inline-block; padding: 1px 8px; border-radius: 6px; background: var(--accent-bg); color: var(--accent); font-size: 12px; font-weight: 560; }
+.tag.new { background: var(--warning-bg); color: var(--warning-text); }
+.num { font-variant-numeric: tabular-nums; }
+.strong { font-weight: 600; }
+.big { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.small { font-size: 12.5px; color: var(--text-2); margin-top: 2px; }
+.small.soon { color: var(--warning-text); font-weight: 600; }
+.maxline { display: flex; align-items: center; gap: 8px; }
+.copy {
+  border: 1px solid var(--border-strong); background: var(--surface); border-radius: 7px; padding: 3px 8px;
+  font-size: 12px; color: var(--text-2); cursor: pointer; min-height: 28px;
+}
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+.edit { border: 0; background: none; color: var(--accent); cursor: pointer; padding: 2px 0; font-size: 12.5px; }
+.edit:hover { text-decoration: underline; }
+.value-edit { display: flex; gap: 6px; align-items: center; }
+.value-edit input { width: 84px; height: 32px; }
+.value-edit button { height: 32px; padding: 0 10px; border-radius: 7px; border: 1px solid var(--border-strong); background: var(--surface); cursor: pointer; }
+.value-edit button.save { background: var(--accent); border-color: var(--accent); color: #fff; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 560; white-space: nowrap; }
+.pill .ic { font-size: 12px; line-height: 1; }
+.pill.good { background: var(--good-bg); color: var(--good-text); }
+.pill.critical { background: var(--critical-bg); color: var(--critical-text); }
+.pill.neutral { background: var(--neutral-bg); color: var(--text-2); }
+.hide-btn { border: 0; background: none; padding: 0; color: var(--text-3); cursor: pointer; font-size: 12.5px; }
+.hide-btn:hover { color: var(--text); text-decoration: underline; }
+/* price spread (histogram of Marktplaats asking prices) */
+.spread-btn {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; padding: 3px 8px 3px 6px; min-height: 28px;
+  border: 1px solid var(--border-strong); border-radius: 7px; background: var(--surface); color: var(--text-2);
+  font-size: 12.5px; cursor: pointer;
+}
+.spread-btn:hover, .spread-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
+.mini { display: block; flex: none; }
+.mini rect { fill: var(--bar); }
+.spread { border-top: 1px dashed var(--border-strong); background: var(--surface-2); padding: 16px; position: relative; }
+.spread-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 12px; }
+.spread-head h3 { margin: 0; font-size: 14.5px; }
+.spread-head .close { margin-left: auto; }
+.spread-body { display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); gap: 16px 32px; align-items: start; }
+.spread-stats { margin: 0 0 4px; font-size: 13.5px; color: var(--text); }
+.spread-insight { margin: 0 0 10px; font-size: 13.5px; color: var(--text-2); max-width: 420px; }
+.hist { display: block; overflow: visible; }
+.hist .bar { fill: var(--bar); }
+.hist .bar.hover { fill: var(--bar-hover); }
+.hist .grid { stroke: var(--grid); stroke-width: 1; shape-rendering: crispEdges; }
+.hist .base { stroke: var(--axis); stroke-width: 1; shape-rendering: crispEdges; }
+.hist text { fill: var(--text-3); font-size: 11px; font-variant-numeric: tabular-nums; }
+.hist .ref-median { stroke: var(--text); stroke-width: 2; }
+.hist .ref-sale { stroke: var(--text-2); stroke-width: 2; stroke-dasharray: 4 3; }
+.hist .hit { fill: transparent; outline: none; }
+.hist .hit:focus-visible { stroke: var(--accent); stroke-width: 2; }
+.key { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-size: 12.5px; color: var(--text-2); }
+.key i { display: inline-block; width: 16px; border-top: 2px solid var(--text); vertical-align: middle; margin-right: 6px; }
+.key i.dash { border-top: 2px dashed var(--text-2); }
+.tip {
+  position: absolute; z-index: 5; pointer-events: none; padding: 6px 10px; border-radius: 8px; white-space: nowrap;
+  background: var(--surface); border: 1px solid var(--border-strong); box-shadow: 0 4px 14px rgba(0, 0, 0, .14); font-size: 12.5px;
+}
+.tip strong { display: block; font-size: 14px; color: var(--text); }
+.tip span { color: var(--text-2); }
+.listings { width: 100%; border-collapse: collapse; font-size: 13px; }
+.listings caption { text-align: left; font-weight: 600; font-size: 13.5px; padding-bottom: 6px; color: var(--text); }
+.listings td { padding: 6px 10px 6px 0; border-top: 1px solid var(--border); vertical-align: top; }
+.listings td.price { white-space: nowrap; font-weight: 600; font-variant-numeric: tabular-nums; }
+.listings td.kind { white-space: nowrap; color: var(--text-3); font-size: 12px; }
+.listings .below td.price::after { content: " ▼"; font-size: 10px; color: var(--text-3); }
+.empty { padding: 36px 16px; text-align: center; color: var(--text-2); margin: 0; }
+footer { color: var(--text-2); font-size: 13.5px; margin: 28px 0 40px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+footer h2 { font-size: 14px; color: var(--text); margin: 0 0 6px; }
+footer p { margin: 0 0 8px; }
+footer table { border-collapse: collapse; font-size: 13px; }
+footer td { padding: 2px 14px 2px 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (max-width: 860px) {
+  .row.head { display: none; }
+  .row {
+    grid-template-columns: 64px minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "thumb main main" ". closes bid" ". value maxbid" ". status status";
+    gap: 12px 14px; padding: 16px; align-items: start;
+  }
+  .row:first-of-type { border-top: 0; }
+  .thumb { width: 64px; height: 64px; }
+  .c-closes::before, .c-bid::before, .c-value::before, .c-maxbid::before {
+    content: attr(data-label); display: block; font-size: 12px; color: var(--text-3); margin-bottom: 2px;
+  }
+  .c-status { flex-direction: row; align-items: center; justify-content: space-between; }
+  .top h1 { font-size: 22px; }
+  .spread-body { grid-template-columns: minmax(0, 1fr); }
+  .tile .value { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Auction deals</h1>
+    <p class="sub" id="sub"></p>
+    <div class="sites" id="sites" aria-label="Sites checked in the last scan"></div>
+    <div id="banner"></div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <section class="panel controls" aria-label="Targets and filters">
+    <div class="targets">
+      <div class="field">
+        <label for="rNum">Target return</label>
+        <div class="inline">
+          <input type="range" id="r" min="0" max="100" step="5" aria-label="Target return slider">
+          <input type="number" id="rNum" min="0" max="500" step="1">
+          <span class="unit">%</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="minProfit">Minimum profit</label>
+        <div class="inline"><span class="unit">€</span><input type="number" id="minProfit" min="0" step="5"></div>
+      </div>
+      <div class="field">
+        <label for="factor">You expect to sell at</label>
+        <div class="inline"><input type="number" id="factor" min="10" max="150" step="5"><span class="unit">% of the Marktplaats median</span></div>
+      </div>
+      <button type="button" class="btn-link" id="reset">Reset to defaults</button>
+    </div>
+    <p class="help">The <strong>suggested max bid</strong> is the highest bid where you still make your target return and minimum profit after the buyer's premium and VAT. Set it as your automatic bid on the auction site.</p>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Search lots" aria-label="Search lots">
+      <select id="item" aria-label="Item"><option value="">All items</option></select>
+      <select id="site" aria-label="Site"><option value="">All sites</option></select>
+      <select id="sort" aria-label="Sort by">
+        <option value="closing">Closing soonest</option>
+        <option value="headroom">Most room to bid</option>
+        <option value="return">Highest return now</option>
+        <option value="maxbid">Highest max bid</option>
+        <option value="new">Newest first</option>
+      </select>
+      <label class="check"><input type="checkbox" id="onlyRoom"> Only with room to bid</label>
+      <label class="check"><input type="checkbox" id="showHidden"> Show hidden</label>
+    </div>
+  </section>
+
+  <section class="panel list" aria-label="Matching lots">
+    <div class="row head" aria-hidden="true">
+      <div class="c-thumb"></div><div class="c-main">Lot</div><div class="c-closes">Closes</div>
+      <div class="c-bid">Current bid</div><div class="c-value">Marktplaats value</div>
+      <div class="c-maxbid">Suggested max bid</div><div class="c-status">Status</div>
+    </div>
+    <div id="rows"></div>
+    <p class="empty" id="empty" hidden></p>
+  </section>
+
+  <footer>
+    <div>
+      <h2>How the numbers work</h2>
+      <p><strong>You pay</strong> = bid + buyer's premium, plus VAT on both, plus any fixed fee per lot.</p>
+      <p><strong>Resale</strong> = Marktplaats median asking price × your sell percentage. Click “listings” to see the Marktplaats listings it's based on. Asking prices are not sold prices.</p>
+      <p><strong>Return</strong> = (resale − what you pay) ÷ what you pay.</p>
+      <p>Bids are from the morning scan. Always check the live bid, the lot description, pickup date and the auction terms before bidding.</p>
+    </div>
+    <div>
+      <h2>Buyer's premium per site</h2>
+      <table id="fees"></table>
+      <p style="margin-top:8px">Your own values and hidden lots are stored only in this browser.</p>
+    </div>
+  </footer>
+</main>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("data").textContent);
+  var store = {
+    get: function (k, d) { try { var v = localStorage.getItem("auctiondeals." + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem("auctiondeals." + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
+  };
+  var defaults = {
+    r: Math.round((DATA.settings.target_return || 0.3) * 100),
+    minProfit: DATA.settings.min_profit != null ? DATA.settings.min_profit : 25,
+    factor: Math.round((DATA.settings.resale_factor || 0.85) * 100)
+  };
+  var S = Object.assign({}, defaults, store.get("settings", {}));
+  var values = store.get("values", {});
+  var hidden = store.get("hidden", {});
+  var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "" }, store.get("ui", {}));
+  var editing = null;
+
+  var eur = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+  var dtfParts = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23", timeZone: "Europe/Amsterdam" });
+  var dtf = { format: function (d) {  /* "Wed 23 Sep, 16:37" in Dutch time */
+    var p = {}; dtfParts.formatToParts(d).forEach(function (x) { p[x.type] = x.value; });
+    return p.weekday + " " + p.day + " " + String(p.month).slice(0, 3) + ", " + p.hour + ":" + p.minute;
+  } };
+  function shortDate(d) { var t = dtf.format(d); return t.slice(0, t.indexOf(",")); }
+  function money(v) { return v == null || !isFinite(v) ? "–" : eur.format(v); }
+  function pct(v) { return v == null || !isFinite(v) ? "–" : Math.round(v * 100) + "%"; }
+  function timeLeft(ms) {
+    if (ms <= 0) return "closed";
+    var m = Math.floor(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
+    return d ? d + "d " + h + "h" : (h ? h + "h " + mm + "m" : mm + "m");
+  }
+  function safeUrl(u) { return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null; }
+  function el(tag, attrs) {
+    var e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null || v === false) return;
+      if (k === "class") e.className = v;
+      else if (k === "text") e.textContent = v;
+      else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v === true ? "" : v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i];
+      if (c == null || c === false) continue;
+      e.append(c.nodeType ? c : document.createTextNode(String(c)));
+    }
+    return e;
+  }
+
+  /* ---------- the maths (mirrors scanner/evaluate.py) ---------- */
+  function calc(lot) {
+    var cost = function (b) { return (b * (1 + lot.premium) + (lot.fixed || 0)) * (1 + lot.vat); };
+    var bidFor = function (t) { return (t / (1 + lot.vat) - (lot.fixed || 0)) / (1 + lot.premium); };
+    var own = values[lot.key];
+    var market = own != null ? own : lot.market;
+    var source = own != null ? "yours" : lot.marketSource;
+    var minProfit = lot.itemMinProfit != null ? lot.itemMinProfit : S.minProfit;
+    var bid = lot.bid || 0, costNow = cost(bid), resale = null, caps = [];
+    if (market) {
+      resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
+      caps.push(resale / (1 + S.r / 100), resale - minProfit);
+    }
+    if (lot.itemMaxPrice != null) caps.push(lot.itemMaxPrice);
+    var out = { market: market, source: source, costNow: costNow, resale: resale,
+                profitNow: resale != null ? resale - costNow : null,
+                returnNow: resale != null && costNow > 0 ? (resale - costNow) / costNow : null,
+                maxBid: null, status: "noprice", headroom: -Infinity };
+    if (!caps.length) return out;
+    var maxTotal = Math.min.apply(null, caps);
+    var maxBid = Math.max(0, Math.floor(bidFor(maxTotal)));
+    out.maxBid = maxBid;
+    out.payAtMax = cost(maxBid);
+    out.profitAtMax = resale != null ? resale - out.payAtMax : null;
+    out.returnAtMax = resale != null && out.payAtMax > 0 ? out.profitAtMax / out.payAtMax : null;
+    out.headroom = maxBid - bid;
+    out.status = maxBid <= 0 ? "never" : (bid < maxBid ? "room" : "over");
+    return out;
+  }
+
+  /* ---------- header, KPIs, filters ---------- */
+  var generated = new Date(DATA.generated);
+  function renderHeader() {
+    var ageH = (Date.now() - generated.getTime()) / 3600000;
+    document.getElementById("sub").textContent =
+      "Bankruptcy auctions · last scan " + dtf.format(generated) + (ageH >= 1 ? " (" + timeLeft(Date.now() - generated.getTime()) + " ago)" : "");
+    var sites = document.getElementById("sites");
+    sites.textContent = "";
+    DATA.sites.forEach(function (s) {
+      sites.append(el("span", { "class": "chip" + (s.ok ? "" : " bad"), title: s.ok ? "" : (s.error || "") },
+        el("span", { "class": "dot", "aria-hidden": "true" }),
+        s.ok ? s.name + " · " + s.lots + (s.id === "marktplaats" ? (s.lots === 1 ? " lookup" : " lookups") : (s.lots === 1 ? " lot" : " lots"))
+             : (s.id === "marktplaats" ? "⚠ Marktplaats blocked today · saved prices shown" : "⚠ " + s.name + " failed")));
+    });
+    var banner = document.getElementById("banner");
+    banner.textContent = "";
+    if (DATA.demo) banner.append(el("p", { "class": "banner", text: "Example data. Your own list appears here after the first daily scan." }));
+    else if (ageH > 30) banner.append(el("p", { "class": "banner", text: "This list hasn't been updated for " + Math.round(ageH / 24) + " day(s). Check the Actions tab on GitHub to see why the daily scan didn't run." }));
+  }
+
+  function fillSelect(id, options, current) {
+    var sel = document.getElementById(id);
+    options.forEach(function (o) { sel.append(el("option", { value: o.value, text: o.label })); });
+    sel.value = options.some(function (o) { return o.value === current; }) ? current : "";
+  }
+
+  var now = Date.now();
+  var lots = DATA.lots.filter(function (l) { return !l.closes || new Date(l.closes).getTime() > now; });
+  var items = Array.from(new Set(lots.map(function (l) { return l.item; }))).sort();
+  fillSelect("item", items.map(function (i) { return { value: i, label: i }; }), ui.item);
+  fillSelect("site", DATA.sites.filter(function (s) { return s.id !== "marktplaats"; }).map(function (s) { return { value: s.id, label: s.name }; }), ui.site);
+
+  var feeTable = document.getElementById("fees");
+  DATA.fees.forEach(function (f) {
+    feeTable.append(el("tr", null, el("td", { text: f.name }), el("td", { "class": "num", text: Math.round(f.premium * 100) + "% + " + Math.round(f.vat * 100) + "% VAT" })));
+  });
+
+  function renderKpis(rows) {
+    var visible = rows.filter(function (r) { return !hidden[r.lot.key]; });
+    var room = visible.filter(function (r) { return r.c.status === "room"; });
+    var soon = room.filter(function (r) { return r.lot.closes && new Date(r.lot.closes).getTime() - Date.now() < 86400000; });
+    var fresh = visible.filter(function (r) { return r.lot.isNew; });
+    var noPrice = visible.filter(function (r) { return r.c.status === "noprice"; });
+    var tiles = [
+      { label: "Matching lots", value: visible.length, note: noPrice.length ? noPrice.length + " without a price yet" : "all priced" },
+      { label: "Room to bid", value: room.length, note: "at a " + S.r + "% return", primary: true },
+      { label: "Closing within 24 hours", value: soon.length, note: "with room to bid" },
+      { label: "New since last scan", value: fresh.length, note: "first seen today" }
+    ];
+    var box = document.getElementById("kpis");
+    box.textContent = "";
+    tiles.forEach(function (t) {
+      box.append(el("div", { "class": "tile" + (t.primary ? " primary" : "") },
+        el("div", { "class": "label", text: t.label }), el("div", { "class": "value", text: String(t.value) }), el("div", { "class": "note", text: t.note })));
+    });
+  }
+
+  /* ---------- rows ---------- */
+  function statusPill(c) {
+    if (c.status === "room") return el("span", { "class": "pill good" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✓" }), "Room to bid");
+    if (c.status === "over") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Above max");
+    if (c.status === "never") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Not profitable");
+    return el("span", { "class": "pill neutral" }, el("span", { "class": "ic", "aria-hidden": "true", text: "?" }), "Needs a price");
+  }
+
+  function valueCell(lot, c) {
+    var cell = el("div", { "class": "c-value", "data-label": "Marktplaats value" });
+    if (editing === lot.key) {
+      var input = el("input", { type: "number", min: "0", step: "5", value: c.market != null ? String(Math.round(c.market)) : "", "aria-label": "Market value in euro" });
+      var save = function () {
+        var v = parseFloat(input.value);
+        if (isFinite(v) && v > 0) values[lot.key] = v; else delete values[lot.key];
+        store.set("values", values); editing = null; render();
+      };
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") save(); if (e.key === "Escape") { editing = null; render(); } });
+      cell.append(el("div", { "class": "value-edit" }, el("span", { "class": "unit", text: "€" }), input,
+        el("button", { type: "button", "class": "save", text: "Save", onclick: save }),
+        values[lot.key] != null ? el("button", { type: "button", text: "Reset", onclick: function () { delete values[lot.key]; store.set("values", values); editing = null; render(); } }) : null));
+      setTimeout(function () { input.focus(); }, 0);
+      return cell;
+    }
+    var editBtn = el("button", { type: "button", "class": "edit", text: c.market != null ? "edit" : "Set value", onclick: function () { editing = lot.key; render(); } });
+    if (c.market != null) {
+      cell.append(el("div", { "class": "strong num", text: money(c.market) }));
+      var src;
+      if (c.source === "marktplaats" && lot.mp) {
+        var mpUrl = safeUrl(lot.mp.url);
+        var checked = lot.mp.asOf ? new Date(lot.mp.asOf) : null;
+        var old = checked && Date.now() - checked.getTime() > 2 * 86400000;
+        if (lot.mp.prices && lot.mp.prices.length) {
+          cell.append(spreadButton(lot));
+          src = el("div", { "class": "small" }, old ? "checked " + shortDate(checked) + " · " : null, editBtn);
+        } else {
+          var label = lot.mp.count + " listings ↗";
+          src = el("div", { "class": "small" },
+            mpUrl ? el("a", { href: mpUrl, target: "_blank", rel: "noopener", title: "Marktplaats search: " + lot.mp.query }, label) : label,
+            " · ", editBtn);
+        }
+      } else {
+        src = el("div", { "class": "small" }, c.source === "yours" ? "your value · " : "from watchlist · ", editBtn);
+      }
+      cell.append(src);
+    } else {
+      cell.append(el("div", { "class": "small", text: "No Marktplaats price" }));
+      var search = safeUrl(lot.mpSearch);
+      cell.append(el("div", { "class": "small" }, search ? el("a", { href: search, target: "_blank", rel: "noopener" }, "Search ↗") : null, search ? " · " : null, editBtn));
+    }
+    return cell;
+  }
+
+  /* ---------- price spread: histogram of Marktplaats asking prices ---------- */
+  var openSpread = {};
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function svg(tag, attrs) {
+    var e = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs || {}).forEach(function (k) { if (k === "text") e.textContent = attrs[k]; else e.setAttribute(k, attrs[k]); });
+    return e;
+  }
+  function niceStep(range, target) {
+    var raw = range / target, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    var steps = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < steps.length; i++) if (steps[i] * mag >= raw) return steps[i] * mag;
+    return 10 * mag;
+  }
+  function binStep(min, max, target) {
+    /* the "round" bin width (…10, 20, 25, 50, 100…) whose bin count is closest to the target */
+    var best = null;
+    for (var e = -1; e <= 5; e++) {
+      [1, 2, 2.5, 5].forEach(function (m) {
+        var st = m * Math.pow(10, e), n = Math.floor(max / st) - Math.floor(min / st) + 1;
+        if (n < 3 || n > 16) return;
+        var score = Math.abs(n - target);
+        if (!best || score < best.score) best = { step: st, score: score };
+      });
+    }
+    return best ? best.step : niceStep(Math.max(1, max - min), target);
+  }
+  function binPrices(prices) {
+    var min = Math.min.apply(null, prices), max = Math.max.apply(null, prices);
+    var target = Math.max(5, Math.min(12, Math.round(Math.sqrt(prices.length) * 1.5) + 2));
+    var step = max > min ? binStep(min, max, target) : niceStep(Math.max(1, min * 0.2), 2);
+    var start = Math.floor(min / step) * step;
+    var n = Math.max(1, Math.floor((max - start) / step) + 1);
+    var counts = [];
+    for (var i = 0; i < n; i++) counts.push(0);
+    prices.forEach(function (p) { counts[Math.min(n - 1, Math.floor((p - start) / step))]++; });
+    return { start: start, step: step, counts: counts };
+  }
+  function euroShort(v) { return "€" + (Math.round(v) >= 1000 ? (Math.round(v / 100) / 10).toLocaleString("nl-NL") + "k" : Math.round(v)); }
+
+  function miniHist(prices) {
+    var b = binPrices(prices), W = 56, H = 18, gap = 1, n = b.counts.length;
+    var w = (W - gap * (n - 1)) / n, top = Math.max.apply(null, b.counts);
+    var s = svg("svg", { "class": "mini", width: W, height: H, viewBox: "0 0 " + W + " " + H, "aria-hidden": "true" });
+    b.counts.forEach(function (c, i) {
+      var h = c ? Math.max(2, (c / top) * H) : 0;
+      if (h) s.append(svg("rect", { x: i * (w + gap), y: H - h, width: w, height: h, rx: 1 }));
+    });
+    return s;
+  }
+
+  function spreadButton(lot) {
+    var open = !!openSpread[lot.key];
+    return el("button", { type: "button", "class": "spread-btn", "aria-expanded": open ? "true" : "false",
+      title: open ? "Hide the price spread" : "Show how the Marktplaats prices are spread",
+      onclick: function () { if (openSpread[lot.key]) delete openSpread[lot.key]; else openSpread[lot.key] = true; render(); } },
+      miniHist(lot.mp.prices), lot.mp.count + " listings", el("span", { "aria-hidden": "true", text: open ? "▴" : "▾" }));
+  }
+
+  function histogram(prices, refs, tipBox) {
+    var b = binPrices(prices), n = b.counts.length;
+    var BAR = 24, SLOT = 26, L = 30, R = 10, T = 10, B = 22, PH = 140, PW = n * SLOT;
+    var maxC = Math.max.apply(null, b.counts);
+    var yStep = maxC <= 5 ? 1 : niceStep(maxC, 4);
+    var yTop = Math.ceil(maxC / yStep) * yStep;
+    var y = function (v) { return T + PH - (v / yTop) * PH; };
+    var xOf = function (price) { return L + ((price - b.start) / b.step) * SLOT; };
+    var chart = svg("svg", { "class": "hist", width: L + PW + R, height: T + PH + B, role: "img",
+      "aria-label": "Histogram of " + prices.length + " Marktplaats asking prices" });
+    for (var t = yStep; t <= yTop; t += yStep) {
+      chart.append(svg("line", { "class": "grid", x1: L, x2: L + PW, y1: y(t), y2: y(t) }));
+      chart.append(svg("text", { x: L - 6, y: y(t) + 4, "text-anchor": "end", text: String(t) }));
+    }
+    var every = Math.ceil(46 / SLOT);
+    for (var i = 0; i <= n; i += every) {
+      chart.append(svg("text", { x: L + i * SLOT, y: T + PH + 16, "text-anchor": i === 0 ? "start" : "middle", text: euroShort(b.start + i * b.step) }));
+    }
+    var hits = [];
+    b.counts.forEach(function (c, i) {
+      var x = L + i * SLOT + (SLOT - BAR) / 2, top = y(c), h = T + PH - top, r = Math.min(4, h);
+      var bar = null;
+      if (c) {
+        bar = svg("path", { "class": "bar", d: "M" + x + "," + (T + PH) + "V" + (top + r) + "Q" + x + "," + top + " " + (x + r) + "," + top +
+          "H" + (x + BAR - r) + "Q" + (x + BAR) + "," + top + " " + (x + BAR) + "," + (top + r) + "V" + (T + PH) + "Z" });
+        chart.append(bar);
+      }
+      var lo = b.start + i * b.step, hi = lo + b.step;
+      var label = c + (c === 1 ? " listing" : " listings");
+      var range = money(lo) + " – " + money(hi);
+      var hit = svg("rect", { "class": "hit", x: L + i * SLOT, y: T, width: SLOT, height: PH, tabindex: "0", "aria-label": range + ": " + label });
+      var show = function () {
+        if (bar) bar.classList.add("hover");
+        tipBox.textContent = "";
+        tipBox.append(el("strong", { text: label }), el("span", { text: range }));
+        tipBox.hidden = false;
+        var host = tipBox.parentNode.getBoundingClientRect(), hr = hit.getBoundingClientRect();
+        var left = hr.left - host.left + hr.width / 2 - tipBox.offsetWidth / 2;
+        tipBox.style.left = Math.max(4, Math.min(left, host.width - tipBox.offsetWidth - 4)) + "px";
+        tipBox.style.top = (hr.top - host.top + (top - T) - tipBox.offsetHeight - 6) + "px";
+      };
+      var hide = function () { if (bar) bar.classList.remove("hover"); tipBox.hidden = true; };
+      hit.addEventListener("pointerenter", show); hit.addEventListener("focus", show);
+      hit.addEventListener("pointerleave", hide); hit.addEventListener("blur", hide);
+      hits.push(hit);
+    });
+    chart.append(svg("line", { "class": "base", x1: L, x2: L + PW, y1: T + PH, y2: T + PH }));
+    refs.forEach(function (ref) {
+      if (ref.value == null) return;
+      var x = xOf(ref.value);
+      if (x < L || x > L + PW) return;
+      chart.append(svg("line", { "class": ref.cls, x1: x, x2: x, y1: T - 4, y2: T + PH }));
+    });
+    hits.forEach(function (h) { chart.append(h); });
+    return chart;
+  }
+
+  function spreadPanel(lot, c) {
+    var mp = lot.mp, prices = mp.prices.slice().sort(function (a, b) { return a - b; });
+    var sale = c.resale != null ? c.resale + (DATA.settings.selling_costs || 0) : null;
+    var tip = el("div", { "class": "tip", role: "tooltip" }); tip.hidden = true;
+    var mpUrl = safeUrl(mp.url);
+    var head = el("div", { "class": "spread-head" },
+      el("h3", { text: "Marktplaats asking prices" }),
+      el("span", { "class": "small", text: "search: “" + mp.query + "”" }),
+      mpUrl ? el("a", { "class": "small", href: mpUrl, target: "_blank", rel: "noopener" }, "Open on Marktplaats ↗") : null,
+      el("button", { type: "button", "class": "btn-link close", text: "Close", onclick: function () { delete openSpread[lot.key]; render(); } }));
+
+    var chartCol = el("div", null,
+      el("p", { "class": "spread-stats num", text: prices.length + " comparable listings · median " + money(mp.median) +
+        " · middle half " + money(mp.low) + "–" + money(mp.high) + " · cheapest " + money(prices[0]) +
+        (mp.asOf ? " · checked " + shortDate(new Date(mp.asOf)) : "") }));
+    if (sale != null) {
+      var below = prices.filter(function (p) { return p < sale; }).length;
+      var share = Math.round((below / prices.length) * 100);
+      chartCol.append(el("p", { "class": "spread-insight", text: below === 0
+        ? "None of them ask less than the " + money(sale) + " you expect to sell for."
+        : below + " of " + prices.length + " (" + share + "%) ask less than the " + money(sale) + " you expect to sell for" +
+          (share >= 50 ? ". Many sellers are cheaper, so expect to wait or sell lower." : ".") }));
+    }
+    chartCol.append(histogram(prices, [
+      { value: mp.median, cls: "ref-median" },
+      { value: sale, cls: "ref-sale" }
+    ], tip));
+    chartCol.append(el("div", { "class": "key" },
+      el("span", null, el("i", { "aria-hidden": "true" }), "median " + money(mp.median)),
+      sale != null ? el("span", null, el("i", { "class": "dash", "aria-hidden": "true" }), "you sell at ≈ " + money(sale)) : null));
+    if (mp.outliers && mp.outliers.length) {
+      chartCol.append(el("p", { "class": "small", text: "Left out as outliers: " + mp.outliers.map(money).join(", ") }));
+    }
+
+    var listCol = el("div", null);
+    var rows = (mp.listings || []);
+    if (rows.length) {
+      var table = el("table", { "class": "listings" }, el("caption", { text: "Cheapest listings" }));
+      var body = el("tbody");
+      var limit = openSpread[lot.key] === "all" ? rows.length : 8;
+      rows.slice(0, limit).forEach(function (l) {
+        var u = safeUrl(l.url);
+        body.append(el("tr", { "class": sale != null && l.price < sale ? "below" : null },
+          el("td", { "class": "price", text: money(l.price) }),
+          el("td", { "class": "kind", text: l.kind === "bid" ? "bieden vanaf" : "vraagprijs" }),
+          el("td", null, u ? el("a", { href: u, target: "_blank", rel: "noopener", text: l.title }) : l.title)));
+      });
+      table.append(body);
+      listCol.append(table);
+      if (rows.length > limit) {
+        listCol.append(el("button", { type: "button", "class": "btn-link", text: "Show all " + rows.length,
+          onclick: function () { openSpread[lot.key] = "all"; render(); } }));
+      }
+      if (sale != null) listCol.append(el("p", { "class": "small", text: "▼ asks less than you expect to sell for" }));
+    }
+    return el("div", { "class": "spread", role: "region", "aria-label": "Price spread for " + lot.title },
+      head, el("div", { "class": "spread-body" }, chartCol, listCol), tip);
+  }
+
+  function maxBidCell(lot, c) {
+    var cell = el("div", { "class": "c-maxbid", "data-label": "Max bid" });
+    if (c.maxBid == null) {
+      cell.append(el("div", { "class": "big", text: "–" }), el("div", { "class": "small", text: "Set a market value to get one" }));
+      return cell;
+    }
+    var copy = el("button", { type: "button", "class": "copy", "aria-label": "Copy max bid " + c.maxBid, text: "Copy" });
+    copy.addEventListener("click", function () {
+      var done = function () { copy.textContent = "Copied"; setTimeout(function () { copy.textContent = "Copy"; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(String(c.maxBid)).then(done, function () {});
+    });
+    cell.append(el("div", { "class": "maxline" }, el("span", { "class": "big", text: money(c.maxBid) }), c.maxBid > 0 ? copy : null));
+    var detail = "you pay " + money(c.payAtMax);
+    if (c.profitAtMax != null) detail += " · profit " + money(c.profitAtMax);
+    cell.append(el("div", { "class": "small", text: detail }));
+    return cell;
+  }
+
+  function row(r) {
+    var lot = r.lot, c = r.c;
+    var url = safeUrl(lot.url), img = safeUrl(lot.image);
+    var closesMs = lot.closes ? new Date(lot.closes).getTime() - Date.now() : null;
+    var soon = closesMs != null && closesMs < 86400000;
+    var thumb = img
+      ? el("img", { "class": "thumb", src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
+      : el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" });
+    if (img) thumb.addEventListener("error", function () { thumb.replaceWith(el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" })); });
+
+    var meta = el("div", { "class": "meta" },
+      lot.isNew ? el("span", { "class": "tag new", text: "New" }) : null,
+      el("span", { "class": "tag", text: lot.item }),
+      el("span", { text: lot.siteName }),
+      lot.location ? el("span", { text: "· " + lot.location }) : null,
+      el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
+
+    var extra = [];
+    if (lot.bids != null) extra.push(lot.bids + (lot.bids === 1 ? " bid" : " bids"));
+    if (c.returnNow != null) extra.push("return " + pct(c.returnNow));
+    var bidCell = el("div", { "class": "c-bid", "data-label": "Current bid" },
+      el("div", { "class": "strong num", text: money(lot.bid) }),
+      el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT", text: "you pay " + money(c.costNow) }),
+      extra.length ? el("div", { "class": "small", text: extra.join(" · ") }) : null);
+
+    var status = el("div", { "class": "c-status" }, statusPill(c),
+      el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
+        onclick: function () { if (hidden[lot.key]) delete hidden[lot.key]; else hidden[lot.key] = 1; store.set("hidden", hidden); render(); } }));
+
+    return el("article", { "class": "row" + (hidden[lot.key] ? " is-hidden" : "") + (c.status === "over" ? " is-over" : "") },
+      el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta),
+      el("div", { "class": "c-closes", "data-label": "Closes" },
+        el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : "unknown" }),
+        closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs)) : null),
+      bidCell, valueCell(lot, c), maxBidCell(lot, c), status);
+  }
+
+  function sortRows(rows) {
+    var far = 8.64e15;
+    var by = {
+      closing: function (a, b) { return (a.lot.closes ? Date.parse(a.lot.closes) : far) - (b.lot.closes ? Date.parse(b.lot.closes) : far); },
+      headroom: function (a, b) { return b.c.headroom - a.c.headroom; },
+      "return": function (a, b) { return (b.c.returnNow != null ? b.c.returnNow : -far) - (a.c.returnNow != null ? a.c.returnNow : -far); },
+      maxbid: function (a, b) { return (b.c.maxBid || -1) - (a.c.maxBid || -1); },
+      "new": function (a, b) { return String(b.lot.firstSeen || "").localeCompare(String(a.lot.firstSeen || "")); }
+    }[ui.sort] || function () { return 0; };
+    return rows.sort(by);
+  }
+
+  function render() {
+    var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
+    renderKpis(all);
+    var q = ui.q.trim().toLowerCase();
+    var shown = all.filter(function (r) {
+      if (!ui.showHidden && hidden[r.lot.key]) return false;
+      if (ui.onlyRoom && r.c.status !== "room") return false;
+      if (ui.item && r.lot.item !== ui.item) return false;
+      if (ui.site && r.lot.site !== ui.site) return false;
+      if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    sortRows(shown);
+    var box = document.getElementById("rows");
+    box.textContent = "";
+    shown.forEach(function (r) {
+      box.append(row(r));
+      if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
+    });
+    var empty = document.getElementById("empty");
+    empty.textContent = "";
+    if (!lots.length) {
+      empty.append("Nothing on your watchlist is in a running bankruptcy auction right now. The next scan runs tomorrow morning.");
+    } else if (!shown.length) {
+      empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
+    }
+    empty.hidden = !!shown.length;
+  }
+
+  /* ---------- controls ---------- */
+  var $ = function (id) { return document.getElementById(id); };
+  function syncControls() {
+    $("r").value = Math.min(100, S.r); $("rNum").value = S.r; $("minProfit").value = S.minProfit; $("factor").value = S.factor;
+    $("sort").value = ui.sort; $("onlyRoom").checked = ui.onlyRoom; $("showHidden").checked = ui.showHidden; $("q").value = ui.q;
+    $("item").value = ui.item; $("site").value = ui.site;
+  }
+  function setting(key, v) {
+    if (!isFinite(v) || v < 0) return;
+    S[key] = v; store.set("settings", S); syncControls(); render();
+  }
+  function uiSet(key, v) { ui[key] = v; store.set("ui", ui); render(); }
+  function clearFilters() { ui.q = ""; ui.item = ""; ui.site = ""; ui.onlyRoom = false; store.set("ui", ui); syncControls(); render(); }
+
+  $("r").addEventListener("input", function (e) { setting("r", Number(e.target.value)); });
+  /* update while typing ("input"), so leaving the field doesn't re-render the list under your next click */
+  function numberInput(id, key) {
+    $(id).addEventListener("input", function (e) {
+      if (e.target.value === "") return;
+      var v = Number(e.target.value);
+      if (!isFinite(v) || v < 0) return;
+      S[key] = v; store.set("settings", S);
+      if (key === "r") $("r").value = Math.min(100, v);
+      render();
+    });
+    $(id).addEventListener("blur", function () { syncControls(); });
+  }
+  numberInput("rNum", "r");
+  numberInput("minProfit", "minProfit");
+  numberInput("factor", "factor");
+  $("reset").addEventListener("click", function () { S = Object.assign({}, defaults); store.set("settings", S); syncControls(); render(); });
+  $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
+  $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
+  $("showHidden").addEventListener("change", function (e) { uiSet("showHidden", e.target.checked); });
+  $("item").addEventListener("change", function (e) { uiSet("item", e.target.value); });
+  $("site").addEventListener("change", function (e) { uiSet("site", e.target.value); });
+  $("q").addEventListener("input", function (e) { uiSet("q", e.target.value); });
+
+  syncControls();
+  renderHeader();
+  render();
+  setInterval(function () { if (!editing) { renderHeader(); render(); } }, 60000);
+})();
+</script>
+</body>
+</html>
