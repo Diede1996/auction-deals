@@ -1,0 +1,54 @@
+name: Telegram commands
+
+# Reads the messages you send to your bot and replies. This never contacts the auction sites;
+# /scan starts the "Scan auctions" workflow (limited per day in config.yml).
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write         # save watchlist changes
+  actions: write          # start a scan when you send /scan
+
+concurrency:
+  group: commands
+  cancel-in-progress: false
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Handle Telegram messages
+        id: bot
+        run: python -m scanner commands
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Save changes
+        run: |
+          git config user.name "auction-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add watchlist.yml
+          if [ -f data/telegram.json ]; then git add data/telegram.json; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Telegram commands [skip ci]"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
+
+      - name: Start a scan
+        if: steps.bot.outputs.scan == 'true'
+        run: gh workflow run scan.yml --ref "${{ github.ref_name }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
