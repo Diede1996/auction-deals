@@ -14,9 +14,8 @@ WATCHLIST_HEADER = """\
 # Your watchlist. Edit it here on GitHub or send commands to your Telegram bot (/help).
 #
 # settings:
-#   target_return  the return you want on what you pay: 0.30 = 30% profit on bid + premium + VAT
-#   min_profit     and at least this many euros profit per lot
-#   resale_factor  you'll likely sell below the average asking price; 0.85 = 85% of the Marktplaats median
+#   resale_factor  what you expect to sell for, as a share of the Marktplaats median: 0.85 = 85%, 0.5 = 50%
+#   min_profit     the suggested max bid always leaves at least this many euros profit at that price
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard

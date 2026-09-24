@@ -1,7 +1,8 @@
 """Onlineveilingmeester (onlineveilingmeester.nl) - JSON REST API used by the site itself.
 
-- /rest/nl/veilingen?status=open&domein=ONLINEVEILINGMEESTER -> running auctions with a `type`
-  (bankruptcy auctions have type "FAILLISEMENT", spelled like that).
+- /rest/nl/veilingen?status=open&domein=ONLINEVEILINGMEESTER -> running auctions with a `type`:
+  bankruptcy auctions have type "FAILLISEMENT" (spelled like that), Domeinen Roerende Zaken "DRZ",
+  local government "OVERHEID".
 - /rest/nl/v2/veilingen/<id>/kavels?page=N&size=100&status=OPEN -> lots (pages start at 1).
 """
 from __future__ import annotations
@@ -36,8 +37,22 @@ def parse_auctions(data: dict) -> list[Auction]:
     return out
 
 
-def is_bankruptcy_auction(a: Auction, is_bankruptcy) -> bool:
-    return "FAILL" in a.kind.upper() or is_bankruptcy(f"{a.title} {a.description}")
+DEFAULT_TYPES = ["FAILLISEMENT", "DRZ"]  # bankruptcy (their spelling) + Domeinen Roerende Zaken
+
+# Buyer's costs from onlineveilingmeester.nl/nl/content/veilingkosten-voor-de-koper (lots up to €10.000):
+#   VAT items: 17% premium + 21% VAT on bid and premium; margin-scheme items: 21% premium incl. VAT, no VAT on bid.
+#   Domeinen Roerende Zaken: 10% premium for VAT items, 12.1% for margin-scheme items.
+RATES = {  # (auction is DRZ, lot has VAT) -> (premium, vat)
+    (False, True): (0.17, 0.21), (False, False): (0.21, 0.0),
+    (True, True): (0.10, 0.21), (True, False): (0.121, 0.0),
+}
+
+
+def wanted_auction(a: Auction, is_bankruptcy, types: list[str]) -> bool:
+    kind = a.kind.upper()
+    if any(t.upper()[:5] in kind for t in types):  # "FAILL" also catches the correct spelling
+        return True
+    return is_bankruptcy(f"{a.title} {a.description}")
 
 
 def parse_lot(k: dict, auction: Auction) -> Lot:
@@ -46,6 +61,8 @@ def parse_lot(k: dict, auction: Auction) -> Lot:
         bid = k.get("openingsBod")
     images = k.get("imageList") or []
     volg = k.get("volgNummer") or k.get("id")
+    has_vat = k.get("btwPercentage") != 0  # 0 = margin scheme (no VAT on the bid)
+    premium, vat = RATES[(auction.kind.upper() == "DRZ", has_vat)]
     return Lot(
         site=SITE,
         lot_id=str(k.get("id")),
@@ -53,18 +70,21 @@ def parse_lot(k: dict, auction: Auction) -> Lot:
         url=f"{BASE}/nl/veilingen/{auction.auction_id}/kavels/{volg}",
         current_bid=float(bid) if isinstance(bid, (int, float)) else None,
         closes_at=from_iso(k.get("sluitingsDatumISO")) or auction.closes_at,
-        auction_title=auction.title,
+        auction_title=("Domeinen · " + auction.title) if auction.kind.upper() == "DRZ" else auction.title,
         image=f"{BASE}/images/original/{quote(images[0])}" if images else None,
         bids=k.get("aantalBiedingen"),
         extra_fee=float(k.get("handelingskosten") or 0),
+        premium=premium,
+        vat=vat,
     )
 
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
     data = ctx.http.json(f"{BASE}/rest/nl/veilingen?status=open&domein=ONLINEVEILINGMEESTER")
     auctions = parse_auctions(data)
-    bankrupt = [a for a in auctions if is_bankruptcy_auction(a, ctx.is_bankruptcy)]
-    log.info("onlineveilingmeester: %d auctions, %d bankruptcy", len(auctions), len(bankrupt))
+    types = ctx.settings.get("auction_types") or DEFAULT_TYPES
+    bankrupt = [a for a in auctions if wanted_auction(a, ctx.is_bankruptcy, types)]
+    log.info("onlineveilingmeester: %d auctions, %d bankruptcy/Domeinen", len(auctions), len(bankrupt))
     lots: dict[str, Lot] = {}
     for a in bankrupt:
         for page in range(1, ctx.max_pages + 1):

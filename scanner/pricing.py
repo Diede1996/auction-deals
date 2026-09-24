@@ -2,12 +2,14 @@
 
 The watchlist keyword alone is often too broad ("macbook" covers €150 to €3.000 models), so the
 lot title is used to make the search more specific: the matched keyword plus up to three
-distinctive words from the title ("thinkpad" + "lenovo t580 i5"). If that finds too few
-comparable listings, words are dropped one at a time until enough listings are found.
+distinctive words from the title ("thinkpad" + "t580 i5 8gb"). If that finds too few comparable
+listings, words are dropped one at a time until enough listings are found, but a single brand
+word ("hilti") is never used on its own.
 """
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import asdict
 from datetime import datetime, timedelta
 
@@ -23,7 +25,7 @@ NOISE = set("""
 met zonder en de het een van voor in op tot aan bij of als uit incl inclusief excl exclusief
 with and the for of to from new nieuw nieuwe gebruikt used zgan zga ongebruikt
 partij diverse div divers kavel lot set stuks stuk st pcs x cm mm m kg gr g l ltr liter v w watt
-gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen
+gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen maat size
 zwart wit grijs zilver blauw rood groen black white grey gray silver blue red
 """.split())
 
@@ -33,7 +35,7 @@ def useful_tokens(title: str) -> list[tuple[int, str]]:
     raw = normalize(title).split()
     out, seen = [], set()
     for i, tok in enumerate(raw):
-        if tok in NOISE or tok in seen:
+        if tok in NOISE or tok in seen or re.fullmatch(r"\d+x|x\d+", tok):  # "3x" = quantity
             continue
         if tok.isdigit():
             prev = raw[i - 1] if i else ""
@@ -62,8 +64,13 @@ def candidate_queries(item: WatchItem, lot: Lot, extra_words: int = 3) -> list[s
     after = [t for i, t in tokens if i > pos]
     before = [t for i, t in tokens if i <= pos]
     extras = (after + before)[:extra_words]
+    # A brand or category ("hilti", "hugo boss", "bosch professional", "monitor") is not a product:
+    # searching for it alone compares a tripod with batteries and anchors. Keep at least one extra
+    # word from the title, unless the keyword already names a model ("playstation 5", "ps5").
+    specific = any(ch.isdigit() for ch in "".join(base_tokens))
+    lowest = 0 if specific else 1
     queries = []
-    for n in range(len(extras), -1, -1):
+    for n in range(len(extras), lowest - 1, -1):
         q = " ".join(base_tokens + extras[:n])
         if q not in queries:
             queries.append(q)
@@ -117,6 +124,8 @@ class PriceFinder:
         if not self.enabled or item.market_price is not None:
             return None
         queries = candidate_queries(item, lot)
+        if not queries:  # title has nothing beyond a brand name: no reliable comparison possible
+            return None
         key = marktplaats.cache_key(queries[0], item.exclude)
         entry = self.cache.get(key)
         if entry and self._age(entry) <= timedelta(days=self.cache_days):
@@ -126,7 +135,7 @@ class PriceFinder:
 
         plan = [queries[0]]
         if len(queries) > 1:
-            plan.append(queries[-2] if len(queries) > 2 else queries[-1])
+            plan.append(queries[-1])  # the broadest search that is still specific enough
         est = None
         for i, query in enumerate(plan):
             if i and self.lookups_left <= 0 and query not in self._results:

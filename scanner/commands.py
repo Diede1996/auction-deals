@@ -3,7 +3,7 @@
 /add playstation 5 | ps5 -controller -game max=250
 /remove 2            (or /remove playstation 5)
 /list
-/return 30
+/sellat 50
 /minprofit 25
 /scan                (handled in bot.py: starts an extra scan)
 /status
@@ -19,7 +19,7 @@ from .telegram import attr, esc
 from .util import fmt_eur, normalize
 
 HELP = """<b>Auction deal bot</b>
-Every morning I check 5 auction sites for bankruptcy lots that match your watchlist and send you a summary.
+Every morning I check 4 auction sites for bankruptcy, business-closure and Domeinen lots that match your watchlist and send you a summary.
 
 <b>/add</b> <i>item</i> – watch an item. Words after <b>-</b> are excluded, options go at the end:
 <code>/add playstation 5 | ps5 -controller -game max=250</code>
@@ -31,8 +31,8 @@ Every morning I check 5 auction sites for bankruptcy lots that match your watchl
 
 <b>/list</b> – show the watchlist
 <b>/remove</b> <i>number or name</i> – stop watching an item
-<b>/return</b> <i>percent</i> – the return the suggested max bids aim for, e.g. <code>/return 30</code>
-<b>/minprofit</b> <i>amount</i> – and at least this many euros profit per lot
+<b>/sellat</b> <i>percent</i> – what you expect to sell for, as % of the Marktplaats median, e.g. <code>/sellat 50</code>
+<b>/minprofit</b> <i>amount</i> – the max bid always leaves at least this much profit, e.g. <code>/minprofit 25</code>
 <b>/scan</b> – check the auction sites now instead of waiting for tomorrow (max 3 times a day)
 <b>/dashboard</b> – link to your list of lots
 <b>/status</b> – when the last scan ran and which sites worked
@@ -108,8 +108,8 @@ def handle(text: str, watchlist: dict, status_text: str, dashboard_url: str | No
     if cmd == "/list":
         if not items:
             return ("Your watchlist is empty. Add something with /add", False)
-        target = float(settings.get("target_return", settings.get("min_margin", 0.30)))
-        head = (f"<b>Watchlist</b> (max bids aim for a {target:.0%} return and at least "
+        sell = float(settings.get("resale_factor", 0.85))
+        head = (f"<b>Watchlist</b> (max bids for selling at {sell:.0%} of the Marktplaats median with at least "
                 f"{fmt_eur(float(settings.get('min_profit', 25)))} profit)\n\n")
         return (head + "\n".join(describe(i + 1, it) for i, it in enumerate(items)), False)
 
@@ -138,14 +138,19 @@ def handle(text: str, watchlist: dict, status_text: str, dashboard_url: str | No
         watchlist["items"] = [it.to_dict() for it in items]
         return (f"🗑 Removed <b>{esc(removed.name)}</b>", True)
 
-    if cmd in ("/return", "/target"):
+    if cmd in ("/sellat", "/sell"):
         value = _number(args)
-        if value is None or not 0 <= value <= 500:
-            return ("Send a percentage, e.g. <code>/return 30</code> for a 30% return on what you pay.", False)
-        watchlist.setdefault("settings", {})["target_return"] = round(value / 100, 4)
-        watchlist["settings"].pop("min_margin", None)
-        return (f"✅ Suggested max bids now aim for a <b>{value:g}% return</b>. "
+        if value is None or not 5 <= value <= 200:
+            return ("Send a percentage, e.g. <code>/sellat 50</code> if you expect to get half the Marktplaats median.", False)
+        watchlist.setdefault("settings", {})["resale_factor"] = round(value / 100, 4)
+        for old in ("target_return", "min_margin"):
+            watchlist["settings"].pop(old, None)
+        return (f"✅ Max bids and margins now assume you sell at <b>{value:g}% of the Marktplaats median</b>. "
                 "The dashboard uses it from the next scan; you can also try other values there right away.", True)
+
+    if cmd in ("/return", "/target"):
+        return ("The target return setting is gone. Max bids now leave your minimum profit (/minprofit) when you "
+                "sell at your chosen share of the median (/sellat).", False)
 
     if cmd == "/minprofit":
         value = _number(args)

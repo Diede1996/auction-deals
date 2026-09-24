@@ -30,6 +30,7 @@ class Lot:
     bids: int | None = None
     extra_fee: float = 0.0  # fixed per-lot costs reported by the site (excl. VAT)
     premium: float | None = None  # per-lot buyer's premium if the site reports it (0.16 = 16%)
+    vat: float | None = None  # per-lot VAT on bid + premium if it differs from the site default (0 = margin scheme)
 
     @property
     def key(self) -> str:

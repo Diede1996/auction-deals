@@ -63,15 +63,18 @@ def test_candidate_queries_from_lot_title():
         return candidate_queries(WatchItem(name="x", keywords=keywords), Lot("s", "1", title, "u", 1, None))
 
     assert q(["thinkpad"], 'Lenovo - ThinkPad T580 - I5 / 8GB / 256GB / 15,3" Laptop') == [
-        "thinkpad t580 i5 8gb", "thinkpad t580 i5", "thinkpad t580", "thinkpad"]
+        "thinkpad t580 i5 8gb", "thinkpad t580 i5", "thinkpad t580"]
     assert q(["iphone"], "Apple iPhone 13 Pro 256 GB zwart") == [
-        "iphone 13 pro apple", "iphone 13 pro", "iphone 13", "iphone"]
+        "iphone 13 pro apple", "iphone 13 pro", "iphone 13"]
+    # a specific keyword may be used on its own
     assert q(["playstation 5", "ps5"], "Sony PlayStation 5 Slim 1TB") == [
         "playstation 5 slim 1tb sony", "playstation 5 slim 1tb", "playstation 5 slim", "playstation 5"]
     assert q(["dyson"], "2 x Dyson V15 Detect stofzuiger 60 cm") == [
-        "dyson v15 detect stofzuiger", "dyson v15 detect", "dyson v15", "dyson"]
-    assert q(["festool"], "Festool TS 55 invalzaag") == ["festool ts 55 invalzaag", "festool ts 55", "festool ts",
-                                                         "festool"]
+        "dyson v15 detect stofzuiger", "dyson v15 detect", "dyson v15"]
+    # a brand keyword never on its own: this is the lot that was compared with Hilti batteries and anchors
+    assert q(["hilti"], "Hilti Meetstatief PUA 25") == ["hilti meetstatief pua 25", "hilti meetstatief pua",
+                                                        "hilti meetstatief"]
+    assert q(["hilti"], "Hilti") == []
     custom = WatchItem(name="PS5", keywords=["ps5"], marktplaats_query="playstation 5 console")
     assert candidate_queries(custom, Lot("s", "1", "PS5", "u", 1, None)) == ["playstation 5 console"]
 
@@ -115,6 +118,26 @@ def test_second_search_only_when_the_first_finds_too_little():
     assert est.query == "dyson v15" and est.count == 5
 
 
+def test_brand_word_alone_is_never_a_comparison():
+    """Marktplaats search is fuzzy: "hilti meetstatief pua 25" also returns other Hilti products."""
+    mixed = [mp_listing(t, c) for t, c in [
+        ("Hilti X-FB 20 C27 leidingbeugels", 3500), ("Hilti Doorslijpschijf AC-D", 5000),
+        ("Battery Hilti SFB150 SFB155", 7100), ("Battery Hilti SFB180 SFB185", 8100),
+        ("Hilti PUA 36 statief", 10000), ("Hilti DWP 10 Drukcontainer", 17500),
+        ("Hilti HSL4 M16 Zwaarlastankers", 24000), ("Hilti DC 230-S doorslijpmachine", 45000)]]
+    calls = []
+
+    def search(m, u, kw):
+        calls.append(u)
+        return {"listings": mixed}
+
+    finder = PriceFinder(FakeHttp([(url_has("marktplaats"), search)]), {}, NOW)
+    est = finder.for_lot(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti Meetstatief PUA 25", "u", 20, None))
+    assert est is None  # no price is better than a wrong one
+    assert len(calls) == 2  # "hilti meetstatief pua 25", then "hilti meetstatief"
+    assert "meetstatief" in calls[1] and "pua" not in calls[1]
+
+
 def test_block_stops_all_lookups_and_uses_saved_prices():
     calls = []
 
@@ -145,7 +168,7 @@ def test_price_finder_survives_errors():
         raise RuntimeError("HTTP 403")
 
     finder = PriceFinder(FakeHttp([(url_has("marktplaats"), boom)]), {}, NOW)
-    assert finder.for_lot(WatchItem(name="x", keywords=["x"]), Lot("s", "1", "x y", "u", 1, None)) is None
+    assert finder.for_lot(WatchItem(name="iPad", keywords=["ipad"]), Lot("s", "1", "iPad Air 5", "u", 1, None)) is None
     assert finder.errors >= 1
 
 
@@ -155,22 +178,25 @@ def test_costs_and_verdicts():
     assert total_cost(200, fees, lot) == pytest.approx(200 * 1.22 * 1.21)
 
     est = marktplaats.PriceEstimate(median=500, low=450, high=540, count=7, query="playstation 5 slim")
-    settings = Settings(target_return=0.30, min_profit=50, resale_factor=0.85)
+    settings = Settings(min_profit=50, resale_factor=0.85)
     ps5 = WatchItem(name="PS5", keywords=["ps5"])
     v = evaluate(ps5, lot, fees, settings, est)
-    # resale 425; 30% return caps the total at 425/1.3 = 326.92 (tighter than 425-50) -> bid 221.47
-    assert v.is_deal and v.max_bid == 221
+    # sell at 85% of 500 = 425; keep at least 50 profit -> pay at most 375 -> bid 375 / 1.21 / 1.22 = 254.0
+    assert v.is_deal and v.max_bid == 254
     assert v.profit == pytest.approx(425 - 295.24, abs=0.01)
     assert v.margin == pytest.approx((425 - 295.24) / 295.24, abs=0.001)
-    # paying the max bid really gives the target return
-    pay = total_cost(v.max_bid, fees, lot)
-    assert (425 - pay) / pay >= 0.30
-    # a higher target return lowers the max bid
-    assert evaluate(ps5, lot, fees, Settings(target_return=0.6, min_profit=50), est).max_bid < 221
-    # min profit wins for cheap items: resale 42.5 - 25 profit leaves at most 17.50 total
+    # at the max bid the margin is (just) the minimum profit, and it's reported in euros and %
+    assert v.profit_at_max == pytest.approx(425 - 254 * 1.22 * 1.21, abs=0.01) and v.profit_at_max >= 50
+    assert v.margin_at_max == pytest.approx(v.profit_at_max / (254 * 1.22 * 1.21), abs=0.001)
+    # selling at only 50% of the median: max bid drops below the current bid
+    half = evaluate(ps5, lot, fees, Settings(min_profit=50, resale_factor=0.5), est)
+    assert half.max_bid == 135 and not half.is_deal and half.profit < 0
+    # a higher minimum profit lowers the max bid
+    assert evaluate(ps5, lot, fees, Settings(min_profit=100), est).max_bid < 254
+    # cheap items: 85% of 50 = 42.50 - 25 profit leaves at most 17.50 total
     cheap = marktplaats.PriceEstimate(median=50, low=45, high=55, count=5, query="x")
     small = Lot("pjb", "3", "PS5 game", "u", 5.0, None)
-    assert evaluate(ps5, small, fees, Settings(target_return=0.3, min_profit=25), cheap).max_bid == 11
+    assert evaluate(ps5, small, fees, Settings(min_profit=25), cheap).max_bid == 11
     # current bid above the max bid -> not a deal
     expensive = Lot("pjb", "2", "PlayStation 5 slim", "u", 260.0, None)
     assert not evaluate(ps5, expensive, fees, settings, est).is_deal
@@ -184,5 +210,6 @@ def test_costs_and_verdicts():
     # manual market price
     manual = WatchItem(name="x", keywords=["x"], market_price=1000)
     assert evaluate(manual, lot, fees, settings, None).is_deal
-    # older watchlists used min_margin
-    assert Settings.from_dict({"min_margin": 0.4}).target_return == 0.4
+    # older watchlists with target_return / min_margin still load; those keys are ignored
+    old = Settings.from_dict({"target_return": 0.3, "min_margin": 0.4, "resale_factor": 0.5})
+    assert old.resale_factor == 0.5 and old.min_profit == 25

@@ -1,14 +1,14 @@
 # Auction deal bot
 
-Once a day this bot checks Dutch **bankruptcy auctions** (faillissementsveilingen) for the items on your watchlist. It looks up what each match sells for on **Marktplaats** and puts everything on a **dashboard** with a **suggested maximum bid** for the return you want. Every morning you also get a short **Telegram** summary.
+Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-closure** (bedrijfsbeëindiging) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what each match sells for on **Marktplaats** and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you also get a short **Telegram** summary.
 
 | Site | What it checks |
 |---|---|
-| Troostwijk Auctions | Auctions with "faillissement" in the name, lots in the Netherlands |
-| ProVeiling | Faillissementsveilingen |
-| HNVI veilingen | Auctions held for a curator (bankruptcy trustee) |
-| Plaats Je Bod | Faillissementsveilingen |
-| Onlineveilingmeester | Auctions of type *Faillissement* |
+| Troostwijk Auctions | **Not scanned**: Troostwijk refuses automated visitors (HTTP 403). The dashboard has one-click Troostwijk searches for your watchlist, and Troostwijk's own "save search" sends you email alerts. |
+| ProVeiling | Faillissements- and bedrijfsbeëindigingsveilingen |
+| HNVI veilingen | Auctions held for a curator (bankruptcy trustee) and business closures |
+| Plaats Je Bod | Faillissements- and bedrijfsbeëindigingsveilingen |
+| Onlineveilingmeester | Auctions of type *Faillissement*, business closures, and *Domeinen Roerende Zaken* (government sales of seized goods and surplus, shown as "Domeinen · …"). Add `OVERHEID` in `config.yml` to include municipalities and water boards too. |
 
 It runs for free on GitHub, so your laptop can stay off. Each auction site is visited **once a day**, around 06:15, at about one page every 1.5 seconds.
 
@@ -64,18 +64,17 @@ Each row is a lot from a running bankruptcy auction that matches your watchlist:
 |---|---|
 | **Lot** | Title (click it to open the lot on the auction site), your watchlist item, site, location and auction name. **New** means it appeared since the last scan. |
 | **Closes** | Closing time in Dutch time, highlighted when it's within 24 hours |
-| **Current bid** | Bid at the time of the scan, what you would pay including premium and VAT, and the return at that price |
+| **Current bid** | Bid at the time of the scan, what you would pay including premium and VAT, and your **margin** at that price (in € and as a % of what you pay) |
 | **Marktplaats value** | Median asking price of comparable listings, with a small bar chart of how the prices are spread. *edit* lets you type your own value. |
-| **Suggested max bid** | The highest bid that still gives your target return. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
+| **Suggested max bid** | The highest bid that still leaves your minimum profit, with the margin you'd make at that bid. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
 | **Status** | ✓ *Room to bid* (current bid is below your max), ✕ *Above max*, or ? *Needs a price* (set a value yourself) |
 
 At the top you set:
 
-- **Target return**: the profit you want as a share of what you pay. With 30%, you pay at most €100 for something you expect to sell for €130.
-- **Minimum profit**: also at least this many euros per lot, so cheap items are worth the trip.
-- **You expect to sell at**: the share of the Marktplaats median you realistically get. Default 85%, because asking prices are higher than selling prices.
+- **You sell at**: the share of the Marktplaats median you expect to get. The default is 85%, because asking prices are higher than selling prices. Drag it to 50% to see your margin if you only get half the median.
+- **Minimum profit**: the suggested max bid always leaves at least this many euros.
 
-Every max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
+Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
 
 **Price spread.** Click the small bar chart (*22 listings ▾*) to open a histogram of all comparable Marktplaats asking prices. It marks the median and the price you expect to sell for, tells you how many listings ask less than that, and lists the cheapest listings with links. If most bars sit on the low side, many sellers undercut the median, so expect to sell lower or wait longer. Outliers, such as a €9.999 joke listing, are left out and named below the chart.
 
@@ -85,16 +84,16 @@ Every morning you get a summary like this:
 
 ```
 ☀️ Auction scan · Wed 23 Sep
-8 matching lots · 6 with room to bid · 3 new
-Max bids for a 30% return and at least €25 profit
+6 matching lots · 4 with room to bid · 1 new
+Max bids for selling at 85% of the Marktplaats median with at least €25 profit
 
 ⏰ Closing within 24 hours
-• Lenovo ThinkPad T580 i5 8GB 256GB
-   bid €100 → max €108 · Troostwijk · Wed 16:40
+• Laptop HP EliteBook 840 G5 i5 8GB
+   bid €85 → max €97 (margin €26) · HNVI · Fri 04:57
 
 🆕 New with room to bid
-• Festool TS 55 FEBQ-Plus invalzaag
-   bid €95 → max €183 · Troostwijk · Tue 07:40
+• Apple iMac 24 inch M1 8GB 256GB
+   bid €310 → max €409 (margin €25) · Plaats Je Bod · Tue 08:57
 
 📊 Open the dashboard
 ```
@@ -110,8 +109,8 @@ You manage your watchlist by sending the bot commands. It reads them every 15 mi
 | `/add rolex profit=500` | Minimum profit for this item only. |
 | `/add ps5 mp="playstation 5 disc edition"` | Use this exact Marktplaats search for the price. |
 | `/list` · `/remove 3` | Show the watchlist, or stop watching an item (by number or name). |
-| `/return 35` | Target return for the suggested max bids, in % |
-| `/minprofit 30` | Minimum profit per lot, in € |
+| `/sellat 50` | What you expect to sell for, as a % of the Marktplaats median |
+| `/minprofit 30` | The max bid always leaves at least this much profit, in € |
 | `/scan` | Scan now instead of waiting for tomorrow (at most 3 extra scans a day) |
 | `/dashboard` · `/status` · `/help` | Dashboard link, whether every site worked in the last scan, all commands |
 
@@ -126,14 +125,15 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
    | Site | Premium |
    |---|---|
    | ProVeiling | 16% |
-   | Onlineveilingmeester | 17% |
+   | Onlineveilingmeester | 17%; Domeinen lots 10%. Margin-scheme lots 21% (Domeinen 12.1%) incl. VAT, set per lot automatically. |
    | Troostwijk | 18%. This is an estimate, because Troostwijk sets it per auction. Check the lot page. |
    | HNVI | 19% |
    | Plaats Je Bod | 22% |
 
-2. **Marktplaats value**: the bot searches Marktplaats using the watchlist keyword plus up to three words from the lot title. The words after the keyword, usually the model, are kept longest. For example, "Lenovo ThinkPad T580 i5 8GB" is searched as `thinkpad t580 i5 8gb`. If fewer than 4 comparable listings turn up, it drops words until it finds enough. It skips wanted ads, defect or broken items, parts and accessories, removes outliers, and takes the median asking price.
-3. **Expected sale** = Marktplaats value × 85%.
-4. **Suggested max bid** = the highest bid where (expected sale − what you pay) ÷ what you pay is at least your target return, and the profit is at least your minimum. If you set `max=` for an item, it never goes above that either.
+2. **Marktplaats value**: the bot searches Marktplaats using the watchlist keyword plus up to three words from the lot title. The words after the keyword, usually the model, are kept longest. For example, "Lenovo ThinkPad T580 i5 8GB" is searched as `thinkpad t580 i5 8gb`. If fewer than 4 comparable listings turn up, it drops words until it finds enough. A brand keyword like `hilti` is never used on its own, because that would compare a tripod with batteries and anchors; the lot then shows *No Marktplaats price* and you can set a value yourself. It skips wanted ads, defect or broken items, parts and accessories, removes outliers, and takes the median asking price.
+3. **Sale price** = Marktplaats value × your sell percentage (85% by default).
+4. **Margin** = sale price − what you pay, also shown as a % of what you pay.
+5. **Suggested max bid** = the highest bid that still leaves your minimum profit. If you set `max=` for an item, it never goes above that either.
 
 ---
 
@@ -158,7 +158,8 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 | Dashboard link gives 404 | The first publish can take a few minutes. Check that the repository is public. |
 | A run fails at **Save** | Set **Settings → Actions → General → Workflow permissions** to **Read and write**. |
 | The bot doesn't react | Commands are read every 15 minutes, and GitHub sometimes starts scheduled runs late. Check that `TELEGRAM_CHAT_ID` is set. |
-| Too many or too few lots with room to bid | Change the target return (`/return`) or minimum profit (`/minprofit`), or add `-words` to exclude accessories. |
+| Too many or too few lots with room to bid | Change your sell percentage (`/sellat`) or minimum profit (`/minprofit`), or add `-words` to exclude accessories. |
+| A site shows "failed" on the dashboard | Send `/status` or open `data/state.json` on GitHub to see the error. *HTTP 403* means the site refuses automated visitors; turn it off in `config.yml`. |
 
 ## Running it on your own computer (optional)
 

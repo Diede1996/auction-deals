@@ -1,10 +1,10 @@
-"""Turn a matched lot into a buy decision: total cost, expected return, suggested maximum bid.
+"""Turn a matched lot into a buy decision: total cost, margin, suggested maximum bid.
 
     you pay     = (bid x (1 + premium) + fixed fees) x (1 + VAT)
-    resale      = Marktplaats median x resale_factor - selling costs
-    return      = (resale - you pay) / you pay
-    max bid     = highest bid where return >= target_return AND profit >= min_profit
-                  (and total <= your own max_price, if you set one for the item)
+    sale price  = Marktplaats median x resale_factor ("I sell at X% of the median") - selling costs
+    margin      = sale price - you pay, also shown as a % of what you pay
+    max bid     = highest bid that still leaves at least min_profit
+                  (and keeps the total <= your own max_price, if you set one for the item)
 """
 from __future__ import annotations
 
@@ -30,17 +30,14 @@ class Fees:
 
 @dataclass
 class Settings:
-    target_return: float = 0.30  # profit / what you pay; 0.30 = 30%
-    min_profit: float = 25.0  # at least this many euros, so cheap items are worth the effort
-    resale_factor: float = 0.85  # expect to sell at 85% of the Marktplaats median asking price
+    min_profit: float = 25.0  # the max bid always leaves at least this many euros profit
+    resale_factor: float = 0.85  # you sell at 85% of the Marktplaats median asking price
     selling_costs: float = 0.0  # e.g. shipping or listing costs per sale
 
     @classmethod
     def from_dict(cls, d: dict | None) -> "Settings":
-        d = d or {}
-        target = d.get("target_return", d.get("min_margin", 0.30))  # min_margin: older name
-        return cls(target_return=float(target), min_profit=float(d.get("min_profit", 25)),
-                   resale_factor=float(d.get("resale_factor", 0.85)),
+        d = d or {}  # older watchlists may still have target_return / min_margin; those are ignored
+        return cls(min_profit=float(d.get("min_profit", 25)), resale_factor=float(d.get("resale_factor", 0.85)),
                    selling_costs=float(d.get("selling_costs", 0)))
 
 
@@ -51,20 +48,29 @@ class Verdict:
     bid: float
     total_cost: float
     resale: float | None = None  # expected sale price
-    profit: float | None = None  # at the current bid
-    margin: float | None = None  # return at the current bid
+    profit: float | None = None  # margin in euros at the current bid
+    margin: float | None = None  # margin as a share of what you pay, at the current bid
     max_bid: float | None = None  # suggested maximum (auto)bid, whole euros
     max_total: float | None = None  # what you'd pay in total at the max bid
+    profit_at_max: float | None = None
+    margin_at_max: float | None = None
+
+
+def lot_rates(fees: Fees, lot: Lot) -> tuple[float, float]:
+    """(premium, vat) for this lot: the lot's own rates if the site reported them, else the site's."""
+    premium = lot.premium if lot.premium is not None else fees.premium
+    vat = lot.vat if lot.vat is not None else fees.vat
+    return premium, vat
 
 
 def total_cost(bid: float, fees: Fees, lot: Lot) -> float:
-    premium = lot.premium if lot.premium is not None else fees.premium
-    return (bid * (1 + premium) + fees.fixed + lot.extra_fee) * (1 + fees.vat)
+    premium, vat = lot_rates(fees, lot)
+    return (bid * (1 + premium) + fees.fixed + lot.extra_fee) * (1 + vat)
 
 
 def bid_for_total(total: float, fees: Fees, lot: Lot) -> float:
-    premium = lot.premium if lot.premium is not None else fees.premium
-    return (total / (1 + fees.vat) - fees.fixed - lot.extra_fee) / (1 + premium)
+    premium, vat = lot_rates(fees, lot)
+    return (total / (1 + vat) - fees.fixed - lot.extra_fee) / (1 + premium)
 
 
 def market_value(item: WatchItem, estimate: PriceEstimate | None) -> float | None:
@@ -86,7 +92,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         resale = market * settings.resale_factor - settings.selling_costs
         profit = resale - cost
         margin = profit / cost if cost > 0 else None
-        caps += [resale / (1 + settings.target_return), resale - min_profit]
+        caps.append(resale - min_profit)
     if item.max_price is not None:
         caps.append(item.max_price)
     if not caps:
@@ -94,6 +100,9 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
 
     max_total = min(caps)
     max_bid = max(0, math.floor(bid_for_total(max_total, fees, lot)))
+    pay_at_max = total_cost(max_bid, fees, lot)
+    profit_at_max = resale - pay_at_max if resale is not None else None
+    margin_at_max = profit_at_max / pay_at_max if profit_at_max is not None and pay_at_max > 0 else None
     ok = bid < max_bid
     if ok:
         reason = f"room to bid up to €{max_bid}"
@@ -101,4 +110,5 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         reason = "not profitable at any price"
     else:
         reason = f"current bid is above the suggested max €{max_bid}"
-    return Verdict(ok, reason, bid, cost, resale, profit, margin, float(max_bid), round(max_total, 2))
+    return Verdict(ok, reason, bid, cost, resale, profit, margin, float(max_bid), round(pay_at_max, 2),
+                   profit_at_max, margin_at_max)

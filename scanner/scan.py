@@ -6,9 +6,10 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlencode
 
 from . import dashboard
-from .evaluate import Fees, Settings, Verdict, evaluate, market_value
+from .evaluate import Fees, Settings, Verdict, evaluate, lot_rates, market_value
 from .http import Http
 from .marktplaats import PriceEstimate
 from .matching import bankruptcy_matcher, match_lots, search_terms
@@ -30,7 +31,8 @@ Row = tuple[WatchItem, Lot, Verdict, "PriceEstimate | None"]
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,
                only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
     """Scrape all enabled sites in parallel (one HTTP client per site). Returns (lots, report, requests)."""
-    is_bankruptcy = bankruptcy_matcher(config.get("bankruptcy_keywords") or ["faillissement", "failliet", "curator"])
+    keywords = config.get("auction_keywords") or config.get("bankruptcy_keywords") or ["faillissement", "curator"]
+    is_bankruptcy = bankruptcy_matcher(keywords)
     terms = search_terms(items)
     health = state.setdefault("health", {})
     site_cache = state.setdefault("site_cache", {})
@@ -85,8 +87,9 @@ def health_messages(state: dict, warn_after: int = 2) -> list[str]:
 def _line(item: WatchItem, lot: Lot, v: Verdict) -> str:
     local = lot.closes_at.astimezone(AMS) if lot.closes_at else None
     when = local.strftime("%a %H:%M") if local else "?"
+    margin = f" (margin {fmt_eur(v.profit_at_max)})" if v.profit_at_max is not None else ""
     return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
-            f"   bid {fmt_eur(v.bid)} → max <b>{fmt_eur(v.max_bid)}</b> · {SITE_NAMES.get(lot.site, lot.site)} · {when}")
+            f"   bid {fmt_eur(v.bid)} → max <b>{fmt_eur(v.max_bid)}</b>{margin} · {SITE_NAMES.get(lot.site, lot.site)} · {when}")
 
 
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
@@ -96,7 +99,8 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
     head = [f"☀️ <b>Auction scan</b> · {day}",
             f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b> · "
             f"{sum(1 for r in rows if r[1].key in new_keys)} new",
-            f"<i>Max bids for a {settings.target_return:.0%} return and at least {fmt_eur(settings.min_profit)} profit</i>"]
+            f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
+            f"with at least {fmt_eur(settings.min_profit)} profit</i>"]
     parts = ["\n".join(head)] + list(notes or [])
     soon = [r for r in deals if r[1].closes_at and r[1].closes_at - now <= timedelta(hours=24)]
     fresh = [r for r in deals if r[1].key in new_keys and r not in soon]
@@ -106,7 +110,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         fresh.sort(key=lambda r: -(r[2].max_bid or 0) + (r[2].bid or 0))
         parts.append("🆕 <b>New with room to bid</b>\n" + "\n".join(_line(i, l, v) for i, l, v, _ in fresh[:per_section]))
     if not rows:
-        parts.append("Nothing on your watchlist is in a running bankruptcy auction today.")
+        parts.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction today.")
     elif not soon and not fresh:
         parts.append("Nothing new or closing soon with room to bid.")
     if url:
@@ -117,7 +121,8 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
 # ---------------------------------------------------------------- dashboard data
 
 def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settings, site_fees: dict[str, Fees],
-                   new_keys: set[str], seen: dict, now: datetime) -> dict:
+                   new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None) -> dict:
+    items = items or []
     lots = []
     for item, lot, v, est in rows:
         fees = site_fees.get(lot.site, Fees())
@@ -129,7 +134,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "image": lot.image, "location": lot.location,
             "closes": lot.closes_at.isoformat() if lot.closes_at else None,
             "bid": v.bid, "bids": lot.bids,
-            "premium": lot.premium if lot.premium is not None else fees.premium, "vat": fees.vat,
+            "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
             "market": market, "marketSource": ("manual" if item.market_price is not None else
                                                "marktplaats" if est else None),
@@ -143,13 +148,22 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         })
     sites = [{"id": s, "name": SITE_NAMES.get(s, s), "ok": r.get("ok", False), "lots": r.get("lots", 0),
               "error": r.get("error", "")} for s, r in report.items()]
-    fees = [{"id": s, "name": SITE_NAMES.get(s, s), "premium": f.premium, "vat": f.vat}
-            for s, f in site_fees.items() if (config.get("sites") or {}).get(s, {}).get("enabled", True)]
+    site_cfg = config.get("sites") or {}
+    notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT"}
+    fees = [{"id": s, "name": SITE_NAMES.get(s, s), "premium": f.premium, "vat": f.vat, "note": notes.get(s, "")}
+            for s, f in site_fees.items() if site_cfg.get(s, {}).get("enabled", True)]
+    troostwijk = []
+    if site_cfg.get("troostwijk", {}).get("enabled", True) is False:
+        for item in items:
+            troostwijk.append({"item": item.name, "links": [
+                {"label": k, "url": "https://www.troostwijkauctions.com/nl/search?" +
+                 urlencode({"searchTerm": k, "countries": "nl"})} for k in item.keywords[:8]]})
     return {
         "generated": now.isoformat(),
-        "settings": {"target_return": settings.target_return, "min_profit": settings.min_profit,
+        "settings": {"min_profit": settings.min_profit,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
+        "troostwijk": troostwijk,
     }
 
 
@@ -173,7 +187,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
             lines.append(f"| {'✅' if v.is_deal else ''} | {item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
                          f"{fmt_eur(v.bid)} | {market} | {fmt_eur(v.max_bid) if v.max_bid is not None else '–'} | {closes} |")
     else:
-        lines.append("Nothing on your watchlist is in a running bankruptcy auction right now.")
+        lines.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction right now.")
     text = "\n".join(lines) + "\n"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -250,7 +264,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             del seen[key]
 
     # 4. dashboard + report
-    data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now)
+    data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
     text = write_report(root / "data" / "latest.md", rows, report, now, url)

@@ -73,3 +73,16 @@ def test_bankruptcy_matcher():
     assert is_b("Restaurant ‘Havenkwartier by Waggie’ uit faillissement")
     assert not is_b("Bedrijfsbeëindiging hoveniersbedrijf")
     assert not is_b("Verzendveiling: Huishoudelijke artikelen")
+
+
+def test_shipped_config_includes_business_closures():
+    from pathlib import Path
+    import yaml
+    config = yaml.safe_load((Path(__file__).resolve().parents[1] / "config.yml").read_text())
+    is_b = bankruptcy_matcher(config["auction_keywords"])
+    assert is_b("Bedrijfsbeëindiging hoveniersbedrijf Valkenswaard")
+    assert is_b("Bedrijfsbeeindiging: Showroomkeukens en inbouwapparatuur")
+    assert is_b("Veiling van domeinnamen wegens algehele liquidatie van Curatoren.nl B.V.")
+    assert is_b("Faillissementsveiling horeca-apparatuur")
+    assert not is_b("Verzendveiling: Huishoudelijke artikelen, audio, witgoed")
+    assert not is_b("Thuisbezorgveiling hardhout, douglas, vuren en overig")

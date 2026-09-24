@@ -1,8 +1,8 @@
 # Technical settings. Your watchlist and profit targets live in watchlist.yml.
 
-# An auction counts as a bankruptcy sale when its title or description contains one of these.
-# Add "executie" to also include forced sales (executieveilingen).
-bankruptcy_keywords:
+# An auction is included when its title or description contains one of these words
+# (bankruptcy and business-closure sales). Add "executie" to also include forced sales (executieveilingen).
+auction_keywords:
   - faillissement
   - failliet
   - faillite
@@ -10,6 +10,13 @@ bankruptcy_keywords:
   - bankrupt
   - insolvent
   - insolventie
+  - bedrijfsbeëindiging
+  - bedrijfsbeeindiging
+  - beëindiging bedrijfsactiviteiten
+  - bedrijfsopheffing
+  - opheffingsuitverkoop
+  - liquidatie
+  - stopzetting
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
@@ -17,7 +24,9 @@ bankruptcy_keywords:
 #   fixed_fee  fixed costs per lot (excl. VAT), if the site charges them
 sites:
   troostwijk:
-    enabled: true
+    # Off: Troostwijk answers GitHub's servers with "403 Forbidden", so it refuses automated visitors.
+    # Use Troostwijk's own "save search" option on their website to get notified about your items instead.
+    enabled: false
     countries: [nl]      # add be, de, ... to include lots in other countries
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
     vat: 0.21
@@ -36,7 +45,11 @@ sites:
     vat: 0.21
   onlineveilingmeester:
     enabled: true
-    premium: 0.17        # 17% + VAT for VAT items up to €10.000
+    # Which auctions to include besides ones with a bankruptcy word in the name:
+    #   FAILLISEMENT = bankruptcy, DRZ = Domeinen Roerende Zaken (government sales: seized goods, surplus),
+    #   OVERHEID = municipalities, provinces and water boards. Add OVERHEID to the list to include those too.
+    auction_types: [FAILLISEMENT, DRZ]
+    premium: 0.17        # 17% + VAT for VAT items; set per lot: DRZ 10%, margin-scheme items 21%/12.1% incl. VAT
     vat: 0.21
 
 # The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)

@@ -133,17 +133,43 @@ def test_plaatsjebod():
 
 def test_onlineveilingmeester():
     no_bid = dict(OVM_LOT, id=1898105, hoogsteBod=0, openingsBod=10, volgNummer="7", naam="Fauteuil")
+    watch = dict(OVM_LOT, id=1900001, naam="Heren polshorloge Richard Mille RM 61-01", hoogsteBod=50000,
+                 volgNummer="1", btwPercentage=0)  # margin scheme
     http = FakeHttp([
         (url_has("/rest/nl/veilingen?"), OVM_AUCTIONS),
-        (url_has("/kavels?page=1"), {"content": [OVM_LOT, no_bid], "last": True}),
+        (url_has("/veilingen/9527/kavels?page=1"), {"content": [OVM_LOT, no_bid], "last": True}),
+        (url_has("/veilingen/9472/kavels?page=1"), {"content": [watch], "last": True}),
     ])
-    lots = onlineveilingmeester.fetch_lots(ctx(http))
-    assert len(lots) == 2
-    assert all("/veilingen/9527/kavels" in u for _, u, _ in http.calls[1:])  # only the FAILLISEMENT auction
-    bank = lots[0]
+    lots = {l.lot_id: l for l in onlineveilingmeester.fetch_lots(ctx(http))}
+    assert set(lots) == {"1898104", "1898105", "1900001"}
+    assert not any("/veilingen/9168/" in u for _, u, _ in http.calls)  # a normal auction is skipped
+    bank = lots["1898104"]
     assert bank.title == "3-zits Design bank, Dutch New Design, Lefkas"
-    assert bank.current_bid == 76.0
+    assert bank.current_bid == 76.0 and (bank.premium, bank.vat) == (0.17, 0.21)
     assert bank.url == "https://onlineveilingmeester.nl/nl/veilingen/9527/kavels/6"
     assert bank.image == "https://onlineveilingmeester.nl/images/original/2026-09-08/c13bb75a-3718-4020-ba10-c2de0a6222e1/74084.jpg"
     assert bank.closes_at == datetime(2026, 9, 30, 17, 46, 24, tzinfo=timezone.utc)
-    assert lots[1].current_bid == 10.0
+    assert lots["1898105"].current_bid == 10.0
+    # Domeinen Roerende Zaken lot, margin scheme: 12.1% premium incl. VAT
+    drz = lots["1900001"]
+    assert drz.url == "https://onlineveilingmeester.nl/nl/veilingen/9472/kavels/1"
+    assert (drz.premium, drz.vat) == (0.121, 0.0)
+
+
+def test_onlineveilingmeester_types_are_configurable():
+    http = FakeHttp([
+        (url_has("/rest/nl/veilingen?"), OVM_AUCTIONS),
+        (url_has("/kavels?page=1"), {"content": [OVM_LOT], "last": True}),
+    ])
+    onlineveilingmeester.fetch_lots(ctx(http, settings={"auction_types": ["FAILLISEMENT"]}))
+    assert not any("/veilingen/9472/" in u for _, u, _ in http.calls)  # DRZ switched off
+
+
+def test_drz_fees_in_the_math():
+    from scanner.evaluate import Fees, total_cost
+    from scanner.models import Lot
+    vat_lot = Lot("onlineveilingmeester", "1", "x", "u", 100.0, None, premium=0.10, vat=0.21)
+    margin_lot = Lot("onlineveilingmeester", "2", "x", "u", 100.0, None, premium=0.121, vat=0.0)
+    site = Fees(premium=0.17, vat=0.21)
+    assert round(total_cost(100, site, vat_lot), 2) == 133.10  # 100 x 1.10 x 1.21
+    assert round(total_cost(100, site, margin_lot), 2) == 112.10  # 100 x 1.121

@@ -133,6 +133,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .big { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
 .small { font-size: 12.5px; color: var(--text-2); margin-top: 2px; }
 .small.soon { color: var(--warning-text); font-weight: 600; }
+.small.loss { color: var(--critical-text); }
 .maxline { display: flex; align-items: center; gap: 8px; }
 .copy {
   border: 1px solid var(--border-strong); background: var(--surface); border-radius: 7px; padding: 3px 8px;
@@ -158,6 +159,8 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border: 1px solid var(--border-strong); border-radius: 7px; background: var(--surface); color: var(--text-2);
   font-size: 12.5px; cursor: pointer;
 }
+.spread-btn { flex-wrap: wrap; max-width: 100%; text-align: left; }
+.spread-btn .lbl { white-space: nowrap; }
 .spread-btn:hover, .spread-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
 .mini { display: block; flex: none; }
 .mini rect { fill: var(--bar); }
@@ -193,6 +196,12 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .listings td.price { white-space: nowrap; font-weight: 600; font-variant-numeric: tabular-nums; }
 .listings td.kind { white-space: nowrap; color: var(--text-3); font-size: 12px; }
 .listings .below td.price::after { content: " ▼"; font-size: 10px; color: var(--text-3); }
+.tw { margin-top: 16px; padding: 16px; }
+.tw h2 { font-size: 15px; margin: 0 0 4px; }
+.tw .small { max-width: 820px; margin: 0 0 10px; }
+.tw-row { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: baseline; padding: 6px 0; border-top: 1px solid var(--border); }
+.tw-row strong { min-width: 150px; font-size: 13.5px; }
+.tw-row a { font-size: 13.5px; }
 .empty { padding: 36px 16px; text-align: center; color: var(--text-2); margin: 0; }
 footer { color: var(--text-2); font-size: 13.5px; margin: 28px 0 40px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 footer h2 { font-size: 14px; color: var(--text); margin: 0 0 6px; }
@@ -235,24 +244,20 @@ footer td { padding: 2px 14px 2px 0; }
   <section class="panel controls" aria-label="Targets and filters">
     <div class="targets">
       <div class="field">
-        <label for="rNum">Target return</label>
+        <label for="factor">You sell at</label>
         <div class="inline">
-          <input type="range" id="r" min="0" max="100" step="5" aria-label="Target return slider">
-          <input type="number" id="rNum" min="0" max="500" step="1">
-          <span class="unit">%</span>
+          <input type="range" id="factorRange" min="20" max="120" step="5" aria-label="Sell price as % of the Marktplaats median">
+          <input type="number" id="factor" min="10" max="200" step="5">
+          <span class="unit">% of the Marktplaats median</span>
         </div>
       </div>
       <div class="field">
         <label for="minProfit">Minimum profit</label>
         <div class="inline"><span class="unit">€</span><input type="number" id="minProfit" min="0" step="5"></div>
       </div>
-      <div class="field">
-        <label for="factor">You expect to sell at</label>
-        <div class="inline"><input type="number" id="factor" min="10" max="150" step="5"><span class="unit">% of the Marktplaats median</span></div>
-      </div>
       <button type="button" class="btn-link" id="reset">Reset to defaults</button>
     </div>
-    <p class="help">The <strong>suggested max bid</strong> is the highest bid where you still make your target return and minimum profit after the buyer's premium and VAT. Set it as your automatic bid on the auction site.</p>
+    <p class="help">Every lot shows your <strong>margin</strong> if you sell at this share of the median: what's left after the bid, buyer's premium and VAT, in euros and as a % of what you pay. The <strong>suggested max bid</strong> is the highest bid that still leaves your minimum profit. Set it as your automatic bid on the auction site.</p>
     <div class="filters">
       <input type="search" id="q" placeholder="Search lots" aria-label="Search lots">
       <select id="item" aria-label="Item"><option value="">All items</option></select>
@@ -260,7 +265,7 @@ footer td { padding: 2px 14px 2px 0; }
       <select id="sort" aria-label="Sort by">
         <option value="closing">Closing soonest</option>
         <option value="headroom">Most room to bid</option>
-        <option value="return">Highest return now</option>
+        <option value="return">Highest margin now</option>
         <option value="maxbid">Highest max bid</option>
         <option value="new">Newest first</option>
       </select>
@@ -279,12 +284,18 @@ footer td { padding: 2px 14px 2px 0; }
     <p class="empty" id="empty" hidden></p>
   </section>
 
+  <section class="panel tw" id="troostwijk" hidden aria-labelledby="tw-title">
+    <h2 id="tw-title">Troostwijk: check it yourself</h2>
+    <p class="small">Troostwijk blocks automated visitors, so the bot doesn't scan it. These links open Troostwijk's own search for your watchlist in the Netherlands. Look for "faillissement" or "bedrijfsbeëindiging" in the auction name. Tip: save a search on Troostwijk to get their email alerts.</p>
+    <div id="tw-links"></div>
+  </section>
+
   <footer>
     <div>
       <h2>How the numbers work</h2>
       <p><strong>You pay</strong> = bid + buyer's premium, plus VAT on both, plus any fixed fee per lot.</p>
       <p><strong>Resale</strong> = Marktplaats median asking price × your sell percentage. Click “listings” to see the Marktplaats listings it's based on. Asking prices are not sold prices.</p>
-      <p><strong>Return</strong> = (resale − what you pay) ÷ what you pay.</p>
+      <p><strong>Margin</strong> = resale − what you pay, and as a % of what you pay.</p>
       <p>Bids are from the morning scan. Always check the live bid, the lot description, pickup date and the auction terms before bidding.</p>
     </div>
     <div>
@@ -305,11 +316,11 @@ footer td { padding: 2px 14px 2px 0; }
     set: function (k, v) { try { localStorage.setItem("auctiondeals." + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
   };
   var defaults = {
-    r: Math.round((DATA.settings.target_return || 0.3) * 100),
     minProfit: DATA.settings.min_profit != null ? DATA.settings.min_profit : 25,
     factor: Math.round((DATA.settings.resale_factor || 0.85) * 100)
   };
   var S = Object.assign({}, defaults, store.get("settings", {}));
+  delete S.r;  /* the target return setting was removed */
   var values = store.get("values", {});
   var hidden = store.get("hidden", {});
   var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "" }, store.get("ui", {}));
@@ -359,7 +370,7 @@ footer td { padding: 2px 14px 2px 0; }
     var bid = lot.bid || 0, costNow = cost(bid), resale = null, caps = [];
     if (market) {
       resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
-      caps.push(resale / (1 + S.r / 100), resale - minProfit);
+      caps.push(resale - minProfit);
     }
     if (lot.itemMaxPrice != null) caps.push(lot.itemMaxPrice);
     var out = { market: market, source: source, costNow: costNow, resale: resale,
@@ -383,7 +394,7 @@ footer td { padding: 2px 14px 2px 0; }
   function renderHeader() {
     var ageH = (Date.now() - generated.getTime()) / 3600000;
     document.getElementById("sub").textContent =
-      "Bankruptcy auctions · last scan " + dtf.format(generated) + (ageH >= 1 ? " (" + timeLeft(Date.now() - generated.getTime()) + " ago)" : "");
+      "Bankruptcy, closure & Domeinen auctions · last scan " + dtf.format(generated) + (ageH >= 1 ? " (" + timeLeft(Date.now() - generated.getTime()) + " ago)" : "");
     var sites = document.getElementById("sites");
     sites.textContent = "";
     DATA.sites.forEach(function (s) {
@@ -410,9 +421,25 @@ footer td { padding: 2px 14px 2px 0; }
   fillSelect("item", items.map(function (i) { return { value: i, label: i }; }), ui.item);
   fillSelect("site", DATA.sites.filter(function (s) { return s.id !== "marktplaats"; }).map(function (s) { return { value: s.id, label: s.name }; }), ui.site);
 
+  if (DATA.troostwijk && DATA.troostwijk.length) {
+    var tw = document.getElementById("tw-links");
+    DATA.troostwijk.forEach(function (row) {
+      var line = el("div", { "class": "tw-row" }, el("strong", { text: row.item }));
+      row.links.forEach(function (l, i) {
+        var u = safeUrl(l.url);
+        if (!u) return;
+        if (i) line.append(el("span", { "class": "unit", "aria-hidden": "true", text: "·" }));
+        line.append(el("a", { href: u, target: "_blank", rel: "noopener", text: l.label + " ↗" }));
+      });
+      tw.append(line);
+    });
+    document.getElementById("troostwijk").hidden = false;
+  }
+
   var feeTable = document.getElementById("fees");
   DATA.fees.forEach(function (f) {
     feeTable.append(el("tr", null, el("td", { text: f.name }), el("td", { "class": "num", text: Math.round(f.premium * 100) + "% + " + Math.round(f.vat * 100) + "% VAT" })));
+    if (f.note) feeTable.append(el("tr", null, el("td"), el("td", { "class": "small", text: f.note })));
   });
 
   function renderKpis(rows) {
@@ -423,7 +450,7 @@ footer td { padding: 2px 14px 2px 0; }
     var noPrice = visible.filter(function (r) { return r.c.status === "noprice"; });
     var tiles = [
       { label: "Matching lots", value: visible.length, note: noPrice.length ? noPrice.length + " without a price yet" : "all priced" },
-      { label: "Room to bid", value: room.length, note: "at a " + S.r + "% return", primary: true },
+      { label: "Room to bid", value: room.length, note: "selling at " + S.factor + "% of median, ≥ " + money(S.minProfit) + " profit", primary: true },
       { label: "Closing within 24 hours", value: soon.length, note: "with room to bid" },
       { label: "New since last scan", value: fresh.length, note: "first seen today" }
     ];
@@ -544,7 +571,8 @@ footer td { padding: 2px 14px 2px 0; }
     return el("button", { type: "button", "class": "spread-btn", "aria-expanded": open ? "true" : "false",
       title: open ? "Hide the price spread" : "Show how the Marktplaats prices are spread",
       onclick: function () { if (openSpread[lot.key]) delete openSpread[lot.key]; else openSpread[lot.key] = true; render(); } },
-      miniHist(lot.mp.prices), lot.mp.count + " listings", el("span", { "aria-hidden": "true", text: open ? "▴" : "▾" }));
+      miniHist(lot.mp.prices),
+      el("span", { "class": "lbl" }, lot.mp.count + " listings ", el("span", { "aria-hidden": "true", text: open ? "▴" : "▾" })));
   }
 
   function histogram(prices, refs, tipBox) {
@@ -676,7 +704,7 @@ footer td { padding: 2px 14px 2px 0; }
     });
     cell.append(el("div", { "class": "maxline" }, el("span", { "class": "big", text: money(c.maxBid) }), c.maxBid > 0 ? copy : null));
     var detail = "you pay " + money(c.payAtMax);
-    if (c.profitAtMax != null) detail += " · profit " + money(c.profitAtMax);
+    if (c.profitAtMax != null) detail += " · margin " + money(c.profitAtMax) + " (" + pct(c.returnAtMax) + ")";
     cell.append(el("div", { "class": "small", text: detail }));
     return cell;
   }
@@ -698,13 +726,12 @@ footer td { padding: 2px 14px 2px 0; }
       lot.location ? el("span", { text: "· " + lot.location }) : null,
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
 
-    var extra = [];
-    if (lot.bids != null) extra.push(lot.bids + (lot.bids === 1 ? " bid" : " bids"));
-    if (c.returnNow != null) extra.push("return " + pct(c.returnNow));
+    var payLine = "you pay " + money(c.costNow) + (lot.bids != null ? " · " + lot.bids + (lot.bids === 1 ? " bid" : " bids") : "");
     var bidCell = el("div", { "class": "c-bid", "data-label": "Current bid" },
       el("div", { "class": "strong num", text: money(lot.bid) }),
-      el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT", text: "you pay " + money(c.costNow) }),
-      extra.length ? el("div", { "class": "small", text: extra.join(" · ") }) : null);
+      el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT", text: payLine }),
+      c.profitNow != null ? el("div", { "class": "small" + (c.profitNow < 0 ? " loss" : ""),
+        text: "margin " + money(c.profitNow) + " (" + pct(c.returnNow) + ")" }) : null);
 
     var status = el("div", { "class": "c-status" }, statusPill(c),
       el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
@@ -753,7 +780,7 @@ footer td { padding: 2px 14px 2px 0; }
     var empty = document.getElementById("empty");
     empty.textContent = "";
     if (!lots.length) {
-      empty.append("Nothing on your watchlist is in a running bankruptcy auction right now. The next scan runs tomorrow morning.");
+      empty.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction right now. The next scan runs tomorrow morning.");
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
     }
@@ -763,7 +790,7 @@ footer td { padding: 2px 14px 2px 0; }
   /* ---------- controls ---------- */
   var $ = function (id) { return document.getElementById(id); };
   function syncControls() {
-    $("r").value = Math.min(100, S.r); $("rNum").value = S.r; $("minProfit").value = S.minProfit; $("factor").value = S.factor;
+    $("factorRange").value = Math.max(20, Math.min(120, S.factor)); $("factor").value = S.factor; $("minProfit").value = S.minProfit;
     $("sort").value = ui.sort; $("onlyRoom").checked = ui.onlyRoom; $("showHidden").checked = ui.showHidden; $("q").value = ui.q;
     $("item").value = ui.item; $("site").value = ui.site;
   }
@@ -774,7 +801,7 @@ footer td { padding: 2px 14px 2px 0; }
   function uiSet(key, v) { ui[key] = v; store.set("ui", ui); render(); }
   function clearFilters() { ui.q = ""; ui.item = ""; ui.site = ""; ui.onlyRoom = false; store.set("ui", ui); syncControls(); render(); }
 
-  $("r").addEventListener("input", function (e) { setting("r", Number(e.target.value)); });
+  $("factorRange").addEventListener("input", function (e) { setting("factor", Number(e.target.value)); });
   /* update while typing ("input"), so leaving the field doesn't re-render the list under your next click */
   function numberInput(id, key) {
     $(id).addEventListener("input", function (e) {
@@ -782,12 +809,11 @@ footer td { padding: 2px 14px 2px 0; }
       var v = Number(e.target.value);
       if (!isFinite(v) || v < 0) return;
       S[key] = v; store.set("settings", S);
-      if (key === "r") $("r").value = Math.min(100, v);
+      if (key === "factor") $("factorRange").value = Math.max(20, Math.min(120, v));
       render();
     });
     $(id).addEventListener("blur", function () { syncControls(); });
   }
-  numberInput("rNum", "r");
   numberInput("minProfit", "minProfit");
   numberInput("factor", "factor");
   $("reset").addEventListener("click", function () { S = Object.assign({}, defaults); store.set("settings", S); syncControls(); render(); });

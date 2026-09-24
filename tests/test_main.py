@@ -109,14 +109,14 @@ def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
     dyson = by_key["proveiling:3"]
     assert dyson["itemMaxPrice"] == 150 and dyson["maxBid"] == 106  # floor(150 / 1.21 / 1.16): the max_price cap
     assert dyson["mp"] is None and dyson["mpSearch"].startswith("https://www.marktplaats.nl/q/dyson")
-    assert data["settings"]["target_return"] == 0.30
+    assert data["settings"] == {"min_profit": 25, "resale_factor": 0.85, "selling_costs": 0}
     assert {s["id"]: s["ok"] for s in data["sites"]} == {"hnvi": True, "proveiling": True, "plaatsjebod": False,
                                                           "marktplaats": True}
 
     assert len(tg.sent) == 1
     digest = tg.sent[0]
     assert "Closing within 24 hours" in digest and "Apple iPhone 13 128GB zwart" in digest
-    assert "30% return" in digest
+    assert "selling at 85% of the Marktplaats median" in digest and "(margin €" in digest
     assert 'href="https://diede.github.io/auction-deals/"' in digest
     assert "Dyson" in digest  # new with room to bid
 
@@ -157,7 +157,7 @@ def test_commands(repo, monkeypatch, tmp_path):
     tg = FakeTelegram([
         {"update_id": 10, "message": {"chat": {"id": 42}, "text": "/add ps5 -controller max=250"}},
         {"update_id": 11, "message": {"chat": {"id": 999}, "text": "/add hacked"}},  # stranger: ignored
-        {"update_id": 12, "message": {"chat": {"id": 42}, "text": "/return 40"}},
+        {"update_id": 12, "message": {"chat": {"id": 42}, "text": "/sellat 50"}},
         {"update_id": 13, "message": {"chat": {"id": 42}, "text": "/scan"}},
         {"update_id": 14, "message": {"chat": {"id": 42}, "text": "/scan"}},
         {"update_id": 15, "message": {"chat": {"id": 42}, "text": "/dashboard"}},
@@ -165,13 +165,13 @@ def test_commands(repo, monkeypatch, tmp_path):
     assert run_commands(repo, NOW, http_cls=lambda **kw: None, telegram_cls=tg) == 0
     wl = yaml.safe_load((repo / "watchlist.yml").read_text())
     assert [i["name"] for i in wl["items"]] == ["iPhone 13", "Dyson", "ps5"]
-    assert wl["settings"]["target_return"] == 0.4
+    assert wl["settings"]["resale_factor"] == 0.5 and "target_return" not in wl["settings"]
     assert (repo / "watchlist.yml").read_text().startswith("# Your watchlist")
     tg_state = json.loads((repo / "data" / "telegram.json").read_text())
     assert tg_state["offset"] == 16 and len(tg_state["extra_scans"]) == 1 and tg_state["welcomed"]
     assert out.read_text().strip() == "scan=true"
     replies = "\n".join(tg.sent)
-    assert "Added" in replies and "40% return" in replies and "Scanning now" in replies
+    assert "Added" in replies and "50% of the Marktplaats median" in replies and "Scanning now" in replies
     assert "already starting" in replies and "https://diede.github.io/auction-deals/" in replies
     assert "hacked" not in replies
 

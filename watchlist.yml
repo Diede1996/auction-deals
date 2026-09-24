@@ -1,11 +1,12 @@
 # Your watchlist. Edit it here on GitHub or send commands to your Telegram bot (/help).
 #
 # settings:
-#   target_return  the return you want on what you pay: 0.30 = 30% profit on bid + premium + VAT
-#   min_profit     and at least this many euros profit per lot
-#   resale_factor  you'll likely sell below the average asking price; 0.85 = 85% of the Marktplaats median
+#   resale_factor  what you expect to sell for, as a share of the Marktplaats median: 0.85 = 85%, 0.5 = 50%
+#   min_profit     the suggested max bid always leaves at least this many euros profit at that price
 #
-# items: one entry per thing you want to find
+# items: one entry per thing you want to find (a lot goes to the first item it matches)
+#   Put brands and models before general words in keywords: the first keyword that matches a lot
+#   is used for the Marktplaats price check ("jura e8" compares better than "volautomaat").
 #   name               label used in messages and on the dashboard
 #   keywords           search phrases; a lot matches when its title contains all words of one phrase
 #   exclude            lots whose title contains any of these words are skipped
@@ -15,35 +16,37 @@
 #   min_profit         (optional) overrides the default above for this item
 
 settings:
-  target_return: 0.3
-  min_profit: 25
   resale_factor: 0.85
+  min_profit: 25
 items:
-- name: iPhone
-  keywords: [iphone]
-  exclude: [hoesje, case, screenprotector, oplader, kabel, houder]
+- name: Monitor
+  keywords: [monitor, beeldscherm]
+  exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard, kabel,
+    baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
   keywords: [macbook]
-  exclude: [hoes, sleeve, oplader, adapter, lader]
+  exclude: [hoes, sleeve, tas, oplader, lader, adapter]
 - name: iPad
   keywords: [ipad]
-  exclude: [hoes, case, cover, houder, standaard]
-- name: PlayStation 5
-  keywords: [playstation 5, ps5]
-  exclude: [controller, game, games, spel, headset, oplaadstation]
-- name: Nintendo Switch
-  keywords: [nintendo switch]
-  exclude: [game, games, spel, hoes, case]
-- name: DJI drone
-  keywords: [dji]
-  exclude: [propeller, propellers, tas]
-- name: Dyson
-  keywords: [dyson]
-  exclude: [filter, onderdeel, houder]
-- name: Festool
-  keywords: [festool]
-- name: Hilti
-  keywords: [hilti]
-- name: Sonos
-  keywords: [sonos]
-  exclude: [beugel, muurbeugel, standaard]
+  exclude: [hoes, hoesje, case, cover, houder, standaard, screenprotector]
+- name: Laptop
+  keywords: [thinkpad, elitebook, probook, zbook, latitude, surface pro, surface laptop, laptop, notebook]
+  exclude: [tas, laptoptas, hoes, laptophoes, sleeve, lader, oplader, laptoplader, adapter, dock, docking,
+    dockingstation, standaard, laptopstandaard, koeler, laptopkoeler, slot, kabel, moleskine, gelinieerd]
+- name: Power tools
+  keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, hikoki, bosch professional, bosch gsr, bosch gsb,
+    bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
+  exclude: [koolborstel, koolborstels, onderdeel, onderdelen, reparatie, defect]
+- name: Coffee machine
+  keywords: [jura, delonghi, de longhi, sage barista, sage bambino, sage oracle, sage dual boiler, nespresso,
+    siemens eq, melitta, la marzocco, lelit, rancilio, gaggia, espressomachine, koffiemachine, volautomaat]
+  exclude: [cups, capsules, capsule, bonen, koffiebonen, filter, filters, ontkalker, ontkalkingsmiddel,
+    reinigingstabletten, onderdeel, onderdelen, defect]
+- name: Kitchen appliance
+  keywords: [kitchenaid, thermomix, airfryer, smeg, vitamix, magimix]
+  exclude: [onderdeel, onderdelen, hulpstuk, accessoire, accessoires, opzetstuk, defect]
+- name: Suit / formalwear
+  keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer]
+  exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau, deo]
+- name: Plants / decor
+  keywords: [kunstplant, kunstboom, kunstbloemen, olijfboom]

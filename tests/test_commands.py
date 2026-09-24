@@ -39,6 +39,15 @@ def test_add_list_remove_flow():
     assert not changed and "couldn't find" in reply
 
 
+def test_sellat_and_old_return_command():
+    wl = {"settings": {"target_return": 0.3, "min_profit": 25}, "items": []}
+    reply, changed = handle("/sellat 50%", wl, "")
+    assert changed and wl["settings"] == {"min_profit": 25, "resale_factor": 0.5}
+    reply, changed = handle("/return 30", wl, "")
+    assert not changed and "/sellat" in reply
+    assert not handle("/sellat abc", wl, "")[1]
+
+
 def test_minprofit_and_misc():
     wl = {"items": []}
     reply, changed = handle("/minprofit 75", wl, "")

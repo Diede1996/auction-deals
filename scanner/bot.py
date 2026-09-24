@@ -117,7 +117,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
     if not tg_state.get("welcomed"):
         dash = f'\n📊 <a href="{attr(url)}">Your dashboard</a>' if url else ""
         tg.send("✅ <b>Your auction deal bot is connected.</b>\n"
-                f"Every morning it checks 5 auction sites (bankruptcy sales only) for the "
+                f"Every morning it checks 4 auction sites (bankruptcy, business-closure and Domeinen sales) for the "
                 f"{len(watchlist.get('items') or [])} items on your watchlist and sends you a summary.{dash}\n\n"
                 "Send /list to see your watchlist, /help for all commands.")
         tg_state["welcomed"] = now.isoformat()
