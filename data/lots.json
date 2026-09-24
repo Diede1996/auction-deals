@@ -3,36 +3,2250 @@
   {
    "id": "proveiling",
    "name": "ProVeiling",
+   "note": "",
    "premium": 0.16,
    "vat": 0.21
   },
   {
    "id": "onlineveilingmeester",
    "name": "Onlineveilingmeester",
+   "note": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
    "premium": 0.17,
-   "vat": 0.21
-  },
-  {
-   "id": "troostwijk",
-   "name": "Troostwijk",
-   "premium": 0.18,
    "vat": 0.21
   },
   {
    "id": "hnvi",
    "name": "HNVI",
+   "note": "",
    "premium": 0.19,
    "vat": 0.21
   },
   {
    "id": "plaatsjebod",
    "name": "Plaats Je Bod",
+   "note": "",
    "premium": 0.22,
    "vat": 0.21
   }
  ],
- "generated": "2026-09-24T04:25:47.717815+00:00",
+ "generated": "2026-09-24T07:40:35.060044+00:00",
  "lots": [
+  {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 170.0,
+   "bids": 2,
+   "closes": "2026-09-28T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3285244|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285244",
+   "location": "Emmeloord",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/espressomachine+zoe211212006a/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Espressomachine ZOE211212006A",
+   "url": "https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 10.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165598|3285246|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285246",
+   "location": "Emmeloord",
+   "market": 13.92,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 5,
+    "high": 17.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Nespresso Espressokopjes - Made in Germany",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2429981901-nespresso-espressokopjes-made-in-germany"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Nespresso koffie en espressokopjes",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2445463694-nespresso-koffie-en-espressokopjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 13.92,
+      "title": "Online Veiling: Nespresso espressokopjes en schotels",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2442254008-online-veiling-nespresso-espressokopjes-en-schotels"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Nespresso Design Espressokopjes - Nieuw uit 2000",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2430325210-nespresso-design-espressokopjes-nieuw-uit-2000"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Nespresso View Espressokopjes met schotels (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2414740728-nespresso-view-espressokopjes-met-schotels-2-stuks"
+     }
+    ],
+    "low": 10.0,
+    "median": 13.92,
+    "outliers": [],
+    "prices": [
+     10.0,
+     10.0,
+     13.92,
+     15.0,
+     20.0
+    ],
+    "query": "nespresso espressokopjes",
+    "url": "https://www.marktplaats.nl/q/nespresso+espressokopjes/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/nespresso+espressokopjes/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Nespresso espressokopjes en schotels",
+   "url": "https://www.proveiling.nl/Nespresso-espressokopjes-en-schotels/3285246/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 40.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3271679|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3271679",
+   "location": "Emmeloord",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+flojet/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiemachines",
+   "url": "https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 10.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3285252|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285252",
+   "location": "Emmeloord",
+   "market": 170.0,
+   "marketSource": "marktplaats",
+   "maxBid": 85.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 5,
+    "high": 315.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 13.92,
+      "title": "Online Veiling: Philips HD7695/90 Intense koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442254143-online-veiling-philips-hd7695-90-intense-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Philips Koffiemachine - Goede staat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2421129257-philips-koffiemachine-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "Philips Series 3000 (EP3326/90) koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2434860396-philips-series-3000-ep3326-90-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Philips Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2424332097-philips-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 380.0,
+      "title": "Philips EP2339/40 Koffiemachine Zo Goed Als Nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2415230775-philips-ep2339-40-koffiemachine-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 66.96,
+    "median": 170.0,
+    "outliers": [],
+    "prices": [
+     13.92,
+     120.0,
+     170.0,
+     250.0,
+     380.0
+    ],
+    "query": "koffiemachine philips",
+    "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+philips/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Philips HD7695/90 Intense koffiemachine",
+   "url": "https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 70.0,
+   "bids": 3,
+   "closes": "2026-09-28T20:10:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-033.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58001",
+   "location": null,
+   "market": 33.73,
+   "marketSource": "marktplaats",
+   "maxBid": 2.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 42,
+    "high": 50.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 3.0,
+      "title": "Decoratieve kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445225038-decoratieve-kunstplant-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 6.95,
+      "title": "Kunstplant Zonnebloem | Decoris | 28 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522958915-kunstplant-zonnebloem-decoris-28-cm-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Grote kunstplant, groen, met pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445578557-grote-kunstplant-groen-met-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 14.95,
+      "title": "Kunstplant in Zwarte Pot - Decoratieve Groene Plant voor Hui",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542376-kunstplant-in-zwarte-pot-decoratieve-groene-plant-voor-hui"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.95,
+      "title": "Kunstplant Eucalyptus Gras in Geweven Pot - Groen, 11cm",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542389-kunstplant-eucalyptus-gras-in-geweven-pot-groen-11cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "4x Mini Kunstplantjes met Pot - Nep Bonsai Groen voor Huis,",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/a1530154663-4x-mini-kunstplantjes-met-pot-nep-bonsai-groen-voor-huis"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "Kunstplant Olijfboom | Gardalux | 66 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828431-kunstplant-olijfboom-gardalux-66-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Alocasia kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445936596-alocasia-kunstplant-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "IKEA kunstplant met pot - Groene grassoort",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445846625-ikea-kunstplant-met-pot-groene-grassoort"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Twee mooie groene kunstplanten in originele potten",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446014013-twee-mooie-groene-kunstplanten-in-originele-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Set van 2 kunstplanten met rode bladeren in grijze pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446012535-set-van-2-kunstplanten-met-rode-bladeren-in-grijze-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.37,
+      "title": "Kunstplant Taro | Decoris | 52 cm (In pot, Ø 69 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199028-kunstplant-taro-decoris-52-cm-in-pot-o-69-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 21.95,
+      "title": "Kunst Bonsai Pruim Inclusief Pot / Kunstbloem Kunstplant",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445697195-kunst-bonsai-pruim-inclusief-pot-kunstbloem-kunstplant"
+     },
+     {
+      "kind": "fixed",
+      "price": 23.95,
+      "title": "Kunstplant Aloe Vera | Decoris | 33 cm (In pot, Ø 15 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199027-kunstplant-aloe-vera-decoris-33-cm-in-pot-o-15-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 24.95,
+      "title": "Kunstplant Monstera | Gardalux | 110 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828440-kunstplant-monstera-gardalux-110-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445179134-kunstplant-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Grote kunstplant met pot - Groen/Bruin",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445470787-grote-kunstplant-met-pot-groen-bruin"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Mooie kunstplant in zwarte pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444827418-mooie-kunstplant-in-zwarte-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 26.95,
+      "title": "Kunstplant Monstera | Decoris | 66 cm (In pot, Ø 60 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199031-kunstplant-monstera-decoris-66-cm-in-pot-o-60-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "NOG 2 STUKS KUNSTPLANTEN MET POT (GLOEDNIEUW).",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445723833-nog-2-stuks-kunstplanten-met-pot-gloednieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.5,
+      "title": "Kunstplant Lepelplant | Decoris | 60 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199039-kunstplant-lepelplant-decoris-60-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.95,
+      "title": "Kunstplant Rozen | Gardalux | 95 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828436-kunstplant-rozen-gardalux-95-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.95,
+      "title": "Kunstplant Kersenbloesem | Decoris | 80 cm (In pot, Ø 35 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199034-kunstplant-kersenbloesem-decoris-80-cm-in-pot-o-35-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Magnolia | Gardalux | 95 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828442-kunstplant-magnolia-gardalux-95-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Yucca | Gardalux | 90 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828437-kunstplant-yucca-gardalux-90-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Strelitzia | Gardalux | 120 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1523672454-kunstplant-strelitzia-gardalux-120-cm-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Kunstplant in rieten pot met driepoot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445442733-kunstplant-in-rieten-pot-met-driepoot"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Kunstplant Clematis | Gardalux | 98 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1523672452-kunstplant-clematis-gardalux-98-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.99,
+      "title": "Kunstplant Phoenix palmboom met pot 130 cm GRATIS BEZORGD!",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446090896-kunstplant-phoenix-palmboom-met-pot-130-cm-gratis-bezorgd"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Kunstplant met pot en krukje - uit nalatenschap",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445465781-kunstplant-met-pot-en-krukje-uit-nalatenschap"
+     }
+    ],
+    "low": 20.0,
+    "median": 33.73,
+    "outliers": [
+     150.0,
+     150.0,
+     450.0
+    ],
+    "prices": [
+     3.0,
+     6.95,
+     7.5,
+     14.95,
+     15.95,
+     19.95,
+     19.95,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.37,
+     21.95,
+     23.95,
+     24.95,
+     25.0,
+     25.0,
+     25.0,
+     26.95,
+     30.0,
+     32.5,
+     34.95,
+     34.95,
+     39.95,
+     39.95,
+     39.95,
+     40.0,
+     44.95,
+     44.99,
+     45.0,
+     49.95,
+     50.0,
+     50.0,
+     53.99,
+     59.99,
+     60.0,
+     60.0,
+     70.0,
+     75.0,
+     85.0,
+     98.95,
+     100.0
+    ],
+    "query": "kunstplant pot",
+    "url": "https://www.marktplaats.nl/q/kunstplant+pot/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/kunstplant+pot/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x Kunstplant in pot",
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-kunstplant-in-pot",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 30.0,
+   "bids": 3,
+   "closes": "2026-09-28T20:17:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-087.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58043",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+toebehoren/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x HP Desktop met beeldscherm en toebehoren",
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-met-beeldscherm-en-toebehoren",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 500.0,
+   "bids": 3,
+   "closes": "2026-09-28T20:25:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-133-1.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58088",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/laptop+eletra/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x Laptop met Eletra Intra orale Smart scanner en toebehoren in koffer",
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-laptop-met-eletra-intra-orale-smart-scanner-en-toebehoren-in-koffer",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 50.0,
+   "bids": 5,
+   "closes": "2026-09-28T20:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-182.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58118",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+toebehoren/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x HP computer met beeldscherm en toebehoren",
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-hp-computer-met-beeldscherm-en-toebehoren",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 50.0,
+   "bids": 4,
+   "closes": "2026-09-28T20:34:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-203.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58142",
+   "location": null,
+   "market": 52.34,
+   "marketSource": "marktplaats",
+   "maxBid": 13.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 4,
+    "high": 75.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "iiyama monitor met wandbeugel",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2433821050-iiyama-monitor-met-wandbeugel"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.69,
+      "title": "Monitor wandbeugel gasveer 17-42 | Retourdeal 34% Korting",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/televisiebeugels/a1531242792-monitor-wandbeugel-gasveer-17-42-retourdeal-34-korting"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Wandbeugel voor 2 monitoren - max. 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/m2431344767-wandbeugel-voor-2-monitoren-max-27-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Wandbeugel voor 2 monitoren - max. 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2431344757-wandbeugel-voor-2-monitoren-max-27-inch"
+     }
+    ],
+    "low": 22.42,
+    "median": 52.34,
+    "outliers": [],
+    "prices": [
+     20.0,
+     29.69,
+     75.0,
+     75.0
+    ],
+    "query": "monitor wandbeugel",
+    "url": "https://www.marktplaats.nl/q/monitor+wandbeugel/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+wandbeugel/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x HP Desktop Mini met 2 x 24-inch monitor met wandbeugel en toebehoren",
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-mini-met-2-x-24-inch-monitor-met-wandbeugel-en-toebehoren",
+   "vat": 0.21
+  },
+  {
+   "auction": "Domeinen · Bedrijfsinventaris",
+   "bid": 16.0,
+   "bids": 4,
+   "closes": "2026-09-28T18:37:28+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-22/c985a1e7-2cac-4380-a764-324c32795bb6/20260921_143258.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1902087",
+   "location": null,
+   "market": 97.0,
+   "marketSource": "marktplaats",
+   "maxBid": 51.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 6,
+    "high": 281.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2435645059-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421890762-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL monitor DELL ULTRA SHARP  U241 4H zie fotoos",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2437460246-dell-monitor-dell-ultra-sharp-u241-4h-zie-fotoos"
+     },
+     {
+      "kind": "fixed",
+      "price": 159.0,
+      "title": "2X Dell monitors ultra sharp u2414hb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2438851537-2x-dell-monitors-ultra-sharp-u2414hb"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "3 x Sharp PN-70SC3 LCD SMARTBOARD Monitor - 70 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415368609-3-x-sharp-pn-70sc3-lcd-smartboard-monitor-70-inch-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 375.0,
+      "title": "Sharp pn-e602 60 inch monitor met voet",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436120386-sharp-pn-e602-60-inch-monitor-met-voet"
+     }
+    ],
+    "low": 30.0,
+    "median": 97.0,
+    "outliers": [],
+    "prices": [
+     30.0,
+     30.0,
+     35.0,
+     159.0,
+     250.0,
+     375.0
+    ],
+    "query": "monitor sharp",
+    "url": "https://www.marktplaats.nl/q/monitor+sharp/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+sharp/",
+   "premium": 0.121,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "3x Monitor, O.a Sharp, Samsung",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9467/kavels/29",
+   "vat": 0.0
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 30.0,
+   "bids": 2,
+   "closes": "2026-09-28T20:39:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-270.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58172",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+toebehoren/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x HP Prodesk met beeldscherm en toebehoren",
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-prodesk-met-beeldscherm-en-toebehoren",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
+   "bid": 20.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:45:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-330.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "plaatsjebod:58208",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+toebehoren/",
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x Acer Veriton computer met beeldscherm en toebehoren",
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-acer-veriton-computer-met-beeldscherm-en-toebehoren",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement Pieperz te Eindhoven",
+   "bid": 5.0,
+   "bids": null,
+   "closes": "2026-09-29T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/lDQefOpemx8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NDg0LzAwMTkta29mZmllYXBwYXJhYXQtbmVzcHJlc3NvLWtvZmZpZWxla2Jha2plLW9udGJyZWVrdC5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196484",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/nespresso+koffielekbakje/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Koffieapparaat NESPRESSO koffielekbakje ontbreekt.",
+   "url": "https://www.hnvi.nl/veiling-kavel/koffieapparaat-nespresso-koffielekbakje-ontbreekt/196484",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 12.0,
+   "bids": 2,
+   "closes": "2026-09-29T18:04:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/66f58fc6-7ba7-42db-bde1-b80d4a263a24/139%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898830",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+beroepen/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Beroepen colberts",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/139",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:21:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/af7efeea-e363-4d4b-b90a-edaf7c5ed761/207%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898898",
+   "location": null,
+   "market": 39.99,
+   "marketSource": "marktplaats",
+   "maxBid": 7.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man",
+    "url": "https://www.marktplaats.nl/q/colbert+man/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 41x Man, overjassen en colberts",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/207",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 12.0,
+   "bids": 2,
+   "closes": "2026-09-29T18:26:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/044061cc-5269-4bfb-9357-6ec0b8c42d0d/228%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898919",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+verschillende/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 56x Man, colberts in verschillende kleuren",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/228",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:26:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/a12d07ec-6b97-462b-b24f-7e3462172ae5/226%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898917",
+   "location": null,
+   "market": 39.99,
+   "marketSource": "marktplaats",
+   "maxBid": 7.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man",
+    "url": "https://www.marktplaats.nl/q/colbert+man/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 27x Man, colberts zwart",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/226",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:27:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/b3a4eac9-2a0c-426f-89b3-dee91cc978b8/230%20%282%29.jpeg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898921",
+   "location": null,
+   "market": 39.99,
+   "marketSource": "marktplaats",
+   "maxBid": 7.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man",
+    "url": "https://www.marktplaats.nl/q/colbert+man/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 46x Man, wollen geruite colberts",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/230",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 0,
+   "closes": "2026-09-29T18:28:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/e07805ab-7a88-4143-9bc7-7d180c8308c7/233%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898924",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+ouderwetse/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 89x Ouderwetse vestjes en man/ vrouw colberts",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/233",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:29:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/591262be-56cf-4fd8-a7ce-50ea4161f86e/237%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898928",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+jasjes/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 43x Heren colberts/ jasjes",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/237",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:30:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/bb9d8d50-dba2-4dbc-b163-b2b4ffbc3731/244%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898935",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/kostuum+zwarte/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 42x Zwarte ouderwetse heren kostuumbroeken",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/244",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:33:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/b8a22188-5a1d-496f-9f02-92bfcf38b1a5/256%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898947",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+jassen/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 37x Colberts en jassen man",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/256",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 12.0,
+   "bids": 2,
+   "closes": "2026-09-29T18:33:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/592d2120-64a2-4b42-bf2f-b73380942461/255%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898946",
+   "location": null,
+   "market": 39.99,
+   "marketSource": "marktplaats",
+   "maxBid": 7.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man",
+    "url": "https://www.marktplaats.nl/q/colbert+man/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 21x Middeleeuwse capes en 2x colbert man",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/255",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:33:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/24dfb4bd-b794-4224-a1af-bc6b60b4ab46/254%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898945",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+blouses/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 41x Damesjassen, colberts, blouses",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/254",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 12.0,
+   "bids": 2,
+   "closes": "2026-09-29T18:38:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/001a3ca2-edfd-4a42-b3b3-7a537bf9effa/276%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898967",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+colberts/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 47x Colberts",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/276",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-09-29T18:40:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/3839bd52-c79b-4574-bafb-3b6afd60af41/283%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898974",
+   "location": null,
+   "market": 22.5,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 14,
+    "high": 31.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 1.0,
+      "title": "Zwart herenpak - Colbert en pantalon",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446002971-zwart-herenpak-colbert-en-pantalon"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Heren Colbert",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445802914-heren-colbert"
+     },
+     {
+      "kind": "bid",
+      "price": 12.0,
+      "title": "Scotland blue heren colbert maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445139037-scotland-blue-heren-colbert-maat-56"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Stijlvol Beige Heren Colbert - Maat S",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445705312-stijlvol-beige-heren-colbert-maat-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Stijlvol Heren Colbert - Classic Mens Clothing",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445633688-stijlvol-heren-colbert-classic-mens-clothing"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Heren Colbert Liv - Blauw/Wit Ruitje",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445328474-heren-colbert-liv-blauw-wit-ruitje"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Stijlvol heren colbert - Donkergrijs, maat L",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445277259-stijlvol-heren-colbert-donkergrijs-maat-l"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "heren colbert jasje third republic maat xxl",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445260058-heren-colbert-jasje-third-republic-maat-xxl"
+     },
+     {
+      "kind": "bid",
+      "price": 26.0,
+      "title": "Heren colbert maat 52 – antraciet krijtstreep",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445809305-heren-colbert-maat-52-antraciet-krijtstreep"
+     },
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "Mooi grijs heren colbert. 52. Zeer weinig gedragen!",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445462073-mooi-grijs-heren-colbert-52-zeer-weinig-gedragen"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Grijs Kiomi heren colbert, maat 46, Nieuw (MP)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445622703-grijs-kiomi-heren-colbert-maat-46-nieuw-mp"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Stijlvol heren colbert van WEIS - Maat 4XL",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445337689-stijlvol-heren-colbert-van-weis-maat-4xl"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Heren colbert (nooit gedragen) met gratis blauwe blouse",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445413883-heren-colbert-nooit-gedragen-met-gratis-blauwe-blouse"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Nino Danieli Heren Colbert - Beige Visgraat - Maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445971688-nino-danieli-heren-colbert-beige-visgraat-maat-56"
+     }
+    ],
+    "low": 14.25,
+    "median": 22.5,
+    "outliers": [
+     90.0
+    ],
+    "prices": [
+     1.0,
+     7.5,
+     12.0,
+     15.0,
+     20.0,
+     20.0,
+     20.0,
+     25.0,
+     26.0,
+     29.0,
+     30.0,
+     35.0,
+     45.0,
+     50.0
+    ],
+    "query": "colbert heren",
+    "url": "https://www.marktplaats.nl/q/colbert+heren/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+heren/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 40x Colberts, heren",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/283",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
+   "bid": 14.0,
+   "bids": 3,
+   "closes": "2026-09-29T18:40:30+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/a2ceb156-a69e-4c95-bda2-ab9701ec78a3/281%20%282%29.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1898972",
+   "location": null,
+   "market": 22.5,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 14,
+    "high": 31.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 1.0,
+      "title": "Zwart herenpak - Colbert en pantalon",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446002971-zwart-herenpak-colbert-en-pantalon"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Heren Colbert",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445802914-heren-colbert"
+     },
+     {
+      "kind": "bid",
+      "price": 12.0,
+      "title": "Scotland blue heren colbert maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445139037-scotland-blue-heren-colbert-maat-56"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Stijlvol Beige Heren Colbert - Maat S",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445705312-stijlvol-beige-heren-colbert-maat-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Stijlvol Heren Colbert - Classic Mens Clothing",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445633688-stijlvol-heren-colbert-classic-mens-clothing"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Heren Colbert Liv - Blauw/Wit Ruitje",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445328474-heren-colbert-liv-blauw-wit-ruitje"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Stijlvol heren colbert - Donkergrijs, maat L",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445277259-stijlvol-heren-colbert-donkergrijs-maat-l"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "heren colbert jasje third republic maat xxl",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445260058-heren-colbert-jasje-third-republic-maat-xxl"
+     },
+     {
+      "kind": "bid",
+      "price": 26.0,
+      "title": "Heren colbert maat 52 – antraciet krijtstreep",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445809305-heren-colbert-maat-52-antraciet-krijtstreep"
+     },
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "Mooi grijs heren colbert. 52. Zeer weinig gedragen!",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445462073-mooi-grijs-heren-colbert-52-zeer-weinig-gedragen"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Grijs Kiomi heren colbert, maat 46, Nieuw (MP)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445622703-grijs-kiomi-heren-colbert-maat-46-nieuw-mp"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Stijlvol heren colbert van WEIS - Maat 4XL",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445337689-stijlvol-heren-colbert-van-weis-maat-4xl"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Heren colbert (nooit gedragen) met gratis blauwe blouse",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445413883-heren-colbert-nooit-gedragen-met-gratis-blauwe-blouse"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Nino Danieli Heren Colbert - Beige Visgraat - Maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445971688-nino-danieli-heren-colbert-beige-visgraat-maat-56"
+     }
+    ],
+    "low": 14.25,
+    "median": 22.5,
+    "outliers": [
+     90.0
+    ],
+    "prices": [
+     1.0,
+     7.5,
+     12.0,
+     15.0,
+     20.0,
+     20.0,
+     20.0,
+     25.0,
+     26.0,
+     29.0,
+     30.0,
+     35.0,
+     45.0,
+     50.0
+    ],
+    "query": "colbert heren",
+    "url": "https://www.marktplaats.nl/q/colbert+heren/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+heren/",
+   "premium": 0.21,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 44x Colberts, heren",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281",
+   "vat": 0.0
+  },
+  {
+   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
+   "bid": 30.0,
+   "bids": null,
+   "closes": "2026-10-01T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/HQVwUyehwEE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIwLzAwNDZhLWhpbHRpLWR4LTQ2MC1rcnVpdHNjaGlldGhhbWVyLWluLWtvZmZlci5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196720",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/hilti+dx/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Hilti DX 460 kruitschiethamer in koffer",
+   "url": "https://www.hnvi.nl/veiling-kavel/hilti-dx-460-kruitschiethamer-in-koffer/196720",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-01T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/wTcLdLFoUK8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIxLzAwNDdhLW1ha2l0YS1qci0zMDMwdC1yZWNpcHJvemFhZy5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196721",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+jr/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Makita JR 3030T reciprozaag",
+   "url": "https://www.hnvi.nl/veiling-kavel/makita-jr-3030t-reciprozaag/196721",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-01T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/bzsrDc2ncdk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIyLzAwNDhhLW1ha2l0YS1tODYwMC1ib29yaGFtZXIuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196722",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+m8600/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Makita  M8600 boorhamer",
+   "url": "https://www.hnvi.nl/veiling-kavel/makita-m8600-boorhamer/196722",
+   "vat": 0.21
+  },
+  {
+   "auction": "Thuisbezorgveiling: Consumenten goederen, verf en partijen",
+   "bid": 16.0,
+   "bids": 4,
+   "closes": "2026-10-04T17:30:40+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 8.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-18/559fe834-6102-4ded-ae21-64eab6c50536/4-0.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1901598",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+53671/",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "2x Makita B-53671 diamantschijf 100mm staal Makita",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9528/kavels/4",
+   "vat": 0.21
+  },
+  {
+   "auction": "Thuisbezorgveiling: Consumenten goederen, verf en partijen",
+   "bid": 10.0,
+   "bids": 0,
+   "closes": "2026-10-04T17:40:40+00:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 8.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-18/0221312f-a700-4be4-ae45-36fd6a284f93/44-0.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1901638",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+scanpart/",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "8x Waterfilter voor koffiemachine, Scanpart, intenza",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9528/kavels/44",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/0vkB-Rlov9Q/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTY0LzAwMjMtdHdlZS1iZWVsZHNjaGVybWVuLWhwLWNvbXBhcS1sYTIzMDZ4LWluLWhvb2d0ZS12ZXJzdGVsYmFhci1lbi1kcmFhaWJhYXIuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196564",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+hp/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaibaar",
+   "url": "https://www.hnvi.nl/veiling-kavel/twee-beeldschermen-hp-compaq-la2306x-in-hoogte-verstelbaar-en-draaibaar/196564",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 30.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/ozqpPDJ4728/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTY4LzAwMjcta29mZmllbWFjaGluZS1waGlsaXBzLmpwZw.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196568",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+philips/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Koffiemachine PHILIPS",
+   "url": "https://www.hnvi.nl/veiling-kavel/koffiemachine-philips/196568",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/T7fSucq6meo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTk4LzAwNTctY3VydmVkLWJlZWxkc2NoZXJtLTI3LWluY2gtc2Ftc3VuZy1zMjdjMzY2ZWF1LWtyYXNqZS1pbi1zY2hlcm0uanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196598",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+samsung/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm",
+   "url": "https://www.hnvi.nl/veiling-kavel/curved-beeldscherm-27-inch-samsung-s27c366eau-krasje-in-scherm/196598",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/ok5a1kPP5tc/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTk5LzAwNTgtdHdlZS0yNy1pbmNoLWJlZWxkc2NoZXJtZW4tYWNlci12Mjc3LmpwZw.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196599",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+acer/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Twee 27 inch beeldschermen ACER V277",
+   "url": "https://www.hnvi.nl/veiling-kavel/twee-27-inch-beeldschermen-acer-v277/196599",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 90.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/ap49QQSEKXE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAwLzAwNTktbGFwdG9wLWhwLWk1LWZjb3h4LTIzOC1nYi1vcHNsYWctOGdiLXJhbS1hbWQtcnl6ZW4tMy03MzIwdS0yLTQwLWdoei1wcm9jZXNzb3IuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196600",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/laptop+hp/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Laptop HP i5-fcoxx. 238 GB opslag. 8GB RAM. AMD Ryzen 3 7320u 2.40 GHz processor.",
+   "url": "https://www.hnvi.nl/veiling-kavel/laptop-hp-i5-fcoxx-238-gb-opslag-8gb-ram-amd-ryzen-3-7320u-2-40-ghz-processor/196600",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/DyO23SA-wuY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAxLzAwNjAtYmVlbGRzY2hlcm0tMjctaW5jaC1hY2VyLXJnMjcwLmpwZw.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196601",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+acer/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Beeldscherm 27 inch ACER RG270",
+   "url": "https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-acer-rg270/196601",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/HM5ZUf1qeM0/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAyLzAwNjEtYmVlbGRzY2hlcm0tMjctaW5jaC1zYW1zdW5nLXMyN2MzMTBlYXUuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196602",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+samsung/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Beeldscherm 27 inch SAMSUNG S27C310EAU",
+   "url": "https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-samsung-s27c310eau/196602",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 10.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/cOU5Q0dXLtk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAzLzAwNjItMjctaW5jaC1iZWVsZHNjaGVybWVuLWFjZXItdjI3Ny5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196603",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+acer/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "27 inch beeldschermen ACER V277",
+   "url": "https://www.hnvi.nl/veiling-kavel/27-inch-beeldschermen-acer-v277/196603",
+   "vat": 0.21
+  },
+  {
+   "auction": "Combinatieveiling div. faillissementen september 2026",
+   "bid": 35.0,
+   "bids": null,
+   "closes": "2026-10-05T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/2lJs2kkJaYo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjEzLzAwNzItbGFwdG9wLWxlbm92by10aGlua3BhZC10NDQwcy0xMjgtZ2ItaGRkLTgtZ2ItcmFtLWludGVsLWNvcmUtaTUtNDMwMHUtY3B1LTEtOTAtaGcuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196613",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/thinkpad+t440s/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300u CPU@1,90 HGZ. QWERTZ toetsenbord.",
+   "url": "https://www.hnvi.nl/veiling-kavel/laptop-lenovo-thinkpad-t440s-128-gb-hdd-8-gb-ram-intel-core-i5-4300u-cpu-1-90-hgz-qwertz-toetsenbord/196613",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285775",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accuboormachine/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
+   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285767|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285767",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+avt/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita AVT Breekhamer HM1812",
+   "url": "https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285793|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285793",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+acculader/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
+   "url": "https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285813|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285813",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+lxt/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita LXT Accubatterij BL1830",
+   "url": "https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail",
+   "vat": 0.21
+  },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 20.0,
@@ -41,125 +2255,437 @@
    "firstSeen": "2026-09-24T04:25:47.717815+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285771|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Hilti",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285771",
    "location": "Waddinxveen",
-   "market": 137.5,
-   "marketSource": "marktplaats",
-   "maxBid": 64.0,
-   "mp": {
-    "asOf": "2026-09-24T04:25:47.717815+00:00",
-    "count": 10,
-    "high": 276.25,
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Hilti X-FB 20 C27 leidingbeugels Ø20mm – 100 stuks – Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2434333943-hilti-x-fb-20-c27-leidingbeugels-o20mm-100-stuks-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Hilti Doorslijpschijf AC-D SP 125x1.6",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2429211398-hilti-doorslijpschijf-ac-d-sp-125x1-6"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.95,
-      "title": "Battery Hilti SFB150 SFB155",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824578-battery-hilti-sfb150-sfb155"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.95,
-      "title": "Battery Hilti SFB180 SFB185",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824426-battery-hilti-sfb180-sfb185"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Hilti PUA 36 statief",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2439041453-hilti-pua-36-statief"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Hilti DWP 10 Drukcontainer voor water toevoegen kernboren",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2429063243-hilti-dwp-10-drukcontainer-voor-water-toevoegen-kernboren"
-     },
-     {
-      "kind": "fixed",
-      "price": 240.0,
-      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782471-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
-     },
-     {
-      "kind": "fixed",
-      "price": 240.0,
-      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782127-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
-     },
-     {
-      "kind": "bid",
-      "price": 385.0,
-      "title": "Hilti DC 230-S Diamant doorslijpmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2436907348-hilti-dc-230-s-diamant-doorslijpmachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 750.0,
-      "title": "Hilti PS 85 Ferroscan - Betondekking en wapeningsdetector",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2435738126-hilti-ps-85-ferroscan-betondekking-en-wapeningsdetector"
-     }
-    ],
-    "low": 65.71,
-    "median": 137.5,
-    "outliers": [
-     1750.0
-    ],
-    "prices": [
-     35.0,
-     50.0,
-     70.95,
-     80.95,
-     100.0,
-     175.0,
-     240.0,
-     240.0,
-     385.0,
-     750.0
-    ],
-    "query": "hilti",
-    "url": "https://www.marktplaats.nl/q/hilti/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/hilti/",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/hilti+meetstatief/",
    "premium": 0.16,
    "site": "proveiling",
    "siteName": "ProVeiling",
    "title": "Hilti Meetstatief PUA 25",
    "url": "https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3285771/detail",
    "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 15.0,
+   "bids": 0,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285825|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285825",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita gereedschapskoffers - 2 stuks",
+   "url": "https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3285825/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bids": 0,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285807|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285807",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+tstak/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT TSTAK Gereedschapskoffer",
+   "url": "https://www.proveiling.nl/DEWALT-TSTAK-Gereedschapskoffer/3285807/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bids": 0,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285798",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accuboormachine/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
+   "url": "https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bids": 0,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285814|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285814",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+xrp/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
+   "url": "https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3285814/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 10.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/4THTbeP5tTg/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjI2LzAwMTItYm91d3JhZGlvLW1ha2l0YS16b25kZXItYWNjdS5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196626",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+accu/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Bouwradio MAKITA zonder accu",
+   "url": "https://www.hnvi.nl/veiling-kavel/bouwradio-makita-zonder-accu/196626",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 10.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/UWayXGNzm9E/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjMwLzAwMTYtYm91d3JhZGlvLWRld2FsdC1leGNsdXNpZWYtYWNjdS5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196630",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accu/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Bouwradio DEWALT ( exclusief accu )",
+   "url": "https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-exclusief-accu/196630",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 5.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/zDvBXJvqWao/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjMxLzAwMTctZ2VyZWVkc2NoYXBza29mZmVyLW1ha2l0YS5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196631",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffer/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Gereedschapskoffer MAKITA",
+   "url": "https://www.hnvi.nl/veiling-kavel/gereedschapskoffer-makita/196631",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/zdmGucJMYjo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjQ1LzAwMzEtaGFha3NlLXNsaWpwZXItbWV0YWJvLW1ldC1kaXZlcnNlLXNjaGlqdmVuLmpwZw.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196645",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+schijven/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Haakse slijper METABO met diverse schijven",
+   "url": "https://www.hnvi.nl/veiling-kavel/haakse-slijper-metabo-met-diverse-schijven/196645",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/8iFeLjhlVpA/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjYxLzAwNDctYm91d3JhZGlvLWRld2FsdC1tZXQtYWNjdS5qcGc.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196661",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accu/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Bouwradio DEWALT met accu",
+   "url": "https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu/196661",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement VOF MGB Groep",
+   "bid": 15.0,
+   "bids": null,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/usPNTUHeIR8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjY0LzAwNTAtaGFha3NlLXNsaWpwdG9sLWRld2FsdC1kd2U0NTc5LmpwZw.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196664",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dwe4579/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Haakse slijptol DEWALT DWE4579",
+   "url": "https://www.hnvi.nl/veiling-kavel/haakse-slijptol-dewalt-dwe4579/196664",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
+   "bid": 70.0,
+   "bids": null,
+   "closes": "2026-10-13T19:30:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/L3XX98GRmqE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2OTI4LzAwMjEta2luZGVyY2FybmF2YWxzLXByb2R1Y3Rlbi1hYW4temV2ZW4tc3RlbGxpbmdkZWxlbi0yMjUta29zdHV1bXMtaW4tZ3JvdGUtZGl2ZXJzaXQuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:196928",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/kostuum+grote/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in grote diversiteit w.o. tien paar schoenen en diverse verkleedaccessoires.",
+   "url": "https://www.hnvi.nl/veiling-kavel/kindercarnavals-producten-aan-zeven-stellingdelen-225-kostuums-in-grote-diversiteit-w-o-tien-paar-schoenen-en-diverse-verkleedaccessoires/196928",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
+   "bid": 10.0,
+   "bids": null,
+   "closes": "2026-10-13T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/YW4YM54kXZY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MDcyLzAxNjUtbGFwdG9wLXRlcnJhLW1vYmlsZS0xNTEzYS0yMzMtZ2ItaGRkLTQtZ2Itd2Vya2dlaGV1Z2VuLWVlbi10b2V0c2thcGplLXZhbi1mMy1vbnQuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:197072",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/laptop+terra/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskapje van F3 ontbreekt",
+   "url": "https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
+   "bid": 30.0,
+   "bids": null,
+   "closes": "2026-10-13T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/G6PFR-9W55c/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTE1LzAyMDgtYWNjdS1ob2dlZHJ1a3JlaW5pZ2VyLW1ha2l0YS1kaHcwODAtbWV0LWJ1ZmZlcnZhdC1nZWVuLWFjY3UtY29tcGxlZXRoZWlkLW9uYmVrZW4uanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:197115",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+dhw080/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleetheid onbekend",
+   "url": "https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
+   "bid": 3.0,
+   "bids": null,
+   "closes": "2026-10-13T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/vevGKlbQVUI/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTM2LzAyMjktZm91ZHJhYWwtdC1iLXYtbWFraXRhLXphYWdnZWxlaWRlci0xNDAtY20uanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:197136",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/makita+zaaggeleider/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Foudraal t.b.v. Makita zaaggeleider 140 cm",
+   "url": "https://www.hnvi.nl/veiling-kavel/foudraal-t-b-v-makita-zaaggeleider-140-cm/197136",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
+   "bid": 3.0,
+   "bids": null,
+   "closes": "2026-10-13T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://assets.hnvi.nl/assets/O5rFC7KaStY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTkwLzAyODMtYmVlbGRzY2hlcm0tbGVub3ZvLTIyLWluY2gtdm9lZGluZ3NrYWJlbC1vbnRicmVla3QuanBn.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "hnvi:197190",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+lenovo/",
+   "premium": 0.19,
+   "site": "hnvi",
+   "siteName": "HNVI",
+   "title": "Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt",
+   "url": "https://www.hnvi.nl/veiling-kavel/beeldscherm-lenovo-22-inch-voedingskabel-ontbreekt/197190",
+   "vat": 0.21
   }
  ],
  "settings": {
   "min_profit": 25.0,
   "resale_factor": 0.85,
-  "selling_costs": 0.0,
-  "target_return": 0.3
+  "selling_costs": 0.0
  },
  "sites": [
-  {
-   "error": "BlockedError: www.troostwijkauctions.com is blocking automated requests (HTTP 403)",
-   "id": "troostwijk",
-   "lots": 0,
-   "name": "Troostwijk",
-   "ok": false
-  },
   {
    "error": "",
    "id": "proveiling",
@@ -170,7 +2696,7 @@
   {
    "error": "",
    "id": "hnvi",
-   "lots": 209,
+   "lots": 730,
    "name": "HNVI",
    "ok": true
   },
@@ -184,16 +2710,247 @@
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 6,
+   "lots": 1066,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 1,
+   "lots": 40,
    "name": "Marktplaats prices",
    "ok": true
+  }
+ ],
+ "troostwijk": [
+  {
+   "item": "Monitor",
+   "links": [
+    {
+     "label": "monitor",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=monitor&countries=nl"
+    },
+    {
+     "label": "beeldscherm",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=beeldscherm&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "MacBook",
+   "links": [
+    {
+     "label": "macbook",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=macbook&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "iPad",
+   "links": [
+    {
+     "label": "ipad",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=ipad&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Laptop",
+   "links": [
+    {
+     "label": "thinkpad",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=thinkpad&countries=nl"
+    },
+    {
+     "label": "elitebook",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=elitebook&countries=nl"
+    },
+    {
+     "label": "probook",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=probook&countries=nl"
+    },
+    {
+     "label": "zbook",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=zbook&countries=nl"
+    },
+    {
+     "label": "latitude",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=latitude&countries=nl"
+    },
+    {
+     "label": "surface pro",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=surface+pro&countries=nl"
+    },
+    {
+     "label": "surface laptop",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=surface+laptop&countries=nl"
+    },
+    {
+     "label": "laptop",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=laptop&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Power tools",
+   "links": [
+    {
+     "label": "makita",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=makita&countries=nl"
+    },
+    {
+     "label": "dewalt",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=dewalt&countries=nl"
+    },
+    {
+     "label": "milwaukee",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=milwaukee&countries=nl"
+    },
+    {
+     "label": "hilti",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=hilti&countries=nl"
+    },
+    {
+     "label": "festool",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=festool&countries=nl"
+    },
+    {
+     "label": "metabo",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=metabo&countries=nl"
+    },
+    {
+     "label": "hikoki",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=hikoki&countries=nl"
+    },
+    {
+     "label": "bosch professional",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=bosch+professional&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Coffee machine",
+   "links": [
+    {
+     "label": "jura",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=jura&countries=nl"
+    },
+    {
+     "label": "delonghi",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=delonghi&countries=nl"
+    },
+    {
+     "label": "de longhi",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=de+longhi&countries=nl"
+    },
+    {
+     "label": "sage barista",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=sage+barista&countries=nl"
+    },
+    {
+     "label": "sage bambino",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=sage+bambino&countries=nl"
+    },
+    {
+     "label": "sage oracle",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=sage+oracle&countries=nl"
+    },
+    {
+     "label": "sage dual boiler",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=sage+dual+boiler&countries=nl"
+    },
+    {
+     "label": "nespresso",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=nespresso&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Kitchen appliance",
+   "links": [
+    {
+     "label": "kitchenaid",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=kitchenaid&countries=nl"
+    },
+    {
+     "label": "thermomix",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=thermomix&countries=nl"
+    },
+    {
+     "label": "airfryer",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=airfryer&countries=nl"
+    },
+    {
+     "label": "smeg",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=smeg&countries=nl"
+    },
+    {
+     "label": "vitamix",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=vitamix&countries=nl"
+    },
+    {
+     "label": "magimix",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=magimix&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Suit / formalwear",
+   "links": [
+    {
+     "label": "suitsupply",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=suitsupply&countries=nl"
+    },
+    {
+     "label": "hugo boss",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=hugo+boss&countries=nl"
+    },
+    {
+     "label": "boggi",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=boggi&countries=nl"
+    },
+    {
+     "label": "kostuum",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=kostuum&countries=nl"
+    },
+    {
+     "label": "colbert",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=colbert&countries=nl"
+    },
+    {
+     "label": "maatpak",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=maatpak&countries=nl"
+    },
+    {
+     "label": "smoking",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=smoking&countries=nl"
+    },
+    {
+     "label": "blazer",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=blazer&countries=nl"
+    }
+   ]
+  },
+  {
+   "item": "Plants / decor",
+   "links": [
+    {
+     "label": "kunstplant",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=kunstplant&countries=nl"
+    },
+    {
+     "label": "kunstboom",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=kunstboom&countries=nl"
+    },
+    {
+     "label": "kunstbloemen",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=kunstbloemen&countries=nl"
+    },
+    {
+     "label": "olijfboom",
+     "url": "https://www.troostwijkauctions.com/nl/search?searchTerm=olijfboom&countries=nl"
+    }
+   ]
   }
  ]
 }

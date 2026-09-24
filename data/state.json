@@ -1,41 +1,41 @@
 {
  "health": {
   "hnvi": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
+   "at": "2026-09-24T07:40:35.060044+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T04:25:47.717815+00:00",
-   "lots": 209,
+   "last_ok": "2026-09-24T07:40:35.060044+00:00",
+   "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
+   "at": "2026-09-24T07:40:35.060044+00:00",
    "error": "",
    "fails": 0,
-   "lots": 1,
+   "lots": 40,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
+   "at": "2026-09-24T07:40:35.060044+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T04:25:47.717815+00:00",
-   "lots": 6,
+   "last_ok": "2026-09-24T07:40:35.060044+00:00",
+   "lots": 1066,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
+   "at": "2026-09-24T07:40:35.060044+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "last_ok": "2026-09-24T07:40:35.060044+00:00",
    "lots": 133,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
+   "at": "2026-09-24T07:40:35.060044+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "last_ok": "2026-09-24T07:40:35.060044+00:00",
    "lots": 239,
    "ok": true
   },
@@ -47,14 +47,534 @@
   }
  },
  "last_run": {
-  "at": "2026-09-24T04:25:47.717815+00:00",
-  "deals": 1,
-  "lots": 587,
-  "matches": 1,
-  "new": 1,
-  "requests": 51
+  "at": "2026-09-24T07:40:35.060044+00:00",
+  "deals": 2,
+  "lots": 2168,
+  "matches": 61,
+  "new": 60,
+  "requests": 121
  },
  "price_cache": {
+  "beeldscherm toebehoren acer veriton|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "beeldscherm toebehoren hp computer|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "beeldscherm toebehoren hp desktop|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "beeldscherm toebehoren hp prodesk|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert beroepen colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert blouses damesjassen colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert heren colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 14,
+    "high": 31.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 1.0,
+      "title": "Zwart herenpak - Colbert en pantalon",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446002971-zwart-herenpak-colbert-en-pantalon"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Heren Colbert",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445802914-heren-colbert"
+     },
+     {
+      "kind": "bid",
+      "price": 12.0,
+      "title": "Scotland blue heren colbert maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445139037-scotland-blue-heren-colbert-maat-56"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Stijlvol Beige Heren Colbert - Maat S",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445705312-stijlvol-beige-heren-colbert-maat-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Stijlvol Heren Colbert - Classic Mens Clothing",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445633688-stijlvol-heren-colbert-classic-mens-clothing"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Heren Colbert Liv - Blauw/Wit Ruitje",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445328474-heren-colbert-liv-blauw-wit-ruitje"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Stijlvol heren colbert - Donkergrijs, maat L",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445277259-stijlvol-heren-colbert-donkergrijs-maat-l"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "heren colbert jasje third republic maat xxl",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445260058-heren-colbert-jasje-third-republic-maat-xxl"
+     },
+     {
+      "kind": "bid",
+      "price": 26.0,
+      "title": "Heren colbert maat 52 – antraciet krijtstreep",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445809305-heren-colbert-maat-52-antraciet-krijtstreep"
+     },
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "Mooi grijs heren colbert. 52. Zeer weinig gedragen!",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445462073-mooi-grijs-heren-colbert-52-zeer-weinig-gedragen"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Grijs Kiomi heren colbert, maat 46, Nieuw (MP)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445622703-grijs-kiomi-heren-colbert-maat-46-nieuw-mp"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Stijlvol heren colbert van WEIS - Maat 4XL",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445337689-stijlvol-heren-colbert-van-weis-maat-4xl"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Heren colbert (nooit gedragen) met gratis blauwe blouse",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445413883-heren-colbert-nooit-gedragen-met-gratis-blauwe-blouse"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Nino Danieli Heren Colbert - Beige Visgraat - Maat 56",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445971688-nino-danieli-heren-colbert-beige-visgraat-maat-56"
+     }
+    ],
+    "low": 14.25,
+    "median": 22.5,
+    "outliers": [
+     90.0
+    ],
+    "prices": [
+     1.0,
+     7.5,
+     12.0,
+     15.0,
+     20.0,
+     20.0,
+     20.0,
+     25.0,
+     26.0,
+     29.0,
+     30.0,
+     35.0,
+     45.0,
+     50.0
+    ],
+    "query": "colbert heren"
+   }
+  },
+  "colbert jasjes heren colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert jassen man colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert man colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man"
+   }
+  },
+  "colbert man middeleeuwse capes|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man"
+   }
+  },
+  "colbert man overjassen colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man"
+   }
+  },
+  "colbert man wollen geruite|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 10,
+    "high": 44.95,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zara Man Zwart colbert - Maat 46 (S)",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2445544239-zara-man-zwart-colbert-maat-46-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert zilver man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437911-disco-colbert-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Disco colbert goud man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437912-disco-colbert-goud-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 33.95,
+      "title": "Colbert Brabant man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1486650955-colbert-brabant-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter pink",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1520246923-colbert-man-glitter-pink"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert Man Glitter Zwart",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438531-colbert-man-glitter-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.99,
+      "title": "Colbert man glitter wit",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511885076-colbert-man-glitter-wit"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Goud Man Feest",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511437508-colbert-goud-man-feest"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Colbert Feest Zilver Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1521142197-colbert-feest-zilver-man"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "Sterren Colbert Show Man",
+      "url": "https://www.marktplaats.nl/v/kleding-heren/carnavalskleding-en-feestkleding/a1511438121-sterren-colbert-show-man"
+     }
+    ],
+    "low": 32.95,
+    "median": 39.99,
+    "outliers": [
+     13.1,
+     70.0
+    ],
+    "prices": [
+     15.0,
+     32.95,
+     32.95,
+     33.95,
+     39.99,
+     39.99,
+     39.99,
+     44.95,
+     44.95,
+     49.95
+    ],
+    "query": "colbert man"
+   }
+  },
+  "colbert ouderwetse vestjes man|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert verschillende kleuren man|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "espressomachine zoe211212006a|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
   "hilti meetstatief pua 25|": {
    "at": "2026-09-24T04:25:47.717815+00:00",
    "est": {
@@ -142,12 +662,714 @@
     ],
     "query": "hilti"
    }
+  },
+  "koffiemachine flojet bw5004 000a|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "koffiemachine philips hd7695 intense|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 5,
+    "high": 315.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 13.92,
+      "title": "Online Veiling: Philips HD7695/90 Intense koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442254143-online-veiling-philips-hd7695-90-intense-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Philips Koffiemachine - Goede staat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2421129257-philips-koffiemachine-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "Philips Series 3000 (EP3326/90) koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2434860396-philips-series-3000-ep3326-90-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Philips Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2424332097-philips-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 380.0,
+      "title": "Philips EP2339/40 Koffiemachine Zo Goed Als Nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2415230775-philips-ep2339-40-koffiemachine-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 66.96,
+    "median": 170.0,
+    "outliers": [],
+    "prices": [
+     13.92,
+     120.0,
+     170.0,
+     250.0,
+     380.0
+    ],
+    "query": "koffiemachine philips"
+   }
+  },
+  "kostuum zwarte ouderwetse heren|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "kunstplant pot|": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 42,
+    "high": 50.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 3.0,
+      "title": "Decoratieve kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445225038-decoratieve-kunstplant-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 6.95,
+      "title": "Kunstplant Zonnebloem | Decoris | 28 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522958915-kunstplant-zonnebloem-decoris-28-cm-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Grote kunstplant, groen, met pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445578557-grote-kunstplant-groen-met-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 14.95,
+      "title": "Kunstplant in Zwarte Pot - Decoratieve Groene Plant voor Hui",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542376-kunstplant-in-zwarte-pot-decoratieve-groene-plant-voor-hui"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.95,
+      "title": "Kunstplant Eucalyptus Gras in Geweven Pot - Groen, 11cm",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542389-kunstplant-eucalyptus-gras-in-geweven-pot-groen-11cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "4x Mini Kunstplantjes met Pot - Nep Bonsai Groen voor Huis,",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/a1530154663-4x-mini-kunstplantjes-met-pot-nep-bonsai-groen-voor-huis"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "Kunstplant Olijfboom | Gardalux | 66 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828431-kunstplant-olijfboom-gardalux-66-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Alocasia kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445936596-alocasia-kunstplant-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "IKEA kunstplant met pot - Groene grassoort",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445846625-ikea-kunstplant-met-pot-groene-grassoort"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Twee mooie groene kunstplanten in originele potten",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446014013-twee-mooie-groene-kunstplanten-in-originele-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Set van 2 kunstplanten met rode bladeren in grijze pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446012535-set-van-2-kunstplanten-met-rode-bladeren-in-grijze-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.37,
+      "title": "Kunstplant Taro | Decoris | 52 cm (In pot, Ø 69 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199028-kunstplant-taro-decoris-52-cm-in-pot-o-69-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 21.95,
+      "title": "Kunst Bonsai Pruim Inclusief Pot / Kunstbloem Kunstplant",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445697195-kunst-bonsai-pruim-inclusief-pot-kunstbloem-kunstplant"
+     },
+     {
+      "kind": "fixed",
+      "price": 23.95,
+      "title": "Kunstplant Aloe Vera | Decoris | 33 cm (In pot, Ø 15 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199027-kunstplant-aloe-vera-decoris-33-cm-in-pot-o-15-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 24.95,
+      "title": "Kunstplant Monstera | Gardalux | 110 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828440-kunstplant-monstera-gardalux-110-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Kunstplant in pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445179134-kunstplant-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Grote kunstplant met pot - Groen/Bruin",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445470787-grote-kunstplant-met-pot-groen-bruin"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Mooie kunstplant in zwarte pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444827418-mooie-kunstplant-in-zwarte-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 26.95,
+      "title": "Kunstplant Monstera | Decoris | 66 cm (In pot, Ø 60 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199031-kunstplant-monstera-decoris-66-cm-in-pot-o-60-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "NOG 2 STUKS KUNSTPLANTEN MET POT (GLOEDNIEUW).",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445723833-nog-2-stuks-kunstplanten-met-pot-gloednieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.5,
+      "title": "Kunstplant Lepelplant | Decoris | 60 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199039-kunstplant-lepelplant-decoris-60-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.95,
+      "title": "Kunstplant Rozen | Gardalux | 95 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828436-kunstplant-rozen-gardalux-95-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.95,
+      "title": "Kunstplant Kersenbloesem | Decoris | 80 cm (In pot, Ø 35 cm)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1512199034-kunstplant-kersenbloesem-decoris-80-cm-in-pot-o-35-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Magnolia | Gardalux | 95 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828442-kunstplant-magnolia-gardalux-95-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Yucca | Gardalux | 90 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1522828437-kunstplant-yucca-gardalux-90-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Kunstplant Strelitzia | Gardalux | 120 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1523672454-kunstplant-strelitzia-gardalux-120-cm-in-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Kunstplant in rieten pot met driepoot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445442733-kunstplant-in-rieten-pot-met-driepoot"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.95,
+      "title": "Kunstplant Clematis | Gardalux | 98 cm (In pot)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/a1523672452-kunstplant-clematis-gardalux-98-cm-in-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.99,
+      "title": "Kunstplant Phoenix palmboom met pot 130 cm GRATIS BEZORGD!",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446090896-kunstplant-phoenix-palmboom-met-pot-130-cm-gratis-bezorgd"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Kunstplant met pot en krukje - uit nalatenschap",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445465781-kunstplant-met-pot-en-krukje-uit-nalatenschap"
+     }
+    ],
+    "low": 20.0,
+    "median": 33.73,
+    "outliers": [
+     150.0,
+     150.0,
+     450.0
+    ],
+    "prices": [
+     3.0,
+     6.95,
+     7.5,
+     14.95,
+     15.95,
+     19.95,
+     19.95,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.37,
+     21.95,
+     23.95,
+     24.95,
+     25.0,
+     25.0,
+     25.0,
+     26.95,
+     30.0,
+     32.5,
+     34.95,
+     34.95,
+     39.95,
+     39.95,
+     39.95,
+     40.0,
+     44.95,
+     44.99,
+     45.0,
+     49.95,
+     50.0,
+     50.0,
+     53.99,
+     59.99,
+     60.0,
+     60.0,
+     70.0,
+     75.0,
+     85.0,
+     98.95,
+     100.0
+    ],
+    "query": "kunstplant pot"
+   }
+  },
+  "laptop eletra intra orale|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "monitor sharp samsung|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 6,
+    "high": 281.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2435645059-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421890762-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL monitor DELL ULTRA SHARP  U241 4H zie fotoos",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2437460246-dell-monitor-dell-ultra-sharp-u241-4h-zie-fotoos"
+     },
+     {
+      "kind": "fixed",
+      "price": 159.0,
+      "title": "2X Dell monitors ultra sharp u2414hb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2438851537-2x-dell-monitors-ultra-sharp-u2414hb"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "3 x Sharp PN-70SC3 LCD SMARTBOARD Monitor - 70 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415368609-3-x-sharp-pn-70sc3-lcd-smartboard-monitor-70-inch-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 375.0,
+      "title": "Sharp pn-e602 60 inch monitor met voet",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436120386-sharp-pn-e602-60-inch-monitor-met-voet"
+     }
+    ],
+    "low": 30.0,
+    "median": 97.0,
+    "outliers": [],
+    "prices": [
+     30.0,
+     30.0,
+     35.0,
+     159.0,
+     250.0,
+     375.0
+    ],
+    "query": "monitor sharp"
+   }
+  },
+  "monitor wandbeugel toebehoren hp|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 4,
+    "high": 75.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "iiyama monitor met wandbeugel",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2433821050-iiyama-monitor-met-wandbeugel"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.69,
+      "title": "Monitor wandbeugel gasveer 17-42 | Retourdeal 34% Korting",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/televisiebeugels/a1531242792-monitor-wandbeugel-gasveer-17-42-retourdeal-34-korting"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Wandbeugel voor 2 monitoren - max. 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/m2431344767-wandbeugel-voor-2-monitoren-max-27-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Wandbeugel voor 2 monitoren - max. 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2431344757-wandbeugel-voor-2-monitoren-max-27-inch"
+     }
+    ],
+    "low": 22.42,
+    "median": 52.34,
+    "outliers": [],
+    "prices": [
+     20.0,
+     29.69,
+     75.0,
+     75.0
+    ],
+    "query": "monitor wandbeugel"
+   }
+  },
+  "nespresso espressokopjes schotels|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": {
+    "as_of": "2026-09-24T07:40:35.060044+00:00",
+    "count": 5,
+    "high": 17.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Nespresso Espressokopjes - Made in Germany",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2429981901-nespresso-espressokopjes-made-in-germany"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Nespresso koffie en espressokopjes",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2445463694-nespresso-koffie-en-espressokopjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 13.92,
+      "title": "Online Veiling: Nespresso espressokopjes en schotels",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2442254008-online-veiling-nespresso-espressokopjes-en-schotels"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Nespresso Design Espressokopjes - Nieuw uit 2000",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2430325210-nespresso-design-espressokopjes-nieuw-uit-2000"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Nespresso View Espressokopjes met schotels (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-servies/m2414740728-nespresso-view-espressokopjes-met-schotels-2-stuks"
+     }
+    ],
+    "low": 10.0,
+    "median": 13.92,
+    "outliers": [],
+    "prices": [
+     10.0,
+     10.0,
+     13.92,
+     15.0,
+     20.0
+    ],
+    "query": "nespresso espressokopjes"
+   }
+  },
+  "nespresso koffielekbakje ontbreekt koffieapparaat|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
   }
  },
  "seen": {
+  "hnvi:196484": {
+   "closes": "2026-09-29T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196564": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196568": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196598": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196599": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196600": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196601": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196602": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196603": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196613": {
+   "closes": "2026-10-05T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196626": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196630": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196631": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196645": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196661": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196664": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196720": {
+   "closes": "2026-10-01T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196721": {
+   "closes": "2026-10-01T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196722": {
+   "closes": "2026-10-01T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196928": {
+   "closes": "2026-10-13T19:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:197072": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:197115": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:197136": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:197190": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898830": {
+   "closes": "2026-09-29T18:04:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898898": {
+   "closes": "2026-09-29T18:21:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898917": {
+   "closes": "2026-09-29T18:26:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898919": {
+   "closes": "2026-09-29T18:26:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898921": {
+   "closes": "2026-09-29T18:27:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898924": {
+   "closes": "2026-09-29T18:28:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898928": {
+   "closes": "2026-09-29T18:29:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898935": {
+   "closes": "2026-09-29T18:30:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898945": {
+   "closes": "2026-09-29T18:33:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898946": {
+   "closes": "2026-09-29T18:33:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898947": {
+   "closes": "2026-09-29T18:33:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898967": {
+   "closes": "2026-09-29T18:38:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898972": {
+   "closes": "2026-09-29T18:40:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1898974": {
+   "closes": "2026-09-29T18:40:30+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1901598": {
+   "closes": "2026-10-04T17:30:40+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1901638": {
+   "closes": "2026-10-04T17:40:40+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1902087": {
+   "closes": "2026-09-28T18:37:28+00:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58001": {
+   "closes": "2026-09-28T20:10:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58043": {
+   "closes": "2026-09-28T20:17:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58088": {
+   "closes": "2026-09-28T20:25:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58118": {
+   "closes": "2026-09-28T20:30:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58142": {
+   "closes": "2026-09-28T20:34:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58172": {
+   "closes": "2026-09-28T20:39:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:58208": {
+   "closes": "2026-09-28T20:45:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3271679": {
+   "closes": "2026-09-28T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285244": {
+   "closes": "2026-09-28T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285246": {
+   "closes": "2026-09-28T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285252": {
+   "closes": "2026-09-28T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285767": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
   "proveiling:3285771": {
    "closes": "2026-10-05T20:00:00+02:00",
    "first": "2026-09-24T04:25:47.717815+00:00"
+  },
+  "proveiling:3285775": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285793": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285798": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285807": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285813": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285814": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "proveiling:3285825": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T07:40:35.060044+00:00"
   }
  },
  "site_cache": {
