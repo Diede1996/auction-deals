@@ -1,0 +1,199 @@
+{
+ "fees": [
+  {
+   "id": "proveiling",
+   "name": "ProVeiling",
+   "premium": 0.16,
+   "vat": 0.21
+  },
+  {
+   "id": "onlineveilingmeester",
+   "name": "Onlineveilingmeester",
+   "premium": 0.17,
+   "vat": 0.21
+  },
+  {
+   "id": "troostwijk",
+   "name": "Troostwijk",
+   "premium": 0.18,
+   "vat": 0.21
+  },
+  {
+   "id": "hnvi",
+   "name": "HNVI",
+   "premium": 0.19,
+   "vat": 0.21
+  },
+  {
+   "id": "plaatsjebod",
+   "name": "Plaats Je Bod",
+   "premium": 0.22,
+   "vat": 0.21
+  }
+ ],
+ "generated": "2026-09-24T04:25:47.717815+00:00",
+ "lots": [
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bids": 0,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T04:25:47.717815+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285771|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Hilti",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285771",
+   "location": "Waddinxveen",
+   "market": 137.5,
+   "marketSource": "marktplaats",
+   "maxBid": 64.0,
+   "mp": {
+    "asOf": "2026-09-24T04:25:47.717815+00:00",
+    "count": 10,
+    "high": 276.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Hilti X-FB 20 C27 leidingbeugels Ø20mm – 100 stuks – Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2434333943-hilti-x-fb-20-c27-leidingbeugels-o20mm-100-stuks-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Hilti Doorslijpschijf AC-D SP 125x1.6",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2429211398-hilti-doorslijpschijf-ac-d-sp-125x1-6"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.95,
+      "title": "Battery Hilti SFB150 SFB155",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824578-battery-hilti-sfb150-sfb155"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.95,
+      "title": "Battery Hilti SFB180 SFB185",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824426-battery-hilti-sfb180-sfb185"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Hilti PUA 36 statief",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2439041453-hilti-pua-36-statief"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Hilti DWP 10 Drukcontainer voor water toevoegen kernboren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2429063243-hilti-dwp-10-drukcontainer-voor-water-toevoegen-kernboren"
+     },
+     {
+      "kind": "fixed",
+      "price": 240.0,
+      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782471-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
+     },
+     {
+      "kind": "fixed",
+      "price": 240.0,
+      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782127-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
+     },
+     {
+      "kind": "bid",
+      "price": 385.0,
+      "title": "Hilti DC 230-S Diamant doorslijpmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2436907348-hilti-dc-230-s-diamant-doorslijpmachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 750.0,
+      "title": "Hilti PS 85 Ferroscan - Betondekking en wapeningsdetector",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2435738126-hilti-ps-85-ferroscan-betondekking-en-wapeningsdetector"
+     }
+    ],
+    "low": 65.71,
+    "median": 137.5,
+    "outliers": [
+     1750.0
+    ],
+    "prices": [
+     35.0,
+     50.0,
+     70.95,
+     80.95,
+     100.0,
+     175.0,
+     240.0,
+     240.0,
+     385.0,
+     750.0
+    ],
+    "query": "hilti",
+    "url": "https://www.marktplaats.nl/q/hilti/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hilti/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Hilti Meetstatief PUA 25",
+   "url": "https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3285771/detail",
+   "vat": 0.21
+  }
+ ],
+ "settings": {
+  "min_profit": 25.0,
+  "resale_factor": 0.85,
+  "selling_costs": 0.0,
+  "target_return": 0.3
+ },
+ "sites": [
+  {
+   "error": "BlockedError: www.troostwijkauctions.com is blocking automated requests (HTTP 403)",
+   "id": "troostwijk",
+   "lots": 0,
+   "name": "Troostwijk",
+   "ok": false
+  },
+  {
+   "error": "",
+   "id": "proveiling",
+   "lots": 239,
+   "name": "ProVeiling",
+   "ok": true
+  },
+  {
+   "error": "",
+   "id": "hnvi",
+   "lots": 209,
+   "name": "HNVI",
+   "ok": true
+  },
+  {
+   "error": "",
+   "id": "plaatsjebod",
+   "lots": 133,
+   "name": "Plaats Je Bod",
+   "ok": true
+  },
+  {
+   "error": "",
+   "id": "onlineveilingmeester",
+   "lots": 6,
+   "name": "Onlineveilingmeester",
+   "ok": true
+  },
+  {
+   "error": "",
+   "id": "marktplaats",
+   "lots": 1,
+   "name": "Marktplaats prices",
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "health": {
+  "hnvi": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "",
+   "fails": 0,
+   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "lots": 209,
+   "ok": true
+  },
+  "marktplaats": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "",
+   "fails": 0,
+   "lots": 1,
+   "ok": true
+  },
+  "onlineveilingmeester": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "",
+   "fails": 0,
+   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "lots": 6,
+   "ok": true
+  },
+  "plaatsjebod": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "",
+   "fails": 0,
+   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "lots": 133,
+   "ok": true
+  },
+  "proveiling": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "",
+   "fails": 0,
+   "last_ok": "2026-09-24T04:25:47.717815+00:00",
+   "lots": 239,
+   "ok": true
+  },
+  "troostwijk": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "error": "BlockedError: www.troostwijkauctions.com is blocking automated requests (HTTP 403)",
+   "fails": 1,
+   "ok": false
+  }
+ },
+ "last_run": {
+  "at": "2026-09-24T04:25:47.717815+00:00",
+  "deals": 1,
+  "lots": 587,
+  "matches": 1,
+  "new": 1,
+  "requests": 51
+ },
+ "price_cache": {
+  "hilti meetstatief pua 25|": {
+   "at": "2026-09-24T04:25:47.717815+00:00",
+   "est": {
+    "as_of": "2026-09-24T04:25:47.717815+00:00",
+    "count": 10,
+    "high": 276.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Hilti X-FB 20 C27 leidingbeugels Ø20mm – 100 stuks – Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2434333943-hilti-x-fb-20-c27-leidingbeugels-o20mm-100-stuks-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Hilti Doorslijpschijf AC-D SP 125x1.6",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2429211398-hilti-doorslijpschijf-ac-d-sp-125x1-6"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.95,
+      "title": "Battery Hilti SFB150 SFB155",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824578-battery-hilti-sfb150-sfb155"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.95,
+      "title": "Battery Hilti SFB180 SFB185",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/elektronica-componenten/m2437824426-battery-hilti-sfb180-sfb185"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Hilti PUA 36 statief",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2439041453-hilti-pua-36-statief"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Hilti DWP 10 Drukcontainer voor water toevoegen kernboren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2429063243-hilti-dwp-10-drukcontainer-voor-water-toevoegen-kernboren"
+     },
+     {
+      "kind": "fixed",
+      "price": 240.0,
+      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782471-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
+     },
+     {
+      "kind": "fixed",
+      "price": 240.0,
+      "title": "Hilti HSL4 M16 10/-/- Zwaarlastankers / Betonankers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2435782127-hilti-hsl4-m16-10-zwaarlastankers-betonankers"
+     },
+     {
+      "kind": "bid",
+      "price": 385.0,
+      "title": "Hilti DC 230-S Diamant doorslijpmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2436907348-hilti-dc-230-s-diamant-doorslijpmachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 750.0,
+      "title": "Hilti PS 85 Ferroscan - Betondekking en wapeningsdetector",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2435738126-hilti-ps-85-ferroscan-betondekking-en-wapeningsdetector"
+     }
+    ],
+    "low": 65.71,
+    "median": 137.5,
+    "outliers": [
+     1750.0
+    ],
+    "prices": [
+     35.0,
+     50.0,
+     70.95,
+     80.95,
+     100.0,
+     175.0,
+     240.0,
+     240.0,
+     385.0,
+     750.0
+    ],
+    "query": "hilti"
+   }
+  }
+ },
+ "seen": {
+  "proveiling:3285771": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-24T04:25:47.717815+00:00"
+  }
+ },
+ "site_cache": {
+  "hnvi": {},
+  "onlineveilingmeester": {},
+  "plaatsjebod": {},
+  "proveiling": {},
+  "troostwijk": {}
+ }
+}
