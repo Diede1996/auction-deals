@@ -1,41 +1,41 @@
 {
  "health": {
   "hnvi": {
-   "at": "2026-09-24T07:40:35.060044+00:00",
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T07:40:35.060044+00:00",
+   "last_ok": "2026-09-25T04:26:17.095663+00:00",
    "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-24T07:40:35.060044+00:00",
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "error": "",
    "fails": 0,
    "lots": 40,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-24T07:40:35.060044+00:00",
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T07:40:35.060044+00:00",
-   "lots": 1066,
+   "last_ok": "2026-09-25T04:26:17.095663+00:00",
+   "lots": 1130,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-24T07:40:35.060044+00:00",
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T07:40:35.060044+00:00",
+   "last_ok": "2026-09-25T04:26:17.095663+00:00",
    "lots": 133,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-24T07:40:35.060044+00:00",
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-24T07:40:35.060044+00:00",
+   "last_ok": "2026-09-25T04:26:17.095663+00:00",
    "lots": 239,
    "ok": true
   },
@@ -47,14 +47,85 @@
   }
  },
  "last_run": {
-  "at": "2026-09-24T07:40:35.060044+00:00",
-  "deals": 2,
-  "lots": 2168,
-  "matches": 61,
-  "new": 60,
-  "requests": 121
+  "at": "2026-09-25T04:26:17.095663+00:00",
+  "deals": 11,
+  "lots": 2232,
+  "matches": 63,
+  "new": 2,
+  "requests": 120
  },
  "price_cache": {
+  "beeldscherm acer rg270|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "beeldscherm acer v277 beeldschermen|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "beeldscherm acer v277 twee|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "beeldscherm hp compaq la2306x|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 27.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "HP Beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445188119-hp-beeldscherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "HP beeldscherm, 51cm-28cm ziet er nog heel netjes uit zwart.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446385207-hp-beeldscherm-51cm-28cm-ziet-er-nog-heel-netjes-uit-zwart"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "beeldscherm HP 19 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444241499-beeldscherm-hp-19-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "HP beeldscherm HDMI",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445522062-hp-beeldscherm-hdmi"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Beeldscherm HP w2207h",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446312823-beeldscherm-hp-w2207h"
+     }
+    ],
+    "low": 12.5,
+    "median": 20.0,
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     20.0,
+     25.0,
+     30.0
+    ],
+    "query": "beeldscherm hp"
+   }
+  },
+  "beeldscherm samsung s27c310eau|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "beeldscherm samsung s27c366eau krasje|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
   "beeldscherm toebehoren acer veriton|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
@@ -81,6 +152,10 @@
   },
   "colbert colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert dsquared2|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
   },
   "colbert heren colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
@@ -205,6 +280,10 @@
   },
   "colbert jassen man colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "colbert loro piana|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
   },
   "colbert man colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
@@ -571,9 +650,364 @@
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
   },
+  "dewalt accu bouwradio|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 6,
+    "high": 92.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "DeWalt Bouwradio met Accu en Stopcontacten",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2409050225-dewalt-bouwradio-met-accu-en-stopcontacten"
+     },
+     {
+      "kind": "bid",
+      "price": 62.0,
+      "title": "Dewalt Accu Bouwradio - Robuust en Draagbaar",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441937588-dewalt-accu-bouwradio-robuust-en-draagbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWalt bouwradio (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441514923-dewalt-bouwradio-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWALT DCR017 DAB+ Bouwradio en Acculader",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2430867403-dewalt-dcr017-dab-bouwradio-en-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Dewalt accu bouwradio",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2445696231-dewalt-accu-bouwradio"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "DAB DeWalt bouwradio inclusief 18V 4.0 AH accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2443902471-dab-dewalt-bouwradio-inclusief-18v-4-0-ah-accu"
+     }
+    ],
+    "low": 53.75,
+    "median": 70.0,
+    "outliers": [
+     269.99
+    ],
+    "prices": [
+     29.0,
+     62.0,
+     70.0,
+     70.0,
+     90.0,
+     99.0
+    ],
+    "query": "dewalt accu bouwradio"
+   }
+  },
+  "dewalt accuboormachine dc910 28v|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 4,
+    "high": 108.75,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Accuboormachine Dewalt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445043301-accuboormachine-dewalt"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: DEWALT Accuboormachine DC910; 28V, incl. ...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444432579-online-veiling-dewalt-accuboormachine-dc910-28v-incl"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "DeWalt DCL070 bouwlamp en twee accuboormachines",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2425789351-dewalt-dcl070-bouwlamp-en-twee-accuboormachines"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "DeWalt DCD709 18V XR Accuboormachine Brushless5.0Ah Accu & O",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439432293-dewalt-dcd709-18v-xr-accuboormachine-brushless5-0ah-accu-o"
+     }
+    ],
+    "low": 16.2,
+    "median": 54.89,
+    "outliers": [],
+    "prices": [
+     10.0,
+     34.79,
+     75.0,
+     120.0
+    ],
+    "query": "dewalt accuboormachine"
+   }
+  },
+  "dewalt accuboormachine dcf887 18v|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 4,
+    "high": 112.5,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DeWALT accuboormachine DCF887, type 10 - 18V",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444432026-online-veiling-dewalt-accuboormachine-dcf887-type-10-18v"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWalt DCD777 Accuboormachine 18V XR Brushless",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430143741-dewalt-dcd777-accuboormachine-18v-xr-brushless"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "DeWalt DCD791D2 Accuboormachine met 5.0Ah accu en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445931438-dewalt-dcd791d2-accuboormachine-met-5-0ah-accu-en-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "DeWalt DCD709 18V XR Accuboormachine Brushless5.0Ah Accu & O",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439432293-dewalt-dcd709-18v-xr-accuboormachine-brushless5-0ah-accu-o"
+     }
+    ],
+    "low": 39.25,
+    "median": 80.0,
+    "outliers": [],
+    "prices": [
+     29.0,
+     70.0,
+     90.0,
+     120.0
+    ],
+    "query": "dewalt accuboormachine"
+   }
+  },
+  "dewalt tstak gereedschapskoffer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 8,
+    "high": 26.75,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442664478-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2425242636-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2412564707-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 15.95,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442322844-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 18.0,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2407697865-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2423106513-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DEWALT TSTAK Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444432320-online-veiling-dewalt-tstak-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer met Inlay",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436537030-dewalt-tstak-gereedschapskoffer-met-inlay"
+     }
+    ],
+    "low": 10.0,
+    "median": 16.98,
+    "outliers": [
+     65.0
+    ],
+    "prices": [
+     7.5,
+     10.0,
+     10.0,
+     15.95,
+     18.0,
+     20.0,
+     29.0,
+     30.0
+    ],
+    "query": "dewalt tstak gereedschapskoffer"
+   }
+  },
+  "dewalt xrp accu klopboormachine|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 70.95,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 26.95,
+      "title": "DeWalt 18V XRP / DE9095 / DC9096 / DE9503, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595142-dewalt-18v-xrp-de9095-dc9096-de9503-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DEWALT XRP Accu klopboormachine DC925 493...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444431487-online-veiling-dewalt-xrp-accu-klopboormachine-dc925-493"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Aanbieding: 2x DeWalt 12V XRP /  DE9074, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523594842-aanbieding-2x-dewalt-12v-xrp-de9074-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 61.95,
+      "title": "Startset: 2x DeWalt 18V XRP / DE9095, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1530991241-startset-2x-dewalt-18v-xrp-de9095-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.95,
+      "title": "Startset: 2x DeWalt 18V XRP / DE9095, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595266-startset-2x-dewalt-18v-xrp-de9095-123accu-huismerk"
+     }
+    ],
+    "low": 27.98,
+    "median": 39.95,
+    "outliers": [],
+    "prices": [
+     26.95,
+     29.0,
+     39.95,
+     61.95,
+     79.95
+    ],
+    "query": "dewalt xrp"
+   }
+  },
   "espressomachine zoe211212006a|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
+  },
+  "hilti dx 460 kruitschiethamer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 175.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Hilti DX 460 Schiethamer Nagels",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2358686913-hilti-dx-460-schiethamer-nagels"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Hilti DX 450 Schiethamer met patronen en nagels",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2424296476-hilti-dx-450-schiethamer-met-patronen-en-nagels"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.99,
+      "title": "Hilti DX450 Kruitschiethamer | In koffer | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440808868-hilti-dx450-kruitschiethamer-in-koffer-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX A40 Schiethamer met accessoires",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2418932904-hilti-dx-a40-schiethamer-met-accessoires"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX 400 Schiethamer - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2439480542-hilti-dx-400-schiethamer-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX 350 Schiethamer met toebehoren en koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2414126789-hilti-dx-350-schiethamer-met-toebehoren-en-koffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 175.0,
+      "title": "Hilti DX 450 Schiethamer met patronen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2433666965-hilti-dx-450-schiethamer-met-patronen"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Hilti DX 450 Schiethamer met toebehoren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437255000-hilti-dx-450-schiethamer-met-toebehoren"
+     },
+     {
+      "kind": "bid",
+      "price": 600.0,
+      "title": "Hilti DX 460 Volautomatische Kruitschiethamer Set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2437579695-hilti-dx-460-volautomatische-kruitschiethamer-set"
+     }
+    ],
+    "low": 77.5,
+    "median": 150.0,
+    "outliers": [
+     2250.0,
+     5000.0
+    ],
+    "prices": [
+     30.0,
+     45.0,
+     109.99,
+     150.0,
+     150.0,
+     150.0,
+     175.0,
+     175.0,
+     600.0
+    ],
+    "query": "hilti dx"
+   }
   },
   "hilti meetstatief pua 25|": {
    "at": "2026-09-24T04:25:47.717815+00:00",
@@ -663,6 +1097,10 @@
     "query": "hilti"
    }
   },
+  "hilti meetstatief pua 25|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
   "koffiemachine flojet bw5004 000a|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
@@ -717,6 +1155,177 @@
     ],
     "query": "koffiemachine philips"
    }
+  },
+  "koffiemachine philips|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 21,
+    "high": 127.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Philips Senseo koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446322145-philips-senseo-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444684465-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 22.5,
+      "title": "Philips Senseo viva café Keith Haring koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446321214-philips-senseo-viva-cafe-keith-haring-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 24.95,
+      "title": "Philips vollautomaat koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445298694-philips-vollautomaat-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Philips senseo koffiemachine izgst",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446089544-philips-senseo-koffiemachine-izgst"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Philips Saeco Intelia Koffiemachine - Zeer Gebruiksvriendeli",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446214434-philips-saeco-intelia-koffiemachine-zeer-gebruiksvriendeli"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Philips Koffiemachine,",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445130893-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Philips EP2220 Koffiemachine met Stoompijpje + AquaClean",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445579162-philips-ep2220-koffiemachine-met-stoompijpje-aquaclean"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips 2200 Series EP2220/10 volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446410017-philips-2200-series-ep2220-10-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445124183-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips Koffiemachine met Cappuccino Functie",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444304603-philips-koffiemachine-met-cappuccino-functie"
+     },
+     {
+      "kind": "fixed",
+      "price": 116.0,
+      "title": "Philips -  Café Gourmet () - Koffiemachine 125 L Zwart",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1502458075-philips-cafe-gourmet-koffiemachine-125-l-zwart"
+     },
+     {
+      "kind": "bid",
+      "price": 119.0,
+      "title": "Philips EP3551/00 volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800992-philips-ep3551-00-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Philips EP2230/10 Volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446111606-philips-ep2230-10-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Nette Philips koffiemachine EP2221",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444106405-nette-philips-koffiemachine-ep2221"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Te koop Philips baristina koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444709459-te-koop-philips-baristina-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Philips EP2230 koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800172-philips-ep2230-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Philips Koffiemachine - Compleet met handleiding",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2443877623-philips-koffiemachine-compleet-met-handleiding"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Philips 220 koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445575099-philips-220-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 230.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444491194-philips-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "philips 2300 serie (2334) volautomatische koffiemachines",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446122831-philips-2300-serie-2334-volautomatische-koffiemachines"
+     }
+    ],
+    "low": 40.0,
+    "median": 100.0,
+    "outliers": [
+     350.0,
+     380.0,
+     410.0
+    ],
+    "prices": [
+     15.0,
+     15.0,
+     22.5,
+     24.95,
+     35.0,
+     45.0,
+     75.0,
+     80.0,
+     100.0,
+     100.0,
+     100.0,
+     116.0,
+     119.0,
+     125.0,
+     125.0,
+     125.0,
+     130.0,
+     150.0,
+     150.0,
+     230.0,
+     250.0
+    ],
+    "query": "koffiemachine philips"
+   }
+  },
+  "koffiemachine scanpart intenza waterfilter|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
   },
   "kostuum zwarte ouderwetse heren|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-09-24T07:40:35.060044+00:00",
@@ -968,6 +1577,796 @@
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
   },
+  "laptop hp i5 fcoxx|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 350.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "HP 15 laptop met core i5 cpu,4gbmem,500gbhdd,dvd,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445582123-hp-15-laptop-met-core-i5-cpu-4gbmem-500gbhdd-dvd"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP laptop - Intel i5 - SSD - 4 GB - Wind.11 + Office",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446148893-hp-laptop-intel-i5-ssd-4-gb-wind-11-office"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "HP laptop 15,6” Full HD Intel i5 256GB SSD Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2440769960-hp-laptop-15-6-full-hd-intel-i5-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "HP Laptop 15\" Intel Core i5  8GB RAM  256GB SSD  Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2430195238-hp-laptop-15-intel-core-i5-8gb-ram-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "fixed",
+      "price": 400.0,
+      "title": "HP Laptop - Intel Core i5 - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2409643689-hp-laptop-intel-core-i5-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 65.0,
+    "median": 200.0,
+    "outliers": [],
+    "prices": [
+     65.0,
+     65.0,
+     200.0,
+     300.0,
+     400.0
+    ],
+    "query": "laptop hp i5"
+   }
+  },
+  "makita 53671 diamantschijf 100mm|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "makita accu bouwradio|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 11,
+    "high": 210.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita BMR100 bouwradio (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2435172642-makita-bmr100-bouwradio-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Makita DMR102 Bouwradio met 18V 3Ah accu - Speelt super!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2439357891-makita-dmr102-bouwradio-met-18v-3ah-accu-speelt-super"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DMR100 Limited Edition Bouwradio Wit (excl. accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2416755147-makita-dmr100-limited-edition-bouwradio-wit-excl-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Makita MR001GZ 12/18/40V Max Li-Ion accu bouwradio body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2322187548-makita-mr001gz-12-18-40v-max-li-ion-accu-bouwradio-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Makita DMR112 18V Accu Bouwradio DAB+ Bluetooth LXT CXT",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2445713761-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Makita DMR115 bouwradio DAB+ Bluetooth excl. accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446022484-makita-dmr115-bouwradio-dab-bluetooth-excl-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 159.99,
+      "title": "Nette Dmr115 Makita bouwradio met oplader.Eventueel met accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446407695-nette-dmr115-makita-bouwradio-met-oplader-eventueel-met-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 179.99,
+      "title": "Nieuwe MR004G Makita bouwradio Dab+ en Bleutooth met accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2444824386-nieuwe-mr004g-makita-bouwradio-dab-en-bleutooth-met-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 210.0,
+      "title": "Makita DMR115 10,8-18V  accu bouwradio - DAB+ - bluetooth",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582594916-makita-dmr115-10-8-18v-accu-bouwradio-dab-bluetooth"
+     },
+     {
+      "kind": "fixed",
+      "price": 270.0,
+      "title": "Makita DMR116 Bouwradio Radio incl accus en acculader nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2285335254-makita-dmr116-bouwradio-radio-incl-accus-en-acculader-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 350.0,
+      "title": "Makita DMR115 10,8-18V Li-Ion accu bouwradio accus en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582596632-makita-dmr115-10-8-18v-li-ion-accu-bouwradio-accus-en-lader"
+     }
+    ],
+    "low": 100.0,
+    "median": 149.0,
+    "outliers": [],
+    "prices": [
+     50.0,
+     85.0,
+     100.0,
+     145.0,
+     149.0,
+     149.0,
+     159.99,
+     179.99,
+     210.0,
+     270.0,
+     350.0
+    ],
+    "query": "makita accu bouwradio"
+   }
+  },
+  "makita acculader dc18rc accu|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 12,
+    "high": 50.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader - snellader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444807212-makita-dc18rc-acculader-snellader-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V — 3,0 A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-acculader-14-4-18v-3-0-a"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V — ook Dolmar en Greenlee",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-en-greenlee"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita acculader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: Makita Acculader DC18RC T incl. Accu 5.0A...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444433077-online-veiling-makita-acculader-dc18rc-t-incl-accu-5-0a"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita acculaders DC10SB en DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita - DC18RC acculader + 2x 18V 3.0Ah accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445729789-makita-dc18rc-acculader-2x-18v-3-0ah-accu"
+     }
+    ],
+    "low": 28.46,
+    "median": 37.39,
+    "outliers": [
+     140.0
+    ],
+    "prices": [
+     25.0,
+     27.95,
+     27.95,
+     30.0,
+     30.0,
+     34.79,
+     40.0,
+     40.0,
+     50.0,
+     50.0,
+     75.0,
+     80.0
+    ],
+    "query": "makita acculader dc18rc accu"
+   }
+  },
+  "makita avt breekhamer hm1812|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 7,
+    "high": 275.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 40.6,
+      "title": "Online Veiling: Makita AVT Breekhamer HM1812",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444434090-online-veiling-makita-avt-breekhamer-hm1812"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Makita JR3070CT AVT Reciprozaag zaagmachine",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2412121120-makita-jr3070ct-avt-reciprozaag-zaagmachine"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Makita JR3070CT Reciprozaag met AVT 1510 Watt in koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2430083467-makita-jr3070ct-reciprozaag-met-avt-1510-watt-in-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 225.0,
+      "title": "Makita DHR182 18V Accu Boorhamer AVT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2408019053-makita-dhr182-18v-accu-boorhamer-avt"
+     },
+     {
+      "kind": "fixed",
+      "price": 275.0,
+      "title": "Makita HM0871C Breekhamer met AVT - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442625513-makita-hm0871c-breekhamer-met-avt-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 275.0,
+      "title": "Makita AVT Boorhamer in Koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2411291927-makita-avt-boorhamer-in-koffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 325.0,
+      "title": "Makita boorhamer AVT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2440931287-makita-boorhamer-avt"
+     }
+    ],
+    "low": 145.0,
+    "median": 225.0,
+    "outliers": [],
+    "prices": [
+     40.6,
+     145.0,
+     175.0,
+     225.0,
+     275.0,
+     275.0,
+     325.0
+    ],
+    "query": "makita avt"
+   }
+  },
+  "makita gereedschapskoffers|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 8,
+    "high": 61.25,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Gereedschapskoffers leeg - Makita en Metabo",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.72,
+      "title": "Online Veiling: Makita gereedschapskoffers - 2 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444431142-online-veiling-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita Gereedschapskoffers mbox 5 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436592975-makita-gereedschapskoffers-mbox-5-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "nieuwe makita gereedschapskoffers 25 euro per koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443739238-nieuwe-makita-gereedschapskoffers-25-euro-per-koffer"
+     }
+    ],
+    "low": 15.0,
+    "median": 17.36,
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     15.0,
+     15.0,
+     19.72,
+     20.0,
+     75.0,
+     100.0
+    ],
+    "query": "makita gereedschapskoffers"
+   }
+  },
+  "makita gereedschapskoffer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 36,
+    "high": 25.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita inleg tray voor gereedschapskoffer nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2442707257-makita-inleg-tray-voor-gereedschapskoffer-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441549512-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita inlay voor gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2434745460-makita-inlay-voor-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita gereedschapskoffer - Lege koffer voor gereedschap",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2431625367-makita-gereedschapskoffer-lege-koffer-voor-gereedschap"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2408691049-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita inlay voor gereedschapskoffer - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436919476-makita-inlay-voor-gereedschapskoffer-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 7.0,
+      "title": "7€ Makita LXT Brushless Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441454666-7-makita-lxt-brushless-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Makita gereedschapskoffer - Lege koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2436653451-makita-gereedschapskoffer-lege-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2427550118-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2426724924-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 12.0,
+      "title": "Lege Makita gereedschapskoffer (voor schroefboormachine)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430680473-lege-makita-gereedschapskoffer-voor-schroefboormachine"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2444656277-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Gereedschapskoffers leeg - Makita en Metabo",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita LXT Brushless gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2432033415-makita-lxt-brushless-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.72,
+      "title": "Online Veiling: Makita gereedschapskoffers - 2 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444431142-online-veiling-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita JR3050T Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2444696926-makita-jr3050t-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443083306-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita Systainer 2 gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2443260196-makita-systainer-2-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita Systainer Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2440697598-makita-systainer-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - 2 stuks(slijptol)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436394052-makita-gereedschapskoffer-2-stuks-slijptol"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Mbox Makita Koffer Type 2 - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2413532058-mbox-makita-koffer-type-2-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita koffer DTW300ZJ - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2424673500-makita-koffer-dtw300zj-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita Mbox leeg - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2416226302-makita-mbox-leeg-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita gereedschapskoffer - stevig en ruim",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2422851878-makita-gereedschapskoffer-stevig-en-ruim"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita gereedschapskoffer voor zaagmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2439288569-makita-gereedschapskoffer-voor-zaagmachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436765693-makita-gereedschapskoffer-leeg"
+     }
+    ],
+    "low": 10.0,
+    "median": 19.86,
+    "outliers": [
+     65.0,
+     75.0,
+     75.0,
+     100.0
+    ],
+    "prices": [
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     7.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     12.0,
+     15.0,
+     15.0,
+     15.0,
+     15.0,
+     15.0,
+     19.72,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     25.0,
+     25.0,
+     30.0,
+     30.0,
+     30.0,
+     32.0,
+     35.0,
+     35.0,
+     40.0,
+     50.0
+    ],
+    "query": "makita gereedschapskoffer"
+   }
+  },
+  "makita jr 3030t reciprozaag|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 110.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita JR3000V Reciprozaag - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2410254819-makita-jr3000v-reciprozaag-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Makita JR3060T Reciprozaag 1250W - Krachtig en Betrouwbaar",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2445097742-makita-jr3060t-reciprozaag-1250w-krachtig-en-betrouwbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 69.99,
+      "title": "Makita JR3070CT Reciprozaag 2014 | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2443964503-makita-jr3070ct-reciprozaag-2014-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "MAKITA JR3050T reciprozaag – 1010W – ZO GOED ALS NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2446005107-makita-jr3050t-reciprozaag-1010w-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita JR3050T Reciprozaag 1010W - Gebruikt met koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2429569917-makita-jr3050t-reciprozaag-1010w-gebruikt-met-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita JR3050T Reciprozaag - Compleet met 10 nieuwe zaagjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2437843382-makita-jr3050t-reciprozaag-compleet-met-10-nieuwe-zaagjes"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita JR3050T Reciprozaag - Krachtig en Betrouwbaar",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2432462075-makita-jr3050t-reciprozaag-krachtig-en-betrouwbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 119.99,
+      "title": "Makita JR3050T Reciprozaag | Bedraad | In kist",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2413737292-makita-jr3050t-reciprozaag-bedraad-in-kist"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Makita reciprozaag JR3050T - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2438036854-makita-reciprozaag-jr3050t-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 67.5,
+    "median": 75.0,
+    "outliers": [],
+    "prices": [
+     50.0,
+     65.0,
+     69.99,
+     75.0,
+     75.0,
+     100.0,
+     100.0,
+     119.99,
+     125.0
+    ],
+    "query": "makita jr"
+   }
+  },
+  "makita lxt accubatterij bl1830|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": {
+    "as_of": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 67.49,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DECADP05 USB-adapter LXT 14,4V/18V - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446169728-makita-decadp05-usb-adapter-lxt-14-4v-18v-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.95,
+      "title": "ACTIE accu 18v 6.0 Ah past op Makita lxt machines Bl1860B",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2418256138-actie-accu-18v-6-0-ah-past-op-makita-lxt-machines-bl1860b"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: Makita LXT Accubatterij BL1830",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444431447-online-veiling-makita-lxt-accubatterij-bl1830"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
+     },
+     {
+      "kind": "bid",
+      "price": 39.0,
+      "title": "Originele Makita DC18RC snellader – 18V LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
+     },
+     {
+      "kind": "bid",
+      "price": 64.99,
+      "title": "Makita Accu BL1850B LXT 18V 5,0Ah | Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445405071-makita-accu-bl1850b-lxt-18v-5-0ah-nieuw-in-doos"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.99,
+      "title": "Makita Accu BL1850B LXT 18 V 5,0Ah | Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442938902-makita-accu-bl1850b-lxt-18-v-5-0ah-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita BL1830B 18V LXT Accu + Duolader (3.0 Ah) - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427485530-makita-bl1830b-18v-lxt-accu-duolader-3-0-ah-nieuw"
+     }
+    ],
+    "low": 27.48,
+    "median": 35.0,
+    "outliers": [],
+    "prices": [
+     25.0,
+     25.0,
+     29.95,
+     34.79,
+     35.0,
+     39.0,
+     64.99,
+     69.99,
+     75.0
+    ],
+    "query": "makita lxt"
+   }
+  },
+  "makita m8600 boorhamer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
+  "metabo schijven haakse slijper|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
+   "est": null
+  },
   "monitor sharp samsung|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": {
@@ -1123,6 +2522,10 @@
   },
   "nespresso koffielekbakje ontbreekt koffieapparaat|bonen,capsule,capsules,cups,defect,filter,filters,koffiebonen,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten": {
    "at": "2026-09-24T07:40:35.060044+00:00",
+   "est": null
+  },
+  "thinkpad t440s hdd ram|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
   }
  },
@@ -1290,6 +2693,14 @@
   "onlineveilingmeester:1902087": {
    "closes": "2026-09-28T18:37:28+00:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1902814": {
+   "closes": "2026-09-30T18:33:36+00:00",
+   "first": "2026-09-25T04:26:17.095663+00:00"
+  },
+  "onlineveilingmeester:1902873": {
+   "closes": "2026-09-30T18:47:36+00:00",
+   "first": "2026-09-25T04:26:17.095663+00:00"
   },
   "plaatsjebod:58001": {
    "closes": "2026-09-28T20:10:00+02:00",

@@ -29,7 +29,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-09-24T07:40:35.060044+00:00",
+ "generated": "2026-09-25T04:26:17.095663+00:00",
  "lots": [
   {
    "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
@@ -40,7 +40,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3285244|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -67,7 +67,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15725|165598|3285246|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -142,7 +142,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3271679|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -169,7 +169,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3285252|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -244,7 +244,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-033.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -510,7 +510,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-087.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -537,7 +537,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-133-1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -557,14 +557,14 @@
   },
   {
    "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 50.0,
-   "bids": 5,
+   "bid": 60.0,
+   "bids": 6,
    "closes": "2026-09-28T20:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-182.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -584,14 +584,14 @@
   },
   {
    "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 50.0,
-   "bids": 4,
+   "bid": 60.0,
+   "bids": 5,
    "closes": "2026-09-28T20:34:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-203.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -657,9 +657,9 @@
    "closes": "2026-09-28T18:37:28+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-09-22/c985a1e7-2cac-4380-a764-324c32795bb6/20260921_143258.jpg",
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-22/da6f9f19-b399-4187-a3a1-7f834d058478/20260921_143547.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -741,7 +741,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-270.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -768,7 +768,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-330.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -795,7 +795,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/lDQefOpemx8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NDg0LzAwMTkta29mZmllYXBwYXJhYXQtbmVzcHJlc3NvLWtvZmZpZWxla2Jha2plLW9udGJyZWVrdC5qcGc.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -822,7 +822,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/66f58fc6-7ba7-42db-bde1-b80d4a263a24/139%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -833,23 +833,23 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+beroepen/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Beroepen colberts",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/139",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 10.0,
-   "bids": 1,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-09-29T18:21:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/af7efeea-e363-4d4b-b90a-edaf7c5ed761/207%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -857,7 +857,7 @@
    "location": null,
    "market": 39.99,
    "marketSource": "marktplaats",
-   "maxBid": 7.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-09-24T07:40:35.060044+00:00",
     "count": 10,
@@ -946,12 +946,12 @@
     "url": "https://www.marktplaats.nl/q/colbert+man/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 41x Man, overjassen en colberts",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/207",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -962,7 +962,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/044061cc-5269-4bfb-9357-6ec0b8c42d0d/228%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -973,12 +973,12 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+verschillende/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 56x Man, colberts in verschillende kleuren",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/228",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -989,7 +989,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/a12d07ec-6b97-462b-b24f-7e3462172ae5/226%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -997,7 +997,7 @@
    "location": null,
    "market": 39.99,
    "marketSource": "marktplaats",
-   "maxBid": 7.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-09-24T07:40:35.060044+00:00",
     "count": 10,
@@ -1086,23 +1086,23 @@
     "url": "https://www.marktplaats.nl/q/colbert+man/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 27x Man, colberts zwart",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/226",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 10.0,
-   "bids": 1,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-09-29T18:27:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/b3a4eac9-2a0c-426f-89b3-dee91cc978b8/230%20%282%29.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1110,7 +1110,7 @@
    "location": null,
    "market": 39.99,
    "marketSource": "marktplaats",
-   "maxBid": 7.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-09-24T07:40:35.060044+00:00",
     "count": 10,
@@ -1199,12 +1199,12 @@
     "url": "https://www.marktplaats.nl/q/colbert+man/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 46x Man, wollen geruite colberts",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/230",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1215,7 +1215,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/e07805ab-7a88-4143-9bc7-7d180c8308c7/233%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1226,12 +1226,12 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+ouderwetse/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 89x Ouderwetse vestjes en man/ vrouw colberts",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/233",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1242,7 +1242,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/591262be-56cf-4fd8-a7ce-50ea4161f86e/237%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1253,12 +1253,12 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+jasjes/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 43x Heren colberts/ jasjes",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/237",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1269,7 +1269,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/bb9d8d50-dba2-4dbc-b163-b2b4ffbc3731/244%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1280,23 +1280,23 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/kostuum+zwarte/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 42x Zwarte ouderwetse heren kostuumbroeken",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/244",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 10.0,
-   "bids": 1,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-09-29T18:33:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/b8a22188-5a1d-496f-9f02-92bfcf38b1a5/256%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1307,12 +1307,12 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+jassen/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 37x Colberts en jassen man",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/256",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1323,7 +1323,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/592d2120-64a2-4b42-bf2f-b73380942461/255%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1331,7 +1331,7 @@
    "location": null,
    "market": 39.99,
    "marketSource": "marktplaats",
-   "maxBid": 7.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-09-24T07:40:35.060044+00:00",
     "count": 10,
@@ -1420,12 +1420,12 @@
     "url": "https://www.marktplaats.nl/q/colbert+man/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+man/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 21x Middeleeuwse capes en 2x colbert man",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/255",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1436,7 +1436,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/24dfb4bd-b794-4224-a1af-bc6b60b4ab46/254%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1447,23 +1447,23 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+blouses/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 41x Damesjassen, colberts, blouses",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/254",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 12.0,
-   "bids": 2,
+   "bid": 14.0,
+   "bids": 3,
    "closes": "2026-09-29T18:38:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/001a3ca2-edfd-4a42-b3b3-7a537bf9effa/276%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1474,12 +1474,12 @@
    "maxBid": null,
    "mp": null,
    "mpSearch": "https://www.marktplaats.nl/q/colbert+colberts/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 47x Colberts",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/276",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
@@ -1490,7 +1490,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/3839bd52-c79b-4574-bafb-3b6afd60af41/283%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1614,23 +1614,23 @@
     "url": "https://www.marktplaats.nl/q/colbert+heren/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+heren/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 40x Colberts, heren",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/283",
-   "vat": 0.0
+   "vat": 0.21
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 14.0,
-   "bids": 3,
+   "bid": 16.0,
+   "bids": 4,
    "closes": "2026-09-29T18:40:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-10/a2ceb156-a69e-4c95-bda2-ab9701ec78a3/281%20%282%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1754,11 +1754,65 @@
     "url": "https://www.marktplaats.nl/q/colbert+heren/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/colbert+heren/",
-   "premium": 0.21,
+   "premium": 0.17,
    "site": "onlineveilingmeester",
    "siteName": "Onlineveilingmeester",
    "title": "Ca. 44x Colberts, heren",
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281",
+   "vat": 0.21
+  },
+  {
+   "auction": "Domeinen · Exclusieve designer kleding en schoenen",
+   "bid": 56.0,
+   "bids": 0,
+   "closes": "2026-09-30T18:33:36+00:00",
+   "firstSeen": "2026-09-25T04:26:17.095663+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-08-17/22ec5210-c4c0-4ec1-9104-db0c537bb73e/20260817_113934.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1902814",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+dsquared2/",
+   "premium": 0.121,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Colbert, maat 50, Dsquared2",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/13",
+   "vat": 0.0
+  },
+  {
+   "auction": "Domeinen · Exclusieve designer kleding en schoenen",
+   "bid": 119.0,
+   "bids": 3,
+   "closes": "2026-09-30T18:47:36+00:00",
+   "firstSeen": "2026-09-25T04:26:17.095663+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/00428595-205c-49ca-905b-f4d77e5add14/20260923_134331.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Suit / formalwear",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1902873",
+   "location": null,
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/colbert+loro/",
+   "premium": 0.121,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Colbert, maat 50, Loro Piana",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/72",
    "vat": 0.0
   },
   {
@@ -1769,17 +1823,96 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/HQVwUyehwEE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIwLzAwNDZhLWhpbHRpLWR4LTQ2MC1rcnVpdHNjaGlldGhhbWVyLWluLWtvZmZlci5qcGc.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196720",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 150.0,
+   "marketSource": "marktplaats",
+   "maxBid": 71.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 175.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Hilti DX 460 Schiethamer Nagels",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2358686913-hilti-dx-460-schiethamer-nagels"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Hilti DX 450 Schiethamer met patronen en nagels",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2424296476-hilti-dx-450-schiethamer-met-patronen-en-nagels"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.99,
+      "title": "Hilti DX450 Kruitschiethamer | In koffer | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440808868-hilti-dx450-kruitschiethamer-in-koffer-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX A40 Schiethamer met accessoires",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2418932904-hilti-dx-a40-schiethamer-met-accessoires"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX 400 Schiethamer - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2439480542-hilti-dx-400-schiethamer-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Hilti DX 350 Schiethamer met toebehoren en koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2414126789-hilti-dx-350-schiethamer-met-toebehoren-en-koffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 175.0,
+      "title": "Hilti DX 450 Schiethamer met patronen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2433666965-hilti-dx-450-schiethamer-met-patronen"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Hilti DX 450 Schiethamer met toebehoren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437255000-hilti-dx-450-schiethamer-met-toebehoren"
+     },
+     {
+      "kind": "bid",
+      "price": 600.0,
+      "title": "Hilti DX 460 Volautomatische Kruitschiethamer Set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2437579695-hilti-dx-460-volautomatische-kruitschiethamer-set"
+     }
+    ],
+    "low": 77.5,
+    "median": 150.0,
+    "outliers": [
+     2250.0,
+     5000.0
+    ],
+    "prices": [
+     30.0,
+     45.0,
+     109.99,
+     150.0,
+     150.0,
+     150.0,
+     175.0,
+     175.0,
+     600.0
+    ],
+    "query": "hilti dx",
+    "url": "https://www.marktplaats.nl/q/hilti+dx/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/hilti+dx/",
    "premium": 0.19,
    "site": "hnvi",
@@ -1796,17 +1929,93 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/wTcLdLFoUK8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIxLzAwNDdhLW1ha2l0YS1qci0zMDMwdC1yZWNpcHJvemFhZy5qcGc.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196721",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 75.0,
+   "marketSource": "marktplaats",
+   "maxBid": 26.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 110.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita JR3000V Reciprozaag - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2410254819-makita-jr3000v-reciprozaag-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Makita JR3060T Reciprozaag 1250W - Krachtig en Betrouwbaar",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2445097742-makita-jr3060t-reciprozaag-1250w-krachtig-en-betrouwbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 69.99,
+      "title": "Makita JR3070CT Reciprozaag 2014 | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2443964503-makita-jr3070ct-reciprozaag-2014-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "MAKITA JR3050T reciprozaag – 1010W – ZO GOED ALS NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2446005107-makita-jr3050t-reciprozaag-1010w-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita JR3050T Reciprozaag 1010W - Gebruikt met koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2429569917-makita-jr3050t-reciprozaag-1010w-gebruikt-met-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita JR3050T Reciprozaag - Compleet met 10 nieuwe zaagjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2437843382-makita-jr3050t-reciprozaag-compleet-met-10-nieuwe-zaagjes"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita JR3050T Reciprozaag - Krachtig en Betrouwbaar",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2432462075-makita-jr3050t-reciprozaag-krachtig-en-betrouwbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 119.99,
+      "title": "Makita JR3050T Reciprozaag | Bedraad | In kist",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2413737292-makita-jr3050t-reciprozaag-bedraad-in-kist"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Makita reciprozaag JR3050T - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2438036854-makita-reciprozaag-jr3050t-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 67.5,
+    "median": 75.0,
+    "outliers": [],
+    "prices": [
+     50.0,
+     65.0,
+     69.99,
+     75.0,
+     75.0,
+     100.0,
+     100.0,
+     119.99,
+     125.0
+    ],
+    "query": "makita jr",
+    "url": "https://www.marktplaats.nl/q/makita+jr/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+jr/",
    "premium": 0.19,
    "site": "hnvi",
@@ -1824,7 +2033,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/bzsrDc2ncdk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIyLzAwNDhhLW1ha2l0YS1tODYwMC1ib29yaGFtZXIuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1851,7 +2060,7 @@
    "fixed": 8.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-18/559fe834-6102-4ded-ae21-64eab6c50536/4-0.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1878,7 +2087,7 @@
    "fixed": 8.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-18/0221312f-a700-4be4-ae45-36fd6a284f93/44-0.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1905,16 +2114,64 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/0vkB-Rlov9Q/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTY0LzAwMjMtdHdlZS1iZWVsZHNjaGVybWVuLWhwLWNvbXBhcS1sYTIzMDZ4LWluLWhvb2d0ZS12ZXJzdGVsYmFhci1lbi1kcmFhaWJhYXIuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196564",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 20.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 27.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "HP Beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445188119-hp-beeldscherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "HP beeldscherm, 51cm-28cm ziet er nog heel netjes uit zwart.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446385207-hp-beeldscherm-51cm-28cm-ziet-er-nog-heel-netjes-uit-zwart"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "beeldscherm HP 19 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444241499-beeldscherm-hp-19-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "HP beeldscherm HDMI",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445522062-hp-beeldscherm-hdmi"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Beeldscherm HP w2207h",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446312823-beeldscherm-hp-w2207h"
+     }
+    ],
+    "low": 12.5,
+    "median": 20.0,
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     20.0,
+     25.0,
+     30.0
+    ],
+    "query": "beeldscherm hp",
+    "url": "https://www.marktplaats.nl/q/beeldscherm+hp/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/beeldscherm+hp/",
    "premium": 0.19,
    "site": "hnvi",
@@ -1931,17 +2188,181 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/ozqpPDJ4728/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTY4LzAwMjcta29mZmllbWFjaGluZS1waGlsaXBzLmpwZw.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196568",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 100.0,
+   "marketSource": "marktplaats",
+   "maxBid": 41.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 21,
+    "high": 127.5,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Philips Senseo koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446322145-philips-senseo-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444684465-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 22.5,
+      "title": "Philips Senseo viva café Keith Haring koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446321214-philips-senseo-viva-cafe-keith-haring-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 24.95,
+      "title": "Philips vollautomaat koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445298694-philips-vollautomaat-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Philips senseo koffiemachine izgst",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446089544-philips-senseo-koffiemachine-izgst"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Philips Saeco Intelia Koffiemachine - Zeer Gebruiksvriendeli",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446214434-philips-saeco-intelia-koffiemachine-zeer-gebruiksvriendeli"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Philips Koffiemachine,",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445130893-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Philips EP2220 Koffiemachine met Stoompijpje + AquaClean",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445579162-philips-ep2220-koffiemachine-met-stoompijpje-aquaclean"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips 2200 Series EP2220/10 volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446410017-philips-2200-series-ep2220-10-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445124183-philips-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Philips Koffiemachine met Cappuccino Functie",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444304603-philips-koffiemachine-met-cappuccino-functie"
+     },
+     {
+      "kind": "fixed",
+      "price": 116.0,
+      "title": "Philips -  Café Gourmet () - Koffiemachine 125 L Zwart",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1502458075-philips-cafe-gourmet-koffiemachine-125-l-zwart"
+     },
+     {
+      "kind": "bid",
+      "price": 119.0,
+      "title": "Philips EP3551/00 volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800992-philips-ep3551-00-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Philips EP2230/10 Volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446111606-philips-ep2230-10-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Nette Philips koffiemachine EP2221",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444106405-nette-philips-koffiemachine-ep2221"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Te koop Philips baristina koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444709459-te-koop-philips-baristina-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Philips EP2230 koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800172-philips-ep2230-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Philips Koffiemachine - Compleet met handleiding",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2443877623-philips-koffiemachine-compleet-met-handleiding"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Philips 220 koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445575099-philips-220-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 230.0,
+      "title": "Philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444491194-philips-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "philips 2300 serie (2334) volautomatische koffiemachines",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446122831-philips-2300-serie-2334-volautomatische-koffiemachines"
+     }
+    ],
+    "low": 40.0,
+    "median": 100.0,
+    "outliers": [
+     350.0,
+     380.0,
+     410.0
+    ],
+    "prices": [
+     15.0,
+     15.0,
+     22.5,
+     24.95,
+     35.0,
+     45.0,
+     75.0,
+     80.0,
+     100.0,
+     100.0,
+     100.0,
+     116.0,
+     119.0,
+     125.0,
+     125.0,
+     125.0,
+     130.0,
+     150.0,
+     150.0,
+     230.0,
+     250.0
+    ],
+    "query": "koffiemachine philips",
+    "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+philips/",
    "premium": 0.19,
    "site": "hnvi",
@@ -1959,7 +2380,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/T7fSucq6meo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTk4LzAwNTctY3VydmVkLWJlZWxkc2NoZXJtLTI3LWluY2gtc2Ftc3VuZy1zMjdjMzY2ZWF1LWtyYXNqZS1pbi1zY2hlcm0uanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1986,7 +2407,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/ok5a1kPP5tc/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NTk5LzAwNTgtdHdlZS0yNy1pbmNoLWJlZWxkc2NoZXJtZW4tYWNlci12Mjc3LmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2012,17 +2433,65 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/ap49QQSEKXE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAwLzAwNTktbGFwdG9wLWhwLWk1LWZjb3h4LTIzOC1nYi1vcHNsYWctOGdiLXJhbS1hbWQtcnl6ZW4tMy03MzIwdS0yLTQwLWdoei1wcm9jZXNzb3IuanBn.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196600",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 200.0,
+   "marketSource": "marktplaats",
+   "maxBid": 100.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 350.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "HP 15 laptop met core i5 cpu,4gbmem,500gbhdd,dvd,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445582123-hp-15-laptop-met-core-i5-cpu-4gbmem-500gbhdd-dvd"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP laptop - Intel i5 - SSD - 4 GB - Wind.11 + Office",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446148893-hp-laptop-intel-i5-ssd-4-gb-wind-11-office"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "HP laptop 15,6” Full HD Intel i5 256GB SSD Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2440769960-hp-laptop-15-6-full-hd-intel-i5-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "HP Laptop 15\" Intel Core i5  8GB RAM  256GB SSD  Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2430195238-hp-laptop-15-intel-core-i5-8gb-ram-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "fixed",
+      "price": 400.0,
+      "title": "HP Laptop - Intel Core i5 - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2409643689-hp-laptop-intel-core-i5-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 65.0,
+    "median": 200.0,
+    "outliers": [],
+    "prices": [
+     65.0,
+     65.0,
+     200.0,
+     300.0,
+     400.0
+    ],
+    "query": "laptop hp i5",
+    "url": "https://www.marktplaats.nl/q/laptop+hp+i5/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/laptop+hp/",
    "premium": 0.19,
    "site": "hnvi",
@@ -2040,7 +2509,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/DyO23SA-wuY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAxLzAwNjAtYmVlbGRzY2hlcm0tMjctaW5jaC1hY2VyLXJnMjcwLmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2067,7 +2536,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/HM5ZUf1qeM0/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAyLzAwNjEtYmVlbGRzY2hlcm0tMjctaW5jaC1zYW1zdW5nLXMyN2MzMTBlYXUuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2094,7 +2563,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/cOU5Q0dXLtk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjAzLzAwNjItMjctaW5jaC1iZWVsZHNjaGVybWVuLWFjZXItdjI3Ny5qcGc.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2121,7 +2590,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/2lJs2kkJaYo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjEzLzAwNzItbGFwdG9wLWxlbm92by10aGlua3BhZC10NDQwcy0xMjgtZ2ItaGRkLTgtZ2ItcmFtLWludGVsLWNvcmUtaTUtNDMwMHUtY3B1LTEtOTAtaGcuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2141,50 +2610,85 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bids": 1,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinProfit": null,
-   "key": "proveiling:3285775",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accuboormachine/",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
-   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bids": 1,
+   "bid": 30.0,
+   "bids": 2,
    "closes": "2026-10-05T20:00:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285767|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285767",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 225.0,
+   "marketSource": "marktplaats",
+   "maxBid": 118.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 7,
+    "high": 275.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 40.6,
+      "title": "Online Veiling: Makita AVT Breekhamer HM1812",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444434090-online-veiling-makita-avt-breekhamer-hm1812"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Makita JR3070CT AVT Reciprozaag zaagmachine",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2412121120-makita-jr3070ct-avt-reciprozaag-zaagmachine"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Makita JR3070CT Reciprozaag met AVT 1510 Watt in koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2430083467-makita-jr3070ct-reciprozaag-met-avt-1510-watt-in-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 225.0,
+      "title": "Makita DHR182 18V Accu Boorhamer AVT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2408019053-makita-dhr182-18v-accu-boorhamer-avt"
+     },
+     {
+      "kind": "fixed",
+      "price": 275.0,
+      "title": "Makita HM0871C Breekhamer met AVT - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442625513-makita-hm0871c-breekhamer-met-avt-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 275.0,
+      "title": "Makita AVT Boorhamer in Koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2411291927-makita-avt-boorhamer-in-koffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 325.0,
+      "title": "Makita boorhamer AVT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2440931287-makita-boorhamer-avt"
+     }
+    ],
+    "low": 145.0,
+    "median": 225.0,
+    "outliers": [],
+    "prices": [
+     40.6,
+     145.0,
+     175.0,
+     225.0,
+     275.0,
+     275.0,
+     325.0
+    ],
+    "query": "makita avt",
+    "url": "https://www.marktplaats.nl/q/makita+avt/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+avt/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2200,18 +2704,185 @@
    "closes": "2026-10-05T20:00:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285775",
+   "location": "Waddinxveen",
+   "market": 54.89,
+   "marketSource": "marktplaats",
+   "maxBid": 15.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 4,
+    "high": 108.75,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Accuboormachine Dewalt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445043301-accuboormachine-dewalt"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: DEWALT Accuboormachine DC910; 28V, incl. ...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444432579-online-veiling-dewalt-accuboormachine-dc910-28v-incl"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "DeWalt DCL070 bouwlamp en twee accuboormachines",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2425789351-dewalt-dcl070-bouwlamp-en-twee-accuboormachines"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "DeWalt DCD709 18V XR Accuboormachine Brushless5.0Ah Accu & O",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439432293-dewalt-dcd709-18v-xr-accuboormachine-brushless5-0ah-accu-o"
+     }
+    ],
+    "low": 16.2,
+    "median": 54.89,
+    "outliers": [],
+    "prices": [
+     10.0,
+     34.79,
+     75.0,
+     120.0
+    ],
+    "query": "dewalt accuboormachine",
+    "url": "https://www.marktplaats.nl/q/dewalt+accuboormachine/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+accuboormachine/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
+   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285793|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285793",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 37.39,
+   "marketSource": "marktplaats",
+   "maxBid": 4.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 12,
+    "high": 50.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader - snellader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444807212-makita-dc18rc-acculader-snellader-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V — 3,0 A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-acculader-14-4-18v-3-0-a"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V — ook Dolmar en Greenlee",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-en-greenlee"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita acculader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: Makita Acculader DC18RC T incl. Accu 5.0A...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444433077-online-veiling-makita-acculader-dc18rc-t-incl-accu-5-0a"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita acculaders DC10SB en DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita - DC18RC acculader + 2x 18V 3.0Ah accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445729789-makita-dc18rc-acculader-2x-18v-3-0ah-accu"
+     }
+    ],
+    "low": 28.46,
+    "median": 37.39,
+    "outliers": [
+     140.0
+    ],
+    "prices": [
+     25.0,
+     27.95,
+     27.95,
+     30.0,
+     30.0,
+     34.79,
+     40.0,
+     40.0,
+     50.0,
+     50.0,
+     75.0,
+     80.0
+    ],
+    "query": "makita acculader dc18rc accu",
+    "url": "https://www.marktplaats.nl/q/makita+acculader+dc18rc+accu/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+acculader/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2229,16 +2900,92 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285813|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285813",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 35.0,
+   "marketSource": "marktplaats",
+   "maxBid": 3.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 9,
+    "high": 67.49,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DECADP05 USB-adapter LXT 14,4V/18V - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446169728-makita-decadp05-usb-adapter-lxt-14-4v-18v-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.95,
+      "title": "ACTIE accu 18v 6.0 Ah past op Makita lxt machines Bl1860B",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2418256138-actie-accu-18v-6-0-ah-past-op-makita-lxt-machines-bl1860b"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.79,
+      "title": "Online Veiling: Makita LXT Accubatterij BL1830",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444431447-online-veiling-makita-lxt-accubatterij-bl1830"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
+     },
+     {
+      "kind": "bid",
+      "price": 39.0,
+      "title": "Originele Makita DC18RC snellader – 18V LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
+     },
+     {
+      "kind": "bid",
+      "price": 64.99,
+      "title": "Makita Accu BL1850B LXT 18V 5,0Ah | Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445405071-makita-accu-bl1850b-lxt-18v-5-0ah-nieuw-in-doos"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.99,
+      "title": "Makita Accu BL1850B LXT 18 V 5,0Ah | Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442938902-makita-accu-bl1850b-lxt-18-v-5-0ah-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita BL1830B 18V LXT Accu + Duolader (3.0 Ah) - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427485530-makita-bl1830b-18v-lxt-accu-duolader-3-0-ah-nieuw"
+     }
+    ],
+    "low": 27.48,
+    "median": 35.0,
+    "outliers": [],
+    "prices": [
+     25.0,
+     25.0,
+     29.95,
+     34.79,
+     35.0,
+     39.0,
+     64.99,
+     69.99,
+     75.0
+    ],
+    "query": "makita lxt",
+    "url": "https://www.marktplaats.nl/q/makita+lxt/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+lxt/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2283,16 +3030,85 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285825|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285825",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 17.36,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 8,
+    "high": 61.25,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Gereedschapskoffers leeg - Makita en Metabo",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.72,
+      "title": "Online Veiling: Makita gereedschapskoffers - 2 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444431142-online-veiling-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita Gereedschapskoffers mbox 5 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436592975-makita-gereedschapskoffers-mbox-5-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "nieuwe makita gereedschapskoffers 25 euro per koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443739238-nieuwe-makita-gereedschapskoffers-25-euro-per-koffer"
+     }
+    ],
+    "low": 15.0,
+    "median": 17.36,
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     15.0,
+     15.0,
+     19.72,
+     20.0,
+     75.0,
+     100.0
+    ],
+    "query": "makita gereedschapskoffers",
+    "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2310,16 +3126,87 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285807|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285807",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 16.98,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 8,
+    "high": 26.75,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442664478-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2425242636-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2412564707-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 15.95,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442322844-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 18.0,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2407697865-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2423106513-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DEWALT TSTAK Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444432320-online-veiling-dewalt-tstak-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer met Inlay",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436537030-dewalt-tstak-gereedschapskoffer-met-inlay"
+     }
+    ],
+    "low": 10.0,
+    "median": 16.98,
+    "outliers": [
+     65.0
+    ],
+    "prices": [
+     7.5,
+     10.0,
+     10.0,
+     15.95,
+     18.0,
+     20.0,
+     29.0,
+     30.0
+    ],
+    "query": "dewalt tstak gereedschapskoffer",
+    "url": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+tstak/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2336,17 +3223,58 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285798",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 80.0,
+   "marketSource": "marktplaats",
+   "maxBid": 30.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 4,
+    "high": 112.5,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DeWALT accuboormachine DCF887, type 10 - 18V",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444432026-online-veiling-dewalt-accuboormachine-dcf887-type-10-18v"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWalt DCD777 Accuboormachine 18V XR Brushless",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430143741-dewalt-dcd777-accuboormachine-18v-xr-brushless"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "DeWalt DCD791D2 Accuboormachine met 5.0Ah accu en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445931438-dewalt-dcd791d2-accuboormachine-met-5-0ah-accu-en-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "DeWalt DCD709 18V XR Accuboormachine Brushless5.0Ah Accu & O",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439432293-dewalt-dcd709-18v-xr-accuboormachine-brushless5-0ah-accu-o"
+     }
+    ],
+    "low": 39.25,
+    "median": 80.0,
+    "outliers": [],
+    "prices": [
+     29.0,
+     70.0,
+     90.0,
+     120.0
+    ],
+    "query": "dewalt accuboormachine",
+    "url": "https://www.marktplaats.nl/q/dewalt+accuboormachine/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+accuboormachine/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2364,16 +3292,64 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285814|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "proveiling:3285814",
    "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 39.95,
+   "marketSource": "marktplaats",
+   "maxBid": 6.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 5,
+    "high": 70.95,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 26.95,
+      "title": "DeWalt 18V XRP / DE9095 / DC9096 / DE9503, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595142-dewalt-18v-xrp-de9095-dc9096-de9503-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.0,
+      "title": "Online Veiling: DEWALT XRP Accu klopboormachine DC925 493...",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444431487-online-veiling-dewalt-xrp-accu-klopboormachine-dc925-493"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Aanbieding: 2x DeWalt 12V XRP /  DE9074, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523594842-aanbieding-2x-dewalt-12v-xrp-de9074-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 61.95,
+      "title": "Startset: 2x DeWalt 18V XRP / DE9095, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1530991241-startset-2x-dewalt-18v-xrp-de9095-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.95,
+      "title": "Startset: 2x DeWalt 18V XRP / DE9095, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595266-startset-2x-dewalt-18v-xrp-de9095-123accu-huismerk"
+     }
+    ],
+    "low": 27.98,
+    "median": 39.95,
+    "outliers": [],
+    "prices": [
+     26.95,
+     29.0,
+     39.95,
+     61.95,
+     79.95
+    ],
+    "query": "dewalt xrp",
+    "url": "https://www.marktplaats.nl/q/dewalt+xrp/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+xrp/",
    "premium": 0.16,
    "site": "proveiling",
@@ -2390,17 +3366,107 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/4THTbeP5tTg/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjI2LzAwMTItYm91d3JhZGlvLW1ha2l0YS16b25kZXItYWNjdS5qcGc.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196626",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 149.0,
+   "marketSource": "marktplaats",
+   "maxBid": 70.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 11,
+    "high": 210.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita BMR100 bouwradio (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2435172642-makita-bmr100-bouwradio-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Makita DMR102 Bouwradio met 18V 3Ah accu - Speelt super!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2439357891-makita-dmr102-bouwradio-met-18v-3ah-accu-speelt-super"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DMR100 Limited Edition Bouwradio Wit (excl. accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2416755147-makita-dmr100-limited-edition-bouwradio-wit-excl-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Makita MR001GZ 12/18/40V Max Li-Ion accu bouwradio body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2322187548-makita-mr001gz-12-18-40v-max-li-ion-accu-bouwradio-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Makita DMR112 18V Accu Bouwradio DAB+ Bluetooth LXT CXT",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2445713761-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Makita DMR115 bouwradio DAB+ Bluetooth excl. accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446022484-makita-dmr115-bouwradio-dab-bluetooth-excl-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 159.99,
+      "title": "Nette Dmr115 Makita bouwradio met oplader.Eventueel met accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446407695-nette-dmr115-makita-bouwradio-met-oplader-eventueel-met-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 179.99,
+      "title": "Nieuwe MR004G Makita bouwradio Dab+ en Bleutooth met accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2444824386-nieuwe-mr004g-makita-bouwradio-dab-en-bleutooth-met-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 210.0,
+      "title": "Makita DMR115 10,8-18V  accu bouwradio - DAB+ - bluetooth",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582594916-makita-dmr115-10-8-18v-accu-bouwradio-dab-bluetooth"
+     },
+     {
+      "kind": "fixed",
+      "price": 270.0,
+      "title": "Makita DMR116 Bouwradio Radio incl accus en acculader nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2285335254-makita-dmr116-bouwradio-radio-incl-accus-en-acculader-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 350.0,
+      "title": "Makita DMR115 10,8-18V Li-Ion accu bouwradio accus en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582596632-makita-dmr115-10-8-18v-li-ion-accu-bouwradio-accus-en-lader"
+     }
+    ],
+    "low": 100.0,
+    "median": 149.0,
+    "outliers": [],
+    "prices": [
+     50.0,
+     85.0,
+     100.0,
+     145.0,
+     149.0,
+     149.0,
+     159.99,
+     179.99,
+     210.0,
+     270.0,
+     350.0
+    ],
+    "query": "makita accu bouwradio",
+    "url": "https://www.marktplaats.nl/q/makita+accu+bouwradio/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+accu/",
    "premium": 0.19,
    "site": "hnvi",
@@ -2417,17 +3483,74 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/UWayXGNzm9E/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjMwLzAwMTYtYm91d3JhZGlvLWRld2FsdC1leGNsdXNpZWYtYWNjdS5qcGc.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196630",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 70.0,
+   "marketSource": "marktplaats",
+   "maxBid": 23.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 6,
+    "high": 92.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "DeWalt Bouwradio met Accu en Stopcontacten",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2409050225-dewalt-bouwradio-met-accu-en-stopcontacten"
+     },
+     {
+      "kind": "bid",
+      "price": 62.0,
+      "title": "Dewalt Accu Bouwradio - Robuust en Draagbaar",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441937588-dewalt-accu-bouwradio-robuust-en-draagbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWalt bouwradio (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441514923-dewalt-bouwradio-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWALT DCR017 DAB+ Bouwradio en Acculader",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2430867403-dewalt-dcr017-dab-bouwradio-en-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Dewalt accu bouwradio",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2445696231-dewalt-accu-bouwradio"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "DAB DeWalt bouwradio inclusief 18V 4.0 AH accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2443902471-dab-dewalt-bouwradio-inclusief-18v-4-0-ah-accu"
+     }
+    ],
+    "low": 53.75,
+    "median": 70.0,
+    "outliers": [
+     269.99
+    ],
+    "prices": [
+     29.0,
+     62.0,
+     70.0,
+     70.0,
+     90.0,
+     99.0
+    ],
+    "query": "dewalt accu bouwradio",
+    "url": "https://www.marktplaats.nl/q/dewalt+accu+bouwradio/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+accu/",
    "premium": 0.19,
    "site": "hnvi",
@@ -2445,16 +3568,250 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/zDvBXJvqWao/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjMxLzAwMTctZ2VyZWVkc2NoYXBza29mZmVyLW1ha2l0YS5qcGc.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196631",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 19.86,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 36,
+    "high": 25.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita inleg tray voor gereedschapskoffer nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2442707257-makita-inleg-tray-voor-gereedschapskoffer-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441549512-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita inlay voor gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2434745460-makita-inlay-voor-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita gereedschapskoffer - Lege koffer voor gereedschap",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2431625367-makita-gereedschapskoffer-lege-koffer-voor-gereedschap"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2408691049-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita inlay voor gereedschapskoffer - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436919476-makita-inlay-voor-gereedschapskoffer-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 7.0,
+      "title": "7€ Makita LXT Brushless Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441454666-7-makita-lxt-brushless-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Makita gereedschapskoffer - Lege koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2436653451-makita-gereedschapskoffer-lege-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2427550118-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2426724924-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 12.0,
+      "title": "Lege Makita gereedschapskoffer (voor schroefboormachine)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430680473-lege-makita-gereedschapskoffer-voor-schroefboormachine"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2444656277-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Gereedschapskoffers leeg - Makita en Metabo",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita LXT Brushless gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2432033415-makita-lxt-brushless-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.72,
+      "title": "Online Veiling: Makita gereedschapskoffers - 2 stuks",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444431142-online-veiling-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita JR3050T Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2444696926-makita-jr3050t-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443083306-makita-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita Systainer 2 gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2443260196-makita-systainer-2-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita Systainer Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2440697598-makita-systainer-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - 2 stuks(slijptol)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436394052-makita-gereedschapskoffer-2-stuks-slijptol"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Mbox Makita Koffer Type 2 - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2413532058-mbox-makita-koffer-type-2-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita koffer DTW300ZJ - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2424673500-makita-koffer-dtw300zj-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita Mbox leeg - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2416226302-makita-mbox-leeg-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita gereedschapskoffer - stevig en ruim",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2422851878-makita-gereedschapskoffer-stevig-en-ruim"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita gereedschapskoffer voor zaagmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2439288569-makita-gereedschapskoffer-voor-zaagmachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436765693-makita-gereedschapskoffer-leeg"
+     }
+    ],
+    "low": 10.0,
+    "median": 19.86,
+    "outliers": [
+     65.0,
+     75.0,
+     75.0,
+     100.0
+    ],
+    "prices": [
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     7.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     12.0,
+     15.0,
+     15.0,
+     15.0,
+     15.0,
+     15.0,
+     19.72,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     20.0,
+     25.0,
+     25.0,
+     30.0,
+     30.0,
+     30.0,
+     32.0,
+     35.0,
+     35.0,
+     40.0,
+     50.0
+    ],
+    "query": "makita gereedschapskoffer",
+    "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffer/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffer/",
    "premium": 0.19,
    "site": "hnvi",
@@ -2472,7 +3829,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/zdmGucJMYjo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjQ1LzAwMzEtaGFha3NlLXNsaWpwZXItbWV0YWJvLW1ldC1kaXZlcnNlLXNjaGlqdmVuLmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2498,17 +3855,74 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/8iFeLjhlVpA/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjYxLzAwNDctYm91d3JhZGlvLWRld2FsdC1tZXQtYWNjdS5qcGc.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:196661",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 70.0,
+   "marketSource": "marktplaats",
+   "maxBid": 23.0,
+   "mp": {
+    "asOf": "2026-09-25T04:26:17.095663+00:00",
+    "count": 6,
+    "high": 92.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 29.0,
+      "title": "DeWalt Bouwradio met Accu en Stopcontacten",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2409050225-dewalt-bouwradio-met-accu-en-stopcontacten"
+     },
+     {
+      "kind": "bid",
+      "price": 62.0,
+      "title": "Dewalt Accu Bouwradio - Robuust en Draagbaar",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441937588-dewalt-accu-bouwradio-robuust-en-draagbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWalt bouwradio (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441514923-dewalt-bouwradio-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "DeWALT DCR017 DAB+ Bouwradio en Acculader",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2430867403-dewalt-dcr017-dab-bouwradio-en-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Dewalt accu bouwradio",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2445696231-dewalt-accu-bouwradio"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "DAB DeWalt bouwradio inclusief 18V 4.0 AH accu",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2443902471-dab-dewalt-bouwradio-inclusief-18v-4-0-ah-accu"
+     }
+    ],
+    "low": 53.75,
+    "median": 70.0,
+    "outliers": [
+     269.99
+    ],
+    "prices": [
+     29.0,
+     62.0,
+     70.0,
+     70.0,
+     90.0,
+     99.0
+    ],
+    "query": "dewalt accu bouwradio",
+    "url": "https://www.marktplaats.nl/q/dewalt+accu+bouwradio/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+accu/",
    "premium": 0.19,
    "site": "hnvi",
@@ -2526,7 +3940,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/usPNTUHeIR8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjY0LzAwNTAtaGFha3NlLXNsaWpwdG9sLWRld2FsdC1kd2U0NTc5LmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2546,14 +3960,14 @@
   },
   {
    "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
-   "bid": 70.0,
+   "bid": 120.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/L3XX98GRmqE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2OTI4LzAwMjEta2luZGVyY2FybmF2YWxzLXByb2R1Y3Rlbi1hYW4temV2ZW4tc3RlbGxpbmdkZWxlbi0yMjUta29zdHV1bXMtaW4tZ3JvdGUtZGl2ZXJzaXQuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2580,7 +3994,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/YW4YM54kXZY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MDcyLzAxNjUtbGFwdG9wLXRlcnJhLW1vYmlsZS0xNTEzYS0yMzMtZ2ItaGRkLTQtZ2Itd2Vya2dlaGV1Z2VuLWVlbi10b2V0c2thcGplLXZhbi1mMy1vbnQuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2607,7 +4021,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/G6PFR-9W55c/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTE1LzAyMDgtYWNjdS1ob2dlZHJ1a3JlaW5pZ2VyLW1ha2l0YS1kaHcwODAtbWV0LWJ1ZmZlcnZhdC1nZWVuLWFjY3UtY29tcGxlZXRoZWlkLW9uYmVrZW4uanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2634,7 +4048,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/vevGKlbQVUI/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTM2LzAyMjktZm91ZHJhYWwtdC1iLXYtbWFraXRhLXphYWdnZWxlaWRlci0xNDAtY20uanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2661,7 +4075,7 @@
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/O5rFC7KaStY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MTkwLzAyODMtYmVlbGRzY2hlcm0tbGVub3ZvLTIyLWluY2gtdm9lZGluZ3NrYWJlbC1vbnRicmVla3QuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -2710,7 +4124,7 @@
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1066,
+   "lots": 1130,
    "name": "Onlineveilingmeester",
    "ok": true
   },
