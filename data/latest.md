@@ -1,6 +1,6 @@
 # Latest scan
 
-_Friday 25 September 2026, 06:26 (Amsterdam time)_
+_Saturday 26 September 2026, 06:24 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -8,11 +8,11 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |---|---|
 | ProVeiling | ✅ 239 lots |
 | HNVI | ✅ 730 lots |
-| Plaats Je Bod | ✅ 133 lots |
-| Onlineveilingmeester | ✅ 1130 lots |
-| Marktplaats prices | ✅ 40 price lookups |
+| Plaats Je Bod | ✅ 373 lots |
+| Onlineveilingmeester | ✅ 1800 lots |
+| Marktplaats prices | ✅ 14 price lookups |
 
-## Matching lots (63)
+## Matching lots (65)
 
 | | Item | Lot | Bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |  | Coffee machine | [Nespresso espressokopjes en schotels](https://www.proveiling.nl/Nespresso-espressokopjes-en-schotels/3285246/detail) (ProVeiling) | €10 | €14 | €0 | Mon 28 Sep 20:00 |
 |  | Coffee machine | [Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiema](https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail) (ProVeiling) | €40 | – | – | Mon 28 Sep 20:00 |
 | ✅ | Coffee machine | [Philips HD7695/90 Intense koffiemachine](https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail) (ProVeiling) | €10 | €170 | €85 | Mon 28 Sep 20:00 |
-|  | Plants / decor | [2 x Kunstplant in pot](https://www.plaatsjebod.nl/nl/lots/2-x-kunstplant-in-pot) (Plaats Je Bod) | €70 | €34 | €2 | Mon 28 Sep 20:10 |
+|  | Plants / decor | [2 x Kunstplant in pot](https://www.plaatsjebod.nl/nl/lots/2-x-kunstplant-in-pot) (Plaats Je Bod) | €90 | €34 | €2 | Mon 28 Sep 20:10 |
 |  | Monitor | [1 x HP Desktop met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €30 | – | – | Mon 28 Sep 20:17 |
 |  | Laptop | [1 x Laptop met Eletra Intra orale Smart scanner en toebehoren in koffe](https://www.plaatsjebod.nl/nl/lots/1-x-laptop-met-eletra-intra-orale-smart-scanner-en-toebehoren-in-koffer) (Plaats Je Bod) | €500 | – | – | Mon 28 Sep 20:25 |
 |  | Monitor | [2 x HP computer met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/2-x-hp-computer-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €60 | – | – | Mon 28 Sep 20:30 |
@@ -29,7 +29,7 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |  | Monitor | [1 x HP Prodesk met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-hp-prodesk-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €30 | – | – | Mon 28 Sep 20:39 |
 |  | Monitor | [1 x Acer Veriton computer met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-acer-veriton-computer-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €20 | – | – | Mon 28 Sep 20:45 |
 |  | Coffee machine | [Koffieapparaat NESPRESSO koffielekbakje ontbreekt.](https://www.hnvi.nl/veiling-kavel/koffieapparaat-nespresso-koffielekbakje-ontbreekt/196484) (HNVI) | €5 | – | – | Tue 29 Sep 19:30 |
-|  | Suit / formalwear | [Beroepen colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/139) (Onlineveilingmeester) | €12 | – | – | Tue 29 Sep 20:04 |
+|  | Suit / formalwear | [Beroepen colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/139) (Onlineveilingmeester) | €14 | – | – | Tue 29 Sep 20:04 |
 |  | Suit / formalwear | [Ca. 41x Man, overjassen en colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/207) (Onlineveilingmeester) | €12 | €40 | €6 | Tue 29 Sep 20:21 |
 |  | Suit / formalwear | [Ca. 56x Man, colberts in verschillende kleuren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/228) (Onlineveilingmeester) | €12 | – | – | Tue 29 Sep 20:26 |
 |  | Suit / formalwear | [Ca. 27x Man, colberts zwart](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/226) (Onlineveilingmeester) | €10 | €40 | €6 | Tue 29 Sep 20:26 |
@@ -42,13 +42,13 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |  | Suit / formalwear | [Ca. 41x Damesjassen, colberts, blouses](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/254) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:33 |
 |  | Suit / formalwear | [Ca. 47x Colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/276) (Onlineveilingmeester) | €14 | – | – | Tue 29 Sep 20:38 |
 |  | Suit / formalwear | [Ca. 40x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/283) (Onlineveilingmeester) | €10 | €22 | €0 | Tue 29 Sep 20:40 |
-|  | Suit / formalwear | [Ca. 44x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281) (Onlineveilingmeester) | €16 | €22 | €0 | Tue 29 Sep 20:40 |
+|  | Suit / formalwear | [Ca. 44x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281) (Onlineveilingmeester) | €18 | €22 | €0 | Tue 29 Sep 20:40 |
 |  | Suit / formalwear | [Colbert, maat 50, Dsquared2](https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/13) (Onlineveilingmeester) | €56 | – | – | Wed 30 Sep 20:33 |
-|  | Suit / formalwear | [Colbert, maat 50, Loro Piana](https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/72) (Onlineveilingmeester) | €119 | – | – | Wed 30 Sep 20:47 |
-| ✅ | Power tools | [Hilti DX 460 kruitschiethamer in koffer](https://www.hnvi.nl/veiling-kavel/hilti-dx-460-kruitschiethamer-in-koffer/196720) (HNVI) | €30 | €150 | €71 | Thu 01 Oct 19:30 |
+|  | Suit / formalwear | [Colbert, maat 50, Loro Piana](https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/72) (Onlineveilingmeester) | €149 | – | – | Wed 30 Sep 20:47 |
+| ✅ | Power tools | [Hilti DX 460 kruitschiethamer in koffer](https://www.hnvi.nl/veiling-kavel/hilti-dx-460-kruitschiethamer-in-koffer/196720) (HNVI) | €35 | €150 | €71 | Thu 01 Oct 19:30 |
 | ✅ | Power tools | [Makita JR 3030T reciprozaag](https://www.hnvi.nl/veiling-kavel/makita-jr-3030t-reciprozaag/196721) (HNVI) | €25 | €75 | €26 | Thu 01 Oct 19:30 |
-|  | Power tools | [Makita  M8600 boorhamer](https://www.hnvi.nl/veiling-kavel/makita-m8600-boorhamer/196722) (HNVI) | €25 | – | – | Thu 01 Oct 19:30 |
-|  | Power tools | [2x Makita B-53671 diamantschijf 100mm staal Makita](https://onlineveilingmeester.nl/nl/veilingen/9528/kavels/4) (Onlineveilingmeester) | €16 | – | – | Sun 04 Oct 19:30 |
+|  | Power tools | [Makita  M8600 boorhamer](https://www.hnvi.nl/veiling-kavel/makita-m8600-boorhamer/196722) (HNVI) | €30 | – | – | Thu 01 Oct 19:30 |
+|  | Power tools | [2x Makita B-53671 diamantschijf 100mm staal Makita](https://onlineveilingmeester.nl/nl/veilingen/9528/kavels/4) (Onlineveilingmeester) | €18 | – | – | Sun 04 Oct 19:30 |
 |  | Coffee machine | [8x Waterfilter voor koffiemachine, Scanpart, intenza](https://onlineveilingmeester.nl/nl/veilingen/9528/kavels/44) (Onlineveilingmeester) | €10 | – | – | Sun 04 Oct 19:40 |
 |  | Monitor | [Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaib](https://www.hnvi.nl/veiling-kavel/twee-beeldschermen-hp-compaq-la2306x-in-hoogte-verstelbaar-en-draaibaar/196564) (HNVI) | €15 | €20 | €0 | Mon 05 Oct 19:30 |
 | ✅ | Coffee machine | [Koffiemachine PHILIPS](https://www.hnvi.nl/veiling-kavel/koffiemachine-philips/196568) (HNVI) | €30 | €100 | €41 | Mon 05 Oct 19:30 |
@@ -59,7 +59,8 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |  | Monitor | [Beeldscherm 27 inch SAMSUNG S27C310EAU](https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-samsung-s27c310eau/196602) (HNVI) | €15 | – | – | Mon 05 Oct 19:30 |
 |  | Monitor | [27 inch beeldschermen ACER V277](https://www.hnvi.nl/veiling-kavel/27-inch-beeldschermen-acer-v277/196603) (HNVI) | €10 | – | – | Mon 05 Oct 19:30 |
 |  | Laptop | [Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300](https://www.hnvi.nl/veiling-kavel/laptop-lenovo-thinkpad-t440s-128-gb-hdd-8-gb-ram-intel-core-i5-4300u-cpu-1-90-hgz-qwertz-toetsenbord/196613) (HNVI) | €35 | – | – | Mon 05 Oct 19:30 |
-| ✅ | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €30 | €225 | €118 | Mon 05 Oct 20:00 |
+| ✅ | Plants / decor | [2x Vaas met kunstbloemen](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/70) (Onlineveilingmeester) | €10 | €50 | €12 | Mon 05 Oct 19:47 |
+| ✅ | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €35 | €225 | €118 | Mon 05 Oct 20:00 |
 |  | Power tools | [DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000](https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail) (ProVeiling) | €25 | €55 | €15 | Mon 05 Oct 20:00 |
 |  | Power tools | [Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion](https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail) (ProVeiling) | €25 | €37 | €4 | Mon 05 Oct 20:00 |
 |  | Power tools | [Makita LXT Accubatterij BL1830](https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail) (ProVeiling) | €25 | €35 | €3 | Mon 05 Oct 20:00 |
@@ -74,8 +75,9 @@ _Friday 25 September 2026, 06:26 (Amsterdam time)_
 |  | Power tools | [Haakse slijper METABO met diverse schijven](https://www.hnvi.nl/veiling-kavel/haakse-slijper-metabo-met-diverse-schijven/196645) (HNVI) | €15 | – | – | Mon 05 Oct 20:00 |
 | ✅ | Power tools | [Bouwradio DEWALT met accu](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu/196661) (HNVI) | €15 | €70 | €23 | Mon 05 Oct 20:00 |
 |  | Power tools | [Haakse slijptol DEWALT DWE4579](https://www.hnvi.nl/veiling-kavel/haakse-slijptol-dewalt-dwe4579/196664) (HNVI) | €15 | – | – | Mon 05 Oct 20:00 |
-|  | Suit / formalwear | [Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in gro](https://www.hnvi.nl/veiling-kavel/kindercarnavals-producten-aan-zeven-stellingdelen-225-kostuums-in-grote-diversiteit-w-o-tien-paar-schoenen-en-diverse-verkleedaccessoires/196928) (HNVI) | €120 | – | – | Tue 13 Oct 19:30 |
-|  | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €10 | – | – | Tue 13 Oct 20:00 |
+| ✅ | Laptop | [Printer en Laptop, Acer Epson](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/204) (Onlineveilingmeester) | €18 | €150 | €72 | Mon 05 Oct 20:20 |
+|  | Suit / formalwear | [Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in gro](https://www.hnvi.nl/veiling-kavel/kindercarnavals-producten-aan-zeven-stellingdelen-225-kostuums-in-grote-diversiteit-w-o-tien-paar-schoenen-en-diverse-verkleedaccessoires/196928) (HNVI) | €150 | – | – | Tue 13 Oct 19:30 |
+| ✅ | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €10 | €350 | €188 | Tue 13 Oct 20:00 |
 |  | Power tools | [Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleet](https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115) (HNVI) | €30 | – | – | Tue 13 Oct 20:00 |
 |  | Power tools | [Foudraal t.b.v. Makita zaaggeleider 140 cm](https://www.hnvi.nl/veiling-kavel/foudraal-t-b-v-makita-zaaggeleider-140-cm/197136) (HNVI) | €3 | – | – | Tue 13 Oct 20:00 |
 |  | Monitor | [Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt](https://www.hnvi.nl/veiling-kavel/beeldscherm-lenovo-22-inch-voedingskabel-ontbreekt/197190) (HNVI) | €3 | – | – | Tue 13 Oct 20:00 |

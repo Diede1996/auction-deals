@@ -29,7 +29,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-09-25T04:26:17.095663+00:00",
+ "generated": "2026-09-26T04:24:47.888338+00:00",
  "lots": [
   {
    "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
@@ -237,8 +237,8 @@
   },
   {
    "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 70.0,
-   "bids": 3,
+   "bid": 90.0,
+   "bids": 5,
    "closes": "2026-09-28T20:10:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
@@ -815,8 +815,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 12.0,
-   "bids": 2,
+   "bid": 14.0,
+   "bids": 3,
    "closes": "2026-09-29T18:04:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
@@ -1623,8 +1623,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 16.0,
-   "bids": 4,
+   "bid": 18.0,
+   "bids": 5,
    "closes": "2026-09-29T18:40:30+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
@@ -1770,7 +1770,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-08-17/22ec5210-c4c0-4ec1-9104-db0c537bb73e/20260817_113934.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1790,14 +1790,14 @@
   },
   {
    "auction": "Domeinen · Exclusieve designer kleding en schoenen",
-   "bid": 119.0,
-   "bids": 3,
+   "bid": 149.0,
+   "bids": 6,
    "closes": "2026-09-30T18:47:36+00:00",
    "firstSeen": "2026-09-25T04:26:17.095663+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/00428595-205c-49ca-905b-f4d77e5add14/20260923_134331.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -1817,7 +1817,7 @@
   },
   {
    "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 30.0,
+   "bid": 35.0,
    "bids": null,
    "closes": "2026-10-01T19:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2026,7 +2026,7 @@
   },
   {
    "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 25.0,
+   "bid": 30.0,
    "bids": null,
    "closes": "2026-10-01T19:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2053,8 +2053,8 @@
   },
   {
    "auction": "Thuisbezorgveiling: Consumenten goederen, verf en partijen",
-   "bid": 16.0,
-   "bids": 4,
+   "bid": 18.0,
+   "bids": 5,
    "closes": "2026-10-04T17:30:40+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 8.0,
@@ -2609,9 +2609,212 @@
    "vat": 0.21
   },
   {
+   "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
+   "bid": 10.0,
+   "bids": 1,
+   "closes": "2026-10-05T17:47:46+00:00",
+   "firstSeen": "2026-09-26T04:24:47.888338+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/2047d20a-b137-4436-9338-15065dee7e38/70.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1902411",
+   "location": null,
+   "market": 49.95,
+   "marketSource": "marktplaats",
+   "maxBid": 12.0,
+   "mp": {
+    "asOf": "2026-09-26T04:24:47.888338+00:00",
+    "count": 23,
+    "high": 75.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 9.0,
+      "title": "Grote glazen vaas met kunstbloemen (2 stuks beschikbaar)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446389331-grote-glazen-vaas-met-kunstbloemen-2-stuks-beschikbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Prachtig boeket kunstbloemen (exclusief vaas)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445664628-prachtig-boeket-kunstbloemen-exclusief-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Kunstbloemen in warme kleuren met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446349691-kunstbloemen-in-warme-kleuren-met-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Tot zaterdag grote luxe vaas met kunstbloemen  185 cm H",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446169093-tot-zaterdag-grote-luxe-vaas-met-kunstbloemen-185-cm-h"
+     },
+     {
+      "kind": "bid",
+      "price": 32.5,
+      "title": "Bos kunstbloemen zonder vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446645284-bos-kunstbloemen-zonder-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Mooie vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445326799-mooie-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "mooie kunstbloemen met ronde glazen vaas op voet",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445813581-mooie-kunstbloemen-met-ronde-glazen-vaas-op-voet"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444281710-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Vaas met diverse kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445096435-vaas-met-diverse-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "NIEUW bolle buiken vaas net kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446457897-nieuw-bolle-buiken-vaas-net-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 49.0,
+      "title": "kunstbloemen met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445312383-kunstbloemen-met-vaas"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "SALE!!! Vaas Trosmu inclusief wit boeket, kunstbloemen VdlM",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446584383-sale-vaas-trosmu-inclusief-wit-boeket-kunstbloemen-vdlm"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Witte kunstbloemen boeket + vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446728608-witte-kunstbloemen-boeket-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Prachtig boeket kunstbloemen evt met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446627637-prachtig-boeket-kunstbloemen-evt-met-vaas"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Prachtige kunstbloemen in vaas - Roze/Paars",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446754397-prachtige-kunstbloemen-in-vaas-roze-paars"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Mooie vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444338056-mooie-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 72.5,
+      "title": "Vaas antiek brons met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445940167-vaas-antiek-brons-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Prachtige kunstbloemen met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444189445-prachtige-kunstbloemen-met-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Sfeervol boeket kunstbloemen inclusief vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445071636-sfeervol-boeket-kunstbloemen-inclusief-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Hotel Sjiek, Gouden vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445016452-hotel-sjiek-gouden-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Kunstbloemen in vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446460240-kunstbloemen-in-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 119.95,
+      "title": "Kunstboeket met vaas | Kunstbloemen |Herfst | Landelijk",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446680565-kunstboeket-met-vaas-kunstbloemen-herfst-landelijk"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Boek kunstbloemen inclusief zuil en vaas - intratuin",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445045530-boek-kunstbloemen-inclusief-zuil-en-vaas-intratuin"
+     }
+    ],
+    "low": 40.0,
+    "median": 49.95,
+    "outliers": [
+     150.0
+    ],
+    "prices": [
+     9.0,
+     20.0,
+     25.0,
+     30.0,
+     32.5,
+     40.0,
+     45.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     49.95,
+     50.0,
+     50.0,
+     50.0,
+     65.0,
+     72.5,
+     75.0,
+     75.0,
+     99.0,
+     100.0,
+     119.95,
+     125.0
+    ],
+    "query": "kunstbloemen vaas",
+    "url": "https://www.marktplaats.nl/q/kunstbloemen+vaas/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/kunstbloemen+vaas/",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "2x Vaas met kunstbloemen",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/70",
+   "vat": 0.21
+  },
+  {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 30.0,
-   "bids": 2,
+   "bid": 35.0,
+   "bids": 3,
    "closes": "2026-10-05T20:00:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
@@ -3959,8 +4162,212 @@
    "vat": 0.21
   },
   {
+   "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
+   "bid": 18.0,
+   "bids": 5,
+   "closes": "2026-10-05T18:20:46+00:00",
+   "firstSeen": "2026-09-26T04:24:47.888338+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/c2c60416-bcc1-494d-9c3e-7b18b326b910/204.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "onlineveilingmeester:1902545",
+   "location": null,
+   "market": 150.0,
+   "marketSource": "marktplaats",
+   "maxBid": 72.0,
+   "mp": {
+    "asOf": "2026-09-26T04:24:47.888338+00:00",
+    "count": 23,
+    "high": 225.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Acer Aspire 5733Z-P624G50Mikk laptop - werking onbekend",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446119261-acer-aspire-5733z-p624g50mikk-laptop-werking-onbekend"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Acer Aspire 5738ZG Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2443628257-acer-aspire-5738zg-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "snelle acer laptop windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445722701-snelle-acer-laptop-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Acer laptop zonder harde schijf",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444531098-acer-laptop-zonder-harde-schijf"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445902551-acer-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire 3 (2022) - 15,6 inch laptop met Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446155267-acer-aspire-3-2022-15-6-inch-laptop-met-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer laptop - Zo goed als nieuw, weinig gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446327656-acer-laptop-zo-goed-als-nieuw-weinig-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire V3-571 Laptop - i5 /8GB RAM /128 SSD / 15,6inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446084052-acer-aspire-v3-571-laptop-i5-8gb-ram-128-ssd-15-6inch"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Spin 1 11 inch touchscreen laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445443725-acer-spin-1-11-inch-touchscreen-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Acer Aspire 3 laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444918578-acer-aspire-3-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 149.0,
+      "title": "Acer Aspire 5 A515-54-34B1 15.6 inch laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445680730-acer-aspire-5-a515-54-34b1-15-6-inch-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer laptop met 128 GB SSD en 4 GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446256649-acer-laptop-met-128-gb-ssd-en-4-gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer Chromebook R13 - 13 inch Full HD Touchscreen Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445541886-acer-chromebook-r13-13-inch-full-hd-touchscreen-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Acer Gaming Laptop Aspire VX15 - i5, 8GB RAM, 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445606589-acer-gaming-laptop-aspire-vx15-i5-8gb-ram-512gb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-21-4408 Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446434214-acer-aspire-3-a315-21-4408-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-23-R9G5 Laptop - AMD Ryzen 3, 15.6 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446360238-acer-aspire-3-a315-23-r9g5-laptop-amd-ryzen-3-15-6-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 220.0,
+      "title": "Laptop Acer Aspire i5 10th gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445665240-laptop-acer-aspire-i5-10th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 225.0,
+      "title": "Acer Swift 3 Laptop - Lichtgewicht en Krachtig",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445940674-acer-swift-3-laptop-lichtgewicht-en-krachtig"
+     },
+     {
+      "kind": "bid",
+      "price": 255.0,
+      "title": "Acer Aspire 3 14\" Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445304352-acer-aspire-3-14-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 349.0,
+      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446423141-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer gaming laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444822652-acer-gaming-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer Aspire 5 A517-58M Laptop  Intel Core i7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445747539-acer-aspire-5-a517-58m-laptop-intel-core-i7"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer Aspire 7 A715-74G Gaming Laptop i7-9th Gen GTX",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445095962-acer-aspire-7-a715-74g-gaming-laptop-i7-9th-gen-gtx"
+     }
+    ],
+    "low": 75.0,
+    "median": 150.0,
+    "outliers": [
+     649.99,
+     799.0
+    ],
+    "prices": [
+     15.0,
+     35.0,
+     40.0,
+     70.0,
+     75.0,
+     75.0,
+     75.0,
+     75.0,
+     75.0,
+     85.0,
+     149.0,
+     150.0,
+     150.0,
+     150.0,
+     200.0,
+     200.0,
+     220.0,
+     225.0,
+     255.0,
+     349.0,
+     400.0,
+     400.0,
+     400.0
+    ],
+    "query": "laptop acer",
+    "url": "https://www.marktplaats.nl/q/laptop+acer/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/laptop+acer/",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Printer en Laptop, Acer Epson",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/204",
+   "vat": 0.21
+  },
+  {
    "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
-   "bid": 120.0,
+   "bid": 150.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -3993,17 +4400,58 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/YW4YM54kXZY/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MDcyLzAxNjUtbGFwdG9wLXRlcnJhLW1vYmlsZS0xNTEzYS0yMzMtZ2ItaGRkLTQtZ2Itd2Vya2dlaGV1Z2VuLWVlbi10b2V0c2thcGplLXZhbi1mMy1vbnQuanBn.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
    "key": "hnvi:197072",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 349.5,
+   "marketSource": "marktplaats",
+   "maxBid": 188.0,
+   "mp": {
+    "asOf": "2026-09-26T04:24:47.888338+00:00",
+    "count": 4,
+    "high": 712.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "15 inch Terra Mobile 360 laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2424912259-15-inch-terra-mobile-360-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "TERRA MOBILE 1515 laptop – 15,6 inch – Intel Core i5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438308520-terra-mobile-1515-laptop-15-6-inch-intel-core-i5"
+     },
+     {
+      "kind": "fixed",
+      "price": 449.0,
+      "title": "Terra Mobile 1551R Laptop - Intel Core i5 1334u 13GEN",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2425455119-terra-mobile-1551r-laptop-intel-core-i5-1334u-13gen"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
+      "title": "(Gamers) Laptop Terra",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2436193182-gamers-laptop-terra"
+     }
+    ],
+    "low": 212.5,
+    "median": 349.5,
+    "outliers": [],
+    "prices": [
+     200.0,
+     250.0,
+     449.0,
+     800.0
+    ],
+    "query": "laptop terra",
+    "url": "https://www.marktplaats.nl/q/laptop+terra/"
+   },
    "mpSearch": "https://www.marktplaats.nl/q/laptop+terra/",
    "premium": 0.19,
    "site": "hnvi",
@@ -4117,21 +4565,21 @@
   {
    "error": "",
    "id": "plaatsjebod",
-   "lots": 133,
+   "lots": 373,
    "name": "Plaats Je Bod",
    "ok": true
   },
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1130,
+   "lots": 1800,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 40,
+   "lots": 14,
    "name": "Marktplaats prices",
    "ok": true
   }

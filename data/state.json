@@ -1,41 +1,41 @@
 {
  "health": {
   "hnvi": {
-   "at": "2026-09-25T04:26:17.095663+00:00",
+   "at": "2026-09-26T04:24:47.888338+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-25T04:26:17.095663+00:00",
+   "last_ok": "2026-09-26T04:24:47.888338+00:00",
    "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-25T04:26:17.095663+00:00",
+   "at": "2026-09-26T04:24:47.888338+00:00",
    "error": "",
    "fails": 0,
-   "lots": 40,
+   "lots": 14,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-25T04:26:17.095663+00:00",
+   "at": "2026-09-26T04:24:47.888338+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-25T04:26:17.095663+00:00",
-   "lots": 1130,
+   "last_ok": "2026-09-26T04:24:47.888338+00:00",
+   "lots": 1800,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-25T04:26:17.095663+00:00",
+   "at": "2026-09-26T04:24:47.888338+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-25T04:26:17.095663+00:00",
-   "lots": 133,
+   "last_ok": "2026-09-26T04:24:47.888338+00:00",
+   "lots": 373,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-25T04:26:17.095663+00:00",
+   "at": "2026-09-26T04:24:47.888338+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-25T04:26:17.095663+00:00",
+   "last_ok": "2026-09-26T04:24:47.888338+00:00",
    "lots": 239,
    "ok": true
   },
@@ -47,12 +47,12 @@
   }
  },
  "last_run": {
-  "at": "2026-09-25T04:26:17.095663+00:00",
-  "deals": 11,
-  "lots": 2232,
-  "matches": 63,
+  "at": "2026-09-26T04:24:47.888338+00:00",
+  "deals": 14,
+  "lots": 3142,
+  "matches": 65,
   "new": 2,
-  "requests": 120
+  "requests": 106
  },
  "price_cache": {
   "beeldscherm acer rg270|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
@@ -117,6 +117,10 @@
     ],
     "query": "beeldscherm hp"
    }
+  },
+  "beeldscherm lenovo voedingskabel ontbreekt|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": null
   },
   "beeldscherm samsung s27c310eau|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-09-25T04:26:17.095663+00:00",
@@ -798,6 +802,10 @@
     "query": "dewalt accuboormachine"
    }
   },
+  "dewalt dwe4579 haakse slijptol|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": null
+  },
   "dewalt tstak gereedschapskoffer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
    "at": "2026-09-25T04:26:17.095663+00:00",
    "est": {
@@ -1327,9 +1335,192 @@
    "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
   },
+  "kostuum grote diversiteit tien|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": null
+  },
   "kostuum zwarte ouderwetse heren|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
+  },
+  "kunstbloemen vaas|": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": {
+    "as_of": "2026-09-26T04:24:47.888338+00:00",
+    "count": 23,
+    "high": 75.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 9.0,
+      "title": "Grote glazen vaas met kunstbloemen (2 stuks beschikbaar)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446389331-grote-glazen-vaas-met-kunstbloemen-2-stuks-beschikbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Prachtig boeket kunstbloemen (exclusief vaas)",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445664628-prachtig-boeket-kunstbloemen-exclusief-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Kunstbloemen in warme kleuren met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446349691-kunstbloemen-in-warme-kleuren-met-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Tot zaterdag grote luxe vaas met kunstbloemen  185 cm H",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446169093-tot-zaterdag-grote-luxe-vaas-met-kunstbloemen-185-cm-h"
+     },
+     {
+      "kind": "bid",
+      "price": 32.5,
+      "title": "Bos kunstbloemen zonder vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446645284-bos-kunstbloemen-zonder-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Mooie vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445326799-mooie-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "mooie kunstbloemen met ronde glazen vaas op voet",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445813581-mooie-kunstbloemen-met-ronde-glazen-vaas-op-voet"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444281710-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Vaas met diverse kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445096435-vaas-met-diverse-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "NIEUW bolle buiken vaas net kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446457897-nieuw-bolle-buiken-vaas-net-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 49.0,
+      "title": "kunstbloemen met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445312383-kunstbloemen-met-vaas"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "SALE!!! Vaas Trosmu inclusief wit boeket, kunstbloemen VdlM",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446584383-sale-vaas-trosmu-inclusief-wit-boeket-kunstbloemen-vdlm"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Witte kunstbloemen boeket + vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446728608-witte-kunstbloemen-boeket-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Prachtig boeket kunstbloemen evt met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446627637-prachtig-boeket-kunstbloemen-evt-met-vaas"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Prachtige kunstbloemen in vaas - Roze/Paars",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446754397-prachtige-kunstbloemen-in-vaas-roze-paars"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Mooie vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444338056-mooie-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 72.5,
+      "title": "Vaas antiek brons met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445940167-vaas-antiek-brons-met-kunstbloemen"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Prachtige kunstbloemen met vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2444189445-prachtige-kunstbloemen-met-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Sfeervol boeket kunstbloemen inclusief vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445071636-sfeervol-boeket-kunstbloemen-inclusief-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Hotel Sjiek, Gouden vaas met kunstbloemen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445016452-hotel-sjiek-gouden-vaas-met-kunstbloemen"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Kunstbloemen in vaas",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446460240-kunstbloemen-in-vaas"
+     },
+     {
+      "kind": "bid",
+      "price": 119.95,
+      "title": "Kunstboeket met vaas | Kunstbloemen |Herfst | Landelijk",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2446680565-kunstboeket-met-vaas-kunstbloemen-herfst-landelijk"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Boek kunstbloemen inclusief zuil en vaas - intratuin",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2445045530-boek-kunstbloemen-inclusief-zuil-en-vaas-intratuin"
+     }
+    ],
+    "low": 40.0,
+    "median": 49.95,
+    "outliers": [
+     150.0
+    ],
+    "prices": [
+     9.0,
+     20.0,
+     25.0,
+     30.0,
+     32.5,
+     40.0,
+     45.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     49.95,
+     50.0,
+     50.0,
+     50.0,
+     65.0,
+     72.5,
+     75.0,
+     75.0,
+     99.0,
+     100.0,
+     119.95,
+     125.0
+    ],
+    "query": "kunstbloemen vaas"
+   }
   },
   "kunstplant pot|": {
    "at": "2026-09-24T07:40:35.060044+00:00",
@@ -1573,6 +1764,186 @@
     "query": "kunstplant pot"
    }
   },
+  "laptop acer epson printer|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": {
+    "as_of": "2026-09-26T04:24:47.888338+00:00",
+    "count": 23,
+    "high": 225.0,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Acer Aspire 5733Z-P624G50Mikk laptop - werking onbekend",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446119261-acer-aspire-5733z-p624g50mikk-laptop-werking-onbekend"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Acer Aspire 5738ZG Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2443628257-acer-aspire-5738zg-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "snelle acer laptop windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445722701-snelle-acer-laptop-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Acer laptop zonder harde schijf",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444531098-acer-laptop-zonder-harde-schijf"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445902551-acer-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire 3 (2022) - 15,6 inch laptop met Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446155267-acer-aspire-3-2022-15-6-inch-laptop-met-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer laptop - Zo goed als nieuw, weinig gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446327656-acer-laptop-zo-goed-als-nieuw-weinig-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire V3-571 Laptop - i5 /8GB RAM /128 SSD / 15,6inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446084052-acer-aspire-v3-571-laptop-i5-8gb-ram-128-ssd-15-6inch"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Spin 1 11 inch touchscreen laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445443725-acer-spin-1-11-inch-touchscreen-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Acer Aspire 3 laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444918578-acer-aspire-3-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 149.0,
+      "title": "Acer Aspire 5 A515-54-34B1 15.6 inch laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445680730-acer-aspire-5-a515-54-34b1-15-6-inch-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer laptop met 128 GB SSD en 4 GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446256649-acer-laptop-met-128-gb-ssd-en-4-gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer Chromebook R13 - 13 inch Full HD Touchscreen Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445541886-acer-chromebook-r13-13-inch-full-hd-touchscreen-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Acer Gaming Laptop Aspire VX15 - i5, 8GB RAM, 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445606589-acer-gaming-laptop-aspire-vx15-i5-8gb-ram-512gb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-21-4408 Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446434214-acer-aspire-3-a315-21-4408-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-23-R9G5 Laptop - AMD Ryzen 3, 15.6 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446360238-acer-aspire-3-a315-23-r9g5-laptop-amd-ryzen-3-15-6-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 220.0,
+      "title": "Laptop Acer Aspire i5 10th gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445665240-laptop-acer-aspire-i5-10th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 225.0,
+      "title": "Acer Swift 3 Laptop - Lichtgewicht en Krachtig",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445940674-acer-swift-3-laptop-lichtgewicht-en-krachtig"
+     },
+     {
+      "kind": "bid",
+      "price": 255.0,
+      "title": "Acer Aspire 3 14\" Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445304352-acer-aspire-3-14-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 349.0,
+      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446423141-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer gaming laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444822652-acer-gaming-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer Aspire 5 A517-58M Laptop  Intel Core i7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445747539-acer-aspire-5-a517-58m-laptop-intel-core-i7"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer Aspire 7 A715-74G Gaming Laptop i7-9th Gen GTX",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445095962-acer-aspire-7-a715-74g-gaming-laptop-i7-9th-gen-gtx"
+     }
+    ],
+    "low": 75.0,
+    "median": 150.0,
+    "outliers": [
+     649.99,
+     799.0
+    ],
+    "prices": [
+     15.0,
+     35.0,
+     40.0,
+     70.0,
+     75.0,
+     75.0,
+     75.0,
+     75.0,
+     75.0,
+     85.0,
+     149.0,
+     150.0,
+     150.0,
+     150.0,
+     200.0,
+     200.0,
+     220.0,
+     225.0,
+     255.0,
+     349.0,
+     400.0,
+     400.0,
+     400.0
+    ],
+    "query": "laptop acer"
+   }
+  },
   "laptop eletra intra orale|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-09-24T07:40:35.060044+00:00",
    "est": null
@@ -1626,6 +1997,50 @@
      400.0
     ],
     "query": "laptop hp i5"
+   }
+  },
+  "laptop terra mobile 1513a|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": {
+    "as_of": "2026-09-26T04:24:47.888338+00:00",
+    "count": 4,
+    "high": 712.25,
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "15 inch Terra Mobile 360 laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2424912259-15-inch-terra-mobile-360-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "TERRA MOBILE 1515 laptop – 15,6 inch – Intel Core i5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438308520-terra-mobile-1515-laptop-15-6-inch-intel-core-i5"
+     },
+     {
+      "kind": "fixed",
+      "price": 449.0,
+      "title": "Terra Mobile 1551R Laptop - Intel Core i5 1334u 13GEN",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2425455119-terra-mobile-1551r-laptop-intel-core-i5-1334u-13gen"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
+      "title": "(Gamers) Laptop Terra",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2436193182-gamers-laptop-terra"
+     }
+    ],
+    "low": 212.5,
+    "median": 349.5,
+    "outliers": [],
+    "prices": [
+     200.0,
+     250.0,
+     449.0,
+     800.0
+    ],
+    "query": "laptop terra"
    }
   },
   "makita 53671 diamantschijf 100mm|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
@@ -1891,6 +2306,10 @@
     ],
     "query": "makita avt"
    }
+  },
+  "makita dhw080 buffervat geen|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": null
   },
   "makita gereedschapskoffers|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
    "at": "2026-09-25T04:26:17.095663+00:00",
@@ -2363,6 +2782,10 @@
    "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
   },
+  "makita zaaggeleider foudraal|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
+   "at": "2026-09-26T04:24:47.888338+00:00",
+   "est": null
+  },
   "metabo schijven haakse slijper|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
    "at": "2026-09-25T04:26:17.095663+00:00",
    "est": null
@@ -2693,6 +3116,14 @@
   "onlineveilingmeester:1902087": {
    "closes": "2026-09-28T18:37:28+00:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "onlineveilingmeester:1902411": {
+   "closes": "2026-10-05T17:47:46+00:00",
+   "first": "2026-09-26T04:24:47.888338+00:00"
+  },
+  "onlineveilingmeester:1902545": {
+   "closes": "2026-10-05T18:20:46+00:00",
+   "first": "2026-09-26T04:24:47.888338+00:00"
   },
   "onlineveilingmeester:1902814": {
    "closes": "2026-09-30T18:33:36+00:00",
