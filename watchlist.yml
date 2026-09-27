@@ -50,4 +50,5 @@ items:
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
     deo]
 - name: Plants / decor
-  keywords: [kunstplant, kunstboom, kunstbloemen, olijfboom]
+  keywords: [plant, kantoorplant, planten, pot]
+  exclude: [kunstplant, kunstboom, kunstbloemen]
