@@ -1,6 +1,6 @@
 # Latest scan
 
-_Sunday 27 September 2026, 11:51 (Amsterdam time)_
+_Sunday 27 September 2026, 13:08 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -10,7 +10,7 @@ _Sunday 27 September 2026, 11:51 (Amsterdam time)_
 | HNVI | ✅ 730 lots |
 | Plaats Je Bod | ✅ 373 lots |
 | Onlineveilingmeester | ✅ 1800 lots |
-| Marktplaats prices | ✅ 34 price lookups |
+| Marktplaats prices | ✅ 0 price lookups |
 
 ## Matching lots (73)
 
@@ -32,7 +32,7 @@ _Sunday 27 September 2026, 11:51 (Amsterdam time)_
 |  | Suit / formalwear | [Beroepen colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/139) (Onlineveilingmeester) | €14 | – | – | Tue 29 Sep 20:04 |
 |  | Suit / formalwear | [Ca. 41x Man, overjassen en colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/207) (Onlineveilingmeester) | €12 | – | – | Tue 29 Sep 20:21 |
 |  | Suit / formalwear | [Ca. 56x Man, colberts in verschillende kleuren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/228) (Onlineveilingmeester) | €12 | – | – | Tue 29 Sep 20:26 |
-|  | Suit / formalwear | [Ca. 27x Man, colberts zwart](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/226) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:26 |
+|  | Suit / formalwear | [Ca. 27x Man, colberts zwart](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/226) (Onlineveilingmeester) | €12 | – | – | Tue 29 Sep 20:26 |
 | ✅ | Suit / formalwear | [Ca. 46x Man, wollen geruite colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/230) (Onlineveilingmeester) | €12 | €18 | €333 | Tue 29 Sep 20:27 |
 |  | Suit / formalwear | [Ca. 89x Ouderwetse vestjes en man/ vrouw colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/233) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:28 |
 |  | Suit / formalwear | [Ca. 43x Heren colberts/ jasjes](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/237) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:29 |
@@ -42,7 +42,7 @@ _Sunday 27 September 2026, 11:51 (Amsterdam time)_
 |  | Suit / formalwear | [Ca. 41x Damesjassen, colberts, blouses](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/254) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:33 |
 |  | Suit / formalwear | [Ca. 47x Colberts](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/276) (Onlineveilingmeester) | €14 | – | – | Tue 29 Sep 20:38 |
 |  | Suit / formalwear | [Ca. 40x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/283) (Onlineveilingmeester) | €10 | – | – | Tue 29 Sep 20:40 |
-|  | Suit / formalwear | [Ca. 44x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281) (Onlineveilingmeester) | €18 | – | – | Tue 29 Sep 20:40 |
+|  | Suit / formalwear | [Ca. 44x Colberts, heren](https://onlineveilingmeester.nl/nl/veilingen/9490/kavels/281) (Onlineveilingmeester) | €20 | – | – | Tue 29 Sep 20:40 |
 |  | Suit / formalwear | [Colbert, maat 50, Dsquared2](https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/13) (Onlineveilingmeester) | €56 | – | – | Wed 30 Sep 20:33 |
 |  | Suit / formalwear | [Colbert, maat 50, Loro Piana](https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/72) (Onlineveilingmeester) | €149 | €200 | €63 | Wed 30 Sep 20:47 |
 | ✅ | Power tools | [Hilti DX 460 kruitschiethamer in koffer](https://www.hnvi.nl/veiling-kavel/hilti-dx-460-kruitschiethamer-in-koffer/196720) (HNVI) | €35 | €275 | €115 | Thu 01 Oct 19:30 |
@@ -59,7 +59,7 @@ _Sunday 27 September 2026, 11:51 (Amsterdam time)_
 |  | Monitor | [Beeldscherm 27 inch SAMSUNG S27C310EAU](https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-samsung-s27c310eau/196602) (HNVI) | €15 | – | – | Mon 05 Oct 19:30 |
 |  | Monitor | [27 inch beeldschermen ACER V277](https://www.hnvi.nl/veiling-kavel/27-inch-beeldschermen-acer-v277/196603) (HNVI) | €10 | – | – | Mon 05 Oct 19:30 |
 | ✅ | Laptop | [Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300](https://www.hnvi.nl/veiling-kavel/laptop-lenovo-thinkpad-t440s-128-gb-hdd-8-gb-ram-intel-core-i5-4300u-cpu-1-90-hgz-qwertz-toetsenbord/196613) (HNVI) | €35 | €150 | €59 | Mon 05 Oct 19:30 |
-|  | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €35 | – | – | Mon 05 Oct 20:00 |
+|  | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €45 | – | – | Mon 05 Oct 20:00 |
 |  | Power tools | [DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000](https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail) (ProVeiling) | €25 | – | – | Mon 05 Oct 20:00 |
 |  | Power tools | [Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion](https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail) (ProVeiling) | €25 | €40 | €1 | Mon 05 Oct 20:00 |
 |  | Power tools | [Makita LXT Accubatterij BL1830](https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail) (ProVeiling) | €25 | €35 | €0 | Mon 05 Oct 20:00 |

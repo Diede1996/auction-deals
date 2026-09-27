@@ -58,41 +58,41 @@
  },
  "health": {
   "hnvi": {
-   "at": "2026-09-27T09:51:31.500418+00:00",
+   "at": "2026-09-27T11:08:22.491349+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T09:51:31.500418+00:00",
+   "last_ok": "2026-09-27T11:08:22.491349+00:00",
    "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-27T09:51:31.500418+00:00",
+   "at": "2026-09-27T11:08:22.491349+00:00",
    "error": "",
    "fails": 0,
-   "lots": 34,
+   "lots": 0,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-27T09:51:31.500418+00:00",
+   "at": "2026-09-27T11:08:22.491349+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T09:51:31.500418+00:00",
+   "last_ok": "2026-09-27T11:08:22.491349+00:00",
    "lots": 1800,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-27T09:51:31.500418+00:00",
+   "at": "2026-09-27T11:08:22.491349+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T09:51:31.500418+00:00",
+   "last_ok": "2026-09-27T11:08:22.491349+00:00",
    "lots": 373,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-27T09:51:31.500418+00:00",
+   "at": "2026-09-27T11:08:22.491349+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T09:51:31.500418+00:00",
+   "last_ok": "2026-09-27T11:08:22.491349+00:00",
    "lots": 316,
    "ok": true
   },
@@ -104,12 +104,12 @@
   }
  },
  "last_run": {
-  "at": "2026-09-27T09:51:31.500418+00:00",
+  "at": "2026-09-27T11:08:22.491349+00:00",
   "deals": 15,
   "lots": 3219,
   "matches": 73,
-  "new": 15,
-  "requests": 133
+  "new": 0,
+  "requests": 98
  },
  "price_cache": {
   "beeldscherm acer rg270|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
