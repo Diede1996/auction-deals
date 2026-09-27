@@ -72,7 +72,8 @@ marktplaats:
   fallback_days: 14             # if Marktplaats blocks the check, show saved prices up to this old
   min_listings: 4               # rough price (no type number in the lot title): need this many similar listings
   min_listings_exact: 2         # exact model: this many listings of the same model are enough
-  max_items_per_lot: 10         # "2 x monitor" counts as 2 monitors, up to this many; bigger bulk lots count as 1
+  max_items_per_lot: 0          # "40x colbert" counts as 40 colberts (price, margin and max bid x 40); 0 = no limit.
+                                # Set e.g. 10 to count bigger bulk lots as one item instead.
   max_lookups_per_run: 60       # at most this many Marktplaats searches per scan
   delay_seconds: 4              # pause between Marktplaats searches...
   extra_random_delay: 3         # ...plus a random 0-3 seconds

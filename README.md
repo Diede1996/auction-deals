@@ -79,8 +79,8 @@ Each row is a lot from a running bankruptcy auction that matches your watchlist.
 | **Lot** | Title (click it to open the lot on the auction site), your watchlist item, site and auction name. Below that: 📍 the **pickup address** (ophaallocatie), 🚗 the distance, driving time and fuel costs there and back, and the pickup day. |
 | **Closes** | Closing time in Dutch time, highlighted when it's within 24 hours |
 | **Current bid** | Bid at the time of the scan, what you would pay including premium, VAT and driving, and your **margin** at that price (in € and as a % of what you pay) |
-| **Marktplaats value** | Median asking price, with a small bar chart of how the prices are spread. **✓ Exact: S27C366EAU** means only listings of that exact model were compared. **≈ Rough price** means the lot title has no type number, so similar items were compared: check it yourself. Lots like "2 x ..." count all items. *edit* lets you type your own value. |
-| **Suggested max bid** | The highest bid that still leaves your minimum profit, with the margin you'd make at that bid. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
+| **Marktplaats value** | Median asking price, with a small bar chart of how the prices are spread. **✓ Exact: S27C366EAU** means only listings of that exact model were compared. **≈ Rough price** means the lot title has no type number, so similar items were compared: check it yourself. Lots like "40x Colbert" count all items (40 × the price of one). *edit* lets you type your own value. |
+| **Suggested max bid** | The highest bid that still leaves your minimum margin, with the margin you'd make at that bid. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
 | **Status** | ✓ *Room to bid* (current bid is below your max), ✕ *Above max*, or ? *Needs a price* (set a value yourself). **☆ Favorite** stars the lot, **Hide** hides it. |
 
 The **Favorites** tab shows the lots you starred, also after they closed or dropped out of the scan.
@@ -88,7 +88,7 @@ The **Favorites** tab shows the lots you starred, also after they closed or drop
 At the top you set:
 
 - **You sell at**: the share of the Marktplaats median you expect to get. The default is 85%, because asking prices are higher than selling prices. Drag it to 50% to see your margin if you only get half the median.
-- **Minimum profit**: the suggested max bid always leaves at least this many euros.
+- **Minimum margin**: the suggested max bid always leaves at least this margin, as a % of what you pay (bid, premium, VAT and driving). At 30% you pay at most your sale price ÷ 1.3. The default is 30%.
 - **Count driving costs**: include the drive to the pickup address in what you pay (on by default).
 
 Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
@@ -102,7 +102,7 @@ Every morning you get a summary like this:
 ```
 ☀️ Auction scan · Mon 28 Sep
 60 matching lots · 12 with room to bid · 2 new
-Max bids for selling at 85% of the Marktplaats median with at least €25 profit
+Max bids for selling at 85% of the Marktplaats median with at least 30% margin
 
 ⭐ Your favorites closing today
 • Philips HD7695/90 Intense koffiemachine
@@ -111,7 +111,7 @@ I'll remind you again about an hour before each one closes.
 
 ⏰ Closing within 24 hours
 • Beeldscherm 27 inch SAMSUNG S27C310EAU
-   bid €15 → max €41 (margin €25) · HNVI · Mon 19:30 · 🚗 64 km
+   bid €15 → max €41 (margin €19 · 30%) · HNVI · Mon 19:30 · 🚗 64 km
 
 📊 Open the dashboard
 ```
@@ -133,11 +133,11 @@ You manage your watchlist by sending the bot commands. It reads them every 15 mi
 | `/add playstation 5 \| ps5 -controller` | Use `\|` to give alternative search phrases. |
 | `/add dyson v15 max=250` | Never suggest paying more than €250 in total (bid + premium + VAT). |
 | `/add festool price=400` | Use your own resale value of €400 instead of Marktplaats. |
-| `/add rolex profit=500` | Minimum profit for this item only. |
+| `/add rolex margin=50` | Minimum margin for this item only, in %. |
 | `/add ps5 mp="playstation 5 disc edition"` | Use this exact Marktplaats search for the price. |
 | `/list` · `/remove 3` | Show the watchlist, or stop watching an item (by number or name). |
 | `/sellat 50` | What you expect to sell for, as a % of the Marktplaats median |
-| `/minprofit 30` | The max bid always leaves at least this much profit, in € |
+| `/minmargin 30` | The max bid always leaves at least this margin: profit as a % of what you pay |
 | `/scan` | Scan now instead of waiting for tomorrow (at most 3 extra scans a day) |
 | `/favorites` | The lots you starred on the dashboard, with their closing times |
 | `/dashboard` · `/status` · `/help` | Dashboard link, whether every site worked in the last scan, all commands |
@@ -162,10 +162,10 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
    - **Exact model**: when the lot title has a type number, only listings of that model count. "Curved beeldscherm 27 inch SAMSUNG S27C366EAU" is searched as `samsung s27c366eau`, and a listing must contain S27C366EAU (also written with spaces or dashes). Sizes, memory, voltages and processors (27 inch, 8GB, 18V, i5) are not type numbers. Two listings of the same model are enough. If Marktplaats has fewer, the lot shows *too few listings* and you can set a value yourself.
    - **Rough price**: without a type number, the bot compares the category, brand and a few words from the title, for example `monitor lenovo` (monitor and beeldscherm count as the same). It needs at least 4 listings. A brand or category alone (`hilti`, `monitor`) is never used.
    - It skips wanted ads, defect items, parts, accessories and auction houses advertising their own lots, removes outliers, and takes the median asking price.
-3. **Sale price** = Marktplaats value × your sell percentage (85% by default) × the number of items in lots like "2 x ..." (up to 10; bigger bulk lots count as one item).
+3. **Sale price** = Marktplaats value × your sell percentage (85% by default) × the number of items when the title says so: "40x Colbert", "2 x ...", "Twee ...", "(40 stuks)" or "Colberts x40". Sizes like "180 x 90 cm" don't count. The dashboard shows it as "40 × €20". To count big bulk lots as one item instead, set `max_items_per_lot` in `config.yml`.
 4. **Driving costs** = distance there and back ÷ 16 km per liter × the Belgian maximum price for Euro 95 E10, read every morning. The pickup address comes from the auction page; distances come from the OSRM route planner (OpenStreetMap). Change the fuel use, price or leave out driving costs in `config.yml` under `driving`. If you collect several lots at the same address, you only drive once.
 5. **Margin** = sale price − what you pay, also shown as a % of what you pay.
-6. **Suggested max bid** = the highest bid that still leaves your minimum profit. If you set `max=` for an item, it never goes above that either.
+6. **Suggested max bid** = the highest bid that still leaves your minimum margin: what you pay is at most sale price ÷ (1 + minimum margin), so at 30% and a sale price of €130 you pay at most €100. If you set `max=` for an item, it never goes above that either.
 
 ---
 
@@ -192,7 +192,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 | Dashboard link gives 404 | The first publish can take a few minutes. Check that the repository is public. |
 | A run fails at **Save** | Set **Settings → Actions → General → Workflow permissions** to **Read and write**. |
 | The bot doesn't react | Commands are read every 15 minutes, and GitHub sometimes starts scheduled runs late. Check that `TELEGRAM_CHAT_ID` is set. |
-| Too many or too few lots with room to bid | Change your sell percentage (`/sellat`) or minimum profit (`/minprofit`), or add `-words` to exclude accessories. |
+| Too many or too few lots with room to bid | Change your sell percentage (`/sellat`) or minimum margin (`/minmargin`), or add `-words` to exclude accessories. |
 | A site shows "failed" on the dashboard | Send `/status` or open `data/state.json` on GitHub to see the error. *HTTP 403* means the site refuses automated visitors; turn it off in `config.yml`. |
 | No distances or driving costs | Check the `HOME_ADDRESS` secret (street, number and town). The footer of the dashboard says why when it can't find your address or the route planner. |
 | "This token can't edit issues" when starring a lot | The token must have **Only select repositories → auction-deals** and **Issues: Read and write**. Create a new one with the link in the dialog. |
