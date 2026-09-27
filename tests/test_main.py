@@ -197,3 +197,87 @@ def test_chat_id_helper(repo, monkeypatch, capsys):
     assert run_commands(repo, NOW, http_cls=lambda **kw: None, telegram_cls=tg) == 0
     assert "777" in capsys.readouterr().out
     assert "<code>777</code>" in tg.sent[0]
+
+
+# ---------------------------------------------------------------- favorites, driving costs, exact models
+
+def issue_list(favs, login="diede"):
+    from scanner.favorites import MARKER
+    return [{"number": 12, "user": {"login": login},
+             "body": f"{MARKER}\nFavorites\n```json\n{json.dumps(favs)}\n```"}]
+
+
+def geo_routes():
+    def pdok(m, u, kw):
+        if "Dorpsstraat" in u:
+            return {"response": {"docs": [{"centroide_ll": "POINT(5.54 51.61)", "weergavenaam": "Dorpsstraat 1, 5461AA Veghel"}]}}
+        if "Hooffstraat" in u:
+            return {"response": {"docs": [{"centroide_ll": "POINT(5.47 51.44)", "weergavenaam": "Jan van Hooffstraat 3, 5611ED Eindhoven"}]}}
+        return {"response": {"docs": [{"centroide_ll": "POINT(5.72 52.70)", "weergavenaam": "Produktieweg 9, 8304AV Emmeloord"}]}}
+
+    def osrm(m, u, kw):
+        n = u.split("/driving/")[1].split("?")[0].count(";")
+        return {"code": "Ok", "distances": [[0] + [40000 * (i + 1) for i in range(n)]],
+                "durations": [[0] + [1800 * (i + 1) for i in range(n)]]}
+
+    energia = "<table><tr><td>Benzine 95 RON - E10</td><td>€/l 2.1080</td><td>vanaf 2026-09-22</td></tr></table>"
+    return [(url_has("api.pdok.nl"), pdok), (url_has("router.project-osrm.org"), osrm),
+            (url_has("energiafed.be"), energia)]
+
+
+def test_scan_with_favorites_and_driving_costs(repo, monkeypatch):
+    monkeypatch.setenv("HOME_ADDRESS", "Dorpsstraat 1, Veghel")
+    lots = make_lots(NOW)
+    lots[0].pickup, lots[0].pickup_when = "Jan van Hooffstraat 3, Eindhoven", "Mon 5 Oct, 08:00–13:00"
+    lots[2].pickup = "Produktieweg 9, 8304AV Emmeloord"
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: [l for l in lots if l.site == "hnvi"],
+                                            "proveiling": lambda ctx: [l for l in lots if l.site == "proveiling"]})
+    favs = [{"key": "hnvi:1", "title": "Apple iPhone 13 128GB zwart", "url": "https://www.hnvi.nl/veiling-kavel/iphone/1",
+             "closes": (NOW + timedelta(hours=15)).isoformat()},
+            {"key": "hnvi:99", "title": "Something next week", "url": "https://www.hnvi.nl/veiling-kavel/x/99",
+             "closes": (NOW + timedelta(days=7)).isoformat()}]
+    http = FakeHttp([(url_has("marktplaats.nl/lrp/api/search"), {"listings": MP}),
+                     (url_has("api.github.com/repos/Diede/auction-deals/issues"), issue_list(favs))] + geo_routes())
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW, http_cls=lambda **kw: http, telegram_cls=tg) == 0
+
+    html, data = page_data(repo)
+    by_key = {l["key"]: l for l in data["lots"]}
+    iphone = by_key["hnvi:1"]
+    assert iphone["pickup"] == "Jan van Hooffstraat 3, Eindhoven" and iphone["pickupWhen"].startswith("Mon 5 Oct")
+    assert iphone["trip"]["km"] == 40.0 and iphone["trip"]["min"] == 30
+    assert iphone["trip"]["cost"] == pytest.approx(80 / 16 * 2.108, abs=0.01)  # there and back, 1 op 16
+    assert data["driving"]["fuel"] == 2.108 and data["driving"]["home"] is True
+    assert data["favorites"]["issue"] == 12 and len(data["favorites"]["items"]) == 2
+    assert data["repo"] == "Diede/auction-deals"
+    assert iphone["mp"]["kind"] == "exact" and iphone["mpPlan"]["kind"] == "general"
+    # the €10.54 trip lowers the max bid: floor((85% of 325 - 25 - 10.54) / 1.21 / 1.19) = 167 instead of 174
+    assert iphone["maxBid"] == 167
+    # your address is never written to the (public) repository or dashboard
+    for path in ("data/state.json", "data/lots.json", "site/index.html"):
+        assert "Dorpsstraat" not in (repo / path).read_text()
+    digest = tg.sent[0]
+    assert "Your favorites closing today" in digest and digest.index("favorites") < digest.index("Closing within 24")
+    assert "Something next week" not in digest
+    assert "🚗 40 km" in digest
+
+
+def test_favorite_reminders_and_list(repo, monkeypatch):
+    (repo / "data").mkdir(exist_ok=True)
+    closes = NOW + timedelta(minutes=40)
+    (repo / "data" / "lots.json").write_text(json.dumps({"lots": [
+        {"key": "hnvi:1", "closes": closes.isoformat(), "bid": 60, "maxBid": 170, "pickup": "Jan van Hooffstraat 3, Eindhoven",
+         "trip": {"km": 40.2}}]}))
+    (repo / "data" / "telegram.json").write_text(json.dumps({"offset": 1, "welcomed": "x"}))
+    favs = [{"key": "hnvi:1", "title": "Apple iPhone 13 128GB zwart", "url": "https://www.hnvi.nl/veiling-kavel/iphone/1",
+             "closes": (NOW + timedelta(hours=5)).isoformat()}]  # the scan knows the newer closing time
+    http = FakeHttp([(url_has("api.github.com"), issue_list(favs))])
+    tg = FakeTelegram([{"update_id": 1, "message": {"chat": {"id": 42}, "text": "/favorites"}}])
+    assert run_commands(repo, NOW, http_cls=lambda **kw: http, telegram_cls=tg) == 0
+    listing, reminder = tg.sent
+    assert "Your favorites" in listing and "Apple iPhone 13" in listing
+    assert "Closes in 40 min" in reminder and "your max <b>€170</b>" in reminder and "40 km" in reminder
+    # every 15 minutes the job runs again: no second reminder for the same closing time
+    tg.sent.clear()
+    run_commands(repo, NOW + timedelta(minutes=15), http_cls=lambda **kw: http, telegram_cls=tg)
+    assert tg.sent == []

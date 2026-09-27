@@ -4,9 +4,7 @@
 #   resale_factor  what you expect to sell for, as a share of the Marktplaats median: 0.85 = 85%, 0.5 = 50%
 #   min_profit     the suggested max bid always leaves at least this many euros profit at that price
 #
-# items: one entry per thing you want to find (a lot goes to the first item it matches)
-#   Put brands and models before general words in keywords: the first keyword that matches a lot
-#   is used for the Marktplaats price check ("jura e8" compares better than "volautomaat").
+# items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard
 #   keywords           search phrases; a lot matches when its title contains all words of one phrase
 #   exclude            lots whose title contains any of these words are skipped
@@ -21,8 +19,8 @@ settings:
 items:
 - name: Monitor
   keywords: [monitor, beeldscherm]
-  exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard, kabel,
-    baby, babyfoon, monitoring, hartslag, tv, televisie]
+  exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard,
+    kabel, baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
   keywords: [macbook]
   exclude: [hoes, sleeve, tas, oplader, lader, adapter]
@@ -34,19 +32,22 @@ items:
   exclude: [tas, laptoptas, hoes, laptophoes, sleeve, lader, oplader, laptoplader, adapter, dock, docking,
     dockingstation, standaard, laptopstandaard, koeler, laptopkoeler, slot, kabel, moleskine, gelinieerd]
 - name: Power tools
-  keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, hikoki, bosch professional, bosch gsr, bosch gsb,
-    bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
-  exclude: [koolborstel, koolborstels, onderdeel, onderdelen, reparatie, defect]
+  keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, hikoki, bosch professional, bosch gsr,
+    bosch gsb, bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
+  exclude: [koolborstel, koolborstels, onderdeel, onderdelen, reparatie, defect, diamantschijf, diamantschijven,
+    zaagblad, zaagbladen, foudraal, t.b.v.]
 - name: Coffee machine
   keywords: [jura, delonghi, de longhi, sage barista, sage bambino, sage oracle, sage dual boiler, nespresso,
     siemens eq, melitta, la marzocco, lelit, rancilio, gaggia, espressomachine, koffiemachine, volautomaat]
   exclude: [cups, capsules, capsule, bonen, koffiebonen, filter, filters, ontkalker, ontkalkingsmiddel,
-    reinigingstabletten, onderdeel, onderdelen, defect]
+    reinigingstabletten, onderdeel, onderdelen, defect, kopjes, espressokopjes, koffiekopjes, schotels,
+    servies, mokken, waterfilter, waterfilters, waterpomp, t.b.v.]
 - name: Kitchen appliance
   keywords: [kitchenaid, thermomix, airfryer, smeg, vitamix, magimix]
   exclude: [onderdeel, onderdelen, hulpstuk, accessoire, accessoires, opzetstuk, defect]
 - name: Suit / formalwear
   keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer]
-  exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau, deo]
+  exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
+    deo]
 - name: Plants / decor
   keywords: [kunstplant, kunstboom, kunstbloemen, olijfboom]

@@ -70,10 +70,28 @@ marktplaats:
   enabled: true
   cache_days: 3                 # reuse a lot's Marktplaats price for this many days (1 = check daily)
   fallback_days: 14             # if Marktplaats blocks the check, show saved prices up to this old
-  min_listings: 4               # need at least this many comparable listings for a price
-  max_lookups_per_run: 40       # at most this many Marktplaats searches per scan
+  min_listings: 4               # rough price (no type number in the lot title): need this many similar listings
+  min_listings_exact: 2         # exact model: this many listings of the same model are enough
+  max_items_per_lot: 10         # "2 x monitor" counts as 2 monitors, up to this many; bigger bulk lots count as 1
+  max_lookups_per_run: 60       # at most this many Marktplaats searches per scan
   delay_seconds: 4              # pause between Marktplaats searches...
   extra_random_delay: 3         # ...plus a random 0-3 seconds
+
+# Driving costs to the pickup address ("ophaallocatie"). Your home address is NOT stored here (this
+# repository is public): add it as the secret HOME_ADDRESS, e.g. "Dorpsstraat 1, Veghel".
+driving:
+  enabled: true
+  km_per_liter: 16              # your car's fuel use: 16 = 1 op 16
+  fuel_price: auto              # € per liter; auto = today's Belgian maximum price for Euro 95 E10
+  fuel_price_fallback: 2.108    # used when the automatic price can't be read
+  round_trip: true              # there and back
+  extra_cost_per_km: 0          # optional wear and tear per km, e.g. 0.05
+  include_in_max_bid: true      # count the trip as a cost in margins and suggested max bids
+
+# Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
+favorites:
+  reminders: true               # the closing day (in the morning summary) and before closing
+  remind_minutes_before: 60     # checked every 15 minutes, so reminders arrive 45-60 minutes before
 
 http:
   delay_seconds: 1.5            # pause between requests to the same site

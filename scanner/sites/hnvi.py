@@ -1,7 +1,8 @@
 """HNVI veilingen (hnvi.nl) - server-rendered pages.
 
 1. Homepage lists running auctions (title, "Einddatum", description mentioning the curator).
-2. Auction page lists lots, 40 per page, more pages at <auction-url>/page:N.
+2. Auction page lists lots, 40 per page, more pages at <auction-url>/page:N. Its first page also shows
+   "Afhaaldag:" (pickup day) and "Adres:" (pickup address, street and town on two lines).
    Full lot titles are in the link's title attribute; exact closing times sit in
    countdown scripts: `var countdown_196542s_timer = new Date('Oct 5, 2026 19:30:00 +0200');`
 """
@@ -15,7 +16,7 @@ from bs4 import BeautifulSoup
 
 from ..models import Auction, Lot
 from ..util import parse_dutch_datetime, parse_money
-from .base import SiteContext
+from .base import SiteContext, clean_address, has_number, labelled, line_index, short_when, text_lines
 
 log = logging.getLogger(__name__)
 
@@ -37,6 +38,7 @@ def parse_home(html: str) -> list[Auction]:
         desc = _text(box.select_one("p.ui-par-01")) if box else ""
         meta = _text(box.select_one("span.ui-title-01")) if box else ""
         ends = re.search(r"Einddatum\s*:\s*(.+)$", meta)
+        town = re.search(r"Locatie\s*:\s*(.+?)\s*(?:Einddatum|$)", meta)
         auctions[m.group(1)] = Auction(
             site=SITE,
             auction_id=m.group(1),
@@ -44,8 +46,18 @@ def parse_home(html: str) -> list[Auction]:
             url=href if href.startswith("http") else BASE + href,
             description=desc,
             closes_at=parse_dutch_datetime(ends.group(1)) if ends else None,
+            town=town.group(1).strip() if town else "",  # used when the address is missing
         )
     return list(auctions.values())
+
+
+def parse_pickup(html: str) -> tuple[str | None, str | None]:
+    """(address, pickup day) from an auction or lot page."""
+    lines = text_lines(html)
+    start = line_index(lines, ["Kijkdag", "Sluitdag", "Afhaaldag"])
+    address = clean_address(labelled(lines, ["Adres", "Ophaallocatie", "Afhaallocatie"], check=has_number, start=start))
+    when = short_when(labelled(lines, ["Afhaaldag", "Afhaaldagen", "Ophaaldag", "Ophaaldagen"], 1, start=start))
+    return address, when
 
 
 def parse_timers(html: str) -> dict[str, datetime]:
@@ -82,7 +94,8 @@ def parse_lots(html: str, auction: Auction) -> list[Lot]:
             closes_at=timers.get(lot_id) or auction.closes_at,
             auction_title=auction.title,
             image=img.get("src") if img else None,
-        ))
+            location=auction.town or None,
+        ).pickup_from(auction))
     return lots
 
 
@@ -98,6 +111,7 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     lots: list[Lot] = []
     for a in bankrupt:
         html = ctx.http.text(a.url)
+        a.pickup, a.pickup_when = parse_pickup(html)
         lots.extend(parse_lots(html, a))
         pages = min(last_page(html), ctx.max_pages)
         page = 2

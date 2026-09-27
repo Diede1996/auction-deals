@@ -14,6 +14,11 @@ class Auction:
     description: str = ""
     kind: str = ""  # type label reported by the site, e.g. "FAILLISEMENT" or "Executie veiling"
     closes_at: datetime | None = None
+    pickup: str | None = None  # pickup address ("ophaallocatie"), e.g. "Produktieweg 9, 8304AV Emmeloord"
+    pickup_when: str | None = None  # pickup day(s) as shown to you, e.g. "do 1 okt 10:00–12:00"
+    pickup_latlon: tuple[float, float] | None = None  # when the site gives coordinates
+    delivery: bool = False  # the auction delivers (bezorgveiling): no trip needed
+    town: str = ""  # where the auction is, when the site only names the town
 
 
 @dataclass
@@ -31,10 +36,23 @@ class Lot:
     extra_fee: float = 0.0  # fixed per-lot costs reported by the site (excl. VAT)
     premium: float | None = None  # per-lot buyer's premium if the site reports it (0.16 = 16%)
     vat: float | None = None  # per-lot VAT on bid + premium if it differs from the site default (0 = margin scheme)
+    pickup: str | None = None  # pickup address, usually the same for the whole auction
+    pickup_when: str | None = None
+    pickup_latlon: tuple[float, float] | None = None
+    delivery: bool = False
+    trip_cost: float | None = None  # fuel to drive to the pickup address and back (set by the scan)
 
     @property
     def key(self) -> str:
         return f"{self.site}:{self.lot_id}"
+
+    def pickup_from(self, auction: "Auction") -> "Lot":
+        """Copy the auction's pickup details onto this lot."""
+        self.pickup = self.pickup or auction.pickup
+        self.pickup_when = self.pickup_when or auction.pickup_when
+        self.pickup_latlon = self.pickup_latlon or auction.pickup_latlon
+        self.delivery = self.delivery or auction.delivery
+        return self
 
 
 @dataclass

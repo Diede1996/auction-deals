@@ -3,7 +3,9 @@
 1. The homepage lists every running auction ("a.home-link") with a "Betreft: <type>" label.
 2. Lots are on /Alle-kavels/<id>/Veiling; further pages need an ASP.NET postback
    (__EVENTTARGET = the pager control, __EVENTARGUMENT = page number).
-3. The auction info page holds the exact closing date ("Sluiting: maandag 28 september 2026 vanaf 20:00").
+3. The auction info page holds the exact closing date ("Sluiting: maandag 28 september 2026 vanaf 20:00"),
+   the pickup day ("Ophaaldag(en): donderdag 01 oktober 2026 van 10:00 tot 12:00") and the address under
+   the heading "Locatie" ("Produktieweg 9" / "8304AV, Emmeloord").
 """
 from __future__ import annotations
 
@@ -14,7 +16,7 @@ from bs4 import BeautifulSoup
 
 from ..models import Auction, Lot
 from ..util import parse_dutch_datetime, parse_money, parse_relative_close
-from .base import SiteContext
+from .base import SiteContext, clean_address, has_number, labelled, line_index, short_when, text_lines
 
 log = logging.getLogger(__name__)
 
@@ -63,6 +65,16 @@ def parse_closing(html: str):
     return parse_dutch_datetime(f"{m.group(1)} {m.group(2)}")
 
 
+def parse_pickup(html: str) -> tuple[str | None, str | None]:
+    """(address, pickup day) from the auction info page."""
+    lines = text_lines(html)
+    start = line_index(lines, ["Datums", "Start", "Sluiting"])
+    address = clean_address(labelled(lines, ["Locatie", "Ophaallocatie", "Afgifteadres"], check=has_number, start=start))
+    when = short_when(labelled(lines, [r"Ophaaldag\(en\)", "Ophaaldagen", "Ophaaldag", "Afgifte", "Afhalen"], 2,
+                               start=start))
+    return address, when
+
+
 def parse_lot_rows(html: str, auction: Auction, now) -> list[Lot]:
     soup = BeautifulSoup(html, "html.parser")
     lots: list[Lot] = []
@@ -104,7 +116,7 @@ def parse_lot_rows(html: str, auction: Auction, now) -> list[Lot]:
             image=image,
             location=_text(row.select_one("p.location strong")) or None,
             bids=int(nbids) if nbids.isdigit() else None,
-        ))
+        ).pickup_from(auction))
     return lots
 
 
@@ -144,9 +156,11 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     for a in bankrupt:
         if "AuctionGroup.aspx" in a.url:
             try:
-                a.closes_at = parse_closing(ctx.http.text(a.url))
-            except Exception as e:  # closing time is nice-to-have
-                log.warning("proveiling: no closing time for %s: %s", a.auction_id, e)
+                info = ctx.http.text(a.url)
+                a.closes_at = parse_closing(info)
+                a.pickup, a.pickup_when = parse_pickup(info)
+            except Exception as e:  # closing time and pickup details are nice-to-have
+                log.warning("proveiling: no auction details for %s: %s", a.auction_id, e)
         lots.extend(fetch_auction_lots(ctx, a))
     return lots
 

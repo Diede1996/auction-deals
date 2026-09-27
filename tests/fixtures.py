@@ -52,6 +52,15 @@ PV_HOME = """
 PV_INFO = """<div>Datums Tip! Klik op de datum om hem aan uw agenda toe te voegen. Start: zaterdag 12 september 2026vanaf 17:00
 Sluiting: maandag 28 september 2026vanaf 20:00 Kijkdag(en): maandag 28 september 2026van 10:00 tot 11:00 Type veiling: Executie veiling</div>"""
 
+# The same info page with its "Ophaaldag(en)" and "Locatie" blocks (text as shown on 27 Sep 2026)
+PV_INFO_PAGE = """<div class="row"><div class="six columns"><h4>Datums</h4><p class="small">Tip! Klik op de datum om hem aan uw agenda toe te voegen.</p>
+<p><strong>Start:</strong><br><a href="#">zaterdag 12 september 2026</a> vanaf 17:00</p>
+<p><strong>Sluiting:</strong><br><a href="#">maandag 28 september 2026</a> vanaf 20:00</p>
+<p><strong>Kijkdag(en):</strong><br><a href="#">maandag 28 september 2026</a> van 10:00 tot 11:00</p>
+<p><strong>Ophaaldag(en):</strong><br><a href="#">donderdag 01 oktober 2026</a> van 10:00 tot 12:00</p></div>
+<div class="six columns"><h4>Locatie</h4><p>Produktieweg 9 <br />8304AV, Emmeloord</p>
+<h4>Eigenschappen</h4><p><strong>Type veiling:</strong><br>Executie veiling</p></div></div>"""
+
 
 def pv_row(lot_id, title, bid, start, end, bids=1):
     return f"""<div class="row" data-href="https://www.proveiling.nl/x/{lot_id}/detail" id="tr{lot_id}" data-isbidder="False" itemscope="" itemtype="http://schema.org/Product"> <div class="three columns text-center hide-for-small"> <a id="id{lot_id}"></a> <a href="https://www.proveiling.nl/x/{lot_id}/detail" itemprop="url"> <img original="https://img.proveiling.nl/Image.aspx?img=15725|165597|{lot_id}|FirstImage.jpg&amp;x=200&amp;y=200&amp;stretch=1" alt="{title}" class="thumbview-list" src="https://img.proveiling.nl/Image.aspx?img=15725|165597|{lot_id}|FirstImage.jpg&amp;x=200&amp;y=200&amp;stretch=1"> </a> </div> <div class="six mobile-two columns"> <div> <p> <strong><a class="article-link" href="https://www.proveiling.nl/x/{lot_id}/detail"><span id="art_name_{lot_id}" class="editorName" itemprop="name">{title}</span></a></strong> </p> </div> <div> <p> <span class="small lotnr">Kavelnr: 17433-1306926</span><br><span class="small condition">Conditie: Nieuw</span><br> </p><div> <strong><span class="endtime" style="font-size: 14px;">Kavel sluit: {end}</span></strong> </div> </div> </div> <div class="three mobile-two columns text-right"> <p class="bids"> Biedingen: <strong><span id="NumberOfBids" class="alertspan">{bids}</span></strong> <br> <span style="color: #999">Startbod: <span class="alertspan">€{start}</span></span></p> <p class="currentbid"> Huidig bod: <span id="AlertSpan" class=""><span id="AlertIcon" class="icon "></span>€&nbsp;<span id="CurrentBid">{bid}</span></span></p> <p class="location"> Locatie: <span class="alertspan"><strong>Emmeloord</strong></span> </p> </div> </div>"""
@@ -76,6 +85,13 @@ HNVI_HOME = """<ul>
 <li> <a href="/online-veiling/bedrijfsbeeindiging-hoveniersbedrijf-valkenswaard/1881"></a> <div class="ui-auction-data-container"> <h2 class="ui-h3-title"><a href="/online-veiling/bedrijfsbeeindiging-hoveniersbedrijf-valkenswaard/1881">Bedrijfsbeëindiging hoveniersbedrijf Valkenswaard</a></h2> <span class="ui-title-01"><span>Locatie :</span> Valkenswaard <span>Einddatum :</span> 30 September 2026</span> <p class="ui-par-01">Online veiling wegens bedrijfsbeëindiging</p> </div> </li>
 <li> <a href="/online-veiling/combinatieveiling-div-faillissementen-september-2026/1880"></a> <div class="ui-auction-data-container"> <h2 class="ui-h3-title"><a href="/online-veiling/combinatieveiling-div-faillissementen-september-2026/1880">Combinatieveiling div. faillissementen september 2026</a></h2> <span class="ui-title-01"><span>Locatie :</span> Loon op Zand <span>Einddatum :</span> 5 Oktober 2026</span> <p class="ui-par-01">Online veiling i.o.v. diverse curatoren van diverse faillissementen</p> </div> </li>
 </ul>"""
+
+
+# Auction page block with the pickup details (text as shown on 27 Sep 2026)
+HNVI_AUCTION_INFO = """<div class="ui-auction-info"><p>Online veiling i.o.v. curator mr. R. van der Pas van Pentra advocaten te Veghel</p>
+<p><a href="https://assets.hnvi.nl/files/auctions/1878/catalogus-pieperz.pdf">Download Catalogus</a></p>
+<p><strong>Kijkdag:</strong><br>28-09-2026 09:00-11:00</p><p><strong>Sluitdag:</strong><br>29-09-2026 19:30</p>
+<p><strong>Afhaaldag:</strong><br>05-10-2026 08:00-13:00</p><p><strong>Adres:</strong><br>Jan van Hooffstraat 3<br>Eindhoven</p></div>"""
 
 
 def hnvi_item(lot_id, slug, title, price):
@@ -117,10 +133,18 @@ def pjb_lot(lot_id, slug, title, bid, end="28 Sep 2026 20:05:00 (CEST)", bids=8)
 OVM_AUCTIONS = {"geslotenCount": 0, "komendeCount": 3, "openCount": 3, "veilingen": [
     {"id": 9472, "type": "DRZ", "naam": "Heren polshorloge Richard Mille RM 61-01 Yohan Blake",
      "omschrijving": "<p>Online veiling in opdracht van Domeinen Roerende Zaken.</p>",
-     "sluitingsDatumISO": "2026-09-24T18:30:40Z", "totaalKavels": 1},
+     "sluitingsDatumISO": "2026-09-24T18:30:40Z", "totaalKavels": 1,
+     "afgifteVeilingEvents": [{"id": 25510, "datum": "2026-10-06", "starttijd": "09:00:00", "eindtijd": "15:00:00",
+                               "type": "AFGIFTE", "zichtbaar": True,
+                               "adres": {"plaats": "Soesterberg", "straat": "Zuiderweg", "postcode": "3769AB",
+                                         "huisnummer": "21", "land": "NL", "lng": "5.316177", "lat": "52.117204"}}]},
     {"id": 9527, "type": "FAILLISEMENT", "naam": "Faillissement van: DN design B.V. ",
      "omschrijving": "<p>Online veiling met design banken afkomstig uit het faillissement van DN design B.V.</p>",
-     "sluitingsDatumISO": "2026-09-30T17:30:00Z", "totaalKavels": 6},
+     "sluitingsDatumISO": "2026-09-30T17:30:00Z", "totaalKavels": 6, "isBezorgVeiling": False,
+     "afgifteVeilingEvents": [{"id": 25214, "datum": "2026-10-05", "starttijd": "09:00:00", "eindtijd": "15:00:00",
+                               "type": "AFGIFTE", "zichtbaar": True,
+                               "adres": {"plaats": "Drachten", "straat": "Ottolaan", "postcode": "9207 JR",
+                                         "huisnummer": "12", "land": "NL", "lng": "0.000000", "lat": "0.000000"}}]},
     {"id": 9168, "type": "NORMAAL", "naam": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
      "omschrijving": "<p>Veiling van diverse goederen afkomstig uit magazijnopruimingen.</p>",
      "sluitingsDatumISO": "2026-09-29T17:30:00Z", "totaalKavels": 295},

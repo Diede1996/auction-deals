@@ -1,6 +1,7 @@
 """Plaats Je Bod (plaatsjebod.nl) - server-rendered pages.
 
-1. /nl/auctions/ lists running and closed auctions with their end date and description.
+1. /nl/auctions/ lists running and closed auctions with their end date, description and location
+   ("Locatie: Nieuwe Steen 25 te Hoorn", which is where you pick up).
 2. /nl/lots/auction/<slug>?pagination=100&page=N lists the lots ("div.lot").
 """
 from __future__ import annotations
@@ -12,7 +13,7 @@ from bs4 import BeautifulSoup
 
 from ..models import Auction, Lot
 from ..util import parse_dutch_datetime, parse_money
-from .base import SiteContext
+from .base import SiteContext, clean_address, town_of
 
 log = logging.getLogger(__name__)
 
@@ -31,6 +32,7 @@ def parse_auctions(html: str) -> list[Auction]:
             continue
         block = a.find_parent("div", class_="col-sm-9") or a.parent.parent
         end = _text(block.select_one("div.endDate")).replace("Veiling eindigt:", "")
+        place = re.sub(r"^\s*Locatie\s*:\s*", "", _text(block.select_one(".auction-location")))
         auctions[slug] = Auction(
             site=SITE,
             auction_id=slug,
@@ -38,6 +40,7 @@ def parse_auctions(html: str) -> list[Auction]:
             url=href if href.startswith("http") else BASE + href,
             description=_text(block.select_one("div.description")),
             closes_at=parse_dutch_datetime(end),
+            pickup=clean_address(place),
         )
     return list(auctions.values())
 
@@ -66,7 +69,8 @@ def parse_lots(html: str, auction: Auction) -> list[Lot]:
             auction_title=auction.title,
             image=(BASE + img["src"]) if img and img.get("src", "").startswith("/") else (img.get("src") if img else None),
             bids=int(nbids) if nbids.isdigit() else None,
-        ))
+            location=town_of(auction.pickup),
+        ).pickup_from(auction))
     return lots
 
 

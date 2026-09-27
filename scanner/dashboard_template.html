@@ -106,6 +106,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 /* list */
 .list { overflow: hidden; }
 .row {
+  position: relative;
   display: grid; gap: 16px; align-items: center; padding: 14px 16px; border-top: 1px solid var(--border);
   grid-template-columns: 72px minmax(0, 2.3fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1.25fr) 136px;
   grid-template-areas: "thumb main closes bid value maxbid status";
@@ -127,7 +128,20 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .meta { margin-top: 4px; color: var(--text-2); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .meta .auction { color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .tag { display: inline-block; padding: 1px 8px; border-radius: 6px; background: var(--accent-bg); color: var(--accent); font-size: 12px; font-weight: 560; }
-.tag.new { background: var(--warning-bg); color: var(--warning-text); }
+.new-badge {
+  position: absolute; top: 7px; left: 7px; z-index: 2; pointer-events: none;
+  padding: 1px 6px; border-radius: 5px; background: var(--warning); color: #3d2a00;
+  font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  box-shadow: 0 0 0 2px var(--surface);
+}
+.pickup { margin-top: 5px; font-size: 12.5px; color: var(--text-2); display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; }
+.pickup .addr { overflow-wrap: anywhere; max-width: 100%; }
+.pickup .drive { color: var(--text); font-weight: 560; }
+.pickup .when { white-space: nowrap; }
+.match { display: inline-block; margin: 3px 0 1px; padding: 0 6px; border-radius: 5px; font-size: 11.5px; font-weight: 600; max-width: 100%; overflow-wrap: anywhere; vertical-align: top; }
+.match.exact { background: var(--good-bg); color: var(--good-text); }
+.match.rough { background: var(--warning-bg); color: var(--warning-text); }
+.match.custom { background: var(--accent-bg); color: var(--accent); }
 .num { font-variant-numeric: tabular-nums; }
 .strong { font-weight: 600; }
 .big { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
@@ -151,8 +165,37 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .pill.good { background: var(--good-bg); color: var(--good-text); }
 .pill.critical { background: var(--critical-bg); color: var(--critical-text); }
 .pill.neutral { background: var(--neutral-bg); color: var(--text-2); }
-.hide-btn { border: 0; background: none; padding: 0; color: var(--text-3); cursor: pointer; font-size: 12.5px; }
-.hide-btn:hover { color: var(--text); text-decoration: underline; }
+.actions { display: flex; gap: 12px; align-items: center; }
+.hide-btn, .fav-btn { border: 0; background: none; padding: 2px 0; color: var(--text-3); cursor: pointer; font-size: 12.5px; min-height: 24px; }
+.hide-btn:hover, .fav-btn:hover { color: var(--text); text-decoration: underline; }
+.fav-btn { color: var(--text-2); }
+.fav-btn .star { font-size: 15px; line-height: 1; vertical-align: -1px; margin-right: 3px; }
+.fav-btn[aria-pressed="true"] { color: var(--warning-text); font-weight: 600; }
+.fav-btn[aria-pressed="true"] .star { color: var(--warning); }
+.fav-btn[disabled] { opacity: .6; cursor: progress; }
+/* tabs: all lots / favorites */
+.tabs { display: flex; gap: 2px; padding: 6px 12px 0; border-bottom: 1px solid var(--border); }
+.tab { border: 0; background: none; padding: 9px 12px 10px; font-size: 14.5px; color: var(--text-2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tab:hover { color: var(--text); }
+.tab[aria-selected="true"] { color: var(--text); font-weight: 600; border-bottom-color: var(--accent); }
+.tab .count { color: var(--text-3); font-weight: 500; margin-left: 5px; font-variant-numeric: tabular-nums; }
+.fav-note { margin: 0; padding: 12px 16px; font-size: 13.5px; color: var(--text-2); background: var(--surface-2); border-bottom: 1px solid var(--border); }
+.row.is-gone .title { color: var(--text-2); }
+/* connect dialog */
+dialog.connect { width: min(560px, calc(100vw - 32px)); border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--surface); color: var(--text); padding: 20px 22px; box-shadow: 0 12px 40px rgba(0, 0, 0, .25); }
+dialog.connect::backdrop { background: rgba(10, 10, 9, .45); }
+dialog.connect h2 { margin: 0 0 8px; font-size: 18px; }
+dialog.connect p, dialog.connect li { font-size: 14px; color: var(--text-2); }
+dialog.connect ol { padding-left: 20px; margin: 10px 0 14px; }
+dialog.connect li { margin-bottom: 6px; }
+dialog.connect li strong { color: var(--text); }
+dialog.connect input { width: 100%; height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+dialog.connect .buttons { display: flex; gap: 10px; justify-content: flex-end; margin-top: 14px; }
+dialog.connect button { height: 36px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); cursor: pointer; }
+dialog.connect button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+dialog.connect .error { color: var(--critical-text); font-size: 13.5px; margin: 8px 0 0; }
+dialog.connect .fine { font-size: 12.5px; color: var(--text-3); margin: 10px 0 0; }
+.toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); z-index: 20; max-width: calc(100vw - 32px); padding: 10px 16px; border-radius: 10px; background: var(--text); color: var(--bg); font-size: 14px; box-shadow: 0 6px 24px rgba(0, 0, 0, .2); }
 /* price spread (histogram of Marktplaats asking prices) */
 .spread-btn {
   display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; padding: 3px 8px 3px 6px; min-height: 28px;
@@ -222,7 +265,7 @@ footer td { padding: 2px 14px 2px 0; }
   .c-closes::before, .c-bid::before, .c-value::before, .c-maxbid::before {
     content: attr(data-label); display: block; font-size: 12px; color: var(--text-3); margin-bottom: 2px;
   }
-  .c-status { flex-direction: row; align-items: center; justify-content: space-between; }
+  .c-status { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; }
   .top h1 { font-size: 22px; }
   .spread-body { grid-template-columns: minmax(0, 1fr); }
   .tile .value { font-size: 26px; }
@@ -255,6 +298,7 @@ footer td { padding: 2px 14px 2px 0; }
         <label for="minProfit">Minimum profit</label>
         <div class="inline"><span class="unit">€</span><input type="number" id="minProfit" min="0" step="5"></div>
       </div>
+      <label class="check" id="tripField" hidden><input type="checkbox" id="trip"> Count driving costs</label>
       <button type="button" class="btn-link" id="reset">Reset to defaults</button>
     </div>
     <p class="help">Every lot shows your <strong>margin</strong> if you sell at this share of the median: what's left after the bid, buyer's premium and VAT, in euros and as a % of what you pay. The <strong>suggested max bid</strong> is the highest bid that still leaves your minimum profit. Set it as your automatic bid on the auction site.</p>
@@ -267,6 +311,7 @@ footer td { padding: 2px 14px 2px 0; }
         <option value="headroom">Most room to bid</option>
         <option value="return">Highest margin now</option>
         <option value="maxbid">Highest max bid</option>
+        <option value="distance">Closest pickup</option>
         <option value="new">Newest first</option>
       </select>
       <label class="check"><input type="checkbox" id="onlyRoom"> Only with room to bid</label>
@@ -275,6 +320,11 @@ footer td { padding: 2px 14px 2px 0; }
   </section>
 
   <section class="panel list" aria-label="Matching lots">
+    <div class="tabs" role="tablist" aria-label="Which lots">
+      <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">All lots<span class="count" id="count-all"></span></button>
+      <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
+    </div>
+    <p class="fav-note" id="favNote" hidden></p>
     <div class="row head" aria-hidden="true">
       <div class="c-thumb"></div><div class="c-main">Lot</div><div class="c-closes">Closes</div>
       <div class="c-bid">Current bid</div><div class="c-value">Marktplaats value</div>
@@ -293,18 +343,40 @@ footer td { padding: 2px 14px 2px 0; }
   <footer>
     <div>
       <h2>How the numbers work</h2>
-      <p><strong>You pay</strong> = bid + buyer's premium, plus VAT on both, plus any fixed fee per lot.</p>
-      <p><strong>Resale</strong> = Marktplaats median asking price × your sell percentage. Click “listings” to see the Marktplaats listings it's based on. Asking prices are not sold prices.</p>
+      <p><strong>You pay</strong> = bid + buyer's premium, plus VAT on both, plus any fixed fee per lot, plus the drive to the pickup address if you count it.</p>
+      <p><strong>Resale</strong> = Marktplaats median asking price × your sell percentage, × the number of items for lots like “2 x …”. <span class="match exact">Exact model</span> compares listings of the same type number; <span class="match rough">≈ Rough price</span> means the lot title has no type number, so it's compared with similar items. Asking prices are not sold prices.</p>
       <p><strong>Margin</strong> = resale − what you pay, and as a % of what you pay.</p>
       <p>Bids are from the morning scan. Always check the live bid, the lot description, pickup date and the auction terms before bidding.</p>
     </div>
     <div>
       <h2>Buyer's premium per site</h2>
       <table id="fees"></table>
-      <p style="margin-top:8px">Your own values and hidden lots are stored only in this browser.</p>
+      <p id="drivingInfo" style="margin-top:12px"></p>
+      <p style="margin-top:8px">Your own values and hidden lots are stored only in this browser. <span id="ghState"></span></p>
     </div>
   </footer>
 </main>
+
+<dialog class="connect" id="connect" aria-labelledby="connect-title">
+  <form method="dialog" id="connectForm">
+    <h2 id="connect-title">Keep favorites on GitHub</h2>
+    <p>Favorites are saved in your <strong>auction-deals</strong> repository, so they show on all your devices and the bot can remind you in Telegram before they close. That needs a key (token) that can only edit issues of that repository. You do this once per device.</p>
+    <ol>
+      <li><a id="tokenLink" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Create the token on GitHub ↗</a>. The name, 1-year expiry and the permission <strong>Issues: Read and write</strong> are filled in for you.</li>
+      <li>Under <strong>Repository access</strong>, choose <strong>Only select repositories</strong> and pick <strong>auction-deals</strong>.</li>
+      <li>Click <strong>Generate token</strong>, copy it and paste it here.</li>
+    </ol>
+    <label for="tokenInput" class="sr">GitHub token</label>
+    <input id="tokenInput" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+    <p class="error" id="connectError" hidden></p>
+    <p class="fine">The token is stored only in this browser and can't change your code or settings.</p>
+    <div class="buttons">
+      <button type="button" id="connectCancel">Cancel</button>
+      <button type="submit" class="primary" id="connectOk">Connect</button>
+    </div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -315,15 +387,17 @@ footer td { padding: 2px 14px 2px 0; }
     get: function (k, d) { try { var v = localStorage.getItem("auctiondeals." + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set: function (k, v) { try { localStorage.setItem("auctiondeals." + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
   };
+  var DRIVING = DATA.driving || {};
   var defaults = {
     minProfit: DATA.settings.min_profit != null ? DATA.settings.min_profit : 25,
-    factor: Math.round((DATA.settings.resale_factor || 0.85) * 100)
+    factor: Math.round((DATA.settings.resale_factor || 0.85) * 100),
+    trip: !!(DRIVING.home && DRIVING.include !== false)
   };
   var S = Object.assign({}, defaults, store.get("settings", {}));
   delete S.r;  /* the target return setting was removed */
   var values = store.get("values", {});
   var hidden = store.get("hidden", {});
-  var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "" }, store.get("ui", {}));
+  var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "", view: "all" }, store.get("ui", {}));
   var editing = null;
 
   var eur = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
@@ -360,9 +434,11 @@ footer td { padding: 2px 14px 2px 0; }
   }
 
   /* ---------- the maths (mirrors scanner/evaluate.py) ---------- */
+  function tripCost(lot) { return S.trip && lot.trip ? lot.trip.cost : 0; }
   function calc(lot) {
-    var cost = function (b) { return (b * (1 + lot.premium) + (lot.fixed || 0)) * (1 + lot.vat); };
-    var bidFor = function (t) { return (t / (1 + lot.vat) - (lot.fixed || 0)) / (1 + lot.premium); };
+    var trip = tripCost(lot);
+    var cost = function (b) { return (b * (1 + lot.premium) + (lot.fixed || 0)) * (1 + lot.vat) + trip; };
+    var bidFor = function (t) { return ((t - trip) / (1 + lot.vat) - (lot.fixed || 0)) / (1 + lot.premium); };
     var own = values[lot.key];
     var market = own != null ? own : lot.market;
     var source = own != null ? "yours" : lot.marketSource;
@@ -373,7 +449,7 @@ footer td { padding: 2px 14px 2px 0; }
       caps.push(resale - minProfit);
     }
     if (lot.itemMaxPrice != null) caps.push(lot.itemMaxPrice);
-    var out = { market: market, source: source, costNow: costNow, resale: resale,
+    var out = { market: market, source: source, costNow: costNow, resale: resale, trip: trip,
                 profitNow: resale != null ? resale - costNow : null,
                 returnNow: resale != null && costNow > 0 ? (resale - costNow) / costNow : null,
                 maxBid: null, status: "noprice", headroom: -Infinity };
@@ -470,10 +546,31 @@ footer td { padding: 2px 14px 2px 0; }
     return el("span", { "class": "pill neutral" }, el("span", { "class": "ic", "aria-hidden": "true", text: "?" }), "Needs a price");
   }
 
+  function matchLabel(lot) {
+    var mp = lot.mp, plan = lot.mpPlan;
+    if (!mp) return null;
+    if (mp.kind === "custom") return el("span", { "class": "match custom", title: "Your own Marktplaats search from the watchlist" }, "Your search");
+    if (mp.kind === "exact") {
+      return el("span", { "class": "match exact", title: "Compared only with Marktplaats listings of this model: “" + mp.query + "”" },
+        "✓ " + (mp.model ? "Exact: " + mp.model : "Exact model"));
+    }
+    return el("span", { "class": "match rough", title: (plan && plan.note ? plan.note + ". " : "") + "Compared with: “" + mp.query + "”" }, "≈ Rough price");
+  }
+
+  function unitsLine(lot, c) {
+    if (lot.units > 1 && c.source !== "yours" && c.market != null) {
+      return el("div", { "class": "small", text: lot.units + " × " + money(c.market / lot.units) + " (" + lot.units + " items in this lot)" });
+    }
+    if (lot.count > 1 && lot.units <= 1) {
+      return el("div", { "class": "small", text: "Lot of about " + lot.count + " items: value is for one" });
+    }
+    return null;
+  }
+
   function valueCell(lot, c) {
     var cell = el("div", { "class": "c-value", "data-label": "Marktplaats value" });
     if (editing === lot.key) {
-      var input = el("input", { type: "number", min: "0", step: "5", value: c.market != null ? String(Math.round(c.market)) : "", "aria-label": "Market value in euro" });
+      var input = el("input", { type: "number", min: "0", step: "5", value: c.market != null ? String(Math.round(c.market)) : "", "aria-label": "Value of the whole lot in euro" });
       var save = function () {
         var v = parseFloat(input.value);
         if (isFinite(v) && v > 0) values[lot.key] = v; else delete values[lot.key];
@@ -489,6 +586,9 @@ footer td { padding: 2px 14px 2px 0; }
     var editBtn = el("button", { type: "button", "class": "edit", text: c.market != null ? "edit" : "Set value", onclick: function () { editing = lot.key; render(); } });
     if (c.market != null) {
       cell.append(el("div", { "class": "strong num", text: money(c.market) }));
+      var label = c.source === "marktplaats" ? matchLabel(lot) : null, units = unitsLine(lot, c);
+      if (label) cell.append(el("div", null, label));
+      if (units) cell.append(units);
       var src;
       if (c.source === "marktplaats" && lot.mp) {
         var mpUrl = safeUrl(lot.mp.url);
@@ -508,8 +608,11 @@ footer td { padding: 2px 14px 2px 0; }
       }
       cell.append(src);
     } else {
-      cell.append(el("div", { "class": "small", text: "No Marktplaats price" }));
-      var search = safeUrl(lot.mpSearch);
+      var plan = lot.mpPlan, search = safeUrl((plan && plan.search) || lot.mpSearch);
+      var why = plan && plan.kind === "exact" && plan.model
+        ? "Model " + plan.model + ": too few listings on Marktplaats"
+        : "No Marktplaats price";
+      cell.append(el("div", { "class": "small", text: why }));
       cell.append(el("div", { "class": "small" }, search ? el("a", { href: search, target: "_blank", rel: "noopener" }, "Search ↗") : null, search ? " · " : null, editBtn));
     }
     return cell;
@@ -709,6 +812,24 @@ footer td { padding: 2px 14px 2px 0; }
     return cell;
   }
 
+  function duration(min) {
+    var m = Math.round(min);
+    return m >= 60 ? Math.floor(m / 60) + "h " + String(m % 60).padStart(2, "0") + "m" : m + " min";
+  }
+
+  function pickupLine(lot) {
+    if (lot.delivery) return el("div", { "class": "pickup" }, el("span", { text: "🚚 Delivered to you (no pickup)" }));
+    var place = lot.pickup || lot.location;
+    if (!place && !lot.pickupWhen) return null;
+    var t = lot.trip;
+    return el("div", { "class": "pickup" },
+      place ? el("span", { "class": "addr", title: "Pickup address (ophaallocatie)" + (lot.pickup ? "" : ": only the town is known") }, "📍 " + place) : null,
+      t ? el("span", { "class": "drive", title: "Driving there" + (DRIVING.roundTrip !== false ? " and back" : "") + (t.approx ? " (estimate: route planner unavailable)" : "") + ": fuel at " + (DRIVING.kmpl || 16) + " km per liter and €" + (DRIVING.fuel || 0).toFixed(3) + "/l" },
+        "🚗 " + (t.approx ? "≈ " : "") + Math.round(t.km) + "\u00a0km · " + duration(t.min).replace(" ", "\u00a0") + " · " +
+        money(t.cost) + (DRIVING.roundTrip !== false ? " there\u00a0&\u00a0back" : "")) : null,
+      lot.pickupWhen ? el("span", { "class": "when" }, "pickup " + lot.pickupWhen) : null);
+  }
+
   function row(r) {
     var lot = r.lot, c = r.c;
     var url = safeUrl(lot.url), img = safeUrl(lot.image);
@@ -720,26 +841,27 @@ footer td { padding: 2px 14px 2px 0; }
     if (img) thumb.addEventListener("error", function () { thumb.replaceWith(el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" })); });
 
     var meta = el("div", { "class": "meta" },
-      lot.isNew ? el("span", { "class": "tag new", text: "New" }) : null,
       el("span", { "class": "tag", text: lot.item }),
       el("span", { text: lot.siteName }),
-      lot.location ? el("span", { text: "· " + lot.location }) : null,
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
 
     var payLine = "you pay " + money(c.costNow) + (lot.bids != null ? " · " + lot.bids + (lot.bids === 1 ? " bid" : " bids") : "");
     var bidCell = el("div", { "class": "c-bid", "data-label": "Current bid" },
       el("div", { "class": "strong num", text: money(lot.bid) }),
-      el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT", text: payLine }),
+      el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT" + (c.trip ? " + driving" : ""), text: payLine }),
+      c.trip ? el("div", { "class": "small", text: "incl. " + money(c.trip) + " driving" }) : null,
       c.profitNow != null ? el("div", { "class": "small" + (c.profitNow < 0 ? " loss" : ""),
         text: "margin " + money(c.profitNow) + " (" + pct(c.returnNow) + ")" }) : null);
 
     var status = el("div", { "class": "c-status" }, statusPill(c),
-      el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
-        onclick: function () { if (hidden[lot.key]) delete hidden[lot.key]; else hidden[lot.key] = 1; store.set("hidden", hidden); render(); } }));
+      el("div", { "class": "actions" }, favButton(lot, c),
+        el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
+          onclick: function () { if (hidden[lot.key]) delete hidden[lot.key]; else hidden[lot.key] = 1; store.set("hidden", hidden); render(); } })));
 
-    return el("article", { "class": "row" + (hidden[lot.key] ? " is-hidden" : "") + (c.status === "over" ? " is-over" : "") },
+    return el("article", { "class": "row" + (hidden[lot.key] ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
+      lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
-      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot)),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : "unknown" }),
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs)) : null),
@@ -753,32 +875,72 @@ footer td { padding: 2px 14px 2px 0; }
       headroom: function (a, b) { return b.c.headroom - a.c.headroom; },
       "return": function (a, b) { return (b.c.returnNow != null ? b.c.returnNow : -far) - (a.c.returnNow != null ? a.c.returnNow : -far); },
       maxbid: function (a, b) { return (b.c.maxBid || -1) - (a.c.maxBid || -1); },
+      distance: function (a, b) { return (a.lot.trip ? a.lot.trip.km : far) - (b.lot.trip ? b.lot.trip.km : far); },
       "new": function (a, b) { return String(b.lot.firstSeen || "").localeCompare(String(a.lot.firstSeen || "")); }
     }[ui.sort] || function () { return 0; };
-    return rows.sort(by);
+    /* lots that are new since the last scan always come first */
+    return rows.sort(function (a, b) { return (b.lot.isNew ? 1 : 0) - (a.lot.isNew ? 1 : 0) || by(a, b); });
+  }
+
+  function favNote(count) {
+    var note = document.getElementById("favNote");
+    note.textContent = "";
+    if (ui.view !== "fav") { note.hidden = true; return; }
+    note.hidden = false;
+    if (!GH.token) {
+      note.append("★ Favorites are saved in your GitHub repository, so they show on all your devices and the bot reminds you in Telegram on the closing day and about an hour before closing. ",
+        el("button", { type: "button", "class": "btn-link", text: "Connect GitHub (once per device)", onclick: function () { openConnect(null); } }));
+    } else if (!count) {
+      note.append("No favorites yet. Tap ☆ Favorite on a lot to follow it here.");
+    } else {
+      note.append("You get a Telegram reminder on the closing day and about an hour before each one closes.");
+    }
   }
 
   function render() {
     var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
     renderKpis(all);
+    var favKeys = Object.keys(favs);
+    document.getElementById("count-all").textContent = String(all.length);
+    document.getElementById("count-fav").textContent = String(favKeys.length);
+    document.getElementById("tab-all").setAttribute("aria-selected", ui.view !== "fav" ? "true" : "false");
+    document.getElementById("tab-fav").setAttribute("aria-selected", ui.view === "fav" ? "true" : "false");
+    favNote(favKeys.length);
+    var box = document.getElementById("rows");
+    var empty = document.getElementById("empty");
+    box.textContent = "";
+    empty.textContent = "";
+
+    if (ui.view === "fav") {
+      var byKey = {};
+      all.forEach(function (r) { byKey[r.lot.key] = r; });
+      var far = 8.64e15;
+      var list = favKeys.map(function (k) { return byKey[k] || { gone: favs[k] }; });
+      var when = function (x) { var cl = x.gone ? x.gone.closes : x.lot.closes; var t = cl ? Date.parse(cl) : far; return t < Date.now() ? far + t : t; };
+      list.sort(function (a, b) { return when(a) - when(b); });
+      list.forEach(function (r) {
+        if (r.gone) { box.append(goneRow(r.gone)); return; }
+        box.append(row(r));
+        if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
+      });
+      empty.hidden = true;
+      return;
+    }
+
     var q = ui.q.trim().toLowerCase();
     var shown = all.filter(function (r) {
       if (!ui.showHidden && hidden[r.lot.key]) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.item && r.lot.item !== ui.item) return false;
       if (ui.site && r.lot.site !== ui.site) return false;
-      if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item).toLowerCase().indexOf(q) < 0) return false;
+      if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
     sortRows(shown);
-    var box = document.getElementById("rows");
-    box.textContent = "";
     shown.forEach(function (r) {
       box.append(row(r));
       if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
     });
-    var empty = document.getElementById("empty");
-    empty.textContent = "";
     if (!lots.length) {
       empty.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction right now. The next scan runs tomorrow morning.");
     } else if (!shown.length) {
@@ -787,10 +949,225 @@ footer td { padding: 2px 14px 2px 0; }
     empty.hidden = !!shown.length;
   }
 
+  /* ---------- favorites: kept in one GitHub issue of this repository ----------
+     The page reads the issue without logging in (the repository is public) and edits it with a token
+     that can only touch issues of this repository. The bot reads the same issue for its reminders. */
+  var MARKER = "<!-- auction-deals:favorites -->";
+  var API = "https://api.github.com";
+  var REPO = (function () {
+    if (DATA.repo && DATA.repo.indexOf("/") > 0) return DATA.repo;
+    var host = location.hostname.match(/^([^.]+)\.github\.io$/i);
+    var first = location.pathname.split("/").filter(Boolean)[0];
+    return host ? host[1] + "/" + (first || host[1] + ".github.io") : "";
+  })();
+  var OWNER = REPO.split("/")[0].toLowerCase();
+  var GH = { token: store.get("ghToken", null), issue: (DATA.favorites && DATA.favorites.issue) || store.get("favIssue", null), busy: false };
+  var favs = toMap((DATA.favorites && DATA.favorites.items) || []);
+  var pendingFav = null;
+
+  function toMap(list) { var m = {}; list.forEach(function (f) { if (f && f.key) m[f.key] = f; }); return m; }
+  function ghFetch(path, opts) {
+    opts = opts || {};
+    var headers = { "Accept": "application/vnd.github+json" };
+    if (GH.token && opts.auth !== false) headers.Authorization = "Bearer " + GH.token;
+    if (opts.body) headers["Content-Type"] = "application/json";
+    return fetch(API + path, { method: opts.method || "GET", headers: headers, cache: "no-store",
+                               body: opts.body ? JSON.stringify(opts.body) : undefined })
+      .then(function (r) {
+        if (!r.ok) { var e = new Error("GitHub answered " + r.status); e.status = r.status; throw e; }
+        return r.json();
+      });
+  }
+  function parseFavs(body) {
+    var m = /```json\s*(\[[\s\S]*?\])\s*```/.exec(body || "");
+    if (!m) return [];
+    var list;
+    try { list = JSON.parse(m[1]); } catch (e) { return []; }
+    return Array.isArray(list) ? list.filter(function (f) { return f && typeof f.key === "string" && safeUrl(f.url); }) : [];
+  }
+  function mdText(t) { return String(t || "").replace(/[\\`*_\[\]()<>#|]/g, function (ch) { return "\\" + ch; }); }
+  function buildBody(list) {
+    var lines = [MARKER, "⭐ **Favorites** from the auction dashboard. The dashboard keeps this list up to date and the bot " +
+      "reminds you in Telegram on the closing day and about an hour before each lot closes. Please don't edit it here.", ""];
+    list.forEach(function (f) {
+      lines.push("- [" + mdText(f.title) + "](" + String(f.url).replace(/\)/g, "%29") + ")" +
+        (f.siteName ? " · " + mdText(f.siteName) : "") + (f.closes ? " · closes " + dtf.format(new Date(f.closes)) : ""));
+    });
+    if (!list.length) lines.push("_No favorites yet._");
+    lines.push("", "<details><summary>data</summary>", "", "```json", JSON.stringify(list).replace(/`/g, "\\u0060"), "```", "", "</details>");
+    return lines.join("\n");
+  }
+  function validIssue(issue) {
+    return !!issue && issue.state === "open" && (issue.body || "").indexOf(MARKER) >= 0 &&
+      !!issue.user && String(issue.user.login).toLowerCase() === OWNER;
+  }
+  function loadIssue() {
+    if (!REPO) return Promise.resolve(null);
+    var byNumber = GH.issue ? ghFetch("/repos/" + REPO + "/issues/" + GH.issue).catch(function () { return null; }) : Promise.resolve(null);
+    return byNumber.then(function (issue) {
+      if (validIssue(issue)) return issue;
+      return ghFetch("/repos/" + REPO + "/issues?state=open&per_page=100&creator=" + encodeURIComponent(OWNER)).then(function (list) {
+        return (list || []).filter(validIssue).sort(function (a, b) { return a.number - b.number; })[0] || null;
+      });
+    }).then(function (issue) {
+      if (issue) { GH.issue = issue.number; store.set("favIssue", issue.number); }
+      return issue;
+    });
+  }
+  function refreshFavs() {
+    return loadIssue().then(function (issue) {
+      if (issue) { favs = toMap(parseFavs(issue.body)); render(); }
+    }).catch(function () { /* offline or rate-limited: keep the list from the last scan */ });
+  }
+  function prune(list) {
+    var cutoff = Date.now() - 7 * 86400000;
+    return list.filter(function (f) { return !f.closes || new Date(f.closes).getTime() > cutoff; });
+  }
+  function saveFavs(mutate) {
+    GH.busy = true; render();
+    return loadIssue().then(function (issue) {
+      var list = prune(mutate(issue ? parseFavs(issue.body) : []));
+      var body = buildBody(list);
+      return (issue
+        ? ghFetch("/repos/" + REPO + "/issues/" + issue.number, { method: "PATCH", body: { body: body } })
+        : ghFetch("/repos/" + REPO + "/issues", { method: "POST", body: { title: "⭐ Favorites (auction dashboard)", body: body } })
+      ).then(function (saved) {
+        GH.issue = saved.number; store.set("favIssue", saved.number);
+        favs = toMap(parseFavs(saved.body));
+      });
+    }).then(function () { GH.busy = false; render(); renderGhState(); }, function (e) {
+      GH.busy = false; render();
+      throw e;
+    });
+  }
+  function saveError(e) {
+    if (e && e.status === 401) {
+      GH.token = null; store.set("ghToken", null); renderGhState();
+      openConnect(null, "GitHub no longer accepts your token (it may have expired). Create a new one to keep saving favorites.");
+    } else if (e && (e.status === 403 || e.status === 404)) {
+      toast("GitHub refused: this token can't edit issues of " + REPO + ". Connect again with the right token.");
+    } else {
+      toast("Couldn't save your favorite. Check your connection and try again.");
+    }
+  }
+  function snapshot(lot, c) {
+    return { key: lot.key, title: lot.title, url: lot.url, site: lot.site, siteName: lot.siteName, auction: lot.auction,
+             item: lot.item, closes: lot.closes, bid: lot.bid, maxBid: c && c.maxBid != null ? c.maxBid : (lot.maxBid != null ? lot.maxBid : null),
+             pickup: lot.pickup || lot.location || null, image: lot.image || null, added: new Date().toISOString() };
+  }
+  function toggleFav(lot, c) {
+    if (!GH.token) { openConnect({ lot: lot, c: c }); return; }
+    var on = !favs[lot.key];
+    var entry = snapshot(lot, c);
+    var before = favs;
+    favs = Object.assign({}, favs);
+    if (on) favs[lot.key] = entry; else delete favs[lot.key];
+    saveFavs(function (list) {
+      list = list.filter(function (f) { return f.key !== lot.key; });
+      if (on) list.push(entry);
+      return list;
+    }).then(function () {
+      toast(on ? "★ Saved. You'll get a Telegram reminder on the closing day and an hour before it closes." : "Removed from your favorites");
+    }, function (e) { favs = before; render(); saveError(e); });
+  }
+  function favButton(lot, c) {
+    var on = !!favs[lot.key];
+    return el("button", { type: "button", "class": "fav-btn", "aria-pressed": on ? "true" : "false", disabled: GH.busy ? true : null,
+      title: on ? "Remove from your favorites" : "Save as favorite: listed under Favorites, with a Telegram reminder before it closes",
+      onclick: function () { toggleFav(lot, c); } },
+      el("span", { "class": "star", "aria-hidden": "true", text: on ? "★" : "☆" }), "Favorite");
+  }
+
+  var dlg = document.getElementById("connect");
+  function tokenUrl() {
+    var q = new URLSearchParams({ name: "Auction dashboard favorites", target_name: OWNER, expires_in: "366", issues: "write",
+      description: "Lets the auction dashboard keep your favorite lots in an issue of " + REPO + "." });
+    return "https://github.com/settings/personal-access-tokens/new?" + q.toString();
+  }
+  function connectError(text) {
+    var box = document.getElementById("connectError");
+    box.textContent = text || ""; box.hidden = !text;
+  }
+  function openConnect(pending, message) {
+    pendingFav = pending || null;
+    connectError(message);
+    document.getElementById("tokenInput").value = "";
+    document.getElementById("tokenLink").href = tokenUrl();
+    if (dlg.showModal) { if (!dlg.open) dlg.showModal(); } else dlg.setAttribute("open", "");
+    setTimeout(function () { document.getElementById("tokenInput").focus(); }, 0);
+  }
+  function closeConnect() { if (dlg.close) dlg.close(); else dlg.removeAttribute("open"); }
+  dlg.addEventListener("close", function () { pendingFav = null; });
+  document.getElementById("connectCancel").addEventListener("click", closeConnect);
+  document.getElementById("connectForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var token = document.getElementById("tokenInput").value.trim();
+    if (!/^(github_pat_|ghp_)\w{20,}$/.test(token)) { connectError("That doesn't look like a GitHub token. It starts with github_pat_."); return; }
+    var ok = document.getElementById("connectOk");
+    ok.disabled = true; connectError("");
+    var pending = pendingFav;
+    GH.token = token;
+    /* check the token for real: saving the list unchanged needs the same rights as adding a favorite */
+    saveFavs(function (list) { return list; }).then(function () {
+      store.set("ghToken", token);
+      closeConnect(); renderGhState();
+      if (pending) toggleFav(pending.lot, pending.c);
+      else toast("Connected. Your favorites now sync across your devices.");
+    }, function (err) {
+      GH.token = null;
+      connectError(err && err.status === 401 ? "GitHub doesn't accept this token. Copy it again, or create a new one." :
+        err && (err.status === 403 || err.status === 404) ? "This token can't edit issues of " + REPO + ". Check step 2 (only select repositories: auction-deals) and that Issues is set to Read and write." :
+        "Couldn't reach GitHub. Check your connection and try again.");
+    }).then(function () { ok.disabled = false; });
+  });
+
+  var toastTimer = null;
+  function toast(text) {
+    var t = document.getElementById("toast");
+    t.textContent = text; t.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.hidden = true; }, 4500);
+  }
+  function renderGhState() {
+    var box = document.getElementById("ghState");
+    box.textContent = "";
+    if (!REPO) return;
+    if (GH.token) {
+      box.append("Favorites sync through GitHub" + (GH.issue ? " (issue #" + GH.issue + ")" : "") + ". ",
+        el("button", { type: "button", "class": "btn-link", text: "Disconnect this browser", onclick: function () {
+          GH.token = null; store.set("ghToken", null); renderGhState(); render(); toast("This browser is disconnected from GitHub.");
+        } }));
+    } else {
+      box.append(el("button", { type: "button", "class": "btn-link", text: "Connect GitHub to save favorites", onclick: function () { openConnect(null); } }));
+    }
+  }
+
+  function goneRow(f) {
+    var closes = f.closes ? new Date(f.closes) : null, closed = closes && closes.getTime() < Date.now();
+    var url = safeUrl(f.url), img = safeUrl(f.image);
+    var thumb = img ? el("img", { "class": "thumb", src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
+                    : el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" });
+    return el("article", { "class": "row is-gone", "data-key": f.key },
+      el("div", { "class": "c-thumb" }, thumb),
+      el("div", { "class": "c-main" },
+        url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: f.title }) : el("span", { "class": "title", text: f.title }),
+        el("div", { "class": "meta" }, f.item ? el("span", { "class": "tag", text: f.item }) : null,
+          el("span", { text: f.siteName || f.site || "" }), f.auction ? el("span", { "class": "auction", text: f.auction }) : null),
+        f.pickup ? el("div", { "class": "pickup" }, el("span", { "class": "addr", text: "📍 " + f.pickup })) : null),
+      el("div", { "class": "c-closes", "data-label": "Closes" }, el("div", { "class": "num", text: closes ? dtf.format(closes) : "unknown" }),
+        el("div", { "class": "small", text: closed ? "closed" : "not in today's scan" })),
+      el("div", { "class": "c-bid", "data-label": "Bid" }, el("div", { "class": "strong num", text: money(f.bid) }), el("div", { "class": "small", text: "when you saved it" })),
+      el("div", { "class": "c-value", "data-label": "Marktplaats value" }, el("div", { "class": "small", text: "–" })),
+      el("div", { "class": "c-maxbid", "data-label": "Max bid" }, el("div", { "class": "big", text: money(f.maxBid) }), el("div", { "class": "small", text: "max bid when you saved it" })),
+      el("div", { "class": "c-status" }, el("span", { "class": "pill neutral", title: closed ? "" : "This lot wasn't in this morning's scan: it may no longer match your watchlist, or its site failed.", text: closed ? "Closed" : "Not in scan" }),
+        el("div", { "class": "actions" }, favButton(f, null))));
+  }
+
   /* ---------- controls ---------- */
   var $ = function (id) { return document.getElementById(id); };
   function syncControls() {
     $("factorRange").value = Math.max(20, Math.min(120, S.factor)); $("factor").value = S.factor; $("minProfit").value = S.minProfit;
+    $("trip").checked = !!S.trip; $("tripField").hidden = !DRIVING.home;
     $("sort").value = ui.sort; $("onlyRoom").checked = ui.onlyRoom; $("showHidden").checked = ui.showHidden; $("q").value = ui.q;
     $("item").value = ui.item; $("site").value = ui.site;
   }
@@ -817,6 +1194,9 @@ footer td { padding: 2px 14px 2px 0; }
   numberInput("minProfit", "minProfit");
   numberInput("factor", "factor");
   $("reset").addEventListener("click", function () { S = Object.assign({}, defaults); store.set("settings", S); syncControls(); render(); });
+  $("trip").addEventListener("change", function (e) { S.trip = e.target.checked; store.set("settings", S); render(); });
+  $("tab-all").addEventListener("click", function () { uiSet("view", "all"); });
+  $("tab-fav").addEventListener("click", function () { uiSet("view", "fav"); });
   $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
   $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
   $("showHidden").addEventListener("change", function (e) { uiSet("showHidden", e.target.checked); });
@@ -824,10 +1204,25 @@ footer td { padding: 2px 14px 2px 0; }
   $("site").addEventListener("change", function (e) { uiSet("site", e.target.value); });
   $("q").addEventListener("input", function (e) { uiSet("q", e.target.value); });
 
+  (function drivingInfo() {
+    var box = $("drivingInfo");
+    if (!DRIVING.home) {
+      box.textContent = "Driving costs: add your address as the HOME_ADDRESS secret on GitHub to see the distance and fuel costs to each pickup address.";
+      return;
+    }
+    box.append(el("strong", { text: "Driving costs" }), " = " + (DRIVING.roundTrip !== false ? "there and back" : "one way") + " at " +
+      (DRIVING.kmpl || 16) + " km per liter × €" + (DRIVING.fuel || 0).toFixed(3) + " per liter" +
+      (DRIVING.fuelSource ? " (" + DRIVING.fuelSource + ")" : "") +
+      (DRIVING.extraPerKm ? " + €" + DRIVING.extraPerKm + " per km" : "") + ". If you collect several lots at the same address, you only drive once. " +
+      "Routes: OSRM, © OpenStreetMap contributors." + (DRIVING.error ? " Note: " + DRIVING.error + "." : ""));
+  })();
+
   syncControls();
   renderHeader();
+  renderGhState();
   render();
-  setInterval(function () { if (!editing) { renderHeader(); render(); } }, 60000);
+  refreshFavs();
+  setInterval(function () { if (!editing && !(dlg && dlg.open)) { renderHeader(); render(); } }, 60000);
 })();
 </script>
 </body>

@@ -1,6 +1,6 @@
 """Turn a matched lot into a buy decision: total cost, margin, suggested maximum bid.
 
-    you pay     = (bid x (1 + premium) + fixed fees) x (1 + VAT)
+    you pay     = (bid x (1 + premium) + fixed fees) x (1 + VAT) + driving costs to the pickup address
     sale price  = Marktplaats median x resale_factor ("I sell at X% of the median") - selling costs
     margin      = sale price - you pay, also shown as a % of what you pay
     max bid     = highest bid that still leaves at least min_profit
@@ -33,12 +33,13 @@ class Settings:
     min_profit: float = 25.0  # the max bid always leaves at least this many euros profit
     resale_factor: float = 0.85  # you sell at 85% of the Marktplaats median asking price
     selling_costs: float = 0.0  # e.g. shipping or listing costs per sale
+    include_trip: bool = True  # count the drive to the pickup address as a cost
 
     @classmethod
-    def from_dict(cls, d: dict | None) -> "Settings":
+    def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
         d = d or {}  # older watchlists may still have target_return / min_margin; those are ignored
         return cls(min_profit=float(d.get("min_profit", 25)), resale_factor=float(d.get("resale_factor", 0.85)),
-                   selling_costs=float(d.get("selling_costs", 0)))
+                   selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip)
 
 
 @dataclass
@@ -63,29 +64,31 @@ def lot_rates(fees: Fees, lot: Lot) -> tuple[float, float]:
     return premium, vat
 
 
-def total_cost(bid: float, fees: Fees, lot: Lot) -> float:
+def total_cost(bid: float, fees: Fees, lot: Lot, trip: float = 0.0) -> float:
     premium, vat = lot_rates(fees, lot)
-    return (bid * (1 + premium) + fees.fixed + lot.extra_fee) * (1 + vat)
+    return (bid * (1 + premium) + fees.fixed + lot.extra_fee) * (1 + vat) + trip
 
 
-def bid_for_total(total: float, fees: Fees, lot: Lot) -> float:
+def bid_for_total(total: float, fees: Fees, lot: Lot, trip: float = 0.0) -> float:
     premium, vat = lot_rates(fees, lot)
-    return (total / (1 + vat) - fees.fixed - lot.extra_fee) / (1 + premium)
+    return ((total - trip) / (1 + vat) - fees.fixed - lot.extra_fee) / (1 + premium)
 
 
-def market_value(item: WatchItem, estimate: PriceEstimate | None) -> float | None:
-    if item.market_price is not None:
-        return item.market_price
-    return estimate.median if estimate else None
+def market_value(item: WatchItem, estimate: PriceEstimate | None, units: int = 1) -> float | None:
+    """Resale value of the whole lot: your own price for the item, else the Marktplaats median, times the
+    number of items when the title says there are a few ("2 x ...")."""
+    unit = item.market_price if item.market_price is not None else (estimate.median if estimate else None)
+    return unit * units if unit is not None else None
 
 
 def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
-             estimate: PriceEstimate | None) -> Verdict:
+             estimate: PriceEstimate | None, units: int = 1) -> Verdict:
     bid = lot.current_bid or 0.0
-    cost = total_cost(bid, fees, lot)
+    trip = (lot.trip_cost or 0.0) if settings.include_trip else 0.0
+    cost = total_cost(bid, fees, lot, trip)
     min_profit = item.min_profit if item.min_profit is not None else settings.min_profit
 
-    market = market_value(item, estimate)
+    market = market_value(item, estimate, units)
     resale = profit = margin = None
     caps = []
     if market:
@@ -99,8 +102,8 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         return Verdict(False, "no resale value found", bid, cost)
 
     max_total = min(caps)
-    max_bid = max(0, math.floor(bid_for_total(max_total, fees, lot)))
-    pay_at_max = total_cost(max_bid, fees, lot)
+    max_bid = max(0, math.floor(bid_for_total(max_total, fees, lot, trip)))
+    pay_at_max = total_cost(max_bid, fees, lot, trip)
     profit_at_max = resale - pay_at_max if resale is not None else None
     margin_at_max = profit_at_max / pay_at_max if profit_at_max is not None and pay_at_max > 0 else None
     ok = bid < max_bid

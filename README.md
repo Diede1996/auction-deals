@@ -1,6 +1,6 @@
 # Auction deal bot
 
-Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-closure** (bedrijfsbeëindiging) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what each match sells for on **Marktplaats** and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you also get a short **Telegram** summary.
+Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-closure** (bedrijfsbeëindiging) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close and about an hour before.
 
 | Site | What it checks |
 |---|---|
@@ -38,19 +38,33 @@ It runs for free on GitHub, so your laptop can stay off. Each auction site is vi
 2. **Settings → Actions → General → Workflow permissions.** Choose **Read and write permissions** and click **Save**.
 3. **Settings → Pages → Build and deployment → Source.** Choose **GitHub Actions**. This turns on the dashboard.
 
-### 4. Get your chat ID
+### 4. Your address, for driving costs (optional)
+
+Add another secret: name `HOME_ADDRESS`, value your street, house number and town, for example `Dorpsstraat 1, Veghel`. It stays a secret: it is never written to the repository or the dashboard. Without it, the dashboard shows the pickup addresses but no distances or driving costs.
+
+### 5. Get your chat ID
 
 1. Open the **Actions** tab. If GitHub asks, click **I understand my workflows, go ahead and enable them**.
 2. Click **Telegram commands → Run workflow → Run workflow**.
 3. Within a minute, your bot sends *"Your chat ID is 123456789"*.
-4. Add a second secret with name `TELEGRAM_CHAT_ID` and that number as the value.
+4. Add another secret with name `TELEGRAM_CHAT_ID` and that number as the value.
 
-### 5. First scan
+### 6. First scan
 
 1. Click **Scan auctions → Run workflow → Run workflow**. It takes about 5 minutes.
 2. You get the morning summary in Telegram, including the link to your dashboard: `https://<your-github-name>.github.io/auction-deals/`. Bookmark it or add it to your phone's home screen.
 
 From now on the scan runs every morning by itself.
+
+### 7. Favorites (once per device)
+
+Click **☆ Favorite** on any lot on the dashboard. The first time, the dashboard asks for a GitHub token so it can save your favorites; its link fills in almost everything:
+
+1. Click **Create the token on GitHub**. Name, 1-year expiry and **Issues: Read and write** are filled in.
+2. Under **Repository access**, choose **Only select repositories** and pick **auction-deals**.
+3. Click **Generate token**, copy it and paste it into the dashboard.
+
+Your favorites are kept in one issue in your repository (you'll see it under **Issues**), so they show on your phone and laptop alike, and the bot can remind you. The token can only edit issues of this repository; it can't change code or settings. Do the same once on each device you use. After a year GitHub expires the token and the dashboard asks for a new one.
 
 ---
 
@@ -58,21 +72,24 @@ From now on the scan runs every morning by itself.
 
 ![Example dashboard with example data](docs/example-dashboard.png)
 
-Each row is a lot from a running bankruptcy auction that matches your watchlist:
+Each row is a lot from a running bankruptcy auction that matches your watchlist. Lots that are **new since the last scan** come first, with a small **NEW** label in the top-left corner.
 
 | Column | What it shows |
 |---|---|
-| **Lot** | Title (click it to open the lot on the auction site), your watchlist item, site, location and auction name. **New** means it appeared since the last scan. |
+| **Lot** | Title (click it to open the lot on the auction site), your watchlist item, site and auction name. Below that: 📍 the **pickup address** (ophaallocatie), 🚗 the distance, driving time and fuel costs there and back, and the pickup day. |
 | **Closes** | Closing time in Dutch time, highlighted when it's within 24 hours |
-| **Current bid** | Bid at the time of the scan, what you would pay including premium and VAT, and your **margin** at that price (in € and as a % of what you pay) |
-| **Marktplaats value** | Median asking price of comparable listings, with a small bar chart of how the prices are spread. *edit* lets you type your own value. |
+| **Current bid** | Bid at the time of the scan, what you would pay including premium, VAT and driving, and your **margin** at that price (in € and as a % of what you pay) |
+| **Marktplaats value** | Median asking price, with a small bar chart of how the prices are spread. **✓ Exact: S27C366EAU** means only listings of that exact model were compared. **≈ Rough price** means the lot title has no type number, so similar items were compared: check it yourself. Lots like "2 x ..." count all items. *edit* lets you type your own value. |
 | **Suggested max bid** | The highest bid that still leaves your minimum profit, with the margin you'd make at that bid. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
-| **Status** | ✓ *Room to bid* (current bid is below your max), ✕ *Above max*, or ? *Needs a price* (set a value yourself) |
+| **Status** | ✓ *Room to bid* (current bid is below your max), ✕ *Above max*, or ? *Needs a price* (set a value yourself). **☆ Favorite** stars the lot, **Hide** hides it. |
+
+The **Favorites** tab shows the lots you starred, also after they closed or dropped out of the scan.
 
 At the top you set:
 
 - **You sell at**: the share of the Marktplaats median you expect to get. The default is 85%, because asking prices are higher than selling prices. Drag it to 50% to see your margin if you only get half the median.
 - **Minimum profit**: the suggested max bid always leaves at least this many euros.
+- **Count driving costs**: include the drive to the pickup address in what you pay (on by default).
 
 Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
 
@@ -83,19 +100,29 @@ Every margin and max bid updates as soon as you change these. **Hide** removes l
 Every morning you get a summary like this:
 
 ```
-☀️ Auction scan · Wed 23 Sep
-6 matching lots · 4 with room to bid · 1 new
+☀️ Auction scan · Mon 28 Sep
+60 matching lots · 12 with room to bid · 2 new
 Max bids for selling at 85% of the Marktplaats median with at least €25 profit
 
-⏰ Closing within 24 hours
-• Laptop HP EliteBook 840 G5 i5 8GB
-   bid €85 → max €97 (margin €26) · HNVI · Fri 04:57
+⭐ Your favorites closing today
+• Philips HD7695/90 Intense koffiemachine
+   bid €10 · your max €93 · closes 20:35
+I'll remind you again about an hour before each one closes.
 
-🆕 New with room to bid
-• Apple iMac 24 inch M1 8GB 256GB
-   bid €310 → max €409 (margin €25) · Plaats Je Bod · Tue 08:57
+⏰ Closing within 24 hours
+• Beeldscherm 27 inch SAMSUNG S27C310EAU
+   bid €15 → max €41 (margin €25) · HNVI · Mon 19:30 · 🚗 64 km
 
 📊 Open the dashboard
+```
+
+About an hour before a favorite closes you get:
+
+```
+⏰ Closes in 52 min (20:35)
+⭐ Philips HD7695/90 Intense koffiemachine
+bid this morning €10 · your max €93
+📍 Produktieweg 9, 8304AV Emmeloord · 101 km
 ```
 
 You manage your watchlist by sending the bot commands. It reads them every 15 minutes, which never touches the auction sites.
@@ -112,6 +139,7 @@ You manage your watchlist by sending the bot commands. It reads them every 15 mi
 | `/sellat 50` | What you expect to sell for, as a % of the Marktplaats median |
 | `/minprofit 30` | The max bid always leaves at least this much profit, in € |
 | `/scan` | Scan now instead of waiting for tomorrow (at most 3 extra scans a day) |
+| `/favorites` | The lots you starred on the dashboard, with their closing times |
 | `/dashboard` · `/status` · `/help` | Dashboard link, whether every site worked in the last scan, all commands |
 
 You can also edit `watchlist.yml` directly on GitHub. The comments at the top of that file explain every field.
@@ -120,7 +148,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 
 ## How the numbers work
 
-1. **You pay** = (bid + buyer's premium) × 1.21 VAT. The premium per site is set in `config.yml`:
+1. **You pay** = (bid + buyer's premium) × 1.21 VAT + driving costs. The premium per site is set in `config.yml`:
 
    | Site | Premium |
    |---|---|
@@ -130,10 +158,14 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
    | HNVI | 19% |
    | Plaats Je Bod | 22% |
 
-2. **Marktplaats value**: the bot searches Marktplaats using the watchlist keyword plus up to three words from the lot title. The words after the keyword, usually the model, are kept longest. For example, "Lenovo ThinkPad T580 i5 8GB" is searched as `thinkpad t580 i5 8gb`. If fewer than 4 comparable listings turn up, it drops words until it finds enough. A brand keyword like `hilti` is never used on its own, because that would compare a tripod with batteries and anchors; the lot then shows *No Marktplaats price* and you can set a value yourself. It skips wanted ads, defect or broken items, parts and accessories, removes outliers, and takes the median asking price.
-3. **Sale price** = Marktplaats value × your sell percentage (85% by default).
-4. **Margin** = sale price − what you pay, also shown as a % of what you pay.
-5. **Suggested max bid** = the highest bid that still leaves your minimum profit. If you set `max=` for an item, it never goes above that either.
+2. **Marktplaats value**:
+   - **Exact model**: when the lot title has a type number, only listings of that model count. "Curved beeldscherm 27 inch SAMSUNG S27C366EAU" is searched as `samsung s27c366eau`, and a listing must contain S27C366EAU (also written with spaces or dashes). Sizes, memory, voltages and processors (27 inch, 8GB, 18V, i5) are not type numbers. Two listings of the same model are enough. If Marktplaats has fewer, the lot shows *too few listings* and you can set a value yourself.
+   - **Rough price**: without a type number, the bot compares the category, brand and a few words from the title, for example `monitor lenovo` (monitor and beeldscherm count as the same). It needs at least 4 listings. A brand or category alone (`hilti`, `monitor`) is never used.
+   - It skips wanted ads, defect items, parts, accessories and auction houses advertising their own lots, removes outliers, and takes the median asking price.
+3. **Sale price** = Marktplaats value × your sell percentage (85% by default) × the number of items in lots like "2 x ..." (up to 10; bigger bulk lots count as one item).
+4. **Driving costs** = distance there and back ÷ 16 km per liter × the Belgian maximum price for Euro 95 E10, read every morning. The pickup address comes from the auction page; distances come from the OSRM route planner (OpenStreetMap). Change the fuel use, price or leave out driving costs in `config.yml` under `driving`. If you collect several lots at the same address, you only drive once.
+5. **Margin** = sale price − what you pay, also shown as a % of what you pay.
+6. **Suggested max bid** = the highest bid that still leaves your minimum profit. If you set `max=` for an item, it never goes above that either.
 
 ---
 
@@ -143,9 +175,11 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 - **Marktplaats shows asking prices, not sold prices.** Click *listings* to check what the value is based on before you bid.
 - **Lots with several items**, for example "partij" or "9x", are compared with the price of a single item. Read the lot description.
 - **Also check** the pickup location and date, whether the lot is sold as-is, and the auction's own terms. Some lots have extra fees or use the margin scheme (margeregeling).
-- **Marktplaats is checked sparingly**: each lot's price is reused for 3 days (`cache_days` in `config.yml`), with at most 40 searches per scan, 4–7 seconds apart. If Marktplaats shows its "Toegang is tijdelijk beperkt" block page, the bot stops asking for the rest of that scan and shows the last saved price, with the date it was checked.
+- **Marktplaats is checked sparingly**: each lot's price is reused for 3 days (`cache_days` in `config.yml`), with at most 60 searches per scan, 4–7 seconds apart. If Marktplaats shows its "Toegang is tijdelijk beperkt" block page, the bot stops asking for the rest of that scan and shows the last saved price, with the date it was checked.
 - **Being polite to the sites**: one scan a day at a slow pace is a tiny load compared to hourly checking. If you find that a site's terms don't allow automated reading at all, turn it off in `config.yml` (`enabled: false`).
 - **Site problems**: if a site fails 2 daily scans in a row, the bot warns you in Telegram and tells you when it works again. The dashboard header shows each site's status too.
+- **Your address and the public dashboard**: `HOME_ADDRESS` is a GitHub secret and never appears in the repository, but the dashboard (which is public) shows the distance from your home to each pickup address.
+- **Reminders** come from the Telegram job that runs every 15 minutes, so they arrive 45–60 minutes before closing (GitHub sometimes starts it a few minutes late). Closing times are from the morning scan; auction sites can extend a lot when someone bids at the last minute.
 - The bot never bids for you.
 
 ## Troubleshooting
@@ -160,6 +194,9 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 | The bot doesn't react | Commands are read every 15 minutes, and GitHub sometimes starts scheduled runs late. Check that `TELEGRAM_CHAT_ID` is set. |
 | Too many or too few lots with room to bid | Change your sell percentage (`/sellat`) or minimum profit (`/minprofit`), or add `-words` to exclude accessories. |
 | A site shows "failed" on the dashboard | Send `/status` or open `data/state.json` on GitHub to see the error. *HTTP 403* means the site refuses automated visitors; turn it off in `config.yml`. |
+| No distances or driving costs | Check the `HOME_ADDRESS` secret (street, number and town). The footer of the dashboard says why when it can't find your address or the route planner. |
+| "This token can't edit issues" when starring a lot | The token must have **Only select repositories → auction-deals** and **Issues: Read and write**. Create a new one with the link in the dialog. |
+| No reminder for a favorite | Check that the **Telegram commands** workflow runs (Actions tab) and that the favorite is in the Favorites tab. |
 
 ## Running it on your own computer (optional)
 

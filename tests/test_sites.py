@@ -2,8 +2,8 @@ from datetime import datetime, timezone
 from urllib.parse import parse_qs, urlparse
 
 from conftest import FakeHttp, url_has
-from fixtures import (HNVI_HOME, OVM_AUCTIONS, OVM_LOT, PJB_AUCTIONS, PV_HOME, PV_INFO, TW_AUCTION_LIST,
-                      TW_SEARCH_LOTS, hnvi_item, next_page, pjb_lot, pv_page, pv_row)
+from fixtures import (HNVI_AUCTION_INFO, HNVI_HOME, OVM_AUCTIONS, OVM_LOT, PJB_AUCTIONS, PV_HOME, PV_INFO,
+                      PV_INFO_PAGE, TW_AUCTION_LIST, TW_SEARCH_LOTS, hnvi_item, next_page, pjb_lot, pv_page, pv_row)
 from scanner.matching import bankruptcy_matcher
 from scanner.sites import hnvi, onlineveilingmeester, plaatsjebod, proveiling, troostwijk
 from scanner.sites.base import SiteContext
@@ -50,6 +50,8 @@ def test_proveiling_home_and_lots():
     assert auctions["15732"].kind == "Executie veiling"  # label found on a later duplicate link
     assert auctions["15725"].url.endswith("/AuctionGroup.aspx")
     assert proveiling.parse_closing(PV_INFO) == datetime(2026, 9, 28, 20, 0, tzinfo=AMS)
+    assert proveiling.parse_closing(PV_INFO_PAGE) == datetime(2026, 9, 28, 20, 0, tzinfo=AMS)
+    assert proveiling.parse_pickup(PV_INFO) == (None, None)  # no pickup details on the page: nothing made up
 
     pages = {
         "1": pv_page([pv_row(3285247, "Royal Pelletkachel ILENA AIR 60", "110,00", "50,00", "6 dagen", 10),
@@ -66,7 +68,7 @@ def test_proveiling_home_and_lots():
 
     http = FakeHttp([
         (lambda m, u, kw: m == "GET" and u == "https://www.proveiling.nl/", PV_HOME),
-        (url_has("AuctionGroup.aspx"), PV_INFO),
+        (url_has("AuctionGroup.aspx"), PV_INFO_PAGE),
         (url_has("/Alle-kavels/", method="GET"), pages["1"]),
         (url_has("/Alle-kavels/", method="POST"), post),
     ])
@@ -80,6 +82,8 @@ def test_proveiling_home_and_lots():
     assert pellet.closes_at == datetime(2026, 9, 28, 20, 0, tzinfo=AMS)  # "6 dagen" -> auction closing time
     assert pellet.image.startswith("https://img.proveiling.nl/")
     assert pellet.location == "Emmeloord"
+    assert pellet.pickup == "Produktieweg 9, 8304AV Emmeloord"  # the "ophaallocatie"
+    assert pellet.pickup_when == "Thu 1 Oct, 10:00–12:00"
     probat = by_id["3285237"]
     assert probat.current_bid == 20.0  # no bids yet -> starting bid
     assert probat.closes_at == datetime(2026, 9, 23, 20, 25, tzinfo=AMS)
@@ -96,7 +100,7 @@ def test_hnvi():
         (lambda m, u, kw: u == "https://www.hnvi.nl/", HNVI_HOME),
         (url_has("/page:2"), page2),
         (url_has("/page:"), ""),
-        (url_has("/online-veiling/"), page1),
+        (url_has("/online-veiling/"), HNVI_AUCTION_INFO + page1),
     ])
     auctions = hnvi.parse_home(HNVI_HOME)
     assert [a.auction_id for a in auctions] == ["1877", "1881", "1880"]
@@ -109,6 +113,13 @@ def test_hnvi():
     assert globe.url == "https://www.hnvi.nl/veiling-kavel/antieke-wereldbol-met-kompas/196542"
     assert next(l for l in lots if l.lot_id == "196556").current_bid == 1250.0
     assert any(l.lot_id == "196600" for l in lots)
+    assert globe.pickup == "Jan van Hooffstraat 3, Eindhoven" and globe.pickup_when == "Mon 5 Oct, 08:00–13:00"
+    assert globe.location == "Eindhoven"  # town from the homepage
+    # a lot page writes it on one line
+    assert hnvi.parse_pickup("<p>Adres : Jan van Hooffstraat 3, Eindhoven</p>")[0] == "Jan van Hooffstraat 3, Eindhoven"
+    # the site's own address in the page header is not the pickup address
+    header = "<header><p>Adres:</p><p>Kraanven 21</p><p>Loon op Zand</p></header>"
+    assert hnvi.parse_pickup(header + HNVI_AUCTION_INFO)[0] == "Jan van Hooffstraat 3, Eindhoven"
 
 
 def test_plaatsjebod():
@@ -129,6 +140,7 @@ def test_plaatsjebod():
     assert chairs.url == "https://www.plaatsjebod.nl/nl/lots/2-x-tom-vac-stoelen-van-vitra"
     assert chairs.image.startswith("https://www.plaatsjebod.nl/media/")
     assert lots[1].current_bid == 1050.0
+    assert chairs.pickup == "Nieuwe Steen 25, Hoorn" and chairs.location == "Hoorn"
 
 
 def test_onlineveilingmeester():
@@ -154,6 +166,10 @@ def test_onlineveilingmeester():
     drz = lots["1900001"]
     assert drz.url == "https://onlineveilingmeester.nl/nl/veilingen/9472/kavels/1"
     assert (drz.premium, drz.vat) == (0.121, 0.0)
+    # pickup ("afgifte") details come with the auction list, coordinates when the site knows them
+    assert bank.pickup == "Ottolaan 12, 9207 JR Drachten" and bank.pickup_latlon is None
+    assert bank.pickup_when == "Mon 5 Oct, 09:00–15:00" and bank.location == "Drachten"
+    assert drz.pickup == "Zuiderweg 21, 3769AB Soesterberg" and drz.pickup_latlon == (52.117204, 5.316177)
 
 
 def test_onlineveilingmeester_types_are_configurable():

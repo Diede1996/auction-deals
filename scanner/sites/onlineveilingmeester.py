@@ -3,6 +3,8 @@
 - /rest/nl/veilingen?status=open&domein=ONLINEVEILINGMEESTER -> running auctions with a `type`:
   bankruptcy auctions have type "FAILLISEMENT" (spelled like that), Domeinen Roerende Zaken "DRZ",
   local government "OVERHEID".
+  Each auction has `afgifteVeilingEvents` (type AFGIFTE = pickup) with date, times and an address
+  (sometimes with coordinates); `isBezorgVeiling` means the lots are delivered.
 - /rest/nl/v2/veilingen/<id>/kavels?page=N&size=100&status=OPEN -> lots (pages start at 1).
 """
 from __future__ import annotations
@@ -12,8 +14,10 @@ import re
 from urllib.parse import quote
 
 from ..models import Auction, Lot
+from datetime import date
+
 from ..util import from_iso
-from .base import SiteContext
+from .base import SiteContext, clean_address, format_when, town_of
 
 log = logging.getLogger(__name__)
 
@@ -22,9 +26,38 @@ BASE = "https://onlineveilingmeester.nl"
 PER_PAGE = 100
 
 
+def parse_pickup(v: dict) -> tuple[str | None, str | None, tuple[float, float] | None]:
+    """(address, pickup day, (lat, lon)) from an auction's first visible AFGIFTE event."""
+    events = [e for e in v.get("afgifteVeilingEvents") or [] if (e.get("type") or "AFGIFTE") == "AFGIFTE"
+              and e.get("zichtbaar", True)]
+    if not events:
+        return None, None, None
+    e = events[0]
+    a = e.get("adres") or {}
+    street = " ".join(str(x).strip() for x in (a.get("straat"), a.get("huisnummer")) if x)
+    town = " ".join(str(x).strip() for x in (a.get("postcode"), a.get("plaats")) if x)
+    country = {"BE": "België", "DE": "Deutschland"}.get(str(a.get("land") or "").upper())
+    address = clean_address(", ".join(x for x in (street, town, country) if x))
+    when = None
+    try:
+        day = date.fromisoformat(str(e.get("datum"))[:10])
+        when = format_when(day, str(e.get("starttijd") or "")[:5] or None, str(e.get("eindtijd") or "")[:5] or None)
+    except ValueError:
+        pass
+    latlon = None
+    try:
+        lat, lon = float(a.get("lat")), float(a.get("lng"))
+        if abs(lat) > 1 and abs(lon) > 1:  # "0.000000" means unknown
+            latlon = (lat, lon)
+    except (TypeError, ValueError):
+        pass
+    return address, when, latlon
+
+
 def parse_auctions(data: dict) -> list[Auction]:
     out = []
     for v in data.get("veilingen") or []:
+        address, when, latlon = parse_pickup(v)
         out.append(Auction(
             site=SITE,
             auction_id=str(v.get("id")),
@@ -33,6 +66,10 @@ def parse_auctions(data: dict) -> list[Auction]:
             description=re.sub(r"<[^>]+>", " ", v.get("omschrijving") or ""),
             kind=v.get("type") or "",
             closes_at=from_iso(v.get("sluitingsDatumISO")),
+            pickup=address,
+            pickup_when=when,
+            pickup_latlon=latlon,
+            delivery=bool(v.get("isBezorgVeiling")),
         ))
     return out
 
@@ -76,7 +113,8 @@ def parse_lot(k: dict, auction: Auction) -> Lot:
         extra_fee=float(k.get("handelingskosten") or 0),
         premium=premium,
         vat=vat,
-    )
+        location=town_of(auction.pickup),
+    ).pickup_from(auction)
 
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:

@@ -1,100 +1,50 @@
-"""Pick a Marktplaats search for a specific lot and look up its resale value.
+"""Look up a lot's resale value on Marktplaats, politely.
 
-The watchlist keyword alone is often too broad ("macbook" covers €150 to €3.000 models), so the
-lot title is used to make the search more specific: the matched keyword plus up to three
-distinctive words from the title ("thinkpad" + "t580 i5 8gb"). If that finds too few comparable
-listings, words are dropped one at a time until enough listings are found, but a single brand
-word ("hilti") is never used on its own.
+identify.plan_for() decides what to search for: the exact model when the lot title has a type number
+("samsung s27c366eau"), otherwise a rough comparison with similar items ("monitor lenovo").
 """
 from __future__ import annotations
 
 import logging
-import re
 from dataclasses import asdict
 from datetime import datetime, timedelta
 
 from . import marktplaats
 from .http import BlockedError
+from .identify import SearchPlan, is_brand, plan_for
 from .marktplaats import PriceEstimate
 from .models import Lot, WatchItem
-from .util import normalize, phrase_in
 
 log = logging.getLogger(__name__)
 
-NOISE = set("""
-met zonder en de het een van voor in op tot aan bij of als uit incl inclusief excl exclusief
-with and the for of to from new nieuw nieuwe gebruikt used zgan zga ongebruikt
-partij diverse div divers kavel lot set stuks stuk st pcs x cm mm m kg gr g l ltr liter v w watt
-gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen maat size
-zwart wit grijs zilver blauw rood groen black white grey gray silver blue red
-""".split())
 
-
-def useful_tokens(title: str) -> list[tuple[int, str]]:
-    """Distinctive words of a lot title with their position, e.g. model numbers ("t580", "v15", "13")."""
-    raw = normalize(title).split()
-    out, seen = [], set()
-    for i, tok in enumerate(raw):
-        if tok in NOISE or tok in seen or re.fullmatch(r"\d+x|x\d+", tok):  # "3x" = quantity
-            continue
-        if tok.isdigit():
-            prev = raw[i - 1] if i else ""
-            nxt = raw[i + 1] if i + 1 < len(raw) else ""
-            # keep "iphone 13" / "ts 55", drop quantities and sizes like "2 x", "60 cm", "15,3"
-            if nxt in NOISE or (len(tok) < 3 and not (prev.isalpha() and prev not in NOISE)):
-                continue
-        elif len(tok) < 2:
-            continue
-        seen.add(tok)
-        out.append((i, tok))
-    return out
-
-
-def candidate_queries(item: WatchItem, lot: Lot, extra_words: int = 3) -> list[str]:
-    """Most specific search first. Words after the keyword in the title ("iphone" -> "13 pro") matter
-    more than words before it (usually the brand), so those are kept longest."""
-    if item.marktplaats_query:
-        return [item.marktplaats_query]
-    text = normalize(lot.title)
-    base = next((k for k in item.keywords if phrase_in(k, text)), item.keywords[0])
-    base_tokens = normalize(base).split()
-    raw = text.split()
-    pos = next((i for i, t in enumerate(raw) if base_tokens and t.startswith(base_tokens[0])), -1)
-    tokens = [(i, t) for i, t in useful_tokens(lot.title) if t not in base_tokens]
-    after = [t for i, t in tokens if i > pos]
-    before = [t for i, t in tokens if i <= pos]
-    extras = (after + before)[:extra_words]
-    # A brand or category ("hilti", "hugo boss", "bosch professional", "monitor") is not a product:
-    # searching for it alone compares a tripod with batteries and anchors. Keep at least one extra
-    # word from the title, unless the keyword already names a model ("playstation 5", "ps5").
-    specific = any(ch.isdigit() for ch in "".join(base_tokens))
-    lowest = 0 if specific else 1
-    queries = []
-    for n in range(len(extras), lowest - 1, -1):
-        q = " ".join(base_tokens + extras[:n])
-        if q not in queries:
-            queries.append(q)
-    return queries
+def result_kind(plan: SearchPlan, rule_groups: list) -> str:
+    """"exact" when the listings compared name the same model; "general" for a rough comparison.
+    A general search that still pins a model ("jura e8", "ipad air 5", "playstation 5 slim") counts as exact:
+    a word with a number in it that isn't a brand ("dsquared2") or a category."""
+    if plan.kind != "general":
+        return plan.kind
+    words = [group[0] for group in rule_groups if len(group) == 1 and not is_brand(group[0])]
+    return "exact" if any(ch.isdigit() for w in words for ch in w) else "general"
 
 
 class PriceFinder:
-    """Looks up resale values politely.
-
-    - At most two Marktplaats searches per lot: the most specific query, and if that finds too few
-      comparable listings, the keyword plus one word. Dropping words happens on those same results.
+    """- At most two Marktplaats searches per lot: the most specific one and, if that finds too few
+      comparable listings, a broader or differently written one. Rules are tried on the combined results.
     - A lot's price is reused for `cache_days`; identical searches in one run are made only once.
     - When Marktplaats blocks us, no further requests are made this run and lots get their last
       known price (up to `stale_days` old) instead.
     """
 
     def __init__(self, http, cache: dict, now, cache_days: float = 3, stale_days: float = 14,
-                 min_listings: int = 4, max_lookups: int = 40, enabled: bool = True):
+                 min_listings: int = 4, max_lookups: int = 40, enabled: bool = True, min_listings_exact: int = 2):
         self.http = http
         self.cache = cache
         self.now = now
         self.cache_days = cache_days
         self.stale_days = stale_days
         self.min_listings = min_listings
+        self.min_listings_exact = min_listings_exact
         self.lookups_left = max_lookups
         self.enabled = enabled
         self.blocked = False
@@ -123,25 +73,24 @@ class PriceFinder:
     def for_lot(self, item: WatchItem, lot: Lot) -> PriceEstimate | None:
         if not self.enabled or item.market_price is not None:
             return None
-        queries = candidate_queries(item, lot)
-        if not queries:  # title has nothing beyond a brand name: no reliable comparison possible
+        plan = plan_for(item, lot)
+        if not plan:  # title has nothing beyond a brand or category: no reliable comparison possible
             return None
-        key = marktplaats.cache_key(queries[0], item.exclude)
+        key = marktplaats.cache_key(f"{plan.kind}:{plan.searches[0]}", item.exclude)
         entry = self.cache.get(key)
         if entry and self._age(entry) <= timedelta(days=self.cache_days):
             return PriceEstimate(**entry["est"]) if entry.get("est") else None
         if self.blocked or self.lookups_left <= 0:
             return self._saved(entry)
 
-        plan = [queries[0]]
-        if len(queries) > 1:
-            plan.append(queries[-1])  # the broadest search that is still specific enough
-        est = None
-        for i, query in enumerate(plan):
+        min_count = self.min_listings_exact if plan.exact else self.min_listings
+        results: list[dict] = []
+        found = None
+        for i, query in enumerate(plan.searches[:2]):
             if i and self.lookups_left <= 0 and query not in self._results:
                 break
             try:
-                listings = self._search(query)
+                results = results + self._search(query)
             except BlockedError as e:
                 self.blocked = True
                 self.last_error = str(e)
@@ -151,12 +100,16 @@ class PriceFinder:
                 self.last_error = str(e)
                 log.warning("marktplaats lookup failed for %r: %s", query, e)
                 return self._saved(entry)
-            est = marktplaats.best_estimate(listings, queries[queries.index(query):], item.exclude,
-                                            self.min_listings)
-            if est:
+            found = marktplaats.best_estimate(results, plan.rules, item.exclude, min_count)
+            if found:
                 break
-        if est:
+        est = None
+        if found:
+            est, rule = found
             est.as_of = self.now.isoformat()
+            est.kind = result_kind(plan, rule.groups)
+            est.model = plan.model
+            est.search = plan.searches[0] if plan.kind != "general" else rule.label
         self.cache[key] = {"at": self.now.isoformat(), "est": asdict(est) if est else None}
         return est
 

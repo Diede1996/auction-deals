@@ -10,11 +10,14 @@ from urllib.parse import urlencode
 
 from . import dashboard
 from .evaluate import Fees, Settings, Verdict, evaluate, lot_rates, market_value
+from .favorites import FavoritesStore, closing_between
+from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
-from .marktplaats import PriceEstimate
+from .identify import plan_for, quantity
+from .marktplaats import PriceEstimate, search_url
 from .matching import bankruptcy_matcher, match_lots, search_terms
 from .models import Lot, WatchItem
-from .pricing import PriceFinder, candidate_queries
+from .pricing import PriceFinder
 from .sites import SITE_NAMES, SITES
 from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
@@ -24,6 +27,13 @@ from .util import AMS, fmt_eur
 log = logging.getLogger("scanner")
 
 Row = tuple[WatchItem, Lot, Verdict, "PriceEstimate | None"]
+
+
+def units_of(lot: Lot, max_units: int = 10) -> int:
+    """How many items the resale value counts: "2 x Kunstplant" -> 2. Big bulk lots ("Ca. 41x colberts")
+    count as one, because you won't sell 41 jackets at the going rate for one."""
+    n = quantity(lot.title)
+    return n if 2 <= n <= max_units else 1
 
 
 # ---------------------------------------------------------------- scraping
@@ -84,16 +94,43 @@ def health_messages(state: dict, warn_after: int = 2) -> list[str]:
     return out
 
 
-def _line(item: WatchItem, lot: Lot, v: Verdict) -> str:
+def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = None,
+          trips: dict | None = None) -> str:
     local = lot.closes_at.astimezone(AMS) if lot.closes_at else None
     when = local.strftime("%a %H:%M") if local else "?"
     margin = f" (margin {fmt_eur(v.profit_at_max)})" if v.profit_at_max is not None else ""
+    rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
+    trip = (trips or {}).get(pickup_place(lot) or "")
+    drive = f" · 🚗 {trip.km:.0f} km" if trip else ""
     return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
-            f"   bid {fmt_eur(v.bid)} → max <b>{fmt_eur(v.max_bid)}</b>{margin} · {SITE_NAMES.get(lot.site, lot.site)} · {when}")
+            f"   bid {fmt_eur(v.bid)} → max <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · "
+            f"{SITE_NAMES.get(lot.site, lot.site)} · {when}{drive}")
+
+
+def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: str = "today") -> str | None:
+    """⭐ section: favorites that close before midnight (Dutch time)."""
+    lots_by_key = {lot.key: {"closes": lot.closes_at.isoformat() if lot.closes_at else None} for _, lot, _, _ in rows}
+    local = now.astimezone(AMS)
+    midnight = local.replace(hour=23, minute=59, second=59)
+    today = closing_between(favs, lots_by_key, now, midnight)
+    if not today:
+        return None
+    by_key = {lot.key: (lot, v) for _, lot, v, _ in rows}
+    lines = [f"⭐ <b>Your favorites closing {verb}</b>"]
+    for f, c in today:
+        lot, v = by_key.get(f["key"], (None, None))
+        bid = f"bid {fmt_eur(v.bid)} · " if v else ""
+        maxbid = f"your max <b>{fmt_eur(v.max_bid)}</b> · " if v and v.max_bid is not None else (
+            f"your max <b>{fmt_eur(f['maxBid'])}</b> · " if f.get("maxBid") is not None else "")
+        lines.append(f'• <a href="{attr(f["url"])}">{esc(f["title"][:70])}</a>\n'
+                     f"   {bid}{maxbid}closes {c.astimezone(AMS):%H:%M}")
+    lines.append("<i>I'll remind you again about an hour before each one closes.</i>")
+    return "\n".join(lines)
 
 
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
-                   per_section: int = 8, notes: list[str] | None = None) -> str:
+                   per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
+                   trips: dict | None = None) -> str:
     deals = [r for r in rows if r[2].is_deal]
     day = now.astimezone(AMS).strftime("%a %d %b")
     head = [f"☀️ <b>Auction scan</b> · {day}",
@@ -102,17 +139,24 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
             f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
             f"with at least {fmt_eur(settings.min_profit)} profit</i>"]
     parts = ["\n".join(head)] + list(notes or [])
+    fav_part = favorites_message(favs or [], rows, now)
+    if fav_part:
+        parts.append(fav_part)
     soon = [r for r in deals if r[1].closes_at and r[1].closes_at - now <= timedelta(hours=24)]
     fresh = [r for r in deals if r[1].key in new_keys and r not in soon]
     if soon:
-        parts.append("⏰ <b>Closing within 24 hours</b>\n" + "\n".join(_line(i, l, v) for i, l, v, _ in soon[:per_section]))
+        parts.append("⏰ <b>Closing within 24 hours</b>\n" +
+                     "\n".join(_line(i, l, v, e, trips) for i, l, v, e in soon[:per_section]))
     if fresh:
         fresh.sort(key=lambda r: -(r[2].max_bid or 0) + (r[2].bid or 0))
-        parts.append("🆕 <b>New with room to bid</b>\n" + "\n".join(_line(i, l, v) for i, l, v, _ in fresh[:per_section]))
+        parts.append("🆕 <b>New with room to bid</b>\n" +
+                     "\n".join(_line(i, l, v, e, trips) for i, l, v, e in fresh[:per_section]))
     if not rows:
         parts.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction today.")
     elif not soon and not fresh:
         parts.append("Nothing new or closing soon with room to bid.")
+    if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh):
+        parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
     if url:
         parts.append(f'📊 <a href="{attr(url)}">Open the dashboard</a>')
     return "\n\n".join(parts)
@@ -120,28 +164,46 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
 
 # ---------------------------------------------------------------- dashboard data
 
+def pickup_place(lot: Lot) -> str | None:
+    """Where you collect the lot: the pickup address, or at least the town."""
+    if lot.delivery:
+        return None
+    return lot.pickup or lot.location
+
+
 def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settings, site_fees: dict[str, Fees],
-                   new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None) -> dict:
+                   new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None,
+                   trips: dict | None = None, driving: dict | None = None, favorites: dict | None = None,
+                   max_units: int = 10) -> dict:
     items = items or []
+    trips = trips or {}
     lots = []
     for item, lot, v, est in rows:
         fees = site_fees.get(lot.site, Fees())
-        queries = candidate_queries(item, lot)
-        market = market_value(item, est)
+        plan = plan_for(item, lot)
+        units = units_of(lot, max_units)
+        place = pickup_place(lot)
+        trip = trips.get(place) if place else None
         lots.append({
             "key": lot.key, "item": item.name, "title": lot.title, "url": lot.url,
             "site": lot.site, "siteName": SITE_NAMES.get(lot.site, lot.site), "auction": lot.auction_title,
             "image": lot.image, "location": lot.location,
+            "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
+            "trip": trip.as_dict() if trip else None,
             "closes": lot.closes_at.isoformat() if lot.closes_at else None,
             "bid": v.bid, "bids": lot.bids,
             "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
-            "market": market, "marketSource": ("manual" if item.market_price is not None else
-                                               "marktplaats" if est else None),
+            "units": units, "count": quantity(lot.title),
+            "market": market_value(item, est, units), "marketSource": ("manual" if item.market_price is not None else
+                                                                       "marktplaats" if est else None),
             "mp": ({"median": est.median, "low": est.low, "high": est.high, "count": est.count,
                     "query": est.query, "url": est.url, "prices": est.prices, "outliers": est.outliers,
-                    "listings": est.listings, "asOf": est.as_of} if est else None),
-            "mpSearch": PriceEstimate(0, 0, 0, 0, queries[-1] if queries else item.name).url,
+                    "listings": est.listings, "asOf": est.as_of, "kind": est.kind, "model": est.model}
+                   if est else None),
+            "mpPlan": ({"kind": plan.kind, "model": plan.model, "brand": plan.brand, "note": plan.note,
+                        "search": search_url(plan.searches[0])} if plan else None),
+            "mpSearch": search_url(plan.searches[0] if plan else lot.title),
             "itemMaxPrice": item.max_price, "itemMinProfit": item.min_profit,
             "firstSeen": (seen.get(lot.key) or {}).get("first"), "isNew": lot.key in new_keys,
             "maxBid": v.max_bid, "isDeal": v.is_deal,
@@ -164,6 +226,9 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,
+        "driving": driving or {"home": False},
+        "favorites": favorites or {"issue": None, "items": []},
+        "repo": os.environ.get("GITHUB_REPOSITORY", ""),
     }
 
 
@@ -209,8 +274,10 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     tg = telegram_cls(http_cls(delay=0.5), token, chat_id, dry_run=dry_run or not (token and chat_id))
 
+    drv_cfg = config.get("driving") or {}
     items = [i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords]
-    settings = Settings.from_dict(watchlist.get("settings"))
+    settings = Settings.from_dict(watchlist.get("settings"), include_trip=bool(drv_cfg.get("include_in_max_bid", True)))
+    max_units = int((config.get("marktplaats") or {}).get("max_items_per_lot", 10))
 
     # 1. scrape (skipped when the watchlist is empty)
     lots, report, site_requests = ([], {}, 0)
@@ -222,20 +289,46 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     matched = match_lots(items, lots)
     log.info("%d lots scanned, %d match the watchlist", len(lots), len(matched))
 
-    # 2. price + evaluate
+    # 2. driving costs to the pickup addresses (needs the HOME_ADDRESS secret)
+    geo_http = http_cls(delay=1.1)
+    trips: dict = {}
+    home = os.environ.get("HOME_ADDRESS", "").strip()
+    driving = {"home": bool(home), "enabled": drv_cfg.get("enabled", True) is not False,
+               "include": settings.include_trip, "kmpl": float(drv_cfg.get("km_per_liter", 16)),
+               "roundTrip": drv_cfg.get("round_trip", True) is not False,
+               "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0)}
+    places = {p: lot.pickup_latlon for _, lot in matched if (p := pickup_place(lot))}
+    if driving["enabled"] and home and places:
+        price, source = fuel_price(geo_http, state, now, drv_cfg.get("fuel_price", "auto"),
+                                   float(drv_cfg.get("fuel_price_fallback", 2.108)))
+        costs = DrivingCosts(km_per_liter=driving["kmpl"], fuel_price=price, round_trip=driving["roundTrip"],
+                             extra_per_km=driving["extraPerKm"])
+        repo = os.environ.get("GITHUB_REPOSITORY", "")
+        planner = TripPlanner(geo_http, state.setdefault("geo", {}), now, costs, home,
+                              user_agent=f"auction-deals-bot (github.com/{repo})" if repo else "auction-deals-bot")
+        trips = planner.plan(places)
+        planner.prune()
+        driving.update(fuel=price, fuelSource=source, error=planner.error)
+        for _, lot in matched:
+            trip = trips.get(pickup_place(lot) or "")
+            lot.trip_cost = round(trip.cost, 2) if trip else None
+
+    # 3. price + evaluate
     mp_cfg = config.get("marktplaats") or {}
     http = http_cls(delay=float(mp_cfg.get("delay_seconds", 4)), jitter=float(mp_cfg.get("extra_random_delay", 3)))
     cache_days = float(mp_cfg["cache_days"]) if "cache_days" in mp_cfg else float(mp_cfg.get("cache_hours", 72)) / 24
     finder = PriceFinder(http, state.setdefault("price_cache", {}), now, cache_days=cache_days,
                          stale_days=float(mp_cfg.get("fallback_days", 14)),
                          min_listings=int(mp_cfg.get("min_listings", 4)),
+                         min_listings_exact=int(mp_cfg.get("min_listings_exact", 2)),
                          max_lookups=int(mp_cfg.get("max_lookups_per_run", 40)),
                          enabled=mp_cfg.get("enabled", True))
     site_fees = {s: Fees.from_dict(c) for s, c in (config.get("sites") or {}).items()}
     rows: list[Row] = []
     for item, lot in sorted(matched, key=lambda m: m[1].closes_at or horizon):
         est = finder.for_lot(item, lot)
-        rows.append((item, lot, evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est), est))
+        verdict = evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units))
+        rows.append((item, lot, verdict, est))
     finder.prune()
     notes = []
     if items:
@@ -252,7 +345,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             report["marktplaats"] = {"ok": True, "lots": finder.lookups}
             mh.update(ok=True, lots=finder.lookups, fails=0, error="", at=now.isoformat())
 
-    # 3. which lots are new since the last scan
+    # 4. which lots are new since the last scan
     seen = state.setdefault("seen", {})
     new_keys = {lot.key for _, lot, _, _ in rows if lot.key not in seen}
     for _, lot, _, _ in rows:
@@ -263,8 +356,14 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         if closes and datetime.fromisoformat(closes) < now - timedelta(days=3):
             del seen[key]
 
-    # 4. dashboard + report
-    data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items)
+    # 5. favorites (starred on the dashboard, kept in a GitHub issue)
+    store = FavoritesStore(http_cls(delay=0.2))
+    favs = store.load() if items else []
+
+    # 6. dashboard + report
+    data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items,
+                          trips=trips, driving=driving, favorites={"issue": store.issue, "items": favs},
+                          max_units=max_units)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
     text = write_report(root / "data" / "latest.md", rows, report, now, url)
@@ -273,12 +372,20 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         with open(summary, "a", encoding="utf-8") as fh:
             fh.write(text)
 
-    # 5. telegram digest
+    # 7. telegram digest
     if items and alerts_cfg.get("enabled", True):
         try:
-            tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes))
+            tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
+                                   favs=favs, trips=trips))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
+    elif favs:
+        fav_msg = favorites_message(favs, rows, now)
+        if fav_msg:
+            try:
+                tg.send(fav_msg)
+            except Exception as e:
+                log.warning("could not send the favorites message: %s", e)
     for msg in health_messages(state, int(alerts_cfg.get("warn_after_failed_scans", 2))):
         try:
             tg.send(msg)
@@ -286,10 +393,11 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             log.warning("could not send a warning: %s", e)
 
     deals = sum(1 for r in rows if r[2].is_deal)
+    requests = site_requests + http.request_count + geo_http.request_count
     state["last_run"] = {"at": now.isoformat(), "lots": len(lots), "matches": len(rows), "deals": deals,
-                         "new": len(new_keys), "requests": site_requests + http.request_count}
+                         "new": len(new_keys), "requests": requests}
     if not dry_run:  # a dry run must not change what counts as "new"
         save_json(state_path, state)
     log.info("done: %d lots, %d matches, %d with room to bid, %d new, %d requests",
-             len(lots), len(rows), deals, len(new_keys), site_requests + http.request_count)
+             len(lots), len(rows), deals, len(new_keys), requests)
     return 0

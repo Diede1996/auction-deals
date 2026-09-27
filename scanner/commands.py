@@ -6,6 +6,7 @@
 /sellat 50
 /minprofit 25
 /scan                (handled in bot.py: starts an extra scan)
+/favorites           (handled in bot.py: lists the lots starred on the dashboard)
 /status
 /dashboard
 /help
@@ -34,6 +35,7 @@ Every morning I check 4 auction sites for bankruptcy, business-closure and Domei
 <b>/sellat</b> <i>percent</i> – what you expect to sell for, as % of the Marktplaats median, e.g. <code>/sellat 50</code>
 <b>/minprofit</b> <i>amount</i> – the max bid always leaves at least this much profit, e.g. <code>/minprofit 25</code>
 <b>/scan</b> – check the auction sites now instead of waiting for tomorrow (max 3 times a day)
+<b>/favorites</b> – the lots you starred on the dashboard; I remind you about an hour before each one closes
 <b>/dashboard</b> – link to your list of lots
 <b>/status</b> – when the last scan ran and which sites worked
 <b>/help</b> – this message"""
