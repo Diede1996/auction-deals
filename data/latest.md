@@ -1,31 +1,31 @@
 # Latest scan
 
-_Saturday 26 September 2026, 06:24 (Amsterdam time)_
+_Sunday 27 September 2026, 06:25 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
 | Site | Status |
 |---|---|
-| ProVeiling | ✅ 239 lots |
+| ProVeiling | ✅ 316 lots |
 | HNVI | ✅ 730 lots |
 | Plaats Je Bod | ✅ 373 lots |
 | Onlineveilingmeester | ✅ 1800 lots |
-| Marktplaats prices | ✅ 14 price lookups |
+| Marktplaats prices | ✅ 0 price lookups |
 
 ## Matching lots (65)
 
 | | Item | Lot | Bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
-|  | Coffee machine | [Espressomachine ZOE211212006A](https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail) (ProVeiling) | €170 | – | – | Mon 28 Sep 20:00 |
-|  | Coffee machine | [Nespresso espressokopjes en schotels](https://www.proveiling.nl/Nespresso-espressokopjes-en-schotels/3285246/detail) (ProVeiling) | €10 | €14 | €0 | Mon 28 Sep 20:00 |
-|  | Coffee machine | [Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiema](https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail) (ProVeiling) | €40 | – | – | Mon 28 Sep 20:00 |
-| ✅ | Coffee machine | [Philips HD7695/90 Intense koffiemachine](https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail) (ProVeiling) | €10 | €170 | €85 | Mon 28 Sep 20:00 |
+|  | Coffee machine | [Nespresso espressokopjes en schotels](https://www.proveiling.nl/Nespresso-espressokopjes-en-schotels/3285246/detail) (ProVeiling) | €10 | €14 | €0 | Mon 28 Sep 20:05 |
+|  | Coffee machine | [Espressomachine ZOE211212006A](https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail) (ProVeiling) | €190 | – | – | Mon 28 Sep 20:10 |
 |  | Plants / decor | [2 x Kunstplant in pot](https://www.plaatsjebod.nl/nl/lots/2-x-kunstplant-in-pot) (Plaats Je Bod) | €90 | €34 | €2 | Mon 28 Sep 20:10 |
 |  | Monitor | [1 x HP Desktop met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €30 | – | – | Mon 28 Sep 20:17 |
 |  | Laptop | [1 x Laptop met Eletra Intra orale Smart scanner en toebehoren in koffe](https://www.plaatsjebod.nl/nl/lots/1-x-laptop-met-eletra-intra-orale-smart-scanner-en-toebehoren-in-koffer) (Plaats Je Bod) | €500 | – | – | Mon 28 Sep 20:25 |
 |  | Monitor | [2 x HP computer met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/2-x-hp-computer-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €60 | – | – | Mon 28 Sep 20:30 |
 |  | Monitor | [1 x HP Desktop Mini met 2 x 24-inch monitor met wandbeugel en toebehor](https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-mini-met-2-x-24-inch-monitor-met-wandbeugel-en-toebehoren) (Plaats Je Bod) | €60 | €52 | €13 | Mon 28 Sep 20:34 |
-| ✅ | Monitor | [3x Monitor, O.a Sharp, Samsung](https://onlineveilingmeester.nl/nl/veilingen/9467/kavels/29) (Onlineveilingmeester) | €16 | €97 | €51 | Mon 28 Sep 20:37 |
+|  | Coffee machine | [Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiema](https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail) (ProVeiling) | €40 | – | – | Mon 28 Sep 20:35 |
+| ✅ | Coffee machine | [Philips HD7695/90 Intense koffiemachine](https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail) (ProVeiling) | €10 | €170 | €85 | Mon 28 Sep 20:35 |
+| ✅ | Monitor | [3x Monitor, O.a Sharp, Samsung](https://onlineveilingmeester.nl/nl/veilingen/9467/kavels/29) (Onlineveilingmeester) | €18 | €97 | €51 | Mon 28 Sep 20:37 |
 |  | Monitor | [1 x HP Prodesk met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-hp-prodesk-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €30 | – | – | Mon 28 Sep 20:39 |
 |  | Monitor | [1 x Acer Veriton computer met beeldscherm en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-acer-veriton-computer-met-beeldscherm-en-toebehoren) (Plaats Je Bod) | €20 | – | – | Mon 28 Sep 20:45 |
 |  | Coffee machine | [Koffieapparaat NESPRESSO koffielekbakje ontbreekt.](https://www.hnvi.nl/veiling-kavel/koffieapparaat-nespresso-koffielekbakje-ontbreekt/196484) (HNVI) | €5 | – | – | Tue 29 Sep 19:30 |
@@ -59,7 +59,7 @@ _Saturday 26 September 2026, 06:24 (Amsterdam time)_
 |  | Monitor | [Beeldscherm 27 inch SAMSUNG S27C310EAU](https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-samsung-s27c310eau/196602) (HNVI) | €15 | – | – | Mon 05 Oct 19:30 |
 |  | Monitor | [27 inch beeldschermen ACER V277](https://www.hnvi.nl/veiling-kavel/27-inch-beeldschermen-acer-v277/196603) (HNVI) | €10 | – | – | Mon 05 Oct 19:30 |
 |  | Laptop | [Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300](https://www.hnvi.nl/veiling-kavel/laptop-lenovo-thinkpad-t440s-128-gb-hdd-8-gb-ram-intel-core-i5-4300u-cpu-1-90-hgz-qwertz-toetsenbord/196613) (HNVI) | €35 | – | – | Mon 05 Oct 19:30 |
-| ✅ | Plants / decor | [2x Vaas met kunstbloemen](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/70) (Onlineveilingmeester) | €10 | €50 | €12 | Mon 05 Oct 19:47 |
+|  | Plants / decor | [2x Vaas met kunstbloemen](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/70) (Onlineveilingmeester) | €12 | €50 | €12 | Mon 05 Oct 19:47 |
 | ✅ | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €35 | €225 | €118 | Mon 05 Oct 20:00 |
 |  | Power tools | [DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000](https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail) (ProVeiling) | €25 | €55 | €15 | Mon 05 Oct 20:00 |
 |  | Power tools | [Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion](https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail) (ProVeiling) | €25 | €37 | €4 | Mon 05 Oct 20:00 |
@@ -76,8 +76,8 @@ _Saturday 26 September 2026, 06:24 (Amsterdam time)_
 | ✅ | Power tools | [Bouwradio DEWALT met accu](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu/196661) (HNVI) | €15 | €70 | €23 | Mon 05 Oct 20:00 |
 |  | Power tools | [Haakse slijptol DEWALT DWE4579](https://www.hnvi.nl/veiling-kavel/haakse-slijptol-dewalt-dwe4579/196664) (HNVI) | €15 | – | – | Mon 05 Oct 20:00 |
 | ✅ | Laptop | [Printer en Laptop, Acer Epson](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/204) (Onlineveilingmeester) | €18 | €150 | €72 | Mon 05 Oct 20:20 |
-|  | Suit / formalwear | [Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in gro](https://www.hnvi.nl/veiling-kavel/kindercarnavals-producten-aan-zeven-stellingdelen-225-kostuums-in-grote-diversiteit-w-o-tien-paar-schoenen-en-diverse-verkleedaccessoires/196928) (HNVI) | €150 | – | – | Tue 13 Oct 19:30 |
-| ✅ | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €10 | €350 | €188 | Tue 13 Oct 20:00 |
+|  | Suit / formalwear | [Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in gro](https://www.hnvi.nl/veiling-kavel/kindercarnavals-producten-aan-zeven-stellingdelen-225-kostuums-in-grote-diversiteit-w-o-tien-paar-schoenen-en-diverse-verkleedaccessoires/196928) (HNVI) | €160 | – | – | Tue 13 Oct 19:30 |
+| ✅ | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €16 | €350 | €188 | Tue 13 Oct 20:00 |
 |  | Power tools | [Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleet](https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115) (HNVI) | €30 | – | – | Tue 13 Oct 20:00 |
 |  | Power tools | [Foudraal t.b.v. Makita zaaggeleider 140 cm](https://www.hnvi.nl/veiling-kavel/foudraal-t-b-v-makita-zaaggeleider-140-cm/197136) (HNVI) | €3 | – | – | Tue 13 Oct 20:00 |
 |  | Monitor | [Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt](https://www.hnvi.nl/veiling-kavel/beeldscherm-lenovo-22-inch-voedingskabel-ontbreekt/197190) (HNVI) | €3 | – | – | Tue 13 Oct 20:00 |

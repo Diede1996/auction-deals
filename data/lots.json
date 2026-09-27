@@ -29,40 +29,13 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-09-26T04:24:47.888338+00:00",
+ "generated": "2026-09-27T04:25:55.583243+00:00",
  "lots": [
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 170.0,
-   "bids": 2,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3285244|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Coffee machine",
-   "itemMaxPrice": null,
-   "itemMinProfit": null,
-   "key": "proveiling:3285244",
-   "location": "Emmeloord",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpSearch": "https://www.marktplaats.nl/q/espressomachine+zoe211212006a/",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Espressomachine ZOE211212006A",
-   "url": "https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail",
-   "vat": 0.21
-  },
   {
    "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
    "bid": 10.0,
    "bids": 0,
-   "closes": "2026-09-28T20:00:00+02:00",
+   "closes": "2026-09-28T20:05:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15725|165598|3285246|FirstImage.jpg&x=200&y=200&stretch=1",
@@ -135,104 +108,29 @@
   },
   {
    "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 40.0,
-   "bids": 0,
-   "closes": "2026-09-28T20:00:00+02:00",
+   "bid": 190.0,
+   "bids": 4,
+   "closes": "2026-09-28T20:10:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3271679|FirstImage.jpg&x=200&y=200&stretch=1",
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3285244|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
    "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinProfit": null,
-   "key": "proveiling:3271679",
+   "key": "proveiling:3285244",
    "location": "Emmeloord",
    "market": null,
    "marketSource": null,
    "maxBid": null,
    "mp": null,
-   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+flojet/",
+   "mpSearch": "https://www.marktplaats.nl/q/espressomachine+zoe211212006a/",
    "premium": 0.16,
    "site": "proveiling",
    "siteName": "ProVeiling",
-   "title": "Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiemachines",
-   "url": "https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 10.0,
-   "bids": 0,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3285252|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": true,
-   "isNew": false,
-   "item": "Coffee machine",
-   "itemMaxPrice": null,
-   "itemMinProfit": null,
-   "key": "proveiling:3285252",
-   "location": "Emmeloord",
-   "market": 170.0,
-   "marketSource": "marktplaats",
-   "maxBid": 85.0,
-   "mp": {
-    "asOf": "2026-09-24T07:40:35.060044+00:00",
-    "count": 5,
-    "high": 315.0,
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 13.92,
-      "title": "Online Veiling: Philips HD7695/90 Intense koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442254143-online-veiling-philips-hd7695-90-intense-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Philips Koffiemachine - Goede staat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2421129257-philips-koffiemachine-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 170.0,
-      "title": "Philips Series 3000 (EP3326/90) koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2434860396-philips-series-3000-ep3326-90-koffiemachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 250.0,
-      "title": "Philips Koffiemachine - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2424332097-philips-koffiemachine-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 380.0,
-      "title": "Philips EP2339/40 Koffiemachine Zo Goed Als Nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2415230775-philips-ep2339-40-koffiemachine-zo-goed-als-nieuw"
-     }
-    ],
-    "low": 66.96,
-    "median": 170.0,
-    "outliers": [],
-    "prices": [
-     13.92,
-     120.0,
-     170.0,
-     250.0,
-     380.0
-    ],
-    "query": "koffiemachine philips",
-    "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+philips/",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Philips HD7695/90 Intense koffiemachine",
-   "url": "https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail",
+   "title": "Espressomachine ZOE211212006A",
+   "url": "https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail",
    "vat": 0.21
   },
   {
@@ -651,9 +549,111 @@
    "vat": 0.21
   },
   {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 40.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:35:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3271679|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3271679",
+   "location": "Emmeloord",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+flojet/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Flojet BW5004-000A waterpomp - Bottled water dispenser t.b.v. koffiemachines",
+   "url": "https://www.proveiling.nl/Flojet-BW5004-000A-waterpomp---Bottled-water-dispenser-tbv-koffiemachines/3271679/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
+   "bid": 10.0,
+   "bids": 0,
+   "closes": "2026-09-28T20:35:00+02:00",
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3285252|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinProfit": null,
+   "key": "proveiling:3285252",
+   "location": "Emmeloord",
+   "market": 170.0,
+   "marketSource": "marktplaats",
+   "maxBid": 85.0,
+   "mp": {
+    "asOf": "2026-09-24T07:40:35.060044+00:00",
+    "count": 5,
+    "high": 315.0,
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 13.92,
+      "title": "Online Veiling: Philips HD7695/90 Intense koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442254143-online-veiling-philips-hd7695-90-intense-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Philips Koffiemachine - Goede staat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2421129257-philips-koffiemachine-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "Philips Series 3000 (EP3326/90) koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2434860396-philips-series-3000-ep3326-90-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Philips Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2424332097-philips-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 380.0,
+      "title": "Philips EP2339/40 Koffiemachine Zo Goed Als Nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2415230775-philips-ep2339-40-koffiemachine-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 66.96,
+    "median": 170.0,
+    "outliers": [],
+    "prices": [
+     13.92,
+     120.0,
+     170.0,
+     250.0,
+     380.0
+    ],
+    "query": "koffiemachine philips",
+    "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+philips/",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Philips HD7695/90 Intense koffiemachine",
+   "url": "https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail",
+   "vat": 0.21
+  },
+  {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 16.0,
-   "bids": 4,
+   "bid": 18.0,
+   "bids": 5,
    "closes": "2026-09-28T18:37:28+00:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
@@ -2610,14 +2610,14 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
-   "bid": 10.0,
-   "bids": 1,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-10-05T17:47:46+00:00",
    "firstSeen": "2026-09-26T04:24:47.888338+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/2047d20a-b137-4436-9338-15065dee7e38/70.jpg",
-   "isDeal": true,
-   "isNew": true,
+   "isDeal": false,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -4170,7 +4170,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/c2c60416-bcc1-494d-9c3e-7b18b326b910/204.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinProfit": null,
@@ -4367,7 +4367,7 @@
   },
   {
    "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
-   "bid": 150.0,
+   "bid": 160.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -4394,7 +4394,7 @@
   },
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
-   "bid": 10.0,
+   "bid": 16.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -4551,7 +4551,7 @@
   {
    "error": "",
    "id": "proveiling",
-   "lots": 239,
+   "lots": 316,
    "name": "ProVeiling",
    "ok": true
   },
@@ -4579,7 +4579,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 14,
+   "lots": 0,
    "name": "Marktplaats prices",
    "ok": true
   }
