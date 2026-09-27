@@ -49,45 +49,50 @@
    "at": "2026-09-27T06:46:09.042374+00:00",
    "lat": 52.69854737,
    "lon": 5.75309767
+  },
+  "Techniekweg 13 B, Harmelen": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "lat": 52.09716532,
+   "lon": 4.94705559
   }
  },
  "health": {
   "hnvi": {
-   "at": "2026-09-27T06:46:09.042374+00:00",
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T06:46:09.042374+00:00",
+   "last_ok": "2026-09-27T09:51:31.500418+00:00",
    "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-27T06:46:09.042374+00:00",
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "error": "",
    "fails": 0,
-   "lots": 60,
+   "lots": 34,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-27T06:46:09.042374+00:00",
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T06:46:09.042374+00:00",
+   "last_ok": "2026-09-27T09:51:31.500418+00:00",
    "lots": 1800,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-27T06:46:09.042374+00:00",
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T06:46:09.042374+00:00",
+   "last_ok": "2026-09-27T09:51:31.500418+00:00",
    "lots": 373,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-27T06:46:09.042374+00:00",
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-27T06:46:09.042374+00:00",
+   "last_ok": "2026-09-27T09:51:31.500418+00:00",
    "lots": 316,
    "ok": true
   },
@@ -99,12 +104,12 @@
   }
  },
  "last_run": {
-  "at": "2026-09-27T06:46:09.042374+00:00",
-  "deals": 9,
+  "at": "2026-09-27T09:51:31.500418+00:00",
+  "deals": 15,
   "lots": 3219,
-  "matches": 60,
-  "new": 0,
-  "requests": 168
+  "matches": 73,
+  "new": 15,
+  "requests": 133
  },
  "price_cache": {
   "beeldscherm acer rg270|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
@@ -1190,6 +1195,10 @@
     "search": "dewalt dcf887"
    }
   },
+  "exact dewalt dwe4579|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
   "exact hilti dx 460|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-09-27T06:46:09.042374+00:00",
    "est": {
@@ -1597,6 +1606,10 @@
     "search": "makita dc18rc"
    }
   },
+  "exact makita dhw080|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
   "exact makita hm1812|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-09-27T06:46:09.042374+00:00",
    "est": null
@@ -1619,6 +1632,10 @@
   },
   "exact samsung s27c366eau|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-09-27T06:46:09.042374+00:00",
+   "est": null
+  },
+  "exact terra 1513a|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
    "est": null
   },
   "exact thinkpad t440s|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
@@ -2244,6 +2261,10 @@
     "search": "koffiemachine philips"
    }
   },
+  "general kostuum kindercarnavals grote diversiteit|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
   "general kostuum zwarte kostuumbroeken|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-09-27T06:46:09.042374+00:00",
    "est": null
@@ -2623,6 +2644,209 @@
     ],
     "query": "kunstplant pot",
     "search": "kunstplant pot"
+   }
+  },
+  "general laptop acer|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": {
+    "as_of": "2026-09-27T09:51:31.500418+00:00",
+    "count": 26,
+    "high": 329.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Acer Aspire 5733Z-P624G50Mikk laptop - werking onbekend",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446119261-acer-aspire-5733z-p624g50mikk-laptop-werking-onbekend"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "snelle acer laptop windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445722701-snelle-acer-laptop-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Acer Aspire 1 A114-C7HQ Laptop - Windows 10 S, Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447072932-acer-aspire-1-a114-c7hq-laptop-windows-10-s-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Nette 15,6 inch Acer i5 Windows 7 laptop met SSD. Accu werkt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446831095-nette-15-6-inch-acer-i5-windows-7-laptop-met-ssd-accu-werkt"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Leuke snelle Acer laptop 1920x1080 pixels scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446976208-leuke-snelle-acer-laptop-1920x1080-pixels-scherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445902551-acer-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire 3 (2022) - 15,6 inch laptop met Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446155267-acer-aspire-3-2022-15-6-inch-laptop-met-windows-11"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Laptop Acer Notebook Computer",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446926281-laptop-acer-notebook-computer"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Acer Aspire V3-571G Laptop - i7-3632QM, 6GB RAM, 128GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446880811-acer-aspire-v3-571g-laptop-i7-3632qm-6gb-ram-128gb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 145.0,
+      "title": "Laptop Acer Aspire A515-52FN",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446987585-laptop-acer-aspire-a515-52fn"
+     },
+     {
+      "kind": "bid",
+      "price": 149.0,
+      "title": "Acer Aspire 5 A515-54-34B1 15.6 inch laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445680730-acer-aspire-5-a515-54-34b1-15-6-inch-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer laptop met AMD Ryzen processor en 8GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446900014-acer-laptop-met-amd-ryzen-processor-en-8gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer laptop met 128 GB SSD en 4 GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446256649-acer-laptop-met-128-gb-ssd-en-4-gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Acer Chromebook R13 - 13 inch Full HD Touchscreen Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445541886-acer-chromebook-r13-13-inch-full-hd-touchscreen-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-21-4408 Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446434214-acer-aspire-3-a315-21-4408-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Acer Aspire 3 A315-23-R9G5 Laptop - AMD Ryzen 3, 15.6 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446360238-acer-aspire-3-a315-23-r9g5-laptop-amd-ryzen-3-15-6-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 220.0,
+      "title": "Laptop Acer Aspire i5 10th gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445665240-laptop-acer-aspire-i5-10th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 225.0,
+      "title": "Acer Swift 3 Laptop - Lichtgewicht en Krachtig",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445940674-acer-swift-3-laptop-lichtgewicht-en-krachtig"
+     },
+     {
+      "kind": "bid",
+      "price": 255.0,
+      "title": "Acer Aspire 3 14\" Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445304352-acer-aspire-3-14-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 329.0,
+      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446891286-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
+     },
+     {
+      "kind": "bid",
+      "price": 329.0,
+      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446423141-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
+     },
+     {
+      "kind": "bid",
+      "price": 345.0,
+      "title": "Acer Nitro 5 Gaming Laptop - Krachtig en Snel",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446976835-acer-nitro-5-gaming-laptop-krachtig-en-snel"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer Nitro 5 AN517-52 Gaming Laptop - RTX 3060, i7-10750H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446928392-acer-nitro-5-an517-52-gaming-laptop-rtx-3060-i7-10750h"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Acer gaming laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444822652-acer-gaming-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 475.0,
+      "title": "ACER ASPIRE LAPTOP",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447126751-acer-aspire-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 500.0,
+      "title": "Gaming laptop - ACER Nitro 5 (AN515-57-79QM)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446883815-gaming-laptop-acer-nitro-5-an515-57-79qm"
+     }
+    ],
+    "low": 75.0,
+    "median": 150.0,
+    "model": null,
+    "outliers": [
+     1395.0
+    ],
+    "prices": [
+     15.0,
+     40.0,
+     50.0,
+     65.0,
+     75.0,
+     75.0,
+     75.0,
+     99.0,
+     125.0,
+     145.0,
+     149.0,
+     150.0,
+     150.0,
+     150.0,
+     200.0,
+     200.0,
+     220.0,
+     225.0,
+     255.0,
+     329.0,
+     329.0,
+     345.0,
+     400.0,
+     400.0,
+     475.0,
+     500.0
+    ],
+    "query": "laptop acer",
+    "search": "laptop acer"
    }
   },
   "general laptop eletra intra orale|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
@@ -3960,6 +4184,270 @@
     "search": "monitor hp"
    }
   },
+  "general monitor lenovo|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": {
+    "as_of": "2026-09-27T09:51:31.500418+00:00",
+    "count": 57,
+    "high": 150.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Lenovo 19 inch breedbeeld LED monitor - VGA en DVI",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446718085-lenovo-19-inch-breedbeeld-led-monitor-vga-en-dvi"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lenovo ThinkVision monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2441671845-lenovo-thinkvision-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 22.95,
+      "title": "Nieuw: Lenovo ThinkVision E2054 – 19.5 IPS VGA Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530885391-nieuw-lenovo-thinkvision-e2054-19-5-ips-vga-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Lenovo Monitor TIO Gen 3 22 inch - Full HD IPS - Zwart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527868593-lenovo-monitor-tio-gen-3-22-inch-full-hd-ips-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Lenovo ThinkCentre Tiny-in-One 22 Gen 3 - Monitor - 21,5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527944664-lenovo-thinkcentre-tiny-in-one-22-gen-3-monitor-21-5"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Lenovo 27 inch monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445234938-lenovo-27-inch-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Lenovo Q24i-10 Monitor - Full HD IPS Scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446451970-lenovo-q24i-10-monitor-full-hd-ips-scherm"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Lenovo monitor - Ideaal voor thuiswerken of studie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444737946-lenovo-monitor-ideaal-voor-thuiswerken-of-studie"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Lenovo L24q-10 24 inch QHD IPS Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445949824-lenovo-l24q-10-24-inch-qhd-ips-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Lenovo D24-20 24” Full HD monitor – 75Hz – HDMI –",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444406101-lenovo-d24-20-24-full-hd-monitor-75hz-hdmi"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "Lenovo ThinkVision E24-28 - 24 inch FULL HD monitor. Nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447204923-lenovo-thinkvision-e24-28-24-inch-full-hd-monitor-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "Lenovo ThinkVision T24i-30 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445588657-lenovo-thinkvision-t24i-30-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Lenovo ThinkVision P24h-2L Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444979877-lenovo-thinkvision-p24h-2l-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Lenovo Thinkvision 23.8” monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2439149126-lenovo-thinkvision-23-8-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 78.35,
+      "title": "Lenovo ThinkVision LT2252p - 22 inch Monitor - 1680 x 1050",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530779818-lenovo-thinkvision-lt2252p-22-inch-monitor-1680-x-1050"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "Lenovo LOQ 24-10 24  Full HD 200Hz IPS Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530545122-lenovo-loq-24-10-24-full-hd-200hz-ips-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Lenovo L27-40 Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444066858-lenovo-l27-40-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Lenovo Thinkvision E24-40 23.8 inch beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446982422-lenovo-thinkvision-e24-40-23-8-inch-beeldscherm"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Lenovo Q24h-10 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446012297-lenovo-q24h-10-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 92.5,
+      "title": "Lenovo ThinkVision E24-40 Monitor - Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2441727183-lenovo-thinkvision-e24-40-monitor-nieuw-in-doos"
+     },
+     {
+      "kind": "bid",
+      "price": 95.0,
+      "title": "Lenovo G24-20 Gaming Monitor - Full HD, 165Hz, 1.0 ms",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445543541-lenovo-g24-20-gaming-monitor-full-hd-165hz-1-0-ms"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.0,
+      "title": "Lenovo - Full HD  Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523062140-lenovo-full-hd-monitor-23-8-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 99.99,
+      "title": "Lenovo Thinkcentre TIO22Gen 3 Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446391258-lenovo-thinkcentre-tio22gen-3-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Lenovo L15 Mobile Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444920507-lenovo-l15-mobile-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 105.0,
+      "title": "Lenovo - Full HD Gaming Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528991376-lenovo-full-hd-gaming-monitor-23-8-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 107.75,
+      "title": "Lenovo ThinkVision L2250p (2572-HB6) - LCD Monitor 22 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530779787-lenovo-thinkvision-l2250p-2572-hb6-lcd-monitor-22-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.0,
+      "title": "Lenovo Legion 24-10 24  Full HD 240Hz IPS monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530189027-lenovo-legion-24-10-24-full-hd-240hz-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "Lenovo ThinkCentre Tiny-in-One 22 Gen 3 Monitor 21.5 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445273226-lenovo-thinkcentre-tiny-in-one-22-gen-3-monitor-21-5-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 113.0,
+      "title": "Lenovo - Full HD Gaming Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523784877-lenovo-full-hd-gaming-monitor-23-8-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.0,
+      "title": "Lenovo - Full HD  Monitor - 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1522850328-lenovo-full-hd-monitor-27-inch"
+     }
+    ],
+    "low": 74.17,
+    "median": 113.0,
+    "model": null,
+    "outliers": [
+     399.0,
+     399.0,
+     411.0,
+     550.0,
+     692.0,
+     883.0,
+     1199.0
+    ],
+    "prices": [
+     15.0,
+     15.0,
+     22.95,
+     39.95,
+     39.95,
+     40.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     60.0,
+     60.0,
+     65.0,
+     70.0,
+     78.35,
+     79.0,
+     80.0,
+     85.0,
+     90.0,
+     92.5,
+     95.0,
+     99.0,
+     99.99,
+     100.0,
+     105.0,
+     107.75,
+     109.0,
+     110.0,
+     113.0,
+     119.0,
+     119.0,
+     125.0,
+     125.0,
+     125.0,
+     130.0,
+     134.0,
+     135.0,
+     139.0,
+     149.0,
+     149.95,
+     150.0,
+     150.0,
+     150.0,
+     150.0,
+     154.0,
+     169.0,
+     179.0,
+     199.0,
+     199.0,
+     206.0,
+     206.1,
+     249.0,
+     299.0,
+     319.0,
+     324.0,
+     338.0,
+     349.0
+    ],
+    "query": "monitor lenovo",
+    "search": "monitor lenovo"
+   }
+  },
   "general monitor sharp|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-09-27T06:46:09.042374+00:00",
    "est": {
@@ -4123,6 +4611,215 @@
     "query": "nespresso koffieapparaat",
     "search": "nespresso koffieapparaat"
    }
+  },
+  "general plant billendoekjes 50 pack|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general plant glazen gieters vazen|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": {
+    "as_of": "2026-09-27T09:51:31.500418+00:00",
+    "count": 6,
+    "high": 28.12,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 2.5,
+      "title": "Mat witte glazen vierkant vaas potje bloem plant decoratie",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2413225207-mat-witte-glazen-vierkant-vaas-potje-bloem-plant-decoratie"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Terariumfles - Glazen fles voor planten of decoratie",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/m2447232028-terariumfles-glazen-fles-voor-planten-of-decoratie"
+     },
+     {
+      "kind": "fixed",
+      "price": 18.95,
+      "title": "Glazen Hydroponics Vaas - Plantenstekken Station & Decoratie",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542378-glazen-hydroponics-vaas-plantenstekken-station-decoratie"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "Glazen Vaas met Houten Standaard - Hydroponische Plantenbak",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542260-glazen-vaas-met-houten-standaard-hydroponische-plantenbak"
+     },
+     {
+      "kind": "bid",
+      "price": 27.5,
+      "title": "Nwe aparte grote dik glazen vaas bloemen bloemtakken plant",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2446796424-nwe-aparte-grote-dik-glazen-vaas-bloemen-bloemtakken-plant"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Plant in glazenbol",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/m2446695293-plant-in-glazenbol"
+     }
+    ],
+    "low": 11.88,
+    "median": 19.45,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     2.5,
+     15.0,
+     18.95,
+     19.95,
+     27.5,
+     30.0
+    ],
+    "query": "plant glazen",
+    "search": "plant glazen"
+   }
+  },
+  "general plant hangende plantenbakken|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": {
+    "as_of": "2026-09-27T09:51:31.500418+00:00",
+    "count": 4,
+    "high": 106.88,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 3.6,
+      "title": "Hangende korven bloempotten plantenbakken set van 2",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2446692028-hangende-korven-bloempotten-plantenbakken-set-van-2"
+     },
+     {
+      "kind": "fixed",
+      "price": 11.5,
+      "title": "3 hangende plantenbakken (of per stuk)",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2432963168-3-hangende-plantenbakken-of-per-stuk"
+     },
+     {
+      "kind": "bid",
+      "price": 22.5,
+      "title": "Gadgy Keramische Hangende Plantenbakken - Set van 3",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2445176270-gadgy-keramische-hangende-plantenbakken-set-van-3"
+     },
+     {
+      "kind": "bid",
+      "price": 135.0,
+      "title": "Vintage hangende plantenbakken - Oranje en Paars",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2431663381-vintage-hangende-plantenbakken-oranje-en-paars"
+     }
+    ],
+    "low": 5.58,
+    "median": 17.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     3.6,
+     11.5,
+     22.5,
+     135.0
+    ],
+    "query": "plant hangende plantenbakken",
+    "search": "plant hangende plantenbakken"
+   }
+  },
+  "general plant rvs prairi garden|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": {
+    "as_of": "2026-09-27T09:51:31.500418+00:00",
+    "count": 6,
+    "high": 10.49,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 3.75,
+      "title": "Plant Geleider-schroef Rvs Trellis  Aisi 316",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296713-plant-geleider-schroef-rvs-trellis-aisi-316"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.95,
+      "title": "Plant Klimhulp kruisschroef Rvs Trellis 2mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296320-plant-klimhulp-kruisschroef-rvs-trellis-2mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 6.95,
+      "title": "Plant Klimhulp kruisschroef Rvs Trellis 3mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296315-plant-klimhulp-kruisschroef-rvs-trellis-3mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 7.95,
+      "title": "Plant Klimhulp kruisschroef Rvs Trellis 4mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1495721929-plant-klimhulp-kruisschroef-rvs-trellis-4mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 8.99,
+      "title": "NIEUW! Plantenschaar voor aquarium planten rvs 30 cm €8,99",
+      "url": "https://www.marktplaats.nl/v/dieren-en-toebehoren/vissen-aquaria-en-toebehoren/m2446992942-nieuw-plantenschaar-voor-aquarium-planten-rvs-30-cm-8-99"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "RVS GIETER PLANTEN",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2443645358-rvs-gieter-planten"
+     }
+    ],
+    "low": 5.4,
+    "median": 7.45,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     3.75,
+     5.95,
+     6.95,
+     7.95,
+     8.99,
+     15.0
+    ],
+    "query": "plant rvs",
+    "search": "plant rvs"
+   }
+  },
+  "general plant waaronder kerstdecoratie statafel|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot donergrill rvs potis|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot koop kerstartikelen stelling|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot pennen ook potloden|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot speciekuipen potten|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot stalen archiefkast kaarsen|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot stalen tapvaten archiefkast|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot twaalf ph granulaat|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
+  },
+  "general pot zowel steen hout|kunstbloemen,kunstboom,kunstplant": {
+   "at": "2026-09-27T09:51:31.500418+00:00",
+   "est": null
   },
   "hilti dx 460 kruitschiethamer|defect,koolborstel,koolborstels,onderdeel,onderdelen,reparatie": {
    "at": "2026-09-25T04:26:17.095663+00:00",
@@ -6202,6 +6899,10 @@
    "closes": "2026-10-05T20:00:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
   },
+  "hnvi:196663": {
+   "closes": "2026-10-05T20:00:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
   "hnvi:196664": {
    "closes": "2026-10-05T20:00:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
@@ -6218,9 +6919,25 @@
    "closes": "2026-10-01T19:30:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
   },
+  "hnvi:196755": {
+   "closes": "2026-10-01T19:30:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "hnvi:196795": {
+   "closes": "2026-10-01T19:30:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
   "hnvi:196928": {
    "closes": "2026-10-13T19:30:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:196975": {
+   "closes": "2026-10-13T19:30:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "hnvi:197049": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
   },
   "hnvi:197072": {
    "closes": "2026-10-13T20:00:00+02:00",
@@ -6233,6 +6950,10 @@
   "hnvi:197136": {
    "closes": "2026-10-13T20:00:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "hnvi:197165": {
+   "closes": "2026-10-13T20:00:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
   },
   "hnvi:197190": {
    "closes": "2026-10-13T20:00:00+02:00",
@@ -6310,9 +7031,17 @@
    "closes": "2026-10-05T17:47:46+00:00",
    "first": "2026-09-26T04:24:47.888338+00:00"
   },
+  "onlineveilingmeester:1902504": {
+   "closes": "2026-10-05T18:10:46+00:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
   "onlineveilingmeester:1902545": {
    "closes": "2026-10-05T18:20:46+00:00",
    "first": "2026-09-26T04:24:47.888338+00:00"
+  },
+  "onlineveilingmeester:1902560": {
+   "closes": "2026-10-05T18:24:46+00:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
   },
   "onlineveilingmeester:1902814": {
    "closes": "2026-09-30T18:33:36+00:00",
@@ -6321,6 +7050,18 @@
   "onlineveilingmeester:1902873": {
    "closes": "2026-09-30T18:47:36+00:00",
    "first": "2026-09-25T04:26:17.095663+00:00"
+  },
+  "onlineveilingmeester:1903789": {
+   "closes": "2026-10-07T17:52:48+00:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "onlineveilingmeester:1903790": {
+   "closes": "2026-10-07T17:53:48+00:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "plaatsjebod:57983": {
+   "closes": "2026-09-28T20:07:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
   },
   "plaatsjebod:58001": {
    "closes": "2026-09-28T20:10:00+02:00",
@@ -6349,6 +7090,22 @@
   "plaatsjebod:58208": {
    "closes": "2026-09-28T20:45:00+02:00",
    "first": "2026-09-24T07:40:35.060044+00:00"
+  },
+  "plaatsjebod:59861": {
+   "closes": "2026-10-15T21:55:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "plaatsjebod:59864": {
+   "closes": "2026-10-15T21:55:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "proveiling:3270522": {
+   "closes": "2026-09-28T20:10:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
+  },
+  "proveiling:3270523": {
+   "closes": "2026-09-28T20:10:00+02:00",
+   "first": "2026-09-27T09:51:31.500418+00:00"
   },
   "proveiling:3271679": {
    "closes": "2026-09-28T20:35:00+02:00",
