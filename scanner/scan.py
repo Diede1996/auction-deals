@@ -29,11 +29,11 @@ log = logging.getLogger("scanner")
 Row = tuple[WatchItem, Lot, Verdict, "PriceEstimate | None"]
 
 
-def units_of(lot: Lot, max_units: int = 10) -> int:
-    """How many items the resale value counts: "2 x Kunstplant" -> 2. Big bulk lots ("Ca. 41x colberts")
-    count as one, because you won't sell 41 jackets at the going rate for one."""
+def units_of(lot: Lot, max_units: int = 0) -> int:
+    """How many items the resale value counts: "40x Colbert" -> 40, so price, margin and max bid are for
+    the whole lot. `max_units` (0 = no limit) makes bigger bulk lots count as one item instead."""
     n = quantity(lot.title)
-    return n if 2 <= n <= max_units else 1
+    return n if n >= 2 and (max_units <= 0 or n <= max_units) else 1
 
 
 # ---------------------------------------------------------------- scraping
@@ -98,7 +98,8 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
           trips: dict | None = None) -> str:
     local = lot.closes_at.astimezone(AMS) if lot.closes_at else None
     when = local.strftime("%a %H:%M") if local else "?"
-    margin = f" (margin {fmt_eur(v.profit_at_max)})" if v.profit_at_max is not None else ""
+    margin = (f" (margin {fmt_eur(v.profit_at_max)} · {v.margin_at_max:.0%})"
+              if v.profit_at_max is not None and v.margin_at_max is not None else "")
     rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
     trip = (trips or {}).get(pickup_place(lot) or "")
     drive = f" · 🚗 {trip.km:.0f} km" if trip else ""
@@ -137,7 +138,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
             f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b> · "
             f"{sum(1 for r in rows if r[1].key in new_keys)} new",
             f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
-            f"with at least {fmt_eur(settings.min_profit)} profit</i>"]
+            f"with at least {settings.min_margin:.0%} margin</i>"]
     parts = ["\n".join(head)] + list(notes or [])
     fav_part = favorites_message(favs or [], rows, now)
     if fav_part:
@@ -174,7 +175,7 @@ def pickup_place(lot: Lot) -> str | None:
 def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settings, site_fees: dict[str, Fees],
                    new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None,
                    trips: dict | None = None, driving: dict | None = None, favorites: dict | None = None,
-                   max_units: int = 10) -> dict:
+                   max_units: int = 0) -> dict:
     items = items or []
     trips = trips or {}
     lots = []
@@ -204,7 +205,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "mpPlan": ({"kind": plan.kind, "model": plan.model, "brand": plan.brand, "note": plan.note,
                         "search": search_url(plan.searches[0])} if plan else None),
             "mpSearch": search_url(plan.searches[0] if plan else lot.title),
-            "itemMaxPrice": item.max_price, "itemMinProfit": item.min_profit,
+            "itemMaxPrice": item.max_price, "itemMinMargin": item.min_margin,
             "firstSeen": (seen.get(lot.key) or {}).get("first"), "isNew": lot.key in new_keys,
             "maxBid": v.max_bid, "isDeal": v.is_deal,
         })
@@ -222,7 +223,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
                  urlencode({"searchTerm": k, "countries": "nl"})} for k in item.keywords[:8]]})
     return {
         "generated": now.isoformat(),
-        "settings": {"min_profit": settings.min_profit,
+        "settings": {"min_margin": settings.min_margin,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,
@@ -277,7 +278,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     drv_cfg = config.get("driving") or {}
     items = [i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords]
     settings = Settings.from_dict(watchlist.get("settings"), include_trip=bool(drv_cfg.get("include_in_max_bid", True)))
-    max_units = int((config.get("marktplaats") or {}).get("max_items_per_lot", 10))
+    max_units = int((config.get("marktplaats") or {}).get("max_items_per_lot", 0) or 0)
 
     # 1. scrape (skipped when the watchlist is empty)
     lots, report, site_requests = ([], {}, 0)

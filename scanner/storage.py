@@ -15,7 +15,8 @@ WATCHLIST_HEADER = """\
 #
 # settings:
 #   resale_factor  what you expect to sell for, as a share of the Marktplaats median: 0.85 = 85%, 0.5 = 50%
-#   min_profit     the suggested max bid always leaves at least this many euros profit at that price
+#   min_margin     the suggested max bid always leaves at least this margin at that price:
+#                  profit as a share of what you pay (bid + premium + VAT + driving): 0.3 = 30%
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard
@@ -24,7 +25,7 @@ WATCHLIST_HEADER = """\
 #   max_price          (optional) never suggest paying more than this in total (bid + premium + VAT)
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
-#   min_profit         (optional) overrides the default above for this item
+#   min_margin         (optional) overrides the default above for this item
 """
 
 

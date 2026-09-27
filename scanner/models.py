@@ -63,7 +63,7 @@ class WatchItem:
     max_price: float | None = None  # alert when total cost (incl. fees) is at or below this
     market_price: float | None = None  # manual resale value, skips the Marktplaats lookup
     marktplaats_query: str | None = None
-    min_profit: float | None = None  # overrides the global setting
+    min_margin: float | None = None  # overrides the global setting (0.4 = 40%)
 
     @classmethod
     def from_dict(cls, d: dict) -> "WatchItem":
@@ -83,14 +83,14 @@ class WatchItem:
             max_price=_num(d.get("max_price")),
             market_price=_num(d.get("market_price")),
             marktplaats_query=(str(d["marktplaats_query"]).strip() if d.get("marktplaats_query") else None),
-            min_profit=_num(d.get("min_profit")),
+            min_margin=_num(d.get("min_margin")),
         )
 
     def to_dict(self) -> dict:
         out: dict = {"name": self.name, "keywords": list(self.keywords)}
         if self.exclude:
             out["exclude"] = list(self.exclude)
-        for k in ("max_price", "market_price", "marktplaats_query", "min_profit"):
+        for k in ("max_price", "market_price", "marktplaats_query", "min_margin"):
             v = getattr(self, k)
             if v is not None:
                 out[k] = v

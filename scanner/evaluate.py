@@ -3,7 +3,8 @@
     you pay     = (bid x (1 + premium) + fixed fees) x (1 + VAT) + driving costs to the pickup address
     sale price  = Marktplaats median x resale_factor ("I sell at X% of the median") - selling costs
     margin      = sale price - you pay, also shown as a % of what you pay
-    max bid     = highest bid that still leaves at least min_profit
+    max bid     = highest bid that still leaves at least min_margin, as a % of what you pay:
+                  you pay at most sale price / (1 + min_margin)
                   (and keeps the total <= your own max_price, if you set one for the item)
 """
 from __future__ import annotations
@@ -30,15 +31,15 @@ class Fees:
 
 @dataclass
 class Settings:
-    min_profit: float = 25.0  # the max bid always leaves at least this many euros profit
+    min_margin: float = 0.30  # the max bid always leaves at least this margin: profit / what you pay (0.3 = 30%)
     resale_factor: float = 0.85  # you sell at 85% of the Marktplaats median asking price
     selling_costs: float = 0.0  # e.g. shipping or listing costs per sale
     include_trip: bool = True  # count the drive to the pickup address as a cost
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
-        d = d or {}  # older watchlists may still have target_return / min_margin; those are ignored
-        return cls(min_profit=float(d.get("min_profit", 25)), resale_factor=float(d.get("resale_factor", 0.85)),
+        d = d or {}  # older watchlists may still have target_return / min_profit (in €); those are ignored
+        return cls(min_margin=float(d.get("min_margin", 0.30)), resale_factor=float(d.get("resale_factor", 0.85)),
                    selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip)
 
 
@@ -86,7 +87,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     bid = lot.current_bid or 0.0
     trip = (lot.trip_cost or 0.0) if settings.include_trip else 0.0
     cost = total_cost(bid, fees, lot, trip)
-    min_profit = item.min_profit if item.min_profit is not None else settings.min_profit
+    min_margin = item.min_margin if item.min_margin is not None else settings.min_margin
 
     market = market_value(item, estimate, units)
     resale = profit = margin = None
@@ -95,7 +96,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         resale = market * settings.resale_factor - settings.selling_costs
         profit = resale - cost
         margin = profit / cost if cost > 0 else None
-        caps.append(resale - min_profit)
+        caps.append(resale / (1 + max(0.0, min_margin)))
     if item.max_price is not None:
         caps.append(item.max_price)
     if not caps:

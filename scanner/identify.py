@@ -225,8 +225,9 @@ _NUM_WORDS = {"twee": 2, "drie": 3, "vier": 4, "vijf": 5, "zes": 6, "zeven": 7, 
 
 
 def quantity(title: str) -> int:
-    """How many items the lot title says it holds: "2 x Kunstplant" -> 2, "Twee beeldschermen" -> 2,
-    "Makita koffers - 2 stuks" -> 2, "Ca. 41x colberts" -> 41. 1 when it doesn't say."""
+    """How many items the lot title says it holds: "40x Colbert" -> 40, "2 x Kunstplant" -> 2,
+    "Twee beeldschermen" -> 2, "Makita koffers - 2 stuks" -> 2, "Colberts (40x)" or "Colberts x40" -> 40.
+    Sizes such as "Tafel 180 x 90 cm" don't count. 1 when the title doesn't say."""
     t = normalize(title)
     m = re.match(r"(?:ca |circa )?(\d{1,4}) ?x\b", t) or re.match(r"(?:ca |circa )?(\d{1,4}) (?:stuks|st|stk)\b", t)
     if m:
@@ -234,7 +235,11 @@ def quantity(title: str) -> int:
     first = t.split(" ", 1)[0] if t else ""
     if first in _NUM_WORDS:
         return _NUM_WORDS[first]
-    m = re.search(r"\b(\d{1,3}) ?(?:stuks|stk)\b", t)
+    raw = title or ""
+    m = (re.search(r"\((?:ca\.?\s*)?(\d{1,4})\s*(?:x|stuks|st\.?|stk)\s*\)", raw, re.I)  # "(40x)", "(40 stuks)"
+         or re.search(r"(?:^|\s)x(\d{1,4})\s*$", raw, re.I)  # "Colberts x40"
+         or re.search(r"(?:^|\s)(\d{1,4})x\s*$", raw, re.I)  # "Colberts 40x"
+         or re.search(r"\b(\d{1,4}) ?(?:stuks|stk)\b", t))
     if m:
         return max(1, int(m.group(1)))
     return 1
