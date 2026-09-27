@@ -11,6 +11,7 @@ permissions:
   contents: write         # save data/state.json
   pages: write            # publish the dashboard
   id-token: write
+  issues: read            # read your favorites (kept in an issue by the dashboard)
 
 concurrency:
   group: scan
@@ -38,6 +39,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}   # for driving costs; never written to the repository
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Save state
         if: always()

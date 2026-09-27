@@ -1,7 +1,8 @@
 name: Telegram commands
 
-# Reads the messages you send to your bot and replies. This never contacts the auction sites;
-# /scan starts the "Scan auctions" workflow (limited per day in config.yml).
+# Reads the messages you send to your bot and replies, and reminds you about an hour before a favorite
+# lot closes. This never contacts the auction sites; /scan starts the "Scan auctions" workflow
+# (limited per day in config.yml).
 on:
   schedule:
     - cron: "*/15 * * * *"
@@ -10,6 +11,7 @@ on:
 permissions:
   contents: write         # save watchlist changes
   actions: write          # start a scan when you send /scan
+  issues: read            # read your favorites for the reminders
 
 concurrency:
   group: commands
@@ -35,6 +37,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Save changes
         run: |
