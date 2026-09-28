@@ -14,6 +14,7 @@ from .favorites import FavoritesStore, closing_between
 from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
 from .identify import plan_for, quantity
+from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .matching import bankruptcy_matcher, match_lots, search_terms
 from .models import Lot, WatchItem
@@ -86,8 +87,10 @@ def health_messages(state: dict, warn_after: int = 2) -> list[str]:
         if not h.get("ok") and h.get("fails", 0) >= warn_after and not h.get("warned"):
             h["warned"] = True
             out.append(f"⚠️ <b>{name}</b> has failed {h['fails']} scans in a row, so lots there are missing.\n"
-                       f"<i>{esc(h.get('error', '')[:200])}</i>\n"
-                       "The site may have changed or be blocking automated requests.")
+                       f"<i>{esc(h.get('error', '')[:200])}</i>\n" +
+                       ("Check the ALERTS_EMAIL and ALERTS_APP_PASSWORD secrets on GitHub."
+                        if h.get("error", "").startswith("alerts mailbox") else
+                        "The site may have changed or be blocking automated requests."))
         elif h.get("ok") and h.get("warned"):
             h["warned"] = False
             out.append(f"✅ <b>{name}</b> works again.")
@@ -212,9 +215,10 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
     sites = [{"id": s, "name": SITE_NAMES.get(s, s), "ok": r.get("ok", False), "lots": r.get("lots", 0),
               "error": r.get("error", "")} for s, r in report.items()]
     site_cfg = config.get("sites") or {}
-    notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT"}
+    notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
+             "troostwijk": "an estimate: Troostwijk sets it per auction, check the lot page"}
     fees = [{"id": s, "name": SITE_NAMES.get(s, s), "premium": f.premium, "vat": f.vat, "note": notes.get(s, "")}
-            for s, f in site_fees.items() if site_cfg.get(s, {}).get("enabled", True)]
+            for s, f in site_fees.items() if site_cfg.get(s, {}).get("enabled", True) or s in report]
     troostwijk = []
     if site_cfg.get("troostwijk", {}).get("enabled", True) is False:
         for item in items:
@@ -284,6 +288,24 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     lots, report, site_requests = ([], {}, 0)
     if items:
         lots, report, site_requests = scan_sites(config, items, state, lambda: http_cls(delay=delay), now, only)
+
+    # 1b. Troostwijk lots from Troostwijk's own alert emails (the bot never visits Troostwijk itself)
+    mail_cfg = config.get("troostwijk_alerts") or {}
+    mailbox = Mailbox.from_env()
+    mail_report = None
+    if items and mailbox and mail_cfg.get("enabled", True) is not False and (not only or "troostwijk" in only):
+        h = state.setdefault("health", {}).setdefault("troostwijk", {})
+        try:
+            mail_lots, mail_report = collect_alert_lots(mailbox, http_cls(delay=1.0), state, now,
+                                                        int(mail_cfg.get("keep_days", 14)))
+            lots.extend(mail_lots)
+            report["troostwijk"] = {"ok": True, "lots": len(mail_lots), "via": "email"}
+            h.update(ok=True, lots=len(mail_lots), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
+        except Exception as e:  # wrong app password, mailbox unreachable, ...
+            log.error("troostwijk alerts mailbox failed: %s", type(e).__name__)
+            error = f"alerts mailbox: {type(e).__name__}: {str(e)[:150]}"
+            report["troostwijk"] = {"ok": False, "error": error}
+            h.update(ok=False, error=error, fails=h.get("fails", 0) + 1, at=now.isoformat())
     alerts_cfg = config.get("digest") or config.get("alerts") or {}
     horizon = now + timedelta(days=float(alerts_cfg.get("ignore_closing_after_days", 30)))
     lots = [lot for lot in lots if lot.closes_at is None or now < lot.closes_at <= horizon]
@@ -332,6 +354,10 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         rows.append((item, lot, verdict, est))
     finder.prune()
     notes = []
+    if mail_report and mail_report.get("unreadable"):
+        notes.append(f"⚠️ I couldn't find any lots in {mail_report['unreadable']} Troostwijk alert email(s). "
+                     "Their email layout may be new to me: save one as a file (Gmail: ⋮ → Download message) "
+                     "and share it so the bot can learn it.")
     if items:
         mh = state.setdefault("health", {}).setdefault("marktplaats", {})
         failed = finder.blocked or (finder.errors and finder.errors >= finder.lookups)
