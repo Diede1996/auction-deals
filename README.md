@@ -4,7 +4,7 @@ Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-c
 
 | Site | What it checks |
 |---|---|
-| Troostwijk Auctions | **Not scanned**: Troostwijk refuses automated visitors (HTTP 403). The dashboard has one-click Troostwijk searches for your watchlist, and Troostwijk's own "save search" sends you email alerts. |
+| Troostwijk Auctions | **Not visited**: Troostwijk refuses automated visitors (HTTP 403). Instead the bot reads Troostwijk's own search-alert emails from a separate mailbox, see [Troostwijk via alert emails](#8-troostwijk-via-alert-emails-optional). |
 | ProVeiling | Faillissements- and bedrijfsbeëindigingsveilingen |
 | HNVI veilingen | Auctions held for a curator (bankruptcy trustee) and business closures |
 | Plaats Je Bod | Faillissements- and bedrijfsbeëindigingsveilingen |
@@ -65,6 +65,19 @@ Click **☆ Favorite** on any lot on the dashboard. The first time, the dashboar
 3. Click **Generate token**, copy it and paste it into the dashboard.
 
 Your favorites are kept in one issue in your repository (you'll see it under **Issues**), so they show on your phone and laptop alike, and the bot can remind you. The token can only edit issues of this repository; it can't change code or settings. Do the same once on each device you use. After a year GitHub expires the token and the dashboard asks for a new one.
+
+### 8. Troostwijk via alert emails (optional)
+
+The bot never visits Troostwijk. It reads the alert emails Troostwijk sends you about your saved searches, from a separate mailbox, and puts those lots on the dashboard with a Marktplaats price and a max bid.
+
+1. **A separate Gmail address for the bot**, for example `veilingbot.jouwnaam@gmail.com`. Turn on 2-step verification for it (Google account → Security), then create an app password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) (name it "auction bot"). Google shows 16 letters: that's the app password.
+2. **Troostwijk searches**: on the dashboard, under *Troostwijk searches*, open each search, log in on Troostwijk and save it. In your Troostwijk account, under *Account → Communication preferences*, make sure search alerts are on.
+3. **Forward the alerts** from your own mailbox to the bot address. In Gmail: *Settings → Forwarding and POP/IMAP → Add a forwarding address* (Gmail sends a code to the bot address; log in there to get it). Then make a filter: search `from:troostwijk`, click *Create filter*, tick *Forward it to* the bot address.
+4. **Two secrets on GitHub**: `ALERTS_EMAIL` = the bot address, `ALERTS_APP_PASSWORD` = the app password. (Another provider than Gmail: add `ALERTS_IMAP_HOST` too.)
+
+From the next scan, Troostwijk lots from those emails show up with "Troostwijk alert of <date>" as the auction name. The bid is the one in the email, so it may be outdated; the max bid is what counts. Lots stay on the dashboard until they close, or 14 days after the last alert if the email doesn't say when they close. The bot only reads the mailbox and never stores the emails themselves.
+
+If the morning summary says it couldn't find lots in a Troostwijk email, their email layout is new to the bot: save that email as a file (Gmail: ⋮ → *Download message*) and share it so the bot can learn it.
 
 ---
 
@@ -196,6 +209,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 | A site shows "failed" on the dashboard | Send `/status` or open `data/state.json` on GitHub to see the error. *HTTP 403* means the site refuses automated visitors; turn it off in `config.yml`. |
 | No distances or driving costs | Check the `HOME_ADDRESS` secret (street, number and town). The footer of the dashboard says why when it can't find your address or the route planner. |
 | "This token can't edit issues" when starring a lot | The token must have **Only select repositories → auction-deals** and **Issues: Read and write**. Create a new one with the link in the dialog. |
+| No Troostwijk lots | Check that Troostwijk's alert emails arrive in the bot mailbox, and the `ALERTS_EMAIL` / `ALERTS_APP_PASSWORD` secrets. A wrong app password shows as "alerts mailbox" in `/status`. |
 | No reminder for a favorite | Check that the **Telegram commands** workflow runs (Actions tab) and that the favorite is in the Favorites tab. |
 
 ## Running it on your own computer (optional)

@@ -25,7 +25,7 @@ auction_keywords:
 sites:
   troostwijk:
     # Off: Troostwijk answers GitHub's servers with "403 Forbidden", so it refuses automated visitors.
-    # Use Troostwijk's own "save search" option on their website to get notified about your items instead.
+    # Troostwijk lots come from their own alert emails instead: see troostwijk_alerts below.
     enabled: false
     countries: [nl]      # add be, de, ... to include lots in other countries
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
@@ -88,6 +88,12 @@ driving:
   round_trip: true              # there and back
   extra_cost_per_km: 0          # optional wear and tear per km, e.g. 0.05
   include_in_max_bid: true      # count the trip as a cost in margins and suggested max bids
+
+# Troostwijk lots from Troostwijk's own search-alert emails, forwarded to a separate mailbox that the
+# bot reads (secrets ALERTS_EMAIL and ALERTS_APP_PASSWORD, see README). The bot never visits Troostwijk.
+troostwijk_alerts:
+  enabled: true
+  keep_days: 14                 # a lot without a closing time in the email stays this many days
 
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
