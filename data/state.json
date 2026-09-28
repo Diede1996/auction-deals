@@ -58,58 +58,60 @@
  },
  "health": {
   "hnvi": {
-   "at": "2026-09-28T04:27:55.115149+00:00",
+   "at": "2026-09-28T15:14:58.451915+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-28T04:27:55.115149+00:00",
+   "last_ok": "2026-09-28T15:14:58.451915+00:00",
    "lots": 730,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-09-28T04:27:55.115149+00:00",
+   "at": "2026-09-28T15:14:58.451915+00:00",
    "error": "",
    "fails": 0,
    "lots": 0,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-09-28T04:27:55.115149+00:00",
+   "at": "2026-09-28T15:14:58.451915+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-28T04:27:55.115149+00:00",
-   "lots": 1740,
+   "last_ok": "2026-09-28T15:14:58.451915+00:00",
+   "lots": 1857,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-09-28T04:27:55.115149+00:00",
+   "at": "2026-09-28T15:14:58.451915+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-28T04:27:55.115149+00:00",
+   "last_ok": "2026-09-28T15:14:58.451915+00:00",
    "lots": 373,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-09-28T04:27:55.115149+00:00",
+   "at": "2026-09-28T15:14:58.451915+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-09-28T04:27:55.115149+00:00",
+   "last_ok": "2026-09-28T15:14:58.451915+00:00",
    "lots": 316,
    "ok": true
   },
   "troostwijk": {
-   "at": "2026-09-24T04:25:47.717815+00:00",
-   "error": "BlockedError: www.troostwijkauctions.com is blocking automated requests (HTTP 403)",
-   "fails": 1,
-   "ok": false
+   "at": "2026-09-28T15:14:58.451915+00:00",
+   "error": "",
+   "fails": 0,
+   "last_ok": "2026-09-28T15:14:58.451915+00:00",
+   "lots": 0,
+   "ok": true
   }
  },
  "last_run": {
-  "at": "2026-09-28T04:27:55.115149+00:00",
+  "at": "2026-09-28T15:14:58.451915+00:00",
   "deals": 8,
-  "lots": 3159,
+  "lots": 3276,
   "matches": 73,
   "new": 0,
-  "requests": 98
+  "requests": 100
  },
  "price_cache": {
   "beeldscherm acer rg270|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
@@ -7166,5 +7168,9 @@
   "plaatsjebod": {},
   "proveiling": {},
   "troostwijk": {}
+ },
+ "troostwijk_alerts": {
+  "links": {},
+  "lots": {}
  }
 }
