@@ -272,1557 +272,8 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-09-28T15:14:58.451915+00:00",
+ "generated": "2026-09-29T04:27:16.505255+00:00",
  "lots": [
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 190.0,
-   "bids": 4,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3285244|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Coffee machine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285244",
-   "location": "Emmeloord",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "exact",
-    "model": "ZOE211212006A",
-    "note": "exact model ZOE211212006A",
-    "search": "https://www.marktplaats.nl/q/zoe211212006a/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/zoe211212006a/",
-   "pickup": "Produktieweg 9, 8304AV Emmeloord",
-   "pickupWhen": "Thu 1 Oct, 10:00–12:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Espressomachine ZOE211212006A",
-   "trip": {
-    "approx": false,
-    "cost": 38.6,
-    "km": 146.5,
-    "min": 118
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Espressomachine-ZOE211212006A/3285244/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 110.0,
-   "bids": 1,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3270522|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3270522",
-   "location": "Emmeloord",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+donergrill+rvs+potis/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+donergrill+rvs+potis/",
-   "pickup": "Produktieweg 9, 8304AV Emmeloord",
-   "pickupWhen": "Thu 1 Oct, 10:00–12:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Potis dönergrill, RVS",
-   "trip": {
-    "approx": false,
-    "cost": 38.6,
-    "km": 146.5,
-    "min": 118
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Potis-dnergrill-RVS/3270522/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 110.0,
-   "bids": 1,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165599|3270523|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3270523",
-   "location": "Emmeloord",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+donergrill+rvs+potis/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+donergrill+rvs+potis/",
-   "pickup": "Produktieweg 9, 8304AV Emmeloord",
-   "pickupWhen": "Thu 1 Oct, 10:00–12:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Potis dönergrill, RVS",
-   "trip": {
-    "approx": false,
-    "cost": 38.6,
-    "km": 146.5,
-    "min": 118
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Potis-dnergrill-RVS/3270523/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling horeca-apparatuur & meubilair - Opgeslagen te Emmeloord",
-   "bid": 10.0,
-   "bids": 0,
-   "closes": "2026-09-28T20:00:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15725|165603|3285252|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Coffee machine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285252",
-   "location": "Emmeloord",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "philips",
-    "kind": "exact",
-    "model": "HD7695",
-    "note": "exact model Philips HD7695",
-    "search": "https://www.marktplaats.nl/q/philips+hd7695/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/philips+hd7695/",
-   "pickup": "Produktieweg 9, 8304AV Emmeloord",
-   "pickupWhen": "Thu 1 Oct, 10:00–12:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Philips HD7695/90 Intense koffiemachine",
-   "trip": {
-    "approx": false,
-    "cost": 38.6,
-    "km": 146.5,
-    "min": 118
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Philips-HD7695-90-Intense-koffiemachine/3285252/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 20.0,
-   "bids": 2,
-   "closes": "2026-09-28T20:07:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-020.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:57983",
-   "location": "Hoorn",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/plant+waaronder+kerstdecoratie+statafel/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/plant+waaronder+kerstdecoratie+statafel/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x Partij divers waaronder statafel, kapstok, kunst plant, kerstdecoratie, etc.",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-partij-divers-waaronder-statafel-kapstok-kunst-plant-kerstdecoratie-etc",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 40.0,
-   "bids": 4,
-   "closes": "2026-09-28T20:17:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-087.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58043",
-   "location": "Hoorn",
-   "market": 75.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 49,
-    "high": 99.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "HP w1907v 19-inch LCD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446849302-hp-w1907v-19-inch-lcd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 11.5,
-      "title": "HP Computer Beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446559941-hp-computer-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 12.5,
-      "title": "HP monitor 21.5 inch met webcam",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446607287-hp-monitor-21-5-inch-met-webcam"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "HP L2245wg Monitor - 22 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446867255-hp-l2245wg-monitor-22-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "HP Compaq LA2405x monitor - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446894144-hp-compaq-la2405x-monitor-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP beeldscherm met VGA aansluiting",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446833644-hp-beeldscherm-met-vga-aansluiting"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP Monitor - Goede staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446149761-hp-monitor-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Beeldscherm HP w2207h",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446312823-beeldscherm-hp-w2207h"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "HP Pavilion 23xi IPS LED Monitor - Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446323886-hp-pavilion-23xi-ips-led-monitor-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "HP LCD Monitor E233 23 inch ( 58,4 cm),computerscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446454590-hp-lcd-monitor-e233-23-inch-58-4-cm-computerscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 49.0,
-      "title": "HP 32 inch 532sf monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446905552-hp-32-inch-532sf-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP Monitor 24”",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446957502-hp-monitor-24"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP monitor 27 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446501616-hp-monitor-27-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446694465-hp-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP EliteDisplay E190i 19 inch monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446571310-hp-elitedisplay-e190i-19-inch-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "4x HP LA2405x 24 inch monitoren",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446910094-4x-hp-la2405x-24-inch-monitoren"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445342596-hp-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "HP Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444513449-hp-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.0,
-      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646121-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.77,
-      "title": "HP EliteDisplay | E233 | 23 inch | Full HD IPS Monitor |",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527243465-hp-elitedisplay-e233-23-inch-full-hd-ips-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 65.0,
-      "title": "HP EliteDisplay E241i 24 WUXGA Monitor + 2 jaar garantie!-4",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646111-hp-elitedisplay-e241i-24-wuxga-monitor-2-jaar-garantie-4"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "HP 24fw met Audio Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446931349-hp-24fw-met-audio-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP E243i Monitor - Full HD IPS Scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447158827-hp-e243i-monitor-full-hd-ips-scherm"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP E243 Monitor - Full HD IPS Scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447159760-hp-e243-monitor-full-hd-ips-scherm"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP 27f Full HD IPS Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446860546-hp-27f-full-hd-ips-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Hp monitor 144 hertz",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444826889-hp-monitor-144-hertz"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E233 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646115-hp-elitedisplay-e233-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646122-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E23 G4 23 Full HD IPS HDMI Monitor + 2",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1529178532-hp-elitedisplay-e23-g4-23-full-hd-ips-hdmi-monitor-2"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E243 24 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646105-hp-elitedisplay-e243-24-full-hd-ips-hdmi-monitor-2-jaar"
-     }
-    ],
-    "low": 50.0,
-    "median": 75.0,
-    "model": null,
-    "outliers": [
-     250.0,
-     286.0,
-     306.0,
-     319.0,
-     393.0
-    ],
-    "prices": [
-     5.0,
-     11.5,
-     12.5,
-     20.0,
-     20.0,
-     25.0,
-     25.0,
-     30.0,
-     30.0,
-     45.0,
-     49.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     55.0,
-     59.0,
-     60.77,
-     65.0,
-     70.0,
-     75.0,
-     75.0,
-     75.0,
-     75.0,
-     79.0,
-     79.0,
-     79.0,
-     79.0,
-     80.0,
-     85.0,
-     85.0,
-     89.0,
-     95.0,
-     97.0,
-     99.0,
-     99.0,
-     100.0,
-     105.0,
-     115.0,
-     119.0,
-     125.0,
-     134.0,
-     149.0,
-     149.99,
-     163.0,
-     184.0,
-     215.0
-    ],
-    "query": "monitor hp",
-    "url": "https://www.marktplaats.nl/q/monitor+hp/"
-   },
-   "mpPlan": {
-    "brand": "hp",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+hp/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+hp/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x HP Desktop met beeldscherm en toebehoren",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-met-beeldscherm-en-toebehoren",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 575.0,
-   "bids": 6,
-   "closes": "2026-09-28T20:25:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-133-1.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Laptop",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58088",
-   "location": "Hoorn",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/laptop+eletra+intra+orale/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/laptop+eletra+intra+orale/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x Laptop met Eletra Intra orale Smart scanner en toebehoren in koffer",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-laptop-met-eletra-intra-orale-smart-scanner-en-toebehoren-in-koffer",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 60.0,
-   "bids": 6,
-   "closes": "2026-09-28T20:30:00+02:00",
-   "count": 2,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-182.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58118",
-   "location": "Hoorn",
-   "market": 150.0,
-   "marketSource": "marktplaats",
-   "maxBid": 13.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 49,
-    "high": 99.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "HP w1907v 19-inch LCD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446849302-hp-w1907v-19-inch-lcd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 11.5,
-      "title": "HP Computer Beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446559941-hp-computer-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 12.5,
-      "title": "HP monitor 21.5 inch met webcam",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446607287-hp-monitor-21-5-inch-met-webcam"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "HP L2245wg Monitor - 22 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446867255-hp-l2245wg-monitor-22-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "HP Compaq LA2405x monitor - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446894144-hp-compaq-la2405x-monitor-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP beeldscherm met VGA aansluiting",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446833644-hp-beeldscherm-met-vga-aansluiting"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP Monitor - Goede staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446149761-hp-monitor-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Beeldscherm HP w2207h",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446312823-beeldscherm-hp-w2207h"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "HP Pavilion 23xi IPS LED Monitor - Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446323886-hp-pavilion-23xi-ips-led-monitor-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "HP LCD Monitor E233 23 inch ( 58,4 cm),computerscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446454590-hp-lcd-monitor-e233-23-inch-58-4-cm-computerscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 49.0,
-      "title": "HP 32 inch 532sf monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446905552-hp-32-inch-532sf-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP Monitor 24”",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446957502-hp-monitor-24"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP monitor 27 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446501616-hp-monitor-27-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446694465-hp-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP EliteDisplay E190i 19 inch monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446571310-hp-elitedisplay-e190i-19-inch-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "4x HP LA2405x 24 inch monitoren",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446910094-4x-hp-la2405x-24-inch-monitoren"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HP Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445342596-hp-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "HP Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444513449-hp-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.0,
-      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646121-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.77,
-      "title": "HP EliteDisplay | E233 | 23 inch | Full HD IPS Monitor |",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527243465-hp-elitedisplay-e233-23-inch-full-hd-ips-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 65.0,
-      "title": "HP EliteDisplay E241i 24 WUXGA Monitor + 2 jaar garantie!-4",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646111-hp-elitedisplay-e241i-24-wuxga-monitor-2-jaar-garantie-4"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "HP 24fw met Audio Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446931349-hp-24fw-met-audio-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP E243i Monitor - Full HD IPS Scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447158827-hp-e243i-monitor-full-hd-ips-scherm"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP E243 Monitor - Full HD IPS Scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447159760-hp-e243-monitor-full-hd-ips-scherm"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP 27f Full HD IPS Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446860546-hp-27f-full-hd-ips-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Hp monitor 144 hertz",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444826889-hp-monitor-144-hertz"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E233 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646115-hp-elitedisplay-e233-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646122-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E23 G4 23 Full HD IPS HDMI Monitor + 2",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1529178532-hp-elitedisplay-e23-g4-23-full-hd-ips-hdmi-monitor-2"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "HP EliteDisplay E243 24 Full HD IPS HDMI Monitor + 2 jaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646105-hp-elitedisplay-e243-24-full-hd-ips-hdmi-monitor-2-jaar"
-     }
-    ],
-    "low": 50.0,
-    "median": 75.0,
-    "model": null,
-    "outliers": [
-     250.0,
-     286.0,
-     306.0,
-     319.0,
-     393.0
-    ],
-    "prices": [
-     5.0,
-     11.5,
-     12.5,
-     20.0,
-     20.0,
-     25.0,
-     25.0,
-     30.0,
-     30.0,
-     45.0,
-     49.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     50.0,
-     55.0,
-     59.0,
-     60.77,
-     65.0,
-     70.0,
-     75.0,
-     75.0,
-     75.0,
-     75.0,
-     79.0,
-     79.0,
-     79.0,
-     79.0,
-     80.0,
-     85.0,
-     85.0,
-     89.0,
-     95.0,
-     97.0,
-     99.0,
-     99.0,
-     100.0,
-     105.0,
-     115.0,
-     119.0,
-     125.0,
-     134.0,
-     149.0,
-     149.99,
-     163.0,
-     184.0,
-     215.0
-    ],
-    "query": "monitor hp",
-    "url": "https://www.marktplaats.nl/q/monitor+hp/"
-   },
-   "mpPlan": {
-    "brand": "hp",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+hp/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+hp/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "2 x HP computer met beeldscherm en toebehoren",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 2,
-   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-hp-computer-met-beeldscherm-en-toebehoren",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 60.0,
-   "bids": 5,
-   "closes": "2026-09-28T20:34:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-203.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58142",
-   "location": "Hoorn",
-   "market": 57.5,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 10,
-    "high": 71.25,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "HP full HD beeldscherm, 23-inch, S2331a",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432722452-hp-full-hd-beeldscherm-23-inch-s2331a"
-     },
-     {
-      "kind": "fixed",
-      "price": 15.0,
-      "title": "HP 2228h monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2442429779-hp-2228h-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "HP LCD Monitor E233 23 inch ( 58,4 cm),computerscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446454590-hp-lcd-monitor-e233-23-inch-58-4-cm-computerscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Twee HP EliteDisplay E242 monitoren met stroom splitter",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421942973-twee-hp-elitedisplay-e242-monitoren-met-stroom-splitter"
-     },
-     {
-      "kind": "fixed",
-      "price": 55.0,
-      "title": "HP Monitor 23 inch Full HD - Zwart/Zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436228534-hp-monitor-23-inch-full-hd-zwart-zilver"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.0,
-      "title": "HP Monitor Full HD 23.8\"",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2424599588-hp-monitor-full-hd-23-8"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "HP EliteDisplay E243 24” Full HD IPS Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2442393278-hp-elitedisplay-e243-24-full-hd-ips-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "HP EliteDisplay E233 Zilver 23\" beeldscherm monitor FULL HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2427728898-hp-elitedisplay-e233-zilver-23-beeldscherm-monitor-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Hp 24inch monitor full hd",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2439582295-hp-24inch-monitor-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "HP Z24nf G2 23.8 inch Full HD IPS Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2411489405-hp-z24nf-g2-23-8-inch-full-hd-ips-monitor"
-     }
-    ],
-    "low": 37.5,
-    "median": 57.5,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     10.0,
-     15.0,
-     45.0,
-     50.0,
-     55.0,
-     60.0,
-     60.0,
-     70.0,
-     75.0,
-     75.0
-    ],
-    "query": "monitor hp",
-    "url": "https://www.marktplaats.nl/q/monitor+hp/"
-   },
-   "mpPlan": {
-    "brand": "hp",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+hp+wandbeugel+mini/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+hp+wandbeugel+mini/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x HP Desktop Mini met 2 x 24-inch monitor met wandbeugel en toebehoren",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-desktop-mini-met-2-x-24-inch-monitor-met-wandbeugel-en-toebehoren",
-   "vat": 0.21
-  },
-  {
-   "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 18.0,
-   "bids": 5,
-   "closes": "2026-09-28T18:37:28+00:00",
-   "count": 3,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-09-22/da6f9f19-b399-4187-a3a1-7f834d058478/20260921_143547.jpg",
-   "isDeal": true,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "onlineveilingmeester:1902087",
-   "location": "Groningen",
-   "market": 373.5,
-   "marketSource": "marktplaats",
-   "maxBid": 75.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 8,
-    "high": 237.5,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2435645059-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Dell U2412M Ultra Sharp 24 inch IPS monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421890762-dell-u2412m-ultra-sharp-24-inch-ips-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "DELL monitor DELL ULTRA SHARP  U241 4H zie fotoos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2437460246-dell-monitor-dell-ultra-sharp-u241-4h-zie-fotoos"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
-      "title": "Sharp PN-Q601E 60 inch Full HD monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447179654-sharp-pn-q601e-60-inch-full-hd-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.0,
-      "title": "2X Dell monitors ultra sharp u2414hb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2438851537-2x-dell-monitors-ultra-sharp-u2414hb"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Complete set Sharp AV System Hi-Tech AV-3 met Monitor",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/stereo-sets/m2440418267-complete-set-sharp-av-system-hi-tech-av-3-met-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "3 x Sharp PN-70SC3 LCD SMARTBOARD Monitor - 70 inch Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415368609-3-x-sharp-pn-70sc3-lcd-smartboard-monitor-70-inch-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 375.0,
-      "title": "Sharp pn-e602 60 inch monitor met voet",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436120386-sharp-pn-e602-60-inch-monitor-met-voet"
-     }
-    ],
-    "low": 31.25,
-    "median": 124.5,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     30.0,
-     30.0,
-     35.0,
-     90.0,
-     159.0,
-     200.0,
-     250.0,
-     375.0
-    ],
-    "query": "monitor sharp",
-    "url": "https://www.marktplaats.nl/q/monitor+sharp/"
-   },
-   "mpPlan": {
-    "brand": "sharp",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+sharp/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+sharp/",
-   "pickup": "De Hallen 1, 9723TW Groningen",
-   "pickupWhen": "Thu 1 Oct, 09:00–15:00",
-   "premium": 0.121,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "title": "3x Monitor, O.a Sharp, Samsung",
-   "trip": {
-    "approx": false,
-    "cost": 59.1,
-    "km": 224.3,
-    "min": 177
-   },
-   "units": 3,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9467/kavels/29",
-   "vat": 0.0
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 30.0,
-   "bids": 2,
-   "closes": "2026-09-28T20:39:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-270.jpg",
-   "isDeal": true,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58172",
-   "location": "Hoorn",
-   "market": 239.0,
-   "marketSource": "marktplaats",
-   "maxBid": 36.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 11,
-    "high": 325.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "HP ProDesk Mini PC met Monitor, Toetsenbord en Muis",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2443625303-hp-prodesk-mini-pc-met-monitor-toetsenbord-en-muis"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Hp prodesk Intel i3 + Samsung monitor + toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2423235074-hp-prodesk-intel-i3-samsung-monitor-toetsenbord"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "HP ProDesk 400 G1 SFF Gaming PC met Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2447138726-hp-prodesk-400-g1-sff-gaming-pc-met-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "HP ProDesk 400 G4 Desktop PC met Monitor, Toetsenbord, Muis",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2443122997-hp-prodesk-400-g4-desktop-pc-met-monitor-toetsenbord-muis"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "HP Monitor + HP ProDesk 600 G3 SFF PC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2426581093-hp-monitor-hp-prodesk-600-g3-sff-pc"
-     },
-     {
-      "kind": "fixed",
-      "price": 239.0,
-      "title": "ACTIE: HP ProDesk 400 G4 Mini i3 8e Gen incl. 1 Monitor +",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1528316588-actie-hp-prodesk-400-g4-mini-i3-8e-gen-incl-1-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 279.0,
-      "title": "ACTIE: HP ProDesk 400 G4 Mini i3 8e Gen incl. 2 Monitoren +",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1528316590-actie-hp-prodesk-400-g4-mini-i3-8e-gen-incl-2-monitoren"
-     },
-     {
-      "kind": "fixed",
-      "price": 319.0,
-      "title": "HP ProDesk 400 G5 Mini i5 9e Gen incl. 1 Monitor + Windows",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1520726935-hp-prodesk-400-g5-mini-i5-9e-gen-incl-1-monitor-windows"
-     },
-     {
-      "kind": "fixed",
-      "price": 325.0,
-      "title": "HP ProDesk 600 G5 SFF i5 9e Gen incl. 1 Monitor + Windows 11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1528316554-hp-prodesk-600-g5-sff-i5-9e-gen-incl-1-monitor-windows-11"
-     },
-     {
-      "kind": "fixed",
-      "price": 359.0,
-      "title": "HP ProDesk 400 G5 Mini i5 9e Gen incl. 2 Monitoren + Windows",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1520726936-hp-prodesk-400-g5-mini-i5-9e-gen-incl-2-monitoren-windows"
-     },
-     {
-      "kind": "fixed",
-      "price": 365.0,
-      "title": "HP ProDesk 600 G5 SFF i5 9e Gen incl. 2 Monitoren + Windows",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1528316556-hp-prodesk-600-g5-sff-i5-9e-gen-incl-2-monitoren-windows"
-     }
-    ],
-    "low": 100.0,
-    "median": 239.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     60.0,
-     65.0,
-     100.0,
-     100.0,
-     150.0,
-     239.0,
-     279.0,
-     319.0,
-     325.0,
-     359.0,
-     365.0
-    ],
-    "query": "monitor hp prodesk",
-    "url": "https://www.marktplaats.nl/q/monitor+hp+prodesk/"
-   },
-   "mpPlan": {
-    "brand": "hp",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+hp+prodesk/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+hp+prodesk/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x HP Prodesk met beeldscherm en toebehoren",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-prodesk-met-beeldscherm-en-toebehoren",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling Tandartsenpraktijk Nieuwe Steen B.V. te Hoorn",
-   "bid": 20.0,
-   "bids": 0,
-   "closes": "2026-09-28T20:45:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-371-plaatsjebod-tandartsenpraktijk-nieuwe-steen-330.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "plaatsjebod:58208",
-   "location": "Hoorn",
-   "market": 70.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 59,
-    "high": 119.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 9.0,
-      "title": "benq monitor ... hebben ook nog een oude Acer",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446443899-benq-monitor-hebben-ook-nog-een-oude-acer"
-     },
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Acer beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447112060-acer-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 10.0,
-      "title": "Acer monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446478620-acer-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 10.0,
-      "title": "Acer B246HL monitor - Full HD, 60Hz",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446604489-acer-b246hl-monitor-full-hd-60hz"
-     },
-     {
-      "kind": "bid",
-      "price": 10.0,
-      "title": "Acer monitor - Zwart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445086221-acer-monitor-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "ACER Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444492001-acer-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 17.5,
-      "title": "Acer V246HL BD Monitor, 24 inch, TN, Full HD 60Hz, gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524979834-acer-v246hl-bd-monitor-24-inch-tn-full-hd-60hz-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Acer beeldscherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446001171-acer-beeldscherm"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Acer X243HQ b LCD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444352208-acer-x243hq-b-lcd-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 25.0,
-      "title": "Acer B223w LCD monitor - Hoogte verstelbaar",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446719250-acer-b223w-lcd-monitor-hoogte-verstelbaar"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Acer K242HL 24 inch Full HD monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447085591-acer-k242hl-24-inch-full-hd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Acer Nitro VG240Y Gaming Monitor - Full HD, 75Hz, 1ms",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446283206-acer-nitro-vg240y-gaming-monitor-full-hd-75hz-1ms"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "zilverkleurige Acer AL1706 LCD-monitor\n4:3 of 5:4 beeldverho",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447191145-zilverkleurige-acer-al1706-lcd-monitor-4-3-of-5-4-beeldverho"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Acer monitor K272HL - 27 Inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446403955-acer-monitor-k272hl-27-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Acer 221 HQLbd monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447026215-acer-221-hqlbd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Acer K242HQL 24 inch Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447115729-acer-k242hql-24-inch-full-hd-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 35.0,
-      "title": "Acer V246HL BD Monitor, 24 inch, TN, Full HD 60Hz, gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524976519-acer-v246hl-bd-monitor-24-inch-tn-full-hd-60hz-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "2x Acer V226HQL Full HD Monitor 40 per stuk of 70 voor 2",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446835451-2x-acer-v226hql-full-hd-monitor-40-per-stuk-of-70-voor-2"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Acer K242HL Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2443957187-acer-k242hl-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Acer VG270 Gaming Monitor - Full HD, 75Hz, 1ms",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446953920-acer-vg270-gaming-monitor-full-hd-75hz-1ms"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Acer XF240H 24″ Gaming Monitor – 144 Hz, 1 ms",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446893059-acer-xf240h-24-gaming-monitor-144-hz-1-ms"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.0,
-      "title": "Acer VG240Y monitor + keyboard mouse set",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446949413-acer-vg240y-monitor-keyboard-mouse-set"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Acer Nitro VG240Y bmiix 23.8\" Full HD IPS Gaming Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444736481-acer-nitro-vg240y-bmiix-23-8-full-hd-ips-gaming-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Acer Gaming Beeldscherm - Perfect voor snelle actie!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446359036-acer-gaming-beeldscherm-perfect-voor-snelle-actie"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Acer KA220HQ 21.5 inch Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445656958-acer-ka220hq-21-5-inch-full-hd-monitor"
-     },
-     {
-      "kind": "fixed",
-      "price": 65.0,
-      "title": "Game monitor Acer",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445939839-game-monitor-acer"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Acer Predator XB1 Gaming Monitor - Full HD, 180Hz, G-SYNC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446005897-acer-predator-xb1-gaming-monitor-full-hd-180hz-g-sync"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.0,
-      "title": "Acer - Full HD  Monitor - 21.5 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1520255897-acer-full-hd-monitor-21-5-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Acer VG270 27 inch Full HD 75Hz Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446457056-acer-vg270-27-inch-full-hd-75hz-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Acer S276HL LCD Monitor - 27 inch Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444798670-acer-s276hl-lcd-monitor-27-inch-full-hd"
-     }
-    ],
-    "low": 35.0,
-    "median": 70.0,
-    "model": null,
-    "outliers": [
-     329.0,
-     359.0,
-     375.0,
-     749.0,
-     999.0,
-     2499.0
-    ],
-    "prices": [
-     9.0,
-     10.0,
-     10.0,
-     10.0,
-     10.0,
-     15.0,
-     17.5,
-     20.0,
-     20.0,
-     25.0,
-     30.0,
-     30.0,
-     30.0,
-     30.0,
-     35.0,
-     35.0,
-     35.0,
-     40.0,
-     40.0,
-     45.0,
-     50.0,
-     50.0,
-     50.0,
-     60.0,
-     60.0,
-     65.0,
-     65.0,
-     69.0,
-     70.0,
-     70.0,
-     75.0,
-     79.0,
-     80.0,
-     80.0,
-     80.0,
-     89.0,
-     90.0,
-     99.77,
-     100.0,
-     100.0,
-     104.99,
-     109.0,
-     119.0,
-     119.0,
-     119.0,
-     120.0,
-     125.0,
-     129.0,
-     139.0,
-     139.0,
-     139.0,
-     149.0,
-     149.0,
-     159.0,
-     189.0,
-     199.0,
-     199.0,
-     199.0,
-     250.0
-    ],
-    "query": "monitor acer",
-    "url": "https://www.marktplaats.nl/q/monitor+acer/"
-   },
-   "mpPlan": {
-    "brand": "acer",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/monitor+acer+veriton/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/monitor+acer+veriton/",
-   "pickup": "Nieuwe Steen 25, Hoorn",
-   "pickupWhen": null,
-   "premium": 0.22,
-   "site": "plaatsjebod",
-   "siteName": "Plaats Je Bod",
-   "title": "1 x Acer Veriton computer met beeldscherm en toebehoren",
-   "trip": {
-    "approx": false,
-    "cost": 37.57,
-    "km": 142.6,
-    "min": 116
-   },
-   "units": 1,
-   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-acer-veriton-computer-met-beeldscherm-en-toebehoren",
-   "vat": 0.21
-  },
   {
    "auction": "Faillissement Pieperz te Eindhoven",
    "bid": 5.0,
@@ -1945,9 +396,9 @@
    "title": "Koffieapparaat NESPRESSO koffielekbakje ontbreekt.",
    "trip": {
     "approx": false,
-    "cost": 8.05,
+    "cost": 8.06,
     "km": 30.6,
-    "min": 32
+    "min": 33
    },
    "units": 1,
    "url": "https://www.hnvi.nl/veiling-kavel/koffieapparaat-nespresso-koffielekbakje-ontbreekt/196484",
@@ -1990,8 +441,8 @@
    "title": "Ca. 32x Beroepen colberts",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 32,
@@ -2000,8 +451,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 12.0,
-   "bids": 2,
+   "bid": 14.0,
+   "bids": 3,
    "closes": "2026-09-29T18:21:30+00:00",
    "count": 41,
    "delivery": false,
@@ -2035,8 +486,8 @@
    "title": "Ca. 41x Man, overjassen en colberts",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 41,
@@ -2074,8 +525,8 @@
    "title": "Ca. 27x Man, colberts zwart",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 27,
@@ -2113,8 +564,8 @@
    "title": "Ca. 56x Man, colberts in verschillende kleuren",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 56,
@@ -2236,8 +687,8 @@
    "title": "Ca. 46x Man, wollen geruite colberts",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 46,
@@ -2281,8 +732,8 @@
    "title": "Ca. 89x Ouderwetse vestjes en man/ vrouw colberts",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 89,
@@ -2320,8 +771,8 @@
    "title": "Ca. 43x Heren colberts/ jasjes",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 43,
@@ -2365,8 +816,8 @@
    "title": "Ca. 42x Zwarte ouderwetse heren kostuumbroeken",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 42,
@@ -2410,8 +861,8 @@
    "title": "Ca. 41x Damesjassen, colberts, blouses",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 41,
@@ -2420,8 +871,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: De Kostuumkoningin",
-   "bid": 12.0,
-   "bids": 2,
+   "bid": 16.0,
+   "bids": 4,
    "closes": "2026-09-29T18:33:30+00:00",
    "count": 21,
    "delivery": false,
@@ -2455,8 +906,8 @@
    "title": "Ca. 21x Middeleeuwse capes en 2x colbert man",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 21,
@@ -2500,8 +951,8 @@
    "title": "Ca. 37x Colberts en jassen man",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 37,
@@ -2539,8 +990,8 @@
    "title": "Ca. 47x Colberts",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 47,
@@ -2578,8 +1029,8 @@
    "title": "Ca. 44x Colberts, heren",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 44,
@@ -2617,8 +1068,8 @@
    "title": "Ca. 40x Colberts, heren",
    "trip": {
     "approx": false,
-    "cost": 54.21,
-    "km": 205.7,
+    "cost": 54.22,
+    "km": 205.8,
     "min": 161
    },
    "units": 40,
@@ -2662,7 +1113,7 @@
    "title": "Colbert, maat 50, Dsquared2",
    "trip": {
     "approx": false,
-    "cost": 59.1,
+    "cost": 59.11,
     "km": 224.3,
     "min": 177
    },
@@ -2785,7 +1236,7 @@
    "title": "Colbert, maat 50, Loro Piana",
    "trip": {
     "approx": false,
-    "cost": 59.1,
+    "cost": 59.11,
     "km": 224.3,
     "min": 177
    },
@@ -2866,7 +1317,7 @@
    "title": "Hilti DX 460 kruitschiethamer in koffer",
    "trip": {
     "approx": false,
-    "cost": 14.14,
+    "cost": 14.15,
     "km": 53.7,
     "min": 48
    },
@@ -2911,7 +1362,7 @@
    "title": "Makita JR 3030T reciprozaag",
    "trip": {
     "approx": false,
-    "cost": 14.14,
+    "cost": 14.15,
     "km": 53.7,
     "min": 48
    },
@@ -2956,7 +1407,7 @@
    "title": "Makita  M8600 boorhamer",
    "trip": {
     "approx": false,
-    "cost": 14.14,
+    "cost": 14.15,
     "km": 53.7,
     "min": 48
    },
@@ -3001,7 +1452,7 @@
    "title": "Diverse potten en speciekuipen",
    "trip": {
     "approx": false,
-    "cost": 14.14,
+    "cost": 14.15,
     "km": 53.7,
     "min": 48
    },
@@ -3103,7 +1554,7 @@
    "title": "RVS prairi garden planter",
    "trip": {
     "approx": false,
-    "cost": 14.14,
+    "cost": 14.15,
     "km": 53.7,
     "min": 48
    },
@@ -3284,7 +1735,7 @@
    "title": "Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaibaar",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3558,7 +2009,7 @@
    "title": "Koffiemachine PHILIPS",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3603,7 +2054,7 @@
    "title": "Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3648,7 +2099,7 @@
    "title": "Twee 27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3764,7 +2215,7 @@
    "title": "Laptop HP i5-fcoxx. 238 GB opslag. 8GB RAM. AMD Ryzen 3 7320u 2.40 GHz processor.",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3809,7 +2260,7 @@
    "title": "Beeldscherm 27 inch ACER RG270",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3854,7 +2305,7 @@
    "title": "Beeldscherm 27 inch SAMSUNG S27C310EAU",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3899,7 +2350,7 @@
    "title": "27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -3994,7 +2445,7 @@
    "title": "Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300u CPU@1,90 HGZ. QWERTZ toetsenbord.",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -4039,7 +2490,7 @@
    "title": "Makita AVT Breekhamer HM1812",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4084,7 +2535,7 @@
    "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4364,7 +2815,7 @@
    "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4529,7 +2980,7 @@
    "title": "Makita LXT Accubatterij BL1830",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4574,7 +3025,7 @@
    "title": "Hilti Meetstatief PUA 25",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4671,7 +3122,7 @@
    "title": "Makita gereedschapskoffers - 2 stuks",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4782,7 +3233,7 @@
    "title": "DEWALT TSTAK Gereedschapskoffer",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4870,7 +3321,7 @@
    "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -4915,7 +3366,7 @@
    "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
    "trip": {
     "approx": false,
-    "cost": 24.68,
+    "cost": 24.69,
     "km": 93.7,
     "min": 79
    },
@@ -5045,7 +3496,7 @@
    "title": "Bouwradio MAKITA zonder accu",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5156,7 +3607,7 @@
    "title": "Bouwradio DEWALT ( exclusief accu )",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5436,7 +3887,7 @@
    "title": "Gereedschapskoffer MAKITA",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5645,7 +4096,7 @@
    "title": "Haakse slijper METABO met diverse schijven",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5756,7 +4207,7 @@
    "title": "Bouwradio DEWALT met accu",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5801,7 +4252,7 @@
    "title": "Diverse potboren, zowel steen als hout",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5846,7 +4297,7 @@
    "title": "Haakse slijptol DEWALT DWE4579",
    "trip": {
     "approx": false,
-    "cost": 12.4,
+    "cost": 12.41,
     "km": 47.1,
     "min": 44
    },
@@ -5948,8 +4399,8 @@
    "title": "Glazen vazen en planten gieters",
    "trip": {
     "approx": false,
-    "cost": 44.17,
-    "km": 167.6,
+    "cost": 44.18,
+    "km": 167.7,
     "min": 141
    },
    "units": 1,
@@ -5958,8 +4409,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
-   "bid": 18.0,
-   "bids": 5,
+   "bid": 20.0,
+   "bids": 6,
    "closes": "2026-10-05T18:20:46+00:00",
    "count": 1,
    "delivery": false,
@@ -6192,8 +4643,8 @@
    "title": "Printer en Laptop, Acer Epson",
    "trip": {
     "approx": false,
-    "cost": 44.17,
-    "km": 167.6,
+    "cost": 44.18,
+    "km": 167.7,
     "min": 141
    },
    "units": 1,
@@ -6280,8 +4731,8 @@
    "title": "Ca. 10x Hangende plantenbakken",
    "trip": {
     "approx": false,
-    "cost": 44.17,
-    "km": 167.6,
+    "cost": 44.18,
+    "km": 167.7,
     "min": 141
    },
    "units": 10,
@@ -6370,7 +4821,7 @@
   },
   {
    "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
-   "bid": 170.0,
+   "bid": 180.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
    "count": 1,
@@ -6405,8 +4856,8 @@
    "title": "Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in grote diversiteit w.o. tien paar schoenen en diverse verkleedaccessoires.",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6450,8 +4901,8 @@
    "title": "Pennen en potloden diverse, ook gebruikt",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6495,8 +4946,8 @@
    "title": "Koop Kerstartikelen in stelling w.o. lichtgevende poppetjes, diamond painting sets, raamstickers, schildersets, tekenboeken, pennen, potloden etc.",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6540,8 +4991,8 @@
    "title": "Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskapje van F3 ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6585,8 +5036,8 @@
    "title": "Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleetheid onbekend",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6630,8 +5081,8 @@
    "title": "Twaalf potten en PH- granulaat",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -6935,8 +5386,8 @@
    "title": "Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.65,
-    "km": 36.6,
+    "cost": 9.66,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -7044,7 +5495,7 @@
   {
    "error": "",
    "id": "proveiling",
-   "lots": 316,
+   "lots": 216,
    "name": "ProVeiling",
    "ok": true
   },
@@ -7058,21 +5509,21 @@
   {
    "error": "",
    "id": "plaatsjebod",
-   "lots": 373,
+   "lots": 273,
    "name": "Plaats Je Bod",
    "ok": true
   },
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1857,
+   "lots": 1781,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 0,
+   "lots": 8,
    "name": "Troostwijk",
    "ok": true
   },
