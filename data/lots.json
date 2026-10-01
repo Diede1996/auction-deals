@@ -3,8 +3,8 @@
   "enabled": true,
   "error": null,
   "extraPerKm": 0.0,
-  "fuel": 2.011,
-  "fuelSource": "Belgian maximum price Euro 95 E10 from 2026-09-30",
+  "fuel": 2.021,
+  "fuelSource": "Belgian maximum price Euro 95 E10 from 2026-10-01",
   "home": true,
   "include": true,
   "kmpl": 16.0,
@@ -102,176 +102,8 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-09-30T04:28:13.324001+00:00",
+ "generated": "2026-10-01T04:28:46.294854+00:00",
  "lots": [
-  {
-   "auction": "Domeinen · Exclusieve designer kleding en schoenen",
-   "bid": 56.0,
-   "bids": 0,
-   "closes": "2026-09-30T18:33:36+00:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-25T04:26:17.095663+00:00",
-   "fixed": 0.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-08-17/22ec5210-c4c0-4ec1-9104-db0c537bb73e/20260817_113934.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Suit / formalwear",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "onlineveilingmeester:1902814",
-   "location": "Groningen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "dsquared2",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/colbert+dsquared2/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/colbert+dsquared2/",
-   "pickup": "De Hallen 1, 9723TW Groningen",
-   "pickupWhen": "Thu 8 Oct, 09:00–15:00",
-   "premium": 0.121,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "title": "Colbert, maat 50, Dsquared2",
-   "trip": {
-    "approx": false,
-    "cost": 56.39,
-    "km": 224.3,
-    "min": 177
-   },
-   "units": 1,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/13",
-   "vat": 0.0
-  },
-  {
-   "auction": "Domeinen · Exclusieve designer kleding en schoenen",
-   "bid": 149.0,
-   "bids": 6,
-   "closes": "2026-09-30T18:47:36+00:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-25T04:26:17.095663+00:00",
-   "fixed": 0.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-09-23/00428595-205c-49ca-905b-f4d77e5add14/20260923_134331.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Suit / formalwear",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "onlineveilingmeester:1902873",
-   "location": "Groningen",
-   "market": 200.0,
-   "marketSource": "marktplaats",
-   "maxBid": 18.0,
-   "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 9,
-    "high": 275.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Colbert Loro Piana",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2417421406-colbert-loro-piana"
-     },
-     {
-      "kind": "fixed",
-      "price": 85.0,
-      "title": "Barons & bastards blazer maat 56 Loro Piana",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2426419826-barons-bastards-blazer-maat-56-loro-piana"
-     },
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "italiaans Lubiam colbert met Loro Piana stof mt 50",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2431582118-italiaans-lubiam-colbert-met-loro-piana-stof-mt-50"
-     },
-     {
-      "kind": "bid",
-      "price": 119.0,
-      "title": "Eduard Dressler blazer maat 50 | Loro Piana Super 120’s wol",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446245540-eduard-dressler-blazer-maat-50-loro-piana-super-120-s-wol"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Oger Jasje Loro Piana stof",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2412911183-oger-jasje-loro-piana-stof"
-     },
-     {
-      "kind": "fixed",
-      "price": 225.0,
-      "title": "LORO PIANA Prachtig lichtwollen jasje 48/50 Winkelpr €2200,-",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2437351521-loro-piana-prachtig-lichtwollen-jasje-48-50-winkelpr-2200"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Prachtigew Oger Jasje Loro Piana stof",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2424070844-prachtigew-oger-jasje-loro-piana-stof"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Loro Piana Made in Italy Navy Virgin Wool Blazer | EU 54",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2428496365-loro-piana-made-in-italy-navy-virgin-wool-blazer-eu-54"
-     },
-     {
-      "kind": "bid",
-      "price": 399.0,
-      "title": "Ravazzolo x Loro Piana db blazer 48R ZGAN €399",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2433726038-ravazzolo-x-loro-piana-db-blazer-48r-zgan-399"
-     }
-    ],
-    "low": 92.5,
-    "median": 200.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     40.0,
-     85.0,
-     100.0,
-     119.0,
-     200.0,
-     225.0,
-     250.0,
-     300.0,
-     399.0
-    ],
-    "query": "colbert loro piana",
-    "url": "https://www.marktplaats.nl/q/colbert+loro+piana/"
-   },
-   "mpPlan": {
-    "brand": "loro piana",
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/colbert+loro+piana/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/colbert+loro+piana/",
-   "pickup": "De Hallen 1, 9723TW Groningen",
-   "pickupWhen": "Thu 8 Oct, 09:00–15:00",
-   "premium": 0.121,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "title": "Colbert, maat 50, Loro Piana",
-   "trip": {
-    "approx": false,
-    "cost": 56.39,
-    "km": 224.3,
-    "min": 177
-   },
-   "units": 1,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9470/kavels/72",
-   "vat": 0.0
-  },
   {
    "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
    "bid": 35.0,
@@ -293,7 +125,7 @@
    "marketSource": "marktplaats",
    "maxBid": 64.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 3,
     "high": 600.0,
     "kind": "exact",
@@ -345,7 +177,7 @@
    "title": "Hilti DX 460 kruitschiethamer in koffer",
    "trip": {
     "approx": false,
-    "cost": 13.5,
+    "cost": 13.56,
     "km": 53.7,
     "min": 48
    },
@@ -390,7 +222,7 @@
    "title": "Makita JR 3030T reciprozaag",
    "trip": {
     "approx": false,
-    "cost": 13.5,
+    "cost": 13.56,
     "km": 53.7,
     "min": 48
    },
@@ -435,7 +267,7 @@
    "title": "Makita  M8600 boorhamer",
    "trip": {
     "approx": false,
-    "cost": 13.5,
+    "cost": 13.56,
     "km": 53.7,
     "min": 48
    },
@@ -480,7 +312,7 @@
    "title": "Diverse potten en speciekuipen",
    "trip": {
     "approx": false,
-    "cost": 13.5,
+    "cost": 13.56,
     "km": 53.7,
     "min": 48
    },
@@ -505,39 +337,15 @@
    "itemMinMargin": null,
    "key": "hnvi:196795",
    "location": "Valkenswaard",
-   "market": 7.45,
+   "market": 25.0,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T09:51:31.500418+00:00",
-    "count": 6,
-    "high": 10.49,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 7,
+    "high": 30.0,
     "kind": "general",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 3.75,
-      "title": "Plant Geleider-schroef Rvs Trellis  Aisi 316",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296713-plant-geleider-schroef-rvs-trellis-aisi-316"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.95,
-      "title": "Plant Klimhulp kruisschroef Rvs Trellis 2mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296320-plant-klimhulp-kruisschroef-rvs-trellis-2mm"
-     },
-     {
-      "kind": "fixed",
-      "price": 6.95,
-      "title": "Plant Klimhulp kruisschroef Rvs Trellis 3mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1398296315-plant-klimhulp-kruisschroef-rvs-trellis-3mm"
-     },
-     {
-      "kind": "fixed",
-      "price": 7.95,
-      "title": "Plant Klimhulp kruisschroef Rvs Trellis 4mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/a1495721929-plant-klimhulp-kruisschroef-rvs-trellis-4mm"
-     },
      {
       "kind": "fixed",
       "price": 8.99,
@@ -549,19 +357,52 @@
       "price": 15.0,
       "title": "RVS GIETER PLANTEN",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2443645358-rvs-gieter-planten"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Grote RVS sierpot voor planten op wieltjes",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2442965513-grote-rvs-sierpot-voor-planten-op-wieltjes"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "ZARA HOME 2x Planten standaard RVS voor pot ø 20 H 40",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2447352745-zara-home-2x-planten-standaard-rvs-voor-pot-o-20-h-40"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "RVS plantenbank met gegalvaniseerd rooster 120x30x16cm",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/tuinwanddecoratie/m2448153877-rvs-plantenbank-met-gegalvaniseerd-rooster-120x30x16cm"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "ZARA HOME planten standaard RVS voor pot ø 30 H 50",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2447349960-zara-home-planten-standaard-rvs-voor-pot-o-30-h-50"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Aquarium aquascaping  rvs draad matten voor planten mos",
+      "url": "https://www.marktplaats.nl/v/dieren-en-toebehoren/vissen-aquaria-en-toebehoren/m2447444763-aquarium-aquascaping-rvs-draad-matten-voor-planten-mos"
      }
     ],
-    "low": 5.4,
-    "median": 7.45,
+    "low": 15.0,
+    "median": 25.0,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     100.0
+    ],
     "prices": [
-     3.75,
-     5.95,
-     6.95,
-     7.95,
      8.99,
-     15.0
+     15.0,
+     20.0,
+     25.0,
+     25.0,
+     30.0,
+     50.0
     ],
     "query": "plant rvs",
     "url": "https://www.marktplaats.nl/q/plant+rvs/"
@@ -582,7 +423,7 @@
    "title": "RVS prairi garden planter",
    "trip": {
     "approx": false,
-    "cost": 13.5,
+    "cost": 13.56,
     "km": 53.7,
     "min": 48
    },
@@ -607,20 +448,32 @@
    "itemMinMargin": null,
    "key": "hnvi:196564",
    "location": "Loon op Zand",
-   "market": 60.0,
+   "market": 59.0,
    "marketSource": "marktplaats",
    "maxBid": 7.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 17,
-    "high": 38.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 18,
+    "high": 37.5,
     "kind": "exact",
     "listings": [
      {
       "kind": "bid",
-      "price": 25.0,
+      "price": 15.0,
       "title": "23 inch computerscherm HP Compaq LA2306x draaibaar",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446787006-23-inch-computerscherm-hp-compaq-la2306x-draaibaar"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "HP Compaq LA2306x 23 inch monitor - Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444440300-hp-compaq-la2306x-23-inch-monitor-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "HP Compaq LA2306x Monitor - Full HD, Kantelbaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447380843-hp-compaq-la2306x-monitor-full-hd-kantelbaar"
      },
      {
       "kind": "bid",
@@ -635,16 +488,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2434542178-hp-compaq-la2306x-monitor"
      },
      {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP LA2306x monitor 23\"",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415946811-hp-la2306x-monitor-23"
-     },
-     {
       "kind": "fixed",
       "price": 25.0,
       "title": "23\" HP Compaq LA2306x Full HD monitoren VGA-DVI-Displaypoort",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432994719-23-hp-compaq-la2306x-full-hd-monitoren-vga-dvi-displaypoort"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "HP LA2306x monitor 23\"",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415946811-hp-la2306x-monitor-23"
      },
      {
       "kind": "bid",
@@ -661,32 +514,26 @@
      {
       "kind": "bid",
       "price": 30.0,
-      "title": "2x HP Compaq LA2306X monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2439024953-2x-hp-compaq-la2306x-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
       "title": "HP Compaq LA2306x monitor (23 inch)",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2414752694-hp-compaq-la2306x-monitor-23-inch"
      },
      {
       "kind": "bid",
-      "price": 35.0,
-      "title": "HP Compaq LA2306x 23 inch monitor - Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444440300-hp-compaq-la2306x-23-inch-monitor-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "2 x HP Compaq LA2306x 23 inch Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436945328-2-x-hp-compaq-la2306x-23-inch-full-hd-monitor"
+      "price": 30.0,
+      "title": "2x HP Compaq LA2306X monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2439024953-2x-hp-compaq-la2306x-monitor"
      },
      {
       "kind": "bid",
       "price": 35.0,
       "title": "HP Compaq LA2306x Monitor - Full HD, Draaibaar",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2415955271-hp-compaq-la2306x-monitor-full-hd-draaibaar"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "2 x HP Compaq LA2306x 23 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2436945328-2-x-hp-compaq-la2306x-23-inch-full-hd-monitor"
      },
      {
       "kind": "fixed",
@@ -720,12 +567,14 @@
      }
     ],
     "low": 25.0,
-    "median": 30.0,
+    "median": 29.5,
     "model": "LA2306X",
     "outliers": [
      90.0
     ],
     "prices": [
+     15.0,
+     20.0,
      25.0,
      25.0,
      25.0,
@@ -735,7 +584,6 @@
      29.0,
      30.0,
      30.0,
-     35.0,
      35.0,
      35.0,
      37.0,
@@ -763,7 +611,7 @@
    "title": "Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaibaar",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -788,20 +636,26 @@
    "itemMinMargin": null,
    "key": "hnvi:196568",
    "location": "Loon op Zand",
-   "market": 122.0,
+   "market": 125.0,
    "marketSource": "marktplaats",
-   "maxBid": 24.0,
+   "maxBid": 25.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 34,
-    "high": 222.46,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 39,
+    "high": 230.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 10.0,
-      "title": "Philips Daily Collection Koffiezetapparaat – Zwart\nNette en",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446776207-philips-daily-collection-koffiezetapparaat-zwart-nette-en"
+      "title": "Philips Senseo koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447802323-philips-senseo-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Philips ( D.E.) Senseo koffiemachine.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447800207-philips-d-e-senseo-koffiemachine"
      },
      {
       "kind": "bid",
@@ -810,28 +664,28 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447196304-philips-senseo-koffiezetapparaat-rood"
      },
      {
-      "kind": "bid",
-      "price": 12.5,
-      "title": "Philips Senseo koffiemachine.",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446322145-philips-senseo-koffiemachine"
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Koffiezetapparaat Philips",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446722161-koffiezetapparaat-philips"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Philips Senseo viva café Keith Haring koffiemachine.",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446321214-philips-senseo-viva-cafe-keith-haring-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 24.95,
-      "title": "Philips vollautomaat koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445298694-philips-vollautomaat-koffiemachine"
+      "title": "philips koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2440379037-philips-koffiezetapparaat"
      },
      {
       "kind": "bid",
       "price": 25.0,
-      "title": "Philips Senseo Koffiezetapparaat Rood - Goede Staat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447074568-philips-senseo-koffiezetapparaat-rood-goede-staat"
+      "title": "goedwerkend Philips koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445742225-goedwerkend-philips-koffiezetapparaat"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Philips Senseo koffiemachine met 3 pakken koffie",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447783716-philips-senseo-koffiemachine-met-3-pakken-koffie"
      },
      {
       "kind": "fixed",
@@ -840,34 +694,34 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446868794-philips-koffiezetapparaat"
      },
      {
-      "kind": "fixed",
-      "price": 35.0,
-      "title": "Philips L’OR Barista koffiemachine – rood",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446906573-philips-l-or-barista-koffiemachine-rood"
-     },
-     {
       "kind": "bid",
       "price": 35.0,
       "title": "Philips senseo koffiemachine izgst",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446089544-philips-senseo-koffiemachine-izgst"
      },
      {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "senseo Philips koffieapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448125303-senseo-philips-koffieapparaat"
+     },
+     {
       "kind": "fixed",
       "price": 35.0,
-      "title": "Philips Koffiezetapparaat Nieuw met Druppelstop",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446997451-philips-koffiezetapparaat-nieuw-met-druppelstop"
+      "title": "Philips Koffiezetapparaat - Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447730625-philips-koffiezetapparaat-nieuw-in-doos"
      },
      {
       "kind": "bid",
-      "price": 40.0,
-      "title": "Philips koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446869423-philips-koffiemachine"
+      "price": 45.0,
+      "title": "philips koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447817104-philips-koffiemachine"
      },
      {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Philips Senseo Sarista Koffiemachine met koffiekan + extra's",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446660500-philips-senseo-sarista-koffiemachine-met-koffiekan-extra-s"
+      "kind": "fixed",
+      "price": 62.95,
+      "title": "Philips LOR Barista Sublime LM9012/60 - Koffiezetapparaat -",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1516258198-philips-lor-barista-sublime-lm9012-60-koffiezetapparaat"
      },
      {
       "kind": "bid",
@@ -877,33 +731,39 @@
      },
      {
       "kind": "fixed",
-      "price": 82.99,
+      "price": 79.95,
+      "title": "Philips Senseo Switch Koffiemachine HD6592/84 - Pad- en",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1530450294-philips-senseo-switch-koffiemachine-hd6592-84-pad-en"
+     },
+     {
+      "kind": "fixed",
+      "price": 84.99,
       "title": "Philips -  Koffiezetapparaat Met Thermoskan 12 L Zwart",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1516005648-philips-koffiezetapparaat-met-thermoskan-12-l-zwart"
      },
      {
       "kind": "bid",
-      "price": 100.0,
-      "title": "Philips koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445124183-philips-koffiemachine"
+      "price": 120.0,
+      "title": "Philips Koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442229897-philips-koffiemachine"
      },
      {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Philips EP2220/10 Volautomatische Espressomachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447040293-philips-ep2220-10-volautomatische-espressomachine"
-     },
-     {
-      "kind": "bid",
-      "price": 119.0,
-      "title": "Philips EP3551/00 volautomatische koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800992-philips-ep3551-00-volautomatische-koffiemachine"
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Te koop Philips baristina koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444709459-te-koop-philips-baristina-koffiemachine"
      },
      {
       "kind": "bid",
       "price": 125.0,
-      "title": "Nette Philips koffiemachine EP2221",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444106405-nette-philips-koffiemachine-ep2221"
+      "title": "Philips Series 2200 Volautomatische Koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447823879-philips-series-2200-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Philips 2200 koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448026274-philips-2200-koffiemachine"
      },
      {
       "kind": "fixed",
@@ -912,10 +772,10 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1515281924-philips-lm9512-20-lor-barista-absolu-koffiezetapparaat-grijs"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 130.0,
-      "title": "Philips EP2230 koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444800172-philips-ep2230-koffiemachine"
+      "title": "Koffiemachine Philips",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447237635-koffiemachine-philips"
      },
      {
       "kind": "fixed",
@@ -930,16 +790,16 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446996248-philips-volautomatische-koffiemachine-serrie-2200"
      },
      {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Philips Koffiemachine - Compleet met handleiding",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2443877623-philips-koffiemachine-compleet-met-handleiding"
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Philips Volautomatische Koffiemachine EP2200",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448615782-philips-volautomatische-koffiemachine-ep2200"
      },
      {
-      "kind": "fixed",
-      "price": 175.0,
-      "title": "Philips 2200 koffiemachine in nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446980943-philips-2200-koffiemachine-in-nieuwstaat"
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Modern  zwart Philips Volautomatische Koffiemachine EP 2220",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447321310-modern-zwart-philips-volautomatische-koffiemachine-ep-2220"
      },
      {
       "kind": "bid",
@@ -948,75 +808,68 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446914851-philips-koffiemachine-zo-goed-als-nieuw"
      },
      {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "koffiemachine Philips 5400 LatteGo",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447818472-koffiemachine-philips-5400-lattego"
+     },
+     {
       "kind": "bid",
-      "price": 219.95,
-      "title": "philips latte go volautomaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444579374-philips-latte-go-volautomaat"
+      "price": 225.0,
+      "title": "Philips Lattego 5400 - Goed werkende koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447336172-philips-lattego-5400-goed-werkende-koffiemachine"
      },
      {
       "kind": "bid",
       "price": 230.0,
       "title": "Philips koffiemachine",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444491194-philips-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Koffiemachine Philips Latte Go",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446597959-koffiemachine-philips-latte-go"
-     },
-     {
-      "kind": "fixed",
-      "price": 299.99,
-      "title": "Philips Baristina - BAR302/20 - Espressomachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1530779859-philips-baristina-bar302-20-espressomachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 338.99,
-      "title": "Philips Baristina Plus - BAR500/00 - Espressomachine - Pisto",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1530782983-philips-baristina-plus-bar500-00-espressomachine-pisto"
      }
     ],
     "low": 35.0,
-    "median": 122.0,
+    "median": 125.0,
     "model": null,
     "outliers": [],
     "prices": [
      10.0,
      10.0,
-     12.5,
+     10.0,
+     10.0,
      15.0,
-     24.95,
      25.0,
+     30.0,
      30.0,
      35.0,
      35.0,
      35.0,
-     40.0,
-     50.0,
+     45.0,
+     62.95,
      75.0,
-     82.99,
-     100.0,
-     100.0,
-     119.0,
+     79.95,
+     84.99,
+     120.0,
+     125.0,
+     125.0,
      125.0,
      129.99,
      130.0,
      134.99,
      147.5,
+     149.0,
      150.0,
-     175.0,
      200.0,
-     219.95,
+     200.0,
+     225.0,
      230.0,
-     275.0,
+     250.0,
      299.99,
-     338.99,
+     300.0,
+     300.0,
+     300.0,
      350.0,
-     370.0,
-     380.0,
-     449.99
+     359.0,
+     360.0,
+     370.0
     ],
     "query": "koffiemachine philips",
     "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
@@ -1037,7 +890,7 @@
    "title": "Koffiemachine PHILIPS",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1082,7 +935,7 @@
    "title": "Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1127,7 +980,7 @@
    "title": "Twee 27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1152,18 +1005,18 @@
    "itemMinMargin": null,
    "key": "hnvi:196600",
    "location": "Loon op Zand",
-   "market": 182.5,
+   "market": 207.5,
    "marketSource": "marktplaats",
-   "maxBid": 40.0,
+   "maxBid": 47.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 8,
-    "high": 287.5,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 10,
+    "high": 373.75,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 75.0,
+      "price": 65.0,
       "title": "HP Laptop - 15-ay082nd",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447086382-hp-laptop-15-ay082nd"
      },
@@ -1186,16 +1039,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2429979797-hp-15s-eq2210nd-fijne-laptop"
      },
      {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "HP Laptop 15-dw0xxx - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2419362930-hp-laptop-15-dw0xxx-zo-goed-als-nieuw"
+     },
+     {
       "kind": "bid",
       "price": 235.0,
       "title": "HP Laptop 15-FC0806ND",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2441514171-hp-laptop-15-fc0806nd"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "HP Laptop 15-fd0802nd - nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2409417884-hp-laptop-15-fd0802nd-nieuw"
      },
      {
       "kind": "fixed",
@@ -1208,21 +1061,35 @@
       "price": 350.0,
       "title": "HP Laptop 14-em0055nd",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2418176814-hp-laptop-14-em0055nd"
+     },
+     {
+      "kind": "bid",
+      "price": 445.0,
+      "title": "HP Laptop 15-fd0851nd",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2436098380-hp-laptop-15-fd0851nd"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "HP Laptop 14-em0957nd",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444356569-hp-laptop-14-em0957nd"
      }
     ],
-    "low": 88.75,
-    "median": 182.5,
+    "low": 106.25,
+    "median": 207.5,
     "model": null,
     "outliers": [],
     "prices": [
-     75.0,
+     65.0,
      80.0,
      115.0,
      130.0,
+     180.0,
      235.0,
-     250.0,
      300.0,
-     350.0
+     350.0,
+     445.0,
+     500.0
     ],
     "query": "laptop hp",
     "url": "https://www.marktplaats.nl/q/laptop+hp/"
@@ -1243,7 +1110,7 @@
    "title": "Laptop HP i5-fcoxx. 238 GB opslag. 8GB RAM. AMD Ryzen 3 7320u 2.40 GHz processor.",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1288,7 +1155,7 @@
    "title": "Beeldscherm 27 inch ACER RG270",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1333,7 +1200,7 @@
    "title": "Beeldscherm 27 inch SAMSUNG S27C310EAU",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1378,7 +1245,7 @@
    "title": "27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1403,11 +1270,11 @@
    "itemMinMargin": null,
    "key": "hnvi:196613",
    "location": "Loon op Zand",
-   "market": 150.0,
+   "market": 100.0,
    "marketSource": "marktplaats",
-   "maxBid": 31.0,
+   "maxBid": 18.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 5,
     "high": 324.97,
     "kind": "exact",
@@ -1419,14 +1286,14 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/accu-s-en-batterijen/m2437836122-battery-lenovo-x240-x250-t460p-t470p-t440-t440s-t450s"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 70.0,
       "title": "Lenovo Thinkpad T440s - Windows 11 - Geupdate en getest",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446865651-lenovo-thinkpad-t440s-windows-11-geupdate-en-getest"
      },
      {
       "kind": "fixed",
-      "price": 150.0,
+      "price": 100.0,
       "title": "Lenovo t440S -256GB 8GB intel core i5",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2443225828-lenovo-t440s-256gb-8gb-intel-core-i5"
      },
@@ -1444,13 +1311,13 @@
      }
     ],
     "low": 58.48,
-    "median": 150.0,
+    "median": 100.0,
     "model": "T440S",
     "outliers": [],
     "prices": [
      46.95,
      70.0,
-     150.0,
+     100.0,
      189.99,
      459.95
     ],
@@ -1473,7 +1340,7 @@
    "title": "Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300u CPU@1,90 HGZ. QWERTZ toetsenbord.",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -1518,7 +1385,7 @@
    "title": "Makita AVT Breekhamer HM1812",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -1563,7 +1430,7 @@
    "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -1592,22 +1459,16 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 35,
-    "high": 50.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 36,
+    "high": 58.71,
     "kind": "exact",
     "listings": [
      {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita oplader muurbeugel - DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436194972-makita-oplader-muurbeugel-dc18rc"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita DC18RC wandmontage",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
+      "kind": "bid",
+      "price": 4.95,
+      "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
      },
      {
       "kind": "fixed",
@@ -1617,15 +1478,15 @@
      },
      {
       "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita DC18RC oplader 18v Li-ion en Ni-MH accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445223700-makita-dc18rc-oplader-18v-li-ion-en-ni-mh-accu"
+      "price": 5.0,
+      "title": "Makita DC18RC wandmontage",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
      },
      {
       "kind": "bid",
-      "price": 22.5,
-      "title": "Makita DC18RC Oplader voor Li-ion & Ni-MH 7.2-18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446859695-makita-dc18rc-oplader-voor-li-ion-ni-mh-7-2-18v"
+      "price": 25.0,
+      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
      },
      {
       "kind": "fixed",
@@ -1634,22 +1495,28 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
      },
      {
-      "kind": "bid",
-      "price": 29.0,
-      "title": "Makita originele acculader DC18RC T",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444653933-makita-originele-acculader-dc18rc-t"
-     },
-     {
       "kind": "fixed",
       "price": 29.95,
       "title": "Makita DC18RC LXT / 195584-2 oplader 14.4, 123accu huismerk",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529827294-makita-dc18rc-lxt-195584-2-oplader-14-4-123accu-huismerk"
      },
      {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita DC18RC Oplader met 14.4V 3.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448202166-makita-dc18rc-oplader-met-14-4v-3-0ah-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita DC18RC Oplader (exclusief accu)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
+     },
+     {
       "kind": "fixed",
       "price": 30.0,
-      "title": "Makita acculader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
+      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
      },
      {
       "kind": "bid",
@@ -1658,10 +1525,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
      },
      {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Makita DC18RC Snellader voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446965412-makita-dc18rc-snellader-voor-li-ion-accu-s"
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita acculader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
      },
      {
       "kind": "bid",
@@ -1682,12 +1549,6 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
      },
      {
-      "kind": "fixed",
-      "price": 39.95,
-      "title": "Makita lader DC18RC 14.4V~18V Lithium batterij",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2439135556-makita-lader-dc18rc-14-4v-18v-lithium-batterij"
-     },
-     {
       "kind": "bid",
       "price": 40.0,
       "title": "Nette gebruikte Makita lader DC18RC",
@@ -1702,26 +1563,32 @@
      {
       "kind": "bid",
       "price": 40.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
       "title": "Nieuwe Makita DC18RC Oplader voor 18V Li-ion Accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
      },
      {
       "kind": "bid",
       "price": 40.0,
-      "title": "NIEUW - Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436624781-nieuw-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
      },
      {
       "kind": "bid",
       "price": 40.0,
       "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2432300970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
      },
      {
       "kind": "fixed",
@@ -1734,12 +1601,6 @@
       "price": 45.0,
       "title": "Makita DC18RC Oplader voor Li-ion accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446949689-makita-dc18rc-oplader-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Snellader voor Makita 14.4V-18V accu's - Model DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2440537615-snellader-voor-makita-14-4v-18v-accu-s-model-dc18rc"
      },
      {
       "kind": "fixed",
@@ -1761,12 +1622,6 @@
      },
      {
       "kind": "bid",
-      "price": 50.0,
-      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
-     },
-     {
-      "kind": "bid",
       "price": 55.0,
       "title": "Nieuwe originele Makita DC18RC snellader",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445371009-nieuwe-originele-makita-dc18rc-snellader"
@@ -1776,33 +1631,46 @@
       "price": 59.95,
       "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Makita accu met lader - DC18RC en BL1815",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2417485376-makita-accu-met-lader-dc18rc-en-bl1815"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita acculaders DC10SB en DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
      }
     ],
     "low": 30.0,
     "median": 40.0,
     "model": "DC18RC",
     "outliers": [
-     119.0,
+     160.0,
      169.0,
-     179.0,
+     180.0,
+     189.0,
      229.0
     ],
     "prices": [
+     4.95,
      5.0,
      5.0,
-     5.0,
-     20.0,
-     22.5,
+     25.0,
      27.95,
-     29.0,
      29.95,
      30.0,
      30.0,
-     35.0,
+     30.0,
+     30.0,
+     30.0,
      35.0,
      35.0,
      39.0,
-     39.95,
+     40.0,
      40.0,
      40.0,
      40.0,
@@ -1811,18 +1679,19 @@
      40.0,
      40.95,
      45.0,
-     45.0,
      49.99,
-     50.0,
      50.0,
      50.0,
      55.0,
      59.95,
      60.0,
-     70.0,
      75.0,
      80.0,
-     80.0
+     80.0,
+     100.0,
+     119.0,
+     120.0,
+     140.0
     ],
     "query": "makita dc18rc",
     "url": "https://www.marktplaats.nl/q/makita+dc18rc/"
@@ -1843,7 +1712,7 @@
    "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -1872,7 +1741,7 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 15,
     "high": 47.95,
     "kind": "exact",
@@ -1904,26 +1773,26 @@
      {
       "kind": "fixed",
       "price": 32.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 2500mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990276-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-2500mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 32.95,
       "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 3000mAh",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1514476448-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-3000mah"
      },
      {
       "kind": "fixed",
-      "price": 34.99,
-      "title": "Makita BL1830 18v 3.0 Ah | Inc garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442174361-makita-bl1830-18v-3-0-ah-inc-garantie"
+      "price": 32.95,
+      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 2500mAh",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990276-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-2500mah"
      },
      {
       "kind": "fixed",
       "price": 34.99,
       "title": "Makita Accu 3.0 Ah 18V BL1830 | Incl garantie",
       "url": "https://www.marktplaats.nl/v/caravans-en-kamperen/kampeergereedschap/m2441148883-makita-accu-3-0-ah-18v-bl1830-incl-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.99,
+      "title": "Makita BL1830 18v 3.0 Ah | Inc garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442174361-makita-bl1830-18v-3-0-ah-inc-garantie"
      },
      {
       "kind": "fixed",
@@ -2008,7 +1877,7 @@
    "title": "Makita LXT Accubatterij BL1830",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2053,7 +1922,7 @@
    "title": "Hilti Meetstatief PUA 25",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2082,9 +1951,9 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 5,
-    "high": 17.5,
+    "high": 57.5,
     "kind": "general",
     "listings": [
      {
@@ -2096,14 +1965,14 @@
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Gereedschapskoffers leeg - Makita en Metabo",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Makita Gereedschapskoffers (2 stuks)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
      },
      {
       "kind": "bid",
@@ -2112,24 +1981,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
      },
      {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
+      "kind": "bid",
+      "price": 100.0,
+      "title": "nieuwe makita gereedschapskoffers 25 euro per koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443739238-nieuwe-makita-gereedschapskoffers-25-euro-per-koffer"
      }
     ],
     "low": 12.5,
     "median": 15.0,
     "model": null,
-    "outliers": [
-     100.0
-    ],
+    "outliers": [],
     "prices": [
      10.0,
      15.0,
      15.0,
      15.0,
-     20.0
+     100.0
     ],
     "query": "makita gereedschapskoffers",
     "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
@@ -2150,7 +2017,7 @@
    "title": "Makita gereedschapskoffers - 2 stuks",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2175,21 +2042,15 @@
    "itemMinMargin": null,
    "key": "proveiling:3285807",
    "location": "Waddinxveen",
-   "market": 15.95,
+   "market": 16.98,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 7,
-    "high": 20.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 6,
+    "high": 38.75,
     "kind": "general",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 7.5,
-      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442664478-dewalt-tstak-gereedschapskoffer-leeg"
-     },
      {
       "kind": "fixed",
       "price": 10.0,
@@ -2216,31 +2077,28 @@
      },
      {
       "kind": "fixed",
-      "price": 20.0,
-      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2423106513-dewalt-tstak-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "fixed",
       "price": 30.0,
       "title": "Dewalt TSTAK Gereedschapskoffer met Inlay",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436537030-dewalt-tstak-gereedschapskoffer-met-inlay"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer Set van 5",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2418736947-dewalt-tstak-gereedschapskoffer-set-van-5"
      }
     ],
     "low": 10.0,
-    "median": 15.95,
+    "median": 16.98,
     "model": null,
-    "outliers": [
-     65.0
-    ],
+    "outliers": [],
     "prices": [
-     7.5,
      10.0,
      10.0,
      15.95,
      18.0,
-     20.0,
-     30.0
+     30.0,
+     65.0
     ],
     "query": "dewalt tstak gereedschapskoffer",
     "url": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
@@ -2261,7 +2119,7 @@
    "title": "DEWALT TSTAK Gereedschapskoffer",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2290,9 +2148,9 @@
    "marketSource": "marktplaats",
    "maxBid": 2.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 4,
-    "high": 81.25,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 5,
+    "high": 167.47,
     "kind": "exact",
     "listings": [
      {
@@ -2318,9 +2176,15 @@
       "price": 85.0,
       "title": "DEWALT DCF 887 ,IN T STACK",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443104456-dewalt-dcf-887-in-t-stack"
+     },
+     {
+      "kind": "bid",
+      "price": 249.95,
+      "title": "DeWALT DCD796 + DCF887 + originele koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448191214-dewalt-dcd796-dcf887-originele-koffer"
      }
     ],
-    "low": 58.75,
+    "low": 62.49,
     "median": 70.0,
     "model": "DCF887",
     "outliers": [],
@@ -2328,7 +2192,8 @@
      55.0,
      69.99,
      70.0,
-     85.0
+     85.0,
+     249.95
     ],
     "query": "dewalt dcf887",
     "url": "https://www.marktplaats.nl/q/dewalt+dcf887/"
@@ -2349,7 +2214,7 @@
    "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2394,7 +2259,7 @@
    "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
    "trip": {
     "approx": false,
-    "cost": 23.55,
+    "cost": 23.66,
     "km": 93.7,
     "min": 79
    },
@@ -2419,11 +2284,11 @@
    "itemMinMargin": null,
    "key": "hnvi:196626",
    "location": "Loon op Zand",
-   "market": 154.5,
+   "market": 147.0,
    "marketSource": "marktplaats",
-   "maxBid": 33.0,
+   "maxBid": 31.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 10,
     "high": 225.0,
     "kind": "general",
@@ -2436,9 +2301,15 @@
      },
      {
       "kind": "bid",
-      "price": 85.0,
+      "price": 75.0,
       "title": "Makita DMR102 Bouwradio met 18V 3Ah accu - Speelt super!",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2439357891-makita-dmr102-bouwradio-met-18v-3ah-accu-speelt-super"
+     },
+     {
+      "kind": "bid",
+      "price": 99.99,
+      "title": "Makita Bouwradio BMR100 | Zonder accu | Met garantie",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2448444968-makita-bouwradio-bmr100-zonder-accu-met-garantie"
      },
      {
       "kind": "bid",
@@ -2456,19 +2327,13 @@
       "kind": "fixed",
       "price": 149.0,
       "title": "Makita DMR112 18V Accu Bouwradio DAB+ Bluetooth LXT CXT",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446901078-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2448374411-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
      },
      {
       "kind": "bid",
       "price": 159.99,
       "title": "Nette Dmr115 Makita bouwradio met oplader.Eventueel met accu",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446407695-nette-dmr115-makita-bouwradio-met-oplader-eventueel-met-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 179.99,
-      "title": "Nieuwe MR004G Makita bouwradio Dab+ en Bleutooth met accu",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2444824386-nieuwe-mr004g-makita-bouwradio-dab-en-bleutooth-met-accu"
      },
      {
       "kind": "fixed",
@@ -2489,18 +2354,18 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582596632-makita-dmr115-10-8-18v-li-ion-accu-bouwradio-accus-en-lader"
      }
     ],
-    "low": 96.25,
-    "median": 154.5,
+    "low": 93.74,
+    "median": 147.0,
     "model": null,
     "outliers": [],
     "prices": [
      50.0,
-     85.0,
+     75.0,
+     99.99,
      100.0,
      145.0,
      149.0,
      159.99,
-     179.99,
      210.0,
      270.0,
      350.0
@@ -2524,7 +2389,7 @@
    "title": "Bouwradio MAKITA zonder accu",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -2542,28 +2407,22 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/UWayXGNzm9E/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjMwLzAwMTYtYm91d3JhZGlvLWRld2FsdC1leGNsdXNpZWYtYWNjdS5qcGc.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "hnvi:196630",
    "location": "Loon op Zand",
-   "market": 70.0,
+   "market": 87.0,
    "marketSource": "marktplaats",
-   "maxBid": 10.0,
+   "maxBid": 14.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 7,
-    "high": 99.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 6,
+    "high": 180.0,
     "kind": "general",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 29.0,
-      "title": "DeWalt Bouwradio met Accu en Stopcontacten",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2409050225-dewalt-bouwradio-met-accu-en-stopcontacten"
-     },
      {
       "kind": "bid",
       "price": 62.0,
@@ -2577,16 +2436,10 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441514923-dewalt-bouwradio-zonder-accu"
      },
      {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "DeWALT DCR017 DAB+ Bouwradio en Acculader",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2430867403-dewalt-dcr017-dab-bouwradio-en-acculader"
-     },
-     {
       "kind": "fixed",
-      "price": 90.0,
-      "title": "Dewalt accu bouwradio",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2445696231-dewalt-accu-bouwradio"
+      "price": 75.0,
+      "title": "DeWalt Bouwradio met 12V Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/overige-doe-het-zelf-en-verbouw/m2448550184-dewalt-bouwradio-met-12v-accu"
      },
      {
       "kind": "bid",
@@ -2599,22 +2452,25 @@
       "price": 150.0,
       "title": "Dewalt DCR027 bouwradio op netstroom en accu",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446864716-dewalt-dcr027-bouwradio-op-netstroom-en-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 269.99,
+      "title": "DeWALT DCR027 DAB+ Bouwradio 10.8-18V XR + T-Stack Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441522020-dewalt-dcr027-dab-bouwradio-10-8-18v-xr-t-stack-accu"
      }
     ],
-    "low": 62.0,
-    "median": 70.0,
+    "low": 68.0,
+    "median": 87.0,
     "model": null,
-    "outliers": [
-     269.99
-    ],
+    "outliers": [],
     "prices": [
-     29.0,
      62.0,
      70.0,
-     70.0,
-     90.0,
+     75.0,
      99.0,
-     150.0
+     150.0,
+     269.99
     ],
     "query": "dewalt bouwradio accu",
     "url": "https://www.marktplaats.nl/q/dewalt+bouwradio+accu/"
@@ -2635,7 +2491,7 @@
    "title": "Bouwradio DEWALT ( exclusief accu )",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -2664,11 +2520,17 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 37,
-    "high": 30.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 38,
+    "high": 25.0,
     "kind": "general",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Makita gereedschapskoffer - Lege koffer voor gereedschap",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2431625367-makita-gereedschapskoffer-lege-koffer-voor-gereedschap"
+     },
      {
       "kind": "bid",
       "price": 5.0,
@@ -2678,20 +2540,8 @@
      {
       "kind": "bid",
       "price": 5.0,
-      "title": "Makita gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441549512-makita-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "bid",
-      "price": 5.0,
       "title": "Makita inlay voor gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2434745460-makita-inlay-voor-gereedschapskoffer"
-     },
-     {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "Makita gereedschapskoffer - Lege koffer voor gereedschap",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2431625367-makita-gereedschapskoffer-lege-koffer-voor-gereedschap"
      },
      {
       "kind": "fixed",
@@ -2702,14 +2552,14 @@
      {
       "kind": "bid",
       "price": 6.0,
-      "title": "7€ Makita LXT Brushless Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441454666-7-makita-lxt-brushless-gereedschapskoffer"
+      "title": "6€ Makita LXT Brushless Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2441454666-6-makita-lxt-brushless-gereedschapskoffer"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 10.0,
-      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2427550118-makita-gereedschapskoffer-leeg"
      },
      {
       "kind": "bid",
@@ -2718,10 +2568,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2436653451-makita-gereedschapskoffer-lege-koffer"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 10.0,
-      "title": "Makita gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2427550118-makita-gereedschapskoffer-leeg"
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
      },
      {
       "kind": "fixed",
@@ -2744,8 +2594,8 @@
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Gereedschapskoffers leeg - Makita en Metabo",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2445359697-gereedschapskoffers-leeg-makita-en-metabo"
+      "title": "Makita Gereedschapskoffer - Robuust en Ruim",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2447654034-makita-gereedschapskoffer-robuust-en-ruim"
      },
      {
       "kind": "bid",
@@ -2762,8 +2612,44 @@
      {
       "kind": "bid",
       "price": 15.0,
+      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "NIEUW Makita MBOX nr 1 Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448358874-nieuw-makita-mbox-nr-1-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
       "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "bid",
+      "price": 18.0,
+      "title": "NIEUW Makita MBOX nr. 2 gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448363000-nieuw-makita-mbox-nr-2-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer met lades",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2448113274-makita-gereedschapskoffer-met-lades"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - Leeg voor accu kitspuit.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2447265132-makita-gereedschapskoffer-leeg-voor-accu-kitspuit"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443083306-makita-gereedschapskoffer-leeg"
      },
      {
       "kind": "fixed",
@@ -2774,20 +2660,8 @@
      {
       "kind": "bid",
       "price": 20.0,
-      "title": "Makita gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443083306-makita-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
       "title": "Makita Systainer Gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2440697598-makita-systainer-gereedschapskoffer"
-     },
-     {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita M box systainer gereedschapskoffers sistainer koffer",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443570777-makita-m-box-systainer-gereedschapskoffers-sistainer-koffer"
      },
      {
       "kind": "fixed",
@@ -2798,26 +2672,26 @@
      {
       "kind": "bid",
       "price": 20.0,
-      "title": "Makita gereedschapskoffer - 2 stuks(slijptol)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436394052-makita-gereedschapskoffer-2-stuks-slijptol"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
       "title": "Mbox Makita Koffer Type 2 - Gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2413532058-mbox-makita-koffer-type-2-gereedschapskoffer"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 20.0,
-      "title": "Makita koffer DTW300ZJ - Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2424673500-makita-koffer-dtw300zj-gereedschapskoffer"
+      "title": "Makita Mbox koffer - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2414366065-makita-mbox-koffer-gereedschapskoffer"
      },
      {
       "kind": "bid",
-      "price": 25.0,
-      "title": "Makita Mbox 4 Gereedschapskoffer - Zonder inhoud",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2447046512-makita-mbox-4-gereedschapskoffer-zonder-inhoud"
+      "price": 20.0,
+      "title": "Makita gereedschapskoffer - 2 stuks(slijptol)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436394052-makita-gereedschapskoffer-2-stuks-slijptol"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2419682157-makita-gereedschapskoffer-leeg"
      },
      {
       "kind": "bid",
@@ -2827,38 +2701,22 @@
      },
      {
       "kind": "bid",
-      "price": 30.0,
-      "title": "Makita gereedschapskoffer voor zaagmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2439288569-makita-gereedschapskoffer-voor-zaagmachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita Gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436765693-makita-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita Systainer - Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2431862092-makita-systainer-gereedschapskoffer"
-     },
-     {
-      "kind": "fixed",
-      "price": 32.0,
-      "title": "Makita Mbox 1 - Gereedschapskoffer | Van €64, nu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2438935021-makita-mbox-1-gereedschapskoffer-van-64-nu"
+      "price": 25.0,
+      "title": "Makita gereedschapskoffer - stevig en ruim",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2422851878-makita-gereedschapskoffer-stevig-en-ruim"
      }
     ],
-    "low": 10.0,
+    "low": 11.5,
     "median": 20.0,
     "model": null,
     "outliers": [
+     65.0,
+     65.0,
      75.0,
+     95.0,
      100.0
     ],
     "prices": [
-     5.0,
      5.0,
      5.0,
      5.0,
@@ -2874,6 +2732,11 @@
      15.0,
      15.0,
      15.0,
+     15.0,
+     15.0,
+     18.0,
+     20.0,
+     20.0,
      20.0,
      20.0,
      20.0,
@@ -2890,11 +2753,8 @@
      32.0,
      35.0,
      35.0,
-     35.0,
      40.0,
-     50.0,
-     65.0,
-     65.0
+     52.0
     ],
     "query": "makita gereedschapskoffer",
     "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffer/"
@@ -2915,7 +2775,7 @@
    "title": "Gereedschapskoffer MAKITA",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -2944,16 +2804,16 @@
    "marketSource": "marktplaats",
    "maxBid": 11.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 21,
-    "high": 105.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 19,
+    "high": 100.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Haakse slijper Metabo LE 11-115",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441407597-haakse-slijper-metabo-le-11-115"
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Metabo haakse slijper - Goed werkende staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2448090774-metabo-haakse-slijper-goed-werkende-staat"
      },
      {
       "kind": "bid",
@@ -2980,28 +2840,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2423894571-metabo-haakse-slijper-gebruikt"
      },
      {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Metabo W 9-125 Quick haakse slijper 900W",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2421319193-metabo-w-9-125-quick-haakse-slijper-900w"
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Metabo W 750-125 Haakse Slijper - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441421261-metabo-w-750-125-haakse-slijper-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 48.0,
+      "title": "Nieuwe Metabo haakse slijper W750-115",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447800491-nieuwe-metabo-haakse-slijper-w750-115"
      },
      {
       "kind": "bid",
       "price": 50.0,
       "title": "Metabo haakse slijper - Gebruikt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2445519989-metabo-haakse-slijper-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Metabo W 750-125 Haakse Slijper - Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441421261-metabo-w-750-125-haakse-slijper-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 55.12,
-      "title": "Metabo Haakse Slijper WP 11-125 | Retourdeal 59% Korting",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/a1531390261-metabo-haakse-slijper-wp-11-125-retourdeal-59-korting"
      },
      {
       "kind": "fixed",
@@ -3052,12 +2906,6 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441204914-metabo-wepba-17-150-quick-rt-1750w-haakseslijper-nette-staat"
      },
      {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Metabo W18X Accu Haakse Slijper 18V - Z.G.A.N.",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2432020717-metabo-w18x-accu-haakse-slijper-18v-z-g-a-n"
-     },
-     {
       "kind": "fixed",
       "price": 125.0,
       "title": "Metabo Haakse Slijper Quick - profi versie",
@@ -3080,18 +2928,17 @@
     "median": 75.0,
     "model": null,
     "outliers": [
-     291.5
+     271.0
     ],
     "prices": [
-     15.0,
+     20.0,
      25.0,
      25.0,
      25.0,
      40.0,
-     40.0,
+     45.0,
+     48.0,
      50.0,
-     50.0,
-     55.12,
      65.0,
      75.0,
      75.0,
@@ -3100,7 +2947,6 @@
      99.99,
      100.0,
      109.99,
-     125.0,
      125.0,
      169.5,
      199.0
@@ -3124,7 +2970,7 @@
    "title": "Haakse slijper METABO met diverse schijven",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -3149,21 +2995,15 @@
    "itemMinMargin": null,
    "key": "hnvi:196661",
    "location": "Loon op Zand",
-   "market": 70.0,
+   "market": 87.0,
    "marketSource": "marktplaats",
-   "maxBid": 10.0,
+   "maxBid": 14.0,
    "mp": {
-    "asOf": "2026-09-27T06:46:09.042374+00:00",
-    "count": 7,
-    "high": 99.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 6,
+    "high": 180.0,
     "kind": "general",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 29.0,
-      "title": "DeWalt Bouwradio met Accu en Stopcontacten",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2409050225-dewalt-bouwradio-met-accu-en-stopcontacten"
-     },
      {
       "kind": "bid",
       "price": 62.0,
@@ -3177,16 +3017,10 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441514923-dewalt-bouwradio-zonder-accu"
      },
      {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "DeWALT DCR017 DAB+ Bouwradio en Acculader",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2430867403-dewalt-dcr017-dab-bouwradio-en-acculader"
-     },
-     {
       "kind": "fixed",
-      "price": 90.0,
-      "title": "Dewalt accu bouwradio",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2445696231-dewalt-accu-bouwradio"
+      "price": 75.0,
+      "title": "DeWalt Bouwradio met 12V Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/overige-doe-het-zelf-en-verbouw/m2448550184-dewalt-bouwradio-met-12v-accu"
      },
      {
       "kind": "bid",
@@ -3199,22 +3033,25 @@
       "price": 150.0,
       "title": "Dewalt DCR027 bouwradio op netstroom en accu",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446864716-dewalt-dcr027-bouwradio-op-netstroom-en-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 269.99,
+      "title": "DeWALT DCR027 DAB+ Bouwradio 10.8-18V XR + T-Stack Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441522020-dewalt-dcr027-dab-bouwradio-10-8-18v-xr-t-stack-accu"
      }
     ],
-    "low": 62.0,
-    "median": 70.0,
+    "low": 68.0,
+    "median": 87.0,
     "model": null,
-    "outliers": [
-     269.99
-    ],
+    "outliers": [],
     "prices": [
-     29.0,
      62.0,
      70.0,
-     70.0,
-     90.0,
+     75.0,
      99.0,
-     150.0
+     150.0,
+     269.99
     ],
     "query": "dewalt bouwradio accu",
     "url": "https://www.marktplaats.nl/q/dewalt+bouwradio+accu/"
@@ -3235,7 +3072,7 @@
    "title": "Bouwradio DEWALT met accu",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -3280,7 +3117,7 @@
    "title": "Diverse potboren, zowel steen als hout",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -3325,7 +3162,7 @@
    "title": "Haakse slijptol DEWALT DWE4579",
    "trip": {
     "approx": false,
-    "cost": 11.84,
+    "cost": 11.89,
     "km": 47.1,
     "min": 44
    },
@@ -3350,13 +3187,13 @@
    "itemMinMargin": null,
    "key": "onlineveilingmeester:1902504",
    "location": "Noordwolde",
-   "market": 19.45,
+   "market": 15.0,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-09-27T09:51:31.500418+00:00",
-    "count": 6,
-    "high": 28.12,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 9,
+    "high": 21.25,
     "kind": "general",
     "listings": [
      {
@@ -3367,21 +3204,39 @@
      },
      {
       "kind": "fixed",
+      "price": 2.5,
+      "title": "Bloempot Plantenpot Glas Glazen Kom Planten Bloemen Pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447406747-bloempot-plantenpot-glas-glazen-kom-planten-bloemen-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 8.0,
+      "title": "Haworthia plant in gerecyclede glazen pot met kurk",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447528693-haworthia-plant-in-gerecyclede-glazen-pot-met-kurk"
+     },
+     {
+      "kind": "bid",
+      "price": 12.5,
+      "title": "Set van 4 Glazen Wandvazen voor Planten - Hydroponisch",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2444505762-set-van-4-glazen-wandvazen-voor-planten-hydroponisch"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Intratuin planten in glazen pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2448121491-intratuin-planten-in-glazen-pot"
+     },
+     {
+      "kind": "fixed",
       "price": 15.0,
       "title": "Terariumfles - Glazen fles voor planten of decoratie",
       "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/m2447232028-terariumfles-glazen-fles-voor-planten-of-decoratie"
      },
      {
-      "kind": "fixed",
-      "price": 18.95,
-      "title": "Glazen Hydroponics Vaas - Plantenstekken Station & Decoratie",
-      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542378-glazen-hydroponics-vaas-plantenstekken-station-decoratie"
-     },
-     {
-      "kind": "fixed",
-      "price": 19.95,
-      "title": "Glazen Vaas met Houten Standaard - Hydroponische Plantenbak",
-      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542260-glazen-vaas-met-houten-standaard-hydroponische-plantenbak"
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Zamioculcas plant in glazen terrarium",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2443317576-zamioculcas-plant-in-glazen-terrarium"
      },
      {
       "kind": "bid",
@@ -3396,15 +3251,20 @@
       "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/m2446695293-plant-in-glazenbol"
      }
     ],
-    "low": 11.88,
-    "median": 19.45,
+    "low": 5.25,
+    "median": 15.0,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     75.0
+    ],
     "prices": [
      2.5,
+     2.5,
+     8.0,
+     12.5,
      15.0,
-     18.95,
-     19.95,
+     15.0,
+     15.0,
      27.5,
      30.0
     ],
@@ -3427,8 +3287,8 @@
    "title": "Glazen vazen en planten gieters",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 141
    },
    "units": 1,
@@ -3437,8 +3297,8 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
-   "bid": 31.0,
-   "bids": 10,
+   "bid": 36.0,
+   "bids": 11,
    "closes": "2026-10-05T18:20:46+00:00",
    "count": 1,
    "delivery": false,
@@ -3452,13 +3312,13 @@
    "itemMinMargin": null,
    "key": "onlineveilingmeester:1902545",
    "location": "Noordwolde",
-   "market": 150.0,
+   "market": 147.5,
    "marketSource": "marktplaats",
    "maxBid": 10.0,
    "mp": {
-    "asOf": "2026-09-27T09:51:31.500418+00:00",
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 26,
-    "high": 329.0,
+    "high": 200.0,
     "kind": "general",
     "listings": [
      {
@@ -3469,51 +3329,69 @@
      },
      {
       "kind": "fixed",
-      "price": 40.0,
-      "title": "snelle acer laptop windows 11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445722701-snelle-acer-laptop-windows-11"
-     },
-     {
-      "kind": "bid",
       "price": 50.0,
-      "title": "Acer Aspire 1 A114-C7HQ Laptop - Windows 10 S, Full HD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447072932-acer-aspire-1-a114-c7hq-laptop-windows-10-s-full-hd"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Nette 15,6 inch Acer i5 Windows 7 laptop met SSD. Accu werkt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446831095-nette-15-6-inch-acer-i5-windows-7-laptop-met-ssd-accu-werkt"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Leuke snelle Acer laptop 1920x1080 pixels scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446976208-leuke-snelle-acer-laptop-1920x1080-pixels-scherm"
+      "title": "Acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446222581-acer-laptop"
      },
      {
       "kind": "fixed",
-      "price": 75.0,
+      "price": 50.0,
+      "title": "Acer Aspire 7739Z laptop - 17.3 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447657390-acer-aspire-7739z-laptop-17-3-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447491096-acer-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
       "title": "Acer laptop",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445902551-acer-laptop"
      },
      {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Acer Aspire 3 (2022) - 15,6 inch laptop met Windows 11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446155267-acer-aspire-3-2022-15-6-inch-laptop-met-windows-11"
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Uitstekende Peaq (Acer) laptop met Windows 11 + Office +Hdmi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448465873-uitstekende-peaq-acer-laptop-met-windows-11-office-hdmi"
      },
      {
       "kind": "bid",
-      "price": 99.0,
-      "title": "Laptop Acer Notebook Computer",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446926281-laptop-acer-notebook-computer"
+      "price": 100.0,
+      "title": "Acer laptop met AMD Ryzen processor en 8GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446900014-acer-laptop-met-amd-ryzen-processor-en-8gb-ram"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Acer Predator Helios 300 Gaming Laptop - Getest en Goed",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448282478-acer-predator-helios-300-gaming-laptop-getest-en-goed"
+     },
+     {
+      "kind": "bid",
+      "price": 119.0,
+      "title": "Acer Aspire ES1-711-C3Q7 17,3\" laptop – Windows 10 – goede a",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447473753-acer-aspire-es1-711-c3q7-17-3-laptop-windows-10-goede-a"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Prima Acer Swift 1 SF113 13,3'' FHD Laptop in prima staat.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2265363490-prima-acer-swift-1-sf113-13-3-fhd-laptop-in-prima-staat"
      },
      {
       "kind": "bid",
       "price": 125.0,
-      "title": "Acer Aspire V3-571G Laptop - i7-3632QM, 6GB RAM, 128GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446880811-acer-aspire-v3-571g-laptop-i7-3632qm-6gb-ram-128gb-ssd"
+      "title": "acer 1U75TVMC laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448423988-acer-1u75tvmc-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Acer laptop SWIFT 1 SF114-33",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447808693-acer-laptop-swift-1-sf114-33"
      },
      {
       "kind": "bid",
@@ -3523,15 +3401,9 @@
      },
      {
       "kind": "bid",
-      "price": 149.0,
-      "title": "Acer Aspire 5 A515-54-34B1 15.6 inch laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445680730-acer-aspire-5-a515-54-34b1-15-6-inch-laptop"
-     },
-     {
-      "kind": "bid",
       "price": 150.0,
-      "title": "Acer laptop met AMD Ryzen processor en 8GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446900014-acer-laptop-met-amd-ryzen-processor-en-8gb-ram"
+      "title": "Acer Aspire E15 Laptop 15 inch- Goed onderhouden",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448096652-acer-aspire-e15-laptop-15-inch-goed-onderhouden"
      },
      {
       "kind": "bid",
@@ -3542,62 +3414,50 @@
      {
       "kind": "bid",
       "price": 150.0,
-      "title": "Acer Chromebook R13 - 13 inch Full HD Touchscreen Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445541886-acer-chromebook-r13-13-inch-full-hd-touchscreen-laptop"
+      "title": "Acer Aspire E15 Laptop - Intel Core i3, 4GB RAM, 15.6 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448173202-acer-aspire-e15-laptop-intel-core-i3-4gb-ram-15-6-inch"
      },
      {
       "kind": "bid",
-      "price": 200.0,
-      "title": "Acer Aspire 3 A315-21-4408 Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446434214-acer-aspire-3-a315-21-4408-laptop"
+      "price": 170.0,
+      "title": "Acer laptop - Goed gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447647099-acer-laptop-goed-gebruikt"
      },
      {
       "kind": "bid",
-      "price": 200.0,
-      "title": "Acer Aspire 3 A315-23-R9G5 Laptop - AMD Ryzen 3, 15.6 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446360238-acer-aspire-3-a315-23-r9g5-laptop-amd-ryzen-3-15-6-inch"
+      "price": 175.0,
+      "title": "Acer Aspire E 14 Laptop - Intel Core i3, 4GB RAM, 1TB HDD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447612915-acer-aspire-e-14-laptop-intel-core-i3-4gb-ram-1tb-hdd"
      },
      {
       "kind": "fixed",
-      "price": 220.0,
-      "title": "Laptop Acer Aspire i5 10th gen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445665240-laptop-acer-aspire-i5-10th-gen"
+      "price": 200.0,
+      "title": "LAPTOP ACER",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447311891-laptop-acer"
      },
      {
       "kind": "fixed",
-      "price": 225.0,
-      "title": "Acer Swift 3 Laptop - Lichtgewicht en Krachtig",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445940674-acer-swift-3-laptop-lichtgewicht-en-krachtig"
+      "price": 200.0,
+      "title": "Prima Acer Spin 314-51 FHD Touchscreen Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2427963285-prima-acer-spin-314-51-fhd-touchscreen-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Acer laptop - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447302751-acer-laptop-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
-      "price": 255.0,
-      "title": "Acer Aspire 3 14\" Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445304352-acer-aspire-3-14-laptop"
+      "price": 300.0,
+      "title": "Acer Aspire A515 laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447726219-acer-aspire-a515-laptop"
      },
      {
-      "kind": "bid",
-      "price": 329.0,
-      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446891286-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
-     },
-     {
-      "kind": "bid",
-      "price": 329.0,
-      "title": "Acer Aspire 5 Gaming Laptop - i5-1135G7, 16GB RAM, 500GB S",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446423141-acer-aspire-5-gaming-laptop-i5-1135g7-16gb-ram-500gb-s"
-     },
-     {
-      "kind": "bid",
-      "price": 345.0,
-      "title": "Acer Nitro 5 Gaming Laptop - Krachtig en Snel",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446976835-acer-nitro-5-gaming-laptop-krachtig-en-snel"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Acer Nitro 5 AN517-52 Gaming Laptop - RTX 3060, i7-10750H",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446928392-acer-nitro-5-an517-52-gaming-laptop-rtx-3060-i7-10750h"
+      "kind": "fixed",
+      "price": 350.0,
+      "title": "Acer Aspire Laptop - Goede Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447362328-acer-aspire-laptop-goede-staat"
      },
      {
       "kind": "bid",
@@ -3607,50 +3467,52 @@
      },
      {
       "kind": "bid",
-      "price": 475.0,
-      "title": "ACER ASPIRE LAPTOP",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447126751-acer-aspire-laptop"
+      "price": 450.0,
+      "title": "Acer Aspire 5 laptop - Zgan weinig gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447351293-acer-aspire-5-laptop-zgan-weinig-gebruikt"
      },
      {
       "kind": "bid",
-      "price": 500.0,
-      "title": "Gaming laptop - ACER Nitro 5 (AN515-57-79QM)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446883815-gaming-laptop-acer-nitro-5-an515-57-79qm"
+      "price": 600.0,
+      "title": "Acer Nitro 5 Gaming Laptop i7 RTX 3060 + Logitech G403 Muis",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448584691-acer-nitro-5-gaming-laptop-i7-rtx-3060-logitech-g403-muis"
      }
     ],
-    "low": 75.0,
-    "median": 150.0,
+    "low": 95.0,
+    "median": 147.5,
     "model": null,
     "outliers": [
-     1395.0
+     750.0,
+     849.0,
+     1399.0
     ],
     "prices": [
      15.0,
-     40.0,
      50.0,
-     65.0,
-     75.0,
-     75.0,
-     75.0,
-     99.0,
+     50.0,
+     50.0,
+     60.0,
+     80.0,
+     100.0,
+     100.0,
+     119.0,
      125.0,
+     125.0,
+     140.0,
      145.0,
-     149.0,
      150.0,
      150.0,
      150.0,
+     170.0,
+     175.0,
      200.0,
      200.0,
-     220.0,
-     225.0,
-     255.0,
-     329.0,
-     329.0,
-     345.0,
+     200.0,
+     300.0,
+     350.0,
      400.0,
-     400.0,
-     475.0,
-     500.0
+     450.0,
+     600.0
     ],
     "query": "laptop acer",
     "url": "https://www.marktplaats.nl/q/laptop+acer/"
@@ -3671,8 +3533,8 @@
    "title": "Printer en Laptop, Acer Epson",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 141
    },
    "units": 1,
@@ -3696,13 +3558,13 @@
    "itemMinMargin": null,
    "key": "onlineveilingmeester:1902560",
    "location": "Noordwolde",
-   "market": 170.0,
+   "market": 225.0,
    "marketSource": "marktplaats",
-   "maxBid": 16.0,
+   "maxBid": 31.0,
    "mp": {
-    "asOf": "2026-09-27T09:51:31.500418+00:00",
-    "count": 4,
-    "high": 106.88,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 5,
+    "high": 80.0,
     "kind": "general",
     "listings": [
      {
@@ -3725,19 +3587,26 @@
      },
      {
       "kind": "bid",
+      "price": 25.0,
+      "title": "Hangende Plantenbakken XLset van 4x -verticale tuin - grijs",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/planten-tuinplanten/m2448205987-hangende-plantenbakken-xlset-van-4x-verticale-tuin-grijs"
+     },
+     {
+      "kind": "bid",
       "price": 135.0,
       "title": "Vintage hangende plantenbakken - Oranje en Paars",
       "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2431663381-vintage-hangende-plantenbakken-oranje-en-paars"
      }
     ],
-    "low": 5.58,
-    "median": 17.0,
+    "low": 7.55,
+    "median": 22.5,
     "model": null,
     "outliers": [],
     "prices": [
      3.6,
      11.5,
      22.5,
+     25.0,
      135.0
     ],
     "query": "plant hangende plantenbakken",
@@ -3759,8 +3628,8 @@
    "title": "Ca. 10x Hangende plantenbakken",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 141
    },
    "units": 10,
@@ -3769,8 +3638,8 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 10.0,
-   "bids": 0,
+   "bid": 31.0,
+   "bids": 7,
    "closes": "2026-10-05T18:36:50+00:00",
    "count": 1,
    "delivery": false,
@@ -3778,7 +3647,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-28/23e7c5a5-551d-4c53-9b58-446a6bd35604/20260923_092012.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -3804,7 +3673,7 @@
    "title": "Monitor, Dell, C5519Q, 2022",
    "trip": {
     "approx": false,
-    "cost": 56.39,
+    "cost": 56.66,
     "km": 224.3,
     "min": 177
    },
@@ -3814,8 +3683,8 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 10.0,
-   "bids": 0,
+   "bid": 26.0,
+   "bids": 7,
    "closes": "2026-10-05T18:36:50+00:00",
    "count": 1,
    "delivery": false,
@@ -3823,7 +3692,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-28/cd6a8969-b5ac-4cc9-b78b-e9d5bc8c362d/20260923_093110.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -3849,7 +3718,7 @@
    "title": "Monitor, Dell, C5519Q, 2022",
    "trip": {
     "approx": false,
-    "cost": 56.39,
+    "cost": 56.66,
     "km": 224.3,
     "min": 177
    },
@@ -3868,7 +3737,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-28/2a6513b4-78a5-4560-8693-ece11ebea082/20260923_132220.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -3894,7 +3763,7 @@
    "title": "4x Monitor, LG, Flatron 47WV30BR-B, 2011",
    "trip": {
     "approx": false,
-    "cost": 56.39,
+    "cost": 56.66,
     "km": 224.3,
     "min": 177
    },
@@ -3905,7 +3774,7 @@
   {
    "auction": "Domeinen · Bedrijfsinventaris",
    "bid": 10.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-05T18:40:50+00:00",
    "count": 1,
    "delivery": false,
@@ -3913,7 +3782,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-28/67d413ab-b2cd-4976-89da-ab438bdb1901/20260923_133013.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -3939,7 +3808,7 @@
    "title": "Monitor, Samsung, UE48JU6445",
    "trip": {
     "approx": false,
-    "cost": 56.39,
+    "cost": 56.66,
     "km": 224.3,
     "min": 177
    },
@@ -3958,7 +3827,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/c8bc3277-ab58-46af-a16b-1285fa5b3461/Image%20%2815%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -3978,8 +3847,8 @@
    "title": "Ca. 2,9 KG DDR5 laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -3997,7 +3866,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/6235eab2-3466-4c50-8935-646aa80ca591/Image%20%2816%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4023,8 +3892,8 @@
    "title": "Ca. 25 KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4042,7 +3911,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/f6ea3329-5d86-4b8d-9eb4-06fcfcd75409/Image%20%2816%29.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4068,8 +3937,8 @@
    "title": "Ca. 25 KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4087,7 +3956,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/4c2e575c-a381-4208-b3c7-4dda253c2f69/kavel%206.png",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4113,8 +3982,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4132,7 +4001,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/7f105057-b75e-449f-bf1a-af4ff6db7e8f/Kavel%207.png",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4158,8 +4027,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4177,7 +4046,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/646b3610-2f4e-49d8-97a5-9025a72fd028/kavel%208.png",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4203,8 +4072,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4222,7 +4091,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-08/3db22668-39f1-47a2-a16c-67e11c87b881/Kavel%209.png",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4248,8 +4117,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.15,
-    "km": 167.7,
+    "cost": 42.35,
+    "km": 167.6,
     "min": 135
    },
    "units": 1,
@@ -4298,8 +4167,8 @@
   },
   {
    "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
-   "bid": 18.0,
-   "bids": 3,
+   "bid": 20.0,
+   "bids": 4,
    "closes": "2026-10-07T17:53:48+00:00",
    "count": 24,
    "delivery": true,
@@ -4373,8 +4242,8 @@
    "title": "Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in grote diversiteit w.o. tien paar schoenen en diverse verkleedaccessoires.",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4418,8 +4287,8 @@
    "title": "Pennen en potloden diverse, ook gebruikt",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4443,10 +4312,67 @@
    "itemMinMargin": null,
    "key": "hnvi:197049",
    "location": "Oirschot",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 16.75,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 6,
+    "high": 22.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "te koop plant en pot",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2447992983-te-koop-plant-en-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Te koop 2 glazen design potten voor woonkamerinrichting",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kandelaars-en-kaarsen/m2447229669-te-koop-2-glazen-design-potten-voor-woonkamerinrichting"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "TE KOOP TWEE MOIE GEGLAZUURDE   KAMER BLOEM POTTEN",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2448416054-te-koop-twee-moie-geglazuurde-kamer-bloem-potten"
+     },
+     {
+      "kind": "fixed",
+      "price": 18.5,
+      "title": "Te Koop 3 Oude Porseleinen Potten nu 18.50  Weesp",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-porselein/m2447044882-te-koop-3-oude-porseleinen-potten-nu-18-50-weesp"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Te koop antieke voorraad potten.",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-emaille/m2448164429-te-koop-antieke-voorraad-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Te koop 2 nepalese potten met deksel",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2447236277-te-koop-2-nepalese-potten-met-deksel"
+     }
+    ],
+    "low": 6.88,
+    "median": 16.75,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     5.0,
+     7.5,
+     15.0,
+     18.5,
+     20.0,
+     30.0
+    ],
+    "query": "pot koop",
+    "url": "https://www.marktplaats.nl/q/pot+koop/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -4463,8 +4389,8 @@
    "title": "Koop Kerstartikelen in stelling w.o. lichtgevende poppetjes, diamond painting sets, raamstickers, schildersets, tekenboeken, pennen, potloden etc.",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4508,8 +4434,8 @@
    "title": "Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskapje van F3 ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4553,8 +4479,8 @@
    "title": "Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleetheid onbekend",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4598,8 +4524,8 @@
    "title": "Twaalf potten en PH- granulaat",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4623,15 +4549,27 @@
    "itemMinMargin": null,
    "key": "hnvi:197190",
    "location": "Oirschot",
-   "market": 113.0,
+   "market": 102.5,
    "marketSource": "marktplaats",
-   "maxBid": 23.0,
+   "maxBid": 20.0,
    "mp": {
-    "asOf": "2026-09-27T09:51:31.500418+00:00",
-    "count": 57,
-    "high": 150.0,
+    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "count": 68,
+    "high": 162.75,
     "kind": "general",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Lenovo L1940wA 19 inch monitor - VGA aansluiting",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447419040-lenovo-l1940wa-19-inch-monitor-vga-aansluiting"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Monitoren-1 samsung 2 lenovo",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445277969-monitoren-1-samsung-2-lenovo"
+     },
      {
       "kind": "fixed",
       "price": 15.0,
@@ -4640,9 +4578,9 @@
      },
      {
       "kind": "bid",
-      "price": 15.0,
-      "title": "Lenovo ThinkVision monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2441671845-lenovo-thinkvision-monitor"
+      "price": 20.0,
+      "title": "Lenovo ThinkVision T2224pC Monitor - 21.5 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448314210-lenovo-thinkvision-t2224pc-monitor-21-5-inch-full-hd"
      },
      {
       "kind": "fixed",
@@ -4651,10 +4589,28 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530885391-nieuw-lenovo-thinkvision-e2054-19-5-ips-vga-monitor"
      },
      {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Lenovo ThinkVision monitor - T24i-10 thuiswerk of kantoo",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447437654-lenovo-thinkvision-monitor-t24i-10-thuiswerk-of-kantoo"
+     },
+     {
       "kind": "fixed",
-      "price": 39.95,
-      "title": "Lenovo Monitor TIO Gen 3 22 inch - Full HD IPS - Zwart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527868593-lenovo-monitor-tio-gen-3-22-inch-full-hd-ips-zwart"
+      "price": 25.0,
+      "title": "Lenovo ThinkVision T2324pA - 23\" Full HD IPS Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445400956-lenovo-thinkvision-t2324pa-23-full-hd-ips-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Lenovo ThinkVision Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447498396-lenovo-thinkvision-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Lenovo L27q-30 Monitor - QHD, 75Hz, met kleine beschadiging",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447888938-lenovo-l27q-30-monitor-qhd-75hz-met-kleine-beschadiging"
      },
      {
       "kind": "fixed",
@@ -4664,15 +4620,21 @@
      },
      {
       "kind": "bid",
-      "price": 40.0,
-      "title": "Lenovo 27 inch monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445234938-lenovo-27-inch-monitor"
+      "price": 45.0,
+      "title": "Monitor Lenovo ThinkVision E24-28",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447551134-monitor-lenovo-thinkvision-e24-28"
+     },
+     {
+      "kind": "bid",
+      "price": 49.0,
+      "title": "Lenovo ThinkVision T2364pA Monitor met ThinkPad Dock",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2428019947-lenovo-thinkvision-t2364pa-monitor-met-thinkpad-dock"
      },
      {
       "kind": "bid",
       "price": 50.0,
-      "title": "Lenovo Q24i-10 Monitor - Full HD IPS Scherm",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446451970-lenovo-q24i-10-monitor-full-hd-ips-scherm"
+      "title": "Lenovo ThinkVision Monitor - Zwart, Goede Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447627989-lenovo-thinkvision-monitor-zwart-goede-staat"
      },
      {
       "kind": "bid",
@@ -4681,10 +4643,10 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444737946-lenovo-monitor-ideaal-voor-thuiswerken-of-studie"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 50.0,
-      "title": "Lenovo L24q-10 24 inch QHD IPS Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445949824-lenovo-l24q-10-24-inch-qhd-ips-monitor"
+      "title": "Lenovo Q24i-10 Monitor - Full HD IPS Scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446451970-lenovo-q24i-10-monitor-full-hd-ips-scherm"
      },
      {
       "kind": "fixed",
@@ -4699,12 +4661,6 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447204923-lenovo-thinkvision-e24-28-24-inch-full-hd-monitor-nieuw"
      },
      {
-      "kind": "fixed",
-      "price": 60.0,
-      "title": "Lenovo ThinkVision T24i-30 Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445588657-lenovo-thinkvision-t24i-30-monitor-zo-goed-als-nieuw"
-     },
-     {
       "kind": "bid",
       "price": 65.0,
       "title": "Lenovo ThinkVision P24h-2L Monitor",
@@ -4712,9 +4668,33 @@
      },
      {
       "kind": "bid",
+      "price": 65.0,
+      "title": "Lenovo ThinkVision T24v-10 | 24\" Monitor Webcam & Speakers",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447323926-lenovo-thinkvision-t24v-10-24-monitor-webcam-speakers"
+     },
+     {
+      "kind": "bid",
       "price": 70.0,
-      "title": "Lenovo Thinkvision 23.8” monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2439149126-lenovo-thinkvision-23-8-monitor"
+      "title": "Lenovo ThinkVision Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447703601-lenovo-thinkvision-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Lenovo monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448079762-lenovo-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 74.99,
+      "title": "Lenovo T24h-20, 23,8 QHD IPS Monitor Refurbished",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1531721320-lenovo-t24h-20-23-8-qhd-ips-monitor-refurbished"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Lenovo ThinkVision P27h-20 QHD USB-C Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448120375-lenovo-thinkvision-p27h-20-qhd-usb-c-monitor"
      },
      {
       "kind": "fixed",
@@ -4729,10 +4709,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530545122-lenovo-loq-24-10-24-full-hd-200hz-ips-gaming-monitor"
      },
      {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Lenovo Legion Y25f-10 144Hz Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447303111-lenovo-legion-y25f-10-144hz-gaming-monitor"
+     },
+     {
       "kind": "bid",
       "price": 80.0,
-      "title": "Lenovo L27-40 Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444066858-lenovo-l27-40-monitor"
+      "title": "Lenovo Q24h-10 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446012297-lenovo-q24h-10-monitor-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -4743,109 +4729,59 @@
      {
       "kind": "bid",
       "price": 90.0,
-      "title": "Lenovo Q24h-10 Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446012297-lenovo-q24h-10-monitor-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 92.5,
-      "title": "Lenovo ThinkVision E24-40 Monitor - Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2441727183-lenovo-thinkvision-e24-40-monitor-nieuw-in-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "Lenovo G24-20 Gaming Monitor - Full HD, 165Hz, 1.0 ms",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445543541-lenovo-g24-20-gaming-monitor-full-hd-165hz-1-0-ms"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.0,
-      "title": "Lenovo - Full HD  Monitor - 23.8 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523062140-lenovo-full-hd-monitor-23-8-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 99.99,
-      "title": "Lenovo Thinkcentre TIO22Gen 3 Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446391258-lenovo-thinkcentre-tio22gen-3-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
       "title": "Lenovo L15 Mobile Monitor",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444920507-lenovo-l15-mobile-monitor"
      },
      {
       "kind": "fixed",
-      "price": 105.0,
-      "title": "Lenovo - Full HD Gaming Monitor - 23.8 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528991376-lenovo-full-hd-gaming-monitor-23-8-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 107.75,
-      "title": "Lenovo ThinkVision L2250p (2572-HB6) - LCD Monitor 22 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530779787-lenovo-thinkvision-l2250p-2572-hb6-lcd-monitor-22-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.0,
-      "title": "Lenovo Legion 24-10 24  Full HD 240Hz IPS monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530189027-lenovo-legion-24-10-24-full-hd-240hz-ips-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 110.0,
-      "title": "Lenovo ThinkCentre Tiny-in-One 22 Gen 3 Monitor 21.5 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445273226-lenovo-thinkcentre-tiny-in-one-22-gen-3-monitor-21-5-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 113.0,
-      "title": "Lenovo - Full HD Gaming Monitor - 23.8 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523784877-lenovo-full-hd-gaming-monitor-23-8-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 119.0,
+      "price": 91.99,
       "title": "Lenovo - Full HD  Monitor - 27 inch",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1522850328-lenovo-full-hd-monitor-27-inch"
      }
     ],
-    "low": 74.17,
-    "median": 113.0,
+    "low": 61.25,
+    "median": 102.5,
     "model": null,
     "outliers": [
-     399.0,
-     399.0,
      411.0,
+     510.0,
      550.0,
-     692.0,
+     600.0,
+     799.0,
      883.0,
      1199.0
     ],
     "prices": [
+     10.0,
+     10.0,
      15.0,
-     15.0,
+     20.0,
      22.95,
+     25.0,
+     25.0,
+     35.0,
+     35.0,
      39.95,
-     39.95,
-     40.0,
+     45.0,
+     49.0,
      50.0,
      50.0,
      50.0,
      55.0,
      60.0,
-     60.0,
+     65.0,
      65.0,
      70.0,
+     70.0,
+     74.99,
+     75.0,
      78.35,
      79.0,
      80.0,
+     80.0,
      85.0,
      90.0,
-     92.5,
+     91.99,
      95.0,
      99.0,
      99.99,
@@ -4853,36 +4789,37 @@
      105.0,
      107.75,
      109.0,
-     110.0,
-     113.0,
+     115.0,
      119.0,
-     119.0,
-     125.0,
-     125.0,
      125.0,
      130.0,
-     134.0,
      135.0,
      139.0,
+     142.0,
      149.0,
-     149.95,
-     150.0,
+     149.0,
      150.0,
      150.0,
      150.0,
      154.0,
+     159.0,
+     164.0,
      169.0,
      179.0,
+     180.0,
      199.0,
      199.0,
      206.0,
      206.1,
      249.0,
+     250.0,
      299.0,
      319.0,
      324.0,
      338.0,
-     349.0
+     349.0,
+     399.0,
+     399.0
     ],
     "query": "monitor lenovo",
     "url": "https://www.marktplaats.nl/q/monitor+lenovo/"
@@ -4903,8 +4840,8 @@
    "title": "Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.22,
-    "km": 36.7,
+    "cost": 9.25,
+    "km": 36.6,
     "min": 34
    },
    "units": 1,
@@ -4948,7 +4885,7 @@
    "title": "1 x Stalen archiefkast met diverse kaarsen en glazen potten",
    "trip": {
     "approx": false,
-    "cost": 18.35,
+    "cost": 18.43,
     "km": 73.0,
     "min": 64
    },
@@ -4993,7 +4930,7 @@
    "title": "1 x Stalen archiefkast met diverse vazen, potten, tapvaten",
    "trip": {
     "approx": false,
-    "cost": 18.35,
+    "cost": 18.43,
     "km": 73.0,
     "min": 64
    },
@@ -5026,28 +4963,28 @@
   {
    "error": "",
    "id": "plaatsjebod",
-   "lots": 248,
+   "lots": 238,
    "name": "Plaats Je Bod",
    "ok": true
   },
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1340,
+   "lots": 1190,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 8,
+   "lots": 16,
    "name": "Troostwijk",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 7,
+   "lots": 60,
    "name": "Marktplaats prices",
    "ok": true
   }
