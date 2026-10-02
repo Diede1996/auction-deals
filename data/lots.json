@@ -102,13 +102,14 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-02T04:28:09.500566+00:00",
+ "generated": "2026-10-02T06:58:21.638896+00:00",
  "lots": [
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 2,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -297,6 +298,7 @@
    "bid": 30.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -576,6 +578,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -621,6 +624,7 @@
    "bid": 25.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 2,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -666,6 +670,7 @@
    "bid": 110.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -796,6 +801,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -841,6 +847,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -886,6 +893,7 @@
    "bid": 10.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -931,6 +939,7 @@
    "bid": 35.0,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1026,6 +1035,7 @@
    "bid": 55.0,
    "bids": 7,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1071,6 +1081,7 @@
    "bid": 30.0,
    "bids": 2,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1353,6 +1364,7 @@
    "bid": 25.0,
    "bids": 1,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1398,6 +1410,7 @@
    "bid": 25.0,
    "bids": 1,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1563,6 +1576,7 @@
    "bid": 20.0,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T04:25:47.717815+00:00",
@@ -1608,6 +1622,7 @@
    "bid": 15.0,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 2,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1703,6 +1718,7 @@
    "bid": 20.0,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1805,6 +1821,7 @@
    "bid": 20.0,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1900,6 +1917,7 @@
    "bid": 20.0,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -1945,6 +1963,7 @@
    "bid": 13.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2075,6 +2094,7 @@
    "bid": 10.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2177,6 +2197,7 @@
    "bid": 5.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2461,6 +2482,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2656,6 +2678,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2758,6 +2781,7 @@
    "bid": 5.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -2803,6 +2827,7 @@
    "bid": 15.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -2848,6 +2873,7 @@
    "bid": 10.0,
    "bids": 0,
    "closes": "2026-10-05T18:10:46+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -2973,6 +2999,7 @@
    "bid": 36.0,
    "bids": 11,
    "closes": "2026-10-05T18:20:46+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-26T04:24:47.888338+00:00",
@@ -3219,6 +3246,7 @@
    "bid": 10.0,
    "bids": 0,
    "closes": "2026-10-05T18:24:46+00:00",
+   "closesDay": null,
    "count": 10,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -3314,6 +3342,7 @@
    "bid": 41.0,
    "bids": 8,
    "closes": "2026-10-05T18:36:50+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3359,6 +3388,7 @@
    "bid": 26.0,
    "bids": 7,
    "closes": "2026-10-05T18:36:50+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3404,6 +3434,7 @@
    "bid": 12.0,
    "bids": 2,
    "closes": "2026-10-05T18:40:50+00:00",
+   "closesDay": null,
    "count": 4,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3449,6 +3480,7 @@
    "bid": 12.0,
    "bids": 2,
    "closes": "2026-10-05T18:40:50+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3494,6 +3526,7 @@
    "bid": 300.0,
    "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3533,6 +3566,7 @@
    "bid": 450.0,
    "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3578,6 +3612,7 @@
    "bid": 450.0,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3623,6 +3658,7 @@
    "bid": 350.0,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3668,6 +3704,7 @@
    "bid": 350.0,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3713,6 +3750,7 @@
    "bid": 350.0,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3758,6 +3796,7 @@
    "bid": 350.0,
    "bids": 1,
    "closes": "2026-10-06T18:32:58+00:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-30T04:28:13.324001+00:00",
@@ -3803,6 +3842,7 @@
    "bid": 20.0,
    "bids": 4,
    "closes": "2026-10-07T17:52:48+00:00",
+   "closesDay": null,
    "count": 24,
    "delivery": true,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -3843,6 +3883,7 @@
    "bid": 20.0,
    "bids": 4,
    "closes": "2026-10-07T17:53:48+00:00",
+   "closesDay": null,
    "count": 24,
    "delivery": true,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -3883,6 +3924,7 @@
    "bid": 200.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -3928,6 +3970,7 @@
    "bid": 3.0,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -3973,6 +4016,7 @@
    "bid": 40.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -4075,6 +4119,7 @@
    "bid": 16.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -4117,9 +4162,10 @@
   },
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
-   "bid": 40.0,
+   "bid": 50.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -4165,6 +4211,7 @@
    "bid": 5.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -4210,6 +4257,7 @@
    "bid": 3.0,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
@@ -4526,6 +4574,7 @@
    "bid": 50.0,
    "bids": 0,
    "closes": "2026-10-15T21:55:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -4571,6 +4620,7 @@
    "bid": 50.0,
    "bids": 0,
    "closes": "2026-10-15T21:55:00+02:00",
+   "closesDay": null,
    "count": 1,
    "delivery": false,
    "firstSeen": "2026-09-27T09:51:31.500418+00:00",
@@ -4610,6 +4660,2548 @@
    "units": 1,
    "url": "https://www.plaatsjebod.nl/nl/lots/1-x-stalen-archiefkast-met-diverse-vazen-potten-tapvaten",
    "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-26T20:00:00+01:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-033.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:59951",
+   "location": "Weesp",
+   "market": 119.0,
+   "marketSource": "marktplaats",
+   "maxBid": 14.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 48,
+    "high": 112.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Dell mooi werkend beeldscherm monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448166024-dell-mooi-werkend-beeldscherm-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 1908FPT Monitor - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446702332-dell-1908fpt-monitor-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446321354-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 2009Wt monitor, 20\"",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448878550-dell-2009wt-monitor-20"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Dell computer monitor E197FPf met vga aansluiting",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445584984-dell-computer-monitor-e197fpf-met-vga-aansluiting"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446813093-dell-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447179898-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Dell monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448025764-dell-monitoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dell monitor 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447332135-dell-monitor-24-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL Monitor goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448937622-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell P2419H Monitor, 23,8 inch, Full HD, IPS, gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524996577-dell-p2419h-monitor-23-8-inch-full-hd-ips-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell Professional P2414Hb Monitor, 24 inch, IPS, Full HD,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1525009499-dell-professional-p2414hb-monitor-24-inch-ips-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530161640-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646117-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448136307-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 23 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448361030-dell-23-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell p2714hc monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447700554-dell-p2714hc-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 28 inch monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448504621-dell-28-inch-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "2 Dell P2414Hb Monitor - 24 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448579299-2-dell-p2414hb-monitor-24-inch-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Dell 2209WAF Widescreen Monitor met 22 inch LCD @ €50 p/s",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1112943498-dell-2209waf-widescreen-monitor-met-22-inch-lcd-50-p-s"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447211687-dell-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Dell U2415b Monitor - 24 inch, QHD, IPS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448438397-dell-u2415b-monitor-24-inch-qhd-ips"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528115348-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646120-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "DELL 22 Monitor - E2225H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445777899-dell-22-monitor-e2225h"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.95,
+      "title": "HP & Dell Monitoren | Met 3 maanden garantie! | Vanaf €65",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1507145452-hp-dell-monitoren-met-3-maanden-garantie-vanaf-65"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Dell 2007fpb monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447368626-dell-2007fpb-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Dell P2419H 24 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530775336-dell-p2419h-24-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Dell 1440p IPS Monitor - Nette Staat, 60Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447793001-dell-1440p-ips-monitor-nette-staat-60hz"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446866673-dell-monitor-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 46.0,
+    "median": 59.5,
+    "model": null,
+    "outliers": [
+     250.0
+    ],
+    "prices": [
+     5.0,
+     10.0,
+     10.0,
+     10.0,
+     15.0,
+     20.0,
+     20.0,
+     25.0,
+     30.0,
+     35.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     59.0,
+     59.0,
+     59.99,
+     65.95,
+     70.0,
+     75.0,
+     75.0,
+     80.0,
+     87.73,
+     95.0,
+     95.0,
+     99.99,
+     100.0,
+     100.0,
+     116.0,
+     139.0,
+     149.0,
+     149.0,
+     150.0,
+     159.0,
+     163.0,
+     169.0,
+     175.0,
+     180.0,
+     199.0,
+     237.52
+    ],
+    "query": "monitor dell",
+    "url": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpPlan": {
+    "brand": "dell",
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+dell/",
+   "pickup": "Nijverheidslaan 4 T, Weesp",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x Dell 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 24.58,
+    "km": 95.2,
+    "min": 87
+   },
+   "units": 2,
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-26T20:00:00+01:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-057.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:59987",
+   "location": "Weesp",
+   "market": 15.95,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 9,
+    "high": 30.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 2.0,
+      "title": "Étagère - plantenpresentatie met hangroede en decoratieve",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/kunst-designobjecten/a1531531780-etagere-plantenpresentatie-met-hangroede-en-decoratieve"
+     },
+     {
+      "kind": "fixed",
+      "price": 3.0,
+      "title": "Fraaie decoratieve Planten Standaard - 89 cm - Standaard -",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/a1531755028-fraaie-decoratieve-planten-standaard-89-cm-standaard"
+     },
+     {
+      "kind": "fixed",
+      "price": 3.0,
+      "title": "Étagère - plantenpresentatie met hangroede en decoratieve",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/kunst-designobjecten/a1531547983-etagere-plantenpresentatie-met-hangroede-en-decoratieve"
+     },
+     {
+      "kind": "fixed",
+      "price": 14.95,
+      "title": "Set van 12 Kunstgras Siergrassen - Decoratieve Nep Planten v",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/a1530542644-set-van-12-kunstgras-siergrassen-decoratieve-nep-planten-v"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.95,
+      "title": "Kunst Sukkulenten Planten - Tropische Decoratie voor Huis, F",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/a1530542605-kunst-sukkulenten-planten-tropische-decoratie-voor-huis-f"
+     },
+     {
+      "kind": "fixed",
+      "price": 18.95,
+      "title": "10 Delige Set Aquarium Planten Decoratie - Kunststof Waterpl",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/overige-doe-het-zelf-en-verbouw/a1530188627-10-delige-set-aquarium-planten-decoratie-kunststof-waterpl"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Nieuwe rieten mand met handvatten - planten/decoratie",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-schalen-en-manden/m2447837534-nieuwe-rieten-mand-met-handvatten-planten-decoratie"
+     },
+     {
+      "kind": "fixed",
+      "price": 36.0,
+      "title": "2 Decoratieve Bloemen- of Planten manden - Mand (2) - Metaal",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/kunst-designobjecten/a1531493389-2-decoratieve-bloemen-of-planten-manden-mand-2-metaal"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Decoratief rek 1x1m - Ideaal voor planten of verlichting",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/tuinwanddecoratie/m2448013848-decoratief-rek-1x1m-ideaal-voor-planten-of-verlichting"
+     }
+    ],
+    "low": 3.0,
+    "median": 15.95,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     2.0,
+     3.0,
+     3.0,
+     14.95,
+     15.95,
+     18.95,
+     25.0,
+     36.0,
+     65.0
+    ],
+    "query": "plant decoratie planten",
+    "url": "https://www.marktplaats.nl/q/plant+decoratie+planten/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/plant+decoratie+planten/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/plant+decoratie+planten/",
+   "pickup": "Nijverheidslaan 4 T, Weesp",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x Partij diverse decoratie en planten",
+   "trip": {
+    "approx": false,
+    "cost": 24.58,
+    "km": 95.2,
+    "min": 87
+   },
+   "units": 1,
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-partij-diverse-decoratie-en-planten-1",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-26T20:00:00+01:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-096.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:60023",
+   "location": "Weesp",
+   "market": 119.0,
+   "marketSource": "marktplaats",
+   "maxBid": 14.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 48,
+    "high": 112.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Dell mooi werkend beeldscherm monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448166024-dell-mooi-werkend-beeldscherm-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 1908FPT Monitor - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446702332-dell-1908fpt-monitor-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446321354-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 2009Wt monitor, 20\"",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448878550-dell-2009wt-monitor-20"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Dell computer monitor E197FPf met vga aansluiting",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445584984-dell-computer-monitor-e197fpf-met-vga-aansluiting"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446813093-dell-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447179898-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Dell monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448025764-dell-monitoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dell monitor 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447332135-dell-monitor-24-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL Monitor goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448937622-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell P2419H Monitor, 23,8 inch, Full HD, IPS, gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524996577-dell-p2419h-monitor-23-8-inch-full-hd-ips-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell Professional P2414Hb Monitor, 24 inch, IPS, Full HD,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1525009499-dell-professional-p2414hb-monitor-24-inch-ips-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530161640-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646117-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448136307-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 23 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448361030-dell-23-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell p2714hc monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447700554-dell-p2714hc-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 28 inch monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448504621-dell-28-inch-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "2 Dell P2414Hb Monitor - 24 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448579299-2-dell-p2414hb-monitor-24-inch-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Dell 2209WAF Widescreen Monitor met 22 inch LCD @ €50 p/s",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1112943498-dell-2209waf-widescreen-monitor-met-22-inch-lcd-50-p-s"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447211687-dell-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Dell U2415b Monitor - 24 inch, QHD, IPS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448438397-dell-u2415b-monitor-24-inch-qhd-ips"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528115348-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646120-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "DELL 22 Monitor - E2225H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445777899-dell-22-monitor-e2225h"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.95,
+      "title": "HP & Dell Monitoren | Met 3 maanden garantie! | Vanaf €65",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1507145452-hp-dell-monitoren-met-3-maanden-garantie-vanaf-65"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Dell 2007fpb monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447368626-dell-2007fpb-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Dell P2419H 24 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530775336-dell-p2419h-24-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Dell 1440p IPS Monitor - Nette Staat, 60Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447793001-dell-1440p-ips-monitor-nette-staat-60hz"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446866673-dell-monitor-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 46.0,
+    "median": 59.5,
+    "model": null,
+    "outliers": [
+     250.0
+    ],
+    "prices": [
+     5.0,
+     10.0,
+     10.0,
+     10.0,
+     15.0,
+     20.0,
+     20.0,
+     25.0,
+     30.0,
+     35.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     59.0,
+     59.0,
+     59.99,
+     65.95,
+     70.0,
+     75.0,
+     75.0,
+     80.0,
+     87.73,
+     95.0,
+     95.0,
+     99.99,
+     100.0,
+     100.0,
+     116.0,
+     139.0,
+     149.0,
+     149.0,
+     150.0,
+     159.0,
+     163.0,
+     169.0,
+     175.0,
+     180.0,
+     199.0,
+     237.52
+    ],
+    "query": "monitor dell",
+    "url": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpPlan": {
+    "brand": "dell",
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+dell/",
+   "pickup": "Nijverheidslaan 4 T, Weesp",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x Dell 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 24.58,
+    "km": 95.2,
+    "min": 87
+   },
+   "units": 2,
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-1",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-26T20:00:00+01:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-098.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:60026",
+   "location": "Weesp",
+   "market": 119.0,
+   "marketSource": "marktplaats",
+   "maxBid": 14.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 48,
+    "high": 112.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Dell mooi werkend beeldscherm monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448166024-dell-mooi-werkend-beeldscherm-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 1908FPT Monitor - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446702332-dell-1908fpt-monitor-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446321354-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 2009Wt monitor, 20\"",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448878550-dell-2009wt-monitor-20"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Dell computer monitor E197FPf met vga aansluiting",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445584984-dell-computer-monitor-e197fpf-met-vga-aansluiting"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446813093-dell-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447179898-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Dell monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448025764-dell-monitoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dell monitor 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447332135-dell-monitor-24-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL Monitor goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448937622-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell P2419H Monitor, 23,8 inch, Full HD, IPS, gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524996577-dell-p2419h-monitor-23-8-inch-full-hd-ips-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell Professional P2414Hb Monitor, 24 inch, IPS, Full HD,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1525009499-dell-professional-p2414hb-monitor-24-inch-ips-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530161640-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646117-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448136307-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 23 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448361030-dell-23-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell p2714hc monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447700554-dell-p2714hc-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 28 inch monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448504621-dell-28-inch-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "2 Dell P2414Hb Monitor - 24 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448579299-2-dell-p2414hb-monitor-24-inch-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Dell 2209WAF Widescreen Monitor met 22 inch LCD @ €50 p/s",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1112943498-dell-2209waf-widescreen-monitor-met-22-inch-lcd-50-p-s"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447211687-dell-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Dell U2415b Monitor - 24 inch, QHD, IPS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448438397-dell-u2415b-monitor-24-inch-qhd-ips"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528115348-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646120-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "DELL 22 Monitor - E2225H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445777899-dell-22-monitor-e2225h"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.95,
+      "title": "HP & Dell Monitoren | Met 3 maanden garantie! | Vanaf €65",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1507145452-hp-dell-monitoren-met-3-maanden-garantie-vanaf-65"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Dell 2007fpb monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447368626-dell-2007fpb-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Dell P2419H 24 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530775336-dell-p2419h-24-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Dell 1440p IPS Monitor - Nette Staat, 60Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447793001-dell-1440p-ips-monitor-nette-staat-60hz"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446866673-dell-monitor-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 46.0,
+    "median": 59.5,
+    "model": null,
+    "outliers": [
+     250.0
+    ],
+    "prices": [
+     5.0,
+     10.0,
+     10.0,
+     10.0,
+     15.0,
+     20.0,
+     20.0,
+     25.0,
+     30.0,
+     35.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     59.0,
+     59.0,
+     59.99,
+     65.95,
+     70.0,
+     75.0,
+     75.0,
+     80.0,
+     87.73,
+     95.0,
+     95.0,
+     99.99,
+     100.0,
+     100.0,
+     116.0,
+     139.0,
+     149.0,
+     149.0,
+     150.0,
+     159.0,
+     163.0,
+     169.0,
+     175.0,
+     180.0,
+     199.0,
+     237.52
+    ],
+    "query": "monitor dell",
+    "url": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpPlan": {
+    "brand": "dell",
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+dell/",
+   "pickup": "Nijverheidslaan 4 T, Weesp",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x Dell 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 24.58,
+    "km": 95.2,
+    "min": 87
+   },
+   "units": 2,
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-2",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
+   "bid": 25.0,
+   "bids": null,
+   "closes": "2026-10-26T20:00:00+01:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-100.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:60029",
+   "location": "Weesp",
+   "market": 119.0,
+   "marketSource": "marktplaats",
+   "maxBid": 14.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 48,
+    "high": 112.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Dell mooi werkend beeldscherm monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448166024-dell-mooi-werkend-beeldscherm-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 1908FPT Monitor - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446702332-dell-1908fpt-monitor-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446321354-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Dell 2009Wt monitor, 20\"",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448878550-dell-2009wt-monitor-20"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Dell computer monitor E197FPf met vga aansluiting",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445584984-dell-computer-monitor-e197fpf-met-vga-aansluiting"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446813093-dell-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Dell monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447179898-dell-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Dell monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448025764-dell-monitoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dell monitor 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447332135-dell-monitor-24-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "DELL Monitor goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448937622-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell P2419H Monitor, 23,8 inch, Full HD, IPS, gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1524996577-dell-p2419h-monitor-23-8-inch-full-hd-ips-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Dell Professional P2414Hb Monitor, 24 inch, IPS, Full HD,",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1525009499-dell-professional-p2414hb-monitor-24-inch-ips-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530161640-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646117-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448136307-dell-monitor-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 23 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448361030-dell-23-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell p2714hc monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447700554-dell-p2714hc-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell 28 inch monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448504621-dell-28-inch-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "2 Dell P2414Hb Monitor - 24 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448579299-2-dell-p2414hb-monitor-24-inch-full-hd"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Dell 2209WAF Widescreen Monitor met 22 inch LCD @ €50 p/s",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1112943498-dell-2209waf-widescreen-monitor-met-22-inch-lcd-50-p-s"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447211687-dell-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Dell U2415b Monitor - 24 inch, QHD, IPS",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448438397-dell-u2415b-monitor-24-inch-qhd-ips"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell UltraSharp U2412M 24 IPS Monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528115348-dell-ultrasharp-u2412m-24-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Dell P2314H 23 Full HD IPS monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646120-dell-p2314h-23-full-hd-ips-monitor-2-jaar-garantie-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "DELL 22 Monitor - E2225H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445777899-dell-22-monitor-e2225h"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.95,
+      "title": "HP & Dell Monitoren | Met 3 maanden garantie! | Vanaf €65",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1507145452-hp-dell-monitoren-met-3-maanden-garantie-vanaf-65"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Dell 2007fpb monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447368626-dell-2007fpb-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Dell P2419H 24 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530775336-dell-p2419h-24-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Dell 1440p IPS Monitor - Nette Staat, 60Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447793001-dell-1440p-ips-monitor-nette-staat-60hz"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Dell Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446866673-dell-monitor-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 46.0,
+    "median": 59.5,
+    "model": null,
+    "outliers": [
+     250.0
+    ],
+    "prices": [
+     5.0,
+     10.0,
+     10.0,
+     10.0,
+     15.0,
+     20.0,
+     20.0,
+     25.0,
+     30.0,
+     35.0,
+     45.0,
+     45.0,
+     49.0,
+     49.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     59.0,
+     59.0,
+     59.99,
+     65.95,
+     70.0,
+     75.0,
+     75.0,
+     80.0,
+     87.73,
+     95.0,
+     95.0,
+     99.99,
+     100.0,
+     100.0,
+     116.0,
+     139.0,
+     149.0,
+     149.0,
+     150.0,
+     159.0,
+     163.0,
+     169.0,
+     175.0,
+     180.0,
+     199.0,
+     237.52
+    ],
+    "query": "monitor dell",
+    "url": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpPlan": {
+    "brand": "dell",
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+dell/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+dell/",
+   "pickup": "Nijverheidslaan 4 T, Weesp",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "2 x Dell 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 24.58,
+    "km": 95.2,
+    "min": 87
+   },
+   "units": 2,
+   "url": "https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-3",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissement Byldis Prefab B.V. - Producent van modulaire gebouwen - Kantoorinventaris",
+   "bid": 10.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-07",
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/f731856d-68c6-4d91-abf5-c90e6f069193/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-50252-117",
+   "location": "Veldhoven",
+   "market": 109.0,
+   "marketSource": "marktplaats",
+   "maxBid": 22.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 18,
+    "high": 67.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "HP E241i monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445944890-hp-e241i-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Hp elite E241i monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2431837843-hp-elite-e241i-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "HP EliteDisplay E241i - 24 inch monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421480634-hp-elitedisplay-e241i-24-inch-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "HP EliteDisplay E241i1920x1200 - DP - DVI - VGA - Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-en-netwerkkabels/a1527615038-hp-elitedisplay-e241i1920x1200-dp-dvi-vga-zilver"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "HP EliteDisplay E241i - 24 inch IPS Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2437110143-hp-elitedisplay-e241i-24-inch-ips-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "HP EliteDisplay E241i Monitor - Full HD IPS Scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2428965717-hp-elitedisplay-e241i-monitor-full-hd-ips-scherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "HP EliteDisplay E241i stand/voet",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1520206539-hp-elitedisplay-e241i-stand-voet"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Monitor HP EliteDisplay E241i",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2410331465-monitor-hp-elitedisplay-e241i"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "HP EliteDisplay E241i IPS Monitor - 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2425323912-hp-elitedisplay-e241i-ips-monitor-24-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "HP ELITEDISPLAY E241i 24 INCH IPS SCHERM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1500511887-hp-elitedisplay-e241i-24-inch-ips-scherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "HP EliteDisplay E241i 24 inch 1920x1200",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528991920-hp-elitedisplay-e241i-24-inch-1920x1200"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.77,
+      "title": "HP E241i 24 Inch IPS Monitor Refurbished",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/harde-schijven/a1527330114-hp-e241i-24-inch-ips-monitor-refurbished"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP EliteDisplay E241i 24 WUXGA Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646111-hp-elitedisplay-e241i-24-wuxga-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP EliteDisplay E241i1920x1200 - DP - DVI - VGA - Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/pc-en-netwerkkabels/a1526138190-hp-elitedisplay-e241i1920x1200-dp-dvi-vga-zilver"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Hp elitedisplay e241i 1920x1200 (WUXGA) 16:10 IPS GOEDESTAAT",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1522615904-hp-elitedisplay-e241i-1920x1200-wuxga-16-10-ips-goedestaat"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "HP EliteDisplay E241i 24 Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1517550193-hp-elitedisplay-e241i-24-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.99,
+      "title": "HP EliteDisplay E241i| 1920x1200| DP,DVI,VGA| 24",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523240935-hp-elitedisplay-e241i-1920x1200-dp-dvi-vga-24"
+     },
+     {
+      "kind": "fixed",
+      "price": 85.0,
+      "title": "HP EliteDisplay E241i 24 WUXGA Monitor + 2 jaar garantie!-5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528115350-hp-elitedisplay-e241i-24-wuxga-monitor-2-jaar-garantie-5"
+     }
+    ],
+    "low": 25.0,
+    "median": 54.5,
+    "model": "E241I",
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     20.0,
+     25.0,
+     25.0,
+     30.0,
+     39.95,
+     40.0,
+     50.0,
+     59.0,
+     59.0,
+     60.77,
+     65.0,
+     65.0,
+     75.0,
+     79.0,
+     79.99,
+     85.0
+    ],
+    "query": "hp e241i",
+    "url": "https://www.marktplaats.nl/q/hp+e241i/"
+   },
+   "mpPlan": {
+    "brand": "hp",
+    "kind": "exact",
+    "model": "E241I",
+    "note": "exact model Hp E241I",
+    "search": "https://www.marktplaats.nl/q/hp+e241i/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hp+e241i/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "HP Elite E241i Monitor (2x)",
+   "trip": {
+    "approx": false,
+    "cost": 9.87,
+    "km": 38.2,
+    "min": 40
+   },
+   "units": 2,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-50252-117",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 250.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-13",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/22694ce2-1075-4e46-83cc-220fb0e1a8e9/file",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-48758-29",
+   "location": "Gemert",
+   "market": 900.0,
+   "marketSource": "marktplaats",
+   "maxBid": 237.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 3,
+    "high": 1200.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 650.0,
+      "title": "Hilti pr 30 -HVSG",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439203890-hilti-pr-30-hvsg"
+     },
+     {
+      "kind": "fixed",
+      "price": 900.0,
+      "title": "Hilti PR 30-HVS Roterende Laser + ontv. PRA83 + accu + lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2441928452-hilti-pr-30-hvs-roterende-laser-ontv-pra83-accu-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 1200.0,
+      "title": "Hilti PR 30-HVSG Roterende Laser met Statief en Ontvanger",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444757742-hilti-pr-30-hvsg-roterende-laser-met-statief-en-ontvanger"
+     }
+    ],
+    "low": 650.0,
+    "median": 900.0,
+    "model": "PR 30",
+    "outliers": [],
+    "prices": [
+     650.0,
+     900.0,
+     1200.0
+    ],
+    "query": "hilti pr 30",
+    "url": "https://www.marktplaats.nl/q/hilti+pr+30/"
+   },
+   "mpPlan": {
+    "brand": "hilti",
+    "kind": "exact",
+    "model": "PR 30",
+    "note": "exact model Hilti PR 30",
+    "search": "https://www.marktplaats.nl/q/hilti+pr+30/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hilti+pr+30/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "2016 HILTI PR 30- HVS Bouwlaser",
+   "trip": {
+    "approx": false,
+    "cost": 7.75,
+    "km": 30.0,
+    "min": 34
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-48758-29",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 2500.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-13",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/698e4dae-87b0-4233-98ed-a49170e59a16/file",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-42336-5",
+   "location": "De rips",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/pot+jumbo+7210+opraapwagen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/pot+jumbo+7210+opraapwagen/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "2010 Pottinger Jumbo 7210 D Opraapwagen",
+   "trip": {
+    "approx": false,
+    "cost": 8.25,
+    "km": 32.0,
+    "min": 37
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-42336-5",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 50.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/c81aec20-19f6-4ad5-9f03-60c3601a3ae2/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "MacBook",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11336",
+   "location": "Loon op zand",
+   "market": 995.0,
+   "marketSource": "marktplaats",
+   "maxBid": 259.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 43,
+    "high": 1900.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 99.0,
+      "title": "MacBook Pro 16-inch 2019 – Accu (A2141) | Nieuwe Batterij",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1507872080-macbook-pro-16-inch-2019-accu-a2141-nieuwe-batterij"
+     },
+     {
+      "kind": "fixed",
+      "price": 330.0,
+      "title": "Macbook pro. 16 inch. I7. 16 GB. 512GB.  2019",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448486966-macbook-pro-16-inch-i7-16-gb-512gb-2019"
+     },
+     {
+      "kind": "fixed",
+      "price": 440.0,
+      "title": "MacBook Pro 16 A2141 – Late 2019-16GB|1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530484685-macbook-pro-16-a2141-late-2019-16gb-1tb"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "Macbook Pro 16 Inch 2.6GHZ i7 512GB 16GB RAM Zilver (2019)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448499901-macbook-pro-16-inch-2-6ghz-i7-512gb-16gb-ram-zilver-2019"
+     },
+     {
+      "kind": "bid",
+      "price": 495.0,
+      "title": "MacBook Pro 16 inch 2019 | Core i9 | 16GB | 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442638627-macbook-pro-16-inch-2019-core-i9-16gb-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 499.0,
+      "title": "MacBook Pro 16 A2991 (2023) M3 Display Assembly Space Black",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1529351237-macbook-pro-16-a2991-2023-m3-display-assembly-space-black"
+     },
+     {
+      "kind": "bid",
+      "price": 500.0,
+      "title": "Macbook Pro 16 inch 2019 i7 512gb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447533183-macbook-pro-16-inch-2019-i7-512gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "MacBook Pro 16\" 2019, i9, 32gb Ram, 2TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448806797-macbook-pro-16-2019-i9-32gb-ram-2tb"
+     },
+     {
+      "kind": "fixed",
+      "price": 529.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i7 / 32GB / 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1508861421-apple-macbook-pro-16-2019-core-i7-32gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 649.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i9 / 32GB / 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1502431289-apple-macbook-pro-16-2019-core-i9-32gb-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 669.0,
+      "title": "Macbook Pro 16,2 4k Retina | Touch Bar | intel 8-Core i9 !!",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1523054655-macbook-pro-16-2-4k-retina-touch-bar-intel-8-core-i9"
+     },
+     {
+      "kind": "bid",
+      "price": 675.0,
+      "title": "MacBook Pro 16” i9 64GB RAM, 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447481209-macbook-pro-16-i9-64gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 750.0,
+      "title": "MacBook Pro 16” (2019) – Intel Core i9 – 64 GB RAM – 1 TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448223469-macbook-pro-16-2019-intel-core-i9-64-gb-ram-1-tb"
+     },
+     {
+      "kind": "bid",
+      "price": 750.0,
+      "title": "MacBook Pro 14-inch (2021) M1 Pro 16GB RAM 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448726286-macbook-pro-14-inch-2021-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 795.0,
+      "title": "Demo! MacBook Pro 14 / 16 - M1 Pro - 16GB / 32GB - 512GB 1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2428441139-demo-macbook-pro-14-16-m1-pro-16gb-32gb-512gb-1tb"
+     },
+     {
+      "kind": "fixed",
+      "price": 825.0,
+      "title": "MacBook Pro 16 Inch 2022 | M1 Pro | 16 GB | 500 GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448420668-macbook-pro-16-inch-2022-m1-pro-16-gb-500-gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 850.0,
+      "title": "MacBook Pro 16 inch M1 Pro",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448749818-macbook-pro-16-inch-m1-pro"
+     },
+     {
+      "kind": "bid",
+      "price": 875.0,
+      "title": "MacBook Pro 16 M1 Pro 16GB RAM 512GB SSD 2021",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447469575-macbook-pro-16-m1-pro-16gb-ram-512gb-ssd-2021"
+     },
+     {
+      "kind": "bid",
+      "price": 900.0,
+      "title": "MacBook Pro 16 inch M1 Pro - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447026545-macbook-pro-16-inch-m1-pro-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 949.0,
+      "title": "MacBook Pro 2021 | M1 Pro | 16C GPU | 32GB | 512GB 16 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1531196534-macbook-pro-2021-m1-pro-16c-gpu-32gb-512gb-16-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 990.0,
+      "title": "MacBook Pro 14 inch M1 Pro - 16GB RAM, 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448920177-macbook-pro-14-inch-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 995.0,
+      "title": "MacBook Pro 16 inch M1 Pro - 512 Gb SSD, 16 GB, 2jr garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446752392-macbook-pro-16-inch-m1-pro-512-gb-ssd-16-gb-2jr-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 1000.0,
+      "title": "Apple MacBook Pro 16-inch 2021 – M1 Pro –",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442322547-apple-macbook-pro-16-inch-2021-m1-pro"
+     },
+     {
+      "kind": "bid",
+      "price": 1000.0,
+      "title": "MacBook Pro 16-inch (2021) - Apple M1 Pro, 16GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448036196-macbook-pro-16-inch-2021-apple-m1-pro-16gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 1150.0,
+      "title": "MacBook Pro 16 inch M1 Pro - 16GB RAM - 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447399011-macbook-pro-16-inch-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 1150.0,
+      "title": "MacBook Pro M2 Pro - 16 inch - 32GB - 512 SSD (2023)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2444384762-macbook-pro-m2-pro-16-inch-32gb-512-ssd-2023"
+     },
+     {
+      "kind": "bid",
+      "price": 1200.0,
+      "title": "Macbook Pro M1 Pro 16 inch 32gb RAM 1tb SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447035840-macbook-pro-m1-pro-16-inch-32gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 1400.0,
+      "title": "Apple MacBook Pro 16\" (2023) M2 Pro 16GB/512GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2435802864-apple-macbook-pro-16-2023-m2-pro-16gb-512gb"
+     },
+     {
+      "kind": "bid",
+      "price": 1500.0,
+      "title": "Apple macbook Pro 16 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448732790-apple-macbook-pro-16-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 1800.0,
+      "title": "APPLE MacBook Pro 16 (2023) Zilver M3 Pro (ZGAN)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530721281-apple-macbook-pro-16-2023-zilver-m3-pro-zgan"
+     }
+    ],
+    "low": 669.0,
+    "median": 995.0,
+    "model": "PRO 16",
+    "outliers": [
+     4300.0,
+     6750.0
+    ],
+    "prices": [
+     99.0,
+     330.0,
+     440.0,
+     450.0,
+     495.0,
+     499.0,
+     500.0,
+     500.0,
+     529.0,
+     649.0,
+     669.0,
+     675.0,
+     750.0,
+     750.0,
+     795.0,
+     825.0,
+     850.0,
+     875.0,
+     900.0,
+     949.0,
+     990.0,
+     995.0,
+     1000.0,
+     1000.0,
+     1150.0,
+     1150.0,
+     1200.0,
+     1400.0,
+     1500.0,
+     1800.0,
+     1800.0,
+     1900.0,
+     1900.0,
+     1900.0,
+     2000.0,
+     2100.0,
+     2150.0,
+     2250.0,
+     2252.99,
+     2750.0,
+     3000.0,
+     3200.0,
+     3552.99
+    ],
+    "query": "macbook pro 16",
+    "url": "https://www.marktplaats.nl/q/macbook+pro+16/"
+   },
+   "mpPlan": {
+    "brand": "macbook",
+    "kind": "exact",
+    "model": "PRO 16",
+    "note": "exact model Macbook PRO 16",
+    "search": "https://www.marktplaats.nl/q/macbook+pro+16/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1  TB NVMe Laptop",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11336",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 10.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/5a9c36d2-0084-4db3-b8fe-55245349b068/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-10703",
+   "location": "Loon op zand",
+   "market": 365.0,
+   "marketSource": "marktplaats",
+   "maxBid": 89.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 5,
+    "high": 529.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dell Latitude 5521 i7-11850H 512gb 16gb 15\" 2gb graf.kaart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2357034818-dell-latitude-5521-i7-11850h-512gb-16gb-15-2gb-graf-kaart"
+     },
+     {
+      "kind": "bid",
+      "price": 360.0,
+      "title": "Dell Latitude 5521 i7-11850/16Gb/256Gb Ssd Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445931388-dell-latitude-5521-i7-11850-16gb-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "fixed",
+      "price": 365.0,
+      "title": "Dell Latitude 5521 -   i5-11e  16GB  - 256GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1526778380-dell-latitude-5521-i5-11e-16gb-256gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 519.0,
+      "title": "Dell Latitude 5521 Intel Core i7 11850H | 32GB DDR4 | 256...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1524468616-dell-latitude-5521-intel-core-i7-11850h-32gb-ddr4-256"
+     },
+     {
+      "kind": "fixed",
+      "price": 539.0,
+      "title": "Dell Latitude 5521 / 16GB Ram / i7-11850H / 512SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/laptoptassen/m2438844132-dell-latitude-5521-16gb-ram-i7-11850h-512ssd"
+     }
+    ],
+    "low": 355.0,
+    "median": 365.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     350.0,
+     360.0,
+     365.0,
+     519.0,
+     539.0
+    ],
+    "query": "latitude 5521",
+    "url": "https://www.marktplaats.nl/q/latitude+5521/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Dell Latitude 5521 15.6”, Core(TM) i7 11th Gen, 32 GB RAM, 512 GB NVMe, ...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10703",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 10.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/8aed2d77-ef98-4077-8cc0-b9d114e565d3/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11389",
+   "location": "Loon op zand",
+   "market": 579.0,
+   "marketSource": "marktplaats",
+   "maxBid": 147.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 5,
+    "high": 797.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 375.0,
+      "title": "Dell Latitude 7430 14\" Touch Screen i5-1245U 16GB 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2424695262-dell-latitude-7430-14-touch-screen-i5-1245u-16gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "Dell Latitude 7430 (Touch Business Laptop)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/computerbehuizingen/m2431819373-dell-latitude-7430-touch-business-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 579.0,
+      "title": "Dell Latitude 7430 | i7-1270P | 32GB DDR5 | 512GB | Touch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448366107-dell-latitude-7430-i7-1270p-32gb-ddr5-512gb-touch"
+     },
+     {
+      "kind": "fixed",
+      "price": 595.0,
+      "title": "Studentenlaptop: Dell Latitude 7430 2-in-1 / Core i7 / 16GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444925490-studentenlaptop-dell-latitude-7430-2-in-1-core-i7-16gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 999.0,
+      "title": "Nieuw: Dell Latitude 7430 i7-1265U 16gb ram 512gb SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m1957202432-nieuw-dell-latitude-7430-i7-1265u-16gb-ram-512gb-ssd"
+     }
+    ],
+    "low": 437.5,
+    "median": 579.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     375.0,
+     500.0,
+     579.0,
+     595.0,
+     999.0
+    ],
+    "query": "latitude 7430",
+    "url": "https://www.marktplaats.nl/q/latitude+7430/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Dell Latitude 7430 14”, Core(TM) i7 12th Gen, 32 GB RAM, 1 TB NVMe Touch...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11389",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 10.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/0d9ae29d-e6a4-4a39-894b-5e7d35ba5696/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11596",
+   "location": "Loon op zand",
+   "market": 1200.0,
+   "marketSource": "marktplaats",
+   "maxBid": 314.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 16,
+    "high": 2724.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "New HP ZBook Power G10 Motherboard i7-13700H, RTX A3000 8GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/moederborden/m2402307812-new-hp-zbook-power-g10-motherboard-i7-13700h-rtx-a3000-8gb"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
+      "title": "HP Zbook Firefly G10 Ryzen 9 Pro - 16GB DDR5 RAM 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439720686-hp-zbook-firefly-g10-ryzen-9-pro-16gb-ddr5-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 850.0,
+      "title": "HP ZBook FireFly G10 14 inch i7 32GB 1TB Rtx a500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449011504-hp-zbook-firefly-g10-14-inch-i7-32gb-1tb-rtx-a500"
+     },
+     {
+      "kind": "fixed",
+      "price": 885.0,
+      "title": "HP Zbook Power G10 -   i7-13e  8GB  - 256GB  - GPU",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453834-hp-zbook-power-g10-i7-13e-8gb-256gb-gpu"
+     },
+     {
+      "kind": "fixed",
+      "price": 899.0,
+      "title": "HP ZBook Firefly 16 G10 | Core i7 / 32GB / 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1530256734-hp-zbook-firefly-16-g10-core-i7-32gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 900.0,
+      "title": "HP ZBook Studio 16 G10 - Core i9 / RTX 4070",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2437342313-hp-zbook-studio-16-g10-core-i9-rtx-4070"
+     },
+     {
+      "kind": "fixed",
+      "price": 1050.0,
+      "title": "HP ZBook FireFly 14 inch G10 64GB 2TB RTX A500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2441578016-hp-zbook-firefly-14-inch-g10-64gb-2tb-rtx-a500"
+     },
+     {
+      "kind": "fixed",
+      "price": 1155.0,
+      "title": "HP Zbook Firefly 16 G10 -   i7-13e  - 16 inch - 8GB  - 256GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453839-hp-zbook-firefly-16-g10-i7-13e-16-inch-8gb-256gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 1245.0,
+      "title": "HP ZBook Power 15 G10 - Core i7 / 32GB / 512GB / RTX 1000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438388071-hp-zbook-power-15-g10-core-i7-32gb-512gb-rtx-1000"
+     },
+     {
+      "kind": "bid",
+      "price": 1299.0,
+      "title": "HP ZBook Power G10 Workstation Laptop -i7/32GB/ RTX A100",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2415703815-hp-zbook-power-g10-workstation-laptop-i7-32gb-rtx-a100"
+     },
+     {
+      "kind": "fixed",
+      "price": 1375.0,
+      "title": "HP ZBook FireFly 16 G10 - Core i7-1365 / 32GB / RTX A500 4GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439094532-hp-zbook-firefly-16-g10-core-i7-1365-32gb-rtx-a500-4gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 2199.99,
+      "title": "HP ZBook Studio 16 G10 - i7-13800H - 64 GB - 1 TB - RTX 3000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2394087238-hp-zbook-studio-16-g10-i7-13800h-64-gb-1-tb-rtx-3000"
+     },
+     {
+      "kind": "fixed",
+      "price": 2899.0,
+      "title": "HP ZBook Fury 16 G10 - Core i7-13850HX / 64GB / RTX 3500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439069625-hp-zbook-fury-16-g10-core-i7-13850hx-64gb-rtx-3500"
+     },
+     {
+      "kind": "fixed",
+      "price": 2899.99,
+      "title": "HP ZBook Studio 16 G10 - i9-13900H - 64 GB - 1 TB - RTX 4080",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421270613-hp-zbook-studio-16-g10-i9-13900h-64-gb-1-tb-rtx-4080"
+     },
+     {
+      "kind": "fixed",
+      "price": 2999.99,
+      "title": "HP ZBook Fury 16 G10 - i9-13950HX - 128 GB - 3 TB - RTX 5000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421272932-hp-zbook-fury-16-g10-i9-13950hx-128-gb-3-tb-rtx-5000"
+     },
+     {
+      "kind": "fixed",
+      "price": 3629.0,
+      "title": "HP ZBook Fury 16 G10 - RTX 5000 Ada 16GB / 64GB DDR5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438387678-hp-zbook-fury-16-g10-rtx-5000-ada-16gb-64gb-ddr5"
+     }
+    ],
+    "low": 888.5,
+    "median": 1200.0,
+    "model": "G10",
+    "outliers": [],
+    "prices": [
+     500.0,
+     800.0,
+     850.0,
+     885.0,
+     899.0,
+     900.0,
+     1050.0,
+     1155.0,
+     1245.0,
+     1299.0,
+     1375.0,
+     2199.99,
+     2899.0,
+     2899.99,
+     2999.99,
+     3629.0
+    ],
+    "query": "zbook g10",
+    "url": "https://www.marktplaats.nl/q/zbook+g10/"
+   },
+   "mpPlan": {
+    "brand": "zbook",
+    "kind": "exact",
+    "model": "G10",
+    "note": "exact model Zbook G10",
+    "search": "https://www.marktplaats.nl/q/zbook+g10/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/zbook+g10/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB RAM, 1 TB NVMe, NV...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11596",
+   "vat": 0.21
+  },
+  {
+   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
+   "bid": 10.0,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/0c757f47-b6bb-474c-9978-70d40f703104/file",
+   "isDeal": true,
+   "isNew": true,
+   "item": "MacBook",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-10615",
+   "location": "Loon op zand",
+   "market": 995.0,
+   "marketSource": "marktplaats",
+   "maxBid": 259.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 43,
+    "high": 1900.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 99.0,
+      "title": "MacBook Pro 16-inch 2019 – Accu (A2141) | Nieuwe Batterij",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1507872080-macbook-pro-16-inch-2019-accu-a2141-nieuwe-batterij"
+     },
+     {
+      "kind": "fixed",
+      "price": 330.0,
+      "title": "Macbook pro. 16 inch. I7. 16 GB. 512GB.  2019",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448486966-macbook-pro-16-inch-i7-16-gb-512gb-2019"
+     },
+     {
+      "kind": "fixed",
+      "price": 440.0,
+      "title": "MacBook Pro 16 A2141 – Late 2019-16GB|1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530484685-macbook-pro-16-a2141-late-2019-16gb-1tb"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "Macbook Pro 16 Inch 2.6GHZ i7 512GB 16GB RAM Zilver (2019)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448499901-macbook-pro-16-inch-2-6ghz-i7-512gb-16gb-ram-zilver-2019"
+     },
+     {
+      "kind": "bid",
+      "price": 495.0,
+      "title": "MacBook Pro 16 inch 2019 | Core i9 | 16GB | 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442638627-macbook-pro-16-inch-2019-core-i9-16gb-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 499.0,
+      "title": "MacBook Pro 16 A2991 (2023) M3 Display Assembly Space Black",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1529351237-macbook-pro-16-a2991-2023-m3-display-assembly-space-black"
+     },
+     {
+      "kind": "bid",
+      "price": 500.0,
+      "title": "Macbook Pro 16 inch 2019 i7 512gb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447533183-macbook-pro-16-inch-2019-i7-512gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "MacBook Pro 16\" 2019, i9, 32gb Ram, 2TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448806797-macbook-pro-16-2019-i9-32gb-ram-2tb"
+     },
+     {
+      "kind": "fixed",
+      "price": 529.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i7 / 32GB / 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1508861421-apple-macbook-pro-16-2019-core-i7-32gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 649.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i9 / 32GB / 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1502431289-apple-macbook-pro-16-2019-core-i9-32gb-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 669.0,
+      "title": "Macbook Pro 16,2 4k Retina | Touch Bar | intel 8-Core i9 !!",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1523054655-macbook-pro-16-2-4k-retina-touch-bar-intel-8-core-i9"
+     },
+     {
+      "kind": "bid",
+      "price": 675.0,
+      "title": "MacBook Pro 16” i9 64GB RAM, 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447481209-macbook-pro-16-i9-64gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 750.0,
+      "title": "MacBook Pro 16” (2019) – Intel Core i9 – 64 GB RAM – 1 TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448223469-macbook-pro-16-2019-intel-core-i9-64-gb-ram-1-tb"
+     },
+     {
+      "kind": "bid",
+      "price": 750.0,
+      "title": "MacBook Pro 14-inch (2021) M1 Pro 16GB RAM 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448726286-macbook-pro-14-inch-2021-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 795.0,
+      "title": "Demo! MacBook Pro 14 / 16 - M1 Pro - 16GB / 32GB - 512GB 1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2428441139-demo-macbook-pro-14-16-m1-pro-16gb-32gb-512gb-1tb"
+     },
+     {
+      "kind": "fixed",
+      "price": 825.0,
+      "title": "MacBook Pro 16 Inch 2022 | M1 Pro | 16 GB | 500 GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448420668-macbook-pro-16-inch-2022-m1-pro-16-gb-500-gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 850.0,
+      "title": "MacBook Pro 16 inch M1 Pro",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448749818-macbook-pro-16-inch-m1-pro"
+     },
+     {
+      "kind": "bid",
+      "price": 875.0,
+      "title": "MacBook Pro 16 M1 Pro 16GB RAM 512GB SSD 2021",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447469575-macbook-pro-16-m1-pro-16gb-ram-512gb-ssd-2021"
+     },
+     {
+      "kind": "bid",
+      "price": 900.0,
+      "title": "MacBook Pro 16 inch M1 Pro - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447026545-macbook-pro-16-inch-m1-pro-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 949.0,
+      "title": "MacBook Pro 2021 | M1 Pro | 16C GPU | 32GB | 512GB 16 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1531196534-macbook-pro-2021-m1-pro-16c-gpu-32gb-512gb-16-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 990.0,
+      "title": "MacBook Pro 14 inch M1 Pro - 16GB RAM, 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448920177-macbook-pro-14-inch-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 995.0,
+      "title": "MacBook Pro 16 inch M1 Pro - 512 Gb SSD, 16 GB, 2jr garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446752392-macbook-pro-16-inch-m1-pro-512-gb-ssd-16-gb-2jr-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 1000.0,
+      "title": "Apple MacBook Pro 16-inch 2021 – M1 Pro –",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442322547-apple-macbook-pro-16-inch-2021-m1-pro"
+     },
+     {
+      "kind": "bid",
+      "price": 1000.0,
+      "title": "MacBook Pro 16-inch (2021) - Apple M1 Pro, 16GB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448036196-macbook-pro-16-inch-2021-apple-m1-pro-16gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 1150.0,
+      "title": "MacBook Pro 16 inch M1 Pro - 16GB RAM - 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447399011-macbook-pro-16-inch-m1-pro-16gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 1150.0,
+      "title": "MacBook Pro M2 Pro - 16 inch - 32GB - 512 SSD (2023)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2444384762-macbook-pro-m2-pro-16-inch-32gb-512-ssd-2023"
+     },
+     {
+      "kind": "bid",
+      "price": 1200.0,
+      "title": "Macbook Pro M1 Pro 16 inch 32gb RAM 1tb SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447035840-macbook-pro-m1-pro-16-inch-32gb-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 1400.0,
+      "title": "Apple MacBook Pro 16\" (2023) M2 Pro 16GB/512GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2435802864-apple-macbook-pro-16-2023-m2-pro-16gb-512gb"
+     },
+     {
+      "kind": "bid",
+      "price": 1500.0,
+      "title": "Apple macbook Pro 16 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448732790-apple-macbook-pro-16-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 1800.0,
+      "title": "APPLE MacBook Pro 16 (2023) Zilver M3 Pro (ZGAN)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530721281-apple-macbook-pro-16-2023-zilver-m3-pro-zgan"
+     }
+    ],
+    "low": 669.0,
+    "median": 995.0,
+    "model": "PRO 16",
+    "outliers": [
+     4300.0,
+     6750.0
+    ],
+    "prices": [
+     99.0,
+     330.0,
+     440.0,
+     450.0,
+     495.0,
+     499.0,
+     500.0,
+     500.0,
+     529.0,
+     649.0,
+     669.0,
+     675.0,
+     750.0,
+     750.0,
+     795.0,
+     825.0,
+     850.0,
+     875.0,
+     900.0,
+     949.0,
+     990.0,
+     995.0,
+     1000.0,
+     1000.0,
+     1150.0,
+     1150.0,
+     1200.0,
+     1400.0,
+     1500.0,
+     1800.0,
+     1800.0,
+     1900.0,
+     1900.0,
+     1900.0,
+     2000.0,
+     2100.0,
+     2150.0,
+     2250.0,
+     2252.99,
+     2750.0,
+     3000.0,
+     3200.0,
+     3552.99
+    ],
+    "query": "macbook pro 16",
+    "url": "https://www.marktplaats.nl/q/macbook+pro+16/"
+   },
+   "mpPlan": {
+    "brand": "macbook",
+    "kind": "exact",
+    "model": "PRO 16",
+    "note": "exact model Macbook PRO 16",
+    "search": "https://www.marktplaats.nl/q/macbook+pro+16/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD Rad...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10615",
+   "vat": 0.21
   }
  ],
  "repo": "Diede1996/auction-deals",
@@ -4636,7 +7228,7 @@
   {
    "error": "",
    "id": "plaatsjebod",
-   "lots": 238,
+   "lots": 285,
    "name": "Plaats Je Bod",
    "ok": true
   },
@@ -4650,14 +7242,14 @@
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 24,
+   "lots": 140,
    "name": "Troostwijk",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 3,
+   "lots": 11,
    "name": "Marktplaats prices",
    "ok": true
   }

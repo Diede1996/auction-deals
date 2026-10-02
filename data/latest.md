@@ -1,6 +1,6 @@
 # Latest scan
 
-_Friday 02 October 2026, 06:28 (Amsterdam time)_
+_Friday 02 October 2026, 08:58 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -8,12 +8,12 @@ _Friday 02 October 2026, 06:28 (Amsterdam time)_
 |---|---|
 | ProVeiling | ✅ 216 lots |
 | HNVI | ✅ 422 lots |
-| Plaats Je Bod | ✅ 238 lots |
+| Plaats Je Bod | ✅ 285 lots |
 | Onlineveilingmeester | ✅ 1255 lots |
-| Troostwijk | ✅ 24 lots |
-| Marktplaats prices | ✅ 3 price lookups |
+| Troostwijk | ✅ 140 lots |
+| Marktplaats prices | ✅ 11 price lookups |
 
-## Matching lots (50)
+## Matching lots (63)
 
 | | Item | Lot | Bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
@@ -62,8 +62,21 @@ _Friday 02 October 2026, 06:28 (Amsterdam time)_
 |  | Plants / decor | [Pennen en potloden diverse, ook gebruikt](https://www.hnvi.nl/veiling-kavel/pennen-en-potloden-diverse-ook-gebruikt/196975) (HNVI) | €3 | – | – | Tue 13 Oct 19:30 |
 |  | Plants / decor | [Koop Kerstartikelen in stelling w.o. lichtgevende poppetjes, diamond p](https://www.hnvi.nl/veiling-kavel/koop-kerstartikelen-in-stelling-w-o-lichtgevende-poppetjes-diamond-painting-sets-raamstickers-schildersets-tekenboeken-pennen-potloden-etc/197049) (HNVI) | €40 | €17 | €0 | Tue 13 Oct 20:00 |
 |  | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €16 | – | – | Tue 13 Oct 20:00 |
-|  | Power tools | [Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleet](https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115) (HNVI) | €40 | – | – | Tue 13 Oct 20:00 |
+|  | Power tools | [Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleet](https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115) (HNVI) | €50 | – | – | Tue 13 Oct 20:00 |
 |  | Plants / decor | [Twaalf potten en PH- granulaat](https://www.hnvi.nl/veiling-kavel/twaalf-potten-en-ph-granulaat/197165) (HNVI) | €5 | – | – | Tue 13 Oct 20:00 |
 | ✅ | Monitor | [Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt](https://www.hnvi.nl/veiling-kavel/beeldscherm-lenovo-22-inch-voedingskabel-ontbreekt/197190) (HNVI) | €3 | €102 | €20 | Tue 13 Oct 20:00 |
 |  | Plants / decor | [1 x Stalen archiefkast met diverse kaarsen en glazen potten](https://www.plaatsjebod.nl/nl/lots/1-x-stalen-archiefkast-met-diverse-kaarsen-en-glazen-potten) (Plaats Je Bod) | €50 | – | – | Thu 15 Oct 21:55 |
 |  | Plants / decor | [1 x Stalen archiefkast met diverse vazen, potten, tapvaten](https://www.plaatsjebod.nl/nl/lots/1-x-stalen-archiefkast-met-diverse-vazen-potten-tapvaten) (Plaats Je Bod) | €50 | – | – | Thu 15 Oct 21:55 |
+|  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor) (Plaats Je Bod) | €25 | €60 | €14 | Mon 26 Oct 20:00 |
+|  | Plants / decor | [1 x Partij diverse decoratie en planten](https://www.plaatsjebod.nl/nl/lots/1-x-partij-diverse-decoratie-en-planten-1) (Plaats Je Bod) | €25 | €16 | €0 | Mon 26 Oct 20:00 |
+|  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-1) (Plaats Je Bod) | €25 | €60 | €14 | Mon 26 Oct 20:00 |
+|  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-2) (Plaats Je Bod) | €25 | €60 | €14 | Mon 26 Oct 20:00 |
+|  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-3) (Plaats Je Bod) | €25 | €60 | €14 | Mon 26 Oct 20:00 |
+| ✅ | Monitor | [HP Elite E241i Monitor (2x)](https://www.troostwijkauctions.com/nl/l/A1-50252-117) (Troostwijk) | €10 | €54 | €22 | Wed 7 Oct |
+|  | Power tools | [2016 HILTI PR 30- HVS Bouwlaser](https://www.troostwijkauctions.com/nl/l/A1-48758-29) (Troostwijk) | €250 | €900 | €237 | Tue 13 Oct |
+|  | Plants / decor | [2010 Pottinger Jumbo 7210 D Opraapwagen](https://www.troostwijkauctions.com/nl/l/A1-42336-5) (Troostwijk) | €2.500 | – | – | Tue 13 Oct |
+| ✅ | MacBook | [Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1  TB NVMe Laptop](https://www.troostwijkauctions.com/nl/l/A1-38890-11336) (Troostwijk) | €50 | €995 | €259 | Wed 14 Oct |
+| ✅ | Laptop | [Dell Latitude 5521 15.6”, Core(TM) i7 11th Gen, 32 GB RAM, 512 GB NVMe](https://www.troostwijkauctions.com/nl/l/A1-38890-10703) (Troostwijk) | €10 | €365 | €89 | Wed 14 Oct |
+| ✅ | Laptop | [Dell Latitude 7430 14”, Core(TM) i7 12th Gen, 32 GB RAM, 1 TB NVMe Tou](https://www.troostwijkauctions.com/nl/l/A1-38890-11389) (Troostwijk) | €10 | €579 | €147 | Wed 14 Oct |
+| ✅ | Laptop | [HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB RAM, 1 TB NVMe, ](https://www.troostwijkauctions.com/nl/l/A1-38890-11596) (Troostwijk) | €10 | €1.200 | €314 | Wed 14 Oct |
+| ✅ | MacBook | [Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD R](https://www.troostwijkauctions.com/nl/l/A1-38890-10615) (Troostwijk) | €10 | €995 | €259 | Wed 14 Oct |
