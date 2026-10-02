@@ -330,10 +330,13 @@ def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
     monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
     monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
 
+    hp_listings = [mp_listing(f"HP EliteDisplay E241i 24 inch monitor {i}", c) for i, c in
+                   enumerate([4500, 5000, 5500, 6000, 4000])]
+
     class Http(NoRequests):
         def request(self, method, url, **kw):
             assert "exponea" not in url and "troostwijkauctions" not in url
-            return FakeResponse({"listings": []})
+            return FakeResponse({"listings": hp_listings})
 
     tg = FakeTelegram()
     assert run_scan(repo, NOW, http_cls=lambda **kw: Http([]), telegram_cls=tg) == 0
@@ -341,5 +344,10 @@ def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
     tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
     assert [l["title"] for l in tw] == ["HP Elite E241i Monitor (2x)"]
     assert tw[0]["closes"] is None and tw[0]["closesDay"] == "2026-10-07" and tw[0]["location"] == "Veldhoven"
+    # the €10 in the email is the starting bid: not "room to bid", but listed to check on the lot page
+    assert tw[0]["bidFromEmail"] is True and tw[0]["maxBid"] > 10
+    digest = tg.sent[-1]
+    assert "0 with room to bid" in digest and "New from Troostwijk emails" in digest
+    assert "HP Elite E241i Monitor (2x)</a>\n   bid up to <b>€" in digest and "closes Wed 7 Oct" in digest
     assert tw[0]["units"] == 2 and tw[0]["auction"].startswith("Faillissement Byldis")
     assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": ""} in data["sites"]

@@ -49,9 +49,10 @@ def test_parse_alert_email():
     assert len(http.calls) == 1  # one tracker asked, once
 
 
-def _mail(html, sender="Troostwijk Auctions <noreply@troostwijkauctions.com>", date="Sun, 27 Sep 2026 18:00:00 +0200"):
+def _mail(html, sender="Troostwijk Auctions <noreply@troostwijkauctions.com>", date="Sun, 27 Sep 2026 18:00:00 +0200",
+          subject="Nieuwe kavels voor jouw zoekopdracht"):
     msg = EmailMessage()
-    msg["From"], msg["Subject"], msg["Date"] = sender, "Nieuwe kavels voor jouw zoekopdracht", date
+    msg["From"], msg["Subject"], msg["Date"] = sender, subject, date
     msg.set_content("Bekijk de kavels online")
     msg.add_alternative(html, subtype="html")
     return msg
@@ -90,7 +91,7 @@ def test_collect_remembers_lots_until_they_close():
     box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
     state = {}
     lots, report = collect(box, RedirectHttp([]), state, NOW)
-    assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 1, "new": 3, "lots": 3}
+    assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 1, "new": 3, "lots": 3, "other_auctions": 0}
     drill = next(l for l in lots if l.lot_id == "A1-51234-17")
     assert drill.site == "troostwijk" and drill.current_bid == 45.0 and drill.location == "Purmerend"
     assert drill.auction_title == "Troostwijk alert of 27 Sep" and drill.key == "troostwijk:A1-51234-17"
@@ -210,7 +211,7 @@ def test_collect_forwarded_auction_alert():
     box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
     state = {}
     lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=1))
-    assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "new": 9, "lots": 9}
+    assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "new": 9, "lots": 9, "other_auctions": 0}
     hp = next(l for l in lots if l.lot_id == "A1-50252-117")
     assert hp.closes_at is None and hp.location == "Veldhoven" and hp.current_bid == 10.0
     assert hp.auction_title.endswith("Kantoorinventaris") and hp.closes_day == "2026-10-07"
@@ -218,3 +219,61 @@ def test_collect_forwarded_auction_alert():
     FakeIMAP.mails = []
     assert len(collect(box, NoRequests([]), state, datetime(2026, 10, 7, 21, 0, tzinfo=timezone.utc))[0]) == 9
     assert collect(box, NoRequests([]), state, datetime(2026, 10, 7, 22, 30, tzinfo=timezone.utc))[0] == []  # 8 Oct
+
+
+# An auction alert for a business sale (not a bankruptcy), 1 Oct 2026. The template has HTML comments such as
+# "<!-- &#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472; -->" right before the auction id.
+COMPUTERS = [("11594", "Apple MacBook Pro 16\u201d, Apple M1 Max, 32 GB RAM, 1 TB NVMe Laptop", "50"),
+             ("11596", "HP ZBook Firefly G10 14\u201d, Core(TM) i7 13th Gen, 32 GB RAM", "10")]
+
+
+def _computer_card(num, title, bid):
+    link = exponea(f"{TW}/nl/l/A1-38890-{num}")
+    return f"""<td><a href="{link}"><img src="https://media.tbauctions.com/{num}.jpg" alt=""></a>
+      <a href="{link}">{title}</a><br>Loon op zand, NL<br><span>Startbod</span> <span>€{bid}</span>
+      <a href="{link}">Bekijk kavel</a></td>"""
+
+
+COMPUTERS_HTML = f"""<table><tr><td><a href="{exponea(TW + '/auctions')}">Alle veilingen</a></td></tr>
+<tr><td><div>Computers, Tablets, Desktops, Laptops, Smartphones &amp; Accessories</div>
+<!-- &#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472; -->
+<table><tr><td>A1-38890</td><td>Loon op zand <img alt=""></td></tr>
+<tr><td><img alt=""> 13 okt 2026</td><td><img alt=""> 14 okt 2026</td></tr></table>
+<a href="{exponea(TW + '/nl/a/A1-38890')}">Bekijk veiling nu</a></td></tr>
+<tr><td><table><tr>{''.join(_computer_card(*c) for c in COMPUTERS)}</tr></table></td></tr></table>"""
+
+
+def test_auction_name_skips_html_comments():
+    lots = {l["lot_id"]: l for l in parse_email_html(COMPUTERS_HTML, TrackerResolver(NoRequests([]), {}))}
+    mac = lots["A1-38890-11594"]
+    assert mac["auction"] == "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories"
+    assert mac["bid"] == 50.0 and mac["location"] == "Loon op zand" and mac["closes_day"] == "2026-10-14"
+
+
+def test_only_bankruptcy_auctions_and_the_bid_is_from_the_email():
+    from scanner.matching import bankruptcy_matcher
+    FakeIMAP.mails = [
+        _mail(BYLDIS_HTML, sender="Diede <me@gmail.com>", date="Mon, 28 Sep 2026 17:16:00 +0200",
+              subject="Fwd: Faillissement Byldis Prefab B.V. - Producent van modulaire gebouwen - Kantoorinventaris"),
+        _mail(COMPUTERS_HTML, date="Thu, 01 Oct 2026 09:00:00 +0200",
+              subject="Computers, tablets, desktops, laptops, smartphones en accessoires"),
+    ]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    is_bankruptcy = bankruptcy_matcher(["faillissement", "curator"])
+    state = {}
+    lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=4), is_bankruptcy=is_bankruptcy,
+                           only_bankruptcy=True)
+    assert len(lots) == 9 and report["other_auctions"] == 2  # the computer sale is not a bankruptcy
+    assert all(l.bid_from_email for l in lots)  # "Startbod €10" is not the current bid
+    lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=4), is_bankruptcy=is_bankruptcy)
+    assert len(lots) == 11 and report["other_auctions"] == 0
+    mac = next(l for l in lots if l.lot_id == "A1-38890-11594")
+    assert mac.auction_title.startswith("Computers, Tablets") and mac.current_bid == 50.0
+
+
+def test_subject_names_the_auction_when_the_page_doesnt():
+    html = COMPUTERS_HTML.replace("<div>Computers, Tablets, Desktops, Laptops, Smartphones &amp; Accessories</div>", "")
+    FakeIMAP.mails = [_mail(html, subject="FW: Faillissement Jansen Computers")]
+    lots, _ = collect(Mailbox("b", "app-pass", imap_cls=FakeIMAP), NoRequests([]), {}, NOW,
+                      is_bankruptcy=lambda t: "faillissement" in t.lower(), only_bankruptcy=True)
+    assert len(lots) == 2 and lots[0].auction_title == "Faillissement Jansen Computers"
