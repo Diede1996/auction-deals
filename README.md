@@ -79,6 +79,10 @@ From the next scan, Troostwijk lots from those emails show up on the dashboard, 
 
 You can also forward a Troostwijk email by hand (for example an auction announcement) to the bot mailbox: the next scan picks it up.
 
+**The bid in the email is old.** Troostwijk's emails show the bid when the email was sent, usually the starting bid (€10), while the lot may be at €900 by now. The bot can't see the current bid (it never visits Troostwijk), so these lots get **Check current bid** instead of *Room to bid*: open the lot and bid only if the current bid is below the max bid. New ones are listed in the morning summary under *New from Troostwijk emails*.
+
+**Only bankruptcy and closure auctions**, like the other sites: lots whose auction name has a word from `auction_keywords` (faillissement, curator, bedrijfsbeëindiging, ...). Troostwijk also sells for businesses (for example "Computers, Tablets, Desktops, ..."): set `only_bankruptcy: false` under `troostwijk_alerts` in `config.yml` to see those too.
+
 All links in Troostwijk's emails go through their mailing service's tracking links. The bot reads where each link goes from the link itself, so it doesn't "click" anything: no clicks are registered on your account and unsubscribe links are never opened.
 
 If the morning summary says it couldn't find lots in a Troostwijk email, their email layout is new to the bot: save that email as a file (Gmail: ⋮ → *Download message*) and share it so the bot can learn it.

@@ -94,6 +94,10 @@ driving:
 troostwijk_alerts:
   enabled: true
   keep_days: 14                 # a lot without a closing time in the email stays this many days
+  # Only lots of bankruptcy and closure auctions (auction name with a word from auction_keywords above),
+  # like the other sites. Troostwijk also sells for businesses ("Computers, Tablets, ..."): set this to
+  # false to see those too. Lots whose auction the email doesn't name are always shown.
+  only_bankruptcy: true
 
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
