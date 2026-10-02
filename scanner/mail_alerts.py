@@ -6,20 +6,25 @@ mailbox (IMAP, e.g. a Gmail address with an app password). Every lot link in tho
 lot on the dashboard, with a Marktplaats price and a max bid like any other lot.
 
 - Only emails that contain troostwijkauctions.com links are used; everything else is ignored.
-- Links hidden behind a mail tracker are resolved by asking the tracker where it points (without
-  loading the Troostwijk page itself).
+- Troostwijk's mailing service (Exponea/Bloomreach) hides every link behind a tracking link, but the
+  destination is inside that link, compressed. The bot reads it from there, so it contacts nobody and
+  no "clicks" are registered. Only a link that can't be read that way is looked up by asking the tracker
+  where it points (never an unsubscribe or preferences link, and never the Troostwijk page itself).
+- The auction block at the top of an alert (name, place, closing day) is copied onto its lots.
 - Lots are remembered in data/state.json until they close, or `keep_days` after the last alert when the
   email doesn't say when they close. Emails themselves are never stored (the repository is public).
 """
 from __future__ import annotations
 
+import base64
 import email
 import hashlib
 import imaplib
 import logging
 import os
 import re
-from datetime import datetime, timedelta
+import zlib
+from datetime import date, datetime, timedelta
 from email.header import decode_header, make_header
 from email.message import Message
 from email.utils import parsedate_to_datetime
@@ -28,15 +33,25 @@ from urllib.parse import unquote, urlparse
 from bs4 import BeautifulSoup
 
 from .models import Lot
-from .util import parse_dutch_datetime, parse_money
+from .util import AMS, parse_dutch_datetime, parse_money
 
 log = logging.getLogger(__name__)
 
 SITE = "troostwijk"
 BASE = "https://www.troostwijkauctions.com"
-_LOT_RE = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com/[a-z]{2}/l/([^\s\"'<>?#&]+)", re.I)
+_LOT_RE = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com(?:/[a-z]{2})?/l/([^\s\"'<>?#&/]+)", re.I)
+_AUCTION_RE = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com(?:/[a-z]{2})?/a/([^\s\"'<>?#&/]+)", re.I)
 _DISPLAY_ID = re.compile(r"([A-Z]\d{1,2}-\d+-\d+)$")
+_AUCTION_ID = re.compile(r"([A-Z]\d{1,2}-\d+)$")
 _GENERIC = re.compile(r"^(bekijk|bied|bieden|view|bid|see|more|meer|lees|open|kavel|lot|klik|click|hier|here)\b", re.I)
+# links the bot must never "click", not even to see where they go
+_NO_CLICK = re.compile(r"unsubscri|uitschrijv|afmeld|opt-?out|consent|preferen|voorkeur|privacy|manage", re.I)
+_B64_CHUNK = re.compile(r"[A-Za-z0-9_-]{24,}")
+_URL_START = re.compile(rb"https?://")
+_URL_CHARS = re.compile(rb"https?://[\x21-\x7e]+")
+_DATE_RE = re.compile(r"\b(\d{1,2}\s+[A-Za-z]{3,9}\.?\s+\d{4})(?:[^\d\n]{0,12}?(\d{1,2}:\d{2}))?")
+_TOWN_LINE = re.compile(r"^([A-Za-zÀ-ÿ'’. -]{2,40}?),\s*(NL|BE|DE|LU|FR)$")
+_COUNTRY = {"NL": "", "BE": "Belgium", "DE": "Germany", "LU": "Luxembourg", "FR": "France"}
 
 
 def _decode(value) -> str:
@@ -71,18 +86,79 @@ def html_of(msg: Message) -> str:
     return "<pre>" + "\n".join(text).replace("<", "&lt;") + "</pre>"
 
 
-def lot_url(href: str) -> str | None:
-    """The Troostwijk lot link in a href, also when it's URL-encoded inside a tracking link."""
+def _find(pattern: re.Pattern, kind: str, href: str) -> str | None:
     candidate = href or ""
     for _ in range(3):
-        m = _LOT_RE.search(candidate)
+        m = pattern.search(candidate)
         if m:
-            return f"{BASE}/nl/l/{m.group(1)}"
+            return f"{BASE}/nl/{kind}/{m.group(1)}"
         decoded = unquote(candidate)
         if decoded == candidate:
             break
         candidate = decoded
     return None
+
+
+def lot_url(href: str) -> str | None:
+    """The Troostwijk lot link in a href, also when it's URL-encoded inside a tracking link."""
+    return _find(_LOT_RE, "l", href)
+
+
+def auction_url(href: str) -> str | None:
+    return _find(_AUCTION_RE, "a", href)
+
+
+def _urls_in(data: bytes) -> list[str]:
+    """URLs inside a decoded tracking payload. Exponea stores them length-prefixed (protobuf), so the
+    length decides where a URL ends: the byte after it may look like part of the URL."""
+    out = []
+    for m in _URL_START.finditer(data):
+        start, found = m.start(), None
+        for n in (1, 2):  # the length as a 1- or 2-byte varint right before the URL
+            if start < n:
+                continue
+            head = data[start - n:start]
+            if n == 1 and head[0] < 0x80:
+                size = head[0]
+            elif n == 2 and head[0] >= 0x80 and head[1] < 0x80:
+                size = (head[0] & 0x7F) | (head[1] << 7)
+            else:
+                continue
+            chunk = data[start:start + size]
+            if len(chunk) == size and _URL_CHARS.fullmatch(chunk):
+                found = chunk.decode()
+                break
+        if found is None:  # plain text or JSON: the URL ends at the first character that can't be in one
+            plain = re.match(rb"https?://[^\s\"'<>\\\x00-\x20\x7f-\xff]+", data[start:])
+            found = plain.group(0).decode() if plain else None
+        if found:
+            out.append(found)
+    return out
+
+
+def _unpack(chunk: str) -> list[bytes]:
+    try:
+        raw = base64.urlsafe_b64decode(chunk + "=" * (-len(chunk) % 4))
+    except (ValueError, TypeError):
+        return []
+    out = [raw]
+    for wbits in (15, -15):  # zlib, raw deflate
+        try:
+            out.append(zlib.decompressobj(wbits).decompress(raw, 200_000))
+        except zlib.error:
+            pass
+    return out
+
+
+def decode_tracker(href: str) -> tuple[bool, str | None]:
+    """Read where a tracking link points without opening it. Returns (could read it, the lot or auction
+    URL or None). Troostwijk's links look like cdn.eu1.exponea.com/troostwijk-prod/e/.<compressed>.<sig>/click"""
+    for chunk in _B64_CHUNK.findall(urlparse(href or "").path + "?" + (urlparse(href or "").query or "")):
+        for data in _unpack(chunk):
+            urls = _urls_in(data)
+            if urls:
+                return True, lot_url(urls[0]) or auction_url(urls[0])
+    return False, None
 
 
 def is_tracker(href: str) -> bool:
@@ -104,33 +180,101 @@ def lot_id_of(url: str) -> str:
     return m.group(1) if m else hashlib.sha1(slug.encode()).hexdigest()[:12]
 
 
-def _context(link) -> str:
-    """Text of the smallest block around a link that holds only this lot (bid, closing time, place)."""
+def auction_id_of(url: str) -> str | None:
+    m = _AUCTION_ID.search(url.rsplit("/", 1)[-1])
+    return m.group(1) if m else None
+
+
+def _context(link, lot_of: dict, own: str | None) -> str:
+    """Text of the smallest block around a link that holds no other lot (bid, closing time, place).
+    `lot_of` maps each link to the lot it points to (tracking links included)."""
     node = link
-    for _ in range(6):
+    for _ in range(8):
         parent = node.parent
         if parent is None or parent.name in ("body", "html", "[document]"):
             break
-        lots_inside = {lot_url(a.get("href", "")) for a in parent.find_all("a", href=True)} - {None}
-        if len(lots_inside) > 1:
+        others = {lot_of.get(id(a)) for a in parent.find_all("a", href=True)} - {None, own}
+        if others:
             break
         node = parent
     lines = (re.sub(r"\s+", " ", t).strip() for t in node.get_text("\n").splitlines())
     return "\n".join(t for t in lines if t)
 
 
+def _town(ctx: str) -> str | None:
+    """"Veldhoven, NL" -> "Veldhoven"; "Gent, BE" -> "Gent, Belgium" (so the map looks abroad)."""
+    for line in ctx.splitlines():
+        m = _TOWN_LINE.match(line.strip())
+        if m:
+            country = _COUNTRY.get(m.group(2).upper(), "")
+            return m.group(1).strip() + (f", {country}" if country else "")
+    m = re.search(r"(?:locatie|location|plaats)\s*:?\s*([A-Za-zÀ-ÿ' -]{2,40}?)\s*(?:$|[€|·,\d])", ctx, re.I | re.M)
+    return m.group(1).strip().title() if m else None
+
+
+def _auction_info(soup, ctx: str, aid: str) -> dict:
+    """Name, place and closing day of an auction from the block at the top of an alert: the name, then
+    "A1-50252 - Veldhoven", then the viewing and closing day."""
+    info: dict = {}
+    hit = soup.find(string=lambda t: t and aid in t)
+    if hit is not None:
+        m = re.match(rf"{re.escape(aid)}\s*[-–|·]\s*(.+)$", re.sub(r"\s+", " ", hit).strip())
+        if m:
+            info["town"] = m.group(1).strip()
+        for text in hit.find_all_previous(string=True, limit=40):  # the name comes right before the id
+            text = re.sub(r"\s+", " ", text).strip()
+            if len(text) > 8 and not _GENERIC.match(text) and not _DATE_RE.search(text) and aid not in text:
+                info["name"] = text[:90]
+                break
+    if "town" not in info:  # "A1-50252 -" and "Veldhoven" on separate lines
+        m = re.search(rf"{re.escape(aid)}\s*[-–|·]\s*([A-Za-zÀ-ÿ'’. -]{{2,40}})$", ctx, re.M)
+        if m:
+            info["town"] = m.group(1).strip()
+    # the last date in the block is the closing day (the first one, if there are two, is the viewing day)
+    dates = []
+    for m in _DATE_RE.finditer(ctx):
+        when = parse_dutch_datetime(m.group(1) + (" " + m.group(2) if m.group(2) else ""))
+        if when:
+            dates.append((when, bool(m.group(2))))
+    if dates:
+        when, has_time = max(dates, key=lambda d: d[0])
+        if has_time:
+            info["closes"] = when.isoformat()
+        else:
+            info["closes_day"] = when.date().isoformat()
+    return info
+
+
+def _target(a, href: str, resolve) -> str | None:
+    """The lot or auction a link points to: written in the link, read from a tracking link, or (last
+    resort) by asking the tracker."""
+    url = lot_url(href) or auction_url(href)
+    if url:
+        return url
+    readable, url = decode_tracker(href)
+    if readable:
+        return url
+    text = a.get_text(" ", strip=True)
+    if resolve and is_tracker(href) and not _NO_CLICK.search(text) and not _NO_CLICK.search(unquote(href)):
+        return resolve(href)
+    return None
+
+
 def parse_email_html(html: str, resolve=None) -> list[dict]:
-    """Lots in one alert email: [{url, lot_id, title, bid, closes, location}]. `resolve(href)` turns a
-    tracking link into the URL it redirects to (or None)."""
+    """Lots in one alert email: [{url, lot_id, title, bid, closes, closes_day, location, auction, image}].
+    `resolve(href)` asks a tracking link where it points, for links whose destination can't be read."""
     soup = BeautifulSoup(html or "", "html.parser")
+    links = [(a, _target(a, a["href"].strip(), resolve)) for a in soup.find_all("a", href=True)]
+    lot_of = {id(a): url for a, url in links if url and lot_url(url)}
     found: dict[str, dict] = {}
-    for a in soup.find_all("a", href=True):
-        href = a["href"].strip()
-        url = lot_url(href)
-        if not url and resolve and is_tracker(href):
-            target = resolve(href)
-            url = lot_url(target or "")
+    auctions: dict[str, dict] = {}
+    for a, url in links:
         if not url:
+            continue
+        if not lot_url(url):  # an auction link: its block holds the auction's name, place and dates
+            aid = auction_id_of(url)
+            if aid and aid not in auctions:
+                auctions[aid] = _auction_info(soup, _context(a, lot_of, None), aid)
             continue
         entry = found.setdefault(url, {"url": url, "lot_id": lot_id_of(url), "titles": [], "context": ""})
         text = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
@@ -140,7 +284,7 @@ def parse_email_html(html: str, resolve=None) -> list[dict]:
             entry.setdefault("image", img.get("src"))
         if text and not _GENERIC.match(text) and len(text) > 3:
             entry["titles"].append(text)
-        ctx = _context(a)
+        ctx = _context(a, lot_of, url)
         if len(ctx) > len(entry["context"]):
             entry["context"] = ctx
     out = []
@@ -156,10 +300,12 @@ def parse_email_html(html: str, resolve=None) -> list[dict]:
         m = re.search(r"(?:sluit|sluiting|eindigt|closes|closing|ends?)\b[^0-9]{0,30}(.{0,40})", ctx, re.I)
         if m:
             closes = parse_dutch_datetime(m.group(1))
-        loc = re.search(r"(?:locatie|location|plaats)\s*:?\s*([A-Za-zÀ-ÿ' -]{2,40}?)\s*(?:$|[€|·,\d])", ctx, re.I | re.M)
+        auction = auctions.get(e["lot_id"].rsplit("-", 1)[0]) or {}
         out.append({"url": e["url"], "lot_id": e["lot_id"], "title": title[:200], "bid": bid,
-                    "closes": closes.isoformat() if closes else None,
-                    "location": loc.group(1).strip().title() if loc else None, "image": e.get("image")})
+                    "closes": closes.isoformat() if closes else auction.get("closes"),
+                    "closes_day": None if closes else auction.get("closes_day"),
+                    "location": _town(ctx) or auction.get("town"), "auction": auction.get("name"),
+                    "image": e.get("image")})
     return out
 
 
@@ -169,36 +315,42 @@ def from_troostwijk(msg: Message, html: str) -> bool:
 
 
 class TrackerResolver:
-    """Asks a mail tracker where a link points, without following it to the Troostwijk website."""
+    """Asks a mail tracker where a link points, without following it to the Troostwijk website.
+    Only used for links whose destination can't be read from the link itself."""
 
     def __init__(self, http, cache: dict, limit: int = 60):
         self.http = http
-        self.cache = cache  # sha256(tracking link) -> lot URL or "" (the links themselves may identify you)
+        if len(cache) > 2000:  # old answers; the links in new emails are different anyway
+            cache.clear()
+        self.cache = cache  # sha256(tracking link) -> lot/auction URL or "" (the links themselves may identify you)
         self.left = limit
 
     def __call__(self, href: str) -> str | None:
         key = hashlib.sha256(href.encode()).hexdigest()[:24]
         if key in self.cache:
             return self.cache[key] or None
-        url, hops = href, 0
-        while hops < 4 and self.left > 0 and is_tracker(url):
+        url, hops, failed = href, 0, False
+        while hops < 4 and self.left > 0 and is_tracker(url) and not _NO_CLICK.search(unquote(url)):
             self.left -= 1
             hops += 1
             try:
                 resp = self.http.get(url, allow_redirects=False, timeout=15)
             except Exception as e:
                 log.info("tracking link not resolved: %s", type(e).__name__)
+                failed = True  # try again next time
                 break
-            location = (getattr(resp, "headers", {}) or {}).get("location") or (getattr(resp, "headers", {}) or {}).get("Location")
+            headers = getattr(resp, "headers", {}) or {}
+            location = headers.get("location") or headers.get("Location")
             if not location:
                 m = _LOT_RE.search(getattr(resp, "text", "") or "")  # some trackers use a meta refresh
                 url = m.group(0) if m else url
                 break
             url = location
-            if lot_url(url):
+            if lot_url(url) or auction_url(url):
                 break
-        found = lot_url(url)
-        self.cache[key] = found or ""
+        found = lot_url(url) or auction_url(url)
+        if found or not failed:
+            self.cache[key] = found or ""
         return found
 
 
@@ -270,19 +422,24 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
                 rec["mail"] = sent.isoformat()
             rec["seen"] = now.isoformat()
     # forget closed lots, and lots without a closing time that no alert mentioned for keep_days
+    today = now.astimezone(AMS).date()
     for lot_id, rec in list(lots_seen.items()):
         closes = datetime.fromisoformat(rec["closes"]) if rec.get("closes") else None
+        day = date.fromisoformat(rec["closes_day"]) if rec.get("closes_day") and not closes else None
         last = datetime.fromisoformat(rec.get("seen") or rec["first"])
-        if (closes and closes < now) or (not closes and now - last > timedelta(days=keep_days)):
+        if ((closes and closes < now) or (day and day < today)
+                or (not closes and not day and now - last > timedelta(days=keep_days))):
             del lots_seen[lot_id]
     lots = []
     for lot_id, rec in lots_seen.items():
         mailed = datetime.fromisoformat(rec["mail"]) if rec.get("mail") else None
+        closes = datetime.fromisoformat(rec["closes"]) if rec.get("closes") else None
+        day = date.fromisoformat(rec["closes_day"]) if rec.get("closes_day") and not closes else None
         lots.append(Lot(
             site=SITE, lot_id=lot_id, title=rec.get("title") or lot_id, url=rec["url"],
-            current_bid=rec.get("bid"),
-            closes_at=datetime.fromisoformat(rec["closes"]) if rec.get("closes") else None,
-            auction_title="Troostwijk alert" + (f" of {mailed:%d %b}" if mailed else ""),
+            current_bid=rec.get("bid"), closes_at=closes,
+            closes_day=day.isoformat() if day else None,  # Troostwijk lots close one after another that day
+            auction_title=rec.get("auction") or ("Troostwijk alert" + (f" of {mailed:%d %b}" if mailed else "")),
             image=rec.get("image"), location=rec.get("location"),
         ))
     report["lots"] = len(lots)

@@ -30,6 +30,7 @@ class Lot:
     current_bid: float | None  # EUR, excluding premium and VAT
     closes_at: datetime | None  # timezone-aware
     auction_title: str = ""
+    closes_day: str | None = None  # "2026-10-07" when only the closing day is known, not the time
     image: str | None = None
     location: str | None = None
     bids: int | None = None

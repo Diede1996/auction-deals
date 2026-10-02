@@ -863,15 +863,25 @@ footer td { padding: 2px 14px 2px 0; }
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
       el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot)),
       el("div", { "class": "c-closes", "data-label": "Closes" },
-        el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : "unknown" }),
-        closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs)) : null),
+        el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
+        closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
+          : lot.closesDay ? el("div", { "class": "small", text: "time on the lot page" }) : null),
       bidCell, valueCell(lot, c), maxBidCell(lot, c), status);
+  }
+
+  /* lots that only have a closing day sort at the end of that day */
+  function closesAt(lot, far) {
+    return lot.closes ? Date.parse(lot.closes) : lot.closesDay ? Date.parse(lot.closesDay + "T23:59:00") : far;
+  }
+  function dayOnly(iso) {  /* "2026-10-07" -> "Wed 7 Oct" */
+    var p = iso.split("-").map(Number), d = new Date(Date.UTC(p[0], p[1] - 1, p[2], 12));
+    return new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" }).format(d).replace(",", "");
   }
 
   function sortRows(rows) {
     var far = 8.64e15;
     var by = {
-      closing: function (a, b) { return (a.lot.closes ? Date.parse(a.lot.closes) : far) - (b.lot.closes ? Date.parse(b.lot.closes) : far); },
+      closing: function (a, b) { return closesAt(a.lot, far) - closesAt(b.lot, far); },
       headroom: function (a, b) { return b.c.headroom - a.c.headroom; },
       "return": function (a, b) { return (b.c.returnNow != null ? b.c.returnNow : -far) - (a.c.returnNow != null ? a.c.returnNow : -far); },
       maxbid: function (a, b) { return (b.c.maxBid || -1) - (a.c.maxBid || -1); },

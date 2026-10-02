@@ -100,7 +100,7 @@ def health_messages(state: dict, warn_after: int = 2) -> list[str]:
 def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = None,
           trips: dict | None = None) -> str:
     local = lot.closes_at.astimezone(AMS) if lot.closes_at else None
-    when = local.strftime("%a %H:%M") if local else "?"
+    when = local.strftime("%a %H:%M") if local else (closing_day(lot) or "?")
     margin = (f" (margin {fmt_eur(v.profit_at_max)} · {v.margin_at_max:.0%})"
               if v.profit_at_max is not None and v.margin_at_max is not None else "")
     rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
@@ -168,6 +168,14 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
 
 # ---------------------------------------------------------------- dashboard data
 
+def closing_day(lot: Lot) -> str | None:
+    """"Wed 7 Oct" for lots whose closing time isn't known, only the day."""
+    if not lot.closes_day:
+        return None
+    day = datetime.fromisoformat(lot.closes_day)
+    return f"{day:%a} {day.day} {day:%b}"
+
+
 def pickup_place(lot: Lot) -> str | None:
     """Where you collect the lot: the pickup address, or at least the town."""
     if lot.delivery:
@@ -194,7 +202,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
             "trip": trip.as_dict() if trip else None,
-            "closes": lot.closes_at.isoformat() if lot.closes_at else None,
+            "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
             "bid": v.bid, "bids": lot.bids,
             "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
@@ -252,7 +260,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
         lines += ["| | Item | Lot | Bid | Market | Max bid | Closes |", "|---|---|---|---|---|---|---|"]
         for item, lot, v, est in rows:
             title = lot.title.replace("|", "/")[:70]
-            closes = lot.closes_at.astimezone(AMS).strftime("%a %d %b %H:%M") if lot.closes_at else "?"
+            closes = lot.closes_at.astimezone(AMS).strftime("%a %d %b %H:%M") if lot.closes_at else (closing_day(lot) or "?")
             market = fmt_eur(est.median) if est else (fmt_eur(item.market_price) if item.market_price else "–")
             lines.append(f"| {'✅' if v.is_deal else ''} | {item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
                          f"{fmt_eur(v.bid)} | {market} | {fmt_eur(v.max_bid) if v.max_bid is not None else '–'} | {closes} |")
