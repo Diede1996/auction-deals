@@ -22,7 +22,7 @@ def result_kind(plan: SearchPlan, rule_groups: list) -> str:
     """"exact" when the listings compared name the same model; "general" for a rough comparison.
     A general search that still pins a model ("jura e8", "ipad air 5", "playstation 5 slim") counts as exact:
     a word with a number in it that isn't a brand ("dsquared2") or a category."""
-    if plan.kind != "general":
+    if plan.kind != "general" or plan.rough:
         return plan.kind
     words = [group[0] for group in rule_groups if len(group) == 1 and not is_brand(group[0])]
     return "exact" if any(ch.isdigit() for w in words for ch in w) else "general"

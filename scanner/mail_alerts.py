@@ -31,6 +31,7 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import unquote, urlparse
 
 from bs4 import BeautifulSoup
+from bs4.element import NavigableString
 
 from .models import Lot
 from .util import AMS, parse_dutch_datetime, parse_money
@@ -212,20 +213,38 @@ def _town(ctx: str) -> str | None:
     return m.group(1).strip().title() if m else None
 
 
+def _visible(text) -> bool:
+    """Text the reader sees: not an HTML comment ("<!-- ── DESKTOP SUB-HEADER ── -->"), style or script."""
+    return type(text) is NavigableString and text.parent is not None and text.parent.name not in (
+        "style", "script", "head", "title")
+
+
+def _placename(text: str) -> bool:
+    """"Loon op zand", "De Rips", "Veldhoven": a few words, no digits or punctuation."""
+    return bool(re.fullmatch(r"[A-Za-zÀ-ÿ'’. -]{2,40}", text)) and len(text.split()) <= 4
+
+
 def _auction_info(soup, ctx: str, aid: str) -> dict:
     """Name, place and closing day of an auction from the block at the top of an alert: the name, then
-    "A1-50252 - Veldhoven", then the viewing and closing day."""
+    "A1-50252 - Veldhoven" (or "Loon op zand" and "A1-38890" apart), then the viewing and closing day."""
     info: dict = {}
-    hit = soup.find(string=lambda t: t and aid in t)
+    hit = soup.find(string=lambda t: t and aid in t and _visible(t))
     if hit is not None:
         m = re.match(rf"{re.escape(aid)}\s*[-–|·]\s*(.+)$", re.sub(r"\s+", " ", hit).strip())
         if m:
             info["town"] = m.group(1).strip()
-        for text in hit.find_all_previous(string=True, limit=40):  # the name comes right before the id
-            text = re.sub(r"\s+", " ", text).strip()
-            if len(text) > 8 and not _GENERIC.match(text) and not _DATE_RE.search(text) and aid not in text:
-                info["name"] = text[:90]
-                break
+        before = []  # the visible texts right before the id: the name, and maybe the place
+        for node in hit.find_all_previous(string=True, limit=80):
+            text = re.sub(r"\s+", " ", node).strip()
+            if (_visible(node) and len(text) > 2 and not _GENERIC.match(text) and not _DATE_RE.search(text)
+                    and aid not in text and node.find_parent("a") is None):  # not a menu link ("Alle veilingen")
+                before.append(text)
+                if len(before) == 2:
+                    break
+        if "town" not in info and len(before) == 2 and _placename(before[0]) and len(before[1]) > len(before[0]):
+            info["town"] = before.pop(0)
+        if before and len(before[0]) > 8:
+            info["name"] = before[0][:90]
     if "town" not in info:  # "A1-50252 -" and "Veldhoven" on separate lines
         m = re.search(rf"{re.escape(aid)}\s*[-–|·]\s*([A-Za-zÀ-ÿ'’. -]{{2,40}})$", ctx, re.M)
         if m:
@@ -389,13 +408,24 @@ class Mailbox:
                 pass
 
 
-def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int = 14) -> tuple[list[Lot], dict]:
+_FWD = re.compile(r"^\s*(?:(?:fwd?|fw|doorst|tr|wg|re)\s*:\s*)+", re.I)
+_JUNK = re.compile(r"&#|[─━═]|<|>")
+
+
+def _subject(msg: Message) -> str:
+    return _FWD.sub("", _decode(msg.get("Subject"))).strip()
+
+
+def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int = 14,
+            is_bankruptcy=None, only_bankruptcy: bool = False) -> tuple[list[Lot], dict]:
     """Read the alert emails, update the remembered Troostwijk lots and return the running ones.
+    `is_bankruptcy(text)` tells bankruptcy/closure auctions by their name; with `only_bankruptcy`, lots of
+    other auctions (Troostwijk also sells for businesses, e.g. "Computers, Tablets, ...") are left out.
     The report says how many emails and lots were found, for the digest and the dashboard."""
     store = state.setdefault("troostwijk_alerts", {})
     lots_seen = store.setdefault("lots", {})
     resolver = TrackerResolver(http, store.setdefault("links", {}))
-    report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "new": 0}
+    report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "new": 0, "other_auctions": 0}
     for msg in mailbox.messages(now - timedelta(days=keep_days)):
         report["emails"] += 1
         html = html_of(msg)
@@ -410,7 +440,14 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
         if not found:
             report["unreadable"] += 1
             continue
+        # an alert about one auction has the auction's name as its subject
+        auctions = {f["lot_id"].rsplit("-", 1)[0] for f in found}
+        subject = _subject(msg) if len(auctions) == 1 else ""
         for f in found:
+            if subject and (not f.get("auction") or _JUNK.search(f["auction"])):
+                f["auction"] = subject[:90]
+            if is_bankruptcy and f.get("auction"):
+                f["bankrupt"] = bool(is_bankruptcy(f"{f['auction']} {subject}"))
             rec = lots_seen.get(f["lot_id"])
             if rec is None:
                 report["new"] += 1
@@ -432,12 +469,15 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             del lots_seen[lot_id]
     lots = []
     for lot_id, rec in lots_seen.items():
+        if only_bankruptcy and rec.get("bankrupt") is False:
+            report["other_auctions"] += 1
+            continue
         mailed = datetime.fromisoformat(rec["mail"]) if rec.get("mail") else None
         closes = datetime.fromisoformat(rec["closes"]) if rec.get("closes") else None
         day = date.fromisoformat(rec["closes_day"]) if rec.get("closes_day") and not closes else None
         lots.append(Lot(
             site=SITE, lot_id=lot_id, title=rec.get("title") or lot_id, url=rec["url"],
-            current_bid=rec.get("bid"), closes_at=closes,
+            current_bid=rec.get("bid"), bid_from_email=True, closes_at=closes,
             closes_day=day.isoformat() if day else None,  # Troostwijk lots close one after another that day
             auction_title=rec.get("auction") or ("Troostwijk alert" + (f" of {mailed:%d %b}" if mailed else "")),
             image=rec.get("image"), location=rec.get("location"),

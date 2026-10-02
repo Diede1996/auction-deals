@@ -106,6 +106,9 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
     rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
     trip = (trips or {}).get(pickup_place(lot) or "")
     drive = f" · 🚗 {trip.km:.0f} km" if trip else ""
+    if lot.bid_from_email:  # the current bid isn't known, only the max bid
+        return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
+                f"   bid up to <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · Troostwijk · closes {when}{drive}")
     return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
             f"   bid {fmt_eur(v.bid)} → max <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · "
             f"{SITE_NAMES.get(lot.site, lot.site)} · {when}{drive}")
@@ -155,11 +158,16 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         fresh.sort(key=lambda r: -(r[2].max_bid or 0) + (r[2].bid or 0))
         parts.append("🆕 <b>New with room to bid</b>\n" +
                      "\n".join(_line(i, l, v, e, trips) for i, l, v, e in fresh[:per_section]))
+    check = [r for r in rows if r[1].bid_from_email and r[1].key in new_keys and (r[2].max_bid or 0) > 0]
+    if check:
+        check.sort(key=lambda r: -(r[2].max_bid or 0))
+        parts.append("🔎 <b>New from Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
+                     "\n".join(_line(i, l, v, e, trips) for i, l, v, e in check[:per_section]))
     if not rows:
         parts.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction today.")
-    elif not soon and not fresh:
+    elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
-    if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh):
+    if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
         parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
     if url:
         parts.append(f'📊 <a href="{attr(url)}">Open the dashboard</a>')
@@ -203,6 +211,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
             "trip": trip.as_dict() if trip else None,
             "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
+            "bidFromEmail": lot.bid_from_email,
             "bid": v.bid, "bids": lot.bids,
             "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
@@ -304,8 +313,11 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     if items and mailbox and mail_cfg.get("enabled", True) is not False and (not only or "troostwijk" in only):
         h = state.setdefault("health", {}).setdefault("troostwijk", {})
         try:
-            mail_lots, mail_report = collect_alert_lots(mailbox, http_cls(delay=1.0), state, now,
-                                                        int(mail_cfg.get("keep_days", 14)))
+            keywords = config.get("auction_keywords") or config.get("bankruptcy_keywords") or ["faillissement", "curator"]
+            mail_lots, mail_report = collect_alert_lots(
+                mailbox, http_cls(delay=1.0), state, now, int(mail_cfg.get("keep_days", 14)),
+                is_bankruptcy=bankruptcy_matcher(keywords),
+                only_bankruptcy=mail_cfg.get("only_bankruptcy", True) is not False)
             lots.extend(mail_lots)
             report["troostwijk"] = {"ok": True, "lots": len(mail_lots), "via": "email"}
             h.update(ok=True, lots=len(mail_lots), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())

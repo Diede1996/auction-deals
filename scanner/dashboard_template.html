@@ -462,6 +462,9 @@ footer td { padding: 2px 14px 2px 0; }
     out.returnAtMax = resale != null && out.payAtMax > 0 ? out.profitAtMax / out.payAtMax : null;
     out.headroom = maxBid - bid;
     out.status = maxBid <= 0 ? "never" : (bid < maxBid ? "room" : "over");
+    if (lot.bidFromEmail && maxBid > 0) {  /* the bid in a Troostwijk email is old: only the lot page knows */
+      out.status = "check"; out.headroom = -1e9; out.profitNow = null; out.returnNow = null;
+    }
     return out;
   }
 
@@ -543,6 +546,8 @@ footer td { padding: 2px 14px 2px 0; }
     if (c.status === "room") return el("span", { "class": "pill good" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✓" }), "Room to bid");
     if (c.status === "over") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Above max");
     if (c.status === "never") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Not profitable");
+    if (c.status === "check") return el("span", { "class": "pill neutral", title: "The bid in Troostwijk's email is old (usually the starting bid). Open the lot: bid only if the current bid is below the max bid." },
+      el("span", { "class": "ic", "aria-hidden": "true", text: "↗" }), "Check current bid");
     return el("span", { "class": "pill neutral" }, el("span", { "class": "ic", "aria-hidden": "true", text: "?" }), "Needs a price");
   }
 
@@ -846,7 +851,10 @@ footer td { padding: 2px 14px 2px 0; }
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
 
     var payLine = "you pay " + money(c.costNow) + (lot.bids != null ? " · " + lot.bids + (lot.bids === 1 ? " bid" : " bids") : "");
-    var bidCell = el("div", { "class": "c-bid", "data-label": "Current bid" },
+    var bidCell = lot.bidFromEmail ? el("div", { "class": "c-bid", "data-label": "Bid in email" },
+      el("div", { "class": "strong num", text: money(lot.bid) }),
+      el("div", { "class": "small", text: "often the starting bid; current bid on the lot page" }))
+      : el("div", { "class": "c-bid", "data-label": "Current bid" },
       el("div", { "class": "strong num", text: money(lot.bid) }),
       el("div", { "class": "small", title: Math.round(lot.premium * 100) + "% premium + " + Math.round(lot.vat * 100) + "% VAT" + (c.trip ? " + driving" : ""), text: payLine }),
       c.trip ? el("div", { "class": "small", text: "incl. " + money(c.trip) + " driving" }) : null,

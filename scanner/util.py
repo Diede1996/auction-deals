@@ -22,13 +22,21 @@ def normalize(text: str) -> str:
     return text.strip()
 
 
+# Endings a short word may get: plurals and diminutives ("pot" -> potten, potje, potjes), nothing else.
+_SHORT_ENDINGS = r"(?:s|e|en|n|es|je|jes|tje|tjes|pje|pjes|etje|etjes|[bdfgklmnprstvz]en|[bdfgklmnprstvz]e)?"
+
+
 def token_in(token: str, text_norm: str) -> bool:
-    """True if `token` starts a word in normalised text (numbers must match a whole word)."""
+    """True if `token` starts a word in normalised text: "monitor" matches "monitoren". Numbers must match
+    a whole word, and short words (3 letters or less) only match with a plural or diminutive ending, so
+    "pot" matches "potten" but not "Pottinger"."""
     token = normalize(token)
     if not token:
         return False
     if token.isdigit():
         pattern = rf"(?<![a-z0-9]){re.escape(token)}(?![0-9])"
+    elif token.isalpha() and len(token) <= 3:
+        pattern = rf"(?<![a-z0-9]){re.escape(token)}{_SHORT_ENDINGS}(?![a-z0-9])"
     else:
         pattern = rf"(?<![a-z0-9]){re.escape(token)}"
     return re.search(pattern, text_norm) is not None

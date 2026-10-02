@@ -11,6 +11,7 @@ with every monitor on Marktplaats gives prices of other monitors. So:
                  general  no type number in the title: category + brand + a few words (a rough price),
                  custom   the watchlist item has its own marktplaats_query;
 - quantity()     reads "2 x", "Twee ..." or "- 3 stuks", so a lot of two monitors is worth two monitors.
+- mac_plan()     Macs are told apart by chip and screen size ("MacBook Pro 16 M1 Max"), not a type number.
 """
 from __future__ import annotations
 
@@ -101,8 +102,12 @@ class Rule:
     model: str | None = None  # squashed model code, e.g. "jr3030t"
     label: str = ""  # human readable, e.g. "makita jr 3030t"
 
+    size: str | None = None  # screen size in inches the listing must mention ("16", not "16 GB")
+
     def matches(self, title_norm: str) -> bool:
         if self.model and not model_in(self.model, title_norm):
+            return False
+        if self.size and not size_in(self.size, title_norm):
             return False
         return all(any(phrase_in(alt, title_norm) for alt in group) for group in self.groups)
 
@@ -115,6 +120,7 @@ class SearchPlan:
     model: str | None = None  # display form, e.g. "S27C366EAU"
     brand: str | None = None
     note: str = ""  # why the plan is what it is, shown on the dashboard
+    rough: bool = False  # always a rough price, even when the rule has a number in it (Intel MacBook "16")
 
     @property
     def exact(self) -> bool:
@@ -153,6 +159,66 @@ def model_in(code: str, text_norm: str) -> bool:
             if not code.startswith(joined):
                 break
     return False
+
+
+_NOT_INCHES = {"gb", "tb", "g", "gig", "ram", "core", "cores", "gpu", "cpu", "x", "stuks", "mp", "mm", "cm", "w"}
+_INCH_RE = re.compile(r"(?<![\d.,])(\d{2})(?:[.,]\d)?\s*(?:\"|”|“|″|''|-?\s?inch\b|-?\s?in\b|-?\s?zoll\b)", re.I)
+
+
+def size_in(size: str, text_norm: str) -> bool:
+    """The listing mentions this screen size: "16 inch" or "16" yes, "16 GB" no."""
+    tokens = text_norm.split()
+    for i, tok in enumerate(tokens):
+        if tok in (size, f"{size}inch"):
+            nxt = tokens[i + 1] if i + 1 < len(tokens) else ""
+            if nxt not in _NOT_INCHES:
+                return True
+    return False
+
+
+def inches(title: str) -> str | None:
+    """'MacBook Pro 16”' -> '16', '15.6 inch' -> '15'."""
+    m = _INCH_RE.search(title or "")
+    return m.group(1) if m else None
+
+
+_MAC_LINES = ["macbook air", "macbook pro", "mac mini", "mac studio", "mac pro", "imac", "macbook"]
+_CHIP_RE = re.compile(r"(?<![a-z0-9])m([1-5])(?: (pro|max|ultra))?(?![a-z0-9])")
+_INTEL_RE = re.compile(r"(?<![a-z0-9])(i[3579]|intel|core|xeon)(?![a-z0-9])")
+
+
+def mac_plan(title: str) -> SearchPlan | None:
+    """Macs have no type number in lot titles; what sets the price is the line, the chip and the screen size.
+    "MacBook Pro 16, M1 Max" -> listings that say macbook pro + 16 inch + m1 max (exact);
+    "MacBook Pro 16 Core i7 9th Gen" -> Intel MacBook Pro 16 listings (a rough price: years and specs vary)."""
+    t = normalize(title)
+    line = next((ln for ln in _MAC_LINES if re.search(rf"(?<![a-z0-9]){ln}(?![a-z0-9])", t)), None)
+    if not line:
+        return None
+    size = inches(title)
+    base = [(w,) for w in line.split()]
+    chip = _CHIP_RE.search(t)
+    if chip:
+        name = "m" + chip.group(1) + (f" {chip.group(2)}" if chip.group(2) else "")
+        groups = base + [(w,) for w in name.split()]
+        rules = ([Rule(groups, size=size, label=f"{line} {size} {name}")] if size else []) + [Rule(groups, label=f"{line} {name}")]
+        searches = list(dict.fromkeys(r.label for r in rules))
+        shown = f"{line.replace('macbook', 'MacBook').replace('imac', 'iMac').replace('mac ', 'Mac ').title().replace('Macbook', 'MacBook').replace('Imac', 'iMac')}"
+        return SearchPlan("exact", searches, rules, model=f"{shown}{' ' + size if size else ''} {name.upper()}",
+                          brand="apple", note=f"exact: {line} {size + ' inch ' if size else ''}{name}")
+    intel = _INTEL_RE.search(t)
+    year = re.search(r"(?<![0-9])(20[12][0-9])(?![0-9])", t)
+    if not (intel or year):
+        return None
+    which = (year.group(1),) if year else ("intel", "i5", "i7", "i9", "2016", "2017", "2018", "2019", "2020")
+    rules = ([Rule(base + [which], size=size, label=f"{line} {size} {which[0] if year else 'intel'}")] if size else []) + \
+        [Rule(base + [which], label=f"{line} {which[0] if year else 'intel'}")]
+    # listings rarely say "intel": search the line and size, the rule keeps the Intel ones
+    searches = [f"{line} {size} {year.group(1)}" if year else f"{line} {size}" if size else line]
+    searches += [f"{line} {year.group(1)}" if year else f"{line} intel"]
+    searches = [" ".join(q.split()) for q in dict.fromkeys(searches)]
+    return SearchPlan("general", searches, rules, brand="apple", rough=not year,
+                      note="Intel Mac: a rough price, years and specs vary" if not year else f"{line} {year.group(1)}")
 
 
 def brand_in(title: str, before: int | None = None) -> str | None:
@@ -194,7 +260,7 @@ def _cpu_skip(tokens: list[str]) -> set[int]:
 
 def model_code(title: str) -> tuple[str, int] | None:
     """(model as written, token position), e.g. ("jr 3030t", 1) for "Makita JR 3030T reciprozaag"."""
-    tokens = normalize(title).split()
+    tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()  # 16” is a size
     cpu = _cpu_skip(tokens)
     for i, tok in enumerate(tokens):
         if i in cpu or tok in _BRANDS or tok in NOISE or is_spec(tok):
@@ -284,6 +350,9 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         rule = Rule([(w,) for w in q.split()], label=q)
         return SearchPlan("custom", [q], [rule], note="your own Marktplaats search (watchlist)")
 
+    mac = mac_plan(lot.title)
+    if mac:
+        return mac
     keyword = normalize(matched_keyword(item, lot.title))
     generic = category(keyword) is not None
     found = model_code(lot.title)

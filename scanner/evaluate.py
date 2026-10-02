@@ -108,7 +108,11 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     profit_at_max = resale - pay_at_max if resale is not None else None
     margin_at_max = profit_at_max / pay_at_max if profit_at_max is not None and pay_at_max > 0 else None
     ok = bid < max_bid
-    if ok:
+    if lot.bid_from_email:  # the email's bid is old (usually the starting bid): only the lot page knows
+        ok = False
+        reason = f"bid up to €{max_bid}; check the current bid on the lot page" if max_bid > 0 else \
+            "not profitable at any price"
+    elif ok:
         reason = f"room to bid up to €{max_bid}"
     elif max_bid <= 0:
         reason = "not profitable at any price"
