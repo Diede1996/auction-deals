@@ -75,7 +75,11 @@ The bot never visits Troostwijk. It reads the alert emails Troostwijk sends you 
 3. **Forward the alerts** from your own mailbox to the bot address. In Gmail: *Settings → Forwarding and POP/IMAP → Add a forwarding address* (Gmail sends a code to the bot address; log in there to get it). Then make a filter: search `from:troostwijk`, click *Create filter*, tick *Forward it to* the bot address.
 4. **Two secrets on GitHub**: `ALERTS_EMAIL` = the bot address, `ALERTS_APP_PASSWORD` = the app password. (Another provider than Gmail: add `ALERTS_IMAP_HOST` too.)
 
-From the next scan, Troostwijk lots from those emails show up with "Troostwijk alert of <date>" as the auction name. The bid is the one in the email, so it may be outdated; the max bid is what counts. Lots stay on the dashboard until they close, or 14 days after the last alert if the email doesn't say when they close. The bot only reads the mailbox and never stores the emails themselves.
+From the next scan, Troostwijk lots from those emails show up on the dashboard, with the auction's name, place and closing day when the email has them (Troostwijk auction emails give the closing day but not the time: lots close one after another that day, the exact time is on the lot page). The bid is the one in the email, so it may be outdated; the max bid is what counts. Lots stay on the dashboard until they close, or 14 days after the last alert if the email doesn't say when they close. The bot only reads the mailbox and never stores the emails themselves.
+
+You can also forward a Troostwijk email by hand (for example an auction announcement) to the bot mailbox: the next scan picks it up.
+
+All links in Troostwijk's emails go through their mailing service's tracking links. The bot reads where each link goes from the link itself, so it doesn't "click" anything: no clicks are registered on your account and unsubscribe links are never opened.
 
 If the morning summary says it couldn't find lots in a Troostwijk email, their email layout is new to the bot: save that email as a file (Gmail: ⋮ → *Download message*) and share it so the bot can learn it.
 
