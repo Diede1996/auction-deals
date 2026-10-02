@@ -207,25 +207,29 @@ def test_costs_and_verdicts():
     assert total_cost(200, fees, lot) == pytest.approx(200 * 1.22 * 1.21)
 
     est = marktplaats.PriceEstimate(median=500, low=450, high=540, count=7, query="playstation 5 slim")
-    settings = Settings(min_profit=50, resale_factor=0.85)
+    settings = Settings(min_margin=0.30, resale_factor=0.85)
     ps5 = WatchItem(name="PS5", keywords=["ps5"])
     v = evaluate(ps5, lot, fees, settings, est)
-    # sell at 85% of 500 = 425; keep at least 50 profit -> pay at most 375 -> bid 375 / 1.21 / 1.22 = 254.0
-    assert v.is_deal and v.max_bid == 254
+    # sell at 85% of 500 = 425; keep at least 30% margin -> pay at most 425 / 1.3 = 326.92
+    # -> bid 326.92 / 1.21 / 1.22 = 221.5
+    assert v.is_deal and v.max_bid == 221
     assert v.profit == pytest.approx(425 - 295.24, abs=0.01)
     assert v.margin == pytest.approx((425 - 295.24) / 295.24, abs=0.001)
-    # at the max bid the margin is (just) the minimum profit, and it's reported in euros and %
-    assert v.profit_at_max == pytest.approx(425 - 254 * 1.22 * 1.21, abs=0.01) and v.profit_at_max >= 50
-    assert v.margin_at_max == pytest.approx(v.profit_at_max / (254 * 1.22 * 1.21), abs=0.001)
+    # at the max bid the margin is (just) the minimum margin, reported in euros and %
+    assert v.profit_at_max == pytest.approx(425 - 221 * 1.22 * 1.21, abs=0.01)
+    assert v.margin_at_max == pytest.approx(v.profit_at_max / (221 * 1.22 * 1.21), abs=0.001) and v.margin_at_max >= 0.30
     # selling at only 50% of the median: max bid drops below the current bid
-    half = evaluate(ps5, lot, fees, Settings(min_profit=50, resale_factor=0.5), est)
-    assert half.max_bid == 135 and not half.is_deal and half.profit < 0
-    # a higher minimum profit lowers the max bid
-    assert evaluate(ps5, lot, fees, Settings(min_profit=100), est).max_bid < 254
-    # cheap items: 85% of 50 = 42.50 - 25 profit leaves at most 17.50 total
+    half = evaluate(ps5, lot, fees, Settings(min_margin=0.30, resale_factor=0.5), est)
+    assert half.max_bid == 130 and not half.is_deal and half.profit < 0
+    # a higher minimum margin lowers the max bid
+    assert evaluate(ps5, lot, fees, Settings(min_margin=0.50), est).max_bid < 221
+    # cheap items: 85% of 50 = 42.50 / 1.3 = 32.69 total at most
     cheap = marktplaats.PriceEstimate(median=50, low=45, high=55, count=5, query="x")
     small = Lot("pjb", "3", "PS5 game", "u", 5.0, None)
-    assert evaluate(ps5, small, fees, Settings(min_profit=25), cheap).max_bid == 11
+    assert evaluate(ps5, small, fees, Settings(min_margin=0.30), cheap).max_bid == 22
+    # a margin for one item only
+    picky = WatchItem(name="PS5", keywords=["ps5"], min_margin=1.0)
+    assert evaluate(picky, lot, fees, settings, est).max_bid == 143  # 425 / 2 / 1.21 / 1.22
     # current bid above the max bid -> not a deal
     expensive = Lot("pjb", "2", "PlayStation 5 slim", "u", 260.0, None)
     assert not evaluate(ps5, expensive, fees, settings, est).is_deal
@@ -239,9 +243,9 @@ def test_costs_and_verdicts():
     # manual market price
     manual = WatchItem(name="x", keywords=["x"], market_price=1000)
     assert evaluate(manual, lot, fees, settings, None).is_deal
-    # older watchlists with target_return / min_margin still load; those keys are ignored
-    old = Settings.from_dict({"target_return": 0.3, "min_margin": 0.4, "resale_factor": 0.5})
-    assert old.resale_factor == 0.5 and old.min_profit == 25
+    # older watchlists with target_return / min_profit (euros) still load; those keys are ignored
+    old = Settings.from_dict({"target_return": 0.5, "min_profit": 25, "resale_factor": 0.5})
+    assert old.resale_factor == 0.5 and old.min_margin == 0.30
 
 
 def test_driving_costs_and_quantity_in_the_max_bid():
@@ -249,10 +253,10 @@ def test_driving_costs_and_quantity_in_the_max_bid():
     est = marktplaats.PriceEstimate(median=500, low=450, high=540, count=7, query="playstation 5 slim")
     ps5 = WatchItem(name="PS5", keywords=["ps5"])
     lot = Lot("pjb", "1", "PlayStation 5 slim", "u", 200.0, None, trip_cost=30.0)
-    v = evaluate(ps5, lot, fees, Settings(min_profit=50), est)
-    # the €30 trip comes off what you can pay: 375 - 30 = 345 -> bid 345 / 1.21 / 1.22 = 233.7
-    assert v.max_bid == 233 and v.total_cost == pytest.approx(200 * 1.22 * 1.21 + 30)
-    assert evaluate(ps5, lot, fees, Settings(min_profit=50, include_trip=False), est).max_bid == 254
+    v = evaluate(ps5, lot, fees, Settings(min_margin=0.30), est)
+    # the €30 trip counts as paid: 326.92 - 30 = 296.92 -> bid 296.92 / 1.21 / 1.22 = 201.1
+    assert v.max_bid == 201 and v.total_cost == pytest.approx(200 * 1.22 * 1.21 + 30)
+    assert evaluate(ps5, lot, fees, Settings(min_margin=0.30, include_trip=False), est).max_bid == 221
     # two consoles in one lot: resale 2 x 425 = 850
-    two = evaluate(ps5, Lot("pjb", "2", "2 x PlayStation 5 slim", "u", 200.0, None), fees, Settings(min_profit=50), est, 2)
-    assert two.resale == pytest.approx(850) and two.max_bid == 541
+    two = evaluate(ps5, Lot("pjb", "2", "2 x PlayStation 5 slim", "u", 200.0, None), fees, Settings(min_margin=0.30), est, 2)
+    assert two.resale == pytest.approx(850) and two.max_bid == 442

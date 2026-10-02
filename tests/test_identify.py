@@ -100,7 +100,10 @@ def test_brand_in():
 @pytest.mark.parametrize("title, n", [
     ("2 x Kunstplant in pot", 2), ("2x Vaas met kunstbloemen", 2), ("Twee 27 inch beeldschermen ACER V277", 2),
     ("Makita gereedschapskoffers - 2 stuks", 2), ("Ca. 41x Man, overjassen en colberts", 41),
+    ("40x Colbert heren", 40), ("40 x Colbert", 40), ("Colberts heren (40x)", 40), ("Colberts (40 stuks)", 40),
+    ("Colberts x40", 40), ("Colberts 40x", 40),
     ("1 x HP Desktop Mini met 2 x 24-inch monitor", 1), ("Beeldscherm 27 inch ACER RG270", 1),
+    ("Tafel 180 x 90 cm", 1),  # a size, not a quantity
 ])
 def test_quantity(title, n):
     assert quantity(title) == n

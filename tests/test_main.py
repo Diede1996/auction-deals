@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 import yaml
-from conftest import FakeHttp, url_has
+from conftest import FakeHttp, FakeResponse, url_has
 from fixtures import mp_listing
 from scanner import scan as scan_mod
 from scanner.bot import run_commands
@@ -59,7 +59,7 @@ def make_lots(now):
 def repo(tmp_path, monkeypatch):
     shutil.copy(ROOT / "config.yml", tmp_path / "config.yml")
     (tmp_path / "watchlist.yml").write_text(yaml.safe_dump({
-        "settings": {"target_return": 0.30, "min_profit": 25, "resale_factor": 0.85},
+        "settings": {"min_margin": 0.30, "resale_factor": 0.85},
         "items": [{"name": "iPhone 13", "keywords": ["iphone 13"], "exclude": ["hoesje"]},
                   {"name": "Dyson", "keywords": ["dyson"], "max_price": 150}],
     }))
@@ -109,14 +109,14 @@ def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
     dyson = by_key["proveiling:3"]
     assert dyson["itemMaxPrice"] == 150 and dyson["maxBid"] == 106  # floor(150 / 1.21 / 1.16): the max_price cap
     assert dyson["mp"] is None and dyson["mpSearch"].startswith("https://www.marktplaats.nl/q/dyson")
-    assert data["settings"] == {"min_profit": 25, "resale_factor": 0.85, "selling_costs": 0}
+    assert data["settings"] == {"min_margin": 0.30, "resale_factor": 0.85, "selling_costs": 0}
     assert {s["id"]: s["ok"] for s in data["sites"]} == {"hnvi": True, "proveiling": True, "plaatsjebod": False,
                                                           "marktplaats": True}
 
     assert len(tg.sent) == 1
     digest = tg.sent[0]
     assert "Closing within 24 hours" in digest and "Apple iPhone 13 128GB zwart" in digest
-    assert "selling at 85% of the Marktplaats median" in digest and "(margin €" in digest
+    assert "selling at 85% of the Marktplaats median with at least 30% margin" in digest and "(margin €" in digest
     assert 'href="https://diede.github.io/auction-deals/"' in digest
     assert "Dyson" in digest  # new with room to bid
 
@@ -251,8 +251,8 @@ def test_scan_with_favorites_and_driving_costs(repo, monkeypatch):
     assert data["favorites"]["issue"] == 12 and len(data["favorites"]["items"]) == 2
     assert data["repo"] == "Diede/auction-deals"
     assert iphone["mp"]["kind"] == "exact" and iphone["mpPlan"]["kind"] == "general"
-    # the €10.54 trip lowers the max bid: floor((85% of 325 - 25 - 10.54) / 1.21 / 1.19) = 167 instead of 174
-    assert iphone["maxBid"] == 167
+    # the €10.54 trip lowers the max bid: floor((85% of 325 / 1.3 - 10.54) / 1.21 / 1.19) = 140 instead of 147
+    assert iphone["maxBid"] == 140
     # your address is never written to the (public) repository or dashboard
     for path in ("data/state.json", "data/lots.json", "site/index.html"):
         assert "Dorpsstraat" not in (repo / path).read_text()
@@ -281,3 +281,65 @@ def test_favorite_reminders_and_list(repo, monkeypatch):
     tg.sent.clear()
     run_commands(repo, NOW + timedelta(minutes=15), http_cls=lambda **kw: http, telegram_cls=tg)
     assert tg.sent == []
+
+
+def test_bulk_lots_count_every_item():
+    from scanner.evaluate import Fees, Settings, evaluate
+    from scanner.marktplaats import PriceEstimate
+    from scanner.models import WatchItem
+    from scanner.scan import units_of
+    lot = Lot("onlineveilingmeester", "1", "40x Colbert heren", "u", 50.0, None)
+    assert units_of(lot) == 40 and units_of(lot, max_units=10) == 1
+    est = PriceEstimate(median=20, low=15, high=25, count=9, query="colbert heren")
+    v = evaluate(WatchItem(name="Suit", keywords=["colbert"]), lot, Fees(premium=0.17, vat=0.21), Settings(), est, 40)
+    # 40 x €20 x 85% = €680 resale; margin and max bid are for the whole lot
+    assert v.resale == pytest.approx(680) and v.profit == pytest.approx(680 - 50 * 1.17 * 1.21)
+    assert v.max_bid == 369  # floor(680 / 1.3 / 1.21 / 1.17)
+
+
+def test_scan_includes_troostwijk_alert_lots(repo, monkeypatch):
+    from test_mail_alerts import ALERT, FakeIMAP, RedirectHttp, _mail
+    from scanner.mail_alerts import Mailbox
+    FakeIMAP.mails = [_mail(ALERT.replace("Makita DHP484 accu klopboormachine", "Apple iPhone 13 128GB via Troostwijk"))]
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+
+    class Http(RedirectHttp):
+        def request(self, method, url, **kw):
+            if "marktplaats" in url:
+                self.calls.append((method, url, kw))
+                return FakeResponse({"listings": MP})
+            return super().request(method, url, **kw)
+
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW, http_cls=lambda **kw: Http([]), telegram_cls=tg) == 0
+    _, data = page_data(repo)
+    tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
+    assert [l["title"] for l in tw] == ["Apple iPhone 13 128GB via Troostwijk"]  # only watchlist matches
+    assert tw[0]["premium"] == 0.18 and tw[0]["mp"]["count"] == 6 and tw[0]["maxBid"] > 0
+    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 3, "error": ""} in data["sites"]
+    assert any(f["id"] == "troostwijk" for f in data["fees"])
+
+
+def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
+    """The real email of 28 Sep: every link behind a tracker, closing day without a time."""
+    from test_mail_alerts import BYLDIS_HTML, FakeIMAP, NoRequests, _mail
+    from scanner.mail_alerts import Mailbox
+    (repo / "watchlist.yml").write_text(yaml.safe_dump({"items": [{"name": "Monitor", "keywords": ["monitor"]}]}))
+    FakeIMAP.mails = [_mail(BYLDIS_HTML, sender="Diede <me@gmail.com>", date="Mon, 28 Sep 2026 17:16:00 +0200")]
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+
+    class Http(NoRequests):
+        def request(self, method, url, **kw):
+            assert "exponea" not in url and "troostwijkauctions" not in url
+            return FakeResponse({"listings": []})
+
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW, http_cls=lambda **kw: Http([]), telegram_cls=tg) == 0
+    _, data = page_data(repo)
+    tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
+    assert [l["title"] for l in tw] == ["HP Elite E241i Monitor (2x)"]
+    assert tw[0]["closes"] is None and tw[0]["closesDay"] == "2026-10-07" and tw[0]["location"] == "Veldhoven"
+    assert tw[0]["units"] == 2 and tw[0]["auction"].startswith("Faillissement Byldis")
+    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": ""} in data["sites"]
