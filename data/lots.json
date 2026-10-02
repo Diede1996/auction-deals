@@ -3,8 +3,8 @@
   "enabled": true,
   "error": null,
   "extraPerKm": 0.0,
-  "fuel": 2.021,
-  "fuelSource": "Belgian maximum price Euro 95 E10 from 2026-10-01",
+  "fuel": 2.065,
+  "fuelSource": "Belgian maximum price Euro 95 E10 from 2026-10-02",
   "home": true,
   "include": true,
   "kmpl": 16.0,
@@ -102,335 +102,8 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-01T04:28:46.294854+00:00",
+ "generated": "2026-10-02T04:28:09.500566+00:00",
  "lots": [
-  {
-   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 35.0,
-   "bids": null,
-   "closes": "2026-10-01T19:30:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/HQVwUyehwEE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIwLzAwNDZhLWhpbHRpLWR4LTQ2MC1rcnVpdHNjaGlldGhhbWVyLWluLWtvZmZlci5qcGc.jpg",
-   "isDeal": true,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196720",
-   "location": "Valkenswaard",
-   "market": 275.0,
-   "marketSource": "marktplaats",
-   "maxBid": 64.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 3,
-    "high": 600.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Hilti DX 460 Schiethamer Nagels",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ijzerwaren-en-bevestigingsmiddelen/m2358686913-hilti-dx-460-schiethamer-nagels"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Hilti X-S-460-F8 Bevestigingselement voor DX 460/DX A41",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446488469-hilti-x-s-460-f8-bevestigingselement-voor-dx-460-dx-a41"
-     },
-     {
-      "kind": "bid",
-      "price": 600.0,
-      "title": "Hilti DX 460 Volautomatische Kruitschiethamer Set",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2437579695-hilti-dx-460-volautomatische-kruitschiethamer-set"
-     }
-    ],
-    "low": 30.0,
-    "median": 275.0,
-    "model": "DX 460",
-    "outliers": [],
-    "prices": [
-     30.0,
-     275.0,
-     600.0
-    ],
-    "query": "hilti dx 460",
-    "url": "https://www.marktplaats.nl/q/hilti+dx+460/"
-   },
-   "mpPlan": {
-    "brand": "hilti",
-    "kind": "exact",
-    "model": "DX 460",
-    "note": "exact model Hilti DX 460",
-    "search": "https://www.marktplaats.nl/q/hilti+dx+460/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/hilti+dx+460/",
-   "pickup": "Klein Borkel 8, Valkenswaard",
-   "pickupWhen": "Thu 8 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Hilti DX 460 kruitschiethamer in koffer",
-   "trip": {
-    "approx": false,
-    "cost": 13.56,
-    "km": 53.7,
-    "min": 48
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/hilti-dx-460-kruitschiethamer-in-koffer/196720",
-   "vat": 0.21
-  },
-  {
-   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-01T19:30:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/wTcLdLFoUK8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIxLzAwNDdhLW1ha2l0YS1qci0zMDMwdC1yZWNpcHJvemFhZy5qcGc.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196721",
-   "location": "Valkenswaard",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "JR 3030T",
-    "note": "exact model Makita JR 3030T",
-    "search": "https://www.marktplaats.nl/q/makita+jr+3030t/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+jr+3030t/",
-   "pickup": "Klein Borkel 8, Valkenswaard",
-   "pickupWhen": "Thu 8 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Makita JR 3030T reciprozaag",
-   "trip": {
-    "approx": false,
-    "cost": 13.56,
-    "km": 53.7,
-    "min": 48
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/makita-jr-3030t-reciprozaag/196721",
-   "vat": 0.21
-  },
-  {
-   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 30.0,
-   "bids": null,
-   "closes": "2026-10-01T19:30:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/bzsrDc2ncdk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzIyLzAwNDhhLW1ha2l0YS1tODYwMC1ib29yaGFtZXIuanBn.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196722",
-   "location": "Valkenswaard",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "M8600",
-    "note": "exact model Makita M8600",
-    "search": "https://www.marktplaats.nl/q/makita+m8600/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+m8600/",
-   "pickup": "Klein Borkel 8, Valkenswaard",
-   "pickupWhen": "Thu 8 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Makita  M8600 boorhamer",
-   "trip": {
-    "approx": false,
-    "cost": 13.56,
-    "km": 53.7,
-    "min": 48
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/makita-m8600-boorhamer/196722",
-   "vat": 0.21
-  },
-  {
-   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 15.0,
-   "bids": null,
-   "closes": "2026-10-01T19:30:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/MqfD4J915eU/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NzU1LzAwODFhLWRpdmVyc2UtcG90dGVuLWVuLXNwZWNpZWt1aXBlbi5qcGc.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196755",
-   "location": "Valkenswaard",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+speciekuipen+potten/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+speciekuipen+potten/",
-   "pickup": "Klein Borkel 8, Valkenswaard",
-   "pickupWhen": "Thu 8 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Diverse potten en speciekuipen",
-   "trip": {
-    "approx": false,
-    "cost": 13.56,
-    "km": 53.7,
-    "min": 48
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/diverse-potten-en-speciekuipen/196755",
-   "vat": 0.21
-  },
-  {
-   "auction": "Bedrijfsbeëindiging Hoveniersbedrijf Valkenswaard",
-   "bid": 55.0,
-   "bids": null,
-   "closes": "2026-10-01T19:30:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/E9LbdWziNO0/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2Nzk1LzAxMjFhLXJ2cy1wcmFpcmktZ2FyZGVuLXBsYW50ZXIuanBn.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196795",
-   "location": "Valkenswaard",
-   "market": 25.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 7,
-    "high": 30.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 8.99,
-      "title": "NIEUW! Plantenschaar voor aquarium planten rvs 30 cm €8,99",
-      "url": "https://www.marktplaats.nl/v/dieren-en-toebehoren/vissen-aquaria-en-toebehoren/m2446992942-nieuw-plantenschaar-voor-aquarium-planten-rvs-30-cm-8-99"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "RVS GIETER PLANTEN",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2443645358-rvs-gieter-planten"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Grote RVS sierpot voor planten op wieltjes",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2442965513-grote-rvs-sierpot-voor-planten-op-wieltjes"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "ZARA HOME 2x Planten standaard RVS voor pot ø 20 H 40",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2447352745-zara-home-2x-planten-standaard-rvs-voor-pot-o-20-h-40"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "RVS plantenbank met gegalvaniseerd rooster 120x30x16cm",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/tuinwanddecoratie/m2448153877-rvs-plantenbank-met-gegalvaniseerd-rooster-120x30x16cm"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "ZARA HOME planten standaard RVS voor pot ø 30 H 50",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2447349960-zara-home-planten-standaard-rvs-voor-pot-o-30-h-50"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Aquarium aquascaping  rvs draad matten voor planten mos",
-      "url": "https://www.marktplaats.nl/v/dieren-en-toebehoren/vissen-aquaria-en-toebehoren/m2447444763-aquarium-aquascaping-rvs-draad-matten-voor-planten-mos"
-     }
-    ],
-    "low": 15.0,
-    "median": 25.0,
-    "model": null,
-    "outliers": [
-     100.0
-    ],
-    "prices": [
-     8.99,
-     15.0,
-     20.0,
-     25.0,
-     25.0,
-     30.0,
-     50.0
-    ],
-    "query": "plant rvs",
-    "url": "https://www.marktplaats.nl/q/plant+rvs/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/plant+rvs+prairi+garden/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/plant+rvs+prairi+garden/",
-   "pickup": "Klein Borkel 8, Valkenswaard",
-   "pickupWhen": "Thu 8 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "RVS prairi garden planter",
-   "trip": {
-    "approx": false,
-    "cost": 13.56,
-    "km": 53.7,
-    "min": 48
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/rvs-prairi-garden-planter/196795",
-   "vat": 0.21
-  },
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
@@ -611,7 +284,7 @@
    "title": "Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaibaar",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -638,7 +311,7 @@
    "location": "Loon op Zand",
    "market": 125.0,
    "marketSource": "marktplaats",
-   "maxBid": 25.0,
+   "maxBid": 24.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 39,
@@ -890,7 +563,7 @@
    "title": "Koffiemachine PHILIPS",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -935,7 +608,7 @@
    "title": "Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -980,7 +653,7 @@
    "title": "Twee 27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1007,7 +680,7 @@
    "location": "Loon op Zand",
    "market": 207.5,
    "marketSource": "marktplaats",
-   "maxBid": 47.0,
+   "maxBid": 46.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 10,
@@ -1110,7 +783,7 @@
    "title": "Laptop HP i5-fcoxx. 238 GB opslag. 8GB RAM. AMD Ryzen 3 7320u 2.40 GHz processor.",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1155,7 +828,7 @@
    "title": "Beeldscherm 27 inch ACER RG270",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1200,7 +873,7 @@
    "title": "Beeldscherm 27 inch SAMSUNG S27C310EAU",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1245,7 +918,7 @@
    "title": "27 inch beeldschermen ACER V277",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1340,7 +1013,7 @@
    "title": "Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300u CPU@1,90 HGZ. QWERTZ toetsenbord.",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -1350,8 +1023,8 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 45.0,
-   "bids": 5,
+   "bid": 55.0,
+   "bids": 7,
    "closes": "2026-10-05T20:00:00+02:00",
    "count": 1,
    "delivery": false,
@@ -1385,7 +1058,7 @@
    "title": "Makita AVT Breekhamer HM1812",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -1395,53 +1068,8 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bids": 1,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285775",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "dewalt",
-    "kind": "exact",
-    "model": "DC910",
-    "note": "exact model Dewalt DC910",
-    "search": "https://www.marktplaats.nl/q/dewalt+dc910/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc910/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
-   "trip": {
-    "approx": false,
-    "cost": 23.66,
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bids": 1,
+   "bid": 30.0,
+   "bids": 2,
    "closes": "2026-10-05T20:00:00+02:00",
    "count": 1,
    "delivery": false,
@@ -1712,12 +1340,57 @@
    "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
    "units": 1,
    "url": "https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bids": 1,
+   "closes": "2026-10-05T20:00:00+02:00",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285775",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "dewalt",
+    "kind": "exact",
+    "model": "DC910",
+    "note": "exact model Dewalt DC910",
+    "search": "https://www.marktplaats.nl/q/dewalt+dc910/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc910/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
    "vat": 0.21
   },
   {
@@ -1877,7 +1550,7 @@
    "title": "Makita LXT Accubatterij BL1830",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -1922,7 +1595,7 @@
    "title": "Hilti Meetstatief PUA 25",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -2017,7 +1690,7 @@
    "title": "Makita gereedschapskoffers - 2 stuks",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -2119,7 +1792,7 @@
    "title": "DEWALT TSTAK Gereedschapskoffer",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -2146,7 +1819,7 @@
    "location": "Waddinxveen",
    "market": 70.0,
    "marketSource": "marktplaats",
-   "maxBid": 2.0,
+   "maxBid": 1.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 5,
@@ -2214,7 +1887,7 @@
    "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -2259,7 +1932,7 @@
    "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
    "trip": {
     "approx": false,
-    "cost": 23.66,
+    "cost": 24.18,
     "km": 93.7,
     "min": 79
    },
@@ -2269,7 +1942,7 @@
   },
   {
    "auction": "Faillissement VOF MGB Groep",
-   "bid": 10.0,
+   "bid": 13.0,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "count": 1,
@@ -2286,7 +1959,7 @@
    "location": "Loon op Zand",
    "market": 147.0,
    "marketSource": "marktplaats",
-   "maxBid": 31.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 10,
@@ -2389,7 +2062,7 @@
    "title": "Bouwradio MAKITA zonder accu",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -2491,7 +2164,7 @@
    "title": "Bouwradio DEWALT ( exclusief accu )",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -2775,7 +2448,7 @@
    "title": "Gereedschapskoffer MAKITA",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -2970,7 +2643,7 @@
    "title": "Haakse slijper METABO met diverse schijven",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -3072,7 +2745,7 @@
    "title": "Bouwradio DEWALT met accu",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -3117,7 +2790,7 @@
    "title": "Diverse potboren, zowel steen als hout",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -3162,7 +2835,7 @@
    "title": "Haakse slijptol DEWALT DWE4579",
    "trip": {
     "approx": false,
-    "cost": 11.89,
+    "cost": 12.16,
     "km": 47.1,
     "min": 44
    },
@@ -3287,8 +2960,8 @@
    "title": "Glazen vazen en planten gieters",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 141
    },
    "units": 1,
@@ -3314,7 +2987,7 @@
    "location": "Noordwolde",
    "market": 147.5,
    "marketSource": "marktplaats",
-   "maxBid": 10.0,
+   "maxBid": 9.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 26,
@@ -3533,8 +3206,8 @@
    "title": "Printer en Laptop, Acer Epson",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 141
    },
    "units": 1,
@@ -3560,7 +3233,7 @@
    "location": "Noordwolde",
    "market": 225.0,
    "marketSource": "marktplaats",
-   "maxBid": 31.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-01T04:28:46.294854+00:00",
     "count": 5,
@@ -3628,8 +3301,8 @@
    "title": "Ca. 10x Hangende plantenbakken",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 141
    },
    "units": 10,
@@ -3638,8 +3311,8 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 31.0,
-   "bids": 7,
+   "bid": 41.0,
+   "bids": 8,
    "closes": "2026-10-05T18:36:50+00:00",
    "count": 1,
    "delivery": false,
@@ -3673,7 +3346,7 @@
    "title": "Monitor, Dell, C5519Q, 2022",
    "trip": {
     "approx": false,
-    "cost": 56.66,
+    "cost": 57.9,
     "km": 224.3,
     "min": 177
    },
@@ -3718,7 +3391,7 @@
    "title": "Monitor, Dell, C5519Q, 2022",
    "trip": {
     "approx": false,
-    "cost": 56.66,
+    "cost": 57.9,
     "km": 224.3,
     "min": 177
    },
@@ -3728,8 +3401,8 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 10.0,
-   "bids": 0,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-10-05T18:40:50+00:00",
    "count": 4,
    "delivery": false,
@@ -3763,7 +3436,7 @@
    "title": "4x Monitor, LG, Flatron 47WV30BR-B, 2011",
    "trip": {
     "approx": false,
-    "cost": 56.66,
+    "cost": 57.9,
     "km": 224.3,
     "min": 177
    },
@@ -3773,8 +3446,8 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 10.0,
-   "bids": 1,
+   "bid": 12.0,
+   "bids": 2,
    "closes": "2026-10-05T18:40:50+00:00",
    "count": 1,
    "delivery": false,
@@ -3808,7 +3481,7 @@
    "title": "Monitor, Samsung, UE48JU6445",
    "trip": {
     "approx": false,
-    "cost": 56.66,
+    "cost": 57.9,
     "km": 224.3,
     "min": 177
    },
@@ -3819,7 +3492,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 300.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
    "count": 1,
    "delivery": false,
@@ -3847,8 +3520,8 @@
    "title": "Ca. 2,9 KG DDR5 laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -3858,7 +3531,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 450.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
    "count": 1,
    "delivery": false,
@@ -3892,8 +3565,8 @@
    "title": "Ca. 25 KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -3903,7 +3576,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 450.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "count": 1,
    "delivery": false,
@@ -3937,8 +3610,8 @@
    "title": "Ca. 25 KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -3948,7 +3621,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "count": 1,
    "delivery": false,
@@ -3982,8 +3655,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -3993,7 +3666,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "count": 1,
    "delivery": false,
@@ -4027,8 +3700,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -4038,7 +3711,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "count": 1,
    "delivery": false,
@@ -4072,8 +3745,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -4083,7 +3756,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-06T18:32:58+00:00",
    "count": 1,
    "delivery": false,
@@ -4117,8 +3790,8 @@
    "title": "Ca. 20KG DDR4 server/laptop geheugen",
    "trip": {
     "approx": false,
-    "cost": 42.35,
-    "km": 167.6,
+    "cost": 43.28,
+    "km": 167.7,
     "min": 135
    },
    "units": 1,
@@ -4127,8 +3800,8 @@
   },
   {
    "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
-   "bid": 18.0,
-   "bids": 3,
+   "bid": 20.0,
+   "bids": 4,
    "closes": "2026-10-07T17:52:48+00:00",
    "count": 24,
    "delivery": true,
@@ -4242,8 +3915,8 @@
    "title": "Kindercarnavals producten aan zeven stellingdelen. 225 kostuums in grote diversiteit w.o. tien paar schoenen en diverse verkleedaccessoires.",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4287,8 +3960,8 @@
    "title": "Pennen en potloden diverse, ook gebruikt",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4389,8 +4062,8 @@
    "title": "Koop Kerstartikelen in stelling w.o. lichtgevende poppetjes, diamond painting sets, raamstickers, schildersets, tekenboeken, pennen, potloden etc.",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4434,8 +4107,8 @@
    "title": "Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskapje van F3 ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4479,8 +4152,8 @@
    "title": "Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleetheid onbekend",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4524,8 +4197,8 @@
    "title": "Twaalf potten en PH- granulaat",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4840,8 +4513,8 @@
    "title": "Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt",
    "trip": {
     "approx": false,
-    "cost": 9.25,
-    "km": 36.6,
+    "cost": 9.47,
+    "km": 36.7,
     "min": 34
    },
    "units": 1,
@@ -4885,7 +4558,7 @@
    "title": "1 x Stalen archiefkast met diverse kaarsen en glazen potten",
    "trip": {
     "approx": false,
-    "cost": 18.43,
+    "cost": 18.84,
     "km": 73.0,
     "min": 64
    },
@@ -4930,7 +4603,7 @@
    "title": "1 x Stalen archiefkast met diverse vazen, potten, tapvaten",
    "trip": {
     "approx": false,
-    "cost": 18.43,
+    "cost": 18.84,
     "km": 73.0,
     "min": 64
    },
@@ -4956,7 +4629,7 @@
   {
    "error": "",
    "id": "hnvi",
-   "lots": 655,
+   "lots": 422,
    "name": "HNVI",
    "ok": true
   },
@@ -4970,21 +4643,21 @@
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1190,
+   "lots": 1255,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 16,
+   "lots": 24,
    "name": "Troostwijk",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 60,
+   "lots": 3,
    "name": "Marktplaats prices",
    "ok": true
   }
