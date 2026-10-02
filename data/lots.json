@@ -102,11 +102,12 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-02T06:58:21.638896+00:00",
+ "generated": "2026-10-02T19:29:00.998979+00:00",
  "lots": [
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -296,6 +297,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 30.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -576,6 +578,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -622,6 +625,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 25.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -668,6 +672,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 110.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -799,6 +804,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -845,6 +851,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -891,6 +898,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 10.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -937,6 +945,7 @@
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 35.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T19:30:00+02:00",
    "closesDay": null,
@@ -1032,8 +1041,9 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 55.0,
-   "bids": 7,
+   "bid": 60.0,
+   "bidFromEmail": false,
+   "bids": 8,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
    "count": 1,
@@ -1079,6 +1089,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 30.0,
+   "bidFromEmail": false,
    "bids": 2,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1362,6 +1373,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 25.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1408,6 +1420,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 25.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1574,6 +1587,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1620,6 +1634,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1716,6 +1731,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1819,6 +1835,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1915,6 +1932,7 @@
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -1961,6 +1979,7 @@
   {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 13.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2092,6 +2111,7 @@
   {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 10.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2195,6 +2215,7 @@
   {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 5.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2480,6 +2501,7 @@
   {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2676,6 +2698,7 @@
   {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2778,53 +2801,8 @@
   },
   {
    "auction": "Faillissement VOF MGB Groep",
-   "bid": 5.0,
-   "bids": null,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/3m5w-Y3m_3M/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjYzLzAwNDktZGl2ZXJzZS1wb3Rib3Jlbi16b3dlbC1zdGVlbi1hbHMtaG91dC5qcGc.jpg",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "hnvi:196663",
-   "location": "Loon op Zand",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+zowel+steen+hout/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+zowel+steen+hout/",
-   "pickup": "De Hoogt 49, Loon op Zand",
-   "pickupWhen": "Fri 9 Oct, 09:00–13:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Diverse potboren, zowel steen als hout",
-   "trip": {
-    "approx": false,
-    "cost": 12.16,
-    "km": 47.1,
-    "min": 44
-   },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/diverse-potboren-zowel-steen-als-hout/196663",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissement VOF MGB Groep",
    "bid": 15.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
@@ -2871,6 +2849,7 @@
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
    "bid": 10.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T18:10:46+00:00",
    "closesDay": null,
@@ -2997,6 +2976,7 @@
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
    "bid": 36.0,
+   "bidFromEmail": false,
    "bids": 11,
    "closes": "2026-10-05T18:20:46+00:00",
    "closesDay": null,
@@ -3244,6 +3224,7 @@
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
    "bid": 10.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-05T18:24:46+00:00",
    "closesDay": null,
@@ -3340,6 +3321,7 @@
   {
    "auction": "Domeinen · Bedrijfsinventaris",
    "bid": 41.0,
+   "bidFromEmail": false,
    "bids": 8,
    "closes": "2026-10-05T18:36:50+00:00",
    "closesDay": null,
@@ -3386,6 +3368,7 @@
   {
    "auction": "Domeinen · Bedrijfsinventaris",
    "bid": 26.0,
+   "bidFromEmail": false,
    "bids": 7,
    "closes": "2026-10-05T18:36:50+00:00",
    "closesDay": null,
@@ -3431,8 +3414,9 @@
   },
   {
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 12.0,
-   "bids": 2,
+   "bid": 16.0,
+   "bidFromEmail": false,
+   "bids": 3,
    "closes": "2026-10-05T18:40:50+00:00",
    "closesDay": null,
    "count": 4,
@@ -3478,6 +3462,7 @@
   {
    "auction": "Domeinen · Bedrijfsinventaris",
    "bid": 12.0,
+   "bidFromEmail": false,
    "bids": 2,
    "closes": "2026-10-05T18:40:50+00:00",
    "closesDay": null,
@@ -3524,6 +3509,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 300.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
    "closesDay": null,
@@ -3564,6 +3550,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 450.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:30:58+00:00",
    "closesDay": null,
@@ -3610,6 +3597,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 450.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "closesDay": null,
@@ -3656,6 +3644,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "closesDay": null,
@@ -3702,6 +3691,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "closesDay": null,
@@ -3748,6 +3738,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:31:58+00:00",
    "closesDay": null,
@@ -3794,6 +3785,7 @@
   {
    "auction": "Domeinen · Demontage artikelen ICT",
    "bid": 350.0,
+   "bidFromEmail": false,
    "bids": 1,
    "closes": "2026-10-06T18:32:58+00:00",
    "closesDay": null,
@@ -3840,6 +3832,7 @@
   {
    "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 4,
    "closes": "2026-10-07T17:52:48+00:00",
    "closesDay": null,
@@ -3881,6 +3874,7 @@
   {
    "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
    "bid": 20.0,
+   "bidFromEmail": false,
    "bids": 4,
    "closes": "2026-10-07T17:53:48+00:00",
    "closesDay": null,
@@ -3922,6 +3916,7 @@
   {
    "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
    "bid": 200.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-13T19:30:00+02:00",
    "closesDay": null,
@@ -3966,23 +3961,374 @@
    "vat": 0.21
   },
   {
-   "auction": "Faillissement De Feestboulevard 3A Kavels D001-D141",
-   "bid": 3.0,
-   "bids": null,
-   "closes": "2026-10-13T19:30:00+02:00",
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T17:30:17+00:00",
    "closesDay": null,
    "count": 1,
    "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/lCpsZUDSXe0/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2OTc1LzAwNjgtcGVubmVuLWVuLXBvdGxvZGVuLWRpdmVyc2Utb29rLWdlYnJ1aWt0LmpwZw.jpg",
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/9042e644-18ae-4149-9265-473599757173/20260929_093235.jpg",
    "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
+   "isNew": true,
+   "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
-   "key": "hnvi:196975",
-   "location": "Oirschot",
+   "key": "onlineveilingmeester:1906399",
+   "location": "Winsum",
+   "market": 145.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 4,
+    "high": 200.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 74.0,
+      "title": "Bosch GBH 18 V-EC Boorhamer SDS-Plus 18V Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444374199-bosch-gbh-18-v-ec-boorhamer-sds-plus-18v-body"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Bosch Professional accu boorhamer GBH 18V-EC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448391619-bosch-professional-accu-boorhamer-gbh-18v-ec"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Bosch GBH 36 V-EC Compact (1,3 Ah)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447704186-bosch-gbh-36-v-ec-compact-1-3-ah"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Bosch GBH 36 V-EC Compact Professional Boorhamer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427352353-bosch-gbh-36-v-ec-compact-professional-boorhamer"
+     }
+    ],
+    "low": 78.0,
+    "median": 145.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     74.0,
+     90.0,
+     199.99,
+     200.0
+    ],
+    "query": "bosch gbh ec",
+    "url": "https://www.marktplaats.nl/q/bosch+gbh+ec/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/bosch+gbh+ec+2019+accu/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+gbh+ec+2019+accu/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu klopboormachine Bosch, GBH 18 V-EC, bouwjaar 2019",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/4",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 2,
+   "closes": "2026-10-13T17:31:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/4491884d-339e-4c24-b62a-39919080d0fd/20260929_093330.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906400",
+   "location": "Winsum",
+   "market": 145.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 4,
+    "high": 200.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 74.0,
+      "title": "Bosch GBH 18 V-EC Boorhamer SDS-Plus 18V Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444374199-bosch-gbh-18-v-ec-boorhamer-sds-plus-18v-body"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Bosch Professional accu boorhamer GBH 18V-EC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448391619-bosch-professional-accu-boorhamer-gbh-18v-ec"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Bosch GBH 36 V-EC Compact (1,3 Ah)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447704186-bosch-gbh-36-v-ec-compact-1-3-ah"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Bosch GBH 36 V-EC Compact Professional Boorhamer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427352353-bosch-gbh-36-v-ec-compact-professional-boorhamer"
+     }
+    ],
+    "low": 78.0,
+    "median": 145.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     74.0,
+     90.0,
+     199.99,
+     200.0
+    ],
+    "query": "bosch gbh ec",
+    "url": "https://www.marktplaats.nl/q/bosch+gbh+ec/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/bosch+gbh+ec+2020+accu/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+gbh+ec+2020+accu/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu klopboormachine Bosch, GBH 18 V-EC, bouwjaar 2020",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/5",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 2,
+   "closes": "2026-10-13T17:31:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/cf0f3583-aacd-437a-b00a-37c6d8906a99/20260929_093653.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906403",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch gks",
+    "kind": "exact",
+    "model": "55CE",
+    "note": "exact model Bosch Gks 55CE",
+    "search": "https://www.marktplaats.nl/q/bosch+gks+55ce/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+gks+55ce/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Cirkelzaag Bosch, GKS 55CE, bouwjaar 2011",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/8",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 2,
+   "closes": "2026-10-13T17:32:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/3cd9d231-624a-4ee1-9301-ab117d4aa248/20260929_093816.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906404",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch gws",
+    "kind": "exact",
+    "model": "26",
+    "note": "exact model Bosch Gws 26",
+    "search": "https://www.marktplaats.nl/q/bosch+gws+26/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+gws+26/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Haakse slijper Bosch, GWS 26-230 LVI, bouwjaar 2018",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/9",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:38:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/96c85b55-1ea1-4b82-9e07-7e509b7a3b44/20260929_103701.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906430",
+   "location": "Winsum",
+   "market": 37.5,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 2,
+    "high": 41.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Hikoki G13SR4 Haakse Slijpmachine - 125mm, 730W",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2418139562-hikoki-g13sr4-haakse-slijpmachine-125mm-730w"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "HiKOKI Haakse Slijper G13SR4(S) - Zonder koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447907789-hikoki-haakse-slijper-g13sr4-s-zonder-koffer"
+     }
+    ],
+    "low": 33.75,
+    "median": 37.5,
+    "model": "G13SR4",
+    "outliers": [],
+    "prices": [
+     35.0,
+     40.0
+    ],
+    "query": "hikoki g13sr4",
+    "url": "https://www.marktplaats.nl/q/hikoki+g13sr4/"
+   },
+   "mpPlan": {
+    "brand": "hikoki",
+    "kind": "exact",
+    "model": "G13SR4",
+    "note": "exact model Hikoki G13SR4",
+    "search": "https://www.marktplaats.nl/q/hikoki+g13sr4/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hikoki+g13sr4/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Haakse slijper Hikoki, G13SR4, bouwjaar 2020",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/35",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:38:17+00:00",
+   "closesDay": null,
+   "count": 4,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/715aafdc-d2e6-425c-8446-c922ead0708e/20260929_103752.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906431",
+   "location": "Winsum",
    "market": null,
    "marketSource": null,
    "maxBid": null,
@@ -3992,131 +4338,1145 @@
     "kind": "general",
     "model": null,
     "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+pennen+ook+potloden/"
+    "search": "https://www.marktplaats.nl/q/hikoki+eb+accu/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+pennen+ook+potloden/",
-   "pickup": "Haven 3A, Oirschot",
-   "pickupWhen": "Tue 20 Oct, 09:00–14:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Pennen en potloden diverse, ook gebruikt",
+   "mpSearch": "https://www.marktplaats.nl/q/hikoki+eb+accu/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "4x Accu Hikoki, EB 2433X 24V 3.3Ah",
    "trip": {
     "approx": false,
-    "cost": 9.47,
-    "km": 36.7,
-    "min": 34
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
    },
-   "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/pennen-en-potloden-diverse-ook-gebruikt/196975",
+   "units": 4,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/36",
    "vat": 0.21
   },
   {
-   "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
-   "bid": 40.0,
-   "bids": null,
-   "closes": "2026-10-13T20:00:00+02:00",
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:42:17+00:00",
    "closesDay": null,
    "count": 1,
    "delivery": false,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
-   "image": "https://assets.hnvi.nl/assets/MZTn-uEicMA/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MDQ5LzAxNDIta29vcC1rZXJzdGFydGlrZWxlbi1pbi1zdGVsbGluZy13LW8tbGljaHRnZXZlbmRlLXBvcHBldGplcy1kaWFtb25kLXBhaW50aW5nLXNldHMuanBn.jpg",
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/8d1dd86d-c2e2-4371-a48b-8d720b274a9a/20260929_105158.jpg",
    "isDeal": false,
-   "isNew": false,
-   "item": "Plants / decor",
+   "isNew": true,
+   "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
-   "key": "hnvi:197049",
-   "location": "Oirschot",
-   "market": 16.75,
+   "key": "onlineveilingmeester:1906444",
+   "location": "Winsum",
+   "market": 50.0,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 6,
-    "high": 22.5,
-    "kind": "general",
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 3,
+    "high": 80.0,
+    "kind": "exact",
     "listings": [
      {
       "kind": "bid",
-      "price": 5.0,
-      "title": "te koop plant en pot",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2447992983-te-koop-plant-en-pot"
+      "price": 49.0,
+      "title": "Makita BHR200 Accu Boorhamer met lader en accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2433749785-makita-bhr200-accu-boorhamer-met-lader-en-accu"
      },
      {
       "kind": "bid",
-      "price": 7.5,
-      "title": "Te koop 2 glazen design potten voor woonkamerinrichting",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kandelaars-en-kaarsen/m2447229669-te-koop-2-glazen-design-potten-voor-woonkamerinrichting"
+      "price": 50.0,
+      "title": "Makita BHR200 Accu Boorhamer met lader en 2 accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448574917-makita-bhr200-accu-boorhamer-met-lader-en-2-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "2x Makita BHR200 Boorhamer Set met Accu's en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449048670-2x-makita-bhr200-boorhamer-set-met-accu-s-en-lader"
+     }
+    ],
+    "low": 49.0,
+    "median": 50.0,
+    "model": "BHR200",
+    "outliers": [],
+    "prices": [
+     49.0,
+     50.0,
+     80.0
+    ],
+    "query": "makita bhr200",
+    "url": "https://www.marktplaats.nl/q/makita+bhr200/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "BHR200",
+    "note": "exact model Makita BHR200",
+    "search": "https://www.marktplaats.nl/q/makita+bhr200/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+bhr200/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu klopboormachine Makita, BHR200, bouwjaar 2011",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/49",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:42:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/94dd5688-f1c5-4bfc-8e71-f4012abfefd7/20260929_105314.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906445",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "BHR162",
+    "note": "exact model Makita BHR162",
+    "search": "https://www.marktplaats.nl/q/makita+bhr162/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+bhr162/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu klopboormachine Makita, BHR162, bouwjaar 2012",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/50",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:42:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/05bb8c51-4879-42b0-a776-139f89d85052/20260929_105428.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906446",
+   "location": "Winsum",
+   "market": 97.95,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 61,
+    "high": 145.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 3.95,
+      "title": "Accuhouder voor Makita LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1511948604-accuhouder-voor-makita-lxt"
      },
      {
       "kind": "fixed",
+      "price": 13.25,
+      "title": "Worx Accu Converter Makita 18V | Tweedekansje | OP=OP",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1531751209-worx-accu-converter-makita-18v-tweedekansje-op-op"
+     },
+     {
+      "kind": "fixed",
+      "price": 13.79,
+      "title": "Makita Accu Adapter voor Einhell 18V | 31% Korting",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1531751963-makita-accu-adapter-voor-einhell-18v-31-korting"
+     },
+     {
+      "kind": "bid",
       "price": 15.0,
-      "title": "TE KOOP TWEE MOIE GEGLAZUURDE   KAMER BLOEM POTTEN",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2448416054-te-koop-twee-moie-geglazuurde-kamer-bloem-potten"
+      "title": "Makita 60120 Accuboormachine met Koffer (zonder accu)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447515559-makita-60120-accuboormachine-met-koffer-zonder-accu"
      },
      {
       "kind": "fixed",
-      "price": 18.5,
-      "title": "Te Koop 3 Oude Porseleinen Potten nu 18.50  Weesp",
-      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-porselein/m2447044882-te-koop-3-oude-porseleinen-potten-nu-18-50-weesp"
+      "price": 19.5,
+      "title": "Makita 7000 / 7001 / 7033 / 7034 accu 7.2, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595152-makita-7000-7001-7033-7034-accu-7-2-123accu-huismerk"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 20.0,
-      "title": "Te koop antieke voorraad potten.",
-      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-emaille/m2448164429-te-koop-antieke-voorraad-potten"
+      "title": "Makita 6271D 12V Accu Boor-/Schroefmachine met Oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448279196-makita-6271d-12v-accu-boor-schroefmachine-met-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 24.95,
+      "title": "Makita BL1815N / 196235-0 / 18V LXT accu, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1524734114-makita-bl1815n-196235-0-18v-lxt-accu-123accu-huismerk"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita machine,9,6 volt met 2 accu,s",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447370290-makita-machine-9-6-volt-met-2-accu-s"
      },
      {
       "kind": "bid",
       "price": 30.0,
-      "title": "Te koop 2 nepalese potten met deksel",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2447236277-te-koop-2-nepalese-potten-met-deksel"
+      "title": "Makita Boormachine 6317D met lader en 2 accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448236370-makita-boormachine-6317d-met-lader-en-2-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 32.95,
+      "title": "Startset: Makita BL1021B CXT accu + lader, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523594884-startset-makita-bl1021b-cxt-accu-lader-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.99,
+      "title": "Makita BL1040B 10.8V CXT 4.0Ah Accu | Nette staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446845403-makita-bl1040b-10-8v-cxt-4-0ah-accu-nette-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Nieuwe Makita accu met lader (zonder boormachine)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446638024-nieuwe-makita-accu-met-lader-zonder-boormachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Makita BL1840B / 197265-4 / 18V LXT accu, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523594881-makita-bl1840b-197265-4-18v-lxt-accu-123accu-huismerk"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita BL1850B 18V 5.0Ah Li-ion Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448622756-makita-bl1850b-18v-5-0ah-li-ion-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 44.99,
+      "title": "Makita DTW190 18V Li-Ion Accu slagmoersleutel Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449170427-makita-dtw190-18v-li-ion-accu-slagmoersleutel-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Makita DC 18 RO accu lader en 4 accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446695219-makita-dc-18-ro-accu-lader-en-4-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 49.95,
+      "title": "ACTIE Accu Reciprozaag Snoeizaag voor Makita 18V LXT accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/a1519927554-actie-accu-reciprozaag-snoeizaag-voor-makita-18v-lxt-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita 18V 6.0Ah Li-ion Accu - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447098598-makita-18v-6-0ah-li-ion-accu-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 53.95,
+      "title": "Startset: Makita BL1815N / 18V LXT accu , 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595161-startset-makita-bl1815n-18v-lxt-accu-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "Makita BL1860B Accu 18V 6.0Ah 108Wh",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444066434-makita-bl1860b-accu-18v-6-0ah-108wh"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Makita accuboormachine met 2 x accu.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448453080-makita-accuboormachine-met-2-x-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Makita 6271D Accuboormachine + Complete Gereedschapsset",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448005169-makita-6271d-accuboormachine-complete-gereedschapsset"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita boormachine 18v oplader en 2 accu,s",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449196956-makita-boormachine-18v-oplader-en-2-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 77.95,
+      "title": "Startset: Makita BL1850B / 18V LXT accu , 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595207-startset-makita-bl1850b-18v-lxt-accu-123accu-huismerk"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.99,
+      "title": "Makita DF333D 12V CXT Accuboormachine Incl. 4Ah Accu & Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446849711-makita-df333d-12v-cxt-accuboormachine-incl-4ah-accu-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "2x Makita BHR200 Boorhamer Set met Accu's en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449048670-2x-makita-bhr200-boorhamer-set-met-accu-s-en-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita Boor-/Schroefmachine met 2 accu's (1 nieuw)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449139628-makita-boor-schroefmachine-met-2-accu-s-1-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Makita DTD152 18V Accu Slagmoersleutel - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448161281-makita-dtd152-18v-accu-slagmoersleutel-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.95,
+      "title": "Makita BL1860B LXT / 197422-4 / 18V LXT accu 18, origineel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1527169180-makita-bl1860b-lxt-197422-4-18v-lxt-accu-18-origineel"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Makita DDF453 18V LXT Accuboormachine Incl.1.5A Accu & Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446827820-makita-ddf453-18v-lxt-accuboormachine-incl-1-5a-accu-lader"
      }
     ],
-    "low": 6.88,
-    "median": 16.75,
+    "low": 45.0,
+    "median": 97.95,
     "model": null,
-    "outliers": [],
-    "prices": [
-     5.0,
-     7.5,
-     15.0,
-     18.5,
-     20.0,
-     30.0
+    "outliers": [
+     350.0,
+     379.95
     ],
-    "query": "pot koop",
-    "url": "https://www.marktplaats.nl/q/pot+koop/"
+    "prices": [
+     3.95,
+     13.25,
+     13.79,
+     15.0,
+     19.5,
+     20.0,
+     24.95,
+     25.0,
+     30.0,
+     32.95,
+     34.99,
+     35.0,
+     39.95,
+     40.0,
+     44.99,
+     45.0,
+     49.95,
+     50.0,
+     53.95,
+     60.0,
+     65.0,
+     70.0,
+     75.0,
+     77.95,
+     79.99,
+     80.0,
+     80.0,
+     85.0,
+     89.95,
+     89.99,
+     97.95,
+     99.0,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     100.0,
+     100.0,
+     105.0,
+     109.95,
+     119.95,
+     135.0,
+     139.5,
+     140.0,
+     140.0,
+     149.99,
+     160.0,
+     160.0,
+     160.0,
+     165.0,
+     165.0,
+     169.5,
+     189.0,
+     199.0,
+     200.0,
+     210.0,
+     218.95,
+     219.95,
+     225.0,
+     309.95
+    ],
+    "query": "makita accu",
+    "url": "https://www.marktplaats.nl/q/makita+accu/"
    },
    "mpPlan": {
     "brand": null,
     "kind": "general",
     "model": null,
     "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+koop+kerstartikelen+stelling/"
+    "search": "https://www.marktplaats.nl/q/makita+accu/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+koop+kerstartikelen+stelling/",
-   "pickup": "Haven 3A, Oirschot",
-   "pickupWhen": "Tue 20 Oct, 09:00–14:00",
-   "premium": 0.19,
-   "site": "hnvi",
-   "siteName": "HNVI",
-   "title": "Koop Kerstartikelen in stelling w.o. lichtgevende poppetjes, diamond painting sets, raamstickers, schildersets, tekenboeken, pennen, potloden etc.",
+   "mpSearch": "https://www.marktplaats.nl/q/makita+accu/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu met lader Makita, 12V 1.9Ah",
    "trip": {
     "approx": false,
-    "cost": 9.47,
-    "km": 36.7,
-    "min": 34
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
    },
    "units": 1,
-   "url": "https://www.hnvi.nl/veiling-kavel/koop-kerstartikelen-in-stelling-w-o-lichtgevende-poppetjes-diamond-painting-sets-raamstickers-schildersets-tekenboeken-pennen-potloden-etc/197049",
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/51",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T17:43:17+00:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/439ff518-327c-4009-a6aa-e24567d354cb/20260929_105520.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906448",
+   "location": "Winsum",
+   "market": 250.0,
+   "marketSource": "marktplaats",
+   "maxBid": 23.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 55,
+    "high": 180.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Metabo BSP 12 Plus Boormachine met nieuwe accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443554216-metabo-bsp-12-plus-boormachine-met-nieuwe-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Metabo BZ 12 SP Accuboormachine met lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448614706-metabo-bz-12-sp-accuboormachine-met-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 16.0,
+      "title": "Metabo 14.4V 2.0Ah Li-Power Accu voor Gereedschap",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445677808-metabo-14-4v-2-0ah-li-power-accu-voor-gereedschap"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Metabo Accu en Lader C 60 - NiCd + NiMH 7.2V - 15.6V",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2440692594-metabo-accu-en-lader-c-60-nicd-nimh-7-2v-15-6v"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Boormachines: Makita accuboormachines en Metabo klopboormach",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445558235-boormachines-makita-accuboormachines-en-metabo-klopboormach"
+     },
+     {
+      "kind": "fixed",
+      "price": 29.5,
+      "title": "Metabo 6.25473 / 6.25474 / 6.02151.50 accu, 123accu huismerk",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1523595163-metabo-6-25473-6-25474-6-02151-50-accu-123accu-huismerk"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Metabo accu set van 2.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446819244-metabo-accu-set-van-2"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "metabo accu en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2447538679-metabo-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Metabo 12V 2Ah NiMH vervangende accu",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2446854585-metabo-12v-2ah-nimh-vervangende-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Metabo SC 60 Plus Lader + 2x Accu (18V - 2.0Ah - 36Wh) m",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2446938618-metabo-sc-60-plus-lader-2x-accu-18v-2-0ah-36wh-m"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Metabo acculader en accu's in koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446738464-metabo-acculader-en-accu-s-in-koffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "Metabo bs14.4 Lt quick accu schroefboormachine met lader.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446904057-metabo-bs14-4-lt-quick-accu-schroefboormachine-met-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "METABO POWERMAXX SB BASIC ACCU KLOPBOOR / SCHROEFMACHINE",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/a1528907657-metabo-powermaxx-sb-basic-accu-klopboor-schroefmachine"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Metabo BS 14.4 Li Accuboormachine met lader en accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448016446-metabo-bs-14-4-li-accuboormachine-met-lader-en-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Metabo Boor- en Schroefmachineset met Accu's en Opladers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441564437-metabo-boor-en-schroefmachineset-met-accu-s-en-opladers"
+     },
+     {
+      "kind": "fixed",
+      "price": 64.0,
+      "title": "Metabo 18V 4.0 Ah Li-Power Accu-pack (Nieuw in doos)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448754610-metabo-18v-4-0-ah-li-power-accu-pack-nieuw-in-doos"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "Metabo Accu- schroefboor machine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441926053-metabo-accu-schroefboor-machine"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Metabo BS 18 Li Boor-/Schroefmachine met 2 accu's en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449083881-metabo-bs-18-li-boor-schroefmachine-met-2-accu-s-en-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Accu-boorschroefmachine Metabo PowerMaxx BS Basic (NIEUW)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439216867-accu-boorschroefmachine-metabo-powermaxx-bs-basic-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 109.99,
+      "title": "Metabo BS 18 LTX Impuls boormachine | Met accu en lader | Me",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442936563-metabo-bs-18-ltx-impuls-boormachine-met-accu-en-lader-me"
+     },
+     {
+      "kind": "bid",
+      "price": 119.99,
+      "title": "Metabo 18V ACCU-boorschroevendraaier BS 18 Set | Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447798556-metabo-18v-accu-boorschroevendraaier-bs-18-set-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 123.14,
+      "title": "Metabo GA 18 LTX 600639850 Accu-rechte slijpmachine Nr.114",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1526430345-metabo-ga-18-ltx-600639850-accu-rechte-slijpmachine-nr-114"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Metabo SB18LTX  Quick 18v accu schroefboormachine set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446974126-metabo-sb18ltx-quick-18v-accu-schroefboormachine-set"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Metabo KH 18 LTX BL 24 Q Accu Boorhamer met Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448250607-metabo-kh-18-ltx-bl-24-q-accu-boorhamer-met-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Metabo AS18LPC Accu stofzuiger",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2449128529-metabo-as18lpc-accu-stofzuiger"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Metabo haakse accu slijper type W18 L9-125 quick nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2438760394-metabo-haakse-accu-slijper-type-w18-l9-125-quick-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Metabo BS 14.4 LT incl. koffer, lader en 2 accu's 3,0Ah",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2288687103-metabo-bs-14-4-lt-incl-koffer-lader-en-2-accu-s-3-0ah"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Metabo BS 18 LTX Impuls,  2x 14.4,  3,0Ah accu's in Metabox",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2288677417-metabo-bs-18-ltx-impuls-2x-14-4-3-0ah-accu-s-in-metabox"
+     },
+     {
+      "kind": "fixed",
+      "price": 131.4,
+      "title": "Metabo Accu Pijpbandmachine RB 18 LTX 60 18V, zonder",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1526430355-metabo-accu-pijpbandmachine-rb-18-ltx-60-18v-zonder"
+     },
+     {
+      "kind": "bid",
+      "price": 135.0,
+      "title": "Metabo accu boorhamer met hakfunctie type KH36LTX werkt goed",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438568045-metabo-accu-boorhamer-met-hakfunctie-type-kh36ltx-werkt-goed"
+     }
+    ],
+    "low": 60.0,
+    "median": 125.0,
+    "model": null,
+    "outliers": [
+     908.26
+    ],
+    "prices": [
+     10.0,
+     15.0,
+     16.0,
+     20.0,
+     25.0,
+     29.5,
+     30.0,
+     30.0,
+     39.95,
+     45.0,
+     50.0,
+     59.0,
+     59.99,
+     60.0,
+     60.0,
+     64.0,
+     65.0,
+     90.0,
+     90.0,
+     109.99,
+     119.99,
+     123.14,
+     125.0,
+     125.0,
+     125.0,
+     125.0,
+     125.0,
+     125.0,
+     131.4,
+     135.0,
+     135.0,
+     139.67,
+     139.67,
+     139.67,
+     139.67,
+     140.0,
+     140.0,
+     150.0,
+     156.2,
+     159.0,
+     179.99,
+     180.0,
+     189.0,
+     205.79,
+     215.0,
+     219.01,
+     225.0,
+     249.99,
+     250.0,
+     276.86,
+     276.86,
+     301.65,
+     342.98,
+     350.0,
+     367.77
+    ],
+    "query": "metabo accu",
+    "url": "https://www.marktplaats.nl/q/metabo+accu/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+accu/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+accu/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "2x Accu met adapter Metabo, 12V 2.0Ah",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 2,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/53",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T17:43:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/16d56a1b-998e-4e87-906c-54418592c6c9/20260929_105616.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906449",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "metabo",
+    "kind": "exact",
+    "model": "WPB 36",
+    "note": "exact model Metabo WPB 36",
+    "search": "https://www.marktplaats.nl/q/metabo+wpb+36/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+wpb+36/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu haakse slijper Metabo, WPB 36 LTX BL230, bouwjaar 2016",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/54",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T17:43:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/8f4b520a-73f2-40ba-ae07-c20a64dc3b87/20260929_105749.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906450",
+   "location": "Winsum",
+   "market": 129.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 25,
+    "high": 180.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Metabo BS18 Accuboormachine met 2 accu's en oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430181075-metabo-bs18-accuboormachine-met-2-accu-s-en-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "Metabo BS 18 LTX impuls basic | accu boormachine body",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2426586012-metabo-bs-18-ltx-impuls-basic-accu-boormachine-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.0,
+      "title": "Metabo bs18 accu schroefboormachine 18volt met 1,3amp akku",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437051800-metabo-bs18-accu-schroefboormachine-18volt-met-1-3amp-akku"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Metabo BS18 schroef/boormachine in L-Box",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2433636034-metabo-bs18-schroef-boormachine-in-l-box"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Metabo BS 18 Li Boor-/Schroefmachine met 2 accu's en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449083881-metabo-bs-18-li-boor-schroefmachine-met-2-accu-s-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 95.0,
+      "title": "Metabo BS 18 LTX BL Q I Accu boorschroefmachine | 18 V body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2420368399-metabo-bs-18-ltx-bl-q-i-accu-boorschroefmachine-18-v-body"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Metabo BS 18 LT Boor -Schroef Machine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449290865-metabo-bs-18-lt-boor-schroef-machine"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Metabo Accuboormachine BS 18  Set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445896046-metabo-accuboormachine-bs-18-set"
+     },
+     {
+      "kind": "bid",
+      "price": 109.99,
+      "title": "Metabo BS 18 LTX Impuls boormachine | Met accu en lader | Me",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442936563-metabo-bs-18-ltx-impuls-boormachine-met-accu-en-lader-me"
+     },
+     {
+      "kind": "fixed",
+      "price": 110.0,
+      "title": "Metabo BS18Li Schroefmachine schroeftol 18volt",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2442886645-metabo-bs18li-schroefmachine-schroeftol-18volt"
+     },
+     {
+      "kind": "bid",
+      "price": 119.99,
+      "title": "Metabo 18V ACCU-boorschroevendraaier BS 18 Set | Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447798556-metabo-18v-accu-boorschroevendraaier-bs-18-set-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Metabo BS 18 LTX Impuls,  2x 14.4,  3,0Ah accu's in Metabox",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2288677417-metabo-bs-18-ltx-impuls-2x-14-4-3-0ah-accu-s-in-metabox"
+     },
+     {
+      "kind": "bid",
+      "price": 129.0,
+      "title": "Metabo BS 18 LT Compact Boormachine  in Koffer met 2 Acc",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427689380-metabo-bs-18-lt-compact-boormachine-in-koffer-met-2-acc"
+     },
+     {
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Metabo BS18L, Accuboormachine, 18V, Excl  | In Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442098497-metabo-bs18l-accuboormachine-18v-excl-in-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "Metabo BS 18 LT Bl Quick 18v 4.0accu | nette staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446562957-metabo-bs-18-lt-bl-quick-18v-4-0accu-nette-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 149.95,
+      "title": "Metabo BS 18 LTX Impuls 18V boorschroefmachine body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449186121-metabo-bs-18-ltx-impuls-18v-boorschroefmachine-body"
+     },
+     {
+      "kind": "bid",
+      "price": 159.0,
+      "title": "ZGAN METABO ACCUBOORMACHINE BS 18 QUICK/2goede accu’s/lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448975817-zgan-metabo-accuboormachine-bs-18-quick-2goede-accu-s-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 179.95,
+      "title": "Metabo BS 18 LT BL Quick 18v 4.0ah + lader | nette staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446562951-metabo-bs-18-lt-bl-quick-18v-4-0ah-lader-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 179.99,
+      "title": "Metabo BS 18 LTX Boorschroefmachine 18V + 2x 4ah accu en lad",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446521975-metabo-bs-18-ltx-boorschroefmachine-18v-2x-4ah-accu-en-lad"
+     },
+     {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "Metabo BS 18 BL Accuboormachine met Accu en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442205645-metabo-bs-18-bl-accuboormachine-met-accu-en-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 180.0,
+      "title": "Metabo BS18LTXBLQI accu klopboormachine in systainer.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437901097-metabo-bs18ltxblqi-accu-klopboormachine-in-systainer"
+     },
+     {
+      "kind": "bid",
+      "price": 215.0,
+      "title": "Metabo BS 18 LT Quick met 2x 4.0Ah accu , lader en Metaloc",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2278738557-metabo-bs-18-lt-quick-met-2x-4-0ah-accu-lader-en-metaloc"
+     },
+     {
+      "kind": "fixed",
+      "price": 215.0,
+      "title": "Metabo BS 18 LT BL Accu-boorschroevendraaier",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2426402802-metabo-bs-18-lt-bl-accu-boorschroevendraaier"
+     },
+     {
+      "kind": "fixed",
+      "price": 249.95,
+      "title": "Metabo - BS 18 L BL Q accu schroefboormachine 18V 4ah -  New",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441944323-metabo-bs-18-l-bl-q-accu-schroefboormachine-18v-4ah-new"
+     },
+     {
+      "kind": "fixed",
+      "price": 295.0,
+      "title": "Metabo BS 18 LTX Quick Schroefmachine.",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2415848055-metabo-bs-18-ltx-quick-schroefmachine"
+     }
+    ],
+    "low": 97.5,
+    "median": 129.0,
+    "model": "BS 18",
+    "outliers": [
+     350.0,
+     375.0
+    ],
+    "prices": [
+     40.0,
+     60.0,
+     69.0,
+     80.0,
+     90.0,
+     95.0,
+     100.0,
+     100.0,
+     109.99,
+     110.0,
+     119.99,
+     125.0,
+     129.0,
+     139.99,
+     149.0,
+     149.95,
+     159.0,
+     179.95,
+     179.99,
+     180.0,
+     180.0,
+     215.0,
+     215.0,
+     249.95,
+     295.0
+    ],
+    "query": "metabo bs 18",
+    "url": "https://www.marktplaats.nl/q/metabo+bs+18/"
+   },
+   "mpPlan": {
+    "brand": "metabo",
+    "kind": "exact",
+    "model": "BS 18",
+    "note": "exact model Metabo BS 18",
+    "search": "https://www.marktplaats.nl/q/metabo+bs+18/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+bs+18/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Accu boormachine Metabo, BS 18 LT BL Q, bouwjaar 2018",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/55",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T17:43:17+00:00",
+   "closesDay": null,
+   "count": 3,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/17ba16fe-7792-40e5-88c8-ed1a0273220f/20260929_105902.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906451",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+opbergkoffer/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+opbergkoffer/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "3x Diverse opbergkoffer Metabo",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 3,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/56",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 14.0,
+   "bidFromEmail": false,
+   "bids": 3,
+   "closes": "2026-10-13T17:52:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/e07a25c2-5075-4db4-b532-ab72eaedd82c/20260929_112842.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906484",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "metabo",
+    "kind": "exact",
+    "model": "SA250",
+    "note": "exact model Metabo SA250",
+    "search": "https://www.marktplaats.nl/q/metabo+sa250/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+sa250/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Slanghaspel Metabo, SA250",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/89",
    "vat": 0.21
   },
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
    "bid": 16.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
    "closesDay": null,
@@ -4163,6 +5523,7 @@
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
    "bid": 50.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
    "closesDay": null,
@@ -4209,6 +5570,7 @@
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
    "bid": 5.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
    "closesDay": null,
@@ -4255,6 +5617,7 @@
   {
    "auction": "Faillissement De Feestboulevard 3B Kavels D142-D288",
    "bid": 3.0,
+   "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-13T20:00:00+02:00",
    "closesDay": null,
@@ -4570,8 +5933,1094 @@
    "vat": 0.21
   },
   {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:16:17+00:00",
+   "closesDay": null,
+   "count": 8,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/0b646698-f9b1-42ed-a1f5-7a8d9bfc02f5/20260929_131045.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906582",
+   "location": "Winsum",
+   "market": 363.84,
+   "marketSource": "marktplaats",
+   "maxBid": 54.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 8,
+    "high": 53.95,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita B-32976 Specialized Cirkelzaagblad 190mm 40T",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2425105914-makita-b-32976-specialized-cirkelzaagblad-190mm-40t"
+     },
+     {
+      "kind": "fixed",
+      "price": 22.95,
+      "title": "Makita cirkelzaagblad CCM13624E",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/overige-doe-het-zelf-en-verbouw/a1512170679-makita-cirkelzaagblad-ccm13624e"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita B-07973 Makforce Cirkelzaagblad - 210 x 30 x 16T",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1587104206-makita-b-07973-makforce-cirkelzaagblad-210-x-30-x-16t"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita Hardmetaal Cirkelzaagblad 235mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2424385282-makita-hardmetaal-cirkelzaagblad-235mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.95,
+      "title": "Makita B-09086 - Cirkelzaagblad 305x30mm 80T - Hardmetalen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/overige-huis-en-inrichting/a1530725236-makita-b-09086-cirkelzaagblad-305x30mm-80t-hardmetalen"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.95,
+      "title": "Makita B-09086 MAKBLADE Cirkelzaagblad 305x30mm 80T",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/a1527558336-makita-b-09086-makblade-cirkelzaagblad-305x30mm-80t"
+     },
+     {
+      "kind": "fixed",
+      "price": 54.95,
+      "title": "Makita B-09737 - Cirkelzaagblad 350x30 mm - 100T - Fijn",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/overige-huis-en-inrichting/a1531052019-makita-b-09737-cirkelzaagblad-350x30-mm-100t-fijn"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.95,
+      "title": "Makita B-09086 MakBlade Cirkelzaagblad 305x30 mm 80T",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/a1531046789-makita-b-09086-makblade-cirkelzaagblad-305x30-mm-80t"
+     }
+    ],
+    "low": 23.46,
+    "median": 45.48,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     20.0,
+     22.95,
+     25.0,
+     40.0,
+     50.95,
+     50.95,
+     54.95,
+     69.95
+    ],
+    "query": "makita cirkelzaagblad",
+    "url": "https://www.marktplaats.nl/q/makita+cirkelzaagblad/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+cirkelzaagblad+phantom/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+cirkelzaagblad+phantom/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "8x Diverse cirkelzaagblad o.a. Phantom, Makita",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 8,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/187",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T18:22:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/0d5a0510-b260-47d9-bef9-f1f70836abd1/20260929_133115.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906604",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+bitsets+bosch/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+bitsets+bosch/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Partij diverse bitsets o.a. Metabo, Bosch",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/209",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:23:17+00:00",
+   "closesDay": null,
+   "count": 6,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/7761df4f-174f-422f-93aa-344cd0950a41/20260929_133356.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906609",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+kelfort+sds+max/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+kelfort+sds+max/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "6x Diverse sds max boor o.a. Metabo, Kelfort",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 6,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/214",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:24:17+00:00",
+   "closesDay": null,
+   "count": 4,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/9d3fd3ae-6f04-448b-a3c2-c16e42dd1dd3/20260929_133750.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906614",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/hilti+holle+te+yd/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hilti+holle+te+yd/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "4x Diverse holle hamerboor Hilti, TE-YD",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 4,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/219",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:25:17+00:00",
+   "closesDay": null,
+   "count": 88,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/393d178b-cf76-4905-a591-b7cd40396caf/20260929_133941.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906617",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+speedboren+labor+bosch/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+speedboren+labor+bosch/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 88x Diverse speedboren o.a. Bosch, Metabo, Labor",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 88,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/222",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:26:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/075772de-2213-4059-962a-92de20267551/20260929_134224.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906621",
+   "location": "Winsum",
+   "market": 139.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 4,
+    "high": 293.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Metabo boormachine met diverse boren en accessoires",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447428391-metabo-boormachine-met-diverse-boren-en-accessoires"
+     },
+     {
+      "kind": "bid",
+      "price": 79.0,
+      "title": "Metabo PB E 701 Klopboormachine met borenset",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448822231-metabo-pb-e-701-klopboormachine-met-borenset"
+     },
+     {
+      "kind": "bid",
+      "price": 199.0,
+      "title": "Metabo boormachine    kan hakken   en boren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2415344211-metabo-boormachine-kan-hakken-en-boren"
+     },
+     {
+      "kind": "bid",
+      "price": 325.0,
+      "title": "Hitachi Breekhamer + Metabo Slagboormachine met Boren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2370413445-hitachi-breekhamer-metabo-slagboormachine-met-boren"
+     }
+    ],
+    "low": 38.5,
+    "median": 139.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     25.0,
+     79.0,
+     199.0,
+     325.0
+    ],
+    "query": "metabo boren",
+    "url": "https://www.marktplaats.nl/q/metabo+boren/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+boren+heller/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+boren+heller/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Partij diverse boren o.a. Metabo, Heller",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/226",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-13T18:26:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/27183430-ded6-4e46-8cf6-33b5c9a4199a/20260929_134249.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906622",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+assortiment+metabo+boorkoppen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+assortiment+metabo+boorkoppen/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Assortiment boorkoppen o.a. Hikoki, Makita, Metabo",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/227",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:31:17+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/afaf9db1-c95c-44f0-8832-bc94ceeaa3fd/20260929_140247.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906640",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+freeskop+628219000+vlaktand/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+freeskop+628219000+vlaktand/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Freeskop vlaktand Metabo , 628219000",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/245",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-14T18:01:19+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-10-01/735c8535-30f5-4683-b018-2adc7866b467/20260930_131240.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906846",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/metabo+doorslijp+afbraam+lamellen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+doorslijp+afbraam+lamellen/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Partij diverse doorslijp, afbraam, lamellen schijven o.a. FlexOvit, 3M, Metabo",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/425",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-14T18:01:19+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-10-01/ee5a4430-e189-4289-815a-e072f4602e94/20260930_131313.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906847",
+   "location": "Winsum",
+   "market": 449.5,
+   "marketSource": "marktplaats",
+   "maxBid": 78.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 6,
+    "high": 1800.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Makita haakse slijper 9005B - Grote slijptol",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2445173312-makita-haakse-slijper-9005b-grote-slijptol"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Grote partij schuurbanden van Metabo en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2448064504-grote-partij-schuurbanden-van-metabo-en-makita"
+     },
+     {
+      "kind": "bid",
+      "price": 699.0,
+      "title": "Grote partij elektrisch gereedschap. Makita/Spit/Bosch",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2411731602-grote-partij-elektrisch-gereedschap-makita-spit-bosch"
+     },
+     {
+      "kind": "bid",
+      "price": 1800.0,
+      "title": "Grote set Makita gereedschap met diverse machines",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447489859-grote-set-makita-gereedschap-met-diverse-machines"
+     },
+     {
+      "kind": "bid",
+      "price": 1800.0,
+      "title": "Grote set makita gereedschap met diverse machines",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447823458-grote-set-makita-gereedschap-met-diverse-machines"
+     }
+    ],
+    "low": 37.5,
+    "median": 449.5,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     15.0,
+     45.0,
+     200.0,
+     699.0,
+     1800.0,
+     1800.0
+    ],
+    "query": "makita grote",
+    "url": "https://www.marktplaats.nl/q/makita+grote/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+grote+festool+schuurmiddelen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+grote+festool+schuurmiddelen/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Grote partij diverse schuurmiddelen o.a. 3M, Makita, Festool",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/426",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-14T18:17:19+00:00",
+   "closesDay": null,
+   "count": 26,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-10-01/15ddfd9c-bff9-4170-a7c7-030adc4ee058/20260930_144351.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906913",
+   "location": "Winsum",
+   "market": 357.5,
+   "marketSource": "marktplaats",
+   "maxBid": 53.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 8,
+    "high": 23.75,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 3.0,
+      "title": "R.V. S. plantengieter",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2431906350-r-v-s-plantengieter"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Leuke plantengieter, nieuw.",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2447438195-leuke-plantengieter-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Grote kunststof plantengieter, onbeschadigd",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2446636806-grote-kunststof-plantengieter-onbeschadigd"
+     },
+     {
+      "kind": "bid",
+      "price": 12.5,
+      "title": "vintage plantengieter",
+      "url": "https://www.marktplaats.nl/v/verzamelen/retro/m2421089902-vintage-plantengieter"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Vintage plantengieter van Emsa",
+      "url": "https://www.marktplaats.nl/v/verzamelen/retro/m2446180588-vintage-plantengieter-van-emsa"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Mooie kas plantengieter",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/gieters/m2419637072-mooie-kas-plantengieter"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Oud koper planten gieter plantengieter 40/17 cm H",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2448116678-oud-koper-planten-gieter-plantengieter-40-17-cm-h"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Bloemengieter / Plantengieter / Decoratie",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-koper-en-brons/m2443624729-bloemengieter-plantengieter-decoratie"
+     }
+    ],
+    "low": 10.0,
+    "median": 13.75,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     3.0,
+     10.0,
+     10.0,
+     12.5,
+     15.0,
+     20.0,
+     25.0,
+     35.0
+    ],
+    "query": "plant plantengieter",
+    "url": "https://www.marktplaats.nl/q/plant+plantengieter/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/plant+plantengieter/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/plant+plantengieter/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 26x Plantengieter 10 liter",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 26,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/492",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-14T18:25:19+00:00",
+   "closesDay": null,
+   "count": 8,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-10-02/2d888bc2-1e6e-485f-8f07-a9d099757c82/20261001_111406.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1906943",
+   "location": "Winsum",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "metabo",
+    "kind": "exact",
+    "model": "ULA 14",
+    "note": "exact model Metabo ULA 14",
+    "search": "https://www.marktplaats.nl/q/metabo+ula+14/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/metabo+ula+14/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "8x Accu handlamp Metabo, ULA 14.4-18",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 8,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/522",
+   "vat": 0.21
+  },
+  {
+   "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-14T18:40:19+00:00",
+   "closesDay": null,
+   "count": 240,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-10-02/18085e50-c689-49b7-b84b-271968a0c418/20261001_122139.jpg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1907002",
+   "location": "Winsum",
+   "market": 1860.0,
+   "marketSource": "marktplaats",
+   "maxBid": 461.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 32,
+    "high": 10.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 0.2,
+      "title": "Glazen potten en flessen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-potten-en-pannen/m2448800650-glazen-potten-en-flessen"
+     },
+     {
+      "kind": "bid",
+      "price": 0.2,
+      "title": "Glazen.  Potten",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-potten-en-pannen/m2447208299-glazen-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 0.5,
+      "title": "Glazen pot met opdruk clarks.",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448868849-glazen-pot-met-opdruk-clarks"
+     },
+     {
+      "kind": "fixed",
+      "price": 1.0,
+      "title": "Diverse glazen apothekersflessen en -potten",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-potten-en-pannen/m2447649766-diverse-glazen-apothekersflessen-en-potten"
+     },
+     {
+      "kind": "fixed",
+      "price": 2.5,
+      "title": "Glazen pot met deksel voor koekjes, snoep of decoratie",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kisten/m2448717983-glazen-pot-met-deksel-voor-koekjes-snoep-of-decoratie"
+     },
+     {
+      "kind": "bid",
+      "price": 2.5,
+      "title": "Decoratie met licht - Glazen pot met LED verlichting",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2449219586-decoratie-met-licht-glazen-pot-met-led-verlichting"
+     },
+     {
+      "kind": "fixed",
+      "price": 2.95,
+      "title": "Glazen pot 1.7 liter met gouden deksel",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-keukenbenodigdheden/a1519974762-glazen-pot-1-7-liter-met-gouden-deksel"
+     },
+     {
+      "kind": "bid",
+      "price": 3.0,
+      "title": "Mooie glazen decoratie pot met vogeltje en eitjes",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447208826-mooie-glazen-decoratie-pot-met-vogeltje-en-eitjes"
+     },
+     {
+      "kind": "bid",
+      "price": 3.0,
+      "title": "Glazen schalen pot met tekst winter time in vorm van den",
+      "url": "https://www.marktplaats.nl/v/verzamelen/glas-en-borrelglaasjes/m2448279732-glazen-schalen-pot-met-tekst-winter-time-in-vorm-van-den"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Decoratieve glazen pot met zilveren kerstballen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448943693-decoratieve-glazen-pot-met-zilveren-kerstballen"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Glazen pot op voet met deksel - Decoratief",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448226403-glazen-pot-op-voet-met-deksel-decoratief"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Glazen thee pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-keukenbenodigdheden/m2448625789-glazen-thee-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Lege glazen pot met kurk - Ideaal voor terrarium",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2449255752-lege-glazen-pot-met-kurk-ideaal-voor-terrarium"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Glazen voorraad pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-potten-en-pannen/m2446558442-glazen-voorraad-pot"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "2 glazen potten met deksels",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-stolpen/m2449192750-2-glazen-potten-met-deksels"
+     },
+     {
+      "kind": "bid",
+      "price": 7.5,
+      "title": "Glazen pot met deksel - 53cm hoog",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447805775-glazen-pot-met-deksel-53cm-hoog"
+     },
+     {
+      "kind": "bid",
+      "price": 8.0,
+      "title": "glazen pot",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-stolpen/m2447297643-glazen-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 8.0,
+      "title": "murano - Pot (3) - Muranoglas - Set van 3 glazen vazen",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/a1531826287-murano-pot-3-muranoglas-set-van-3-glazen-vazen"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "10 Lege glazen potten van 750ml",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-potten-en-pannen/m2448423844-10-lege-glazen-potten-van-750ml"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Decoratieve glazen pot met winterlandschap en verlichting",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448743176-decoratieve-glazen-pot-met-winterlandschap-en-verlichting"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Glazen voorraad potten voor keuken of brocante",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2446972029-glazen-voorraad-potten-voor-keuken-of-brocante"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Decoratieve glazen pot met deksel",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448187521-decoratieve-glazen-pot-met-deksel"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "vintage wit glazen pot amarena griotes hoogte 13 cm",
+      "url": "https://www.marktplaats.nl/v/verzamelen/merken-en-reclamevoorwerpen/m2448567848-vintage-wit-glazen-pot-amarena-griotes-hoogte-13-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Nieuwe Bugatti Glazen Pot met Deksel - 13x11cm",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/m2448271493-nieuwe-bugatti-glazen-pot-met-deksel-13x11cm"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Glazen pompoen pot - Decoratief",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447379084-glazen-pompoen-pot-decoratief"
+     },
+     {
+      "kind": "fixed",
+      "price": 13.0,
+      "title": "Decoratieve glazen pot met deksel",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2448140228-decoratieve-glazen-pot-met-deksel"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Grote glazen pot met houten deksel - decoratief",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2449018394-grote-glazen-pot-met-houten-deksel-decoratief"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Grote glazen pot - Vintage decoratie",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/m2448564219-grote-glazen-pot-vintage-decoratie"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Glazen Voorraad Potten in Houder",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2448773525-glazen-voorraad-potten-in-houder"
+     },
+     {
+      "kind": "bid",
+      "price": 19.0,
+      "title": "Set van 2 glazen potten met bloemen",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2448084737-set-van-2-glazen-potten-met-bloemen"
+     }
+    ],
+    "low": 3.0,
+    "median": 7.75,
+    "model": null,
+    "outliers": [
+     35.0,
+     35.0,
+     35.0,
+     35.0
+    ],
+    "prices": [
+     0.2,
+     0.2,
+     0.5,
+     1.0,
+     2.5,
+     2.5,
+     2.95,
+     3.0,
+     3.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     5.0,
+     7.5,
+     7.5,
+     8.0,
+     8.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     13.0,
+     15.0,
+     15.0,
+     15.0,
+     19.0,
+     20.0,
+     22.5
+    ],
+    "query": "pot glazen",
+    "url": "https://www.marktplaats.nl/q/pot+glazen/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/pot+glazen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/pot+glazen/",
+   "pickup": "Schouwerzijlsterweg 12, 9951TG Winsum",
+   "pickupWhen": "Mon 19 Oct, 09:00–15:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 240x Glazen pot",
+   "trip": {
+    "approx": false,
+    "cost": 62.31,
+    "km": 241.4,
+    "min": 196
+   },
+   "units": 240,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/581",
+   "vat": 0.21
+  },
+  {
    "auction": "Veiling Irene's Catering te Harmelen i.v.m. bedrijfsbeëindiging",
    "bid": 50.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-15T21:55:00+02:00",
    "closesDay": null,
@@ -4618,6 +7067,7 @@
   {
    "auction": "Veiling Irene's Catering te Harmelen i.v.m. bedrijfsbeëindiging",
    "bid": 50.0,
+   "bidFromEmail": false,
    "bids": 0,
    "closes": "2026-10-15T21:55:00+02:00",
    "closesDay": null,
@@ -4664,8 +7114,9 @@
   {
    "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
    "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-26T20:00:00+01:00",
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-26T20:10:00+01:00",
    "closesDay": null,
    "count": 2,
    "delivery": false,
@@ -4673,7 +7124,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-033.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4955,8 +7406,9 @@
   {
    "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
    "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-26T20:00:00+01:00",
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-26T20:16:00+01:00",
    "closesDay": null,
    "count": 1,
    "delivery": false,
@@ -4964,7 +7416,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-057.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5079,8 +7531,9 @@
   {
    "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
    "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-26T20:00:00+01:00",
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-26T20:22:00+01:00",
    "closesDay": null,
    "count": 2,
    "delivery": false,
@@ -5088,7 +7541,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-096.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5370,8 +7823,9 @@
   {
    "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
    "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-26T20:00:00+01:00",
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-26T20:22:00+01:00",
    "closesDay": null,
    "count": 2,
    "delivery": false,
@@ -5379,7 +7833,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-098.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5661,8 +8115,9 @@
   {
    "auction": "Faillissementsveiling MUD Jeans International B.V. te Weesp (Noord-Holland)",
    "bid": 25.0,
-   "bids": null,
-   "closes": "2026-10-26T20:00:00+01:00",
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-26T20:23:00+01:00",
    "closesDay": null,
    "count": 2,
    "delivery": false,
@@ -5670,7 +8125,7 @@
    "fixed": 0.0,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-375-plaatsjebod-mud-jeans-100.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5950,8 +8405,348 @@
    "vat": 0.21
   },
   {
+   "auction": "Faillissementsveiling Neijhof & Visser B.V. h.o.d.n. Caifix te Uithoorn (Noord-Holland)",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-28T20:00:00+01:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-376-plaatsjebod-neijhof-en-visser18.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:60083",
+   "location": "Uithoorn",
+   "market": 70.0,
+   "marketSource": "marktplaats",
+   "maxBid": 1.0,
+   "mp": {
+    "asOf": "2026-10-02T19:29:00.998979+00:00",
+    "count": 47,
+    "high": 97.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "HP Compaq LE2202x LED-backlit LCD monitor beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448081998-hp-compaq-le2202x-led-backlit-lcd-monitor-beeldscherm"
+     },
+     {
+      "kind": "bid",
+      "price": 11.5,
+      "title": "HP Computer Beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446559941-hp-computer-beeldscherm"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "HP Beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449219053-hp-beeldscherm"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "HP monitor 24 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448948668-hp-monitor-24-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "HP LE1901w Monitor - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447832546-hp-le1901w-monitor-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "HP EliteDisplay E231 Monitor - 23\" inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448911074-hp-elitedisplay-e231-monitor-23-inch-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "HP P223a Monitor - 21.5 inch Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448096141-hp-p223a-monitor-21-5-inch-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Monitor HP 27m, 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447617266-monitor-hp-27m-27-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "HP E23 G4 FHD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447499434-hp-e23-g4-fhd-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "HP Z23 Monitor - Full HD IPS Scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445217788-hp-z23-monitor-full-hd-ips-scherm"
+     },
+     {
+      "kind": "bid",
+      "price": 49.99,
+      "title": "HP 24 inch monitor - Zwart/Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447497539-hp-24-inch-monitor-zwart-zilver"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "HP beeldscherm 20 inch (nooit gebruikt)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449044083-hp-beeldscherm-20-inch-nooit-gebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Partij HP & DELL 24 inch Widescreen Monitoren FULL HD 1080P",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1129175604-partij-hp-dell-24-inch-widescreen-monitoren-full-hd-1080p"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "HP E23 G4 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446513936-hp-e23-g4-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "HP Elite E223 21,5” beeldscherm als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448516717-hp-elite-e223-21-5-beeldscherm-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 55.0,
+      "title": "Z.g.a.n hp monitor. hoogwaardige elite display E232 Hp\n\ndiag",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448666788-z-g-a-n-hp-monitor-hoogwaardige-elite-display-e232-hp-diag"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.0,
+      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646121-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "HP monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448769423-hp-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.77,
+      "title": "HP EliteDisplay | E233 | 23 inch | Full HD IPS Monitor |",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527243465-hp-elitedisplay-e233-23-inch-full-hd-ips-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP Monitor E24 G5 Zwart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448821109-hp-monitor-e24-g5-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "HP EliteDisplay E241i 24 WUXGA Monitor + 2 jaar garantie!-4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646111-hp-elitedisplay-e241i-24-wuxga-monitor-2-jaar-garantie-4"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "HP 22w monitor met HDMI, VGA en lage tafelklem",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448386426-hp-22w-monitor-met-hdmi-vga-en-lage-tafelklem"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "HP monitor E23 G4 FHD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448188834-hp-monitor-e23-g4-fhd"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "HP E273q 27 inch QHD LCD-monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449055324-hp-e273q-27-inch-qhd-lcd-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "2 x  HP S2231a monitor schermformaat van 21,5 inch(54,6 cm)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448766953-2-x-hp-s2231a-monitor-schermformaat-van-21-5-inch-54-6-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "HP EliteDisplay E233 23 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646115-hp-elitedisplay-e233-23-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "HP EliteDisplay E23 G4 23 Full HD IPS HDMI Monitor + 2",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1529178532-hp-elitedisplay-e23-g4-23-full-hd-ips-hdmi-monitor-2"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "HP EliteDisplay E232 23 Full HD IPS HDMI Monitor + 2 jaar",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528646122-hp-elitedisplay-e232-23-full-hd-ips-hdmi-monitor-2-jaar"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Philips 241B7 en HP E24 G4 monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447823863-philips-241b7-en-hp-e24-g4-monitoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "HP Elitedisplay 230t monitor 23 inch touchscreen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448802990-hp-elitedisplay-230t-monitor-23-inch-touchscreen"
+     }
+    ],
+    "low": 50.0,
+    "median": 70.0,
+    "model": null,
+    "outliers": [
+     215.0,
+     250.0
+    ],
+    "prices": [
+     10.0,
+     11.5,
+     15.0,
+     15.0,
+     15.0,
+     25.0,
+     25.0,
+     30.0,
+     40.0,
+     45.0,
+     49.99,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     55.0,
+     59.0,
+     60.0,
+     60.77,
+     65.0,
+     65.0,
+     65.0,
+     65.0,
+     70.0,
+     75.0,
+     79.0,
+     79.0,
+     79.0,
+     80.0,
+     80.0,
+     83.25,
+     83.25,
+     85.0,
+     85.0,
+     89.0,
+     97.0,
+     99.0,
+     99.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     110.0,
+     115.0,
+     119.0,
+     150.0,
+     150.0
+    ],
+    "query": "monitor hp",
+    "url": "https://www.marktplaats.nl/q/monitor+hp/"
+   },
+   "mpPlan": {
+    "brand": "hp",
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+hp/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+hp/",
+   "pickup": "Anton Philipsweg 3, Uithoorn",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x HP 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 24.5,
+    "km": 94.9,
+    "min": 82
+   },
+   "units": 1,
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-hp-24-inch-monitor",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling Neijhof & Visser B.V. h.o.d.n. Caifix te Uithoorn (Noord-Holland)",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-28T20:00:00+01:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T19:29:00.998979+00:00",
+   "fixed": 0.0,
+   "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-376-plaatsjebod-neijhof-en-visser43.jpg",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Coffee machine",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "plaatsjebod:60098",
+   "location": "Uithoorn",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/koffiemachine+kantinegerief+waaronder+kast/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/koffiemachine+kantinegerief+waaronder+kast/",
+   "pickup": "Anton Philipsweg 3, Uithoorn",
+   "pickupWhen": null,
+   "premium": 0.22,
+   "site": "plaatsjebod",
+   "siteName": "Plaats Je Bod",
+   "title": "1 x Partij kantinegerief waaronder 2 x kast, L'or Barista koffiemachine, etc.",
+   "trip": {
+    "approx": false,
+    "cost": 24.5,
+    "km": 94.9,
+    "min": 82
+   },
+   "units": 1,
+   "url": "https://www.plaatsjebod.nl/nl/lots/1-x-partij-kantinegerief-waaronder-2-x-kast-lor-barista-koffiemachine-etc",
+   "vat": 0.21
+  },
+  {
    "auction": "Faillissement Byldis Prefab B.V. - Producent van modulaire gebouwen - Kantoorinventaris",
    "bid": 10.0,
+   "bidFromEmail": true,
    "bids": null,
    "closes": null,
    "closesDay": "2026-10-07",
@@ -5960,8 +8755,8 @@
    "firstSeen": "2026-10-02T06:58:21.638896+00:00",
    "fixed": 0.0,
    "image": "https://media.tbauctions.com/image-media/f731856d-68c6-4d91-abf5-c90e6f069193/file",
-   "isDeal": true,
-   "isNew": true,
+   "isDeal": false,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6135,1073 +8930,6 @@
    "units": 2,
    "url": "https://www.troostwijkauctions.com/nl/l/A1-50252-117",
    "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 250.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-13",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/22694ce2-1075-4e46-83cc-220fb0e1a8e9/file",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-48758-29",
-   "location": "Gemert",
-   "market": 900.0,
-   "marketSource": "marktplaats",
-   "maxBid": 237.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 3,
-    "high": 1200.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 650.0,
-      "title": "Hilti pr 30 -HVSG",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439203890-hilti-pr-30-hvsg"
-     },
-     {
-      "kind": "fixed",
-      "price": 900.0,
-      "title": "Hilti PR 30-HVS Roterende Laser + ontv. PRA83 + accu + lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2441928452-hilti-pr-30-hvs-roterende-laser-ontv-pra83-accu-lader"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "Hilti PR 30-HVSG Roterende Laser met Statief en Ontvanger",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444757742-hilti-pr-30-hvsg-roterende-laser-met-statief-en-ontvanger"
-     }
-    ],
-    "low": 650.0,
-    "median": 900.0,
-    "model": "PR 30",
-    "outliers": [],
-    "prices": [
-     650.0,
-     900.0,
-     1200.0
-    ],
-    "query": "hilti pr 30",
-    "url": "https://www.marktplaats.nl/q/hilti+pr+30/"
-   },
-   "mpPlan": {
-    "brand": "hilti",
-    "kind": "exact",
-    "model": "PR 30",
-    "note": "exact model Hilti PR 30",
-    "search": "https://www.marktplaats.nl/q/hilti+pr+30/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/hilti+pr+30/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "2016 HILTI PR 30- HVS Bouwlaser",
-   "trip": {
-    "approx": false,
-    "cost": 7.75,
-    "km": 30.0,
-    "min": 34
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-48758-29",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 2500.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-13",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/698e4dae-87b0-4233-98ed-a49170e59a16/file",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-42336-5",
-   "location": "De rips",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/pot+jumbo+7210+opraapwagen/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+jumbo+7210+opraapwagen/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "2010 Pottinger Jumbo 7210 D Opraapwagen",
-   "trip": {
-    "approx": false,
-    "cost": 8.25,
-    "km": 32.0,
-    "min": 37
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-42336-5",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 50.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-14",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/c81aec20-19f6-4ad5-9f03-60c3601a3ae2/file",
-   "isDeal": true,
-   "isNew": true,
-   "item": "MacBook",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-38890-11336",
-   "location": "Loon op zand",
-   "market": 995.0,
-   "marketSource": "marktplaats",
-   "maxBid": 259.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 43,
-    "high": 1900.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 99.0,
-      "title": "MacBook Pro 16-inch 2019 – Accu (A2141) | Nieuwe Batterij",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1507872080-macbook-pro-16-inch-2019-accu-a2141-nieuwe-batterij"
-     },
-     {
-      "kind": "fixed",
-      "price": 330.0,
-      "title": "Macbook pro. 16 inch. I7. 16 GB. 512GB.  2019",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448486966-macbook-pro-16-inch-i7-16-gb-512gb-2019"
-     },
-     {
-      "kind": "fixed",
-      "price": 440.0,
-      "title": "MacBook Pro 16 A2141 – Late 2019-16GB|1TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530484685-macbook-pro-16-a2141-late-2019-16gb-1tb"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Macbook Pro 16 Inch 2.6GHZ i7 512GB 16GB RAM Zilver (2019)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448499901-macbook-pro-16-inch-2-6ghz-i7-512gb-16gb-ram-zilver-2019"
-     },
-     {
-      "kind": "bid",
-      "price": 495.0,
-      "title": "MacBook Pro 16 inch 2019 | Core i9 | 16GB | 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442638627-macbook-pro-16-inch-2019-core-i9-16gb-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 499.0,
-      "title": "MacBook Pro 16 A2991 (2023) M3 Display Assembly Space Black",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1529351237-macbook-pro-16-a2991-2023-m3-display-assembly-space-black"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Macbook Pro 16 inch 2019 i7 512gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447533183-macbook-pro-16-inch-2019-i7-512gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "MacBook Pro 16\" 2019, i9, 32gb Ram, 2TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448806797-macbook-pro-16-2019-i9-32gb-ram-2tb"
-     },
-     {
-      "kind": "fixed",
-      "price": 529.0,
-      "title": "Apple MacBook Pro 16 2019 | Core i7 / 32GB / 512GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1508861421-apple-macbook-pro-16-2019-core-i7-32gb-512gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 649.0,
-      "title": "Apple MacBook Pro 16 2019 | Core i9 / 32GB / 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1502431289-apple-macbook-pro-16-2019-core-i9-32gb-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 669.0,
-      "title": "Macbook Pro 16,2 4k Retina | Touch Bar | intel 8-Core i9 !!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1523054655-macbook-pro-16-2-4k-retina-touch-bar-intel-8-core-i9"
-     },
-     {
-      "kind": "bid",
-      "price": 675.0,
-      "title": "MacBook Pro 16” i9 64GB RAM, 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447481209-macbook-pro-16-i9-64gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "MacBook Pro 16” (2019) – Intel Core i9 – 64 GB RAM – 1 TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448223469-macbook-pro-16-2019-intel-core-i9-64-gb-ram-1-tb"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "MacBook Pro 14-inch (2021) M1 Pro 16GB RAM 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448726286-macbook-pro-14-inch-2021-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 795.0,
-      "title": "Demo! MacBook Pro 14 / 16 - M1 Pro - 16GB / 32GB - 512GB 1TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2428441139-demo-macbook-pro-14-16-m1-pro-16gb-32gb-512gb-1tb"
-     },
-     {
-      "kind": "fixed",
-      "price": 825.0,
-      "title": "MacBook Pro 16 Inch 2022 | M1 Pro | 16 GB | 500 GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448420668-macbook-pro-16-inch-2022-m1-pro-16-gb-500-gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 850.0,
-      "title": "MacBook Pro 16 inch M1 Pro",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448749818-macbook-pro-16-inch-m1-pro"
-     },
-     {
-      "kind": "bid",
-      "price": 875.0,
-      "title": "MacBook Pro 16 M1 Pro 16GB RAM 512GB SSD 2021",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447469575-macbook-pro-16-m1-pro-16gb-ram-512gb-ssd-2021"
-     },
-     {
-      "kind": "bid",
-      "price": 900.0,
-      "title": "MacBook Pro 16 inch M1 Pro - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447026545-macbook-pro-16-inch-m1-pro-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 949.0,
-      "title": "MacBook Pro 2021 | M1 Pro | 16C GPU | 32GB | 512GB 16 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1531196534-macbook-pro-2021-m1-pro-16c-gpu-32gb-512gb-16-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 990.0,
-      "title": "MacBook Pro 14 inch M1 Pro - 16GB RAM, 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448920177-macbook-pro-14-inch-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 995.0,
-      "title": "MacBook Pro 16 inch M1 Pro - 512 Gb SSD, 16 GB, 2jr garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446752392-macbook-pro-16-inch-m1-pro-512-gb-ssd-16-gb-2jr-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 1000.0,
-      "title": "Apple MacBook Pro 16-inch 2021 – M1 Pro –",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442322547-apple-macbook-pro-16-inch-2021-m1-pro"
-     },
-     {
-      "kind": "bid",
-      "price": 1000.0,
-      "title": "MacBook Pro 16-inch (2021) - Apple M1 Pro, 16GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448036196-macbook-pro-16-inch-2021-apple-m1-pro-16gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 1150.0,
-      "title": "MacBook Pro 16 inch M1 Pro - 16GB RAM - 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447399011-macbook-pro-16-inch-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 1150.0,
-      "title": "MacBook Pro M2 Pro - 16 inch - 32GB - 512 SSD (2023)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2444384762-macbook-pro-m2-pro-16-inch-32gb-512-ssd-2023"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "Macbook Pro M1 Pro 16 inch 32gb RAM 1tb SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447035840-macbook-pro-m1-pro-16-inch-32gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 1400.0,
-      "title": "Apple MacBook Pro 16\" (2023) M2 Pro 16GB/512GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2435802864-apple-macbook-pro-16-2023-m2-pro-16gb-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 1500.0,
-      "title": "Apple macbook Pro 16 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448732790-apple-macbook-pro-16-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 1800.0,
-      "title": "APPLE MacBook Pro 16 (2023) Zilver M3 Pro (ZGAN)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530721281-apple-macbook-pro-16-2023-zilver-m3-pro-zgan"
-     }
-    ],
-    "low": 669.0,
-    "median": 995.0,
-    "model": "PRO 16",
-    "outliers": [
-     4300.0,
-     6750.0
-    ],
-    "prices": [
-     99.0,
-     330.0,
-     440.0,
-     450.0,
-     495.0,
-     499.0,
-     500.0,
-     500.0,
-     529.0,
-     649.0,
-     669.0,
-     675.0,
-     750.0,
-     750.0,
-     795.0,
-     825.0,
-     850.0,
-     875.0,
-     900.0,
-     949.0,
-     990.0,
-     995.0,
-     1000.0,
-     1000.0,
-     1150.0,
-     1150.0,
-     1200.0,
-     1400.0,
-     1500.0,
-     1800.0,
-     1800.0,
-     1900.0,
-     1900.0,
-     1900.0,
-     2000.0,
-     2100.0,
-     2150.0,
-     2250.0,
-     2252.99,
-     2750.0,
-     3000.0,
-     3200.0,
-     3552.99
-    ],
-    "query": "macbook pro 16",
-    "url": "https://www.marktplaats.nl/q/macbook+pro+16/"
-   },
-   "mpPlan": {
-    "brand": "macbook",
-    "kind": "exact",
-    "model": "PRO 16",
-    "note": "exact model Macbook PRO 16",
-    "search": "https://www.marktplaats.nl/q/macbook+pro+16/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1  TB NVMe Laptop",
-   "trip": {
-    "approx": false,
-    "cost": 11.95,
-    "km": 46.3,
-    "min": 45
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11336",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 10.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-14",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/5a9c36d2-0084-4db3-b8fe-55245349b068/file",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Laptop",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-38890-10703",
-   "location": "Loon op zand",
-   "market": 365.0,
-   "marketSource": "marktplaats",
-   "maxBid": 89.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 5,
-    "high": 529.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dell Latitude 5521 i7-11850H 512gb 16gb 15\" 2gb graf.kaart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2357034818-dell-latitude-5521-i7-11850h-512gb-16gb-15-2gb-graf-kaart"
-     },
-     {
-      "kind": "bid",
-      "price": 360.0,
-      "title": "Dell Latitude 5521 i7-11850/16Gb/256Gb Ssd Windows 11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445931388-dell-latitude-5521-i7-11850-16gb-256gb-ssd-windows-11"
-     },
-     {
-      "kind": "fixed",
-      "price": 365.0,
-      "title": "Dell Latitude 5521 -   i5-11e  16GB  - 256GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1526778380-dell-latitude-5521-i5-11e-16gb-256gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 519.0,
-      "title": "Dell Latitude 5521 Intel Core i7 11850H | 32GB DDR4 | 256...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1524468616-dell-latitude-5521-intel-core-i7-11850h-32gb-ddr4-256"
-     },
-     {
-      "kind": "fixed",
-      "price": 539.0,
-      "title": "Dell Latitude 5521 / 16GB Ram / i7-11850H / 512SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/laptoptassen/m2438844132-dell-latitude-5521-16gb-ram-i7-11850h-512ssd"
-     }
-    ],
-    "low": 355.0,
-    "median": 365.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     350.0,
-     360.0,
-     365.0,
-     519.0,
-     539.0
-    ],
-    "query": "latitude 5521",
-    "url": "https://www.marktplaats.nl/q/latitude+5521/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "Dell Latitude 5521 15.6”, Core(TM) i7 11th Gen, 32 GB RAM, 512 GB NVMe, ...",
-   "trip": {
-    "approx": false,
-    "cost": 11.95,
-    "km": 46.3,
-    "min": 45
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10703",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 10.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-14",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/8aed2d77-ef98-4077-8cc0-b9d114e565d3/file",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Laptop",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-38890-11389",
-   "location": "Loon op zand",
-   "market": 579.0,
-   "marketSource": "marktplaats",
-   "maxBid": 147.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 5,
-    "high": 797.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 375.0,
-      "title": "Dell Latitude 7430 14\" Touch Screen i5-1245U 16GB 512GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2424695262-dell-latitude-7430-14-touch-screen-i5-1245u-16gb-512gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "Dell Latitude 7430 (Touch Business Laptop)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/computerbehuizingen/m2431819373-dell-latitude-7430-touch-business-laptop"
-     },
-     {
-      "kind": "fixed",
-      "price": 579.0,
-      "title": "Dell Latitude 7430 | i7-1270P | 32GB DDR5 | 512GB | Touch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448366107-dell-latitude-7430-i7-1270p-32gb-ddr5-512gb-touch"
-     },
-     {
-      "kind": "fixed",
-      "price": 595.0,
-      "title": "Studentenlaptop: Dell Latitude 7430 2-in-1 / Core i7 / 16GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444925490-studentenlaptop-dell-latitude-7430-2-in-1-core-i7-16gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 999.0,
-      "title": "Nieuw: Dell Latitude 7430 i7-1265U 16gb ram 512gb SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m1957202432-nieuw-dell-latitude-7430-i7-1265u-16gb-ram-512gb-ssd"
-     }
-    ],
-    "low": 437.5,
-    "median": 579.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     375.0,
-     500.0,
-     579.0,
-     595.0,
-     999.0
-    ],
-    "query": "latitude 7430",
-    "url": "https://www.marktplaats.nl/q/latitude+7430/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "Dell Latitude 7430 14”, Core(TM) i7 12th Gen, 32 GB RAM, 1 TB NVMe Touch...",
-   "trip": {
-    "approx": false,
-    "cost": 11.95,
-    "km": 46.3,
-    "min": 45
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11389",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 10.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-14",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/0d9ae29d-e6a4-4a39-894b-5e7d35ba5696/file",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Laptop",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-38890-11596",
-   "location": "Loon op zand",
-   "market": 1200.0,
-   "marketSource": "marktplaats",
-   "maxBid": 314.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 16,
-    "high": 2724.25,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "New HP ZBook Power G10 Motherboard i7-13700H, RTX A3000 8GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/moederborden/m2402307812-new-hp-zbook-power-g10-motherboard-i7-13700h-rtx-a3000-8gb"
-     },
-     {
-      "kind": "bid",
-      "price": 800.0,
-      "title": "HP Zbook Firefly G10 Ryzen 9 Pro - 16GB DDR5 RAM 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439720686-hp-zbook-firefly-g10-ryzen-9-pro-16gb-ddr5-ram-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 850.0,
-      "title": "HP ZBook FireFly G10 14 inch i7 32GB 1TB Rtx a500",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449011504-hp-zbook-firefly-g10-14-inch-i7-32gb-1tb-rtx-a500"
-     },
-     {
-      "kind": "fixed",
-      "price": 885.0,
-      "title": "HP Zbook Power G10 -   i7-13e  8GB  - 256GB  - GPU",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453834-hp-zbook-power-g10-i7-13e-8gb-256gb-gpu"
-     },
-     {
-      "kind": "fixed",
-      "price": 899.0,
-      "title": "HP ZBook Firefly 16 G10 | Core i7 / 32GB / 512GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1530256734-hp-zbook-firefly-16-g10-core-i7-32gb-512gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 900.0,
-      "title": "HP ZBook Studio 16 G10 - Core i9 / RTX 4070",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2437342313-hp-zbook-studio-16-g10-core-i9-rtx-4070"
-     },
-     {
-      "kind": "fixed",
-      "price": 1050.0,
-      "title": "HP ZBook FireFly 14 inch G10 64GB 2TB RTX A500",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2441578016-hp-zbook-firefly-14-inch-g10-64gb-2tb-rtx-a500"
-     },
-     {
-      "kind": "fixed",
-      "price": 1155.0,
-      "title": "HP Zbook Firefly 16 G10 -   i7-13e  - 16 inch - 8GB  - 256GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453839-hp-zbook-firefly-16-g10-i7-13e-16-inch-8gb-256gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 1245.0,
-      "title": "HP ZBook Power 15 G10 - Core i7 / 32GB / 512GB / RTX 1000",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438388071-hp-zbook-power-15-g10-core-i7-32gb-512gb-rtx-1000"
-     },
-     {
-      "kind": "bid",
-      "price": 1299.0,
-      "title": "HP ZBook Power G10 Workstation Laptop -i7/32GB/ RTX A100",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2415703815-hp-zbook-power-g10-workstation-laptop-i7-32gb-rtx-a100"
-     },
-     {
-      "kind": "fixed",
-      "price": 1375.0,
-      "title": "HP ZBook FireFly 16 G10 - Core i7-1365 / 32GB / RTX A500 4GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439094532-hp-zbook-firefly-16-g10-core-i7-1365-32gb-rtx-a500-4gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 2199.99,
-      "title": "HP ZBook Studio 16 G10 - i7-13800H - 64 GB - 1 TB - RTX 3000",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2394087238-hp-zbook-studio-16-g10-i7-13800h-64-gb-1-tb-rtx-3000"
-     },
-     {
-      "kind": "fixed",
-      "price": 2899.0,
-      "title": "HP ZBook Fury 16 G10 - Core i7-13850HX / 64GB / RTX 3500",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439069625-hp-zbook-fury-16-g10-core-i7-13850hx-64gb-rtx-3500"
-     },
-     {
-      "kind": "fixed",
-      "price": 2899.99,
-      "title": "HP ZBook Studio 16 G10 - i9-13900H - 64 GB - 1 TB - RTX 4080",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421270613-hp-zbook-studio-16-g10-i9-13900h-64-gb-1-tb-rtx-4080"
-     },
-     {
-      "kind": "fixed",
-      "price": 2999.99,
-      "title": "HP ZBook Fury 16 G10 - i9-13950HX - 128 GB - 3 TB - RTX 5000",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421272932-hp-zbook-fury-16-g10-i9-13950hx-128-gb-3-tb-rtx-5000"
-     },
-     {
-      "kind": "fixed",
-      "price": 3629.0,
-      "title": "HP ZBook Fury 16 G10 - RTX 5000 Ada 16GB / 64GB DDR5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438387678-hp-zbook-fury-16-g10-rtx-5000-ada-16gb-64gb-ddr5"
-     }
-    ],
-    "low": 888.5,
-    "median": 1200.0,
-    "model": "G10",
-    "outliers": [],
-    "prices": [
-     500.0,
-     800.0,
-     850.0,
-     885.0,
-     899.0,
-     900.0,
-     1050.0,
-     1155.0,
-     1245.0,
-     1299.0,
-     1375.0,
-     2199.99,
-     2899.0,
-     2899.99,
-     2999.99,
-     3629.0
-    ],
-    "query": "zbook g10",
-    "url": "https://www.marktplaats.nl/q/zbook+g10/"
-   },
-   "mpPlan": {
-    "brand": "zbook",
-    "kind": "exact",
-    "model": "G10",
-    "note": "exact model Zbook G10",
-    "search": "https://www.marktplaats.nl/q/zbook+g10/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/zbook+g10/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB RAM, 1 TB NVMe, NV...",
-   "trip": {
-    "approx": false,
-    "cost": 11.95,
-    "km": 46.3,
-    "min": 45
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11596",
-   "vat": 0.21
-  },
-  {
-   "auction": "&#9472;&#9472; DESKTOP SUB-HEADER &#9472;&#9472;",
-   "bid": 10.0,
-   "bids": null,
-   "closes": null,
-   "closesDay": "2026-10-14",
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
-   "fixed": 0.0,
-   "image": "https://media.tbauctions.com/image-media/0c757f47-b6bb-474c-9978-70d40f703104/file",
-   "isDeal": true,
-   "isNew": true,
-   "item": "MacBook",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "troostwijk:A1-38890-10615",
-   "location": "Loon op zand",
-   "market": 995.0,
-   "marketSource": "marktplaats",
-   "maxBid": 259.0,
-   "mp": {
-    "asOf": "2026-10-02T06:58:21.638896+00:00",
-    "count": 43,
-    "high": 1900.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 99.0,
-      "title": "MacBook Pro 16-inch 2019 – Accu (A2141) | Nieuwe Batterij",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1507872080-macbook-pro-16-inch-2019-accu-a2141-nieuwe-batterij"
-     },
-     {
-      "kind": "fixed",
-      "price": 330.0,
-      "title": "Macbook pro. 16 inch. I7. 16 GB. 512GB.  2019",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448486966-macbook-pro-16-inch-i7-16-gb-512gb-2019"
-     },
-     {
-      "kind": "fixed",
-      "price": 440.0,
-      "title": "MacBook Pro 16 A2141 – Late 2019-16GB|1TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530484685-macbook-pro-16-a2141-late-2019-16gb-1tb"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Macbook Pro 16 Inch 2.6GHZ i7 512GB 16GB RAM Zilver (2019)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448499901-macbook-pro-16-inch-2-6ghz-i7-512gb-16gb-ram-zilver-2019"
-     },
-     {
-      "kind": "bid",
-      "price": 495.0,
-      "title": "MacBook Pro 16 inch 2019 | Core i9 | 16GB | 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442638627-macbook-pro-16-inch-2019-core-i9-16gb-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 499.0,
-      "title": "MacBook Pro 16 A2991 (2023) M3 Display Assembly Space Black",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1529351237-macbook-pro-16-a2991-2023-m3-display-assembly-space-black"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Macbook Pro 16 inch 2019 i7 512gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447533183-macbook-pro-16-inch-2019-i7-512gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "MacBook Pro 16\" 2019, i9, 32gb Ram, 2TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448806797-macbook-pro-16-2019-i9-32gb-ram-2tb"
-     },
-     {
-      "kind": "fixed",
-      "price": 529.0,
-      "title": "Apple MacBook Pro 16 2019 | Core i7 / 32GB / 512GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1508861421-apple-macbook-pro-16-2019-core-i7-32gb-512gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 649.0,
-      "title": "Apple MacBook Pro 16 2019 | Core i9 / 32GB / 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1502431289-apple-macbook-pro-16-2019-core-i9-32gb-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 669.0,
-      "title": "Macbook Pro 16,2 4k Retina | Touch Bar | intel 8-Core i9 !!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1523054655-macbook-pro-16-2-4k-retina-touch-bar-intel-8-core-i9"
-     },
-     {
-      "kind": "bid",
-      "price": 675.0,
-      "title": "MacBook Pro 16” i9 64GB RAM, 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447481209-macbook-pro-16-i9-64gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "MacBook Pro 16” (2019) – Intel Core i9 – 64 GB RAM – 1 TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448223469-macbook-pro-16-2019-intel-core-i9-64-gb-ram-1-tb"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "MacBook Pro 14-inch (2021) M1 Pro 16GB RAM 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448726286-macbook-pro-14-inch-2021-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 795.0,
-      "title": "Demo! MacBook Pro 14 / 16 - M1 Pro - 16GB / 32GB - 512GB 1TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2428441139-demo-macbook-pro-14-16-m1-pro-16gb-32gb-512gb-1tb"
-     },
-     {
-      "kind": "fixed",
-      "price": 825.0,
-      "title": "MacBook Pro 16 Inch 2022 | M1 Pro | 16 GB | 500 GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448420668-macbook-pro-16-inch-2022-m1-pro-16-gb-500-gb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 850.0,
-      "title": "MacBook Pro 16 inch M1 Pro",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448749818-macbook-pro-16-inch-m1-pro"
-     },
-     {
-      "kind": "bid",
-      "price": 875.0,
-      "title": "MacBook Pro 16 M1 Pro 16GB RAM 512GB SSD 2021",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447469575-macbook-pro-16-m1-pro-16gb-ram-512gb-ssd-2021"
-     },
-     {
-      "kind": "bid",
-      "price": 900.0,
-      "title": "MacBook Pro 16 inch M1 Pro - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447026545-macbook-pro-16-inch-m1-pro-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 949.0,
-      "title": "MacBook Pro 2021 | M1 Pro | 16C GPU | 32GB | 512GB 16 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1531196534-macbook-pro-2021-m1-pro-16c-gpu-32gb-512gb-16-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 990.0,
-      "title": "MacBook Pro 14 inch M1 Pro - 16GB RAM, 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448920177-macbook-pro-14-inch-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 995.0,
-      "title": "MacBook Pro 16 inch M1 Pro - 512 Gb SSD, 16 GB, 2jr garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446752392-macbook-pro-16-inch-m1-pro-512-gb-ssd-16-gb-2jr-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 1000.0,
-      "title": "Apple MacBook Pro 16-inch 2021 – M1 Pro –",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442322547-apple-macbook-pro-16-inch-2021-m1-pro"
-     },
-     {
-      "kind": "bid",
-      "price": 1000.0,
-      "title": "MacBook Pro 16-inch (2021) - Apple M1 Pro, 16GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448036196-macbook-pro-16-inch-2021-apple-m1-pro-16gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 1150.0,
-      "title": "MacBook Pro 16 inch M1 Pro - 16GB RAM - 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447399011-macbook-pro-16-inch-m1-pro-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 1150.0,
-      "title": "MacBook Pro M2 Pro - 16 inch - 32GB - 512 SSD (2023)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2444384762-macbook-pro-m2-pro-16-inch-32gb-512-ssd-2023"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "Macbook Pro M1 Pro 16 inch 32gb RAM 1tb SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447035840-macbook-pro-m1-pro-16-inch-32gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "fixed",
-      "price": 1400.0,
-      "title": "Apple MacBook Pro 16\" (2023) M2 Pro 16GB/512GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2435802864-apple-macbook-pro-16-2023-m2-pro-16gb-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 1500.0,
-      "title": "Apple macbook Pro 16 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448732790-apple-macbook-pro-16-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 1800.0,
-      "title": "APPLE MacBook Pro 16 (2023) Zilver M3 Pro (ZGAN)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530721281-apple-macbook-pro-16-2023-zilver-m3-pro-zgan"
-     }
-    ],
-    "low": 669.0,
-    "median": 995.0,
-    "model": "PRO 16",
-    "outliers": [
-     4300.0,
-     6750.0
-    ],
-    "prices": [
-     99.0,
-     330.0,
-     440.0,
-     450.0,
-     495.0,
-     499.0,
-     500.0,
-     500.0,
-     529.0,
-     649.0,
-     669.0,
-     675.0,
-     750.0,
-     750.0,
-     795.0,
-     825.0,
-     850.0,
-     875.0,
-     900.0,
-     949.0,
-     990.0,
-     995.0,
-     1000.0,
-     1000.0,
-     1150.0,
-     1150.0,
-     1200.0,
-     1400.0,
-     1500.0,
-     1800.0,
-     1800.0,
-     1900.0,
-     1900.0,
-     1900.0,
-     2000.0,
-     2100.0,
-     2150.0,
-     2250.0,
-     2252.99,
-     2750.0,
-     3000.0,
-     3200.0,
-     3552.99
-    ],
-    "query": "macbook pro 16",
-    "url": "https://www.marktplaats.nl/q/macbook+pro+16/"
-   },
-   "mpPlan": {
-    "brand": "macbook",
-    "kind": "exact",
-    "model": "PRO 16",
-    "note": "exact model Macbook PRO 16",
-    "search": "https://www.marktplaats.nl/q/macbook+pro+16/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.18,
-   "site": "troostwijk",
-   "siteName": "Troostwijk",
-   "title": "Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD Rad...",
-   "trip": {
-    "approx": false,
-    "cost": 11.95,
-    "km": 46.3,
-    "min": 45
-   },
-   "units": 1,
-   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10615",
-   "vat": 0.21
   }
  ],
  "repo": "Diede1996/auction-deals",
@@ -7228,28 +8956,28 @@
   {
    "error": "",
    "id": "plaatsjebod",
-   "lots": 285,
+   "lots": 306,
    "name": "Plaats Je Bod",
    "ok": true
   },
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1255,
+   "lots": 2138,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 140,
+   "lots": 36,
    "name": "Troostwijk",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 11,
+   "lots": 46,
    "name": "Marktplaats prices",
    "ok": true
   }
