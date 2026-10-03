@@ -152,6 +152,7 @@ def test_bellauction():
     assert oven.pickup == "Noorderboomgaard, 8000 Koolkerke, België" and oven.location == "Koolkerke"
     assert oven.pickup_when == "Dinsdag 13 oktober van 10u tot 12u"
     assert oven.description.startswith("Recente Italiaanse convectieoven") and oven.site == "bellauction"
+    assert all((kw.get("headers") or {}).get("Origin") == "https://www.bellauction.be" for _, _, kw in http.calls)
     afz = lots["21740"]
     assert afz.current_bid == 75.0 and afz.bids == 1 and afz.pickup == "3401 Landen, België"
 
@@ -214,11 +215,14 @@ def test_veilingwinnaar():
     assert oven.closes_at == datetime(2026, 10, 22, 16, 0, tzinfo=AMS)
     assert oven.auction_title == "Veiling bakkerij te Amersfoort wegens bedrijfsbeëindiging"
     assert oven.pickup == "Amersfoort" and oven.pickup_when == "Tue 27 Oct, 10:00–16:00"
-    assert cache["bankrupt"] == {"384": False, "387": True}
-    # the next day the horeca auction isn't opened again
-    http.calls.clear()
-    veilingwinnaar.fetch_lots(ctx(http, cache=cache))
-    assert not any("/auctions/384/" in u for _, u, _ in http.calls)
+    assert "bankrupt" not in cache
+
+
+def test_veilingwinnaar_announced_auction_without_lots():
+    page = vw_page("Stopzetting restaurant grillroom afhaalInformatie volgt zsm", [])
+    http = FakeHttp([(url_has("/auctions/388/"), page),
+                     (url_has("/auctions/"), vw_card(388, "Stopzetting restaurant grillroom afhaal", "19 oktober 2026 16:00"))])
+    assert veilingwinnaar.fetch_lots(ctx(http)) == []  # lots appear when the auction starts
 
 
 # ---------------------------------------------------------------- Inventarisveilingen
@@ -342,3 +346,38 @@ def test_nedveiling():
 def test_nedveiling_pickup_in_belgium():
     page = NED_LOT_PAGE.replace("5504PA Veldhoven", "3930 Hamont").replace("Nederland", "Belgie")
     assert nedveiling.parse_pickup_address(page) == "Heiberg 1, 3930 Hamont, België"
+
+
+# ---------------------------------------------------------------- IT auctions (extra_auctions)
+
+def test_it_auctions_by_name_only():
+    from scanner.matching import auction_filter
+    config = yaml.safe_load((Path(__file__).resolve().parents[1] / "config.yml").read_text())
+    wanted = auction_filter(config)
+    for name in ["IT en multimedia: servers, laptops, netwerk", "Computers, Tablets, Desktops & Monitoren",
+                 "Ex-lease laptops en monitoren", "Apple MacBooks partij", "Cisco it apparatuur"]:
+        assert wanted(name), name
+    for name in ["Uitverkoop tuinmeubelen", "Vitamine tabletten partij", "Emob: Sofa's, tafels & stoelen, tuin"]:
+        assert not wanted(name), name
+    # IT words in a description don't count (boilerplate like "bieden via uw computer"); bankruptcy words do
+    assert not wanted("Diverse veiling Hulten", "Bieden kan via uw computer of smartphone")
+    assert wanted("Diverse veiling Hulten", "Uit faillissement van een bouwbedrijf")
+    off = auction_filter({**config, "extra_auctions": {**config["extra_auctions"], "enabled": False}})
+    assert not off("Computers, Tablets, Desktops & Monitoren") and off("Faillissement Spectrik BV")
+
+
+def test_auction_decisions_forgotten_when_filter_words_change(monkeypatch):
+    from scanner import scan
+
+    def fetch(ctx):
+        ctx.cache.setdefault("bankrupt", {})["1"] = ctx.is_bankruptcy("Computers en laptops")
+        return []
+
+    monkeypatch.setattr(scan, "SITES", {"x": fetch})
+    state = {"site_cache": {"x": {"bankrupt": {"1": False, "2": False}}}}
+    config = {"auction_keywords": ["faillissement"], "extra_auctions": {"words": ["computer"]}}
+    scan.scan_sites(config, [], state, lambda: FakeHttp([]), NOW)
+    assert state["site_cache"]["x"]["bankrupt"] == {"1": True}  # old decisions dropped, re-checked
+    state["site_cache"]["x"]["bankrupt"]["2"] = False
+    scan.scan_sites(config, [], state, lambda: FakeHttp([]), NOW)
+    assert state["site_cache"]["x"]["bankrupt"] == {"1": True, "2": False}  # same words: kept

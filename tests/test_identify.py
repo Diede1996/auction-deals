@@ -115,6 +115,16 @@ def test_short_keywords_match_whole_words_only():
     assert not matches(plants, "2010 Pottinger Jumbo 7210 D Opraapwagen")  # "pot" is not "Pottinger"
     assert matches(plants, "Terracotta pot") and matches(plants, "3 potten met olijfboom") and matches(plants, "Potjes")
     assert matches(plants, "Plantenbak met vulling")  # longer words still match the start of a word
+    # "poten" (legs) is the plural of "poot", not of "pot"; "plantaardig" is not a plant
+    assert not matches(plants, "Eettafel Indra rechthoek 180x90cm - Acacia blad en zwarte poten")
+    assert not matches(plants, "Witte Melamine Gecoate Eettafel met Metalen Poten")
+    assert not matches(plants, "Ca. 24x Plantaardige Billendoekjes - 50 pack Bipsje")
+    assert matches(plants, "Set Oranje Thee-Potten") and matches(plants, "Partij Gekleurde Potjes")
+    leds = WatchItem(name="LED", keywords=["led"])
+    assert matches(leds, "Partij leds") and not matches(leds, "Stoelen voor leden")
+    bags = WatchItem(name="Bags", keywords=["tas"])
+    assert matches(bags, "Laptop tassen") and matches(bags, "Tasje") and not matches(bags, "Tasman")
+    assert model_code("Eettafel Indra rechthoek 180x90cm - Acacia blad") is None  # a size, not a type number
     laptop = WatchItem(name="Laptop", keywords=["laptop"], exclude=["tas", "arm"])
     assert not matches(laptop, "Laptop tassen 5 stuks") and matches(laptop, "Laptop met armatuur")
 
