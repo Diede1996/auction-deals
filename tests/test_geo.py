@@ -110,3 +110,33 @@ def test_fuel_price_setting_cache_and_fallback():
     broken = FakeHttp([(url_has("energiafed.be"), down)])
     assert fuel_price(broken, state, NOW + timedelta(days=2), "auto", 2.1)[0] == 2.108  # saved price
     assert fuel_price(broken, {}, NOW, "auto", 2.1) == (2.1, "fallback in config.yml")
+
+
+def test_two_addresses_each_lot_from_the_closer_one():
+    """HOME_ADDRESS in the Netherlands, HOME_ADDRESS_2 in Ghent: Belgian pickups are driven from Ghent."""
+    def nominatim(m, u, kw):
+        assert "0202" not in u  # the flat number ("14-0202") is left out of the lookup
+        return [{"lat": "51.02", "lon": "3.69"}]
+
+    def two_starts(m, u, kw):
+        coords = u.split("/driving/")[1].split("?")[0].split(";")
+        start, places = coords[0], coords[1:]
+        from_ghent = start.startswith("3.69")
+        # Lokeren is near Ghent, Emmeloord is far from it
+        km = {"3.990000,51.100000": 30 if from_ghent else 150, "5.720000,52.700000": 300 if from_ghent else 140}
+        return {"code": "Ok", "distances": [[0] + [km[p] * 1000 for p in places]],
+                "durations": [[0] + [km[p] * 60 for p in places]]}
+
+    http = FakeHttp([(url_has("api.pdok.nl"), pdok_route), (url_has("nominatim.openstreetmap.org"), nominatim),
+                     (url_has("router.project-osrm.org"), two_starts)])
+    cache = {}
+    planner = TripPlanner(http, cache, NOW, DrivingCosts(km_per_liter=16, fuel_price=2.0), HOME,
+                          second_address="Raymonde de Larochelaan 14-0202, Gent, België")
+    trips = planner.plan({"Industriepark 1, Lokeren": (51.1, 3.99), "Produktieweg 9, 8304AV Emmeloord": None})
+    lokeren, emmeloord = trips["Industriepark 1, Lokeren"], trips["Produktieweg 9, 8304AV Emmeloord"]
+    assert (lokeren.km, lokeren.origin) == (30, "Gent") and (emmeloord.km, emmeloord.origin) == (140, "home")
+    assert lokeren.as_dict()["from"] == "Gent"
+    assert "Larochelaan" not in str(cache) and "Dorpsstraat" not in str(cache)  # home addresses are never stored
+    # with one address there is no "from"
+    one = TripPlanner(http, {}, NOW, DrivingCosts(), HOME).plan({"Industriepark 1, Lokeren": (51.1, 3.99)})
+    assert "from" not in one["Industriepark 1, Lokeren"].as_dict()

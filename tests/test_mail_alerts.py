@@ -91,7 +91,8 @@ def test_collect_remembers_lots_until_they_close():
     box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
     state = {}
     lots, report = collect(box, RedirectHttp([]), state, NOW)
-    assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 1, "new": 3, "lots": 3, "other_auctions": 0}
+    assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 0, "no_lots": 1, "new": 3, "lots": 3,
+                      "other_auctions": 0, "unreadable_emails": []}  # an auction announcement without lots is fine
     drill = next(l for l in lots if l.lot_id == "A1-51234-17")
     assert drill.site == "troostwijk" and drill.current_bid == 45.0 and drill.location == "Purmerend"
     assert drill.auction_title == "Troostwijk alert of 27 Sep" and drill.key == "troostwijk:A1-51234-17"
@@ -211,7 +212,8 @@ def test_collect_forwarded_auction_alert():
     box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
     state = {}
     lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=1))
-    assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "new": 9, "lots": 9, "other_auctions": 0}
+    assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "no_lots": 0, "new": 9, "lots": 9,
+                      "other_auctions": 0, "unreadable_emails": []}
     hp = next(l for l in lots if l.lot_id == "A1-50252-117")
     assert hp.closes_at is None and hp.location == "Veldhoven" and hp.current_bid == 10.0
     assert hp.auction_title.endswith("Kantoorinventaris") and hp.closes_day == "2026-10-07"
@@ -277,3 +279,19 @@ def test_subject_names_the_auction_when_the_page_doesnt():
     lots, _ = collect(Mailbox("b", "app-pass", imap_cls=FakeIMAP), NoRequests([]), {}, NOW,
                       is_bankruptcy=lambda t: "faillissement" in t.lower(), only_bankruptcy=True)
     assert len(lots) == 2 and lots[0].auction_title == "Faillissement Jansen Computers"
+
+
+def test_emails_without_lots_are_named_once():
+    FakeIMAP.mails = [
+        _mail("<p>Je zoekopdracht 'macbook' is opgeslagen. Beheer je zoekopdrachten in je account.</p>",
+              subject="Je zoekopdracht is opgeslagen", date="Thu, 01 Oct 2026 20:15:00 +0200"),
+        _mail(BYLDIS_HTML),
+    ]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    state = {}
+    _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=4))
+    assert report["unreadable"] == 1 and len(report["unreadable_emails"]) == 1
+    assert report["unreadable_emails"][0]["subject"] == "Je zoekopdracht is opgeslagen"
+    assert "opgeslagen" not in str(state)  # only a hash is remembered (public repository)
+    _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=5))
+    assert report["unreadable"] == 1 and report["unreadable_emails"] == []  # not again the next morning

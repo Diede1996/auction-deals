@@ -351,3 +351,19 @@ def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
     assert "HP Elite E241i Monitor (2x)</a>\n   bid up to <b>€" in digest and "closes Wed 7 Oct" in digest
     assert tw[0]["units"] == 2 and tw[0]["auction"].startswith("Faillissement Byldis")
     assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": ""} in data["sites"]
+
+
+def test_digest_names_troostwijk_emails_without_lots(repo, monkeypatch):
+    from test_mail_alerts import FakeIMAP, _mail
+    from scanner.mail_alerts import Mailbox
+    FakeIMAP.mails = [_mail("<p>Welkom bij Troostwijk <b>& co</b></p>", subject="Welkom bij Troostwijk Auctions",
+                            date="Thu, 24 Sep 2026 20:15:00 +0200")]
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW, http_cls=lambda **kw: FakeHttp([]), telegram_cls=tg) == 0
+    assert "• Welkom bij Troostwijk Auctions (Thu 24 Sep)" in tg.sent[-1]
+    assert "Welkom" not in (repo / "data" / "state.json").read_text()
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW + timedelta(days=1), http_cls=lambda **kw: FakeHttp([]), telegram_cls=tg) == 0
+    assert "Welkom" not in tg.sent[-1]  # reported once
