@@ -282,303 +282,9 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-03T13:29:07.180092+00:00",
+ "generated": "2026-10-03T17:12:10.052751+00:00",
+ "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
-  {
-   "auction": "Emob: Sofa's, tafels & stoelen, tuin",
-   "bid": 120.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T16:49:00+00:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/748972/A8_India_ET_Detail_83_819_S8_08f9_kleinOK.jpg",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "openbareverkopen:748972",
-   "location": "Beveren-Leie",
-   "market": 205.0,
-   "marketSource": "marktplaats",
-   "maxBid": 48.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 12,
-    "high": 248.25,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 170.0,
-      "title": "Bureau onderstel Ahrend 500, geschikt voor 180x90cm - c-poot",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1461218984-bureau-onderstel-ahrend-500-geschikt-voor-180x90cm-c-poot"
-     },
-     {
-      "kind": "fixed",
-      "price": 175.0,
-      "title": "Bureau Aspa Facility - 180x90cm(bxd) - T-poot zwart - logen",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1509626578-bureau-aspa-facility-180x90cm-bxd-t-poot-zwart-logen"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs -",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1512496328-bureau-steelcase-180x90cm-t-poot-aluminium-grijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs -",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1511175277-bureau-steelcase-180x90cm-t-poot-aluminium-grijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs - logan",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1511175274-bureau-steelcase-180x90cm-t-poot-aluminium-grijs-logan"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs -",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1529278550-bureau-steelcase-180x90cm-t-poot-aluminium-grijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs - wit",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1531427397-bureau-steelcase-180x90cm-t-poot-aluminium-grijs-wit"
-     },
-     {
-      "kind": "fixed",
-      "price": 205.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs - Ahorn",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1529278554-bureau-steelcase-180x90cm-t-poot-aluminium-grijs-ahorn"
-     },
-     {
-      "kind": "fixed",
-      "price": 242.99,
-      "title": "vidaXL Eettafel 180x90cm massief acaciahout",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/tafels-eettafels/a1478962464-vidaxl-eettafel-180x90cm-massief-acaciahout"
-     },
-     {
-      "kind": "fixed",
-      "price": 250.0,
-      "title": "Kantinetafel - 180x90cm (bxd) - hout - 4-poot",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/tafels-eettafels/a1512496321-kantinetafel-180x90cm-bxd-hout-4-poot"
-     },
-     {
-      "kind": "fixed",
-      "price": 260.0,
-      "title": "Bureau Steelcase - 180x90cm - T-poot aluminium grijs - Honey",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/bureaus/a1529278551-bureau-steelcase-180x90cm-t-poot-aluminium-grijs-honey"
-     },
-     {
-      "kind": "fixed",
-      "price": 325.24,
-      "title": "Klaptafel Timmy-R - 180x90cm- halifax eiken - T-poot",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/tafels-eettafels/a1509626549-klaptafel-timmy-r-180x90cm-halifax-eiken-t-poot"
-     }
-    ],
-    "low": 205.0,
-    "median": 205.0,
-    "model": "180X90CM",
-    "outliers": [
-     89.0,
-     487.0,
-     655.0
-    ],
-    "prices": [
-     170.0,
-     175.0,
-     205.0,
-     205.0,
-     205.0,
-     205.0,
-     205.0,
-     205.0,
-     242.99,
-     250.0,
-     260.0,
-     325.24
-    ],
-    "query": "pot 180x90cm",
-    "url": "https://www.marktplaats.nl/q/pot+180x90cm/"
-   },
-   "mpPlan": {
-    "brand": "pot",
-    "kind": "exact",
-    "model": "180X90CM",
-    "note": "exact model Pot 180X90CM",
-    "search": "https://www.marktplaats.nl/q/pot+180x90cm/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+180x90cm/",
-   "pickup": "Deken de Bostraat 70a, 8791 Beveren-Leie, België",
-   "pickupWhen": "Wed 14 Oct, 08:45–16:30",
-   "premium": 0.19,
-   "site": "openbareverkopen",
-   "siteName": "Openbare Verkopen (BE)",
-   "title": "Eettafel Indra rechthoek 180x90cm - Acacia blad en zwarte poten",
-   "trip": {
-    "approx": false,
-    "cost": 9.53,
-    "from": "Gent",
-    "km": 36.9,
-    "min": 31
-   },
-   "units": 1,
-   "url": "https://www.openbare-verkopen.be/lot/748972",
-   "vat": 0.21
-  },
-  {
-   "auction": "Emob: Sofa's, tafels & stoelen, tuin",
-   "bid": 50.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T16:59:00+00:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749017/974NMB1159___1_e721_kleinOK.jpg",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "openbareverkopen:749017",
-   "location": "Beveren-Leie",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "pot",
-    "kind": "exact",
-    "model": "SKU 974NMB1159",
-    "note": "exact model Pot SKU 974NMB1159 (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/",
-   "pickup": "Deken de Bostraat 70a, 8791 Beveren-Leie, België",
-   "pickupWhen": "Wed 14 Oct, 08:45–16:30",
-   "premium": 0.19,
-   "site": "openbareverkopen",
-   "siteName": "Openbare Verkopen (BE)",
-   "title": "Witte Melamine Gecoate Eettafel met Metalen Poten",
-   "trip": {
-    "approx": false,
-    "cost": 9.53,
-    "from": "Gent",
-    "km": 36.9,
-    "min": 31
-   },
-   "units": 1,
-   "url": "https://www.openbare-verkopen.be/lot/749017",
-   "vat": 0.21
-  },
-  {
-   "auction": "Emob: Sofa's, tafels & stoelen, tuin",
-   "bid": 50.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T16:59:00+00:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749018/974NMB1159___1_e721_kleinOK.jpg",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "openbareverkopen:749018",
-   "location": "Beveren-Leie",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "pot",
-    "kind": "exact",
-    "model": "SKU 974NMB1159",
-    "note": "exact model Pot SKU 974NMB1159 (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/",
-   "pickup": "Deken de Bostraat 70a, 8791 Beveren-Leie, België",
-   "pickupWhen": "Wed 14 Oct, 08:45–16:30",
-   "premium": 0.19,
-   "site": "openbareverkopen",
-   "siteName": "Openbare Verkopen (BE)",
-   "title": "Witte Melamine Gecoate Eettafel met Metalen Poten",
-   "trip": {
-    "approx": false,
-    "cost": 9.53,
-    "from": "Gent",
-    "km": 36.9,
-    "min": 31
-   },
-   "units": 1,
-   "url": "https://www.openbare-verkopen.be/lot/749018",
-   "vat": 0.21
-  },
-  {
-   "auction": "Emob: Sofa's, tafels & stoelen, tuin",
-   "bid": 50.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T17:00:00+00:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749019/974NMB1159___1_e721_kleinOK.jpg",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "openbareverkopen:749019",
-   "location": "Beveren-Leie",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "pot",
-    "kind": "exact",
-    "model": "SKU 974NMB1159",
-    "note": "exact model Pot SKU 974NMB1159 (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/pot+sku+974nmb1159/",
-   "pickup": "Deken de Bostraat 70a, 8791 Beveren-Leie, België",
-   "pickupWhen": "Wed 14 Oct, 08:45–16:30",
-   "premium": 0.19,
-   "site": "openbareverkopen",
-   "siteName": "Openbare Verkopen (BE)",
-   "title": "Witte Melamine Gecoate Eettafel met Metalen Poten",
-   "trip": {
-    "approx": false,
-    "cost": 9.53,
-    "from": "Gent",
-    "km": 36.9,
-    "min": 31
-   },
-   "units": 1,
-   "url": "https://www.openbare-verkopen.be/lot/749019",
-   "vat": 0.21
-  },
   {
    "auction": "Combinatieveiling div. faillissementen september 2026",
    "bid": 15.0,
@@ -1525,9 +1231,9 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 70.0,
+   "bid": 75.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 11,
    "closes": "2026-10-05T20:00:00+02:00",
    "closesDay": null,
    "count": 1,
@@ -4025,7 +3731,7 @@
    "fixed": 0.0,
    "image": "https://img.vlavem.com/Image.aspx?img=6234|57548|1046031|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4397,7 +4103,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4605,7 +4311,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -4813,7 +4519,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5009,264 +4715,389 @@
    "vat": 0.21
   },
   {
-   "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
-   "bid": 20.0,
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
    "bidFromEmail": false,
-   "bids": 4,
-   "closes": "2026-10-07T17:52:48+00:00",
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
    "closesDay": null,
-   "count": 24,
-   "delivery": true,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 14.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-09-25/7eae7649-ee3c-472c-bebd-271fc6e02975/92_1.jpg",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "inventarisveilingen:3930",
+   "location": "Nieuwegein",
+   "market": 55.0,
+   "marketSource": "marktplaats",
+   "maxBid": 5.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 3,
+    "high": 100.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "BenQ GL2580H 24 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2434197310-benq-gl2580h-24-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "BenQ GL2580HM 24,5\" Full HD monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432838234-benq-gl2580hm-24-5-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "3x BenQ GL2580HM monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444916791-3x-benq-gl2580hm-monitoren"
+     }
+    ],
+    "low": 30.0,
+    "median": 55.0,
+    "model": "GL 2580",
+    "outliers": [],
+    "prices": [
+     30.0,
+     55.0,
+     100.0
+    ],
+    "query": "benq gl 2580",
+    "url": "https://www.marktplaats.nl/q/benq+gl+2580/"
+   },
+   "mpPlan": {
+    "brand": "benq",
+    "kind": "exact",
+    "model": "GL 2580",
+    "note": "exact model Benq GL 2580 (type number from the lot description)",
+    "search": "https://www.marktplaats.nl/q/benq+gl+2580/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/benq+gl+2580/",
+   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
+   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
+   "premium": 0.0,
+   "site": "inventarisveilingen",
+   "siteName": "Inventarisveilingen",
+   "title": "Benq 24 inch LCD monitor",
+   "trip": {
+    "approx": false,
+    "cost": 14.92,
+    "from": "home",
+    "km": 57.8,
+    "min": 52
+   },
+   "units": 1,
+   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/3930/",
+   "vat": 0.21
+  },
+  {
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "inventarisveilingen:4390",
+   "location": "Nieuwegein",
+   "market": 99.99,
+   "marketSource": "marktplaats",
+   "maxBid": 19.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 2,
+    "high": 99.99,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Philips B line 241B8Q Monitor | NIEUW",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552484-philips-b-line-241b8q-monitor-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Philips B-line 241B8Q Monitor | NIEUW",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552490-philips-b-line-241b8q-monitor-nieuw"
+     }
+    ],
+    "low": 99.99,
+    "median": 99.99,
+    "model": "241B8Q",
+    "outliers": [],
+    "prices": [
+     99.99,
+     99.99
+    ],
+    "query": "philips 241b8q",
+    "url": "https://www.marktplaats.nl/q/philips+241b8q/"
+   },
+   "mpPlan": {
+    "brand": "philips",
+    "kind": "exact",
+    "model": "241B8Q",
+    "note": "exact model Philips 241B8Q (type number from the lot description)",
+    "search": "https://www.marktplaats.nl/q/philips+241b8q/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/philips+241b8q/",
+   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
+   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
+   "premium": 0.0,
+   "site": "inventarisveilingen",
+   "siteName": "Inventarisveilingen",
+   "title": "Een Philips brilliance 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 14.92,
+    "from": "home",
+    "km": 57.8,
+    "min": 52
+   },
+   "units": 1,
+   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4390/",
+   "vat": 0.21
+  },
+  {
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
    "isDeal": false,
    "isNew": false,
-   "item": "Plants / decor",
+   "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
-   "key": "onlineveilingmeester:1903789",
-   "location": null,
+   "key": "inventarisveilingen:4391",
+   "location": "Nieuwegein",
    "market": null,
    "marketSource": null,
    "maxBid": null,
    "mp": null,
    "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/plant+billendoekjes+50+pack/"
+    "brand": "samsung",
+    "kind": "exact",
+    "model": "LS24R650FDN",
+    "note": "exact model Samsung LS24R650FDN (type number from the lot description)",
+    "search": "https://www.marktplaats.nl/q/samsung+ls24r650fdn/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/plant+billendoekjes+50+pack/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.17,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "title": "Ca. 24x Plantaardige Billendoekjes - 50 pack Bipsje",
-   "trip": null,
-   "units": 24,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9169/kavels/92",
+   "mpSearch": "https://www.marktplaats.nl/q/samsung+ls24r650fdn/",
+   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
+   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
+   "premium": 0.0,
+   "site": "inventarisveilingen",
+   "siteName": "Inventarisveilingen",
+   "title": "Samsung Full HD IPS Monitoren",
+   "trip": {
+    "approx": false,
+    "cost": 14.92,
+    "from": "home",
+    "km": 57.8,
+    "min": 52
+   },
+   "units": 1,
+   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4391/",
    "vat": 0.21
   },
   {
-   "auction": "Thuisbezorgveiling: keukens consumentengoederen & partijhandel",
-   "bid": 22.0,
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
    "bidFromEmail": false,
-   "bids": 5,
-   "closes": "2026-10-07T17:53:48+00:00",
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
    "closesDay": null,
-   "count": 24,
-   "delivery": true,
-   "firstSeen": "2026-09-27T09:51:31.500418+00:00",
-   "fixed": 14.0,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-09-25/958cfb82-84cb-4200-bab8-90083451d7e0/93_1.jpg",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "inventarisveilingen:3930",
+   "location": "Nieuwegein",
+   "market": 55.0,
+   "marketSource": "marktplaats",
+   "maxBid": 5.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 3,
+    "high": 100.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "BenQ GL2580H 24 inch Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2434197310-benq-gl2580h-24-inch-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "BenQ GL2580HM 24,5\" Full HD monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432838234-benq-gl2580hm-24-5-full-hd-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "3x BenQ GL2580HM monitoren",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444916791-3x-benq-gl2580hm-monitoren"
+     }
+    ],
+    "low": 30.0,
+    "median": 55.0,
+    "model": "GL 2580",
+    "outliers": [],
+    "prices": [
+     30.0,
+     55.0,
+     100.0
+    ],
+    "query": "benq gl 2580",
+    "url": "https://www.marktplaats.nl/q/benq+gl+2580/"
+   },
+   "mpPlan": {
+    "brand": "benq",
+    "kind": "exact",
+    "model": "GL 2580",
+    "note": "exact model Benq GL 2580 (type number from the lot description)",
+    "search": "https://www.marktplaats.nl/q/benq+gl+2580/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/benq+gl+2580/",
+   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
+   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
+   "premium": 0.0,
+   "site": "inventarisveilingen",
+   "siteName": "Inventarisveilingen",
+   "title": "Benq 24 inch LCD monitor",
+   "trip": {
+    "approx": false,
+    "cost": 14.92,
+    "from": "home",
+    "km": 57.8,
+    "min": 52
+   },
+   "units": 1,
+   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/3930/",
+   "vat": 0.21
+  },
+  {
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "inventarisveilingen:4390",
+   "location": "Nieuwegein",
+   "market": 99.99,
+   "marketSource": "marktplaats",
+   "maxBid": 19.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 2,
+    "high": 99.99,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Philips B line 241B8Q Monitor | NIEUW",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552484-philips-b-line-241b8q-monitor-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Philips B-line 241B8Q Monitor | NIEUW",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552490-philips-b-line-241b8q-monitor-nieuw"
+     }
+    ],
+    "low": 99.99,
+    "median": 99.99,
+    "model": "241B8Q",
+    "outliers": [],
+    "prices": [
+     99.99,
+     99.99
+    ],
+    "query": "philips 241b8q",
+    "url": "https://www.marktplaats.nl/q/philips+241b8q/"
+   },
+   "mpPlan": {
+    "brand": "philips",
+    "kind": "exact",
+    "model": "241B8Q",
+    "note": "exact model Philips 241B8Q (type number from the lot description)",
+    "search": "https://www.marktplaats.nl/q/philips+241b8q/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/philips+241b8q/",
+   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
+   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
+   "premium": 0.0,
+   "site": "inventarisveilingen",
+   "siteName": "Inventarisveilingen",
+   "title": "Een Philips brilliance 24 inch monitor",
+   "trip": {
+    "approx": false,
+    "cost": 14.92,
+    "from": "home",
+    "km": 57.8,
+    "min": 52
+   },
+   "units": 1,
+   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4390/",
+   "vat": 0.21
+  },
+  {
+   "auction": "Hardware Faillissement",
+   "bid": 0.0,
+   "bidFromEmail": false,
+   "bids": null,
+   "closes": "2026-10-08T13:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
    "isDeal": false,
    "isNew": false,
-   "item": "Plants / decor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "onlineveilingmeester:1903790",
-   "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/plant+billendoekjes+50+pack/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/plant+billendoekjes+50+pack/",
-   "pickup": null,
-   "pickupWhen": null,
-   "premium": 0.17,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "title": "Ca. 24x Plantaardige Billendoekjes - 50 pack Bipsje",
-   "trip": null,
-   "units": 24,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9169/kavels/93",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "inventarisveilingen:3930",
-   "location": "Nieuwegein",
-   "market": 55.0,
-   "marketSource": "marktplaats",
-   "maxBid": 5.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 3,
-    "high": 100.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "BenQ GL2580H 24 inch Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2434197310-benq-gl2580h-24-inch-full-hd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "BenQ GL2580HM 24,5\" Full HD monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432838234-benq-gl2580hm-24-5-full-hd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "3x BenQ GL2580HM monitoren",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444916791-3x-benq-gl2580hm-monitoren"
-     }
-    ],
-    "low": 30.0,
-    "median": 55.0,
-    "model": "GL 2580",
-    "outliers": [],
-    "prices": [
-     30.0,
-     55.0,
-     100.0
-    ],
-    "query": "benq gl 2580",
-    "url": "https://www.marktplaats.nl/q/benq+gl+2580/"
-   },
-   "mpPlan": {
-    "brand": "benq",
-    "kind": "exact",
-    "model": "GL 2580",
-    "note": "exact model Benq GL 2580 (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/benq+gl+2580/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/benq+gl+2580/",
-   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
-   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
-   "premium": 0.0,
-   "site": "inventarisveilingen",
-   "siteName": "Inventarisveilingen",
-   "title": "Benq 24 inch LCD monitor",
-   "trip": {
-    "approx": false,
-    "cost": 14.92,
-    "from": "home",
-    "km": 57.8,
-    "min": 52
-   },
-   "units": 1,
-   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/3930/",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "inventarisveilingen:4390",
-   "location": "Nieuwegein",
-   "market": 99.99,
-   "marketSource": "marktplaats",
-   "maxBid": 19.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 2,
-    "high": 99.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Philips B line 241B8Q Monitor | NIEUW",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552484-philips-b-line-241b8q-monitor-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Philips B-line 241B8Q Monitor | NIEUW",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552490-philips-b-line-241b8q-monitor-nieuw"
-     }
-    ],
-    "low": 99.99,
-    "median": 99.99,
-    "model": "241B8Q",
-    "outliers": [],
-    "prices": [
-     99.99,
-     99.99
-    ],
-    "query": "philips 241b8q",
-    "url": "https://www.marktplaats.nl/q/philips+241b8q/"
-   },
-   "mpPlan": {
-    "brand": "philips",
-    "kind": "exact",
-    "model": "241B8Q",
-    "note": "exact model Philips 241B8Q (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/philips+241b8q/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/philips+241b8q/",
-   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
-   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
-   "premium": 0.0,
-   "site": "inventarisveilingen",
-   "siteName": "Inventarisveilingen",
-   "title": "Een Philips brilliance 24 inch monitor",
-   "trip": {
-    "approx": false,
-    "cost": 14.92,
-    "from": "home",
-    "km": 57.8,
-    "min": 52
-   },
-   "units": 1,
-   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4390/",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
-   "isDeal": false,
-   "isNew": true,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5314,7 +5145,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5398,7 +5229,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5475,7 +5306,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5523,7 +5354,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5607,7 +5438,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5684,7 +5515,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5732,7 +5563,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5816,7 +5647,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -5893,216 +5724,7 @@
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
    "isDeal": false,
-   "isNew": true,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "inventarisveilingen:4391",
-   "location": "Nieuwegein",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "samsung",
-    "kind": "exact",
-    "model": "LS24R650FDN",
-    "note": "exact model Samsung LS24R650FDN (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/samsung+ls24r650fdn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/samsung+ls24r650fdn/",
-   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
-   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
-   "premium": 0.0,
-   "site": "inventarisveilingen",
-   "siteName": "Inventarisveilingen",
-   "title": "Samsung Full HD IPS Monitoren",
-   "trip": {
-    "approx": false,
-    "cost": 14.92,
-    "from": "home",
-    "km": 57.8,
-    "min": 52
-   },
-   "units": 1,
-   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4391/",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5266_2_1.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "inventarisveilingen:3930",
-   "location": "Nieuwegein",
-   "market": 55.0,
-   "marketSource": "marktplaats",
-   "maxBid": 5.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 3,
-    "high": 100.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "BenQ GL2580H 24 inch Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2434197310-benq-gl2580h-24-inch-full-hd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "BenQ GL2580HM 24,5\" Full HD monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432838234-benq-gl2580hm-24-5-full-hd-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "3x BenQ GL2580HM monitoren",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444916791-3x-benq-gl2580hm-monitoren"
-     }
-    ],
-    "low": 30.0,
-    "median": 55.0,
-    "model": "GL 2580",
-    "outliers": [],
-    "prices": [
-     30.0,
-     55.0,
-     100.0
-    ],
-    "query": "benq gl 2580",
-    "url": "https://www.marktplaats.nl/q/benq+gl+2580/"
-   },
-   "mpPlan": {
-    "brand": "benq",
-    "kind": "exact",
-    "model": "GL 2580",
-    "note": "exact model Benq GL 2580 (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/benq+gl+2580/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/benq+gl+2580/",
-   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
-   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
-   "premium": 0.0,
-   "site": "inventarisveilingen",
-   "siteName": "Inventarisveilingen",
-   "title": "Benq 24 inch LCD monitor",
-   "trip": {
-    "approx": false,
-    "cost": 14.92,
-    "from": "home",
-    "km": 57.8,
-    "min": 52
-   },
-   "units": 1,
-   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/3930/",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6680_1.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Monitor",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "inventarisveilingen:4390",
-   "location": "Nieuwegein",
-   "market": 99.99,
-   "marketSource": "marktplaats",
-   "maxBid": 19.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 2,
-    "high": 99.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Philips B line 241B8Q Monitor | NIEUW",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552484-philips-b-line-241b8q-monitor-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Philips B-line 241B8Q Monitor | NIEUW",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446552490-philips-b-line-241b8q-monitor-nieuw"
-     }
-    ],
-    "low": 99.99,
-    "median": 99.99,
-    "model": "241B8Q",
-    "outliers": [],
-    "prices": [
-     99.99,
-     99.99
-    ],
-    "query": "philips 241b8q",
-    "url": "https://www.marktplaats.nl/q/philips+241b8q/"
-   },
-   "mpPlan": {
-    "brand": "philips",
-    "kind": "exact",
-    "model": "241B8Q",
-    "note": "exact model Philips 241B8Q (type number from the lot description)",
-    "search": "https://www.marktplaats.nl/q/philips+241b8q/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/philips+241b8q/",
-   "pickup": "Sluyterslaan 209, 3434BD Nieuwegein",
-   "pickupWhen": "Fri 9 Oct, 13:00–14:00",
-   "premium": 0.0,
-   "site": "inventarisveilingen",
-   "siteName": "Inventarisveilingen",
-   "title": "Een Philips brilliance 24 inch monitor",
-   "trip": {
-    "approx": false,
-    "cost": 14.92,
-    "from": "home",
-    "km": 57.8,
-    "min": 52
-   },
-   "units": 1,
-   "url": "https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4390/",
-   "vat": 0.21
-  },
-  {
-   "auction": "Hardware Faillissement",
-   "bid": 0.0,
-   "bidFromEmail": false,
-   "bids": null,
-   "closes": "2026-10-08T13:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_6678_1_1.jpg",
-   "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6139,9 +5761,9 @@
   },
   {
    "auction": "Stopzetting decoratie en interieurwinkel",
-   "bid": 13.0,
+   "bid": 15.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-10-08T17:01:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -6150,7 +5772,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749438/210_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6292,7 +5914,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749440/263_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6406,7 +6028,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749510/WhatsApp%20Image%202026-09-02%20at%2019.39.11%20%281%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6562,7 +6184,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749511/WhatsApp%20Image%202026-09-02%20at%2023.28.58%20%281%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6660,7 +6282,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749512/WhatsApp%20Image%202026-09-02%20at%2023.55.39%20%283%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6708,7 +6330,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749513/WhatsApp%20Image%202026-09-02%20at%2023.56.03%20%283%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -6756,7 +6378,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749515/WhatsApp%20Image%202026-09-02%20at%2023.56.38%20%281%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -7064,7 +6686,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749516/WhatsApp%20Image%202026-09-02%20at%2023.57.00%20%281%29_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -7112,7 +6734,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749533/IMG_4773_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -7420,7 +7042,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749572/IMG_5031_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -7728,7 +7350,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749573/IMG_5034_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8036,7 +7658,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/749587/1_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8171,550 +7793,915 @@
    "vat": 0.21
   },
   {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
+   "auction": "Apple & Samsung Phones - Tablets en Pads",
+   "bid": 70.0,
    "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
+   "bids": 3,
+   "closes": "2026-10-12T17:31:00+00:00",
    "closesDay": null,
    "count": 1,
    "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
    "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288540|FirstImage.jpg&x=200&y=200&stretch=1",
+   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751328/IMG_0003_kleinOK.jpeg",
    "isDeal": false,
    "isNew": true,
-   "item": "Power tools",
+   "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
-   "key": "proveiling:3288540",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GWS 1400",
-    "note": "exact model Bosch Professional GWS 1400",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GWS 1400 haakse slijper",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288540/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288541|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288541",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GWS 1400",
-    "note": "exact model Bosch Professional GWS 1400",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GWS 1400 haakse slijper",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288541/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288542|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288542",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GWS 1400",
-    "note": "exact model Bosch Professional GWS 1400",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GWS 1400 haakse slijper",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288542/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288543|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288543",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GWS 17",
-    "note": "exact model Bosch Professional GWS 17",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+17/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+17/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GWS 17-125 PSB haakse slijper",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-17-125-PSB-haakse-slijper/3288543/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288544|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288544",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GWS 1400",
-    "note": "exact model Bosch Professional GWS 1400",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GWS 1400 haakse slijper",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288544/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288545|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288545",
-   "location": "Bolsward",
-   "market": 89.99,
+   "key": "openbareverkopen:751328",
+   "location": "Zele",
+   "market": 45.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 5.0,
    "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 3,
-    "high": 180.0,
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 18,
+    "high": 199.25,
     "kind": "exact",
     "listings": [
      {
+      "kind": "fixed",
+      "price": 7.99,
+      "title": "Tempered Glass iPad Air (2019)/iPad Pro 10.5",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-overige-merken/a1523829462-tempered-glass-ipad-air-2019-ipad-pro-10-5"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K83)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445782754-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k83"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K46)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445804418-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k46"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K45)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445941987-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k45"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K77)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445782248-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k77"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K47)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445942995-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k47"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K46)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445942503-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k46"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K47)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445805159-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k47"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K107)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445783582-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k107"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K45)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445803711-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k45"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K84)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445783173-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k84"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K59)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445805754-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k59"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "iPad Pro 10.5 inch 64GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2432776728-ipad-pro-10-5-inch-64gb-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.0,
+      "title": "Apple iPad Pro 10.5 – 64GB – 2017",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige/m2446480690-apple-ipad-pro-10-5-64gb-2017"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zwart Wifi (4...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529642155-apple-ipad-pro-64gb-10-5-inch-model-2017-zwart-wifi-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zwart Wifi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525776568-apple-ipad-pro-64gb-10-5-inch-model-2017-zwart-wifi-4g"
+     },
+     {
       "kind": "bid",
-      "price": 79.0,
-      "title": "Bosch GSB 21-2 RE Professional Klopboormachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443750504-bosch-gsb-21-2-re-professional-klopboormachine"
+      "price": 200.0,
+      "title": "iPad Pro 10,5 inch 2017 256 GB Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2444593793-ipad-pro-10-5-inch-2017-256-gb-zilver"
      },
      {
-      "kind": "fixed",
-      "price": 89.99,
-      "title": "Bosch Professional GSB 21-2 RE Klopboor | Gebruikte Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441951045-bosch-professional-gsb-21-2-re-klopboor-gebruikte-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 180.0,
-      "title": "Bosch GSB 21-2 RE Professional Klopboormachine - Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2433989363-bosch-gsb-21-2-re-professional-klopboormachine-nieuw"
+      "kind": "bid",
+      "price": 300.0,
+      "title": "iPad Pro 10,5 inch 512GB WiFi + Cellular 4G – Space Grey",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446556646-ipad-pro-10-5-inch-512gb-wifi-cellular-4g-space-grey"
      }
     ],
-    "low": 79.0,
-    "median": 89.99,
-    "model": "GSB 21",
-    "outliers": [],
-    "prices": [
-     79.0,
-     89.99,
-     180.0
+    "low": 45.0,
+    "median": 45.0,
+    "model": null,
+    "outliers": [
+     439.99
     ],
-    "query": "bosch professional gsb 21",
-    "url": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/"
+    "prices": [
+     7.99,
+     40.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     45.0,
+     80.0,
+     199.0,
+     199.99,
+     199.99,
+     200.0,
+     300.0
+    ],
+    "query": "ipad pro 10",
+    "url": "https://www.marktplaats.nl/q/ipad+pro+10/"
    },
-   "mpPlan": {
-    "brand": "bosch professional",
-    "kind": "exact",
-    "model": "GSB 21",
-    "note": "exact model Bosch Professional GSB 21",
-    "search": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "BOSCH Professional GSB 21-2 RCT boormachine",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/BOSCH-Professional-GSB-21-2-RCT-boormachine/3288545/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 10.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288637|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288637",
-   "location": "Bolsward",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
    "mpPlan": {
     "brand": null,
     "kind": "general",
     "model": null,
     "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/makita+9032+bandvijl/"
+    "search": "https://www.marktplaats.nl/q/ipad+pro+10/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+9032+bandvijl/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita 9x533 mm 9032 bandvijl",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+10/",
+   "pickup": "Huivelde 50, 9240 Zele, België",
+   "pickupWhen": "Mon 19 Oct, 13:00–15:30",
+   "premium": 0.19,
+   "site": "openbareverkopen",
+   "siteName": "Openbare Verkopen (BE)",
+   "title": "iPad Pro 10,5 inch",
    "trip": {
     "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
+    "cost": 9.23,
+    "from": "Gent",
+    "km": 35.8,
+    "min": 28
    },
    "units": 1,
-   "url": "https://www.proveiling.nl/Makita-9x533-mm-9032-bandvijl/3288637/detail",
+   "url": "https://www.openbare-verkopen.be/lot/751328",
    "vat": 0.21
   },
   {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 10.0,
+   "auction": "Apple & Samsung Phones - Tablets en Pads",
+   "bid": 25.0,
    "bidFromEmail": false,
    "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
+   "closes": "2026-10-12T17:31:00+00:00",
    "closesDay": null,
    "count": 1,
    "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
    "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288573|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751329/IMG_0029_kleinOK.jpeg",
+   "isDeal": true,
    "isNew": true,
-   "item": "Power tools",
+   "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
-   "key": "proveiling:3288573",
-   "location": "Bolsward",
-   "market": 77.5,
+   "key": "openbareverkopen:751329",
+   "location": "Zele",
+   "market": 300.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 73.0,
    "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 4,
-    "high": 79.99,
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 37,
+    "high": 500.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 8.0,
+      "title": "Apple iPad 4th Gen with iOS 10.3.3 installed and Flappy Bird",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1531811686-apple-ipad-4th-gen-with-ios-10-3-3-installed-and-flappy-bird"
+     },
+     {
+      "kind": "fixed",
+      "price": 13.0,
+      "title": "Apple iPad (6th generation) iPad 6th Gen (2018) 9.7, -",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1531885201-apple-ipad-6th-generation-ipad-6th-gen-2018-9-7"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Apple iPad Smart Folio voor iPad Pro 11-inch (1e & 2e gen)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448437021-apple-ipad-smart-folio-voor-ipad-pro-11-inch-1e-2e-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Apple Smart Keyboard Folio voor iPad 9th gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446473606-apple-smart-keyboard-folio-voor-ipad-9th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "iPad 2e gen. 9.7” mod A1395 zilver 16GB opslag 512 MB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448364585-ipad-2e-gen-9-7-mod-a1395-zilver-16gb-opslag-512-mb-ram"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "iPad 2e gen. 9.7” mod A1396 zilver 32GB opslag 512 MB RAM",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448365209-ipad-2e-gen-9-7-mod-a1396-zilver-32gb-opslag-512-mb-ram"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Apple iPad 5Th met 4g 6Th Gen €80",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449463130-apple-ipad-5th-met-4g-6th-gen-80"
+     },
+     {
+      "kind": "bid",
+      "price": 89.0,
+      "title": "Logitech Rugged Folio iPad toetsenbordcase (gen 10 en A16)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446259623-logitech-rugged-folio-ipad-toetsenbordcase-gen-10-en-a16"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "iPad Pro Smart Keyboard Folio 12.9 inch (gen 3) (ongebruikt)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447257393-ipad-pro-smart-keyboard-folio-12-9-inch-gen-3-ongebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Apple ipad 7th gen wifi 32gb zo goed als nieuw!!",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2414475900-apple-ipad-7th-gen-wifi-32gb-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 120.0,
+      "title": "iPad 8e Gen 128GB wifi (zoals nieuw)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446987326-ipad-8e-gen-128gb-wifi-zoals-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Ipad 6th gen",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-samsung/m2449610130-ipad-6th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 159.0,
+      "title": "Apple iPad 10.2 (2021) • 9e Gen • Refurbished • 24M Garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529891514-apple-ipad-10-2-2021-9e-gen-refurbished-24m-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 165.0,
+      "title": "Apple iPad 8e gen (2020) 32GB Space Grey, batt 100% z.g.a.n.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448307755-apple-ipad-8e-gen-2020-32gb-space-grey-batt-100-z-g-a-n"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "iPad 6e generatie 128GB (2018) met Apple Pencil 1e gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449628241-ipad-6e-generatie-128gb-2018-met-apple-pencil-1e-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 175.0,
+      "title": "Magic Keyboard voor iPad Pro 12.9 (3e-6e gen)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2448852104-magic-keyboard-voor-ipad-pro-12-9-3e-6e-gen"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "64GB Ipad (9th gen) Wi-Fi met Apple Pencil (1th gen)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446947907-64gb-ipad-9th-gen-wi-fi-met-apple-pencil-1th-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 245.0,
+      "title": "Refurbished Apple iPad 9th gen - 64GB - A+ grade - space",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531511216-refurbished-apple-ipad-9th-gen-64gb-a-grade-space"
+     },
+     {
+      "kind": "fixed",
+      "price": 300.0,
+      "title": "Apple iPad Air 5th gen. 64gb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447587446-apple-ipad-air-5th-gen-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 320.0,
+      "title": "Ipad 10th gen Blue 128GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447340962-ipad-10th-gen-blue-128gb"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Apple iPad Air (4e gen) met Belkin toetsenbord",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447629882-apple-ipad-air-4e-gen-met-belkin-toetsenbord"
+     },
+     {
+      "kind": "fixed",
+      "price": 350.0,
+      "title": "Apple iPad 9th Gen -10.2\" WiFi + 4G 256GB - Spacegrijs NIEUW",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448485372-apple-ipad-9th-gen-10-2-wifi-4g-256gb-spacegrijs-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 359.0,
+      "title": "Apple iPad Air (4e gen) - 64GB - Wifi - Roségoud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840994-apple-ipad-air-4e-gen-64gb-wifi-rosegoud"
+     },
+     {
+      "kind": "fixed",
+      "price": 400.0,
+      "title": "iPad 10th Gen + Apple Pen 1st Gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447055749-ipad-10th-gen-apple-pen-1st-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 419.0,
+      "title": "Apple iPad Air (5e gen) - 64GB - Wifi + Cellular - Starlight",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840980-apple-ipad-air-5e-gen-64gb-wifi-cellular-starlight"
+     },
+     {
+      "kind": "fixed",
+      "price": 439.0,
+      "title": "Apple iPad Air (5e gen) - 64GB - Wifi + 5G - Roségoud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840981-apple-ipad-air-5e-gen-64gb-wifi-5g-rosegoud"
+     },
+     {
+      "kind": "fixed",
+      "price": 450.0,
+      "title": "Ipad Pro 12.9 inch 4th gen - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449086542-ipad-pro-12-9-inch-4th-gen-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 450.0,
+      "title": "iPad Pro 11inch (2nd Gen) 128GB (Pencil + Magic Keyboard)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2444692185-ipad-pro-11inch-2nd-gen-128gb-pencil-magic-keyboard"
+     },
+     {
+      "kind": "fixed",
+      "price": 549.99,
+      "title": "Apple iPad Pro 256GB 11 inch 4e Gen (model 2022) zilver....",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525904935-apple-ipad-pro-256gb-11-inch-4e-gen-model-2022-zilver"
+     },
+     {
+      "kind": "bid",
+      "price": 550.0,
+      "title": "Ipad Pro 11inch 4th gen",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2443839427-ipad-pro-11inch-4th-gen"
+     }
+    ],
+    "low": 90.0,
+    "median": 300.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     8.0,
+     13.0,
+     20.0,
+     25.0,
+     30.0,
+     45.0,
+     80.0,
+     89.0,
+     90.0,
+     90.0,
+     120.0,
+     125.0,
+     159.0,
+     165.0,
+     170.0,
+     175.0,
+     200.0,
+     245.0,
+     300.0,
+     320.0,
+     350.0,
+     350.0,
+     359.0,
+     400.0,
+     419.0,
+     439.0,
+     450.0,
+     450.0,
+     549.99,
+     550.0,
+     550.0,
+     585.0,
+     609.99,
+     639.99,
+     685.0,
+     699.0,
+     850.0
+    ],
+    "query": "ipad gen",
+    "url": "https://www.marktplaats.nl/q/ipad+gen/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/ipad+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+gen/",
+   "pickup": "Huivelde 50, 9240 Zele, België",
+   "pickupWhen": "Mon 19 Oct, 13:00–15:30",
+   "premium": 0.19,
+   "site": "openbareverkopen",
+   "siteName": "Openbare Verkopen (BE)",
+   "title": "iPad 6th Gen.",
+   "trip": {
+    "approx": false,
+    "cost": 9.23,
+    "from": "Gent",
+    "km": 35.8,
+    "min": 28
+   },
+   "units": 1,
+   "url": "https://www.openbare-verkopen.be/lot/751329",
+   "vat": 0.21
+  },
+  {
+   "auction": "Apple & Samsung Phones - Tablets en Pads",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T17:31:00+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751330/IMG_0042_kleinOK.jpeg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "iPad",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "openbareverkopen:751330",
+   "location": "Zele",
+   "market": 184.99,
+   "marketSource": "marktplaats",
+   "maxBid": 43.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 12,
+    "high": 199.98,
     "kind": "exact",
     "listings": [
      {
       "kind": "bid",
+      "price": 5.0,
+      "title": "Bookcase Apple iPad Air 2020 gen 4",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2414332385-bookcase-apple-ipad-air-2020-gen-4"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.0,
+      "title": "Ipad 7th gen 7e generatie (2019-2020)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415593472-ipad-7th-gen-7e-generatie-2019-2020"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.0,
+      "title": "4x Apple 🍏 iPad 2020 (8th gen) 32GB Wifi Zo goed als nieuw!",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426625203-4x-apple-ipad-2020-8th-gen-32gb-wifi-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 165.0,
+      "title": "Apple iPad 8e gen (2020) 32GB Space Grey, batt 100% z.g.a.n.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448307755-apple-ipad-8e-gen-2020-32gb-space-grey-batt-100-z-g-a-n"
+     },
+     {
+      "kind": "bid",
+      "price": 179.99,
+      "title": "iPad 2020 8th Gen 32GB WiFi/4G Space Gray",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446008020-ipad-2020-8th-gen-32gb-wifi-4g-space-gray"
+     },
+     {
+      "kind": "bid",
+      "price": 179.99,
+      "title": "iPad 2020 8th Gen 32GB WiFi/4G Space Gray",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446008008-ipad-2020-8th-gen-32gb-wifi-4g-space-gray"
+     },
+     {
+      "kind": "fixed",
+      "price": 189.99,
+      "title": "Apple iPad 2020 (8th gen) 32GB WiFi Wit Nieuwstaat met garan",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2441884892-apple-ipad-2020-8th-gen-32gb-wifi-wit-nieuwstaat-met-garan"
+     },
+     {
+      "kind": "fixed",
+      "price": 195.0,
+      "title": "Apple iPad 2020 8e gen 32GB WiFi Space Gray Refurbished",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2430182074-apple-ipad-2020-8e-gen-32gb-wifi-space-gray-refurbished"
+     },
+     {
+      "kind": "bid",
+      "price": 199.95,
+      "title": "Apple iPad 2020 (8th Gen) 128GB Wifi Zwart Losse Tablet",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2408611039-apple-ipad-2020-8th-gen-128gb-wifi-zwart-losse-tablet"
+     },
+     {
+      "kind": "bid",
+      "price": 199.99,
+      "title": "iPad 2020 8th Gen 128GB 4G + Wifi | in Nette Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446995966-ipad-2020-8th-gen-128gb-4g-wifi-in-nette-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "IPad Air 4th Gen (2020) (64GB)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2441656029-ipad-air-4th-gen-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 449.0,
+      "title": "iPad Pro (2e gen) 2020 - 11 inch - 128GB - WiFi - Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2417031197-ipad-pro-2e-gen-2020-11-inch-128gb-wifi-zilver"
+     }
+    ],
+    "low": 153.0,
+    "median": 184.99,
+    "model": null,
+    "outliers": [
+     500.0
+    ],
+    "prices": [
+     5.0,
+     99.0,
+     149.0,
+     165.0,
+     179.99,
+     179.99,
+     189.99,
+     195.0,
+     199.95,
+     199.99,
+     350.0,
+     449.0
+    ],
+    "query": "ipad 2020 gen",
+    "url": "https://www.marktplaats.nl/q/ipad+2020+gen/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/ipad+2020+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+2020+gen/",
+   "pickup": "Huivelde 50, 9240 Zele, België",
+   "pickupWhen": "Mon 19 Oct, 13:00–15:30",
+   "premium": 0.19,
+   "site": "openbareverkopen",
+   "siteName": "Openbare Verkopen (BE)",
+   "title": "iPad 2020 8th Gen.",
+   "trip": {
+    "approx": false,
+    "cost": 9.23,
+    "from": "Gent",
+    "km": 35.8,
+    "min": 28
+   },
+   "units": 1,
+   "url": "https://www.openbare-verkopen.be/lot/751330",
+   "vat": 0.21
+  },
+  {
+   "auction": "Apple & Samsung Phones - Tablets en Pads",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T17:32:00+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751332/IMG_0067_kleinOK.jpeg",
+   "isDeal": true,
+   "isNew": true,
+   "item": "iPad",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "openbareverkopen:751332",
+   "location": "Zele",
+   "market": 162.5,
+   "marketSource": "marktplaats",
+   "maxBid": 36.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 42,
+    "high": 506.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "ipad pro 12.9 otterbox defender 12.9",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446233327-ipad-pro-12-9-otterbox-defender-12-9"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Lege doos Apple iPad Pro 12,9 -inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449559500-lege-doos-apple-ipad-pro-12-9-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 36.99,
+      "title": "KeyboardCase - iPad Pro 12.9 & Air 13\" (2024) | Retourdeal",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2449384017-keyboardcase-ipad-pro-12-9-air-13-2024-retourdeal"
+     },
+     {
+      "kind": "bid",
       "price": 50.0,
-      "title": "Makita DHP453 Accuboormachine 18V - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439835044-makita-dhp453-accuboormachine-18v-gebruikt"
+      "title": "iPad Pro 2016 (9,7 inch)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448522383-ipad-pro-2016-9-7-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K15)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445941467-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k15"
      },
      {
       "kind": "bid",
       "price": 75.0,
-      "title": "Makita DHP453 14.4V Accuboormachine met 2 accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445290604-makita-dhp453-14-4v-accuboormachine-met-2-accu-s"
+      "title": "iPad Pro 9,7 inch 128GB 2016 - Goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448134486-ipad-pro-9-7-inch-128gb-2016-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K122)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445788262-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k122"
+     },
+     {
+      "kind": "fixed",
+      "price": 85.0,
+      "title": "Apple Magic Keyboard Ipad Pro 12.9”",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449061130-apple-magic-keyboard-ipad-pro-12-9"
      },
      {
       "kind": "bid",
-      "price": 79.99,
-      "title": "Makita DHP453 Boormachine body | Met garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446502674-makita-dhp453-boormachine-body-met-garantie"
+      "price": 90.0,
+      "title": "iPad Pro Smart Keyboard Folio 12.9 inch (gen 3) (ongebruikt)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447257393-ipad-pro-smart-keyboard-folio-12-9-inch-gen-3-ongebruikt"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K133)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445788882-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k133"
      },
      {
       "kind": "bid",
-      "price": 79.99,
-      "title": "Makita DHP453 Boormachine body | Met garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442583253-makita-dhp453-boormachine-body-met-garantie"
+      "price": 100.0,
+      "title": "ipad pro 9.6",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449189183-ipad-pro-9-6"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPad Pro 9.7 Rose Gold 32 GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449425629-ipad-pro-9-7-rose-gold-32-gb"
+     },
+     {
+      "kind": "bid",
+      "price": 135.0,
+      "title": "iPad Pro 12,9 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448850441-ipad-pro-12-9-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 135.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K57)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445937284-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k57"
+     },
+     {
+      "kind": "bid",
+      "price": 139.0,
+      "title": "Apple Magic Keyboard voor iPad Pro 12.9” (Zo goed als nieuw)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445728156-apple-magic-keyboard-voor-ipad-pro-12-9-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 149.0,
+      "title": "Apple Magic Keyboard Ipad Air 13 M2 M3 en Ipad Pro 12.9",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2449350253-apple-magic-keyboard-ipad-air-13-m2-m3-en-ipad-pro-12-9"
+     },
+     {
+      "kind": "bid",
+      "price": 149.0,
+      "title": "Apple Magic Keyboard voor iPad Pro 12.9 inch (ZGAN)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446550618-apple-magic-keyboard-voor-ipad-pro-12-9-inch-zgan"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "iPad Pro 9,7 inch 128 GB LTE (MLQ32FD/A)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447642559-ipad-pro-9-7-inch-128-gb-lte-mlq32fd-a"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "iPad Pro 128GB 9,7inch incl doos",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448213612-ipad-pro-128gb-9-7inch-incl-doos"
+     },
+     {
+      "kind": "bid",
+      "price": 159.0,
+      "title": "Apple iPad Pro 12,9” 128GB WiFi/Cellular + originele doos",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449370815-apple-ipad-pro-12-9-128gb-wifi-cellular-originele-doos"
+     },
+     {
+      "kind": "fixed",
+      "price": 160.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K52)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445936785-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k52"
+     },
+     {
+      "kind": "fixed",
+      "price": 165.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K20)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445936269-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k20"
+     },
+     {
+      "kind": "fixed",
+      "price": 165.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K103)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445795464-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k103"
+     },
+     {
+      "kind": "fixed",
+      "price": 165.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K53)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445794767-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k53"
+     },
+     {
+      "kind": "fixed",
+      "price": 170.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K17)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445934094-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k17"
+     },
+     {
+      "kind": "fixed",
+      "price": 170.0,
+      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K131)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445796136-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k131"
+     },
+     {
+      "kind": "fixed",
+      "price": 175.0,
+      "title": "Magic Keyboard voor iPad Pro 12.9 (3e-6e gen)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2448852104-magic-keyboard-voor-ipad-pro-12-9-3e-6e-gen"
+     },
+     {
+      "kind": "fixed",
+      "price": 219.0,
+      "title": "Apple iPad Pro 12,9 inch (2e generatie, 2017) 64 GB WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448049304-apple-ipad-pro-12-9-inch-2e-generatie-2017-64-gb-wifi"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Apple iPad Pro 12,9 inch (2018) 256GB Wi-Fi + Smart Keyboard",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449433142-apple-ipad-pro-12-9-inch-2018-256gb-wi-fi-smart-keyboard"
+     },
+     {
+      "kind": "fixed",
+      "price": 450.0,
+      "title": "Ipad Pro 12.9 inch 4th gen - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449086542-ipad-pro-12-9-inch-4th-gen-zo-goed-als-nieuw"
      }
     ],
-    "low": 56.25,
-    "median": 77.5,
-    "model": "DHP453",
+    "low": 97.5,
+    "median": 162.5,
+    "model": null,
     "outliers": [],
     "prices": [
+     25.0,
+     30.0,
+     36.99,
+     50.0,
      50.0,
      75.0,
-     79.99,
-     79.99
-    ],
-    "query": "makita dhp453",
-    "url": "https://www.marktplaats.nl/q/makita+dhp453/"
-   },
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "DHP453",
-    "note": "exact model Makita DHP453",
-    "search": "https://www.marktplaats.nl/q/makita+dhp453/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+dhp453/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita LXT Accu klopboormachine DHP453",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Makita-LXT-Accu-klopboormachine-DHP453/3288573/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288574|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288574",
-   "location": "Bolsward",
-   "market": 136.25,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 2,
-    "high": 153.12,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 125.0,
-      "title": "Makita Accu Haakse Slijper DGA513 - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447960312-makita-accu-haakse-slijper-dga513-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 147.5,
-      "title": "Makita DGA513 18V accu Haakse slijper 125 mm motorrem body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2429108805-makita-dga513-18v-accu-haakse-slijper-125-mm-motorrem-body"
-     }
-    ],
-    "low": 119.38,
-    "median": 136.25,
-    "model": "DGA513",
-    "outliers": [],
-    "prices": [
+     80.0,
+     85.0,
+     90.0,
+     90.0,
+     100.0,
      125.0,
-     147.5
+     135.0,
+     135.0,
+     139.0,
+     149.0,
+     149.0,
+     150.0,
+     150.0,
+     159.0,
+     160.0,
+     165.0,
+     165.0,
+     165.0,
+     170.0,
+     170.0,
+     175.0,
+     219.0,
+     350.0,
+     450.0,
+     500.0,
+     500.0,
+     525.0,
+     599.0,
+     685.0,
+     699.0,
+     700.0,
+     799.0,
+     850.0,
+     850.0,
+     1000.0,
+     1000.0
     ],
-    "query": "makita dga513",
-    "url": "https://www.marktplaats.nl/q/makita+dga513/"
+    "query": "ipad pro 9",
+    "url": "https://www.marktplaats.nl/q/ipad+pro+9/"
    },
    "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "DGA513",
-    "note": "exact model Makita DGA513",
-    "search": "https://www.marktplaats.nl/q/makita+dga513/"
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/ipad+pro+9/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+dga513/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita LXT Accu Haakse slijpmachine DGA513",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+9/",
+   "pickup": "Huivelde 50, 9240 Zele, België",
+   "pickupWhen": "Mon 19 Oct, 13:00–15:30",
+   "premium": 0.19,
+   "site": "openbareverkopen",
+   "siteName": "Openbare Verkopen (BE)",
+   "title": "iPad Pro 9.7 inch",
    "trip": {
     "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
+    "cost": 9.23,
+    "from": "Gent",
+    "km": 35.8,
+    "min": 28
    },
    "units": 1,
-   "url": "https://www.proveiling.nl/Makita-LXT-Accu-Haakse-slijpmachine-DGA513/3288574/detail",
+   "url": "https://www.openbare-verkopen.be/lot/751332",
    "vat": 0.21
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-12T20:00:00+02:00",
    "closesDay": null,
    "count": 1,
@@ -8723,7 +8710,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288575|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8996,6 +8983,681 @@
   },
   {
    "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288583|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288583",
+   "location": "Bolsward",
+   "market": 62.49,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 10,
+    "high": 83.74,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "Milwaukee M18 REDLITHIUM 5.0 Ah Accu (M18B5)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2442702465-milwaukee-m18-redlithium-5-0-ah-accu-m18b5"
+     },
+     {
+      "kind": "bid",
+      "price": 59.95,
+      "title": "Milwaukee M18B5 Accu M18 5,0Ah in Zeer Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2443628727-milwaukee-m18b5-accu-m18-5-0ah-in-zeer-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "Milwaukee, M18B5, Accu, 5, A.H, Rood/Red | Netjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442098538-milwaukee-m18b5-accu-5-a-h-rood-red-netjes"
+     },
+     {
+      "kind": "bid",
+      "price": 59.99,
+      "title": "Milwaukee M18B5 Accu | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2408870861-milwaukee-m18b5-accu-met-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "Milwaukee M18B5 Accu 5 AH | Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442239997-milwaukee-m18b5-accu-5-ah-nette-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 64.99,
+      "title": "Milwaukee M18 M18B5 5.0Ah Accu | Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445405080-milwaukee-m18-m18b5-5-0ah-accu-nieuw-in-doos"
+     },
+     {
+      "kind": "bid",
+      "price": 64.99,
+      "title": "Milwaukee M18 M18B5 5.0Ah Accu | Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2441785906-milwaukee-m18-m18b5-5-0ah-accu-nieuw-in-doos"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Milwaukee M18 B5 REDLITHIUM 5.0 Ah Accu - Nieuw in doos",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431736164-milwaukee-m18-b5-redlithium-5-0-ah-accu-nieuw-in-doos"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.95,
+      "title": "Milwaukee M12-18FC Snellader met M18B5 Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448192870-milwaukee-m12-18fc-snellader-met-m18b5-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Milwaukee M18B5 REDLITHIUM 5.0Ah Accu (Nieuw, Origineel)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449349045-milwaukee-m18b5-redlithium-5-0ah-accu-nieuw-origineel"
+     }
+    ],
+    "low": 59.98,
+    "median": 62.49,
+    "model": "M18B5",
+    "outliers": [
+     350.0
+    ],
+    "prices": [
+     55.0,
+     59.95,
+     59.99,
+     59.99,
+     59.99,
+     64.99,
+     64.99,
+     75.0,
+     109.95,
+     120.0
+    ],
+    "query": "milwaukee m18b5",
+    "url": "https://www.marktplaats.nl/q/milwaukee+m18b5/"
+   },
+   "mpPlan": {
+    "brand": "milwaukee",
+    "kind": "exact",
+    "model": "M18B5",
+    "note": "exact model Milwaukee M18B5",
+    "search": "https://www.marktplaats.nl/q/milwaukee+m18b5/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/milwaukee+m18b5/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Milwaukee Accu Li-ion M18B5 - 5.0Ah, 18V",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Milwaukee-Accu-Li-ion-M18B5---50Ah-18V/3288583/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288540|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288540",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GWS 1400",
+    "note": "exact model Bosch Professional GWS 1400",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GWS 1400 haakse slijper",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288540/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288541|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288541",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GWS 1400",
+    "note": "exact model Bosch Professional GWS 1400",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GWS 1400 haakse slijper",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288541/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288542|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288542",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GWS 1400",
+    "note": "exact model Bosch Professional GWS 1400",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GWS 1400 haakse slijper",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288542/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288543|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288543",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GWS 17",
+    "note": "exact model Bosch Professional GWS 17",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+17/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+17/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GWS 17-125 PSB haakse slijper",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-17-125-PSB-haakse-slijper/3288543/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288544|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288544",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GWS 1400",
+    "note": "exact model Bosch Professional GWS 1400",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gws+1400/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GWS 1400 haakse slijper",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3288544/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288545|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288545",
+   "location": "Bolsward",
+   "market": 89.99,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 3,
+    "high": 180.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 79.0,
+      "title": "Bosch GSB 21-2 RE Professional Klopboormachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443750504-bosch-gsb-21-2-re-professional-klopboormachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Bosch Professional GSB 21-2 RE Klopboor | Gebruikte Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441951045-bosch-professional-gsb-21-2-re-klopboor-gebruikte-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "Bosch GSB 21-2 RE Professional Klopboormachine - Nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2433989363-bosch-gsb-21-2-re-professional-klopboormachine-nieuw"
+     }
+    ],
+    "low": 79.0,
+    "median": 89.99,
+    "model": "GSB 21",
+    "outliers": [],
+    "prices": [
+     79.0,
+     89.99,
+     180.0
+    ],
+    "query": "bosch professional gsb 21",
+    "url": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/"
+   },
+   "mpPlan": {
+    "brand": "bosch professional",
+    "kind": "exact",
+    "model": "GSB 21",
+    "note": "exact model Bosch Professional GSB 21",
+    "search": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/bosch+professional+gsb+21/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "BOSCH Professional GSB 21-2 RCT boormachine",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/BOSCH-Professional-GSB-21-2-RCT-boormachine/3288545/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288637|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288637",
+   "location": "Bolsward",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+9032+bandvijl/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+9032+bandvijl/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita 9x533 mm 9032 bandvijl",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-9x533-mm-9032-bandvijl/3288637/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288573|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288573",
+   "location": "Bolsward",
+   "market": 77.5,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 4,
+    "high": 79.99,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita DHP453 Accuboormachine 18V - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439835044-makita-dhp453-accuboormachine-18v-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita DHP453 14.4V Accuboormachine met 2 accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445290604-makita-dhp453-14-4v-accuboormachine-met-2-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 79.99,
+      "title": "Makita DHP453 Boormachine body | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446502674-makita-dhp453-boormachine-body-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 79.99,
+      "title": "Makita DHP453 Boormachine body | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442583253-makita-dhp453-boormachine-body-met-garantie"
+     }
+    ],
+    "low": 56.25,
+    "median": 77.5,
+    "model": "DHP453",
+    "outliers": [],
+    "prices": [
+     50.0,
+     75.0,
+     79.99,
+     79.99
+    ],
+    "query": "makita dhp453",
+    "url": "https://www.marktplaats.nl/q/makita+dhp453/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "DHP453",
+    "note": "exact model Makita DHP453",
+    "search": "https://www.marktplaats.nl/q/makita+dhp453/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+dhp453/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita LXT Accu klopboormachine DHP453",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-LXT-Accu-klopboormachine-DHP453/3288573/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288574|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288574",
+   "location": "Bolsward",
+   "market": 136.25,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-03T13:29:07.180092+00:00",
+    "count": 2,
+    "high": 153.12,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Makita Accu Haakse Slijper DGA513 - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447960312-makita-accu-haakse-slijper-dga513-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 147.5,
+      "title": "Makita DGA513 18V accu Haakse slijper 125 mm motorrem body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2429108805-makita-dga513-18v-accu-haakse-slijper-125-mm-motorrem-body"
+     }
+    ],
+    "low": 119.38,
+    "median": 136.25,
+    "model": "DGA513",
+    "outliers": [],
+    "prices": [
+     125.0,
+     147.5
+    ],
+    "query": "makita dga513",
+    "url": "https://www.marktplaats.nl/q/makita+dga513/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "DGA513",
+    "note": "exact model Makita DGA513",
+    "search": "https://www.marktplaats.nl/q/makita+dga513/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+dga513/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita LXT Accu Haakse slijpmachine DGA513",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-LXT-Accu-Haakse-slijpmachine-DGA513/3288574/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
    "bid": 10.0,
    "bidFromEmail": false,
    "bids": 0,
@@ -9007,7 +9669,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288576|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -9292,7 +9954,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288577|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -9577,7 +10239,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288578|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -9862,7 +10524,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288579|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -9910,7 +10572,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288580|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -9958,7 +10620,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288581|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10006,7 +10668,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288582|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10179,144 +10841,9 @@
    "delivery": false,
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288583|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288583",
-   "location": "Bolsward",
-   "market": 62.49,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-03T13:29:07.180092+00:00",
-    "count": 10,
-    "high": 83.74,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Milwaukee M18 REDLITHIUM 5.0 Ah Accu (M18B5)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2442702465-milwaukee-m18-redlithium-5-0-ah-accu-m18b5"
-     },
-     {
-      "kind": "bid",
-      "price": 59.95,
-      "title": "Milwaukee M18B5 Accu M18 5,0Ah in Zeer Nette Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2443628727-milwaukee-m18b5-accu-m18-5-0ah-in-zeer-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Milwaukee, M18B5, Accu, 5, A.H, Rood/Red | Netjes",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442098538-milwaukee-m18b5-accu-5-a-h-rood-red-netjes"
-     },
-     {
-      "kind": "bid",
-      "price": 59.99,
-      "title": "Milwaukee M18B5 Accu | Met garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2408870861-milwaukee-m18b5-accu-met-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Milwaukee M18B5 Accu 5 AH | Nette Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442239997-milwaukee-m18b5-accu-5-ah-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 64.99,
-      "title": "Milwaukee M18 M18B5 5.0Ah Accu | Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445405080-milwaukee-m18-m18b5-5-0ah-accu-nieuw-in-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 64.99,
-      "title": "Milwaukee M18 M18B5 5.0Ah Accu | Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2441785906-milwaukee-m18-m18b5-5-0ah-accu-nieuw-in-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Milwaukee M18 B5 REDLITHIUM 5.0 Ah Accu - Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431736164-milwaukee-m18-b5-redlithium-5-0-ah-accu-nieuw-in-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.95,
-      "title": "Milwaukee M12-18FC Snellader met M18B5 Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448192870-milwaukee-m12-18fc-snellader-met-m18b5-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Milwaukee M18B5 REDLITHIUM 5.0Ah Accu (Nieuw, Origineel)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449349045-milwaukee-m18b5-redlithium-5-0ah-accu-nieuw-origineel"
-     }
-    ],
-    "low": 59.98,
-    "median": 62.49,
-    "model": "M18B5",
-    "outliers": [
-     350.0
-    ],
-    "prices": [
-     55.0,
-     59.95,
-     59.99,
-     59.99,
-     59.99,
-     64.99,
-     64.99,
-     75.0,
-     109.95,
-     120.0
-    ],
-    "query": "milwaukee m18b5",
-    "url": "https://www.marktplaats.nl/q/milwaukee+m18b5/"
-   },
-   "mpPlan": {
-    "brand": "milwaukee",
-    "kind": "exact",
-    "model": "M18B5",
-    "note": "exact model Milwaukee M18B5",
-    "search": "https://www.marktplaats.nl/q/milwaukee+m18b5/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/milwaukee+m18b5/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Milwaukee Accu Li-ion M18B5 - 5.0Ah, 18V",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Milwaukee-Accu-Li-ion-M18B5---50Ah-18V/3288583/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 10.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288584|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10645,7 +11172,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288585|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10736,7 +11263,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288586|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10827,7 +11354,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288587|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11030,7 +11557,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288588|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11128,7 +11655,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288589|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11398,7 +11925,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288606|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11475,7 +12002,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288608|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11552,7 +12079,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288609|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11629,7 +12156,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288612|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11706,7 +12233,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288613|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -11791,9 +12318,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 12.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 7,
    "closes": "2026-10-13T17:30:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -11882,9 +12409,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-10-13T17:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -11973,9 +12500,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-10-13T17:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12933,9 +13460,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 10.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 5,
    "closes": "2026-10-13T17:43:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12981,9 +13508,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 12.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 4,
    "closes": "2026-10-13T17:43:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -13780,6 +14307,54 @@
    "vat": 0.21
   },
   {
+   "auction": "Verpakkingsmateriaal, partijhandel, computeronderdelen, natuurstenen en mineralen",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:14:32+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/96080400-37aa-4e5e-9a7a-6f5e1606733c/IMG_0078.JPG",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1904967",
+   "location": "Gramsbergen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/plant+composteerbare+koffie+lepels/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/plant+composteerbare+koffie+lepels/",
+   "pickup": "De Steenmaat 5A, 7783DE Gramsbergen",
+   "pickupWhen": "Tue 20 Oct, 09:00–13:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Ca. 20000x Plantware composteerbare koffie lepels, groen",
+   "trip": {
+    "approx": false,
+    "cost": 42.76,
+    "from": "home",
+    "km": 165.7,
+    "min": 136
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/179",
+   "vat": 0.21
+  },
+  {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
    "bid": 10.0,
    "bidFromEmail": false,
@@ -14092,9 +14667,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-10-13T18:26:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14233,7 +14808,7 @@
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-13T18:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14275,6 +14850,227 @@
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/245",
+   "vat": 0.21
+  },
+  {
+   "auction": "Verpakkingsmateriaal, partijhandel, computeronderdelen, natuurstenen en mineralen",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:32:32+00:00",
+   "closesDay": null,
+   "count": 4,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/55d9e2b1-c3ad-4c8d-9001-eccc68327cb2/IMG_1302.JPG",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Plants / decor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1905039",
+   "location": "Gramsbergen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/pot+seleniet+deksel/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/pot+seleniet+deksel/",
+   "pickup": "De Steenmaat 5A, 7783DE Gramsbergen",
+   "pickupWhen": "Tue 20 Oct, 09:00–13:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "4x Seleniet pot met deksel",
+   "trip": {
+    "approx": false,
+    "cost": 42.76,
+    "from": "home",
+    "km": 165.7,
+    "min": 136
+   },
+   "units": 4,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/251",
+   "vat": 0.21
+  },
+  {
+   "auction": "Verpakkingsmateriaal, partijhandel, computeronderdelen, natuurstenen en mineralen",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T18:44:32+00:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/12e21133-c338-4385-8183-4a6bc53c4fca/IMG_0404.JPG",
+   "isDeal": true,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1905087",
+   "location": "Gramsbergen",
+   "market": 195.0,
+   "marketSource": "marktplaats",
+   "maxBid": 22.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 2,
+    "high": 168.75,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "☎️ Cisco CP-DX80-K9 Video WhiteBoard Monitor Laptop DX80 ☎️",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2425664268-cisco-cp-dx80-k9-video-whiteboard-monitor-laptop-dx80"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Cisco DX80 Videoconferentie Monitor met Speakers",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449600719-cisco-dx80-videoconferentie-monitor-met-speakers"
+     }
+    ],
+    "low": 26.25,
+    "median": 97.5,
+    "model": "DX80",
+    "outliers": [],
+    "prices": [
+     50.0,
+     145.0
+    ],
+    "query": "dx80",
+    "url": "https://www.marktplaats.nl/q/monitor+dx80/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "exact",
+    "model": "DX80",
+    "note": "exact model DX80",
+    "search": "https://www.marktplaats.nl/q/monitor+dx80/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+dx80/",
+   "pickup": "De Steenmaat 5A, 7783DE Gramsbergen",
+   "pickupWhen": "Tue 20 Oct, 09:00–13:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "2x Switch en Beeldscherm, Cisco Webex DX80, HDMI KVM",
+   "trip": {
+    "approx": false,
+    "cost": 42.76,
+    "from": "home",
+    "km": 165.7,
+    "min": 136
+   },
+   "units": 2,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/299",
+   "vat": 0.21
+  },
+  {
+   "auction": "Verpakkingsmateriaal, partijhandel, computeronderdelen, natuurstenen en mineralen",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 2,
+   "closes": "2026-10-13T18:59:32+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/2bbcd50f-3201-4ee6-9c79-a3a19b401488/IMG_0452.JPG",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Monitor",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1905147",
+   "location": "Gramsbergen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/monitor+mixpartij/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/monitor+mixpartij/",
+   "pickup": "De Steenmaat 5A, 7783DE Gramsbergen",
+   "pickupWhen": "Tue 20 Oct, 09:00–13:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Mixpartij diverse beeldschermen",
+   "trip": {
+    "approx": false,
+    "cost": 42.76,
+    "from": "home",
+    "km": 165.7,
+    "min": 136
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/359",
+   "vat": 0.21
+  },
+  {
+   "auction": "Verpakkingsmateriaal, partijhandel, computeronderdelen, natuurstenen en mineralen",
+   "bid": 10.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-13T19:00:32+00:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T17:12:10.052751+00:00",
+   "fixed": 0.0,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/6702ed48-9c33-4bdc-b505-46ed19b21a70/IMG_0485.JPG",
+   "isDeal": false,
+   "isNew": true,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "onlineveilingmeester:1905151",
+   "location": "Gramsbergen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+accugereedschap/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+accugereedschap/",
+   "pickup": "De Steenmaat 5A, 7783DE Gramsbergen",
+   "pickupWhen": "Tue 20 Oct, 09:00–13:00",
+   "premium": 0.17,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "title": "Makita accugereedschap",
+   "trip": {
+    "approx": false,
+    "cost": 42.76,
+    "from": "home",
+    "km": 165.7,
+    "min": 136
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/363",
    "vat": 0.21
   },
   {
@@ -14443,7 +15239,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751784/20260925_115836_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14717,9 +15513,9 @@
   },
   {
    "auction": "IT en multimedia: servers, laptops, netwerk",
-   "bid": 80.0,
+   "bid": 110.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 8,
    "closes": "2026-10-14T18:05:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -14728,7 +15524,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751786/20260925_120222_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14770,7 +15566,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751787/20260925_120557_kleinOK.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14900,7 +15696,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751788/20260925_120739_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "MacBook",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15220,7 +16016,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751791/20260925_121207_kleinOK.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15262,7 +16058,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751792/20260925_121350_kleinOK.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15596,7 +16392,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/752238/20261001_121618_kleinOK.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -16315,7 +17111,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15747|165743|3287834|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -16521,7 +17317,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15747|165748|3287866|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -16562,17 +17358,81 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15747|165746|3287927|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "proveiling:3287927",
    "location": "Wageningen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 30.0,
+   "marketSource": "marktplaats",
+   "maxBid": 8.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 7,
+    "high": 40.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Handgemaakte keramieken pot met deksel Mardie",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2443511060-handgemaakte-keramieken-pot-met-deksel-mardie"
+     },
+     {
+      "kind": "bid",
+      "price": 17.5,
+      "title": "BePureHome.  Keramieken pot met deksel",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2446125386-bepurehome-keramieken-pot-met-deksel"
+     },
+     {
+      "kind": "bid",
+      "price": 21.5,
+      "title": "Keramieken potten SET",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2434979101-keramieken-potten-set"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Keramieken pot met deksel - Uniek design",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2420195279-keramieken-pot-met-deksel-uniek-design"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "grijze keramieken pot met dadeltak",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2448942214-grijze-keramieken-pot-met-dadeltak"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "HKliving Keramieken Pot met Deksel - Roze/Zwart/Oranje",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2449239120-hkliving-keramieken-pot-met-deksel-roze-zwart-oranje"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Grote groene Aziatische keramieken pot met deksel",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2449278944-grote-groene-aziatische-keramieken-pot-met-deksel"
+     }
+    ],
+    "low": 17.5,
+    "median": 30.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     15.0,
+     17.5,
+     21.5,
+     30.0,
+     30.0,
+     40.0,
+     50.0
+    ],
+    "query": "pot keramieken",
+    "url": "https://www.marktplaats.nl/q/pot+keramieken/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -16604,17 +17464,109 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15747|165745|3287948|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "proveiling:3287948",
    "location": "Wageningen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 12.5,
+   "marketSource": "marktplaats",
+   "maxBid": 3.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 11,
+    "high": 17.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 3.0,
+      "title": "Pot (2) - Aardewerk - Een paar kraters of vazen",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-glas-en-kristal/a1531709082-pot-2-aardewerk-een-paar-kraters-of-vazen"
+     },
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "Vintage aardewerk pot met blauw decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2428397126-vintage-aardewerk-pot-met-blauw-decor"
+     },
+     {
+      "kind": "bid",
+      "price": 7.0,
+      "title": "Vintage aardewerk pot met blauw decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2424774015-vintage-aardewerk-pot-met-blauw-decor"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Vintage aardewerk pot met blauw decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2437640623-vintage-aardewerk-pot-met-blauw-decor"
+     },
+     {
+      "kind": "bid",
+      "price": 11.0,
+      "title": "Vintage aardewerk pot met blauw bloemmotief",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2446623664-vintage-aardewerk-pot-met-blauw-bloemmotief"
+     },
+     {
+      "kind": "bid",
+      "price": 12.5,
+      "title": "Set van 4 aardewerk potten met blauw decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2423983447-set-van-4-aardewerk-potten-met-blauw-decor"
+     },
+     {
+      "kind": "bid",
+      "price": 14.0,
+      "title": "Aardewerk pot, geglazuurd wit/blauw",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2429940278-aardewerk-pot-geglazuurd-wit-blauw"
+     },
+     {
+      "kind": "fixed",
+      "price": 16.95,
+      "title": "Mooie aardewerken potten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2413026997-mooie-aardewerken-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 17.0,
+      "title": "Vintage Aardewerk Pot met Blauw Decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2446525928-vintage-aardewerk-pot-met-blauw-decor"
+     },
+     {
+      "kind": "fixed",
+      "price": 17.5,
+      "title": "Antieke aardewerken pot met blauw decor",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2435374877-antieke-aardewerken-pot-met-blauw-decor"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Aardewerk cache-pot door Zenith",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2438656155-aardewerk-cache-pot-door-zenith"
+     }
+    ],
+    "low": 7.0,
+    "median": 12.5,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     3.0,
+     5.0,
+     7.0,
+     10.0,
+     11.0,
+     12.5,
+     14.0,
+     16.95,
+     17.0,
+     17.5,
+     20.0
+    ],
+    "query": "pot aardewerk",
+    "url": "https://www.marktplaats.nl/q/pot+aardewerk/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -16646,17 +17598,139 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15747|165746|3287962|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": true,
+   "isDeal": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "proveiling:3287962",
    "location": "Wageningen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 25.0,
+   "marketSource": "marktplaats",
+   "maxBid": 6.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 15,
+    "high": 95.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Keulse potten en vazen vanaf 5,00 euro",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/pottenbakken/m2444766161-keulse-potten-en-vazen-vanaf-5-00-euro"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "keulse potten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2448406036-keulse-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 10.0,
+      "title": "Keulse potten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2443239568-keulse-potten"
+     },
+     {
+      "kind": "bid",
+      "price": 12.5,
+      "title": "Set Keulse potten | bekend als Westerwald -steengoed | nieuw",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2445579883-set-keulse-potten-bekend-als-westerwald-steengoed-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Set van 3 Keulse Potten - Diverse Maten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2448456507-set-van-3-keulse-potten-diverse-maten"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Set van 5 Keulse potten en kruik",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2449047121-set-van-5-keulse-potten-en-kruik"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Set van 2 Keulse potten - Blauw/Grijs",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2443965596-set-van-2-keulse-potten-blauw-grijs"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Oude Keulse Potten, 2 stuks, als nieuw",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2449014624-oude-keulse-potten-2-stuks-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Set Keulse potten (3 stuks) - in uitstekende staat",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2448934024-set-keulse-potten-3-stuks-in-uitstekende-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Keulse potten 2 stuks",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2449226771-keulse-potten-2-stuks"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Set van 3 antieke Keulse potten - decoratief en functioneel",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2448130006-set-van-3-antieke-keulse-potten-decoratief-en-functioneel"
+     },
+     {
+      "kind": "bid",
+      "price": 95.0,
+      "title": "Vintage  Blauw Aardewerk Collectie / Keulse potten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2449040743-vintage-blauw-aardewerk-collectie-keulse-potten"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "set  Keulse potten 11 stuks Keuls aardewerk",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2448624161-set-keulse-potten-11-stuks-keuls-aardewerk"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "keulse potten",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2448969527-keulse-potten"
+     },
+     {
+      "kind": "fixed",
+      "price": 170.0,
+      "title": "2 grote antieke Keulse potten.",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2442898589-2-grote-antieke-keulse-potten"
+     }
+    ],
+    "low": 12.5,
+    "median": 25.0,
+    "model": null,
+    "outliers": [
+     300.0
+    ],
+    "prices": [
+     5.0,
+     10.0,
+     10.0,
+     12.5,
+     15.0,
+     20.0,
+     20.0,
+     25.0,
+     30.0,
+     45.0,
+     75.0,
+     95.0,
+     100.0,
+     120.0,
+     170.0
+    ],
+    "query": "pot keulse potten",
+    "url": "https://www.marktplaats.nl/q/pot+keulse+potten/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -16689,7 +17763,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15748|165756|3287979|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -16731,7 +17805,7 @@
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15748|165754|3288013|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -17097,10 +18171,74 @@
    "itemMinMargin": null,
    "key": "plaatsjebod:60083",
    "location": "Uithoorn",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 50.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 7,
+    "high": 70.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "HP 24fw 23.8-inch Display - Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2443724626-hp-24fw-23-8-inch-display-full-hd-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "HP 24fw 23.8\" Full HD IPS Monitor - HDMI + VGA ,Quick sale",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2426257625-hp-24fw-23-8-full-hd-ips-monitor-hdmi-vga-quick-sale"
+     },
+     {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "HP 24fw 23,8\" Full HD IPS-monitor – HDMI + VGA –",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2433956327-hp-24fw-23-8-full-hd-ips-monitor-hdmi-vga"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "HP 24fw Monitor - beeldscherm Full HD IPS Scherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444492437-hp-24fw-monitor-beeldscherm-full-hd-ips-scherm"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "HP 24fw met Audio Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446931349-hp-24fw-met-audio-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "HP 24FW Full HD IPS Beeldscherm (24 inch)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448464559-hp-24fw-full-hd-ips-beeldscherm-24-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 85.0,
+      "title": "HP 24fw 23.8-inch Display - Full HD Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445247845-hp-24fw-23-8-inch-display-full-hd-monitor"
+     }
+    ],
+    "low": 45.0,
+    "median": 50.0,
+    "model": "24FW",
+    "outliers": [],
+    "prices": [
+     30.0,
+     45.0,
+     45.0,
+     50.0,
+     70.0,
+     70.0,
+     85.0
+    ],
+    "query": "hp 24fw",
+    "url": "https://www.marktplaats.nl/q/hp+24fw/"
+   },
    "mpPlan": {
     "brand": "hp",
     "kind": "exact",
@@ -17172,6 +18310,660 @@
    },
    "units": 1,
    "url": "https://www.plaatsjebod.nl/nl/lots/1-x-partij-kantinegerief-waaronder-2-x-kast-lor-barista-koffiemachine-etc",
+   "vat": 0.21
+  },
+  {
+   "auction": "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories",
+   "bid": 10.0,
+   "bidFromEmail": true,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/0c757f47-b6bb-474c-9978-70d40f703104/file",
+   "isDeal": false,
+   "isNew": false,
+   "item": "MacBook",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-10615",
+   "location": "Loon op zand",
+   "market": 450.0,
+   "marketSource": "marktplaats",
+   "maxBid": 112.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 13,
+    "high": 514.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 325.0,
+      "title": "MacBook pro 16 inch. 2019. I7. 16 GB. 512GB.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449140030-macbook-pro-16-inch-2019-i7-16-gb-512gb"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "MacBook Pro 16-inch (2019)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449351517-macbook-pro-16-inch-2019"
+     },
+     {
+      "kind": "bid",
+      "price": 420.0,
+      "title": "MacBook Pro 2019 16 inch i7 32GB RAM 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448764281-macbook-pro-2019-16-inch-i7-32gb-ram-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 440.0,
+      "title": "MacBook Pro 16 A2141 – Late 2019-16GB|1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1530484685-macbook-pro-16-a2141-late-2019-16gb-1tb"
+     },
+     {
+      "kind": "fixed",
+      "price": 449.95,
+      "title": "Macbook Pro A2141 16''' - i7 - 16GB/512GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2306652474-macbook-pro-a2141-16-i7-16gb-512gb"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "Macbook Pro 16 Inch 2.6GHZ i7 512GB 16GB RAM Zilver (2019)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2448499901-macbook-pro-16-inch-2-6ghz-i7-512gb-16gb-ram-zilver-2019"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "Zeer goed staat) MacBook Pro 16 inch (2019) - i7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449240954-zeer-goed-staat-macbook-pro-16-inch-2019-i7"
+     },
+     {
+      "kind": "bid",
+      "price": 495.0,
+      "title": "MacBook Pro 16 inch 2019 | Core i9 | 16GB | 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2442638627-macbook-pro-16-inch-2019-core-i9-16gb-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 500.0,
+      "title": "Macbook pro 2019 16inch i7 16gb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446549161-macbook-pro-2019-16inch-i7-16gb"
+     },
+     {
+      "kind": "bid",
+      "price": 500.0,
+      "title": "Macbook Pro 16 inch 2019 i7 512gb",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447533183-macbook-pro-16-inch-2019-i7-512gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 529.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i7 / 32GB / 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1508861421-apple-macbook-pro-16-2019-core-i7-32gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 649.0,
+      "title": "Apple MacBook Pro 16 2019 | Core i9 / 32GB / 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1502431289-apple-macbook-pro-16-2019-core-i9-32gb-1tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 675.0,
+      "title": "MacBook Pro 16” i9 64GB RAM, 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447481209-macbook-pro-16-i9-64gb-ram-1tb-ssd"
+     }
+    ],
+    "low": 430.0,
+    "median": 450.0,
+    "model": null,
+    "outliers": [
+     99.0,
+     750.0
+    ],
+    "prices": [
+     325.0,
+     400.0,
+     420.0,
+     440.0,
+     449.95,
+     450.0,
+     450.0,
+     495.0,
+     500.0,
+     500.0,
+     529.0,
+     649.0,
+     675.0
+    ],
+    "query": "macbook pro 16 intel",
+    "url": "https://www.marktplaats.nl/q/macbook+pro+16+intel/"
+   },
+   "mpPlan": {
+    "brand": "apple",
+    "kind": "general",
+    "model": null,
+    "note": "Intel Mac: a rough price, years and specs vary",
+    "search": "https://www.marktplaats.nl/q/macbook+pro+16/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD Rad...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "from": "home",
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10615",
+   "vat": 0.21
+  },
+  {
+   "auction": "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories",
+   "bid": 10.0,
+   "bidFromEmail": true,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/5a9c36d2-0084-4db3-b8fe-55245349b068/file",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-10703",
+   "location": "Loon op zand",
+   "market": 365.0,
+   "marketSource": "marktplaats",
+   "maxBid": 89.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 5,
+    "high": 529.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dell Latitude 5521 i7-11850H 512gb 16gb 15\" 2gb graf.kaart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2357034818-dell-latitude-5521-i7-11850h-512gb-16gb-15-2gb-graf-kaart"
+     },
+     {
+      "kind": "bid",
+      "price": 360.0,
+      "title": "Dell Latitude 5521 i7-11850/16Gb/256Gb Ssd Windows 11",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445931388-dell-latitude-5521-i7-11850-16gb-256gb-ssd-windows-11"
+     },
+     {
+      "kind": "fixed",
+      "price": 365.0,
+      "title": "Dell Latitude 5521 -   i5-11e  16GB  - 256GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1526778380-dell-latitude-5521-i5-11e-16gb-256gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 519.0,
+      "title": "Dell Latitude 5521 Intel Core i7 11850H | 32GB DDR4 | 256...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1524468616-dell-latitude-5521-intel-core-i7-11850h-32gb-ddr4-256"
+     },
+     {
+      "kind": "fixed",
+      "price": 539.0,
+      "title": "Dell Latitude 5521 / 16GB Ram / i7-11850H / 512SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/laptoptassen/m2438844132-dell-latitude-5521-16gb-ram-i7-11850h-512ssd"
+     }
+    ],
+    "low": 355.0,
+    "median": 365.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     350.0,
+     360.0,
+     365.0,
+     519.0,
+     539.0
+    ],
+    "query": "latitude 5521",
+    "url": "https://www.marktplaats.nl/q/latitude+5521/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/latitude+5521+tm+gen/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Dell Latitude 5521 15.6”, Core(TM) i7 11th Gen, 32 GB RAM, 512 GB NVMe, ...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "from": "home",
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-10703",
+   "vat": 0.21
+  },
+  {
+   "auction": "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories",
+   "bid": 50.0,
+   "bidFromEmail": true,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/c81aec20-19f6-4ad5-9f03-60c3601a3ae2/file",
+   "isDeal": false,
+   "isNew": false,
+   "item": "MacBook",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11336",
+   "location": "Loon op zand",
+   "market": 1500.0,
+   "marketSource": "marktplaats",
+   "maxBid": 395.0,
+   "mp": {
+    "asOf": "2026-10-03T17:12:10.052751+00:00",
+    "count": 9,
+    "high": 2074.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 970.0,
+      "title": "MacBook Pro 16\" (2021) M1 Max, 32GB, 512GB, Space Gray",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449075241-macbook-pro-16-2021-m1-max-32gb-512gb-space-gray"
+     },
+     {
+      "kind": "bid",
+      "price": 1250.0,
+      "title": "Apple MacBook Pro 16\" 2021 M1 Max 32GB 1TB Zilver Silver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2444234778-apple-macbook-pro-16-2021-m1-max-32gb-1tb-zilver-silver"
+     },
+     {
+      "kind": "fixed",
+      "price": 1299.0,
+      "title": "MacBook Pro 2021 | M1 Max | 24C GPU | 32GB | 512GB 16 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/a1531196062-macbook-pro-2021-m1-max-24c-gpu-32gb-512gb-16-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 1399.0,
+      "title": "Macbook Pro 16\" - Apple M1 Max",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2446338683-macbook-pro-16-apple-m1-max"
+     },
+     {
+      "kind": "fixed",
+      "price": 1500.0,
+      "title": "MacBook Pro 16\" 2021 | M1 Max | 32GB | 1TB SSD | Nette staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2430835016-macbook-pro-16-2021-m1-max-32gb-1tb-ssd-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 1800.0,
+      "title": "Apple MacBook Pro 16-inch – M1 Max – 32GB RAM – 2TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447829171-apple-macbook-pro-16-inch-m1-max-32gb-ram-2tb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 2000.0,
+      "title": "MacBook Pro 16” 2021 | M1 Max | 64GB | 4TB SSD | Spacegrijs",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2416000433-macbook-pro-16-2021-m1-max-64gb-4tb-ssd-spacegrijs"
+     },
+     {
+      "kind": "fixed",
+      "price": 2149.0,
+      "title": "MacBook Pro 16 inch 2021 M1 Max 64GB 1TB Space Gray",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2447884304-macbook-pro-16-inch-2021-m1-max-64gb-1tb-space-gray"
+     },
+     {
+      "kind": "fixed",
+      "price": 2499.0,
+      "title": "Macbook Pro 16\" 2021 M1 Max 64GB+4000GB SSD Garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2438803073-macbook-pro-16-2021-m1-max-64gb-4000gb-ssd-garantie"
+     }
+    ],
+    "low": 1274.5,
+    "median": 1500.0,
+    "model": "MacBook Pro 16 M1 MAX",
+    "outliers": [],
+    "prices": [
+     970.0,
+     1250.0,
+     1299.0,
+     1399.0,
+     1500.0,
+     1800.0,
+     2000.0,
+     2149.0,
+     2499.0
+    ],
+    "query": "macbook pro 16 m1 max",
+    "url": "https://www.marktplaats.nl/q/macbook+pro+16+m1+max/"
+   },
+   "mpPlan": {
+    "brand": "apple",
+    "kind": "exact",
+    "model": "MacBook Pro 16 M1 MAX",
+    "note": "exact: macbook pro 16 inch m1 max",
+    "search": "https://www.marktplaats.nl/q/macbook+pro+16+m1+max/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+16+m1+max/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1  TB NVMe Laptop",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "from": "home",
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11336",
+   "vat": 0.21
+  },
+  {
+   "auction": "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories",
+   "bid": 10.0,
+   "bidFromEmail": true,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/8aed2d77-ef98-4077-8cc0-b9d114e565d3/file",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11389",
+   "location": "Loon op zand",
+   "market": 579.0,
+   "marketSource": "marktplaats",
+   "maxBid": 147.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 5,
+    "high": 797.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 375.0,
+      "title": "Dell Latitude 7430 14\" Touch Screen i5-1245U 16GB 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2424695262-dell-latitude-7430-14-touch-screen-i5-1245u-16gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "Dell Latitude 7430 (Touch Business Laptop)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/computerbehuizingen/m2431819373-dell-latitude-7430-touch-business-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 579.0,
+      "title": "Dell Latitude 7430 | i7-1270P | 32GB DDR5 | 512GB | Touch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448366107-dell-latitude-7430-i7-1270p-32gb-ddr5-512gb-touch"
+     },
+     {
+      "kind": "fixed",
+      "price": 595.0,
+      "title": "Studentenlaptop: Dell Latitude 7430 2-in-1 / Core i7 / 16GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444925490-studentenlaptop-dell-latitude-7430-2-in-1-core-i7-16gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 999.0,
+      "title": "Nieuw: Dell Latitude 7430 i7-1265U 16gb ram 512gb SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m1957202432-nieuw-dell-latitude-7430-i7-1265u-16gb-ram-512gb-ssd"
+     }
+    ],
+    "low": 437.5,
+    "median": 579.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     375.0,
+     500.0,
+     579.0,
+     595.0,
+     999.0
+    ],
+    "query": "latitude 7430",
+    "url": "https://www.marktplaats.nl/q/latitude+7430/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/latitude+7430+tm+gen/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "Dell Latitude 7430 14”, Core(TM) i7 12th Gen, 32 GB RAM, 1 TB NVMe Touch...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "from": "home",
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11389",
+   "vat": 0.21
+  },
+  {
+   "auction": "Computers, Tablets, Desktops, Laptops, Smartphones & Accessories",
+   "bid": 10.0,
+   "bidFromEmail": true,
+   "bids": null,
+   "closes": null,
+   "closesDay": "2026-10-14",
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-02T06:58:21.638896+00:00",
+   "fixed": 0.0,
+   "image": "https://media.tbauctions.com/image-media/0d9ae29d-e6a4-4a39-894b-5e7d35ba5696/file",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Laptop",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "troostwijk:A1-38890-11596",
+   "location": "Loon op zand",
+   "market": 1200.0,
+   "marketSource": "marktplaats",
+   "maxBid": 314.0,
+   "mp": {
+    "asOf": "2026-10-02T06:58:21.638896+00:00",
+    "count": 16,
+    "high": 2724.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "New HP ZBook Power G10 Motherboard i7-13700H, RTX A3000 8GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/moederborden/m2402307812-new-hp-zbook-power-g10-motherboard-i7-13700h-rtx-a3000-8gb"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
+      "title": "HP Zbook Firefly G10 Ryzen 9 Pro - 16GB DDR5 RAM 1TB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439720686-hp-zbook-firefly-g10-ryzen-9-pro-16gb-ddr5-ram-1tb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 850.0,
+      "title": "HP ZBook FireFly G10 14 inch i7 32GB 1TB Rtx a500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449011504-hp-zbook-firefly-g10-14-inch-i7-32gb-1tb-rtx-a500"
+     },
+     {
+      "kind": "fixed",
+      "price": 885.0,
+      "title": "HP Zbook Power G10 -   i7-13e  8GB  - 256GB  - GPU",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453834-hp-zbook-power-g10-i7-13e-8gb-256gb-gpu"
+     },
+     {
+      "kind": "fixed",
+      "price": 899.0,
+      "title": "HP ZBook Firefly 16 G10 | Core i7 / 32GB / 512GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1530256734-hp-zbook-firefly-16-g10-core-i7-32gb-512gb-ssd"
+     },
+     {
+      "kind": "fixed",
+      "price": 900.0,
+      "title": "HP ZBook Studio 16 G10 - Core i9 / RTX 4070",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2437342313-hp-zbook-studio-16-g10-core-i9-rtx-4070"
+     },
+     {
+      "kind": "fixed",
+      "price": 1050.0,
+      "title": "HP ZBook FireFly 14 inch G10 64GB 2TB RTX A500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2441578016-hp-zbook-firefly-14-inch-g10-64gb-2tb-rtx-a500"
+     },
+     {
+      "kind": "fixed",
+      "price": 1155.0,
+      "title": "HP Zbook Firefly 16 G10 -   i7-13e  - 16 inch - 8GB  - 256GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453839-hp-zbook-firefly-16-g10-i7-13e-16-inch-8gb-256gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 1245.0,
+      "title": "HP ZBook Power 15 G10 - Core i7 / 32GB / 512GB / RTX 1000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438388071-hp-zbook-power-15-g10-core-i7-32gb-512gb-rtx-1000"
+     },
+     {
+      "kind": "bid",
+      "price": 1299.0,
+      "title": "HP ZBook Power G10 Workstation Laptop -i7/32GB/ RTX A100",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2415703815-hp-zbook-power-g10-workstation-laptop-i7-32gb-rtx-a100"
+     },
+     {
+      "kind": "fixed",
+      "price": 1375.0,
+      "title": "HP ZBook FireFly 16 G10 - Core i7-1365 / 32GB / RTX A500 4GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439094532-hp-zbook-firefly-16-g10-core-i7-1365-32gb-rtx-a500-4gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 2199.99,
+      "title": "HP ZBook Studio 16 G10 - i7-13800H - 64 GB - 1 TB - RTX 3000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2394087238-hp-zbook-studio-16-g10-i7-13800h-64-gb-1-tb-rtx-3000"
+     },
+     {
+      "kind": "fixed",
+      "price": 2899.0,
+      "title": "HP ZBook Fury 16 G10 - Core i7-13850HX / 64GB / RTX 3500",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2439069625-hp-zbook-fury-16-g10-core-i7-13850hx-64gb-rtx-3500"
+     },
+     {
+      "kind": "fixed",
+      "price": 2899.99,
+      "title": "HP ZBook Studio 16 G10 - i9-13900H - 64 GB - 1 TB - RTX 4080",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421270613-hp-zbook-studio-16-g10-i9-13900h-64-gb-1-tb-rtx-4080"
+     },
+     {
+      "kind": "fixed",
+      "price": 2999.99,
+      "title": "HP ZBook Fury 16 G10 - i9-13950HX - 128 GB - 3 TB - RTX 5000",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421272932-hp-zbook-fury-16-g10-i9-13950hx-128-gb-3-tb-rtx-5000"
+     },
+     {
+      "kind": "fixed",
+      "price": 3629.0,
+      "title": "HP ZBook Fury 16 G10 - RTX 5000 Ada 16GB / 64GB DDR5",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2438387678-hp-zbook-fury-16-g10-rtx-5000-ada-16gb-64gb-ddr5"
+     }
+    ],
+    "low": 888.5,
+    "median": 1200.0,
+    "model": "G10",
+    "outliers": [],
+    "prices": [
+     500.0,
+     800.0,
+     850.0,
+     885.0,
+     899.0,
+     900.0,
+     1050.0,
+     1155.0,
+     1245.0,
+     1299.0,
+     1375.0,
+     2199.99,
+     2899.0,
+     2899.99,
+     2999.99,
+     3629.0
+    ],
+    "query": "zbook g10",
+    "url": "https://www.marktplaats.nl/q/zbook+g10/"
+   },
+   "mpPlan": {
+    "brand": "zbook",
+    "kind": "exact",
+    "model": "G10",
+    "note": "exact model Zbook G10",
+    "search": "https://www.marktplaats.nl/q/zbook+g10/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/zbook+g10/",
+   "pickup": null,
+   "pickupWhen": null,
+   "premium": 0.18,
+   "site": "troostwijk",
+   "siteName": "Troostwijk",
+   "title": "HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB RAM, 1 TB NVMe, NV...",
+   "trip": {
+    "approx": false,
+    "cost": 11.95,
+    "from": "home",
+    "km": 46.3,
+    "min": 45
+   },
+   "units": 1,
+   "url": "https://www.troostwijkauctions.com/nl/l/A1-38890-11596",
    "vat": 0.21
   },
   {
@@ -17395,7 +19187,7 @@
   {
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 2138,
+   "lots": 2556,
    "name": "Onlineveilingmeester",
    "ok": true
   },
@@ -17423,7 +19215,7 @@
   {
    "error": "",
    "id": "openbareverkopen",
-   "lots": 1470,
+   "lots": 1510,
    "name": "Openbare Verkopen (BE)",
    "ok": true
   },
@@ -17435,23 +19227,23 @@
    "ok": true
   },
   {
-   "error": "FetchError: HTTP 500 for https://auction-prod.azurewebsites.net/auctions/",
+   "error": "",
    "id": "bellauction",
-   "lots": 0,
+   "lots": 111,
    "name": "BellAuction (BE)",
-   "ok": false
+   "ok": true
   },
   {
    "error": "",
    "id": "troostwijk",
-   "lots": 36,
+   "lots": 45,
    "name": "Troostwijk",
    "ok": true
   },
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 60,
+   "lots": 22,
    "name": "Marktplaats prices",
    "ok": true
   }
