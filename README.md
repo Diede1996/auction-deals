@@ -9,7 +9,14 @@ Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **b
 | HNVI veilingen | Auctions held for a curator (bankruptcy trustee) and business closures |
 | Plaats Je Bod | Faillissements- and bedrijfsbeëindigingsveilingen |
 | Onlineveilingmeester | Auctions of type *Faillissement*, business closures, and *Domeinen Roerende Zaken* (government sales of seized goods and surplus, shown as "Domeinen · …"). Add `OVERHEID` in `config.yml` to include municipalities and water boards too. |
+| Veilingwinnaar | Closing restaurants, bakeries, butchers and gyms (*stopzetting*, *wegens bedrijfsbeëindiging*): mostly horeca equipment. Only the town is given, so the trip is an estimate. |
+| Inventarisveilingen | IT, office and warehouse inventory sold for curators (*uit een faillissement*), in Nieuwegein. No buyer's premium. Lots without bids show no price; the starting price is on the lot page. |
+| Nedveiling | Mostly weekly overstock auctions, which are skipped; only auctions whose name or description mentions a bankruptcy, closure or estate are read, so most weeks this adds nothing. |
 | Openbare Verkopen (BE) | openbare-verkopen.be in Flanders: auctions whose name or description mentions a bankruptcy (*faillissement*, *faling*, curator), closure (*stopzetting*) or liquidation. Pickup addresses are in Belgium, so add `HOME_ADDRESS_2` if you're often there (see step 4). |
+| Vlavem (BE) | vlavem.com: closures (*stopzettingsveiling*), estates (*afkomstig uit nalatenschap*) and household contents (*inboedel*). Its many auctions of new overstock are skipped. |
+| BellAuction (BE) | bellauction.be (Waregem): closing shops, restaurants and workshops (*stopzetting*, *inboedel*, *uitruiming*). |
+
+Which auctions count is set by `auction_keywords` in `config.yml`; a word counts anywhere in the auction's name (and, on most sites, its description), so *boedel* also finds *inboedel*.
 
 It runs for free on GitHub, so your laptop can stay off. Each auction site is visited **once a day**, around 06:15, at about one page every 1.5 seconds.
 
@@ -181,12 +188,17 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
    | Troostwijk | 18%. This is an estimate, because Troostwijk sets it per auction. Check the lot page. |
    | HNVI | 19% |
    | Plaats Je Bod | 22% |
+   | Veilingwinnaar | 18% |
+   | Inventarisveilingen | none (only 21% VAT on the bid) |
+   | Nedveiling | 15% |
    | Openbare Verkopen (BE) | 19% (17% or 19% depending on the lot; check the lot page) |
+   | Vlavem (BE) | 17%. VAT is only charged on the 17% for used goods; the bot counts it on the bid too, to be safe. |
+   | BellAuction (BE) | 17% |
 
 2. **Marktplaats value**:
    - **Exact model**: when the lot title has a type number, only listings of that model count. "Curved beeldscherm 27 inch SAMSUNG S27C366EAU" is searched as `samsung s27c366eau`, and a listing must contain S27C366EAU (also written with spaces or dashes). Sizes, memory, voltages and processors (27 inch, 8GB, 18V, i5) are not type numbers. Two listings of the same model are enough. If Marktplaats has fewer, the lot shows *too few listings* and you can set a value yourself.
    - **Rough price**: without a type number, the bot compares the category, brand and a few words from the title, for example `monitor lenovo` (monitor and beeldscherm count as the same). It needs at least 4 listings. A brand or category alone (`hilti`, `monitor`) is never used.
-   - **Type number in the description**: when the title has none ("2 x Dell 24 inch monitor"), the bot reads the lot's description ("… monitor type U2419 HC") once from the lot page and uses that type number, shown as "type number from the lot description". At most 40 new lot pages per scan (`descriptions` in `config.yml`); not for Troostwijk and Onlineveilingmeester, whose lot pages it can't read.
+   - **Type number in the description**: when the title has none ("2 x Dell 24 inch monitor"), the bot reads the lot's description ("… monitor type U2419 HC") once from the lot page and uses that type number, shown as "type number from the lot description". At most 40 new lot pages per scan (`descriptions` in `config.yml`); not for Troostwijk, Onlineveilingmeester and BellAuction, whose lot pages it can't read (BellAuction's descriptions come with its lot list).
    - **Macs**: told apart by line, chip and screen size ("MacBook Pro 16 M1 Max"); Intel Macs get a rough price.
    - It skips wanted ads, defect items, parts, accessories and auction houses advertising their own lots, removes outliers, and takes the median asking price.
 3. **Sale price** = Marktplaats value × your sell percentage (85% by default) × the number of items when the title says so: "40x Colbert", "2 x ...", "Twee ...", "(40 stuks)" or "Colberts x40". Sizes like "180 x 90 cm" don't count. The dashboard shows it as "40 × €20". To count big bulk lots as one item instead, set `max_items_per_lot` in `config.yml`.

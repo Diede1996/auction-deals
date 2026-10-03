@@ -27,6 +27,7 @@ auction_keywords:
   - overlijden         # "inboedel na overlijden"
   - boedel             # "inboedel", "boedelveiling"
   - ontruiming         # "woningontruiming", "huisontruiming"
+  - uitruiming         # Flemish: "volledige uitruiming van kantoor en werkplaats"
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
@@ -61,9 +62,29 @@ sites:
     auction_types: [FAILLISEMENT, DRZ]
     premium: 0.17        # 17% + VAT for VAT items; set per lot: DRZ 10%, margin-scheme items 21%/12.1% incl. VAT
     vat: 0.21
+  veilingwinnaar:        # veilingwinnaar.nl: closing restaurants, bakeries, butchers and gyms
+    enabled: true
+    premium: 0.18        # "De biedprijs is excl. 21 % BTW en 18% Veilingkosten"
+    vat: 0.21
+  inventarisveilingen:   # inventarisveilingen.nl (Nieuwegein): IT and office inventory from bankruptcies
+    enabled: true
+    premium: 0           # "Inventarisveilingen rekent geen extra opgeld/veilingkosten aan kopers"
+    vat: 0.21            # "Uw bod is exclusief BTW"
+  nedveiling:            # nedveiling.nl: mostly overstock; only its bankruptcy/closure/estate auctions are read
+    enabled: true
+    premium: 0.15        # "Veilingkosten 15%"
+    vat: 0.21
   openbareverkopen:      # openbare-verkopen.be (Wielsbeke, Belgium): curator sales and closures in Flanders
     enabled: true
     premium: 0.19        # "17% of 19% (tenzij anders meegedeeld op het kavel)": 19% to be safe
+    vat: 0.21
+  vlavem:                # vlavem.com (Belgium): closures ("stopzettingsveiling"), estates, household contents
+    enabled: true
+    premium: 0.17        # "Het opgeld bedraagt 17% over de bieding"
+    vat: 0.21            # VAT is on the 17% only for used goods; counted on the bid too, to be safe
+  bellauction:           # bellauction.be (Waregem, Belgium): closing shops, restaurants and workshops
+    enabled: true
+    premium: 0.17        # "veilingkosten, 17 % opgeld, en BTW"
     vat: 0.21
 
 # The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)
