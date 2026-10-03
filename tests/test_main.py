@@ -277,7 +277,7 @@ def test_favorite_reminders_and_list(repo, monkeypatch):
     listing, reminder = tg.sent
     assert "Your favorites" in listing and "Apple iPhone 13" in listing
     assert "Closes in 40 min" in reminder and "your max <b>€170</b>" in reminder and "40 km" in reminder
-    # every 15 minutes the job runs again: no second reminder for the same closing time
+    # every 5 minutes the job runs again: no second reminder for the same closing time
     tg.sent.clear()
     run_commands(repo, NOW + timedelta(minutes=15), http_cls=lambda **kw: http, telegram_cls=tg)
     assert tg.sent == []
