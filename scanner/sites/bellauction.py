@@ -7,6 +7,8 @@ The site is an app that gets its data as JSON from auction-prod.azurewebsites.ne
 2. /auctionlots/auction/<id>/count and /auctionlots/auction/<id>/<page>/<size> give the lots: name,
    description, starting bid, highest bid, number of bids, end time and photo.
 Lot pages on the site: https://www.bellauction.be/auctionlot/<id>/<name>.
+The API serves more than one shop and answers "500" unless the request says it comes from bellauction.be
+(the Origin header, as the site itself sends it).
 
 Times have no time zone; they are Belgian (= Dutch) time.
 Buyer's costs: "veilingkosten 17% en BTW" (FAQ).
@@ -29,6 +31,7 @@ SITE = "bellauction"
 API = "https://auction-prod.azurewebsites.net"
 WEB = "https://www.bellauction.be"
 PAGE_SIZE = 100
+HEADERS = {"Origin": WEB, "Referer": WEB + "/"}  # which shop the request is for
 
 
 def slug(text: str) -> str:
@@ -101,16 +104,17 @@ def parse_lots(items: list, auction: Auction, now) -> list[Lot]:
 
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
-    auctions = parse_auctions(ctx.http.json(f"{API}/auctions/"), ctx.now)
-    wanted = [a for a in auctions if ctx.is_bankruptcy(f"{a.title} {a.description}")]
+    auctions = parse_auctions(ctx.http.json(f"{API}/auctions/", headers=HEADERS), ctx.now)
+    wanted = [a for a in auctions if ctx.is_bankruptcy(a.title, a.description)]
     log.info("bellauction: %d running auctions, %d closure/bankruptcy/estate", len(auctions), len(wanted))
     lots: list[Lot] = []
     for a in wanted:
         try:
-            count = int(str(ctx.http.text(f"{API}/auctionlots/auction/{a.auction_id}/count")).strip() or 0)
+            count = int(str(ctx.http.text(f"{API}/auctionlots/auction/{a.auction_id}/count", headers=HEADERS))
+                        .strip() or 0)
         except ValueError:
             count = PAGE_SIZE
         for page in range(1, min(math.ceil(count / PAGE_SIZE), ctx.max_pages) + 1):
-            lots.extend(parse_lots(ctx.http.json(f"{API}/auctionlots/auction/{a.auction_id}/{page}/{PAGE_SIZE}"),
-                                   a, ctx.now))
+            data = ctx.http.json(f"{API}/auctionlots/auction/{a.auction_id}/{page}/{PAGE_SIZE}", headers=HEADERS)
+            lots.extend(parse_lots(data, a, ctx.now))
     return lots

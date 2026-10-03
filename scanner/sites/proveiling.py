@@ -182,7 +182,7 @@ def fetch_from(ctx: SiteContext, site: str, base: str, country: str | None = Non
     """All lots of the bankruptcy, closure and estate auctions on a ProVeiling-style site.
     country: added to pickup addresses ("België") so they're looked up in the right country."""
     auctions = parse_home(ctx.http.text(base + "/"), site, base)
-    bankrupt = [a for a in auctions if ctx.is_bankruptcy(f"{a.title} {a.kind}")]
+    bankrupt = [a for a in auctions if ctx.is_bankruptcy(a.title, a.kind)]
     log.info("%s: %d auctions, %d bankruptcy/closure/estate", site, len(auctions), len(bankrupt))
     lots: list[Lot] = []
     for a in bankrupt:

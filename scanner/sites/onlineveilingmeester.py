@@ -89,7 +89,7 @@ def wanted_auction(a: Auction, is_bankruptcy, types: list[str]) -> bool:
     kind = a.kind.upper()
     if any(t.upper()[:5] in kind for t in types):  # "FAILL" also catches the correct spelling
         return True
-    return is_bankruptcy(f"{a.title} {a.description}")
+    return is_bankruptcy(a.title, a.description)
 
 
 def parse_lot(k: dict, auction: Auction) -> Lot:

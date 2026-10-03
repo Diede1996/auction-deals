@@ -77,7 +77,7 @@ def parse_lots(html: str, auction: Auction) -> list[Lot]:
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
     auctions = parse_auctions(ctx.http.text(f"{BASE}/nl/auctions/"))
     running = [a for a in auctions if a.closes_at is None or a.closes_at > ctx.now]
-    bankrupt = [a for a in running if ctx.is_bankruptcy(f"{a.title} {a.description}")]
+    bankrupt = [a for a in running if ctx.is_bankruptcy(a.title, a.description)]
     log.info("plaatsjebod: %d running auctions, %d bankruptcy", len(running), len(bankrupt))
     lots: list[Lot] = []
     for a in bankrupt:

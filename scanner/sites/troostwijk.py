@@ -91,7 +91,7 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     bankrupt: dict[str, Auction] = {}
     for country in countries:
         for a in list_auctions(ctx, country):
-            if ctx.is_bankruptcy(f"{a.title} {a.description}"):
+            if ctx.is_bankruptcy(a.title, a.description):
                 bankrupt[a.auction_id] = a
     log.info("troostwijk: %d bankruptcy auctions", len(bankrupt))
     if not bankrupt or not ctx.search_terms:

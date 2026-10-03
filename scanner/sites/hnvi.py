@@ -106,7 +106,7 @@ def last_page(html: str) -> int:
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
     auctions = parse_home(ctx.http.text(BASE + "/"))
-    bankrupt = [a for a in auctions if ctx.is_bankruptcy(f"{a.title} {a.description}")]
+    bankrupt = [a for a in auctions if ctx.is_bankruptcy(a.title, a.description)]
     log.info("hnvi: %d auctions, %d bankruptcy", len(auctions), len(bankrupt))
     lots: list[Lot] = []
     for a in bankrupt:

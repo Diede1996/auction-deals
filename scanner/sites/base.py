@@ -16,7 +16,7 @@ from ..util import month_number
 class SiteContext:
     http: Http
     now: datetime
-    is_bankruptcy: Callable[[str], bool]
+    is_bankruptcy: Callable[..., bool]  # is_bankruptcy(auction name, description="")
     search_terms: list[str] = field(default_factory=list)  # phrases from the watchlist
     settings: dict = field(default_factory=dict)  # this site's block from config.yml
     cache: dict = field(default_factory=dict)  # persisted between runs (per site)

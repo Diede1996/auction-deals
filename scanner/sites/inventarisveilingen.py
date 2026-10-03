@@ -121,7 +121,7 @@ def next_page(html: str) -> str | None:
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
     auctions = parse_auctions(ctx.http.text(f"{BASE}/veiling/"), ctx.now)
-    wanted = [a for a in auctions if ctx.is_bankruptcy(f"{a.title} {a.description}")]
+    wanted = [a for a in auctions if ctx.is_bankruptcy(a.title, a.description)]
     log.info("inventarisveilingen: %d running auctions, %d bankruptcy", len(auctions), len(wanted))
     lots: list[Lot] = []
     for a in wanted:

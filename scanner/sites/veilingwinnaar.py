@@ -101,19 +101,16 @@ def parse_lots(html: str, auction: Auction, now) -> list[Lot]:
 
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
+    # Every running auction page is read each time (only a handful): announced auctions often say
+    # "Informatie volgt zsm" at first and get their description and lots later.
     auctions = parse_auctions(ctx.http.text(f"{BASE}/auctions/"), ctx.now)
-    known = ctx.cache.setdefault("bankrupt", {})  # auction id -> True/False
-    for key in [k for k in known if k not in {a.auction_id for a in auctions}]:
-        del known[key]
+    ctx.cache.pop("bankrupt", None)
     lots: list[Lot] = []
     wanted = 0
     for a in auctions:
-        if known.get(a.auction_id) is False:
-            continue
         html = ctx.http.text(a.url)
         parse_auction_page(html, a)
-        known[a.auction_id] = ctx.is_bankruptcy(f"{a.title} {a.description}")
-        if not known[a.auction_id]:
+        if not ctx.is_bankruptcy(a.title, a.description):
             continue
         wanted += 1
         page, seen = 1, set()
