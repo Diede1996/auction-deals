@@ -5,7 +5,7 @@ name: Telegram commands
 # (limited per day in config.yml).
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"    # every 5 minutes (GitHub sometimes starts it a few minutes late); free for public repositories
   workflow_dispatch: {}
 
 permissions:
