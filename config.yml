@@ -29,6 +29,15 @@ auction_keywords:
   - ontruiming         # "woningontruiming", "huisontruiming"
   - uitruiming         # Flemish: "volledige uitruiming van kantoor en werkplaats"
 
+# Also read auctions that aren't a bankruptcy, closure or estate, when their NAME has one of these words:
+# ordinary IT auctions (ex-lease laptops, monitors, Troostwijk's "Computers, Tablets, ...").
+# A trial: margins there are usually thinner (refurbishers bid too). Set enabled: false to stop.
+# Unlike auction_keywords, these only count as a word or the start of one ("it" is not "uit").
+extra_auctions:
+  enabled: true
+  words: [it, ict, computer, laptop, notebook, monitor, beeldscherm, hardware, apple, macbook, ipad, tablets,
+          informatica]   # informatica = Flemish for IT
+
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
 #   vat        VAT charged on bid + premium
@@ -129,9 +138,9 @@ driving:
 troostwijk_alerts:
   enabled: true
   keep_days: 14                 # a lot without a closing time in the email stays this many days
-  # Only lots of bankruptcy and closure auctions (auction name with a word from auction_keywords above),
-  # like the other sites. Troostwijk also sells for businesses ("Computers, Tablets, ..."): set this to
-  # false to see those too. Lots whose auction the email doesn't name are always shown.
+  # Only lots of the same auctions as on the other sites (auction name with a word from auction_keywords,
+  # or from extra_auctions when that's on, so "Computers, Tablets, ..." counts as an IT auction). Set this to
+  # false to see all of Troostwijk's auctions. Lots whose auction the email doesn't name are always shown.
   only_bankruptcy: true
 
 # Lots on your watchlist without a type number in the title ("2 x Dell 24 inch monitor"): the bot reads the

@@ -18,6 +18,8 @@ Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **b
 
 Which auctions count is set by `auction_keywords` in `config.yml`; a word counts anywhere in the auction's name (and, on most sites, its description), so *boedel* also finds *inboedel*.
 
+**IT auctions (trial).** `extra_auctions` in `config.yml` also lets in ordinary IT auctions, without a bankruptcy: auctions whose **name** has a word like *IT*, *ICT*, *computer*, *laptop*, *monitor*, *beeldscherm*, *hardware*, *Apple* or *MacBook* (ex-lease laptops, Troostwijk's "Computers, Tablets, ..."). Expect thinner margins there: refurbishers and traders bid on them too, and laptops and iPads often come without chargers or are locked to a company account (MDM/iCloud). Set `enabled: false` under `extra_auctions` to stop.
+
 It runs for free on GitHub, so your laptop can stay off. Each auction site is visited **once a day**, around 06:15, at about one page every 1.5 seconds.
 
 ---
@@ -91,7 +93,7 @@ You can also forward a Troostwijk email by hand (for example an auction announce
 
 **The bid in the email is old.** Troostwijk's emails show the bid when the email was sent, usually the starting bid (€10), while the lot may be at €900 by now. The bot can't see the current bid (it never visits Troostwijk), so these lots get **Check current bid** instead of *Room to bid*: open the lot and bid only if the current bid is below the max bid. New ones are listed in the morning summary under *New from Troostwijk emails*.
 
-**Only bankruptcy and closure auctions**, like the other sites: lots whose auction name has a word from `auction_keywords` (faillissement, curator, bedrijfsbeëindiging, ...). Troostwijk also sells for businesses (for example "Computers, Tablets, Desktops, ..."): set `only_bankruptcy: false` under `troostwijk_alerts` in `config.yml` to see those too.
+**The same auctions as on the other sites**: lots whose auction name has a word from `auction_keywords` (faillissement, curator, bedrijfsbeëindiging, ...) or, while the IT trial is on, from `extra_auctions` (so "Computers, Tablets, Desktops, ..." counts). Set `only_bankruptcy: false` under `troostwijk_alerts` in `config.yml` to see all of Troostwijk's auctions.
 
 All links in Troostwijk's emails go through their mailing service's tracking links. The bot reads where each link goes from the link itself, so it doesn't "click" anything: no clicks are registered on your account and unsubscribe links are never opened.
 
