@@ -1,4 +1,4 @@
-from . import hnvi, onlineveilingmeester, plaatsjebod, proveiling, troostwijk
+from . import hnvi, onlineveilingmeester, openbareverkopen, plaatsjebod, proveiling, troostwijk
 
 SITES = {
     "troostwijk": troostwijk.fetch_lots,
@@ -6,6 +6,7 @@ SITES = {
     "hnvi": hnvi.fetch_lots,
     "plaatsjebod": plaatsjebod.fetch_lots,
     "onlineveilingmeester": onlineveilingmeester.fetch_lots,
+    "openbareverkopen": openbareverkopen.fetch_lots,
 }
 
 SITE_NAMES = {
@@ -14,5 +15,6 @@ SITE_NAMES = {
     "hnvi": "HNVI",
     "plaatsjebod": "Plaats Je Bod",
     "onlineveilingmeester": "Onlineveilingmeester",
+    "openbareverkopen": "Openbare Verkopen (BE)",
     "marktplaats": "Marktplaats prices",
 }
