@@ -1,6 +1,6 @@
 # Auction deal bot
 
-Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-closure** (bedrijfsbeëindiging) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close and about an hour before.
+Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **business-closure** (bedrijfsbeëindiging) and **estate** (nalatenschap, inboedel) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close and about an hour before.
 
 | Site | What it checks |
 |---|---|
@@ -9,6 +9,7 @@ Once a day this bot checks Dutch **bankruptcy** (faillissement) and **business-c
 | HNVI veilingen | Auctions held for a curator (bankruptcy trustee) and business closures |
 | Plaats Je Bod | Faillissements- and bedrijfsbeëindigingsveilingen |
 | Onlineveilingmeester | Auctions of type *Faillissement*, business closures, and *Domeinen Roerende Zaken* (government sales of seized goods and surplus, shown as "Domeinen · …"). Add `OVERHEID` in `config.yml` to include municipalities and water boards too. |
+| Openbare Verkopen (BE) | openbare-verkopen.be in Flanders: auctions whose name or description mentions a bankruptcy (*faillissement*, *faling*, curator), closure (*stopzetting*) or liquidation. Pickup addresses are in Belgium, so add `HOME_ADDRESS_2` if you're often there (see step 4). |
 
 It runs for free on GitHub, so your laptop can stay off. Each auction site is visited **once a day**, around 06:15, at about one page every 1.5 seconds.
 
@@ -53,7 +54,7 @@ Often somewhere else too, for example in Belgium? Add a second secret `HOME_ADDR
 
 ### 6. First scan
 
-1. Click **Scan auctions → Run workflow → Run workflow**. It takes about 5 minutes.
+1. Click **Scan auctions → Run workflow → Run workflow**. It takes about 5–10 minutes.
 2. You get the morning summary in Telegram, including the link to your dashboard: `https://<your-github-name>.github.io/auction-deals/`. Bookmark it or add it to your phone's home screen.
 
 From now on the scan runs every morning by itself.
@@ -148,7 +149,7 @@ bid this morning €10 · your max €93
 📍 Produktieweg 9, 8304AV Emmeloord · 101 km
 ```
 
-You manage your watchlist by sending the bot commands. It reads them every 15 minutes, which never touches the auction sites.
+You manage your watchlist by sending the bot commands. It reads them every 5 minutes, which never touches the auction sites.
 
 | Command | What it does |
 |---|---|
@@ -180,10 +181,13 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
    | Troostwijk | 18%. This is an estimate, because Troostwijk sets it per auction. Check the lot page. |
    | HNVI | 19% |
    | Plaats Je Bod | 22% |
+   | Openbare Verkopen (BE) | 19% (17% or 19% depending on the lot; check the lot page) |
 
 2. **Marktplaats value**:
    - **Exact model**: when the lot title has a type number, only listings of that model count. "Curved beeldscherm 27 inch SAMSUNG S27C366EAU" is searched as `samsung s27c366eau`, and a listing must contain S27C366EAU (also written with spaces or dashes). Sizes, memory, voltages and processors (27 inch, 8GB, 18V, i5) are not type numbers. Two listings of the same model are enough. If Marktplaats has fewer, the lot shows *too few listings* and you can set a value yourself.
    - **Rough price**: without a type number, the bot compares the category, brand and a few words from the title, for example `monitor lenovo` (monitor and beeldscherm count as the same). It needs at least 4 listings. A brand or category alone (`hilti`, `monitor`) is never used.
+   - **Type number in the description**: when the title has none ("2 x Dell 24 inch monitor"), the bot reads the lot's description ("… monitor type U2419 HC") once from the lot page and uses that type number, shown as "type number from the lot description". At most 40 new lot pages per scan (`descriptions` in `config.yml`); not for Troostwijk and Onlineveilingmeester, whose lot pages it can't read.
+   - **Macs**: told apart by line, chip and screen size ("MacBook Pro 16 M1 Max"); Intel Macs get a rough price.
    - It skips wanted ads, defect items, parts, accessories and auction houses advertising their own lots, removes outliers, and takes the median asking price.
 3. **Sale price** = Marktplaats value × your sell percentage (85% by default) × the number of items when the title says so: "40x Colbert", "2 x ...", "Twee ...", "(40 stuks)" or "Colberts x40". Sizes like "180 x 90 cm" don't count. The dashboard shows it as "40 × €20". To count big bulk lots as one item instead, set `max_items_per_lot` in `config.yml`.
 4. **Driving costs** = distance there and back ÷ 16 km per liter × the Belgian maximum price for Euro 95 E10, read every morning. The pickup address comes from the auction page; distances come from the OSRM route planner (OpenStreetMap). Change the fuel use, price or leave out driving costs in `config.yml` under `driving`. If you collect several lots at the same address, you only drive once.
@@ -202,7 +206,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 - **Being polite to the sites**: one scan a day at a slow pace is a tiny load compared to hourly checking. If you find that a site's terms don't allow automated reading at all, turn it off in `config.yml` (`enabled: false`).
 - **Site problems**: if a site fails 2 daily scans in a row, the bot warns you in Telegram and tells you when it works again. The dashboard header shows each site's status too.
 - **Your address and the public dashboard**: `HOME_ADDRESS` (and `HOME_ADDRESS_2`) are GitHub secrets and never appear in the repository, but the dashboard (which is public) shows the distance from your home to each pickup address, and with two addresses the town of the second one ("from Gent").
-- **Reminders** come from the Telegram job that runs every 15 minutes, so they arrive 45–60 minutes before closing (GitHub sometimes starts it a few minutes late). Closing times are from the morning scan; auction sites can extend a lot when someone bids at the last minute.
+- **Reminders** come from the Telegram job that runs every 5 minutes, so they arrive 55–60 minutes before closing (GitHub sometimes starts it a few minutes late). Closing times are from the morning scan; auction sites can extend a lot when someone bids at the last minute.
 - The bot never bids for you.
 
 ## Troubleshooting
@@ -214,7 +218,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 | **Publish dashboard** fails | Set **Settings → Pages → Source** to **GitHub Actions** and run the scan again. |
 | Dashboard link gives 404 | The first publish can take a few minutes. Check that the repository is public. |
 | A run fails at **Save** | Set **Settings → Actions → General → Workflow permissions** to **Read and write**. |
-| The bot doesn't react | Commands are read every 15 minutes, and GitHub sometimes starts scheduled runs late. Check that `TELEGRAM_CHAT_ID` is set. |
+| The bot doesn't react | Commands are read every 5 minutes, and GitHub sometimes starts scheduled runs late. Check that `TELEGRAM_CHAT_ID` is set. |
 | Too many or too few lots with room to bid | Change your sell percentage (`/sellat`) or minimum margin (`/minmargin`), or add `-words` to exclude accessories. |
 | A site shows "failed" on the dashboard | Send `/status` or open `data/state.json` on GitHub to see the error. *HTTP 403* means the site refuses automated visitors; turn it off in `config.yml`. |
 | No distances or driving costs | Check the `HOME_ADDRESS` secret (street, number and town). The footer of the dashboard says why when it can't find your address or the route planner. |

@@ -1,7 +1,9 @@
 # Technical settings. Your watchlist and profit targets live in watchlist.yml.
 
-# An auction is included when its title or description contains one of these words
-# (bankruptcy and business-closure sales). Add "executie" to also include forced sales (executieveilingen).
+# An auction is included when its title or description contains one of these words: bankruptcy,
+# business-closure and estate sales (people who have to get rid of their things). Words also match inside
+# longer words ("boedel" matches "inboedel" and "boedelveiling"). Add "executie" to also include forced
+# sales (executieveilingen).
 auction_keywords:
   - faillissement
   - failliet
@@ -19,6 +21,12 @@ auction_keywords:
   - stopzetting
   - faling             # Flemish for bankruptcy ("uit diverse falingen")
   - curatele
+  # estates and house clearances
+  - nalatenschap       # also "nalatenschappen"
+  - erfenis
+  - overlijden         # "inboedel na overlijden"
+  - boedel             # "inboedel", "boedelveiling"
+  - ontruiming         # "woningontruiming", "huisontruiming"
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
@@ -53,6 +61,10 @@ sites:
     auction_types: [FAILLISEMENT, DRZ]
     premium: 0.17        # 17% + VAT for VAT items; set per lot: DRZ 10%, margin-scheme items 21%/12.1% incl. VAT
     vat: 0.21
+  openbareverkopen:      # openbare-verkopen.be (Wielsbeke, Belgium): curator sales and closures in Flanders
+    enabled: true
+    premium: 0.19        # "17% of 19% (tenzij anders meegedeeld op het kavel)": 19% to be safe
+    vat: 0.21
 
 # The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)
 digest:
@@ -61,7 +73,7 @@ digest:
   warn_after_failed_scans: 2    # warn in Telegram when a site failed this many daily scans in a row
   ignore_closing_after_days: 30
 
-# Telegram commands are checked every 15 minutes; they never contact the auction sites.
+# Telegram commands are checked every 5 minutes; they never contact the auction sites.
 commands:
   max_extra_scans_per_day: 3    # how often /scan may start an extra scan per day
 
@@ -101,10 +113,16 @@ troostwijk_alerts:
   # false to see those too. Lots whose auction the email doesn't name are always shown.
   only_bankruptcy: true
 
+# Lots on your watchlist without a type number in the title ("2 x Dell 24 inch monitor"): the bot reads the
+# description on the lot page once ("... type U2419 HC") and prices that model. Not for Troostwijk.
+descriptions:
+  enabled: true
+  max_pages_per_run: 40         # new lot pages per scan; descriptions are remembered for 30 days
+
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
   reminders: true               # the closing day (in the morning summary) and before closing
-  remind_minutes_before: 60     # checked every 15 minutes, so reminders arrive 45-60 minutes before
+  remind_minutes_before: 60     # checked every 5 minutes, so reminders arrive 55-60 minutes before
 
 http:
   delay_seconds: 1.5            # pause between requests to the same site
