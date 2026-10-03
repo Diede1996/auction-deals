@@ -40,6 +40,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}   # for driving costs; never written to the repository
+          HOME_ADDRESS_2: ${{ secrets.HOME_ADDRESS_2 }}   # optional second starting point: the closer one is used
           ALERTS_EMAIL: ${{ secrets.ALERTS_EMAIL }}   # mailbox with the forwarded Troostwijk alert emails
           ALERTS_APP_PASSWORD: ${{ secrets.ALERTS_APP_PASSWORD }}
           ALERTS_IMAP_HOST: ${{ secrets.ALERTS_IMAP_HOST }}   # optional, default imap.gmail.com
