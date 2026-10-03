@@ -279,9 +279,10 @@ def _target(a, href: str, resolve) -> str | None:
     return None
 
 
-def parse_email_html(html: str, resolve=None) -> list[dict]:
+def parse_email_html(html: str, resolve=None, stats: dict | None = None) -> list[dict]:
     """Lots in one alert email: [{url, lot_id, title, bid, closes, closes_day, location, auction, image}].
-    `resolve(href)` asks a tracking link where it points, for links whose destination can't be read."""
+    `resolve(href)` asks a tracking link where it points, for links whose destination can't be read.
+    `stats` gets the number of auctions linked, also when the email has no lots."""
     soup = BeautifulSoup(html or "", "html.parser")
     links = [(a, _target(a, a["href"].strip(), resolve)) for a in soup.find_all("a", href=True)]
     lot_of = {id(a): url for a, url in links if url and lot_url(url)}
@@ -306,6 +307,8 @@ def parse_email_html(html: str, resolve=None) -> list[dict]:
         ctx = _context(a, lot_of, url)
         if len(ctx) > len(entry["context"]):
             entry["context"] = ctx
+    if stats is not None:
+        stats["auctions"] = len(auctions)
     out = []
     for e in found.values():
         title = max(e["titles"], key=len) if e["titles"] else title_from_url(e["url"])
@@ -425,7 +428,10 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
     store = state.setdefault("troostwijk_alerts", {})
     lots_seen = store.setdefault("lots", {})
     resolver = TrackerResolver(http, store.setdefault("links", {}))
-    report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "new": 0, "other_auctions": 0}
+    # emails already reported as unreadable: hash of the Message-ID -> when (no subjects: the repository is public)
+    warned = store.setdefault("warned", {})
+    report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "no_lots": 0, "new": 0, "other_auctions": 0,
+              "unreadable_emails": []}  # subject + date of new unreadable emails, for Telegram only
     for msg in mailbox.messages(now - timedelta(days=keep_days)):
         report["emails"] += 1
         html = html_of(msg)
@@ -436,9 +442,19 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             sent = parsedate_to_datetime(msg.get("Date")) if msg.get("Date") else now
         except (TypeError, ValueError):
             sent = now
-        found = parse_email_html(html, resolver)
+        if sent.tzinfo is None:
+            sent = sent.replace(tzinfo=now.tzinfo)
+        stats: dict = {}
+        found = parse_email_html(html, resolver, stats)
         if not found:
+            if stats.get("auctions"):  # an announcement of auctions without lots: nothing to price, nothing wrong
+                report["no_lots"] += 1
+                continue
             report["unreadable"] += 1
+            key = hashlib.sha256((msg.get("Message-ID") or f"{msg.get('Date')}|{msg.get('Subject')}").encode()).hexdigest()[:16]
+            if key not in warned:
+                warned[key] = now.isoformat()
+                report["unreadable_emails"].append({"subject": _subject(msg)[:90], "date": sent})
             continue
         # an alert about one auction has the auction's name as its subject
         auctions = {f["lot_id"].rsplit("-", 1)[0] for f in found}
@@ -452,12 +468,12 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             if rec is None:
                 report["new"] += 1
                 rec = lots_seen[f["lot_id"]] = {"first": now.isoformat()}
-            if sent.tzinfo is None:
-                sent = sent.replace(tzinfo=now.tzinfo)
             if not rec.get("mail") or sent >= datetime.fromisoformat(rec["mail"]):  # the newest email wins
                 rec.update({k: v for k, v in f.items() if v is not None and k != "lot_id"})
                 rec["mail"] = sent.isoformat()
             rec["seen"] = now.isoformat()
+    for key in [k for k, at in warned.items() if now - datetime.fromisoformat(at) > timedelta(days=keep_days + 7)]:
+        del warned[key]  # the email itself is out of the window by now
     # forget closed lots, and lots without a closing time that no alert mentioned for keep_days
     today = now.astimezone(AMS).date()
     for lot_id, rec in list(lots_seen.items()):

@@ -831,7 +831,7 @@ footer td { padding: 2px 14px 2px 0; }
       place ? el("span", { "class": "addr", title: "Pickup address (ophaallocatie)" + (lot.pickup ? "" : ": only the town is known") }, "📍 " + place) : null,
       t ? el("span", { "class": "drive", title: "Driving there" + (DRIVING.roundTrip !== false ? " and back" : "") + (t.approx ? " (estimate: route planner unavailable)" : "") + ": fuel at " + (DRIVING.kmpl || 16) + " km per liter and €" + (DRIVING.fuel || 0).toFixed(3) + "/l" },
         "🚗 " + (t.approx ? "≈ " : "") + Math.round(t.km) + "\u00a0km · " + duration(t.min).replace(" ", "\u00a0") + " · " +
-        money(t.cost) + (DRIVING.roundTrip !== false ? " there\u00a0&\u00a0back" : "")) : null,
+        money(t.cost) + (DRIVING.roundTrip !== false ? " there\u00a0&\u00a0back" : "") + (t.from && t.from !== "home" ? " from\u00a0" + t.from : "")) : null,
       lot.pickupWhen ? el("span", { "class": "when" }, "pickup " + lot.pickupWhen) : null);
   }
 

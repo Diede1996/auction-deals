@@ -105,7 +105,7 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
               if v.profit_at_max is not None and v.margin_at_max is not None else "")
     rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
     trip = (trips or {}).get(pickup_place(lot) or "")
-    drive = f" · 🚗 {trip.km:.0f} km" if trip else ""
+    drive = f" · 🚗 {trip.km:.0f} km" + (f" from {trip.origin}" if trip.origin and trip.origin != "home" else "") if trip else ""
     if lot.bid_from_email:  # the current bid isn't known, only the max bid
         return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
                 f"   bid up to <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · Troostwijk · closes {when}{drive}")
@@ -336,19 +336,21 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     geo_http = http_cls(delay=1.1)
     trips: dict = {}
     home = os.environ.get("HOME_ADDRESS", "").strip()
-    driving = {"home": bool(home), "enabled": drv_cfg.get("enabled", True) is not False,
+    home2 = os.environ.get("HOME_ADDRESS_2", "").strip()  # optional second starting point (e.g. in Belgium)
+    driving = {"home": bool(home or home2), "enabled": drv_cfg.get("enabled", True) is not False,
                "include": settings.include_trip, "kmpl": float(drv_cfg.get("km_per_liter", 16)),
                "roundTrip": drv_cfg.get("round_trip", True) is not False,
                "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0)}
     places = {p: lot.pickup_latlon for _, lot in matched if (p := pickup_place(lot))}
-    if driving["enabled"] and home and places:
+    if driving["enabled"] and (home or home2) and places:
         price, source = fuel_price(geo_http, state, now, drv_cfg.get("fuel_price", "auto"),
                                    float(drv_cfg.get("fuel_price_fallback", 2.108)))
         costs = DrivingCosts(km_per_liter=driving["kmpl"], fuel_price=price, round_trip=driving["roundTrip"],
                              extra_per_km=driving["extraPerKm"])
         repo = os.environ.get("GITHUB_REPOSITORY", "")
         planner = TripPlanner(geo_http, state.setdefault("geo", {}), now, costs, home,
-                              user_agent=f"auction-deals-bot (github.com/{repo})" if repo else "auction-deals-bot")
+                              user_agent=f"auction-deals-bot (github.com/{repo})" if repo else "auction-deals-bot",
+                              second_address=home2)
         trips = planner.plan(places)
         planner.prune()
         driving.update(fuel=price, fuelSource=source, error=planner.error)
@@ -374,10 +376,13 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         rows.append((item, lot, verdict, est))
     finder.prune()
     notes = []
-    if mail_report and mail_report.get("unreadable"):
-        notes.append(f"⚠️ I couldn't find any lots in {mail_report['unreadable']} Troostwijk alert email(s). "
-                     "Their email layout may be new to me: save one as a file (Gmail: ⋮ → Download message) "
-                     "and share it so the bot can learn it.")
+    if mail_report and mail_report.get("unreadable_emails"):  # each email is reported once
+        bad = mail_report["unreadable_emails"]
+        listed = "\n".join(f"• {esc(e['subject'] or '(no subject)')} ({e['date'].astimezone(AMS):%a %d %b})"
+                           for e in bad[:5])
+        notes.append(f"⚠️ I couldn't find any lots in {'this Troostwijk email' if len(bad) == 1 else f'these {len(bad)} Troostwijk emails'}:\n"
+                     f"{listed}\n<i>An email without lots (a confirmation, a newsletter) can be ignored. If it does "
+                     "show lots, send it to me as a file (Gmail on a computer: ⋮ → Download message).</i>")
     if items:
         mh = state.setdefault("health", {}).setdefault("marktplaats", {})
         failed = finder.blocked or (finder.errors and finder.errors >= finder.lookups)

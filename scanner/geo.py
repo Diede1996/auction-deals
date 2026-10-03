@@ -1,7 +1,9 @@
 """Driving costs from your home to each lot's pickup address.
 
-- Your address comes from the HOME_ADDRESS secret. It is looked up every run and never written to the
-  repository (the repository and dashboard are public).
+- Your address comes from the HOME_ADDRESS secret, and an optional second one (e.g. in Belgium) from
+  HOME_ADDRESS_2. They are looked up every run and never written to the repository (the repository and
+  dashboard are public). With two addresses, each lot gets the trip from whichever is closer, labelled
+  "from <town of the second address>".
 - Addresses are looked up with PDOK Locatieserver (Dutch government, free) and, for addresses outside
   the Netherlands, OpenStreetMap Nominatim. Pickup addresses are remembered, so each is looked up once.
 - Driving distance and time come from the OSRM route planner (OpenStreetMap data): one request for all
@@ -39,10 +41,14 @@ class Trip:
     minutes: float  # one way
     cost: float  # fuel (and optional per-km costs) for the whole trip
     approx: bool = False  # straight-line estimate, the route planner wasn't reachable
+    origin: str | None = None  # where the trip starts when there are two addresses: "home" or e.g. "Gent"
 
     def as_dict(self) -> dict:
-        return {"km": round(self.km, 1), "min": round(self.minutes), "cost": round(self.cost, 2),
-                "approx": self.approx}
+        out = {"km": round(self.km, 1), "min": round(self.minutes), "cost": round(self.cost, 2),
+               "approx": self.approx}
+        if self.origin:
+            out["from"] = self.origin
+        return out
 
 
 @dataclass
@@ -74,8 +80,18 @@ def _point(wkt: str) -> tuple[float, float] | None:
     return (float(m.group(2)), float(m.group(1))) if m else None  # WKT is "lon lat"
 
 
+# Belgian flat numbers: "Larochelaan 14-0202", "14/2", "14 bus 2" -> "14" (the box doesn't matter for driving)
+_BOX = re.compile(r"\b(\d+[a-zA-Z]?)\s*(?:[-/]\s*\d{1,4}|\s+bus\s+\w{1,4})\b", re.I)
+
+
+def town_label(address: str) -> str:
+    """'Raymonde de Larochelaan 14, 9051 Gent, België' -> 'Gent'."""
+    return _town(address) or "home 2"
+
+
 def geocode(http, address: str, user_agent: str = "auction-deals-bot") -> tuple[float, float] | None:
     """(lat, lon) for an address, or None."""
+    address = _BOX.sub(r"\1", address)
     if not _ABROAD.search(address):
         try:
             data = http.json(f"{PDOK}?{urlencode({'q': address, 'rows': 1, 'fl': 'centroide_ll,weergavenaam,type'})}")
@@ -135,12 +151,13 @@ class TripPlanner:
     """Works out a Trip for every pickup address of the matched lots."""
 
     def __init__(self, http, cache: dict, now: datetime, costs: DrivingCosts, home_address: str | None,
-                 user_agent: str = "auction-deals-bot"):
+                 user_agent: str = "auction-deals-bot", second_address: str | None = None):
         self.http = http
         self.cache = cache  # address -> {"lat", "lon", "at"} or {"fail": true, "at"}; public, holds no home data
         self.now = now
         self.costs = costs
         self.home_address = (home_address or "").strip()
+        self.second_address = (second_address or "").strip()
         self.user_agent = user_agent
         self.home: tuple[float, float] | None = None
         self.error: str | None = None
@@ -159,30 +176,49 @@ class TripPlanner:
                                else {"fail": True, "at": self.now.isoformat()})
         return found
 
-    def plan(self, places: dict[str, tuple[float, float] | None]) -> dict[str, Trip]:
-        """places: address -> coordinates if the site gave them. Returns address -> Trip."""
-        if not self.home_address or not places:
-            return {}
-        self.home = geocode(self.http, self.home_address, self.user_agent)
-        if not self.home:
-            self.error = "your HOME_ADDRESS could not be found on the map"
-            log.warning(self.error)
-            return {}
-        located = {a: p for a, p in ((a, self._place(a, ll)) for a, ll in places.items()) if p}
+    def _trips_from(self, start: tuple[float, float], located: dict, origin: str | None) -> dict[str, Trip]:
         names = list(located)
         try:
-            routes = route_table(self.http, self.home, [located[a] for a in names])
+            routes = route_table(self.http, start, [located[a] for a in names])
         except Exception as e:
             log.warning("route planner failed, using straight-line distances: %s", e)
             self.error = "route planner unavailable, distances are estimates"
             routes = [None] * len(names)
+        out = {}
         for name, route in zip(names, routes):
             if route:
                 km, minutes = route
-                self.trips[name] = Trip(km, minutes, self.costs.cost(km))
+                out[name] = Trip(km, minutes, self.costs.cost(km), origin=origin)
             else:
-                km = haversine_km(self.home, located[name]) * ROAD_FACTOR
-                self.trips[name] = Trip(km, km / FALLBACK_KMH * 60, self.costs.cost(km), approx=True)
+                km = haversine_km(start, located[name]) * ROAD_FACTOR
+                out[name] = Trip(km, km / FALLBACK_KMH * 60, self.costs.cost(km), approx=True, origin=origin)
+        return out
+
+    def plan(self, places: dict[str, tuple[float, float] | None]) -> dict[str, Trip]:
+        """places: address -> coordinates if the site gave them. Returns address -> Trip (from the closer
+        of the two addresses, when there are two)."""
+        if not (self.home_address or self.second_address) or not places:
+            return {}
+        starts = []  # (label, coordinates)
+        two = bool(self.home_address and self.second_address)
+        for address, label, secret in ((self.home_address, "home", "HOME_ADDRESS"),
+                                       (self.second_address, town_label(self.second_address), "HOME_ADDRESS_2")):
+            if not address:
+                continue
+            found = geocode(self.http, address, self.user_agent)
+            if found:
+                starts.append((label if two else None, found))
+            else:
+                self.error = f"your {secret} could not be found on the map"
+                log.warning(self.error)
+        if not starts:
+            return {}
+        self.home = starts[0][1]
+        located = {a: p for a, p in ((a, self._place(a, ll)) for a, ll in places.items()) if p}
+        for origin, start in starts:
+            for name, trip in self._trips_from(start, located, origin).items():
+                if name not in self.trips or trip.km < self.trips[name].km:
+                    self.trips[name] = trip
         return self.trips
 
     def prune(self, days: int = 60) -> None:
