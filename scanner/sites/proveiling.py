@@ -6,6 +6,9 @@
 3. The auction info page holds the exact closing date ("Sluiting: maandag 28 september 2026 vanaf 20:00"),
    the pickup day ("Ophaaldag(en): donderdag 01 oktober 2026 van 10:00 tot 12:00") and the address under
    the heading "Locatie" ("Produktieweg 9" / "8304AV, Emmeloord").
+
+Vlavem (vlavem.com, Belgium) runs on the same software; its lot pages use a "Volgende" (next) link instead
+of the page selector. fetch_from() reads either site.
 """
 from __future__ import annotations
 
@@ -23,9 +26,12 @@ log = logging.getLogger(__name__)
 SITE = "proveiling"
 BASE = "https://www.proveiling.nl"
 PAGER_TARGET = "ctl00$myCenterContentPanel$ALCItems$AspNetPager1"
+_NEXT_LINK = re.compile(r"__doPostBack\((?:'|&#39;)([^'&]+)(?:'|&#39;),\s*(?:''|&#39;&#39;)\)\"[^>]*>\s*Volgende\s*<",
+                        re.I)
+_DELIVERY = re.compile(r"gratis\s+(?:levering|verzending|bezorging)|verzendveiling", re.I)
 
 
-def parse_home(html: str) -> list[Auction]:
+def parse_home(html: str, site: str = SITE, base: str = BASE) -> list[Auction]:
     soup = BeautifulSoup(html, "html.parser")
     info_links: dict[str, str] = {}
     for a in soup.select('a[href*="AuctionGroup.aspx"]'):
@@ -47,12 +53,14 @@ def parse_home(html: str) -> list[Auction]:
             existing.kind = existing.kind or kind
             continue
         info = info_links.get(aid, "")
+        title = re.sub(rf"\s*\({aid}\)\s*$", "", a.get_text(" ", strip=True))  # Vlavem: "... (6229)"
         auctions[aid] = Auction(
-            site=SITE,
+            site=site,
             auction_id=aid,
-            title=a.get_text(" ", strip=True),
-            url=(info if info.startswith("http") else BASE + info) if info else f"{BASE}/Alle-kavels/{aid}/Veiling",
+            title=title,
+            url=(info if info.startswith("http") else base + info) if info else f"{base}/Alle-kavels/{aid}/Veiling",
             kind=kind,
+            delivery=bool(_DELIVERY.search(title)),
         )
     return list(auctions.values())
 
@@ -75,7 +83,7 @@ def parse_pickup(html: str) -> tuple[str | None, str | None]:
     return address, when
 
 
-def parse_lot_rows(html: str, auction: Auction, now) -> list[Lot]:
+def parse_lot_rows(html: str, auction: Auction, now, base: str = BASE) -> list[Lot]:
     soup = BeautifulSoup(html, "html.parser")
     lots: list[Lot] = []
     for row in soup.select('div.row[id^="tr"]'):
@@ -106,10 +114,10 @@ def parse_lot_rows(html: str, auction: Auction, now) -> list[Lot]:
         closes = closes or auction.closes_at
         nbids = _text(row.select_one("#NumberOfBids"))
         lots.append(Lot(
-            site=SITE,
+            site=auction.site,
             lot_id=lot_id,
             title=name.get_text(" ", strip=True),
-            url=link["href"] if link["href"].startswith("http") else BASE + link["href"],
+            url=link["href"] if link["href"].startswith("http") else base + link["href"],
             current_bid=bid,
             closes_at=closes,
             auction_title=auction.title,
@@ -134,24 +142,48 @@ def postback_fields(html: str) -> dict:
     return {i["name"]: i.get("value", "") for i in soup.select('input[type="hidden"]') if i.get("name")}
 
 
-def fetch_auction_lots(ctx: SiteContext, auction: Auction) -> list[Lot]:
-    url = f"{BASE}/Alle-kavels/{auction.auction_id}/Veiling"
+def next_link(html: str) -> str | None:
+    """The postback target of the "Volgende" (next page) link, if there is one (Vlavem)."""
+    m = _NEXT_LINK.search(html)
+    return m.group(1) if m else None
+
+
+def fetch_auction_lots(ctx: SiteContext, auction: Auction, base: str = BASE) -> list[Lot]:
+    url = f"{base}/Alle-kavels/{auction.auction_id}/Veiling"
     html = ctx.http.text(url)
-    lots = parse_lot_rows(html, auction, ctx.now)
-    pages = min(page_count(html), ctx.max_pages)
-    for page in range(2, pages + 1):
+    lots = parse_lot_rows(html, auction, ctx.now, base)
+    pages = page_count(html)
+    if pages > 1:  # ProVeiling: page selector
+        for page in range(2, min(pages, ctx.max_pages) + 1):
+            form = postback_fields(html)
+            form["__EVENTTARGET"] = PAGER_TARGET
+            form["__EVENTARGUMENT"] = str(page)
+            html = ctx.http.post(url, data=form, headers={"Referer": url}).text
+            lots.extend(parse_lot_rows(html, auction, ctx.now, base))
+        return lots
+    seen = {lot.lot_id for lot in lots}
+    for _ in range(ctx.max_pages - 1):  # Vlavem: "Volgende" link until the last page
+        target = next_link(html)
+        if not target:
+            break
         form = postback_fields(html)
-        form["__EVENTTARGET"] = PAGER_TARGET
-        form["__EVENTARGUMENT"] = str(page)
+        form["__EVENTTARGET"] = target
+        form["__EVENTARGUMENT"] = ""
         html = ctx.http.post(url, data=form, headers={"Referer": url}).text
-        lots.extend(parse_lot_rows(html, auction, ctx.now))
+        new = [lot for lot in parse_lot_rows(html, auction, ctx.now, base) if lot.lot_id not in seen]
+        if not new:
+            break
+        seen.update(lot.lot_id for lot in new)
+        lots.extend(new)
     return lots
 
 
-def fetch_lots(ctx: SiteContext) -> list[Lot]:
-    auctions = parse_home(ctx.http.text(BASE + "/"))
+def fetch_from(ctx: SiteContext, site: str, base: str, country: str | None = None) -> list[Lot]:
+    """All lots of the bankruptcy, closure and estate auctions on a ProVeiling-style site.
+    country: added to pickup addresses ("België") so they're looked up in the right country."""
+    auctions = parse_home(ctx.http.text(base + "/"), site, base)
     bankrupt = [a for a in auctions if ctx.is_bankruptcy(f"{a.title} {a.kind}")]
-    log.info("proveiling: %d auctions, %d bankruptcy", len(auctions), len(bankrupt))
+    log.info("%s: %d auctions, %d bankruptcy/closure/estate", site, len(auctions), len(bankrupt))
     lots: list[Lot] = []
     for a in bankrupt:
         if "AuctionGroup.aspx" in a.url:
@@ -159,10 +191,18 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
                 info = ctx.http.text(a.url)
                 a.closes_at = parse_closing(info)
                 a.pickup, a.pickup_when = parse_pickup(info)
+                if a.pickup_when and _DELIVERY.search(a.pickup_when):  # "Ophaaldag(en): Gratis verzending."
+                    a.delivery, a.pickup_when = True, None
+                if a.pickup and country and country.lower() not in a.pickup.lower():
+                    a.pickup = f"{a.pickup}, {country}"
             except Exception as e:  # closing time and pickup details are nice-to-have
-                log.warning("proveiling: no auction details for %s: %s", a.auction_id, e)
-        lots.extend(fetch_auction_lots(ctx, a))
+                log.warning("%s: no auction details for %s: %s", site, a.auction_id, e)
+        lots.extend(fetch_auction_lots(ctx, a, base))
     return lots
+
+
+def fetch_lots(ctx: SiteContext) -> list[Lot]:
+    return fetch_from(ctx, SITE, BASE)
 
 
 def _text(el) -> str:
