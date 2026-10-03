@@ -234,7 +234,9 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
               "error": r.get("error", "")} for s, r in report.items()]
     site_cfg = config.get("sites") or {}
     notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
-             "troostwijk": "an estimate: Troostwijk sets it per auction, check the lot page"}
+             "troostwijk": "an estimate: Troostwijk sets it per auction, check the lot page",
+             "vlavem": "VAT only on the 17% for used goods; counted on the bid too, to be safe",
+             "inventarisveilingen": "no premium; lots without bids show no price (starting price on the lot page)"}
     fees = [{"id": s, "name": SITE_NAMES.get(s, s), "premium": f.premium, "vat": f.vat, "note": notes.get(s, "")}
             for s, f in site_fees.items() if site_cfg.get(s, {}).get("enabled", True) or s in report]
     troostwijk = []

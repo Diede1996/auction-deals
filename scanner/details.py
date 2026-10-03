@@ -6,7 +6,8 @@ U2419 HC". For lots on your watchlist without a type number in the title, the bo
 
 - Only for lots that match your watchlist, at most `limit` new pages per scan, one site at a time with
   the usual pause between requests.
-- Troostwijk is never visited, and Onlineveilingmeester's lot pages are an app without the text in the page.
+- Troostwijk is never visited; Onlineveilingmeester's and BellAuction's lot pages are apps without the text
+  in the page (BellAuction's descriptions come with the lot list anyway).
 """
 from __future__ import annotations
 
@@ -20,7 +21,7 @@ from .sites.base import text_lines
 
 log = logging.getLogger(__name__)
 
-SKIP_SITES = {"troostwijk", "onlineveilingmeester"}
+SKIP_SITES = {"troostwijk", "onlineveilingmeester", "bellauction"}
 _LABEL = re.compile(r"^(?:kavel\s*)?(?:omschrijving|beschrijving|description)\s*:?\s*(.*)$", re.I)
 _END = re.compile(r"^(?:kijkdag|afhaaldag|ophaaldag|sluit|biedingen|bied|voorwaarden|retourneren|locatie|"
                   r"kavelnummer|verkocht door|veiling|opgeld|let op)\b", re.I)

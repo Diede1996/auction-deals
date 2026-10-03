@@ -103,6 +103,31 @@ def parse_dutch_datetime(text: str) -> datetime | None:
         return None
 
 
+def parse_numeric_datetime(text: str) -> datetime | None:
+    """'07-10-2026 13:00:00', '3-10-2026 20:30' or '05/10/2026 19:00' (day first). Amsterdam (= Brussels)
+    time; a date without a time counts as the end of that day."""
+    m = re.search(r"\b(\d{1,2})[-/](\d{1,2})[-/](\d{4})(?:\D{1,3}(\d{1,2})[:.](\d{2}))?", text or "")
+    if not m:
+        return None
+    hour = int(m.group(4)) if m.group(4) else 23
+    minute = int(m.group(5)) if m.group(5) else 59
+    try:
+        return datetime(int(m.group(3)), int(m.group(2)), int(m.group(1)), hour, minute, tzinfo=AMS)
+    except ValueError:
+        return None
+
+
+def parse_local_iso(value) -> datetime | None:
+    """'2026-10-06T19:00:00' (no time zone: Amsterdam/Brussels time) or with an offset."""
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=AMS)
+
+
 def parse_relative_close(text: str, now: datetime) -> datetime | None:
     """Proveiling style: 'morgen vanaf 20:25', 'vandaag vanaf 21:00', '6 dagen', '3 uur', '25 minuten'."""
     t = normalize(text)
