@@ -80,7 +80,7 @@ _SPEC_RE = re.compile(r"""^(?:
              |in|st|stk|stuks|pcs|delig|dlg|dlig|x|jr|jaar|min|sec|km|mtr|liter|persoons|pers)
   | \d{3,4}(?:p|i)
   | x\d{1,3}
-  | \d+x\d+(?:x\d+)?
+  | \d+x\d+(?:x\d+)?(?:mm|cm|dm|m|mtr|inch|in)?        # sizes: 180x90cm, 60x60x5
   | (?:usb|hdmi|ddr|lpddr|gddr|wifi|cat|sata|pcie|bt|dp|mp|gen|rev|ver|nr|no|type|art|ean|sku|ip|pd|qc)\d{1,3}[a-z]?
   | i[3579](?:\d{3,5}[a-z]{0,2})?
   | r[3579](?:\d{3,4}[a-z]{0,2})?

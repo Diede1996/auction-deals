@@ -1,6 +1,8 @@
 """The daily scan: scrape the auction sites, price the matches, build the dashboard, send a digest."""
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
@@ -17,7 +19,7 @@ from .details import fill_descriptions
 from .identify import mac_plan, model_code, plan_for, quantity
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
-from .matching import bankruptcy_matcher, match_lots, search_terms
+from .matching import auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
 from .sites import SITE_NAMES, SITES
@@ -43,11 +45,18 @@ def units_of(lot: Lot, max_units: int = 0) -> int:
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,
                only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
     """Scrape all enabled sites in parallel (one HTTP client per site). Returns (lots, report, requests)."""
-    keywords = config.get("auction_keywords") or config.get("bankruptcy_keywords") or ["faillissement", "curator"]
-    is_bankruptcy = bankruptcy_matcher(keywords)
+    is_bankruptcy = auction_filter(config)
     terms = search_terms(items)
     health = state.setdefault("health", {})
     site_cache = state.setdefault("site_cache", {})
+    # sites remember per auction whether it passed the filter: start over when the filter words change
+    words = json.dumps([config.get("auction_keywords"), config.get("extra_auctions")], sort_keys=True, default=str)
+    fingerprint = hashlib.sha256(words.encode()).hexdigest()[:12]
+    if state.get("filter_words") != fingerprint:
+        for cache in site_cache.values():
+            if isinstance(cache, dict):
+                cache.pop("bankrupt", None)
+        state["filter_words"] = fingerprint
     jobs = {}
     for site, fetch in SITES.items():
         settings = (config.get("sites") or {}).get(site) or {}
@@ -138,7 +147,7 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
 
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
-                   trips: dict | None = None) -> str:
+                   trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen") -> str:
     deals = [r for r in rows if r[2].is_deal]
     day = now.astimezone(AMS).strftime("%a %d %b")
     head = [f"☀️ <b>Auction scan</b> · {day}",
@@ -165,7 +174,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append("🔎 <b>New from Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
                      "\n".join(_line(i, l, v, e, trips) for i, l, v, e in check[:per_section]))
     if not rows:
-        parts.append("Nothing on your watchlist is in a running bankruptcy, closure, estate or Domeinen auction today.")
+        parts.append(f"Nothing on your watchlist is in a running {kinds} auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
     if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
@@ -176,6 +185,13 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
 
 
 # ---------------------------------------------------------------- dashboard data
+
+def auction_kinds(config: dict) -> str:
+    """"bankruptcy, closure, estate, Domeinen or IT": which auctions the bot reads, for texts."""
+    extra = config.get("extra_auctions") or {}
+    it = extra.get("enabled", True) is not False and bool(extra.get("words"))
+    return "bankruptcy, closure, estate, Domeinen or IT" if it else "bankruptcy, closure, estate or Domeinen"
+
 
 def closing_day(lot: Lot) -> str | None:
     """"Wed 7 Oct" for lots whose closing time isn't known, only the day."""
@@ -249,6 +265,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         "generated": now.isoformat(),
         "settings": {"min_margin": settings.min_margin,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
+        "kinds": auction_kinds(config),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,
         "driving": driving or {"home": False},
@@ -257,7 +274,8 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
     }
 
 
-def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: str | None) -> str:
+def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: str | None,
+                 kinds: str = "bankruptcy, closure, estate or Domeinen") -> str:
     local = now.astimezone(AMS).strftime("%A %d %B %Y, %H:%M")
     lines = ["# Latest scan\n", f"_{local} (Amsterdam time)_\n"]
     if url:
@@ -277,7 +295,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
             lines.append(f"| {'✅' if v.is_deal else ''} | {item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
                          f"{fmt_eur(v.bid)} | {market} | {fmt_eur(v.max_bid) if v.max_bid is not None else '–'} | {closes} |")
     else:
-        lines.append("Nothing on your watchlist is in a running bankruptcy, closure, estate or Domeinen auction right now.")
+        lines.append(f"Nothing on your watchlist is in a running {kinds} auction right now.")
     text = "\n".join(lines) + "\n"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -316,10 +334,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     if items and mailbox and mail_cfg.get("enabled", True) is not False and (not only or "troostwijk" in only):
         h = state.setdefault("health", {}).setdefault("troostwijk", {})
         try:
-            keywords = config.get("auction_keywords") or config.get("bankruptcy_keywords") or ["faillissement", "curator"]
             mail_lots, mail_report = collect_alert_lots(
                 mailbox, http_cls(delay=1.0), state, now, int(mail_cfg.get("keep_days", 14)),
-                is_bankruptcy=bankruptcy_matcher(keywords),
+                is_bankruptcy=auction_filter(config),
                 only_bankruptcy=mail_cfg.get("only_bankruptcy", True) is not False)
             lots.extend(mail_lots)
             report["troostwijk"] = {"ok": True, "lots": len(mail_lots), "via": "email"}
@@ -431,7 +448,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                           max_units=max_units)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
-    text = write_report(root / "data" / "latest.md", rows, report, now, url)
+    text = write_report(root / "data" / "latest.md", rows, report, now, url, auction_kinds(config))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as fh:
@@ -441,7 +458,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     if items and alerts_cfg.get("enabled", True):
         try:
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
-                                   favs=favs, trips=trips))
+                                   favs=favs, trips=trips, kinds=auction_kinds(config)))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
     elif favs:

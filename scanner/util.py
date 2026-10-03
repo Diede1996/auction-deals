@@ -26,19 +26,30 @@ def normalize(text: str) -> str:
 _SHORT_ENDINGS = r"(?:s|e|en|n|es|je|jes|tje|tjes|pje|pjes|etje|etjes|[bdfgklmnprstvz]en|[bdfgklmnprstvz]e)?"
 
 
+def _short_endings(token: str) -> str:
+    """Plural and diminutive endings a short word can get. A word with one short vowel before its last
+    consonant doubles that consonant: pot -> potten, potje; "poten" is the plural of "poot" (table legs),
+    and "leden" is not "leds"."""
+    if re.fullmatch(r"[a-z]*[^aeiou][aeiou][bdfgklmnprstvz]|[aeiou][bdfgklmnprstvz]", token):
+        last = re.escape(token[-1])
+        return rf"(?:s|je|jes|{last}(?:en|e|etje|etjes))?"
+    return _SHORT_ENDINGS
+
+
 def token_in(token: str, text_norm: str) -> bool:
     """True if `token` starts a word in normalised text: "monitor" matches "monitoren". Numbers must match
     a whole word, and short words (3 letters or less) only match with a plural or diminutive ending, so
-    "pot" matches "potten" but not "Pottinger"."""
+    "pot" matches "potten" but not "Pottinger" or "poten". A longer word doesn't match the adjective made
+    from it: "plant" is not "plantaardig"."""
     token = normalize(token)
     if not token:
         return False
     if token.isdigit():
         pattern = rf"(?<![a-z0-9]){re.escape(token)}(?![0-9])"
     elif token.isalpha() and len(token) <= 3:
-        pattern = rf"(?<![a-z0-9]){re.escape(token)}{_SHORT_ENDINGS}(?![a-z0-9])"
+        pattern = rf"(?<![a-z0-9]){re.escape(token)}{_short_endings(token)}(?![a-z0-9])"
     else:
-        pattern = rf"(?<![a-z0-9]){re.escape(token)}"
+        pattern = rf"(?<![a-z0-9]){re.escape(token)}(?!aardig|achtig)"
     return re.search(pattern, text_norm) is not None
 
 
