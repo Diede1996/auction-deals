@@ -42,6 +42,8 @@ It runs for free on GitHub, so your laptop can stay off. Each auction site is vi
 
 Add another secret: name `HOME_ADDRESS`, value your street, house number and town, for example `Dorpsstraat 1, Veghel`. It stays a secret: it is never written to the repository or the dashboard. Without it, the dashboard shows the pickup addresses but no distances or driving costs.
 
+Often somewhere else too, for example in Belgium? Add a second secret `HOME_ADDRESS_2`, for example `Veldstraat 1, Gent, België` (write the country for an address outside the Netherlands). Each lot then gets the trip from whichever address is closer, shown as "… there & back from Gent".
+
 ### 5. Get your chat ID
 
 1. Open the **Actions** tab. If GitHub asks, click **I understand my workflows, go ahead and enable them**.
@@ -199,7 +201,7 @@ You can also edit `watchlist.yml` directly on GitHub. The comments at the top of
 - **Marktplaats is checked sparingly**: each lot's price is reused for 3 days (`cache_days` in `config.yml`), with at most 60 searches per scan, 4–7 seconds apart. If Marktplaats shows its "Toegang is tijdelijk beperkt" block page, the bot stops asking for the rest of that scan and shows the last saved price, with the date it was checked.
 - **Being polite to the sites**: one scan a day at a slow pace is a tiny load compared to hourly checking. If you find that a site's terms don't allow automated reading at all, turn it off in `config.yml` (`enabled: false`).
 - **Site problems**: if a site fails 2 daily scans in a row, the bot warns you in Telegram and tells you when it works again. The dashboard header shows each site's status too.
-- **Your address and the public dashboard**: `HOME_ADDRESS` is a GitHub secret and never appears in the repository, but the dashboard (which is public) shows the distance from your home to each pickup address.
+- **Your address and the public dashboard**: `HOME_ADDRESS` (and `HOME_ADDRESS_2`) are GitHub secrets and never appear in the repository, but the dashboard (which is public) shows the distance from your home to each pickup address, and with two addresses the town of the second one ("from Gent").
 - **Reminders** come from the Telegram job that runs every 15 minutes, so they arrive 45–60 minutes before closing (GitHub sometimes starts it a few minutes late). Closing times are from the morning scan; auction sites can extend a lot when someone bids at the last minute.
 - The bot never bids for you.
 

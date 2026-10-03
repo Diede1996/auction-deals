@@ -17,6 +17,8 @@ auction_keywords:
   - opheffingsuitverkoop
   - liquidatie
   - stopzetting
+  - faling             # Flemish for bankruptcy ("uit diverse falingen")
+  - curatele
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%
