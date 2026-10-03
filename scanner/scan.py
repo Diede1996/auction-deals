@@ -13,7 +13,8 @@ from .evaluate import Fees, Settings, Verdict, evaluate, lot_rates, market_value
 from .favorites import FavoritesStore, closing_between
 from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
-from .identify import plan_for, quantity
+from .details import fill_descriptions
+from .identify import mac_plan, model_code, plan_for, quantity
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .matching import bankruptcy_matcher, match_lots, search_terms
@@ -164,7 +165,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append("🔎 <b>New from Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
                      "\n".join(_line(i, l, v, e, trips) for i, l, v, e in check[:per_section]))
     if not rows:
-        parts.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction today.")
+        parts.append("Nothing on your watchlist is in a running bankruptcy, closure, estate or Domeinen auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
     if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
@@ -274,7 +275,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
             lines.append(f"| {'✅' if v.is_deal else ''} | {item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
                          f"{fmt_eur(v.bid)} | {market} | {fmt_eur(v.max_bid) if v.max_bid is not None else '–'} | {closes} |")
     else:
-        lines.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction right now.")
+        lines.append("Nothing on your watchlist is in a running bankruptcy, closure, estate or Domeinen auction right now.")
     text = "\n".join(lines) + "\n"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -331,6 +332,16 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     lots = [lot for lot in lots if lot.closes_at is None or now < lot.closes_at <= horizon]
     matched = match_lots(items, lots)
     log.info("%d lots scanned, %d match the watchlist", len(lots), len(matched))
+
+    # 1c. no type number in the title ("2 x Dell 24 inch monitor")? read the description on the lot page
+    det_cfg = config.get("descriptions") or {}
+    if det_cfg.get("enabled", True) is not False and (not only or set(only) - {"troostwijk"}):
+        read = fill_descriptions(
+            matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
+            state.setdefault("descriptions", {}), now,
+            needs=lambda lot: model_code(lot.title) is None and mac_plan(lot.title) is None,
+            limit=int(det_cfg.get("max_pages_per_run", 40)))
+        log.info("read %d lot descriptions", read)
 
     # 2. driving costs to the pickup addresses (needs the HOME_ADDRESS secret)
     geo_http = http_cls(delay=1.1)

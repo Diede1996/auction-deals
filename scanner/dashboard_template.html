@@ -473,7 +473,7 @@ footer td { padding: 2px 14px 2px 0; }
   function renderHeader() {
     var ageH = (Date.now() - generated.getTime()) / 3600000;
     document.getElementById("sub").textContent =
-      "Bankruptcy, closure & Domeinen auctions · last scan " + dtf.format(generated) + (ageH >= 1 ? " (" + timeLeft(Date.now() - generated.getTime()) + " ago)" : "");
+      "Bankruptcy, closure, estate & Domeinen auctions · last scan " + dtf.format(generated) + (ageH >= 1 ? " (" + timeLeft(Date.now() - generated.getTime()) + " ago)" : "");
     var sites = document.getElementById("sites");
     sites.textContent = "";
     DATA.sites.forEach(function (s) {
@@ -960,7 +960,7 @@ footer td { padding: 2px 14px 2px 0; }
       if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
     });
     if (!lots.length) {
-      empty.append("Nothing on your watchlist is in a running bankruptcy, closure or Domeinen auction right now. The next scan runs tomorrow morning.");
+      empty.append("Nothing on your watchlist is in a running bankruptcy, closure, estate or Domeinen auction right now. The next scan runs tomorrow morning.");
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
     }

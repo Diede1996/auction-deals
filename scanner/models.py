@@ -32,6 +32,7 @@ class Lot:
     auction_title: str = ""
     closes_day: str | None = None  # "2026-10-07" when only the closing day is known, not the time
     bid_from_email: bool = False  # the bid is the one in an alert email (often the starting bid), not the current one
+    description: str = ""  # the lot's description, when the site gives one (or read from the lot page)
     image: str | None = None
     location: str | None = None
     bids: int | None = None

@@ -356,6 +356,15 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
     keyword = normalize(matched_keyword(item, lot.title))
     generic = category(keyword) is not None
     found = model_code(lot.title)
+    source, from_description = lot.title, False
+    if not found and lot.description:
+        # "2 x Dell 24 inch monitor" + description "... monitor type U2419 HC": use the type in the description,
+        # if it clearly belongs to this lot (a long type number, or the title's brand is named with it)
+        desc = lot.description[:200]
+        in_desc = model_code(desc)
+        title_brand = brand_in(lot.title)
+        if in_desc and (distinctive(in_desc[0]) or (title_brand and title_brand in normalize(desc).split())):
+            found, source, from_description = in_desc, desc, True
     if found:
         written, pos = found
         brand = None if generic else keyword
@@ -363,7 +372,7 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         if brand and len(parts) == 2 and parts[0] in brand.split():
             written = parts[1]  # keyword "surface pro" + "Pro 1796" -> model "1796"
         squashed = written.replace(" ", "")
-        brand = brand or brand_in(lot.title, before=pos)
+        brand = brand or brand_in(source, before=pos) or brand_in(lot.title)
         groups: list[tuple[str, ...]] = []
         prefix = brand
         if brand and not distinctive(written):
@@ -380,7 +389,8 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         label = " ".join(x for x in (brand, written) if x)
         return SearchPlan("exact", searches, [Rule(groups, model=squashed, label=label)],
                           model=written.upper(), brand=brand,
-                          note=f"exact model {(brand or '').title()} {written.upper()}".replace("  ", " ").strip())
+                          note=(f"exact model {(brand or '').title()} {written.upper()}".replace("  ", " ").strip()
+                                + (" (type number from the lot description)" if from_description else "")))
 
     # general: no type number in the title, so compare with similar things (a rough price)
     if generic:

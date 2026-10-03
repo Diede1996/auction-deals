@@ -145,7 +145,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
             else:
                 scan_requested = True
                 scans.append(today)
-                reply = f"🔎 Scanning now. Results arrive in about 5 minutes ({limit - len(scans)} extra scans left today)."
+                reply = f"🔎 Scanning now. Results arrive in about 5–10 minutes ({limit - len(scans)} extra scans left today)."
         else:
             reply, did_change = commands.handle(text, watchlist, status_text(scan_state, watchlist, url), url)
             changed |= did_change
@@ -157,12 +157,12 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
     if not tg_state.get("welcomed"):
         dash = f'\n📊 <a href="{attr(url)}">Your dashboard</a>' if url else ""
         tg.send("✅ <b>Your auction deal bot is connected.</b>\n"
-                f"Every morning it checks 4 auction sites (bankruptcy, business-closure and Domeinen sales) for the "
+                f"Every morning it checks the auction sites (bankruptcy, business-closure, estate and Domeinen sales) for the "
                 f"{len(watchlist.get('items') or [])} items on your watchlist and sends you a summary.{dash}\n\n"
                 "Send /list to see your watchlist, /help for all commands.")
         tg_state["welcomed"] = now.isoformat()
 
-    # ⏰ favorites closing within the hour (this job runs every 15 minutes)
+    # ⏰ favorites closing within the hour (this job runs every 5 minutes)
     reminded = tg_state.setdefault("reminded", {})
     minutes = int(fav_cfg.get("remind_minutes_before", 60))
     for fav, closes in due_reminders(favs, lots_by_key, now, minutes, reminded):
