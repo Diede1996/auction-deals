@@ -17,6 +17,10 @@ from .models import Lot, WatchItem
 
 log = logging.getLogger(__name__)
 
+# Bump when what counts as a comparable listing changes: saved prices from older rules are checked again
+# (and still shown as a fallback until they are).
+RULES_VERSION = 2
+
 
 def result_kind(plan: SearchPlan, rule_groups: list) -> str:
     """"exact" when the listings compared name the same model; "general" for a rough comparison.
@@ -78,7 +82,7 @@ class PriceFinder:
             return None
         key = marktplaats.cache_key(f"{plan.kind}:{plan.searches[0]}", item.exclude)
         entry = self.cache.get(key)
-        if entry and self._age(entry) <= timedelta(days=self.cache_days):
+        if entry and self._age(entry) <= timedelta(days=self.cache_days) and entry.get("v") == RULES_VERSION:
             return PriceEstimate(**entry["est"]) if entry.get("est") else None
         if self.blocked or self.lookups_left <= 0:
             return self._saved(entry)
@@ -110,7 +114,7 @@ class PriceFinder:
             est.kind = result_kind(plan, rule.groups)
             est.model = plan.model
             est.search = plan.searches[0] if plan.kind != "general" else rule.label
-        self.cache[key] = {"at": self.now.isoformat(), "est": asdict(est) if est else None}
+        self.cache[key] = {"at": self.now.isoformat(), "est": asdict(est) if est else None, "v": RULES_VERSION}
         return est
 
     def prune(self) -> None:

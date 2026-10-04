@@ -104,9 +104,12 @@ class Rule:
 
     size: str | None = None  # screen size in inches the listing must mention ("16" or "10.5", not "16 GB")
     without: tuple[str, ...] = ()  # words the listing must not have ("pro" for a plain iPad)
+    without_parts: tuple[str, ...] = ()  # nor anywhere inside a word ("machine" in "accuboormachine")
 
     def matches(self, title_norm: str) -> bool:
         if self.model and not model_in(self.model, title_norm):
+            return False
+        if any(part in title_norm for part in self.without_parts):
             return False
         if self.size and not size_in(self.size, title_norm):
             return False
@@ -304,6 +307,82 @@ def ipad_plan(title: str) -> SearchPlan | None:
     return None
 
 
+# HP names a laptop or PC by line, model and generation: "ZBook Firefly 14 G10", "EliteBook 840 G5",
+# "ProBook 450 G7", "EliteDesk 800 G4". The generation alone ("G10") says nothing.
+_GEN_TOKEN = re.compile(r"g(\d{1,2})")
+
+
+def generation_plan(title: str) -> SearchPlan | None:
+    """"HP ZBook Firefly G10 14”" -> listings that say zbook + firefly + g10 + 14 inch (exact), not a
+    ZBook Fury 16 G10; "HP EliteBook 840 G5" -> elitebook + 840 + g5."""
+    tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()
+    gi = next((i for i, t in enumerate(tokens) if i and _GEN_TOKEN.fullmatch(t)), None)
+    if gi is None:
+        return None
+    size = inches(title)
+    words: list[str] = []
+    brand = None
+    j = gi - 1
+    while j >= 0 and len(words) < 3:
+        tok = tokens[j]
+        if tok in _BRANDS:
+            brand = tok
+            break
+        if tok in NOISE or category(tok) or tok in _CPU_WORDS:
+            break
+        if re.fullmatch(r"1[0-8](?:inch)?", tok):  # "ZBook Studio 16 G10": the screen size
+            size = size or tok.replace("inch", "")
+        elif (tok.isdigit() and len(tok) == 3) or (tok.isalpha() and len(tok) >= 3):
+            words.insert(0, tok)
+        else:
+            break
+        j -= 1
+    if not words:
+        return None
+    gen = tokens[gi]
+    groups: list[tuple[str, ...]] = [(w,) for w in words] + [(gen,)]
+    if all(w.isdigit() for w in words):  # "HP 250 G8": the brand is part of the name
+        if not brand:
+            return None
+        groups.insert(0, (brand,))
+        words = [brand] + words
+    name = " ".join(words)
+    rules = ([Rule(groups, size=size, label=f"{name} {size} {gen}")] if size else []) + [Rule(groups, label=f"{name} {gen}")]
+    shown = " ".join(("HP" if w == "hp" else w.title()) if w.isalpha() else w for w in words) + \
+        (f" {size}" if size else "") + f" {gen.upper()}"
+    shown = shown.replace("Zbook", "ZBook").replace("Elitebook", "EliteBook").replace("Probook", "ProBook") \
+        .replace("Elitedesk", "EliteDesk").replace("Prodesk", "ProDesk")
+    return SearchPlan("exact", list(dict.fromkeys(r.label for r in rules)), rules, model=shown, brand=brand,
+                      note=f"exact: {shown}")
+
+
+# A battery (with or without charger) is not a drill that comes with one.
+_BATTERY_WORDS = ("accu", "batterij", "battery", "akku")
+TOOL_PARTS = ("machine", "boor", "zaag", "slijp", "schroef", "hamer", "tacker", "frees", "schuur", "lamp", "radio",
+              "stofzuig", "blazer", "trimmer", "maaier", "combiset", "combo")
+_VOLT_RE = re.compile(r"(?<![\d.,])(\d{1,2}(?:[.,]\d)?)\s?(?:v|volt)\b", re.I)
+
+
+def is_battery_lot(title: str) -> bool:
+    t = normalize(title)
+    return any(token_in(w, t) for w in _BATTERY_WORDS) and not any(part in t for part in TOOL_PARTS)
+
+
+def voltage(title: str) -> tuple[str, ...] | None:
+    """"Accu Makita 12V 1.9Ah" -> ways a listing writes 12 V: ("12v", "12 volt", "12 v")."""
+    m = _VOLT_RE.search(title or "")
+    if not m:
+        return None
+    value = m.group(1).replace(",", ".")
+    try:
+        if not 3 <= float(value) <= 60:  # tool batteries, not "230V"
+            return None
+    except ValueError:
+        return None
+    v = value.replace(".", " ")
+    return (f"{v}v", f"{v} volt", f"{v} v")
+
+
 def brand_in(title: str, before: int | None = None) -> str | None:
     """The brand named in the title; with `before`, the one closest before that token position
     ("HP COMPAQ LA2306x" -> "compaq")."""
@@ -433,7 +512,15 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         rule = Rule([(w,) for w in q.split()], label=q)
         return SearchPlan("custom", [q], [rule], note="your own Marktplaats search (watchlist)")
 
-    mac = mac_plan(lot.title) or ipad_plan(lot.title)
+    plan = _plan_for(item, lot, extra_words)
+    if plan and plan.kind != "custom" and is_battery_lot(lot.title):
+        for rule in plan.rules:
+            rule.without_parts = tuple(dict.fromkeys(rule.without_parts + TOOL_PARTS))
+    return plan
+
+
+def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:
+    mac = mac_plan(lot.title) or ipad_plan(lot.title) or generation_plan(lot.title)
     if mac:
         return mac
     keyword = normalize(matched_keyword(item, lot.title))
@@ -504,11 +591,12 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
     first = tokens[0] if tokens and tokens[0][0] < pos and tokens[0][1].isalpha() and len(tokens[0][1]) >= 5 else None
     ordered = ([first[1]] if first else []) + [t for t in after + before if not first or t != first[1]]
     extras = ordered[:extra_words]
+    volt = voltage(lot.title)  # "Accu Makita 12V": a 12 V battery, not an 18 V one
     rules, labels = [], []
     for n in range(len(extras), lowest - 1, -1):
         words = extras[:n]
-        groups = fixed + [category(w) or (w,) for w in words]
-        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + words)
+        groups = fixed + [category(w) or (w,) for w in words] + ([volt] if volt else [])
+        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + words + ([volt[0]] if volt else []))
         rules.append(Rule(groups, label=label))
         labels.append(label)
     if not rules:

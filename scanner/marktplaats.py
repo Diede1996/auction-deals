@@ -6,13 +6,14 @@ from identify.py: the same model number for an exact comparison, or the same wor
 """
 from __future__ import annotations
 
+import html
 import logging
 import re
 import statistics
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
 
-from .identify import Rule
+from .identify import BRANDS, MULTI_BRANDS, Rule
 from .util import normalize, token_in
 
 log = logging.getLogger(__name__)
@@ -26,7 +27,15 @@ ALWAYS_EXCLUDE = ["gezocht", "gevraagd", "zoek", "defect", "kapot", "onderdelen"
                   "hoes", "hoezen", "sleeve", "keyboard", "tempered", "screenprotector", "screen protector",
                   "protector", "beschermglas", "glasfolie", "pencil", "stylus", "folio", "bookcase", "book case",
                   "dock", "houder", "digitizer", "behuizing", "moederbord", "logic board",
-                  "logicboard", "geschikt voor", "compatible", "compatibel"]
+                  "logicboard", "geschikt voor", "compatible", "compatibel", "converter",
+                  # cases and keyboards for tablets
+                  "incipio", "otterbox", "spigen", "zagg", "logitech", "tech21", "uag",
+                  # not the original brand: "Makita BL1815N ... 18V accu, 123accu huismerk"
+                  "huismerk", "vervangend", "vervangende", "vervangt", "replacement", "namaak", "imitatie"]
+# "zonder accu", "excl. lader": what a listing does NOT include says nothing about what it is
+_WITHOUT = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
+# "... voor Einhell", "... for Makita": something made for a product of that brand
+_FOR_BRAND = "|".join(sorted({re.escape(b) for b in BRANDS + MULTI_BRANDS}, key=len, reverse=True))
 
 
 MAX_LISTINGS = 30  # cheapest comparable listings kept for the dashboard
@@ -60,16 +69,17 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
     """Listings that meet the rule and contain none of the excluded words."""
     label = normalize(rule.label)
     excl = [x for x in (exclude or []) if x] + [w for w in ALWAYS_EXCLUDE if not token_in(w, label)]
-    # "Hoes voor iPad 6", "Accu voor Makita": something for the product, not the product itself
+    # "Hoes voor iPad 6", "Accu voor Makita", "Adapter voor Einhell": something for a product, not the product
     first = label.split()[0] if label else ""
-    made_for = re.compile(rf"(?<![a-z0-9])(?:voor|for)(?: de| het| apple)? {re.escape(first)}") if first else None
+    targets = (re.escape(first) + "|" if first else "") + _FOR_BRAND
+    made_for = re.compile(rf"(?<![a-z0-9])(?:voor|for)(?: de| het| apple)? (?:{targets})(?![a-z0-9])")
     out, seen = [], set()
     for li in listings:
         info = li.get("priceInfo") or {}
         if info.get("priceType") not in PRICED_TYPES or not info.get("priceCents"):
             continue
-        title = li.get("title") or ""
-        norm = normalize(title)
+        title = html.unescape(li.get("title") or "")  # "iPad Pro 10.5&quot;" -> 'iPad Pro 10.5"'
+        norm = _WITHOUT.sub(" ", normalize(title))
         if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
         vip = li.get("vipUrl") or ""
