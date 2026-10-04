@@ -189,3 +189,50 @@ def test_accessories_are_not_the_device():
                                  li("Apple iPad Pro 10.5 64GB wifi", 180),
                                  li("iPad Pro 10,5 inch 256GB space grey", 240)], rule, [])
     assert [f["price"] for f in found] == [180, 240]
+
+
+@pytest.mark.parametrize("title, searches, model", [
+    ("HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB", ["zbook firefly 14 g10", "zbook firefly g10"], "ZBook Firefly 14 G10"),
+    ("Laptop HP EliteBook 840 G5 i5 8GB", ["elitebook 840 g5"], "EliteBook 840 G5"),
+    ("HP ZBook Studio 16 G10 i7", ["zbook studio 16 g10", "zbook studio g10"], "ZBook Studio 16 G10"),
+    ("HP 250 G8 laptop", ["hp 250 g8"], "HP 250 G8"),
+])
+def test_hp_line_model_and_generation(title, searches, model):
+    p = plan(WatchItem(name="Laptop", keywords=["laptop", "zbook", "elitebook"]), title)
+    assert (p.kind, p.searches, p.model) == ("exact", searches, model)
+
+
+def test_zbook_g10_is_not_any_g10():
+    rule = plan(WatchItem(name="Laptop", keywords=["zbook"]), "HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen").rules[0]
+    assert rule.matches(normalize("HP ZBook Firefly 14 G10 i7 32GB")) and rule.matches(normalize("HP ZBook Firefly 14 inch G10"))
+    for other in ["HP ZBook Power 15 G10 - Core i7 / 32GB", "HP ZBook FireFly 16 G10 - Core i7-1365", "HP ZBook Fury 16 G10 - i9",
+                  "HP ZBook Firefly 14 G9"]:
+        assert not rule.matches(normalize(other)), other
+
+
+def test_a_battery_is_not_a_drill():
+    from scanner.marktplaats import comparable_listings
+    p = plan(WatchItem(name="Power tools", keywords=["makita"]), "Accu met lader Makita, 12V 1.9Ah")
+    assert p.searches == ["makita accu 12v"]
+
+    def li(title, euros):
+        return {"title": title, "priceInfo": {"priceType": "FIXED", "priceCents": euros * 100}, "itemId": title}
+
+    found = comparable_listings([li("Accuhouder voor Makita LXT", 4), li("Worx Accu Converter Makita 18V", 13),
+                                 li("Makita Accu Adapter voor Einhell 18V", 14),
+                                 li("Makita 60120 Accuboormachine 12V met Koffer (zonder accu)", 15),
+                                 li("Makita 6271D 12V Accu Boor-/Schroefmachine met Oplader", 20),
+                                 li("Makita 1220 12V accu, 123accu huismerk", 20),
+                                 li("Makita BL1815N 18V LXT accu", 25),
+                                 li("Makita accu 12V 1.9Ah Ni-MH", 18), li("Originele Makita 12 volt accu 1220", 22)],
+                                p.rules[0], [])
+    assert [f["price"] for f in found] == [18, 22]
+
+
+def test_listing_titles_are_unescaped_and_cases_left_out():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(WatchItem(name="iPad", keywords=["ipad"]), "iPad Pro 10,5 inch").rules[0]
+    found = comparable_listings([
+        {"title": "Incipio Faraday iPad Pro 10.5&quot; 2017 - Black", "priceInfo": {"priceType": "FIXED", "priceCents": 3500}},
+        {"title": "Apple iPad Pro 10.5&quot; 64GB", "priceInfo": {"priceType": "FIXED", "priceCents": 18000}}], rule, [])
+    assert [f["title"] for f in found] == ['Apple iPad Pro 10.5" 64GB']
