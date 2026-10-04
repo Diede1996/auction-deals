@@ -282,7 +282,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-03T17:12:10.052751+00:00",
+ "generated": "2026-10-04T06:04:08.243638+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -308,7 +308,7 @@
    "marketSource": "marktplaats",
    "maxBid": 7.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 18,
     "high": 37.5,
     "kind": "exact",
@@ -495,38 +495,26 @@
    "itemMinMargin": null,
    "key": "hnvi:196568",
    "location": "Loon op Zand",
-   "market": 125.0,
+   "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 24.0,
+   "maxBid": 11.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 39,
-    "high": 230.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 34,
+    "high": 200.0,
     "kind": "general",
     "listings": [
      {
       "kind": "fixed",
-      "price": 10.0,
-      "title": "Philips Senseo koffiemachine.",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447802323-philips-senseo-koffiemachine"
+      "price": 12.0,
+      "title": "Philips Koffiezetapparaat - NIEUW",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448753039-philips-koffiezetapparaat-nieuw"
      },
      {
       "kind": "fixed",
-      "price": 10.0,
-      "title": "Philips ( D.E.) Senseo koffiemachine.",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447800207-philips-d-e-senseo-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 10.0,
-      "title": "Philips Senseo Koffiezetapparaat Rood",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447196304-philips-senseo-koffiezetapparaat-rood"
-     },
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Koffiezetapparaat Philips",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446722161-koffiezetapparaat-philips"
+      "price": 15.0,
+      "title": "Philips Senseo Koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449535090-philips-senseo-koffiezetapparaat"
      },
      {
       "kind": "bid",
@@ -536,9 +524,15 @@
      },
      {
       "kind": "bid",
+      "price": 17.5,
+      "title": "Philips Senseo Koffiezetapparaat - Zwart",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449371962-philips-senseo-koffiezetapparaat-zwart"
+     },
+     {
+      "kind": "bid",
       "price": 25.0,
-      "title": "goedwerkend Philips koffiezetapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445742225-goedwerkend-philips-koffiezetapparaat"
+      "title": "Philips koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449264222-philips-koffiezetapparaat"
      },
      {
       "kind": "bid",
@@ -559,40 +553,58 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446089544-philips-senseo-koffiemachine-izgst"
      },
      {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "senseo Philips koffieapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448125303-senseo-philips-koffieapparaat"
-     },
-     {
       "kind": "fixed",
       "price": 35.0,
-      "title": "Philips Koffiezetapparaat - Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447730625-philips-koffiezetapparaat-nieuw-in-doos"
+      "title": "Philips Senseo koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449699920-philips-senseo-koffiezetapparaat"
      },
      {
       "kind": "bid",
-      "price": 45.0,
-      "title": "philips koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447817104-philips-koffiemachine"
+      "price": 50.0,
+      "title": "Philips Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449097256-philips-koffiemachine-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
-      "price": 62.95,
-      "title": "Philips LOR Barista Sublime LM9012/60 - Koffiezetapparaat -",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1516258198-philips-lor-barista-sublime-lm9012-60-koffiezetapparaat"
+      "price": 50.0,
+      "title": "Goeduitziende Philips Senseo Koffiezetapparaat.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449608548-goeduitziende-philips-senseo-koffiezetapparaat"
      },
      {
       "kind": "bid",
-      "price": 75.0,
-      "title": "Philips Koffiemachine,",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445130893-philips-koffiemachine"
+      "price": 50.0,
+      "title": "Philips Grind&Brew koffiezetapparaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448930849-philips-grind-brew-koffiezetapparaat"
      },
      {
       "kind": "fixed",
-      "price": 79.95,
-      "title": "Philips Senseo Switch Koffiemachine HD6592/84 - Pad- en",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1530450294-philips-senseo-switch-koffiemachine-hd6592-84-pad-en"
+      "price": 57.0,
+      "title": "Philips LOR Barista Sublime LM9012/20 - Koffiezetapparaat -",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1516264026-philips-lor-barista-sublime-lm9012-20-koffiezetapparaat"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.95,
+      "title": "Philips LOR Barista Sublime Koffiezetapparaat LM9012/21 -",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1531633615-philips-lor-barista-sublime-koffiezetapparaat-lm9012-21"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Philips senseo sarista koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449543794-philips-senseo-sarista-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Philips L'OR Barista LM8012 Koffiemachine - Piano Noir",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448870651-philips-l-or-barista-lm8012-koffiemachine-piano-noir"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "Philips Senseo Switch Koffiemachine HD6592/64 - Pad- en",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1531781957-philips-senseo-switch-koffiemachine-hd6592-64-pad-en"
      },
      {
       "kind": "fixed",
@@ -601,28 +613,16 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1516005648-philips-koffiezetapparaat-met-thermoskan-12-l-zwart"
      },
      {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Philips Koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442229897-philips-koffiemachine"
+      "kind": "fixed",
+      "price": 99.0,
+      "title": "Koffiemachine Philips HD8832 met servicebeurt.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449245943-koffiemachine-philips-hd8832-met-servicebeurt"
      },
      {
       "kind": "fixed",
       "price": 125.0,
       "title": "Te koop Philips baristina koffiemachine",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2444709459-te-koop-philips-baristina-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Philips Series 2200 Volautomatische Koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447823879-philips-series-2200-volautomatische-koffiemachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 125.0,
-      "title": "Philips 2200 koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448026274-philips-2200-koffiemachine"
      },
      {
       "kind": "fixed",
@@ -638,27 +638,27 @@
      },
      {
       "kind": "fixed",
-      "price": 134.99,
-      "title": "Philips -  Café Gourmet () - Koffiemachine 125 L Zwart",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/a1502458075-philips-cafe-gourmet-koffiemachine-125-l-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 147.5,
-      "title": "Philips Volautomatische Koffiemachine - Serrie 2200",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446996248-philips-volautomatische-koffiemachine-serrie-2200"
-     },
-     {
-      "kind": "fixed",
       "price": 149.0,
-      "title": "Philips Volautomatische Koffiemachine EP2200",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448615782-philips-volautomatische-koffiemachine-ep2200"
+      "title": "Philips gereviseerde volautomaaat koffiemachine EP2200",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448615782-philips-gereviseerde-volautomaaat-koffiemachine-ep2200"
      },
      {
       "kind": "bid",
       "price": 150.0,
-      "title": "Modern  zwart Philips Volautomatische Koffiemachine EP 2220",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447321310-modern-zwart-philips-volautomatische-koffiemachine-ep-2220"
+      "title": "Philips 2200-serie volautomatische espressomachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449121811-philips-2200-serie-volautomatische-espressomachine"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "Philips LatteGo EP3246/70 volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449396541-philips-lattego-ep3246-70-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Philips LatteGo 2200 Serie EP2230/10 - Espressomachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2449070558-philips-lattego-2200-serie-ep2230-10-espressomachine"
      },
      {
       "kind": "bid",
@@ -686,49 +686,44 @@
      }
     ],
     "low": 35.0,
-    "median": 125.0,
+    "median": 75.0,
     "model": null,
     "outliers": [],
     "prices": [
-     10.0,
-     10.0,
-     10.0,
-     10.0,
+     12.0,
      15.0,
+     15.0,
+     17.5,
      25.0,
      30.0,
      30.0,
      35.0,
      35.0,
-     35.0,
-     45.0,
-     62.95,
-     75.0,
-     79.95,
+     50.0,
+     50.0,
+     50.0,
+     57.0,
+     59.95,
+     60.0,
+     60.0,
+     65.0,
      84.99,
-     120.0,
-     125.0,
-     125.0,
+     99.0,
      125.0,
      129.99,
      130.0,
-     134.99,
-     147.5,
      149.0,
      150.0,
+     170.0,
+     200.0,
      200.0,
      200.0,
      225.0,
      230.0,
-     250.0,
      299.99,
-     300.0,
-     300.0,
-     300.0,
      350.0,
      359.0,
-     360.0,
-     370.0
+     360.0
     ],
     "query": "koffiemachine philips",
     "url": "https://www.marktplaats.nl/q/koffiemachine+philips/"
@@ -873,21 +868,15 @@
    "itemMinMargin": null,
    "key": "hnvi:196600",
    "location": "Loon op Zand",
-   "market": 207.5,
+   "market": 267.5,
    "marketSource": "marktplaats",
-   "maxBid": 46.0,
+   "maxBid": 63.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 10,
-    "high": 373.75,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 8,
+    "high": 421.25,
     "kind": "general",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "HP Laptop - 15-ay082nd",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447086382-hp-laptop-15-ay082nd"
-     },
      {
       "kind": "bid",
       "price": 80.0,
@@ -899,12 +888,6 @@
       "price": 115.0,
       "title": "HP 15s-eq1716nd - Laptop - 15.6",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2420790459-hp-15s-eq1716nd-laptop-15-6"
-     },
-     {
-      "kind": "bid",
-      "price": 130.0,
-      "title": "HP 15s-eq2210nd - Fijne laptop!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2429979797-hp-15s-eq2210nd-fijne-laptop"
      },
      {
       "kind": "fixed",
@@ -943,15 +926,13 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444356569-hp-laptop-14-em0957nd"
      }
     ],
-    "low": 106.25,
-    "median": 207.5,
+    "low": 131.25,
+    "median": 267.5,
     "model": null,
     "outliers": [],
     "prices": [
-     65.0,
      80.0,
      115.0,
-     130.0,
      180.0,
      235.0,
      300.0,
@@ -1150,13 +1131,13 @@
    "itemMinMargin": null,
    "key": "hnvi:196613",
    "location": "Loon op Zand",
-   "market": 100.0,
+   "market": 145.0,
    "marketSource": "marktplaats",
-   "maxBid": 18.0,
+   "maxBid": 30.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 5,
-    "high": 324.97,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 4,
+    "high": 392.46,
     "kind": "exact",
     "listings": [
      {
@@ -1164,12 +1145,6 @@
       "price": 46.95,
       "title": "Battery Lenovo X240 X250 T460P T470P T440 T440s T450s",
       "url": "https://www.marktplaats.nl/v/computers-en-software/accu-s-en-batterijen/m2437836122-battery-lenovo-x240-x250-t460p-t470p-t440-t440s-t450s"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Lenovo Thinkpad T440s - Windows 11 - Geupdate en getest",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446865651-lenovo-thinkpad-t440s-windows-11-geupdate-en-getest"
      },
      {
       "kind": "fixed",
@@ -1190,13 +1165,12 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1517994625-magazijn-opruiming-windows-11-lenovo-thinkpad-t440s-i7-4600u"
      }
     ],
-    "low": 58.48,
-    "median": 100.0,
+    "low": 60.21,
+    "median": 145.0,
     "model": "T440S",
     "outliers": [],
     "prices": [
      46.95,
-     70.0,
      100.0,
      189.99,
      459.95
@@ -1230,952 +1204,6 @@
    "vat": 0.21
   },
   {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 75.0,
-   "bidFromEmail": false,
-   "bids": 11,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285767|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285767",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "HM1812",
-    "note": "exact model Makita HM1812",
-    "search": "https://www.marktplaats.nl/q/makita+hm1812/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+hm1812/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita AVT Breekhamer HM1812",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 30.0,
-   "bidFromEmail": false,
-   "bids": 2,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285793|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285793",
-   "location": "Waddinxveen",
-   "market": 40.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 36,
-    "high": 58.71,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 4.95,
-      "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita DC18RC Wandhouder",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435169330-makita-dc18rc-wandhouder"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita DC18RC wandmontage",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
-     },
-     {
-      "kind": "fixed",
-      "price": 27.95,
-      "title": "Makita DC18RC acculader 14.4-18V - ook Dolmar, Greenlee,",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
-     },
-     {
-      "kind": "fixed",
-      "price": 29.95,
-      "title": "Makita DC18RC LXT / 195584-2 oplader 14.4, 123accu huismerk",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529827294-makita-dc18rc-lxt-195584-2-oplader-14-4-123accu-huismerk"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader met 14.4V 3.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448202166-makita-dc18rc-oplader-met-14-4v-3-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader (exclusief accu)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita Snellader DC18RC voor 18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita acculader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
-     },
-     {
-      "kind": "bid",
-      "price": 39.0,
-      "title": "Originele Makita DC18RC snellader – 18V LXT",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nette gebruikte Makita lader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC Oplader voor 18V Li-ion Accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2432300970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.95,
-      "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-dc18sd-dc18-acculader-14-4-18v-3-0-a"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Makita DC18RC Oplader voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446949689-makita-dc18rc-oplader-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.99,
-      "title": "Makita DC18RC Oplader NIEUW || Nu voor €49.99!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/hang-en-sluitwerk/m2446293572-makita-dc18rc-oplader-nieuw-nu-voor-49-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.0,
-      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Nieuwe originele Makita DC18RC snellader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445371009-nieuwe-originele-makita-dc18rc-snellader"
-     },
-     {
-      "kind": "bid",
-      "price": 59.95,
-      "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita accu met lader - DC18RC en BL1815",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2417485376-makita-accu-met-lader-dc18rc-en-bl1815"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita acculaders DC10SB en DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
-     }
-    ],
-    "low": 30.0,
-    "median": 40.0,
-    "model": "DC18RC",
-    "outliers": [
-     160.0,
-     169.0,
-     180.0,
-     189.0,
-     229.0
-    ],
-    "prices": [
-     4.95,
-     5.0,
-     5.0,
-     25.0,
-     27.95,
-     29.95,
-     30.0,
-     30.0,
-     30.0,
-     30.0,
-     30.0,
-     35.0,
-     35.0,
-     39.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.95,
-     45.0,
-     49.99,
-     50.0,
-     50.0,
-     55.0,
-     59.95,
-     60.0,
-     75.0,
-     80.0,
-     80.0,
-     100.0,
-     119.0,
-     120.0,
-     140.0
-    ],
-    "query": "makita dc18rc",
-    "url": "https://www.marktplaats.nl/q/makita+dc18rc/"
-   },
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "DC18RC",
-    "note": "exact model Makita DC18RC",
-    "search": "https://www.marktplaats.nl/q/makita+dc18rc/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+dc18rc/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285775",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "dewalt",
-    "kind": "exact",
-    "model": "DC910",
-    "note": "exact model Dewalt DC910",
-    "search": "https://www.marktplaats.nl/q/dewalt+dc910/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc910/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 25.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285813|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285813",
-   "location": "Waddinxveen",
-   "market": 34.99,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 15,
-    "high": 47.95,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 14.95,
-      "title": "Makita LXT 18V BL1830-BL1890 Accuhouder &amp; Transport Carrier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1515258931-makita-lxt-18v-bl1830-bl1890-accuhouder-amp-transport-carrier"
-     },
-     {
-      "kind": "fixed",
-      "price": 19.95,
-      "title": "Makita LXT 18V BL1830-BL1890 Accuhouder &amp; Transport Carrier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1515258932-makita-lxt-18v-bl1830-bl1890-accuhouder-amp-transport-carrier"
-     },
-     {
-      "kind": "fixed",
-      "price": 22.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 1500mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990275-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-1500mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 24.95,
-      "title": "Makita LXT 18V BL1830-BL1890 Accuhouder &amp; Transport Carrier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1515258933-makita-lxt-18v-bl1830-bl1890-accuhouder-amp-transport-carrier"
-     },
-     {
-      "kind": "fixed",
-      "price": 32.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 3000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1514476448-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-3000mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 32.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 2500mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990276-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-2500mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 34.99,
-      "title": "Makita Accu 3.0 Ah 18V BL1830 | Incl garantie",
-      "url": "https://www.marktplaats.nl/v/caravans-en-kamperen/kampeergereedschap/m2441148883-makita-accu-3-0-ah-18v-bl1830-incl-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 34.99,
-      "title": "Makita BL1830 18v 3.0 Ah | Inc garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442174361-makita-bl1830-18v-3-0-ah-inc-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 39.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 4000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1514476449-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-4000mah"
-     },
-     {
-      "kind": "bid",
-      "price": 39.99,
-      "title": "Makita BL1830 18V Accu | Met garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2407811137-makita-bl1830-18v-accu-met-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 44.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 5000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1514476450-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-5000mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 47.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 6000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1514476454-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-6000mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 48.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 9000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990278-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-9000mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 54.95,
-      "title": "Makita BL1850 / BL1830 schuifaccu 18V — 1.5-9.0Ah - 7500mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990277-makita-bl1850-bl1830-schuifaccu-18v-1-5-9-0ah-7500mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
-     }
-    ],
-    "low": 24.95,
-    "median": 34.99,
-    "model": "BL1830",
-    "outliers": [],
-    "prices": [
-     14.95,
-     19.95,
-     22.95,
-     24.95,
-     32.95,
-     32.95,
-     34.99,
-     34.99,
-     39.95,
-     39.99,
-     44.95,
-     47.95,
-     48.95,
-     54.95,
-     80.0
-    ],
-    "query": "makita bl1830",
-    "url": "https://www.marktplaats.nl/q/makita+bl1830/"
-   },
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "BL1830",
-    "note": "exact model Makita BL1830",
-    "search": "https://www.marktplaats.nl/q/makita+bl1830/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+bl1830/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita LXT Accubatterij BL1830",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T04:25:47.717815+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285771|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285771",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "hilti",
-    "kind": "exact",
-    "model": "PUA 25",
-    "note": "exact model Hilti PUA 25",
-    "search": "https://www.marktplaats.nl/q/hilti+pua+25/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/hilti+pua+25/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Hilti Meetstatief PUA 25",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3285771/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 15.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 2,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285825|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285825",
-   "location": "Waddinxveen",
-   "market": 30.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 5,
-    "high": 57.5,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Makita Gereedschapskoffers (2 stuks)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "nieuwe makita gereedschapskoffers 25 euro per koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443739238-nieuwe-makita-gereedschapskoffers-25-euro-per-koffer"
-     }
-    ],
-    "low": 12.5,
-    "median": 15.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     10.0,
-     15.0,
-     15.0,
-     15.0,
-     100.0
-    ],
-    "query": "makita gereedschapskoffers",
-    "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita gereedschapskoffers - 2 stuks",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 2,
-   "url": "https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3285825/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285807|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285807",
-   "location": "Waddinxveen",
-   "market": 16.98,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 6,
-    "high": 38.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2425242636-dewalt-tstak-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2412564707-dewalt-tstak-gereedschapskoffer-leeg"
-     },
-     {
-      "kind": "bid",
-      "price": 15.95,
-      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442322844-dewalt-tstak-koffer-lege-gereedschapskoffer"
-     },
-     {
-      "kind": "bid",
-      "price": 18.0,
-      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2407697865-dewalt-tstak-koffer-lege-gereedschapskoffer"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Dewalt TSTAK Gereedschapskoffer met Inlay",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436537030-dewalt-tstak-gereedschapskoffer-met-inlay"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Dewalt TSTAK Gereedschapskoffer Set van 5",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2418736947-dewalt-tstak-gereedschapskoffer-set-van-5"
-     }
-    ],
-    "low": 10.0,
-    "median": 16.98,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     10.0,
-     10.0,
-     15.95,
-     18.0,
-     30.0,
-     65.0
-    ],
-    "query": "dewalt tstak gereedschapskoffer",
-    "url": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DEWALT TSTAK Gereedschapskoffer",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DEWALT-TSTAK-Gereedschapskoffer/3285807/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285798",
-   "location": "Waddinxveen",
-   "market": 70.0,
-   "marketSource": "marktplaats",
-   "maxBid": 1.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 5,
-    "high": 167.47,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Dewalt schroefmachine dcf887",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2415329974-dewalt-schroefmachine-dcf887"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.99,
-      "title": "DeWalt DCF887 SlagSchroevendraaier + 18V 5AH Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437890334-dewalt-dcf887-slagschroevendraaier-18v-5ah-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "DeWalt DCF887N Slagschroevendraaier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446997901-dewalt-dcf887n-slagschroevendraaier"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "DEWALT DCF 887 ,IN T STACK",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443104456-dewalt-dcf-887-in-t-stack"
-     },
-     {
-      "kind": "bid",
-      "price": 249.95,
-      "title": "DeWALT DCD796 + DCF887 + originele koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448191214-dewalt-dcd796-dcf887-originele-koffer"
-     }
-    ],
-    "low": 62.49,
-    "median": 70.0,
-    "model": "DCF887",
-    "outliers": [],
-    "prices": [
-     55.0,
-     69.99,
-     70.0,
-     85.0,
-     249.95
-    ],
-    "query": "dewalt dcf887",
-    "url": "https://www.marktplaats.nl/q/dewalt+dcf887/"
-   },
-   "mpPlan": {
-    "brand": "dewalt",
-    "kind": "exact",
-    "model": "DCF887",
-    "note": "exact model Dewalt DCF887",
-    "search": "https://www.marktplaats.nl/q/dewalt+dcf887/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dcf887/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285814|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285814",
-   "location": "Waddinxveen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": "dewalt",
-    "kind": "exact",
-    "model": "DC925",
-    "note": "exact model Dewalt DC925",
-    "search": "https://www.marktplaats.nl/q/dewalt+dc925/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc925/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3285814/detail",
-   "vat": 0.21
-  },
-  {
    "auction": "Faillissement VOF MGB Groep",
    "bid": 13.0,
    "bidFromEmail": false,
@@ -2198,7 +1226,7 @@
    "marketSource": "marktplaats",
    "maxBid": 30.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 10,
     "high": 225.0,
     "kind": "general",
@@ -2237,7 +1265,7 @@
       "kind": "fixed",
       "price": 149.0,
       "title": "Makita DMR112 18V Accu Bouwradio DAB+ Bluetooth LXT CXT",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2448374411-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2449010868-makita-dmr112-18v-accu-bouwradio-dab-bluetooth-lxt-cxt"
      },
      {
       "kind": "bid",
@@ -2327,20 +1355,20 @@
    "itemMinMargin": null,
    "key": "hnvi:196630",
    "location": "Loon op Zand",
-   "market": 87.0,
+   "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 14.0,
+   "maxBid": 11.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 6,
-    "high": 180.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 5,
+    "high": 184.5,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 62.0,
-      "title": "Dewalt Accu Bouwradio - Robuust en Draagbaar",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441937588-dewalt-accu-bouwradio-robuust-en-draagbaar"
+      "price": 10.0,
+      "title": "DeWalt DC011 Bouwradio & Acculader",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2449128182-dewalt-dc011-bouwradio-acculader"
      },
      {
       "kind": "bid",
@@ -2362,27 +1390,20 @@
      },
      {
       "kind": "fixed",
-      "price": 150.0,
-      "title": "Dewalt DCR027 bouwradio op netstroom en accu",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446864716-dewalt-dcr027-bouwradio-op-netstroom-en-accu"
-     },
-     {
-      "kind": "fixed",
       "price": 269.99,
       "title": "DeWALT DCR027 DAB+ Bouwradio 10.8-18V XR + T-Stack Accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441522020-dewalt-dcr027-dab-bouwradio-10-8-18v-xr-t-stack-accu"
      }
     ],
-    "low": 68.0,
-    "median": 87.0,
+    "low": 40.0,
+    "median": 75.0,
     "model": null,
     "outliers": [],
     "prices": [
-     62.0,
+     10.0,
      70.0,
      75.0,
      99.0,
-     150.0,
      269.99
     ],
     "query": "dewalt bouwradio accu",
@@ -2436,9 +1457,9 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 38,
-    "high": 25.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 37,
+    "high": 22.5,
     "kind": "general",
     "listings": [
      {
@@ -2502,6 +1523,12 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430680473-lege-makita-gereedschapskoffer-voor-schroefboormachine"
      },
      {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Makita Mbox 2 Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2449603401-makita-mbox-2-gereedschapskoffer"
+     },
+     {
       "kind": "bid",
       "price": 15.0,
       "title": "Makita gereedschapskoffer - Leeg",
@@ -2516,26 +1543,20 @@
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Makita Gereedschapskoffers (2 stuks)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
       "title": "Makita LXT Brushless gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2432033415-makita-lxt-brushless-gereedschapskoffer"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "NIEUW Makita MBOX nr 1 Gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448358874-nieuw-makita-mbox-nr-1-gereedschapskoffer"
+      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
      },
      {
       "kind": "bid",
@@ -2548,12 +1569,6 @@
       "price": 18.0,
       "title": "NIEUW Makita MBOX nr. 2 gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448363000-nieuw-makita-mbox-nr-2-gereedschapskoffer"
-     },
-     {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita gereedschapskoffer met lades",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2448113274-makita-gereedschapskoffer-met-lades"
      },
      {
       "kind": "bid",
@@ -2580,16 +1595,16 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2440697598-makita-systainer-gereedschapskoffer"
      },
      {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita Systainer 2 gereedschapskoffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2443260196-makita-systainer-2-gereedschapskoffer"
-     },
-     {
       "kind": "bid",
       "price": 20.0,
       "title": "Mbox Makita Koffer Type 2 - Gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2413532058-mbox-makita-koffer-type-2-gereedschapskoffer"
+     },
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita Systainer 2 gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2443260196-makita-systainer-2-gereedschapskoffer"
      },
      {
       "kind": "fixed",
@@ -2611,6 +1626,12 @@
      },
      {
       "kind": "bid",
+      "price": 20.0,
+      "title": "Makita koffer DTW300ZJ - Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2424673500-makita-koffer-dtw300zj-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
       "price": 25.0,
       "title": "Makita Mbox leeg - Gereedschapskoffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2416226302-makita-mbox-leeg-gereedschapskoffer"
@@ -2622,7 +1643,7 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2422851878-makita-gereedschapskoffer-stevig-en-ruim"
      }
     ],
-    "low": 11.5,
+    "low": 11.0,
     "median": 20.0,
     "model": null,
     "outliers": [
@@ -2630,7 +1651,8 @@
      65.0,
      75.0,
      95.0,
-     100.0
+     100.0,
+     169.99
     ],
     "prices": [
      5.0,
@@ -2669,8 +1691,7 @@
      32.0,
      35.0,
      35.0,
-     40.0,
-     52.0
+     40.0
     ],
     "query": "makita gereedschapskoffer",
     "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffer/"
@@ -2719,20 +1740,20 @@
    "itemMinMargin": null,
    "key": "hnvi:196645",
    "location": "Loon op Zand",
-   "market": 75.0,
+   "market": 72.5,
    "marketSource": "marktplaats",
-   "maxBid": 11.0,
+   "maxBid": 10.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 19,
-    "high": 100.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 18,
+    "high": 102.5,
     "kind": "general",
     "listings": [
      {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Metabo haakse slijper - Goed werkende staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2448090774-metabo-haakse-slijper-goed-werkende-staat"
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Metabo haakse slijper - zie foto's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2449148010-metabo-haakse-slijper-zie-foto-s"
      },
      {
       "kind": "bid",
@@ -2766,12 +1787,6 @@
      },
      {
       "kind": "bid",
-      "price": 48.0,
-      "title": "Nieuwe Metabo haakse slijper W750-115",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447800491-nieuwe-metabo-haakse-slijper-w750-115"
-     },
-     {
-      "kind": "bid",
       "price": 50.0,
       "title": "Metabo haakse slijper - Gebruikt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2445519989-metabo-haakse-slijper-gebruikt"
@@ -2783,10 +1798,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2438180455-metabo-haakse-slijper-125-mm-nieuw"
      },
      {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Metabo W 21-230 Haakse Slijper - Krachtig en Betrouwbaar",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2444260516-metabo-w-21-230-haakse-slijper-krachtig-en-betrouwbaar"
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Metabo W 18 L 9-125 Quick haakse slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2448490879-metabo-w-18-l-9-125-quick-haakse-slijper"
      },
      {
       "kind": "bid",
@@ -2843,23 +1858,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2443122120-haakse-slijper-metabo-we-17-150-quick-rt-1750w-nieuw"
      }
     ],
-    "low": 40.0,
-    "median": 75.0,
+    "low": 36.25,
+    "median": 72.5,
     "model": null,
     "outliers": [
-     271.0
+     267.5
     ],
     "prices": [
-     20.0,
+     15.0,
      25.0,
      25.0,
      25.0,
      40.0,
      45.0,
-     48.0,
      50.0,
      65.0,
-     75.0,
+     70.0,
      75.0,
      80.0,
      85.0,
@@ -2917,20 +1931,20 @@
    "itemMinMargin": null,
    "key": "hnvi:196661",
    "location": "Loon op Zand",
-   "market": 87.0,
+   "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 14.0,
+   "maxBid": 11.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 6,
-    "high": 180.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 5,
+    "high": 184.5,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 62.0,
-      "title": "Dewalt Accu Bouwradio - Robuust en Draagbaar",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2441937588-dewalt-accu-bouwradio-robuust-en-draagbaar"
+      "price": 10.0,
+      "title": "DeWalt DC011 Bouwradio & Acculader",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2449128182-dewalt-dc011-bouwradio-acculader"
      },
      {
       "kind": "bid",
@@ -2952,27 +1966,20 @@
      },
      {
       "kind": "fixed",
-      "price": 150.0,
-      "title": "Dewalt DCR027 bouwradio op netstroom en accu",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2446864716-dewalt-dcr027-bouwradio-op-netstroom-en-accu"
-     },
-     {
-      "kind": "fixed",
       "price": 269.99,
       "title": "DeWALT DCR027 DAB+ Bouwradio 10.8-18V XR + T-Stack Accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441522020-dewalt-dcr027-dab-bouwradio-10-8-18v-xr-t-stack-accu"
      }
     ],
-    "low": 68.0,
-    "median": 87.0,
+    "low": 40.0,
+    "median": 75.0,
     "model": null,
     "outliers": [],
     "prices": [
-     62.0,
+     10.0,
      70.0,
      75.0,
      99.0,
-     150.0,
      269.99
     ],
     "query": "dewalt bouwradio accu",
@@ -3074,9 +2081,9 @@
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 9,
-    "high": 21.25,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 15,
+    "high": 19.95,
     "kind": "general",
     "listings": [
      {
@@ -3093,21 +2100,39 @@
      },
      {
       "kind": "bid",
+      "price": 3.0,
+      "title": "Glazen stolp  / planten terrarium",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-stolpen/m2449556217-glazen-stolp-planten-terrarium"
+     },
+     {
+      "kind": "fixed",
+      "price": 4.0,
+      "title": "nieuw vakken dienblad met glazen planten potten",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2449229875-nieuw-vakken-dienblad-met-glazen-planten-potten"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "10 glazen plantenschalen",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-schalen-en-manden/m2449132383-10-glazen-plantenschalen"
+     },
+     {
+      "kind": "bid",
       "price": 8.0,
       "title": "Haworthia plant in gerecyclede glazen pot met kurk",
       "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2447528693-haworthia-plant-in-gerecyclede-glazen-pot-met-kurk"
      },
      {
       "kind": "bid",
-      "price": 12.5,
-      "title": "Set van 4 Glazen Wandvazen voor Planten - Hydroponisch",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-vazen/m2444505762-set-van-4-glazen-wandvazen-voor-planten-hydroponisch"
+      "price": 10.5,
+      "title": "Glazen plantenspuit met tropische print",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wijnrekken/m2449478234-glazen-plantenspuit-met-tropische-print"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Intratuin planten in glazen pot",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2448121491-intratuin-planten-in-glazen-pot"
+      "title": "Vintage glazen waterdruppelaars voor planten",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/planten-tuinplanten/m2448994401-vintage-glazen-waterdruppelaars-voor-planten"
      },
      {
       "kind": "fixed",
@@ -3118,8 +2143,20 @@
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Zamioculcas plant in glazen terrarium",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2443317576-zamioculcas-plant-in-glazen-terrarium"
+      "title": "6 glazen plantenpotjes",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2448674060-6-glazen-plantenpotjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 18.95,
+      "title": "Glazen Hydroponics Vaas - Plantenstekken Station & Decoratie",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542378-glazen-hydroponics-vaas-plantenstekken-station-decoratie"
+     },
+     {
+      "kind": "fixed",
+      "price": 19.95,
+      "title": "Glazen Vaas met Houten Standaard - Hydroponische Plantenbak",
+      "url": "https://www.marktplaats.nl/v/zakelijke-goederen/kantoor-en-winkelinrichting-kantoorartikelen/a1530542260-glazen-vaas-met-houten-standaard-hydroponische-plantenbak"
      },
      {
       "kind": "bid",
@@ -3132,9 +2169,15 @@
       "price": 30.0,
       "title": "Plant in glazenbol",
       "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/m2446695293-plant-in-glazenbol"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Glazen terrarium/mini kas voor planten - vintage",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2449142438-glazen-terrarium-mini-kas-voor-planten-vintage"
      }
     ],
-    "low": 5.25,
+    "low": 4.0,
     "median": 15.0,
     "model": null,
     "outliers": [
@@ -3143,13 +2186,19 @@
     "prices": [
      2.5,
      2.5,
+     3.0,
+     4.0,
+     5.0,
      8.0,
-     12.5,
+     10.5,
      15.0,
      15.0,
      15.0,
+     18.95,
+     19.95,
      27.5,
-     30.0
+     30.0,
+     50.0
     ],
     "query": "plant glazen",
     "url": "https://www.marktplaats.nl/q/plant+glazen/"
@@ -3198,26 +2247,20 @@
    "itemMinMargin": null,
    "key": "onlineveilingmeester:1902545",
    "location": "Noordwolde",
-   "market": 147.5,
+   "market": 170.0,
    "marketSource": "marktplaats",
-   "maxBid": 9.0,
+   "maxBid": 15.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 26,
-    "high": 200.0,
+    "high": 208.75,
     "kind": "general",
     "listings": [
      {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Acer Aspire 5733Z-P624G50Mikk laptop - werking onbekend",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446119261-acer-aspire-5733z-p624g50mikk-laptop-werking-onbekend"
-     },
-     {
       "kind": "fixed",
-      "price": 50.0,
-      "title": "Acer laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446222581-acer-laptop"
+      "price": 35.0,
+      "title": "Acer Aspire 5742ZG Laptop - Nieuwe Windows Installatie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449355917-acer-aspire-5742zg-laptop-nieuwe-windows-installatie"
      },
      {
       "kind": "fixed",
@@ -3232,16 +2275,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447491096-acer-laptop"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 60.0,
       "title": "Acer laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2445902551-acer-laptop"
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449546108-acer-laptop"
      },
      {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Uitstekende Peaq (Acer) laptop met Windows 11 + Office +Hdmi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448465873-uitstekende-peaq-acer-laptop-met-windows-11-office-hdmi"
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Acer Aspire Laptop E1-572",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448769981-acer-aspire-laptop-e1-572"
      },
      {
       "kind": "bid",
@@ -3252,38 +2295,20 @@
      {
       "kind": "fixed",
       "price": 100.0,
-      "title": "Acer Predator Helios 300 Gaming Laptop - Getest en Goed",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448282478-acer-predator-helios-300-gaming-laptop-getest-en-goed"
-     },
-     {
-      "kind": "bid",
-      "price": 119.0,
-      "title": "Acer Aspire ES1-711-C3Q7 17,3\" laptop – Windows 10 – goede a",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447473753-acer-aspire-es1-711-c3q7-17-3-laptop-windows-10-goede-a"
+      "title": "Acer Extensa 2540 Laptop - i5-7200U, 4GB RAM, 238GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449634032-acer-extensa-2540-laptop-i5-7200u-4gb-ram-238gb-ssd"
      },
      {
       "kind": "fixed",
       "price": 125.0,
-      "title": "Prima Acer Swift 1 SF113 13,3'' FHD Laptop in prima staat.",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2265363490-prima-acer-swift-1-sf113-13-3-fhd-laptop-in-prima-staat"
+      "title": "Acer TRAVELMATE Spin B118 11,6'' FHD Touchscreen Laptop.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2216499799-acer-travelmate-spin-b118-11-6-fhd-touchscreen-laptop"
      },
      {
       "kind": "bid",
-      "price": 125.0,
-      "title": "acer 1U75TVMC laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448423988-acer-1u75tvmc-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 140.0,
+      "price": 130.0,
       "title": "Acer laptop SWIFT 1 SF114-33",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447808693-acer-laptop-swift-1-sf114-33"
-     },
-     {
-      "kind": "bid",
-      "price": 145.0,
-      "title": "Laptop Acer Aspire A515-52FN",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446987585-laptop-acer-aspire-a515-52fn"
      },
      {
       "kind": "bid",
@@ -3294,26 +2319,44 @@
      {
       "kind": "bid",
       "price": 150.0,
-      "title": "Acer laptop met 128 GB SSD en 4 GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446256649-acer-laptop-met-128-gb-ssd-en-4-gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Acer Aspire E15 Laptop - Intel Core i3, 4GB RAM, 15.6 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448173202-acer-aspire-e15-laptop-intel-core-i3-4gb-ram-15-6-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 170.0,
       "title": "Acer laptop - Goed gebruikt",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447647099-acer-laptop-goed-gebruikt"
      },
      {
       "kind": "bid",
+      "price": 150.0,
+      "title": "Acer Laptop i7-8750H, 8GB RAM, 238GB SSD, Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448929655-acer-laptop-i7-8750h-8gb-ram-238gb-ssd-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 165.0,
+      "title": "nette acer laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449547947-nette-acer-laptop"
+     },
+     {
+      "kind": "fixed",
       "price": 175.0,
-      "title": "Acer Aspire E 14 Laptop - Intel Core i3, 4GB RAM, 1TB HDD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447612915-acer-aspire-e-14-laptop-intel-core-i3-4gb-ram-1tb-hdd"
+      "title": "Acer Aspire 3 15 Laptop - Nieuwstaat,zeer weinig gebruikt",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2436584765-acer-aspire-3-15-laptop-nieuwstaat-zeer-weinig-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 199.0,
+      "title": "Acer Gaming Laptop - Krachtige Prestaties voor Gamers",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449644397-acer-gaming-laptop-krachtige-prestaties-voor-gamers"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Prima Acer Spin 314-51 FHD Touchscreen Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2427963285-prima-acer-spin-314-51-fhd-touchscreen-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Prima Acer SPIN 314-53N 14'' FHD Touchscreen Laptop.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2308223040-prima-acer-spin-314-53n-14-fhd-touchscreen-laptop"
      },
      {
       "kind": "fixed",
@@ -3324,14 +2367,26 @@
      {
       "kind": "fixed",
       "price": 200.0,
-      "title": "Prima Acer Spin 314-51 FHD Touchscreen Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2427963285-prima-acer-spin-314-51-fhd-touchscreen-laptop"
+      "title": "Prima Acer ASPIRE 5 A517-51 17'' FHD Laptop met Office 2024.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2329122729-prima-acer-aspire-5-a517-51-17-fhd-laptop-met-office-2024"
      },
      {
       "kind": "fixed",
       "price": 200.0,
       "title": "Acer laptop - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447302751-acer-laptop-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 235.0,
+      "title": "Acer Swift SF315-52G 15,6 inch FHD laptop.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2329118058-acer-swift-sf315-52g-15-6-inch-fhd-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "Acer Nitro 5 Gaming Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449373180-acer-nitro-5-gaming-laptop"
      },
      {
       "kind": "bid",
@@ -3347,58 +2402,52 @@
      },
      {
       "kind": "bid",
-      "price": 400.0,
-      "title": "Acer gaming laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444822652-acer-gaming-laptop"
+      "price": 499.0,
+      "title": "Acer Nitro 5 AN515-55-76A5 Gaming Laptop i7 16GB 1TB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448828931-acer-nitro-5-an515-55-76a5-gaming-laptop-i7-16gb-1tb"
      },
      {
       "kind": "bid",
-      "price": 450.0,
-      "title": "Acer Aspire 5 laptop - Zgan weinig gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2447351293-acer-aspire-5-laptop-zgan-weinig-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 600.0,
-      "title": "Acer Nitro 5 Gaming Laptop i7 RTX 3060 + Logitech G403 Muis",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2448584691-acer-nitro-5-gaming-laptop-i7-rtx-3060-logitech-g403-muis"
+      "price": 500.0,
+      "title": "Acer laptop met Windows - Klaar voor gebruik",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2449443557-acer-laptop-met-windows-klaar-voor-gebruik"
      }
     ],
-    "low": 95.0,
-    "median": 147.5,
+    "low": 100.0,
+    "median": 170.0,
     "model": null,
     "outliers": [
      750.0,
      849.0,
-     1399.0
+     995.0
     ],
     "prices": [
-     15.0,
-     50.0,
+     35.0,
      50.0,
      50.0,
      60.0,
-     80.0,
+     75.0,
      100.0,
      100.0,
-     119.0,
      125.0,
-     125.0,
-     140.0,
-     145.0,
+     130.0,
      150.0,
      150.0,
      150.0,
-     170.0,
+     165.0,
      175.0,
+     199.0,
      200.0,
      200.0,
      200.0,
+     200.0,
+     200.0,
+     235.0,
+     300.0,
      300.0,
      350.0,
-     400.0,
-     450.0,
-     600.0
+     499.0,
+     500.0
     ],
     "query": "laptop acer",
     "url": "https://www.marktplaats.nl/q/laptop+acer/"
@@ -3447,13 +2496,13 @@
    "itemMinMargin": null,
    "key": "onlineveilingmeester:1902560",
    "location": "Noordwolde",
-   "market": 225.0,
+   "market": 170.0,
    "marketSource": "marktplaats",
-   "maxBid": 30.0,
+   "maxBid": 15.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 5,
-    "high": 80.0,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 4,
+    "high": 106.88,
     "kind": "general",
     "listings": [
      {
@@ -3476,26 +2525,19 @@
      },
      {
       "kind": "bid",
-      "price": 25.0,
-      "title": "Hangende Plantenbakken XLset van 4x -verticale tuin - grijs",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/planten-tuinplanten/m2448205987-hangende-plantenbakken-xlset-van-4x-verticale-tuin-grijs"
-     },
-     {
-      "kind": "bid",
       "price": 135.0,
       "title": "Vintage hangende plantenbakken - Oranje en Paars",
       "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/m2431663381-vintage-hangende-plantenbakken-oranje-en-paars"
      }
     ],
-    "low": 7.55,
-    "median": 22.5,
+    "low": 5.58,
+    "median": 17.0,
     "model": null,
     "outliers": [],
     "prices": [
      3.6,
      11.5,
      22.5,
-     25.0,
      135.0
     ],
     "query": "plant hangende plantenbakken",
@@ -3524,6 +2566,888 @@
    },
    "units": 10,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/219",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 75.0,
+   "bidFromEmail": false,
+   "bids": 11,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285767|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285767",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "HM1812",
+    "note": "exact model Makita HM1812",
+    "search": "https://www.marktplaats.nl/q/makita+hm1812/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+hm1812/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita AVT Breekhamer HM1812",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 30.0,
+   "bidFromEmail": false,
+   "bids": 2,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285793|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285793",
+   "location": "Waddinxveen",
+   "market": 39.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 33,
+    "high": 52.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 4.95,
+      "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita oplader muurbeugel - DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436194972-makita-oplader-muurbeugel-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita DC18RC Wandhouder",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435169330-makita-dc18rc-wandhouder"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita DC18RC wandmontage",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.95,
+      "title": "Makita DC18RC lader wandhouder muurbevestiging",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448809245-makita-dc18rc-lader-wandhouder-muurbevestiging"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "DC18RC Makita Lithium-Ion Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449662360-dc18rc-makita-lithium-ion-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449599423-makita-dc18rc-acculader-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V - ook Dolmar, Greenlee,",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
+     },
+     {
+      "kind": "bid",
+      "price": 29.99,
+      "title": "Makita DC18RC Accu Lader | Nieuw | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449440371-makita-dc18rc-accu-lader-nieuw-met-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita Snellader DC18RC voor 18V",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita acculader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
+     },
+     {
+      "kind": "bid",
+      "price": 39.0,
+      "title": "Originele Makita DC18RC snellader – 18V LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Makita lader DC18RC 14.4V~18V Lithium batterij",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2439135556-makita-lader-dc18rc-14-4v-18v-lithium-batterij"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Nette gebruikte Makita lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Nieuwe Makita DC18RC Oplader voor 18V Li-ion Accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.95,
+      "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-dc18sd-dc18-acculader-14-4-18v-3-0-a"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "Nieuwe originele Makita DC18RC snellader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445371009-nieuwe-originele-makita-dc18rc-snellader"
+     },
+     {
+      "kind": "bid",
+      "price": 59.95,
+      "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Makita accu met lader - DC18RC en BL1815",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2417485376-makita-accu-met-lader-dc18rc-en-bl1815"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita acculaders DC10SB en DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
+     }
+    ],
+    "low": 26.48,
+    "median": 39.0,
+    "model": "DC18RC",
+    "outliers": [
+     160.0,
+     169.0,
+     180.0,
+     189.0,
+     229.0
+    ],
+    "prices": [
+     4.95,
+     5.0,
+     5.0,
+     5.0,
+     5.95,
+     15.0,
+     25.0,
+     25.0,
+     27.95,
+     29.99,
+     30.0,
+     30.0,
+     30.0,
+     35.0,
+     35.0,
+     35.0,
+     39.0,
+     39.95,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.95,
+     50.0,
+     50.0,
+     55.0,
+     59.95,
+     60.0,
+     75.0,
+     80.0,
+     80.0,
+     109.95,
+     140.0
+    ],
+    "query": "makita dc18rc",
+    "url": "https://www.marktplaats.nl/q/makita+dc18rc/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "DC18RC",
+    "note": "exact model Makita DC18RC",
+    "search": "https://www.marktplaats.nl/q/makita+dc18rc/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+dc18rc/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285775|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285775",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "dewalt",
+    "kind": "exact",
+    "model": "DC910",
+    "note": "exact model Dewalt DC910",
+    "search": "https://www.marktplaats.nl/q/dewalt+dc910/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc910/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285813|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285813",
+   "location": "Waddinxveen",
+   "market": 37.49,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 4,
+    "high": 70.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 34.99,
+      "title": "Makita Accu 3.0 Ah 18V BL1830 | Incl garantie",
+      "url": "https://www.marktplaats.nl/v/caravans-en-kamperen/kampeergereedschap/m2441148883-makita-accu-3-0-ah-18v-bl1830-incl-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 34.99,
+      "title": "Makita BL1830 18v 3.0 Ah | Inc garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442174361-makita-bl1830-18v-3-0-ah-inc-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 39.99,
+      "title": "Makita BL1830 18V Accu | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2407811137-makita-bl1830-18v-accu-met-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
+     }
+    ],
+    "low": 34.99,
+    "median": 37.49,
+    "model": "BL1830",
+    "outliers": [],
+    "prices": [
+     34.99,
+     34.99,
+     39.99,
+     80.0
+    ],
+    "query": "makita bl1830",
+    "url": "https://www.marktplaats.nl/q/makita+bl1830/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "BL1830",
+    "note": "exact model Makita BL1830",
+    "search": "https://www.marktplaats.nl/q/makita+bl1830/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+bl1830/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita LXT Accubatterij BL1830",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T04:25:47.717815+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285771|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285771",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "hilti",
+    "kind": "exact",
+    "model": "PUA 25",
+    "note": "exact model Hilti PUA 25",
+    "search": "https://www.marktplaats.nl/q/hilti+pua+25/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/hilti+pua+25/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Hilti Meetstatief PUA 25",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3285771/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 15.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 2,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285825|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285825",
+   "location": "Waddinxveen",
+   "market": 30.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 5,
+    "high": 57.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "makita gereedschapskoffers boxen box koffer gereedsschapkist",
+      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2443574646-makita-gereedschapskoffers-boxen-box-koffer-gereedsschapkist"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Gereedschapskoffers (2 stuks)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444853394-makita-gereedschapskoffers-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Grote partij gereedschapskoffers (Bosch, Makita, Metabo)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448077241-grote-partij-gereedschapskoffers-bosch-makita-metabo"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Lege gereedschapskoffers Milwaukee M12 Fuel en Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2431755921-lege-gereedschapskoffers-milwaukee-m12-fuel-en-makita"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "nieuwe makita gereedschapskoffers 25 euro per koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2443739238-nieuwe-makita-gereedschapskoffers-25-euro-per-koffer"
+     }
+    ],
+    "low": 12.5,
+    "median": 15.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     10.0,
+     15.0,
+     15.0,
+     15.0,
+     100.0
+    ],
+    "query": "makita gereedschapskoffers",
+    "url": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+gereedschapskoffers/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita gereedschapskoffers - 2 stuks",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 2,
+   "url": "https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3285825/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285807|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285807",
+   "location": "Waddinxveen",
+   "market": 19.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 8,
+    "high": 37.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2425242636-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2412564707-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "bid",
+      "price": 15.95,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2442322844-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 18.0,
+      "title": "DeWalt TSTAK Koffer - Lege Gereedschapskoffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2407697865-dewalt-tstak-koffer-lege-gereedschapskoffer"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "DeWalt TSTAK gereedschapskoffer - Leeg",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2449427428-dewalt-tstak-gereedschapskoffer-leeg"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer met Inlay",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436537030-dewalt-tstak-gereedschapskoffer-met-inlay"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "DeWalt TSTAK gereedschapskoffer met inlegbak dch273",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2449428245-dewalt-tstak-gereedschapskoffer-met-inlegbak-dch273"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Dewalt TSTAK Gereedschapskoffer Set van 5",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2418736947-dewalt-tstak-gereedschapskoffer-set-van-5"
+     }
+    ],
+    "low": 11.49,
+    "median": 19.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     10.0,
+     10.0,
+     15.95,
+     18.0,
+     20.0,
+     30.0,
+     40.0,
+     65.0
+    ],
+    "query": "dewalt tstak gereedschapskoffer",
+    "url": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+tstak+gereedschapskoffer/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT TSTAK Gereedschapskoffer",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DEWALT-TSTAK-Gereedschapskoffer/3285807/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285798",
+   "location": "Waddinxveen",
+   "market": 70.0,
+   "marketSource": "marktplaats",
+   "maxBid": 1.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 5,
+    "high": 87.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "Dewalt schroefmachine dcf887",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2415329974-dewalt-schroefmachine-dcf887"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.99,
+      "title": "DeWalt DCF887 SlagSchroevendraaier + 18V 5AH Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449271630-dewalt-dcf887-slagschroevendraaier-18v-5ah-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "DeWalt DCF887N Slagschroevendraaier",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446997901-dewalt-dcf887n-slagschroevendraaier"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "DEWALT DCF 887 ,IN T STACK",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443104456-dewalt-dcf-887-in-t-stack"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "DeWalt DCF887 18V XR Brushless Slagmoersleutel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449194246-dewalt-dcf887-18v-xr-brushless-slagmoersleutel"
+     }
+    ],
+    "low": 62.49,
+    "median": 70.0,
+    "model": "DCF887",
+    "outliers": [
+     249.95
+    ],
+    "prices": [
+     55.0,
+     69.99,
+     70.0,
+     85.0,
+     90.0
+    ],
+    "query": "dewalt dcf887",
+    "url": "https://www.marktplaats.nl/q/dewalt+dcf887/"
+   },
+   "mpPlan": {
+    "brand": "dewalt",
+    "kind": "exact",
+    "model": "DCF887",
+    "note": "exact model Dewalt DCF887",
+    "search": "https://www.marktplaats.nl/q/dewalt+dcf887/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dcf887/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 20.0,
+   "bidFromEmail": false,
+   "bids": 0,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285814|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285814",
+   "location": "Waddinxveen",
+   "market": null,
+   "marketSource": null,
+   "maxBid": null,
+   "mp": null,
+   "mpPlan": {
+    "brand": "dewalt",
+    "kind": "exact",
+    "model": "DC925",
+    "note": "exact model Dewalt DC925",
+    "search": "https://www.marktplaats.nl/q/dewalt+dc925/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dc925/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DEWALT XRP Accu klopboormachine DC925 493905-01",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3285814/detail",
    "vat": 0.21
   },
   {
@@ -7805,7 +7729,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751328/IMG_0003_kleinOK.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -7996,7 +7920,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751329/IMG_0029_kleinOK.jpeg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8276,7 +8200,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751330/IMG_0042_kleinOK.jpeg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8425,7 +8349,7 @@
    "fixed": 0.0,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/751332/IMG_0067_kleinOK.jpeg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "iPad",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8979,6 +8903,288 @@
    },
    "units": 1,
    "url": "https://www.proveiling.nl/Makita-LXT-Accu-BL1850B/3288575/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
+   "bid": 12.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-12T20:00:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
+   "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288577|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3288577",
+   "location": "Bolsward",
+   "market": 39.0,
+   "marketSource": "marktplaats",
+   "maxBid": 0.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 33,
+    "high": 52.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 4.95,
+      "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita oplader muurbeugel - DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436194972-makita-oplader-muurbeugel-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita DC18RC Wandhouder",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435169330-makita-dc18rc-wandhouder"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita DC18RC wandmontage",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.95,
+      "title": "Makita DC18RC lader wandhouder muurbevestiging",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448809245-makita-dc18rc-lader-wandhouder-muurbevestiging"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "DC18RC Makita Lithium-Ion Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449662360-dc18rc-makita-lithium-ion-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449599423-makita-dc18rc-acculader-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 27.95,
+      "title": "Makita DC18RC acculader 14.4-18V - ook Dolmar, Greenlee,",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
+     },
+     {
+      "kind": "bid",
+      "price": 29.99,
+      "title": "Makita DC18RC Accu Lader | Nieuw | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449440371-makita-dc18rc-accu-lader-nieuw-met-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita Snellader DC18RC voor 18V",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
+     },
+     {
+      "kind": "fixed",
+      "price": 30.0,
+      "title": "Makita acculader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
+     },
+     {
+      "kind": "bid",
+      "price": 39.0,
+      "title": "Originele Makita DC18RC snellader – 18V LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
+     },
+     {
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Makita lader DC18RC 14.4V~18V Lithium batterij",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2439135556-makita-lader-dc18rc-14-4v-18v-lithium-batterij"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Nette gebruikte Makita lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Nieuwe Makita DC18RC Oplader voor 18V Li-ion Accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.95,
+      "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-dc18sd-dc18-acculader-14-4-18v-3-0-a"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
+     },
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "Nieuwe originele Makita DC18RC snellader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445371009-nieuwe-originele-makita-dc18rc-snellader"
+     },
+     {
+      "kind": "bid",
+      "price": 59.95,
+      "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Makita accu met lader - DC18RC en BL1815",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2417485376-makita-accu-met-lader-dc18rc-en-bl1815"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita acculaders DC10SB en DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
+     }
+    ],
+    "low": 26.48,
+    "median": 39.0,
+    "model": "DC18RC",
+    "outliers": [
+     160.0,
+     169.0,
+     180.0,
+     189.0,
+     229.0
+    ],
+    "prices": [
+     4.95,
+     5.0,
+     5.0,
+     5.0,
+     5.95,
+     15.0,
+     25.0,
+     25.0,
+     27.95,
+     29.99,
+     30.0,
+     30.0,
+     30.0,
+     35.0,
+     35.0,
+     35.0,
+     39.0,
+     39.95,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.95,
+     50.0,
+     50.0,
+     55.0,
+     59.95,
+     60.0,
+     75.0,
+     80.0,
+     80.0,
+     109.95,
+     140.0
+    ],
+    "query": "makita dc18rc",
+    "url": "https://www.marktplaats.nl/q/makita+dc18rc/"
+   },
+   "mpPlan": {
+    "brand": "makita",
+    "kind": "exact",
+    "model": "DC18RC",
+    "note": "exact model Makita DC18RC",
+    "search": "https://www.marktplaats.nl/q/makita+dc18rc/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/makita+dc18rc/",
+   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
+   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "Makita LXT Acculader DC18RC",
+   "trip": {
+    "approx": false,
+    "cost": 51.79,
+    "from": "home",
+    "km": 200.6,
+    "min": 159
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/Makita-LXT-Acculader-DC18RC/3288577/detail",
    "vat": 0.21
   },
   {
@@ -9675,13 +9881,13 @@
    "itemMinMargin": null,
    "key": "proveiling:3288576",
    "location": "Bolsward",
-   "market": 40.0,
+   "market": 39.0,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 36,
-    "high": 58.71,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 33,
+    "high": 52.5,
     "kind": "exact",
     "listings": [
      {
@@ -9689,6 +9895,12 @@
       "price": 4.95,
       "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita oplader muurbeugel - DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436194972-makita-oplader-muurbeugel-dc18rc"
      },
      {
       "kind": "fixed",
@@ -9703,6 +9915,24 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
      },
      {
+      "kind": "fixed",
+      "price": 5.95,
+      "title": "Makita DC18RC lader wandhouder muurbevestiging",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448809245-makita-dc18rc-lader-wandhouder-muurbevestiging"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "DC18RC Makita Lithium-Ion Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449662360-dc18rc-makita-lithium-ion-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449599423-makita-dc18rc-acculader-nieuw"
+     },
+     {
       "kind": "bid",
       "price": 25.0,
       "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
@@ -9715,22 +9945,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
      },
      {
-      "kind": "fixed",
-      "price": 29.95,
-      "title": "Makita DC18RC LXT / 195584-2 oplader 14.4, 123accu huismerk",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529827294-makita-dc18rc-lxt-195584-2-oplader-14-4-123accu-huismerk"
-     },
-     {
       "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader met 14.4V 3.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448202166-makita-dc18rc-oplader-met-14-4v-3-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader (exclusief accu)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
+      "price": 29.99,
+      "title": "Makita DC18RC Accu Lader | Nieuw | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449440371-makita-dc18rc-accu-lader-nieuw-met-garantie"
      },
      {
       "kind": "fixed",
@@ -9753,6 +9971,12 @@
      {
       "kind": "bid",
       "price": 35.0,
+      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
       "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
      },
@@ -9769,16 +9993,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Makita lader DC18RC 14.4V~18V Lithium batterij",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2439135556-makita-lader-dc18rc-14-4v-18v-lithium-batterij"
+     },
+     {
+      "kind": "fixed",
       "price": 40.0,
-      "title": "Nette gebruikte Makita lader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
      },
      {
       "kind": "bid",
       "price": 40.0,
-      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+      "title": "Nette gebruikte Makita lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
      },
      {
       "kind": "bid",
@@ -9793,24 +10023,6 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
      },
      {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2432300970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
-     },
-     {
       "kind": "fixed",
       "price": 40.95,
       "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
@@ -9818,27 +10030,15 @@
      },
      {
       "kind": "bid",
-      "price": 45.0,
-      "title": "Makita DC18RC Oplader voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446949689-makita-dc18rc-oplader-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.99,
-      "title": "Makita DC18RC Oplader NIEUW || Nu voor €49.99!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/hang-en-sluitwerk/m2446293572-makita-dc18rc-oplader-nieuw-nu-voor-49-99"
+      "price": 50.0,
+      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
      },
      {
       "kind": "fixed",
       "price": 50.0,
       "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
      },
      {
       "kind": "bid",
@@ -9863,10 +10063,16 @@
       "price": 75.0,
       "title": "Makita acculaders DC10SB en DC18RC",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
      }
     ],
-    "low": 30.0,
-    "median": 40.0,
+    "low": 26.48,
+    "median": 39.0,
     "model": "DC18RC",
     "outliers": [
      160.0,
@@ -9879,27 +10085,26 @@
      4.95,
      5.0,
      5.0,
+     5.0,
+     5.95,
+     15.0,
+     25.0,
      25.0,
      27.95,
-     29.95,
+     29.99,
      30.0,
      30.0,
      30.0,
-     30.0,
-     30.0,
+     35.0,
      35.0,
      35.0,
      39.0,
-     40.0,
-     40.0,
-     40.0,
+     39.95,
      40.0,
      40.0,
      40.0,
      40.0,
      40.95,
-     45.0,
-     49.99,
      50.0,
      50.0,
      55.0,
@@ -9908,9 +10113,7 @@
      75.0,
      80.0,
      80.0,
-     100.0,
-     119.0,
-     120.0,
+     109.95,
      140.0
     ],
     "query": "makita dc18rc",
@@ -9952,291 +10155,6 @@
    "delivery": false,
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288577|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3288577",
-   "location": "Bolsward",
-   "market": 40.0,
-   "marketSource": "marktplaats",
-   "maxBid": 0.0,
-   "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 36,
-    "high": 58.71,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 4.95,
-      "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita DC18RC Wandhouder",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435169330-makita-dc18rc-wandhouder"
-     },
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita DC18RC wandmontage",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2431476493-oplader-voor-makita-lxt-18v-accu-s-vervangt-dc18rc"
-     },
-     {
-      "kind": "fixed",
-      "price": 27.95,
-      "title": "Makita DC18RC acculader 14.4-18V - ook Dolmar, Greenlee,",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
-     },
-     {
-      "kind": "fixed",
-      "price": 29.95,
-      "title": "Makita DC18RC LXT / 195584-2 oplader 14.4, 123accu huismerk",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529827294-makita-dc18rc-lxt-195584-2-oplader-14-4-123accu-huismerk"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader met 14.4V 3.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448202166-makita-dc18rc-oplader-met-14-4v-3-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader (exclusief accu)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita DC18RC Li-ion 18v LXT oplader / acculader / lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2418619872-makita-dc18rc-li-ion-18v-lxt-oplader-acculader-lader"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita Snellader DC18RC voor 18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita acculader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
-     },
-     {
-      "kind": "bid",
-      "price": 39.0,
-      "title": "Originele Makita DC18RC snellader – 18V LXT",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nette gebruikte Makita lader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2430013891-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC Oplader voor 18V Li-ion Accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2432300970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.95,
-      "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990274-makita-dc18rc-dc18sd-dc18-acculader-14-4-18v-3-0-a"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Makita DC18RC Oplader voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446949689-makita-dc18rc-oplader-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.99,
-      "title": "Makita DC18RC Oplader NIEUW || Nu voor €49.99!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/hang-en-sluitwerk/m2446293572-makita-dc18rc-oplader-nieuw-nu-voor-49-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.0,
-      "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Nieuwe originele Makita DC18RC snellader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445371009-nieuwe-originele-makita-dc18rc-snellader"
-     },
-     {
-      "kind": "bid",
-      "price": 59.95,
-      "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita accu met lader - DC18RC en BL1815",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2417485376-makita-accu-met-lader-dc18rc-en-bl1815"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita acculaders DC10SB en DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
-     }
-    ],
-    "low": 30.0,
-    "median": 40.0,
-    "model": "DC18RC",
-    "outliers": [
-     160.0,
-     169.0,
-     180.0,
-     189.0,
-     229.0
-    ],
-    "prices": [
-     4.95,
-     5.0,
-     5.0,
-     25.0,
-     27.95,
-     29.95,
-     30.0,
-     30.0,
-     30.0,
-     30.0,
-     30.0,
-     35.0,
-     35.0,
-     39.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.95,
-     45.0,
-     49.99,
-     50.0,
-     50.0,
-     55.0,
-     59.95,
-     60.0,
-     75.0,
-     80.0,
-     80.0,
-     100.0,
-     119.0,
-     120.0,
-     140.0
-    ],
-    "query": "makita dc18rc",
-    "url": "https://www.marktplaats.nl/q/makita+dc18rc/"
-   },
-   "mpPlan": {
-    "brand": "makita",
-    "kind": "exact",
-    "model": "DC18RC",
-    "note": "exact model Makita DC18RC",
-    "search": "https://www.marktplaats.nl/q/makita+dc18rc/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/makita+dc18rc/",
-   "pickup": "Hichtumerweg 9, 8701 PG Bolsward",
-   "pickupWhen": "Fri 16 Oct, 10:00–13:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "Makita LXT Acculader DC18RC",
-   "trip": {
-    "approx": false,
-    "cost": 51.79,
-    "from": "home",
-    "km": 200.6,
-    "min": 159
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/Makita-LXT-Acculader-DC18RC/3288577/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris \"Machinefabriek Bolsward (MFB) B.V.\" te Bolsward",
-   "bid": 10.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-12T20:00:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-03T13:29:07.180092+00:00",
-   "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288578|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
    "isNew": false,
@@ -10245,13 +10163,13 @@
    "itemMinMargin": null,
    "key": "proveiling:3288578",
    "location": "Bolsward",
-   "market": 40.0,
+   "market": 39.0,
    "marketSource": "marktplaats",
    "maxBid": 0.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 36,
-    "high": 58.71,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 33,
+    "high": 52.5,
     "kind": "exact",
     "listings": [
      {
@@ -10259,6 +10177,12 @@
       "price": 4.95,
       "title": "Muurbeugel voor Makita Laders DC18RC & DC18RD + boutjes",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2437182858-muurbeugel-voor-makita-laders-dc18rc-dc18rd-boutjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Makita oplader muurbeugel - DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2436194972-makita-oplader-muurbeugel-dc18rc"
      },
      {
       "kind": "fixed",
@@ -10273,6 +10197,24 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2434653266-makita-dc18rc-wandmontage"
      },
      {
+      "kind": "fixed",
+      "price": 5.95,
+      "title": "Makita DC18RC lader wandhouder muurbevestiging",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448809245-makita-dc18rc-lader-wandhouder-muurbevestiging"
+     },
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "DC18RC Makita Lithium-Ion Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449662360-dc18rc-makita-lithium-ion-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Makita DC18RC acculader NIEUW",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449599423-makita-dc18rc-acculader-nieuw"
+     },
+     {
       "kind": "bid",
       "price": 25.0,
       "title": "Oplader voor Makita LXT 18V accu's - Vervangt DC18RC",
@@ -10285,22 +10227,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529990280-makita-dc18rc-acculader-14-4-18v-ook-dolmar-greenlee"
      },
      {
-      "kind": "fixed",
-      "price": 29.95,
-      "title": "Makita DC18RC LXT / 195584-2 oplader 14.4, 123accu huismerk",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529827294-makita-dc18rc-lxt-195584-2-oplader-14-4-123accu-huismerk"
-     },
-     {
       "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader met 14.4V 3.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448202166-makita-dc18rc-oplader-met-14-4v-3-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita DC18RC Oplader (exclusief accu)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
+      "price": 29.99,
+      "title": "Makita DC18RC Accu Lader | Nieuw | Met garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2449440371-makita-dc18rc-accu-lader-nieuw-met-garantie"
      },
      {
       "kind": "fixed",
@@ -10323,6 +10253,12 @@
      {
       "kind": "bid",
       "price": 35.0,
+      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
       "title": "Makita DC18RC Snellader voor Li-ion/Ni-MH accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2442049400-makita-dc18rc-snellader-voor-li-ion-ni-mh-accu-s"
      },
@@ -10339,16 +10275,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2444721867-originele-makita-dc18rc-snellader-18v-lxt"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
+      "price": 39.95,
+      "title": "Makita lader DC18RC 14.4V~18V Lithium batterij",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2439135556-makita-lader-dc18rc-14-4v-18v-lithium-batterij"
+     },
+     {
+      "kind": "fixed",
       "price": 40.0,
-      "title": "Nette gebruikte Makita lader DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
      },
      {
       "kind": "bid",
       "price": 40.0,
-      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444658611-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+      "title": "Nette gebruikte Makita lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445372145-nette-gebruikte-makita-lader-dc18rc"
      },
      {
       "kind": "bid",
@@ -10363,24 +10305,6 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438450896-nieuwe-makita-dc18rc-oplader-voor-18v-li-ion-accu-s"
      },
      {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nieuwe Makita DC18RC acculader voor 14.4V-18V accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2436064151-nieuwe-makita-dc18rc-acculader-voor-14-4v-18v-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2432300970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
-     },
-     {
       "kind": "fixed",
       "price": 40.95,
       "title": "Makita DC18RC / DC18SD / DC18 acculader 14.4-18V - 3,0 A",
@@ -10388,27 +10312,15 @@
      },
      {
       "kind": "bid",
-      "price": 45.0,
-      "title": "Makita DC18RC Oplader voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2446949689-makita-dc18rc-oplader-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.99,
-      "title": "Makita DC18RC Oplader NIEUW || Nu voor €49.99!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/hang-en-sluitwerk/m2446293572-makita-dc18rc-oplader-nieuw-nu-voor-49-99"
+      "price": 50.0,
+      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
      },
      {
       "kind": "fixed",
       "price": 50.0,
       "title": "Makita DC18RC Acculader - Snel en Efficiënt Opladen",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444443474-makita-dc18rc-acculader-snel-en-efficient-opladen"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
      },
      {
       "kind": "bid",
@@ -10433,10 +10345,16 @@
       "price": 75.0,
       "title": "Makita acculaders DC10SB en DC18RC",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita Accessoires 18V Starterset 3,0Ah BL1830B lader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2346662912-makita-accessoires-18v-starterset-3-0ah-bl1830b-lader-dc18rc"
      }
     ],
-    "low": 30.0,
-    "median": 40.0,
+    "low": 26.48,
+    "median": 39.0,
     "model": "DC18RC",
     "outliers": [
      160.0,
@@ -10449,27 +10367,26 @@
      4.95,
      5.0,
      5.0,
+     5.0,
+     5.95,
+     15.0,
+     25.0,
      25.0,
      27.95,
-     29.95,
+     29.99,
      30.0,
      30.0,
      30.0,
-     30.0,
-     30.0,
+     35.0,
      35.0,
      35.0,
      39.0,
-     40.0,
-     40.0,
-     40.0,
+     39.95,
      40.0,
      40.0,
      40.0,
      40.0,
      40.95,
-     45.0,
-     49.99,
      50.0,
      50.0,
      55.0,
@@ -10478,9 +10395,7 @@
      75.0,
      80.0,
      80.0,
-     100.0,
-     119.0,
-     120.0,
+     109.95,
      140.0
     ],
     "query": "makita dc18rc",
@@ -12318,9 +12233,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 22.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-10-13T17:30:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12500,9 +12415,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 18.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-10-13T17:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12548,9 +12463,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 14.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 5,
    "closes": "2026-10-13T17:32:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12805,9 +12720,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 14.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 6,
    "closes": "2026-10-13T17:42:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -13797,9 +13712,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 16.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 8,
    "closes": "2026-10-13T17:52:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14006,26 +13921,26 @@
    "itemMinMargin": null,
    "key": "hnvi:197190",
    "location": "Oirschot",
-   "market": 102.5,
+   "market": 106.38,
    "marketSource": "marktplaats",
-   "maxBid": 20.0,
+   "maxBid": 21.0,
    "mp": {
-    "asOf": "2026-10-01T04:28:46.294854+00:00",
-    "count": 68,
-    "high": 162.75,
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 64,
+    "high": 159.0,
     "kind": "general",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 10.0,
+      "title": "Monitoren - 1 samsung -2 lenovo",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449745317-monitoren-1-samsung-2-lenovo"
+     },
      {
       "kind": "bid",
       "price": 10.0,
       "title": "Lenovo L1940wA 19 inch monitor - VGA aansluiting",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447419040-lenovo-l1940wa-19-inch-monitor-vga-aansluiting"
-     },
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Monitoren-1 samsung 2 lenovo",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445277969-monitoren-1-samsung-2-lenovo"
      },
      {
       "kind": "fixed",
@@ -14052,16 +13967,10 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447437654-lenovo-thinkvision-monitor-t24i-10-thuiswerk-of-kantoo"
      },
      {
-      "kind": "fixed",
-      "price": 25.0,
-      "title": "Lenovo ThinkVision T2324pA - 23\" Full HD IPS Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445400956-lenovo-thinkvision-t2324pa-23-full-hd-ips-monitor"
-     },
-     {
       "kind": "bid",
       "price": 35.0,
-      "title": "Lenovo ThinkVision Monitor - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447498396-lenovo-thinkvision-monitor-zo-goed-als-nieuw"
+      "title": "Monitor Lenovo ThinkVision E24-28",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447551134-monitor-lenovo-thinkvision-e24-28"
      },
      {
       "kind": "bid",
@@ -14071,15 +13980,9 @@
      },
      {
       "kind": "fixed",
-      "price": 39.95,
-      "title": "Lenovo ThinkCentre Tiny-in-One 22 Gen 3 - Monitor - 21,5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1527944664-lenovo-thinkcentre-tiny-in-one-22-gen-3-monitor-21-5"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Monitor Lenovo ThinkVision E24-28",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447551134-monitor-lenovo-thinkvision-e24-28"
+      "price": 40.0,
+      "title": "lenovo ideapad l340-15irh gaming Beeldscherm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449062155-lenovo-ideapad-l340-15irh-gaming-beeldscherm"
      },
      {
       "kind": "bid",
@@ -14092,6 +13995,18 @@
       "price": 50.0,
       "title": "Lenovo ThinkVision Monitor - Zwart, Goede Staat",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447627989-lenovo-thinkvision-monitor-zwart-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Lenovo ThinkCentre TIO24Gen4 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449102578-lenovo-thinkcentre-tio24gen4-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Lenovo Scherm / Monitor 24 inch Full HD – HDMI – 75Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449178785-lenovo-scherm-monitor-24-inch-full-hd-hdmi-75hz"
      },
      {
       "kind": "bid",
@@ -14118,16 +14033,10 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447204923-lenovo-thinkvision-e24-28-24-inch-full-hd-monitor-nieuw"
      },
      {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Lenovo ThinkVision P24h-2L Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444979877-lenovo-thinkvision-p24h-2l-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Lenovo ThinkVision T24v-10 | 24\" Monitor Webcam & Speakers",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2447323926-lenovo-thinkvision-t24v-10-24-monitor-webcam-speakers"
+      "kind": "fixed",
+      "price": 69.0,
+      "title": "Lenovo 27\" Monitor L27e-30 | Pawn Eindhoven",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449196631-lenovo-27-monitor-l27e-30-pawn-eindhoven"
      },
      {
       "kind": "bid",
@@ -14150,6 +14059,12 @@
      {
       "kind": "bid",
       "price": 75.0,
+      "title": "Lenovo D27-30 Monitor - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2449131342-lenovo-d27-30-monitor-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
       "title": "Lenovo ThinkVision P27h-20 QHD USB-C Monitor",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448120375-lenovo-thinkvision-p27h-20-qhd-usb-c-monitor"
      },
@@ -14158,12 +14073,6 @@
       "price": 78.35,
       "title": "Lenovo ThinkVision LT2252p - 22 inch Monitor - 1680 x 1050",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530779818-lenovo-thinkvision-lt2252p-22-inch-monitor-1680-x-1050"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "Lenovo LOQ 24-10 24  Full HD 200Hz IPS Gaming Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1530545122-lenovo-loq-24-10-24-full-hd-200hz-ips-gaming-monitor"
      },
      {
       "kind": "fixed",
@@ -14178,6 +14087,12 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446012297-lenovo-q24h-10-monitor-zo-goed-als-nieuw"
      },
      {
+      "kind": "fixed",
+      "price": 82.99,
+      "title": "Lenovo - Full HD  Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1523062140-lenovo-full-hd-monitor-23-8-inch"
+     },
+     {
       "kind": "bid",
       "price": 85.0,
       "title": "Lenovo Thinkvision E24-40 23.8 inch beeldscherm",
@@ -14190,21 +14105,19 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444920507-lenovo-l15-mobile-monitor"
      },
      {
-      "kind": "fixed",
-      "price": 91.99,
-      "title": "Lenovo - Full HD  Monitor - 27 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1522850328-lenovo-full-hd-monitor-27-inch"
+      "kind": "bid",
+      "price": 99.99,
+      "title": "Lenovo Thinkcentre TIO22Gen 3 Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2446391258-lenovo-thinkcentre-tio22gen-3-monitor"
      }
     ],
-    "low": 61.25,
-    "median": 102.5,
+    "low": 56.25,
+    "median": 106.38,
     "model": null,
     "outliers": [
      411.0,
      510.0,
-     550.0,
-     600.0,
-     799.0,
+     763.0,
      883.0,
      1199.0
     ],
@@ -14215,65 +14128,61 @@
      20.0,
      22.95,
      25.0,
-     25.0,
      35.0,
      35.0,
-     39.95,
-     45.0,
+     40.0,
      49.0,
+     50.0,
+     50.0,
      50.0,
      50.0,
      50.0,
      55.0,
      60.0,
-     65.0,
-     65.0,
+     69.0,
      70.0,
      70.0,
      74.99,
      75.0,
+     75.0,
      78.35,
-     79.0,
      80.0,
      80.0,
+     82.99,
      85.0,
      90.0,
-     91.99,
-     95.0,
-     99.0,
      99.99,
      100.0,
      105.0,
      107.75,
      109.0,
+     110.0,
      115.0,
      119.0,
+     119.0,
+     125.0,
+     125.0,
      125.0,
      130.0,
      135.0,
      139.0,
-     142.0,
      149.0,
-     149.0,
-     150.0,
-     150.0,
-     150.0,
+     151.0,
      154.0,
      159.0,
-     164.0,
+     159.0,
      169.0,
      179.0,
-     180.0,
      199.0,
      199.0,
-     206.0,
-     206.1,
+     219.0,
      249.0,
      250.0,
      299.0,
+     309.0,
      319.0,
      324.0,
-     338.0,
+     335.0,
      349.0,
      399.0,
      399.0
@@ -14319,7 +14228,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/96080400-37aa-4e5e-9a7a-6f5e1606733c/IMG_0078.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14758,9 +14667,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-10-13T18:26:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14865,7 +14774,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/55d9e2b1-c3ad-4c8d-9001-eccc68327cb2/IMG_1302.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14913,7 +14822,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/12e21133-c338-4385-8183-4a6bc53c4fca/IMG_0404.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -14990,7 +14899,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/2bbcd50f-3201-4ee6-9c79-a3a19b401488/IMG_0452.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15038,7 +14947,7 @@
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-30/6702ed48-9c33-4bdc-b505-46ed19b21a70/IMG_0485.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15075,9 +14984,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
-   "bid": 10.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 5,
    "closes": "2026-10-14T18:01:19+00:00",
    "closesDay": null,
    "count": 1,
@@ -15123,9 +15032,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
-   "bid": 12.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 6,
    "closes": "2026-10-14T18:01:19+00:00",
    "closesDay": null,
    "count": 1,
@@ -16005,9 +15914,9 @@
   },
   {
    "auction": "IT en multimedia: servers, laptops, netwerk",
-   "bid": 90.0,
+   "bid": 100.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-10-14T18:06:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -16047,9 +15956,9 @@
   },
   {
    "auction": "IT en multimedia: servers, laptops, netwerk",
-   "bid": 60.0,
+   "bid": 90.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 5,
    "closes": "2026-10-14T18:07:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -16381,9 +16290,9 @@
   },
   {
    "auction": "IT en multimedia: servers, laptops, netwerk",
-   "bid": 50.0,
+   "bid": 60.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-10-14T18:09:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -19243,7 +19152,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 22,
+   "lots": 43,
    "name": "Marktplaats prices",
    "ok": true
   }
