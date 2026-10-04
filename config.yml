@@ -132,6 +132,13 @@ driving:
   round_trip: true              # there and back
   extra_cost_per_km: 0          # optional wear and tear per km, e.g. 0.05
   include_in_max_bid: true      # count the trip as a cost in margins and suggested max bids
+  # A long drive only for several lots: when the pickup address is more than long_trip_minutes away (one way,
+  # from the closer of your addresses), its lots are only shown if at least long_trip_min_lots lots there
+  # (same address and pickup day) have room to bid, need a bid check (Troostwijk) or are favorites.
+  # The others are hidden on the dashboard ("Show hidden" shows them) and left out of the morning summary.
+  # Set long_trip_minutes: 0 to turn this off.
+  long_trip_minutes: 30
+  long_trip_min_lots: 3
 
 # Troostwijk lots from Troostwijk's own search-alert emails, forwarded to a separate mailbox that the
 # bot reads (secrets ALERTS_EMAIL and ALERTS_APP_PASSWORD, see README). The bot never visits Troostwijk.
