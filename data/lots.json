@@ -284,7 +284,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-04T06:40:15.946437+00:00",
+ "generated": "2026-10-04T12:47:43.924875+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -2014,7 +2014,7 @@
   },
   {
    "auction": "Faillissement VOF MGB Groep",
-   "bid": 15.0,
+   "bid": 30.0,
    "bidFromEmail": false,
    "bids": null,
    "closes": "2026-10-05T20:00:00+02:00",
@@ -2232,9 +2232,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Cafe Cafetaria Bliede te Noordwolde",
-   "bid": 41.0,
+   "bid": 46.0,
    "bidFromEmail": false,
-   "bids": 12,
+   "bids": 13,
    "closes": "2026-10-05T18:20:46+00:00",
    "closesDay": null,
    "count": 1,
@@ -2959,6 +2959,106 @@
    "delivery": false,
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
+   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
+   "isDeal": false,
+   "isNew": false,
+   "item": "Power tools",
+   "itemMaxPrice": null,
+   "itemMinMargin": null,
+   "key": "proveiling:3285798",
+   "location": "Waddinxveen",
+   "market": 70.0,
+   "marketSource": "marktplaats",
+   "maxBid": 1.0,
+   "mp": {
+    "asOf": "2026-10-04T06:04:08.243638+00:00",
+    "count": 5,
+    "high": 87.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 55.0,
+      "title": "Dewalt schroefmachine dcf887",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2415329974-dewalt-schroefmachine-dcf887"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.99,
+      "title": "DeWalt DCF887 SlagSchroevendraaier + 18V 5AH Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449271630-dewalt-dcf887-slagschroevendraaier-18v-5ah-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "DeWalt DCF887N Slagschroevendraaier",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446997901-dewalt-dcf887n-slagschroevendraaier"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "DEWALT DCF 887 ,IN T STACK",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443104456-dewalt-dcf-887-in-t-stack"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "DeWalt DCF887 18V XR Brushless Slagmoersleutel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449194246-dewalt-dcf887-18v-xr-brushless-slagmoersleutel"
+     }
+    ],
+    "low": 62.49,
+    "median": 70.0,
+    "model": "DCF887",
+    "outliers": [
+     249.95
+    ],
+    "prices": [
+     55.0,
+     69.99,
+     70.0,
+     85.0,
+     90.0
+    ],
+    "query": "dewalt dcf887",
+    "url": "https://www.marktplaats.nl/q/dewalt+dcf887/"
+   },
+   "mpPlan": {
+    "brand": "dewalt",
+    "kind": "exact",
+    "model": "DCF887",
+    "note": "exact model Dewalt DCF887",
+    "search": "https://www.marktplaats.nl/q/dewalt+dcf887/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dcf887/",
+   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
+   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
+   "premium": 0.16,
+   "site": "proveiling",
+   "siteName": "ProVeiling",
+   "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
+   "trip": {
+    "approx": false,
+    "cost": 24.18,
+    "from": "home",
+    "km": 93.7,
+    "min": 79
+   },
+   "units": 1,
+   "url": "https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail",
+   "vat": 0.21
+  },
+  {
+   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
+   "bid": 25.0,
+   "bidFromEmail": false,
+   "bids": 1,
+   "closes": "2026-10-05T20:25:00+02:00",
+   "closesDay": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
+   "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285813|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
    "isNew": false,
@@ -3302,106 +3402,6 @@
    },
    "units": 1,
    "url": "https://www.proveiling.nl/DEWALT-TSTAK-Gereedschapskoffer/3285807/detail",
-   "vat": 0.21
-  },
-  {
-   "auction": "Faillissementsveiling voorraad en inventaris “Fundering Expertise Nederland B.V.” te Waddinxveen",
-   "bid": 20.0,
-   "bidFromEmail": false,
-   "bids": 0,
-   "closes": "2026-10-05T20:25:00+02:00",
-   "closesDay": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-09-24T07:40:35.060044+00:00",
-   "fixed": 0.0,
-   "image": "https://img.proveiling.nl/Image.aspx?img=15732|165642|3285798|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Power tools",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "key": "proveiling:3285798",
-   "location": "Waddinxveen",
-   "market": 70.0,
-   "marketSource": "marktplaats",
-   "maxBid": 1.0,
-   "mp": {
-    "asOf": "2026-10-04T06:04:08.243638+00:00",
-    "count": 5,
-    "high": 87.5,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Dewalt schroefmachine dcf887",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2415329974-dewalt-schroefmachine-dcf887"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.99,
-      "title": "DeWalt DCF887 SlagSchroevendraaier + 18V 5AH Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449271630-dewalt-dcf887-slagschroevendraaier-18v-5ah-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "DeWalt DCF887N Slagschroevendraaier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446997901-dewalt-dcf887n-slagschroevendraaier"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "DEWALT DCF 887 ,IN T STACK",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443104456-dewalt-dcf-887-in-t-stack"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
-      "title": "DeWalt DCF887 18V XR Brushless Slagmoersleutel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449194246-dewalt-dcf887-18v-xr-brushless-slagmoersleutel"
-     }
-    ],
-    "low": 62.49,
-    "median": 70.0,
-    "model": "DCF887",
-    "outliers": [
-     249.95
-    ],
-    "prices": [
-     55.0,
-     69.99,
-     70.0,
-     85.0,
-     90.0
-    ],
-    "query": "dewalt dcf887",
-    "url": "https://www.marktplaats.nl/q/dewalt+dcf887/"
-   },
-   "mpPlan": {
-    "brand": "dewalt",
-    "kind": "exact",
-    "model": "DCF887",
-    "note": "exact model Dewalt DCF887",
-    "search": "https://www.marktplaats.nl/q/dewalt+dcf887/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dewalt+dcf887/",
-   "pickup": "Mercuriusweg 21, 2741 TB Waddinxveen",
-   "pickupWhen": "Fri 9 Oct, 10:00–14:00",
-   "premium": 0.16,
-   "site": "proveiling",
-   "siteName": "ProVeiling",
-   "title": "DeWALT accuboormachine DCF887, type 10 - 18V",
-   "trip": {
-    "approx": false,
-    "cost": 24.18,
-    "from": "home",
-    "km": 93.7,
-    "min": 79
-   },
-   "units": 1,
-   "url": "https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail",
    "vat": 0.21
   },
   {
@@ -12443,9 +12443,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 24.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 11,
    "closes": "2026-10-13T17:30:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12453,7 +12453,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/9042e644-18ae-4149-9265-473599757173/20260929_093235.jpg",
-   "isDeal": true,
+   "isDeal": false,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -12534,9 +12534,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 16.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 8,
    "closes": "2026-10-13T17:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12625,9 +12625,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 22.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-10-13T17:31:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12673,9 +12673,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 18.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-10-13T17:32:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12740,7 +12740,7 @@
    "location": "Winsum",
    "market": 37.5,
    "marketSource": "marktplaats",
-   "maxBid": 6.0,
+   "maxBid": 5.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 2,
@@ -12846,9 +12846,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-10-13T17:42:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -12997,7 +12997,7 @@
    "location": "Winsum",
    "market": 97.95,
    "marketSource": "marktplaats",
-   "maxBid": 22.0,
+   "maxBid": 21.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 61,
@@ -13585,9 +13585,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 61.0,
+   "bid": 71.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-10-13T17:43:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -13922,9 +13922,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 24.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 9,
    "closes": "2026-10-13T17:52:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14494,7 +14494,7 @@
    "location": "Winsum",
    "market": 363.84,
    "marketSource": "marktplaats",
-   "maxBid": 94.0,
+   "maxBid": 93.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 8,
@@ -14644,7 +14644,7 @@
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-10-13T18:23:17+00:00",
    "closesDay": null,
    "count": 6,
@@ -14786,9 +14786,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 1",
-   "bid": 14.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-10-13T18:26:17+00:00",
    "closesDay": null,
    "count": 1,
@@ -14805,7 +14805,7 @@
    "location": "Winsum",
    "market": 139.0,
    "marketSource": "marktplaats",
-   "maxBid": 33.0,
+   "maxBid": 32.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 4,
@@ -15242,9 +15242,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
-   "bid": 20.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 8,
    "closes": "2026-10-14T18:01:19+00:00",
    "closesDay": null,
    "count": 1,
@@ -16500,9 +16500,9 @@
   },
   {
    "auction": "IT en multimedia: servers, laptops, netwerk",
-   "bid": 60.0,
+   "bid": 70.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-10-14T18:09:00+00:00",
    "closesDay": null,
    "count": 1,
@@ -16676,9 +16676,9 @@
   },
   {
    "auction": "Bedrijfsbeëindiging: Handelsbedrijf deel 2",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-10-14T18:17:19+00:00",
    "closesDay": null,
    "count": 26,
@@ -19362,7 +19362,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 4,
+   "lots": 0,
    "name": "Marktplaats prices",
    "ok": true
   }
