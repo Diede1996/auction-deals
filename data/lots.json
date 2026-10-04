@@ -8,6 +8,8 @@
   "home": true,
   "include": true,
   "kmpl": 16.0,
+  "longLots": 3,
+  "longMin": 30.0,
   "roundTrip": true
  },
  "favorites": {
@@ -282,7 +284,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-04T06:04:08.243638+00:00",
+ "generated": "2026-10-04T06:40:15.946437+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -306,7 +308,7 @@
    "location": "Loon op Zand",
    "market": 59.0,
    "marketSource": "marktplaats",
-   "maxBid": 7.0,
+   "maxBid": 14.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 18,
@@ -497,7 +499,7 @@
    "location": "Loon op Zand",
    "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 11.0,
+   "maxBid": 19.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 34,
@@ -870,7 +872,7 @@
    "location": "Loon op Zand",
    "market": 267.5,
    "marketSource": "marktplaats",
-   "maxBid": 63.0,
+   "maxBid": 70.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 8,
@@ -1133,7 +1135,7 @@
    "location": "Loon op Zand",
    "market": 145.0,
    "marketSource": "marktplaats",
-   "maxBid": 30.0,
+   "maxBid": 37.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 4,
@@ -1224,7 +1226,7 @@
    "location": "Loon op Zand",
    "market": 147.0,
    "marketSource": "marktplaats",
-   "maxBid": 30.0,
+   "maxBid": 38.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 10,
@@ -1357,7 +1359,7 @@
    "location": "Loon op Zand",
    "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 11.0,
+   "maxBid": 18.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 5,
@@ -1455,7 +1457,7 @@
    "location": "Loon op Zand",
    "market": 20.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 4.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 37,
@@ -1733,7 +1735,7 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/zdmGucJMYjo/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjQ1LzAwMzEtaGFha3NlLXNsaWpwZXItbWV0YWJvLW1ldC1kaXZlcnNlLXNjaGlqdmVuLmpwZw.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -1742,7 +1744,7 @@
    "location": "Loon op Zand",
    "market": 72.5,
    "marketSource": "marktplaats",
-   "maxBid": 10.0,
+   "maxBid": 18.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 18,
@@ -1924,7 +1926,7 @@
    "firstSeen": "2026-09-24T07:40:35.060044+00:00",
    "fixed": 0.0,
    "image": "https://assets.hnvi.nl/assets/8iFeLjhlVpA/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk2NjYxLzAwNDctYm91d3JhZGlvLWRld2FsdC1tZXQtYWNjdS5qcGc.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -1933,7 +1935,7 @@
    "location": "Loon op Zand",
    "market": 75.0,
    "marketSource": "marktplaats",
-   "maxBid": 11.0,
+   "maxBid": 18.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 5,
@@ -2249,7 +2251,7 @@
    "location": "Noordwolde",
    "market": 170.0,
    "marketSource": "marktplaats",
-   "maxBid": 15.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 26,
@@ -4026,7 +4028,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
@@ -4035,7 +4037,7 @@
    "location": "Nieuwegein",
    "market": 19.64,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 5.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 20,
@@ -4234,7 +4236,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
@@ -4243,7 +4245,7 @@
    "location": "Nieuwegein",
    "market": 19.64,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 5.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 20,
@@ -4442,7 +4444,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://www.inventarisveilingen.nl/media/catalog/product/cache/1/small_image/90x/d01705cebe7148caa6e3b0257e0e8de3/i/m/img_5287_1.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
@@ -4451,7 +4453,7 @@
    "location": "Nieuwegein",
    "market": 19.64,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 5.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 20,
@@ -4659,7 +4661,7 @@
    "location": "Nieuwegein",
    "market": 55.0,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 16.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -4743,7 +4745,7 @@
    "location": "Nieuwegein",
    "market": 99.99,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -4868,7 +4870,7 @@
    "location": "Nieuwegein",
    "market": 55.0,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 16.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -4952,7 +4954,7 @@
    "location": "Nieuwegein",
    "market": 99.99,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -5077,7 +5079,7 @@
    "location": "Nieuwegein",
    "market": 55.0,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 16.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -5161,7 +5163,7 @@
    "location": "Nieuwegein",
    "market": 99.99,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -5286,7 +5288,7 @@
    "location": "Nieuwegein",
    "market": 55.0,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 16.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -5370,7 +5372,7 @@
    "location": "Nieuwegein",
    "market": 99.99,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -5495,7 +5497,7 @@
    "location": "Nieuwegein",
    "market": 55.0,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 16.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -5579,7 +5581,7 @@
    "location": "Nieuwegein",
    "market": 99.99,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -7735,86 +7737,26 @@
    "itemMinMargin": null,
    "key": "openbareverkopen:751328",
    "location": "Zele",
-   "market": 45.0,
+   "market": 199.99,
    "marketSource": "marktplaats",
-   "maxBid": 5.0,
+   "maxBid": 51.0,
    "mp": {
-    "asOf": "2026-10-03T17:12:10.052751+00:00",
-    "count": 18,
-    "high": 199.25,
+    "asOf": "2026-10-04T06:40:15.946437+00:00",
+    "count": 27,
+    "high": 239.99,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 7.99,
-      "title": "Tempered Glass iPad Air (2019)/iPad Pro 10.5",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-overige-merken/a1523829462-tempered-glass-ipad-air-2019-ipad-pro-10-5"
+      "price": 34.99,
+      "title": "Incipio Faraday iPad Pro 10.5&quot; 2017 - Black",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-tablets/a1365650392-incipio-faraday-ipad-pro-10-5-quot-2017-black"
      },
      {
       "kind": "fixed",
-      "price": 40.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K83)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445782754-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k83"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K46)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445804418-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k46"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K45)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445941987-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k45"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K77)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445782248-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k77"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K47)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445942995-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k47"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K46)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445942503-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k46"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K47)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445805159-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k47"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K107)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445783582-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k107"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K45)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445803711-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k45"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K84)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445783173-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k84"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K59)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445805754-apple-smart-keyboard-ipad-7-9-air-3-pro-10-5-k59"
+      "price": 34.99,
+      "title": "Incipio Faraday iPad Pro 10.5&quot; 2017 - Black",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-tablets/a1485910186-incipio-faraday-ipad-pro-10-5-quot-2017-black"
      },
      {
       "kind": "fixed",
@@ -7823,10 +7765,58 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2432776728-ipad-pro-10-5-inch-64gb-zo-goed-als-nieuw"
      },
      {
+      "kind": "bid",
+      "price": 109.0,
+      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2445011655-apple-ipad-pro-64gb-10-5-inch-model-2017"
+     },
+     {
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Apple iPad Pro 10,5 64GB [wifi, model 2017] spacegrijs",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1481188744-apple-ipad-pro-10-5-64gb-wifi-model-2017-spacegrijs"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Apple iPad Pro 10.5 (2017) WiFi 256GB Grijs",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2438855123-apple-ipad-pro-10-5-2017-wifi-256gb-grijs"
+     },
+     {
+      "kind": "bid",
+      "price": 160.0,
+      "title": "Apple iPad Pro 10.5 inch 64GB Wi-Fi Goud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415402469-apple-ipad-pro-10-5-inch-64gb-wi-fi-goud"
+     },
+     {
+      "kind": "bid",
+      "price": 165.0,
+      "title": "iPad Pro 10.5 inch (2e gen) 64GB Wi-Fi Goud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2433015316-ipad-pro-10-5-inch-2e-gen-64gb-wi-fi-goud"
+     },
+     {
+      "kind": "fixed",
+      "price": 179.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zilver WiFi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206026-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver-wifi-4g"
+     },
+     {
+      "kind": "bid",
+      "price": 190.0,
+      "title": "Ipad pro 10.5 (2017) 64GB Gold",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2440785349-ipad-pro-10-5-2017-64gb-gold"
+     },
+     {
       "kind": "fixed",
       "price": 199.0,
       "title": "Apple iPad Pro 10.5 – 64GB – 2017",
       "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige/m2446480690-apple-ipad-pro-10-5-64gb-2017"
+     },
+     {
+      "kind": "bid",
+      "price": 199.0,
+      "title": "Apple iPad Pro 10.5 inch 64GB Wi-Fi - rose gold (2017)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426443479-apple-ipad-pro-10-5-inch-64gb-wi-fi-rose-gold-2017"
      },
      {
       "kind": "fixed",
@@ -7837,59 +7827,135 @@
      {
       "kind": "fixed",
       "price": 199.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (2017) zwart WiFi (4G) + g...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294872-apple-ipad-pro-64gb-10-5-inch-2017-zwart-wifi-4g-g"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zilver WiFi (...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294873-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 199.99,
       "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zwart Wifi (4G)",
       "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525776568-apple-ipad-pro-64gb-10-5-inch-model-2017-zwart-wifi-4g"
      },
      {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "iPad Pro 10,5 inch 2017 256 GB Zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2444593793-ipad-pro-10-5-inch-2017-256-gb-zilver"
+      "kind": "fixed",
+      "price": 199.99,
+      "title": "Apple iPad Pro 64GB 10.5 inch (2017) zwart WiFi (4G) +",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206024-apple-ipad-pro-64gb-10-5-inch-2017-zwart-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 203.99,
+      "title": "Apple iPad Pro 10,5 64GB [wifi + cellular, model 2017] roze",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1500660891-apple-ipad-pro-10-5-64gb-wifi-cellular-model-2017-roze"
+     },
+     {
+      "kind": "fixed",
+      "price": 229.95,
+      "title": "Apple iPad Pro 10.5 2017 - In Goede Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2439165494-apple-ipad-pro-10-5-2017-in-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 229.99,
+      "title": "iPad Pro 2017 10.5'' 64GB - Nette Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442314366-ipad-pro-2017-10-5-64gb-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 239.99,
+      "title": "Nieuwstaat Apple iPad Pro 64GB 10.5 inch (model 2017) zi...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519019189-nieuwstaat-apple-ipad-pro-64gb-10-5-inch-model-2017-zi"
+     },
+     {
+      "kind": "fixed",
+      "price": 239.99,
+      "title": "Nieuwstaat Apple iPad Pro 64GB 10.5 inch (model 2017) zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519073490-nieuwstaat-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver"
      },
      {
       "kind": "bid",
-      "price": 300.0,
-      "title": "iPad Pro 10,5 inch 512GB WiFi + Cellular 4G – Space Grey",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446556646-ipad-pro-10-5-inch-512gb-wifi-cellular-4g-space-grey"
+      "price": 250.0,
+      "title": "Apple iPad Pro 10.5 WiFi+Cellular Space Gray 64GB z.g.a.n.",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415371174-apple-ipad-pro-10-5-wifi-cellular-space-gray-64gb-z-g-a-n"
+     },
+     {
+      "kind": "fixed",
+      "price": 269.99,
+      "title": "(Als) nieuw Apple iPad Pro 64GB 10.5 inch (model 2017) z...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519080580-als-nieuw-apple-ipad-pro-64gb-10-5-inch-model-2017-z"
+     },
+     {
+      "kind": "fixed",
+      "price": 269.99,
+      "title": "(Als) nieuw Apple iPad Pro 64GB 10.5 inch (model 2017)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519073491-als-nieuw-apple-ipad-pro-64gb-10-5-inch-model-2017"
+     },
+     {
+      "kind": "fixed",
+      "price": 271.99,
+      "title": "Apple iPad Pro 10,5 256GB [wifi + cellular, model 2017] roze",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1505446362-apple-ipad-pro-10-5-256gb-wifi-cellular-model-2017-roze"
+     },
+     {
+      "kind": "fixed",
+      "price": 331.99,
+      "title": "Apple iPad Pro 10,5 512GB [wifi + cellular, model 2017] roze",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1501461288-apple-ipad-pro-10-5-512gb-wifi-cellular-model-2017-roze"
      }
     ],
-    "low": 45.0,
-    "median": 45.0,
-    "model": null,
+    "low": 160.0,
+    "median": 199.99,
+    "model": "iPad Pro 10.5",
     "outliers": [
+     24.5,
      439.99
     ],
     "prices": [
-     7.99,
-     40.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
-     45.0,
+     34.99,
+     34.99,
      80.0,
+     109.0,
+     139.99,
+     150.0,
+     160.0,
+     165.0,
+     179.99,
+     190.0,
+     199.0,
      199.0,
      199.99,
      199.99,
-     200.0,
-     300.0
+     199.99,
+     199.99,
+     199.99,
+     203.99,
+     229.95,
+     229.99,
+     239.99,
+     239.99,
+     250.0,
+     269.99,
+     269.99,
+     271.99,
+     331.99
     ],
-    "query": "ipad pro 10",
-    "url": "https://www.marktplaats.nl/q/ipad+pro+10/"
+    "query": "ipad pro 10.5",
+    "url": "https://www.marktplaats.nl/q/ipad+pro+10+5/"
    },
    "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/ipad+pro+10/"
+    "brand": "apple",
+    "kind": "exact",
+    "model": "iPad Pro 10.5",
+    "note": "exact: iPad Pro 10.5 inch",
+    "search": "https://www.marktplaats.nl/q/ipad+pro+10+5/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+10/",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+10+5/",
    "pickup": "Huivelde 50, 9240 Zele, België",
    "pickupWhen": "Mon 19 Oct, 13:00–15:30",
    "premium": 0.19,
@@ -7926,50 +7992,74 @@
    "itemMinMargin": null,
    "key": "openbareverkopen:751329",
    "location": "Zele",
-   "market": 300.0,
+   "market": 109.99,
    "marketSource": "marktplaats",
-   "maxBid": 73.0,
+   "maxBid": 27.0,
    "mp": {
-    "asOf": "2026-10-03T17:12:10.052751+00:00",
-    "count": 37,
-    "high": 500.0,
-    "kind": "general",
+    "asOf": "2026-10-04T06:40:15.946437+00:00",
+    "count": 47,
+    "high": 139.0,
+    "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 8.0,
-      "title": "Apple iPad 4th Gen with iOS 10.3.3 installed and Flappy Bird",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1531811686-apple-ipad-4th-gen-with-ios-10-3-3-installed-and-flappy-bird"
+      "price": 45.0,
+      "title": "Apple iPad 6 32GB - New - Computer - In originele gesealde",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1531813564-apple-ipad-6-32gb-new-computer-in-originele-gesealde"
      },
      {
       "kind": "fixed",
-      "price": 13.0,
-      "title": "Apple iPad (6th generation) iPad 6th Gen (2018) 9.7, -",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1531885201-apple-ipad-6th-generation-ipad-6th-gen-2018-9-7"
+      "price": 50.0,
+      "title": "Apple iPad 8 (6e generatie)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449403270-apple-ipad-8-6e-generatie"
+     },
+     {
+      "kind": "fixed",
+      "price": 58.99,
+      "title": "Voordeelbundel (10+prijs) Apple iPad 6 (model 2018) zwart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206478-voordeelbundel-10-prijs-apple-ipad-6-model-2018-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "iPad (6) 128GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448482638-ipad-6-128gb"
      },
      {
       "kind": "bid",
-      "price": 20.0,
-      "title": "Apple iPad Smart Folio voor iPad Pro 11-inch (1e & 2e gen)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448437021-apple-ipad-smart-folio-voor-ipad-pro-11-inch-1e-2e-gen"
+      "price": 70.0,
+      "title": "Apple iPad 6e generatie 32GB Wi-Fi Zilver A1893",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448137688-apple-ipad-6e-generatie-32gb-wi-fi-zilver-a1893"
      },
      {
       "kind": "fixed",
-      "price": 25.0,
-      "title": "Apple Smart Keyboard Folio voor iPad 9th gen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446473606-apple-smart-keyboard-folio-voor-ipad-9th-gen"
+      "price": 75.0,
+      "title": "Apple iPad (6e generatie) A1893 - 32GB - Goud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448868361-apple-ipad-6e-generatie-a1893-32gb-goud"
      },
      {
       "kind": "fixed",
-      "price": 30.0,
-      "title": "iPad 2e gen. 9.7” mod A1395 zilver 16GB opslag 512 MB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448364585-ipad-2e-gen-9-7-mod-a1395-zilver-16gb-opslag-512-mb-ram"
+      "price": 79.99,
+      "title": "Apple iPad 6 32GB (model 2018) zwart 9.7 WiFi (4G) + ga...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294813-apple-ipad-6-32gb-model-2018-zwart-9-7-wifi-4g-ga"
      },
      {
       "kind": "fixed",
-      "price": 45.0,
-      "title": "iPad 2e gen. 9.7” mod A1396 zilver 32GB opslag 512 MB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448365209-ipad-2e-gen-9-7-mod-a1396-zilver-32gb-opslag-512-mb-ram"
+      "price": 79.99,
+      "title": "Magazijn opruiming Apple iPad 6 32GB (model 2018) goud 9.7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206066-magazijn-opruiming-apple-ipad-6-32gb-model-2018-goud-9-7"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.99,
+      "title": "Magazijn opruiming Apple iPad 6 32GB (model 2018) zilver...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294881-magazijn-opruiming-apple-ipad-6-32gb-model-2018-zilver"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.99,
+      "title": "Magazijn opruiming Apple iPad 6 32GB (model 2018) zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519690805-magazijn-opruiming-apple-ipad-6-32gb-model-2018-zilver"
      },
      {
       "kind": "fixed",
@@ -7979,197 +8069,183 @@
      },
      {
       "kind": "bid",
-      "price": 89.0,
-      "title": "Logitech Rugged Folio iPad toetsenbordcase (gen 10 en A16)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446259623-logitech-rugged-folio-ipad-toetsenbordcase-gen-10-en-a16"
+      "price": 80.0,
+      "title": "Apple iPad 6e generatie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448218683-apple-ipad-6e-generatie"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Apple iPad 6e generatie 32 GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448309544-apple-ipad-6e-generatie-32-gb"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Apple iPad 6 32/128GB 9.7 WiFi (4G) + garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294884-apple-ipad-6-32-128gb-9-7-wifi-4g-garantie"
      },
      {
       "kind": "bid",
       "price": 90.0,
-      "title": "iPad Pro Smart Keyboard Folio 12.9 inch (gen 3) (ongebruikt)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447257393-ipad-pro-smart-keyboard-folio-12-9-inch-gen-3-ongebruikt"
+      "title": "Apple iPad 6e generatie 32GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449048139-apple-ipad-6e-generatie-32gb-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
-      "price": 90.0,
-      "title": "Apple ipad 7th gen wifi 32gb zo goed als nieuw!!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2414475900-apple-ipad-7th-gen-wifi-32gb-zo-goed-als-nieuw"
+      "price": 99.0,
+      "title": "Apple iPad 6 (2018, A10 series) - Spacegrijs - 32 GB - WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531366607-apple-ipad-6-2018-a10-series-spacegrijs-32-gb-wifi"
      },
      {
       "kind": "fixed",
-      "price": 120.0,
-      "title": "iPad 8e Gen 128GB wifi (zoals nieuw)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446987326-ipad-8e-gen-128gb-wifi-zoals-nieuw"
+      "price": 99.99,
+      "title": "Apple iPad 6 32GB (model 2018) + beschermhoes blauw 9.7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206354-apple-ipad-6-32gb-model-2018-beschermhoes-blauw-9-7"
      },
      {
       "kind": "bid",
-      "price": 125.0,
-      "title": "Ipad 6th gen",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-samsung/m2449610130-ipad-6th-gen"
+      "price": 100.0,
+      "title": "iPad (6e generatie) Wi-Fi 32GB/128GB (2018)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442154368-ipad-6e-generatie-wi-fi-32gb-128gb-2018"
      },
      {
       "kind": "fixed",
-      "price": 159.0,
-      "title": "Apple iPad 10.2 (2021) • 9e Gen • Refurbished • 24M Garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529891514-apple-ipad-10-2-2021-9e-gen-refurbished-24m-garantie"
+      "price": 100.0,
+      "title": "iPad 9,7\" 6e generatie - 128GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449587471-ipad-9-7-6e-generatie-128gb"
      },
      {
       "kind": "bid",
-      "price": 165.0,
-      "title": "Apple iPad 8e gen (2020) 32GB Space Grey, batt 100% z.g.a.n.",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448307755-apple-ipad-8e-gen-2020-32gb-space-grey-batt-100-z-g-a-n"
+      "price": 100.0,
+      "title": "Ipad 6e generatie rose gold",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448382137-ipad-6e-generatie-rose-gold"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Apple iPad (6e generatie) 32 GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448026305-apple-ipad-6e-generatie-32-gb-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Apple iPad 6e generatie 128 GB Wi-Fi Spacegrijs",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446930644-apple-ipad-6e-generatie-128-gb-wi-fi-spacegrijs"
+     },
+     {
+      "kind": "fixed",
+      "price": 104.0,
+      "title": "Apple iPad 6 (2018, A10 series) - Goud - 32 GB - WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531366613-apple-ipad-6-2018-a10-series-goud-32-gb-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.99,
+      "title": "Apple iPad 6 128GB (model 2018) zwart 9.7 WiFi (4G) + g...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294812-apple-ipad-6-128gb-model-2018-zwart-9-7-wifi-4g-g"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.99,
+      "title": "Apple iPad 6 128GB (model 2018) + beschermhoes rood 9.7",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206357-apple-ipad-6-128gb-model-2018-beschermhoes-rood-9-7"
+     },
+     {
+      "kind": "fixed",
+      "price": 110.0,
+      "title": "iPad 6 (2018) 128GB WiFi + Cellular Zwart: met garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531773334-ipad-6-2018-128gb-wifi-cellular-zwart-met-garantie"
      },
      {
       "kind": "bid",
-      "price": 170.0,
-      "title": "iPad 6e generatie 128GB (2018) met Apple Pencil 1e gen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449628241-ipad-6e-generatie-128gb-2018-met-apple-pencil-1e-gen"
+      "price": 110.0,
+      "title": "Apple iPad 6e generatie 128GB Silver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448759307-apple-ipad-6e-generatie-128gb-silver"
      },
      {
       "kind": "fixed",
-      "price": 175.0,
-      "title": "Magic Keyboard voor iPad Pro 12.9 (3e-6e gen)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2448852104-magic-keyboard-voor-ipad-pro-12-9-3e-6e-gen"
+      "price": 114.0,
+      "title": "Apple iPad 6 (2018, A10 series) - Spacegrijs - 32 GB - WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531366610-apple-ipad-6-2018-a10-series-spacegrijs-32-gb-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 114.0,
+      "title": "Apple iPad 6 (2018, A10 series) - Zilver - 32 GB - WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531366605-apple-ipad-6-2018-a10-series-zilver-32-gb-wifi"
      },
      {
       "kind": "bid",
-      "price": 200.0,
-      "title": "64GB Ipad (9th gen) Wi-Fi met Apple Pencil (1th gen)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446947907-64gb-ipad-9th-gen-wi-fi-met-apple-pencil-1th-gen"
-     },
-     {
-      "kind": "fixed",
-      "price": 245.0,
-      "title": "Refurbished Apple iPad 9th gen - 64GB - A+ grade - space",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531511216-refurbished-apple-ipad-9th-gen-64gb-a-grade-space"
-     },
-     {
-      "kind": "fixed",
-      "price": 300.0,
-      "title": "Apple iPad Air 5th gen. 64gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447587446-apple-ipad-air-5th-gen-64gb"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "Ipad 10th gen Blue 128GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447340962-ipad-10th-gen-blue-128gb"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Apple iPad Air (4e gen) met Belkin toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447629882-apple-ipad-air-4e-gen-met-belkin-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 350.0,
-      "title": "Apple iPad 9th Gen -10.2\" WiFi + 4G 256GB - Spacegrijs NIEUW",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448485372-apple-ipad-9th-gen-10-2-wifi-4g-256gb-spacegrijs-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 359.0,
-      "title": "Apple iPad Air (4e gen) - 64GB - Wifi - Roségoud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840994-apple-ipad-air-4e-gen-64gb-wifi-rosegoud"
-     },
-     {
-      "kind": "fixed",
-      "price": 400.0,
-      "title": "iPad 10th Gen + Apple Pen 1st Gen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447055749-ipad-10th-gen-apple-pen-1st-gen"
-     },
-     {
-      "kind": "fixed",
-      "price": 419.0,
-      "title": "Apple iPad Air (5e gen) - 64GB - Wifi + Cellular - Starlight",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840980-apple-ipad-air-5e-gen-64gb-wifi-cellular-starlight"
-     },
-     {
-      "kind": "fixed",
-      "price": 439.0,
-      "title": "Apple iPad Air (5e gen) - 64GB - Wifi + 5G - Roségoud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1522840981-apple-ipad-air-5e-gen-64gb-wifi-5g-rosegoud"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Ipad Pro 12.9 inch 4th gen - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449086542-ipad-pro-12-9-inch-4th-gen-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "iPad Pro 11inch (2nd Gen) 128GB (Pencil + Magic Keyboard)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2444692185-ipad-pro-11inch-2nd-gen-128gb-pencil-magic-keyboard"
-     },
-     {
-      "kind": "fixed",
-      "price": 549.99,
-      "title": "Apple iPad Pro 256GB 11 inch 4e Gen (model 2022) zilver....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525904935-apple-ipad-pro-256gb-11-inch-4e-gen-model-2022-zilver"
-     },
-     {
-      "kind": "bid",
-      "price": 550.0,
-      "title": "Ipad Pro 11inch 4th gen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2443839427-ipad-pro-11inch-4th-gen"
+      "price": 119.95,
+      "title": "Apple iPad 2018 32GB Space Gray - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447355664-apple-ipad-2018-32gb-space-gray-zo-goed-als-nieuw"
      }
     ],
-    "low": 90.0,
-    "median": 300.0,
-    "model": null,
+    "low": 80.0,
+    "median": 109.99,
+    "model": "iPad 6th gen",
     "outliers": [],
     "prices": [
-     8.0,
-     13.0,
-     20.0,
-     25.0,
-     30.0,
      45.0,
+     50.0,
+     58.99,
+     60.0,
+     70.0,
+     75.0,
+     79.99,
+     79.99,
+     79.99,
+     79.99,
      80.0,
-     89.0,
+     80.0,
+     80.0,
+     89.99,
      90.0,
-     90.0,
-     120.0,
-     125.0,
-     159.0,
-     165.0,
-     170.0,
-     175.0,
-     200.0,
-     245.0,
-     300.0,
-     320.0,
-     350.0,
-     350.0,
-     359.0,
-     400.0,
-     419.0,
-     439.0,
-     450.0,
-     450.0,
-     549.99,
-     550.0,
-     550.0,
-     585.0,
-     609.99,
-     639.99,
-     685.0,
-     699.0,
-     850.0
+     99.0,
+     99.99,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     104.0,
+     109.99,
+     109.99,
+     110.0,
+     110.0,
+     114.0,
+     114.0,
+     119.95,
+     124.0,
+     124.0,
+     124.0,
+     134.0,
+     139.0,
+     139.0,
+     139.99,
+     139.99,
+     139.99,
+     140.0,
+     150.0,
+     150.0,
+     169.99,
+     169.99,
+     169.99,
+     199.99,
+     199.99
     ],
-    "query": "ipad gen",
-    "url": "https://www.marktplaats.nl/q/ipad+gen/"
+    "query": "ipad 2018",
+    "url": "https://www.marktplaats.nl/q/ipad+6/"
    },
    "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/ipad+gen/"
+    "brand": "apple",
+    "kind": "exact",
+    "model": "iPad 6th gen",
+    "note": "exact: iPad 6th gen",
+    "search": "https://www.marktplaats.nl/q/ipad+6/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/ipad+gen/",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+6/",
    "pickup": "Huivelde 50, 9240 Zele, België",
    "pickupWhen": "Mon 19 Oct, 13:00–15:30",
    "premium": 0.19,
@@ -8206,32 +8282,176 @@
    "itemMinMargin": null,
    "key": "openbareverkopen:751330",
    "location": "Zele",
-   "market": 184.99,
+   "market": 140.0,
    "marketSource": "marktplaats",
-   "maxBid": 43.0,
+   "maxBid": 35.0,
    "mp": {
-    "asOf": "2026-10-03T17:12:10.052751+00:00",
-    "count": 12,
-    "high": 199.98,
+    "asOf": "2026-10-04T06:40:15.946437+00:00",
+    "count": 38,
+    "high": 176.25,
     "kind": "exact",
     "listings": [
      {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "Bookcase Apple iPad Air 2020 gen 4",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2414332385-bookcase-apple-ipad-air-2020-gen-4"
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Apple iPad 8 (6e generatie)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449403270-apple-ipad-8-6e-generatie"
      },
      {
       "kind": "fixed",
-      "price": 99.0,
-      "title": "Ipad 7th gen 7e generatie (2019-2020)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415593472-ipad-7th-gen-7e-generatie-2019-2020"
+      "price": 89.99,
+      "title": "Apple iPad 8 (model 2020) zwart 32GB 10.2 inch WiFi (4G) (ex",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531046961-apple-ipad-8-model-2020-zwart-32gb-10-2-inch-wifi-4g-ex"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Apple iPad 8 (model 2020) zwart 32GB 10.2 inch WiFi (4G)...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294789-apple-ipad-8-model-2020-zwart-32gb-10-2-inch-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Apple iPad 8 (model 2020) 32GB 10.2 inch WiFi (4G) (ex demo",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1530491397-apple-ipad-8-model-2020-32gb-10-2-inch-wifi-4g-ex-demo"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPad 8e generatie 10.2 nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447736590-ipad-8e-generatie-10-2-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Apple iPad (8e generatie) 32 GB Goud Wi-Fi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448921230-apple-ipad-8e-generatie-32-gb-goud-wi-fi"
+     },
+     {
+      "kind": "fixed",
+      "price": 118.0,
+      "title": "Apple iPad 8 10.2 (2020) • Refurbished • 24M Garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529861027-apple-ipad-8-10-2-2020-refurbished-24m-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.0,
+      "title": "Apple iPad 8 2020 32GB Spacegrijs | €119 | 24M Garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531110399-apple-ipad-8-2020-32gb-spacegrijs-119-24m-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 120.0,
+      "title": "iPad 8e generatie 10.2 inch Zilver - Perfecte staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446609164-ipad-8e-generatie-10-2-inch-zilver-perfecte-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 120.0,
+      "title": "iPad 8e Gen 128GB wifi (zoals nieuw)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446987326-ipad-8e-gen-128gb-wifi-zoals-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "IPAD 2020 8'e GENERATİE 32GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449144282-ipad-2020-8-e-generatie-32gb"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPad 8e generatie, 2020 (32GB) – 10,2 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448460889-ipad-8e-generatie-2020-32gb-10-2-inch"
+     },
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "Ipad 8 | 32GB | A2270 | introductiejaar 2020",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449644718-ipad-8-32gb-a2270-introductiejaar-2020"
+     },
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "IPad 8e generatie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448217614-ipad-8e-generatie"
+     },
+     {
+      "kind": "fixed",
+      "price": 135.0,
+      "title": "iPad 8e generatie in topconditie met oplader",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449407941-ipad-8e-generatie-in-topconditie-met-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Apple iPad 8 32/128GB 10.2 WiFi (4G) + garantie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294814-apple-ipad-8-32-128gb-10-2-wifi-4g-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 140.0,
+      "title": "iPad 8 in Nieuwstaat morel 2021",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449426858-ipad-8-in-nieuwstaat-morel-2021"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "iPad 8th Generatie 32GB Met Wi-Fi en Simkaart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447560861-ipad-8th-generatie-32gb-met-wi-fi-en-simkaart"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "iPad 2020 8e generatie 32GB - Uitstekende staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448267242-ipad-2020-8e-generatie-32gb-uitstekende-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Apple ipad 8Wifi 32GB met accessoires €140",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446881427-apple-ipad-8wifi-32gb-met-accessoires-140"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Apple iPad 8 – 128GB – Rosé Goud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447054958-apple-ipad-8-128gb-rose-goud"
      },
      {
       "kind": "fixed",
       "price": 149.0,
-      "title": "4x Apple 🍏 iPad 2020 (8th gen) 32GB Wifi Zo goed als nieuw!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426625203-4x-apple-ipad-2020-8th-gen-32gb-wifi-zo-goed-als-nieuw"
+      "title": "Refurbished Apple iPad 8 (2020) 10.2-inch 32GB – Zwart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449385779-refurbished-apple-ipad-8-2020-10-2-inch-32gb-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Nieuwstaat Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524537507-nieuwstaat-apple-ipad-8-model-2020-wit-32gb-10-2-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Nieuwstaat Apple iPad 8 (model 2020) zwart 32GB 10.2 Wi...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531070-nieuwstaat-apple-ipad-8-model-2020-zwart-32gb-10-2-wi"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Nieuwstaat Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531168-nieuwstaat-apple-ipad-8-model-2020-wit-32gb-10-2-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Nieuwstaat Apple iPad 8 (model 2020) zwart 32GB 10.2 WiFi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524537508-nieuwstaat-apple-ipad-8-model-2020-zwart-32gb-10-2-wifi"
+     },
+     {
+      "kind": "bid",
+      "price": 160.0,
+      "title": "Ipad 8 ste generatie 128 GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446887097-ipad-8-ste-generatie-128-gb"
      },
      {
       "kind": "bid",
@@ -8241,84 +8461,72 @@
      },
      {
       "kind": "bid",
-      "price": 179.99,
-      "title": "iPad 2020 8th Gen 32GB WiFi/4G Space Gray",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446008020-ipad-2020-8th-gen-32gb-wifi-4g-space-gray"
-     },
-     {
-      "kind": "bid",
-      "price": 179.99,
-      "title": "iPad 2020 8th Gen 32GB WiFi/4G Space Gray",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446008008-ipad-2020-8th-gen-32gb-wifi-4g-space-gray"
+      "price": 175.0,
+      "title": "iPad 8e generatie 32GB Zilver 5G (Wi-Fi + Cellular)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446854337-ipad-8e-generatie-32gb-zilver-5g-wi-fi-cellular"
      },
      {
       "kind": "fixed",
-      "price": 189.99,
-      "title": "Apple iPad 2020 (8th gen) 32GB WiFi Wit Nieuwstaat met garan",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2441884892-apple-ipad-2020-8th-gen-32gb-wifi-wit-nieuwstaat-met-garan"
-     },
-     {
-      "kind": "fixed",
-      "price": 195.0,
-      "title": "Apple iPad 2020 8e gen 32GB WiFi Space Gray Refurbished",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2430182074-apple-ipad-2020-8e-gen-32gb-wifi-space-gray-refurbished"
-     },
-     {
-      "kind": "bid",
-      "price": 199.95,
-      "title": "Apple iPad 2020 (8th Gen) 128GB Wifi Zwart Losse Tablet",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2408611039-apple-ipad-2020-8th-gen-128gb-wifi-zwart-losse-tablet"
-     },
-     {
-      "kind": "bid",
-      "price": 199.99,
-      "title": "iPad 2020 8th Gen 128GB 4G + Wifi | in Nette Staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446995966-ipad-2020-8th-gen-128gb-4g-wifi-in-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "IPad Air 4th Gen (2020) (64GB)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2441656029-ipad-air-4th-gen-2020-64gb"
-     },
-     {
-      "kind": "bid",
-      "price": 449.0,
-      "title": "iPad Pro (2e gen) 2020 - 11 inch - 128GB - WiFi - Zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2417031197-ipad-pro-2e-gen-2020-11-inch-128gb-wifi-zilver"
+      "price": 179.99,
+      "title": "Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi (4G) (als....",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531331-apple-ipad-8-model-2020-wit-32gb-10-2-wifi-4g-als"
      }
     ],
-    "low": 153.0,
-    "median": 184.99,
-    "model": null,
-    "outliers": [
-     500.0
-    ],
+    "low": 120.0,
+    "median": 140.0,
+    "model": "iPad 8th gen",
+    "outliers": [],
     "prices": [
-     5.0,
-     99.0,
+     50.0,
+     89.99,
+     89.99,
+     99.99,
+     100.0,
+     100.0,
+     118.0,
+     119.0,
+     120.0,
+     120.0,
+     125.0,
+     125.0,
+     130.0,
+     130.0,
+     135.0,
+     139.99,
+     140.0,
+     140.0,
+     140.0,
+     140.0,
+     145.0,
      149.0,
+     149.99,
+     149.99,
+     149.99,
+     149.99,
+     160.0,
      165.0,
+     175.0,
      179.99,
      179.99,
-     189.99,
-     195.0,
-     199.95,
-     199.99,
-     350.0,
-     449.0
+     179.99,
+     179.99,
+     179.99,
+     229.99,
+     229.99,
+     229.99,
+     229.99
     ],
-    "query": "ipad 2020 gen",
-    "url": "https://www.marktplaats.nl/q/ipad+2020+gen/"
+    "query": "ipad 2020",
+    "url": "https://www.marktplaats.nl/q/ipad+8/"
    },
    "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/ipad+2020+gen/"
+    "brand": "apple",
+    "kind": "exact",
+    "model": "iPad 8th gen",
+    "note": "exact: iPad 8th gen",
+    "search": "https://www.marktplaats.nl/q/ipad+8/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/ipad+2020+gen/",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+8/",
    "pickup": "Huivelde 50, 9240 Zele, België",
    "pickupWhen": "Mon 19 Oct, 13:00–15:30",
    "premium": 0.19,
@@ -8355,80 +8563,110 @@
    "itemMinMargin": null,
    "key": "openbareverkopen:751332",
    "location": "Zele",
-   "market": 162.5,
+   "market": 149.99,
    "marketSource": "marktplaats",
-   "maxBid": 36.0,
+   "maxBid": 37.0,
    "mp": {
-    "asOf": "2026-10-03T17:12:10.052751+00:00",
-    "count": 42,
-    "high": 506.25,
+    "asOf": "2026-10-04T06:40:15.946437+00:00",
+    "count": 44,
+    "high": 189.74,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 25.0,
-      "title": "ipad pro 12.9 otterbox defender 12.9",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2446233327-ipad-pro-12-9-otterbox-defender-12-9"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Lege doos Apple iPad Pro 12,9 -inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449559500-lege-doos-apple-ipad-pro-12-9-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 36.99,
-      "title": "KeyboardCase - iPad Pro 12.9 & Air 13\" (2024) | Retourdeal",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/tablet-hoezen/m2449384017-keyboardcase-ipad-pro-12-9-air-13-2024-retourdeal"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "iPad Pro 2016 (9,7 inch)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448522383-ipad-pro-2016-9-7-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.0,
-      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K15)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445941467-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k15"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "iPad Pro 9,7 inch 128GB 2016 - Goede staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448134486-ipad-pro-9-7-inch-128gb-2016-goede-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K122)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445788262-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k122"
+      "price": 14.5,
+      "title": "iPad Air 2 (2017–2018 - Pro 9.7) kickstand – Schokbestendig",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/banken-complete-zithoeken/a1513707892-ipad-air-2-2017-2018-pro-9-7-kickstand-schokbestendig"
      },
      {
       "kind": "fixed",
       "price": 85.0,
-      "title": "Apple Magic Keyboard Ipad Pro 12.9”",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449061130-apple-magic-keyboard-ipad-pro-12-9"
-     },
-     {
-      "kind": "bid",
-      "price": 90.0,
-      "title": "iPad Pro Smart Keyboard Folio 12.9 inch (gen 3) (ongebruikt)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447257393-ipad-pro-smart-keyboard-folio-12-9-inch-gen-3-ongebruikt"
+      "title": "Apple iPad Pro 9.7 inch – 32GB – Wi-Fi – Zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2416497206-apple-ipad-pro-9-7-inch-32gb-wi-fi-zilver"
      },
      {
       "kind": "fixed",
-      "price": 90.0,
-      "title": "Apple Smart Keyboard Folio iPad Pro 12.9 (3-6) (K133)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445788882-apple-smart-keyboard-folio-ipad-pro-12-9-3-6-k133"
+      "price": 99.99,
+      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi....",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294954-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "(Ex demo) Apple iPad Pro 9.7 space grey 32/128GB (model...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294887-ex-demo-apple-ipad-pro-9-7-space-grey-32-128gb-model"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "(Ex demo) Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206178-ex-demo-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "(Ex demo) Apple iPad Pro 9.7 space grey 32/128GB (model",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206195-ex-demo-apple-ipad-pro-9-7-space-grey-32-128gb-model"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Apple iPad Pro 32GB (model 2016) 9.7 inch gold Wifi (4G)...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294968-apple-ipad-pro-32gb-model-2016-9-7-inch-gold-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294955-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206194-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Apple iPad Pro 32GB (model 2016) 9.7 inch gold Wifi (4G) (ex",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206192-apple-ipad-pro-32gb-model-2016-9-7-inch-gold-wifi-4g-ex"
      },
      {
       "kind": "bid",
       "price": 100.0,
-      "title": "ipad pro 9.6",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449189183-ipad-pro-9-6"
+      "title": "Apple iPad Pro 9.7 inch 32gb WiFi Silver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2422318305-apple-ipad-pro-9-7-inch-32gb-wifi-silver"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Apple iPad Pro 9.7-inch 32GB Wi-Fi",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426440026-apple-ipad-pro-9-7-inch-32gb-wi-fi"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.99,
+      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zil...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294709-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zil"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.99,
+      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zwa...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294965-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zwa"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.99,
+      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206171-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zilver"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.99,
+      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zwart",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206172-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zwart"
      },
      {
       "kind": "bid",
@@ -8438,172 +8676,144 @@
      },
      {
       "kind": "bid",
-      "price": 135.0,
-      "title": "iPad Pro 12,9 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448850441-ipad-pro-12-9-inch"
+      "price": 125.0,
+      "title": "Apple iPad Pro (9.7 inch) 256GB Wi-Fi - In goede staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2419418856-apple-ipad-pro-9-7-inch-256gb-wi-fi-in-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Apple iPad Pro (9.7 inch) 256 GB Wi-Fi with original charger",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442350684-apple-ipad-pro-9-7-inch-256-gb-wi-fi-with-original-charger"
      },
      {
       "kind": "fixed",
-      "price": 135.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K57)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445937284-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k57"
+      "price": 149.99,
+      "title": "(ex demo) Apple iPad Pro 256GB 9.7 inch (model 2016) zilver",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206175-ex-demo-apple-ipad-pro-256gb-9-7-inch-model-2016-zilver"
      },
      {
-      "kind": "bid",
-      "price": 139.0,
-      "title": "Apple Magic Keyboard voor iPad Pro 12.9” (Zo goed als nieuw)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445728156-apple-magic-keyboard-voor-ipad-pro-12-9-zo-goed-als-nieuw"
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Apple iPad Pro 256GB 9.7 inch (2016) zilver Wifi (4G) +....",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294708-apple-ipad-pro-256gb-9-7-inch-2016-zilver-wifi-4g"
      },
      {
-      "kind": "bid",
-      "price": 149.0,
-      "title": "Apple Magic Keyboard Ipad Air 13 M2 M3 en Ipad Pro 12.9",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2449350253-apple-magic-keyboard-ipad-air-13-m2-m3-en-ipad-pro-12-9"
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Apple iPad Pro 256GB 9.7 inch (model 2016) zwart Wifi (4...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525880376-apple-ipad-pro-256gb-9-7-inch-model-2016-zwart-wifi-4"
      },
      {
-      "kind": "bid",
-      "price": 149.0,
-      "title": "Apple Magic Keyboard voor iPad Pro 12.9 inch (ZGAN)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2446550618-apple-magic-keyboard-voor-ipad-pro-12-9-inch-zgan"
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Apple iPad Pro 256GB 9.7 inch (model 2016) zwart Wifi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525906365-apple-ipad-pro-256gb-9-7-inch-model-2016-zwart-wifi-4g"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 150.0,
-      "title": "iPad Pro 9,7 inch 128 GB LTE (MLQ32FD/A)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447642559-ipad-pro-9-7-inch-128-gb-lte-mlq32fd-a"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "iPad Pro 128GB 9,7inch incl doos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448213612-ipad-pro-128gb-9-7inch-incl-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 159.0,
-      "title": "Apple iPad Pro 12,9” 128GB WiFi/Cellular + originele doos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449370815-apple-ipad-pro-12-9-128gb-wifi-cellular-originele-doos"
+      "title": "Apple iPad Pro 9.7' 256 Go Rose Gold",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2432486982-apple-ipad-pro-9-7-256-go-rose-gold"
      },
      {
       "kind": "fixed",
-      "price": 160.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K52)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445936785-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k52"
+      "price": 159.99,
+      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528867480-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
      },
      {
       "kind": "fixed",
-      "price": 165.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K20)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445936269-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k20"
+      "price": 159.99,
+      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528869881-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi-4g"
      },
      {
       "kind": "fixed",
-      "price": 165.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K103)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445795464-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k103"
+      "price": 159.99,
+      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G)",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528869876-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
+     },
+     {
+      "kind": "fixed",
+      "price": 159.99,
+      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi....",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1528868619-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi"
      },
      {
       "kind": "fixed",
       "price": 165.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K53)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445794767-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k53"
+      "title": "Apple iPad Pro 1 (2016) - 9.7 inch - 32GB - Spacegrijs - 2 j",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-overige-merken/a1526137550-apple-ipad-pro-1-2016-9-7-inch-32gb-spacegrijs-2-j"
      },
      {
       "kind": "fixed",
-      "price": 170.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K17)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445934094-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k17"
-     },
-     {
-      "kind": "fixed",
-      "price": 170.0,
-      "title": "Apple Magic Keyboard iPad Pro 12.9 3-6/Air 13 (K131)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445796136-apple-magic-keyboard-ipad-pro-12-9-3-6-air-13-k131"
-     },
-     {
-      "kind": "fixed",
-      "price": 175.0,
-      "title": "Magic Keyboard voor iPad Pro 12.9 (3e-6e gen)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2448852104-magic-keyboard-voor-ipad-pro-12-9-3e-6e-gen"
-     },
-     {
-      "kind": "fixed",
-      "price": 219.0,
-      "title": "Apple iPad Pro 12,9 inch (2e generatie, 2017) 64 GB WiFi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448049304-apple-ipad-pro-12-9-inch-2e-generatie-2017-64-gb-wifi"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Apple iPad Pro 12,9 inch (2018) 256GB Wi-Fi + Smart Keyboard",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449433142-apple-ipad-pro-12-9-inch-2018-256gb-wi-fi-smart-keyboard"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Ipad Pro 12.9 inch 4th gen - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449086542-ipad-pro-12-9-inch-4th-gen-zo-goed-als-nieuw"
+      "price": 179.99,
+      "title": "Nieuwstaat Apple iPad Pro 256GB 9.7 inch (model 2016) zw...",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525880380-nieuwstaat-apple-ipad-pro-256gb-9-7-inch-model-2016-zw"
      }
     ],
-    "low": 97.5,
-    "median": 162.5,
-    "model": null,
+    "low": 100.0,
+    "median": 149.99,
+    "model": "iPad Pro 9.7",
     "outliers": [],
     "prices": [
-     25.0,
-     30.0,
-     36.99,
-     50.0,
-     50.0,
-     75.0,
-     80.0,
+     14.5,
      85.0,
-     90.0,
-     90.0,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
+     99.99,
      100.0,
+     100.0,
+     119.99,
+     119.99,
+     119.99,
+     119.99,
      125.0,
-     135.0,
-     135.0,
-     139.0,
-     149.0,
-     149.0,
+     125.0,
+     125.0,
+     149.99,
+     149.99,
+     149.99,
+     149.99,
      150.0,
-     150.0,
-     159.0,
-     160.0,
+     159.99,
+     159.99,
+     159.99,
+     159.99,
      165.0,
-     165.0,
-     165.0,
-     170.0,
-     170.0,
-     175.0,
-     219.0,
-     350.0,
-     450.0,
-     500.0,
-     500.0,
-     525.0,
-     599.0,
-     685.0,
-     699.0,
-     700.0,
-     799.0,
-     850.0,
-     850.0,
-     1000.0,
-     1000.0
+     179.99,
+     179.99,
+     179.99,
+     189.0,
+     189.99,
+     189.99,
+     189.99,
+     189.99,
+     199.0,
+     199.99,
+     209.99,
+     209.99,
+     209.99,
+     209.99,
+     239.99
     ],
-    "query": "ipad pro 9",
-    "url": "https://www.marktplaats.nl/q/ipad+pro+9/"
+    "query": "ipad pro 9.7",
+    "url": "https://www.marktplaats.nl/q/ipad+pro+9+7/"
    },
    "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/ipad+pro+9/"
+    "brand": "apple",
+    "kind": "exact",
+    "model": "iPad Pro 9.7",
+    "note": "exact: iPad Pro 9.7 inch",
+    "search": "https://www.marktplaats.nl/q/ipad+pro+9+7/"
    },
-   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+9/",
+   "mpSearch": "https://www.marktplaats.nl/q/ipad+pro+9+7/",
    "pickup": "Huivelde 50, 9240 Zele, België",
    "pickupWhen": "Mon 19 Oct, 13:00–15:30",
    "premium": 0.19,
@@ -8642,7 +8852,7 @@
    "location": "Bolsward",
    "market": 50.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 10.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 35,
@@ -8926,7 +9136,7 @@
    "location": "Bolsward",
    "market": 39.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 33,
@@ -9199,7 +9409,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288583|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -9208,7 +9418,7 @@
    "location": "Bolsward",
    "market": 62.49,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 13.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 10,
@@ -9583,7 +9793,7 @@
    "location": "Bolsward",
    "market": 89.99,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 20.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 3,
@@ -9706,7 +9916,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288573|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -9715,7 +9925,7 @@
    "location": "Bolsward",
    "market": 77.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 17.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 4,
@@ -9797,7 +10007,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288574|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -9806,7 +10016,7 @@
    "location": "Bolsward",
    "market": 136.25,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 33.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -9883,7 +10093,7 @@
    "location": "Bolsward",
    "market": 39.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 33,
@@ -10165,7 +10375,7 @@
    "location": "Bolsward",
    "market": 39.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-10-04T06:04:08.243638+00:00",
     "count": 33,
@@ -10582,7 +10792,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165807|3288582|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -10591,7 +10801,7 @@
    "location": "Bolsward",
    "market": 92.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 21.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 16,
@@ -10766,7 +10976,7 @@
    "location": "Bolsward",
    "market": 179.0,
    "marketSource": "marktplaats",
-   "maxBid": 12.0,
+   "maxBid": 44.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 81,
@@ -11095,7 +11305,7 @@
    "location": "Bolsward",
    "market": 40.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 7.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 4,
@@ -11186,7 +11396,7 @@
    "location": "Bolsward",
    "market": 40.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 7.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 4,
@@ -11268,7 +11478,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288587|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -11277,7 +11487,7 @@
    "location": "Bolsward",
    "market": 67.47,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 14.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 20,
@@ -11471,7 +11681,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288588|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -11480,7 +11690,7 @@
    "location": "Bolsward",
    "market": 110.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 26.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 5,
@@ -11569,7 +11779,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288589|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -11578,7 +11788,7 @@
    "location": "Bolsward",
    "market": 100.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 23.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 29,
@@ -11848,7 +12058,7 @@
    "location": "Bolsward",
    "market": 22.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 2.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -11925,7 +12135,7 @@
    "location": "Bolsward",
    "market": 22.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 2.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -11993,7 +12203,7 @@
    "firstSeen": "2026-10-03T13:29:07.180092+00:00",
    "fixed": 0.0,
    "image": "https://img.proveiling.nl/Image.aspx?img=15756|165806|3288609|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -12002,7 +12212,7 @@
    "location": "Bolsward",
    "market": 142.0,
    "marketSource": "marktplaats",
-   "maxBid": 2.0,
+   "maxBid": 34.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -12079,7 +12289,7 @@
    "location": "Bolsward",
    "market": 22.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 2.0,
    "mp": {
     "asOf": "2026-10-03T13:29:07.180092+00:00",
     "count": 2,
@@ -12243,7 +12453,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/9042e644-18ae-4149-9265-473599757173/20260929_093235.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -12252,7 +12462,7 @@
    "location": "Winsum",
    "market": 145.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 34.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 4,
@@ -12334,7 +12544,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/4491884d-339e-4c24-b62a-39919080d0fd/20260929_093330.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -12343,7 +12553,7 @@
    "location": "Winsum",
    "market": 145.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 34.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 4,
@@ -12530,7 +12740,7 @@
    "location": "Winsum",
    "market": 37.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 6.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 2,
@@ -12655,7 +12865,7 @@
    "location": "Winsum",
    "market": 50.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 9.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 3,
@@ -12778,7 +12988,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/05bb8c51-4879-42b0-a776-139f89d85052/20260929_105428.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -12787,7 +12997,7 @@
    "location": "Winsum",
    "market": 97.95,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 22.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 61,
@@ -13094,7 +13304,7 @@
    "location": "Winsum",
    "market": 250.0,
    "marketSource": "marktplaats",
-   "maxBid": 23.0,
+   "maxBid": 63.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 55,
@@ -13433,7 +13643,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/8f4b520a-73f2-40ba-ae07-c20a64dc3b87/20260929_105749.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -13442,7 +13652,7 @@
    "location": "Winsum",
    "market": 129.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 30.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 25,
@@ -14284,7 +14494,7 @@
    "location": "Winsum",
    "market": 363.84,
    "marketSource": "marktplaats",
-   "maxBid": 54.0,
+   "maxBid": 94.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 8,
@@ -14586,7 +14796,7 @@
    "firstSeen": "2026-10-02T19:29:00.998979+00:00",
    "fixed": 0.0,
    "image": "https://onlineveilingmeester.nl/images/original/2026-09-29/075772de-2213-4059-962a-92de20267551/20260929_134224.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -14595,7 +14805,7 @@
    "location": "Winsum",
    "market": 139.0,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 33.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 4,
@@ -15051,7 +15261,7 @@
    "location": "Winsum",
    "market": 449.5,
    "marketSource": "marktplaats",
-   "maxBid": 78.0,
+   "maxBid": 117.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 6,
@@ -16485,7 +16695,7 @@
    "location": "Winsum",
    "market": 357.5,
    "marketSource": "marktplaats",
-   "maxBid": 53.0,
+   "maxBid": 92.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 8,
@@ -16652,7 +16862,7 @@
    "location": "Winsum",
    "market": 1860.0,
    "marketSource": "marktplaats",
-   "maxBid": 461.0,
+   "maxBid": 500.0,
    "mp": {
     "asOf": "2026-10-02T19:29:00.998979+00:00",
     "count": 32,
@@ -18242,7 +18452,7 @@
    "location": "Loon op zand",
    "market": 450.0,
    "marketSource": "marktplaats",
-   "maxBid": 112.0,
+   "maxBid": 119.0,
    "mp": {
     "asOf": "2026-10-03T17:12:10.052751+00:00",
     "count": 13,
@@ -18399,7 +18609,7 @@
    "location": "Loon op zand",
    "market": 365.0,
    "marketSource": "marktplaats",
-   "maxBid": 89.0,
+   "maxBid": 96.0,
    "mp": {
     "asOf": "2026-10-02T06:58:21.638896+00:00",
     "count": 5,
@@ -18497,7 +18707,7 @@
    "location": "Loon op zand",
    "market": 1500.0,
    "marketSource": "marktplaats",
-   "maxBid": 395.0,
+   "maxBid": 402.0,
    "mp": {
     "asOf": "2026-10-03T17:12:10.052751+00:00",
     "count": 9,
@@ -18623,7 +18833,7 @@
    "location": "Loon op zand",
    "market": 579.0,
    "marketSource": "marktplaats",
-   "maxBid": 147.0,
+   "maxBid": 154.0,
    "mp": {
     "asOf": "2026-10-02T06:58:21.638896+00:00",
     "count": 5,
@@ -18721,7 +18931,7 @@
    "location": "Loon op zand",
    "market": 1200.0,
    "marketSource": "marktplaats",
-   "maxBid": 314.0,
+   "maxBid": 321.0,
    "mp": {
     "asOf": "2026-10-02T06:58:21.638896+00:00",
     "count": 16,
@@ -19152,7 +19362,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 43,
+   "lots": 4,
    "name": "Marktplaats prices",
    "ok": true
   }
