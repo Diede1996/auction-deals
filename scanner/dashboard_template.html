@@ -315,7 +315,7 @@ footer td { padding: 2px 14px 2px 0; }
         <option value="new">Newest first</option>
       </select>
       <label class="check"><input type="checkbox" id="onlyRoom"> Only with room to bid</label>
-      <label class="check"><input type="checkbox" id="showHidden"> Show hidden</label>
+      <label class="check"><input type="checkbox" id="showHidden"> Show hidden<span id="hiddenCount"></span></label>
     </div>
   </section>
 
@@ -434,7 +434,8 @@ footer td { padding: 2px 14px 2px 0; }
   }
 
   /* ---------- the maths (mirrors scanner/evaluate.py) ---------- */
-  function tripCost(lot) { return S.trip && lot.trip ? lot.trip.cost : 0; }
+  /* this lot's share of the trip: lots collected at the same address on the same day share it (shareTrips) */
+  function tripCost(lot) { return S.trip && lot.trip ? (lot._share != null ? lot._share : lot.trip.cost) : 0; }
   function calc(lot) {
     var trip = tripCost(lot);
     var cost = function (b) { return (b * (1 + lot.premium) + (lot.fixed || 0)) * (1 + lot.vat) + trip; };
@@ -522,7 +523,7 @@ footer td { padding: 2px 14px 2px 0; }
   });
 
   function renderKpis(rows) {
-    var visible = rows.filter(function (r) { return !hidden[r.lot.key]; });
+    var visible = rows.filter(function (r) { return !isHidden(r); });
     var room = visible.filter(function (r) { return r.c.status === "room"; });
     var soon = room.filter(function (r) { return r.lot.closes && new Date(r.lot.closes).getTime() - Date.now() < 86400000; });
     var fresh = visible.filter(function (r) { return r.lot.isNew; });
@@ -822,7 +823,7 @@ footer td { padding: 2px 14px 2px 0; }
     return m >= 60 ? Math.floor(m / 60) + "h " + String(m % 60).padStart(2, "0") + "m" : m + " min";
   }
 
-  function pickupLine(lot) {
+  function pickupLine(lot, r) {
     if (lot.delivery) return el("div", { "class": "pickup" }, el("span", { text: "🚚 Delivered to you (no pickup)" }));
     var place = lot.pickup || lot.location;
     if (!place && !lot.pickupWhen) return null;
@@ -832,6 +833,9 @@ footer td { padding: 2px 14px 2px 0; }
       t ? el("span", { "class": "drive", title: "Driving there" + (DRIVING.roundTrip !== false ? " and back" : "") + (t.approx ? " (estimate: route planner unavailable)" : "") + ": fuel at " + (DRIVING.kmpl || 16) + " km per liter and €" + (DRIVING.fuel || 0).toFixed(3) + "/l" },
         "🚗 " + (t.approx ? "≈ " : "") + Math.round(t.km) + "\u00a0km · " + duration(t.min).replace(" ", "\u00a0") + " · " +
         money(t.cost) + (DRIVING.roundTrip !== false ? " there\u00a0&\u00a0back" : "") + (t.from && t.from !== "home" ? " from\u00a0" + t.from : "")) : null,
+      t && S.trip && lot._shareN > 1 ? el("span", { "class": "drive share", title: "Lots worth collecting here on the same pickup day (room to bid, a bid to check, or a favorite) share the trip" },
+        r && worthCollecting(r) ? "shared by " + lot._shareN + " lots: " + money(lot._share) + " each"
+          : money(lot._share) + " if you collect it with the " + (lot._shareN - 1) + " other" + (lot._shareN === 2 ? "" : "s") + " here") : null,
       lot.pickupWhen ? el("span", { "class": "when" }, "pickup " + lot.pickupWhen) : null);
   }
 
@@ -861,15 +865,19 @@ footer td { padding: 2px 14px 2px 0; }
       c.profitNow != null ? el("div", { "class": "small" + (c.profitNow < 0 ? " loss" : ""),
         text: "margin " + money(c.profitNow) + " (" + pct(c.returnNow) + ")" }) : null);
 
-    var status = el("div", { "class": "c-status" }, statusPill(c),
+    var farNote = c.far ? el("span", { "class": "pill neutral far", title: "More than " + c.far.max + " min drive (one way) and " +
+        (c.far.worth ? "only " + c.far.worth : "no") + " lot" + (c.far.worth === 1 ? "" : "s") + " worth collecting at this address on this pickup day; " +
+        "you want at least " + c.far.need + ". Star it as a favorite to keep it in view." },
+      el("span", { "class": "ic", "aria-hidden": "true", text: "🚗" }), "Too far for " + (c.far.worth || "0") + (c.far.worth === 1 ? " lot" : " lots")) : null;
+    var status = el("div", { "class": "c-status" }, statusPill(c), farNote,
       el("div", { "class": "actions" }, favButton(lot, c),
         el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
           onclick: function () { if (hidden[lot.key]) delete hidden[lot.key]; else hidden[lot.key] = 1; store.set("hidden", hidden); render(); } })));
 
-    return el("article", { "class": "row" + (hidden[lot.key] ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
+    return el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
       lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
-      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot)),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r)),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
@@ -915,9 +923,69 @@ footer td { padding: 2px 14px 2px 0; }
     }
   }
 
+  /* A long drive only for several lots (driving.long_trip_* in config.yml): lots more than longMin minutes away
+     (one way) are left out when fewer than longLots lots at that address and pickup day are worth collecting:
+     room to bid, a Troostwijk bid to check, or a favorite. Favorites are never left out. */
+  function pickupDay(lot) { return lot.pickupWhen ? String(lot.pickupWhen).split(",")[0].trim() : ""; }
+  function pickupKey(lot) { return (lot.pickup || lot.location || "") + "|" + pickupDay(lot); }
+  function worthCollecting(r) { return r.c.status === "room" || r.c.status === "check" || !!favs[r.lot.key]; }
+
+  /* One trip, several lots: each lot carries the trip cost divided by the lots worth collecting at that
+     address on that day (counting itself). Start as if every lot there is collected, then drop the ones that
+     still have no room to bid until nothing changes (mirrors share_trips in scanner/scan.py). */
+  function shareTrips(all) {
+    if (!S.trip) return;
+    var groups = {};
+    all.forEach(function (r) {
+      if (!r.lot.trip || r.lot.delivery) return;
+      var k = pickupKey(r.lot);
+      (groups[k] = groups[k] || []).push(r);
+    });
+    var apply = function (r, n, cost) {
+      var share = Math.round(cost / n * 100) / 100;
+      if (r.lot._share === share && r.lot._shareN === n) return false;
+      r.lot._share = share; r.lot._shareN = n; r.c = calc(r.lot);
+      return true;
+    };
+    Object.keys(groups).forEach(function (k) {
+      var g = groups[k], cost = g[0].lot.trip.cost;
+      g.forEach(function (r) { apply(r, g.length, cost); });
+      for (var round = 0; round <= g.length; round++) {
+        var worth = g.filter(worthCollecting), changed = false;
+        g.forEach(function (r) { changed = apply(r, worth.length - (worth.indexOf(r) >= 0 ? 1 : 0) + 1, cost) || changed; });
+        if (!changed) break;
+      }
+    });
+  }
+
+  function markFar(all) {
+    var maxMin = DRIVING.longMin || 0, minLots = DRIVING.longLots || 0;
+    if (!maxMin || minLots <= 1) return;
+    var groups = {};
+    all.forEach(function (r) {
+      var t = r.lot.trip;
+      if (!t || r.lot.delivery || !(t.min > maxMin)) return;
+      var k = pickupKey(r.lot);
+      (groups[k] = groups[k] || []).push(r);
+    });
+    Object.keys(groups).forEach(function (k) {
+      var g = groups[k];
+      var worth = g.filter(worthCollecting).length;
+      if (worth >= minLots) return;
+      g.forEach(function (r) { if (!favs[r.lot.key]) r.c.far = { min: g[0].lot.trip.min, worth: worth, need: minLots, max: maxMin }; });
+    });
+  }
+  function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far; }
+
   function render() {
+    lots.forEach(function (l) { delete l._share; delete l._shareN; });
     var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
+    shareTrips(all);
+    markFar(all);
     renderKpis(all);
+    var farCount = all.filter(function (r) { return r.c.far && !hidden[r.lot.key]; }).length;
+    var hc = document.getElementById("hiddenCount");
+    if (hc) hc.textContent = farCount ? " (incl. " + farCount + " too far)" : "";
     var favKeys = Object.keys(favs);
     document.getElementById("count-all").textContent = String(all.length);
     document.getElementById("count-fav").textContent = String(favKeys.length);
@@ -947,7 +1015,7 @@ footer td { padding: 2px 14px 2px 0; }
 
     var q = ui.q.trim().toLowerCase();
     var shown = all.filter(function (r) {
-      if (!ui.showHidden && hidden[r.lot.key]) return false;
+      if (!ui.showHidden && isHidden(r)) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.item && r.lot.item !== ui.item) return false;
       if (ui.site && r.lot.site !== ui.site) return false;
@@ -1231,7 +1299,9 @@ footer td { padding: 2px 14px 2px 0; }
     box.append(el("strong", { text: "Driving costs" }), " = " + (DRIVING.roundTrip !== false ? "there and back" : "one way") + " at " +
       (DRIVING.kmpl || 16) + " km per liter × €" + (DRIVING.fuel || 0).toFixed(3) + " per liter" +
       (DRIVING.fuelSource ? " (" + DRIVING.fuelSource + ")" : "") +
-      (DRIVING.extraPerKm ? " + €" + DRIVING.extraPerKm + " per km" : "") + ". If you collect several lots at the same address, you only drive once. " +
+      (DRIVING.extraPerKm ? " + €" + DRIVING.extraPerKm + " per km" : "") + ". Lots collected at the same address on the same pickup day share one trip: the cost is split over the lots worth collecting there (room to bid, a bid to check, or a favorite). " +
+      (DRIVING.longMin && DRIVING.longLots > 1 ? "Pickups more than " + DRIVING.longMin + " min away are hidden unless at least " + DRIVING.longLots +
+        " lots there (same address and day) have room to bid or are favorites. " : "") +
       "Routes: OSRM, © OpenStreetMap contributors." + (DRIVING.error ? " Note: " + DRIVING.error + "." : ""));
   })();
 

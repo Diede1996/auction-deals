@@ -147,8 +147,10 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
 
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
-                   trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen") -> str:
-    deals = [r for r in rows if r[2].is_deal]
+                   trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen",
+                   far: dict | None = None, far_rule: tuple[float, int] | None = None) -> str:
+    far = far or {}
+    deals = [r for r in rows if r[2].is_deal and r[1].key not in far]
     day = now.astimezone(AMS).strftime("%a %d %b")
     head = [f"☀️ <b>Auction scan</b> · {day}",
             f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b> · "
@@ -168,7 +170,8 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         fresh.sort(key=lambda r: -(r[2].max_bid or 0) + (r[2].bid or 0))
         parts.append("🆕 <b>New with room to bid</b>\n" +
                      "\n".join(_line(i, l, v, e, trips) for i, l, v, e in fresh[:per_section]))
-    check = [r for r in rows if r[1].bid_from_email and r[1].key in new_keys and (r[2].max_bid or 0) > 0]
+    check = [r for r in rows if r[1].bid_from_email and r[1].key in new_keys and (r[2].max_bid or 0) > 0
+             and r[1].key not in far]
     if check:
         check.sort(key=lambda r: -(r[2].max_bid or 0))
         parts.append("🔎 <b>New from Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
@@ -177,6 +180,10 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append(f"Nothing on your watchlist is in a running {kinds} auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
+    left_out = sum(1 for r in rows if r[2].is_deal and r[1].key in far)
+    if left_out and far_rule:
+        parts.append(f"<i>🚗 {left_out} lot{'s' if left_out != 1 else ''} with room to bid left out: more than "
+                     f"{far_rule[0]:.0f} min drive with fewer than {far_rule[1]} lots to collect there.</i>")
     if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
         parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
     if url:
@@ -199,6 +206,76 @@ def closing_day(lot: Lot) -> str | None:
         return None
     day = datetime.fromisoformat(lot.closes_day)
     return f"{day:%a} {day.day} {day:%b}"
+
+
+def pickup_day(lot: Lot) -> str:
+    """"Mon 19 Oct" from "Mon 19 Oct, 13:00–15:30": lots collected on the same day share one trip."""
+    return (lot.pickup_when or "").split(",")[0].strip()
+
+
+def worth_collecting(row: Row, favorite_keys: set[str]) -> bool:
+    """Room to bid, a Troostwijk lot whose current bid still needs checking, or a favorite."""
+    _, lot, v, _ = row
+    return v.is_deal or lot.key in favorite_keys or (lot.bid_from_email and (v.max_bid or 0) > 0)
+
+
+def share_trips(rows: list[Row], trips: dict, favorite_keys: set[str], reevaluate) -> list[Row]:
+    """Lots collected at the same address on the same day share one trip: each lot carries the trip cost
+    divided by the lots worth collecting there (counting itself).
+    Which lots are worth it depends on their share, so this starts as if every lot there is collected and
+    then drops the ones that still have no room to bid, until nothing changes. That finds the largest set
+    of lots that are worth it together: three lots that each can't pay for the trip alone can together.
+    reevaluate(item, lot, estimate) -> Verdict with the lot's new trip_cost."""
+    groups: dict[tuple[str, str], list[int]] = {}
+    for i, (_, lot, _, _) in enumerate(rows):
+        place = pickup_place(lot)
+        if trips.get(place or ""):
+            groups.setdefault((place, pickup_day(lot)), []).append(i)
+    rows = list(rows)
+
+    def apply(i: int, n: int, cost: float) -> bool:
+        item, lot, _, est = rows[i]
+        share = round(cost / n, 2)
+        if lot.trip_cost == share and lot.trip_lots == n:
+            return False
+        lot.trip_cost, lot.trip_lots = share, n
+        rows[i] = (item, lot, reevaluate(item, lot, est), est)
+        return True
+
+    for (place, _), members in groups.items():
+        cost = trips[place].cost
+        for i in members:  # optimistic start: everything here is collected
+            apply(i, len(members), cost)
+        for _ in range(len(members) + 1):  # the set of lots worth it only shrinks from here
+            worth = {i for i in members if worth_collecting(rows[i], favorite_keys)}
+            changed = False
+            for i in members:
+                changed |= apply(i, len(worth - {i}) + 1, cost)
+            if not changed:
+                break
+    return rows
+
+
+def too_far(rows: list[Row], trips: dict, favorite_keys: set[str], max_minutes: float, min_lots: int) -> dict:
+    """Lots whose pickup is more than `max_minutes` away (one way) while fewer than `min_lots` lots at that
+    address and pickup day are worth collecting (room to bid, a Troostwijk lot to check, or a favorite).
+    Returns lot key -> (minutes, lots worth collecting there). Favorites are never left out."""
+    if not max_minutes or min_lots <= 1:
+        return {}
+    groups: dict[tuple[str, str], list[tuple[Lot, Verdict]]] = {}
+    for _, lot, v, _ in rows:
+        place = pickup_place(lot)
+        trip = trips.get(place or "")
+        if trip and trip.minutes > max_minutes:
+            groups.setdefault((place, pickup_day(lot)), []).append((lot, v))
+    out = {}
+    for (place, _), members in groups.items():
+        worth = sum(1 for lot, v in members if worth_collecting((None, lot, v, None), favorite_keys))
+        if worth < min_lots:
+            for lot, _ in members:
+                if lot.key not in favorite_keys:
+                    out[lot.key] = (trips[place].minutes, worth)
+    return out
 
 
 def pickup_place(lot: Lot) -> str | None:
@@ -370,7 +447,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     driving = {"home": bool(home or home2), "enabled": drv_cfg.get("enabled", True) is not False,
                "include": settings.include_trip, "kmpl": float(drv_cfg.get("km_per_liter", 16)),
                "roundTrip": drv_cfg.get("round_trip", True) is not False,
-               "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0)}
+               "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0),
+               "longMin": float(drv_cfg.get("long_trip_minutes", 30) or 0),
+               "longLots": int(drv_cfg.get("long_trip_min_lots", 3) or 0)}
     places = {p: lot.pickup_latlon for _, lot in matched if (p := pickup_place(lot))}
     if driving["enabled"] and (home or home2) and places:
         price, source = fuel_price(geo_http, state, now, drv_cfg.get("fuel_price", "auto"),
@@ -405,6 +484,13 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         verdict = evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units))
         rows.append((item, lot, verdict, est))
     finder.prune()
+
+    # 3b. favorites (starred on the dashboard, kept in a GitHub issue); lots at one pickup share the trip
+    store = FavoritesStore(http_cls(delay=0.2))
+    favs = store.load() if items else []
+    if trips and settings.include_trip:
+        rows = share_trips(rows, trips, {f["key"] for f in favs}, lambda item, lot, est: evaluate(
+            item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)))
     notes = []
     if mail_report and mail_report.get("unreadable_emails"):  # each email is reported once
         bad = mail_report["unreadable_emails"]
@@ -438,10 +524,6 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         if closes and datetime.fromisoformat(closes) < now - timedelta(days=3):
             del seen[key]
 
-    # 5. favorites (starred on the dashboard, kept in a GitHub issue)
-    store = FavoritesStore(http_cls(delay=0.2))
-    favs = store.load() if items else []
-
     # 6. dashboard + report
     data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items,
                           trips=trips, driving=driving, favorites={"issue": store.issue, "items": favs},
@@ -457,8 +539,10 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 7. telegram digest
     if items and alerts_cfg.get("enabled", True):
         try:
+            far = too_far(rows, trips, {f["key"] for f in favs}, driving["longMin"], driving["longLots"])
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
-                                   favs=favs, trips=trips, kinds=auction_kinds(config)))
+                                   favs=favs, trips=trips, kinds=auction_kinds(config), far=far,
+                                   far_rule=(driving["longMin"], driving["longLots"])))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
     elif favs:

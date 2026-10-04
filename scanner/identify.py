@@ -19,7 +19,7 @@ import re
 from dataclasses import dataclass
 
 from .models import Lot, WatchItem
-from .util import normalize, phrase_in
+from .util import normalize, phrase_in, token_in
 
 # Words that say nothing about which product it is.
 NOISE = set("""
@@ -102,12 +102,15 @@ class Rule:
     model: str | None = None  # squashed model code, e.g. "jr3030t"
     label: str = ""  # human readable, e.g. "makita jr 3030t"
 
-    size: str | None = None  # screen size in inches the listing must mention ("16", not "16 GB")
+    size: str | None = None  # screen size in inches the listing must mention ("16" or "10.5", not "16 GB")
+    without: tuple[str, ...] = ()  # words the listing must not have ("pro" for a plain iPad)
 
     def matches(self, title_norm: str) -> bool:
         if self.model and not model_in(self.model, title_norm):
             return False
         if self.size and not size_in(self.size, title_norm):
+            return False
+        if any(token_in(w, title_norm) for w in self.without):
             return False
         return all(any(phrase_in(alt, title_norm) for alt in group) for group in self.groups)
 
@@ -166,9 +169,17 @@ _INCH_RE = re.compile(r"(?<![\d.,])(\d{2})(?:[.,]\d)?\s*(?:\"|”|“|″|''|-?\
 
 
 def size_in(size: str, text_norm: str) -> bool:
-    """The listing mentions this screen size: "16 inch" or "16" yes, "16 GB" no."""
+    """The listing mentions this screen size: "16 inch" or "16" yes, "16 GB" no. "10.5" is written
+    "10.5", "10,5" or "10.5-inch", which normalise to "10 5"."""
     tokens = text_norm.split()
+    whole, _, frac = size.partition(".")
     for i, tok in enumerate(tokens):
+        if frac:
+            if tok == whole and i + 1 < len(tokens) and tokens[i + 1] in (frac, f"{frac}inch"):
+                nxt = tokens[i + 2] if i + 2 < len(tokens) else ""
+                if nxt not in _NOT_INCHES:
+                    return True
+            continue
         if tok in (size, f"{size}inch"):
             nxt = tokens[i + 1] if i + 1 < len(tokens) else ""
             if nxt not in _NOT_INCHES:
@@ -219,6 +230,78 @@ def mac_plan(title: str) -> SearchPlan | None:
     searches = [" ".join(q.split()) for q in dict.fromkeys(searches)]
     return SearchPlan("general", searches, rules, brand="apple", rough=not year,
                       note="Intel Mac: a rough price, years and specs vary" if not year else f"{line} {year.group(1)}")
+
+
+# iPads: line, generation, chip and screen size set the price; lot titles rarely have a type number
+_IPAD_RE = re.compile(r"(?<![a-z0-9])ipad(?: (pro|air|mini))?(?![a-z0-9])")
+_IPAD_SIZE_RE = re.compile(r"(?<![\d.,])(7[.,]9|8[.,]3|9[.,]7|10[.,][259]|11|12[.,]9|13)(?:[.,]0)?\s*"
+                           r"(\"|”|“|″|''|-?\s?inch\b|-?\s?in\b|-?\s?zoll\b)?", re.I)
+_IPAD_GEN_RE = re.compile(r"(?<![0-9])(\d{1,2}) ?(?:e|ste|de|th|st|nd|rd)? ?(?:gen|generatie|generation)\b")
+# generation -> year it came out, for listings that give the year instead
+_IPAD_YEARS = {"ipad": {5: 2017, 6: 2018, 7: 2019, 8: 2020, 9: 2021, 10: 2022, 11: 2025},
+               "ipad air": {2: 2014, 3: 2019, 4: 2020, 5: 2022},
+               "ipad mini": {4: 2015, 5: 2019, 6: 2021, 7: 2024}}
+# sizes that pin one model on their own
+_IPAD_UNIQUE = {("ipad pro", "10.5"), ("ipad pro", "9.7"), ("ipad air", "10.5")}
+
+
+def ipad_size(title: str, line: str) -> str | None:
+    """"iPad Pro 10,5 inch" -> "10.5"; "iPad Pro 11" -> "11" (for a plain iPad, 11 is the generation)."""
+    for m in _IPAD_SIZE_RE.finditer(title or ""):
+        size = m.group(1).replace(",", ".")
+        if "." in size or m.group(2) or line in ("ipad pro", "ipad air"):
+            return size
+    return None
+
+
+def ipad_plan(title: str) -> SearchPlan | None:
+    """"iPad Pro 10,5 inch" -> listings that say ipad pro + 10.5; "iPad 6th Gen." -> plain iPads (not Pro, Air
+    or mini) of the 6th generation or 2018; "Apple iPad Air 5 64GB" -> iPad Air 5. A line without generation,
+    chip, year or a telling size ("iPad Pro") is a rough price."""
+    t = normalize(title)
+    m = _IPAD_RE.search(t)
+    if not m:
+        return None
+    line = "ipad" + (f" {m.group(1)}" if m.group(1) else "")
+    base: list[tuple[str, ...]] = [(w,) for w in line.split()]
+    without = () if m.group(1) else ("pro", "air", "mini")
+    size = ipad_size(title, line)
+    chip = _CHIP_RE.search(t)
+    gen_m = _IPAD_GEN_RE.search(t)
+    gen = int(gen_m.group(1)) if gen_m else None
+    if gen is None and not chip:  # "iPad Air 5", "iPad 9": the number right after the line
+        after = re.match(r" (\d{1,2})(?![0-9])", t[m.end():])
+        if after and not (size and size.split(".")[0] == after.group(1)):
+            gen = int(after.group(1))
+    year_m = re.search(r"(?<![0-9])(20[12][0-9])(?![0-9])", t)
+    year = int(year_m.group(1)) if year_m else _IPAD_YEARS.get(line, {}).get(gen)
+    shown = line.replace("ipad", "iPad").replace(" pro", " Pro").replace(" air", " Air").replace(" mini", " mini")
+
+    which: tuple[str, ...] | None = None
+    if chip:
+        name = "m" + chip.group(1)
+        which, what = (name,), name.upper()
+    elif gen:
+        which = (f"{gen}e gen", f"{gen}th gen", f"{gen}e generatie", f"{gen}de generatie", f"{gen} generatie",
+                 f"{gen}th generation", f"{line} {gen}") + ((str(year),) if year else ())
+        what = f"{gen}th gen"
+    elif year:
+        which, what = (str(year),), str(year)
+    if which:
+        rules = ([Rule(base + [which], size=size, without=without, label=f"{line} {size} {which[0]}")] if size else []) \
+            + [Rule(base + [which], without=without, label=f"{line} {which[-1] if gen and not chip else which[0]}")]
+        searches = [f"{line} {gen}" if gen and not chip else f"{line} {which[0]}"]
+        if year and gen and not chip:
+            searches.append(f"{line} {year}")
+        return SearchPlan("exact", searches, rules, model=f"{shown}{' ' + size if size else ''} {what}", brand="apple",
+                          note=f"exact: {shown}{' ' + size + ' inch' if size else ''} {what}")
+    if size:
+        rule = Rule(base, size=size, without=without, label=f"{line} {size}")
+        exact = (line, size) in _IPAD_UNIQUE
+        return SearchPlan("exact" if exact else "general", [f"{line} {size}"], [rule],
+                          model=f"{shown} {size}" if exact else None, brand="apple", rough=not exact,
+                          note=f"exact: {shown} {size} inch" if exact else f"{shown} {size} inch: a rough price, generations vary")
+    return None
 
 
 def brand_in(title: str, before: int | None = None) -> str | None:
@@ -350,7 +433,7 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         rule = Rule([(w,) for w in q.split()], label=q)
         return SearchPlan("custom", [q], [rule], note="your own Marktplaats search (watchlist)")
 
-    mac = mac_plan(lot.title)
+    mac = mac_plan(lot.title) or ipad_plan(lot.title)
     if mac:
         return mac
     keyword = normalize(matched_keyword(item, lot.title))

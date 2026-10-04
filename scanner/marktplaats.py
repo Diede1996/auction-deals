@@ -7,6 +7,7 @@ from identify.py: the same model number for an exact comparison, or the same wor
 from __future__ import annotations
 
 import logging
+import re
 import statistics
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
@@ -20,7 +21,12 @@ API = "https://www.marktplaats.nl/lrp/api/search"
 PRICED_TYPES = {"FIXED", "MIN_BID"}  # FAST_BID / SEE_DESCRIPTION / FREE carry no usable price
 ALWAYS_EXCLUDE = ["gezocht", "gevraagd", "zoek", "defect", "kapot", "onderdelen", "reparatie", "repair",
                   "ruilen", "huur", "verhuur", "hoesje", "case", "cover", "sticker", "skin",
-                  "veiling"]  # "Online Veiling: ..." = auction houses advertising their own lots
+                  "veiling",  # "Online Veiling: ..." = auction houses advertising their own lots
+                  # accessories and parts sold under the device's name ("Apple Smart Keyboard iPad Pro 10.5")
+                  "hoes", "hoezen", "sleeve", "keyboard", "tempered", "screenprotector", "screen protector",
+                  "protector", "beschermglas", "glasfolie", "pencil", "stylus", "folio", "bookcase", "book case",
+                  "dock", "houder", "digitizer", "behuizing", "moederbord", "logic board",
+                  "logicboard", "geschikt voor", "compatible", "compatibel"]
 
 
 MAX_LISTINGS = 30  # cheapest comparable listings kept for the dashboard
@@ -54,6 +60,9 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
     """Listings that meet the rule and contain none of the excluded words."""
     label = normalize(rule.label)
     excl = [x for x in (exclude or []) if x] + [w for w in ALWAYS_EXCLUDE if not token_in(w, label)]
+    # "Hoes voor iPad 6", "Accu voor Makita": something for the product, not the product itself
+    first = label.split()[0] if label else ""
+    made_for = re.compile(rf"(?<![a-z0-9])(?:voor|for)(?: de| het| apple)? {re.escape(first)}") if first else None
     out, seen = [], set()
     for li in listings:
         info = li.get("priceInfo") or {}
@@ -61,7 +70,7 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
             continue
         title = li.get("title") or ""
         norm = normalize(title)
-        if not rule.matches(norm) or any(token_in(x, norm) for x in excl):
+        if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))

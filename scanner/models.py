@@ -43,7 +43,8 @@ class Lot:
     pickup_when: str | None = None
     pickup_latlon: tuple[float, float] | None = None
     delivery: bool = False
-    trip_cost: float | None = None  # fuel to drive to the pickup address and back (set by the scan)
+    trip_cost: float | None = None  # this lot's share of the fuel to the pickup address and back (set by the scan)
+    trip_lots: int = 1  # lots worth collecting that share that trip (same address and pickup day)
 
     @property
     def key(self) -> str:
