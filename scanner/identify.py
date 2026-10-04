@@ -27,7 +27,7 @@ met zonder en de het een van voor in op tot aan bij of als uit incl inclusief ex
 with and the for of to from new nieuw nieuwe gebruikt used zgan zga ongebruikt nieuwstaat
 partij restpartij voorraad diverse div divers kavel lot set stuks stuk st stk pcs x cm mm m kg gr g l ltr liter
 v w watt gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen
-maat size nr no art artikel serie series
+maat size nr no art artikel serie series gen generatie generation
 zwart wit grijs zilver blauw rood groen bruin beige black white grey gray silver blue red
 twee drie vier vijf zes zeven acht negen tien
 ontbreekt ontbreken krasje kras krassen geen beschadigd beschadiging schade werkend werkt getest ongetest
@@ -105,8 +105,11 @@ class Rule:
     size: str | None = None  # screen size in inches the listing must mention ("16" or "10.5", not "16 GB")
     without: tuple[str, ...] = ()  # words the listing must not have ("pro" for a plain iPad)
     without_parts: tuple[str, ...] = ()  # nor anywhere inside a word ("machine" in "accuboormachine")
+    gen_norm: bool = False  # read "Gen 2" and "15G2" as "g2" / "15 g2" first
 
     def matches(self, title_norm: str) -> bool:
+        if self.gen_norm:
+            title_norm = gen_norm(title_norm)
         if self.model and not model_in(self.model, title_norm):
             return False
         if any(part in title_norm for part in self.without_parts):
@@ -307,15 +310,38 @@ def ipad_plan(title: str) -> SearchPlan | None:
     return None
 
 
-# HP names a laptop or PC by line, model and generation: "ZBook Firefly 14 G10", "EliteBook 840 G5",
-# "ProBook 450 G7", "EliteDesk 800 G4". The generation alone ("G10") says nothing.
+# HP and Lenovo name a laptop or PC by line, model and generation: "ZBook Firefly 14 G10", "EliteBook 840 G5",
+# "ThinkBook 15 G2 ITL", "ThinkPad T14 Gen 2". The generation alone ("G10") says nothing.
 _GEN_TOKEN = re.compile(r"g(\d{1,2})")
+_ORDINAL = re.compile(r"\d+(?:th|st|nd|rd|e|de|ste)")
 
 
-def generation_plan(title: str) -> SearchPlan | None:
-    """"HP ZBook Firefly G10 14”" -> listings that say zbook + firefly + g10 + 14 inch (exact), not a
-    ZBook Fury 16 G10; "HP EliteBook 840 G5" -> elitebook + 840 + g5."""
-    tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()
+def gen_norm(text_norm: str) -> str:
+    """Write generations one way: "gen 2" / "gen2" -> "g2", "15g2" -> "15 g2" (but "13th gen" is a processor)."""
+    toks, out, i = text_norm.split(), [], 0
+    while i < len(toks):
+        t = toks[i]
+        m = re.fullmatch(r"(1[0-8])g(\d{1,2})", t)
+        if m:
+            out += [m.group(1), "g" + m.group(2)]
+        elif t in ("gen", "generation") and i + 1 < len(toks) and re.fullmatch(r"\d{1,2}", toks[i + 1]) \
+                and not (out and _ORDINAL.fullmatch(out[-1])):
+            out.append("g" + toks[i + 1])
+            i += 1
+        elif re.fullmatch(r"gen(\d{1,2})", t):
+            out.append("g" + t[3:])
+        else:
+            out.append(t)
+        i += 1
+    return " ".join(out)
+
+
+def _gen_tokens(text: str) -> list[str]:
+    return gen_norm(normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", text or ""))).split()
+
+
+def _generation(title: str) -> SearchPlan | None:
+    tokens = _gen_tokens(title)
     gi = next((i for i, t in enumerate(tokens) if i and _GEN_TOKEN.fullmatch(t)), None)
     if gi is None:
         return None
@@ -330,10 +356,10 @@ def generation_plan(title: str) -> SearchPlan | None:
             break
         if tok in NOISE or category(tok) or tok in _CPU_WORDS:
             break
-        if re.fullmatch(r"1[0-8](?:inch)?", tok):  # "ZBook Studio 16 G10": the screen size
+        if re.fullmatch(r"1[0-8](?:inch)?", tok):  # "ZBook Studio 16 G10", "ThinkBook 15 G2": the screen size
             size = size or tok.replace("inch", "")
-        elif (tok.isdigit() and len(tok) == 3) or (tok.isalpha() and len(tok) >= 3):
-            words.insert(0, tok)
+        elif (tok.isdigit() and len(tok) == 3) or (tok.isalpha() and len(tok) >= 3) or re.fullmatch(r"[a-z]{1,2}\d{1,3}", tok):
+            words.insert(0, tok)  # "elitebook 840", "zbook firefly", "thinkpad t14", "x1 carbon"
         else:
             break
         j -= 1
@@ -347,13 +373,41 @@ def generation_plan(title: str) -> SearchPlan | None:
         groups.insert(0, (brand,))
         words = [brand] + words
     name = " ".join(words)
-    rules = ([Rule(groups, size=size, label=f"{name} {size} {gen}")] if size else []) + [Rule(groups, label=f"{name} {gen}")]
-    shown = " ".join(("HP" if w == "hp" else w.title()) if w.isalpha() else w for w in words) + \
+    # without the size in the listing is fine, with another size is not ("ThinkBook 14 G2" for a 15 G2)
+    other_sizes = tuple(f"{o} {gen}" for o in range(10, 19) if str(o) != size) if size else ()
+    rules = ([Rule(groups, size=size, label=f"{name} {size} {gen}", gen_norm=True)] if size else []) + \
+        [Rule(groups, label=f"{name} {gen}", gen_norm=True, without_parts=other_sizes)]
+    shown = " ".join(("HP" if w == "hp" else w.title()) if w.isalpha() else w.upper() for w in words) + \
         (f" {size}" if size else "") + f" {gen.upper()}"
-    shown = shown.replace("Zbook", "ZBook").replace("Elitebook", "EliteBook").replace("Probook", "ProBook") \
-        .replace("Elitedesk", "EliteDesk").replace("Prodesk", "ProDesk")
+    for a, b in (("Zbook", "ZBook"), ("Elitebook", "EliteBook"), ("Probook", "ProBook"), ("Elitedesk", "EliteDesk"),
+                 ("Prodesk", "ProDesk"), ("Thinkbook", "ThinkBook"), ("Thinkpad", "ThinkPad"), ("Ideapad", "IdeaPad")):
+        shown = shown.replace(a, b)
     return SearchPlan("exact", list(dict.fromkeys(r.label for r in rules)), rules, model=shown, brand=brand,
                       note=f"exact: {shown}")
+
+
+def generation_plan(title: str, description: str = "") -> SearchPlan | None:
+    """"HP ZBook Firefly G10 14”" -> listings that say zbook + firefly + g10 + 14 inch (exact), not a ZBook Fury
+    16 G10; "HP EliteBook 840 G5" -> elitebook + 840 + g5. When only the description has it ("Laptop Lenovo
+    ThinkBook" + "type: 15 g2 itl"), the line comes from the title and size and generation from the description."""
+    plan = _generation(title)
+    if plan or not description:
+        return plan
+    d = _gen_tokens(description[:200])
+    gi = next((i for i, t in enumerate(d) if _GEN_TOKEN.fullmatch(t)), None)
+    if gi is None:
+        return None
+    t = normalize(title).split()
+    line = [w for w in t if w.isalpha() and len(w) >= 3 and w not in NOISE and w not in _BRANDS and not category(w)
+            and w not in _CPU_WORDS][:2]
+    if not line:
+        return None
+    before = [w for w in d[max(0, gi - 2):gi] if w not in NOISE and w not in line]
+    brand = brand_in(title)
+    plan = _generation(" ".join(([brand] if brand else []) + line + before + [d[gi]]))
+    if plan:
+        plan.note += " (size and generation from the lot description)"
+    return plan
 
 
 # A battery (with or without charger) is not a drill that comes with one.
@@ -520,7 +574,7 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
 
 
 def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:
-    mac = mac_plan(lot.title) or ipad_plan(lot.title) or generation_plan(lot.title)
+    mac = mac_plan(lot.title) or ipad_plan(lot.title) or generation_plan(lot.title, lot.description)
     if mac:
         return mac
     keyword = normalize(matched_keyword(item, lot.title))
