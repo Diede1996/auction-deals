@@ -236,3 +236,34 @@ def test_listing_titles_are_unescaped_and_cases_left_out():
         {"title": "Incipio Faraday iPad Pro 10.5&quot; 2017 - Black", "priceInfo": {"priceType": "FIXED", "priceCents": 3500}},
         {"title": "Apple iPad Pro 10.5&quot; 64GB", "priceInfo": {"priceType": "FIXED", "priceCents": 18000}}], rule, [])
     assert [f["title"] for f in found] == ['Apple iPad Pro 10.5" 64GB']
+
+
+def test_lenovo_generation_from_the_description():
+    lot = Lot("openbareverkopen", "1", "Laptop Lenovo ThinkBook", "u", 70.0, None,
+              description="type: 15 g2 itl besturingssysteem Ubuntu (Linux) incl oplader en toetsenbord")
+    p = plan_for(WatchItem(name="Laptop", keywords=["laptop"]), lot)
+    assert (p.kind, p.searches, p.model) == ("exact", ["thinkbook 15 g2", "thinkbook g2"], "ThinkBook 15 G2")
+    assert "from the lot description" in p.note
+    sized, any_size = p.rules
+    for title in ["Lenovo Thinkbook 15G2-ITL 20VE00F JMH laptop", "Lenovo ThinkBook 15 G2 ITL - Laptop"]:
+        assert sized.matches(normalize(title)), title
+    for title in ["Lenovo ThinkBook 15 G3 ACL - Krachtige Laptop", "Lenovo ThinkBook 14s Yoga Laptop/Tablet",
+                  "Prima Lenovo THINKBOOK 13s-IWL FHD Laptop..", "Lenovo ThinkBook 14G2 Yoga Laptop/Tablet i5"]:
+        assert not sized.matches(normalize(title)) and not any_size.matches(normalize(title)), title
+    assert any_size.matches(normalize("Lenovo Thinkbook G2 ITL Laptop"))  # no size given: fine as a fallback
+
+
+@pytest.mark.parametrize("title, model", [
+    ("Lenovo ThinkPad T14 Gen 2 i5 16GB", "ThinkPad T14 G2"),
+    ("Lenovo ThinkPad X1 Carbon Gen 9", "ThinkPad X1 Carbon G9"),
+])
+def test_thinkpad_gen(title, model):
+    p = plan(WatchItem(name="Laptop", keywords=["laptop", "thinkpad"]), title)
+    assert p.model == model
+    assert p.rules[0].matches(normalize(title.replace("Gen ", "Gen")))
+    assert not p.rules[0].matches(normalize(title.replace("Gen 2", "Gen 3").replace("Gen 9", "Gen 10")))
+
+
+def test_processor_generation_is_not_a_model_generation():
+    assert plan(WatchItem(name="Laptop", keywords=["laptop"]), "Dell Latitude 5420 i5 11th gen").searches[0] == \
+        "laptop dell latitude 5420"
