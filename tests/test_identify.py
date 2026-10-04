@@ -152,3 +152,40 @@ def test_mac_rules():
     assert not intel.matches(normalize("MacBook Pro 16 inch M1 Pro"))
     # an inch mark makes a number a size, not a model code
     assert model_code("Apple MacBook Pro 16” laptop") is None
+
+
+@pytest.mark.parametrize("title, kind, searches, model", [
+    ("iPad Pro 10,5 inch", "exact", ["ipad pro 10.5"], "iPad Pro 10.5"),
+    ("iPad 6th Gen.", "exact", ["ipad 6", "ipad 2018"], "iPad 6th gen"),
+    ("Apple iPad (6e generatie) 32GB", "exact", ["ipad 6", "ipad 2018"], "iPad 6th gen"),
+    ("Apple iPad Air 5 64GB A2588 wifi", "exact", ["ipad air 5", "ipad air 2022"], "iPad Air 5th gen"),
+    ("iPad Pro 11 M1 128GB", "exact", ["ipad pro m1"], "iPad Pro 11 M1"),
+    ("iPad 10,2 inch 32GB", "general", ["ipad 10.2"], None),
+])
+def test_ipads_by_line_generation_and_size(title, kind, searches, model):
+    p = plan(WatchItem(name="iPad", keywords=["ipad"]), title)
+    assert (p.kind, p.searches, p.model) == (kind, searches, model)
+
+
+def test_ipad_rules():
+    pro = plan(WatchItem(name="iPad", keywords=["ipad"]), "iPad Pro 10,5 inch").rules[0]
+    assert pro.matches(normalize("Apple iPad Pro 10.5 64GB wifi")) and pro.matches(normalize("iPad Pro 10,5 inch 256GB"))
+    assert not pro.matches(normalize("iPad Pro 12.9 2017")) and not pro.matches(normalize("iPad Pro 10 5G"))
+    six = plan(WatchItem(name="iPad", keywords=["ipad"]), "iPad 6th Gen.").rules[0]
+    assert six.matches(normalize("Apple iPad 6e generatie 32GB")) and six.matches(normalize("iPad 2018 128gb"))
+    assert not six.matches(normalize("iPad Pro 12.9 6e generatie")) and not six.matches(normalize("iPad 9 64GB"))
+
+
+def test_accessories_are_not_the_device():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(WatchItem(name="iPad", keywords=["ipad"]), "iPad Pro 10,5 inch").rules[0]
+
+    def li(title, euros):
+        return {"title": title, "priceInfo": {"priceType": "FIXED", "priceCents": euros * 100}, "itemId": title}
+
+    found = comparable_listings([li("Apple Smart Keyboard iPad 7-9/Air 3/Pro 10.5 (K83)", 40),
+                                 li("Tempered Glass iPad Air (2019)/iPad Pro 10.5", 8),
+                                 li("Hoes voor iPad Pro 10.5", 15),
+                                 li("Apple iPad Pro 10.5 64GB wifi", 180),
+                                 li("iPad Pro 10,5 inch 256GB space grey", 240)], rule, [])
+    assert [f["price"] for f in found] == [180, 240]
