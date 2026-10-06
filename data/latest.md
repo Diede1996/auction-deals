@@ -1,60 +1,29 @@
 # Latest scan
 
-_Monday 05 October 2026, 06:30 (Amsterdam time)_
+_Tuesday 06 October 2026, 06:29 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
 | Site | Status |
 |---|---|
-| ProVeiling | ✅ 864 lots |
-| HNVI | ✅ 422 lots |
+| ProVeiling | ✅ 648 lots |
+| HNVI | ✅ 288 lots |
 | Plaats Je Bod | ✅ 307 lots |
-| Onlineveilingmeester | ✅ 2256 lots |
+| Onlineveilingmeester | ✅ 2227 lots |
 | Veilingwinnaar | ✅ 0 lots |
 | Inventarisveilingen | ✅ 112 lots |
 | Nedveiling | ✅ 0 lots |
-| Openbare Verkopen (BE) | ✅ 1510 lots |
+| Openbare Verkopen (BE) | ✅ 1031 lots |
 | Vlavem (BE) | ✅ 108 lots |
-| BellAuction (BE) | ✅ 111 lots |
-| Troostwijk | ✅ 45 lots |
+| BellAuction (BE) | ✅ 92 lots |
+| Troostwijk | ✅ 54 lots |
 | Marktplaats prices | ✅ 60 price lookups |
 
-## Matching lots (168)
+## Matching lots (176)
 
 | | Item | Lot | Bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
-|  | Monitor | [Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaib](https://www.hnvi.nl/veiling-kavel/twee-beeldschermen-hp-compaq-la2306x-in-hoogte-verstelbaar-en-draaibaar/196564) (HNVI) | €15 | €28 | €14 | Mon 05 Oct 19:30 |
-|  | Coffee machine | [Koffiemachine PHILIPS](https://www.hnvi.nl/veiling-kavel/koffiemachine-philips/196568) (HNVI) | €30 | €112 | €29 | Mon 05 Oct 19:30 |
-|  | Monitor | [Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm](https://www.hnvi.nl/veiling-kavel/curved-beeldscherm-27-inch-samsung-s27c366eau-krasje-in-scherm/196598) (HNVI) | €18 | – | – | Mon 05 Oct 19:30 |
-|  | Monitor | [Twee 27 inch beeldschermen ACER V277](https://www.hnvi.nl/veiling-kavel/twee-27-inch-beeldschermen-acer-v277/196599) (HNVI) | €25 | – | – | Mon 05 Oct 19:30 |
-|  | Laptop | [Laptop HP i5-fcoxx. 238 GB opslag. 8GB RAM. AMD Ryzen 3 7320u 2.40 GHz](https://www.hnvi.nl/veiling-kavel/laptop-hp-i5-fcoxx-238-gb-opslag-8gb-ram-amd-ryzen-3-7320u-2-40-ghz-processor/196600) (HNVI) | €110 | €268 | €70 | Mon 05 Oct 19:30 |
-|  | Monitor | [Beeldscherm 27 inch ACER RG270](https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-acer-rg270/196601) (HNVI) | €15 | – | – | Mon 05 Oct 19:30 |
-|  | Monitor | [Beeldscherm 27 inch SAMSUNG S27C310EAU](https://www.hnvi.nl/veiling-kavel/beeldscherm-27-inch-samsung-s27c310eau/196602) (HNVI) | €15 | – | – | Mon 05 Oct 19:30 |
-|  | Monitor | [27 inch beeldschermen ACER V277](https://www.hnvi.nl/veiling-kavel/27-inch-beeldschermen-acer-v277/196603) (HNVI) | €13 | – | – | Mon 05 Oct 19:30 |
-|  | Laptop | [Laptop Lenovo THINKPAD T440S. 128 GB HDD. 8 GB RAM. Intel Core i5-4300](https://www.hnvi.nl/veiling-kavel/laptop-lenovo-thinkpad-t440s-128-gb-hdd-8-gb-ram-intel-core-i5-4300u-cpu-1-90-hgz-qwertz-toetsenbord/196613) (HNVI) | €40 | €145 | €37 | Mon 05 Oct 19:30 |
-|  | Power tools | [Makita AVT Breekhamer HM1812](https://www.proveiling.nl/Makita-AVT-Breekhamer-HM1812/3285767/detail) (ProVeiling) | €85 | – | – | Mon 05 Oct 20:00 |
-|  | Power tools | [Makita Acculader DC18RC T incl. Accu 5.0Ah, 18V Lithium-ion](https://www.proveiling.nl/Makita-Acculader-DC18RC-T-incl-Accu-50Ah-18V-Lithium-ion/3285793/detail) (ProVeiling) | €30 | €39 | €0 | Mon 05 Oct 20:00 |
-|  | Power tools | [DEWALT Accuboormachine DC910; 28V, incl. accu & oplaadstation DE9000](https://www.proveiling.nl/DEWALT-Accuboormachine-DC910-28V-incl-accu---oplaadstation-DE9000/3285775/detail) (ProVeiling) | €25 | – | – | Mon 05 Oct 20:00 |
-|  | Power tools | [DeWALT accuboormachine DCF887, type 10 - 18V](https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3285798/detail) (ProVeiling) | €25 | €70 | €1 | Mon 05 Oct 20:00 |
-|  | Power tools | [Makita LXT Accubatterij BL1830](https://www.proveiling.nl/Makita-LXT-Accubatterij-BL1830/3285813/detail) (ProVeiling) | €25 | €35 | €0 | Mon 05 Oct 20:00 |
-|  | Power tools | [Hilti Meetstatief PUA 25](https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3285771/detail) (ProVeiling) | €20 | – | – | Mon 05 Oct 20:00 |
-|  | Power tools | [Makita gereedschapskoffers - 2 stuks](https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3285825/detail) (ProVeiling) | €15 | €15 | €0 | Mon 05 Oct 20:00 |
-|  | Power tools | [DEWALT TSTAK Gereedschapskoffer](https://www.proveiling.nl/DEWALT-TSTAK-Gereedschapskoffer/3285807/detail) (ProVeiling) | €20 | €19 | €0 | Mon 05 Oct 20:00 |
-|  | Power tools | [DEWALT XRP Accu klopboormachine DC925 493905-01](https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3285814/detail) (ProVeiling) | €20 | – | – | Mon 05 Oct 20:00 |
-| ✅ | Power tools | [Bouwradio MAKITA zonder accu](https://www.hnvi.nl/veiling-kavel/bouwradio-makita-zonder-accu/196626) (HNVI) | €13 | €160 | €41 | Mon 05 Oct 20:00 |
-| ✅ | Power tools | [Bouwradio DEWALT ( exclusief accu )](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-exclusief-accu/196630) (HNVI) | €10 | €87 | €22 | Mon 05 Oct 20:00 |
-|  | Power tools | [Gereedschapskoffer MAKITA](https://www.hnvi.nl/veiling-kavel/gereedschapskoffer-makita/196631) (HNVI) | €5 | €20 | €4 | Mon 05 Oct 20:00 |
-| ✅ | Power tools | [Haakse slijper METABO met diverse schijven](https://www.hnvi.nl/veiling-kavel/haakse-slijper-metabo-met-diverse-schijven/196645) (HNVI) | €15 | €72 | €18 | Mon 05 Oct 20:00 |
-| ✅ | Power tools | [Bouwradio DEWALT met accu](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu/196661) (HNVI) | €15 | €87 | €22 | Mon 05 Oct 20:00 |
-|  | Power tools | [Haakse slijptol DEWALT DWE4579](https://www.hnvi.nl/veiling-kavel/haakse-slijptol-dewalt-dwe4579/196664) (HNVI) | €30 | – | – | Mon 05 Oct 20:00 |
-|  | Plants / decor | [Glazen vazen en planten gieters](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/163) (Onlineveilingmeester) | €10 | €15 | €0 | Mon 05 Oct 20:10 |
-|  | Laptop | [Printer en Laptop, Acer Epson](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/204) (Onlineveilingmeester) | €51 | €165 | €29 | Mon 05 Oct 20:20 |
-| ✅ | Plants / decor | [Ca. 10x Hangende plantenbakken](https://onlineveilingmeester.nl/nl/veilingen/9540/kavels/219) (Onlineveilingmeester) | €10 | €17 | €15 | Mon 05 Oct 20:24 |
-|  | Monitor | [Monitor, Dell, C5519Q, 2022](https://onlineveilingmeester.nl/nl/veilingen/9476/kavels/27) (Onlineveilingmeester) | €41 | – | – | Mon 05 Oct 20:36 |
-|  | Monitor | [Monitor, Dell, C5519Q, 2022](https://onlineveilingmeester.nl/nl/veilingen/9476/kavels/28) (Onlineveilingmeester) | €31 | – | – | Mon 05 Oct 20:36 |
-|  | Monitor | [4x Monitor, LG, Flatron 47WV30BR-B, 2011](https://onlineveilingmeester.nl/nl/veilingen/9476/kavels/43) (Onlineveilingmeester) | €22 | – | – | Mon 05 Oct 20:40 |
-|  | Monitor | [Monitor, Samsung, UE48JU6445](https://onlineveilingmeester.nl/nl/veilingen/9476/kavels/44) (Onlineveilingmeester) | €16 | – | – | Mon 05 Oct 20:40 |
-|  | Coffee machine | [koffiemachine](https://www.vlavem.com/koffiemachine/1046031/detail) (Vlavem (BE)) | €8 | – | – | Tue 06 Oct 19:10 |
+|  | Coffee machine | [koffiemachine](https://www.vlavem.com/koffiemachine/1046031/detail) (Vlavem (BE)) | €8 | – | – | Tue 06 Oct 19:00 |
 |  | Laptop | [Ca. 2,9 KG DDR5 laptop geheugen](https://onlineveilingmeester.nl/nl/veilingen/9463/kavels/2) (Onlineveilingmeester) | €300 | – | – | Tue 06 Oct 20:30 |
 |  | Laptop | [Ca. 25 KG DDR4 server/laptop geheugen](https://onlineveilingmeester.nl/nl/veilingen/9463/kavels/4) (Onlineveilingmeester) | €450 | – | – | Tue 06 Oct 20:30 |
 |  | Laptop | [Ca. 25 KG DDR4 server/laptop geheugen](https://onlineveilingmeester.nl/nl/veilingen/9463/kavels/5) (Onlineveilingmeester) | €450 | – | – | Tue 06 Oct 20:31 |
@@ -82,16 +51,53 @@ _Monday 05 October 2026, 06:30 (Amsterdam time)_
 |  | Monitor | [Samsung Full HD IPS Monitoren](https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4391/) (Inventarisveilingen) | €0 | – | – | Thu 08 Oct 13:00 |
 |  | Plants / decor | [Set Oranje Thee-Potten](https://www.openbare-verkopen.be/lot/749438) (Openbare Verkopen (BE)) | €17 | €19 | €0 | Thu 08 Oct 19:01 |
 |  | Plants / decor | [Partij Gekleurde Potjes](https://www.openbare-verkopen.be/lot/749440) (Openbare Verkopen (BE)) | €13 | €10 | €0 | Thu 08 Oct 19:02 |
-|  | Plants / decor | [Eiken Plantenbak Met Druivelaar](https://www.openbare-verkopen.be/lot/749510) (Openbare Verkopen (BE)) | €91 | €30 | €1 | Thu 08 Oct 19:18 |
+|  | Plants / decor | [Eiken Plantenbak Met Druivelaar](https://www.openbare-verkopen.be/lot/749510) (Openbare Verkopen (BE)) | €101 | €30 | €1 | Thu 08 Oct 19:18 |
 |  | Plants / decor | [Plantenbak,… Verrijdbaar](https://www.openbare-verkopen.be/lot/749511) (Openbare Verkopen (BE)) | €50 | €67 | €11 | Thu 08 Oct 19:18 |
 |  | Plants / decor | [Plantenbak Met Binnenkuip](https://www.openbare-verkopen.be/lot/749512) (Openbare Verkopen (BE)) | €101 | – | – | Thu 08 Oct 19:19 |
 |  | Plants / decor | [Plantenbak Met Meerstammige Boom](https://www.openbare-verkopen.be/lot/749513) (Openbare Verkopen (BE)) | €60 | – | – | Thu 08 Oct 19:19 |
-|  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749515) (Openbare Verkopen (BE)) | €90 | €54 | €8 | Thu 08 Oct 19:19 |
+|  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749515) (Openbare Verkopen (BE)) | €110 | €54 | €8 | Thu 08 Oct 19:19 |
 |  | Plants / decor | [Bekleding Plantenbak](https://www.openbare-verkopen.be/lot/749516) (Openbare Verkopen (BE)) | €36 | – | – | Thu 08 Oct 19:20 |
-|  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749533) (Openbare Verkopen (BE)) | €11 | €54 | €8 | Thu 08 Oct 19:24 |
+|  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749533) (Openbare Verkopen (BE)) | €21 | €54 | €8 | Thu 08 Oct 19:24 |
 |  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749572) (Openbare Verkopen (BE)) | €46 | €54 | €8 | Thu 08 Oct 19:33 |
 |  | Plants / decor | [Plantenbak](https://www.openbare-verkopen.be/lot/749573) (Openbare Verkopen (BE)) | €110 | €54 | €8 | Thu 08 Oct 19:33 |
-|  | Plants / decor | [Houten Pot In Irokko](https://www.openbare-verkopen.be/lot/749587) (Openbare Verkopen (BE)) | €230 | €30 | €1 | Thu 08 Oct 19:36 |
+|  | Plants / decor | [Houten Pot In Irokko](https://www.openbare-verkopen.be/lot/749587) (Openbare Verkopen (BE)) | €250 | €30 | €1 | Thu 08 Oct 19:36 |
+| ✅ | Power tools | [Bouwradio, Milwaukee, M18 JSRDAB+](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/3) (Onlineveilingmeester) | €16 | €150 | €48 | Sun 11 Oct 20:30 |
+|  | Power tools | [Multi acculader, Milwaukee, M1418C6](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/4) (Onlineveilingmeester) | €16 | – | – | Sun 11 Oct 20:30 |
+| ✅ | Power tools | [Accu boorhamer, Milwaukee, M18 FHX](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/5) (Onlineveilingmeester) | €16 | €150 | €48 | Sun 11 Oct 20:31 |
+| ✅ | Power tools | [Accu schaafmachine, Milwaukee, M18 BP](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/7) (Onlineveilingmeester) | €18 | €150 | €48 | Sun 11 Oct 20:31 |
+| ✅ | Power tools | [Accu kantenfrees, Milwaukee, M18 FTR8](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/8) (Onlineveilingmeester) | €16 | €150 | €48 | Sun 11 Oct 20:31 |
+| ✅ | Power tools | [Accu schaafmachine, Milwaukee, M18 BP](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/9) (Onlineveilingmeester) | €12 | €150 | €48 | Sun 11 Oct 20:32 |
+| ✅ | Power tools | [Accu boorhamer, Milwaukee, M18 Onefhx](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/16) (Onlineveilingmeester) | €26 | €150 | €48 | Sun 11 Oct 20:33 |
+| ✅ | Power tools | [Accu reciprozaag, Milwaukee, M18 FSX](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/17) (Onlineveilingmeester) | €31 | €150 | €48 | Sun 11 Oct 20:34 |
+|  | Power tools | [Accu decoupeerzaagmachine, Milwaukee, M18 FBJS](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/18) (Onlineveilingmeester) | €51 | €150 | €49 | Sun 11 Oct 20:34 |
+| ✅ | Power tools | [Accu bouwlamp, Milwaukee, M18 Pal](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/19) (Onlineveilingmeester) | €10 | €150 | €48 | Sun 11 Oct 20:34 |
+| ✅ | Power tools | [Accu reciprozaagmachine, Milwaukee, M18 FSX](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/25) (Onlineveilingmeester) | €36 | €150 | €48 | Sun 11 Oct 20:36 |
+| ✅ | Power tools | [Accu slagboormachine, Milwaukee, M18 FPD3](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/26) (Onlineveilingmeester) | €41 | €150 | €48 | Sun 11 Oct 20:36 |
+| ✅ | Power tools | [Accu slagschroevendraaier, Milwaukee, M18 FID3](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/27) (Onlineveilingmeester) | €46 | €150 | €48 | Sun 11 Oct 20:36 |
+| ✅ | Power tools | [Accu slagboormachine, Milwaukee, M18 FPD3](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/28) (Onlineveilingmeester) | €46 | €150 | €48 | Sun 11 Oct 20:36 |
+| ✅ | Power tools | [Accu kantenfrees, Milwaukee, M18 FTR8](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/42) (Onlineveilingmeester) | €14 | €150 | €48 | Sun 11 Oct 20:40 |
+|  | Power tools | [Onderstel voor afkortzaagmachine, Milwaukee, MSL 2000](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/43) (Onlineveilingmeester) | €14 | – | – | Sun 11 Oct 20:40 |
+|  | Power tools | [Onderstel voor afkortzaagmachine, Milwaukee, MSL 2000](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/44) (Onlineveilingmeester) | €12 | – | – | Sun 11 Oct 20:40 |
+| ✅ | Power tools | [Accu decoupeerzaagmachine, Makita](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/58) (Onlineveilingmeester) | €20 | €130 | €41 | Sun 11 Oct 20:44 |
+| ✅ | Power tools | [Accu boormachine, Makita, DF457D, 2016](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/59) (Onlineveilingmeester) | €12 | €125 | €40 | Sun 11 Oct 20:44 |
+| ✅ | Power tools | [Accu cirkelzaag, Makita, DSS501, 2019](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/60) (Onlineveilingmeester) | €41 | €160 | €52 | Sun 11 Oct 20:44 |
+|  | Power tools | [Accu multitool, Makita, DTM52, 2024](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/61) (Onlineveilingmeester) | €91 | €180 | €59 | Sun 11 Oct 20:45 |
+|  | Power tools | [Haakse slijpmachine, Makita, 9049S, 2003](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/74) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 20:48 |
+| ✅ | Power tools | [Accu excenter schuurmachine, Makita, DBO180, 2022](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/75) (Onlineveilingmeester) | €22 | €100 | €31 | Sun 11 Oct 20:48 |
+|  | Power tools | [Accu ratelsleutel, Milwaukee, M12 FIR12](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/88) (Onlineveilingmeester) | €36 | €95 | €30 | Sun 11 Oct 20:51 |
+|  | Power tools | [Accu bladblazer, Makita, DUB185, 2023](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/104) (Onlineveilingmeester) | €31 | €30 | €7 | Sun 11 Oct 20:55 |
+|  | Power tools | [Accu boormachine, Makita, DDF485, 2025](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/108) (Onlineveilingmeester) | €61 | €80 | €24 | Sun 11 Oct 20:56 |
+| ✅ | Power tools | [Accu reciprozaagmachine, Makita, DJR186, 2022](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/119) (Onlineveilingmeester) | €18 | €234 | €77 | Sun 11 Oct 20:59 |
+|  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/125) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:01 |
+|  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/126) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:01 |
+|  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/127) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:01 |
+|  | Monitor | [Monitor, Samsung, QM65R-A](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/128) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:01 |
+|  | Monitor | [Monitor, Samsung, QM65R-A](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/129) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:02 |
+|  | Monitor | [Monitor, Samsung, QM65R-A](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/130) (Onlineveilingmeester) | €14 | – | – | Sun 11 Oct 21:02 |
+| ✅ | Power tools | [Accu haakse slijper, Makita, DGA506](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/160) (Onlineveilingmeester) | €22 | €145 | €47 | Sun 11 Oct 21:09 |
+|  | Power tools | [Accu combihamer, Makita, DHR243, 2025](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/162) (Onlineveilingmeester) | €61 | €177 | €58 | Sun 11 Oct 21:09 |
+| ✅ | Power tools | [Accu boormachine, Makita](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/184) (Onlineveilingmeester) | €20 | €102 | €32 | Sun 11 Oct 21:15 |
+|  | Power tools | [3x Opzet stuk bovenfrees, Milwaukee](https://onlineveilingmeester.nl/nl/veilingen/9482/kavels/202) (Onlineveilingmeester) | €10 | – | – | Sun 11 Oct 21:19 |
 |  | iPad | [iPad Pro 10,5 inch](https://www.openbare-verkopen.be/lot/751328) (Openbare Verkopen (BE)) | €70 | €200 | €51 | Mon 12 Oct 19:31 |
 | ✅ | iPad | [iPad 6th Gen.](https://www.openbare-verkopen.be/lot/751329) (Openbare Verkopen (BE)) | €25 | €110 | €27 | Mon 12 Oct 19:31 |
 | ✅ | iPad | [iPad 2020 8th Gen.](https://www.openbare-verkopen.be/lot/751330) (Openbare Verkopen (BE)) | €30 | €140 | €35 | Mon 12 Oct 19:31 |
@@ -130,45 +136,47 @@ _Monday 05 October 2026, 06:30 (Amsterdam time)_
 |  | Power tools | [Accu klopboormachine Bosch, GBH 18 V-EC, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/5) (Onlineveilingmeester) | €31 | – | – | Tue 13 Oct 19:31 |
 |  | Power tools | [Cirkelzaag Bosch, GKS 55CE, bouwjaar 2011](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/8) (Onlineveilingmeester) | €31 | – | – | Tue 13 Oct 19:31 |
 |  | Power tools | [Haakse slijper Bosch, GWS 26-230 LVI, bouwjaar 2018](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/9) (Onlineveilingmeester) | €24 | – | – | Tue 13 Oct 19:32 |
-|  | Power tools | [Haakse slijper Hikoki, G13SR4, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/35) (Onlineveilingmeester) | €10 | €38 | €3 | Tue 13 Oct 19:38 |
+|  | Power tools | [Haakse slijper, Hikoki, G13SR4, 2020](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/35) (Onlineveilingmeester) | €10 | €38 | €2 | Tue 13 Oct 19:38 |
 |  | Power tools | [4x Accu Hikoki, EB 2433X 24V 3.3Ah](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/36) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 19:38 |
-|  | Power tools | [Accu klopboormachine Makita, BHR200, bouwjaar 2011](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/49) (Onlineveilingmeester) | €14 | €50 | €7 | Tue 13 Oct 19:42 |
-|  | Power tools | [Accu klopboormachine Makita, BHR162, bouwjaar 2012](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/50) (Onlineveilingmeester) | €24 | – | – | Tue 13 Oct 19:42 |
-|  | Power tools | [Accu met lader Makita, 12V 1.9Ah](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/51) (Onlineveilingmeester) | €10 | €35 | €3 | Tue 13 Oct 19:42 |
+|  | Power tools | [Accu klopboormachine Makita, BHR200, bouwjaar 2011](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/49) (Onlineveilingmeester) | €14 | €50 | €6 | Tue 13 Oct 19:42 |
+|  | Power tools | [Accu klopboormachine Makita, BHR162, bouwjaar 2012](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/50) (Onlineveilingmeester) | €26 | – | – | Tue 13 Oct 19:42 |
+|  | Power tools | [Accu met lader Makita, 12V 1.9Ah](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/51) (Onlineveilingmeester) | €10 | €35 | €2 | Tue 13 Oct 19:42 |
 |  | Power tools | [2x Accu met adapter Metabo, 12V 2.0Ah](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/53) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 19:43 |
-|  | Power tools | [Accu haakse slijper Metabo, WPB 36 LTX BL230, bouwjaar 2016](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/54) (Onlineveilingmeester) | €71 | – | – | Tue 13 Oct 19:43 |
-| ✅ | Power tools | [Accu boormachine Metabo, BS 18 LT BL Q, bouwjaar 2018](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/55) (Onlineveilingmeester) | €16 | €140 | €30 | Tue 13 Oct 19:43 |
+|  | Power tools | [Accu haakse slijper Metabo, WPB 36 LTX BL230, bouwjaar 2016](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/54) (Onlineveilingmeester) | €76 | – | – | Tue 13 Oct 19:43 |
+| ✅ | Power tools | [Accu boormachine Metabo, BS 18 LT BL Q, bouwjaar 2018](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/55) (Onlineveilingmeester) | €16 | €140 | €29 | Tue 13 Oct 19:43 |
 |  | Power tools | [3x Diverse opbergkoffer Metabo](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/56) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 19:43 |
 |  | Power tools | [Slanghaspel Metabo, SA250](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/89) (Onlineveilingmeester) | €31 | – | – | Tue 13 Oct 19:52 |
-|  | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €19 | – | – | Tue 13 Oct 20:00 |
+|  | Laptop | [Laptop TERRA Mobile 1513A. 233 GB HDD. 4 GB werkgeheugen. Een toetskap](https://www.hnvi.nl/veiling-kavel/laptop-terra-mobile-1513a-233-gb-hdd-4-gb-werkgeheugen-een-toetskapje-van-f3-ontbreekt/197072) (HNVI) | €22 | – | – | Tue 13 Oct 20:00 |
 |  | Power tools | [Accu hogedrukreiniger MAKITA DHW080 met buffervat, geen accu. Compleet](https://www.hnvi.nl/veiling-kavel/accu-hogedrukreiniger-makita-dhw080-met-buffervat-geen-accu-compleetheid-onbekend/197115) (HNVI) | €50 | – | – | Tue 13 Oct 20:00 |
 |  | Plants / decor | [Twaalf potten en PH- granulaat](https://www.hnvi.nl/veiling-kavel/twaalf-potten-en-ph-granulaat/197165) (HNVI) | €5 | – | – | Tue 13 Oct 20:00 |
 | ✅ | Monitor | [Beeldscherm LENOVO 22 inch, voedingskabel ontbreekt](https://www.hnvi.nl/veiling-kavel/beeldscherm-lenovo-22-inch-voedingskabel-ontbreekt/197190) (HNVI) | €3 | €109 | €22 | Tue 13 Oct 20:00 |
 |  | Plants / decor | [Ca. 20000x Plantware composteerbare koffie lepels, groen](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/179) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 20:14 |
-| ✅ | Power tools | [8x Diverse cirkelzaagblad o.a. Phantom, Makita](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/187) (Onlineveilingmeester) | €14 | €45 | €91 | Tue 13 Oct 20:16 |
+| ✅ | Power tools | [8x Diverse cirkelzaagblad o.a. Phantom, Makita](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/187) (Onlineveilingmeester) | €16 | €45 | €90 | Tue 13 Oct 20:16 |
 |  | Power tools | [Partij diverse bitsets o.a. Metabo, Bosch](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/209) (Onlineveilingmeester) | €24 | – | – | Tue 13 Oct 20:22 |
 |  | Power tools | [6x Diverse sds max boor o.a. Metabo, Kelfort](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/214) (Onlineveilingmeester) | €14 | – | – | Tue 13 Oct 20:23 |
 |  | Power tools | [4x Diverse holle hamerboor Hilti, TE-YD](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/219) (Onlineveilingmeester) | €12 | – | – | Tue 13 Oct 20:24 |
 |  | Power tools | [Ca. 88x Diverse speedboren o.a. Bosch, Metabo, Labor](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/222) (Onlineveilingmeester) | €16 | – | – | Tue 13 Oct 20:25 |
-| ✅ | Power tools | [Partij diverse boren o.a. Metabo, Heller](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/226) (Onlineveilingmeester) | €20 | €139 | €30 | Tue 13 Oct 20:26 |
+| ✅ | Power tools | [Partij diverse boren o.a. Metabo, Heller](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/226) (Onlineveilingmeester) | €20 | €139 | €28 | Tue 13 Oct 20:26 |
 |  | Power tools | [Assortiment boorkoppen o.a. Hikoki, Makita, Metabo](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/227) (Onlineveilingmeester) | €12 | – | – | Tue 13 Oct 20:26 |
 |  | Power tools | [Freeskop vlaktand Metabo , 628219000](https://onlineveilingmeester.nl/nl/veilingen/9562/kavels/245) (Onlineveilingmeester) | €14 | – | – | Tue 13 Oct 20:31 |
 |  | Plants / decor | [4x Seleniet pot met deksel](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/251) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 20:32 |
 | ✅ | Monitor | [2x Switch en Beeldscherm, Cisco Webex DX80, HDMI KVM](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/299) (Onlineveilingmeester) | €10 | €98 | €22 | Tue 13 Oct 20:44 |
 |  | Monitor | [Mixpartij diverse beeldschermen](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/359) (Onlineveilingmeester) | €14 | – | – | Tue 13 Oct 20:59 |
-|  | Power tools | [Makita accugereedschap](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/363) (Onlineveilingmeester) | €10 | – | – | Tue 13 Oct 21:00 |
-|  | Power tools | [Partij diverse doorslijp, afbraam, lamellen schijven o.a. FlexOvit, 3M](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/425) (Onlineveilingmeester) | €20 | – | – | Wed 14 Oct 20:01 |
-| ✅ | Power tools | [Grote partij diverse schuurmiddelen o.a. 3M, Makita, Festool](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/426) (Onlineveilingmeester) | €36 | €450 | €114 | Wed 14 Oct 20:01 |
-|  | Monitor | [Laptop Dell Latitude 7400 + monitor Samsung 24inch](https://www.openbare-verkopen.be/lot/751784) (Openbare Verkopen (BE)) | €30 | €66 | €17 | Wed 14 Oct 20:04 |
+|  | Power tools | [Makita accugereedschap](https://onlineveilingmeester.nl/nl/veilingen/9514/kavels/363) (Onlineveilingmeester) | €12 | – | – | Tue 13 Oct 21:00 |
+|  | Plants / decor | [Allerhande potten en pannen + gastronormbakken](https://www.openbare-verkopen.be/lot/752204) (Openbare Verkopen (BE)) | €15 | – | – | Wed 14 Oct 19:07 |
+| ✅ | Coffee machine | [Professionele espressomachine FUTURMAT](https://www.openbare-verkopen.be/lot/752208) (Openbare Verkopen (BE)) | €75 | €895 | €223 | Wed 14 Oct 19:09 |
+|  | Power tools | [Partij diverse doorslijp, afbraam, lamellen schijven o.a. FlexOvit, 3M](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/425) (Onlineveilingmeester) | €22 | – | – | Wed 14 Oct 20:01 |
+|  | Power tools | [Grote partij diverse schuurmiddelen o.a. 3M, Makita, Festool](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/426) (Onlineveilingmeester) | €171 | €474 | €121 | Wed 14 Oct 20:01 |
+|  | Monitor | [Laptop Dell Latitude 7400 + monitor Samsung 24inch](https://www.openbare-verkopen.be/lot/751784) (Openbare Verkopen (BE)) | €30 | €95 | €25 | Wed 14 Oct 20:04 |
 |  | Monitor | [Verrijdbare smart monitor Acer](https://www.openbare-verkopen.be/lot/751786) (Openbare Verkopen (BE)) | €110 | – | – | Wed 14 Oct 20:05 |
-|  | Laptop | [Laptop Lenovo Thinkbook](https://www.openbare-verkopen.be/lot/751787) (Openbare Verkopen (BE)) | €70 | – | – | Wed 14 Oct 20:05 |
-|  | MacBook | [MacBook Pro model a2442](https://www.openbare-verkopen.be/lot/751788) (Openbare Verkopen (BE)) | €290 | €495 | €132 | Wed 14 Oct 20:05 |
-|  | Laptop | [Laptop Lenovo Thinkpad Z16](https://www.openbare-verkopen.be/lot/751791) (Openbare Verkopen (BE)) | €120 | – | – | Wed 14 Oct 20:06 |
-| ✅ | Laptop | [Laptop Lenovo Thinkpad e14](https://www.openbare-verkopen.be/lot/751792) (Openbare Verkopen (BE)) | €90 | €365 | €97 | Wed 14 Oct 20:07 |
-| ✅ | Laptop | [Laptop Lenovo](https://www.openbare-verkopen.be/lot/752238) (Openbare Verkopen (BE)) | €70 | €275 | €73 | Wed 14 Oct 20:09 |
-| ✅ | Plants / decor | [Ca. 26x Plantengieter 10 liter](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/492) (Onlineveilingmeester) | €12 | €14 | €89 | Wed 14 Oct 20:17 |
+| ✅ | Laptop | [Laptop Lenovo Thinkbook](https://www.openbare-verkopen.be/lot/751787) (Openbare Verkopen (BE)) | €70 | €300 | €80 | Wed 14 Oct 20:05 |
+|  | MacBook | [MacBook Pro model a2442](https://www.openbare-verkopen.be/lot/751788) (Openbare Verkopen (BE)) | €310 | €449 | €119 | Wed 14 Oct 20:05 |
+|  | Laptop | [Laptop Lenovo Thinkpad Z16](https://www.openbare-verkopen.be/lot/751791) (Openbare Verkopen (BE)) | €130 | – | – | Wed 14 Oct 20:06 |
+|  | Laptop | [Laptop Lenovo Thinkpad e14](https://www.openbare-verkopen.be/lot/751792) (Openbare Verkopen (BE)) | €100 | €365 | €97 | Wed 14 Oct 20:07 |
+|  | Laptop | [Laptop Lenovo](https://www.openbare-verkopen.be/lot/752238) (Openbare Verkopen (BE)) | €80 | €185 | €49 | Wed 14 Oct 20:09 |
+| ✅ | Plants / decor | [Ca. 26x Plantengieter 10 liter](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/492) (Onlineveilingmeester) | €12 | €14 | €88 | Wed 14 Oct 20:17 |
 |  | Power tools | [8x Accu handlamp Metabo, ULA 14.4-18](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/522) (Onlineveilingmeester) | €12 | – | – | Wed 14 Oct 20:25 |
-| ✅ | Plants / decor | [Ca. 240x Glazen pot](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/581) (Onlineveilingmeester) | €10 | €8 | €497 | Wed 14 Oct 20:40 |
+| ✅ | Plants / decor | [Ca. 240x Glazen pot](https://onlineveilingmeester.nl/nl/veilingen/9563/kavels/581) (Onlineveilingmeester) | €10 | €8 | €496 | Wed 14 Oct 20:40 |
 |  | Plants / decor | [1 x Stalen archiefkast met diverse kaarsen en glazen potten](https://www.plaatsjebod.nl/nl/lots/1-x-stalen-archiefkast-met-diverse-kaarsen-en-glazen-potten) (Plaats Je Bod) | €50 | – | – | Thu 15 Oct 21:55 |
 |  | Plants / decor | [1 x Stalen archiefkast met diverse vazen, potten, tapvaten](https://www.plaatsjebod.nl/nl/lots/1-x-stalen-archiefkast-met-diverse-vazen-potten-tapvaten) (Plaats Je Bod) | €50 | – | – | Thu 15 Oct 21:55 |
 | ✅ | Plants / decor | [3 kunst cactussen in pot](https://www.proveiling.nl/3-kunst-cactussen-in-pot/3287834/detail) (ProVeiling) | €5 | €25 | €6 | Tue 20 Oct 19:30 |
@@ -183,8 +191,8 @@ _Monday 05 October 2026, 06:30 (Amsterdam time)_
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-1) (Plaats Je Bod) | €25 | – | – | Mon 26 Oct 20:22 |
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-2) (Plaats Je Bod) | €25 | – | – | Mon 26 Oct 20:22 |
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-3) (Plaats Je Bod) | €25 | – | – | Mon 26 Oct 20:23 |
-|  | Monitor | [1 x HP 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/1-x-hp-24-inch-monitor) (Plaats Je Bod) | €10 | €50 | €0 | Wed 28 Oct 20:00 |
-|  | Coffee machine | [1 x Partij kantinegerief waaronder 2 x kast, L'or Barista koffiemachin](https://www.plaatsjebod.nl/nl/lots/1-x-partij-kantinegerief-waaronder-2-x-kast-lor-barista-koffiemachine-etc) (Plaats Je Bod) | €25 | – | – | Wed 28 Oct 20:00 |
+|  | Monitor | [1 x HP 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/1-x-hp-24-inch-monitor) (Plaats Je Bod) | €10 | €50 | €0 | Wed 04 Nov 20:08 |
+|  | Coffee machine | [1 x Partij kantinegerief waaronder 2 x kast, L'or Barista koffiemachin](https://www.plaatsjebod.nl/nl/lots/1-x-partij-kantinegerief-waaronder-2-x-kast-lor-barista-koffiemachine-etc) (Plaats Je Bod) | €25 | – | – | Wed 04 Nov 20:13 |
 |  | MacBook | [Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD R](https://www.troostwijkauctions.com/nl/l/A1-38890-10615) (Troostwijk) | €10 | €450 | €117 | Wed 14 Oct |
 |  | Laptop | [Dell Latitude 5521 15.6”, Core(TM) i7 11th Gen, 32 GB RAM, 512 GB NVMe](https://www.troostwijkauctions.com/nl/l/A1-38890-10703) (Troostwijk) | €10 | – | – | Wed 14 Oct |
 |  | MacBook | [Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1  TB NVMe Laptop](https://www.troostwijkauctions.com/nl/l/A1-38890-11336) (Troostwijk) | €50 | €1.500 | €399 | Wed 14 Oct |
