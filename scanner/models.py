@@ -27,7 +27,7 @@ class Lot:
     lot_id: str
     title: str
     url: str
-    current_bid: float | None  # EUR, excluding premium and VAT
+    current_bid: float | None  # EUR, excluding premium and VAT (the starting bid while nobody has bid)
     closes_at: datetime | None  # timezone-aware
     auction_title: str = ""
     closes_day: str | None = None  # "2026-10-07" when only the closing day is known, not the time
@@ -36,6 +36,8 @@ class Lot:
     image: str | None = None
     location: str | None = None
     bids: int | None = None
+    next_bid: float | None = None  # the lowest bid you can place now (current bid + one step, or the starting bid)
+    step_estimated: bool = False  # next_bid uses an estimated step (the site doesn't say)
     extra_fee: float = 0.0  # fixed per-lot costs reported by the site (excl. VAT)
     premium: float | None = None  # per-lot buyer's premium if the site reports it (0.16 = 16%)
     vat: float | None = None  # per-lot VAT on bid + premium if it differs from the site default (0 = margin scheme)
@@ -45,6 +47,7 @@ class Lot:
     delivery: bool = False
     trip_cost: float | None = None  # this lot's share of the fuel to the pickup address and back (set by the scan)
     trip_lots: int = 1  # lots worth collecting that share that trip (same address and pickup day)
+    transport: bool = False  # too far to drive: a transporter brings it, trip_cost is the transport estimate
 
     @property
     def key(self) -> str:

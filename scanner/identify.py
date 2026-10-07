@@ -106,10 +106,13 @@ class Rule:
     without: tuple[str, ...] = ()  # words the listing must not have ("pro" for a plain iPad)
     without_parts: tuple[str, ...] = ()  # nor anywhere inside a word ("machine" in "accuboormachine")
     gen_norm: bool = False  # read "Gen 2" and "15G2" as "g2" / "15 g2" first
+    ram: str | None = None  # memory the listing must mention: "32" -> "32GB" / "32 GB"
 
     def matches(self, title_norm: str) -> bool:
         if self.gen_norm:
             title_norm = gen_norm(title_norm)
+        if self.ram and not re.search(rf"(?<![0-9]){self.ram} ?gb(?![a-z0-9])", title_norm):
+            return False
         if self.model and not model_in(self.model, title_norm):
             return False
         if any(part in title_norm for part in self.without_parts):
@@ -204,38 +207,70 @@ _CHIP_RE = re.compile(r"(?<![a-z0-9])m([1-5])(?: (pro|max|ultra))?(?![a-z0-9])")
 _INTEL_RE = re.compile(r"(?<![a-z0-9])(i[3579]|intel|core|xeon)(?![a-z0-9])")
 
 
+_MAC_CPU_RE = re.compile(r"(?<![a-z0-9])(i[3579])(?![a-z0-9])")
+
+
+def mac_ram(text_norm: str) -> str | None:
+    """"32 GB RAM, 1 TB" -> "32"; "16GB 512GB" -> "16" (memory comes before storage; Macs have at least 128 GB
+    storage)."""
+    m = re.search(r"(?<![0-9])(8|16|18|24|32|36|48|64|96) ?gb(?: (?:ram|geheugen|werkgeheugen|memory|unified))?(?![a-z0-9])",
+                  text_norm)
+    return m.group(1) if m else None
+
+
 def mac_plan(title: str) -> SearchPlan | None:
-    """Macs have no type number in lot titles; what sets the price is the line, the chip and the screen size.
-    "MacBook Pro 16, M1 Max" -> listings that say macbook pro + 16 inch + m1 max (exact);
-    "MacBook Pro 16 Core i7 9th Gen" -> Intel MacBook Pro 16 listings (a rough price: years and specs vary)."""
+    """Macs have no type number in lot titles; what sets the price is the line, the chip or processor, the screen
+    size and the memory.
+    "MacBook Pro 16, M1 Max, 32 GB" -> listings that say macbook pro + 16 inch + m1 max (+ 32 GB when there are
+    enough of those): exact;
+    "MacBook Pro 16 Core i7 9th Gen, 32 GB RAM" -> MacBook Pro 16 listings with an i7 (+ 32 GB), not i9: a rough price,
+    as storage and years vary."""
     t = normalize(title)
     line = next((ln for ln in _MAC_LINES if re.search(rf"(?<![a-z0-9]){ln}(?![a-z0-9])", t)), None)
     if not line:
         return None
     size = inches(title)
+    ram = mac_ram(t)
     base = [(w,) for w in line.split()]
+    shown = line.replace("macbook", "MacBook").replace("imac", "iMac").replace("mac ", "Mac ")
+    shown = " ".join(w if w[0].isupper() else w.title() for w in shown.split())
     chip = _CHIP_RE.search(t)
     if chip:
         name = "m" + chip.group(1) + (f" {chip.group(2)}" if chip.group(2) else "")
         groups = base + [(w,) for w in name.split()]
-        rules = ([Rule(groups, size=size, label=f"{line} {size} {name}")] if size else []) + [Rule(groups, label=f"{line} {name}")]
-        searches = list(dict.fromkeys(r.label for r in rules))
-        shown = f"{line.replace('macbook', 'MacBook').replace('imac', 'iMac').replace('mac ', 'Mac ').title().replace('Macbook', 'MacBook').replace('Imac', 'iMac')}"
+        rules = []
+        if size and ram:
+            rules.append(Rule(groups, size=size, ram=ram, label=f"{line} {size} {name} {ram}gb"))
+        if size:
+            rules.append(Rule(groups, size=size, label=f"{line} {size} {name}"))
+        rules.append(Rule(groups, label=f"{line} {name}"))
+        searches = list(dict.fromkeys([f"{line} {size} {name}" if size else f"{line} {name}", f"{line} {name}"]))
         return SearchPlan("exact", searches, rules, model=f"{shown}{' ' + size if size else ''} {name.upper()}",
-                          brand="apple", note=f"exact: {line} {size + ' inch ' if size else ''}{name}")
+                          brand="apple", note=f"exact: {line} {size + ' inch ' if size else ''}{name}"
+                          + (f" ({ram} GB if enough listings say so)" if ram else ""))
     intel = _INTEL_RE.search(t)
     year = re.search(r"(?<![0-9])(20[12][0-9])(?![0-9])", t)
     if not (intel or year):
         return None
-    which = (year.group(1),) if year else ("intel", "i5", "i7", "i9", "2016", "2017", "2018", "2019", "2020")
-    rules = ([Rule(base + [which], size=size, label=f"{line} {size} {which[0] if year else 'intel'}")] if size else []) + \
-        [Rule(base + [which], label=f"{line} {which[0] if year else 'intel'}")]
+    cpu = _MAC_CPU_RE.search(t)
+    if cpu:  # "Core i7": an i7, not an i9 or an i5
+        which, what = (cpu.group(1),), cpu.group(1)
+    elif year:
+        which, what = (year.group(1),), year.group(1)
+    else:
+        which, what = ("intel", "i5", "i7", "i9", "2016", "2017", "2018", "2019", "2020"), "intel"
+    rules = []
+    if ram:
+        rules.append(Rule(base + [which], size=size, ram=ram, label=" ".join(x for x in (line, size, what, f"{ram}gb") if x)))
+    rules.append(Rule(base + [which], size=size, label=" ".join(x for x in (line, size, what) if x)))
     # listings rarely say "intel": search the line and size, the rule keeps the Intel ones
-    searches = [f"{line} {size} {year.group(1)}" if year else f"{line} {size}" if size else line]
-    searches += [f"{line} {year.group(1)}" if year else f"{line} intel"]
-    searches = [" ".join(q.split()) for q in dict.fromkeys(searches)]
+    searches = [" ".join(x for x in (line, size, what if what != "intel" else None) if x)]
+    searches.append(f"{line} {size}" if size and what != "intel" else f"{line} intel")
+    searches = list(dict.fromkeys(searches))
     return SearchPlan("general", searches, rules, brand="apple", rough=not year,
-                      note="Intel Mac: a rough price, years and specs vary" if not year else f"{line} {year.group(1)}")
+                      note=(f"Intel {shown}{' ' + size if size else ''} {what if what != 'intel' else ''}"
+                            f"{' ' + ram + ' GB' if ram else ''}: a rough price, storage and years vary")
+                      .replace("  ", " ") if not year else f"{line} {year.group(1)}")
 
 
 # iPads: line, generation, chip and screen size set the price; lot titles rarely have a type number

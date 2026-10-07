@@ -12,6 +12,7 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass
 
+from .bidding import next_bid_of
 from .marktplaats import PriceEstimate
 from .models import Lot, WatchItem
 
@@ -84,7 +85,7 @@ def market_value(item: WatchItem, estimate: PriceEstimate | None, units: int = 1
 
 def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
              estimate: PriceEstimate | None, units: int = 1) -> Verdict:
-    bid = lot.current_bid or 0.0
+    bid = next_bid_of(lot)  # what you'd have to bid now, not the current bid
     trip = (lot.trip_cost or 0.0) if settings.include_trip else 0.0
     cost = total_cost(bid, fees, lot, trip)
     min_margin = item.min_margin if item.min_margin is not None else settings.min_margin
@@ -107,7 +108,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     pay_at_max = total_cost(max_bid, fees, lot, trip)
     profit_at_max = resale - pay_at_max if resale is not None else None
     margin_at_max = profit_at_max / pay_at_max if profit_at_max is not None and pay_at_max > 0 else None
-    ok = bid < max_bid
+    ok = bid <= max_bid
     if lot.bid_from_email:  # the email's bid is old (usually the starting bid): only the lot page knows
         ok = False
         reason = f"bid up to €{max_bid}; check the current bid on the lot page" if max_bid > 0 else \
@@ -117,6 +118,6 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     elif max_bid <= 0:
         reason = "not profitable at any price"
     else:
-        reason = f"current bid is above the suggested max €{max_bid}"
+        reason = f"the next bid (€{bid:g}) is above the suggested max €{max_bid}"
     return Verdict(ok, reason, bid, cost, resale, profit, margin, float(max_bid), round(pay_at_max, 2),
                    profit_at_max, margin_at_max)

@@ -15,7 +15,8 @@ from .evaluate import Fees, Settings, Verdict, evaluate, lot_rates, market_value
 from .favorites import FavoritesStore, closing_between
 from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
-from .details import fill_descriptions
+from .bidding import fill_next_bids, parse_steps
+from .details import fill_descriptions, fill_start_prices
 from .identify import mac_plan, model_code, plan_for, quantity
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
@@ -116,11 +117,13 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
     rough = "≈" if est is not None and est.kind == "general" and item.market_price is None else ""
     trip = (trips or {}).get(pickup_place(lot) or "")
     drive = f" · 🚗 {trip.km:.0f} km" + (f" from {trip.origin}" if trip.origin and trip.origin != "home" else "") if trip else ""
+    if lot.transport:
+        drive = f" · 🚚 transport ≈ {fmt_eur(lot.trip_cost)}"
     if lot.bid_from_email:  # the current bid isn't known, only the max bid
         return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
                 f"   bid up to <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · Troostwijk · closes {when}{drive}")
     return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
-            f"   bid {fmt_eur(v.bid)} → max <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · "
+            f"   next bid {fmt_eur(v.bid)} → max <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · "
             f"{SITE_NAMES.get(lot.site, lot.site)} · {when}{drive}")
 
 
@@ -136,7 +139,7 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
     lines = [f"⭐ <b>Your favorites closing {verb}</b>"]
     for f, c in today:
         lot, v = by_key.get(f["key"], (None, None))
-        bid = f"bid {fmt_eur(v.bid)} · " if v else ""
+        bid = f"next bid {fmt_eur(v.bid)} · " if v else ""
         maxbid = f"your max <b>{fmt_eur(v.max_bid)}</b> · " if v and v.max_bid is not None else (
             f"your max <b>{fmt_eur(f['maxBid'])}</b> · " if f.get("maxBid") is not None else "")
         lines.append(f'• <a href="{attr(f["url"])}">{esc(f["title"][:70])}</a>\n'
@@ -148,7 +151,7 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
                    trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen",
-                   far: dict | None = None, far_rule: tuple[float, int] | None = None) -> str:
+                   far: dict | None = None, far_rules: list | None = None) -> str:
     far = far or {}
     deals = [r for r in rows if r[2].is_deal and r[1].key not in far]
     day = now.astimezone(AMS).strftime("%a %d %b")
@@ -180,10 +183,15 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append(f"Nothing on your watchlist is in a running {kinds} auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
-    left_out = sum(1 for r in rows if r[2].is_deal and r[1].key in far)
-    if left_out and far_rule:
-        parts.append(f"<i>🚗 {left_out} lot{'s' if left_out != 1 else ''} with room to bid left out: more than "
-                     f"{far_rule[0]:.0f} min drive with fewer than {far_rule[1]} lots to collect there.</i>")
+    over = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is None)
+    few = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is not None)
+    if far_rules and (few or over):
+        why = []
+        if over:
+            why.append(f"{over} more than {duration(far_rules[-1][0])} drive away")
+        if few:
+            why.append(f"{few} where too few lots are worth that drive")
+        parts.append(f"<i>🚗 Lots with room to bid left out: {'; '.join(why)}.</i>")
     if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
         parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
     if url:
@@ -192,6 +200,12 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
 
 
 # ---------------------------------------------------------------- dashboard data
+
+def duration(minutes: float) -> str:
+    """90 -> "1h 30m", 45 -> "45 min"."""
+    m = round(minutes)
+    return f"{m // 60}h {m % 60:02d}m" if m >= 60 else f"{m} min"
+
 
 def auction_kinds(config: dict) -> str:
     """"bankruptcy, closure, estate, Domeinen or IT": which auctions the bot reads, for texts."""
@@ -219,13 +233,15 @@ def worth_collecting(row: Row, favorite_keys: set[str]) -> bool:
     return v.is_deal or lot.key in favorite_keys or (lot.bid_from_email and (v.max_bid or 0) > 0)
 
 
-def share_trips(rows: list[Row], trips: dict, favorite_keys: set[str], reevaluate) -> list[Row]:
+def share_trips(rows: list[Row], trips: dict, favorite_keys: set[str], reevaluate, cost_of=None) -> list[Row]:
     """Lots collected at the same address on the same day share one trip: each lot carries the trip cost
     divided by the lots worth collecting there (counting itself).
     Which lots are worth it depends on their share, so this starts as if every lot there is collected and
     then drops the ones that still have no room to bid, until nothing changes. That finds the largest set
     of lots that are worth it together: three lots that each can't pay for the trip alone can together.
-    reevaluate(item, lot, estimate) -> Verdict with the lot's new trip_cost."""
+    reevaluate(item, lot, estimate) -> Verdict with the lot's new trip_cost.
+    cost_of(place, n) -> what the trip costs for n lots (a transporter charges per lot); default: the fuel."""
+    cost_of = cost_of or (lambda place, n: trips[place].cost)
     groups: dict[tuple[str, str], list[int]] = {}
     for i, (_, lot, _, _) in enumerate(rows):
         place = pickup_place(lot)
@@ -243,38 +259,84 @@ def share_trips(rows: list[Row], trips: dict, favorite_keys: set[str], reevaluat
         return True
 
     for (place, _), members in groups.items():
-        cost = trips[place].cost
         for i in members:  # optimistic start: everything here is collected
-            apply(i, len(members), cost)
+            apply(i, len(members), cost_of(place, len(members)))
         for _ in range(len(members) + 1):  # the set of lots worth it only shrinks from here
             worth = {i for i in members if worth_collecting(rows[i], favorite_keys)}
             changed = False
             for i in members:
-                changed |= apply(i, len(worth - {i}) + 1, cost)
+                n = len(worth - {i}) + 1
+                changed |= apply(i, n, cost_of(place, n))
             if not changed:
                 break
     return rows
 
 
-def too_far(rows: list[Row], trips: dict, favorite_keys: set[str], max_minutes: float, min_lots: int) -> dict:
-    """Lots whose pickup is more than `max_minutes` away (one way) while fewer than `min_lots` lots at that
-    address and pickup day are worth collecting (room to bid, a Troostwijk lot to check, or a favorite).
-    Returns lot key -> (minutes, lots worth collecting there). Favorites are never left out."""
-    if not max_minutes or min_lots <= 1:
+def trip_rules(drv_cfg: dict) -> list[tuple[float, int]]:
+    """[(up to this many minutes one way, lots worth collecting needed), ...], shortest first; further than
+    the last one: never. From driving.trip_rules in config.yml, or the older long_trip_* settings."""
+    rules = []
+    for rule in drv_cfg.get("trip_rules") or []:
+        try:
+            rules.append((float(rule[0]), max(1, int(rule[1]))))
+        except (TypeError, ValueError, IndexError):
+            continue
+    if not rules and drv_cfg.get("long_trip_minutes"):
+        rules = [(float(drv_cfg["long_trip_minutes"]), 1),
+                 (float(drv_cfg.get("max_minutes") or 10 ** 6), int(drv_cfg.get("long_trip_min_lots", 3) or 1))]
+    return sorted(rules)
+
+
+def transport_settings(drv_cfg: dict) -> dict | None:
+    """{"first": €, "extra": €} for pickups too far to drive (driving.transport), or None when it's off."""
+    t = drv_cfg.get("transport") or {}
+    if t.get("enabled", True) is False or not t:
+        return None
+    try:
+        return {"first": float(t.get("first_lot", 75)), "extra": float(t.get("extra_lot", 25))}
+    except (TypeError, ValueError):
+        return None
+
+
+def transport_cost(transport: dict, lots: int) -> float:
+    """A transporter's estimate for collecting `lots` lots at one address: the first lot plus each extra one."""
+    return transport["first"] + transport["extra"] * max(0, lots - 1)
+
+
+def lots_needed(minutes: float, rules: list[tuple[float, int]]) -> int | None:
+    """How many lots worth collecting make a trip of this many minutes worth it; None: too far, always."""
+    if not rules:
+        return 1
+    for up_to, lots in rules:
+        if minutes <= up_to:
+            return lots
+    return None
+
+
+def too_far(rows: list[Row], trips: dict, favorite_keys: set[str], rules: list[tuple[float, int]],
+            transport: bool = False) -> dict:
+    """Lots you won't drive for: the pickup is further than the last rule allows, or too few lots at that
+    address and pickup day are worth collecting (room to bid, a Troostwijk lot to check, or a favorite) for
+    the time it takes. Returns lot key -> (minutes, lots worth collecting there, lots needed or None when
+    it's always too far). Favorites are never left out."""
+    if not rules:
         return {}
     groups: dict[tuple[str, str], list[tuple[Lot, Verdict]]] = {}
     for _, lot, v, _ in rows:
         place = pickup_place(lot)
-        trip = trips.get(place or "")
-        if trip and trip.minutes > max_minutes:
+        if trips.get(place or ""):
             groups.setdefault((place, pickup_day(lot)), []).append((lot, v))
     out = {}
     for (place, _), members in groups.items():
+        minutes = trips[place].minutes
+        need = lots_needed(minutes, rules)
+        if need is None and transport:  # too far to drive, but a transporter can bring it
+            continue
         worth = sum(1 for lot, v in members if worth_collecting((None, lot, v, None), favorite_keys))
-        if worth < min_lots:
+        if need is None or worth < need:
             for lot, _ in members:
                 if lot.key not in favorite_keys:
-                    out[lot.key] = (trips[place].minutes, worth)
+                    out[lot.key] = (minutes, worth, need)
     return out
 
 
@@ -303,10 +365,11 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "site": lot.site, "siteName": SITE_NAMES.get(lot.site, lot.site), "auction": lot.auction_title,
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
-            "trip": trip.as_dict() if trip else None,
+            "trip": trip.as_dict() if trip else None, "transport": lot.transport,
             "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
             "bidFromEmail": lot.bid_from_email,
-            "bid": v.bid, "bids": lot.bids,
+            "bid": lot.current_bid if lot.current_bid is not None else v.bid, "bids": lot.bids,
+            "nextBid": lot.next_bid, "stepEstimated": lot.step_estimated,
             "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
             "units": units, "count": quantity(lot.title),
@@ -364,7 +427,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
         lines.append(f"| {SITE_NAMES.get(site, site)} | {status} |")
     lines += ["", f"## Matching lots ({len(rows)})\n"]
     if rows:
-        lines += ["| | Item | Lot | Bid | Market | Max bid | Closes |", "|---|---|---|---|---|---|---|"]
+        lines += ["| | Item | Lot | Next bid | Market | Max bid | Closes |", "|---|---|---|---|---|---|---|"]
         for item, lot, v, est in rows:
             title = lot.title.replace("|", "/")[:70]
             closes = lot.closes_at.astimezone(AMS).strftime("%a %d %b %H:%M") if lot.closes_at else (closing_day(lot) or "?")
@@ -438,6 +501,12 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             needs=lambda lot: model_code(lot.title) is None and mac_plan(lot.title) is None,
             limit=int(det_cfg.get("max_pages_per_run", 40)))
         log.info("read %d lot descriptions", read)
+    if not only or set(only) - {"troostwijk"}:
+        read = fill_start_prices(matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
+                                 state.setdefault("start_prices", {}), now)
+        log.info("read %d starting prices", read)
+    # the bid you'd have to place now: the starting bid, or the current bid + one step
+    fill_next_bids(matched, parse_steps((config.get("bidding") or {}).get("steps")))
 
     # 2. driving costs to the pickup addresses (needs the HOME_ADDRESS secret)
     geo_http = http_cls(delay=1.1)
@@ -448,8 +517,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                "include": settings.include_trip, "kmpl": float(drv_cfg.get("km_per_liter", 16)),
                "roundTrip": drv_cfg.get("round_trip", True) is not False,
                "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0),
-               "longMin": float(drv_cfg.get("long_trip_minutes", 30) or 0),
-               "longLots": int(drv_cfg.get("long_trip_min_lots", 3) or 0)}
+               "tripRules": trip_rules(drv_cfg), "transport": transport_settings(drv_cfg)}
     places = {p: lot.pickup_latlon for _, lot in matched if (p := pickup_place(lot))}
     if driving["enabled"] and (home or home2) and places:
         price, source = fuel_price(geo_http, state, now, drv_cfg.get("fuel_price", "auto"),
@@ -466,6 +534,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         for _, lot in matched:
             trip = trips.get(pickup_place(lot) or "")
             lot.trip_cost = round(trip.cost, 2) if trip else None
+            if trip and driving["transport"] and lots_needed(trip.minutes, driving["tripRules"]) is None:
+                lot.transport = True  # too far to drive: count a transporter instead of fuel
+                lot.trip_cost = transport_cost(driving["transport"], 1)
 
     # 3. price + evaluate
     mp_cfg = config.get("marktplaats") or {}
@@ -478,19 +549,29 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                          max_lookups=int(mp_cfg.get("max_lookups_per_run", 40)),
                          enabled=mp_cfg.get("enabled", True))
     site_fees = {s: Fees.from_dict(c) for s, c in (config.get("sites") or {}).items()}
+    # favorites (starred on the dashboard, kept in a GitHub issue)
+    store = FavoritesStore(http_cls(delay=0.2))
+    favs = store.load() if items else []
+    fav_keys = {f["key"] for f in favs}
     rows: list[Row] = []
     for item, lot in sorted(matched, key=lambda m: m[1].closes_at or horizon):
-        est = finder.for_lot(item, lot)
+        trip = trips.get(pickup_place(lot) or "")
+        beyond = bool(trip and lots_needed(trip.minutes, driving["tripRules"]) is None and lot.key not in fav_keys
+                      and not driving["transport"])
+        est = finder.for_lot(item, lot, lookup=not beyond)  # too far to drive: no Marktplaats search spent on it
         verdict = evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units))
         rows.append((item, lot, verdict, est))
     finder.prune()
 
-    # 3b. favorites (starred on the dashboard, kept in a GitHub issue); lots at one pickup share the trip
-    store = FavoritesStore(http_cls(delay=0.2))
-    favs = store.load() if items else []
+    # 3b. lots at one pickup share the trip
     if trips and settings.include_trip:
-        rows = share_trips(rows, trips, {f["key"] for f in favs}, lambda item, lot, est: evaluate(
-            item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)))
+        def group_cost(place: str, n: int) -> float:
+            if driving["transport"] and lots_needed(trips[place].minutes, driving["tripRules"]) is None:
+                return transport_cost(driving["transport"], n)
+            return trips[place].cost
+
+        rows = share_trips(rows, trips, fav_keys, lambda item, lot, est: evaluate(
+            item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)), group_cost)
     notes = []
     if mail_report and mail_report.get("unreadable_emails"):  # each email is reported once
         bad = mail_report["unreadable_emails"]
@@ -539,10 +620,10 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 7. telegram digest
     if items and alerts_cfg.get("enabled", True):
         try:
-            far = too_far(rows, trips, {f["key"] for f in favs}, driving["longMin"], driving["longLots"])
+            far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]))
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
                                    favs=favs, trips=trips, kinds=auction_kinds(config), far=far,
-                                   far_rule=(driving["longMin"], driving["longLots"])))
+                                   far_rules=driving["tripRules"]))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
     elif favs:

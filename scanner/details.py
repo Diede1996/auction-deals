@@ -18,6 +18,7 @@ from urllib.parse import urlparse
 
 from .http import BlockedError
 from .sites.base import text_lines
+from .util import parse_money
 
 log = logging.getLogger(__name__)
 
@@ -74,6 +75,49 @@ def fill_descriptions(matched, http_factory, cache: dict, now: datetime, needs, 
         read += 1
         lot.description = description_from_page(html)
         cache[lot.key] = {"d": lot.description, "at": now.isoformat()}
+    for key in [k for k, v in cache.items() if now - datetime.fromisoformat(v["at"]) > timedelta(days=30)]:
+        del cache[key]
+    return read
+
+
+_START = re.compile(r"(?:Startprijs|Startbod|Openingsbod|Inzet)\s*:?\s*€\s*([\d.,]+)", re.I)
+_NO_BIDS = re.compile(r"(?:Aantal biedingen|Biedingen)\s*:?\s*0\b", re.I)
+START_PRICE_SITES = {"inventarisveilingen"}  # lot lists that show €0,00 until someone bids
+
+
+def start_price_from_page(html: str) -> float | None:
+    """"Startprijs € 15,00" on a lot page that also says nobody has bid yet."""
+    text = " ".join(text_lines(html))
+    m = _START.search(text)
+    if not m or not _NO_BIDS.search(text):
+        return None
+    return parse_money(m.group(1))
+
+
+def fill_start_prices(matched, http_factory, cache: dict, now: datetime, limit: int = 40) -> int:
+    """Lots on your watchlist whose list shows no price because nobody has bid yet (Inventarisveilingen
+    shows €0,00): read the starting price on the lot page once. cache: lot key -> {"p": price, "at": iso}."""
+    clients: dict[str, object] = {}
+    read = 0
+    for _, lot in matched:
+        if lot.site not in START_PRICE_SITES or lot.current_bid is not None:
+            continue
+        entry = cache.get(lot.key)
+        if entry is None and read < limit:
+            host = urlparse(lot.url).netloc
+            try:
+                html = clients.setdefault(host, http_factory()).text(lot.url)
+            except Exception as e:  # BlockedError included: try again next scan
+                log.info("no start price for %s: %s", lot.key, type(e).__name__)
+                continue
+            read += 1
+            price = start_price_from_page(html)
+            entry = {"p": price, "at": now.isoformat()}
+            if price:  # a page we couldn't read is tried again next scan
+                cache[lot.key] = entry
+        if entry and entry.get("p"):
+            lot.current_bid = lot.next_bid = float(entry["p"])
+            lot.bids = 0
     for key in [k for k, v in cache.items() if now - datetime.fromisoformat(v["at"]) > timedelta(days=30)]:
         del cache[key]
     return read

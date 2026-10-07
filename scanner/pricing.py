@@ -74,7 +74,8 @@ class PriceFinder:
             self._results[query] = marktplaats.search(self.http, query)
         return self._results[query]
 
-    def for_lot(self, item: WatchItem, lot: Lot) -> PriceEstimate | None:
+    def for_lot(self, item: WatchItem, lot: Lot, lookup: bool = True) -> PriceEstimate | None:
+        """lookup=False: only a saved price, no new Marktplaats search (lots too far away to collect)."""
         if not self.enabled or item.market_price is not None:
             return None
         plan = plan_for(item, lot)
@@ -84,7 +85,7 @@ class PriceFinder:
         entry = self.cache.get(key)
         if entry and self._age(entry) <= timedelta(days=self.cache_days) and entry.get("v") == RULES_VERSION:
             return PriceEstimate(**entry["est"]) if entry.get("est") else None
-        if self.blocked or self.lookups_left <= 0:
+        if self.blocked or self.lookups_left <= 0 or not lookup:
             return self._saved(entry)
 
         min_count = self.min_listings_exact if plan.exact else self.min_listings
