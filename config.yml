@@ -96,6 +96,12 @@ sites:
     premium: 0.17        # "veilingkosten, 17 % opgeld, en BTW"
     vat: 0.21
 
+# Margins and "room to bid" are worked out for the bid you'd have to place now, not the current bid:
+# the starting bid while nobody has bid, else the current bid + one step. Onlineveilingmeester and Plaats Je
+# Bod say the step per lot; for the other sites these usual steps are used: [from this bid, step].
+bidding:
+  steps: [[0, 1], [20, 5], [100, 10], [500, 25], [1000, 50], [5000, 100]]
+
 # The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)
 digest:
   enabled: true
@@ -132,13 +138,22 @@ driving:
   round_trip: true              # there and back
   extra_cost_per_km: 0          # optional wear and tear per km, e.g. 0.05
   include_in_max_bid: true      # count the trip as a cost in margins and suggested max bids
-  # A long drive only for several lots: when the pickup address is more than long_trip_minutes away (one way,
-  # from the closer of your addresses), its lots are only shown if at least long_trip_min_lots lots there
-  # (same address and pickup day) have room to bid, need a bid check (Troostwijk) or are favorites.
-  # The others are hidden on the dashboard ("Show hidden" shows them) and left out of the morning summary.
-  # Set long_trip_minutes: 0 to turn this off.
-  long_trip_minutes: 30
-  long_trip_min_lots: 3
+  # How far you drive for how many lots (one way, from the closer of your addresses): [up to minutes, lots].
+  # Lots count when they have room to bid, need a bid check (Troostwijk) or are favorites, at the same
+  # address on the same pickup day. Further than the last rule: transport (below), or never when that's off.
+  # Lots that don't make it are hidden on the dashboard ("Show hidden" shows them) and left out of the
+  # morning summary; favorites always show.
+  trip_rules:
+    - [30, 1]      # up to 30 min: worth it for a single lot
+    - [90, 3]      # up to 1.5 hours: at least 3 lots
+    - [120, 6]     # up to 2 hours: more than 5 lots
+  # Further than the last trip rule: have a transporter (e.g. Brenger) bring it instead of hiding the lot.
+  # A rough estimate per pickup (same address and day), split over the lots worth collecting there:
+  # first_lot for one lot, + extra_lot for each extra lot. Adjust it once you have a real quote.
+  transport:
+    enabled: true
+    first_lot: 75
+    extra_lot: 25
 
 # Troostwijk lots from Troostwijk's own search-alert emails, forwarded to a separate mailbox that the
 # bot reads (secrets ALERTS_EMAIL and ALERTS_APP_PASSWORD, see README). The bot never visits Troostwijk.
