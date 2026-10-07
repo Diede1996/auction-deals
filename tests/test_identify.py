@@ -134,7 +134,7 @@ def test_short_keywords_match_whole_words_only():
      ["macbook pro 16 m1 max", "macbook pro m1 max"], "MacBook Pro 16 M1 MAX"),
     ("Apple MacBook Air 13 inch M2 2022 8GB", "exact", ["macbook air 13 m2", "macbook air m2"], "MacBook Air 13 M2"),
     ("Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD Radeon RX 5500 4GB Laptop", "general",
-     ["macbook pro 16", "macbook pro intel"], None),
+     ["macbook pro 16 i7", "macbook pro 16"], None),
 ])
 def test_macs_by_chip_and_size(title, kind, searches, model):
     p = plan(WatchItem(name="MacBook", keywords=["macbook"]), title)
@@ -142,13 +142,16 @@ def test_macs_by_chip_and_size(title, kind, searches, model):
 
 
 def test_mac_rules():
-    m1max = plan(WatchItem(name="MacBook", keywords=["macbook"]), "Apple MacBook Pro 16”, Apple M1 Max, 32 GB").rules[0]
+    with_ram, m1max = plan(WatchItem(name="MacBook", keywords=["macbook"]), "Apple MacBook Pro 16”, Apple M1 Max, 32 GB").rules[:2]
+    assert with_ram.matches(normalize("MacBook Pro 16 inch M1 Max 32GB 1TB"))
+    assert not with_ram.matches(normalize('Apple Macbook Pro 16" M1 MAX 64gb'))  # first try the same memory
     assert m1max.matches(normalize("MacBook Pro 16 inch M1 Max 32GB 1TB"))
     assert m1max.matches(normalize('Apple Macbook Pro 16" M1 MAX 64gb'))
     assert not m1max.matches(normalize("Macbook pro 14 m1 max 32gb"))  # other size
     assert not m1max.matches(normalize("MacBook Pro M1 Pro 16 GB 14 inch"))  # 16 GB is memory, not the screen
     intel = plan(WatchItem(name="MacBook", keywords=["macbook"]), "Apple MacBook Pro 16“ Core(TM) i7 9th Gen").rules[0]
-    assert intel.matches(normalize("MacBook Pro 16 inch 2019 i9 32GB"))
+    assert intel.matches(normalize("Zeer goed staat) MacBook Pro 16 inch (2019) - i7"))
+    assert not intel.matches(normalize("MacBook Pro 16 inch 2019 i9 32GB"))  # an i7, not an i9
     assert not intel.matches(normalize("MacBook Pro 16 inch M1 Pro"))
     # an inch mark makes a number a size, not a model code
     assert model_code("Apple MacBook Pro 16” laptop") is None

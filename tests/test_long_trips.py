@@ -4,12 +4,14 @@ from datetime import datetime, timezone
 from scanner.evaluate import Settings, Verdict
 from scanner.geo import Trip
 from scanner.models import Lot, WatchItem
-from scanner.scan import digest_message, too_far
+from scanner.scan import digest_message, lots_needed, too_far, trip_rules
 
 NOW = datetime(2026, 10, 4, 5, 0, tzinfo=timezone.utc)
 ITEM = WatchItem(name="Monitor", keywords=["monitor"])
 TRIPS = {"Zele, België": Trip(km=95, minutes=70, cost=25), "Veghel": Trip(km=12, minutes=15, cost=3),
-         "Gent": Trip(km=60, minutes=45, cost=15)}
+         "Gent": Trip(km=60, minutes=45, cost=15), "Breda": Trip(km=120, minutes=105, cost=30),
+         "Groningen": Trip(km=224, minutes=177, cost=58)}
+RULES = [(30, 1), (90, 3), (120, 6)]
 
 
 def row(key, place, deal=True, when="Mon 19 Oct, 13:00–15:30", email=False):
@@ -24,25 +26,25 @@ def test_far_pickups_need_three_lots():
             row("b1", "Veghel"),                                               # 15 min: always fine
             row("c1", "Gent"), row("c2", "Gent"), row("c3", "Gent", deal=False),
             row("c4", "Gent", deal=False, email=True)]                         # 45 min, 2 deals + 1 to check = 3
-    far = too_far(rows, TRIPS, set(), 30, 3)
-    assert set(far) == {"s:a1", "s:a2"} and far["s:a1"] == (70, 2)
+    far = too_far(rows, TRIPS, set(), RULES)
+    assert set(far) == {"s:a1", "s:a2"} and far["s:a1"] == (70, 2, 3)
     # a favorite counts and is never left out itself
     rows.append(row("a3", "Zele, België", deal=False))
-    assert too_far(rows, TRIPS, {"s:a3"}, 30, 3) == {}
+    assert too_far(rows, TRIPS, {"s:a3"}, RULES) == {}
     # another pickup day at the same address is another trip
     rows2 = [row("a1", "Zele, België"), row("a2", "Zele, België"), row("a3", "Zele, België", when="Tue 20 Oct, 10:00–12:00")]
-    assert set(too_far(rows2, TRIPS, set(), 30, 3)) == {"s:a1", "s:a2", "s:a3"}
+    assert set(too_far(rows2, TRIPS, set(), RULES)) == {"s:a1", "s:a2", "s:a3"}
     # off
-    assert too_far(rows2, TRIPS, set(), 0, 3) == {}
+    assert too_far(rows2, TRIPS, set(), []) == {}
 
 
 def test_digest_leaves_far_lots_out():
     rows = [row("a1", "Zele, België"), row("b1", "Veghel")]
-    far = too_far(rows, TRIPS, set(), 30, 3)
-    text = digest_message(rows, {"s:a1", "s:b1"}, Settings(), NOW, None, trips=TRIPS, far=far, far_rule=(30, 3))
+    far = too_far(rows, TRIPS, set(), RULES)
+    text = digest_message(rows, {"s:a1", "s:b1"}, Settings(), NOW, None, trips=TRIPS, far=far, far_rules=RULES)
     assert "Dell monitor b1" in text and "Dell monitor a1" not in text
     assert "<b>1 with room to bid</b>" in text
-    assert "1 lot with room to bid left out: more than 30 min drive with fewer than 3 lots to collect there" in text
+    assert "Lots with room to bid left out: 1 where too few lots are worth that drive" in text
 
 
 def test_lots_at_one_pickup_share_the_trip():
@@ -73,4 +75,47 @@ def test_lots_at_one_pickup_share_the_trip():
     assert by["d"][1].trip_cost == 6.25 and not by["d"][2].is_deal  # too expensive anyway: as if it were the 4th
     assert by["e"][1].trip_cost == 25.0 and not by["e"][2].is_deal  # another day, another trip
     # a far pickup with 3 lots that share the trip is no longer "too far" (the other day still is)
-    assert too_far(rows, TRIPS, set(), 30, 3).keys() == {"s:e"}
+    assert too_far(rows, TRIPS, set(), RULES).keys() == {"s:e"}
+
+
+def test_how_far_for_how_many_lots():
+    assert [lots_needed(m, RULES) for m in (15, 30, 45, 90, 105, 120, 121, 177)] == [1, 1, 3, 3, 6, 6, None, None]
+    assert trip_rules({"trip_rules": [[90, 3], [30, 1], [120, 6]]}) == RULES
+    assert trip_rules({"long_trip_minutes": 30, "long_trip_min_lots": 3, "max_minutes": 90}) == [(30, 1), (90, 3)]
+    breda5 = [row(f"br{i}", "Breda") for i in range(5)]  # 1h 45m: more than 5 lots needed
+    assert len(too_far(breda5, TRIPS, set(), RULES)) == 5
+    breda6 = breda5 + [row("br5", "Breda")]
+    assert too_far(breda6, TRIPS, set(), RULES) == {}
+    groningen = [row(f"gr{i}", "Groningen") for i in range(10)]  # 2h 57m: never, however many lots
+    far = too_far(groningen, TRIPS, {"s:gr0"}, RULES)
+    assert len(far) == 9 and far["s:gr1"] == (177, 10, None) and "s:gr0" not in far  # the favorite stays
+    text = digest_message(groningen, set(), Settings(), NOW, None, trips=TRIPS, far=far, far_rules=RULES)
+    assert "9 more than 2h 00m drive away" in text
+
+
+def test_transport_beyond_the_last_rule():
+    from scanner.evaluate import Fees, evaluate
+    from scanner.marktplaats import PriceEstimate
+    from scanner.scan import share_trips, transport_cost, transport_settings
+
+    transport = transport_settings({"transport": {"first_lot": 75, "extra_lot": 25}})
+    assert transport == {"first": 75.0, "extra": 25.0} and transport_cost(transport, 3) == 125
+    assert transport_settings({"transport": {"enabled": False}}) is None and transport_settings({}) is None
+    # 2h 57m away: not left out when a transporter can bring it
+    groningen = [row(f"gr{i}", "Groningen") for i in range(2)]
+    assert too_far(groningen, TRIPS, set(), RULES, transport=True) == {}
+    assert len(too_far(groningen, TRIPS, set(), RULES)) == 2
+
+    est = PriceEstimate(median=235, low=200, high=260, count=4, query="makita djr186")
+    settings, fees = Settings(min_margin=0.30, resale_factor=0.85), Fees(premium=0.17, vat=0.21)
+    lots = [Lot("onlineveilingmeester", k, f"Makita DJR186 {k}", "u", 18.0, None, bids=5, next_bid=20.0,
+                pickup="Groningen", pickup_when="Thu 15 Oct, 09:00–15:00", transport=True) for k in "abc"]
+    rows = [(ITEM, x, evaluate(ITEM, x, fees, settings, est), est) for x in lots]
+
+    def cost(place, n):
+        return transport_cost(transport, n)
+
+    rows = share_trips(rows, TRIPS, set(), lambda i, x, e: evaluate(i, x, fees, settings, e), cost)
+    assert [r[1].trip_cost for r in rows] == [41.67, 41.67, 41.67] and rows[0][1].trip_lots == 3  # (75 + 2 x 25) / 3
+    text = digest_message(rows, {"onlineveilingmeester:a"}, Settings(), NOW, None, trips=TRIPS)
+    assert "🚚 transport ≈ " in text and "🚗" not in text
