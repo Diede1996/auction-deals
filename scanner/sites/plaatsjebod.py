@@ -57,6 +57,10 @@ def parse_lots(html: str, auction: Auction) -> list[Lot]:
         bid = parse_money(_text(box.select_one("tr.currentBid big")) or _text(box.select_one("tr.currentBid td")))
         end = _text(box.select_one("tr.endDate span.value"))
         nbids = _text(box.select_one("tr.bidCount td.value"))
+        step = parse_money(_text(box.select_one("tr.increment span.value")) or _text(box.select_one("tr.increment td")))
+        next_bid = None
+        if bid is not None and nbids.isdigit():  # "Verhoging: € 10" once someone has bid
+            next_bid = bid + step if int(nbids) > 0 and step else (bid if int(nbids) == 0 else None)
         img = box.select_one(".main-image img") or box.select_one("img")
         href = link["href"]
         lots.append(Lot(
@@ -69,6 +73,7 @@ def parse_lots(html: str, auction: Auction) -> list[Lot]:
             auction_title=auction.title,
             image=(BASE + img["src"]) if img and img.get("src", "").startswith("/") else (img.get("src") if img else None),
             bids=int(nbids) if nbids.isdigit() else None,
+            next_bid=next_bid,
             location=town_of(auction.pickup),
         ).pickup_from(auction))
     return lots

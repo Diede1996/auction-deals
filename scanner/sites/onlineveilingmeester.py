@@ -94,8 +94,12 @@ def wanted_auction(a: Auction, is_bankruptcy, types: list[str]) -> bool:
 
 def parse_lot(k: dict, auction: Auction) -> Lot:
     bid = k.get("hoogsteBod")
-    if not isinstance(bid, (int, float)) or bid <= 0:
+    step = k.get("verhoging")
+    if isinstance(bid, (int, float)) and bid > 0:  # bid on: the next bid is one step ("verhoging") higher
+        next_bid = float(bid) + float(step) if isinstance(step, (int, float)) and step > 0 else None
+    else:
         bid = k.get("openingsBod")
+        next_bid = float(bid) if isinstance(bid, (int, float)) else None
     images = k.get("imageList") or []
     volg = k.get("volgNummer") or k.get("id")
     has_vat = k.get("btwPercentage") != 0  # 0 = margin scheme (no VAT on the bid)
@@ -110,6 +114,7 @@ def parse_lot(k: dict, auction: Auction) -> Lot:
         auction_title=("Domeinen · " + auction.title) if auction.kind.upper() == "DRZ" else auction.title,
         image=f"{BASE}/images/original/{quote(images[0])}" if images else None,
         bids=k.get("aantalBiedingen"),
+        next_bid=next_bid,
         extra_fee=float(k.get("handelingskosten") or 0),
         premium=premium,
         vat=vat,
