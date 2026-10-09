@@ -37,8 +37,11 @@ class Telegram:
 
     def send(self, text: str, chat_id: str | None = None, preview: bool = False) -> None:
         chat = chat_id or self.chat_id
-        if self.dry_run or not chat:
+        if self.dry_run:
             print("\n[telegram]\n" + text)
+            return
+        if not chat:  # not printed instead: the GitHub Actions log is public, and messages can be private
+            log.warning("Telegram is not set up (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID): message not sent")
             return
         for chunk in _chunks(text, 4000):
             self._call("sendMessage", {"chat_id": chat, "text": chunk, "parse_mode": "HTML",

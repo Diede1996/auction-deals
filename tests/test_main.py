@@ -389,3 +389,108 @@ def test_digest_links_troostwijk_saved_searches(repo, monkeypatch):
     tg = FakeTelegram()
     assert run_scan(repo, NOW + timedelta(days=1), http_cls=lambda **kw: NoRequests([]), telegram_cls=tg) == 0
     assert "saved searches" not in tg.sent[-1]  # each email once
+
+
+def followed_mails(notice=False):
+    """Reminders about lots with a heart on Troostwijk; notice=True: outbid emails instead, as many."""
+    from test_mail_alerts import TW, _mail, favourite_html
+    lots = [("A1-50252-54", "Samsonite Upscape Spinner 55/20 EXP 45L Reiskoffer", "24 sep om 19:30", "Lochem, NL"),
+            ("A1-50047-354", "Apple iPhone 13 128GB zwart", "23 sep om 20:00", "Lochem, NL"),
+            ("A1-50047-355", "Apple iPhone 13 hoesje", "23 sep om 21:00", "Lochem, NL"),  # excluded on the watchlist
+            ("A1-50047-356", "Lenovo ThinkPad T470 laptop", "23 sep om 18:00", "Lochem, NL"),  # 2017: still shown
+            ("A1-50047-357", "Heftruck", "24 sep om 10:00", "Lochem, NL")]  # shorter than "Plaats je bod"
+    if notice:
+        return [_mail(f"<p>Je bent overboden.</p>", subject=f"Je bent overboden op: kavel {n}",
+                      date="Tue, 22 Sep 2026 19:30:00 +0200") for n in range(len(lots))]
+    return [_mail(favourite_html(f"{TW}/nl/l/{lot_id}", title, f"Sluiting: {when}", town),
+                  subject=f"Je favoriete kavel sluit binnenkort: {title}", date="Tue, 22 Sep 2026 19:30:00 +0200")
+            for lot_id, title, when, town in lots]
+
+
+def followed_scan(root, monkeypatch, mails, tg=None):
+    from test_mail_alerts import FakeIMAP
+    from scanner.mail_alerts import Mailbox
+    FakeIMAP.mails = mails
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+
+    def marktplaats(m, u, kw):
+        if "samsonite" in u.lower():  # a failed search must not name the lot in the (public) Actions log
+            raise RuntimeError(f"HTTP 500 for {u}")
+        return {"listings": MP}
+
+    lochem = (url_has("nominatim.openstreetmap.org", "Lochem"), [{"lat": "52.16", "lon": "6.41"}])
+    routes = [(url_has("marktplaats.nl/lrp/api/search"), marktplaats), lochem] + geo_routes()
+    tg = tg or FakeTelegram()
+    # a new client per use, as in the real scan, so the request counts are those of a real run
+    assert run_scan(root, NOW, http_cls=lambda **kw: FakeHttp(routes), telegram_cls=tg) == 0
+    return tg
+
+
+PUBLIC = ("data/state.json", "data/lots.json", "data/latest.md", "site/index.html")
+
+
+def test_lots_you_follow_on_troostwijk_are_priced_in_telegram_only(repo, monkeypatch, caplog, tmp_path_factory):
+    monkeypatch.setenv("HOME_ADDRESS", "Dorpsstraat 1, Veghel")
+    other = tmp_path_factory.mktemp("notices")
+    shutil.copytree(repo, other, dirs_exist_ok=True)
+    with caplog.at_level("INFO"):
+        tg = followed_scan(repo, monkeypatch, followed_mails())
+    digest = tg.sent[0]
+    part = digest[digest.index("❤️ <b>Lots you follow on Troostwijk</b>"):]
+    titles = ["ThinkPad", "Apple iPhone 13 128GB zwart", "Apple iPhone 13 hoesje", "Heftruck", "Samsonite"]
+    assert [part.index(t) for t in titles] == sorted(part.index(t) for t in titles)  # the first to close first
+    assert "128GB zwart</a>\n   bid up to <b>€" in part and "closes Wed 20:00 · 🚗 40 km" in part
+    assert "hoesje</a>\n   no Marktplaats price found · closes Wed 21:00" in part  # not priced as a phone
+    assert "Samsonite Upscape Spinner 55/20 EXP 45L Reiskoffer</a>\n   no Marktplaats price found · closes Thu 19:30" in part
+    assert "Nothing else on your watchlist" in digest
+    # nothing about the lots you follow in the public repository, dashboard or log
+    public = "\n".join((repo / p).read_text() for p in PUBLIC) + caplog.text
+    for word in ("samsonite", "128gb", "zwart", "hoesje", "heftruck", "thinkpad", "a1-500", "lochem", "favoriete"):
+        assert word not in public.lower(), word
+    # not even indirectly: the public files are the same as after as many emails about something else
+    followed_scan(other, monkeypatch, followed_mails(notice=True))
+    for p in PUBLIC:
+        assert (repo / p).read_text() == (other / p).read_text(), p
+
+
+def test_lots_you_follow_are_not_printed_without_telegram(repo, monkeypatch, capsys):
+    from scanner.telegram import Telegram
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "")
+    followed_scan(repo, monkeypatch, followed_mails(), tg=Telegram)
+    assert "Samsonite" not in capsys.readouterr().out  # the Actions log is public
+
+
+def test_followed_lot_on_the_dashboard_gets_the_reminders_closing_time(repo, monkeypatch):
+    from test_mail_alerts import BYLDIS_HTML, TW, FakeIMAP, NoRequests, _mail, favourite_html
+    from scanner.mail_alerts import Mailbox
+    (repo / "watchlist.yml").write_text(yaml.safe_dump({"items": [{"name": "Monitor", "keywords": ["monitor"]}]}))
+    FakeIMAP.mails = [_mail(BYLDIS_HTML, sender="Diede <me@gmail.com>", date="Mon, 28 Sep 2026 17:16:00 +0200"),
+                      _mail(favourite_html(f"{TW}/nl/l/A1-50252-117", "HP Elite E241i Monitor (2x)",
+                                           "Sluiting: 7 okt om 19:30", "Veldhoven, NL"),
+                            subject="Je favoriete kavel sluit binnenkort: HP Elite E241i Monitor (2x)",
+                            date="Tue, 06 Oct 2026 19:30:00 +0200")]
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+    hp = [mp_listing(f"HP EliteDisplay E241i 24 inch monitor {i}", c) for i, c in enumerate([4500, 5000, 5500, 6000])]
+
+    class Http(NoRequests):
+        def request(self, method, url, **kw):
+            return FakeResponse({"listings": hp})
+
+    tg = FakeTelegram()
+    assert run_scan(repo, datetime(2026, 10, 7, 4, 20, tzinfo=timezone.utc), http_cls=lambda **kw: Http([]),
+                    telegram_cls=tg) == 0
+    part = tg.sent[-1][tg.sent[-1].index("❤️"):]
+    assert "HP Elite E241i Monitor (2x)</a>\n   bid up to <b>€" in part and "closes Wed 19:30" in part
+    _, data = page_data(repo)  # the dashboard keeps the closing day of the announcement
+    tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
+    assert [(l["title"], l["closes"], l["closesDay"]) for l in tw] == [("HP Elite E241i Monitor (2x)", None, "2026-10-07")]
+
+
+def test_telegram_without_a_chat_prints_nothing(capsys):
+    from scanner.telegram import Telegram
+    Telegram(FakeHttp([]), "123:abc", None).send("❤️ Samsonite")  # not set up: the Actions log is public
+    assert capsys.readouterr().out == ""
+    Telegram(FakeHttp([]), "123:abc", None, dry_run=True).send("❤️ Samsonite")  # --dry-run on your own computer
+    assert "Samsonite" in capsys.readouterr().out

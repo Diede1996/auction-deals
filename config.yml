@@ -21,6 +21,17 @@ auction_keywords:
   - stopzetting
   - faling             # Flemish for bankruptcy ("uit diverse falingen")
   - curatele
+  # closures (Troostwijk names these auctions "Factory closure ..." or "Bedrijfssluiting ..."; not the bare
+  # word "closure", which is also in "enclosure" and "disclosure")
+  - bedrijfssluiting
+  - fabriekssluiting
+  - winkelsluiting
+  - factory closure
+  - business closure
+  - site closure
+  - plant closure
+  - store closure
+  - shop closure
   # estates and house clearances
   - nalatenschap       # also "nalatenschappen"
   - erfenis
@@ -173,6 +184,10 @@ troostwijk_alerts:
   # or from extra_auctions when that's on, so "Computers, Tablets, ..." counts as an IT auction). Set this to
   # false to see all of Troostwijk's auctions. Lots whose auction the email doesn't name are always shown.
   only_bankruptcy: true
+  # Lots you put a heart on at Troostwijk: it emails you a reminder before they close ("Je favoriete kavel
+  # sluit binnenkort"). Those lots are priced in the Telegram digest only, never on the public dashboard.
+  # At most this many new Marktplaats searches per scan for them.
+  followed_lookups: 10
 
 # The description of lots on your watchlist, for sites whose lot list doesn't have it: the bot reads it on the
 # lot page once. It gives the model when the title doesn't ("2 x Dell 24 inch monitor" -> "type U2419 HC"), a

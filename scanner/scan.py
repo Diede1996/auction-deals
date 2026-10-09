@@ -1,12 +1,14 @@
 """The daily scan: scrape the auction sites, price the matches, build the dashboard, send a digest."""
 from __future__ import annotations
 
+import dataclasses
 import hashlib
 import json
 import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from contextlib import contextmanager
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -17,7 +19,7 @@ from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
 from .bidding import fill_next_bids, parse_steps
 from .details import fill_descriptions, fill_start_prices
-from .identify import mac_plan, model_code, phone_plan, plan_for, quantity
+from .identify import brand_in, mac_plan, model_code, phone_plan, plan_for, quantity, useful_tokens
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .age import age_filter, too_old
@@ -29,7 +31,7 @@ from .sites import SITE_NAMES, SITES
 from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
 from .telegram import Telegram, attr, esc
-from .util import AMS, fmt_eur
+from .util import AMS, fmt_eur, normalize, phrase_in
 
 log = logging.getLogger("scanner")
 
@@ -44,6 +46,42 @@ def units_of(lot: Lot, max_units: int = 0) -> int:
 
 
 # ---------------------------------------------------------------- scraping
+
+def closes_by(lot: Lot, later: datetime) -> datetime:
+    """When a lot closes, so the lots closing first get the Marktplaats searches first. A lot with only a
+    closing day (Troostwijk emails) counts as closing at the end of that day."""
+    if lot.closes_at:
+        return lot.closes_at
+    if lot.closes_day:
+        day = date.fromisoformat(lot.closes_day)
+        return datetime(day.year, day.month, day.day, 23, 59, tzinfo=AMS)
+    return later
+
+
+@contextmanager
+def quiet_logs(*names: str):
+    """No log lines from these modules for a while: the GitHub Actions log is public, and a failed search
+    would otherwise name the lot you follow."""
+    loggers = [logging.getLogger(n) for n in names]
+    before = [lg.disabled for lg in loggers]
+    for lg in loggers:
+        lg.disabled = True
+    try:
+        yield
+    finally:
+        for lg, was in zip(loggers, before):
+            lg.disabled = was
+
+
+PRIVATE_LOGS = ("scanner.http", "scanner.pricing", "scanner.marktplaats", "scanner.geo")
+
+
+def followed_item(title: str) -> WatchItem | None:
+    """A watchlist item for a lot you follow on Troostwijk that isn't on your watchlist: its brand, or else its
+    first real word, so the Marktplaats search is built from the title like for any other lot."""
+    word = brand_in(title) or next((t for _, t in useful_tokens(title) if t.isalpha() and len(t) >= 3), None)
+    return WatchItem(name="Troostwijk favourite", keywords=[word]) if word else None
+
 
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,
                only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
@@ -129,6 +167,15 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
             f"{SITE_NAMES.get(lot.site, lot.site)} · {when}{drive}")
 
 
+def _heart_line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = None,
+                trips: dict | None = None) -> str:
+    if v.max_bid is None:
+        local = lot.closes_at.astimezone(AMS) if lot.closes_at else None
+        when = local.strftime("%a %H:%M") if local else (closing_day(lot) or "?")
+        return f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n   no Marktplaats price found · closes {when}'
+    return _line(item, lot, v, est, trips)
+
+
 def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: str = "today") -> str | None:
     """⭐ section: favorites that close before midnight (Dutch time)."""
     lots_by_key = {lot.key: {"closes": lot.closes_at.isoformat() if lot.closes_at else None} for _, lot, _, _ in rows}
@@ -153,7 +200,8 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
 def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now: datetime, url: str | None,
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
                    trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen",
-                   far: dict | None = None, far_rules: list | None = None) -> str:
+                   far: dict | None = None, far_rules: list | None = None, hearts: list[Row] | None = None,
+                   heart_trips: dict | None = None) -> str:
     far = far or {}
     deals = [r for r in rows if r[2].is_deal and r[1].key not in far]
     day = now.astimezone(AMS).strftime("%a %d %b")
@@ -163,6 +211,10 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
             f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
             f"with at least {settings.min_margin:.0%} margin</i>"]
     parts = ["\n".join(head)] + list(notes or [])
+    if hearts:  # lots with a heart on Troostwijk that close soon (Troostwijk emails a reminder about them)
+        parts.append("❤️ <b>Lots you follow on Troostwijk</b> · <i>check the current bid on the lot page</i>\n" +
+                     "\n".join(_heart_line(i, l, v, e, {**(heart_trips or {}), **(trips or {})})
+                               for i, l, v, e in hearts[:per_section]))
     fav_part = favorites_message(favs or [], rows, now)
     if fav_part:
         parts.append(fav_part)
@@ -182,7 +234,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append("🔎 <b>New from Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
                      "\n".join(_line(i, l, v, e, trips) for i, l, v, e in check[:per_section]))
     if not rows:
-        parts.append(f"Nothing on your watchlist is in a running {kinds} auction today.")
+        parts.append(f"Nothing {'else ' if hearts else ''}on your watchlist is in a running {kinds} auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
     over = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is None)
@@ -457,7 +509,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    tg = telegram_cls(http_cls(delay=0.5), token, chat_id, dry_run=dry_run or not (token and chat_id))
+    tg = telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run)
 
     drv_cfg = config.get("driving") or {}
     items = [i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords]
@@ -529,6 +581,22 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         old_lots = len(matched) - len(kept)
         matched = kept
         log.info("%d Apple/laptop/phone lots from before %d left out", old_lots, min_year)
+    # 1f. lots you follow on Troostwijk (the heart): priced for the Telegram digest only, so the public
+    # dashboard and repository never show what you follow. Like favorites, the filters above don't hide them.
+    followed = list((mail_report or {}).get("followed") or []) if dry_run or (token and chat_id) else []
+    on_list = {lot.key for _, lot in matched}
+    to_price: list[tuple[WatchItem, Lot]] = []
+    unpriced: list[tuple[WatchItem, Lot]] = []  # an accessory your watchlist excludes ("iPhone 13 hoesje")
+    for lot in followed:
+        if lot.key in on_list:
+            continue  # already on the dashboard: that row is reused
+        listed = next((i for i, _ in match_lots(items, [lot])), None)
+        item = listed or followed_item(lot.title)
+        if not item:
+            continue
+        text = normalize(lot.title)
+        excluded = not listed and any(any(phrase_in(k, text) for k in i.keywords) for i in items)
+        (unpriced if excluded else to_price).append((item, lot))
     if not only or set(only) - {"troostwijk"}:
         read = fill_start_prices(matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
                                  state.setdefault("start_prices", {}), now)
@@ -547,20 +615,36 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                "extraPerKm": float(drv_cfg.get("extra_cost_per_km", 0) or 0),
                "tripRules": trip_rules(drv_cfg), "transport": transport_settings(drv_cfg)}
     places = {p: lot.pickup_latlon for _, lot in matched if (p := pickup_place(lot))}
-    if driving["enabled"] and (home or home2) and places:
-        price, source = fuel_price(geo_http, state, now, drv_cfg.get("fuel_price", "auto"),
-                                   float(drv_cfg.get("fuel_price_fallback", 2.108)))
+    # towns only lots you follow are in: looked up on a copy of the saved map lookups, so they stay private
+    heart_places = {p: lot.pickup_latlon for _, lot in to_price if (p := pickup_place(lot)) and p not in places}
+    heart_trips: dict = {}
+    private_requests = 0  # requests for the lots you follow, left out of the public request count
+    if driving["enabled"] and (home or home2) and (places or heart_places):
+        before = geo_http.request_count
+        # only for lots you follow: the saved fuel price isn't refreshed, so state.json doesn't change for them
+        price, source = fuel_price(geo_http, state if places else {"fuel": dict(state.get("fuel") or {})}, now,
+                                   drv_cfg.get("fuel_price", "auto"), float(drv_cfg.get("fuel_price_fallback", 2.108)))
+        if not places:
+            private_requests += geo_http.request_count - before
         costs = DrivingCosts(km_per_liter=driving["kmpl"], fuel_price=price, round_trip=driving["roundTrip"],
                              extra_per_km=driving["extraPerKm"])
         repo = os.environ.get("GITHUB_REPOSITORY", "")
-        planner = TripPlanner(geo_http, state.setdefault("geo", {}), now, costs, home,
+        geo_cache = state.setdefault("geo", {}) if places else dict(state.get("geo") or {})
+        planner = TripPlanner(geo_http, geo_cache, now, costs, home,
                               user_agent=f"auction-deals-bot (github.com/{repo})" if repo else "auction-deals-bot",
                               second_address=home2)
-        trips = planner.plan(places)
-        planner.prune()
-        driving.update(fuel=price, fuelSource=source, error=planner.error)
-        for _, lot in matched:
-            trip = trips.get(pickup_place(lot) or "")
+        if places:
+            trips = planner.plan(places)
+            planner.prune()
+            driving.update(fuel=price, fuelSource=source, error=planner.error)
+        if heart_places:
+            before = geo_http.request_count
+            with quiet_logs(*PRIVATE_LOGS):
+                heart_trips = TripPlanner(geo_http, dict(planner.cache), now, costs, home,
+                                          user_agent=planner.user_agent, second_address=home2).plan(heart_places)
+            private_requests += geo_http.request_count - before
+        for _, lot in matched + to_price:
+            trip = trips.get(pickup_place(lot) or "") or heart_trips.get(pickup_place(lot) or "")
             lot.trip_cost = round(trip.cost, 2) if trip else None
             if trip and driving["transport"] and lots_needed(trip.minutes, driving["tripRules"]) is None:
                 lot.transport = True  # too far to drive: count a transporter instead of fuel
@@ -578,7 +662,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                          enabled=mp_cfg.get("enabled", True))
     site_fees = {s: Fees.from_dict(c) for s, c in (config.get("sites") or {}).items()}
     rows: list[Row] = []
-    for item, lot in sorted(matched, key=lambda m: m[1].closes_at or horizon):
+    for item, lot in sorted(matched, key=lambda m: closes_by(m[1], horizon)):
         trip = trips.get(pickup_place(lot) or "")
         beyond = bool(trip and lots_needed(trip.minutes, driving["tripRules"]) is None and lot.key not in fav_keys
                       and not driving["transport"])
@@ -596,6 +680,31 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
 
         rows = share_trips(rows, trips, fav_keys, lambda item, lot, est: evaluate(
             item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)), group_cost)
+
+    # 3c. the lots you follow. One already on the dashboard keeps its row, with the reminder's exact closing time
+    # (on a copy); the others are priced on a copy of the saved prices, so no search for them ends up in the
+    # public repository
+    by_key = {lot.key: lot for lot in followed}
+    hearts: list[Row] = [
+        (i, dataclasses.replace(l, closes_at=f.closes_at or l.closes_at,
+                                closes_day=None if f.closes_at else l.closes_day), v, e)
+        for i, l, v, e in rows if (f := by_key.get(l.key))]
+    for item, lot in unpriced:
+        hearts.append((item, lot, evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, None), None))
+    if to_price:
+        before = http.request_count
+        private = PriceFinder(http, dict(state.get("price_cache") or {}), now, cache_days=cache_days,
+                              stale_days=finder.stale_days, min_listings=finder.min_listings,
+                              min_listings_exact=finder.min_listings_exact,
+                              max_lookups=int(mail_cfg.get("followed_lookups", 10)), enabled=finder.enabled)
+        private.blocked = finder.blocked
+        with quiet_logs(*PRIVATE_LOGS):
+            for item, lot in to_price:
+                est = private.for_lot(item, lot)
+                verdict = evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units))
+                hearts.append((item, lot, verdict, est))
+        private_requests += http.request_count - before
+    hearts.sort(key=lambda r: closes_by(r[1], horizon))
     notes = []
     if defect_lots:
         notes.append(f"<i>🔧 {defect_lots} lot{'s' if defect_lots != 1 else ''} with a defect left out "
@@ -662,7 +771,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]))
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
                                    favs=favs, trips=trips, kinds=auction_kinds(config), far=far,
-                                   far_rules=driving["tripRules"]))
+                                   far_rules=driving["tripRules"], hearts=hearts, heart_trips=heart_trips))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
     elif favs:
@@ -679,7 +788,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             log.warning("could not send a warning: %s", e)
 
     deals = sum(1 for r in rows if r[2].is_deal)
-    requests = site_requests + http.request_count + geo_http.request_count
+    requests = site_requests + http.request_count + geo_http.request_count - private_requests
     state["last_run"] = {"at": now.isoformat(), "lots": len(lots), "matches": len(rows), "deals": deals,
                          "new": len(new_keys), "requests": requests,
                          "too_old": old_lots, "defects": defect_lots}

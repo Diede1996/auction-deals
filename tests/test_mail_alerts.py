@@ -92,8 +92,8 @@ def test_collect_remembers_lots_until_they_close():
     state = {}
     lots, report = collect(box, RedirectHttp([]), state, NOW)
     assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 0, "no_lots": 1, "new": 3, "lots": 3,
-                      "other_auctions": 0, "unreadable_emails": [],
-                      "saved_searches": []}  # an auction announcement without lots is fine
+                      "other_auctions": 0, "notices": 0, "unreadable_emails": [], "saved_searches": [],
+                      "followed": []}  # an auction announcement without lots is fine
     drill = next(l for l in lots if l.lot_id == "A1-51234-17")
     assert drill.site == "troostwijk" and drill.current_bid == 45.0 and drill.location == "Purmerend"
     assert drill.auction_title == "Troostwijk alert of 27 Sep" and drill.key == "troostwijk:A1-51234-17"
@@ -214,7 +214,8 @@ def test_collect_forwarded_auction_alert():
     state = {}
     lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=1))
     assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "no_lots": 0, "new": 9, "lots": 9,
-                      "other_auctions": 0, "unreadable_emails": [], "saved_searches": []}
+                      "other_auctions": 0, "notices": 0, "unreadable_emails": [], "saved_searches": [],
+                      "followed": []}
     hp = next(l for l in lots if l.lot_id == "A1-50252-117")
     assert hp.closes_at is None and hp.location == "Veldhoven" and hp.current_bid == 10.0
     assert hp.auction_title.endswith("Kantoorinventaris") and hp.closes_day == "2026-10-07"
@@ -337,3 +338,127 @@ def test_saved_search_email_gives_search_links_not_a_warning():
     assert "festool" not in str(state) and "opgeslagen" not in str(state)  # only a hash (public repository)
     _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=12))
     assert report["saved_searches"] == [] and report["unreadable"] == 0  # passed on once
+
+
+# Troostwijk's reminder about a lot with a heart, as in Diede's emails of 5 Oct (and the 5-hour one of 20 Jul)
+def favourite_html(lot_url, title, closing="Sluiting: 7 okt om 19:30", town="Lochem, NL"):
+    link = exponea(lot_url)
+    aid = lot_url.rsplit("/", 1)[-1].rsplit("-", 1)[0]
+    return f"""<table><tr><td><a href="{exponea(TW + '/?utm_content=Header_Logo')}"><img alt="Troostwijk"></a>
+      <a href="{exponea(TW + '/auctions?utm_content=Header_all_auctions')}">Alle veilingen</a></td></tr>
+    <tr><td><h1>Je favoriete kavel sluit morgen</h1><p>Er is nog tijd om een bod te plaatsen.</p><p>{closing}</p></td></tr>
+    <tr><td><table><tr><td><a href="{link}"><img src="https://media.tbauctions.com/image-media/abc/file" alt=""></a></td></tr>
+      <tr><td><h3><a href="{link}">{title}</a></h3></td></tr>
+      <tr><td><a href="{link}">Plaats je bod</a></td></tr>
+      <tr><td>{town}</td><td>{aid}</td><td>7 okt 2026</td></tr></table></td></tr>
+    <tr><td><a href="{exponea('https://cdn.eu1.exponea.com/troostwijk-prod/e/Cgxmk0000/consent?lang=nl')}">Uitschrijven</a>
+    </td></tr></table>"""
+
+
+def test_closing_time_without_a_year():
+    from scanner.mail_alerts import close_without_year
+    from scanner.util import AMS
+    sent = datetime(2026, 10, 5, 19, 33, tzinfo=timezone.utc)
+    assert close_without_year("Sluiting: 6 okt om 20:33", sent) == datetime(2026, 10, 6, 20, 33, tzinfo=AMS)
+    assert close_without_year("Nog maar 5 uur te gaan!\n20 Jul 10:58 CEST", datetime(2026, 7, 20, 3, 58, tzinfo=timezone.utc)) \
+        == datetime(2026, 7, 20, 10, 58, tzinfo=AMS)
+    assert close_without_year("Sluiting: 2 jan om 10:00", datetime(2026, 12, 31, 9, 0, tzinfo=timezone.utc)) \
+        == datetime(2027, 1, 2, 10, 0, tzinfo=AMS)
+    assert close_without_year("Lochem, NL A1-50047 6 okt 2026", sent) is None  # a day, no time
+
+
+def test_lots_you_follow_are_passed_on_but_never_stored():
+    fav_known = f"{TW}/nl/l/A1-50252-54"  # a lot of the Byldis auction, which an announcement named
+    fav_new = f"{TW}/nl/l/A1-50047-354"  # an auction no announcement named
+    FakeIMAP.mails = [
+        _mail(BYLDIS_HTML, subject="Faillissement Byldis Prefab B.V.", date="Thu, 24 Sep 2026 11:09:00 +0200"),
+        _mail(favourite_html(fav_known, "Ahrend Duo zit-sta bureau", town="Veldhoven, NL"),
+              subject="Je favoriete kavel sluit binnenkort: Ahrend Duo zit-sta bureau",
+              date="Mon, 05 Oct 2026 21:33:15 +0200"),
+        _mail(favourite_html(fav_new, "Samsonite Upscape Spinner 55/20 EXP 45L Reiskoffer", "Sluiting: 6 okt om 20:33"),
+              subject="Je favoriete kavel sluit binnenkort: Samsonite Upscape Spinner 55/20 EXP 45L Reiskoffer",
+              date="Mon, 05 Oct 2026 20:33:15 +0200"),
+        _mail(f'<p>Het huidige hoogste bod is 100.00 €.</p><a href="{exponea(TW + "/nl/l/A1-49990-301")}">Bekijk kavel</a>',
+              subject="Je bent overboden op: Bosch GBH 2-28", date="Mon, 05 Oct 2026 18:00:00 +0200"),
+        _mail("<p>Je kunt je kavels ophalen op dinsdag.</p>", subject="Afhaalgegevens",
+              date="Sun, 04 Oct 2026 07:02:00 +0200"),
+    ]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    state = {"troostwijk_alerts": {"lots": {"A1-48495-1": {  # stored from a notification before 9 Oct
+        "auction": "De directe verkoop loopt volgende week af - Rimas", "bankrupt": False, "title": "Rig",
+        "url": f"{TW}/nl/l/A1-48495-1", "first": NOW.isoformat(), "seen": NOW.isoformat()}}}}
+    now = datetime(2026, 10, 6, 4, 20, tzinfo=timezone.utc)
+    lots, report = collect(box, NoRequests([]), state, now, is_bankruptcy=lambda t: "faillissement" in t.lower(),
+                           only_bankruptcy=True)
+    assert report["notices"] == 4 and report["unreadable"] == 0 and report["unreadable_emails"] == []
+    hearts = {lot.lot_id: lot for lot in report["followed"]}
+    assert list(hearts) == ["A1-50047-354", "A1-50252-54"]  # the one closing first comes first
+    sam = hearts["A1-50047-354"]
+    assert sam.title == "Samsonite Upscape Spinner 55/20 EXP 45L Reiskoffer" and sam.location == "Lochem"
+    assert sam.closes_at.isoformat() == "2026-10-06T20:33:00+02:00" and sam.bid_from_email and sam.current_bid is None
+    desk = hearts["A1-50252-54"]
+    assert desk.auction_title.startswith("Faillissement Byldis") and desk.location == "Veldhoven"
+    assert desk.closes_at.isoformat() == "2026-10-07T19:30:00+02:00"
+    # the announcement's record is untouched: still a bankruptcy lot on the dashboard
+    stored = state["troostwijk_alerts"]["lots"]
+    assert stored["A1-50252-54"]["bankrupt"] is True and stored["A1-50252-54"]["auction"].startswith("Faillissement")
+    assert any(lot.lot_id == "A1-50252-54" for lot in lots)
+    # nothing about the lots you follow or bid on is stored (the repository is public), and the old record is gone
+    assert set(stored) == {f"A1-50252-{n}" for n, _ in BYLDIS}
+    for word in ("favoriete", "Samsonite", "overboden", "Bosch", "A1-49990", "A1-50047", "directe"):
+        assert word not in str(state)
+
+    # after it closed, a lot you follow is no longer passed on
+    _, report = collect(box, NoRequests([]), state, datetime(2026, 10, 7, 4, 20, tzinfo=timezone.utc))
+    assert [lot.lot_id for lot in report["followed"]] == ["A1-50252-54"]
+
+
+def test_which_subjects_are_about_one_lot_of_yours():
+    from scanner.mail_alerts import _NOTICE
+    yours = ["Je favoriete kavel sluit binnenkort: Samsonite Essens Spinner 75/28 111L Reiskoffer",
+             "Laatste kans om te bieden op: Asus - Pro Art - PA278CFRV - Monitor",
+             "Je bent overboden op: Bosch GBH 2-28", "Je hebt kavel: Wilkhahn Bureaustoel gewonnen",
+             "Gefeliciteerd! Je hebt kavel A1-37124-15 Outdoor eettafel gewonnen",
+             "Je hebt een bod geplaatst van 200.00 EUR op kavel A1-36953-495 Rivièra Maison Bedford XL Buffetkast",
+             "Je aankoop staat klaar voor betaling", "Bedankt, je hebt betaald!"]
+    auctions = ["Laatste kans: fabriekssluiting CERATIZIT – verzeker u nu van premium machines",
+                "Laatste kans! Premium Duitse kavels geselecteerd voor jou deze week",
+                "Laatste kans - Fendt Vario Profiplus All-wheel Drive Tractoren - Bekijk veiling",
+                "Faillissement Byldis Prefab B.V.", "Nieuwe kavels voor jouw zoekopdracht"]
+    assert [s for s in yours if not _NOTICE.match(s)] == []
+    assert [s for s in auctions if _NOTICE.match(s)] == []
+
+
+def test_emails_about_your_lots_never_open_a_tracking_link():
+    from scanner.mail_alerts import collect
+    tracker = "https://click.mail.example.net/ls/click?upn=abc123"  # can only be read by opening it
+    FakeIMAP.mails = [
+        _mail(f'<p>Je bent overboden.</p><a href="{tracker}">Bekijk kavel</a>',
+              subject="Je bent overboden op: Bosch GBH 2-28", date="Mon, 05 Oct 2026 18:00:00 +0200"),
+        _mail(favourite_html(f"{TW}/nl/l/A1-50047-354", "Samsonite Upscape Spinner").replace(
+            exponea(f"{TW}/nl/l/A1-50047-354"), tracker),
+            subject="Je favoriete kavel sluit binnenkort: Samsonite Upscape Spinner",
+            date="Mon, 05 Oct 2026 20:33:15 +0200"),
+    ]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    state: dict = {}
+    now = datetime(2026, 10, 6, 4, 20, tzinfo=timezone.utc)
+    opened = []
+
+    class Spy(NoRequests):
+        def request(self, method, url, **kw):
+            opened.append(url)
+            return super().request(method, url, **kw)
+
+    _, report = collect(box, Spy([]), state, now)
+    assert opened == [] and report["notices"] == 2 and report["followed"] == []
+    # the reminder's lot couldn't be read: said once in Telegram (subject), never stored
+    assert [e["subject"] for e in report["unreadable_emails"]] == ["Je favoriete kavel sluit binnenkort: Samsonite Upscape Spinner"]
+    assert "Samsonite" not in str(state) and "click.mail" not in str(state)
+    _, report = collect(box, NoRequests([]), state, now)
+    assert report["unreadable_emails"] == []
+
+
+def test_short_lot_title_is_not_the_bid_button():
+    lots = parse_email_html(favourite_html(f"{TW}/nl/l/A1-50047-357", "Heftruck"), None)
+    assert [(l["lot_id"], l["title"]) for l in lots] == [("A1-50047-357", "Heftruck")]

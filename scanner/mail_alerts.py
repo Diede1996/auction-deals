@@ -13,6 +13,9 @@ lot on the dashboard, with a Marktplaats price and a max bid like any other lot.
 - The auction block at the top of an alert (name, place, closing day) is copied onto its lots.
 - The weekly saved-search email ("Je opgeslagen zoekopdrachten") holds no lots, only a link per search
   term to Troostwijk's search page. Those links go into the Telegram digest so you can tap through yourself.
+- Notifications about one lot ("Je favoriete kavel sluit binnenkort: …", "Je bent overboden op: …") name a
+  lot you follow or bid on, so they are never stored and their subject is never used. Lots you follow (the
+  heart on Troostwijk) are passed on to the scan for the Telegram digest only.
 - Lots are remembered in data/state.json until they close, or `keep_days` after the last alert when the
   email doesn't say when they close. Emails themselves are never stored (the repository is public).
 """
@@ -36,7 +39,7 @@ from bs4 import BeautifulSoup
 from bs4.element import NavigableString
 
 from .models import Lot
-from .util import AMS, parse_dutch_datetime, parse_money
+from .util import AMS, month_number, parse_dutch_datetime, parse_money
 
 log = logging.getLogger(__name__)
 
@@ -46,7 +49,8 @@ _LOT_RE = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com(?:/[a-z]{2})?/
 _AUCTION_RE = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com(?:/[a-z]{2})?/a/([^\s\"'<>?#&/]+)", re.I)
 _DISPLAY_ID = re.compile(r"([A-Z]\d{1,2}-\d+-\d+)$")
 _AUCTION_ID = re.compile(r"([A-Z]\d{1,2}-\d+)$")
-_GENERIC = re.compile(r"^(bekijk|bied|bieden|view|bid|see|more|meer|lees|open|kavel|lot|klik|click|hier|here)\b", re.I)
+_GENERIC = re.compile(r"^(?:(?:bekijk|bied|bieden|view|bid|see|more|meer|lees|open|kavel|lot|klik|click|hier|here)\b|"
+                      r"(?:plaats|doe) (?:je|een|uw) bod\b|place (?:your|a) bid\b)", re.I)  # buttons, not titles
 # links the bot must never "click", not even to see where they go
 _NO_CLICK = re.compile(r"unsubscri|uitschrijv|afmeld|opt-?out|consent|preferen|voorkeur|privacy|manage", re.I)
 _B64_CHUNK = re.compile(r"[A-Za-z0-9_-]{24,}")
@@ -55,15 +59,26 @@ _URL_CHARS = re.compile(rb"https?://[\x21-\x7e]+")
 _DATE_RE = re.compile(r"\b(\d{1,2}\s+[A-Za-z]{3,9}\.?\s+\d{4})(?:[^\d\n]{0,12}?(\d{1,2}:\d{2}))?")
 _SEARCH_PATH = re.compile(r"^(?:/[a-z]{2})?/search/?$", re.I)
 _SITE_URL = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com[^\s\"'<>]*", re.I)
+# Troostwijk's notifications about one lot you follow, bid on or bought. Their subject names that lot, so it is
+# never used as an auction name or stored (the repository is public).
+# Not "Laatste kans: fabriekssluiting ..." or "Laatste kans! Premium Duitse kavels ...": those are auctions.
+_NOTICE = re.compile(r"^(?:gefeliciteerd!?\s*)?(?:je favoriete kavel|laatste kans om te bieden|je bent overboden|"
+                     r"bod geplaatst|je hebt (?:een bod|kavel|gewonnen|betaald)|uw bod|de directe verkoop|je aankoop|"
+                     r"bedankt, je hebt betaald|afhaalgegevens|laatste ophaalmogelijkheid|your favou?rite lot|"
+                     r"last chance to bid|you(?:'ve| have) been outbid|you(?:'ve| have) won)", re.I)
+_FOLLOWED = re.compile(r"^(?:je favoriete kavel|your favou?rite lot)", re.I)  # the heart on a lot
+# "Sluiting: 6 okt om 20:33", "20 Jul 10:58 CEST": a closing time without a year
+_CLOSE_NO_YEAR = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(?:om\s+|at\s+)?(\d{1,2}):(\d{2})\b")
 _TOWN_LINE = re.compile(r"^([A-Za-zÀ-ÿ'’. -]{2,40}?),\s*(NL|BE|DE|LU|FR)$")
 _COUNTRY = {"NL": "", "BE": "Belgium", "DE": "Germany", "LU": "Luxembourg", "FR": "France"}
 
 
 def _decode(value) -> str:
     try:
-        return str(make_header(decode_header(value or "")))
+        text = str(make_header(decode_header(value or "")))
     except Exception:
-        return str(value or "")
+        text = str(value or "")
+    return re.sub(r"\s+", " ", text).strip()  # a long subject is folded over several lines
 
 
 def html_of(msg: Message) -> str:
@@ -246,6 +261,24 @@ def _town(ctx: str) -> str | None:
             return m.group(1).strip() + (f", {country}" if country else "")
     m = re.search(r"(?:locatie|location|plaats)\s*:?\s*([A-Za-zÀ-ÿ' -]{2,40}?)\s*(?:$|[€|·,\d])", ctx, re.I | re.M)
     return m.group(1).strip().title() if m else None
+
+
+def close_without_year(text: str, sent: datetime) -> datetime | None:
+    """"Sluiting: 6 okt om 20:33" or "20 Jul 10:58 CEST" in an email sent on `sent`: the year is the email's
+    (or the next one, for an email from late December about early January)."""
+    sent_local = sent.astimezone(AMS)
+    for m in _CLOSE_NO_YEAR.finditer(text or ""):
+        month = month_number(m.group(2))
+        if not month:
+            continue
+        for year in (sent_local.year, sent_local.year + 1):
+            try:
+                when = datetime(year, month, int(m.group(1)), int(m.group(3)), int(m.group(4)), tzinfo=AMS)
+            except ValueError:
+                break
+            if when >= sent - timedelta(days=1):
+                return when
+    return None
 
 
 def _visible(text) -> bool:
@@ -463,7 +496,8 @@ def _subject(msg: Message) -> str:
 def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int = 14,
             is_bankruptcy=None, only_bankruptcy: bool = False) -> tuple[list[Lot], dict]:
     """Read the alert emails, update the remembered Troostwijk lots and return the running ones.
-    Saved-search emails (links to search pages, no lots) are passed on once each, for the digest.
+    Saved-search emails (links to search pages, no lots) are passed on once each, for the digest, and lots
+    you follow (reminders about a lot with a heart) are passed on as report["followed"], never stored.
     `is_bankruptcy(text)` tells bankruptcy/closure auctions by their name; with `only_bankruptcy`, lots of
     other auctions (Troostwijk also sells for businesses, e.g. "Computers, Tablets, ...") are left out.
     The report says how many emails and lots were found, for the digest and the dashboard."""
@@ -473,9 +507,15 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
     # emails already reported as unreadable: hash of the Message-ID -> when (no subjects: the repository is public)
     warned = store.setdefault("warned", {})
     told = store.setdefault("searches_told", {})  # the same for saved-search emails passed on to Telegram
+    # lots stored from a notification before these were recognised carry its subject: forget them
+    for lot_id in [k for k, rec in lots_seen.items() if _NOTICE.match(rec.get("auction") or "")]:
+        del lots_seen[lot_id]
+    followed: dict[str, dict] = {}  # lots you follow, from the emails still in the mailbox; never stored
     report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "no_lots": 0, "new": 0, "other_auctions": 0,
+              "notices": 0,  # emails about one lot you follow, bid on or bought
               "unreadable_emails": [],  # subject + date of new unreadable emails, for Telegram only
-              "saved_searches": []}  # date + search links of new saved-search emails, for Telegram only
+              "saved_searches": [],  # date + search links of new saved-search emails, for Telegram only
+              "followed": []}  # Lots you follow that are still running, for Telegram only
     for msg in mailbox.messages(now - timedelta(days=keep_days)):
         report["emails"] += 1
         html = html_of(msg)
@@ -488,10 +528,28 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             sent = now
         if sent.tzinfo is None:
             sent = sent.replace(tzinfo=now.tzinfo)
+        subject_line = _subject(msg)
+        key = hashlib.sha256((msg.get("Message-ID") or f"{msg.get('Date')}|{msg.get('Subject')}").encode()).hexdigest()[:16]
         stats: dict = {}
+        if _NOTICE.match(subject_line):  # about one lot you follow, bid on or bought: never stored
+            report["notices"] += 1
+            if not _FOLLOWED.match(subject_line):
+                continue  # not read at all, so none of its links is looked up either
+            # links only read from the link itself (resolve=None): nothing about this lot is opened or saved
+            found = parse_email_html(html, None, stats)
+            closes = close_without_year(_text_of(html), sent)
+            for f in found:
+                old = followed.get(f["lot_id"])
+                if old is None or sent >= old["mail"]:  # the newest reminder wins
+                    followed[f["lot_id"]] = {**f, "closes_at": closes, "mail": sent}
+            if not found:  # a reminder always names one lot: say so in Telegram
+                report["unreadable"] += 1
+                if key not in warned:
+                    warned[key] = now.isoformat()
+                    report["unreadable_emails"].append({"subject": subject_line[:90], "date": sent})
+            continue
         found = parse_email_html(html, resolver, stats)
         if not found:
-            key = hashlib.sha256((msg.get("Message-ID") or f"{msg.get('Date')}|{msg.get('Subject')}").encode()).hexdigest()[:16]
             if stats.get("searches"):  # "Je opgeslagen zoekopdrachten": links to search pages, no lots
                 report["no_lots"] += 1
                 if key not in told:
@@ -504,11 +562,11 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             report["unreadable"] += 1
             if key not in warned:
                 warned[key] = now.isoformat()
-                report["unreadable_emails"].append({"subject": _subject(msg)[:90], "date": sent})
+                report["unreadable_emails"].append({"subject": subject_line[:90], "date": sent})
             continue
         # an alert about one auction has the auction's name as its subject
         auctions = {f["lot_id"].rsplit("-", 1)[0] for f in found}
-        subject = _subject(msg) if len(auctions) == 1 else ""
+        subject = subject_line if len(auctions) == 1 else ""
         for f in found:
             if subject and (not f.get("auction") or _JUNK.search(f["auction"])):
                 f["auction"] = subject[:90]
@@ -550,4 +608,30 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             image=rec.get("image"), location=rec.get("location"),
         ))
     report["lots"] = len(lots)
+    report["followed"] = followed_lots(followed, lots_seen, now)
     return lots, report
+
+
+def followed_lots(followed: dict[str, dict], lots_seen: dict, now: datetime) -> list[Lot]:
+    """The lots you follow that haven't closed. A reminder comes a day or a few hours before the lot closes,
+    so one without a readable closing time counts for two days. The auction's name, place and closing day
+    come from other lots of the same auction when an announcement email named them."""
+    out = []
+    for lot_id, f in followed.items():
+        closes = f["closes_at"] or (datetime.fromisoformat(f["closes"]) if f.get("closes") else None)
+        if (closes and closes < now) or (not closes and now - f["mail"] > timedelta(days=2)):
+            continue
+        auction = lot_id.rsplit("-", 1)[0]
+        known = next((r for k, r in lots_seen.items() if k.rsplit("-", 1)[0] == auction), {})
+        day = None if closes else (f.get("closes_day") or known.get("closes_day"))
+        out.append(Lot(
+            site=SITE, lot_id=lot_id, title=f.get("title") or lot_id, url=f["url"], current_bid=f.get("bid"),
+            bid_from_email=True, closes_at=closes, closes_day=day,
+            auction_title=known.get("auction") or f.get("auction") or "", image=f.get("image"),
+            location=f.get("location") or known.get("location"),
+        ))
+    return sorted(out, key=lambda lot: lot.closes_at or now + timedelta(days=2))
+
+
+def _text_of(html: str) -> str:
+    return BeautifulSoup(html or "", "html.parser").get_text("\n")
