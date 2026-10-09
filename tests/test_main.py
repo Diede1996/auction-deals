@@ -250,7 +250,7 @@ def test_scan_with_favorites_and_driving_costs(repo, monkeypatch):
     assert data["driving"]["fuel"] == 2.108 and data["driving"]["home"] is True
     assert data["favorites"]["issue"] == 12 and len(data["favorites"]["items"]) == 2
     assert data["repo"] == "Diede/auction-deals"
-    assert iphone["mp"]["kind"] == "exact" and iphone["mpPlan"]["kind"] == "general"
+    assert iphone["mp"]["kind"] == "exact" and iphone["mpPlan"]["kind"] == "exact"  # phone_plan: iPhone 13, not a Pro or mini
     # the €10.54 trip lowers the max bid: floor((85% of 325 / 1.3 - 10.54) / 1.21 / 1.19) = 140 instead of 147
     assert iphone["maxBid"] == 140
     # your address is never written to the (public) repository or dashboard
@@ -367,3 +367,20 @@ def test_digest_names_troostwijk_emails_without_lots(repo, monkeypatch):
     tg = FakeTelegram()
     assert run_scan(repo, NOW + timedelta(days=1), http_cls=lambda **kw: FakeHttp([]), telegram_cls=tg) == 0
     assert "Welkom" not in tg.sent[-1]  # reported once
+
+
+def test_digest_links_troostwijk_saved_searches(repo, monkeypatch):
+    from test_mail_alerts import SAVED_SEARCHES_HTML, FakeIMAP, NoRequests, _mail, search_page
+    from scanner.mail_alerts import Mailbox
+    FakeIMAP.mails = [_mail(SAVED_SEARCHES_HTML, subject="Je opgeslagen zoekopdrachten",
+                            date="Tue, 22 Sep 2026 03:25:40 +0200")]
+    monkeypatch.setattr(scan_mod.Mailbox, "from_env", classmethod(lambda cls: Mailbox("b@gmail.com", "app-pass", imap_cls=FakeIMAP)))
+    monkeypatch.setattr(scan_mod, "SITES", {"hnvi": lambda ctx: []})
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW, http_cls=lambda **kw: NoRequests([]), telegram_cls=tg) == 0
+    digest = tg.sent[-1]
+    assert "🔎 Troostwijk has new lots for your saved searches: " in digest and "couldn't find any lots" not in digest
+    assert f'<a href="{search_page("festool").replace("&", "&amp;")}">festool</a> · <a href=' in digest
+    tg = FakeTelegram()
+    assert run_scan(repo, NOW + timedelta(days=1), http_cls=lambda **kw: NoRequests([]), telegram_cls=tg) == 0
+    assert "saved searches" not in tg.sent[-1]  # each email once

@@ -53,3 +53,7 @@ items:
 - name: Plants / decor
   keywords: [plant, kantoorplant, planten, pot]
   exclude: [kunstplant, kunstboom, kunstbloemen]
+- name: Phone
+  keywords: [iphone, galaxy, pixel, oneplus, smartphone, mobiele telefoon]
+  exclude: [hoes, hoesje, hoesjes, case, cover, screenprotector, oplader, lader, kabel, houder, standaard, tab,
+    tablet, watch, buds, book, lens, scherm, accu, batterij, dummy, onderdeel, onderdelen, defect]

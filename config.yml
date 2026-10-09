@@ -36,7 +36,16 @@ auction_keywords:
 extra_auctions:
   enabled: true
   words: [it, ict, computer, laptop, notebook, monitor, beeldscherm, hardware, apple, macbook, ipad, tablets,
-          informatica]   # informatica = Flemish for IT
+          informatica,   # informatica = Flemish for IT
+          telefoon, smartphone, iphone, gsm]   # gsm = Flemish for mobile phone
+
+# Apple products, laptops and phones from before this year are left out entirely: they resell poorly (Macs only
+# from Apple Silicon, M1, late 2020). The year comes from the lot title (or description): a year ("MacBook Pro
+# 2017"), the chip (M1, Intel i5-8250U = 8th gen = 2018), or the model (iPhone 11, Galaxy S10, ThinkPad T480,
+# Latitude 5490, EliteBook 840 G6). Lots that don't say how old they are stay. enabled: false shows them all.
+age_filter:
+  enabled: true
+  min_year: 2020
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%

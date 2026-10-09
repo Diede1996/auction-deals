@@ -4,7 +4,7 @@ Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **b
 
 | Site | What it checks |
 |---|---|
-| Troostwijk Auctions | **Not visited**: Troostwijk refuses automated visitors (HTTP 403). Instead the bot reads Troostwijk's own search-alert emails from a separate mailbox, see [Troostwijk via alert emails](#8-troostwijk-via-alert-emails-optional). |
+| Troostwijk Auctions | **Not visited**: Troostwijk refuses automated visitors (HTTP 403). Instead the bot reads Troostwijk's own emails from a separate mailbox, see [Troostwijk via alert emails](#8-troostwijk-via-alert-emails-optional). |
 | ProVeiling | Faillissements- and bedrijfsbeëindigingsveilingen |
 | HNVI veilingen | Auctions held for a curator (bankruptcy trustee) and business closures |
 | Plaats Je Bod | Faillissements- and bedrijfsbeëindigingsveilingen |
@@ -18,7 +18,9 @@ Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **b
 
 Which auctions count is set by `auction_keywords` in `config.yml`; a word counts anywhere in the auction's name (and, on most sites, its description), so *boedel* also finds *inboedel*.
 
-**IT auctions (trial).** `extra_auctions` in `config.yml` also lets in ordinary IT auctions, without a bankruptcy: auctions whose **name** has a word like *IT*, *ICT*, *computer*, *laptop*, *monitor*, *beeldscherm*, *hardware*, *Apple* or *MacBook* (ex-lease laptops, Troostwijk's "Computers, Tablets, ..."). Expect thinner margins there: refurbishers and traders bid on them too, and laptops and iPads often come without chargers or are locked to a company account (MDM/iCloud). Set `enabled: false` under `extra_auctions` to stop.
+**IT auctions (trial).** `extra_auctions` in `config.yml` also lets in ordinary IT auctions, without a bankruptcy: auctions whose **name** has a word like *IT*, *ICT*, *computer*, *laptop*, *monitor*, *beeldscherm*, *hardware*, *Apple*, *MacBook*, *telefoon*, *smartphone* or *GSM* (ex-lease laptops, Troostwijk's "Computers, Tablets, ..."). Expect thinner margins there: refurbishers and traders bid on them too, and laptops and iPads often come without chargers or are locked to a company account (MDM/iCloud). Set `enabled: false` under `extra_auctions` to stop.
+
+**Nothing from before 2020 for Apple, laptops and phones.** These resell poorly (Macs only from Apple Silicon, M1, late 2020), so lots on the MacBook, iPad, Laptop and Phone items that are older than 2020 are left out entirely, not shown on the dashboard or in Telegram (the morning summary says how many). The year comes from the lot title or description: a year ("MacBook Pro 2017"), the chip (M1 and later; an Intel Mac without a year counts as old; i5-8250U = 8th gen = 2018), or the model (iPhone 11, Galaxy S10, Pixel 4, ThinkPad T480, Latitude 5490, EliteBook 840 G6, Surface Pro 7). Lots that don't say how old they are ("Laptop HP", "MacBook Pro") stay. Change `min_year` or set `enabled: false` under `age_filter` in `config.yml`.
 
 It runs for free on GitHub, so your laptop can stay off. Each auction site is visited **once a day**, around 06:15, at about one page every 1.5 seconds.
 
@@ -80,7 +82,7 @@ Your favorites are kept in one issue in your repository (you'll see it under **I
 
 ### 8. Troostwijk via alert emails (optional)
 
-The bot never visits Troostwijk. It reads the alert emails Troostwijk sends you about your saved searches, from a separate mailbox, and puts those lots on the dashboard with a Marktplaats price and a max bid.
+The bot never visits Troostwijk. It reads the emails Troostwijk sends you, from a separate mailbox, and puts the lots in them on the dashboard with a Marktplaats price and a max bid. The lots come from Troostwijk's auction emails (a new auction with a few of its lots).
 
 1. **A separate Gmail address for the bot**, for example `veilingbot.jouwnaam@gmail.com`. Turn on 2-step verification for it (Google account → Security), then create an app password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) (name it "auction bot"). Google shows 16 letters: that's the app password.
 2. **Troostwijk searches**: on the dashboard, under *Troostwijk searches*, open each search, log in on Troostwijk and save it. In your Troostwijk account, under *Account → Communication preferences*, make sure search alerts are on.
@@ -90,6 +92,8 @@ The bot never visits Troostwijk. It reads the alert emails Troostwijk sends you 
 From the next scan, Troostwijk lots from those emails show up on the dashboard, with the auction's name, place and closing day when the email has them (Troostwijk auction emails give the closing day but not the time: lots close one after another that day, the exact time is on the lot page). The bid is the one in the email, so it may be outdated; the max bid is what counts. Lots stay on the dashboard until they close, or 14 days after the last alert if the email doesn't say when they close. The bot only reads the mailbox and never stores the emails themselves.
 
 You can also forward a Troostwijk email by hand (for example an auction announcement) to the bot mailbox: the next scan picks it up.
+
+**Saved searches give links, not lots.** Troostwijk's weekly *Je opgeslagen zoekopdrachten* email only says which searches have new lots, with a link per search to Troostwijk's search page. The bot doesn't visit Troostwijk, so it can't price those lots. Instead the morning summary shows the search words as links (🔎 *Troostwijk has new lots for your saved searches*), once per email: tap one to look yourself.
 
 **The bid in the email is old.** Troostwijk's emails show the bid when the email was sent, usually the starting bid (€10), while the lot may be at €900 by now. The bot can't see the current bid (it never visits Troostwijk), so these lots get **Check current bid** instead of *Room to bid*: open the lot and bid only if the current bid is below the max bid. New ones are listed in the morning summary under *New from Troostwijk emails*.
 

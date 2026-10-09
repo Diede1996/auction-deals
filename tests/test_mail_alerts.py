@@ -92,7 +92,8 @@ def test_collect_remembers_lots_until_they_close():
     state = {}
     lots, report = collect(box, RedirectHttp([]), state, NOW)
     assert report == {"emails": 3, "troostwijk_emails": 2, "unreadable": 0, "no_lots": 1, "new": 3, "lots": 3,
-                      "other_auctions": 0, "unreadable_emails": []}  # an auction announcement without lots is fine
+                      "other_auctions": 0, "unreadable_emails": [],
+                      "saved_searches": []}  # an auction announcement without lots is fine
     drill = next(l for l in lots if l.lot_id == "A1-51234-17")
     assert drill.site == "troostwijk" and drill.current_bid == 45.0 and drill.location == "Purmerend"
     assert drill.auction_title == "Troostwijk alert of 27 Sep" and drill.key == "troostwijk:A1-51234-17"
@@ -213,7 +214,7 @@ def test_collect_forwarded_auction_alert():
     state = {}
     lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=1))
     assert report == {"emails": 1, "troostwijk_emails": 1, "unreadable": 0, "no_lots": 0, "new": 9, "lots": 9,
-                      "other_auctions": 0, "unreadable_emails": []}
+                      "other_auctions": 0, "unreadable_emails": [], "saved_searches": []}
     hp = next(l for l in lots if l.lot_id == "A1-50252-117")
     assert hp.closes_at is None and hp.location == "Veldhoven" and hp.current_bid == 10.0
     assert hp.auction_title.endswith("Kantoorinventaris") and hp.closes_day == "2026-10-07"
@@ -295,3 +296,44 @@ def test_emails_without_lots_are_named_once():
     assert "opgeslagen" not in str(state)  # only a hash is remembered (public repository)
     _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=5))
     assert report["unreadable"] == 1 and report["unreadable_emails"] == []  # not again the next morning
+
+
+SEARCH_TERMS = ["festool", "makita", "koffiemachine"]
+
+
+def search_page(term):
+    return f"{TW}/nl/search?countries=nl%2Cbe&searchTerm={term}&platform=TWK&sort=createdAt%2Cdesc"
+
+
+def _search_block(term):
+    return f"""<tr><td><p>We hebben nieuwe kavels gevonden die overeenkomen met {term} en uw filters.</p>
+      <p>Landen: NL, BE</p><a href="{exponea(search_page(term))}">Bekijk alle overeenkomende kavels</a></td></tr>"""
+
+
+# the weekly "Je opgeslagen zoekopdrachten" email of 8 Oct: one search page link per term, no lots
+SAVED_SEARCHES_HTML = f"""<table><tr><td><a href="{exponea(TW + '/?utm_content=Header_Logo')}"><img alt="Troostwijk"></a>
+  <a href="{exponea(TW + '/auctions?utm_content=Header_all_auctions')}">Alle veilingen</a></td></tr>
+  <tr><td><h1>Je opgeslagen zoekopdrachten</h1></td></tr>
+  {''.join(_search_block(t) for t in SEARCH_TERMS)}
+  <tr><td><a href="{exponea('https://cdn.eu1.exponea.com/troostwijk-prod/e/Cgxmk0000/consent?lang=nl')}">Uitschrijven</a>
+  </td></tr></table>"""
+
+
+def test_saved_search_email_gives_search_links_not_a_warning():
+    from scanner.mail_alerts import search_link
+    assert search_link(search_page("hilti") + "&utm_content=x") == {"term": "hilti", "url": search_page("hilti")}
+    assert search_link(TW + "/auctions?utm_content=Header_all_auctions") is None
+    stats = {}
+    assert parse_email_html(SAVED_SEARCHES_HTML, TrackerResolver(NoRequests([]), {}), stats) == []
+    assert stats["searches"] == [{"term": t, "url": search_page(t)} for t in SEARCH_TERMS]
+
+    FakeIMAP.mails = [_mail(SAVED_SEARCHES_HTML, subject="Je opgeslagen zoekopdrachten",
+                            date="Thu, 08 Oct 2026 03:25:40 +0200")]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    state = {}
+    _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=11))
+    assert report["unreadable"] == 0 and report["unreadable_emails"] == [] and report["no_lots"] == 1
+    assert [s["term"] for s in report["saved_searches"][0]["searches"]] == SEARCH_TERMS
+    assert "festool" not in str(state) and "opgeslagen" not in str(state)  # only a hash (public repository)
+    _, report = collect(box, NoRequests([]), state, NOW + timedelta(days=12))
+    assert report["saved_searches"] == [] and report["unreadable"] == 0  # passed on once

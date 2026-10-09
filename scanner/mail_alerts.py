@@ -11,6 +11,8 @@ lot on the dashboard, with a Marktplaats price and a max bid like any other lot.
   no "clicks" are registered. Only a link that can't be read that way is looked up by asking the tracker
   where it points (never an unsubscribe or preferences link, and never the Troostwijk page itself).
 - The auction block at the top of an alert (name, place, closing day) is copied onto its lots.
+- The weekly saved-search email ("Je opgeslagen zoekopdrachten") holds no lots, only a link per search
+  term to Troostwijk's search page. Those links go into the Telegram digest so you can tap through yourself.
 - Lots are remembered in data/state.json until they close, or `keep_days` after the last alert when the
   email doesn't say when they close. Emails themselves are never stored (the repository is public).
 """
@@ -28,7 +30,7 @@ from datetime import date, datetime, timedelta
 from email.header import decode_header, make_header
 from email.message import Message
 from email.utils import parsedate_to_datetime
-from urllib.parse import unquote, urlparse
+from urllib.parse import parse_qsl, unquote, urlencode, urlparse
 
 from bs4 import BeautifulSoup
 from bs4.element import NavigableString
@@ -51,6 +53,8 @@ _B64_CHUNK = re.compile(r"[A-Za-z0-9_-]{24,}")
 _URL_START = re.compile(rb"https?://")
 _URL_CHARS = re.compile(rb"https?://[\x21-\x7e]+")
 _DATE_RE = re.compile(r"\b(\d{1,2}\s+[A-Za-z]{3,9}\.?\s+\d{4})(?:[^\d\n]{0,12}?(\d{1,2}:\d{2}))?")
+_SEARCH_PATH = re.compile(r"^(?:/[a-z]{2})?/search/?$", re.I)
+_SITE_URL = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com[^\s\"'<>]*", re.I)
 _TOWN_LINE = re.compile(r"^([A-Za-zÀ-ÿ'’. -]{2,40}?),\s*(NL|BE|DE|LU|FR)$")
 _COUNTRY = {"NL": "", "BE": "Belgium", "DE": "Germany", "LU": "Luxembourg", "FR": "France"}
 
@@ -151,15 +155,46 @@ def _unpack(chunk: str) -> list[bytes]:
     return out
 
 
-def decode_tracker(href: str) -> tuple[bool, str | None]:
-    """Read where a tracking link points without opening it. Returns (could read it, the lot or auction
-    URL or None). Troostwijk's links look like cdn.eu1.exponea.com/troostwijk-prod/e/.<compressed>.<sig>/click"""
+def tracker_target(href: str) -> tuple[bool, str | None]:
+    """Where a tracking link points, read from the link itself (any URL, not only lots)."""
     for chunk in _B64_CHUNK.findall(urlparse(href or "").path + "?" + (urlparse(href or "").query or "")):
         for data in _unpack(chunk):
             urls = _urls_in(data)
             if urls:
-                return True, lot_url(urls[0]) or auction_url(urls[0])
+                return True, urls[0]
     return False, None
+
+
+def decode_tracker(href: str) -> tuple[bool, str | None]:
+    """Read where a tracking link points without opening it. Returns (could read it, the lot or auction
+    URL or None). Troostwijk's links look like cdn.eu1.exponea.com/troostwijk-prod/e/.<compressed>.<sig>/click"""
+    readable, url = tracker_target(href)
+    return readable, (lot_url(url) or auction_url(url)) if url else None
+
+
+def search_link(url: str) -> dict | None:
+    """A Troostwijk search page ("…/nl/search?countries=nl%2Cbe&searchTerm=festool") ->
+    {"term": "festool", "url": the same link without tracking parameters}."""
+    parsed = urlparse(url or "")
+    if (parsed.hostname or "").lower() not in ("www.troostwijkauctions.com", "troostwijkauctions.com") \
+            or not _SEARCH_PATH.match(parsed.path):
+        return None
+    query = [(k, v) for k, v in parse_qsl(parsed.query) if not k.lower().startswith("utm_")]
+    term = next((v.strip() for k, v in query if k.lower() in ("searchterm", "query", "q")), "")
+    if not term:
+        return None
+    return {"term": term, "url": BASE + parsed.path + (f"?{urlencode(query)}" if query else "")}
+
+
+def _search_of(href: str) -> dict | None:
+    """The search page a link (or the tracking link around it) points to. Never asks the tracker."""
+    _, decoded = tracker_target(href) if is_tracker(href) else (False, None)
+    for text in (decoded, href, unquote(href)):
+        m = _SITE_URL.search(text or "")
+        found = search_link(m.group(0)) if m else None
+        if found:
+            return found
+    return None
 
 
 def is_tracker(href: str) -> bool:
@@ -309,6 +344,12 @@ def parse_email_html(html: str, resolve=None, stats: dict | None = None) -> list
             entry["context"] = ctx
     if stats is not None:
         stats["auctions"] = len(auctions)
+        searches: dict[str, dict] = {}  # the weekly saved-search email: one link per search term
+        for a, url in links:
+            found_search = None if url else _search_of(a["href"].strip())
+            if found_search:
+                searches.setdefault(found_search["term"].lower(), found_search)
+        stats["searches"] = list(searches.values())
     out = []
     for e in found.values():
         title = max(e["titles"], key=len) if e["titles"] else title_from_url(e["url"])
@@ -422,6 +463,7 @@ def _subject(msg: Message) -> str:
 def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int = 14,
             is_bankruptcy=None, only_bankruptcy: bool = False) -> tuple[list[Lot], dict]:
     """Read the alert emails, update the remembered Troostwijk lots and return the running ones.
+    Saved-search emails (links to search pages, no lots) are passed on once each, for the digest.
     `is_bankruptcy(text)` tells bankruptcy/closure auctions by their name; with `only_bankruptcy`, lots of
     other auctions (Troostwijk also sells for businesses, e.g. "Computers, Tablets, ...") are left out.
     The report says how many emails and lots were found, for the digest and the dashboard."""
@@ -430,8 +472,10 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
     resolver = TrackerResolver(http, store.setdefault("links", {}))
     # emails already reported as unreadable: hash of the Message-ID -> when (no subjects: the repository is public)
     warned = store.setdefault("warned", {})
+    told = store.setdefault("searches_told", {})  # the same for saved-search emails passed on to Telegram
     report = {"emails": 0, "troostwijk_emails": 0, "unreadable": 0, "no_lots": 0, "new": 0, "other_auctions": 0,
-              "unreadable_emails": []}  # subject + date of new unreadable emails, for Telegram only
+              "unreadable_emails": [],  # subject + date of new unreadable emails, for Telegram only
+              "saved_searches": []}  # date + search links of new saved-search emails, for Telegram only
     for msg in mailbox.messages(now - timedelta(days=keep_days)):
         report["emails"] += 1
         html = html_of(msg)
@@ -447,11 +491,17 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
         stats: dict = {}
         found = parse_email_html(html, resolver, stats)
         if not found:
+            key = hashlib.sha256((msg.get("Message-ID") or f"{msg.get('Date')}|{msg.get('Subject')}").encode()).hexdigest()[:16]
+            if stats.get("searches"):  # "Je opgeslagen zoekopdrachten": links to search pages, no lots
+                report["no_lots"] += 1
+                if key not in told:
+                    told[key] = now.isoformat()
+                    report["saved_searches"].append({"date": sent, "searches": stats["searches"]})
+                continue
             if stats.get("auctions"):  # an announcement of auctions without lots: nothing to price, nothing wrong
                 report["no_lots"] += 1
                 continue
             report["unreadable"] += 1
-            key = hashlib.sha256((msg.get("Message-ID") or f"{msg.get('Date')}|{msg.get('Subject')}").encode()).hexdigest()[:16]
             if key not in warned:
                 warned[key] = now.isoformat()
                 report["unreadable_emails"].append({"subject": _subject(msg)[:90], "date": sent})
@@ -472,8 +522,9 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
                 rec.update({k: v for k, v in f.items() if v is not None and k != "lot_id"})
                 rec["mail"] = sent.isoformat()
             rec["seen"] = now.isoformat()
-    for key in [k for k, at in warned.items() if now - datetime.fromisoformat(at) > timedelta(days=keep_days + 7)]:
-        del warned[key]  # the email itself is out of the window by now
+    for seen_before in (warned, told):
+        for key in [k for k, at in seen_before.items() if now - datetime.fromisoformat(at) > timedelta(days=keep_days + 7)]:
+            del seen_before[key]  # the email itself is out of the window by now
     # forget closed lots, and lots without a closing time that no alert mentioned for keep_days
     today = now.astimezone(AMS).date()
     for lot_id, rec in list(lots_seen.items()):

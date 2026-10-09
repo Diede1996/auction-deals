@@ -17,9 +17,10 @@ from .geo import DrivingCosts, TripPlanner, fuel_price
 from .http import Http
 from .bidding import fill_next_bids, parse_steps
 from .details import fill_descriptions, fill_start_prices
-from .identify import mac_plan, model_code, plan_for, quantity
+from .identify import mac_plan, model_code, phone_plan, plan_for, quantity
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
+from .age import age_filter, too_old
 from .matching import auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
@@ -498,9 +499,18 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         read = fill_descriptions(
             matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
             state.setdefault("descriptions", {}), now,
-            needs=lambda lot: model_code(lot.title) is None and mac_plan(lot.title) is None,
+            needs=lambda lot: model_code(lot.title) is None and mac_plan(lot.title) is None
+            and phone_plan(lot.title) is None,
             limit=int(det_cfg.get("max_pages_per_run", 40)))
         log.info("read %d lot descriptions", read)
+    # 1d. Apple products, laptops and phones from before 2020 resell poorly: leave them out entirely
+    min_year = age_filter(config)
+    old_lots = 0
+    if min_year:
+        kept = [(item, lot) for item, lot in matched if not too_old(item, lot, min_year)]
+        old_lots = len(matched) - len(kept)
+        matched = kept
+        log.info("%d Apple/laptop/phone lots from before %d left out", old_lots, min_year)
     if not only or set(only) - {"troostwijk"}:
         read = fill_start_prices(matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
                                  state.setdefault("start_prices", {}), now)
@@ -573,6 +583,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         rows = share_trips(rows, trips, fav_keys, lambda item, lot, est: evaluate(
             item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)), group_cost)
     notes = []
+    if old_lots:
+        notes.append(f"<i>🗓 {old_lots} Apple, laptop or phone lot{'s' if old_lots != 1 else ''} from before {min_year} "
+                     "left out (they resell poorly).</i>")
     if mail_report and mail_report.get("unreadable_emails"):  # each email is reported once
         bad = mail_report["unreadable_emails"]
         listed = "\n".join(f"• {esc(e['subject'] or '(no subject)')} ({e['date'].astimezone(AMS):%a %d %b})"
@@ -580,6 +593,15 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         notes.append(f"⚠️ I couldn't find any lots in {'this Troostwijk email' if len(bad) == 1 else f'these {len(bad)} Troostwijk emails'}:\n"
                      f"{listed}\n<i>An email without lots (a confirmation, a newsletter) can be ignored. If it does "
                      "show lots, send it to me as a file (Gmail on a computer: ⋮ → Download message).</i>")
+    if mail_report and mail_report.get("saved_searches"):  # each email is passed on once
+        terms: dict[str, dict] = {}
+        for mail in mail_report["saved_searches"]:
+            for found in mail["searches"]:
+                terms.setdefault(found["term"].lower(), found)
+        links = " · ".join(f'<a href="{attr(t["url"])}">{esc(t["term"])}</a>' for t in terms.values())
+        notes.append(f"🔎 Troostwijk has new lots for your saved searches: {links}\n"
+                     "<i>Their weekly email only links to Troostwijk's search page, and I don't visit Troostwijk, "
+                     "so these lots aren't priced on the dashboard. Tap a word to look yourself.</i>")
     if items:
         mh = state.setdefault("health", {}).setdefault("marktplaats", {})
         failed = finder.blocked or (finder.errors and finder.errors >= finder.lookups)
@@ -642,7 +664,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     deals = sum(1 for r in rows if r[2].is_deal)
     requests = site_requests + http.request_count + geo_http.request_count
     state["last_run"] = {"at": now.isoformat(), "lots": len(lots), "matches": len(rows), "deals": deals,
-                         "new": len(new_keys), "requests": requests}
+                         "new": len(new_keys), "requests": requests,
+                         "too_old": old_lots}
     if not dry_run:  # a dry run must not change what counts as "new"
         save_json(state_path, state)
     log.info("done: %d lots, %d matches, %d with room to bid, %d new, %d requests",

@@ -12,6 +12,7 @@ with every monitor on Marktplaats gives prices of other monitors. So:
                  custom   the watchlist item has its own marktplaats_query;
 - quantity()     reads "2 x", "Twee ..." or "- 3 stuks", so a lot of two monitors is worth two monitors.
 - mac_plan()     Macs are told apart by chip and screen size ("MacBook Pro 16 M1 Max"), not a type number.
+- phone_plan()   iPhones and Pixels by number and variant ("iPhone 13 Pro Max": not a 13 Pro or a 13).
 """
 from __future__ import annotations
 
@@ -345,6 +346,67 @@ def ipad_plan(title: str) -> SearchPlan | None:
     return None
 
 
+# Phones: an iPhone or Pixel is named by number and variant ("iPhone 13 Pro Max 256GB"); "iPhone 13" listings
+# must not be a Pro, Mini or Max. Screens, batteries and back covers sold under the phone's name don't count.
+_IPHONE_PLAN_RE = re.compile(r"(?<![a-z0-9])iphone ?(se|xs|xr|x|\d{1,2})(e)?(?: ?(pro max|pro|plus|max|mini))?(?![a-z0-9])")
+_PIXEL_RE = re.compile(r"(?<![a-z0-9])pixel ?(\d{1,2})(a)?(?: ?(pro xl|pro fold|pro|xl))?(?![a-z0-9])")
+_PHONE_VARIANTS = ("pro", "max", "plus", "mini", "xl", "fold")
+PHONE_PARTS = ("scherm", "display", "lcd", "batterij", "accu", "backcover", "achterkant", "icloud", "simlock",
+               "moederbord", "camera")
+_STORAGE_RE = re.compile(r"(?<![0-9])(64|128|256|512) ?gb(?![a-z0-9])")
+
+
+def phone_plan(title: str) -> SearchPlan | None:
+    """"Apple iPhone 13 Pro Max 256GB" -> listings that say iphone 13 + pro max (+ 256 GB when there are
+    enough of those): exact; "iPhone SE 2020" -> iPhone SE listings that say 2020 or 2nd gen. "iPhone SE" alone
+    is a rough price (three generations look the same in a title)."""
+    t = normalize((title or "").replace("+", " plus "))
+    m = _IPHONE_PLAN_RE.search(t)
+    pixel = None if m else _PIXEL_RE.search(t)
+    if not (m or pixel):
+        return None
+    storage = _STORAGE_RE.search(t)
+    gb = storage.group(1) if storage else None
+    if m:
+        number, e, variant = m.group(1), m.group(2) or "", m.group(3) or ""
+        line, model, shown = "iphone", f"iphone{number}{e}", f"iPhone {number.upper() if number[0] in 'sx' else number}{e}"
+    else:
+        number, e, variant = pixel.group(1), pixel.group(2) or "", pixel.group(3) or ""
+        line, model, shown = "pixel", f"pixel{number}{e}", f"Pixel {number}{e}"
+    without = tuple(v for v in _PHONE_VARIANTS if v not in variant.split()) + PHONE_PARTS
+    if m and not e and number.isdigit():
+        without += (f"{number}e",)  # iPhone 16 is not a 16e
+    if pixel and not e:
+        without += (f"{number}a",)  # Pixel 6 is not a 6a
+    groups: list[tuple[str, ...]] = [(w,) for w in variant.split()]
+    label = " ".join(x for x in (line, number + e, variant) if x)
+    if number == "se":
+        rest = t[m.end():]
+        if re.match(r" ?(?:2020|2 ?(?:e|nd|de)?(?: gen| generatie| generation)?(?![0-9]))", rest):
+            which = ("2020", "2e gen", "2nd gen", "2de gen", "2e generatie", "2 gen", "se 2")
+        elif re.match(r" ?(?:2022|3 ?(?:e|rd|de)?(?: gen| generatie| generation)?(?![0-9]))", rest):
+            which = ("2022", "3e gen", "3rd gen", "3de gen", "3e generatie", "3 gen", "se 3")
+        else:
+            rule = Rule([("iphone",), ("se",)], without=without, label="iphone se")
+            return SearchPlan("general", ["iphone se"], [rule], brand="apple", rough=True,
+                              note="iPhone SE without a year: a rough price, three generations look the same")
+        groups.append(which)
+        label = f"iphone se {which[0]}"
+        shown = f"iPhone SE {which[0]}"
+    rules = []
+    if gb:
+        rules.append(Rule(list(groups), model=model if number != "se" else None, ram=gb, without=without,
+                          label=f"{label} {gb}gb"))
+    rules.append(Rule(list(groups), model=model if number != "se" else None, without=without, label=label))
+    if number == "se":
+        for r in rules:
+            r.groups = [("iphone",), ("se",)] + r.groups
+    search = label if number != "se" else f"iphone se {which[0]}"
+    return SearchPlan("exact", [search], rules, model=f"{shown} {variant.title()}".strip(),
+                      brand="apple" if m else "google",
+                      note=f"exact: {shown} {variant.title()}".strip() + (f" ({gb} GB if enough listings say so)" if gb else ""))
+
+
 # HP and Lenovo name a laptop or PC by line, model and generation: "ZBook Firefly 14 G10", "EliteBook 840 G5",
 # "ThinkBook 15 G2 ITL", "ThinkPad T14 Gen 2". The generation alone ("G10") says nothing.
 _GEN_TOKEN = re.compile(r"g(\d{1,2})")
@@ -609,7 +671,8 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
 
 
 def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:
-    mac = mac_plan(lot.title) or ipad_plan(lot.title) or generation_plan(lot.title, lot.description)
+    mac = (mac_plan(lot.title) or ipad_plan(lot.title) or phone_plan(lot.title)
+           or generation_plan(lot.title, lot.description))
     if mac:
         return mac
     keyword = normalize(matched_keyword(item, lot.title))
