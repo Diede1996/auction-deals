@@ -131,10 +131,11 @@ def test_short_keywords_match_whole_words_only():
 
 @pytest.mark.parametrize("title, kind, searches, model", [
     ("Apple MacBook Pro 16”, Apple M1 Max, 32 GB RAM, 1 TB NVMe Laptop", "exact",
-     ["macbook pro 16 m1 max", "macbook pro m1 max"], "MacBook Pro 16 M1 MAX"),
-    ("Apple MacBook Air 13 inch M2 2022 8GB", "exact", ["macbook air 13 m2", "macbook air m2"], "MacBook Air 13 M2"),
+     ["macbook pro 16 m1 max 32gb", "macbook pro 16 m1 max", "macbook pro m1 max"], "MacBook Pro 16 M1 MAX"),
+    ("Apple MacBook Air 13 inch M2 2022 8GB", "exact", ["macbook air 13 m2 8gb", "macbook air 13 m2", "macbook air m2"],
+     "MacBook Air 13 M2"),
     ("Apple MacBook Pro 16“ Core(TM) i7 9th Gen, 32 GB RAM, 1 TB NVMe, AMD Radeon RX 5500 4GB Laptop", "general",
-     ["macbook pro 16 i7", "macbook pro 16"], None),
+     ["macbook pro 16 i7 32gb", "macbook pro 16 i7", "macbook pro 16"], None),
 ])
 def test_macs_by_chip_and_size(title, kind, searches, model):
     p = plan(WatchItem(name="MacBook", keywords=["macbook"]), title)
@@ -160,10 +161,10 @@ def test_mac_rules():
 @pytest.mark.parametrize("title, kind, searches, model", [
     ("iPad Pro 10,5 inch", "exact", ["ipad pro 10.5"], "iPad Pro 10.5"),
     ("iPad 6th Gen.", "exact", ["ipad 6", "ipad 2018"], "iPad 6th gen"),
-    ("Apple iPad (6e generatie) 32GB", "exact", ["ipad 6", "ipad 2018"], "iPad 6th gen"),
-    ("Apple iPad Air 5 64GB A2588 wifi", "exact", ["ipad air 5", "ipad air 2022"], "iPad Air 5th gen"),
-    ("iPad Pro 11 M1 128GB", "exact", ["ipad pro m1"], "iPad Pro 11 M1"),
-    ("iPad 10,2 inch 32GB", "general", ["ipad 10.2"], None),
+    ("Apple iPad (6e generatie) 32GB", "exact", ["ipad 6 32gb", "ipad 6", "ipad 2018"], "iPad 6th gen"),
+    ("Apple iPad Air 5 64GB A2588 wifi", "exact", ["ipad air 5 64gb", "ipad air 5", "ipad air 2022"], "iPad Air 5th gen"),
+    ("iPad Pro 11 M1 128GB", "exact", ["ipad pro m1 128gb", "ipad pro m1"], "iPad Pro 11 M1"),
+    ("iPad 10,2 inch 32GB", "general", ["ipad 10.2 32gb", "ipad 10.2"], None),
 ])
 def test_ipads_by_line_generation_and_size(title, kind, searches, model):
     p = plan(WatchItem(name="iPad", keywords=["ipad"]), title)
@@ -195,8 +196,9 @@ def test_accessories_are_not_the_device():
 
 
 @pytest.mark.parametrize("title, searches, model", [
-    ("HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB", ["zbook firefly 14 g10", "zbook firefly g10"], "ZBook Firefly 14 G10"),
-    ("Laptop HP EliteBook 840 G5 i5 8GB", ["elitebook 840 g5"], "EliteBook 840 G5"),
+    ("HP ZBook Firefly G10 14”, Core(TM) i7 13th Gen, 32 GB", ["zbook firefly 14 g10 32gb", "zbook firefly 14 g10",
+                                                               "zbook firefly g10"], "ZBook Firefly 14 G10"),
+    ("Laptop HP EliteBook 840 G5 i5 8GB", ["elitebook 840 g5 8gb", "elitebook 840 g5"], "EliteBook 840 G5"),
     ("HP ZBook Studio 16 G10 i7", ["zbook studio 16 g10", "zbook studio g10"], "ZBook Studio 16 G10"),
     ("HP 250 G8 laptop", ["hp 250 g8"], "HP 250 G8"),
 ])

@@ -28,13 +28,14 @@ def result_kind(plan: SearchPlan, rule_groups: list) -> str:
     a word with a number in it that isn't a brand ("dsquared2") or a category."""
     if plan.kind != "general" or plan.rough:
         return plan.kind
-    words = [group[0] for group in rule_groups if len(group) == 1 and not is_brand(group[0])]
+    words = [group[0] for group in rule_groups if len(group) == 1 and not is_brand(group[0]) and group[0] != "5g"]
     return "exact" if any(ch.isdigit() for w in words for ch in w) else "general"
 
 
 class PriceFinder:
     """- At most two Marktplaats searches per lot: the most specific one and, if that finds too few
-      comparable listings, a broader or differently written one. Rules are tried on the combined results.
+      comparable listings, a broader or differently written one (three when the first one names the lot's
+      storage or memory: "galaxy a12 64gb"). Rules are tried on the combined results.
     - A lot's price is reused for `cache_days`; identical searches in one run are made only once.
     - When Marktplaats blocks us, no further requests are made this run and lots get their last
       known price (up to `stale_days` old) instead.
@@ -91,7 +92,8 @@ class PriceFinder:
         min_count = self.min_listings_exact if plan.exact else self.min_listings
         results: list[dict] = []
         found = None
-        for i, query in enumerate(plan.searches[:2]):
+        # two searches; three when the first names the lot's options ("galaxy a12 64gb", then the plan's own)
+        for i, query in enumerate(plan.searches[:3 if plan.options else 2]):
             if i and self.lookups_left <= 0 and query not in self._results:
                 break
             try:

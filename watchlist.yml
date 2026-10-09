@@ -54,6 +54,8 @@ items:
   keywords: [plant, kantoorplant, planten, pot]
   exclude: [kunstplant, kunstboom, kunstbloemen]
 - name: Phone
-  keywords: [iphone, galaxy, pixel, oneplus, smartphone, mobiele telefoon]
+  keywords: [iphone, galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
+    smartphone, mobiele telefoon]
   exclude: [hoes, hoesje, hoesjes, case, cover, screenprotector, oplader, lader, kabel, houder, standaard, tab,
-    tablet, watch, buds, book, lens, scherm, accu, batterij, dummy, onderdeel, onderdelen, defect]
+    tablet, watch, buds, book, lens, scherm, accu, batterij, dummy, onderdeel, onderdelen, defect, pixelpuzzel,
+    pixelart, ministeck]

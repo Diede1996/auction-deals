@@ -52,6 +52,9 @@ def make_lots(now):
         Lot("proveiling", "4", "iPhone 13 hoesje", "https://pv/4", 1.0, now + timedelta(days=1), "Faill. Y"),
         # already closed -> ignored
         Lot("proveiling", "5", "iPhone 13 mini", "https://pv/5", 1.0, now - timedelta(hours=1), "Faill. Y"),
+        # the description says it's damaged -> left out entirely
+        Lot("hnvi", "6", "Apple iPhone 13", "https://www.hnvi.nl/veiling-kavel/iphone/6", 20.0,
+            now + timedelta(days=1), "Faillissement X", description="128 GB, Scherm beschadigd"),
     ]
 
 
@@ -100,9 +103,10 @@ def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
     html, data = page_data(repo)
     assert "<script>alert(1)" not in html  # scraped text can't escape the data block
     by_key = {l["key"]: l for l in data["lots"]}
-    assert set(by_key) == {"hnvi:1", "hnvi:2", "proveiling:3"}
+    assert set(by_key) == {"hnvi:1", "hnvi:2", "proveiling:3"}  # not hnvi:6, "Scherm beschadigd"
     iphone = by_key["hnvi:1"]
     assert iphone["mp"]["count"] == 6 and iphone["market"] == iphone["mp"]["median"]
+    assert iphone["mpSearch"] == "https://www.marktplaats.nl/q/iphone+13+128gb/"  # the storage is searched too
     assert iphone["isNew"] and iphone["isDeal"] and iphone["maxBid"] > iphone["bid"]
     assert iphone["premium"] == 0.19 and iphone["vat"] == 0.21
     assert not by_key["hnvi:2"]["isDeal"]
@@ -116,6 +120,7 @@ def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
     assert len(tg.sent) == 1
     digest = tg.sent[0]
     assert "Closing within 24 hours" in digest and "Apple iPhone 13 128GB zwart" in digest
+    assert "1 lot with a defect left out" in digest
     assert "selling at 85% of the Marktplaats median with at least 30% margin" in digest and "(margin €" in digest
     assert 'href="https://diede.github.io/auction-deals/"' in digest
     assert "Dyson" in digest  # new with room to bid

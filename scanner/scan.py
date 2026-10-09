@@ -21,6 +21,7 @@ from .identify import mac_plan, model_code, phone_plan, plan_for, quantity
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .age import age_filter, too_old
+from .condition import defect, defect_filter
 from .matching import auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
@@ -493,17 +494,28 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     matched = match_lots(items, lots)
     log.info("%d lots scanned, %d match the watchlist", len(lots), len(matched))
 
-    # 1c. no type number in the title ("2 x Dell 24 inch monitor")? read the description on the lot page
+    # 1c. the description on the lot page: the type number when the title has none ("2 x Dell 24 inch monitor"),
+    # a defect ("Scherm beschadigd"), storage or memory ("64 GB"). Lots without a type number in the title first,
+    # then the ones closing soonest.
     det_cfg = config.get("descriptions") or {}
     if det_cfg.get("enabled", True) is not False and (not only or set(only) - {"troostwijk"}):
+        def identified(lot: Lot) -> bool:
+            return not (model_code(lot.title) is None and mac_plan(lot.title) is None and phone_plan(lot.title) is None)
+
+        order = sorted(matched, key=lambda m: (identified(m[1]), m[1].closes_at or horizon))
         read = fill_descriptions(
-            matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
-            state.setdefault("descriptions", {}), now,
-            needs=lambda lot: model_code(lot.title) is None and mac_plan(lot.title) is None
-            and phone_plan(lot.title) is None,
-            limit=int(det_cfg.get("max_pages_per_run", 40)))
+            order, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
+            state.setdefault("descriptions", {}), now, needs=lambda lot: True,
+            limit=int(det_cfg.get("max_pages_per_run", 80)))
         log.info("read %d lot descriptions", read)
-    # 1d. Apple products, laptops and phones from before 2020 resell poorly: leave them out entirely
+    # 1d. lots with a defect ("Scherm beschadigd", "werkt niet", "voor onderdelen"): leave them out entirely
+    defect_lots = 0
+    if defect_filter(config):
+        kept = [(item, lot) for item, lot in matched if not defect(lot.title, lot.description)]
+        defect_lots = len(matched) - len(kept)
+        matched = kept
+        log.info("%d lots with a defect left out", defect_lots)
+    # 1e. Apple products, laptops and phones from before 2020 resell poorly: leave them out entirely
     min_year = age_filter(config)
     old_lots = 0
     if min_year:
@@ -583,6 +595,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         rows = share_trips(rows, trips, fav_keys, lambda item, lot, est: evaluate(
             item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units)), group_cost)
     notes = []
+    if defect_lots:
+        notes.append(f"<i>🔧 {defect_lots} lot{'s' if defect_lots != 1 else ''} with a defect left out "
+                     "(damaged, broken, for parts or locked).</i>")
     if old_lots:
         notes.append(f"<i>🗓 {old_lots} Apple, laptop or phone lot{'s' if old_lots != 1 else ''} from before {min_year} "
                      "left out (they resell poorly).</i>")
@@ -665,7 +680,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     requests = site_requests + http.request_count + geo_http.request_count
     state["last_run"] = {"at": now.isoformat(), "lots": len(lots), "matches": len(rows), "deals": deals,
                          "new": len(new_keys), "requests": requests,
-                         "too_old": old_lots}
+                         "too_old": old_lots, "defects": defect_lots}
     if not dry_run:  # a dry run must not change what counts as "new"
         save_json(state_path, state)
     log.info("done: %d lots, %d matches, %d with room to bid, %d new, %d requests",

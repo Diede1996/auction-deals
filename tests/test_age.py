@@ -2,7 +2,7 @@
 import pytest
 
 from scanner.age import age_filter, device_kind, release_year, too_old
-from scanner.identify import phone_plan
+from scanner.identify import phone_plan, plan_for
 from scanner.models import Lot, WatchItem
 from scanner.util import normalize
 
@@ -92,14 +92,14 @@ def test_too_old_only_for_apple_laptops_and_phones():
 
 
 def test_phone_plan_tells_variants_apart():
-    plan = phone_plan("Apple iPhone 13 Pro 128GB")
-    assert plan.exact and plan.searches == ["iphone 13 pro"]
+    plan = plan_for(PHONE, lot("Apple iPhone 13 Pro 128GB"))
+    assert plan.exact and plan.searches == ["iphone 13 pro 128gb", "iphone 13 pro"]
     ok = [r.matches(normalize(t)) for r in plan.rules for t in ("iPhone 13 Pro 128GB zgan",)]
     assert ok == [True, True]
     for other in ("iPhone 13 Pro Max 128GB", "iPhone 13 128GB", "iPhone 13 Pro scherm", "iPhone 131"):
         assert not any(r.matches(normalize(other)) for r in plan.rules), other
     assert not plan.rules[0].matches(normalize("iPhone 13 Pro 256GB")) and plan.rules[1].matches(normalize("iPhone 13 Pro 256GB"))
-    se = phone_plan("iPhone SE 2020 64GB")
+    se = plan_for(PHONE, lot("iPhone SE 2020 64GB"))
     assert se.exact and se.rules[-1].matches(normalize("iPhone SE 2e generatie")) and \
         not se.rules[-1].matches(normalize("iPhone SE 2022"))
     assert not phone_plan("iPhone SE").exact

@@ -134,6 +134,7 @@ class SearchPlan:
     brand: str | None = None
     note: str = ""  # why the plan is what it is, shown on the dashboard
     rough: bool = False  # always a rough price, even when the rule has a number in it (Intel MacBook "16")
+    options: tuple[str, ...] = ()  # what the lot says about its version, e.g. ("5g", "64gb"): in the first search
 
     @property
     def exact(self) -> bool:
@@ -353,20 +354,17 @@ _PIXEL_RE = re.compile(r"(?<![a-z0-9])pixel ?(\d{1,2})(a)?(?: ?(pro xl|pro fold|
 _PHONE_VARIANTS = ("pro", "max", "plus", "mini", "xl", "fold")
 PHONE_PARTS = ("scherm", "display", "lcd", "batterij", "accu", "backcover", "achterkant", "icloud", "simlock",
                "moederbord", "camera")
-_STORAGE_RE = re.compile(r"(?<![0-9])(64|128|256|512) ?gb(?![a-z0-9])")
 
 
 def phone_plan(title: str) -> SearchPlan | None:
-    """"Apple iPhone 13 Pro Max 256GB" -> listings that say iphone 13 + pro max (+ 256 GB when there are
-    enough of those): exact; "iPhone SE 2020" -> iPhone SE listings that say 2020 or 2nd gen. "iPhone SE" alone
+    """"Apple iPhone 13 Pro Max 256GB" -> listings that say iphone 13 + pro max (+ 256 GB, see with_options()):
+    exact; "iPhone SE 2020" -> iPhone SE listings that say 2020 or 2nd gen. "iPhone SE" alone
     is a rough price (three generations look the same in a title)."""
     t = normalize((title or "").replace("+", " plus "))
     m = _IPHONE_PLAN_RE.search(t)
     pixel = None if m else _PIXEL_RE.search(t)
     if not (m or pixel):
         return None
-    storage = _STORAGE_RE.search(t)
-    gb = storage.group(1) if storage else None
     if m:
         number, e, variant = m.group(1), m.group(2) or "", m.group(3) or ""
         line, model, shown = "iphone", f"iphone{number}{e}", f"iPhone {number.upper() if number[0] in 'sx' else number}{e}"
@@ -393,18 +391,14 @@ def phone_plan(title: str) -> SearchPlan | None:
         groups.append(which)
         label = f"iphone se {which[0]}"
         shown = f"iPhone SE {which[0]}"
-    rules = []
-    if gb:
-        rules.append(Rule(list(groups), model=model if number != "se" else None, ram=gb, without=without,
-                          label=f"{label} {gb}gb"))
-    rules.append(Rule(list(groups), model=model if number != "se" else None, without=without, label=label))
+    rules = [Rule(list(groups), model=model if number != "se" else None, without=without, label=label)]
     if number == "se":
         for r in rules:
             r.groups = [("iphone",), ("se",)] + r.groups
     search = label if number != "se" else f"iphone se {which[0]}"
     return SearchPlan("exact", [search], rules, model=f"{shown} {variant.title()}".strip(),
                       brand="apple" if m else "google",
-                      note=f"exact: {shown} {variant.title()}".strip() + (f" ({gb} GB if enough listings say so)" if gb else ""))
+                      note=f"exact: {shown} {variant.title()}".strip())
 
 
 # HP and Lenovo name a laptop or PC by line, model and generation: "ZBook Firefly 14 G10", "EliteBook 840 G5",
@@ -667,7 +661,109 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
     if plan and plan.kind != "custom" and is_battery_lot(lot.title):
         for rule in plan.rules:
             rule.without_parts = tuple(dict.fromkeys(rule.without_parts + TOOL_PARTS))
+    if plan:
+        plan = with_options(plan, lot, item)
     return plan
+
+
+# What a lot says about its version, in the title or else in the lot's own description: storage for phones and
+# tablets ("64 GB, Scherm beschadigd"), memory for laptops and Macs ("16 GB RAM"), 5G for phones. Listings that
+# say the same are tried first (then without), and the first Marktplaats search includes it ("galaxy a12 64gb").
+_STORAGE_KIND = re.compile(r"(?<![a-z0-9])(?:iphone|ipad|galaxy(?! book)|pixel|oneplus|smartphones?|telefoons?|gsm"
+                           r"|phones?|tablets?|tab|xiaomi|redmi|huawei|nokia|motorola|oppo|fairphone)(?![a-z0-9])")
+_RAM_KIND = re.compile(r"(?<![a-z0-9])(?:macbook|imac|mac mini|mac studio|laptops?|notebooks?|thinkpad|thinkbook"
+                       r"|ideapad|elitebook|probook|zbook|latitude|xps|inspiron|vostro|precision|surface|vivobook"
+                       r"|zenbook|expertbook|travelmate|aspire|chromebook|ultrabook|galaxy book)(?![a-z0-9])")
+_PHONE_KIND = re.compile(r"(?<![a-z0-9])(?:iphone|galaxy|pixel|oneplus|smartphones?|telefoons?|gsm|phones?|xiaomi"
+                         r"|redmi|huawei|nokia|motorola|oppo|fairphone)(?![a-z0-9])")
+_GB_RE = re.compile(r"(?<![0-9])(\d{1,4}) ?gb(?![a-z0-9])(?=((?: [a-z0-9]+){0,2}))")
+_RAM_WORDS = re.compile(r"^ (?:ram|geheugen|werkgeheugen|intern geheugen ram|memory|unified|ddr\d?|lpddr\d?)\b")
+_DISK_WORDS = re.compile(r"^ (?:opslag|storage|rom|intern|interne|ssd|hdd|emmc|flash|nvme|m 2|schijf|harde)\b")
+_STORAGE_SIZES = (16, 32, 64, 128, 256, 512)
+_RAM_SIZES = (4, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96)
+
+
+def _gb_values(text_norm: str) -> list[tuple[int, str]]:
+    """[(value, "ram" | "disk" | "")] for every "NN GB" in the text."""
+    out = []
+    for m in _GB_RE.finditer(text_norm):
+        rest = m.group(2) or ""
+        kind = "ram" if _RAM_WORDS.match(rest) else "disk" if _DISK_WORDS.match(rest) else ""
+        out.append((int(m.group(1)), kind))
+    return out
+
+
+def storage_gb(text_norm: str) -> str | None:
+    """Storage of a phone or tablet: "4GB RAM, 64GB" -> "64", "6/128GB" -> "128"."""
+    values = _gb_values(text_norm)
+    said = [v for v, kind in values if kind == "disk" and v in _STORAGE_SIZES]
+    rest = [v for v, kind in values if kind != "ram" and v in _STORAGE_SIZES]
+    best = said or rest
+    return str(max(best)) if best else None
+
+
+def ram_gb(text_norm: str) -> str | None:
+    """Memory of a laptop: "8GB RAM, 256GB SSD" -> "8", "i5, 16GB, 512GB" -> "16" (memory comes first)."""
+    values = _gb_values(text_norm)
+    said = [v for v, kind in values if kind == "ram" and v in _RAM_SIZES]
+    if said:
+        return str(said[0])
+    rest = [v for v, kind in values if kind == "" and v in _RAM_SIZES]
+    return str(rest[0]) if rest else None
+
+
+def lot_options(lot: Lot, item: WatchItem | None = None) -> tuple[str, ...]:
+    """("5g", "64gb") for a "Samsung Galaxy A13 5G" with description "64 GB"; () when it says nothing."""
+    from .condition import lot_text  # the lot's own part of the description, not the auction house's text
+    title = normalize((lot.title or "").replace("+", " plus "))
+    desc = normalize(lot_text(lot.description, 300))
+    kinds = f"{title} {normalize(item.name) if item else ''}"
+    opts: list[str] = []
+    if _RAM_KIND.search(kinds):
+        gb = ram_gb(title) or ram_gb(desc)
+    elif _STORAGE_KIND.search(kinds):
+        if _PHONE_KIND.search(kinds) and re.search(r"(?<![a-z0-9])5g(?![a-z0-9])", f"{title} {desc}"):
+            opts.append("5g")
+        gb = storage_gb(title) or storage_gb(desc)
+    else:
+        return ()
+    if gb:
+        opts.append(f"{gb}gb")
+    return tuple(opts)
+
+
+def with_options(plan: SearchPlan, lot: Lot, item: WatchItem | None = None) -> SearchPlan:
+    """Each rule is first tried with the lot's options, then without: "galaxy a13 5g 64gb", "galaxy a13 5g",
+    "galaxy a13". The first search names them too; the plan's own searches follow."""
+    opts = lot_options(lot, item)
+    if plan.kind == "custom" or not opts:
+        return plan
+    gb = next((o[:-2] for o in opts if o.endswith("gb")), None)
+    words = [o for o in opts if not o.endswith("gb")]
+    base, seen = [], set()
+    for r in plan.rules:  # the plan's own memory rules (mac_plan) are rebuilt from the options
+        if r.ram:
+            continue
+        if r.label not in seen:
+            seen.add(r.label)
+            base.append(r)
+    rules = []
+    for r in base:
+        for k in range(len(opts), 0, -1):
+            sub = opts[:k]
+            ram = gb if f"{gb}gb" in sub else None
+            extra = [(w,) for w in words if w in sub]
+            rules.append(Rule(r.groups + extra, model=r.model, label=f"{r.label} {' '.join(sub)}", size=r.size,
+                              without=r.without, without_parts=r.without_parts, gen_norm=r.gen_norm, ram=ram))
+        rules.append(r)
+    first = plan.searches[0]
+    named = " ".join(o for o in opts if o not in first.split())
+    searches = list(dict.fromkeys(([f"{first} {named}"] if named else []) + plan.searches))
+    note = plan.note
+    if gb and "GB" not in note:
+        note += f" ({' + '.join(o.upper() if o == '5g' else o[:-2] + ' GB' for o in opts)} if enough listings say so)"
+    return SearchPlan(plan.kind, searches, rules, model=plan.model, brand=plan.brand, note=note, rough=plan.rough,
+                      options=opts)
 
 
 def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:

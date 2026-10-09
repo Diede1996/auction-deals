@@ -174,11 +174,20 @@ troostwijk_alerts:
   # false to see all of Troostwijk's auctions. Lots whose auction the email doesn't name are always shown.
   only_bankruptcy: true
 
-# Lots on your watchlist without a type number in the title ("2 x Dell 24 inch monitor"): the bot reads the
-# description on the lot page once ("... type U2419 HC") and prices that model. Not for Troostwijk.
+# The description of lots on your watchlist, for sites whose lot list doesn't have it: the bot reads it on the
+# lot page once. It gives the model when the title doesn't ("2 x Dell 24 inch monitor" -> "type U2419 HC"), a
+# defect ("Scherm beschadigd") and storage or memory ("64 GB"). Lots without a type number in the title go first,
+# then the ones closing soonest. Not for Troostwijk.
 descriptions:
   enabled: true
-  max_pages_per_run: 40         # new lot pages per scan; descriptions are remembered for 30 days
+  max_pages_per_run: 80         # new lot pages per scan; descriptions are remembered for 30 days
+
+# Lots whose title or description says they're damaged, broken, don't work, are for parts or are locked
+# (iCloud, MDM): defect, kapot, beschadigd, schade, barst, gebroken, werkt niet, voor onderdelen, ... are left out
+# entirely. Not when it's negated ("geen schade") or about the box ("doos beschadigd"); scratches ("krassen") and
+# "niet getest" don't count. Set hide_defects: false to see them again.
+condition:
+  hide_defects: true
 
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
