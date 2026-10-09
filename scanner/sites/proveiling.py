@@ -113,6 +113,7 @@ def parse_lot_rows(html: str, auction: Auction, now, base: str = BASE) -> list[L
                 closes = auction.closes_at
         closes = closes or auction.closes_at
         nbids = _text(row.select_one("#NumberOfBids"))
+        condition = re.sub(r"^\s*Conditie\s*:\s*", "", _text(row.select_one("span.condition")), flags=re.I)
         lots.append(Lot(
             site=auction.site,
             lot_id=lot_id,
@@ -124,6 +125,7 @@ def parse_lot_rows(html: str, auction: Auction, now, base: str = BASE) -> list[L
             image=image,
             location=_text(row.select_one("p.location strong")) or None,
             bids=int(nbids) if nbids.isdigit() else None,
+            condition=condition,
         ).pickup_from(auction))
     return lots
 

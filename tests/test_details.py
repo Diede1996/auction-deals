@@ -73,3 +73,12 @@ def test_fill_descriptions_limit_and_errors():
     assert fill_descriptions([(MONITOR, lot) for lot in lots], lambda: http, cache, NOW, needs, limit=2) == 2
     assert "hnvi:0" not in cache  # failed: tried again next scan
     assert len(cache) == 2
+
+
+def test_a_site_that_fails_twice_in_a_row_is_left_alone():
+    lots = [Lot("hnvi", str(i), "Beeldscherm Dell", f"https://www.hnvi.nl/kavel/{i}", 10, None) for i in range(5)]
+    def page(m, u, kw):
+        raise RuntimeError("timeout")
+    http = FakeHttp([(url_has("hnvi.nl"), page)])
+    assert fill_descriptions([(MONITOR, lot) for lot in lots], lambda: http, {}, NOW, needs) == 0
+    assert len(http.calls) == 2

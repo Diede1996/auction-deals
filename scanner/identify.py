@@ -677,35 +677,58 @@ _RAM_KIND = re.compile(r"(?<![a-z0-9])(?:macbook|imac|mac mini|mac studio|laptop
 _PHONE_KIND = re.compile(r"(?<![a-z0-9])(?:iphone|galaxy|pixel|oneplus|smartphones?|telefoons?|gsm|phones?|xiaomi"
                          r"|redmi|huawei|nokia|motorola|oppo|fairphone)(?![a-z0-9])")
 _GB_RE = re.compile(r"(?<![0-9])(\d{1,4}) ?gb(?![a-z0-9])(?=((?: [a-z0-9]+){0,2}))")
-_RAM_WORDS = re.compile(r"^ (?:ram|geheugen|werkgeheugen|intern geheugen ram|memory|unified|ddr\d?|lpddr\d?)\b")
+_RAM_WORDS = re.compile(r"^ (?:ram|werkgeheugen|memory|unified|ddr\d?|lpddr\d?)\b")
 _DISK_WORDS = re.compile(r"^ (?:opslag|storage|rom|intern|interne|ssd|hdd|emmc|flash|nvme|m 2|schijf|harde)\b")
+# a label before the number: "Werkgeheugen: 16 GB", "Opslag: 512 GB" (not "8 GB RAM 256 GB": that RAM is the 8's)
+_LABEL_BEFORE = re.compile(r"(?<!gb )(?<![a-z0-9])(?:(?P<ram>ram|werkgeheugen|memory|geheugen)|(?P<disk>opslag|opslagcapaciteit"
+                           r"|storage|ssd|hdd|schijf|harde schijf|intern geheugen|interne opslag|rom)) $")
+# graphics memory ("Radeon Pro 5300M 4GB", "RTX 3070 8 GB"), memory cards and maximums are not the device's own
+_GPU_BEFORE = re.compile(r"(?<![a-z0-9])(?:(?:radeon|geforce|gtx|rtx|quadro|gpu|graphics|grafische kaart|videokaart|nvidia|arc)"
+                         r"(?: (?![0-9]+ ?gb)[a-z0-9]+){0,3}|[0-9]{3,4}[mx]) $")
+_GPU_AFTER = re.compile(r"^ (?:gddr\d?|vram|video|gpu)\b")
+_CARD_BEFORE = re.compile(r"(?<![a-z0-9])(?:sd|micro ?sd|kaart|geheugenkaart|card|uitbreidbaar(?: tot)?|tot|usb"
+                          r"|stick)(?: [a-z0-9]+)? $|(?<![a-z0-9])(?:maximaal|maximum|max(?:imaal|imum)? (?:ram|geheugen"
+                          r"|werkgeheugen|memory|opslag)) $")
+_CARD_AFTER = re.compile(r"^ (?:micro|sd|microsd|kaart|geheugenkaart|card|usb|stick)\b")
 _STORAGE_SIZES = (16, 32, 64, 128, 256, 512)
 _RAM_SIZES = (4, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96)
 
 
 def _gb_values(text_norm: str) -> list[tuple[int, str]]:
-    """[(value, "ram" | "disk" | "")] for every "NN GB" in the text."""
+    """[(value, "ram" | "disk" | "mem" | "")] for every "NN GB" that is the device's own memory or storage.
+    "mem" is "geheugen", which is memory in a laptop and storage in a phone."""
     out = []
     for m in _GB_RE.finditer(text_norm):
-        rest = m.group(2) or ""
-        kind = "ram" if _RAM_WORDS.match(rest) else "disk" if _DISK_WORDS.match(rest) else ""
+        before, after = text_norm[max(0, m.start() - 40):m.start()], m.group(2) or ""
+        if _GPU_BEFORE.search(before) or _GPU_AFTER.match(after) or _CARD_BEFORE.search(before) \
+                or _CARD_AFTER.match(after):
+            continue
+        label = _LABEL_BEFORE.search(before)
+        if label:
+            kind = "disk" if label.group("disk") else "mem" if label.group("ram") == "geheugen" else "ram"
+        elif re.match(r"^ [a-z]+(?: [a-z]+)? \d", after):
+            kind = ""  # "16 GB opslag 512 GB": that label belongs to the next number
+        else:
+            kind = "ram" if _RAM_WORDS.match(after) else "disk" if _DISK_WORDS.match(after) else ""
         out.append((int(m.group(1)), kind))
     return out
 
 
 def storage_gb(text_norm: str) -> str | None:
-    """Storage of a phone or tablet: "4GB RAM, 64GB" -> "64", "6/128GB" -> "128"."""
+    """Storage of a phone or tablet: "4GB RAM, 64GB" -> "64", "6/128GB" -> "128". None when the lot names more
+    than one size ("Partij iPhone 8 64GB / 256GB") or none."""
     values = _gb_values(text_norm)
-    said = [v for v, kind in values if kind == "disk" and v in _STORAGE_SIZES]
-    rest = [v for v, kind in values if kind != "ram" and v in _STORAGE_SIZES]
+    said = {v for v, kind in values if kind == "disk" and v in _STORAGE_SIZES}
+    rest = {v for v, kind in values if kind in ("", "mem") and v in _STORAGE_SIZES}
     best = said or rest
-    return str(max(best)) if best else None
+    return str(best.pop()) if len(best) == 1 else None
 
 
 def ram_gb(text_norm: str) -> str | None:
-    """Memory of a laptop: "8GB RAM, 256GB SSD" -> "8", "i5, 16GB, 512GB" -> "16" (memory comes first)."""
+    """Memory of a laptop: "8GB RAM, 256GB SSD" -> "8", "i5, 16GB, 512GB" -> "16" (memory comes first),
+    "Radeon Pro 5300M 4GB, 16GB" -> "16" (the 4 GB is the graphics card's)."""
     values = _gb_values(text_norm)
-    said = [v for v, kind in values if kind == "ram" and v in _RAM_SIZES]
+    said = [v for v, kind in values if kind in ("ram", "mem") and v in _RAM_SIZES]
     if said:
         return str(said[0])
     rest = [v for v, kind in values if kind == "" and v in _RAM_SIZES]
@@ -717,7 +740,8 @@ def lot_options(lot: Lot, item: WatchItem | None = None) -> tuple[str, ...]:
     from .condition import lot_text  # the lot's own part of the description, not the auction house's text
     title = normalize((lot.title or "").replace("+", " plus "))
     desc = normalize(lot_text(lot.description, 300))
-    kinds = f"{title} {normalize(item.name) if item else ''}"
+    # what the lot was found as: a laptop bundled with a monitor on the Monitor item is priced as a monitor
+    kinds = f"{normalize(matched_keyword(item, lot.title))} {normalize(item.name)}" if item else title
     opts: list[str] = []
     if _RAM_KIND.search(kinds):
         gb = ram_gb(title) or ram_gb(desc)
@@ -733,8 +757,8 @@ def lot_options(lot: Lot, item: WatchItem | None = None) -> tuple[str, ...]:
 
 
 def with_options(plan: SearchPlan, lot: Lot, item: WatchItem | None = None) -> SearchPlan:
-    """Each rule is first tried with the lot's options, then without: "galaxy a13 5g 64gb", "galaxy a13 5g",
-    "galaxy a13". The first search names them too; the plan's own searches follow."""
+    """Each rule is first tried with the lot's options, then without: "galaxy a13 5g 64gb", "galaxy a13 64gb",
+    "galaxy a13 5g", "galaxy a13". The first search names them too; the plan's own searches follow."""
     opts = lot_options(lot, item)
     if plan.kind == "custom" or not opts:
         return plan
@@ -747,10 +771,12 @@ def with_options(plan: SearchPlan, lot: Lot, item: WatchItem | None = None) -> S
         if r.label not in seen:
             seen.add(r.label)
             base.append(r)
+    # all options, then storage or memory alone, then 5G alone, then none: a 5G phone with 128 GB is compared
+    # with 128 GB listings before 5G listings of any size
+    subs = list(dict.fromkeys([opts] + ([(f"{gb}gb",)] if gb and words else []) + ([tuple(words)] if words else [])))
     rules = []
     for r in base:
-        for k in range(len(opts), 0, -1):
-            sub = opts[:k]
+        for sub in subs:
             ram = gb if f"{gb}gb" in sub else None
             extra = [(w,) for w in words if w in sub]
             rules.append(Rule(r.groups + extra, model=r.model, label=f"{r.label} {' '.join(sub)}", size=r.size,
@@ -759,9 +785,8 @@ def with_options(plan: SearchPlan, lot: Lot, item: WatchItem | None = None) -> S
     first = plan.searches[0]
     named = " ".join(o for o in opts if o not in first.split())
     searches = list(dict.fromkeys(([f"{first} {named}"] if named else []) + plan.searches))
-    note = plan.note
-    if gb and "GB" not in note:
-        note += f" ({' + '.join(o.upper() if o == '5g' else o[:-2] + ' GB' for o in opts)} if enough listings say so)"
+    note = re.sub(r" \(\d+ GB if enough listings say so\)", "", plan.note)  # mac_plan's own memory, rebuilt here
+    note += f" ({' + '.join(o.upper() if o == '5g' else o[:-2] + ' GB' for o in opts)} if enough listings say so)"
     return SearchPlan(plan.kind, searches, rules, model=plan.model, brand=plan.brand, note=note, rough=plan.rough,
                       options=opts)
 

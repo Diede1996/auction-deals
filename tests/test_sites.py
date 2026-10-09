@@ -84,6 +84,7 @@ def test_proveiling_home_and_lots():
     assert pellet.location == "Emmeloord"
     assert pellet.pickup == "Produktieweg 9, 8304AV Emmeloord"  # the "ophaallocatie"
     assert pellet.pickup_when == "Thu 1 Oct, 10:00–12:00"
+    assert pellet.condition == "Nieuw"  # "Conditie: Nieuw"; "Conditie: Defect" hides the lot
     probat = by_id["3285237"]
     assert probat.current_bid == 20.0  # no bids yet -> starting bid
     assert probat.closes_at == datetime(2026, 9, 23, 20, 25, tzinfo=AMS)

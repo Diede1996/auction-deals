@@ -108,6 +108,7 @@ def parse_lot(k: dict, auction: Auction) -> Lot:
         site=SITE,
         lot_id=str(k.get("id")),
         title=(k.get("naam") or "").strip(),
+        description=re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", k.get("omschrijving") or k.get("beschrijving") or "")).strip(),
         url=f"{BASE}/nl/veilingen/{auction.auction_id}/kavels/{volg}",
         current_bid=float(bid) if isinstance(bid, (int, float)) else None,
         closes_at=from_iso(k.get("sluitingsDatumISO")) or auction.closes_at,

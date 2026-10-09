@@ -494,6 +494,11 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     matched = match_lots(items, lots)
     log.info("%d lots scanned, %d match the watchlist", len(lots), len(matched))
 
+    # favorites (starred on the dashboard, kept in a GitHub issue): never hidden by the filters below
+    store = FavoritesStore(http_cls(delay=0.2))
+    favs = store.load() if items else []
+    fav_keys = {f["key"] for f in favs}
+
     # 1c. the description on the lot page: the type number when the title has none ("2 x Dell 24 inch monitor"),
     # a defect ("Scherm beschadigd"), storage or memory ("64 GB"). Lots without a type number in the title first,
     # then the ones closing soonest.
@@ -511,7 +516,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 1d. lots with a defect ("Scherm beschadigd", "werkt niet", "voor onderdelen"): leave them out entirely
     defect_lots = 0
     if defect_filter(config):
-        kept = [(item, lot) for item, lot in matched if not defect(lot.title, lot.description)]
+        kept = [(item, lot) for item, lot in matched
+                if lot.key in fav_keys or not defect(lot.title, lot.description, lot.condition)]
         defect_lots = len(matched) - len(kept)
         matched = kept
         log.info("%d lots with a defect left out", defect_lots)
@@ -519,7 +525,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     min_year = age_filter(config)
     old_lots = 0
     if min_year:
-        kept = [(item, lot) for item, lot in matched if not too_old(item, lot, min_year)]
+        kept = [(item, lot) for item, lot in matched if lot.key in fav_keys or not too_old(item, lot, min_year)]
         old_lots = len(matched) - len(kept)
         matched = kept
         log.info("%d Apple/laptop/phone lots from before %d left out", old_lots, min_year)
@@ -571,10 +577,6 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                          max_lookups=int(mp_cfg.get("max_lookups_per_run", 40)),
                          enabled=mp_cfg.get("enabled", True))
     site_fees = {s: Fees.from_dict(c) for s, c in (config.get("sites") or {}).items()}
-    # favorites (starred on the dashboard, kept in a GitHub issue)
-    store = FavoritesStore(http_cls(delay=0.2))
-    favs = store.load() if items else []
-    fav_keys = {f["key"] for f in favs}
     rows: list[Row] = []
     for item, lot in sorted(matched, key=lambda m: m[1].closes_at or horizon):
         trip = trips.get(pickup_place(lot) or "")

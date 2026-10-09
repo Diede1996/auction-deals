@@ -1,11 +1,12 @@
-"""Lot descriptions, for lots whose title has no type number.
+"""Lot descriptions, read from the lot page for sites whose lot list doesn't have them.
 
 "2 x Dell 24 inch monitor" says nothing about which Dell; the lot page does: "2 x Dell 24 inch monitor type
-U2419 HC". For lots on your watchlist without a type number in the title, the bot reads the description
-("Omschrijving") from the lot page once and remembers it, so the Marktplaats price is for that model.
+U2419 HC". The description also says whether the lot has a defect ("Scherm beschadigd", condition.py) and how
+much storage or memory it has ("64 GB", identify.with_options). The bot reads it once and remembers it.
 
-- Only for lots that match your watchlist, at most `limit` new pages per scan, one site at a time with
-  the usual pause between requests.
+- Only for lots that match your watchlist, at most `limit` new pages per scan (the caller puts lots without a
+  type number first, then the ones closing soonest), one site at a time with the usual pause between requests.
+- A site that fails twice in a row (timeouts, errors) is left alone for the rest of the scan.
 - Troostwijk is never visited; Onlineveilingmeester's and BellAuction's lot pages are apps without the text
   in the page (BellAuction's descriptions come with the lot list anyway).
 """
@@ -25,7 +26,7 @@ log = logging.getLogger(__name__)
 SKIP_SITES = {"troostwijk", "onlineveilingmeester", "bellauction"}
 _LABEL = re.compile(r"^(?:kavel\s*)?(?:omschrijving|beschrijving|description)\s*:?\s*(.*)$", re.I)
 _END = re.compile(r"^(?:kijkdag|afhaaldag|ophaaldag|sluit|biedingen|bied|voorwaarden|retourneren|locatie|"
-                  r"kavelnummer|verkocht door|veiling|opgeld|let op)\b", re.I)
+                  r"kavelnummer|verkocht door|veiling|opgeld)\b", re.I)  # not "Let op": "Let op: scherm gebarsten"
 
 
 def description_from_page(html: str) -> str:
@@ -52,6 +53,7 @@ def fill_descriptions(matched, http_factory, cache: dict, now: datetime, needs, 
     cache: lot key -> {"d": description, "at": iso date}, kept in the state file. Returns pages read."""
     clients: dict[str, object] = {}
     blocked: set[str] = set()
+    fails: dict[str, int] = {}
     read = 0
     for _, lot in matched:
         if lot.description or lot.site in SKIP_SITES or not needs(lot):
@@ -69,9 +71,13 @@ def fill_descriptions(matched, http_factory, cache: dict, now: datetime, needs, 
         except BlockedError:
             blocked.add(host)
             continue
-        except Exception as e:  # try again next scan
+        except Exception as e:  # try again next scan; a site that fails twice in a row is left alone this scan
             log.info("no description for %s: %s", lot.key, type(e).__name__)
+            fails[host] = fails.get(host, 0) + 1
+            if fails[host] >= 2:
+                blocked.add(host)
             continue
+        fails[host] = 0
         read += 1
         lot.description = description_from_page(html)
         cache[lot.key] = {"d": lot.description, "at": now.isoformat()}
@@ -98,18 +104,21 @@ def fill_start_prices(matched, http_factory, cache: dict, now: datetime, limit: 
     """Lots on your watchlist whose list shows no price because nobody has bid yet (Inventarisveilingen
     shows €0,00): read the starting price on the lot page once. cache: lot key -> {"p": price, "at": iso}."""
     clients: dict[str, object] = {}
+    fails: dict[str, int] = {}
     read = 0
     for _, lot in matched:
         if lot.site not in START_PRICE_SITES or lot.current_bid is not None:
             continue
         entry = cache.get(lot.key)
-        if entry is None and read < limit:
-            host = urlparse(lot.url).netloc
+        host = urlparse(lot.url).netloc
+        if entry is None and read < limit and fails.get(host, 0) < 2:
             try:
                 html = clients.setdefault(host, http_factory()).text(lot.url)
             except Exception as e:  # BlockedError included: try again next scan
                 log.info("no start price for %s: %s", lot.key, type(e).__name__)
+                fails[host] = fails.get(host, 0) + 1
                 continue
+            fails[host] = 0
             read += 1
             price = start_price_from_page(html)
             entry = {"p": price, "at": now.isoformat()}
