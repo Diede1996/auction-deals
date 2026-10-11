@@ -17,6 +17,8 @@ WATCHLIST_HEADER = """\
 #   resale_factor  what you expect to sell for, as a share of the Marktplaats median: 0.85 = 85%, 0.5 = 50%
 #   min_margin     the suggested max bid always leaves at least this margin at that price:
 #                  profit as a share of what you pay (bid + premium + VAT + driving): 0.3 = 30%
+#   margin_tiers   (optional) a different margin for cheaper things, by expected sale price per item:
+#                  - {up_to: 50, min_margin: 0.3} = things selling for at most €50 need 30%, the rest min_margin
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard

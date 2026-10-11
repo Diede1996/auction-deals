@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import re
 
+from .evaluate import Settings
 from .models import WatchItem
 from .telegram import attr, esc
 from .util import fmt_eur, normalize
@@ -110,9 +111,9 @@ def handle(text: str, watchlist: dict, status_text: str, dashboard_url: str | No
     if cmd == "/list":
         if not items:
             return ("Your watchlist is empty. Add something with /add", False)
-        sell = float(settings.get("resale_factor", 0.85))
-        head = (f"<b>Watchlist</b> (max bids for selling at {sell:.0%} of the Marktplaats median with at least "
-                f"{float(settings.get('min_margin', 0.30)):.0%} margin)\n\n")
+        s = Settings.from_dict(settings)
+        head = (f"<b>Watchlist</b> (max bids for selling at {s.resale_factor:.0%} of the Marktplaats median with at least "
+                f"{s.describe_margin()})\n\n")
         return (head + "\n".join(describe(i + 1, it) for i, it in enumerate(items)), False)
 
     if cmd == "/add":
@@ -161,8 +162,11 @@ def handle(text: str, watchlist: dict, status_text: str, dashboard_url: str | No
                     "on what you pay.", False)
         watchlist.setdefault("settings", {})["min_margin"] = round(value / 100, 4)
         watchlist["settings"].pop("min_profit", None)  # the old minimum in euros
+        tiers = Settings.from_dict(watchlist["settings"]).margin_tiers
+        extra = (" Cheaper things keep their own margin (" + ", ".join(f"{m:.0%} up to €{u:g}" for u, m in tiers) +
+                 "; change margin_tiers in watchlist.yml)." if tiers else "")
         return (f"✅ Max bids now leave at least <b>{value:g}% margin</b>: profit as a share of what you pay "
-                "(bid, premium, VAT and driving). The dashboard uses it from the next scan; you can also try other "
+                f"(bid, premium, VAT and driving).{extra} The dashboard uses it from the next scan; you can also try other "
                 "values there right away.", True)
 
     if cmd == "/minprofit":

@@ -209,7 +209,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
             f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b> · "
             f"{sum(1 for r in rows if r[1].key in new_keys)} new",
             f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
-            f"with at least {settings.min_margin:.0%} margin</i>"]
+            f"with at least {settings.describe_margin()}</i>"]
     parts = ["\n".join(head)] + list(notes or [])
     if hearts:  # lots with a heart on Troostwijk that close soon (Troostwijk emails a reminder about them)
         parts.append("❤️ <b>Lots you follow on Troostwijk</b> · <i>check the current bid on the lot page</i>\n" +
@@ -458,6 +458,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
     return {
         "generated": now.isoformat(),
         "settings": {"min_margin": settings.min_margin,
+                     "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "kinds": auction_kinds(config),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,

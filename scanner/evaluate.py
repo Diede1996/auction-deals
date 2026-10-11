@@ -5,6 +5,7 @@
     margin      = sale price - you pay, also shown as a % of what you pay
     max bid     = highest bid that still leaves at least min_margin, as a % of what you pay:
                   you pay at most sale price / (1 + min_margin)
+                  (margin_tiers can ask a different margin for cheaper things, by sale price per item)
                   (and keeps the total <= your own max_price, if you set one for the item)
 """
 from __future__ import annotations
@@ -36,12 +37,32 @@ class Settings:
     resale_factor: float = 0.85  # you sell at 85% of the Marktplaats median asking price
     selling_costs: float = 0.0  # e.g. shipping or listing costs per sale
     include_trip: bool = True  # count the drive to the pickup address as a cost
+    # [(up_to, margin)]: items selling for at most up_to euros each need this margin instead of min_margin
+    margin_tiers: tuple[tuple[float, float], ...] = ()
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
         d = d or {}  # older watchlists may still have target_return / min_profit (in €); those are ignored
+        tiers = sorted((float(t["up_to"]), float(t["min_margin"])) for t in d.get("margin_tiers") or []
+                       if isinstance(t, dict) and t.get("up_to") is not None and t.get("min_margin") is not None)
         return cls(min_margin=float(d.get("min_margin", 0.30)), resale_factor=float(d.get("resale_factor", 0.85)),
-                   selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip)
+                   selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip,
+                   margin_tiers=tuple(tiers))
+
+    def margin_for(self, sale_each: float | None) -> float:
+        """The minimum margin for an item that sells for sale_each euros: the first tier it fits, else min_margin."""
+        if sale_each is not None:
+            for up_to, margin in self.margin_tiers:
+                if sale_each <= up_to:
+                    return margin
+        return self.min_margin
+
+    def describe_margin(self) -> str:
+        """e.g. "30% margin up to €50 per item, 25% above" or "50% margin"."""
+        if not self.margin_tiers:
+            return f"{self.min_margin:.0%} margin"
+        parts = [f"{m:.0%} margin up to €{u:g}" for u, m in self.margin_tiers]
+        return ", ".join(parts) + f" per item, {self.min_margin:.0%} above"
 
 
 @dataclass
@@ -88,9 +109,10 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     bid = next_bid_of(lot)  # what you'd have to bid now, not the current bid
     trip = (lot.trip_cost or 0.0) if settings.include_trip else 0.0
     cost = total_cost(bid, fees, lot, trip)
-    min_margin = item.min_margin if item.min_margin is not None else settings.min_margin
-
     market = market_value(item, estimate, units)
+    sale_each = market / max(1, units) * settings.resale_factor if market else None
+    min_margin = item.min_margin if item.min_margin is not None else settings.margin_for(sale_each)
+
     resale = profit = margin = None
     caps = []
     if market:

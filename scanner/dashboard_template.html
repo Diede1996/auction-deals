@@ -441,6 +441,16 @@ footer td { padding: 2px 14px 2px 0; }
     return isTransport(lot) ? DRIVING.transport.first + DRIVING.transport.extra * Math.max(0, n - 1) : lot.trip.cost;
   }
   function tripCost(lot) { return S.trip && lot.trip ? (lot._share != null ? lot._share : groupCost(lot, 1)) : 0; }
+  /* cheaper things can need a higher margin (watchlist margin_tiers, by sale price per item); the rest uses S.minMargin */
+  var TIERS = (DATA.settings.margin_tiers || []).slice().sort(function (a, b) { return a.up_to - b.up_to; });
+  function marginFor(saleEach) {
+    if (saleEach != null) for (var i = 0; i < TIERS.length; i++) if (saleEach <= TIERS[i].up_to) return TIERS[i].min_margin * 100;
+    return S.minMargin;
+  }
+  function marginText() {
+    return TIERS.length ? TIERS.map(function (t) { return Math.round(t.min_margin * 100) + "% up to €" + t.up_to; }).join(", ") +
+      ", " + S.minMargin + "% above" : S.minMargin + "% margin";
+  }
   function calc(lot) {
     var trip = tripCost(lot);
     var cost = function (b) { return (b * (1 + lot.premium) + (lot.fixed || 0)) * (1 + lot.vat) + trip; };
@@ -448,9 +458,10 @@ footer td { padding: 2px 14px 2px 0; }
     var own = values[lot.key];
     var market = own != null ? own : lot.market;
     var source = own != null ? "yours" : lot.marketSource;
-    var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 : S.minMargin;
     /* the bid you'd have to place now: the starting bid, or the current bid + one step */
     var bid = lot.nextBid != null ? lot.nextBid : (lot.bid || 0), costNow = cost(bid), resale = null, caps = [];
+    var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 :
+      marginFor(market ? market / Math.max(1, lot.units || 1) * S.factor / 100 : null);
     if (market) {
       resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
       caps.push(resale / (1 + Math.max(0, minMargin) / 100));
@@ -537,7 +548,7 @@ footer td { padding: 2px 14px 2px 0; }
     var noPrice = visible.filter(function (r) { return r.c.status === "noprice"; });
     var tiles = [
       { label: "Matching lots", value: visible.length, note: noPrice.length ? noPrice.length + " without a price yet" : "all priced" },
-      { label: "Room to bid", value: room.length, note: "selling at " + S.factor + "% of median, ≥ " + S.minMargin + "% margin", primary: true },
+      { label: "Room to bid", value: room.length, note: "selling at " + S.factor + "% of median, ≥ " + marginText(), primary: true },
       { label: "Closing within 24 hours", value: soon.length, note: "with room to bid" },
       { label: "New since last scan", value: fresh.length, note: "first seen today" }
     ];
@@ -1285,7 +1296,7 @@ footer td { padding: 2px 14px 2px 0; }
   /* ---------- controls ---------- */
   var $ = function (id) { return document.getElementById(id); };
   function syncControls() {
-    $("factorRange").value = Math.max(20, Math.min(120, S.factor)); $("factor").value = S.factor; $("minMargin").value = S.minMargin;
+    $("factorRange").value = Math.max(20, Math.min(120, S.factor)); $("factor").value = S.factor; $("minMargin").value = S.minMargin; if (TIERS.length) { var ml = document.querySelector('label[for="minMargin"]'); if (ml) ml.textContent = "Minimum margin above €" + TIERS[TIERS.length - 1].up_to + " (cheaper: " + TIERS.map(function (t) { return Math.round(t.min_margin * 100) + "% up to €" + t.up_to; }).join(", ") + ")"; }
     $("trip").checked = !!S.trip; $("tripField").hidden = !DRIVING.home;
     $("sort").value = ui.sort; $("onlyRoom").checked = ui.onlyRoom; $("showHidden").checked = ui.showHidden; $("q").value = ui.q;
     $("item").value = ui.item; $("site").value = ui.site;
