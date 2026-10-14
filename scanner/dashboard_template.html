@@ -1041,6 +1041,7 @@ footer td { padding: 2px 14px 2px 0; }
       var worth = g.filter(worthCollecting).length;
       if (need === null && DRIVING.transport) return;  /* too far to drive: a transporter brings it */
       if (need !== null && worth >= need) return;
+      if (g[0].lot.combo) return;  /* one drive past several addresses nearby (see the morning summary) */
       g.forEach(function (r) {
         if (!favs[r.lot.key]) r.c.far = { min: min, worth: worth, need: need, limit: rules[rules.length - 1][0] };
       });

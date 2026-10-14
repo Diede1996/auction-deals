@@ -6,9 +6,10 @@ import os
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from . import commands
+from . import commands, inventory
 from .favorites import FavoritesStore, closing, due_reminders
 from .http import Http
+from .models import Lot, WatchItem
 from .sites import SITE_NAMES
 from .storage import dashboard_url, github_output, load_json, load_yaml, save_json, save_watchlist
 from .telegram import Telegram, attr, esc
@@ -69,6 +70,29 @@ def favorites_list(favs: list[dict], lots_by_key: dict[str, dict], now: datetime
     return "<b>Your favorites</b>\n" + "\n".join(rows) + "\n\nI remind you about an hour before each one closes."
 
 
+def stock_pricer(root: Path, config: dict, now: datetime, http_cls):
+    """(name, watchlist item or None) -> Marktplaats PriceEstimate for something you bought. Searched on a copy
+    of the saved prices with logging off: what you buy stays out of the public repository and Actions log."""
+    from .pricing import PriceFinder
+    from .scan import PRIVATE_LOGS, followed_item, quiet_logs
+    mp_cfg = config.get("marktplaats") or {}
+    cache = dict(load_json(root / "data" / "state.json").get("price_cache") or {})
+    finder = None
+
+    def price_of(name: str, item: WatchItem | None):
+        nonlocal finder
+        item = item or followed_item(name)
+        if not item or mp_cfg.get("enabled", True) is False:
+            return None
+        with quiet_logs(*PRIVATE_LOGS):
+            if finder is None:
+                finder = PriceFinder(http_cls(delay=float(mp_cfg.get("delay_seconds", 4))), cache, now,
+                                     min_listings=int(mp_cfg.get("min_listings", 4)),
+                                     min_listings_exact=int(mp_cfg.get("min_listings_exact", 2)), max_lookups=3)
+            return finder.for_lot(item, Lot("stock", "1", name, "", None, None))
+    return price_of
+
+
 def announce_chat_id(tg: Telegram) -> None:
     """Setup helper: no TELEGRAM_CHAT_ID yet -> tell whoever messaged the bot what their chat id is."""
     try:
@@ -122,6 +146,21 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
     lots_by_key = {lot["key"]: lot for lot in (load_json(root / "data" / "lots.json").get("lots") or [])
                    if isinstance(lot, dict) and lot.get("key")}
 
+    # your stock (encrypted: what you paid and earned stays private in this public repository)
+    inv_cfg = config.get("inventory") or {}
+    inv_path = root / "data" / "inventory.enc"
+    inv_secret = os.environ.get("INVENTORY_KEY", "").strip() or token
+    try:
+        inv = inventory.load(inv_path, inv_secret)
+        inv_error = None
+    except inventory.InventoryKeyError:
+        inv, inv_error = None, ("⚠️ Ik kan je voorraadlijst niet openen: de sleutel is veranderd (een nieuw "
+                                "Telegram-token of INVENTORY_KEY). Zet de oude terug, dan is alles er weer.")
+    inv_changed = False
+    inv_ctx = inventory.Context(items=[WatchItem.from_dict(d) for d in watchlist.get("items") or []],
+                                resale_factor=float((watchlist.get("settings") or {}).get("resale_factor", 0.85)),
+                                now=now, price_of=stock_pricer(root, config, now, http_cls))
+
     limit = int((config.get("commands") or {}).get("max_extra_scans_per_day", 3))
     today = now.astimezone(AMS).date().isoformat()
     scans = [d for d in tg_state.get("extra_scans", []) if d == today]
@@ -134,7 +173,13 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
             continue
         text = (msg.get("text") or "").strip()
         cmd = text.split(" ")[0].split("@")[0].lower()
-        if cmd in ("/favorites", "/favs", "/favorieten"):
+        if cmd in inventory.COMMANDS:
+            if inv is None:
+                reply = inv_error
+            else:
+                reply, did = inventory.handle(text, inv, inv_ctx)
+                inv_changed |= did
+        elif cmd in ("/favorites", "/favs", "/favorieten"):
             reply = favorites_list(favs, lots_by_key, now, url)
         elif cmd == "/scan":
             if scan_requested:
@@ -174,8 +219,26 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
     for key in [k for k, v in reminded.items() if datetime.fromisoformat(v) < now - timedelta(days=2)]:
         del reminded[key]
 
+    # 🏷 once a day, from 9:00: things that don't sell at their asking price
+    today_local = now.astimezone(AMS)
+    if inv is not None and inv_cfg.get("enabled", True) is not False and today_local.hour >= 9 \
+            and inv.get("nudge_day") != today_local.date().isoformat():
+        inv["nudge_day"] = today_local.date().isoformat()
+        inv_changed = True
+        due = inventory.due_nudges(inv, now, int(inv_cfg.get("lower_price_after_days", 10)),
+                                   int(inv_cfg.get("remind_every_days", 7)), float(inv_cfg.get("price_drop", 0.1)))
+        if due:
+            try:
+                tg.send(inventory.nudge_text(due, now))
+                for d in due:
+                    next(i for i in inv["items"] if i["id"] == d["id"])["nudged"] = now.isoformat()
+            except Exception as e:
+                log.warning("could not send the stock reminder: %s", e)
+
     tg_state["extra_scans"] = scans
     if not dry_run:
+        if inv is not None and inv_changed:
+            inventory.save(inv_path, inv, inv_secret)
         if changed:
             save_watchlist(watch_path, watchlist)
         save_json(tg_path, tg_state)

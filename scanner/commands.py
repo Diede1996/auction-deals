@@ -39,7 +39,9 @@ Every morning I check the auction sites for bankruptcy, business-closure, estate
 <b>/favorites</b> – the lots you starred on the dashboard; I remind you about an hour before each one closes
 <b>/dashboard</b> – link to your list of lots
 <b>/status</b> – when the last scan ran and which sites worked
-<b>/help</b> – this message"""
+<b>/help</b> – this message
+
+<b>Voorraad</b> (wat je gekocht hebt en doorverkoopt): <b>/koop</b>, <b>/verkocht</b>, <b>/prijs</b>, <b>/voorraad</b>, <b>/winst</b>, <b>/weg</b>. Uitleg: /voorraadhelp"""
 
 _OPT_RE = re.compile(r'\b(max|price|margin|mp)=("([^"]*)"|\S+)', re.I)
 

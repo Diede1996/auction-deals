@@ -187,6 +187,27 @@ You manage your watchlist by sending the bot commands. It reads them every 5 min
 
 You can also edit `watchlist.yml` directly on GitHub. The comments at the top of that file explain every field.
 
+### Your stock: from auction to Marktplaats
+
+Tell the bot what you bought and sold, and it writes the listing, keeps your stock and shows what each kind of thing earns per hour of your time.
+
+| Command | What it does |
+|---|---|
+| `/koop Dell U2719D monitor \| 45 tijd=60` | You bought it for €45 all in (bid, premium, VAT) and collecting took 60 min (`tijd=1,5u` works too). You get a Marktplaats listing to paste (title, description with [brackets] to fill in), an asking price (the Marktplaats median, rounded) and the lowest price to accept (your sell percentage of the median, never below what you paid). |
+| `/verkocht 3 80 tijd=20` | #3 sold for €80; 20 min for the listing, messages and handover. |
+| `/prijs 3 70` | Change your asking price. |
+| `/voorraad` | What's still for sale, with days in stock. |
+| `/winst` | Per kind of thing (the watchlist item it matches, else "Overig"): profit, margin, days until sold and **profit per hour** (for sales with a `tijd=`). Also the share of the Marktplaats median you actually sell for; after 5 such sales it tells you when `/sellat` should change. |
+| `/weg 3` | Remove #3 (a mistake, or you keep it). |
+
+**Lower the price.** Once a day (from 9:00) the bot lists what hasn't sold 10 days after its asking price was set, with a price 10% lower, never under your lowest price. Again after a week. Change this under `inventory` in `config.yml`.
+
+**Private.** What you paid and earned is saved encrypted in `data/inventory.enc`; in this public repository it is unreadable without the key. The key comes from your `TELEGRAM_BOT_TOKEN` secret, or from an `INVENTORY_KEY` secret if you add one (do that if you ever plan to change the bot token: with another key the old list can't be opened, and the bot then leaves it untouched and tells you). The Marktplaats search for what you bought isn't saved or logged.
+
+### One drive, several pickups
+
+Lots at different addresses close to each other (at most 25 km apart, `combine_within_km` under `driving`) on the same pickup day count as one drive. Their lots together count for your trip rules: two lots in Veghel and one in Uden are worth a 45-minute drive, though neither town is alone. The morning summary lists such drives under 🧭 *One drive, several pickups*, with the estimated time there and back compared with separate drives, and the dashboard doesn't hide those lots. The drive between the addresses is a straight line × 1.3 at 75 km/h.
+
 ---
 
 ## How the numbers work

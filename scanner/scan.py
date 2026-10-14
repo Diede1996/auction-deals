@@ -27,6 +27,7 @@ from .condition import defect, defect_filter
 from .matching import auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
+from .routes import Combo, combined_pickups
 from .sites import SITE_NAMES, SITES
 from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
@@ -201,7 +202,7 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
                    trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen",
                    far: dict | None = None, far_rules: list | None = None, hearts: list[Row] | None = None,
-                   heart_trips: dict | None = None) -> str:
+                   heart_trips: dict | None = None, combos: list[Combo] | None = None) -> str:
     far = far or {}
     deals = [r for r in rows if r[2].is_deal and r[1].key not in far]
     day = now.astimezone(AMS).strftime("%a %d %b")
@@ -237,6 +238,9 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append(f"Nothing {'else ' if hearts else ''}on your watchlist is in a running {kinds} auction today.")
     elif not soon and not fresh and not check:
         parts.append("Nothing new or closing soon with room to bid.")
+    combo_part = combos_message(combos or [], far_rules or [])
+    if combo_part:
+        parts.append(combo_part)
     over = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is None)
     few = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is not None)
     if far_rules and (few or over):
@@ -251,6 +255,24 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
     if url:
         parts.append(f'📊 <a href="{attr(url)}">Open the dashboard</a>')
     return "\n\n".join(parts)
+
+
+def combos_message(combos: list[Combo], rules: list[tuple[float, int]], limit: int = 4) -> str | None:
+    """🧭 Pickups close to each other on the same day: one drive instead of several."""
+    lines = []
+    for c in combos[:limit]:
+        route = " → ".join(f"{esc(place.split(',')[0][:30])} ({n})" for place, n, _ in c.places)
+        saved = c.separate - c.minutes
+        alone = [lots_needed(m, rules) for _, n, m in c.places]
+        rescued = any(need is None or n < need for (_, n, _), need in zip(c.places, alone)) if rules else False
+        why = " · <i>together worth the drive</i>" if rescued else ""
+        lines.append(f"<b>{esc(c.day)}</b>: {route} · {c.lots} lots, ≈ {duration(c.minutes)} there and back"
+                     + (f" instead of {duration(c.separate)}" if saved >= 10 else "") + why)
+    if not lines:
+        return None
+    return ("🧭 <b>One drive, several pickups</b>\n" + "\n".join(lines) +
+            "\n<i>Addresses close to each other with lots worth collecting on the same pickup day; "
+            "the drive between them is estimated.</i>")
 
 
 # ---------------------------------------------------------------- dashboard data
@@ -367,21 +389,45 @@ def lots_needed(minutes: float, rules: list[tuple[float, int]]) -> int | None:
     return None
 
 
+def pickup_groups(rows: list[Row], trips: dict, favorite_keys: set[str]) -> dict:
+    """(address, pickup day) -> [(lot key, worth collecting)] for lots with a known trip."""
+    groups: dict[tuple[str, str], list[tuple[str, bool]]] = {}
+    for row in rows:
+        place = pickup_place(row[1])
+        if trips.get(place or ""):
+            groups.setdefault((place, pickup_day(row[1])), []).append((row[1].key, worth_collecting(row, favorite_keys)))
+    return groups
+
+
+def worthwhile_combos(combos: list[Combo], rules: list[tuple[float, int]]) -> list[Combo]:
+    """Drives past several addresses that collect enough lots for their length under your trip rules."""
+    out = []
+    for c in combos:
+        need = lots_needed(c.one_way, rules)
+        if need is not None and c.lots >= need:
+            out.append(c)
+    return out
+
+
 def too_far(rows: list[Row], trips: dict, favorite_keys: set[str], rules: list[tuple[float, int]],
-            transport: bool = False) -> dict:
+            transport: bool = False, combos: list[Combo] | None = None) -> dict:
     """Lots you won't drive for: the pickup is further than the last rule allows, or too few lots at that
     address and pickup day are worth collecting (room to bid, a Troostwijk lot to check, or a favorite) for
     the time it takes. Returns lot key -> (minutes, lots worth collecting there, lots needed or None when
-    it's always too far). Favorites are never left out."""
+    it's always too far). Favorites are never left out, nor lots at an address on a worthwhile drive past
+    several addresses (combos, from worthwhile_combos)."""
     if not rules:
         return {}
+    combined = {(place, c.day) for c in combos or [] for place, _, _ in c.places}
     groups: dict[tuple[str, str], list[tuple[Lot, Verdict]]] = {}
     for _, lot, v, _ in rows:
         place = pickup_place(lot)
         if trips.get(place or ""):
             groups.setdefault((place, pickup_day(lot)), []).append((lot, v))
     out = {}
-    for (place, _), members in groups.items():
+    for (place, day), members in groups.items():
+        if (place, day) in combined:
+            continue
         minutes = trips[place].minutes
         need = lots_needed(minutes, rules)
         if need is None and transport:  # too far to drive, but a transporter can bring it
@@ -404,9 +450,10 @@ def pickup_place(lot: Lot) -> str | None:
 def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settings, site_fees: dict[str, Fees],
                    new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None,
                    trips: dict | None = None, driving: dict | None = None, favorites: dict | None = None,
-                   max_units: int = 0) -> dict:
+                   max_units: int = 0, combos: list[Combo] | None = None) -> dict:
     items = items or []
     trips = trips or {}
+    combo_of = {key: " + ".join(p.split(",")[0] for p, _, _ in c.places) for c in combos or [] for key in c.keys}
     lots = []
     for item, lot, v, est in rows:
         fees = site_fees.get(lot.site, Fees())
@@ -420,6 +467,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
             "trip": trip.as_dict() if trip else None, "transport": lot.transport,
+            "combo": combo_of.get(lot.key),
             "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
             "bidFromEmail": lot.bid_from_email,
             "bid": lot.current_bid if lot.current_bid is not None else v.bid, "bids": lot.bids,
@@ -743,6 +791,16 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             report["marktplaats"] = {"ok": True, "lots": finder.lookups}
             mh.update(ok=True, lots=finder.lookups, fails=0, error="", at=now.isoformat())
 
+    # 3d. pickups close to each other on the same day: one drive
+    combos: list[Combo] = []
+    if trips and driving["tripRules"]:
+        coords = {a: (e["lat"], e["lon"]) for a, e in (state.get("geo") or {}).items()
+                  if isinstance(e, dict) and e.get("lat") is not None}
+        coords.update({p: ll for p, ll in places.items() if ll})
+        combos = worthwhile_combos(combined_pickups(pickup_groups(rows, trips, fav_keys), trips, coords,
+                                                    float(drv_cfg.get("combine_within_km", 25) or 0)),
+                                   driving["tripRules"])
+
     # 4. which lots are new since the last scan
     seen = state.setdefault("seen", {})
     new_keys = {lot.key for _, lot, _, _ in rows if lot.key not in seen}
@@ -757,7 +815,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 6. dashboard + report
     data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items,
                           trips=trips, driving=driving, favorites={"issue": store.issue, "items": favs},
-                          max_units=max_units)
+                          max_units=max_units, combos=combos)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
     text = write_report(root / "data" / "latest.md", rows, report, now, url, auction_kinds(config))
@@ -769,10 +827,12 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 7. telegram digest
     if items and alerts_cfg.get("enabled", True):
         try:
-            far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]))
+            far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]),
+                          combos=combos)
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
                                    favs=favs, trips=trips, kinds=auction_kinds(config), far=far,
-                                   far_rules=driving["tripRules"], hearts=hearts, heart_trips=heart_trips))
+                                   far_rules=driving["tripRules"], hearts=hearts, heart_trips=heart_trips,
+                                   combos=combos))
         except Exception as e:
             log.warning("could not send the digest: %s", e)
     elif favs:

@@ -133,6 +133,12 @@ digest:
 commands:
   max_extra_scans_per_day: 3    # how often /scan may start an extra scan per day
 
+inventory:                      # your stock in Telegram: /koop, /verkocht, /voorraad, /winst (kept encrypted)
+  enabled: true                 # false = no reminders to lower the price
+  lower_price_after_days: 10    # remind you when something hasn't sold this many days after its asking price was set
+  remind_every_days: 7          # and again after this many days
+  price_drop: 0.1               # suggest lowering the asking price by 10%, never below the lowest price you'd accept
+
 dashboard:
   url: ""                       # leave empty to use the GitHub Pages address of this repository
 
@@ -167,6 +173,10 @@ driving:
     - [30, 1]      # up to 30 min: worth it for a single lot
     - [90, 3]      # up to 1.5 hours: at least 3 lots
     - [120, 6]     # up to 2 hours: more than 5 lots
+  # Pickup addresses at most this many km apart (straight line) on the same pickup day count as one drive
+  # past all of them: their lots together count for the trip rules, and the morning summary lists the
+  # drive under "One drive, several pickups". 0 = off.
+  combine_within_km: 25
   # Further than the last trip rule: have a transporter (e.g. Brenger) bring it instead of hiding the lot.
   # A rough estimate per pickup (same address and day), split over the lots worth collecting there:
   # first_lot for one lot, + extra_lot for each extra lot. Adjust it once you have a real quote.
