@@ -113,6 +113,18 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 }
 .row.head { border-top: 0; padding-top: 10px; padding-bottom: 10px; color: var(--text-3); font-size: 12.5px; background: var(--surface-2); }
 .row.is-hidden { opacity: .55; }
+/* swipe a lot (touch screens): right = favorite, left = hide; the coloured layer behind the row says which */
+#rows { position: relative; }
+#rows .row { background: var(--surface); touch-action: pan-y; }
+#rows .row.swiping { z-index: 1; opacity: 1; transition: none; }
+#rows .row.settling { z-index: 1; transition: transform .18s ease-out; }
+.swipe-bg { position: absolute; left: 0; right: 0; z-index: 0; display: flex; align-items: center; padding: 0 22px; font-weight: 650; font-size: 15px; pointer-events: none; }
+.swipe-bg.fav { background: var(--warning-bg); color: var(--warning-text); justify-content: flex-start; }
+.swipe-bg.hide { background: var(--neutral-bg); color: var(--text-2); justify-content: flex-end; }
+.swipe-bg.ready { filter: saturate(1.6); }
+.swipe-bg.ready span { transform: scale(1.12); }
+.swipe-bg span { transition: transform .12s; }
+.swipe-hint { margin-left: auto; align-self: center; font-size: 12.5px; color: var(--text-3); white-space: nowrap; }
 .row.is-over .c-maxbid .big { color: var(--text-3); }
 .c-thumb { grid-area: thumb; }
 .c-main { grid-area: main; min-width: 0; }
@@ -195,6 +207,7 @@ dialog.connect button { height: 36px; padding: 0 14px; border-radius: 8px; borde
 dialog.connect button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 dialog.connect .error { color: var(--critical-text); font-size: 13.5px; margin: 8px 0 0; }
 dialog.connect .fine { font-size: 12.5px; color: var(--text-3); margin: 10px 0 0; }
+.toast button { margin-left: 12px; border: 0; background: none; padding: 0; color: inherit; font: inherit; font-weight: 650; text-decoration: underline; cursor: pointer; }
 .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); z-index: 20; max-width: calc(100vw - 32px); padding: 10px 16px; border-radius: 10px; background: var(--text); color: var(--bg); font-size: 14px; box-shadow: 0 6px 24px rgba(0, 0, 0, .2); }
 /* price spread (histogram of Marktplaats asking prices) */
 .spread-btn {
@@ -323,6 +336,7 @@ footer td { padding: 2px 14px 2px 0; }
     <div class="tabs" role="tablist" aria-label="Which lots">
       <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">All lots<span class="count" id="count-all"></span></button>
       <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
+      <span class="swipe-hint" id="swipeHint" hidden></span>
     </div>
     <p class="fav-note" id="favNote" hidden></p>
     <div class="row head" aria-hidden="true">
@@ -905,9 +919,9 @@ footer td { padding: 2px 14px 2px 0; }
     var status = el("div", { "class": "c-status" }, statusPill(c), farNote,
       el("div", { "class": "actions" }, favButton(lot, c),
         el("button", { type: "button", "class": "hide-btn", text: hidden[lot.key] ? "Unhide" : "Hide",
-          onclick: function () { if (hidden[lot.key]) delete hidden[lot.key]; else hidden[lot.key] = 1; store.set("hidden", hidden); render(); } })));
+          onclick: function () { toggleHidden(lot.key); } })));
 
-    return el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
+    var art = el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
       lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
       el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r)),
@@ -916,6 +930,19 @@ footer td { padding: 2px 14px 2px 0; }
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
           : lot.closesDay ? el("div", { "class": "small", text: "time on the lot page" }) : null),
       bidCell, valueCell(lot, c), maxBidCell(lot, c), status);
+    /* swipe right: favorite (moves it to the Favorites tab); left: hide. Under Favorites, left takes it back to the list. */
+    art._swipe = favs[lot.key]
+      ? { left: { label: "Back to the list", run: function () { return toggleFav(lot, c); } } }
+      : { right: { label: "★ Favorite", run: function () { return toggleFav(lot, c); } },
+          left: { label: hidden[lot.key] ? "Unhide" : "Hide", run: function () { toggleHidden(lot.key); } } };
+    return art;
+  }
+
+  function toggleHidden(key) {
+    var on = !hidden[key];
+    if (on) hidden[key] = 1; else delete hidden[key];
+    store.set("hidden", hidden); render();
+    toast(on ? "Hidden. Tick “Show hidden” to see it again." : "Back in the list.", function () { toggleHidden(key); });
   }
 
   /* lots that only have a closing day sort at the end of that day */
@@ -1031,7 +1058,10 @@ footer td { padding: 2px 14px 2px 0; }
     var hc = document.getElementById("hiddenCount");
     if (hc) hc.textContent = farCount ? " (incl. " + farCount + " too far)" : "";
     var favKeys = Object.keys(favs);
-    document.getElementById("count-all").textContent = String(all.length);
+    document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key]; }).length);
+    var hint = document.getElementById("swipeHint");
+    hint.hidden = !TOUCH || !lots.length;
+    hint.textContent = ui.view === "fav" ? "Swipe ← back to the list" : "Swipe → ★ favorite · ← hide";
     document.getElementById("count-fav").textContent = String(favKeys.length);
     document.getElementById("tab-all").setAttribute("aria-selected", ui.view !== "fav" ? "true" : "false");
     document.getElementById("tab-fav").setAttribute("aria-selected", ui.view === "fav" ? "true" : "false");
@@ -1059,6 +1089,7 @@ footer td { padding: 2px 14px 2px 0; }
 
     var q = ui.q.trim().toLowerCase();
     var shown = all.filter(function (r) {
+      if (favs[r.lot.key]) return false;  /* favorites live under the Favorites tab */
       if (!ui.showHidden && isHidden(r)) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.item && r.lot.item !== ui.item) return false;
@@ -1071,8 +1102,11 @@ footer td { padding: 2px 14px 2px 0; }
       box.append(row(r));
       if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
     });
+    var favShown = all.filter(function (r) { return favs[r.lot.key]; }).length;
     if (!lots.length) {
       empty.append("Nothing on your watchlist is in a running " + (DATA.kinds || "bankruptcy, closure, estate or Domeinen") + " auction right now. The next scan runs tomorrow morning.");
+    } else if (!shown.length && favShown === all.length) {
+      empty.append("Every lot is under ★ Favorites now.");
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
     }
@@ -1092,8 +1126,15 @@ footer td { padding: 2px 14px 2px 0; }
   })();
   var OWNER = REPO.split("/")[0].toLowerCase();
   var GH = { token: store.get("ghToken", null), issue: (DATA.favorites && DATA.favorites.issue) || store.get("favIssue", null), busy: false };
-  var favs = toMap((DATA.favorites && DATA.favorites.items) || []);
+  var savedFavs = toMap((DATA.favorites && DATA.favorites.items) || []);  /* as on GitHub */
+  var favOps = {};  /* changes still being saved: key -> { entry } (entry null = removed) */
+  var favs = savedFavs;  /* what the page shows: saved list + changes on their way */
   var pendingFav = null;
+  var saveChain = Promise.resolve();
+  function applyFavOps() {
+    favs = Object.assign({}, savedFavs);
+    Object.keys(favOps).forEach(function (k) { if (favOps[k].entry) favs[k] = favOps[k].entry; else delete favs[k]; });
+  }
 
   function toMap(list) { var m = {}; list.forEach(function (f) { if (f && f.key) m[f.key] = f; }); return m; }
   function ghFetch(path, opts) {
@@ -1146,15 +1187,21 @@ footer td { padding: 2px 14px 2px 0; }
   }
   function refreshFavs() {
     return loadIssue().then(function (issue) {
-      if (issue) { favs = toMap(parseFavs(issue.body)); render(); }
+      if (issue) { savedFavs = toMap(parseFavs(issue.body)); applyFavOps(); render(); }
     }).catch(function () { /* offline or rate-limited: keep the list from the last scan */ });
   }
   function prune(list) {
     var cutoff = Date.now() - 7 * 86400000;
     return list.filter(function (f) { return !f.closes || new Date(f.closes).getTime() > cutoff; });
   }
+  /* one save at a time: each reads the issue fresh, so quick swipes one after another all land */
   function saveFavs(mutate) {
-    GH.busy = true; render();
+    var p = saveChain.then(function () { return saveFavsNow(mutate); });
+    saveChain = p.catch(function () { /* the caller handles it */ });
+    return p;
+  }
+  function saveFavsNow(mutate) {
+    GH.busy = true;
     return loadIssue().then(function (issue) {
       var list = prune(mutate(issue ? parseFavs(issue.body) : []));
       var body = buildBody(list);
@@ -1163,10 +1210,10 @@ footer td { padding: 2px 14px 2px 0; }
         : ghFetch("/repos/" + REPO + "/issues", { method: "POST", body: { title: "⭐ Favorites (auction dashboard)", body: body } })
       ).then(function (saved) {
         GH.issue = saved.number; store.set("favIssue", saved.number);
-        favs = toMap(parseFavs(saved.body));
+        savedFavs = toMap(parseFavs(saved.body)); applyFavOps();
       });
-    }).then(function () { GH.busy = false; render(); renderGhState(); }, function (e) {
-      GH.busy = false; render();
+    }).then(function () { GH.busy = false; renderGhState(); }, function (e) {
+      GH.busy = false;
       throw e;
     });
   }
@@ -1185,24 +1232,28 @@ footer td { padding: 2px 14px 2px 0; }
              item: lot.item, closes: lot.closes, bid: lot.bid, maxBid: c && c.maxBid != null ? c.maxBid : (lot.maxBid != null ? lot.maxBid : null),
              pickup: lot.pickup || lot.location || null, image: lot.image || null, added: new Date().toISOString() };
   }
+  /* returns false when it couldn't start (no GitHub token yet: the connect dialog opens instead) */
   function toggleFav(lot, c) {
-    if (!GH.token) { openConnect({ lot: lot, c: c }); return; }
+    if (!GH.token) { openConnect({ lot: lot, c: c }); return false; }
     var on = !favs[lot.key];
     var entry = snapshot(lot, c);
-    var before = favs;
-    favs = Object.assign({}, favs);
-    if (on) favs[lot.key] = entry; else delete favs[lot.key];
+    var op = { entry: on ? entry : null };
+    favOps[lot.key] = op; applyFavOps(); render();
+    var done = function () { if (favOps[lot.key] === op) delete favOps[lot.key]; applyFavOps(); render(); };
     saveFavs(function (list) {
       list = list.filter(function (f) { return f.key !== lot.key; });
       if (on) list.push(entry);
       return list;
     }).then(function () {
-      toast(on ? "★ Saved. You'll get a Telegram reminder on the closing day and an hour before it closes." : "Removed from your favorites");
-    }, function (e) { favs = before; render(); saveError(e); });
+      done();
+      toast(on ? "★ Moved to Favorites. You'll get a Telegram reminder on the closing day and an hour before it closes." : "Removed from your favorites, back in the list.",
+        function () { toggleFav(lot, c); });
+    }, function (e) { done(); saveError(e); });
+    return true;
   }
   function favButton(lot, c) {
     var on = !!favs[lot.key];
-    return el("button", { type: "button", "class": "fav-btn", "aria-pressed": on ? "true" : "false", disabled: GH.busy ? true : null,
+    return el("button", { type: "button", "class": "fav-btn", "aria-pressed": on ? "true" : "false",
       title: on ? "Remove from your favorites" : "Save as favorite: listed under Favorites, with a Telegram reminder before it closes",
       onclick: function () { toggleFav(lot, c); } },
       el("span", { "class": "star", "aria-hidden": "true", text: on ? "★" : "☆" }), "Favorite");
@@ -1240,7 +1291,7 @@ footer td { padding: 2px 14px 2px 0; }
     /* check the token for real: saving the list unchanged needs the same rights as adding a favorite */
     saveFavs(function (list) { return list; }).then(function () {
       store.set("ghToken", token);
-      closeConnect(); renderGhState();
+      closeConnect(); renderGhState(); render();
       if (pending) toggleFav(pending.lot, pending.c);
       else toast("Connected. Your favorites now sync across your devices.");
     }, function (err) {
@@ -1252,11 +1303,12 @@ footer td { padding: 2px 14px 2px 0; }
   });
 
   var toastTimer = null;
-  function toast(text) {
+  function toast(text, undo) {
     var t = document.getElementById("toast");
     t.textContent = text; t.hidden = false;
+    if (undo) t.append(el("button", { type: "button", text: "Undo", onclick: function () { t.hidden = true; clearTimeout(toastTimer); undo(); } }));
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { t.hidden = true; }, 4500);
+    toastTimer = setTimeout(function () { t.hidden = true; }, undo ? 7000 : 4500);
   }
   function renderGhState() {
     var box = document.getElementById("ghState");
@@ -1277,7 +1329,7 @@ footer td { padding: 2px 14px 2px 0; }
     var url = safeUrl(f.url), img = safeUrl(f.image);
     var thumb = img ? el("img", { "class": "thumb", src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
                     : el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" });
-    return el("article", { "class": "row is-gone", "data-key": f.key },
+    var art = el("article", { "class": "row is-gone", "data-key": f.key },
       el("div", { "class": "c-thumb" }, thumb),
       el("div", { "class": "c-main" },
         url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: f.title }) : el("span", { "class": "title", text: f.title }),
@@ -1291,7 +1343,69 @@ footer td { padding: 2px 14px 2px 0; }
       el("div", { "class": "c-maxbid", "data-label": "Max bid" }, el("div", { "class": "big", text: money(f.maxBid) }), el("div", { "class": "small", text: "max bid when you saved it" })),
       el("div", { "class": "c-status" }, el("span", { "class": "pill neutral", title: closed ? "" : "This lot wasn't in this morning's scan: it may no longer match your watchlist, or its site failed.", text: closed ? "Closed" : "Not in scan" }),
         el("div", { "class": "actions" }, favButton(f, null))));
+    art._swipe = { left: { label: "Remove", run: function () { return toggleFav(f, null); } } };
+    return art;
   }
+
+  /* ---------- swipe (touch screens, like Tinder): right = favorite, left = hide ----------
+     Only sideways moves count; scrolling up and down stays as it was. The Favorite and Hide buttons do the same. */
+  var TOUCH = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  (function () {
+    var box = document.getElementById("rows");
+    var bg = el("div", { "class": "swipe-bg", "aria-hidden": "true" }, el("span"));
+    var drag = null, swallowClick = false;
+    function reset(row) {
+      row.classList.remove("swiping"); row.classList.add("settling"); row.style.transform = "";
+      setTimeout(function () { row.classList.remove("settling"); if (bg.parentNode) bg.remove(); }, 200);
+    }
+    /* touch events rather than pointer events: browsers cancel a pointer when they think a drag or scroll starts */
+    function point(e) { var t = e.changedTouches[0]; return { x: t.clientX, y: t.clientY }; }
+    box.addEventListener("touchstart", function (e) {
+      if (drag || e.touches.length > 1) { drag = drag && drag.dir ? drag : null; return; }
+      var row = e.target.closest("article.row");
+      if (!row || !row._swipe || e.target.closest("input, select, textarea, .value-edit")) return;
+      var pt = point(e);
+      drag = { row: row, x: pt.x, y: pt.y, dx: 0, dir: null };
+    }, { passive: true });
+    box.addEventListener("touchmove", function (e) {
+      if (!drag) return;
+      var pt = point(e), dx = pt.x - drag.x, dy = pt.y - drag.y, row = drag.row;
+      if (!drag.dir) {
+        if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+        if (Math.abs(dy) >= Math.abs(dx)) { drag = null; return; }  /* scrolling */
+        drag.dir = "x";
+        row.classList.add("swiping");
+        bg.style.top = row.offsetTop + "px"; bg.style.height = row.offsetHeight + "px";
+        box.insertBefore(bg, row);
+      }
+      if (e.cancelable) e.preventDefault();  /* sideways: the row moves, the page doesn't */
+      var act = row._swipe[dx > 0 ? "right" : "left"];
+      if (!act) dx = dx / 4;  /* no action this way: it only gives a little */
+      drag.dx = dx;
+      row.style.transform = "translateX(" + dx + "px)";
+      bg.className = "swipe-bg " + (dx > 0 ? "fav" : "hide") + (act && Math.abs(dx) > limit(row) ? " ready" : "");
+      bg.firstChild.textContent = act ? act.label : "";
+    }, { passive: false });
+    function limit(row) { return Math.min(120, row.offsetWidth * 0.3); }
+    function end(e) {
+      if (!drag) return;
+      var d = drag; drag = null;
+      if (!d.dir) return;
+      swallowClick = true; setTimeout(function () { swallowClick = false; }, 350);
+      var act = d.row._swipe[d.dx > 0 ? "right" : "left"];
+      if (e.type === "touchcancel" || !act || Math.abs(d.dx) <= limit(d.row)) { reset(d.row); return; }
+      d.row.classList.remove("swiping"); d.row.classList.add("settling");
+      d.row.style.transform = "translateX(" + (d.dx > 0 ? 1 : -1) * (d.row.offsetWidth + 24) + "px)";
+      setTimeout(function () {
+        if (bg.parentNode) bg.remove();
+        if (act.run() === false) reset(d.row);  /* e.g. GitHub not connected yet: the row comes back */
+      }, 180);
+    }
+    box.addEventListener("touchend", end);
+    box.addEventListener("touchcancel", end);
+    /* a swipe that started on a link shouldn't open it */
+    box.addEventListener("click", function (e) { if (swallowClick) { e.preventDefault(); e.stopPropagation(); } }, true);
+  })();
 
   /* ---------- controls ---------- */
   var $ = function (id) { return document.getElementById(id); };

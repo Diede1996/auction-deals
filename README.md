@@ -124,7 +124,9 @@ Each row is a lot from a running bankruptcy auction that matches your watchlist.
 | **Suggested max bid** | The highest bid that still leaves your minimum margin, with the margin you'd make at that bid. **Copy** it into the auto-bid (automatisch bieden) field on the auction site. |
 | **Status** | ✓ *Room to bid* (current bid is below your max), ✕ *Above max*, or ? *Needs a price* (set a value yourself). **☆ Favorite** stars the lot, **Hide** hides it. |
 
-The **Favorites** tab shows the lots you starred, also after they closed or dropped out of the scan.
+The **Favorites** tab shows the lots you starred, also after they closed or dropped out of the scan. A starred lot moves there: it leaves the **All lots** list, so that list only holds what you haven't decided on yet.
+
+**Swipe on your phone.** Like Tinder: swipe a lot to the right to make it a favorite, to the left to hide it. Under **Favorites**, swipe left to put a lot back in the list. Each swipe (and each Favorite or Hide tap) shows an **Undo** for a few seconds. Scrolling up and down works as before; the buttons do the same on a computer.
 
 At the top you set:
 
