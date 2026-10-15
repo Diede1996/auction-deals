@@ -150,7 +150,7 @@ marktplaats:
   min_listings_exact: 2         # exact model: this many listings of the same model are enough
   max_items_per_lot: 0          # "40x colbert" counts as 40 colberts (price, margin and max bid x 40); 0 = no limit.
                                 # Set e.g. 10 to count bigger bulk lots as one item instead.
-  max_lookups_per_run: 60       # at most this many Marktplaats searches per scan
+  max_lookups_per_run: 100      # at most this many Marktplaats searches per scan
   delay_seconds: 4              # pause between Marktplaats searches...
   extra_random_delay: 3         # ...plus a random 0-3 seconds
 

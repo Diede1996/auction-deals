@@ -29,6 +29,7 @@ with and the for of to from new nieuw nieuwe gebruikt used zgan zga ongebruikt n
 partij restpartij voorraad diverse div divers kavel lot set stuks stuk st stk pcs x cm mm m kg gr g l ltr liter
 v w watt gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen
 maat size nr no art artikel serie series gen generatie generation
+inc bv nv ltd gmbh corp corporation co
 zwart wit grijs zilver blauw rood groen bruin beige black white grey gray silver blue red
 twee drie vier vijf zes zeven acht negen tien
 ontbreekt ontbreken krasje kras krassen geen beschadigd beschadiging schade werkend werkt getest ongetest
@@ -53,7 +54,15 @@ CATEGORIES = [
     ("computer", "pc", "desktop"),
     ("printer", "printers"),
     ("tablet", "tablets"),
+    ("slagschroevendraaier", "slagschroevendraaiers", "slagschoevendraaier", "slagschroefmachine"),  # with a typo
+    ("accu", "accus", "batterij", "battery", "akku"),
 ]
+_SPELLING = {"slagschoevendraaier": "slagschroevendraaier"}  # typos in lot titles, fixed in the Marktplaats search
+# Laptops, computers and tablets of one brand range from € 50 to € 2.000: without a model, no price at all.
+_NEEDS_MODEL = {CATEGORIES[1], CATEGORIES[10], CATEGORIES[12]}
+# Words that say how a tool works, not which tool it is: "Hilti accu" is not a product.
+_WEAK = {"accu", "accus", "snoerloos", "snoerloze", "draadloos", "draadloze", "elektrisch", "elektrische",
+         "electric", "cordless"}
 _CATEGORY_OF = {w: group for group in CATEGORIES for w in group}
 # In a lot like "HP desktop met beeldscherm" these words name other things in the bundle.
 _BUNDLE_WORDS = set(CATEGORIES[0] + CATEGORIES[1] + CATEGORIES[10] + CATEGORIES[11] + CATEGORIES[12])
@@ -108,6 +117,8 @@ class Rule:
     without_parts: tuple[str, ...] = ()  # nor anywhere inside a word ("machine" in "accuboormachine")
     gen_norm: bool = False  # read "Gen 2" and "15G2" as "g2" / "15 g2" first
     ram: str | None = None  # memory the listing must mention: "32" -> "32GB" / "32 GB"
+    parts_ok: bool = False  # the lot is a battery, charger or keyboard itself: such listings count
+    new_ok: bool = False  # the lot is new itself: new (shop) listings count
 
     def matches(self, title_norm: str) -> bool:
         if self.gen_norm:
@@ -503,14 +514,47 @@ def generation_plan(title: str, description: str = "") -> SearchPlan | None:
 
 # A battery (with or without charger) is not a drill that comes with one.
 _BATTERY_WORDS = ("accu", "batterij", "battery", "akku")
-TOOL_PARTS = ("machine", "boor", "zaag", "slijp", "schroef", "hamer", "tacker", "frees", "schuur", "lamp", "radio",
-              "stofzuig", "blazer", "trimmer", "maaier", "combiset", "combo")
+TOOL_PARTS = ("machine", "boor", "zaag", "slijp", "schroef", "schroev", "draaier", "moersleutel", "hamer", "tacker",
+              "frees", "schuur", "lamp", "radio", "stofzuig", "zuiger", "blazer", "trimmer", "maaier", "combiset", "combo")
 _VOLT_RE = re.compile(r"(?<![\d.,])(\d{1,2}(?:[.,]\d)?)\s?(?:v|volt)\b", re.I)
 
 
 def is_battery_lot(title: str) -> bool:
     t = normalize(title)
     return any(token_in(w, t) for w in _BATTERY_WORDS) and not any(part in t for part in TOOL_PARTS)
+
+
+# A listing that sells only a battery, charger or keyboard for the device: "Hilti B22 5.2 Accu", "Dell Laptop Accu",
+# "Origineel Surface Pro Toetsenbord". What comes after "met", "+", a comma or a dash is what's included, so
+# "Boorhamer met accu" and "Surface Pro 3 | i5 | Pen + Toetsenbord" are the device.
+_PART_WORDS = ("accu", "akku", "batterij", "battery", "lader", "charger", "toetsenbord", "keyboard", "typecover")
+_PART_TOKENS = ("type cover", "adapter", "voeding", "power supply")
+_INCLUDED = re.compile(r"\([^)]*\)?|\s(?:met|incl\.?|inclusief|en|with|and|\+|&|-|\|)\s.*$|[,|].*$", re.I)
+_WITHOUT_RE = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
+
+
+def is_part_listing(title: str) -> bool:
+    head = _WITHOUT_RE.sub(" ", normalize(_INCLUDED.sub(" ", title or "")))
+    if any(part in head for part in TOOL_PARTS):
+        return False
+    return any(w in head for w in _PART_WORDS) or any(token_in(w, head) for w in _PART_TOKENS)
+
+
+# "| Nieuw", "nieuw in doos", "sealed": a new item in a shop, not a used one. "Zo goed als nieuw" and "met nieuwe accu"
+# are used.
+_NEW_WORDS = {"nieuw", "new", "sealed", "geseald", "ongeopend", "nib"}
+_NOT_NEW_BEFORE = {"als", "as", "like", "bijna", "zo", "nagenoeg", "vrijwel"}
+_NOT_NEW_AFTER = {"staat", "condition", "prijs", "accu", "accus", "batterij", "battery", "lader", "scherm", "display",
+                  "model", "versie", "version"}
+
+
+def says_new(title_norm: str) -> bool:
+    toks = title_norm.split()
+    for i, t in enumerate(toks):
+        if t in _NEW_WORDS and (not i or toks[i - 1] not in _NOT_NEW_BEFORE) \
+                and (i + 1 == len(toks) or toks[i + 1] not in _NOT_NEW_AFTER):
+            return True
+    return False
 
 
 def voltage(title: str) -> tuple[str, ...] | None:
@@ -663,6 +707,9 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
             rule.without_parts = tuple(dict.fromkeys(rule.without_parts + TOOL_PARTS))
     if plan:
         plan = with_options(plan, lot, item)
+        parts_ok, new_ok = is_part_listing(lot.title), says_new(normalize(lot.title))
+        for rule in plan.rules:
+            rule.parts_ok, rule.new_ok = parts_ok, new_ok
     return plan
 
 
@@ -839,7 +886,8 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     if generic:
         brand = brand_in(lot.title)
         fixed: list[tuple[str, ...]] = [category(keyword)] + ([(brand,)] if brand else [])
-        lowest = 0 if brand else 1  # "monitor lenovo" is fine, "monitor" alone is not
+        # "monitor lenovo" is fine, "monitor" alone is not; "laptop dell" isn't either (€ 50 to € 1.000)
+        lowest = 0 if brand and category(keyword) not in _NEEDS_MODEL else 1
     else:
         brand = None
         fixed = [(keyword,)]
@@ -853,7 +901,7 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     tokens = []
     for i, t in useful_tokens(lot.title):
         year = re.fullmatch(r"(?:19|20)\d{2}", t) is not None  # "macbook pro 2020" is useful here
-        if i in cpu or t in used or (is_spec(t) and not year) or (t in _BRANDS and generic):
+        if i in cpu or t in used or (is_spec(t) and not year) or t in _BRANDS:  # "surface pro microsoft" = "surface pro"
             continue
         if category(t) and (category(t) == category(keyword) or (generic and t in _BUNDLE_WORDS)):
             continue  # "desktop" in a monitor lot says nothing about the monitor
@@ -863,17 +911,27 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     # The first word of a title is often the product type ("Bouwradio MAKITA zonder accu"): keep it longest.
     first = tokens[0] if tokens and tokens[0][0] < pos and tokens[0][1].isalpha() and len(tokens[0][1]) >= 5 else None
     ordered = ([first[1]] if first else []) + [t for t in after + before if not first or t != first[1]]
+    weak = set() if is_battery_lot(lot.title) else _WEAK  # in "Accu Makita 12V" the accu is the product
+    ordered = [t for t in ordered if t not in weak] + [t for t in ordered if t in weak]  # "accu" last
     extras = ordered[:extra_words]
     volt = voltage(lot.title)  # "Accu Makita 12V": a 12 V battery, not an 18 V one
     rules, labels = [], []
     for n in range(len(extras), lowest - 1, -1):
         words = extras[:n]
+        if sum(w not in weak for w in words) < lowest:
+            continue
         groups = fixed + [category(w) or (w,) for w in words] + ([volt] if volt else [])
-        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + words + ([volt[0]] if volt else []))
+        shown = [_SPELLING.get(w, w) for w in words]  # "slagschoevendraaier" is searched spelled right
+        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + shown + ([volt[0]] if volt else []))
         rules.append(Rule(groups, label=label))
         labels.append(label)
     if not rules:
-        return None
+        if not (generic or lowest):
+            return None
+        # "Laptop - Dell Inc.", "Microsoft Surface Pro", "Accu Hilti": which model it is decides the price
+        what = " ".join([fixed[0][0]] + ([brand] if brand else []))
+        return SearchPlan("unknown", [what], [], brand=brand,
+                          note="model unknown: the lot title doesn't say which model, so no Marktplaats price")
     searches = [labels[0]] + ([labels[-1]] if len(labels) > 1 else [])
     return SearchPlan("general", searches, rules, brand=brand,
                       note="no type number in the lot title, so this is a rough price for similar items")

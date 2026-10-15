@@ -70,9 +70,10 @@ def test_general_plans_are_rough_and_never_just_a_brand():
     assert p.searches == ["colbert loro piana"] and p.rules[0].matches(normalize("Loro Piana blazer maat 50"))
     p = plan(PLANTS, "Kunstplant olijfboom 180 cm in pot")
     assert p.searches[-1] == "kunstplant olijfboom"
-    assert plan(LAPTOP, "Laptop HP i5-fcoxx. 8GB RAM. AMD Ryzen 3 7320u").searches[-1] == "laptop hp"
+    # "laptop hp" alone ranges from € 50 to € 1.000: the rough price needs one more word
+    assert plan(LAPTOP, "Laptop HP i5-fcoxx. 8GB RAM. AMD Ryzen 3 7320u").searches == ["laptop hp fcoxx 8gb", "laptop hp fcoxx"]
     assert plan(COFFEE, "Jura E8 volautomaat").searches == ["jura e8 volautomaat", "jura e8"]
-    assert plan(TOOLS, "Makita") is None
+    assert plan(TOOLS, "Makita").rules == []
 
 
 def test_custom_marktplaats_query_wins():
@@ -272,3 +273,57 @@ def test_thinkpad_gen(title, model):
 def test_processor_generation_is_not_a_model_generation():
     assert plan(WatchItem(name="Laptop", keywords=["laptop"]), "Dell Latitude 5420 i5 11th gen").searches[0] == \
         "laptop dell latitude 5420"
+
+
+def test_no_model_no_price():
+    """A title that doesn't say which model gets no price at all, not one from every Dell or Surface on Marktplaats."""
+    laptops = WatchItem(name="Laptop", keywords=["surface pro", "latitude", "laptop"])
+    for title in ["Laptop - Dell Inc. -", "Microsoft Surface Pro"]:
+        p = plan(laptops, title)
+        assert (p.kind, p.rules) == ("unknown", []), title
+    assert plan(laptops, "Microsoft Surface Pro 7").rules  # a generation is enough for a rough price
+
+
+def test_accu_alone_is_not_a_tool():
+    p = plan(TOOLS, "Accu slagschoevendraaier Hilti")
+    assert p.searches == ["hilti slagschroevendraaier accu", "hilti slagschroevendraaier"]
+    assert all("slagschroevendraaier" in r.label for r in p.rules)  # never "hilti accu"
+
+
+def test_parts_damaged_and_new_listings_dont_count():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(TOOLS, "Accu slagschoevendraaier Hilti").rules[-1]
+
+    def li(title, euros):
+        return {"title": title, "priceInfo": {"priceType": "FIXED", "priceCents": euros * 100}, "itemId": title + str(euros)}
+
+    found = comparable_listings([li("Hilti B22 5.2 Accu - Gebruikt, slagschroevendraaier", 50),
+                                 li("Hilti SID 4-A22 slagschroevendraaier met accu en lader", 150),
+                                 li("Hilti slagschroevendraaier SID 4-A22 | Nieuw", 400),
+                                 li("Hilti slagschroevendraaier (beschadigd)", 40),
+                                 li("Hilti slagschroevendraaier, zo goed als nieuw", 180),
+                                 li("Hilti slagschroevendraaier, geen schade", 170)], rule, [])
+    assert [f["price"] for f in found] == [150, 180, 170]
+
+    surface = plan(WatchItem(name="Laptop", keywords=["surface pro"]), "Microsoft Surface Pro 7").rules[0]
+    found = comparable_listings([li("Origineel Microsoft Surface Pro Toetsenbord met Verlichting", 50),
+                                 li("Microsoft Surface Pro 3/7+ toetsenbord zwart", 50),
+                                 li("Microsoft Surface pro 7 16GB/256GB", 300),
+                                 li("Microsoft Surface Pro 7 | i5 | 128GB | Pen + Toetsenbord", 350)], surface, [])
+    assert [f["price"] for f in found] == [300, 350]
+
+
+def test_a_charger_lot_compares_with_chargers():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(TOOLS, "Acculader MAKITA DC18RC").rules[0]
+    found = comparable_listings([{"title": "Makita DC18RC snellader", "itemId": "1",
+                                  "priceInfo": {"priceType": "FIXED", "priceCents": 4000}}], rule, [])
+    assert len(found) == 1
+
+
+def test_one_shop_listing_the_same_thing_counts_once():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(TOOLS, "Makita DHR242 boorhamer").rules[0]
+    found = comparable_listings([{"title": "Makita DHR242 boorhamer", "itemId": str(i),
+                                  "priceInfo": {"priceType": "FIXED", "priceCents": 20000}} for i in range(3)], rule, [])
+    assert len(found) == 1

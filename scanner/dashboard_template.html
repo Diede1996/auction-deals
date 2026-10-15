@@ -649,6 +649,7 @@ footer td { padding: 2px 14px 2px 0; }
       var plan = lot.mpPlan, search = safeUrl((plan && plan.search) || lot.mpSearch);
       var why = plan && plan.kind === "exact" && plan.model
         ? "Model " + plan.model + ": too few listings on Marktplaats"
+        : plan && plan.kind === "unknown" ? "Model unknown: the title doesn't say which one, so no price"
         : "No Marktplaats price";
       cell.append(el("div", { "class": "small", text: why }));
       cell.append(el("div", { "class": "small" }, search ? el("a", { href: search, target: "_blank", rel: "noopener" }, "Search ↗") : null, search ? " · " : null, editBtn));

@@ -27,7 +27,7 @@ PS5_LISTINGS = [
     mp_listing("Gezocht: playstation 5 slim", 30000),
     mp_listing("PlayStation 5 slim defect", 9000),
     mp_listing("Online Veiling: PlayStation 5 slim", 12500),  # an auction house advertising its own lot
-    mp_listing("PlayStation 5 slim NIEUW gouden editie", 999900),  # outlier
+    mp_listing("PlayStation 5 slim NIEUW gouden editie", 999900),  # new in a shop: left out
 ]
 PS5_SLIM = Rule([("playstation 5",), ("slim",)], label="playstation 5 slim")
 
@@ -38,9 +38,9 @@ def prices(found):
 
 def test_comparable_listings_filter_noise():
     found = marktplaats.comparable_listings(PS5_LISTINGS, PS5_SLIM, [])
-    assert prices(found) == [300.0, 450.0, 480.0, 500.0, 529.99, 539.99, 569.99, 9999.0]
+    assert prices(found) == [300.0, 450.0, 480.0, 500.0, 529.99, 539.99, 569.99]
     est = marktplaats.summarize(found, "playstation 5 slim")
-    assert est.count == 6  # 9999 and the cheap "met kuren" one are outliers
+    assert est.count == 6  # the cheap "met kuren" one is an outlier
     assert 480 <= est.median <= 530
     assert est.url == "https://www.marktplaats.nl/q/playstation+5+slim/"
 
@@ -164,7 +164,7 @@ def test_brand_word_alone_is_never_a_comparison():
     est = finder.for_lot(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti Meetstatief PUA 25", "u", 20, None))
     assert est is None  # no price is better than a wrong one
     assert len(calls) == 2 and "pua25" in calls[1]
-    assert plan_for(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti", "u", 1, None)) is None
+    assert plan_for(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti", "u", 1, None)).rules == []
 
 
 def test_block_stops_all_lookups_and_uses_saved_prices():

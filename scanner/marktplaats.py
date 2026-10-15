@@ -13,7 +13,7 @@ import statistics
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
 
-from .identify import BRANDS, MULTI_BRANDS, Rule
+from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, says_new
 from .util import normalize, token_in
 
 log = logging.getLogger(__name__)
@@ -31,7 +31,10 @@ ALWAYS_EXCLUDE = ["gezocht", "gevraagd", "zoek", "defect", "kapot", "onderdelen"
                   # cases and keyboards for tablets
                   "incipio", "otterbox", "spigen", "zagg", "logitech", "tech21", "uag",
                   # not the original brand: "Makita BL1815N ... 18V accu, 123accu huismerk"
-                  "huismerk", "vervangend", "vervangende", "vervangt", "replacement", "namaak", "imitatie"]
+                  "huismerk", "vervangend", "vervangende", "vervangt", "replacement", "namaak", "imitatie",
+                  # damaged ("Surface Pro 7+ (beschadigd)"); "geen schade" is read as nothing, see _WITHOUT
+                  "beschadigd", "beschadigde", "beschadiging", "schade", "gebarsten", "barst", "barsten",
+                  "gebroken", "kapotte", "defecte", "broken", "cracked", "for parts", "werkt niet", "niet werkend"]
 # "zonder accu", "excl. lader": what a listing does NOT include says nothing about what it is
 _WITHOUT = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
 # "... voor Einhell", "... for Makita": something made for a product of that brand
@@ -82,11 +85,14 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
         norm = _WITHOUT.sub(" ", normalize(title))
         if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
+        if (not rule.parts_ok and is_part_listing(title)) or (not rule.new_ok and says_new(norm)):
+            continue  # only a battery or keyboard for it, or new in a shop
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))
-        if key in seen:  # the same listing found by both searches
+        same = (normalize(title), info.get("priceCents"))  # a shop listing the same thing three times counts once
+        if key in seen or same in seen:  # the same listing found by both searches
             continue
-        seen.add(key)
+        seen.update((key, same))
         out.append({
             "price": round(info["priceCents"] / 100, 2),
             "title": title.strip()[:90],

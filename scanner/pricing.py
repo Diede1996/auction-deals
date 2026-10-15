@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 # Bump when what counts as a comparable listing changes: saved prices from older rules are checked again
 # (and still shown as a fallback until they are).
-RULES_VERSION = 2
+RULES_VERSION = 3
 
 
 def result_kind(plan: SearchPlan, rule_groups: list) -> str:
@@ -80,7 +80,7 @@ class PriceFinder:
         if not self.enabled or item.market_price is not None:
             return None
         plan = plan_for(item, lot)
-        if not plan:  # title has nothing beyond a brand or category: no reliable comparison possible
+        if not plan or not plan.rules:  # no model in the title: no reliable comparison possible
             return None
         key = marktplaats.cache_key(f"{plan.kind}:{plan.searches[0]}", item.exclude)
         entry = self.cache.get(key)
