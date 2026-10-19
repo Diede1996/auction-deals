@@ -113,7 +113,8 @@ def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
     dyson = by_key["proveiling:3"]
     assert dyson["itemMaxPrice"] == 150 and dyson["maxBid"] == 106  # floor(150 / 1.21 / 1.16): the max_price cap
     assert dyson["mp"] is None and dyson["mpSearch"].startswith("https://www.marktplaats.nl/q/dyson")
-    assert data["settings"] == {"min_margin": 0.30, "margin_tiers": [], "resale_factor": 0.85, "selling_costs": 0}
+    assert data["settings"] == {"min_margin": 0.30, "margin_tiers": [], "resale_factor": 0.85, "selling_costs": 0,
+                                "transport_margin": None}
     assert {s["id"]: s["ok"] for s in data["sites"]} == {"hnvi": True, "proveiling": True, "plaatsjebod": False,
                                                           "marktplaats": True}
 

@@ -457,13 +457,16 @@ footer td { padding: 2px 14px 2px 0; }
   function tripCost(lot) { return S.trip && lot.trip ? (lot._share != null ? lot._share : groupCost(lot, 1)) : 0; }
   /* cheaper things can need a higher margin (watchlist margin_tiers, by sale price per item); the rest uses S.minMargin */
   var TIERS = (DATA.settings.margin_tiers || []).slice().sort(function (a, b) { return a.up_to - b.up_to; });
-  function marginFor(saleEach) {
+  var TRANSPORT_MARGIN = DATA.settings.transport_margin;  /* a transporter brings it: this margin instead of the tiers */
+  function marginFor(saleEach, transport) {
+    if (transport && TRANSPORT_MARGIN != null) return TRANSPORT_MARGIN * 100;
     if (saleEach != null) for (var i = 0; i < TIERS.length; i++) if (saleEach <= TIERS[i].up_to) return TIERS[i].min_margin * 100;
     return S.minMargin;
   }
   function marginText() {
     return TIERS.length ? TIERS.map(function (t) { return Math.round(t.min_margin * 100) + "% up to €" + t.up_to; }).join(", ") +
-      ", " + S.minMargin + "% above" : S.minMargin + "% margin";
+      ", " + S.minMargin + "% above" + (TRANSPORT_MARGIN != null ? " (" + Math.round(TRANSPORT_MARGIN * 100) + "% when a transporter brings it)" : "") :
+      S.minMargin + "% margin";
   }
   function calc(lot) {
     var trip = tripCost(lot);
@@ -475,7 +478,7 @@ footer td { padding: 2px 14px 2px 0; }
     /* the bid you'd have to place now: the starting bid, or the current bid + one step */
     var bid = lot.nextBid != null ? lot.nextBid : (lot.bid || 0), costNow = cost(bid), resale = null, caps = [];
     var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 :
-      marginFor(market ? market / Math.max(1, lot.units || 1) * S.factor / 100 : null);
+      marginFor(market ? market / Math.max(1, lot.units || 1) * S.factor / 100 : null, isTransport(lot));
     if (market) {
       resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
       caps.push(resale / (1 + Math.max(0, minMargin) / 100));

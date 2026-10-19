@@ -6,6 +6,8 @@
 #                  profit as a share of what you pay (bid + premium + VAT + driving): 0.3 = 30%
 #   margin_tiers   (optional) a different margin for cheaper things, by expected sale price per item:
 #                  - {up_to: 50, min_margin: 0.3} = things selling for at most €50 need 30%, the rest min_margin
+#   transport_margin (optional) lots too far to drive that a transporter brings (config.yml driving.transport)
+#                  need this margin instead, whatever their price; the transport estimate is still a cost
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard
@@ -26,6 +28,7 @@ settings:
     min_margin: 0.4
   - up_to: 500
     min_margin: 0.3
+  transport_margin: 0.15
 items:
 - name: Monitor
   keywords: [monitor, beeldscherm]
