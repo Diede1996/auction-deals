@@ -39,8 +39,10 @@ class Settings:
     include_trip: bool = True  # count the drive to the pickup address as a cost
     # [(up_to, margin)]: items selling for at most up_to euros each need this margin instead of min_margin
     margin_tiers: tuple[tuple[float, float], ...] = ()
-    # lots too far to drive that a transporter brings: this margin instead of the tiers (None = tiers as usual)
+    # lots too far to drive that a transporter brings: this margin instead of the tiers (None = tiers as usual),
+    # when they sell for at least transport_min_value, alone or with the lots collected at the same pickup
     transport_margin: float | None = None
+    transport_min_value: float = 0.0
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
@@ -50,7 +52,8 @@ class Settings:
         return cls(min_margin=float(d.get("min_margin", 0.30)), resale_factor=float(d.get("resale_factor", 0.85)),
                    selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip,
                    margin_tiers=tuple(tiers),
-                   transport_margin=float(d["transport_margin"]) if d.get("transport_margin") is not None else None)
+                   transport_margin=float(d["transport_margin"]) if d.get("transport_margin") is not None else None,
+                   transport_min_value=float(d.get("transport_min_value") or 0))
 
     def margin_for(self, sale_each: float | None, transport: bool = False) -> float:
         """The minimum margin for an item that sells for sale_each euros: transport_margin when a transporter
@@ -70,7 +73,8 @@ class Settings:
         parts = [f"{m:.0%} margin up to €{u:g}" for u, m in self.margin_tiers]
         text = ", ".join(parts) + f" per item, {self.min_margin:.0%} above"
         if self.transport_margin is not None:
-            text += f" ({self.transport_margin:.0%} when a transporter brings it)"
+            above = f" for €{self.transport_min_value:g}+ per pickup" if self.transport_min_value else ""
+            text += f" ({self.transport_margin:.0%} when a transporter brings it{above})"
         return text
 
 
@@ -120,7 +124,10 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     cost = total_cost(bid, fees, lot, trip)
     market = market_value(item, estimate, units)
     sale_each = market / max(1, units) * settings.resale_factor if market else None
-    min_margin = item.min_margin if item.min_margin is not None else settings.margin_for(sale_each, lot.transport)
+    # a transporter brings it: the transport margin when it (or what's collected with it) sells for enough
+    pickup_value = max(market * settings.resale_factor if market else 0.0, lot.pickup_value or 0.0)
+    transport = lot.transport and pickup_value >= settings.transport_min_value
+    min_margin = item.min_margin if item.min_margin is not None else settings.margin_for(sale_each, transport)
 
     resale = profit = margin = None
     caps = []

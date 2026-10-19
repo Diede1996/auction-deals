@@ -56,3 +56,25 @@ def test_transport_lots_use_the_transport_margin_after_the_transport_cost():
     assert evaluate(item, far, fees, s, est(400)).max_bid == 185
     # without transport_margin a transport lot keeps the tiers
     assert evaluate(item, far, fees, Settings.from_dict(TIERS), est(400)).max_bid == 155
+
+
+def test_transport_margin_only_from_the_minimum_value_alone_or_per_pickup():
+    from scanner.scan import share_trips
+    s = Settings.from_dict({**TIERS, "transport_margin": 0.15, "transport_min_value": 100})
+    fees = Fees(premium=0.0, vat=0.0)
+    item = WatchItem(name="X", keywords=["x"])
+    est = marktplaats.PriceEstimate(median=120, low=120, high=120, count=5, query="x")  # sells for 90
+    lot = lambda n: Lot("s", str(n), "x", "u", 1.0, None, trip_cost=0.0, transport=True,
+                        pickup="Far 1, Groningen", pickup_when="Mon 26 Oct, 10:00")
+    # alone it sells for 90: under €100, so the tier (50%) -> pay at most 60
+    assert evaluate(item, lot(1), fees, s, est).max_bid == 60
+    assert evaluate(item, lot(1), fees, Settings.from_dict({**TIERS, "transport_margin": 0.15}), est).max_bid == 78
+    # together with what's collected there it's 180: the transport margin -> pay at most 78
+    together = Lot("s", "2", "x", "u", 1.0, None, transport=True, pickup_value=180.0)
+    assert evaluate(item, together, fees, s, est).max_bid == 78
+    # share_trips adds up the lots collected at one pickup (transport cost 0 here, so only the margin changes)
+    ev = lambda i, l, e: evaluate(i, l, fees, s, e)
+    rows = [(item, l, ev(item, l, est), est) for l in (lot(1), lot(2))]
+    trips = {"Far 1, Groningen": type("T", (), {"cost": 0.0, "minutes": 200})()}
+    rows = share_trips(rows, trips, set(), ev)
+    assert [r[1].pickup_value for r in rows] == [180.0, 180.0] and [r[2].max_bid for r in rows] == [78, 78]

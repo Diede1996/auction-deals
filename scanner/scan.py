@@ -325,24 +325,26 @@ def share_trips(rows: list[Row], trips: dict, favorite_keys: set[str], reevaluat
             groups.setdefault((place, pickup_day(lot)), []).append(i)
     rows = list(rows)
 
-    def apply(i: int, n: int, cost: float) -> bool:
+    def apply(i: int, others: set[int], cost_for) -> bool:
         item, lot, _, est = rows[i]
-        share = round(cost / n, 2)
-        if lot.trip_cost == share and lot.trip_lots == n:
+        n = len(others - {i}) + 1
+        share = round(cost_for(n) / n, 2)
+        value = round(sum(rows[j][2].resale or 0.0 for j in others | {i}), 2)
+        if lot.trip_cost == share and lot.trip_lots == n and lot.pickup_value == value:
             return False
-        lot.trip_cost, lot.trip_lots = share, n
+        lot.trip_cost, lot.trip_lots, lot.pickup_value = share, n, value
         rows[i] = (item, lot, reevaluate(item, lot, est), est)
         return True
 
     for (place, _), members in groups.items():
+        cost_for = lambda n, place=place: cost_of(place, n)
         for i in members:  # optimistic start: everything here is collected
-            apply(i, len(members), cost_of(place, len(members)))
+            apply(i, set(members), cost_for)
         for _ in range(len(members) + 1):  # the set of lots worth it only shrinks from here
             worth = {i for i in members if worth_collecting(rows[i], favorite_keys)}
             changed = False
             for i in members:
-                n = len(worth - {i}) + 1
-                changed |= apply(i, n, cost_of(place, n))
+                changed |= apply(i, worth, cost_for)
             if not changed:
                 break
     return rows
@@ -508,6 +510,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         "settings": {"min_margin": settings.min_margin,
                      "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
                      "transport_margin": settings.transport_margin,
+                     "transport_min_value": settings.transport_min_value,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "kinds": auction_kinds(config),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,

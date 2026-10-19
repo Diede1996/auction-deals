@@ -20,7 +20,9 @@ WATCHLIST_HEADER = """\
 #   margin_tiers   (optional) a different margin for cheaper things, by expected sale price per item:
 #                  - {up_to: 50, min_margin: 0.3} = things selling for at most €50 need 30%, the rest min_margin
 #   transport_margin (optional) lots too far to drive that a transporter brings (config.yml driving.transport)
-#                  need this margin instead, whatever their price; the transport estimate is still a cost
+#                  need this margin instead; the transport estimate is still a cost
+#   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
+#                  for at least this (at resale_factor); cheaper ones keep margin_tiers
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard

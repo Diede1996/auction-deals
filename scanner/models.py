@@ -48,6 +48,7 @@ class Lot:
     delivery: bool = False
     trip_cost: float | None = None  # this lot's share of the fuel to the pickup address and back (set by the scan)
     trip_lots: int = 1  # lots worth collecting that share that trip (same address and pickup day)
+    pickup_value: float | None = None  # expected sale value of those lots together, this one included
     transport: bool = False  # too far to drive: a transporter brings it, trip_cost is the transport estimate
 
     @property
