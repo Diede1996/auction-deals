@@ -85,7 +85,7 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
         norm = _WITHOUT.sub(" ", normalize(title))
         if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
-        if (not rule.parts_ok and is_part_listing(title)) or (not rule.new_ok and says_new(norm)):
+        if (not rule.parts_ok and is_part_listing(title, battery_ok=bool(rule.model))) or (not rule.new_ok and says_new(norm)):
             continue  # only a battery or keyboard for it, or new in a shop
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))

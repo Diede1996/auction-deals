@@ -47,10 +47,10 @@ def test_model_code(title, model):
 
 def test_exact_plans_search_brand_and_model():
     p = plan(MONITOR, "Curved beeldscherm 27 inch SAMSUNG S27C366EAU. Krasje in scherm")
-    assert p.kind == "exact" and p.searches == ["samsung s27c366eau", "s27c366eau"] and p.model == "S27C366EAU"
+    assert p.kind == "exact" and p.searches == ["samsung s27c366eau", "samsung monitor s27c366eau", "s27c366eau"] and p.model == "S27C366EAU"
     # a short model number needs the brand in the listing too
     p = plan(MONITOR, "Twee 27 inch beeldschermen ACER V277")
-    assert p.searches == ["acer v277"] and p.rules[0].groups == [("acer",)]
+    assert p.searches == ["acer v277", "acer monitor v277"] and p.rules[0].groups == [("acer",)]
     assert p.rules[0].matches(normalize("Acer V277 27 inch full hd"))
     assert not p.rules[0].matches(normalize("Philips V277 lamp"))
     # the brand closest to the model: "HP COMPAQ LA2306x" -> compaq
@@ -327,3 +327,47 @@ def test_one_shop_listing_the_same_thing_counts_once():
     found = comparable_listings([{"title": "Makita DHR242 boorhamer", "itemId": str(i),
                                   "priceInfo": {"priceType": "FIXED", "priceCents": 20000}} for i in range(3)], rule, [])
     assert len(found) == 1
+
+
+def li_(title, euros):
+    return {"title": title, "priceInfo": {"priceType": "FIXED", "priceCents": euros * 100}, "itemId": title}
+
+
+def test_short_model_needs_the_brand():
+    """FS800 is also a Kawai keyboard, a Koyo tuner and a STAR sink drain."""
+    from scanner.marktplaats import comparable_listings
+    p = plan(WatchItem(name="Power tools", keywords=["festool"]), "2x Geleiderail Festool, FS800/2")
+    assert p.searches[:2] == ["festool fs800", "festool geleiderail fs800"]
+    found = comparable_listings([li_("Kawai FS800 Superboard", 50), li_("STAR AFVOERGOOT MST-FS800 Zwart 800mm", 40),
+                                 li_("Koyo FS-800 Solid State Stereo Tuner", 79),
+                                 li_("4 x Festool FS 800/2 geleiderail 0,8m", 50)], p.rules[0], [])
+    assert [f["price"] for f in found] == [50]
+    assert found[0]["title"].startswith("4 x Festool")
+
+
+def test_milwaukee_m18_is_a_range_not_a_model():
+    from scanner.marktplaats import comparable_listings
+    p = plan(WatchItem(name="Power tools", keywords=["milwaukee"]), "Milwaukee Accu vetspuit M18 GG")
+    assert p.model == "M18 GG" and p.searches[1] == "milwaukee vetspuit m18 gg"
+    found = comparable_listings([li_("milwaukee koffer m18 fjs", 15), li_("Milwaukee M18 REDLITHIUM 5.0 Ah Accu", 35),
+                                 li_("Milwaukee M18 GG-0 vetspuit", 150), li_("Milwaukee M18GG accu vetpomp", 170)],
+                                p.rules[0], [])
+    assert [f["price"] for f in found] == [150, 170]
+
+
+def test_model_name_in_capitals_is_kept():
+    p = plan(WatchItem(name="Power tools", keywords=["festool"]), "Bouwstofzuiger Festool, CTL Midi")
+    assert all({"ctl", "midi"} <= {g[0] for g in r.groups} for r in p.rules)
+    assert not p.rules[-1].matches(normalize("Festool CTL 26 E AC bouwstofzuiger"))
+    assert p.rules[-1].matches(normalize("Festool CTL Midi I bouwstofzuiger"))
+
+
+def test_spaced_model_is_searched_too():
+    p = plan(WatchItem(name="Power tools", keywords=["festool"]), "Bandschuurmachine Festool, BS105E")
+    assert p.searches == ["festool bs105e", "festool bandschuurmachine bs105e", "festool bs 105 e"]
+    assert p.rules[0].matches(normalize("Festool BS 105 E-Set bandschuurmachine"))
+
+
+def test_in_after_a_model_is_not_inches():
+    assert model_code("Decoupeerzaag METABO ST50 in metalen kist.") == ("st50", 2)
+    assert plan(TOOLS, "Haakse slijper MAKITA NN").rules == [] or "nn" not in plan(TOOLS, "Haakse slijper MAKITA NN").searches[0]

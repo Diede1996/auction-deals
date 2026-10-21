@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 # Bump when what counts as a comparable listing changes: saved prices from older rules are checked again
 # (and still shown as a fallback until they are).
-RULES_VERSION = 3
+RULES_VERSION = 4
 
 
 def result_kind(plan: SearchPlan, rule_groups: list) -> str:
@@ -92,8 +92,8 @@ class PriceFinder:
         min_count = self.min_listings_exact if plan.exact else self.min_listings
         results: list[dict] = []
         found = None
-        # two searches; three when the first names the lot's options ("galaxy a12 64gb", then the plan's own)
-        for i, query in enumerate(plan.searches[:3 if plan.options else 2]):
+        # two searches; three for an exact model or when the first names the lot's options ("galaxy a12 64gb")
+        for i, query in enumerate(plan.searches[:3 if plan.options or plan.kind == "exact" else 2]):
             if i and self.lookups_left <= 0 and query not in self._results:
                 break
             try:

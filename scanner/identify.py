@@ -29,7 +29,7 @@ with and the for of to from new nieuw nieuwe gebruikt used zgan zga ongebruikt n
 partij restpartij voorraad diverse div divers kavel lot set stuks stuk st stk pcs x cm mm m kg gr g l ltr liter
 v w watt gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen
 maat size nr no art artikel serie series gen generatie generation
-inc bv nv ltd gmbh corp corporation co
+inc bv nv ltd gmbh corp corporation co nn
 zwart wit grijs zilver blauw rood groen bruin beige black white grey gray silver blue red
 twee drie vier vijf zes zeven acht negen tien
 ontbreekt ontbreken krasje kras krassen geen beschadigd beschadiging schade werkend werkt getest ongetest
@@ -187,7 +187,7 @@ def model_in(code: str, text_norm: str) -> bool:
 
 
 _NOT_INCHES = {"gb", "tb", "g", "gig", "ram", "core", "cores", "gpu", "cpu", "x", "stuks", "mp", "mm", "cm", "w"}
-_INCH_RE = re.compile(r"(?<![\d.,])(\d{2})(?:[.,]\d)?\s*(?:\"|”|“|″|''|-?\s?inch\b|-?\s?in\b|-?\s?zoll\b)", re.I)
+_INCH_RE = re.compile(r"(?<![A-Za-z\d.,])(\d{2})(?:[.,]\d)?\s*(?:\"|”|“|″|''|-?\s?inch\b|-?\s?in\b|-?\s?zoll\b)", re.I)
 
 
 def size_in(size: str, text_norm: str) -> bool:
@@ -527,17 +527,25 @@ def is_battery_lot(title: str) -> bool:
 # A listing that sells only a battery, charger or keyboard for the device: "Hilti B22 5.2 Accu", "Dell Laptop Accu",
 # "Origineel Surface Pro Toetsenbord". What comes after "met", "+", a comma or a dash is what's included, so
 # "Boorhamer met accu" and "Surface Pro 3 | i5 | Pen + Toetsenbord" are the device.
-_PART_WORDS = ("accu", "akku", "batterij", "battery", "lader", "charger", "toetsenbord", "keyboard", "typecover")
+_PART_WORDS = ("accu", "akku", "batterij", "battery", "lader", "charger", "toetsenbord", "keyboard", "typecover",
+               "koffer", "inlay")
+_CASE_WORDS = ("koffer", "inlay")
 _PART_TOKENS = ("type cover", "adapter", "voeding", "power supply")
 _INCLUDED = re.compile(r"\([^)]*\)?|\s(?:met|incl\.?|inclusief|en|with|and|\+|&|-|\|)\s.*$|[,|].*$", re.I)
 _WITHOUT_RE = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
 
 
-def is_part_listing(title: str) -> bool:
+def is_part_listing(title: str, battery_ok: bool = False) -> bool:
+    """battery_ok: the listing names the tool's own model ("Makita DTM52ZJX2 18V accu LXT Multitool"), so a battery
+    or charger in it comes with the tool; an empty case ("Gereedschapskoffer - DTM52ZJX2") still doesn't count."""
     head = _WITHOUT_RE.sub(" ", normalize(_INCLUDED.sub(" ", title or "")))
+    # "Accu vetspuit", "accu boormachine": accu says how the tool works ("Accu Makita 18V" is a battery)
+    head = re.sub(r"(?<![a-z0-9])(?:accu|akku)\s+([a-z]{4,})", lambda m: m.group(0) if m.group(1) in _BRANDS
+                  or m.group(1) in NOISE or any(w in m.group(1) for w in _PART_WORDS) else " ", head)
     if any(part in head for part in TOOL_PARTS):
         return False
-    return any(w in head for w in _PART_WORDS) or any(token_in(w, head) for w in _PART_TOKENS)
+    words = _CASE_WORDS if battery_ok else _PART_WORDS
+    return any(w in head for w in words) or (not battery_ok and any(token_in(w, head) for w in _PART_TOKENS))
 
 
 # "| Nieuw", "nieuw in doos", "sealed": a new item in a shop, not a used one. "Zo goed als nieuw" and "met nieuwe accu"
@@ -609,6 +617,9 @@ def _cpu_skip(tokens: list[str]) -> set[int]:
     return out
 
 
+_PLATFORMS = {"m12", "m18", "m28"}  # Milwaukee: "M18" alone is every tool, battery and case of the 18 V range
+
+
 def model_code(title: str) -> tuple[str, int] | None:
     """(model as written, token position), e.g. ("jr 3030t", 1) for "Makita JR 3030T reciprozaag"."""
     tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()  # 16” is a size
@@ -620,6 +631,10 @@ def model_code(title: str) -> tuple[str, int] | None:
         nxt = tokens[i + 1] if i + 1 < len(tokens) else ""
         short_prefix = (prev.isalpha() and 2 <= len(prev) <= 3 and prev not in NOISE and prev not in _BRANDS
                         and prev not in _CPU_WORDS and prev not in _CATEGORY_OF)
+        if tok in _PLATFORMS:  # "M18 GG", "M18 FPD2": M18 is the battery range, the letters are the model
+            if re.fullmatch(r"[a-z][a-z0-9]{1,5}", nxt) and nxt not in NOISE and nxt not in _BRANDS and not is_spec(nxt):
+                return f"{tok} {nxt}", i
+            continue
         if _mixed(tok) and len(tok) >= 3:
             if short_prefix and tok[0].isdigit():  # "JR 3030T"
                 return f"{prev} {tok}", i - 1
@@ -838,6 +853,25 @@ def with_options(plan: SearchPlan, lot: Lot, item: WatchItem | None = None) -> S
                       options=opts)
 
 
+def model_words(title: str) -> list[str]:
+    """A model name without numbers, written in capitals: "Bouwstofzuiger Festool, CTL Midi" -> ["ctl", "midi"],
+    "Excentrische schuurmachine Festool, RO FEQ" -> ["ro", "feq"]. Not when the whole title is in capitals."""
+    words = re.findall(r"[A-Za-z][A-Za-z0-9]*", title or "")
+    if sum(w.isupper() for w in words) * 2 > len(words):
+        return []
+    out = []
+    for i, w in enumerate(words):
+        n = normalize(w)
+        if w.isupper() and 2 <= len(w) <= 5 and n not in _BRANDS and n not in NOISE and not is_spec(n) \
+                and n not in _CPU_WORDS:
+            out.append(n)
+            nxt = words[i + 1] if i + 1 < len(words) else ""
+            if nxt[:1].isupper() and nxt[1:].islower() and 3 <= len(nxt) <= 5 and normalize(nxt) not in NOISE \
+                    and normalize(nxt) not in _BRANDS:
+                out.append(normalize(nxt))  # "CTL Midi": a Midi, not a Mini
+    return list(dict.fromkeys(out))
+
+
 def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:
     mac = (mac_plan(lot.title) or ipad_plan(lot.title) or phone_plan(lot.title)
            or generation_plan(lot.title, lot.description))
@@ -865,17 +899,30 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
         brand = brand or brand_in(source, before=pos) or brand_in(lot.title)
         groups: list[tuple[str, ...]] = []
         prefix = brand
-        if brand and not distinctive(written):
-            groups.append((brand,))
+        if brand and (not distinctive(written) or len(squashed) < 8):
+            groups.append((brand,))  # "FS800" is also a Kawai keyboard and a STAR sink drain: Festool FS800 only
         elif not brand and not distinctive(written) and generic:
             groups.append(category(keyword))  # "Beeldscherm V277": at least a monitor called V277
             prefix = category(keyword)[0]
         search = " ".join(x for x in (prefix, written) if x)
         searches = [search]
+        spaced = " ".join(re.findall(r"[a-z]+|\d+", squashed))
         if " " in written:
             searches.append(" ".join(x for x in (prefix, squashed) if x))  # "jr 3030t" -> "jr3030t"
+        elif len(spaced.split()) == 3 and squashed[0].isalpha() and len(squashed) < 8:
+            searches.append(" ".join(x for x in (prefix, spaced) if x))  # "bs105e" -> "BS 105 E" listings too
         elif brand and distinctive(written):
-            searches.append(squashed)  # also listings that leave out the brand
+            searches.append(squashed)  # Marktplaats' search also finds "Acer" listings this way
+        # "Bandschuurmachine Festool, BS105E": "festool bandschuurmachine bs105e" finds more listings (tip from Diede)
+        toks = normalize(lot.title).split()
+        what = next((category(t)[0] for t in toks if category(t) and t not in _WEAK), None)  # "beeldscherm" -> "monitor"
+        if not what:  # the first word names the product: "Geleiderail Festool", "Accu vetspuit"
+            first = next((t for t in toks if t not in _WEAK and t not in _BRANDS
+                          and not re.fullmatch(r"\d+x?|x\d+", t)), "")
+            what = first if first.isalpha() and len(first) >= 5 and first not in NOISE and first not in _BRANDS \
+                and first not in (brand or "").split() else None
+        if what and prefix:
+            searches.insert(1, f"{prefix} {what} {written}")
         label = " ".join(x for x in (brand, written) if x)
         return SearchPlan("exact", searches, [Rule(groups, model=squashed, label=label)],
                           model=written.upper(), brand=brand,
@@ -896,7 +943,8 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     raw = normalize(lot.title).split()
     kw_tokens = keyword.split()
     pos = next((i for i, t in enumerate(raw) if kw_tokens and t.startswith(kw_tokens[0])), -1)
-    used = set(kw_tokens) | set((brand or "").split())
+    named = model_words(lot.title)  # "CTL Midi", "RO FEQ": every listing must name these
+    used = set(kw_tokens) | set((brand or "").split()) | set(named)
     cpu = _cpu_skip(raw)
     tokens = []
     for i, t in useful_tokens(lot.title):
@@ -916,13 +964,13 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     extras = ordered[:extra_words]
     volt = voltage(lot.title)  # "Accu Makita 12V": a 12 V battery, not an 18 V one
     rules, labels = [], []
-    for n in range(len(extras), lowest - 1, -1):
+    for n in range(len(extras), -1, -1):
         words = extras[:n]
-        if sum(w not in weak for w in words) < lowest:
+        if len(named) + sum(w not in weak for w in words) < lowest:
             continue
-        groups = fixed + [category(w) or (w,) for w in words] + ([volt] if volt else [])
+        groups = fixed + [(w,) for w in named] + [category(w) or (w,) for w in words] + ([volt] if volt else [])
         shown = [_SPELLING.get(w, w) for w in words]  # "slagschoevendraaier" is searched spelled right
-        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + shown + ([volt[0]] if volt else []))
+        label = " ".join([fixed[0][0]] + ([brand] if brand else []) + named + shown + ([volt[0]] if volt else []))
         rules.append(Rule(groups, label=label))
         labels.append(label)
     if not rules:

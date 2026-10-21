@@ -99,7 +99,7 @@ def test_exact_model_not_on_marktplaats_gives_no_price():
     finder = PriceFinder(FakeHttp([(url_has("marktplaats"), {"listings": MONITORS})]), {}, NOW)
     monitor = WatchItem(name="Monitor", keywords=["beeldscherm"])
     assert finder.for_lot(monitor, Lot("hnvi", "2", "Beeldscherm 27 inch ACER RG270", "u", 15, None)) is None
-    assert finder.lookups == 2  # "acer rg270", then "rg270" alone
+    assert finder.lookups == 3  # "acer rg270", "acer monitor rg270", then "rg270" alone
 
 
 def test_rough_price_without_type_number():
@@ -163,7 +163,7 @@ def test_brand_word_alone_is_never_a_comparison():
     finder = PriceFinder(FakeHttp([(url_has("marktplaats"), search)]), {}, NOW)
     est = finder.for_lot(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti Meetstatief PUA 25", "u", 20, None))
     assert est is None  # no price is better than a wrong one
-    assert len(calls) == 2 and "pua25" in calls[1]
+    assert len(calls) == 3 and "meetstatief" in calls[1] and "pua25" in calls[2]
     assert plan_for(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti", "u", 1, None)).rules == []
 
 
