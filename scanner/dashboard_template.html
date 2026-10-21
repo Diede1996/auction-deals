@@ -823,8 +823,8 @@ footer td { padding: 2px 14px 2px 0; }
       rows.slice(0, limit).forEach(function (l) {
         var u = safeUrl(l.url);
         body.append(el("tr", { "class": sale != null && l.price < sale ? "below" : null },
-          el("td", { "class": "price", text: money(l.price) }),
-          el("td", { "class": "kind", text: l.kind === "bid" ? "bieden vanaf" : "vraagprijs" }),
+          el("td", { "class": "price", text: money(l.price), title: l.of ? l.of + " for " + money(l.total) : null }),
+          el("td", { "class": "kind", text: (l.kind === "bid" ? "bieden vanaf" : "vraagprijs") + (l.of ? " · each of " + l.of : "") }),
           el("td", null, u ? el("a", { href: u, target: "_blank", rel: "noopener", text: l.title }) : l.title)));
       });
       table.append(body);

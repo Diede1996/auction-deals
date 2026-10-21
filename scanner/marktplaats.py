@@ -13,7 +13,7 @@ import statistics
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
 
-from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, says_new
+from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, quantity, says_new
 from .util import normalize, token_in
 
 log = logging.getLogger(__name__)
@@ -35,6 +35,9 @@ ALWAYS_EXCLUDE = ["gezocht", "gevraagd", "zoek", "defect", "kapot", "onderdelen"
                   # damaged ("Surface Pro 7+ (beschadigd)"); "geen schade" is read as nothing, see _WITHOUT
                   "beschadigd", "beschadigde", "beschadiging", "schade", "gebarsten", "barst", "barsten",
                   "gebroken", "kapotte", "defecte", "broken", "cracked", "for parts", "werkt niet", "niet werkend"]
+# "€ 50 per stuk" for a photo of four: the price is for one
+_EACH = re.compile(r"(?<![a-z0-9])(?:per stuk|per stuks|p st|p stuk|pst|per st|stuksprijs|prijs per|per item|each|ps)"
+                   r"(?![a-z0-9])")
 # "zonder accu", "excl. lader": what a listing does NOT include says nothing about what it is
 _WITHOUT = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
 # "... voor Einhell", "... for Makita": something made for a product of that brand
@@ -89,15 +92,19 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
             continue  # only a battery or keyboard for it, or new in a shop
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))
+        count = quantity(title)
+        if count > 1 and _EACH.search(normalize(f"{title} {li.get('description') or ''}")):
+            count = 1  # "4 x ... € 50 per stuk"
         same = (normalize(title), info.get("priceCents"))  # a shop listing the same thing three times counts once
         if key in seen or same in seen:  # the same listing found by both searches
             continue
         seen.update((key, same))
         out.append({
-            "price": round(info["priceCents"] / 100, 2),
+            "price": round(info["priceCents"] / 100 / count, 2),  # "4 x FS 800/2 geleiderail" for € 50: € 12,50 each
             "title": title.strip()[:90],
             "url": ("https://www.marktplaats.nl" + vip) if vip.startswith("/") else (vip or None),
             "kind": "bid" if info.get("priceType") == "MIN_BID" else "fixed",  # "bieden vanaf" vs asking price
+            **({"of": count, "total": round(info["priceCents"] / 100, 2)} if count > 1 else {}),
         })
     return out
 

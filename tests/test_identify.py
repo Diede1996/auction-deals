@@ -341,7 +341,7 @@ def test_short_model_needs_the_brand():
     found = comparable_listings([li_("Kawai FS800 Superboard", 50), li_("STAR AFVOERGOOT MST-FS800 Zwart 800mm", 40),
                                  li_("Koyo FS-800 Solid State Stereo Tuner", 79),
                                  li_("4 x Festool FS 800/2 geleiderail 0,8m", 50)], p.rules[0], [])
-    assert [f["price"] for f in found] == [50]
+    assert [f["price"] for f in found] == [12.5]  # four rails for € 50
     assert found[0]["title"].startswith("4 x Festool")
 
 
@@ -371,3 +371,14 @@ def test_spaced_model_is_searched_too():
 def test_in_after_a_model_is_not_inches():
     assert model_code("Decoupeerzaag METABO ST50 in metalen kist.") == ("st50", 2)
     assert plan(TOOLS, "Haakse slijper MAKITA NN").rules == [] or "nn" not in plan(TOOLS, "Haakse slijper MAKITA NN").searches[0]
+
+
+def test_a_listing_of_several_is_priced_per_item():
+    from scanner.marktplaats import comparable_listings
+    rule = plan(WatchItem(name="Power tools", keywords=["festool"]), "2x Geleiderail Festool, FS800/2").rules[0]
+    found = comparable_listings([li_("4 x Festool FS 800/2 geleiderail 0,8m", 50),
+                                 li_("2x Festool FS 800/2 geleiderail, € 40 per stuk", 40),
+                                 {**li_("3x Festool FS800/2", 45), "description": "Prijs is per stuk"},
+                                 li_("Festool FS 800/2 geleiderail", 30)], rule, [])
+    assert [f["price"] for f in found] == [12.5, 40, 45, 30]
+    assert (found[0]["of"], found[0]["total"]) == (4, 50)
