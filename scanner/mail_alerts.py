@@ -13,7 +13,8 @@ lot on the dashboard, with a Marktplaats price and a max bid like any other lot.
 - The auction block at the top of an alert (name, place, closing day) is copied onto its lots.
 - The weekly saved-search email ("Je opgeslagen zoekopdrachten") holds no lots, only a link per search
   term to Troostwijk's search page. Those links go into the Telegram digest so you can tap through yourself.
-- Notifications about one lot ("Je favoriete kavel sluit binnenkort: …", "Je bent overboden op: …") name a
+- Notifications about lots of yours ("Je favoriete kavel sluit binnenkort: …", "Favoriete veiling sluit bijna: …"
+  with the lots you follow in that auction, "Je bent overboden op: …") name a
   lot you follow or bid on, so they are never stored and their subject is never used. Lots you follow (the
   heart on Troostwijk) are passed on to the scan for the Telegram digest only.
 - Lots are remembered in data/state.json until they close, or `keep_days` after the last alert when the
@@ -62,11 +63,12 @@ _SITE_URL = re.compile(r"https?://(?:www\.)?troostwijkauctions\.com[^\s\"'<>]*",
 # Troostwijk's notifications about one lot you follow, bid on or bought. Their subject names that lot, so it is
 # never used as an auction name or stored (the repository is public).
 # Not "Laatste kans: fabriekssluiting ..." or "Laatste kans! Premium Duitse kavels ...": those are auctions.
-_NOTICE = re.compile(r"^(?:gefeliciteerd!?\s*)?(?:je favoriete kavel|laatste kans om te bieden|je bent overboden|"
+_NOTICE = re.compile(r"^(?:(?:gefeliciteerd|let op)!?\s*)?(?:je favoriete kavel|favoriete veiling|laatste kans om te bieden|je bent overboden|"
                      r"bod geplaatst|je hebt (?:een bod|kavel|gewonnen|betaald)|uw bod|de directe verkoop|je aankoop|"
                      r"bedankt, je hebt betaald|afhaalgegevens|laatste ophaalmogelijkheid|your favou?rite lot|"
                      r"last chance to bid|you(?:'ve| have) been outbid|you(?:'ve| have) won)", re.I)
-_FOLLOWED = re.compile(r"^(?:je favoriete kavel|your favou?rite lot)", re.I)  # the heart on a lot
+# the heart on a lot; "Favoriete veiling sluit bijna: <auction>" lists the lots you follow in that auction
+_FOLLOWED = re.compile(r"^(?:let op!?\s*)?(?:je favoriete kavel|favoriete veiling|your favou?rite lot)", re.I)
 # "Sluiting: 6 okt om 20:33", "20 Jul 10:58 CEST": a closing time without a year
 _CLOSE_NO_YEAR = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(?:om\s+|at\s+)?(\d{1,2}):(\d{2})\b")
 _TOWN_LINE = re.compile(r"^([A-Za-zÀ-ÿ'’. -]{2,40}?),\s*(NL|BE|DE|LU|FR)$")

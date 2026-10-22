@@ -420,7 +420,9 @@ def test_which_subjects_are_about_one_lot_of_yours():
              "Je bent overboden op: Bosch GBH 2-28", "Je hebt kavel: Wilkhahn Bureaustoel gewonnen",
              "Gefeliciteerd! Je hebt kavel A1-37124-15 Outdoor eettafel gewonnen",
              "Je hebt een bod geplaatst van 200.00 EUR op kavel A1-36953-495 Rivièra Maison Bedford XL Buffetkast",
-             "Je aankoop staat klaar voor betaling", "Bedankt, je hebt betaald!"]
+             "Je aankoop staat klaar voor betaling", "Bedankt, je hebt betaald!",
+             "Let op! Je favoriete kavel sluit bijna: Makita Diverse accu gereedschap (2x)",
+             "Favoriete veiling sluit bijna: Hugo kleding afkomstig uit faillissement MD fashion"]
     auctions = ["Laatste kans: fabriekssluiting CERATIZIT – verzeker u nu van premium machines",
                 "Laatste kans! Premium Duitse kavels geselecteerd voor jou deze week",
                 "Laatste kans - Fendt Vario Profiplus All-wheel Drive Tractoren - Bekijk veiling",
@@ -462,3 +464,33 @@ def test_emails_about_your_lots_never_open_a_tracking_link():
 def test_short_lot_title_is_not_the_bid_button():
     lots = parse_email_html(favourite_html(f"{TW}/nl/l/A1-50047-357", "Heftruck"), None)
     assert [(l["lot_id"], l["title"]) for l in lots] == [("A1-50047-357", "Heftruck")]
+
+
+# Diede's email of 21 Oct: the lots you follow in one auction, closing one after another from the time given
+def test_favourite_auction_reminder_is_lots_you_follow():
+    from scanner.mail_alerts import collect
+    lots_html = "".join(f"""<tr><td><a href="{exponea(f'{TW}/nl/l/A1-50645-{n}')}">{t}</a></td></tr>
+      <tr><td>Hedel, NL</td></tr><tr><td><a href="{exponea(f'{TW}/nl/l/A1-50645-{n}')}">Bekijk kavel</a></td></tr>"""
+                        for n, t in [(11, "Hugo Boss - Karel253x - Colberts (4x)"), (12, "Hugo - GOS233F1X - Pantalon (3x)")])
+    html = f"""<table><tr><td><h1>Je favoriete kavels sluiten morgen</h1>
+      <p>Je volgt kavels in veiling A1-50645 (Hugo kleding afkomstig uit faillissement MD fashion).</p>
+      <p>Je eerste kavel sluit op 22 okt om 19:04</p></td></tr>{lots_html}</table>"""
+    subject = "Favoriete veiling sluit bijna: Hugo kleding afkomstig uit faillissement MD fashion"
+    FakeIMAP.mails = [_mail(html, subject=subject, date="Wed, 21 Oct 2026 20:04:21 +0200"),
+                      _mail(favourite_html(f"{TW}/nl/l/A1-50047-354", "Makita Diverse accu gereedschap (2x)"),
+                            subject="Let op! Je favoriete kavel sluit bijna: Makita Diverse accu gereedschap (2x)",
+                            date="Mon, 05 Oct 2026 20:33:15 +0200")]
+    box = Mailbox("bot@gmail.com", "app-pass", imap_cls=FakeIMAP)
+    # stored by the version that took this email for an auction announcement: forgotten now
+    state = {"troostwijk_alerts": {"lots": {"A1-50645-11": {
+        "auction": subject, "title": "Hugo Boss - Karel253x - Colberts (4x)", "url": f"{TW}/nl/l/A1-50645-11",
+        "first": NOW.isoformat(), "seen": NOW.isoformat()}}}}
+    now = datetime(2026, 10, 22, 4, 20, tzinfo=timezone.utc)
+    lots, report = collect(box, NoRequests([]), state, now)
+    assert lots == [] and report["notices"] == 2
+    hearts = {lot.lot_id: lot for lot in report["followed"]}
+    assert set(hearts) == {"A1-50645-11", "A1-50645-12"}
+    assert hearts["A1-50645-11"].closes_at.isoformat() == "2026-10-22T19:04:00+02:00"
+    assert hearts["A1-50645-11"].title == "Hugo Boss - Karel253x - Colberts (4x)"
+    for word in ("Hugo", "Favoriete", "A1-50645", "Makita"):
+        assert word not in str(state)
