@@ -116,8 +116,8 @@ def test_bot_keeps_stock_private(repo):  # noqa: F811
 
 def test_bot_sends_price_reminder_once_a_day(repo):  # noqa: F811
     inventory.save(repo / "data" / "inventory.enc", {"next": 2, "items": [
-        {"id": 1, "name": "Dell monitor", "paid": 45, "bought": (NOW - timedelta(days=12)).isoformat(),
-         "listed": (NOW - timedelta(days=12)).isoformat(), "ask": 120, "floor": 90, "category": "Monitor"}]},
+        {"id": 1, "name": "Dell monitor", "paid": 45, "bought": (NOW - timedelta(days=35)).isoformat(),
+         "listed": (NOW - timedelta(days=35)).isoformat(), "ask": 120, "floor": 90, "category": "Monitor"}]},
         "123:abc")
     (repo / "data" / "telegram.json").write_text(json.dumps({"offset": 1, "welcomed": "x"}))
     tg = FakeTelegram()

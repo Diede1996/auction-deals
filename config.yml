@@ -135,8 +135,8 @@ commands:
 
 inventory:                      # your stock in Telegram: /koop, /verkocht, /voorraad, /winst (kept encrypted)
   enabled: true                 # false = no reminders to lower the price
-  lower_price_after_days: 10    # remind you when something hasn't sold this many days after its asking price was set
-  remind_every_days: 7          # and again after this many days
+  lower_price_after_days: 30    # remind you when something hasn't sold this many days after its asking price was set
+  remind_every_days: 30         # and again after this many days
   price_drop: 0.1               # suggest lowering the asking price by 10%, never below the lowest price you'd accept
 
 dashboard:
