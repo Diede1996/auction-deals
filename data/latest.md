@@ -1,12 +1,12 @@
 # Latest scan
 
-_Thursday 22 October 2026, 06:39 (Amsterdam time)_
+_Thursday 22 October 2026, 10:24 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
 | Site | Status |
 |---|---|
-| ProVeiling | ✅ 1098 lots |
+| ProVeiling | ✅ 1097 lots |
 | HNVI | ✅ 843 lots |
 | Plaats Je Bod | ✅ 139 lots |
 | Onlineveilingmeester | ✅ 1897 lots |
@@ -16,10 +16,10 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 | Openbare Verkopen (BE) | ✅ 833 lots |
 | Vlavem (BE) | ✅ 461 lots |
 | BellAuction (BE) | ✅ 0 lots |
-| Troostwijk | ✅ 140 lots |
+| Troostwijk | ✅ 104 lots |
 | Marktplaats prices | ✅ 100 price lookups |
 
-## Matching lots (347)
+## Matching lots (356)
 
 | | Item | Lot | Next bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
@@ -38,14 +38,40 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Monitor | [Benq 24 inch LCD monitor](https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/3930/) (Inventarisveilingen) | €25 | – | – | Thu 22 Oct 13:00 |
 |  | Monitor | [Een Philips brilliance 24 inch monitor](https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4390/) (Inventarisveilingen) | €15 | – | – | Thu 22 Oct 13:00 |
 |  | Monitor | [Samsung Full HD IPS Monitoren](https://www.inventarisveilingen.nl/veiling/index/productview/id/145/prodid/4391/) (Inventarisveilingen) | €15 | – | – | Thu 22 Oct 13:00 |
-|  | Power tools | [Steekwagen Makita](https://www.openbare-verkopen.be/lot/753357) (Openbare Verkopen (BE)) | €25 | – | – | Thu 22 Oct 19:02 |
+|  | Laptop | [Samsung - NP750XGJ-KG1NL - Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-47) (Troostwijk) | €0 | €475 | €190 | Thu 22 Oct 14:03 |
+|  | MacBook | [Apple Macbook Air (M1, 2020) Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-35) (Troostwijk) | €0 | €475 | €190 | Thu 22 Oct 14:03 |
+|  | Laptop | [Samsung - NP750XGJ-KG1NL - Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-48) (Troostwijk) | €0 | €475 | €190 | Thu 22 Oct 14:03 |
+|  | MacBook | [Apple Macbook Pro (M5, 14 inch) Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-2) (Troostwijk) | €0 | €1.799 | €754 | Thu 22 Oct 14:03 |
+|  | Laptop | [Lenovo Thinkbook 13 x g2 iap Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-41) (Troostwijk) | €0 | €410 | €164 | Thu 22 Oct 14:03 |
+|  | Phone | [Samsung Galaxy S23 Ultra (512GB) Mobiele telefoon](https://www.troostwijkauctions.com/nl/l/A1-49868-9) (Troostwijk) | €0 | €420 | €168 | Thu 22 Oct 14:03 |
+|  | iPad | [Apple Ipad Air (5th gen, 64GB)](https://www.troostwijkauctions.com/nl/l/A1-49868-498) (Troostwijk) | €0 | €379 | €151 | Thu 22 Oct 16:00 |
+|  | Power tools | [Steekwagen Makita](https://www.openbare-verkopen.be/lot/753357) (Openbare Verkopen (BE)) | €30 | – | – | Thu 22 Oct 19:02 |
 |  | Power tools | [Accu slagschroevendraaier + boormachine Makita](https://www.openbare-verkopen.be/lot/753358) (Openbare Verkopen (BE)) | €95 | €120 | €41 | Thu 22 Oct 19:03 |
 |  | Power tools | [Accu slagschroevendraaier + boormachine Makita](https://www.openbare-verkopen.be/lot/753359) (Openbare Verkopen (BE)) | €95 | €120 | €41 | Thu 22 Oct 19:03 |
-|  | Power tools | [Accu invalzaag Makita](https://www.openbare-verkopen.be/lot/753360) (Openbare Verkopen (BE)) | €75 | €105 | €35 | Thu 22 Oct 19:03 |
-|  | Power tools | [Accu boormachine Makita](https://www.openbare-verkopen.be/lot/753361) (Openbare Verkopen (BE)) | €50 | – | – | Thu 22 Oct 19:03 |
+|  | Power tools | [Accu invalzaag Makita](https://www.openbare-verkopen.be/lot/753360) (Openbare Verkopen (BE)) | €85 | €105 | €35 | Thu 22 Oct 19:03 |
+|  | Power tools | [Accu boormachine Makita](https://www.openbare-verkopen.be/lot/753361) (Openbare Verkopen (BE)) | €55 | – | – | Thu 22 Oct 19:03 |
 |  | Power tools | [Accu haakse slijper + boormachine Makita](https://www.openbare-verkopen.be/lot/753362) (Openbare Verkopen (BE)) | €75 | €175 | €64 | Thu 22 Oct 19:03 |
 | ✅ | Power tools | [Klopboormachine Milwaukee](https://www.openbare-verkopen.be/lot/753366) (Openbare Verkopen (BE)) | €50 | €149 | €54 | Thu 22 Oct 19:04 |
 |  | Coffee machine | [Espressomachine Rancilio](https://www.openbare-verkopen.be/lot/754958) (Openbare Verkopen (BE)) | €390 | €388 | €147 | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Arti253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-11) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - GOS233F1X - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-17) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - GOS233F1X - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-16) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo Boss - Karel253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-46) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - GOS233F1X - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-18) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo Boss - Kariw253 - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-48) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Karl - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-40) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo - Antera - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-49) (Troostwijk) | €0 | €62 | €43 | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - GOS233F1X - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-13) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - Hestenm204x - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-20) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Kari253x - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-9) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Arti253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-5) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - Hetana - Pantalon (5x)](https://www.troostwijkauctions.com/nl/l/A1-50645-50) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo Boss - Arti224e1x - Colberts (5x)](https://www.troostwijkauctions.com/nl/l/A1-50645-45) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Arti224e1x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-7) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Artim204x - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-8) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - 1xtom253x 1x getlin251f3 - Pantalon (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-21) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Troostwijk favourite | [Hugo - GOS233F1X - Pantalon (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-19) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
+|  | Suit / formalwear | [Hugo boss - Henry244f1x - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-10) (Troostwijk) | €0 | – | – | Thu 22 Oct 19:04 |
 |  | Kitchen appliance | [Inox gasfornuis Smeg](https://www.openbare-verkopen.be/lot/753391) (Openbare Verkopen (BE)) | €55 | – | – | Thu 22 Oct 19:08 |
 | ✅ | Coffee machine | [Inox koffiemachine Pavoni](https://www.openbare-verkopen.be/lot/753392) (Openbare Verkopen (BE)) | €75 | €500 | €199 | Thu 22 Oct 19:08 |
 |  | Coffee machine | [Koffiemachine Miko](https://www.openbare-verkopen.be/lot/753405) (Openbare Verkopen (BE)) | €35 | – | – | Thu 22 Oct 19:10 |
@@ -56,11 +82,10 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | iPad | [9x Ipad](https://www.openbare-verkopen.be/lot/753556) (Openbare Verkopen (BE)) | €140 | – | – | Thu 22 Oct 19:33 |
 |  | Laptop | [5 Diverse laptops](https://www.openbare-verkopen.be/lot/753560) (Openbare Verkopen (BE)) | €260 | – | – | Thu 22 Oct 19:34 |
 |  | Laptop | [4x Universele notebookadapter 90W, Gembird, npa-ac1d, zwart](https://onlineveilingmeester.nl/nl/veilingen/9652/kavels/69) (Onlineveilingmeester) | €31 | – | – | Thu 22 Oct 19:47 |
-|  | Phone | [Apple Iphone 18 pro Max (256GB)](https://www.troostwijkauctions.com/nl/l/A1-49868-1) (Troostwijk) | €250 | €1.550 | €646 | Thu 22 Oct |
-|  | iPad | [Apple Ipad 10th gen (256GB, wifi) Tablet](https://www.troostwijkauctions.com/nl/l/A1-49868-11) (Troostwijk) | €100 | €360 | €140 | Thu 22 Oct |
+|  | Phone | [Apple Iphone 18 pro Max (256GB)](https://www.troostwijkauctions.com/nl/l/A1-49868-1) (Troostwijk) | €250 | €1.550 | €649 | Thu 22 Oct |
+|  | iPad | [Apple Ipad 10th gen (256GB, wifi) Tablet](https://www.troostwijkauctions.com/nl/l/A1-49868-11) (Troostwijk) | €100 | €360 | €143 | Thu 22 Oct |
 |  | Laptop | [Laptop - Apple Inc. - Mac14,15](https://www.troostwijkauctions.com/nl/l/A1-49868-127) (Troostwijk) | €100 | – | – | Thu 22 Oct |
-|  | MacBook | [Apple Macbook Pro (M5, 14 inch) Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-2) (Troostwijk) | €250 | €1.799 | €751 | Thu 22 Oct |
-|  | Coffee machine | [Elektrische radiator, DeLonghi, RadiaS](https://onlineveilingmeester.nl/nl/veilingen/9598/kavels/23) (Onlineveilingmeester) | €22 | – | – | Sun 25 Oct 20:35 |
+|  | Coffee machine | [Elektrische radiator, DeLonghi, RadiaS](https://onlineveilingmeester.nl/nl/veilingen/9598/kavels/23) (Onlineveilingmeester) | €24 | – | – | Sun 25 Oct 20:35 |
 | ✅ | Power tools | [Accu haakse slijper, Festool, AGC 18, 2021](https://onlineveilingmeester.nl/nl/veilingen/9598/kavels/32) (Onlineveilingmeester) | €66 | €325 | €155 | Sun 25 Oct 20:37 |
 |  | Power tools | [Accu haakse slijper, Makita, DGA504, 2023](https://onlineveilingmeester.nl/nl/veilingen/9598/kavels/55) (Onlineveilingmeester) | €36 | €110 | €30 | Sun 25 Oct 20:43 |
 | ✅ | Power tools | [Accu boorhamer, Makita, DHR242, 2024](https://onlineveilingmeester.nl/nl/veilingen/9598/kavels/58) (Onlineveilingmeester) | €81 | €200 | €82 | Sun 25 Oct 20:44 |
@@ -76,7 +101,7 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-1) (Plaats Je Bod) | €45 | – | – | Mon 26 Oct 20:22 |
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-2) (Plaats Je Bod) | €45 | – | – | Mon 26 Oct 20:22 |
 |  | Monitor | [2 x Dell 24 inch monitor](https://www.plaatsjebod.nl/nl/lots/2-x-dell-24-inch-monitor-3) (Plaats Je Bod) | €45 | – | – | Mon 26 Oct 20:23 |
-|  | Monitor | [3x Monitor, Philips, 241B8](https://onlineveilingmeester.nl/nl/veilingen/9599/kavels/31) (Onlineveilingmeester) | €12 | – | – | Mon 26 Oct 20:37 |
+|  | Monitor | [3x Monitor, Philips, 241B8](https://onlineveilingmeester.nl/nl/veilingen/9599/kavels/31) (Onlineveilingmeester) | €14 | – | – | Mon 26 Oct 20:37 |
 |  | Monitor | [2x Monitor, Philips, 241B8](https://onlineveilingmeester.nl/nl/veilingen/9599/kavels/32) (Onlineveilingmeester) | €12 | – | – | Mon 26 Oct 20:37 |
 |  | Monitor | [Monitor, Philips, 241B8](https://onlineveilingmeester.nl/nl/veilingen/9599/kavels/33) (Onlineveilingmeester) | €12 | – | – | Mon 26 Oct 20:38 |
 |  | Monitor | [3x Monitor, Philips, 241B8](https://onlineveilingmeester.nl/nl/veilingen/9599/kavels/36) (Onlineveilingmeester) | €12 | – | – | Mon 26 Oct 20:38 |
@@ -118,7 +143,7 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Power tools | [Excentrische schuurmachine Makita](https://www.openbare-verkopen.be/lot/753268) (Openbare Verkopen (BE)) | €35 | – | – | Wed 28 Oct 19:09 |
 |  | Power tools | [Excentrische schuurmachine Makita](https://www.openbare-verkopen.be/lot/753269) (Openbare Verkopen (BE)) | €35 | – | – | Wed 28 Oct 19:10 |
 | ✅ | Power tools | [Accu haakse slijper Makita](https://www.openbare-verkopen.be/lot/753270) (Openbare Verkopen (BE)) | €30 | €100 | €33 | Wed 28 Oct 19:10 |
-| ✅ | Power tools | [2x Accu slagschroefmachine Makita](https://www.openbare-verkopen.be/lot/753271) (Openbare Verkopen (BE)) | €36 | €85 | €57 | Wed 28 Oct 19:10 |
+| ✅ | Power tools | [2x Accu slagschroefmachine Makita](https://www.openbare-verkopen.be/lot/753271) (Openbare Verkopen (BE)) | €41 | €85 | €57 | Wed 28 Oct 19:10 |
 |  | Power tools | [Accu klopboormachine Makita](https://www.openbare-verkopen.be/lot/753272) (Openbare Verkopen (BE)) | €40 | €80 | €26 | Wed 28 Oct 19:11 |
 | ✅ | Power tools | [Set elektrisch gereedschap Makita](https://www.openbare-verkopen.be/lot/753273) (Openbare Verkopen (BE)) | €19 | €168 | €61 | Wed 28 Oct 19:11 |
 |  | Power tools | [Accu multitool met accessoires Makita, DTM52ZJX2](https://onlineveilingmeester.nl/nl/veilingen/9677/kavels/10) (Onlineveilingmeester) | €161 | – | – | Wed 28 Oct 19:32 |
@@ -128,40 +153,40 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Power tools | [Boor/schroefmachine Makita, DDF484Z](https://onlineveilingmeester.nl/nl/veilingen/9677/kavels/14) (Onlineveilingmeester) | €61 | €115 | €28 | Wed 28 Oct 19:33 |
 |  | Power tools | [Verrijdbare hogedrukreiniger DeWalt](https://www.openbare-verkopen.be/lot/754793) (Openbare Verkopen (BE)) | €25 | – | – | Thu 29 Oct 19:33 |
 |  | Power tools | [Accu-betontrilbalk Milwaukee](https://www.openbare-verkopen.be/lot/754805) (Openbare Verkopen (BE)) | €110 | – | – | Thu 29 Oct 19:36 |
-|  | Power tools | [Bouwstofzuiger Festool, CTL Mini](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/35) (Onlineveilingmeester) | €76 | – | – | Thu 29 Oct 19:38 |
+| ✅ | Power tools | [Bouwstofzuiger Festool, CTL Mini](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/35) (Onlineveilingmeester) | €76 | €275 | €103 | Thu 29 Oct 19:38 |
 |  | Power tools | [Accu slagschoevendraaier Hilti](https://www.openbare-verkopen.be/lot/754819) (Openbare Verkopen (BE)) | €11 | – | – | Thu 29 Oct 19:39 |
 |  | Power tools | [Elektrische betonschuurmachine Hilti](https://www.openbare-verkopen.be/lot/754820) (Openbare Verkopen (BE)) | €25 | – | – | Thu 29 Oct 19:39 |
 | ✅ | Power tools | [Roterende laser Hilti](https://www.openbare-verkopen.be/lot/754821) (Openbare Verkopen (BE)) | €110 | €950 | €391 | Thu 29 Oct 19:39 |
-|  | Power tools | [Bouwstofzuiger Festool, CTL Midi](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/37) (Onlineveilingmeester) | €111 | – | – | Thu 29 Oct 19:39 |
+| ✅ | Power tools | [Bouwstofzuiger Festool, CTL Midi](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/37) (Onlineveilingmeester) | €111 | €438 | €177 | Thu 29 Oct 19:39 |
 | ✅ | Power tools | [Elektrische haakse slijper Metabo](https://www.openbare-verkopen.be/lot/754842) (Openbare Verkopen (BE)) | €11 | €70 | €20 | Thu 29 Oct 19:44 |
 |  | Power tools | [Elektrische haakse slijper Makita](https://www.openbare-verkopen.be/lot/754843) (Openbare Verkopen (BE)) | €11 | – | – | Thu 29 Oct 19:45 |
-|  | Power tools | [Elektrische klopboorhamer Makita](https://www.openbare-verkopen.be/lot/754844) (Openbare Verkopen (BE)) | €45 | – | – | Thu 29 Oct 19:45 |
+|  | Power tools | [Elektrische klopboorhamer Makita](https://www.openbare-verkopen.be/lot/754844) (Openbare Verkopen (BE)) | €50 | – | – | Thu 29 Oct 19:45 |
 |  | Power tools | [Elektrische klopboorhamer Makita](https://www.openbare-verkopen.be/lot/754845) (Openbare Verkopen (BE)) | €13 | – | – | Thu 29 Oct 19:45 |
-|  | Power tools | [Elektrische klopboorhamer Hikoki](https://www.openbare-verkopen.be/lot/754846) (Openbare Verkopen (BE)) | €36 | – | – | Thu 29 Oct 19:45 |
+|  | Power tools | [Elektrische klopboorhamer Hikoki](https://www.openbare-verkopen.be/lot/754846) (Openbare Verkopen (BE)) | €41 | – | – | Thu 29 Oct 19:45 |
 |  | Power tools | [Elektrische invalzaag Hikoki](https://www.openbare-verkopen.be/lot/754847) (Openbare Verkopen (BE)) | €19 | – | – | Thu 29 Oct 19:46 |
-| ✅ | Power tools | [2x Geleiderail Festool, FS800/2](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/69) (Onlineveilingmeester) | €18 | €79 | €54 | Thu 29 Oct 19:47 |
+| ✅ | Power tools | [2x Geleiderail Festool, FS800/2](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/69) (Onlineveilingmeester) | €18 | €194 | €145 | Thu 29 Oct 19:47 |
 | ✅ | Power tools | [2x Geleiderail Festo/Festool, FS1400 en FS800](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/71) (Onlineveilingmeester) | €12 | €85 | €59 | Thu 29 Oct 19:47 |
 | ✅ | Power tools | [2x Geleiderail Festo/Festool, FS1400 en FS800](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/72) (Onlineveilingmeester) | €12 | €85 | €59 | Thu 29 Oct 19:47 |
-|  | Power tools | [Bandschuurmachine Festool, BS105E](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/79) (Onlineveilingmeester) | €22 | – | – | Thu 29 Oct 19:49 |
-|  | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/82) (Onlineveilingmeester) | €26 | – | – | Thu 29 Oct 19:50 |
-|  | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/83) (Onlineveilingmeester) | €20 | – | – | Thu 29 Oct 19:50 |
-|  | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/84) (Onlineveilingmeester) | €22 | – | – | Thu 29 Oct 19:50 |
+| ✅ | Power tools | [Bandschuurmachine Festool, BS105E](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/79) (Onlineveilingmeester) | €22 | €475 | €192 | Thu 29 Oct 19:49 |
+| ✅ | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/82) (Onlineveilingmeester) | €31 | €405 | €164 | Thu 29 Oct 19:50 |
+| ✅ | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/83) (Onlineveilingmeester) | €22 | €405 | €164 | Thu 29 Oct 19:50 |
+| ✅ | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/84) (Onlineveilingmeester) | €22 | €405 | €164 | Thu 29 Oct 19:50 |
 |  | Power tools | [4x Elektrisch gereedschap o.a. Metabo](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/89) (Onlineveilingmeester) | €12 | – | – | Thu 29 Oct 19:52 |
-|  | Power tools | [Dominofrees Festool, DF 500 Q](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/93) (Onlineveilingmeester) | €351 | €820 | €346 | Thu 29 Oct 19:53 |
+| ✅ | Power tools | [Dominofrees Festool, DF 500 Q](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/93) (Onlineveilingmeester) | €351 | €850 | €359 | Thu 29 Oct 19:53 |
 | ✅ | Power tools | [Freesmachine Festool, OF1010EBQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/98) (Onlineveilingmeester) | €56 | €400 | €161 | Thu 29 Oct 19:54 |
 | ✅ | Power tools | [Frees Festool, OF1010EBQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/99) (Onlineveilingmeester) | €56 | €400 | €161 | Thu 29 Oct 19:54 |
 | ✅ | Power tools | [6x Elektrisch gereedschap o.a. Makita en Bosch](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/111) (Onlineveilingmeester) | €12 | €168 | €379 | Thu 29 Oct 19:57 |
-| ✅ | Plants / decor | [Plantenbak](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/177) (Onlineveilingmeester) | €12 | €52 | €17 | Thu 29 Oct 20:14 |
+| ✅ | Plants / decor | [Plantenbak](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/177) (Onlineveilingmeester) | €12 | €56 | €18 | Thu 29 Oct 20:14 |
 | ✅ | Coffee machine | [Koffiemachine Gemini, CS 220 pro](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/253) (Onlineveilingmeester) | €14 | €238 | €88 | Thu 29 Oct 20:33 |
-| ✅ | Monitor | [Computer met monitor, HP, Z240, core i7](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/257) (Onlineveilingmeester) | €20 | €150 | €55 | Thu 29 Oct 20:34 |
-| ✅ | Monitor | [Computer met 2x monitor, HP, Prodesk 400 G3 MT Business PC, core i5](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/258) (Onlineveilingmeester) | €31 | €169 | €62 | Thu 29 Oct 20:34 |
-|  | Monitor | [Computer met monitor, HP, Z240, core i7](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/262) (Onlineveilingmeester) | €81 | €150 | €55 | Thu 29 Oct 20:35 |
+| ✅ | Monitor | [Computer met monitor, HP, Z240, core i7](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/257) (Onlineveilingmeester) | €22 | €160 | €59 | Thu 29 Oct 20:34 |
+| ✅ | Monitor | [Computer met 2x monitor, HP, Prodesk 400 G3 MT Business PC, core i5](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/258) (Onlineveilingmeester) | €31 | €179 | €66 | Thu 29 Oct 20:34 |
+|  | Monitor | [Computer met monitor, HP, Z240, core i7](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/262) (Onlineveilingmeester) | €91 | €160 | €59 | Thu 29 Oct 20:35 |
 | ✅ | Monitor | [Computer met 2x monitor, Dell, Optiplex 5040](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/263) (Onlineveilingmeester) | €14 | €59 | €19 | Thu 29 Oct 20:35 |
 |  | Coffee machine | [Koffiemachine met waterontharder L 'or, PRMSS-001](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/267) (Onlineveilingmeester) | €18 | – | – | Thu 29 Oct 20:36 |
-| ✅ | Power tools | [2x Geleiderail Festool, 80 en 140cm](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/280) (Onlineveilingmeester) | €16 | €64 | €43 | Thu 29 Oct 20:39 |
-|  | MacBook | [Macbook Pro (14 inch, M2 pro)](https://www.troostwijkauctions.com/nl/l/A1-50667-301) (Troostwijk) | €100 | €1.320 | €544 | Thu 29 Oct |
-|  | Coffee machine | [Jura X4 Koffie- &](https://www.troostwijkauctions.com/nl/l/A1-50667-73) (Troostwijk) | €10 | €387 | €146 | Thu 29 Oct |
-|  | Power tools | [DeWALT accuboormachine DCF887, type 10 - 18V](https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3289212/detail) (ProVeiling) | €30 | €80 | €11 | Mon 02 Nov 20:00 |
+| ✅ | Power tools | [2x Geleiderail Festool, 80 en 140cm](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/280) (Onlineveilingmeester) | €16 | €50 | €34 | Thu 29 Oct 20:39 |
+|  | MacBook | [Macbook Pro (14 inch, M2 pro)](https://www.troostwijkauctions.com/nl/l/A1-50667-301) (Troostwijk) | €100 | €1.394 | €576 | Thu 29 Oct |
+|  | Coffee machine | [Jura X4 Koffie- &](https://www.troostwijkauctions.com/nl/l/A1-50667-73) (Troostwijk) | €10 | €375 | €141 | Thu 29 Oct |
+|  | Power tools | [DeWALT accuboormachine DCF887, type 10 - 18V](https://www.proveiling.nl/DeWALT-accuboormachine-DCF887-type-10---18V/3289212/detail) (ProVeiling) | €30 | €70 | €8 | Mon 02 Nov 20:00 |
 |  | Power tools | [Hilti Meetstatief PUA 25](https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3289198/detail) (ProVeiling) | €20 | – | – | Mon 02 Nov 20:00 |
 |  | Power tools | [Makita gereedschapskoffers - 2 stuks](https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3289228/detail) (ProVeiling) | €15 | €15 | €0 | Mon 02 Nov 20:00 |
 |  | Power tools | [DEWALT XRP Accu klopboormachine DC925 493905-01](https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3289221/detail) (ProVeiling) | €20 | – | – | Mon 02 Nov 20:00 |
@@ -170,10 +195,10 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Plants / decor | [Partij diverse potjes en kommetjes](https://www.openbare-verkopen.be/lot/755921) (Openbare Verkopen (BE)) | €25 | – | – | Tue 03 Nov 19:05 |
 |  | iPad | [Ipad](https://www.openbare-verkopen.be/lot/755957) (Openbare Verkopen (BE)) | €45 | – | – | Tue 03 Nov 19:17 |
 | ✅ | Monitor | [Twee beeldschermen HP COMPAQ LA2306x . In hoogte verstelbaar en draaib](https://www.hnvi.nl/veiling-kavel/twee-beeldschermen-hp-compaq-la2306x-in-hoogte-verstelbaar-en-draaibaar-625132/197257) (HNVI) | €11 | €25 | €15 | Tue 03 Nov 19:30 |
-| ✅ | Power tools | [Bouwradio DEWALT ( exclusief accu )](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-exclusief-accu-938273/197268) (HNVI) | €6 | €60 | €18 | Tue 03 Nov 19:30 |
-| ✅ | Power tools | [Bouwradio DEWALT met accu](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu-597145/197280) (HNVI) | €6 | €60 | €18 | Tue 03 Nov 19:30 |
+| ✅ | Power tools | [Bouwradio DEWALT ( exclusief accu )](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-exclusief-accu-938273/197268) (HNVI) | €6 | €55 | €17 | Tue 03 Nov 19:30 |
+| ✅ | Power tools | [Bouwradio DEWALT met accu](https://www.hnvi.nl/veiling-kavel/bouwradio-dewalt-met-accu-597145/197280) (HNVI) | €6 | €55 | €17 | Tue 03 Nov 19:30 |
 |  | Suit / formalwear | [Bladzuiger/blazer FLYMO Twister 2000](https://www.hnvi.nl/veiling-kavel/bladzuiger-blazer-flymo-twister-2000/197283) (HNVI) | €16 | – | – | Tue 03 Nov 19:30 |
-| ✅ | Phone | [Iphone 13 Pro Max 256 GB groen](https://www.hnvi.nl/veiling-kavel/iphone-13-pro-max-256-gb-groen/198040) (HNVI) | €65 | €400 | €158 | Tue 03 Nov 19:30 |
+| ✅ | Phone | [Iphone 13 Pro Max 256 GB groen](https://www.hnvi.nl/veiling-kavel/iphone-13-pro-max-256-gb-groen/198040) (HNVI) | €65 | €397 | €157 | Tue 03 Nov 19:30 |
 |  | Power tools | [Milwaukee Accu vetspuit M18 GG](https://www.proveiling.nl/Milwaukee-Accu-vetspuit-M18-GG/3290011/detail) (ProVeiling) | €40 | – | – | Tue 03 Nov 20:00 |
 |  | Power tools | [BOSCH Professional GWS 1400 haakse slijper](https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3289992/detail) (ProVeiling) | €20 | – | – | Tue 03 Nov 20:00 |
 |  | Power tools | [BOSCH Professional GWS 1400 haakse slijper](https://www.proveiling.nl/BOSCH-Professional-GWS-1400-haakse-slijper/3289993/detail) (ProVeiling) | €20 | – | – | Tue 03 Nov 20:00 |
@@ -354,19 +379,3 @@ _Thursday 22 October 2026, 06:39 (Amsterdam time)_
 |  | Plants / decor | [1 x Partij diverse soorten en maten potten en pannen](https://www.plaatsjebod.nl/nl/lots/1-x-partij-diverse-soorten-en-maten-potten-en-pannen) (Plaats Je Bod) | €10 | – | – | Mon 09 Nov 20:17 |
 |  | Plants / decor | [1 x Partij diverse soorten planten](https://www.plaatsjebod.nl/nl/lots/1-x-partij-diverse-soorten-planten) (Plaats Je Bod) | €20 | – | – | Tue 10 Nov 20:17 |
 |  | Coffee machine | [1 x Philips volautomatische meerkeuze espressomachine en melkopschuime](https://www.plaatsjebod.nl/nl/lots/1-x-philips-volautomatische-meerkeuze-espressomachine-en-melkopschuimer) (Plaats Je Bod) | €70 | €50 | €0 | Tue 10 Nov 20:24 |
-|  | Laptop | [Samsung - NP750XGJ-KG1NL - Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-47) (Troostwijk) | €0 | – | – | ? |
-|  | MacBook | [Apple Macbook Air (M1, 2020) Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-35) (Troostwijk) | €0 | – | – | ? |
-|  | Laptop | [Samsung - NP750XGJ-KG1NL - Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-48) (Troostwijk) | €0 | – | – | ? |
-|  | Laptop | [Lenovo Thinkbook 13 x g2 iap Laptop](https://www.troostwijkauctions.com/nl/l/A1-49868-41) (Troostwijk) | €0 | – | – | ? |
-|  | Phone | [Samsung Galaxy S23 Ultra (512GB) Mobiele telefoon](https://www.troostwijkauctions.com/nl/l/A1-49868-9) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Arti253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-11) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo Boss - Karel253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-46) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo Boss - Kariw253 - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-48) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Karl - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-40) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo - Antera - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-49) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Kari253x - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-9) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Arti253x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-5) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo Boss - Arti224e1x - Colberts (5x)](https://www.troostwijkauctions.com/nl/l/A1-50645-45) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Arti224e1x - Colberts (4x)](https://www.troostwijkauctions.com/nl/l/A1-50645-7) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Artim204x - Colberts (2x)](https://www.troostwijkauctions.com/nl/l/A1-50645-8) (Troostwijk) | €0 | – | – | ? |
-|  | Suit / formalwear | [Hugo boss - Henry244f1x - Colberts (3x)](https://www.troostwijkauctions.com/nl/l/A1-50645-10) (Troostwijk) | €0 | – | – | ? |
