@@ -68,6 +68,7 @@ _NOTICE = re.compile(r"^(?:(?:gefeliciteerd|let op)!?\s*)?(?:je favoriete kavel|
                      r"bedankt, je hebt betaald|afhaalgegevens|laatste ophaalmogelijkheid|your favou?rite lot|"
                      r"last chance to bid|you(?:'ve| have) been outbid|you(?:'ve| have) won)", re.I)
 # the heart on a lot; "Favoriete veiling sluit bijna: <auction>" lists the lots you follow in that auction
+_FAV_AUCTION = re.compile(r"^(?:let op!?\s*)?favoriete veiling sluit[^:]{0,20}:\s*", re.I)
 _FOLLOWED = re.compile(r"^(?:let op!?\s*)?(?:je favoriete kavel|favoriete veiling|your favou?rite lot)", re.I)
 # "Sluiting: 6 okt om 20:33", "20 Jul 10:58 CEST": a closing time without a year
 _CLOSE_NO_YEAR = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(?:om\s+|at\s+)?(\d{1,2}):(\d{2})\b")
@@ -540,7 +541,11 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             # links only read from the link itself (resolve=None): nothing about this lot is opened or saved
             found = parse_email_html(html, None, stats)
             closes = close_without_year(_text_of(html), sent)
+            # "Favoriete veiling sluit bijna: <auction>": the subject names the auction of the lots you follow
+            named = _FAV_AUCTION.match(subject_line)
             for f in found:
+                if named and not f.get("auction"):
+                    f["auction"] = subject_line[named.end():].strip()[:90]
                 old = followed.get(f["lot_id"])
                 if old is None or sent >= old["mail"]:  # the newest reminder wins
                     followed[f["lot_id"]] = {**f, "closes_at": closes, "mail": sent}

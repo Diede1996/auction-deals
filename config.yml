@@ -195,8 +195,11 @@ troostwijk_alerts:
   # false to see all of Troostwijk's auctions. Lots whose auction the email doesn't name are always shown.
   only_bankruptcy: true
   # Lots you put a heart on at Troostwijk: it emails you a reminder before they close ("Je favoriete kavel
-  # sluit binnenkort"). Those lots are priced in the Telegram digest only, never on the public dashboard.
-  # At most this many new Marktplaats searches per scan for them.
+  # sluit binnenkort", "Favoriete veiling sluit bijna"). They're always in the Telegram digest. With
+  # followed_on_dashboard they're also on the dashboard, which is public: anyone can then see what you follow.
+  # Set it to false to keep them in Telegram only (then at most followed_lookups new Marktplaats searches per
+  # scan for them, kept out of the repository).
+  followed_on_dashboard: true
   followed_lookups: 10
 
 # The description of lots on your watchlist, for sites whose lot list doesn't have it: the bot reads it on the

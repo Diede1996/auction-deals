@@ -139,6 +139,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .title:hover { color: var(--accent); }
 .meta { margin-top: 4px; color: var(--text-2); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .meta .auction { color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.tag.heart { background: var(--critical-bg); color: var(--critical-text); }
 .tag { display: inline-block; padding: 1px 8px; border-radius: 6px; background: var(--accent-bg); color: var(--accent); font-size: 12px; font-weight: 560; }
 .new-badge {
   position: absolute; top: 7px; left: 7px; z-index: 2; pointer-events: none;
@@ -894,6 +895,7 @@ footer td { padding: 2px 14px 2px 0; }
 
     var meta = el("div", { "class": "meta" },
       el("span", { "class": "tag", text: lot.item }),
+      lot.followed ? el("span", { "class": "tag heart", title: "You put a heart on it at Troostwijk: never hidden as too far" }, "❤️ you follow it") : null,
       el("span", { text: lot.siteName }),
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
 
@@ -992,7 +994,7 @@ footer td { padding: 2px 14px 2px 0; }
 
   function pickupDay(lot) { return lot.pickupWhen ? String(lot.pickupWhen).split(",")[0].trim() : ""; }
   function pickupKey(lot) { return (lot.pickup || lot.location || "") + "|" + pickupDay(lot); }
-  function worthCollecting(r) { return r.c.status === "room" || r.c.status === "check" || !!favs[r.lot.key]; }
+  function worthCollecting(r) { return r.c.status === "room" || r.c.status === "check" || !!favs[r.lot.key] || !!r.lot.followed; }
 
   /* One trip, several lots: each lot carries the trip cost divided by the lots worth collecting at that
      address on that day (counting itself). Start as if every lot there is collected, then drop the ones that
@@ -1049,7 +1051,7 @@ footer td { padding: 2px 14px 2px 0; }
       if (need !== null && worth >= need) return;
       if (g[0].lot.combo) return;  /* one drive past several addresses nearby (see the morning summary) */
       g.forEach(function (r) {
-        if (!favs[r.lot.key]) r.c.far = { min: min, worth: worth, need: need, limit: rules[rules.length - 1][0] };
+        if (!favs[r.lot.key] && !r.lot.followed) r.c.far = { min: min, worth: worth, need: need, limit: rules[rules.length - 1][0] };
       });
     });
   }

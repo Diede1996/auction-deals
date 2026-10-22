@@ -431,8 +431,15 @@ def followed_scan(root, monkeypatch, mails, tg=None):
 PUBLIC = ("data/state.json", "data/lots.json", "data/latest.md", "site/index.html")
 
 
+def hearts_on_dashboard(root, on):
+    cfg = yaml.safe_load((root / "config.yml").read_text())
+    cfg["troostwijk_alerts"]["followed_on_dashboard"] = on
+    (root / "config.yml").write_text(yaml.safe_dump(cfg))
+
+
 def test_lots_you_follow_on_troostwijk_are_priced_in_telegram_only(repo, monkeypatch, caplog, tmp_path_factory):
     monkeypatch.setenv("HOME_ADDRESS", "Dorpsstraat 1, Veghel")
+    hearts_on_dashboard(repo, False)
     other = tmp_path_factory.mktemp("notices")
     shutil.copytree(repo, other, dirs_exist_ok=True)
     with caplog.at_level("INFO"):
@@ -453,6 +460,21 @@ def test_lots_you_follow_on_troostwijk_are_priced_in_telegram_only(repo, monkeyp
     followed_scan(other, monkeypatch, followed_mails(notice=True))
     for p in PUBLIC:
         assert (repo / p).read_text() == (other / p).read_text(), p
+
+
+def test_lots_you_follow_on_the_dashboard_when_you_chose_so(repo, monkeypatch):
+    monkeypatch.setenv("HOME_ADDRESS", "Dorpsstraat 1, Veghel")
+    hearts_on_dashboard(repo, True)
+    tg = followed_scan(repo, monkeypatch, followed_mails())
+    part = tg.sent[0][tg.sent[0].index("❤️ <b>Lots you follow on Troostwijk</b>"):]
+    assert "128GB zwart</a>\n   bid up to <b>€" in part and "hoesje</a>" in part  # still in Telegram
+    _, data = page_data(repo)
+    shown = {l["title"]: l for l in data["lots"]}
+    # priced like any other lot, the 2017 ThinkPad too (you picked it); the excluded accessory stays in Telegram
+    assert {"Apple iPhone 13 128GB zwart", "Lenovo ThinkPad T470 laptop", "Heftruck"} <= set(shown)
+    assert "Apple iPhone 13 hoesje" not in shown
+    assert all(l["followed"] for l in shown.values())
+    assert shown["Apple iPhone 13 128GB zwart"]["closes"].startswith("2026-09-23T20:00")
 
 
 def test_lots_you_follow_are_not_printed_without_telegram(repo, monkeypatch, capsys):

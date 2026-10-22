@@ -492,5 +492,6 @@ def test_favourite_auction_reminder_is_lots_you_follow():
     assert set(hearts) == {"A1-50645-11", "A1-50645-12"}
     assert hearts["A1-50645-11"].closes_at.isoformat() == "2026-10-22T19:04:00+02:00"
     assert hearts["A1-50645-11"].title == "Hugo Boss - Karel253x - Colberts (4x)"
+    assert hearts["A1-50645-11"].auction_title == "Hugo kleding afkomstig uit faillissement MD fashion"
     for word in ("Hugo", "Favoriete", "A1-50645", "Makita"):
         assert word not in str(state)

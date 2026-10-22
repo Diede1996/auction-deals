@@ -468,7 +468,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "site": lot.site, "siteName": SITE_NAMES.get(lot.site, lot.site), "auction": lot.auction_title,
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
-            "trip": trip.as_dict() if trip else None, "transport": lot.transport,
+            "trip": trip.as_dict() if trip else None, "transport": lot.transport, "followed": lot.followed,
             "combo": combo_of.get(lot.key),
             "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
             "bidFromEmail": lot.bid_from_email,
@@ -638,6 +638,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # dashboard and repository never show what you follow. Like favorites, the filters above don't hide them.
     followed = list((mail_report or {}).get("followed") or []) if dry_run or (token and chat_id) else []
     on_list = {lot.key for _, lot in matched}
+    by_heart = {lot.key for lot in followed}
     to_price: list[tuple[WatchItem, Lot]] = []
     unpriced: list[tuple[WatchItem, Lot]] = []  # an accessory your watchlist excludes ("iPhone 13 hoesje")
     for lot in followed:
@@ -650,6 +651,17 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         text = normalize(lot.title)
         excluded = not listed and any(any(phrase_in(k, text) for k in i.keywords) for i in items)
         (unpriced if excluded else to_price).append((item, lot))
+    # Diede chose (22 Oct 2026) to see them on the public dashboard too: then they are priced like any other lot
+    # and, like favorites, never hidden as too far
+    if followed and mail_cfg.get("followed_on_dashboard", False) is True:
+        for item, lot in matched:
+            if lot.key in by_heart:
+                lot.followed = True
+        for item, lot in to_price:
+            lot.followed = True
+            matched.append((item, lot))
+        fav_keys |= by_heart & {lot.key for _, lot in matched}
+        to_price = []
     if not only or set(only) - {"troostwijk"}:
         read = fill_start_prices(matched, lambda: http_cls(delay=float((config.get("http") or {}).get("delay_seconds", 1.5))),
                                  state.setdefault("start_prices", {}), now)
