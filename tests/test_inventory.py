@@ -141,3 +141,15 @@ def test_wrong_key_never_overwrites(repo, monkeypatch):  # noqa: F811
     tg = FakeTelegram([{"update_id": 2, "message": {"chat": {"id": 42}, "text": "/koop x | 5"}}])
     run_commands(repo, NOW + timedelta(hours=3), http_cls=lambda **kw: None, telegram_cls=tg)
     assert "#7" in tg.sent[0]
+
+
+def test_buy_a_whole_auction_in_one_message():
+    inv = {"items": [], "next": 1}
+    text = "/koop\nSmoking HUGO maat 52 | 130,60\n/koop Colbert HUGO Arti | 65\nzonder prijs\n\n"
+    reply, changed = inventory.handle(text, inv, ctx(prices={"Smoking HUGO maat 52": 200}))
+    assert changed and [i["name"] for i in inv["items"]] == ["Smoking HUGO maat 52", "Colbert HUGO Arti"]
+    assert inv["items"][0]["paid"] == 130.6 and inv["items"][0]["category"] == "Smoking"
+    assert "<b>2 aankopen</b>" in reply and "vraag €200" in reply and "/prijs 2 80" in reply
+    assert "Niet gelezen" in reply and "zonder prijs" in reply
+    reply, changed = inventory.handle("/koop\nniets\nleesbaars", inv, ctx())
+    assert not changed and "geen regel" in reply

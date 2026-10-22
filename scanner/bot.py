@@ -172,7 +172,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
             log.info("ignoring a message from another chat")
             continue
         text = (msg.get("text") or "").strip()
-        cmd = text.split(" ")[0].split("@")[0].lower()
+        cmd = (text.split() or [""])[0].split("@")[0].lower()
         if cmd in inventory.COMMANDS:
             if inv is None:
                 reply = inv_error

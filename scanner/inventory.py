@@ -149,7 +149,7 @@ class Context:
 
 
 HELP = """<b>Voorraad en verkoop</b>
-<b>/koop</b> <i>naam</i> | <i>betaald</i> – iets wat je gekocht hebt (betaald = alles bij elkaar: bod, opgeld, btw), bijv. <code>/koop Dell U2719D monitor | 45 tijd=60</code>. Je krijgt een advertentietekst en een vraagprijs. <b>tijd=</b> is wat het ophalen kostte (minuten, of <code>1,5u</code>).
+<b>/koop</b> <i>naam</i> | <i>betaald</i> – iets wat je gekocht hebt (betaald = alles bij elkaar: bod, opgeld, btw), bijv. <code>/koop Dell U2719D monitor | 45 tijd=60</code>. Je krijgt een advertentietekst en een vraagprijs. <b>tijd=</b> is wat het ophalen kostte (minuten, of <code>1,5u</code>). Een hele veiling tegelijk? Zet elke aankoop op een eigen regel onder <code>/koop</code>.
 <b>/verkocht</b> <i>nummer prijs</i> – bijv. <code>/verkocht 3 80 tijd=20</code> (tijd = advertentie, berichten, overdracht)
 <b>/prijs</b> <i>nummer prijs</i> – je vraagprijs aanpassen
 <b>/voorraad</b> – wat je nog te koop hebt
@@ -160,9 +160,60 @@ HELP = """<b>Voorraad en verkoop</b>
 COMMANDS = {"/koop", "/gekocht", "/verkocht", "/prijs", "/voorraad", "/winst", "/weg", "/voorraadhelp"}
 
 
+def _parse_buy(args: str) -> tuple[str, float, int | None] | None:
+    """"naam | betaald [tijd=..]" -> (name, paid, minutes), or None when it doesn't read like that."""
+    rest, minutes = _minutes(args)
+    name, _, paid_text = rest.rpartition("|")
+    paid = _money(paid_text) if name.strip() else None
+    return (name.strip(), paid, minutes) if paid is not None else None
+
+
+def _add(inv: dict, name: str, paid: float, minutes: int | None, ctx: Context) -> tuple[dict, object]:
+    cat = category(name, ctx.items)
+    est = None
+    if ctx.price_of:
+        try:
+            est = ctx.price_of(name, next((it for it in ctx.items if it.name == cat), None))
+        except Exception:
+            est = None
+    median = est.median if est else None
+    ask, floor = suggest(paid, median, ctx.resale_factor)
+    now = ctx.now.isoformat()
+    it = {"id": inv["next"], "name": name, "paid": round(paid, 2), "bought": now, "category": cat,
+          "minutes": minutes or 0, "median": median, "ask": ask, "floor": floor, "listed": now}
+    inv["next"] += 1
+    inv["items"].append(it)
+    return it, est
+
+
+def _buy_many(args: str, inv: dict, ctx: Context) -> tuple[str, bool]:
+    """A whole auction at once: one "naam | betaald" per line (a leading /koop on a line is fine)."""
+    added, skipped = [], []
+    for raw in args.splitlines():
+        line = re.sub(r"^/(koop|gekocht)(@\S+)?\s*", "", raw.strip(), flags=re.I)
+        if not line:
+            continue
+        parsed = _parse_buy(line)
+        if not parsed:
+            skipped.append(line)
+            continue
+        added.append(_add(inv, *parsed, ctx)[0])
+    if not added:
+        return ("Ik kon geen regel lezen. Eén aankoop per regel: <code>naam | betaald</code>.", False)
+    lines = [f"✅ <b>{len(added)} aankopen</b> toegevoegd, samen {fmt_eur(sum(i['paid'] for i in added))}:"]
+    for it in added:
+        price = (f"vraag {fmt_eur(it['ask'])}, niet onder {fmt_eur(it['floor'])}" if it["ask"]
+                 else f"geen Marktplaats-prijs, zet er een met <code>/prijs {it['id']} 80</code>")
+        lines.append(f"#{it['id']} {esc(it['name'][:60])} · {fmt_eur(it['paid'])} · {price}")
+    if skipped:
+        lines.append("\n⚠️ Niet gelezen (zet er <code>| betaald</code> achter): " + "; ".join(esc(s[:40]) for s in skipped))
+    lines.append("\n<i>Verkocht? Stuur <code>/verkocht nummer prijs</code>.</i>")
+    return "\n".join(lines), True
+
+
 def handle(text: str, inv: dict, ctx: Context) -> tuple[str, bool]:
     """Apply one stock command. Returns (reply, inventory changed)."""
-    cmd, _, args = text.strip().partition(" ")
+    cmd, args = (text.strip().split(None, 1) + [""])[:2]
     cmd = cmd.split("@")[0].lower()
     args = args.strip()
     now = ctx.now
@@ -170,27 +221,17 @@ def handle(text: str, inv: dict, ctx: Context) -> tuple[str, bool]:
     if cmd == "/voorraadhelp":
         return HELP, False
 
+    if cmd in ("/koop", "/gekocht") and "\n" in args:
+        return _buy_many(args, inv, ctx)
+
     if cmd in ("/koop", "/gekocht"):
-        rest, minutes = _minutes(args)
-        name, _, paid_text = rest.rpartition("|")
-        paid = _money(paid_text) if name else None
-        if not name.strip() or paid is None:
+        parsed = _parse_buy(args)
+        if not parsed:
             return ("Zo werkt het: <code>/koop Dell U2719D monitor | 45</code> (naam | wat je in totaal betaalde). "
                     "Optioneel <code>tijd=60</code> voor het ophalen.", False)
-        name = name.strip()
-        cat = category(name, ctx.items)
-        est = None
-        if ctx.price_of:
-            try:
-                est = ctx.price_of(name, next((it for it in ctx.items if it.name == cat), None))
-            except Exception:
-                est = None
-        median = est.median if est else None
-        ask, floor = suggest(paid, median, ctx.resale_factor)
-        it = {"id": inv["next"], "name": name, "paid": round(paid, 2), "bought": now.isoformat(), "category": cat,
-              "minutes": minutes or 0, "median": median, "ask": ask, "floor": floor, "listed": now.isoformat()}
-        inv["next"] += 1
-        inv["items"].append(it)
+        name, paid, minutes = parsed
+        it, est = _add(inv, name, paid, minutes, ctx)
+        median, ask, floor, cat = it["median"], it["ask"], it["floor"], it["category"]
         lines = [f"✅ <b>#{it['id']}</b> {esc(name)} · betaald {fmt_eur(paid)} · soort: {esc(cat)}"]
         if est:
             lines.append(f"Marktplaats: mediaan {fmt_eur(median)} ({est.count} advertenties, "
