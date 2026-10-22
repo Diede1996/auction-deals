@@ -1083,7 +1083,7 @@ footer td { padding: 2px 14px 2px 0; }
       all.forEach(function (r) { byKey[r.lot.key] = r; });
       var far = 8.64e15;
       var list = favKeys.map(function (k) { return byKey[k] || { gone: favs[k] }; });
-      var when = function (x) { var cl = x.gone ? x.gone.closes : x.lot.closes; var t = cl ? Date.parse(cl) : far; return t < Date.now() ? far + t : t; };
+      var when = function (x) { var t = x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : far) : closesAt(x.lot, far); return t < Date.now() ? far + t : t; };  /* closing soonest first, closed ones last */
       list.sort(function (a, b) { return when(a) - when(b); });
       list.forEach(function (r) {
         if (r.gone) { box.append(goneRow(r.gone)); return; }
