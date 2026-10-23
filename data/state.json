@@ -1027,7 +1027,7 @@
  },
  "filter_words": "8ae1655c3722",
  "fuel": {
-  "at": "2026-10-22T04:39:55.562897+00:00",
+  "at": "2026-10-23T04:39:33.788701+00:00",
   "price": 2.002,
   "source": "Belgian maximum price Euro 95 E10 from 2026-10-21"
  },
@@ -1096,6 +1096,11 @@
    "at": "2026-10-03T13:29:07.180092+00:00",
    "lat": 50.8775577,
    "lon": 3.3502828
+  },
+  "Dordrecht": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "lat": 51.7815073,
+   "lon": 4.7088743
   },
   "Fortstraat 10, 9120, Melsele, België": {
    "at": "2026-10-03T13:29:07.180092+00:00",
@@ -1228,7 +1233,7 @@
    "lon": 5.75309767
   },
   "Rijksweg 442 loods B1, 8710 Wielsbeke, België": {
-   "at": "2026-10-11T04:28:44.219234+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "fail": true
   },
   "Schouwerzijlsterweg 12, 9951TG Winsum": {
@@ -1269,109 +1274,109 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 0,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 843,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
-   "lots": 112,
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
+   "lots": 49,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
    "lots": 100,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "error": "",
-   "fails": 0,
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "error": "FetchError: Failed to perform, curl: (7) Failed to connect to www.nedveiling.nl:443 after 100 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+   "fails": 1,
    "last_ok": "2026-10-22T08:24:38.737984+00:00",
    "lots": 0,
-   "ok": true
+   "ok": false
   },
   "onlineveilingmeester": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
-   "lots": 1897,
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
+   "lots": 1660,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
-   "lots": 833,
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
+   "lots": 554,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 139,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 1097,
    "ok": true
   },
   "troostwijk": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
-   "lots": 104,
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
+   "lots": 100,
    "ok": true
   },
   "veilingwinnaar": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 66,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-22T08:24:38.737984+00:00",
+   "last_ok": "2026-10-23T04:39:33.788701+00:00",
    "lots": 461,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-10-22T08:24:38.737984+00:00",
-  "deals": 102,
+  "at": "2026-10-23T04:39:33.788701+00:00",
+  "deals": 97,
   "defects": 2,
-  "lots": 5552,
-  "matches": 356,
-  "new": 9,
-  "requests": 327,
+  "lots": 4969,
+  "matches": 302,
+  "new": 8,
+  "requests": 318,
   "too_old": 3
  },
  "price_cache": {
@@ -1429,10 +1434,15 @@
    "est": null,
    "v": 2
   },
+  "exact bosch gll bm1|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
+  },
   "exact bosch gsr 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 8,
     "high": 148.75,
     "kind": "exact",
@@ -1471,7 +1481,7 @@
       "kind": "fixed",
       "price": 129.99,
       "title": "Bosch GSR 14,4-2-LI Boormachine | Met garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444769354-bosch-gsr-14-4-2-li-boormachine-met-garantie"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456253121-bosch-gsr-14-4-2-li-boormachine-met-garantie"
      },
      {
       "kind": "fixed",
@@ -1503,7 +1513,7 @@
     "query": "bosch gsr 14",
     "search": "bosch gsr 14"
    },
-   "v": 3
+   "v": 4
   },
   "exact bosch gws 26|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-12T04:31:44.405458+00:00",
@@ -1511,34 +1521,28 @@
    "v": 2
   },
   "exact bosch professional al 1820|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact bosch professional al 1860|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact bosch professional dnm 1201l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact bosch professional gal 1880|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
-    "count": 3,
-    "high": 100.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 2,
+    "high": 41.25,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Bosch Professional GAL 1880 CV Snellader 18V 8A",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2452659534-bosch-professional-gal-1880-cv-snellader-18v-8a"
-     },
      {
       "kind": "fixed",
       "price": 35.0,
@@ -1546,25 +1550,24 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441340273-bosch-professional-gal-1880-cv-snellader-voor-18v-accu-s"
      },
      {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Bosch Starterset: 18V ProCORE 4.0Ah accu + GAL 1880 CV lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2455588618-bosch-starterset-18v-procore-4-0ah-accu-gal-1880-cv-lader"
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Bosch Professional GAL 1880 CV Snellader 14.4-18V 8A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2456172937-bosch-professional-gal-1880-cv-snellader-14-4-18v-8a"
      }
     ],
-    "low": 30.0,
-    "median": 35.0,
+    "low": 33.75,
+    "median": 37.5,
     "model": "GAL 1880",
     "outliers": [],
     "prices": [
-     30.0,
      35.0,
-     100.0
+     40.0
     ],
     "query": "bosch professional gal 1880",
     "search": "bosch professional gal 1880"
    },
-   "v": 3
+   "v": 4
   },
   "exact bosch professional gsb 21|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-12T04:31:44.405458+00:00",
@@ -1608,9 +1611,9 @@
    "v": 2
   },
   "exact bosch professional gsr 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 2,
     "high": 352.5,
     "kind": "exact",
@@ -1639,7 +1642,7 @@
     "query": "bosch professional gsr 14",
     "search": "bosch professional gsr 14"
    },
-   "v": 3
+   "v": 4
   },
   "exact bosch professional gws 1400|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -1911,11 +1914,11 @@
    "v": 4
   },
   "exact dewalt dw088cg|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 14,
-    "high": 149.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 13,
+    "high": 154.0,
     "kind": "exact",
     "listings": [
      {
@@ -1931,10 +1934,16 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2447826208-dewalt-dw088cg-kruislijnlaser-zeer-nette-staat"
      },
      {
+      "kind": "fixed",
+      "price": 99.95,
+      "title": "DeWALT DW088CG-XJ Lijnlaser Groen - In Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449360859-dewalt-dw088cg-xj-lijnlaser-groen-in-nette-staat"
+     },
+     {
       "kind": "bid",
       "price": 100.0,
-      "title": "DeWalt DW088CG Kruislijnlaser (GROEN)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2450818359-dewalt-dw088cg-kruislijnlaser-groen"
+      "title": "DeWalt kruislijnlaser DW088CG in koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2454860226-dewalt-kruislijnlaser-dw088cg-in-koffer"
      },
      {
       "kind": "bid",
@@ -1955,28 +1964,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2452367104-dewalt-dw088cg-groene-kruislijnlaser"
      },
      {
-      "kind": "fixed",
-      "price": 119.95,
-      "title": "DeWALT DW088CG-XJ Lijnlaser Groen - In Nette Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449360859-dewalt-dw088cg-xj-lijnlaser-groen-in-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "DeWalt kruislijnlaser DW088CG in koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2454860226-dewalt-kruislijnlaser-dw088cg-in-koffer"
-     },
-     {
       "kind": "bid",
       "price": 135.0,
       "title": "DeWalt DW088CG Lijnlaser",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2440965307-dewalt-dw088cg-lijnlaser"
-     },
-     {
-      "kind": "bid",
-      "price": 145.0,
-      "title": "Nette en goed werkende DeWALT DW088CG kruislijnlaser",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2450147846-nette-en-goed-werkende-dewalt-dw088cg-kruislijnlaser"
      },
      {
       "kind": "fixed",
@@ -1994,39 +1985,44 @@
       "kind": "fixed",
       "price": 159.0,
       "title": "DEWALT DW088CG KRUISLIJNLASER GROEN ZELFNIVELLERENDE LASER",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2455476024-dewalt-dw088cg-kruislijnlaser-groen-zelfnivellerende-laser"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2456577390-dewalt-dw088cg-kruislijnlaser-groen-zelfnivellerende-laser"
      },
      {
       "kind": "bid",
       "price": 160.0,
       "title": "DeWalt DW088CG Groene Kruislijnlaser",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2447529378-dewalt-dw088cg-groene-kruislijnlaser"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "DeWalt DW088CG Kruislijnlaser met Detector + statief",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/meetapparatuur/m2455769032-dewalt-dw088cg-kruislijnlaser-met-detector-statief"
      }
     ],
-    "low": 100.0,
-    "median": 119.97,
+    "low": 99.97,
+    "median": 110.0,
     "model": "DW088CG",
     "outliers": [],
     "prices": [
      90.0,
      95.95,
+     99.95,
      100.0,
      100.0,
      109.99,
      110.0,
-     119.95,
-     120.0,
      135.0,
-     145.0,
      149.0,
      149.0,
      159.0,
-     160.0
+     160.0,
+     200.0
     ],
     "query": "dewalt dw088cg",
     "search": "dewalt dw088cg"
    },
-   "v": 3
+   "v": 4
   },
   "exact dewalt dw743n|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-19T04:42:12.193403+00:00",
@@ -3735,19 +3731,13 @@
    "v": 2
   },
   "exact hilti bx3|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 4,
-    "high": 693.75,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 3,
+    "high": 850.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Hilti Gereedschapskoffer bx3- Leeg",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2434771454-hilti-gereedschapskoffer-bx3-leeg"
-     },
      {
       "kind": "bid",
       "price": 50.0,
@@ -3767,12 +3757,11 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438962875-schiethamer-hilti-bx3"
      }
     ],
-    "low": 35.0,
-    "median": 137.5,
+    "low": 50.0,
+    "median": 225.0,
     "model": "BX3",
     "outliers": [],
     "prices": [
-     30.0,
      50.0,
      225.0,
      850.0
@@ -3780,12 +3769,12 @@
     "query": "hilti bx3",
     "search": "hilti bx3"
    },
-   "v": 3
+   "v": 4
   },
   "exact hilti bx4|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact hilti dg 150|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -3798,16 +3787,16 @@
    "v": 4
   },
   "exact hilti te16|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact hp 24fw|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 5,
-    "high": 67.5,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 4,
+    "high": 63.75,
     "kind": "exact",
     "listings": [
      {
@@ -3830,18 +3819,12 @@
      },
      {
       "kind": "fixed",
-      "price": 65.0,
-      "title": "HP 24fw 23.8-inch Display - Full HD Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445247845-hp-24fw-23-8-inch-display-full-hd-monitor"
-     },
-     {
-      "kind": "fixed",
       "price": 70.0,
       "title": "HP 24FW Full HD IPS Beeldscherm (24 inch)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2448464559-hp-24fw-full-hd-ips-beeldscherm-24-inch"
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2456075998-hp-24fw-full-hd-ips-beeldscherm-24-inch"
      }
     ],
-    "low": 42.5,
+    "low": 41.25,
     "median": 45.0,
     "model": "24FW",
     "outliers": [],
@@ -3849,13 +3832,12 @@
      40.0,
      45.0,
      45.0,
-     65.0,
      70.0
     ],
     "query": "hp 24fw",
     "search": "hp 24fw"
    },
-   "v": 3
+   "v": 4
   },
   "exact hp z240|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -3991,6 +3973,11 @@
    },
    "v": 4
   },
+  "exact hp z27|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
+  },
   "exact hugo 1xtom253x|": {
    "at": "2026-10-22T08:24:38.737984+00:00",
    "est": null,
@@ -4081,6 +4068,16 @@
     "search": "iiyama e2407hdsd"
    },
    "v": 3
+  },
+  "exact iiyama gb3466wqsu|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
+  },
+  "exact iiyama pl2495w|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
   },
   "exact ipad 10 256gb|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -4229,491 +4226,6 @@
     "search": "ipad 10 256gb"
    },
    "v": 4
-  },
-  "exact ipad 6|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 49,
-    "high": 129.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "iPad 6e generatie Wi-Fi + Cellular (alleen de doos!)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450650047-ipad-6e-generatie-wi-fi-cellular-alleen-de-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Apple iPad (6 ) - accu probleem",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451391505-apple-ipad-6-accu-probleem"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Apple iPad (6e generatie/2008) -scberm gebarsten",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447204784-apple-ipad-6e-generatie-2008-scberm-gebarsten"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Apple iPad (6e generatie) 32GB Wi-Fi + Cellular",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450902552-apple-ipad-6e-generatie-32gb-wi-fi-cellular"
-     },
-     {
-      "kind": "fixed",
-      "price": 58.99,
-      "title": "Voordeelbundel (10+prijs) Apple iPad 6 (model 2018) zwart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206478-voordeelbundel-10-prijs-apple-ipad-6-model-2018-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Apple iPad 6 (model 2018) (32/128GB) 9.7 WiFi (4G) (ex demo",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531968729-apple-ipad-6-model-2018-32-128gb-9-7-wifi-4g-ex-demo"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Apple iPad 6 (model 2018) 32GB zwart 9.7 WiFi (4G) (ex demo",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206069-apple-ipad-6-model-2018-32gb-zwart-9-7-wifi-4g-ex-demo"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Apple iPad 6 (model 2018) 32GB zwart 9.7 WiFi (4G) (ex....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294813-apple-ipad-6-model-2018-32gb-zwart-9-7-wifi-4g-ex"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Apple iPad (6e generatie) Wi-Fi 32GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451462815-apple-ipad-6e-generatie-wi-fi-32gb-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.0,
-      "title": "iPad (6) 128GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448482638-ipad-6-128gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.95,
-      "title": "Apple iPad 6 (model 2018) 128GB zwart 9.7 WiFi (4G) (ex",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206070-apple-ipad-6-model-2018-128gb-zwart-9-7-wifi-4g-ex"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.95,
-      "title": "Apple iPad 6 (model 2018) 128GB zwart 9.7 WiFi (4G) (ex...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294812-apple-ipad-6-model-2018-128gb-zwart-9-7-wifi-4g-ex"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "Apple iPad 6 – 32GB – Zeer Nette Staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450994478-apple-ipad-6-32gb-zeer-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.99,
-      "title": "Magazijn opruiming Apple iPad 6 32GB (model 2018) zilver...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294881-magazijn-opruiming-apple-ipad-6-32gb-model-2018-zilver"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Ipad (6e generaite)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450966269-ipad-6e-generaite"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Apple iPad 5Th met 4g 6Th Gen €80",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449463130-apple-ipad-5th-met-4g-6th-gen-80"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "iPad 6e generatie 32GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450685111-ipad-6e-generatie-32gb-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "Apple iPad 6e generatie 64GB Wi-Fi Poeder rose A1893",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449840984-apple-ipad-6e-generatie-64gb-wi-fi-poeder-rose-a1893"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad 6 32GB (model 2018) + beschermhoes blauw 9.7",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206354-apple-ipad-6-32gb-model-2018-beschermhoes-blauw-9-7"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Koningsdag aanbieding! Apple iPad 6 32GB (model 2018) +....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294641-koningsdag-aanbieding-apple-ipad-6-32gb-model-2018"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "WK aanbieding! Apple iPad 6 32GB (model 2018) + oranje",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206363-wk-aanbieding-apple-ipad-6-32gb-model-2018-oranje"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "iPad (6e generatie) Wi-Fi 32GB/128GB (2018)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442154368-ipad-6e-generatie-wi-fi-32gb-128gb-2018"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Ipad 6e gerenatie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450007197-ipad-6e-gerenatie"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Apple iPad 2018 32GB Wifi Spacegrijs met toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451523903-apple-ipad-2018-32gb-wifi-spacegrijs-met-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.99,
-      "title": "Koningsdag aanbieding! Apple iPad 6 128GB (model 2018) +...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294636-koningsdag-aanbieding-apple-ipad-6-128gb-model-2018"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.99,
-      "title": "Apple iPad 6 128GB (model 2018) + beschermhoes rood 9.7",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206357-apple-ipad-6-128gb-model-2018-beschermhoes-rood-9-7"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.99,
-      "title": "Apple iPad 6 128GB (model 2018) + beschermhoes groen 9.7",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206355-apple-ipad-6-128gb-model-2018-beschermhoes-groen-9-7"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.99,
-      "title": "WK aanbieding! Apple iPad 6 128GB (model 2018) + oranje",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206362-wk-aanbieding-apple-ipad-6-128gb-model-2018-oranje"
-     },
-     {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "iPad 6 (2018) 128GB WiFi + Cellular Zwart: met garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531773334-ipad-6-2018-128gb-wifi-cellular-zwart-met-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Apple iPad 9.7 inch (2018) 32GB Wi-Fi Zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450292167-apple-ipad-9-7-inch-2018-32gb-wi-fi-zilver"
-     }
-    ],
-    "low": 69.97,
-    "median": 109.99,
-    "model": "iPad 6th gen",
-    "outliers": [],
-    "prices": [
-     10.0,
-     20.0,
-     25.0,
-     50.0,
-     58.99,
-     59.99,
-     59.99,
-     59.99,
-     60.0,
-     60.0,
-     69.95,
-     69.95,
-     70.0,
-     79.99,
-     80.0,
-     80.0,
-     85.0,
-     95.0,
-     99.99,
-     99.99,
-     99.99,
-     100.0,
-     100.0,
-     100.0,
-     109.99,
-     109.99,
-     109.99,
-     109.99,
-     110.0,
-     110.0,
-     114.0,
-     114.0,
-     114.0,
-     115.0,
-     120.0,
-     120.0,
-     129.0,
-     129.0,
-     134.0,
-     134.0,
-     139.99,
-     140.0,
-     149.0,
-     150.0,
-     150.0,
-     159.0,
-     169.99,
-     169.99,
-     199.99
-    ],
-    "query": "ipad 2018",
-    "search": "ipad 6"
-   },
-   "v": 2
-  },
-  "exact ipad 8|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 36,
-    "high": 179.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "iPad 8e Generatie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450774618-ipad-8e-generatie"
-     },
-     {
-      "kind": "fixed",
-      "price": 89.99,
-      "title": "Apple iPad 8 (model 2020) zwart 32GB 10.2 inch WiFi (4G) (ex",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1531046961-apple-ipad-8-model-2020-zwart-32gb-10-2-inch-wifi-4g-ex"
-     },
-     {
-      "kind": "fixed",
-      "price": 89.99,
-      "title": "Apple iPad 8 (model 2020) zwart 32GB 10.2 inch WiFi (4G)...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294789-apple-ipad-8-model-2020-zwart-32gb-10-2-inch-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad 8 (model 2020) 32GB 10.2 inch WiFi (4G) (ex demo",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1530491397-apple-ipad-8-model-2020-32gb-10-2-inch-wifi-4g-ex-demo"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "iPad 8e generatie 10.2 nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447736590-ipad-8e-generatie-10-2-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Apple iPad (8e generatie) 32 GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450495143-apple-ipad-8e-generatie-32-gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Apple iPad 8e generatie 32GB met lader",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450712713-apple-ipad-8e-generatie-32gb-met-lader"
-     },
-     {
-      "kind": "fixed",
-      "price": 115.0,
-      "title": "Apple iPad 8 10.2 (2020) • Refurbished • 24M Garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529861027-apple-ipad-8-10-2-2020-refurbished-24m-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 115.0,
-      "title": "Ipad 8 generatie 32gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450028147-ipad-8-generatie-32gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 125.0,
-      "title": "IPAD 2020 8'e GENERATİE 32GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449144282-ipad-2020-8-e-generatie-32gb"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "iPad 8e Generatie 32GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451573465-ipad-8e-generatie-32gb"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Ipad 8e generatie 32gb wifi, zgan!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450018624-ipad-8e-generatie-32gb-wifi-zgan"
-     },
-     {
-      "kind": "bid",
-      "price": 130.0,
-      "title": "Ipad 8 | 32GB | A2270 | introductiejaar 2020",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449644718-ipad-8-32gb-a2270-introductiejaar-2020"
-     },
-     {
-      "kind": "bid",
-      "price": 130.0,
-      "title": "IPad 8e generatie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448217614-ipad-8e-generatie"
-     },
-     {
-      "kind": "fixed",
-      "price": 139.99,
-      "title": "Apple iPad 8 32/128GB 10.2 WiFi (4G) + garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294814-apple-ipad-8-32-128gb-10-2-wifi-4g-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 140.0,
-      "title": "iPad 8e generatie in topconditie model 2021",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451076070-ipad-8e-generatie-in-topconditie-model-2021"
-     },
-     {
-      "kind": "fixed",
-      "price": 140.0,
-      "title": "iPad 8e generatie in topconditie met wifi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451281106-ipad-8e-generatie-in-topconditie-met-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 140.0,
-      "title": "iPad 8e generatie sim en wifi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450513703-ipad-8e-generatie-sim-en-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 145.0,
-      "title": "iPad 8 128 GB WiFi + Cellular",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450683507-ipad-8-128-gb-wifi-cellular"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.0,
-      "title": "Refurbished Apple iPad 8 (2020) 10.2-inch 32GB – Zwart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449385779-refurbished-apple-ipad-8-2020-10-2-inch-32gb-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Nieuwstaat Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531168-nieuwstaat-apple-ipad-8-model-2020-wit-32gb-10-2-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Nieuwstaat Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524537507-nieuwstaat-apple-ipad-8-model-2020-wit-32gb-10-2-wifi"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Apple iPad (8 Generation) 32GB Wi-Fi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450962138-apple-ipad-8-generation-32gb-wi-fi"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "iPad 8e generatie Space Grey 128GB met toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450823995-ipad-8e-generatie-space-grey-128gb-met-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 160.0,
-      "title": "iPad 8, 32GB zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450758219-ipad-8-32gb-zilver"
-     },
-     {
-      "kind": "bid",
-      "price": 165.0,
-      "title": "Apple iPad (8e generatie) 32GB Wi-Fi Goud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450821310-apple-ipad-8e-generatie-32gb-wi-fi-goud"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi (4G) (als....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531331-apple-ipad-8-model-2020-wit-32gb-10-2-wifi-4g-als"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "Apple iPad 8 (model 2020) wit 32GB 10.2 WiFi (4G) (als",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524537496-apple-ipad-8-model-2020-wit-32gb-10-2-wifi-4g-als"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "(Als) Nieuw Apple iPad 8 (model 2020) zwart 32GB 10.2 W...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524531106-als-nieuw-apple-ipad-8-model-2020-zwart-32gb-10-2-w"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "(Als) Nieuw Apple iPad 8 (model 2020) zwart 32GB 10.2 WiFi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1524537500-als-nieuw-apple-ipad-8-model-2020-zwart-32gb-10-2-wifi"
-     }
-    ],
-    "low": 117.5,
-    "median": 142.5,
-    "model": "iPad 8th gen",
-    "outliers": [],
-    "prices": [
-     50.0,
-     89.99,
-     89.99,
-     99.99,
-     100.0,
-     100.0,
-     110.0,
-     115.0,
-     115.0,
-     125.0,
-     125.0,
-     125.0,
-     130.0,
-     130.0,
-     139.99,
-     140.0,
-     140.0,
-     140.0,
-     145.0,
-     149.0,
-     149.99,
-     149.99,
-     150.0,
-     150.0,
-     160.0,
-     165.0,
-     179.99,
-     179.99,
-     179.99,
-     179.99,
-     180.0,
-     200.0,
-     200.0,
-     229.99,
-     229.99,
-     229.99
-    ],
-    "query": "ipad 2020",
-    "search": "ipad 8"
-   },
-   "v": 2
   },
   "exact ipad air 5 64gb|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -4884,461 +4396,6 @@
     "search": "ipad air 5 64gb"
    },
    "v": 4
-  },
-  "exact ipad pro 10 5|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 27,
-    "high": 239.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Ipad Pro 10.5 inch 2e generatie Wifi + 5G schermschade",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450672940-ipad-pro-10-5-inch-2e-generatie-wifi-5g-schermschade"
-     },
-     {
-      "kind": "bid",
-      "price": 109.0,
-      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2445011655-apple-ipad-pro-64gb-10-5-inch-model-2017"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "iPad Pro 10.5 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450977107-ipad-pro-10-5-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Apple iPad Pro 10.5 (2017) WiFi 256GB Grijs",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2438855123-apple-ipad-pro-10-5-2017-wifi-256gb-grijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 155.99,
-      "title": "Apple iPad Pro 10,5 64GB [wifi, model 2017] spacegrijs",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1481188744-apple-ipad-pro-10-5-64gb-wifi-model-2017-spacegrijs"
-     },
-     {
-      "kind": "bid",
-      "price": 160.0,
-      "title": "Apple iPad Pro 10.5 inch 64GB Wi-Fi Goud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415402469-apple-ipad-pro-10-5-inch-64gb-wi-fi-goud"
-     },
-     {
-      "kind": "bid",
-      "price": 165.0,
-      "title": "iPad Pro 10.5 inch (2e gen) 64GB Wi-Fi Goud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2433015316-ipad-pro-10-5-inch-2e-gen-64gb-wi-fi-goud"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zilver WiFi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206026-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver-wifi-4g"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Ipad pro 10.5 (2017) 64GB Gold",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2440785349-ipad-pro-10-5-2017-64gb-gold"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.0,
-      "title": "Apple iPad Pro 10.5 – 64GB – 2017",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige/m2446480690-apple-ipad-pro-10-5-64gb-2017"
-     },
-     {
-      "kind": "bid",
-      "price": 199.0,
-      "title": "Apple iPad Pro 10.5 inch 64GB Wi-Fi - rose gold (2017)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426443479-apple-ipad-pro-10-5-inch-64gb-wi-fi-rose-gold-2017"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (2017) zwart WiFi (4G) + g...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294872-apple-ipad-pro-64gb-10-5-inch-2017-zwart-wifi-4g-g"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zwart Wifi (4...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1529642155-apple-ipad-pro-64gb-10-5-inch-model-2017-zwart-wifi-4"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zilver WiFi (...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294873-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (model 2017) zwart Wifi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525776568-apple-ipad-pro-64gb-10-5-inch-model-2017-zwart-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 64GB 10.5 inch (2017) zwart WiFi (4G) +",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206024-apple-ipad-pro-64gb-10-5-inch-2017-zwart-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.99,
-      "title": "Apple iPad Pro 10,5 64GB [wifi + cellular, model 2017] roze",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1500660891-apple-ipad-pro-10-5-64gb-wifi-cellular-model-2017-roze"
-     },
-     {
-      "kind": "fixed",
-      "price": 229.95,
-      "title": "Apple iPad Pro 10.5 2017 - In Goede Staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450586923-apple-ipad-pro-10-5-2017-in-goede-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 229.99,
-      "title": "iPad Pro 2017 10.5'' 64GB - Nette Staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442314366-ipad-pro-2017-10-5-64gb-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 237.99,
-      "title": "Apple iPad Pro 10,5 256GB [wifi + cellular, model 2017] goud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1501816635-apple-ipad-pro-10-5-256gb-wifi-cellular-model-2017-goud"
-     },
-     {
-      "kind": "fixed",
-      "price": 239.99,
-      "title": "Nieuwstaat Apple iPad Pro 64GB 10.5 inch (model 2017) zi...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519019189-nieuwstaat-apple-ipad-pro-64gb-10-5-inch-model-2017-zi"
-     },
-     {
-      "kind": "fixed",
-      "price": 239.99,
-      "title": "Nieuwstaat Apple iPad Pro 64GB 10.5 inch (model 2017) zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519073490-nieuwstaat-apple-ipad-pro-64gb-10-5-inch-model-2017-zilver"
-     },
-     {
-      "kind": "fixed",
-      "price": 241.99,
-      "title": "Apple iPad Pro 10,5 256GB [wifi + cellular, model 2017] roze",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1505446362-apple-ipad-pro-10-5-256gb-wifi-cellular-model-2017-roze"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Apple iPad Pro 10.5 WiFi+Cellular Space Gray 64GB z.g.a.n.",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2415371174-apple-ipad-pro-10-5-wifi-cellular-space-gray-64gb-z-g-a-n"
-     },
-     {
-      "kind": "fixed",
-      "price": 269.99,
-      "title": "(Als) nieuw Apple iPad Pro 64GB 10.5 inch (model 2017) z...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519080580-als-nieuw-apple-ipad-pro-64gb-10-5-inch-model-2017-z"
-     },
-     {
-      "kind": "fixed",
-      "price": 269.99,
-      "title": "(Als) nieuw Apple iPad Pro 64GB 10.5 inch (model 2017)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1519073491-als-nieuw-apple-ipad-pro-64gb-10-5-inch-model-2017"
-     },
-     {
-      "kind": "fixed",
-      "price": 331.99,
-      "title": "Apple iPad Pro 10,5 512GB [wifi + cellular, model 2017] roze",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1501461288-apple-ipad-pro-10-5-512gb-wifi-cellular-model-2017-roze"
-     }
-    ],
-    "low": 165.0,
-    "median": 199.99,
-    "model": "iPad Pro 10.5",
-    "outliers": [
-     24.5,
-     439.99
-    ],
-    "prices": [
-     100.0,
-     109.0,
-     150.0,
-     150.0,
-     155.99,
-     160.0,
-     165.0,
-     179.99,
-     190.0,
-     199.0,
-     199.0,
-     199.99,
-     199.99,
-     199.99,
-     199.99,
-     199.99,
-     199.99,
-     229.95,
-     229.99,
-     237.99,
-     239.99,
-     239.99,
-     241.99,
-     250.0,
-     269.99,
-     269.99,
-     331.99
-    ],
-    "query": "ipad pro 10.5",
-    "search": "ipad pro 10.5"
-   },
-   "v": 2
-  },
-  "exact ipad pro 9 7|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 43,
-    "high": 189.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 14.5,
-      "title": "iPad Air 2 (2017–2018 - Pro 9.7) kickstand – Schokbestendig",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/banken-complete-zithoeken/a1513707892-ipad-air-2-2017-2018-pro-9-7-kickstand-schokbestendig"
-     },
-     {
-      "kind": "fixed",
-      "price": 85.0,
-      "title": "Apple iPad Pro 9.7 inch – 32GB – Wi-Fi – Zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2416497206-apple-ipad-pro-9-7-inch-32gb-wi-fi-zilver"
-     },
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "iPad Pro 9.7 Rose Gold 32 GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449425629-ipad-pro-9-7-rose-gold-32-gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294954-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "(Ex demo) Apple iPad Pro 9.7 space grey 32/128GB (model...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294887-ex-demo-apple-ipad-pro-9-7-space-grey-32-128gb-model"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "(Ex demo) Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206178-ex-demo-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "(Ex demo) Apple iPad Pro 9.7 space grey 32/128GB (model",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206195-ex-demo-apple-ipad-pro-9-7-space-grey-32-128gb-model"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad Pro 32GB (model 2016) 9.7 inch gold Wifi (4G)...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294968-apple-ipad-pro-32gb-model-2016-9-7-inch-gold-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294955-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206194-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Apple iPad Pro 32GB (model 2016) 9.7 inch gold Wifi (4G) (ex",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206192-apple-ipad-pro-32gb-model-2016-9-7-inch-gold-wifi-4g-ex"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Apple iPad Pro 9.7 inch 32gb WiFi Silver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2422318305-apple-ipad-pro-9-7-inch-32gb-wifi-silver"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Apple iPad Pro 9.7-inch 32GB Wi-Fi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2426440026-apple-ipad-pro-9-7-inch-32gb-wi-fi"
-     },
-     {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zil...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294709-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zil"
-     },
-     {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zwa...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294965-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zwa"
-     },
-     {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zwart",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206172-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "(Ex demo) Apple iPad Pro 128GB 9.7 inch (model 2016) zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206171-ex-demo-apple-ipad-pro-128gb-9-7-inch-model-2016-zilver"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Apple iPad Pro (9.7 inch) 256GB Wi-Fi - In goede staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2419418856-apple-ipad-pro-9-7-inch-256gb-wi-fi-in-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Apple iPad Pro (9.7 inch) 256 GB Wi-Fi with original charger",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2442350684-apple-ipad-pro-9-7-inch-256-gb-wi-fi-with-original-charger"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "(ex demo) Apple iPad Pro 256GB 9.7 inch (model 2016) zilver",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1517206175-ex-demo-apple-ipad-pro-256gb-9-7-inch-model-2016-zilver"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Apple iPad Pro 256GB 9.7 inch (2016) zilver Wifi (4G) +....",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1518294708-apple-ipad-pro-256gb-9-7-inch-2016-zilver-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Apple iPad Pro 256GB 9.7 inch (model 2016) zwart Wifi (4...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525880376-apple-ipad-pro-256gb-9-7-inch-model-2016-zwart-wifi-4"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Apple iPad Pro 256GB 9.7 inch (model 2016) zwart Wifi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525906365-apple-ipad-pro-256gb-9-7-inch-model-2016-zwart-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 150.0,
-      "title": "Apple iPad Pro 9.7' 256 Go Rose Gold",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2432486982-apple-ipad-pro-9-7-256-go-rose-gold"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.99,
-      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528867480-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.99,
-      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528869881-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.99,
-      "title": "Apple iPad Pro 9.7 inch (model 2016) zwart 32GB wifi (4G)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1528869876-apple-ipad-pro-9-7-inch-model-2016-zwart-32gb-wifi-4g"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.99,
-      "title": "Apple iPad Pro 32GB 9.7 inch (model 2016) Roségoud Wifi....",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1528868619-apple-ipad-pro-32gb-9-7-inch-model-2016-rosegoud-wifi"
-     },
-     {
-      "kind": "fixed",
-      "price": 165.0,
-      "title": "Apple iPad Pro 1 (2016) - 9.7 inch - 32GB - Spacegrijs - 2 j",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-overige-merken/a1526137550-apple-ipad-pro-1-2016-9-7-inch-32gb-spacegrijs-2-j"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.99,
-      "title": "Nieuwstaat Apple iPad Pro 256GB 9.7 inch (model 2016) zw...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1525880380-nieuwstaat-apple-ipad-pro-256gb-9-7-inch-model-2016-zw"
-     }
-    ],
-    "low": 99.99,
-    "median": 149.99,
-    "model": "iPad Pro 9.7",
-    "outliers": [],
-    "prices": [
-     14.5,
-     85.0,
-     95.0,
-     99.99,
-     99.99,
-     99.99,
-     99.99,
-     99.99,
-     99.99,
-     99.99,
-     99.99,
-     100.0,
-     100.0,
-     119.99,
-     119.99,
-     119.99,
-     119.99,
-     125.0,
-     125.0,
-     149.99,
-     149.99,
-     149.99,
-     149.99,
-     150.0,
-     159.99,
-     159.99,
-     159.99,
-     159.99,
-     165.0,
-     179.99,
-     179.99,
-     179.99,
-     189.0,
-     189.99,
-     189.99,
-     189.99,
-     189.99,
-     199.99,
-     209.99,
-     209.99,
-     209.99,
-     209.99,
-     239.99
-    ],
-    "query": "ipad pro 9.7",
-    "search": "ipad pro 9.7"
-   },
-   "v": 2
   },
   "exact iphone 13 pro max 256gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -5692,6 +4749,11 @@
   },
   "exact laptop ac1d|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-10-22T04:39:55.562897+00:00",
+   "est": null,
+   "v": 4
+  },
+  "exact lg 27md5kl|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
    "v": 4
   },
@@ -6439,24 +5501,19 @@
    "v": 3
   },
   "exact makita 5030r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita 6510lvr|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
-  },
-  "exact makita 9049s|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
+   "v": 4
   },
   "exact makita 9565cvr|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita bdf456|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -6549,9 +5606,9 @@
    "v": 3
   },
   "exact makita bl1626|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita bl1850b|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-12T04:31:44.405458+00:00",
@@ -6737,72 +5794,10 @@
    "est": null,
    "v": 4
   },
-  "exact makita dbo180|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 6,
-    "high": 238.75,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita 18V DBO180 Accu Excentrische Schuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2450349791-makita-18v-dbo180-accu-excentrische-schuurmachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 88.0,
-      "title": "Makita DBO180 18v accu 125mm excentrische schuurmachine body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2429912016-makita-dbo180-18v-accu-125mm-excentrische-schuurmachine-body"
-     },
-     {
-      "kind": "fixed",
-      "price": 95.0,
-      "title": "Makita DBO180Z 18V Li-Ion Accu excentrische schuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1686115617-makita-dbo180z-18v-li-ion-accu-excentrische-schuurmachine"
-     },
-     {
-      "kind": "bid",
-      "price": 129.99,
-      "title": "Makita DBO180 Excenter Schuurmachine Incl: 1 Accu 18v 5.0Ah",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2446596921-makita-dbo180-excenter-schuurmachine-incl-1-accu-18v-5-0ah"
-     },
-     {
-      "kind": "fixed",
-      "price": 235.0,
-      "title": "Makita DBO180 18V Li-Ion Accu excentrische schuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1686427242-makita-dbo180-18v-li-ion-accu-excentrische-schuurmachine"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Makita DBO180 schuurmachine en DRT50 bovenfrees",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2443628596-makita-dbo180-schuurmachine-en-drt50-bovenfrees"
-     }
-    ],
-    "low": 84.75,
-    "median": 112.5,
-    "model": "DBO180",
-    "outliers": [],
-    "prices": [
-     75.0,
-     88.0,
-     95.0,
-     129.99,
-     235.0,
-     250.0
-    ],
-    "query": "makita dbo180",
-    "search": "makita dbo180"
-   },
-   "v": 2
-  },
   "exact makita dc18ra|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 2,
     "high": 95.51,
     "kind": "exact",
@@ -6831,14 +5826,14 @@
     "query": "makita dc18ra",
     "search": "makita dc18ra"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita dc18rc|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 27,
-    "high": 50.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 26,
+    "high": 59.96,
     "kind": "exact",
     "listings": [
      {
@@ -6860,10 +5855,20 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448809245-makita-dc18rc-lader-wandhouder-muurbevestiging"
      },
      {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Makita DC18RC Snellader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2454216076-makita-dc18rc-snellader-voor-14-4v-18v-li-ion-accu-s"
+      "kind": "bid",
+      "of": 3,
+      "price": 11.67,
+      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
+      "total": 35.0,
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
+      "price": 15.0,
+      "title": "2x Makita DC18RC Oplader Li-ion & Ni-MH 7.2-18V",
+      "total": 30.0,
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2454283261-2x-makita-dc18rc-oplader-li-ion-ni-mh-7-2-18v"
      },
      {
       "kind": "fixed",
@@ -6891,9 +5896,11 @@
      },
      {
       "kind": "bid",
-      "price": 30.0,
-      "title": "2x Makita DC18RC Oplader Li-ion & Ni-MH 7.2-18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2454283261-2x-makita-dc18rc-oplader-li-ion-ni-mh-7-2-18v"
+      "of": 3,
+      "price": 25.0,
+      "title": "3x Makita DC18RC Sneloplader voor 14.4V-18V Li-ion accu's",
+      "total": 75.0,
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2450486033-3x-makita-dc18rc-sneloplader-voor-14-4v-18v-li-ion-accu-s"
      },
      {
       "kind": "fixed",
@@ -6904,20 +5911,14 @@
      {
       "kind": "bid",
       "price": 30.0,
-      "title": "Makita Snellader DC18RC voor 18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2418844091-makita-snellader-dc18rc-voor-18v"
+      "title": "Makita DC18RC Oplader (exclusief accu)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2448269676-makita-dc18rc-oplader-exclusief-accu"
      },
      {
       "kind": "fixed",
       "price": 30.0,
       "title": "Makita acculader DC18RC",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2417556521-makita-acculader-dc18rc"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "3x Makita DC18RC 18V LXT Snellader – origineel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2440138017-3x-makita-dc18rc-18v-lxt-snellader-origineel"
      },
      {
       "kind": "fixed",
@@ -6957,18 +5958,6 @@
      },
      {
       "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DC18SD en DC18RC Opladers voor Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2416314674-makita-dc18sd-en-dc18rc-opladers-voor-li-ion-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita acculaders DC10SB en DC18RC",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443712998-makita-acculaders-dc10sb-en-dc18rc"
-     },
-     {
-      "kind": "bid",
       "price": 59.95,
       "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
@@ -6982,14 +5971,20 @@
      {
       "kind": "bid",
       "price": 65.0,
+      "title": "Makita DC18RC Oplader met 18V 5.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456068214-makita-dc18rc-oplader-met-18v-5-0ah-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
       "title": "MAKITA snellader DC18RC + accu BL1830B",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2450134229-makita-snellader-dc18rc-accu-bl1830b"
      },
      {
       "kind": "bid",
-      "price": 75.0,
-      "title": "3x Makita DC18RC Sneloplader voor 14.4V-18V Li-ion accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2450486033-3x-makita-dc18rc-sneloplader-voor-14-4v-18v-li-ion-accu-s"
+      "price": 70.0,
+      "title": "Makita DC18RC Oplader met 3.0Ah 18V Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2456330244-makita-dc18rc-oplader-met-3-0ah-18v-accu"
      },
      {
       "kind": "fixed",
@@ -7004,8 +5999,8 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427005853-makita-1x-18v-5-0ah-accu-met-oplader-dc18rc"
      }
     ],
-    "low": 25.0,
-    "median": 39.95,
+    "low": 20.0,
+    "median": 34.98,
     "model": "DC18RC",
     "outliers": [
      140.0,
@@ -7017,47 +6012,46 @@
      5.0,
      5.0,
      5.95,
-     20.0,
+     11.67,
+     15.0,
      20.0,
      20.0,
      25.0,
      25.0,
+     25.0,
      30.0,
      30.0,
      30.0,
-     30.0,
-     35.0,
      39.95,
      40.0,
      41.95,
      41.95,
      48.95,
      50.0,
-     50.0,
-     50.0,
      59.95,
      60.0,
      65.0,
-     75.0,
+     65.0,
+     70.0,
      80.0,
      100.0
     ],
     "query": "makita dc18rc",
     "search": "makita dc18rc"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita ddf458|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 3,
     "high": 85.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 5.0,
+      "price": 2.5,
       "title": "Makita Zijgreep / Handgreep voor DHP458 DDF458 BHP458",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455344948-makita-zijgreep-handgreep-voor-dhp458-ddf458-bhp458"
      },
@@ -7074,29 +6068,29 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455289833-makita-18v-klopboormachine-ddf458"
      }
     ],
-    "low": 5.0,
+    "low": 2.5,
     "median": 17.5,
     "model": "DDF458",
     "outliers": [],
     "prices": [
-     5.0,
+     2.5,
      17.5,
      85.0
     ],
     "query": "makita ddf458",
     "search": "makita ddf458"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita ddf481zj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita ddf481|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 3,
     "high": 190.0,
     "kind": "exact",
@@ -7132,7 +6126,7 @@
     "query": "makita ddf481",
     "search": "makita ddf481"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita ddf484z|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -7189,65 +6183,10 @@
    },
    "v": 4
   },
-  "exact makita ddf485|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 5,
-    "high": 220.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita Schroefmachine DDF485 - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445291294-makita-schroefmachine-ddf485-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Makita DDF485 Accuboormachine - Krachtig en Compact",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442197135-makita-ddf485-accuboormachine-krachtig-en-compact"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Makita DDF485 Boormachine + 5Ah Accu | Nette Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/overige-doe-het-zelf-en-verbouw/m2446425090-makita-ddf485-boormachine-5ah-accu-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Makita DDF485 Accuboormachine 18V met 3.0Ah accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450606202-makita-ddf485-accuboormachine-18v-met-3-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 319.99,
-      "title": "Makita DLX2289TJ Combiset DDF485 + DTD153 | Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443018320-makita-dlx2289tj-combiset-ddf485-dtd153-nieuw"
-     }
-    ],
-    "low": 37.5,
-    "median": 99.99,
-    "model": "DDF485",
-    "outliers": [],
-    "prices": [
-     30.0,
-     45.0,
-     99.99,
-     120.0,
-     319.99
-    ],
-    "query": "makita ddf485",
-    "search": "makita ddf485"
-   },
-   "v": 2
-  },
   "exact makita ddf486|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 4,
     "high": 225.0,
     "kind": "exact",
@@ -7290,171 +6229,17 @@
     "query": "makita ddf486",
     "search": "makita ddf486"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita ddf489|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
-   "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 2,
-    "high": 320.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "Makita DDF489 Boormachine + 3.0Ah 18v accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2453353604-makita-ddf489-boormachine-3-0ah-18v-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 280.0,
-      "title": "DDF489 18V Li-ion accu schroefboormachine accus en lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2409950414-ddf489-18v-li-ion-accu-schroefboormachine-accus-en-lader"
-     }
-    ],
-    "low": 79.99,
-    "median": 200.0,
-    "model": "DDF489",
-    "outliers": [],
-    "prices": [
-     119.99,
-     280.0
-    ],
-    "query": "makita ddf489",
-    "search": "makita ddf489"
-   },
-   "v": 3
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
   },
   "exact makita ddt153|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
-  },
-  "exact makita df457d|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 15,
-    "high": 129.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Makita Boormachine DF457D met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451370938-makita-boormachine-df457d-met-accessoires"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita DF457D 18V Boor- en Schroefmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2439023639-makita-df457d-18v-boor-en-schroefmachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Makita DF457D Boormachine + accu || Nu voor €59.99!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/zwenkwielen/m2418287804-makita-df457d-boormachine-accu-nu-voor-59-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.99,
-      "title": "Makita DF457D 18V Accuboormachine Incl. Accu & Lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443636397-makita-df457d-18v-accuboormachine-incl-accu-lader"
-     },
-     {
-      "kind": "bid",
-      "price": 90.0,
-      "title": "Makita DF457D met Koffer en Accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2434071322-makita-df457d-met-koffer-en-accessoires"
-     },
-     {
-      "kind": "bid",
-      "price": 105.0,
-      "title": "Makita DF457D 18V accu-boormachine – 2 accu’s + lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450966119-makita-df457d-18v-accu-boormachine-2-accu-s-lader"
-     },
-     {
-      "kind": "fixed",
-      "price": 125.0,
-      "title": "Makita DF457D  accuboormachine boor 18V 3.0 Ah",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450304213-makita-df457d-accuboormachine-boor-18v-3-0-ah"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Makita DF457D Boor-/Schroefmachine met Accu's en Koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438149496-makita-df457d-boor-schroefmachine-met-accu-s-en-koffer"
-     },
-     {
-      "kind": "bid",
-      "price": 129.95,
-      "title": "Makita Accu Schroeftol | DF457D | koffer met acc | 411014",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443609406-makita-accu-schroeftol-df457d-koffer-met-acc-411014"
-     },
-     {
-      "kind": "bid",
-      "price": 129.95,
-      "title": "Makita Decoupeerzaag + Accu schroeftol | DF457D | 413426",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2448125356-makita-decoupeerzaag-accu-schroeftol-df457d-413426"
-     },
-     {
-      "kind": "fixed",
-      "price": 129.99,
-      "title": "Makita DF457D Accu boor met 2 accu's en lader voor €129.99",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446310157-makita-df457d-accu-boor-met-2-accu-s-en-lader-voor-129-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 129.99,
-      "title": "Makita DF457D Acu boor met 2 accu's en lader || Nu €129.99",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kandelaars-en-kaarsen/m2444331188-makita-df457d-acu-boor-met-2-accu-s-en-lader-nu-129-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Makita DF457D Boormachine Toolbox set | Nette staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446210165-makita-df457d-boormachine-toolbox-set-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Makita DF457D Boormachine & 2x Accu & Lader Incl koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2440809305-makita-df457d-boormachine-2x-accu-lader-incl-koffer"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Makita DF457D/ JV183D",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449644100-makita-df457d-jv183d"
-     }
-    ],
-    "low": 69.99,
-    "median": 125.0,
-    "model": "DF457D",
-    "outliers": [],
-    "prices": [
-     25.0,
-     50.0,
-     59.99,
-     69.99,
-     90.0,
-     105.0,
-     125.0,
-     125.0,
-     129.95,
-     129.95,
-     129.99,
-     129.99,
-     149.99,
-     149.99,
-     190.0
-    ],
-    "query": "makita df457d",
-    "search": "makita df457d"
-   },
-   "v": 2
+   "v": 4
   },
   "exact makita dga452|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -7619,50 +6404,9 @@
    "v": 4
   },
   "exact makita dga506zj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
-  },
-  "exact makita dga506|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 3,
-    "high": 219.99,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita DGA506 Accu Haakse Slijper 125mm - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2445514377-makita-dga506-accu-haakse-slijper-125mm-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 145.0,
-      "title": "Makita slijper  DGA506 met 5.0ah acuu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2423840879-makita-slijper-dga506-met-5-0ah-acuu"
-     },
-     {
-      "kind": "bid",
-      "price": 219.99,
-      "title": "Makita DGA506ZJ in M-box",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441259200-makita-dga506zj-in-m-box"
-     }
-    ],
-    "low": 75.0,
-    "median": 145.0,
-    "model": "DGA506",
-    "outliers": [],
-    "prices": [
-     75.0,
-     145.0,
-     219.99
-    ],
-    "query": "makita dga506",
-    "search": "makita dga506"
-   },
-   "v": 2
+   "v": 4
   },
   "exact makita dga513|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-12T04:31:44.405458+00:00",
@@ -7706,9 +6450,9 @@
    "v": 2
   },
   "exact makita dhp453|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 3,
     "high": 100.0,
     "kind": "exact",
@@ -7744,7 +6488,7 @@
     "query": "makita dhp453",
     "search": "makita dhp453"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita dhp481|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -7851,205 +6595,95 @@
    },
    "v": 4
   },
-  "exact makita dhr243|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 15,
-    "high": 285.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 5.0,
-      "title": "Makita inlay DHR242 DHR243 8376491",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2445107368-makita-inlay-dhr242-dhr243-8376491"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.99,
-      "title": "Makita DHR243 2020 Boorhamer | Ex. Accu | Gebruikte staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445408587-makita-dhr243-2020-boorhamer-ex-accu-gebruikte-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 120.0,
-      "title": "Makita DHR243 18v accu combihamer body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450031328-makita-dhr243-18v-accu-combihamer-body"
-     },
-     {
-      "kind": "fixed",
-      "price": 139.99,
-      "title": "Makita DHR243 Boorhamer Nu voor €139,99",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2449532669-makita-dhr243-boorhamer-nu-voor-139-99"
-     },
-     {
-      "kind": "fixed",
-      "price": 139.99,
-      "title": "Makita DHR243 Boorhamer nu voor €139.99",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/werkbanken/m2449519314-makita-dhr243-boorhamer-nu-voor-139-99"
-     },
-     {
-      "kind": "bid",
-      "price": 145.0,
-      "title": "makita dhr243 klopboormachine SDS-plus combihamer 18V body",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2441149425-makita-dhr243-klopboormachine-sds-plus-combihamer-18v-body"
-     },
-     {
-      "kind": "bid",
-      "price": 149.99,
-      "title": "Makita DHR243 Combihamer | Gebruikt zonder accu",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2420898788-makita-dhr243-combihamer-gebruikt-zonder-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Makita DHR243 Boorhamer met DX07 Stofafzuiging",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430758201-makita-dhr243-boorhamer-met-dx07-stofafzuiging"
-     },
-     {
-      "kind": "fixed",
-      "price": 179.95,
-      "title": "Makita dhr243 boormachine + 5.0 accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444408311-makita-dhr243-boormachine-5-0-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 229.0,
-      "title": "Makita DHR243 18V SDS+ boorhamer + DX07 stofafzuiging",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449366110-makita-dhr243-18v-sds-boorhamer-dx07-stofafzuiging"
-     },
-     {
-      "kind": "bid",
-      "price": 239.99,
-      "title": "Makita DHR243 + Hepa Filter + 2 Accu's (2024)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445405951-makita-dhr243-hepa-filter-2-accu-s-2024"
-     },
-     {
-      "kind": "fixed",
-      "price": 285.0,
-      "title": "Makita DHR243 Boorhamer met stofafzuiging",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449803168-makita-dhr243-boorhamer-met-stofafzuiging"
-     },
-     {
-      "kind": "fixed",
-      "price": 299.99,
-      "title": "Makita DHR243 Combihamer 18V SDS-plus | Nette staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448101950-makita-dhr243-combihamer-18v-sds-plus-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 375.0,
-      "title": "Makita DHR243 18V Li-Ion Accu SDS-plus combihamer set nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1599373283-makita-dhr243-18v-li-ion-accu-sds-plus-combihamer-set-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 460.0,
-      "title": "Makita DHR243 18V SDS-plus combihamer met afzuiging accus",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1582937451-makita-dhr243-18v-sds-plus-combihamer-met-afzuiging-accus"
-     }
-    ],
-    "low": 139.99,
-    "median": 175.0,
-    "model": "DHR243",
-    "outliers": [],
-    "prices": [
-     5.0,
-     99.99,
-     120.0,
-     139.99,
-     139.99,
-     145.0,
-     149.99,
-     175.0,
-     179.95,
-     229.0,
-     239.99,
-     285.0,
-     299.99,
-     375.0,
-     460.0
-    ],
-    "query": "makita dhr243",
-    "search": "makita dhr243"
-   },
-   "v": 2
-  },
   "exact makita dhw080|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-13T04:32:24.544983+00:00",
    "est": null,
    "v": 2
   },
-  "exact makita djr186|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
+  "exact makita djr188|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 5,
-    "high": 255.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 2,
+    "high": 130.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "bid",
-      "price": 85.0,
-      "title": "Makita DJR186 Reciprozaag - Krachtige Accu Zaag repro",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2451157242-makita-djr186-reciprozaag-krachtige-accu-zaag-repro"
-     },
-     {
-      "kind": "fixed",
       "price": 130.0,
-      "title": "Makita DJR186Z 18V Li-Ion accu reciprozaag body - snelwissel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1538306816-makita-djr186z-18v-li-ion-accu-reciprozaag-body-snelwissel"
+      "title": "makita reciprozaag. DJR188",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2452167746-makita-reciprozaag-djr188"
      },
      {
       "kind": "bid",
-      "price": 229.99,
-      "title": "Makita DJR186 Reciprozaag 18v Incl: 1 Accu & Oplaadstation",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2446664611-makita-djr186-reciprozaag-18v-incl-1-accu-oplaadstation"
-     },
-     {
-      "kind": "bid",
-      "price": 240.0,
-      "title": "Makita Reciprozaag DJR186 met accu en lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2431424255-makita-reciprozaag-djr186-met-accu-en-lader"
-     },
-     {
-      "kind": "fixed",
-      "price": 270.0,
-      "title": "Makita DJR186 18V Li-Ion accu reciprozaag 2x accu lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1555596154-makita-djr186-18v-li-ion-accu-reciprozaag-2x-accu-lader"
+      "price": 130.0,
+      "title": "Makita DJR188 18V reciprozaag body – LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2451314716-makita-djr188-18v-reciprozaag-body-lxt"
      }
     ],
-    "low": 107.5,
-    "median": 229.99,
-    "model": "DJR186",
+    "low": 130.0,
+    "median": 130.0,
+    "model": "DJR188",
     "outliers": [],
     "prices": [
-     85.0,
      130.0,
-     229.99,
-     240.0,
-     270.0
+     130.0
     ],
-    "query": "makita djr186",
-    "search": "makita djr186"
+    "query": "makita djr188",
+    "search": "makita djr188"
    },
-   "v": 2
-  },
-  "exact makita djr188|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
-   "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita dlx2180tj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
    "est": null,
    "v": 4
   },
-  "exact makita dsc102|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+  "exact makita dmr110|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 3,
+    "high": 120.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Makita DMR110 Bouwradio DAB+ FM - Robuust en Draagbaar",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2440524897-makita-dmr110-bouwradio-dab-fm-robuust-en-draagbaar"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "DMR110N Makita bouwradio DAB+ FM",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2455880674-dmr110n-makita-bouwradio-dab-fm"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Nette Dmr110 Makita bouwradio radio Dab+",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2449575887-nette-dmr110-makita-bouwradio-radio-dab"
+     }
+    ],
+    "low": 90.0,
+    "median": 100.0,
+    "model": "DMR110",
+    "outliers": [],
+    "prices": [
+     90.0,
+     100.0,
+     120.0
+    ],
+    "query": "makita dmr110",
+    "search": "makita dmr110"
+   },
+   "v": 4
+  },
+  "exact makita dsc102|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": {
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 3,
     "high": 450.0,
     "kind": "exact",
@@ -8085,48 +6719,7 @@
     "query": "makita dsc102",
     "search": "makita dsc102"
    },
-   "v": 3
-  },
-  "exact makita dss501|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 3,
-    "high": 220.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 139.99,
-      "title": "Makita DSS501 Cirkelzaagmachine - Losse Body | ZGAN |",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2444359810-makita-dss501-cirkelzaagmachine-losse-body-zgan"
-     },
-     {
-      "kind": "bid",
-      "price": 180.0,
-      "title": "Makita Cirkelzaag LXT - DSS501ZJ",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2433414362-makita-cirkelzaag-lxt-dss501zj"
-     },
-     {
-      "kind": "fixed",
-      "price": 220.0,
-      "title": "Makita DSS501ZJ 18V LXT Accu Cirkelzaag in Mbox",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2445048207-makita-dss501zj-18v-lxt-accu-cirkelzaag-in-mbox"
-     }
-    ],
-    "low": 139.99,
-    "median": 180.0,
-    "model": "DSS501",
-    "outliers": [],
-    "prices": [
-     139.99,
-     180.0,
-     220.0
-    ],
-    "query": "makita dss501",
-    "search": "makita dss501"
-   },
-   "v": 2
+   "v": 4
   },
   "exact makita dss610|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -8293,20 +6886,97 @@
    },
    "v": 4
   },
-  "exact makita dtm51|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+  "exact makita dtd153|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 9,
-    "high": 170.0,
+    "high": 227.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "bid",
-      "price": 25.0,
-      "title": "Lege Makita Mbox DTM51ZJX3 koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2454507721-lege-makita-mbox-dtm51zjx3-koffer"
+      "price": 50.0,
+      "title": "Makita DTD153 18V LXT slagschroevendraaier",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2444558738-makita-dtd153-18v-lxt-slagschroevendraaier"
      },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "Makita DTD153 LXT 18V Slagschroevendraaier Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450753078-makita-dtd153-lxt-18v-slagschroevendraaier-body"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita DTD153 slag schroef machine 18v",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456290363-makita-dtd153-slag-schroef-machine-18v"
+     },
+     {
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Makita DTD153 slagschroevendraaier Incl accu 5,0Ah!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446323935-makita-dtd153-slagschroevendraaier-incl-accu-5-0ah"
+     },
+     {
+      "kind": "bid",
+      "price": 149.99,
+      "title": "Makita DTD153 Slagschroevendraaier + 5.0Ah en 2.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2455816942-makita-dtd153-slagschroevendraaier-5-0ah-en-2-0ah-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 199.0,
+      "title": "Makita DTD153 slagschroevendraaier met 5.0Ah accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453814079-makita-dtd153-slagschroevendraaier-met-5-0ah-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 219.0,
+      "title": "Nieuwe Makita DTD153 slagschroevendraaier set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446693563-nieuwe-makita-dtd153-slagschroevendraaier-set"
+     },
+     {
+      "kind": "fixed",
+      "price": 235.0,
+      "title": "Makita DTD153 Accu Slagmoersleutel met 2 Accu's en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451567021-makita-dtd153-accu-slagmoersleutel-met-2-accu-s-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 235.0,
+      "title": "Makita DTD153 18V Li-Ion accu slagschroevendraaier accus",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1977616518-makita-dtd153-18v-li-ion-accu-slagschroevendraaier-accus"
+     }
+    ],
+    "low": 67.5,
+    "median": 149.99,
+    "model": "DTD153",
+    "outliers": [],
+    "prices": [
+     50.0,
+     59.99,
+     75.0,
+     139.99,
+     149.99,
+     199.0,
+     219.0,
+     235.0,
+     235.0
+    ],
+    "query": "makita dtd153",
+    "search": "makita dtd153"
+   },
+   "v": 4
+  },
+  "exact makita dtm51|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": {
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 9,
+    "high": 225.0,
+    "kind": "exact",
+    "listings": [
      {
       "kind": "bid",
       "price": 50.0,
@@ -8329,7 +6999,7 @@
       "kind": "fixed",
       "price": 125.0,
       "title": "Makita DTM51Z 18V accu LXT Multitool Snelspanner li-ion Body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ventilatie-en-afzuiging/m2455322519-makita-dtm51z-18v-accu-lxt-multitool-snelspanner-li-ion-body"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/ventilatie-en-afzuiging/m2456440460-makita-dtm51z-18v-accu-lxt-multitool-snelspanner-li-ion-body"
      },
      {
       "kind": "fixed",
@@ -8351,17 +7021,22 @@
      },
      {
       "kind": "fixed",
+      "price": 250.0,
+      "title": "Makita DTM51ZJX3 Multitool met accu en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456388573-makita-dtm51zjx3-multitool-met-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
       "price": 275.0,
       "title": "Makita DTM51 18V Li-Ion Accu multitool snelwissel accus",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1977616082-makita-dtm51-18v-li-ion-accu-multitool-snelwissel-accus"
      }
     ],
-    "low": 72.5,
+    "low": 102.5,
     "median": 125.0,
     "model": "DTM51",
     "outliers": [],
     "prices": [
-     25.0,
      50.0,
      95.0,
      110.0,
@@ -8369,109 +7044,57 @@
      125.0,
      139.99,
      200.0,
+     250.0,
      275.0
     ],
     "query": "makita dtm51",
     "search": "makita dtm51"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita dtm52zjx2|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
    "est": null,
    "v": 4
   },
-  "exact makita dtm52|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
+  "exact makita dvc750l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 4,
-    "high": 285.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 2,
+    "high": 138.75,
     "kind": "exact",
     "listings": [
      {
       "kind": "bid",
-      "price": 9.95,
-      "title": "Makita DTM52 Stofafzuiging - Nieuw in verpakking",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449276824-makita-dtm52-stofafzuiging-nieuw-in-verpakking"
+      "price": 120.0,
+      "title": "Makita DVC750LZX1 Accu Stofzuiger met HEPA filter",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455642238-makita-dvc750lzx1-accu-stofzuiger-met-hepa-filter"
      },
      {
-      "kind": "fixed",
-      "price": 165.0,
-      "title": "Makita DTM52 18v accu multitool brushless starlock body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2439325307-makita-dtm52-18v-accu-multitool-brushless-starlock-body"
-     },
-     {
-      "kind": "fixed",
-      "price": 195.0,
-      "title": "Makita DTM52 18V multitool Starlock Max met Mbox en bladen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2447869073-makita-dtm52-18v-multitool-starlock-max-met-mbox-en-bladen"
-     },
-     {
-      "kind": "fixed",
-      "price": 315.0,
-      "title": "Makita DTM52 18V Li-ion accu multitool incl accus en lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2245715516-makita-dtm52-18v-li-ion-accu-multitool-incl-accus-en-lader"
+      "kind": "bid",
+      "price": 135.0,
+      "title": "Makita DVC750L 18v stofzuiger zgan",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456482510-makita-dvc750l-18v-stofzuiger-zgan"
      }
     ],
-    "low": 48.71,
-    "median": 180.0,
-    "model": "DTM52",
+    "low": 116.25,
+    "median": 127.5,
+    "model": "DVC750L",
     "outliers": [],
     "prices": [
-     9.95,
-     165.0,
-     195.0,
-     315.0
+     120.0,
+     135.0
     ],
-    "query": "makita dtm52",
-    "search": "makita dtm52"
+    "query": "makita dvc750l",
+    "search": "makita dvc750l"
    },
-   "v": 2
-  },
-  "exact makita dub185|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 2,
-    "high": 63.33,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 6.99,
-      "title": "Makita dub 185 / 186 opzetstukken",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2432297728-makita-dub-185-186-opzetstukken"
-     },
-     {
-      "kind": "fixed",
-      "price": 52.06,
-      "title": "Makita DUB185Z - Accu Blazer - 18V - Zonder Accu's &",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2446515886-makita-dub185z-accu-blazer-18v-zonder-accu-s-amp"
-     }
-    ],
-    "low": -4.28,
-    "median": 29.53,
-    "model": "DUB185",
-    "outliers": [],
-    "prices": [
-     6.99,
-     52.06
-    ],
-    "query": "makita dub185",
-    "search": "makita dub185"
-   },
-   "v": 2
-  },
-  "exact makita dvc750l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
-   "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita dx01|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
     "count": 3,
     "high": 80.0,
     "kind": "exact",
@@ -8507,17 +7130,17 @@
     "query": "makita dx01",
     "search": "makita dx01"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita ek12032cfm|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita ga50303r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita ga5030r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -8566,18 +7189,24 @@
    "v": 4
   },
   "exact makita ga5040r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita hp2051f|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 6,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 7,
     "high": 100.0,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita HP2051F Klopboormachine 720W met LED-lamp",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456009669-makita-hp2051f-klopboormachine-720w-met-led-lamp"
+     },
      {
       "kind": "fixed",
       "price": 50.0,
@@ -8615,11 +7244,12 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443002186-makita-hp2051f-klopboormachine-720w-met-koffer"
      }
     ],
-    "low": 56.75,
-    "median": 95.0,
+    "low": 50.0,
+    "median": 90.0,
     "model": "HP2051F",
     "outliers": [],
     "prices": [
+     35.0,
      50.0,
      59.0,
      90.0,
@@ -8630,27 +7260,21 @@
     "query": "makita hp2051f",
     "search": "makita hp2051f"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita hr218f|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita hr2460|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 5,
-    "high": 135.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 4,
+    "high": 137.5,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita HR2460  SDS Boorhamer - Gebruikt maar functioneel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454107278-makita-hr2460-sds-boorhamer-gebruikt-maar-functioneel"
-     },
      {
       "kind": "bid",
       "price": 90.0,
@@ -8676,12 +7300,11 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2430266680-makita-hr2460-sds-boorhamer-krachtig-en-betrouwbaar"
      }
     ],
-    "low": 70.0,
-    "median": 110.0,
+    "low": 95.0,
+    "median": 120.0,
     "model": "HR2460",
     "outliers": [],
     "prices": [
-     50.0,
      90.0,
      110.0,
      129.99,
@@ -8690,7 +7313,7 @@
     "query": "makita hr2460",
     "search": "makita hr2460"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita hr28111ft|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -8698,9 +7321,9 @@
    "v": 4
   },
   "exact makita hr4013c|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact makita jr3050t|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-12T04:31:44.405458+00:00",
@@ -8835,19 +7458,13 @@
    "v": 3
   },
   "exact makita ls1018l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-21T04:40:00.127260+00:00",
-    "count": 6,
-    "high": 450.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 4,
+    "high": 437.5,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Makita LS1018L Afkortzaag - Krachtig en Nauwkeurig",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455024395-makita-ls1018l-afkortzaag-krachtig-en-nauwkeurig"
-     },
      {
       "kind": "fixed",
       "price": 245.0,
@@ -8871,30 +7488,22 @@
       "price": 450.0,
       "title": "Makita LS1018L Radiaalafkortzaag + WST06 Onderstel",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2453723337-makita-ls1018l-radiaalafkortzaag-wst06-onderstel"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Makita LS1018L Afkortzaag - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455546598-makita-ls1018l-afkortzaag-zo-goed-als-nieuw"
      }
     ],
-    "low": 227.5,
+    "low": 258.75,
     "median": 350.0,
     "model": "LS1018L",
     "outliers": [],
     "prices": [
-     175.0,
      245.0,
      299.99,
      400.0,
-     450.0,
      450.0
     ],
     "query": "makita ls1018l",
     "search": "makita ls1018l"
    },
-   "v": 3
+   "v": 4
   },
   "exact makita makitadvc862l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -9142,9 +7751,9 @@
    "v": 2
   },
   "exact metabo sted70quick|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "exact metabo ula 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-14T04:42:39.335649+00:00",
@@ -9160,258 +7769,6 @@
    "at": "2026-10-22T04:39:55.562897+00:00",
    "est": null,
    "v": 4
-  },
-  "exact milwaukee m12|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 47,
-    "high": 175.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 3.99,
-      "title": "Milwaukee M12 Accuhouder",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2438862061-milwaukee-m12-accuhouder"
-     },
-     {
-      "kind": "fixed",
-      "price": 15.0,
-      "title": "Milwaukee M12 BLP-0X Koffer - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2450477373-milwaukee-m12-blp-0x-koffer-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 17.95,
-      "title": "Milwaukee Koffer FUEL voor M18 of  M12",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1496864500-milwaukee-koffer-fuel-voor-m18-of-m12"
-     },
-     {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "Milwaukee Accu Lader M12 C12 C",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2446843856-milwaukee-accu-lader-m12-c12-c"
-     },
-     {
-      "kind": "fixed",
-      "price": 24.95,
-      "title": "Milwaukee M12 accu 12V 2-4Ah - 2000mAh",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529990153-milwaukee-m12-accu-12v-2-4ah-2000mah"
-     },
-     {
-      "kind": "fixed",
-      "price": 35.0,
-      "title": "Milwaukee Packout Insert voor M12 CLLP & M12 CLL4P laser",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2439116961-milwaukee-packout-insert-voor-m12-cllp-m12-cll4p-laser"
-     },
-     {
-      "kind": "fixed",
-      "price": 35.0,
-      "title": "Milwaukee M12 Oplader in Tas - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448089881-milwaukee-m12-oplader-in-tas-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 35.0,
-      "title": "Milwaukee M12-18FC Snellader voor accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2450678214-milwaukee-m12-18fc-snellader-voor-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Milwaukee M12 Acculader en Koffer (exclusief machine)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449538857-milwaukee-m12-acculader-en-koffer-exclusief-machine"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Milwaukee M12-18C Acculader - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447826390-milwaukee-m12-18c-acculader-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 38.95,
-      "title": "Milwaukee C12 C oplader voor M12 accus Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/a1531828392-milwaukee-c12-c-oplader-voor-m12-accus-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "milwaukee m12 accu nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2451342978-milwaukee-m12-accu-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Milwaukee M12 4.0Ah REDLITHIUM Accu - Nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2447820169-milwaukee-m12-4-0ah-redlithium-accu-nieuw-in-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Milwaukee M12-18FC Rapid Charger - Nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2447461937-milwaukee-m12-18fc-rapid-charger-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Milwaukee M12 REDLITHIUM 4.0 Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437661014-milwaukee-m12-redlithium-4-0-ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Milwaukee m12 accu nieuw in doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2449185155-milwaukee-m12-accu-nieuw-in-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 45.0,
-      "title": "Milwaukee Packout Insert voor M12 Multitool M12 FMT-0",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschapskisten/m2306977001-milwaukee-packout-insert-voor-m12-multitool-m12-fmt-0"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.5,
-      "title": "Milwaukee M12 B3 Red Lithium / 4932451388 accu, origineel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1526942514-milwaukee-m12-b3-red-lithium-4932451388-accu-origineel"
-     },
-     {
-      "kind": "fixed",
-      "price": 49.99,
-      "title": "Milwaukee M12-18 FC 12V-18V Li-Ion Accu Snellader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1529754820-milwaukee-m12-18-fc-12v-18v-li-ion-accu-snellader"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Milwaukee M12 UDEL Stofafzuiging - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448017519-milwaukee-m12-udel-stofafzuiging-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Milwaukee m12 acculader en accu nieuw in koffer",
-      "url": "https://www.marktplaats.nl/v/auto-diversen/autogereedschap/m2445998534-milwaukee-m12-acculader-en-accu-nieuw-in-koffer"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Milwaukee M12-18FC    accu M-14",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2450400483-milwaukee-m12-18fc-accu-m-14"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "2x Milwaukee M12 2,5 Ah accu’s + Milwaukee C12 C oplader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451378383-2x-milwaukee-m12-2-5-ah-accu-s-milwaukee-c12-c-oplader"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "Milwaukee M12 SPEJSG2 Accu Bluetooth Speaker",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445643681-milwaukee-m12-spejsg2-accu-bluetooth-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "Milwaukee M12-18FC Snellader met M12 4.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2437660524-milwaukee-m12-18fc-snellader-met-m12-4-0ah-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Milwaukee M12 C4 12V Li-Ion Accu Multilader - 4 accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2450155991-milwaukee-m12-c4-12v-li-ion-accu-multilader-4-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Milwaukee M12 Multitool met oplader en tas",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2448878247-milwaukee-m12-multitool-met-oplader-en-tas"
-     },
-     {
-      "kind": "fixed",
-      "price": 120.0,
-      "title": "Milwaukee M12 Verwarmde Jassen - Nieuw in Doos",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/overige-herenkleding/m2449172016-milwaukee-m12-verwarmde-jassen-nieuw-in-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 129.99,
-      "title": "Milwaukee M12 BPD met accu 4.0 M12  - Nette Staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450175410-milwaukee-m12-bpd-met-accu-4-0-m12-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Milwaukee Stofafzuigset 12V M12DE-201 In Koffer",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/a1531160454-milwaukee-stofafzuigset-12v-m12de-201-in-koffer"
-     }
-    ],
-    "low": 40.0,
-    "median": 85.0,
-    "model": "M12",
-    "outliers": [],
-    "prices": [
-     3.99,
-     15.0,
-     17.95,
-     20.0,
-     24.95,
-     35.0,
-     35.0,
-     35.0,
-     35.0,
-     35.0,
-     38.95,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     45.0,
-     45.0,
-     49.5,
-     49.99,
-     50.0,
-     50.0,
-     50.0,
-     75.0,
-     85.0,
-     95.0,
-     100.0,
-     100.0,
-     120.0,
-     129.99,
-     149.99,
-     150.0,
-     150.0,
-     155.0,
-     169.0,
-     169.99,
-     175.0,
-     180.0,
-     185.0,
-     192.0,
-     200.0,
-     233.0,
-     245.99,
-     250.0,
-     260.0,
-     275.0,
-     275.0,
-     320.0
-    ],
-    "query": "milwaukee m12",
-    "search": "milwaukee m12"
-   },
-   "v": 2
-  },
-  "exact milwaukee m1418c6|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
   },
   "exact milwaukee m18 gg|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -10190,16 +8547,6 @@
     "search": "samsung np750xgj"
    },
    "v": 4
-  },
-  "exact samsung om55n|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
-  },
-  "exact samsung qm65r|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
   },
   "exact terra 1513a 4gb|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-10-13T04:32:24.544983+00:00",
@@ -11439,14 +9786,14 @@
    "v": 2
   },
   "general bosch professional slagschroevendraaier accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "general bosch professional slagschroevendraaier gdr li 18v|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-21T04:40:00.127260+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "general colbert bladzuiger flymo twister|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-10-20T04:39:13.021990+00:00",
@@ -14666,9 +13013,9 @@
    "v": 4
   },
   "general koffiemachine kantinegerief waaronder kast|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "general koffiemachine pavoni inox|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -16858,193 +15205,6 @@
    },
    "v": 2
   },
-  "general makita accu boormachine|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 14,
-    "high": 115.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Makita koffer met boormachine, lader en 2 accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449532279-makita-koffer-met-boormachine-lader-en-2-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Makita Schroef/Boormachine met Accu en Lader 6271D",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451018527-makita-schroef-boormachine-met-accu-en-lader-6271d"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Makita 6270D Boormachine met Oplader en Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450450493-makita-6270d-boormachine-met-oplader-en-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "Makita Boormachines 14.4v li-on met accu's (geen oplader)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451035409-makita-boormachines-14-4v-li-on-met-accu-s-geen-oplader"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Makita Boormachine 6317D met lader en 2 accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448236370-makita-boormachine-6317d-met-lader-en-2-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita Boormachine DDF343 met Lader en Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449225901-makita-boormachine-ddf343-met-lader-en-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita 12V Boormachine met 3 Accu's en Koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2447505232-makita-12v-boormachine-met-3-accu-s-en-koffer"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "Makita accu boormachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450841919-makita-accu-boormachine"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Makita accu boormachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450730116-makita-accu-boormachine"
-     },
-     {
-      "kind": "bid",
-      "price": 105.0,
-      "title": "Makita DF457D 18V accu-boormachine – 2 accu’s + lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450966119-makita-df457d-18v-accu-boormachine-2-accu-s-lader"
-     },
-     {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Makita 14.4V Boormachine met 3 goede accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450868189-makita-14-4v-boormachine-met-3-goede-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 130.0,
-      "title": "accu schroef boormachine en slagschroefmachine makita",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449686361-accu-schroef-boormachine-en-slagschroefmachine-makita"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "Makita DF001G 40V Max Li-Ion accu schroef-/boormachine Body",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1527066982-makita-df001g-40v-max-li-ion-accu-schroef-boormachine-body"
-     },
-     {
-      "kind": "fixed",
-      "price": 218.95,
-      "title": "MAKITA 18V ACCU KLOPBOOR DHR243Z SDS+ Lxt KLOP- BOORMACHINE",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450951802-makita-18v-accu-klopboor-dhr243z-sds-lxt-klop-boormachine"
-     }
-    ],
-    "low": 28.75,
-    "median": 80.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     25.0,
-     25.0,
-     25.0,
-     30.0,
-     30.0,
-     60.0,
-     75.0,
-     85.0,
-     100.0,
-     105.0,
-     110.0,
-     130.0,
-     149.99,
-     218.95
-    ],
-    "query": "makita accu boormachine",
-    "search": "makita accu boormachine"
-   },
-   "v": 2
-  },
-  "general makita accu decoupeerzaagmachine|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": {
-    "as_of": "2026-10-09T04:29:54.534939+00:00",
-    "count": 7,
-    "high": 169.99,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Makita Mbox 2 Inlay voor Accu Decoupeerzaag (DJV180/140)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2434745841-makita-mbox-2-inlay-voor-accu-decoupeerzaag-djv180-140"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita accu decoupeerzaag. Weinig gebruikt.",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2449939978-makita-accu-decoupeerzaag-weinig-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita body accu decoupeerzaag JV143D",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2445254904-makita-body-accu-decoupeerzaag-jv143d"
-     },
-     {
-      "kind": "bid",
-      "price": 129.95,
-      "title": "Makita Decoupeerzaag + Accu schroeftol | DF457D | 413426",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2448125356-makita-decoupeerzaag-accu-schroeftol-df457d-413426"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Makita DJV182 Accu Decoupeerzaag - Zonder Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2437339104-makita-djv182-accu-decoupeerzaag-zonder-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 169.99,
-      "title": "Makita DJV 181 Incl 5.0Ah accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2447701384-makita-djv-181-incl-5-0ah-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 220.0,
-      "title": "EX DEMO Makita DJV182ZJ – 18V accu decoupeerzaag",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2448140482-ex-demo-makita-djv182zj-18v-accu-decoupeerzaag"
-     }
-    ],
-    "low": 40.0,
-    "median": 129.95,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     15.0,
-     40.0,
-     60.0,
-     129.95,
-     150.0,
-     169.99,
-     220.0
-    ],
-    "query": "makita accu",
-    "search": "makita accu"
-   },
-   "v": 2
-  },
   "general makita accu haakse slijper|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-15T04:39:34.459512+00:00",
    "est": {
@@ -18008,10 +16168,253 @@
    },
    "v": 4
   },
+  "general makita haakse slijper|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": {
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 41,
+    "high": 142.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 15.0,
+      "title": "Makita Zijhandgreep voor Boormachine/Haakse Slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2455776274-makita-zijhandgreep-voor-boormachine-haakse-slijper"
+     },
+     {
+      "kind": "bid",
+      "price": 24.0,
+      "title": "Makita 9515B Haakse Slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2454147705-makita-9515b-haakse-slijper"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Makita BGA452 Haakse Slijper 115mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2452159817-makita-bga452-haakse-slijper-115mm"
+     },
+     {
+      "kind": "bid",
+      "price": 45.0,
+      "title": "Makita haakse slijper 9558NB gebruikt, in goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2433824040-makita-haakse-slijper-9558nb-gebruikt-in-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita 9607NB haakse slijper 180 mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453640109-makita-9607nb-haakse-slijper-180-mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita 9015B Haakse slijper - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451256967-makita-9015b-haakse-slijper-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita Haakse Slijper GA9030S - Krachtig en Betrouwbaar",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451960661-makita-haakse-slijper-ga9030s-krachtig-en-betrouwbaar"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita GA7000 Haakse Slijper 2300 Watt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450492114-makita-ga7000-haakse-slijper-2300-watt"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Makita 9558HNR Haakse Slijper - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450986599-makita-9558hnr-haakse-slijper-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "Makita haakse slijper 9079s",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453877074-makita-haakse-slijper-9079s"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Makita Haakse Slijper - 9607HB",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2430720691-makita-haakse-slijper-9607hb"
+     },
+     {
+      "kind": "fixed",
+      "price": 69.99,
+      "title": "Makita 9558HNRGK2 Haakse Slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451633512-makita-9558hnrgk2-haakse-slijper"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Makita GA9012C Haakse Slijper 230 mm – 2000W",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456437133-makita-ga9012c-haakse-slijper-230-mm-2000w"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Makita GA5040C Haakse Slijper 125mm 1400W",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453796546-makita-ga5040c-haakse-slijper-125mm-1400w"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Makita GA9050 Haakse Slijper 2000W",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447664105-makita-ga9050-haakse-slijper-2000w"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Gebruikte haakse slijper - Makita",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451034576-gebruikte-haakse-slijper-makita"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "180mm Haakse slijper Makita 9607NB",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2432647777-180mm-haakse-slijper-makita-9607nb"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita 9558HNRGK2 Haakse Slijper in Koffer gloednieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2418637834-makita-9558hnrgk2-haakse-slijper-in-koffer-gloednieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "haakse slijper makita 230 mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453442286-haakse-slijper-makita-230-mm"
+     },
+     {
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Nieuwe Makita GA9010C Haakse Slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450483642-nieuwe-makita-ga9010c-haakse-slijper"
+     },
+     {
+      "kind": "fixed",
+      "price": 99.95,
+      "title": "Makita GA5041R Haakse Slijper | BJ 2021 - Netjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2455208542-makita-ga5041r-haakse-slijper-bj-2021-netjes"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Makita Haakse Slijper 2000W - Model 9069",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2454707984-makita-haakse-slijper-2000w-model-9069"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "makita haakse slijper XGT 40v in goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451836537-makita-haakse-slijper-xgt-40v-in-goede-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Makita Haakse Slijper - Gebruikt maar in goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2452012076-makita-haakse-slijper-gebruikt-maar-in-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 105.0,
+      "title": "Nieuwe Makita 9558HNRGK2 haakse slijper 750W 125mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451023997-nieuwe-makita-9558hnrgk2-haakse-slijper-750w-125mm"
+     },
+     {
+      "kind": "fixed",
+      "price": 110.0,
+      "title": "Makita DGA504 18V LXT Haakse Slijper 125mm + 5.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2454893463-makita-dga504-18v-lxt-haakse-slijper-125mm-5-0ah-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.0,
+      "title": "MAKITA 18V HAAKSE SLIJPER DGA504ZJ 125mm BRUSHLESS SLIJPTOL",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456669021-makita-18v-haakse-slijper-dga504zj-125mm-brushless-slijptol"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.95,
+      "title": "Makita GA5041C Haakse Slijper | BJ 2024 - Netjes",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2455208535-makita-ga5041c-haakse-slijper-bj-2024-netjes"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Makita DGA504 Haakse Slijper met Accu en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456633133-makita-dga504-haakse-slijper-met-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Makita DGA404 Type II 18V LXT – Haakse Slijper",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450492228-makita-dga404-type-ii-18v-lxt-haakse-slijper"
+     }
+    ],
+    "low": 65.0,
+    "median": 99.95,
+    "model": null,
+    "outliers": [
+     350.0
+    ],
+    "prices": [
+     15.0,
+     24.0,
+     45.0,
+     45.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     60.0,
+     65.0,
+     65.0,
+     69.99,
+     70.0,
+     70.0,
+     70.0,
+     70.0,
+     75.0,
+     80.0,
+     90.0,
+     99.0,
+     99.95,
+     100.0,
+     100.0,
+     100.0,
+     105.0,
+     110.0,
+     119.0,
+     119.95,
+     125.0,
+     130.0,
+     135.0,
+     149.99,
+     150.0,
+     150.0,
+     170.0,
+     175.0,
+     185.0,
+     189.95,
+     199.0,
+     200.0,
+     235.0
+    ],
+    "query": "makita haakse slijper",
+    "search": "makita haakse slijper"
+   },
+   "v": 4
+  },
   "general makita koppen accu perstang|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 3
+   "v": 4
   },
   "general makita lege gereedschapsboxen|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-19T04:42:12.193403+00:00",
@@ -18137,6 +16540,140 @@
    "at": "2026-10-21T04:40:00.127260+00:00",
    "est": null,
    "v": 3
+  },
+  "general makita schroefboormachine accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": {
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 16,
+    "high": 142.49,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 20.0,
+      "title": "Makita Schroefboormachine met accu's en oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446616410-makita-schroefboormachine-met-accu-s-en-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "makita accu schroefboormachine 12 volt [ geen lader ]",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455800390-makita-accu-schroefboormachine-12-volt-geen-lader"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "Makita Accu Schroefboormachine 6261D met 4 Ni-MH Accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450881323-makita-accu-schroefboormachine-6261d-met-4-ni-mh-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DHP482 18v accu schroefboormachine body",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2453491833-makita-dhp482-18v-accu-schroefboormachine-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita accu schroefboormachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454756248-makita-accu-schroefboormachine"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Makita DDF470 14,4V Schroefboormachine met Accu en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441762336-makita-ddf470-14-4v-schroefboormachine-met-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 59.99,
+      "title": "Makita DDF484 Accu Schroefboormachine | Incl. Garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454549689-makita-ddf484-accu-schroefboormachine-incl-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 60.0,
+      "title": "makita accu schroefboormachine 18V",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2441150062-makita-accu-schroefboormachine-18v"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
+      "price": 87.5,
+      "title": "2x Makita DDF470 14.4v accu schroefboormachine set",
+      "total": 175.0,
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450888217-2x-makita-ddf470-14-4v-accu-schroefboormachine-set"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Makita DHP484Z - Accu Klop-/Schroefboormachine 18V - Losse",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/a1512150881-makita-dhp484z-accu-klop-schroefboormachine-18v-losse"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "Makita schroefboormachine inclusief lader en 2 accu’s",
+      "url": "https://www.marktplaats.nl/v/watersport-en-boten/hengelsport-vliegvissen/m2432750014-makita-schroefboormachine-inclusief-lader-en-2-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.99,
+      "title": "Makita BDF343 schroefboormachine 2 x Accu & DC18D oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453614605-makita-bdf343-schroefboormachine-2-x-accu-dc18d-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Makita DDF482 Accu-Schroefboormachine Zwart | Nette staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450665873-makita-ddf482-accu-schroefboormachine-zwart-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "makita schroefboormachine met accu en lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453339528-makita-schroefboormachine-met-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 155.0,
+      "title": "Makita DF332DSAJ Accu Schroefboormachine 10.8V met 2 accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453534779-makita-df332dsaj-accu-schroefboormachine-10-8v-met-2-accu-s"
+     },
+     {
+      "kind": "fixed",
+      "price": 190.0,
+      "title": "Makita Accu Schroefboormachine DDF481 18V 5.0Ah met lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2438282987-makita-accu-schroefboormachine-ddf481-18v-5-0ah-met-lader"
+     }
+    ],
+    "low": 50.0,
+    "median": 73.75,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     20.0,
+     25.0,
+     35.0,
+     50.0,
+     50.0,
+     50.0,
+     59.99,
+     60.0,
+     87.5,
+     89.99,
+     110.0,
+     119.99,
+     149.99,
+     150.0,
+     155.0,
+     190.0
+    ],
+    "query": "makita schroefboormachine accu",
+    "search": "makita schroefboormachine accu"
+   },
+   "v": 4
   },
   "general makita slagschroevendraaier boormachine accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -19384,16 +17921,6 @@
     "search": "milwaukee klopboormachine"
    },
    "v": 4
-  },
-  "general milwaukee onderstel msl 2000|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
-  },
-  "general milwaukee opzet bovenfrees|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-09T04:29:54.534939+00:00",
-   "est": null,
-   "v": 2
   },
   "general monitor acer speakers toetsenbord muis|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -21567,24 +20094,18 @@
    "v": 3
   },
   "general plant keramieken potten paar|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-20T04:39:13.021990+00:00",
+   "at": "2026-10-23T04:39:33.788701+00:00",
    "est": {
-    "as_of": "2026-10-20T04:39:13.021990+00:00",
-    "count": 5,
-    "high": 127.0,
+    "as_of": "2026-10-23T04:39:33.788701+00:00",
+    "count": 4,
+    "high": 144.25,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 3.0,
-      "title": "keramieken planten pot",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2438115662-keramieken-planten-pot"
-     },
-     {
-      "kind": "bid",
-      "price": 4.0,
-      "title": "Set van glazen stekvaas en witte keramieken plantenpot",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2453763072-set-van-glazen-stekvaas-en-witte-keramieken-plantenpot"
+      "price": 2.0,
+      "title": "Zelf gemaakt en geschilderd keramieken planten pot.",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2456237297-zelf-gemaakt-en-geschilderd-keramieken-planten-pot"
      },
      {
       "kind": "fixed",
@@ -21593,10 +20114,10 @@
       "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2453399915-2-grote-beige-keramieken-bloempotten-inclusief-planten"
      },
      {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "Vintage Keramieken Olifantenkruk / Plantentafel",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2452854315-vintage-keramieken-olifantenkruk-plantentafel"
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Monstera plant met witte keramieken pot 218 cm",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2455708866-monstera-plant-met-witte-keramieken-pot-218-cm"
      },
      {
       "kind": "bid",
@@ -21605,21 +20126,20 @@
       "url": "https://www.marktplaats.nl/v/verzamelen/beelden-en-beeldjes/m2435894040-vintage-xl-keramieken-olifanten-plantentafel-70"
      }
     ],
-    "low": 3.5,
-    "median": 85.0,
+    "low": 22.75,
+    "median": 92.5,
     "model": null,
     "outliers": [],
     "prices": [
-     3.0,
-     4.0,
+     2.0,
      85.0,
-     95.0,
+     100.0,
      159.0
     ],
     "query": "plant keramieken",
     "search": "plant keramieken"
    },
-   "v": 3
+   "v": 4
   },
   "general plant kubuskast afmeting bert|kunstbloemen,kunstboom,kunstplant": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -24295,6 +22815,11 @@
    "est": null,
    "v": 3
   },
+  "general smartphone v2 foldable honor magic|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
+   "at": "2026-10-23T04:39:33.788701+00:00",
+   "est": null,
+   "v": 4
+  },
   "general smartphone v5 foldable honor magic|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
    "at": "2026-10-22T04:39:55.562897+00:00",
    "est": null,
@@ -25431,26 +23956,6 @@
    "closes": "2026-10-21T18:26:04+00:00",
    "first": "2026-10-09T15:59:42.336388+00:00"
   },
-  "onlineveilingmeester:1906235": {
-   "closes": "2026-10-19T17:56:36+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1906249": {
-   "closes": "2026-10-19T17:59:36+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1906258": {
-   "closes": "2026-10-19T18:01:36+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1906259": {
-   "closes": "2026-10-19T18:01:36+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1907674": {
-   "closes": "2026-10-19T17:59:54+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
   "onlineveilingmeester:1908373": {
    "closes": "2026-10-22T17:47:00+00:00",
    "first": "2026-10-09T15:59:42.336388+00:00"
@@ -25863,6 +24368,18 @@
    "closes": "2026-11-03T18:17:00+00:00",
    "first": "2026-10-20T04:39:13.021990+00:00"
   },
+  "openbareverkopen:757648": {
+   "closes": "2026-11-05T18:03:00+00:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
+  "openbareverkopen:757679": {
+   "closes": "2026-11-05T18:10:00+00:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
+  "openbareverkopen:757680": {
+   "closes": "2026-11-05T18:10:00+00:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
   "plaatsjebod:59951": {
    "closes": "2026-10-26T20:10:00+01:00",
    "first": "2026-10-02T06:58:21.638896+00:00"
@@ -25898,14 +24415,6 @@
   "plaatsjebod:60098": {
    "closes": "2026-11-04T20:13:00+01:00",
    "first": "2026-10-02T19:29:00.998979+00:00"
-  },
-  "plaatsjebod:60356": {
-   "closes": "2026-10-19T20:41:00+02:00",
-   "first": "2026-10-17T04:38:37.196269+00:00"
-  },
-  "plaatsjebod:60359": {
-   "closes": "2026-10-19T20:41:00+02:00",
-   "first": "2026-10-17T04:38:37.196269+00:00"
   },
   "plaatsjebod:60422": {
    "closes": "2026-11-09T20:17:00+01:00",
@@ -26179,6 +24688,10 @@
    "closes": "2026-10-22T14:03:00+02:00",
    "first": "2026-10-22T04:39:55.562897+00:00"
   },
+  "troostwijk:A1-49889-511": {
+   "closes": "2026-10-23T10:09:00+02:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
   "troostwijk:A1-50252-117": {
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
@@ -26295,6 +24808,22 @@
    "closes": null,
    "first": "2026-10-09T04:29:54.534939+00:00"
   },
+  "troostwijk:A1-50777-1083": {
+   "closes": "2026-10-23T10:12:00+02:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
+  "troostwijk:A1-50777-1191": {
+   "closes": "2026-10-23T10:12:00+02:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
+  "troostwijk:A1-50777-1192": {
+   "closes": "2026-10-23T10:12:00+02:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
+  "troostwijk:A1-50777-1196": {
+   "closes": "2026-10-23T10:12:00+02:00",
+   "first": "2026-10-23T04:39:33.788701+00:00"
+  },
   "troostwijk:A1-50800-8": {
    "closes": null,
    "first": "2026-10-20T04:39:13.021990+00:00"
@@ -26329,17 +24858,15 @@
   "onlineveilingmeester": {},
   "openbareverkopen": {
    "bankrupt": {
-    "5106": true,
     "5134": false,
     "5146": true,
     "5148": false,
     "5153": false,
-    "5178": true,
     "5180": false,
     "5181": true,
     "5182": true,
     "5183": true,
-    "5187": false,
+    "5189": false,
     "5190": false,
     "5191": true,
     "5192": true,
@@ -26366,7 +24893,10 @@
     "5223": false,
     "5225": false,
     "5226": false,
-    "5227": true
+    "5227": true,
+    "5230": true,
+    "5232": true,
+    "5233": false
    }
   },
   "plaatsjebod": {},
@@ -27782,123 +26312,6 @@
     "title": "Vorkheftruck Ongebruikt",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40513-90"
    },
-   "A1-41460-1": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 10000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/14944c89-f314-4d08-9d79-db2ef25fef5f/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "25 x 60 meter (1500m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-1"
-   },
-   "A1-41460-10": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/5324e632-3851-46eb-89d7-18f56867851c/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "15 x 55 meter (825m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-10"
-   },
-   "A1-41460-11": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/31f92f2b-217c-4ee5-9efe-85d1b1fac202/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "14.80 x 40.00 meter (592m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-11"
-   },
-   "A1-41460-2": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 7500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/5f1e7db4-c246-4e39-915d-c6d27970760d/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "25 x 40 meter (1000m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-2"
-   },
-   "A1-41460-3": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 7500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/3e3fb214-ae1d-458e-b51b-97c008ee25f9/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "22 x 50 meter (1100m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-3"
-   },
-   "A1-41460-4": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/c1fe455c-740b-45a7-818b-96651ce0b35b/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "20 x 41 meter (820m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-4"
-   },
-   "A1-41460-5": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 4000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/b3006747-0857-471e-b51d-bd7adb9fe678/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "15 x 30 meter (450m2)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-5"
-   },
-   "A1-41460-6": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 4000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/111f3076-7493-4cb6-b602-8c02c308f687/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "30 meter (450m2) - 2026",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-6"
-   },
-   "A1-41460-8": {
-    "auction": "Staalconstructies en bedrijfshallen",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-09T15:59:42.336388+00:00",
-    "image": "https://media.tbauctions.com/image-media/0c553986-29bf-4cca-bdc6-ae876e6e1810/file",
-    "location": "'s-gravenzande",
-    "mail": "2026-10-09T11:03:23+00:00",
-    "seen": "2026-10-18T04:38:49.118783+00:00",
-    "title": "Staalconstructie 14 x",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-41460-8"
-   },
    "A1-42437-1": {
     "auction": "Bouwmachines, hoogwerkers, heftrucks en gereedschappen",
     "bankrupt": false,
@@ -28250,123 +26663,6 @@
     "title": "2131AC4 - CNC-freesmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47366-95"
    },
-   "A1-47393-1": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 7500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/ddd2a348-049b-4e34-a62d-2b6a742de263/file",
-    "location": "Oldebroek",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "2012 Hardi Alpha",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-1"
-   },
-   "A1-47393-104": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/f280c93d-4708-416e-b51d-20a2d5d220c6/file",
-    "location": "Aalten",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "2011 Terranova W 1250",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-104"
-   },
-   "A1-47393-106": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/004cee06-52cc-4f4e-b571-f2e65c52043e/file",
-    "location": "Ijselmuiden",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "Vierwielaangedreven landbouwtractor",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-106"
-   },
-   "A1-47393-11": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/c3a9d22a-eea3-442b-8631-ba68f525ae56/file",
-    "location": "Neede",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "556 Shovel - Wiellader",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-11"
-   },
-   "A1-47393-124": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 3500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/818aaa5d-616d-4393-aeab-c3cf5ddf49d5/file",
-    "location": "Berkenwoude",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "- Vierwielaangedreven landbouwtractor",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-124"
-   },
-   "A1-47393-2": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 10000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/1aaa23c8-68f0-47d6-ade3-e707deff5231/file",
-    "location": "Zeewolde",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "6003 lasermarker voor groente en fruit",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-2"
-   },
-   "A1-47393-22": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/7813409e-0931-44cc-bf53-1a10567d41db/file",
-    "location": "Weert",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "6810 PowerQuad 4WD landbouwtractor met Mailleux MX120 voorlader – 125 pk",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-22"
-   },
-   "A1-47393-24": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/f2ece4dd-d079-4ac8-a1c4-448c4efd7ded/file",
-    "location": "Grashoek",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "minigraver – 2023 – 735 uur – CW05 – High/Low Flow – 3 bakken",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-24"
-   },
-   "A1-47393-3": {
-    "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
-    "bankrupt": false,
-    "bid": 7500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-13T04:32:24.544983+00:00",
-    "image": "https://media.tbauctions.com/image-media/bbeef6f0-be5c-468b-aea3-6e9859ee9625/file",
-    "location": "Grashoek",
-    "mail": "2026-10-12T15:03:26+00:00",
-    "seen": "2026-10-20T04:39:13.021990+00:00",
-    "title": "Quantum 100N 4WD tractor – 100 pk – 301 uur",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47393-3"
-   },
    "A1-47394-1": {
     "auction": "Verzamelveiling agrarisch-, groen-, grond-, weg-, water- en transportmaterieel",
     "bankrupt": false,
@@ -28484,123 +26780,6 @@
     "title": "Rupsgraafmachine met Hommelink Boormast 4m",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47394-9"
    },
-   "A1-47420-1": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/ec9bbb13-8389-44e1-ab8c-c4bfd3fb9a41/file",
-    "location": "Ospel",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "2010 Daf CF 75.319",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-1"
-   },
-   "A1-47420-12": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/48a935c3-012f-4bf8-97e1-5cf6a24a5c84/file",
-    "location": "Weurt",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "2019 Scania R450",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-12"
-   },
-   "A1-47420-17": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 7500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/6fb0f0b8-b3f0-462b-83f1-fc7f274193a5/file",
-    "location": "Joure",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Sunlight A72 Camper",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-17"
-   },
-   "A1-47420-19": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/a0fd2c6f-f772-4263-9a33-70a4dbb56275/file",
-    "location": "Heinenoord",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "164G Truck met Hellmers Reclycer opbouw",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-19"
-   },
-   "A1-47420-24": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/a32c5784-6787-463c-be05-857b23bce3a7/file",
-    "location": "Ederveen",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "2004 Scania 164 / 480",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-24"
-   },
-   "A1-47420-4": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 10000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/d792bbb6-0654-4818-9277-344ce4be3825/file",
-    "location": "Vriezenveen",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "3.4 Carrera 4 PDK 350PK.",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-4"
-   },
-   "A1-47420-51": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/900c966a-0e15-4a51-94c1-93a97e4c6741/file",
-    "location": "Kampen",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "ASD-40-22 Getrokken dieplader aanhanger",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-51"
-   },
-   "A1-47420-54": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/6803d54a-010a-4876-a78b-e3b51c15bd88/file",
-    "location": "Heijen",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "2014 Stas S300CX",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-54"
-   },
-   "A1-47420-95": {
-    "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
-    "bankrupt": false,
-    "bid": 5000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/0f88c416-ea2a-4b2e-82eb-ff6d8ee3a641/file",
-    "location": "Krimpen aan de lek",
-    "mail": "2026-10-13T08:12:48+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Tecnoyacht Puma 2 -",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47420-95"
-   },
    "A1-47422-100": {
     "auction": "Verzamelveiling van mobiliteit, transport en logistiek",
     "bankrupt": false,
@@ -28717,84 +26896,6 @@
     "seen": "2026-10-22T08:24:38.737984+00:00",
     "title": "5-assige ballastoplegger – 52.500 kg laadvermogen – TRIDEC gestuurd",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47422-63"
-   },
-   "A1-47967-100": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 250.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/6920f05c-bbe6-4c24-958e-61ce2384e182/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "2026 Stahlwerk Germany SW 7 Gereedschapswagen",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-100"
-   },
-   "A1-47967-136": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/f338ebc4-269b-4e0c-8765-70ab66a3d55a/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Hyper Welding - 2026 - CUT-120 - Plasmasnijmachine",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-136"
-   },
-   "A1-47967-23": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 1000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/c026a435-5a18-404f-8de6-d2476ddd2ca4/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Mateng - RM20 -2026 - Rupsgrasmaaier met afstandbediening",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-23"
-   },
-   "A1-47967-36": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 250.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/bc70b432-bacd-47cf-a586-12bd26f07f91/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Ultra Force - 2026 - 7 lades 267 pc - Gereedschapswagen",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-36"
-   },
-   "A1-47967-54": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 250.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/b6acf308-0d1e-4aec-8eeb-0983a57f563b/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "UF Equipment - 2026 - AC7400 - Betonzaag",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-54"
-   },
-   "A1-47967-86": {
-    "auction": "Magazijnverkoop interne transportmachines, quads, gereedschappen en diversen",
-    "bankrupt": false,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/7c65dee2-4972-47c9-9a73-81862e5a5055/file",
-    "location": "Cruquius",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Daewoo - 2026 - DACNQ74S - Betonzaag",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-47967-86"
    },
    "A1-48312-10": {
     "auction": "Voertuigen, machines, gereedschappen en diversen",
@@ -29341,58 +27442,6 @@
     "seen": "2026-10-22T08:24:38.737984+00:00",
     "title": "XXL - Punica Granatum - hoogte ca. 280 cm",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-49850-9"
-   },
-   "A1-49868-1": {
-    "auction": "Verzamelveiling faillissement IT-apparatuur",
-    "bankrupt": true,
-    "bid": 250.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/b3f56b2e-5e2f-4296-923a-96654f36b666/file",
-    "location": "Barneveld",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Apple Iphone 18 pro Max (256GB)",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-49868-1"
-   },
-   "A1-49868-11": {
-    "auction": "Verzamelveiling faillissement IT-apparatuur",
-    "bankrupt": true,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/0c322061-e4df-4b4f-897c-ad8e9ee2dbea/file",
-    "location": "Barneveld",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Apple Ipad 10th gen (256GB, wifi) Tablet",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-49868-11"
-   },
-   "A1-49868-127": {
-    "auction": "Verzamelveiling faillissement IT-apparatuur",
-    "bankrupt": true,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/bc614116-e682-4e73-9489-2f1e95c2c759/file",
-    "location": "Barneveld",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Laptop - Apple Inc. - Mac14,15",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-49868-127"
-   },
-   "A1-49868-15": {
-    "auction": "Verzamelveiling faillissement IT-apparatuur",
-    "bankrupt": true,
-    "bid": 100.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/e174ec76-9eff-4a7d-ae31-5383186bfd34/file",
-    "location": "Barneveld",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Synology DS220+ Netwerkopslag",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-49868-15"
    },
    "A1-49889-1": {
     "auction": "Faillissement SSi Steel Solutions International B.V. - Staalbewerkingsbedrijf",
@@ -30115,84 +28164,6 @@
     "seen": "2026-10-22T08:24:38.737984+00:00",
     "title": "10-500 KF | YOC 2007 | 170 kW | grondig gerenoveerd - 2.312 U",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50372-8141"
-   },
-   "A1-50382-164": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 2500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/86906831-9634-42ba-9e9c-664c270c6fca/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "New-Tech - 2000/1 - Automatische pocket weltingmachine",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-164"
-   },
-   "A1-50382-169": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/5a0a402c-90c7-4f24-93a4-4c1dceb02ef4/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "ENGLE - 1002 - Automatische pocket weltingmachine",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-169"
-   },
-   "A1-50382-279": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/966cf76d-ef13-4fbc-8d83-ebdf329c815d/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "Ascolite MARK 6 knopbevestiging",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-279"
-   },
-   "A1-50382-67": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/55f18507-79cd-45ea-81b7-52d4a4d2e954/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "BROER - LK3-B430E - Bartack naaimachines",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-67"
-   },
-   "A1-50382-75": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 1000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/8c0479e9-9c44-4be7-ad49-9ba666e9d94a/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "DURKOPP ADLER - 550-16-6/12-12 - Mouwbevestigingsnaaimachines",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-75"
-   },
-   "A1-50382-79": {
-    "auction": "Liquidation of Industrial Sewing Machines, Embroidery Equipment and more",
-    "bankrupt": false,
-    "bid": 1000.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-14T04:42:39.335649+00:00",
-    "image": "https://media.tbauctions.com/image-media/f5adacb0-6d51-49b5-a4ef-7f334b26eb8d/file",
-    "location": "Salaj",
-    "mail": "2026-10-13T11:54:07+00:00",
-    "seen": "2026-10-21T04:40:00.127260+00:00",
-    "title": "REECE - S-211 - Naaimachines met knopsgaten",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50382-79"
    },
    "A1-50387-1": {
     "auction": "Vlootverkoop: IVECO Passagiersbussen",
@@ -32100,123 +30071,6 @@
     "title": "Kookmagnetron - Menumaster MRX51",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50906-35"
    },
-   "A1-50910-32": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 600.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/ed350c54-4197-40f2-b6be-08e92178cd24/file",
-    "location": "Kavelstorf, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "TOUCAN 10E 2014 - Verticale mast",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-32"
-   },
-   "A1-50910-38": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 600.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/f5692736-7aa8-4a5d-a082-50d8ba52b3ec/file",
-    "location": "Schkeuditz, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Lift - Monostar Q-135 EL 24 2013 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-38"
-   },
-   "A1-50910-75": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 600.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/405ca93f-c20c-4b01-9557-8e394113be7f/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Lifttechnik - PB S171-12 ES 2011 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-75"
-   },
-   "A1-50910-80": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 400.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/37af4da6-fbdd-4908-91f8-4765f25a1516/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "142-12 E2WD 2012 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-80"
-   },
-   "A1-50910-81": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 400.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/23e49d2e-8195-4944-98cc-d10c9a7df26b/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "142-12 E2WD 2012 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-81"
-   },
-   "A1-50910-83": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 1400.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/7443a928-9bd0-430a-8f79-84678743153f/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Lifttechnik - PB S225-12E Bj 2013 - Scissor Lift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-83"
-   },
-   "A1-50910-84": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 1400.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/3e2e3ed6-beca-4e2e-a738-dfcedb65f758/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Lifttechnik - PB S225-12E Bj 2013 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-84"
-   },
-   "A1-50910-88": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 750.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/b6876269-3a54-4bdf-bac5-a961b5d745a4/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Lift - Combistar B-165EL25, YOC 2009 - Schaarlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-88"
-   },
-   "A1-50910-90": {
-    "auction": "Werkplatforms en apparatuur op 5 locaties",
-    "bankrupt": false,
-    "bid": 3500.0,
-    "closes_day": "2026-10-22",
-    "first": "2026-10-16T04:40:41.159659+00:00",
-    "image": "https://media.tbauctions.com/image-media/b167f06a-a490-4063-960b-67f4a42ff148/file",
-    "location": "Neuss, Germany",
-    "mail": "2026-10-15T09:10:45+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Wumag - WT 270 Bj 2006 - Vrachtwagen-gemonteerde boomlift",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50910-90"
-   },
    "A1-50914-1": {
     "auction": "HPLC: 2023 Wyatt en Agilent Infinity - High-end laboratoriumanalysesysteem",
     "bankrupt": false,
@@ -32587,6 +30441,7 @@
    "bd4f38275b9866cd": "2026-10-15T04:39:34.459512+00:00"
   },
   "warned": {
+   "14affb7527f67a1e": "2026-10-23T04:39:33.788701+00:00",
    "84ce6a4d4b0c96e3": "2026-10-08T04:29:27.504488+00:00",
    "b977b8880a015e0a": "2026-10-03T09:10:19.814888+00:00",
    "ef3e27fd1d0eb375": "2026-10-03T09:10:19.814888+00:00"
