@@ -74,3 +74,13 @@ items:
   exclude: [hoes, hoesje, hoesjes, case, cover, screenprotector, oplader, lader, kabel, houder, standaard, tab,
     tablet, watch, buds, book, lens, scherm, accu, batterij, dummy, onderdeel, onderdelen, defect, pixelpuzzel,
     pixelart, ministeck]
+- name: Wine
+  # wine from closing restaurants and bars; prices are per bottle ("6 flessen", "6 x 75 cl").
+  # Named wines first, so "Rioja" is what Marktplaats listings must say (they often leave out "wijn").
+  keywords: [champagne, prosecco, cava, chateau, rioja, chianti, barolo, amarone, chablis, sancerre, bourgogne,
+    merlot, cabernet, sauvignon, chardonnay, pinot, riesling, malbec, primitivo, tempranillo, shiraz, wijn, wijnen,
+    vin]
+  exclude: [wijnglas, wijnglazen, glas, glazen, wijnrek, rek, wijnkast, kast, wijnkoel, koelkast, koeler, klimaat,
+    wijnklimaat, wijnklimaatkast, wijnemmer, emmer, karaf, decanteer, decanter, opener, kurkentrekker, wijnazijn, azijn,
+    wijnvat, vat, vaten, tap, wijntap, dispenser, pomp, stopper, wijnkaart, menukaart, boek, schilderij, poster,
+    leeg, lege, inventaris, meubel, tafel, stoel, kruk, bar, wijnbar, rack, display]

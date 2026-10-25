@@ -105,6 +105,8 @@ def test_brand_in():
     ("Colberts x40", 40), ("Colberts 40x", 40),
     ("1 x HP Desktop Mini met 2 x 24-inch monitor", 1), ("Beeldscherm 27 inch ACER RG270", 1),
     ("Tafel 180 x 90 cm", 1),  # a size, not a quantity
+    ("Doos met 6 flessen Merlot 2019", 6), ("Chateau Margaux 2015 12 x 75 cl", 12), ("Champagne, 3 fl.", 3),
+    ("Fles rode wijn 75 cl", 1), ("Kist met twee flessen wijn", 2), ("Vin rouge 6 bouteilles", 6),
 ])
 def test_quantity(title, n):
     assert quantity(title) == n

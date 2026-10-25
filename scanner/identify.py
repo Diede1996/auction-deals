@@ -36,6 +36,7 @@ ontbreekt ontbreken krasje kras krassen geen beschadigd beschadiging schade werk
 compleet toebehoren accessoires voedingskabel stroomkabel kabel kabels adapter lader oplader afstandsbediening
 heren dames man mannen vrouw vrouwen kinder kinderen ouderwetse vintage verschillende kleuren kleur
 doos originele verpakking koffer opslag ram geheugen werkgeheugen processor hdd ssd ghz mhz hz
+fles flessen fl cl kist krat bouteilles
 """.split())
 
 # Category words: they say what kind of thing it is, not which one. Listings may use any word of a group.
@@ -56,6 +57,7 @@ CATEGORIES = [
     ("tablet", "tablets"),
     ("slagschroevendraaier", "slagschroevendraaiers", "slagschoevendraaier", "slagschroefmachine"),  # with a typo
     ("accu", "accus", "batterij", "battery", "akku"),
+    ("wijn", "wijnen", "wine", "vin"),
 ]
 _SPELLING = {"slagschoevendraaier": "slagschroevendraaier"}  # typos in lot titles, fixed in the Marktplaats search
 # Laptops, computers and tablets of one brand range from € 50 to € 2.000: without a model, no price at all.
@@ -658,7 +660,8 @@ _NUM_WORDS = {"twee": 2, "drie": 3, "vier": 4, "vijf": 5, "zes": 6, "zeven": 7, 
 
 def quantity(title: str) -> int:
     """How many items the lot title says it holds: "40x Colbert" -> 40, "2 x Kunstplant" -> 2,
-    "Twee beeldschermen" -> 2, "Makita koffers - 2 stuks" -> 2, "Colberts (40x)" or "Colberts x40" -> 40.
+    "Twee beeldschermen" -> 2, "Makita koffers - 2 stuks" -> 2, "Colberts (40x)" or "Colberts x40" -> 40,
+    "Doos met 6 flessen Merlot" or "Merlot 6 x 75 cl" -> 6.
     Sizes such as "Tafel 180 x 90 cm" don't count. 1 when the title doesn't say."""
     t = normalize(title)
     m = re.match(r"(?:ca |circa )?(\d{1,4}) ?x\b", t) or re.match(r"(?:ca |circa )?(\d{1,4}) (?:stuks|st|stk)\b", t)
@@ -667,6 +670,11 @@ def quantity(title: str) -> int:
     first = t.split(" ", 1)[0] if t else ""
     if first in _NUM_WORDS:
         return _NUM_WORDS[first]
+    m = re.search(r"(?<![0-9a-z])(\d{1,4}|twee|drie|vier|vijf|zes|zeven|acht|negen|tien) (?:flessen|fles|fl|bottles"
+                  r"|bouteilles)\b", t) \
+        or re.search(r"(?<![0-9])(\d{1,4}) ?x ?(?:75|70|50|37 5|375|150) ?cl\b", t)
+    if m:  # wine: "Doos met 6 flessen Merlot", "Kist met twee flessen wijn", "Merlot 6 x 75 cl"
+        return _NUM_WORDS.get(m.group(1)) or max(1, int(m.group(1)))
     raw = title or ""
     m = (re.search(r"\((?:ca\.?\s*)?(\d{1,4})\s*(?:x|stuks|st\.?|stk)\s*\)", raw, re.I)  # "(40x)", "(40 stuks)"
          or re.search(r"(?:^|\s)x(\d{1,4})\s*$", raw, re.I)  # "Colberts x40"
