@@ -1032,6 +1032,14 @@
    "at": "2026-10-24T04:38:55.339053+00:00",
    "d": "HP Compaq LA2306x 24\" Full HD-monitor; zie afbeeldingen. Conditie: Gebruikt Garantie: Geen Voor meer informatie over de verzendmogelijkheden, zie de Veiling informatie. Algemene informatie Ten gevolge van het faillissement van “Faillissement Fundering Expertise Nederland B.V.”, veilt ProVeiling de v"
   },
+  "proveiling:3292725": {
+   "at": "2026-10-25T09:07:56.432593+00:00",
+   "d": "JURA GIGA Volautomatische koffiemachine X3 15397; voorzien van 4,3” touchscreen kleurendisplay; afmetingen ca. 50x37x56cm; winkelverkoopprijs ca. € 4870,-; zie afbeeldingen. Met de GIGA X3c geeft JURA op indrukwekkende wijze blijk van Zwitserse innovatiekracht en professionaliteit tot in het kleinst"
+  },
+  "proveiling:3292759": {
+   "at": "2026-10-25T09:07:56.432593+00:00",
+   "d": "Apple iPad Pro Tablet A2378 MHNK3NF/A; 12.9 inch; 512GB; zie afbeeldingen. Conditie: Gebruikt Garantie: Geen Voor meer informatie over de verzendmogelijkheden, zie de Veiling informatie. Algemene informatie Ten gevolge van het faillissement van \"Elle & Moi B.V.\" te Rotterdam, veilt ProVeiling de voo"
+  },
   "veilingwinnaar:12026": {
    "at": "2026-10-18T04:38:49.118783+00:00",
    "d": "3 gr espressomachine Vibiemme Specificaties Categorie Horeca koffie- en espressomachines Kavel delen Social media © 2026 Veilingwinnaar"
@@ -1055,7 +1063,7 @@
  },
  "filter_words": "8ae1655c3722",
  "fuel": {
-  "at": "2026-10-24T04:38:55.339053+00:00",
+  "at": "2026-10-25T09:07:56.432593+00:00",
   "price": 2.002,
   "source": "Belgian maximum price Euro 95 E10 from 2026-10-21"
  },
@@ -1312,109 +1320,109 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 0,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 843,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 49,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
    "lots": 100,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 0,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 2019,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 765,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 141,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
-   "lots": 1150,
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
+   "lots": 1342,
    "ok": true
   },
   "troostwijk": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 91,
    "ok": true
   },
   "veilingwinnaar": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 66,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-10-24T04:38:55.339053+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-10-24T04:38:55.339053+00:00",
+   "last_ok": "2026-10-25T09:07:56.432593+00:00",
    "lots": 661,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-10-24T04:38:55.339053+00:00",
-  "deals": 105,
+  "at": "2026-10-25T09:07:56.432593+00:00",
+  "deals": 104,
   "defects": 2,
-  "lots": 5785,
-  "matches": 335,
-  "new": 38,
-  "requests": 339,
+  "lots": 5977,
+  "matches": 337,
+  "new": 2,
+  "requests": 340,
   "too_old": 3
  },
  "price_cache": {
@@ -1829,9 +1837,9 @@
    "v": 4
   },
   "exact cs 220|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 6,
     "high": 312.5,
     "kind": "exact",
@@ -1932,12 +1940,12 @@
    "v": 4
   },
   "exact dell u2419|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
   "exact des121bbtefonl0|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -2119,18 +2127,18 @@
    "v": 4
   },
   "exact festool agc 18|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 7,
     "high": 380.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 280.0,
-      "title": "Festool AGC 18-125 Accu Haakse Slijper en Systainer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2455598376-festool-agc-18-125-accu-haakse-slijper-en-systainer"
+      "price": 259.95,
+      "title": "Festool AGC 18 haakse slijper | koffer,accu,lader | 417912",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2457195107-festool-agc-18-haakse-slijper-koffer-accu-lader-417912"
      },
      {
       "kind": "fixed",
@@ -2176,7 +2184,7 @@
      100.0
     ],
     "prices": [
-     280.0,
+     259.95,
      300.0,
      325.0,
      325.0,
@@ -2190,9 +2198,9 @@
    "v": 4
   },
   "exact festool bs105e|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 2,
     "high": 550.0,
     "kind": "exact",
@@ -2224,11 +2232,11 @@
    "v": 4
   },
   "exact festool df 500|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 11,
-    "high": 1050.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 14,
+    "high": 1000.0,
     "kind": "exact",
     "listings": [
      {
@@ -2256,16 +2264,34 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456216809-festool-domino-df-500-q-plus-lamellenfrees-in-systainer"
      },
      {
-      "kind": "fixed",
-      "price": 650.0,
-      "title": "Festool Domino DF 500 set",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2455304559-festool-domino-df-500-set"
+      "kind": "bid",
+      "price": 750.0,
+      "title": "Festool Freesmachine DF 500 Q-Plus DOMINO in goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457635209-festool-freesmachine-df-500-q-plus-domino-in-goede-staat"
      },
      {
       "kind": "bid",
-      "price": 850.0,
+      "price": 800.0,
+      "title": "Festool Domino DF 500 Q-plus incl 4 bits & 3000 domino's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457459777-festool-domino-df-500-q-plus-incl-4-bits-3000-domino-s"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
       "title": "complete Festool DF 500 Q-plus en systainer met dominos",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2451755508-complete-festool-df-500-q-plus-en-systainer-met-dominos"
+     },
+     {
+      "kind": "fixed",
+      "price": 850.0,
+      "title": "Festool df500q-set domino frees",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457103289-festool-df500q-set-domino-frees"
+     },
+     {
+      "kind": "bid",
+      "price": 950.0,
+      "title": "festool DF500 Q plus set  z.g.a.n",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457466771-festool-df500-q-plus-set-z-g-a-n"
      },
      {
       "kind": "bid",
@@ -2274,16 +2300,16 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2440086978-festool-domino-df500"
      },
      {
+      "kind": "bid",
+      "price": 1000.0,
+      "title": "Festool DF 500 RQ-Plus Domino freesmachine in systainer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457595553-festool-df-500-rq-plus-domino-freesmachine-in-systainer"
+     },
+     {
       "kind": "fixed",
       "price": 1000.0,
       "title": "Festool Domino DF 500 Q-Plus  compleet uitgevoerd",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2453205119-festool-domino-df-500-q-plus-compleet-uitgevoerd"
-     },
-     {
-      "kind": "bid",
-      "price": 1050.0,
-      "title": "festool df500 met domino stenen systainer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2455752169-festool-df500-met-domino-stenen-systainer"
      },
      {
       "kind": "bid",
@@ -2298,8 +2324,8 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2442409292-festool-df-500-domino-set-z-g-a-n"
      }
     ],
-    "low": 220.0,
-    "median": 850.0,
+    "low": 542.5,
+    "median": 825.0,
     "model": "DF 500",
     "outliers": [],
     "prices": [
@@ -2307,11 +2333,14 @@
      15.0,
      220.0,
      650.0,
-     650.0,
+     750.0,
+     800.0,
+     800.0,
      850.0,
      950.0,
+     950.0,
      1000.0,
-     1050.0,
+     1000.0,
      1069.0,
      1100.0
     ],
@@ -2321,11 +2350,11 @@
    "v": 4
   },
   "exact festool fs1400|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 10,
-    "high": 418.5,
+    "high": 512.25,
     "kind": "exact",
     "listings": [
      {
@@ -2333,12 +2362,6 @@
       "price": 50.0,
       "title": "1 x Festool FS 1400/2 geleiderail 1,4m",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2421273854-1-x-festool-fs-1400-2-geleiderail-1-4m"
-     },
-     {
-      "kind": "bid",
-      "price": 55.0,
-      "title": "Festool Geleiderail FS 1400",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2454287156-festool-geleiderail-fs-1400"
      },
      {
       "kind": "fixed",
@@ -2360,9 +2383,9 @@
      },
      {
       "kind": "bid",
-      "price": 90.0,
-      "title": "Festool geleiderail FS 1400/2",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455062232-festool-geleiderail-fs-1400-2"
+      "price": 185.0,
+      "title": "Nieuwe Festool geleiderail FS 1400/2-KP + FS-BAG",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2457717672-nieuwe-festool-geleiderail-fs-1400-2-kp-fs-bag"
      },
      {
       "kind": "fixed",
@@ -2378,6 +2401,12 @@
      },
      {
       "kind": "bid",
+      "price": 500.0,
+      "title": "gloednieuwe Festool geleiderails FS 1900/2 en FS 1400/2 met",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2457507094-gloednieuwe-festool-geleiderails-fs-1900-2-en-fs-1400-2-met"
+     },
+     {
+      "kind": "bid",
       "price": 549.0,
       "title": "Festool OF 1000 EB + Basis 5A freesmodule + FS1400 geleider",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2456405493-festool-of-1000-eb-basis-5a-freesmodule-fs1400-geleider"
@@ -2389,19 +2418,19 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2452716451-festool-ts-75-ebq-plus-fs-invalzaag-fs1400-staalzaagblad"
      }
     ],
-    "low": 70.0,
-    "median": 85.0,
+    "low": 75.0,
+    "median": 217.5,
     "model": "FS1400",
     "outliers": [],
     "prices": [
      50.0,
-     55.0,
      75.0,
      75.0,
      79.99,
-     90.0,
+     185.0,
      250.0,
      375.0,
+     500.0,
      549.0,
      595.0
     ],
@@ -2411,45 +2440,14 @@
    "v": 4
   },
   "exact festool fs800|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 2,
-    "high": 465.62,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "of": 4,
-      "price": 12.5,
-      "title": "4 x Festool FS 800/2 geleiderail 0,8m",
-      "total": 50.0,
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2421272488-4-x-festool-fs-800-2-geleiderail-0-8m"
-     },
-     {
-      "kind": "bid",
-      "price": 375.0,
-      "title": "nieuwe Festool geleiderails FS 1400/2, FS 800/2 met accessoi",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2455402324-nieuwe-festool-geleiderails-fs-1400-2-fs-800-2-met-accessoi"
-     }
-    ],
-    "low": -78.12,
-    "median": 193.75,
-    "model": "FS800",
-    "outliers": [],
-    "prices": [
-     12.5,
-     375.0
-    ],
-    "query": "festool fs800",
-    "search": "festool fs800"
-   },
+   "at": "2026-10-25T09:07:56.432593+00:00",
+   "est": null,
    "v": 4
   },
   "exact festool of1010ebq|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 3,
     "high": 550.0,
     "kind": "exact",
@@ -2493,13 +2491,19 @@
    "v": 4
   },
   "exact galaxy m13 64gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 4,
-    "high": 151.49,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 5,
+    "high": 150.99,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Samsung Galaxy M13 64gb lichtblauw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2457552917-samsung-galaxy-m13-64gb-lichtblauw"
+     },
      {
       "kind": "fixed",
       "price": 113.15,
@@ -2525,11 +2529,12 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1507832101-samsung-galaxy-m13-dual-sim-64gb-orange-copper"
      }
     ],
-    "low": 115.11,
-    "median": 135.49,
+    "low": 94.08,
+    "median": 120.99,
     "model": "M13",
     "outliers": [],
     "prices": [
+     75.0,
      113.15,
      120.99,
      149.99,
@@ -2736,19 +2741,13 @@
    "v": 4
   },
   "exact galaxy s24 5g 256gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 43,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 44,
     "high": 659.99,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 349.0,
-      "title": "Rahim Telecom | Samsung galaxy S24 256GB 5G ZGAN GARANTIE",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-toebehoren-en-onderdelen/m2438539153-rahim-telecom-samsung-galaxy-s24-256gb-5g-zgan-garantie"
-     },
      {
       "kind": "bid",
       "price": 380.0,
@@ -2793,6 +2792,12 @@
      },
      {
       "kind": "fixed",
+      "price": 500.0,
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB Zwart",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2456665659-samsung-galaxy-s24-ultra-5g-256gb-zwart"
+     },
+     {
+      "kind": "fixed",
       "price": 509.99,
       "title": "Nieuwstaat Samsung Galaxy S24 5G 256GB (model 2024) grij...",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905318-nieuwstaat-samsung-galaxy-s24-5g-256gb-model-2024-grij"
@@ -2801,7 +2806,7 @@
       "kind": "fixed",
       "price": 509.99,
       "title": "Magazijn opruiming Samsung Galaxy S24 5G 256GB (model 20...",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905322-magazijn-opruiming-samsung-galaxy-s24-5g-256gb-model-20"
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905323-magazijn-opruiming-samsung-galaxy-s24-5g-256gb-model-20"
      },
      {
       "kind": "fixed",
@@ -2832,6 +2837,12 @@
       "price": 509.99,
       "title": "Magazijn opruiming Samsung Galaxy S24 5G 256GB (model 2024)",
       "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1528563253-magazijn-opruiming-samsung-galaxy-s24-5g-256gb-model-2024"
+     },
+     {
+      "kind": "bid",
+      "price": 549.99,
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB Black Titanium",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2457034902-samsung-galaxy-s24-ultra-5g-256gb-black-titanium"
      },
      {
       "kind": "fixed",
@@ -2876,16 +2887,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1525285141-samsung-galaxy-s24-5g-256gb-model-2024-blauw-als-nieuw"
      },
      {
-      "kind": "fixed",
-      "price": 599.99,
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) 6.2 inch....",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905232-samsung-galaxy-s24-ultra-5g-256gb-model-2024-6-2-inch"
+      "kind": "bid",
+      "price": 570.0,
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB Titanium Black",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2457028326-samsung-galaxy-s24-ultra-5g-256gb-titanium-black"
      },
      {
       "kind": "fixed",
       "price": 599.99,
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) oranje (e...",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905231-samsung-galaxy-s24-ultra-5g-256gb-model-2024-oranje-e"
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) 6.2 inch....",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905232-samsung-galaxy-s24-ultra-5g-256gb-model-2024-6-2-inch"
      },
      {
       "kind": "fixed",
@@ -2896,32 +2907,26 @@
      {
       "kind": "fixed",
       "price": 599.99,
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) groen (ex...",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905229-samsung-galaxy-s24-ultra-5g-256gb-model-2024-groen-ex"
-     },
-     {
-      "kind": "fixed",
-      "price": 599.99,
       "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) paars (ex...",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905230-samsung-galaxy-s24-ultra-5g-256gb-model-2024-paars-ex"
      },
      {
       "kind": "fixed",
       "price": 599.99,
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) oranje (e...",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905231-samsung-galaxy-s24-ultra-5g-256gb-model-2024-oranje-e"
+     },
+     {
+      "kind": "fixed",
+      "price": 599.99,
+      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) groen (ex...",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1519905229-samsung-galaxy-s24-ultra-5g-256gb-model-2024-groen-ex"
+     },
+     {
+      "kind": "fixed",
+      "price": 599.99,
       "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) geel (ex demo",
       "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1527704584-samsung-galaxy-s24-ultra-5g-256gb-model-2024-geel-ex-demo"
-     },
-     {
-      "kind": "fixed",
-      "price": 599.99,
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) oranje (ex",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1527704590-samsung-galaxy-s24-ultra-5g-256gb-model-2024-oranje-ex"
-     },
-     {
-      "kind": "fixed",
-      "price": 599.99,
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB (model 2024) 6.2 inch (ex",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1532737084-samsung-galaxy-s24-ultra-5g-256gb-model-2024-6-2-inch-ex"
      }
     ],
     "low": 509.99,
@@ -2929,7 +2934,6 @@
     "model": "S24",
     "outliers": [],
     "prices": [
-     349.0,
      380.0,
      400.0,
      409.99,
@@ -2937,6 +2941,7 @@
      409.99,
      409.99,
      419.99,
+     500.0,
      509.99,
      509.99,
      509.99,
@@ -2944,6 +2949,7 @@
      509.99,
      509.99,
      509.99,
+     549.99,
      559.99,
      559.99,
      559.99,
@@ -2951,6 +2957,7 @@
      559.99,
      559.99,
      559.99,
+     570.0,
      599.99,
      599.99,
      599.99,
@@ -2959,7 +2966,6 @@
      599.99,
      599.99,
      599.99,
-     650.0,
      659.99,
      659.99,
      659.99,
@@ -2979,7 +2985,7 @@
    "v": 4
   },
   "exact hikoki ds18dd|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -3035,7 +3041,7 @@
    "v": 4
   },
   "exact hilti dg 150|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -3103,9 +3109,9 @@
    "v": 4
   },
   "exact hp z240|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 16,
     "high": 236.25,
     "kind": "exact",
@@ -4867,7 +4873,7 @@
    "v": 4
   },
   "exact makita bga452|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -5317,7 +5323,7 @@
    "v": 4
   },
   "exact makita bo6040|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -5656,11 +5662,11 @@
    "v": 4
   },
   "exact makita ddf484z|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 5,
-    "high": 132.47,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 4,
+    "high": 141.21,
     "kind": "exact",
     "listings": [
      {
@@ -5682,26 +5688,19 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448251074-makita-ddf484zj-boor-schroefmachine-body-in-mbox"
      },
      {
-      "kind": "bid",
-      "price": 115.0,
-      "title": "Makita DDF484ZJ Boor-/Schroefmachine 18V (Zonder accu) Mbox",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2436511180-makita-ddf484zj-boor-schroefmachine-18v-zonder-accu-mbox"
-     },
-     {
       "kind": "fixed",
       "price": 149.95,
       "title": "Makita DDF484ZJ Accuboormachine 2x18v 5.0ah | Gebruikt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446540012-makita-ddf484zj-accuboormachine-2x18v-5-0ah-gebruikt"
      }
     ],
-    "low": 104.5,
-    "median": 115.0,
+    "low": 101.75,
+    "median": 112.5,
     "model": "DDF484Z",
     "outliers": [],
     "prices": [
      99.0,
      110.0,
-     115.0,
      115.0,
      149.95
     ],
@@ -5769,9 +5768,9 @@
    "v": 4
   },
   "exact makita dga452|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 2,
     "high": 115.0,
     "kind": "exact",
@@ -5803,11 +5802,11 @@
    "v": 4
   },
   "exact makita dga504|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 15,
-    "high": 199.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 16,
+    "high": 194.25,
     "kind": "exact",
     "listings": [
      {
@@ -5837,12 +5836,6 @@
      {
       "kind": "bid",
       "price": 100.0,
-      "title": "Makita DGA504 haakse slijper excl. accu – weinig gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453685452-makita-dga504-haakse-slijper-excl-accu-weinig-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
       "title": "Makita DGA504 Accu Haakse Slijper 125mm - Zonder Accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2435387156-makita-dga504-accu-haakse-slijper-125mm-zonder-accu"
      },
@@ -5856,19 +5849,31 @@
       "kind": "bid",
       "price": 110.0,
       "title": "Makita DGA504 18V Accu Haakse Slijper 125mm – Werkt Perfect",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2419508068-makita-dga504-18v-accu-haakse-slijper-125mm-werkt-perfect"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2435563628-makita-dga504-18v-accu-haakse-slijper-125mm-werkt-perfect"
+     },
+     {
+      "kind": "fixed",
+      "price": 119.0,
+      "title": "MAKITA 18V HAAKSE SLIJPER DGA504ZJ 125mm BRUSHLESS SLIJPTOL",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2457474990-makita-18v-haakse-slijper-dga504zj-125mm-brushless-slijptol"
      },
      {
       "kind": "bid",
-      "price": 125.0,
-      "title": "Makita DGA504 Haakse Slijper met Accu en Lader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456338371-makita-dga504-haakse-slijper-met-accu-en-lader"
+      "price": 140.0,
+      "title": "Makita Haakse Slijper DGA504 met Accu en Oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2457033812-makita-haakse-slijper-dga504-met-accu-en-oplader"
      },
      {
       "kind": "fixed",
       "price": 149.99,
       "title": "Makita DGA504 Haakse Slijper 18V - Zonder Accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2448119366-makita-dga504-haakse-slijper-18v-zonder-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 169.0,
+      "title": "Makita DGA 504 Slijptol + 1 Accu 3AH 18V en oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2446342458-makita-dga-504-slijptol-1-accu-3ah-18v-en-oplader"
      },
      {
       "kind": "fixed",
@@ -5901,12 +5906,11 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441260421-makita-dga504zj-in-m-box"
      }
     ],
-    "low": 75.0,
-    "median": 110.0,
+    "low": 81.25,
+    "median": 129.5,
     "model": "DGA504",
     "outliers": [
-     400.0,
-     500.0
+     400.0
     ],
     "prices": [
      30.0,
@@ -5914,11 +5918,12 @@
      75.0,
      75.0,
      100.0,
-     100.0,
      110.0,
      110.0,
-     125.0,
+     119.0,
+     140.0,
      149.99,
+     169.0,
      179.99,
      199.0,
      199.0,
@@ -6018,9 +6023,9 @@
    "v": 4
   },
   "exact makita dhp481|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 3,
     "high": 89.99,
     "kind": "exact",
@@ -6059,11 +6064,11 @@
    "v": 4
   },
   "exact makita dhr242|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 6,
-    "high": 222.49,
+    "high": 287.5,
     "kind": "exact",
     "listings": [
      {
@@ -6071,18 +6076,6 @@
       "price": 145.0,
       "title": "makita DHR242 18V Li-Ion Accu SDS-plus combihamer 18V body",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2440618798-makita-dhr242-18v-li-ion-accu-sds-plus-combihamer-18v-body"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.99,
-      "title": "Makita DHR242 Combihamer SDS-Plus 18V | Incl garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2455454701-makita-dhr242-combihamer-sds-plus-18v-incl-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 199.99,
-      "title": "Makita DHR242 Boorhamer | Nette staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451401841-makita-dhr242-boorhamer-nette-staat"
      },
      {
       "kind": "fixed",
@@ -6101,21 +6094,31 @@
       "price": 230.0,
       "title": "Makita DHR242 18V SDS-Plus Boorhamer met accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450376855-makita-dhr242-18v-sds-plus-boorhamer-met-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "Makita DHR242 18V Accu Boorhamer met HEPA filter",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2457365545-makita-dhr242-18v-accu-boorhamer-met-hepa-filter"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Makita DHR242 & DGA504 Set - Incl. Lader en Accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454581392-makita-dhr242-dga504-set-incl-lader-en-accu-s"
      }
     ],
-    "low": 156.24,
-    "median": 199.99,
+    "low": 186.24,
+    "median": 225.0,
     "model": "DHR242",
-    "outliers": [
-     400.0
-    ],
+    "outliers": [],
     "prices": [
      145.0,
-     159.99,
-     199.99,
      199.99,
      219.99,
-     230.0
+     230.0,
+     250.0,
+     400.0
     ],
     "query": "makita dhr242",
     "search": "makita dhr242"
@@ -6162,7 +6165,7 @@
    "v": 4
   },
   "exact makita dlx2180tj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -6302,47 +6305,24 @@
    "v": 4
   },
   "exact makita dss611|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
-   "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 2,
-    "high": 620.12,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 19.5,
-      "title": "Makita DSS611 DSS610 geleiderail adapter cirkelzaag",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2445986052-makita-dss611-dss610-geleiderail-adapter-cirkelzaag"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "Makita 18v set DHR243 DGA504 DSS611 DTM52",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2454444257-makita-18v-set-dhr243-dga504-dss611-dtm52"
-     }
-    ],
-    "low": -100.62,
-    "median": 259.75,
-    "model": "DSS611",
-    "outliers": [],
-    "prices": [
-     19.5,
-     500.0
-    ],
-    "query": "makita dss611",
-    "search": "makita dss611"
-   },
+   "at": "2026-10-25T09:07:56.432593+00:00",
+   "est": null,
    "v": 4
   },
   "exact makita dtd152|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 9,
-    "high": 139.99,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 8,
+    "high": 144.99,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Makita DTD152 slagschroevendraaier (body)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453789926-makita-dtd152-slagschroevendraaier-body"
+     },
      {
       "kind": "bid",
       "price": 65.0,
@@ -6354,18 +6334,6 @@
       "price": 69.99,
       "title": "Makita DTD152 18v slagschroevendraaier nu voor €69,99",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2449522258-makita-dtd152-18v-slagschroevendraaier-nu-voor-69-99"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Makita DTD152 slagschroevendraaier (body)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453789926-makita-dtd152-slagschroevendraaier-body"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Makita slagschroevendraaier Dtd152",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449610703-makita-slagschroevendraaier-dtd152"
      },
      {
       "kind": "bid",
@@ -6398,15 +6366,14 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2285043149-makita-dtd152-18v-li-ion-slagschroevendraaier-accus-en-lader"
      }
     ],
-    "low": 70.0,
-    "median": 85.0,
+    "low": 66.25,
+    "median": 92.5,
     "model": "DTD152",
     "outliers": [],
     "prices": [
+     60.0,
      65.0,
      69.99,
-     70.0,
-     80.0,
      85.0,
      99.99,
      129.99,
@@ -6585,7 +6552,7 @@
    "v": 4
   },
   "exact makita dtm52zjx2|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -6767,7 +6734,7 @@
    "v": 4
   },
   "exact makita ga5040c|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -6904,7 +6871,7 @@
    "v": 4
   },
   "exact makita hr28111ft|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -7099,7 +7066,7 @@
    "v": 4
   },
   "exact makita mr004g|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -7369,7 +7336,7 @@
    "v": 2
   },
   "exact milwaukee cp203|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -7686,10 +7653,10 @@
    "v": 2
   },
   "exact odyssey 27 g7|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 17,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 16,
     "high": 299.99,
     "kind": "exact",
     "listings": [
@@ -7700,10 +7667,22 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2441590623-samsung-odyssey-g7-g70d-27-zwart-game-monitor-voor-199-99"
      },
      {
+      "kind": "bid",
+      "price": 225.0,
+      "title": "Samsung 27\" Odyssey G7 G70D UHD 144Hz Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2456303993-samsung-27-odyssey-g7-g70d-uhd-144hz-gaming-monitor"
+     },
+     {
       "kind": "fixed",
       "price": 249.95,
       "title": "Samsung Odyssey G7 (G73TQSP) 27-inch 240Hz Curved Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445158977-samsung-odyssey-g7-g73tqsp-27-inch-240hz-curved-monitor"
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2456636807-samsung-odyssey-g7-g73tqsp-27-inch-240hz-curved-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 249.99,
+      "title": "Samsung Odyssey G7 - 27\" - 4K IPS - 144Hz - Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2455634457-samsung-odyssey-g7-27-4k-ips-144hz-gaming-monitor"
      },
      {
       "kind": "fixed",
@@ -7728,24 +7707,6 @@
       "price": 250.0,
       "title": "Samsung Odyssey G7 27 inch Curved Gaming Monitor 240Hz QHD",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2437500299-samsung-odyssey-g7-27-inch-curved-gaming-monitor-240hz-qhd"
-     },
-     {
-      "kind": "bid",
-      "price": 260.0,
-      "title": "Samsung 27\" Odyssey G7 G70D UHD 144Hz Gaming Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2456303993-samsung-27-odyssey-g7-g70d-uhd-144hz-gaming-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Samsung G7 Odyssey 27” curved Gaming Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2454777863-samsung-g7-odyssey-27-curved-gaming-monitor"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Samsung Odyssey G7 - 27\" - 4K IPS - 144Hz - Gaming Monitor",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2455634457-samsung-odyssey-g7-27-4k-ips-144hz-gaming-monitor"
      },
      {
       "kind": "fixed",
@@ -7796,24 +7757,22 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1509627761-samsung-odyssey-g7-ls27dg702euxen-27-4k-ultra-hd-ips-144hz"
      }
     ],
-    "low": 250.0,
-    "median": 275.0,
+    "low": 249.99,
+    "median": 264.5,
     "model": "Odyssey 27 G7",
     "outliers": [
-     150.0,
      150.0,
      460.0
     ],
     "prices": [
      199.99,
+     225.0,
      249.95,
+     249.99,
      249.99,
      250.0,
      250.0,
      250.0,
-     260.0,
-     275.0,
-     275.0,
      279.0,
      279.99,
      289.0,
@@ -7834,16 +7793,16 @@
    "v": 4
   },
   "exact philips 241b8|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
   "exact prodesk 400 g3|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 55,
-    "high": 259.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 57,
+    "high": 257.0,
     "kind": "exact",
     "listings": [
      {
@@ -7857,12 +7816,6 @@
       "price": 45.0,
       "title": "HP Prodesk 400 G3 SFF - I5-6500",
       "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2452913410-hp-prodesk-400-g3-sff-i5-6500"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "HP ProDesk 400 G3 MT Business PC - i5-6500, 4GB RAM, 256GB S",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2451561531-hp-prodesk-400-g3-mt-business-pc-i5-6500-4gb-ram-256gb-s"
      },
      {
       "kind": "bid",
@@ -7880,7 +7833,7 @@
       "kind": "bid",
       "price": 70.0,
       "title": "Hp Prodesk 400 G3 SFF i5-6500/8Gb/128Gb/2Gb Videokaart W11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2455765449-hp-prodesk-400-g3-sff-i5-6500-8gb-128gb-2gb-videokaart-w11"
+      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2455414002-hp-prodesk-400-g3-sff-i5-6500-8gb-128gb-2gb-videokaart-w11"
      },
      {
       "kind": "bid",
@@ -7892,7 +7845,7 @@
       "kind": "bid",
       "price": 75.0,
       "title": "Hp Prodesk 400 G3 SFF i5-6500/8Gb/128Gb/2Gb Videokaart W11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2456013485-hp-prodesk-400-g3-sff-i5-6500-8gb-128gb-2gb-videokaart-w11"
+      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2457295820-hp-prodesk-400-g3-sff-i5-6500-8gb-128gb-2gb-videokaart-w11"
      },
      {
       "kind": "fixed",
@@ -7905,6 +7858,18 @@
       "price": 85.0,
       "title": "HP ProDesk 400 G3 Mini | i3-7100T | 8GB | 128GB SSD",
       "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2452916415-hp-prodesk-400-g3-mini-i3-7100t-8gb-128gb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 89.0,
+      "title": "HP ProDesk 400 G3 Mini i5-7500T 8GB RAM 256GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2456945631-hp-prodesk-400-g3-mini-i5-7500t-8gb-ram-256gb-ssd"
+     },
+     {
+      "kind": "bid",
+      "price": 95.0,
+      "title": "HP Prodesk 400 G3 met i5, 8 GB en 256 GB SSD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2457225128-hp-prodesk-400-g3-met-i5-8-gb-en-256-gb-ssd"
      },
      {
       "kind": "fixed",
@@ -8016,15 +7981,9 @@
      },
      {
       "kind": "fixed",
-      "price": 189.0,
-      "title": "HP ProDesk 400 G3 SFF -   i7-6e  - 8GB  - 256GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/dockingstations/a1525453666-hp-prodesk-400-g3-sff-i7-6e-8gb-256gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 199.0,
-      "title": "HP ProDesk 400 G3 SFF -   i3-6e  - 8GB  - 256GB  + 1x 23 inc",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1525453695-hp-prodesk-400-g3-sff-i3-6e-8gb-256gb-1x-23-inc"
+      "price": 185.0,
+      "title": "HP ProDesk 400 G3 Micro  -   i5-6e  - 8GB  - 256GB",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/dockingstations/a1529990636-hp-prodesk-400-g3-micro-i5-6e-8gb-256gb"
      }
     ],
     "low": 100.0,
@@ -8034,7 +7993,6 @@
     "prices": [
      35.0,
      45.0,
-     45.0,
      60.0,
      65.0,
      70.0,
@@ -8042,6 +8000,8 @@
      75.0,
      85.0,
      85.0,
+     89.0,
+     95.0,
      99.99,
      100.0,
      100.0,
@@ -8060,6 +8020,7 @@
      150.0,
      159.0,
      179.0,
+     185.0,
      189.0,
      199.0,
      200.0,
@@ -8760,8 +8721,51 @@
    "v": 2
   },
   "general airfryer harmonie|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
-   "est": null,
+   "at": "2026-10-25T09:07:56.432593+00:00",
+   "est": {
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 4,
+    "high": 73.75,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Harmonie Airfryer - Zo goed als nieuw. 2 secties 11L",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2457188159-harmonie-airfryer-zo-goed-als-nieuw-2-secties-11l"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Harmonie \"Cuisinez avec passion\" Airfryer - Zo goed als nieu",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2421207824-harmonie-cuisinez-avec-passion-airfryer-zo-goed-als-nieu"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Harmonie 4-in-1 Digitale Airfryer - 11L (Double Stack)",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2422485550-harmonie-4-in-1-digitale-airfryer-11l-double-stack"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Harmonie 4-in-1 Digitale Airfryer 11L - Model HM-300",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2450332679-harmonie-4-in-1-digitale-airfryer-11l-model-hm-300"
+     }
+    ],
+    "low": 31.25,
+    "median": 60.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     25.0,
+     50.0,
+     70.0,
+     75.0
+    ],
+    "query": "airfryer harmonie",
+    "search": "airfryer harmonie"
+   },
    "v": 4
   },
   "general airfryer philips|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
@@ -9586,7 +9590,7 @@
    "v": 4
   },
   "general delonghi radias radiator elektrische|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -9836,7 +9840,7 @@
    "v": 3
   },
   "general dewalt verrijdbare hogedrukreiniger|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -10276,9 +10280,9 @@
    "v": 3
   },
   "general festool bovenfrees|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 47,
     "high": 680.0,
     "kind": "general",
@@ -10290,10 +10294,10 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2442020618-festool-of1010ebq-bovenfrees"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 200.0,
-      "title": "Festool OF 1010 EQ bovenfrees in systainer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2455204582-festool-of-1010-eq-bovenfrees-in-systainer"
+      "title": "Festool Bovenfrees - Gebruikt maar in goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2456550631-festool-bovenfrees-gebruikt-maar-in-goede-staat"
      },
      {
       "kind": "fixed",
@@ -10327,6 +10331,12 @@
      },
      {
       "kind": "bid",
+      "price": 275.0,
+      "title": "Festool OF 1400 EBQ bovenfrees zonder accessoires.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457442088-festool-of-1400-ebq-bovenfrees-zonder-accessoires"
+     },
+     {
+      "kind": "bid",
       "price": 290.0,
       "title": "Festool OF 2000 E Bovenfrees - Krachtige 1800W Router",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2442391344-festool-of-2000-e-bovenfrees-krachtige-1800w-router"
@@ -10336,6 +10346,12 @@
       "price": 299.99,
       "title": "Festool OF 1010 EBQ Bovenfrees | Met garantie",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2372902753-festool-of-1010-ebq-bovenfrees-met-garantie"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "Festool Bovenfrees OF 1010 EBQ-Plus",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2455966741-festool-bovenfrees-of-1010-ebq-plus"
      },
      {
       "kind": "bid",
@@ -10354,12 +10370,6 @@
       "price": 300.0,
       "title": "Festool bovenfrees OF 1010 EBQ in Systainer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2453475759-festool-bovenfrees-of-1010-ebq-in-systainer"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Festool Bovenfrees OF 1010 EBQ-Plus",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2452207152-festool-bovenfrees-of-1010-ebq-plus"
      },
      {
       "kind": "bid",
@@ -10384,6 +10394,12 @@
       "price": 345.0,
       "title": "Festool OF 900 Plus Bovenfrees met Freesset",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2453449131-festool-of-900-plus-bovenfrees-met-freesset"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Festool OF 1400 EBQ Bovenfrees met accessoires",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457207093-festool-of-1400-ebq-bovenfrees-met-accessoires"
      },
      {
       "kind": "bid",
@@ -10430,14 +10446,14 @@
      {
       "kind": "fixed",
       "price": 450.0,
-      "title": "festool OF1400 EBQ plus bovenfrees",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2419988112-festool-of1400-ebq-plus-bovenfrees"
+      "title": "Festool of1010rebq bovenfrees (nieuwstaat)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457103108-festool-of1010rebq-bovenfrees-nieuwstaat"
      },
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 450.0,
-      "title": "Festool 1400 ebq plus bovenfrees",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2432220691-festool-1400-ebq-plus-bovenfrees"
+      "title": "festool OF1400 EBQ plus bovenfrees",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2419988112-festool-of1400-ebq-plus-bovenfrees"
      },
      {
       "kind": "bid",
@@ -10447,25 +10463,13 @@
      },
      {
       "kind": "bid",
-      "price": 475.0,
-      "title": "Festool Bovenfrees.",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2454697887-festool-bovenfrees"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "festool of2000 freesmodule met bovenfrees of2000",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2427804277-festool-of2000-freesmodule-met-bovenfrees-of2000"
-     },
-     {
-      "kind": "bid",
-      "price": 525.0,
-      "title": "Festool OF 1010 EBQ Bovenfrees met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2447103252-festool-of-1010-ebq-bovenfrees-met-accessoires"
+      "price": 450.0,
+      "title": "Festool 1400 ebq plus bovenfrees",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2432220691-festool-1400-ebq-plus-bovenfrees"
      }
     ],
     "low": 300.0,
-    "median": 450.0,
+    "median": 425.0,
     "model": null,
     "outliers": [],
     "prices": [
@@ -10476,6 +10480,7 @@
      250.0,
      259.99,
      260.0,
+     275.0,
      290.0,
      299.99,
      300.0,
@@ -10489,6 +10494,7 @@
      350.0,
      350.0,
      350.0,
+     350.0,
      400.0,
      425.0,
      425.0,
@@ -10496,10 +10502,8 @@
      450.0,
      450.0,
      450.0,
-     475.0,
-     500.0,
+     450.0,
      525.0,
-     550.0,
      550.0,
      600.0,
      625.0,
@@ -10508,13 +10512,13 @@
      700.0,
      700.0,
      700.0,
+     726.0,
      750.0,
      750.0,
      750.0,
      750.0,
      800.0,
      850.0,
-     900.0,
      900.0
     ],
     "query": "festool bovenfrees",
@@ -10523,11 +10527,11 @@
    "v": 4
   },
   "general festool ctl midi bouwstofzuiger|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 6,
-    "high": 537.5,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 4,
+    "high": 600.0,
     "kind": "general",
     "listings": [
      {
@@ -10535,12 +10539,6 @@
       "price": 320.0,
       "title": "Festool CTL MIDI Stofzuiger - Gebruikt",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2454246605-festool-ctl-midi-stofzuiger-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 399.0,
-      "title": "festool stofzuiger Mobiel CTL MIDI I",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2456277304-festool-stofzuiger-mobiel-ctl-midi-i"
      },
      {
       "kind": "bid",
@@ -10555,28 +10553,20 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2453920060-festool-ctl-midi-stofzuiger-krachtige-mobiele-afzuiger"
      },
      {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "Festool CTL MIDI I stofzuiger met doos",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456052382-festool-ctl-midi-i-stofzuiger-met-doos"
-     },
-     {
       "kind": "bid",
       "price": 650.0,
       "title": "Festool Cleantec CTL MIDI I Stofzuiger met accessoires",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2454767719-festool-cleantec-ctl-midi-i-stofzuiger-met-accessoires"
      }
     ],
-    "low": 379.25,
+    "low": 346.25,
     "median": 437.5,
     "model": null,
     "outliers": [],
     "prices": [
      320.0,
-     399.0,
      425.0,
      450.0,
-     500.0,
      650.0
     ],
     "query": "festool ctl midi",
@@ -10585,11 +10575,11 @@
    "v": 4
   },
   "general festool ctl mini bouwstofzuiger|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 4,
-    "high": 412.5,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 5,
+    "high": 400.0,
     "kind": "general",
     "listings": [
      {
@@ -10600,15 +10590,21 @@
      },
      {
       "kind": "bid",
-      "price": 250.0,
-      "title": "Festool Cleantec CTL Mini Stofzuiger",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2455067069-festool-cleantec-ctl-mini-stofzuiger"
-     },
-     {
-      "kind": "bid",
       "price": 300.0,
       "title": "Festool CTL Mini stofzuiger - Compact en Krachtig",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2454291903-festool-ctl-mini-stofzuiger-compact-en-krachtig"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Festool CTL Mini 1 stofzuiger - zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2457400457-festool-ctl-mini-1-stofzuiger-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Festool CTL Mini stofzuiger",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2456717451-festool-ctl-mini-stofzuiger"
      },
      {
       "kind": "bid",
@@ -10617,14 +10613,15 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2441553791-festool-ctl-mini-i-stofzuiger"
      }
     ],
-    "low": 193.75,
-    "median": 275.0,
+    "low": 237.5,
+    "median": 350.0,
     "model": null,
     "outliers": [],
     "prices": [
      175.0,
-     250.0,
      300.0,
+     350.0,
+     350.0,
      450.0
     ],
     "query": "festool ctl mini",
@@ -10914,11 +10911,11 @@
    "v": 4
   },
   "general festool invalzaag|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 41,
-    "high": 450.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 44,
+    "high": 523.75,
     "kind": "general",
     "listings": [
      {
@@ -10959,24 +10956,6 @@
      },
      {
       "kind": "bid",
-      "price": 100.0,
-      "title": "Invalzaag Festool ATF 55 EB",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455973403-invalzaag-festool-atf-55-eb"
-     },
-     {
-      "kind": "bid",
-      "price": 130.0,
-      "title": "festool ATF55 eb invalzaag zonder geleider",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2449087629-festool-atf55-eb-invalzaag-zonder-geleider"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "festool invalzaag in systainer",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2449426231-festool-invalzaag-in-systainer"
-     },
-     {
-      "kind": "bid",
       "price": 225.0,
       "title": "Festool invalzaag TS 55 REBQ incl. snoer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455606085-festool-invalzaag-ts-55-rebq-incl-snoer"
@@ -10989,9 +10968,9 @@
      },
      {
       "kind": "fixed",
-      "price": 229.99,
-      "title": "Festool TS 55 EBQ Invalzaag in Goede Staat Incl. Systainer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455569456-festool-ts-55-ebq-invalzaag-in-goede-staat-incl-systainer"
+      "price": 250.0,
+      "title": "Festo /festool at 65 eb plus invalzaag inc geleider 140",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456974828-festo-festool-at-65-eb-plus-invalzaag-inc-geleider-140"
      },
      {
       "kind": "bid",
@@ -11000,16 +10979,22 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2454442222-festool-invalzaag-op-snoer"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 250.0,
-      "title": "Festool TS 55 REBQ-Plus invalzaag - 1200W",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456358428-festool-ts-55-rebq-plus-invalzaag-1200w"
+      "title": "Festool ATF 55 EB invalzaag met handleiding",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456549591-festool-atf-55-eb-invalzaag-met-handleiding"
      },
      {
       "kind": "bid",
       "price": 250.0,
       "title": "Festool TS 55 EBQ invalzaag met 1200W vermogen",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2445251434-festool-ts-55-ebq-invalzaag-met-1200w-vermogen"
+     },
+     {
+      "kind": "bid",
+      "price": 290.0,
+      "title": "festool invalzaag. TS55 REBQ WEG=WEG!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2435209041-festool-invalzaag-ts55-rebq-weg-weg"
      },
      {
       "kind": "fixed",
@@ -11019,21 +11004,15 @@
      },
      {
       "kind": "bid",
-      "price": 300.0,
-      "title": "Festool TS 55 REBQ-Plus invalzaag met Systainer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2455283819-festool-ts-55-rebq-plus-invalzaag-met-systainer"
+      "price": 299.99,
+      "title": "Festool TS 55 REBQ Invalzaag |",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2457518712-festool-ts-55-rebq-invalzaag"
      },
      {
       "kind": "bid",
       "price": 300.0,
       "title": "Festool TS 55 F invalzaag met Systainer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2453710315-festool-ts-55-f-invalzaag-met-systainer"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "festool invalzaag. TS55 REBQ WEG=WEG!",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2435209041-festool-invalzaag-ts55-rebq-weg-weg"
      },
      {
       "kind": "bid",
@@ -11046,6 +11025,12 @@
       "price": 300.0,
       "title": "Festool TS 55 REBQ invalzaag - Gebruikt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2441809896-festool-ts-55-rebq-invalzaag-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 329.99,
+      "title": "Festool TS 55 REBQ Invalzaag + Systainer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2457016000-festool-ts-55-rebq-invalzaag-systainer"
      },
      {
       "kind": "bid",
@@ -11086,6 +11071,12 @@
      {
       "kind": "bid",
       "price": 420.0,
+      "title": "Festool TS 55 REBQ-Plus invalzaag met geleiderail en accesso",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456671120-festool-ts-55-rebq-plus-invalzaag-met-geleiderail-en-accesso"
+     },
+     {
+      "kind": "bid",
+      "price": 420.0,
       "title": "Festool TS 55 F invalzaag met toebehoren",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2448093679-festool-ts-55-f-invalzaag-met-toebehoren"
      },
@@ -11098,16 +11089,20 @@
      {
       "kind": "fixed",
       "price": 450.0,
-      "title": "Festool invalzaag TS 75, enkele keren gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456267852-festool-invalzaag-ts-75-enkele-keren-gebruikt"
+      "title": "Festool Invalzaag met geleiderails - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456895150-festool-invalzaag-met-geleiderails-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 450.0,
+      "title": "Festool zaagtafel basis plus inc invalzaag aft 55",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456935341-festool-zaagtafel-basis-plus-inc-invalzaag-aft-55"
      }
     ],
-    "low": 225.0,
-    "median": 300.0,
+    "low": 250.0,
+    "median": 370.0,
     "model": null,
-    "outliers": [
-     900.0
-    ],
+    "outliers": [],
     "prices": [
      4.0,
      9.0,
@@ -11115,27 +11110,26 @@
      9.95,
      10.0,
      10.0,
-     100.0,
-     130.0,
-     200.0,
      225.0,
      225.0,
-     229.99,
      250.0,
      250.0,
      250.0,
+     250.0,
+     290.0,
+     299.99,
      299.99,
      300.0,
      300.0,
      300.0,
-     300.0,
-     300.0,
+     329.99,
      345.0,
      350.0,
      365.0,
      375.0,
      395.0,
      400.0,
+     420.0,
      420.0,
      425.0,
      450.0,
@@ -11148,8 +11142,12 @@
      550.0,
      595.0,
      600.0,
+     600.0,
+     650.0,
      789.0,
-     800.0
+     800.0,
+     847.0,
+     900.0
     ],
     "query": "festool invalzaag",
     "search": "festool invalzaag"
@@ -11157,11 +11155,11 @@
    "v": 4
   },
   "general festool ro feq excentrische schuurmachine|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 4,
-    "high": 443.75,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 7,
+    "high": 425.0,
     "kind": "general",
     "listings": [
      {
@@ -11169,6 +11167,24 @@
       "price": 250.0,
       "title": "Festool Rotex RO 125 FEQ-Plus Excentrische Schuurmachine",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2452669791-festool-rotex-ro-125-feq-plus-excentrische-schuurmachine"
+     },
+     {
+      "kind": "bid",
+      "price": 275.0,
+      "title": "Festool Rotex RO 150 FEQ Excentrische Schuurmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2456717448-festool-rotex-ro-150-feq-excentrische-schuurmachine"
+     },
+     {
+      "kind": "bid",
+      "price": 325.0,
+      "title": "Festool Rotex RO 150 FEQ Excentrische Schuurmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2456546345-festool-rotex-ro-150-feq-excentrische-schuurmachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 339.99,
+      "title": "Festool RO 150 FEQ Excentrische schuurmachine | Nu € 339,99",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2456850992-festool-ro-150-feq-excentrische-schuurmachine-nu-339-99"
      },
      {
       "kind": "fixed",
@@ -11189,12 +11205,15 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2453371459-festool-rotex-ro-150-feq-plus-excentrische-schuurmachine"
      }
     ],
-    "low": 283.75,
-    "median": 405.0,
+    "low": 275.0,
+    "median": 339.99,
     "model": null,
     "outliers": [],
     "prices": [
      250.0,
+     275.0,
+     325.0,
+     339.99,
      385.0,
      425.0,
      450.0
@@ -11205,7 +11224,7 @@
    "v": 4
   },
   "general galaxy tapijt|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -11215,12 +11234,12 @@
    "v": 2
   },
   "general hikoki invalzaag elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
   "general hikoki klopboorhamer elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -11404,11 +11423,11 @@
    "v": 2
   },
   "general hilti roterende laser|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 5,
-    "high": 1200.0,
+    "high": 1075.0,
     "kind": "general",
     "listings": [
      {
@@ -11416,6 +11435,12 @@
       "price": 200.0,
       "title": "Hilti PR 15 Roterende Laser + Statief & Wanddrager (ZGAN)",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2403764461-hilti-pr-15-roterende-laser-statief-wanddrager-zgan"
+     },
+     {
+      "kind": "bid",
+      "price": 800.0,
+      "title": "Hilti PR 3-HVSG Roterende laser met ontvangers en oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2457560308-hilti-pr-3-hvsg-roterende-laser-met-ontvangers-en-oplader"
      },
      {
       "kind": "fixed",
@@ -11434,23 +11459,17 @@
       "price": 1200.0,
       "title": "Hilti PR 30-HVS Roterende Laser met Ontvangers en Oplader",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2453365579-hilti-pr-30-hvs-roterende-laser-met-ontvangers-en-oplader"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "Hilti PR 30-HVSG Roterende Laser met Statief en Ontvanger",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2444757742-hilti-pr-30-hvsg-roterende-laser-met-statief-en-ontvanger"
      }
     ],
-    "low": 550.0,
-    "median": 950.0,
+    "low": 500.0,
+    "median": 900.0,
     "model": null,
     "outliers": [],
     "prices": [
      200.0,
+     800.0,
      900.0,
      950.0,
-     1200.0,
      1200.0
     ],
     "query": "hilti roterende laser",
@@ -11459,7 +11478,7 @@
    "v": 4
   },
   "general hilti slagschroevendraaier accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -11474,11 +11493,11 @@
    "v": 4
   },
   "general iphone pro titanium 512gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 35,
-    "high": 879.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 21,
+    "high": 850.0,
     "kind": "general",
     "listings": [
      {
@@ -11489,9 +11508,9 @@
      },
      {
       "kind": "bid",
-      "price": 550.0,
-      "title": "iPhone 15 Pro 512GB Black Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2452646907-iphone-15-pro-512gb-black-titanium"
+      "price": 600.0,
+      "title": "iPhone 15 Pro Max Wit Titanium 512GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2457535250-iphone-15-pro-max-wit-titanium-512gb-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -11512,12 +11531,6 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2448367084-iphone-15-pro-512gb-natural-titanium-zeer-nette-staat"
      },
      {
-      "kind": "fixed",
-      "price": 650.0,
-      "title": "iPhone 15 Pro Max Natural Titanium 512GB met doos",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456402383-iphone-15-pro-max-natural-titanium-512gb-met-doos"
-     },
-     {
       "kind": "bid",
       "price": 650.0,
       "title": "iPhone 15 Pro 512GB titanium",
@@ -11530,30 +11543,6 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2455041977-iphone-15-pro-max-512gb-natural-titanium-perfecte-staat"
      },
      {
-      "kind": "fixed",
-      "price": 669.0,
-      "title": "Refurbished iPhone 15 Pro Max 512GB Zwart Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369635-refurbished-iphone-15-pro-max-512gb-zwart-titanium"
-     },
-     {
-      "kind": "fixed",
-      "price": 689.0,
-      "title": "Refurbished iPhone 15 Pro Max 512GB Blauw Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1529827357-refurbished-iphone-15-pro-max-512gb-blauw-titanium"
-     },
-     {
-      "kind": "fixed",
-      "price": 689.0,
-      "title": "Refurbished iPhone 15 Pro Max 512GB Zwart Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369637-refurbished-iphone-15-pro-max-512gb-zwart-titanium"
-     },
-     {
-      "kind": "fixed",
-      "price": 689.0,
-      "title": "Refurbished iPhone 15 Pro Max 512GB Wit Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369633-refurbished-iphone-15-pro-max-512gb-wit-titanium"
-     },
-     {
       "kind": "bid",
       "price": 695.0,
       "title": "Apple Iphone 15 Pro Max 512GB Black Titanium",
@@ -11562,20 +11551,20 @@
      {
       "kind": "bid",
       "price": 700.0,
-      "title": "iPhone 15 Pro Max 512GB Naturel Titanium kleur - Z.G.A.N.",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453811212-iphone-15-pro-max-512gb-naturel-titanium-kleur-z-g-a-n"
-     },
-     {
-      "kind": "bid",
-      "price": 700.0,
       "title": "Iphone 15 pro 512GB blue titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2418343841-iphone-15-pro-512gb-blue-titanium"
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-apple-iphone/m2456601093-iphone-15-pro-512gb-blue-titanium"
      },
      {
       "kind": "fixed",
-      "price": 701.99,
+      "price": 722.99,
       "title": "Apple iPhone 15 Pro 512GB naturel titanium",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1495951530-apple-iphone-15-pro-512gb-naturel-titanium"
+     },
+     {
+      "kind": "bid",
+      "price": 725.0,
+      "title": "iPhone 16 Pro Max 512GB white Titanium",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2457540994-iphone-16-pro-max-512gb-white-titanium"
      },
      {
       "kind": "bid",
@@ -11593,37 +11582,13 @@
       "kind": "fixed",
       "price": 750.0,
       "title": "Apple iPhone 16 Pro 512GB Titanium Grey - 6 Maanden Oud",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2454432222-apple-iphone-16-pro-512gb-titanium-grey-6-maanden-oud"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "iPhone 16 Pro 512GB Black Titanium | Zeer netjes",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2445825671-iphone-16-pro-512gb-black-titanium-zeer-netjes"
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456812057-apple-iphone-16-pro-512gb-titanium-grey-6-maanden-oud"
      },
      {
       "kind": "fixed",
       "price": 799.0,
-      "title": "iPhone 16 Pro 512GB Natural Titanium – 99% - NIEUWSTAAT",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456223416-iphone-16-pro-512gb-natural-titanium-99-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 800.0,
-      "title": "iPhone 15 Pro Max 512gb natural titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2443552509-iphone-15-pro-max-512gb-natural-titanium"
-     },
-     {
-      "kind": "fixed",
-      "price": 839.0,
-      "title": "Refurbished iPhone 16 Pro Max 512GB Titanium Zwart",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1529827358-refurbished-iphone-16-pro-max-512gb-titanium-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 849.0,
-      "title": "iPhone 16 Pro Max 512GB – Desert Titanium",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2452036336-iphone-16-pro-max-512gb-desert-titanium"
+      "title": "iPhone 16 Pro MAX 512GB Natural Titanium – 99% - NIEUWSTAAT",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456223416-iphone-16-pro-max-512gb-natural-titanium-99-nieuwstaat"
      },
      {
       "kind": "bid",
@@ -11638,70 +11603,56 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2440976194-apple-iphone-16-pro-512gb-desert-titanium"
      },
      {
-      "kind": "fixed",
-      "price": 879.0,
-      "title": "Refurbished iPhone 16 Pro Max 512GB Titanium Naturel",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369670-refurbished-iphone-16-pro-max-512gb-titanium-naturel"
+      "kind": "bid",
+      "price": 900.0,
+      "title": "Apple iPhone 16 Pro Max 512 GB brons (desert titanium)",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2443310836-apple-iphone-16-pro-max-512-gb-brons-desert-titanium"
+     },
+     {
+      "kind": "bid",
+      "price": 910.0,
+      "title": "iPhone 16 pro 512GB Titanium",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-hoesjes-en-frontjes-apple-iphone/m2423770844-iphone-16-pro-512gb-titanium"
      },
      {
       "kind": "fixed",
-      "price": 879.0,
-      "title": "Refurbished iPhone 16 Pro Max 512GB Titanium Wit",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369673-refurbished-iphone-16-pro-max-512gb-titanium-wit"
+      "price": 919.0,
+      "title": "iPhone 16 Pro Max 512GB Desert Titanium - 94% Battery Health",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2450282123-iphone-16-pro-max-512gb-desert-titanium-94-battery-health"
      },
      {
-      "kind": "fixed",
-      "price": 879.0,
-      "title": "Refurbished iPhone 16 Pro Max 512GB Titanium Zwart",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369674-refurbished-iphone-16-pro-max-512gb-titanium-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 879.0,
-      "title": "Refurbished iPhone 16 Pro Max 512GB Titanium Desert",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/a1525369672-refurbished-iphone-16-pro-max-512gb-titanium-desert"
+      "kind": "bid",
+      "price": 990.0,
+      "title": "Nieuwe iPhone 16 Pro Max 512GB in Zwart Titanium.",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2440640328-nieuwe-iphone-16-pro-max-512gb-in-zwart-titanium"
      }
     ],
-    "low": 669.0,
-    "median": 750.0,
+    "low": 649.5,
+    "median": 725.0,
     "model": null,
     "outliers": [],
     "prices": [
      369.0,
-     550.0,
+     600.0,
      639.0,
      649.0,
      649.0,
      650.0,
      650.0,
-     650.0,
-     669.0,
-     689.0,
-     689.0,
-     689.0,
      695.0,
      700.0,
-     700.0,
-     701.99,
+     722.99,
+     725.0,
      749.0,
      750.0,
      750.0,
-     750.0,
      799.0,
-     800.0,
-     839.0,
-     849.0,
      850.0,
      850.0,
-     879.0,
-     879.0,
-     879.0,
-     879.0,
      900.0,
      910.0,
      919.0,
-     990.0,
-     1139.0
+     990.0
     ],
     "query": "iphone pro titanium 512gb",
     "search": "iphone pro titanium 512gb"
@@ -11709,19 +11660,13 @@
    "v": 4
   },
   "general jura e8 koffiemachine|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 25,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 26,
     "high": 650.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 300.0,
-      "title": "Jura E8 volautomatische koffiemachine - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2455103427-jura-e8-volautomatische-koffiemachine-zo-goed-als-nieuw"
-     },
      {
       "kind": "bid",
       "price": 380.0,
@@ -11739,12 +11684,6 @@
       "price": 444.0,
       "title": "Jura E8 Platina Refurbished one touch koffiemachine",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2455664054-jura-e8-platina-refurbished-one-touch-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 449.0,
-      "title": "Jura E8 Koffiemachine met accessoires",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2454020355-jura-e8-koffiemachine-met-accessoires"
      },
      {
       "kind": "fixed",
@@ -11767,8 +11706,8 @@
      {
       "kind": "bid",
       "price": 500.0,
-      "title": "Jura E8 Koffiemachine met Melkopschuimer - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2429826133-jura-e8-koffiemachine-met-melkopschuimer-gebruikt"
+      "title": "Jura E8/E80 Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456570802-jura-e8-e80-koffiemachine-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -11779,8 +11718,26 @@
      {
       "kind": "fixed",
       "price": 550.0,
+      "title": "Jura E8(EC) Volautomatische Koffiemachine (2024)",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457169573-jura-e8-ec-volautomatische-koffiemachine-2024"
+     },
+     {
+      "kind": "bid",
+      "price": 550.0,
+      "title": "Jura E8 dark inox volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457728269-jura-e8-dark-inox-volautomatische-koffiemachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 550.0,
       "title": "Jura E8 Volautomatische Koffiemachine - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2443685059-jura-e8-volautomatische-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 550.0,
+      "title": "Jura E8 Koffiemachine met Smart Connect en Toebehoren",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457098763-jura-e8-koffiemachine-met-smart-connect-en-toebehoren"
      },
      {
       "kind": "bid",
@@ -11809,14 +11766,14 @@
      {
       "kind": "bid",
       "price": 600.0,
-      "title": "Jura E8 Koffiemachine - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2431102196-jura-e8-koffiemachine-zo-goed-als-nieuw"
+      "title": "Jura E8 Dark Inox volautomatische koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457360276-jura-e8-dark-inox-volautomatische-koffiemachine"
      },
      {
       "kind": "bid",
       "price": 600.0,
-      "title": "Jura E8 Koffiemachine - goed onderhouden.",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2427848893-jura-e8-koffiemachine-goed-onderhouden"
+      "title": "Jura E8 Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2431102196-jura-e8-koffiemachine-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -11867,21 +11824,24 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2451030830-jura-e8-ec-piano-black-koffiemachine-2026-garantie"
      }
     ],
-    "low": 462.5,
+    "low": 500.0,
     "median": 550.0,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     1000.0
+    ],
     "prices": [
-     300.0,
      380.0,
      400.0,
      444.0,
-     449.0,
      450.0,
      475.0,
      500.0,
      500.0,
      525.0,
+     550.0,
+     550.0,
+     550.0,
      550.0,
      550.0,
      550.0,
@@ -12610,7 +12570,7 @@
    "v": 4
   },
   "general koffiemachine delta mayor|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -12889,9 +12849,9 @@
    "v": 4
   },
   "general koffiemachine vibiemme|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 5,
     "high": 612.5,
     "kind": "general",
@@ -13283,11 +13243,11 @@
    "v": 2
   },
   "general laptop hp batterij|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 8,
-    "high": 110.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 7,
+    "high": 100.0,
     "kind": "general",
     "listings": [
      {
@@ -13301,12 +13261,6 @@
       "price": 15.0,
       "title": "HP SR04XL Oplaadbare Laptop Batterij 15.4V 70.07Wh 4550mAh",
       "url": "https://www.marktplaats.nl/v/computers-en-software/accu-s-en-batterijen/m2455987923-hp-sr04xl-oplaadbare-laptop-batterij-15-4v-70-07wh-4550mah"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "z.g.a.n laptop accu hp aro8xl notbook",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/accu-s-en-batterijen/m2453484855-z-g-a-n-laptop-accu-hp-aro8xl-notbook"
      },
      {
       "kind": "bid",
@@ -13327,31 +13281,30 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/m2455632090-hp-laptop-accu-origineel-en-goede-staat"
      },
      {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "HP Laptop Ryzen 5 8 GB RAM Nieuwe Batterij MOET WEG!!!!!",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2455552193-hp-laptop-ryzen-5-8-gb-ram-nieuwe-batterij-moet-weg"
+     },
+     {
       "kind": "fixed",
       "price": 130.0,
       "title": "Compacte HP Laptop | Windows 11 | SSD Schijf | Nieuwe Accu",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1531875809-compacte-hp-laptop-windows-11-ssd-schijf-nieuwe-accu"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "HP Laptop Ryzen 5 8 GB RAM Nieuwe Batterij",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2455552193-hp-laptop-ryzen-5-8-gb-ram-nieuwe-batterij"
      }
     ],
-    "low": 17.5,
-    "median": 32.0,
+    "low": 15.0,
+    "median": 35.0,
     "model": null,
     "outliers": [],
     "prices": [
      10.0,
      15.0,
-     25.0,
      29.0,
      35.0,
      50.0,
-     130.0,
-     200.0
+     100.0,
+     130.0
     ],
     "query": "laptop hp batterij",
     "search": "laptop hp batterij"
@@ -15679,16 +15632,16 @@
    "v": 2
   },
   "general makita elektronica|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
   "general makita gereedschap elektrisch|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
     "count": 8,
-    "high": 280.0,
+    "high": 172.5,
     "kind": "general",
     "listings": [
      {
@@ -15705,54 +15658,56 @@
      },
      {
       "kind": "bid",
-      "price": 35.0,
-      "title": "Makita E-15095 60-delige gereedschapsset",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2456003766-makita-e-15095-60-delige-gereedschapsset"
+      "price": 25.0,
+      "title": "Makita gereedschapstas op wielen - 75x35x30 cm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457279958-makita-gereedschapstas-op-wielen-75x35x30-cm"
      },
      {
       "kind": "bid",
-      "price": 160.0,
+      "price": 110.0,
+      "title": "Makita Mbox met lades - Gereedschapsopslag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457312543-makita-mbox-met-lades-gereedschapsopslag"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "elektrische gereedschap makita cirkelzaag dss501zj",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457266637-elektrische-gereedschap-makita-cirkelzaag-dss501zj"
+     },
+     {
+      "kind": "bid",
+      "price": 165.0,
       "title": "makita gereedschap",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2447467896-makita-gereedschap"
      },
      {
       "kind": "bid",
       "price": 175.0,
-      "title": "Partij Elektrisch Gereedschap(Makita & Hitachi)Opknappers",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2455680174-partij-elektrisch-gereedschap-makita-hitachi-opknappers"
+      "title": "tk:Partij Elektrisch Gereedschap(Makita & Hitachi)Opknappers",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456783094-tk-partij-elektrisch-gereedschap-makita-hitachi-opknappers"
      },
      {
       "kind": "bid",
       "price": 250.0,
       "title": "Makita gereedschapset 14,4 volt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456394491-makita-gereedschapset-14-4-volt"
-     },
-     {
-      "kind": "fixed",
-      "price": 290.0,
-      "title": "Makita Gereedschap 18V Set te koop",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2456431436-makita-gereedschap-18v-set-te-koop"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Makita Accu Gereedschap Set: Boormachine, Slagmoersleutel, R",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456218838-makita-accu-gereedschap-set-boormachine-slagmoersleutel-r"
      }
     ],
-    "low": 27.46,
-    "median": 167.5,
+    "low": 24.96,
+    "median": 130.0,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     1100.0
+    ],
     "prices": [
      18.5,
      24.95,
-     35.0,
-     160.0,
+     25.0,
+     110.0,
+     150.0,
+     165.0,
      175.0,
-     250.0,
-     290.0,
-     500.0
+     250.0
     ],
     "query": "makita gereedschap",
     "search": "makita gereedschap"
@@ -15760,11 +15715,11 @@
    "v": 4
   },
   "general makita gereedschap goui elektronica|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 7,
-    "high": 290.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 6,
+    "high": 175.0,
     "kind": "general",
     "listings": [
      {
@@ -15781,47 +15736,42 @@
      },
      {
       "kind": "bid",
-      "price": 35.0,
-      "title": "Makita E-15095 60-delige gereedschapsset",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2456003766-makita-e-15095-60-delige-gereedschapsset"
+      "price": 25.0,
+      "title": "Makita gereedschapstas op wielen - 75x35x30 cm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457279958-makita-gereedschapstas-op-wielen-75x35x30-cm"
      },
      {
       "kind": "bid",
-      "price": 39.95,
-      "title": "Makita D-42042 103-delige gereedschapset",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2449183020-makita-d-42042-103-delige-gereedschapset"
+      "price": 110.0,
+      "title": "Makita Mbox met lades - Gereedschapsopslag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457312543-makita-mbox-met-lades-gereedschapsopslag"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "elektrische gereedschap makita cirkelzaag dss501zj",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2457266637-elektrische-gereedschap-makita-cirkelzaag-dss501zj"
      },
      {
       "kind": "bid",
       "price": 250.0,
       "title": "Makita gereedschapset 14,4 volt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456394491-makita-gereedschapset-14-4-volt"
-     },
-     {
-      "kind": "fixed",
-      "price": 290.0,
-      "title": "Makita Gereedschap 18V Set te koop",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2456431436-makita-gereedschap-18v-set-te-koop"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Makita Accu Gereedschap Set: Boormachine, Slagmoersleutel, R",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456218838-makita-accu-gereedschap-set-boormachine-slagmoersleutel-r"
      }
     ],
-    "low": 24.95,
-    "median": 39.95,
+    "low": 23.34,
+    "median": 67.5,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     1100.0
+    ],
     "prices": [
      18.5,
      24.95,
-     35.0,
-     39.95,
-     250.0,
-     290.0,
-     500.0
+     25.0,
+     110.0,
+     150.0,
+     250.0
     ],
     "query": "makita gereedschap",
     "search": "makita gereedschap"
@@ -17808,7 +17758,7 @@
    "v": 3
   },
   "general metabo gereedschap elektrisch|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -17818,11 +17768,11 @@
    "v": 3
   },
   "general metabo haakse slijper elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 11,
-    "high": 125.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 10,
+    "high": 143.75,
     "kind": "general",
     "listings": [
      {
@@ -17834,14 +17784,8 @@
      {
       "kind": "fixed",
       "price": 20.0,
-      "title": "Metabo haakse slijper - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456328469-metabo-haakse-slijper-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Metabo Haakse Slijper - Gebruikt maar Functioneel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451778503-metabo-haakse-slijper-gebruikt-maar-functioneel"
+      "title": "Metabo haakse slijper - Goede staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2457460064-metabo-haakse-slijper-goede-staat"
      },
      {
       "kind": "fixed",
@@ -17899,7 +17843,6 @@
     "prices": [
      20.0,
      20.0,
-     35.0,
      40.0,
      50.0,
      70.0,
@@ -19980,11 +19923,11 @@
    "v": 2
   },
   "general plant decoratie planten|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 9,
-    "high": 23.95,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 10,
+    "high": 18.95,
     "kind": "general",
     "listings": [
      {
@@ -19994,16 +19937,28 @@
       "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-kunstplanten-en-kunstbloemen/m2455339500-diverse-kunsttakken-en-planten-voor-decoratie"
      },
      {
+      "kind": "fixed",
+      "price": 8.0,
+      "title": "Fraaie decoratieve Planten Standaard - 89 cm - Standaard -",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/a1532955377-fraaie-decoratieve-planten-standaard-89-cm-standaard"
+     },
+     {
+      "kind": "fixed",
+      "price": 8.0,
+      "title": "2 Decoratieve Bloemen- of Planten manden - Mand (2) - Metaal",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/curiosa-en-brocante/a1532983495-2-decoratieve-bloemen-of-planten-manden-mand-2-metaal"
+     },
+     {
       "kind": "bid",
       "price": 10.0,
       "title": "Diverse bloempotten, vaste planten en decoratie",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2455852931-diverse-bloempotten-vaste-planten-en-decoratie"
      },
      {
-      "kind": "bid",
-      "price": 10.0,
-      "title": "planten haak katrol huis  decoratie",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/overige-huis-en-inrichting/m2455086667-planten-haak-katrol-huis-decoratie"
+      "kind": "fixed",
+      "price": 14.95,
+      "title": "Set van 12 Kunstgras Siergrassen - Decoratieve Nep Planten v",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/a1530542644-set-van-12-kunstgras-siergrassen-decoratieve-nep-planten-v"
      },
      {
       "kind": "fixed",
@@ -20034,28 +19989,25 @@
       "price": 28.95,
       "title": "25/26-Delige Aquarium Planten Set Kunstmatige Decoratie",
       "url": "https://www.marktplaats.nl/v/dieren-en-toebehoren/vissen-aquaria-en-toebehoren/a1523795278-25-26-delige-aquarium-planten-set-kunstmatige-decoratie"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Decoratieve planten/ wandkast",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kasten-overige/m2453562699-decoratieve-planten-wandkast"
      }
     ],
-    "low": 10.0,
-    "median": 17.95,
+    "low": 8.0,
+    "median": 15.45,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     40.0
+    ],
     "prices": [
      7.5,
+     8.0,
+     8.0,
      10.0,
-     10.0,
+     14.95,
      15.95,
      17.95,
      18.95,
      18.95,
-     28.95,
-     40.0
+     28.95
     ],
     "query": "plant decoratie planten",
     "search": "plant decoratie planten"
@@ -20362,11 +20314,11 @@
    "v": 4
   },
   "general plant mica donkergroen plantenmanden|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 5,
-    "high": 20.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 4,
+    "high": 22.5,
     "kind": "general",
     "listings": [
      {
@@ -20385,12 +20337,6 @@
      },
      {
       "kind": "bid",
-      "price": 12.5,
-      "title": "Plantenbakken Mica Intratuin 2x (4382)",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2416141282-plantenbakken-mica-intratuin-2x-4382"
-     },
-     {
-      "kind": "bid",
       "price": 15.0,
       "title": "Mica plantenstandaard met rieten mand",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2451807126-mica-plantenstandaard-met-rieten-mand"
@@ -20402,14 +20348,13 @@
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2419690019-mica-plantenpot-van-riet-xl-40-44cm"
      }
     ],
-    "low": 5.58,
-    "median": 12.5,
+    "low": 5.29,
+    "median": 10.59,
     "model": null,
     "outliers": [],
     "prices": [
      5.0,
      6.17,
-     12.5,
      15.0,
      25.0
     ],
@@ -20419,10 +20364,10 @@
    "v": 4
   },
   "general plant mica plantenmanden|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 9,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 8,
     "high": 25.0,
     "kind": "general",
     "listings": [
@@ -20456,12 +20401,6 @@
      },
      {
       "kind": "bid",
-      "price": 12.5,
-      "title": "Plantenbakken Mica Intratuin 2x (4382)",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2416141282-plantenbakken-mica-intratuin-2x-4382"
-     },
-     {
-      "kind": "bid",
       "price": 15.0,
       "title": "Mica plantenstandaard met rieten mand",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2451807126-mica-plantenstandaard-met-rieten-mand"
@@ -20485,8 +20424,8 @@
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2454890754-mica-decorations-gabriel-ronde-bloempot-met-jonge-plant"
      }
     ],
-    "low": 5.58,
-    "median": 12.5,
+    "low": 5.29,
+    "median": 11.25,
     "model": null,
     "outliers": [],
     "prices": [
@@ -20494,7 +20433,6 @@
      5.0,
      6.17,
      7.5,
-     12.5,
      15.0,
      25.0,
      25.0,
@@ -20814,30 +20752,36 @@
    "v": 3
   },
   "general plant plantenbak|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 54,
-    "high": 79.49,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 56,
+    "high": 80.49,
     "kind": "general",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 3.0,
+      "title": "terra cotta plantenbak op voet met planten / miniatuur",
+      "url": "https://www.marktplaats.nl/v/verzamelen/poppenhuizen-en-toebehoren/m2457086643-terra-cotta-plantenbak-op-voet-met-planten-miniatuur"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "Plantenbak met rieten mand",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2457259372-plantenbak-met-rieten-mand"
+     },
+     {
+      "kind": "fixed",
+      "price": 5.0,
+      "title": "stenen plantenbak",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2457479216-stenen-plantenbak"
+     },
      {
       "kind": "bid",
       "price": 5.0,
       "title": "Grote zwarte kunststof plantenbakken (set van 3)",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2454512957-grote-zwarte-kunststof-plantenbakken-set-van-3"
-     },
-     {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "Rotan plantenpot / plantenbak / mand",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2454530288-rotan-plantenpot-plantenbak-mand"
-     },
-     {
-      "kind": "bid",
-      "price": 5.0,
-      "title": "Rotan bloempot/plantenbak voor kerstboom of plant",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2455554802-rotan-bloempot-plantenbak-voor-kerstboom-of-plant"
      },
      {
       "kind": "fixed",
@@ -20846,34 +20790,30 @@
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2455917704-set-van-2-zwarte-vierkante-plantenbakken"
      },
      {
-      "kind": "fixed",
-      "price": 9.0,
-      "title": "vidaXL Plantenbak met pinnen 43,5x43,5x43,5 cm polypropeen",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567652-vidaxl-plantenbak-met-pinnen-43-5x43-5x43-5-cm-polypropeen"
-     },
-     {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 10.0,
-      "title": "Robuuste vierkante plantenbak 30x34x34 cm",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2456295189-robuuste-vierkante-plantenbak-30x34x34-cm"
+      "title": "Nieuwe plantenbak voor kamerplanten",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2457153781-nieuwe-plantenbak-voor-kamerplanten"
      },
      {
       "kind": "bid",
       "price": 15.0,
-      "title": "Stijlvolle metalen (plantenbak - Grijs, modern design",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2445227596-stijlvolle-metalen-plantenbak-grijs-modern-design"
+      "title": "Zwarte plantenbak op standaard - 22 cm doorsnede",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2456865050-zwarte-plantenbak-op-standaard-22-cm-doorsnede"
      },
      {
       "kind": "bid",
-      "price": 15.0,
-      "title": "Zwarte metalen plantenbak op standaard",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2454923713-zwarte-metalen-plantenbak-op-standaard"
+      "of": 2,
+      "price": 17.5,
+      "title": "Twee bomen voor balkon of terras in Lechuza plantenbakken",
+      "total": 35.0,
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/planten-bomen/m2456938335-twee-bomen-voor-balkon-of-terras-in-lechuza-plantenbakken"
      },
      {
       "kind": "fixed",
       "price": 18.0,
       "title": "vidaXL Plantenbak met pinnen 43,5x43,5x43,5 cm polypropeen",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567490-vidaxl-plantenbak-met-pinnen-43-5x43-5x43-5-cm-polypropeen"
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567294-vidaxl-plantenbak-met-pinnen-43-5x43-5x43-5-cm-polypropeen"
      },
      {
       "kind": "fixed",
@@ -20889,11 +20829,15 @@
      },
      {
       "kind": "bid",
-      "of": 2,
       "price": 20.0,
-      "title": "Regina Gouda Holland Plantenbakken (2 stuks)",
-      "total": 40.0,
-      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2455153419-regina-gouda-holland-plantenbakken-2-stuks"
+      "title": "Elho plantenbak zwart met deksel",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2456915079-elho-plantenbak-zwart-met-deksel"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Set van 6 Zwarte Plantenbakken met planten samen",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2456699247-set-van-6-zwarte-plantenbakken-met-planten-samen"
      },
      {
       "kind": "fixed",
@@ -20903,15 +20847,27 @@
      },
      {
       "kind": "fixed",
-      "price": 26.0,
+      "price": 25.0,
+      "title": "vidaXL Plantenbak met pinnen 42,5x42,5x28,5 cm polypropeen",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567126-vidaxl-plantenbak-met-pinnen-42-5x42-5x28-5-cm-polypropeen"
+     },
+     {
+      "kind": "fixed",
+      "price": 28.0,
       "title": "vidaXL Plantenbak met pinnen 43,5x43,5x43,5 cm polypropeen",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567116-vidaxl-plantenbak-met-pinnen-43-5x43-5x43-5-cm-polypropeen"
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567117-vidaxl-plantenbak-met-pinnen-43-5x43-5x43-5-cm-polypropeen"
      },
      {
       "kind": "fixed",
       "price": 34.0,
       "title": "vidaXL Plantenbak 100x100x36 cm gegalvaniseerd staal bruin",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1478954699-vidaxl-plantenbak-100x100x36-cm-gegalvaniseerd-staal-bruin"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "decoratieve plantenbak met groene planten",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2457748572-decoratieve-plantenbak-met-groene-planten"
      },
      {
       "kind": "fixed",
@@ -20930,12 +20886,6 @@
       "price": 40.0,
       "title": "Elho hoge plantenbak 90cm - Antraciet",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2455428219-elho-hoge-plantenbak-90cm-antraciet"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Grote decoratieve plantenbak - Grijs/Wit",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2455018088-grote-decoratieve-plantenbak-grijs-wit"
      },
      {
       "kind": "fixed",
@@ -20959,13 +20909,13 @@
       "kind": "fixed",
       "price": 46.0,
       "title": "vidaXL Plantenbak met pinnen 123,5x43,5x43,5 cm polypropeen",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1500955694-vidaxl-plantenbak-met-pinnen-123-5x43-5x43-5-cm-polypropeen"
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1501567454-vidaxl-plantenbak-met-pinnen-123-5x43-5x43-5-cm-polypropeen"
      },
      {
       "kind": "fixed",
       "price": 50.0,
-      "title": "Kunsthof plantenbakken",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2454389537-kunsthof-plantenbakken"
+      "title": "Grote ronde bloempot/plantenbak, goudkleurig",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/m2457284678-grote-ronde-bloempot-plantenbak-goudkleurig"
      },
      {
       "kind": "fixed",
@@ -20990,47 +20940,36 @@
       "price": 56.0,
       "title": "vidaXL Plantenbak met pinnen 123,5x43,5x43,5 cm polypropeen",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1500916821-vidaxl-plantenbak-met-pinnen-123-5x43-5x43-5-cm-polypropeen"
-     },
-     {
-      "kind": "fixed",
-      "price": 57.0,
-      "title": "vidaXL Gabion plantenbak verhoogd zeshoekig 100x90x50 cm",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1480609615-vidaxl-gabion-plantenbak-verhoogd-zeshoekig-100x90x50-cm"
-     },
-     {
-      "kind": "fixed",
-      "price": 57.0,
-      "title": "vidaXL Plantenbak 100x100x68 cm gegalvaniseerd staal grijs",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloembakken-en-plantenbakken/a1478914600-vidaxl-plantenbak-100x100x68-cm-gegalvaniseerd-staal-grijs"
      }
     ],
-    "low": 25.75,
-    "median": 55.5,
+    "low": 25.0,
+    "median": 54.0,
     "model": null,
     "outliers": [
      182.99,
-     1250.0,
-     1750.0
+     1250.0
     ],
     "prices": [
+     3.0,
      5.0,
      5.0,
      5.0,
      5.0,
-     9.0,
      10.0,
      15.0,
-     15.0,
+     17.5,
      18.0,
      20.0,
      20.0,
      20.0,
      25.0,
-     26.0,
+     25.0,
+     25.0,
+     28.0,
      34.0,
+     35.0,
      36.0,
      39.0,
-     40.0,
      40.0,
      43.0,
      44.0,
@@ -21046,7 +20985,6 @@
      58.0,
      62.0,
      63.0,
-     64.0,
      70.99,
      72.99,
      72.99,
@@ -21059,12 +20997,13 @@
      84.99,
      87.99,
      90.0,
+     95.0,
+     99.0,
      100.0,
-     102.95,
      115.99,
      133.99,
      133.99,
-     150.0,
+     143.99,
      150.99,
      160.99
     ],
@@ -22578,7 +22517,7 @@
    "v": 4
   },
   "general pot krik rassant|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -22779,7 +22718,7 @@
    "v": 3
   },
   "general pot tafelhaarden decoratie dijk|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": null,
    "v": 4
   },
@@ -22789,13 +22728,19 @@
    "v": 2
   },
   "general probook laptop|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-10-22T04:39:55.562897+00:00",
+   "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
-    "as_of": "2026-10-22T04:39:55.562897+00:00",
-    "count": 16,
-    "high": 293.0,
+    "as_of": "2026-10-25T09:07:56.432593+00:00",
+    "count": 15,
+    "high": 180.0,
     "kind": "general",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 8.0,
+      "title": "Hewlett Packard ProBook G5 (450 & 430) - Laptop (2)",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1532900642-hewlett-packard-probook-g5-450-430-laptop-2"
+     },
      {
       "kind": "bid",
       "price": 40.0,
@@ -22803,10 +22748,16 @@
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2455679388-hp-probook-450-g5-laptopscherm"
      },
      {
-      "kind": "fixed",
-      "price": 53.0,
-      "title": "HP HP ProBook - Laptop (1)",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1532592518-hp-hp-probook-laptop-1"
+      "kind": "bid",
+      "price": 50.0,
+      "title": "HP PROBOOK4520S LAPTOP intel i 3 proccessor 8 GB Ram",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2457458099-hp-probook4520s-laptop-intel-i-3-proccessor-8-gb-ram"
+     },
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "laptop hp probook 455",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2457599015-laptop-hp-probook-455"
      },
      {
       "kind": "bid",
@@ -22823,26 +22774,26 @@
      {
       "kind": "bid",
       "price": 100.0,
-      "title": "HP ProBook 450 G4 Laptop - 8GB RAM, Intel Core i5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2456016463-hp-probook-450-g4-laptop-8gb-ram-intel-core-i5"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
       "title": "HP ProBook 440 G5 Laptop",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2456224612-hp-probook-440-g5-laptop"
      },
      {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "HP ProBook 440 G5 Laptop - i5-7200U, 8GB RAM, 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2455069083-hp-probook-440-g5-laptop-i5-7200u-8gb-ram-256gb-ssd"
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "HP ProBook 650 G4 - Laptop - Zonder originele verpakking",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1532900666-hp-probook-650-g4-laptop-zonder-originele-verpakking"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "HP ProBook 650 G4 - Windows 11 Pro - Laptop",
+      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-overige-accessoires/a1532917126-hp-probook-650-g4-windows-11-pro-laptop"
      },
      {
       "kind": "bid",
       "price": 155.0,
-      "title": "HP ProBook Intel I5 Laptop| 8GB Ram | Windows 10 werkt super",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2456100372-hp-probook-intel-i5-laptop-8gb-ram-windows-10-werkt-super"
+      "title": "HP ProBook Intel I5 Laptop| 8GB Ram | Windows 10 werkt goed",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2457687103-hp-probook-intel-i5-laptop-8gb-ram-windows-10-werkt-goed"
      },
      {
       "kind": "bid",
@@ -22852,21 +22803,15 @@
      },
      {
       "kind": "bid",
-      "price": 199.0,
-      "title": "HP ProBook 470 /8GB Ram/17.3 inch laptop - Intel Core i5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2454860745-hp-probook-470-8gb-ram-17-3-inch-laptop-intel-core-i5"
+      "price": 180.0,
+      "title": "HP ProBook laptop met kleine krasjes",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2456681838-hp-probook-laptop-met-kleine-krasjes"
      },
      {
       "kind": "fixed",
       "price": 200.0,
       "title": "HP ProBook 450 G7 | Snelle i5 Laptop",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2451873092-hp-probook-450-g7-snelle-i5-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "HP Probook 450 G8 laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2454623269-hp-probook-450-g8-laptop"
      },
      {
       "kind": "fixed",
@@ -22879,41 +22824,30 @@
       "price": 349.0,
       "title": "HP probook LAPTOP, zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2454882665-hp-probook-laptop-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 395.0,
-      "title": "Laptop: HP ProBook 650 G8 Laptop – 15.6 Full HD – Intel",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1523995827-laptop-hp-probook-650-g8-laptop-15-6-full-hd-intel"
-     },
-     {
-      "kind": "fixed",
-      "price": 499.99,
-      "title": "Refurbished HP laptop ProBook 450 G9 | Intel Core i5-1235U |",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2291615616-refurbished-hp-laptop-probook-450-g9-intel-core-i5-1235u"
      }
     ],
-    "low": 99.25,
-    "median": 165.0,
+    "low": 65.0,
+    "median": 100.0,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     395.0
+    ],
     "prices": [
+     8.0,
      40.0,
-     53.0,
+     50.0,
+     65.0,
      80.0,
      99.0,
      100.0,
-     120.0,
-     120.0,
+     100.0,
+     100.0,
      155.0,
      175.0,
-     199.0,
+     180.0,
      200.0,
-     275.0,
      299.0,
-     349.0,
-     395.0,
-     499.99
+     349.0
     ],
     "query": "probook laptop",
     "search": "probook laptop"
@@ -24140,22 +24074,6 @@
    "closes": "2026-10-22T13:00:00+02:00",
    "first": "2026-10-03T13:29:07.180092+00:00"
   },
-  "onlineveilingmeester:1902104": {
-   "closes": "2026-10-21T18:02:04+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1902191": {
-   "closes": "2026-10-21T18:24:04+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1902200": {
-   "closes": "2026-10-21T18:26:04+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
-  "onlineveilingmeester:1902201": {
-   "closes": "2026-10-21T18:26:04+00:00",
-   "first": "2026-10-09T15:59:42.336388+00:00"
-  },
   "onlineveilingmeester:1908373": {
    "closes": "2026-10-22T17:47:00+00:00",
    "first": "2026-10-09T15:59:42.336388+00:00"
@@ -24515,10 +24433,6 @@
   "onlineveilingmeester:1914204": {
    "closes": "2026-11-02T19:33:57+00:00",
    "first": "2026-10-24T04:38:55.339053+00:00"
-  },
-  "openbareverkopen:752534": {
-   "closes": "2026-10-21T17:06:00+00:00",
-   "first": "2026-10-07T19:48:14.417266+00:00"
   },
   "openbareverkopen:753265": {
    "closes": "2026-10-28T18:08:00+00:00",
@@ -24940,6 +24854,14 @@
    "closes": "2026-11-02T20:00:00+01:00",
    "first": "2026-10-24T04:38:55.339053+00:00"
   },
+  "proveiling:3292725": {
+   "closes": "2026-11-02T20:00:00+01:00",
+   "first": "2026-10-25T09:07:56.432593+00:00"
+  },
+  "proveiling:3292759": {
+   "closes": "2026-11-02T20:00:00+01:00",
+   "first": "2026-10-25T09:07:56.432593+00:00"
+  },
   "troostwijk:A1-38890-10615": {
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
@@ -25170,7 +25092,8 @@
     "4205": false,
     "4206": false,
     "4207": false,
-    "4208": false
+    "4208": false,
+    "4209": false
    }
   },
   "onlineveilingmeester": {},
@@ -26525,7 +26448,7 @@
     "image": "https://media.tbauctions.com/image-media/bb8a8d56-0923-4655-a05d-16db513aad1c/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Mechanische troffel 600mm benzine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-1"
    },
@@ -26538,7 +26461,7 @@
     "image": "https://media.tbauctions.com/image-media/bcae8bd9-527e-46ac-ab5a-e2c2362e1248/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "E1620B Grondfreesmachine 16pk benzine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-121"
    },
@@ -26551,7 +26474,7 @@
     "image": "https://media.tbauctions.com/image-media/ca161fd9-75b7-4b97-b4b3-ec5fab8549cb/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "3000 Afzuiginstallatie 3.400m³/uur",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-13"
    },
@@ -26564,7 +26487,7 @@
     "image": "https://media.tbauctions.com/image-media/d6b49d19-341c-46f4-a878-5980a33b7c6b/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "/ Thor Alpino 65.100 Houtsplijtmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-132"
    },
@@ -26577,7 +26500,7 @@
     "image": "https://media.tbauctions.com/image-media/d2b15318-388d-469c-a9cf-42aeb437939e/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "606 DHG-GT Duplex Aggregaat benzine 6,5kVA 1x RA 1x400V",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-14"
    },
@@ -26590,7 +26513,7 @@
     "image": "https://media.tbauctions.com/image-media/44053f14-5df3-425a-af19-3f926e7fa333/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Steekwagen 6-wielig",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-196"
    },
@@ -26603,7 +26526,7 @@
     "image": "https://media.tbauctions.com/image-media/9b54dbbe-9776-42df-bdb9-a742f30ad335/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "PCX 12/36 Trilplaat 16kN benzine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-2"
    },
@@ -26616,7 +26539,7 @@
     "image": "https://media.tbauctions.com/image-media/e78ff75c-32d3-4025-9ec1-9c7351bb5b60/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Boomstronkenhakselaar 13pk",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-8"
    },
@@ -26629,7 +26552,7 @@
     "image": "https://media.tbauctions.com/image-media/7e051a31-3fae-4b6e-9f27-4eaa64abb10f/file",
     "location": "Online",
     "mail": "2026-10-23T14:11:09+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "V3 Houtversnipperaar 55mm benzine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-40164-9"
    },
@@ -28495,7 +28418,7 @@
     "image": "https://media.tbauctions.com/image-media/9824c2db-2ad3-4a58-bf8c-a75bb528b332/file",
     "location": "Olbersdorf, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Light 15/30 CNC plasmasnijmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-1"
    },
@@ -28508,7 +28431,7 @@
     "image": "https://media.tbauctions.com/image-media/fab958be-53e4-4148-9271-0189886c2c19/file",
     "location": "Halberstadt, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "CWK 400D - 2005 - CNC Horizontale Machinecentra",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-18"
    },
@@ -28521,7 +28444,7 @@
     "image": "https://media.tbauctions.com/image-media/f4c0d0b1-87cf-402e-a636-1fd9ba8f80fc/file",
     "location": "Emertsham, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Magna T MTs 275-1540 Spuitgietmachine met Automatisering",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-20"
    },
@@ -28534,7 +28457,7 @@
     "image": "https://media.tbauctions.com/image-media/d9e3a435-ff32-4bcb-a368-20ac7a3271eb/file",
     "location": "Dietersheim, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "310 en RS L Draaibare buigmachine / buigbank met rolschaar",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-2271"
    },
@@ -28547,7 +28470,7 @@
     "image": "https://media.tbauctions.com/image-media/5e2d2d49-7f1c-46a1-b061-743c8a55fc83/file",
     "location": "Frankfurt am main, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Serie - 2021 - 3D meetmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-31"
    },
@@ -28560,7 +28483,7 @@
     "image": "https://media.tbauctions.com/image-media/787b57f0-eeb9-4b0a-a159-f38d9448bba3/file",
     "location": "Bornheim, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "2015 - CNC Verticale Freesmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-4"
    },
@@ -28573,7 +28496,7 @@
     "image": "https://media.tbauctions.com/image-media/47987aa2-d781-423c-bb68-166d12c06e2d/file",
     "location": "Dietfurt, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "P1 die-sinkende EDM-machine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-7043"
    },
@@ -28586,7 +28509,7 @@
     "image": "https://media.tbauctions.com/image-media/eea93dcb-c905-4750-a457-dfd849f6f175/file",
     "location": "Oelde, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Machinecentrum Jaar 2000 | 3800 mm X | 10 Boorspindels | 6,6 kW | Gereedschapswisselaar",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-8011"
    },
@@ -28599,7 +28522,7 @@
     "image": "https://media.tbauctions.com/image-media/24c2b7e0-a5c0-4007-9cb7-4ec16350ccc9/file",
     "location": "Oelde, Germany",
     "mail": "2026-10-23T08:12:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "houtversnipper met NOLTING NRK 302 biomassaketel 350 kW – compleet systeem",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50373-8022"
    },
@@ -29093,7 +29016,7 @@
     "image": "https://media.tbauctions.com/image-media/ba0ce86c-23ae-4e3e-b601-736c4ad7ae5d/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Biertafel set (10x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-103"
    },
@@ -29106,7 +29029,7 @@
     "image": "https://media.tbauctions.com/image-media/4d3a6c81-5d7e-447a-9a5e-c6ea004210f4/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Houten stoel (20x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-146"
    },
@@ -29119,7 +29042,7 @@
     "image": "https://media.tbauctions.com/image-media/f62b8e80-0a33-4476-a39f-f5d94abab52b/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Gestoffeerde stoel",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-156"
    },
@@ -29132,7 +29055,7 @@
     "image": "https://media.tbauctions.com/image-media/074f7759-91df-4b17-a134-722a8bf6c9f6/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "1993 Ewers APV-N Tap",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-18"
    },
@@ -29145,7 +29068,7 @@
     "image": "https://media.tbauctions.com/image-media/7bfd8847-3e25-48ac-8d52-74c5bdd0f7cd/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "253017-19S50 Koel aanhangwagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-21"
    },
@@ -29158,7 +29081,7 @@
     "image": "https://media.tbauctions.com/image-media/49185d2e-210c-456f-af21-5d1c30c3cfbd/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Sprinter 315 1.9 CDI L3",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-3"
    },
@@ -29171,7 +29094,7 @@
     "image": "https://media.tbauctions.com/image-media/13765099-b107-4548-95b9-13c8627b6160/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Buffettafel (9x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-334"
    },
@@ -29184,7 +29107,7 @@
     "image": "https://media.tbauctions.com/image-media/810d58dc-94de-4b41-9cd8-dd7c57ac6df0/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Terrasstoel (20x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-404"
    },
@@ -29197,7 +29120,7 @@
     "image": "https://media.tbauctions.com/image-media/6d1303b3-07c6-4281-9fa5-1a55da109778/file",
     "location": "Valkenswaard",
     "mail": "2026-10-23T10:24:23+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Kassa container 10 ft",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50641-4056"
    },
@@ -29582,7 +29505,7 @@
     "image": "https://media.tbauctions.com/image-media/3318baa4-8ac4-4706-abc9-2f23102f89cd/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "ECOFOREST Marsella",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1012"
    },
@@ -29595,7 +29518,7 @@
     "image": "https://media.tbauctions.com/image-media/9caf2221-8d79-41bf-a204-5f1a24d7d518/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "ECOFOREST - Monaco -",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1023"
    },
@@ -29608,7 +29531,7 @@
     "image": "https://media.tbauctions.com/image-media/d26e7a49-ba3f-4737-b1da-8285c97c86c2/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "II - Zwart - Pellet stove",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1034"
    },
@@ -29621,7 +29544,7 @@
     "image": "https://media.tbauctions.com/image-media/1b9aa189-dae3-4a46-a2b3-87dc45f48aff/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "CADEL Tile Plus - Wit",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1091"
    },
@@ -29634,7 +29557,7 @@
     "image": "https://media.tbauctions.com/image-media/9df2df2e-03f3-479c-8c18-f9695d3b54d2/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Brons - Pelletkachel",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1095"
    },
@@ -29647,7 +29570,7 @@
     "image": "https://media.tbauctions.com/image-media/3bd10090-9678-4bff-bee0-4bc318a1d927/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Tourmaline - Gas stove",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1097"
    },
@@ -29660,7 +29583,7 @@
     "image": "https://media.tbauctions.com/image-media/95dcb5bd-4c83-45dd-90f5-874e2d0130db/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "TRIMLINE 83 PANORAMIC - Gas stove",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1100"
    },
@@ -29673,7 +29596,7 @@
     "image": "https://media.tbauctions.com/image-media/ea0a5c6f-bc0e-4f4c-8aa2-62b6b817a6bd/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- GESLOTEN VERSIE - Gas stove",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1127"
    },
@@ -29686,7 +29609,7 @@
     "image": "https://media.tbauctions.com/image-media/746130a8-8dc8-452d-aff7-3a9fc5484236/file",
     "location": "Oudenaarde, Belgium",
     "mail": "2026-10-23T16:05:27+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Top Concentrisch - Kanaliseerbaar - Pellet stove",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50680-1150"
    },
@@ -30050,7 +29973,7 @@
     "image": "https://media.tbauctions.com/image-media/a0d7eaf6-06be-4b41-be9c-c8840d12f321/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Renewed Room Spray Mood (240x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-1116"
    },
@@ -30063,7 +29986,7 @@
     "image": "https://media.tbauctions.com/image-media/b6a55dc0-203b-4edc-9a65-a90f8982c115/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- Brushed Brass Lantern (64x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-31"
    },
@@ -30076,7 +29999,7 @@
     "image": "https://media.tbauctions.com/image-media/c51ec642-5f3d-4a54-867c-383dc1efec58/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "G51X123 - GloLite Iced Snowberries Scented Jar Candle (720x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-417"
    },
@@ -30089,7 +30012,7 @@
     "image": "https://media.tbauctions.com/image-media/04cab427-7b52-4053-9d84-77572e113684/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- Iced Snowberries Candle Refill (320x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-524"
    },
@@ -30102,7 +30025,7 @@
     "image": "https://media.tbauctions.com/image-media/d1061dd7-3e51-4f74-ac8c-2a62c303383a/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- Amber Lights Tealight Holder (720x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-555"
    },
@@ -30115,7 +30038,7 @@
     "image": "https://media.tbauctions.com/image-media/a92fb878-5caa-40f5-9c85-a1312665afbf/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- Peach Honey Citronella Garden Incense - set (576x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-56"
    },
@@ -30128,7 +30051,7 @@
     "image": "https://media.tbauctions.com/image-media/a32342a0-4c49-4833-82c1-652e86155f6a/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "V041061B - Spiced Roasted Chestnut Tealight (4032x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-668"
    },
@@ -30141,7 +30064,7 @@
     "image": "https://media.tbauctions.com/image-media/ccbc0e52-a381-485d-af23-960f250ec60e/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- SmartScents holder A-Z Bookends (192x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-68"
    },
@@ -30154,7 +30077,7 @@
     "image": "https://media.tbauctions.com/image-media/d2c8c9cd-5066-4eb3-a8f9-8018b0c45900/file",
     "location": "Tilburg",
     "mail": "2026-10-23T15:31:10+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "V091044 - GloLite Olive Grove Large Tealight set (1800x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50774-704"
    },
@@ -30752,7 +30675,7 @@
     "image": "https://media.tbauctions.com/image-media/f2301832-2651-441a-b1e3-7eecd337ffa5/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "932 Telescopische Geleiders",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-1"
    },
@@ -30765,7 +30688,7 @@
     "image": "https://media.tbauctions.com/image-media/5d82836c-4eac-448f-a395-d9227dac1dc3/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- Professional temperature-controlled - 2021",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-110"
    },
@@ -30778,7 +30701,7 @@
     "image": "https://media.tbauctions.com/image-media/cf4bdcbb-577c-435b-9910-1e729aaf34c5/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Aerial Work Platforms - 2005",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-13"
    },
@@ -30791,7 +30714,7 @@
     "image": "https://media.tbauctions.com/image-media/4a35196a-1001-462f-8231-66682159d391/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "VARIOTRAC 400 - VT - Mulcher",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-35"
    },
@@ -30804,7 +30727,7 @@
     "image": "https://media.tbauctions.com/image-media/c8f68022-4d21-4dc1-8624-c3eada9a97ca/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "4-Wheel Drive Tractor - 2020",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-4"
    },
@@ -30817,7 +30740,7 @@
     "image": "https://media.tbauctions.com/image-media/030cd391-75ce-419c-a0c2-4fed794bb242/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Mercedes-Benz - 2541",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-42"
    },
@@ -30830,7 +30753,7 @@
     "image": "https://media.tbauctions.com/image-media/ab4e1835-dbf3-4a57-b2f8-e01ff06f557a/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "SHS Pilot System - Superheated Steam (SHS) Pilot Research & Industrial Processing System",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-500"
    },
@@ -30843,7 +30766,7 @@
     "image": "https://media.tbauctions.com/image-media/8dd04678-e76c-4b00-ab7d-77f293e30414/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "MACH2065 - Kiepwagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-62"
    },
@@ -30856,7 +30779,7 @@
     "image": "https://media.tbauctions.com/image-media/8840ceec-42cd-4ac9-9360-06adb466b0b2/file",
     "location": "Salaj",
     "mail": "2026-10-23T15:09:48+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "- 350L - Rupsgraafmachine 52.4T",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-69"
    },
@@ -31115,7 +31038,7 @@
     "image": "https://media.tbauctions.com/image-media/14bfeeb7-2583-4a0d-bb13-1b28127ac808/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "One 41 | Anthracite Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-15"
    },
@@ -31128,7 +31051,7 @@
     "image": "https://media.tbauctions.com/image-media/5e170f06-3178-49bd-9579-7a489bc3ce9e/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "\"Large\" | ICED Out Naturel Diamonds | Light Brown",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-16"
    },
@@ -31141,7 +31064,7 @@
     "image": "https://media.tbauctions.com/image-media/e87f31cf-9476-4e22-a8f7-eddf4a309c02/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "GMT | White Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-22"
    },
@@ -31154,7 +31077,7 @@
     "image": "https://media.tbauctions.com/image-media/d8cf0d02-edbc-4ff8-a306-163d7fc41404/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "GMT S&G | \"Rootbeer\" | Black Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-27"
    },
@@ -31167,7 +31090,7 @@
     "image": "https://media.tbauctions.com/image-media/fd5e7ffa-ec59-4488-92d4-ac3c56956cdd/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Chronomat 36 | Steel | Green Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-28"
    },
@@ -31180,7 +31103,7 @@
     "image": "https://media.tbauctions.com/image-media/5e76f28b-d86e-417e-bdec-fa5a40d9424d/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "36 | Blue Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-39"
    },
@@ -31193,7 +31116,7 @@
     "image": "https://media.tbauctions.com/image-media/36761bc9-aafe-46f5-8830-3f234a54eee6/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Chronograph | IW391036 | Blue Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-6"
    },
@@ -31206,7 +31129,7 @@
     "image": "https://media.tbauctions.com/image-media/a245ff4e-f925-46ab-8768-f443d12ff766/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "Chronomat | 32MM | 2026 | Unworn",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-7"
    },
@@ -31219,7 +31142,7 @@
     "image": "https://media.tbauctions.com/image-media/fe1cc651-625b-4641-9c2f-92362798b327/file",
     "location": "Dordrecht",
     "mail": "2026-10-23T18:04:54+00:00",
-    "seen": "2026-10-24T04:38:55.339053+00:00",
+    "seen": "2026-10-25T09:07:56.432593+00:00",
     "title": "One 39 | Jubilee | Blue Dial | Unworn | 2026",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51096-9"
    },
@@ -31348,9 +31271,7 @@
   },
   "warned": {
    "14affb7527f67a1e": "2026-10-23T04:39:33.788701+00:00",
-   "84ce6a4d4b0c96e3": "2026-10-08T04:29:27.504488+00:00",
-   "b977b8880a015e0a": "2026-10-03T09:10:19.814888+00:00",
-   "ef3e27fd1d0eb375": "2026-10-03T09:10:19.814888+00:00"
+   "84ce6a4d4b0c96e3": "2026-10-08T04:29:27.504488+00:00"
   }
  }
 }
