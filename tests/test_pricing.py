@@ -92,7 +92,7 @@ def test_exact_model_only_compares_that_model():
     assert est.prices == [95.0, 110.0] and est.count == 2  # two listings of the same model are enough
     assert all("S27C366EAU" in l["title"].upper() for l in est.listings)
     assert "samsung+monitor+s27c366eau" in calls[0] and len(calls) == 1
-    assert est.url == "https://www.marktplaats.nl/q/samsung+s27c366eau/"
+    assert est.url == "https://www.marktplaats.nl/q/samsung+monitor+s27c366eau/"
 
 
 def test_exact_model_not_on_marktplaats_gives_no_price():
