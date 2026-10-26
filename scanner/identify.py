@@ -921,7 +921,7 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
             searches.append(" ".join(x for x in (prefix, spaced) if x))  # "bs105e" -> "BS 105 E" listings too
         elif brand and distinctive(written):
             searches.append(squashed)  # Marktplaats' search also finds "Acer" listings this way
-        # "Bandschuurmachine Festool, BS105E": "festool bandschuurmachine bs105e" finds more listings (tip from Diede)
+        # "Bandschuurmachine Festool, BS105E": "festool bandschuurmachine bs105e" finds more listings (tip from Diede): searched first, and the dashboard links to it
         toks = normalize(lot.title).split()
         what = next((category(t)[0] for t in toks if category(t) and t not in _WEAK), None)  # "beeldscherm" -> "monitor"
         if not what:  # the first word names the product: "Geleiderail Festool", "Accu vetspuit"
@@ -930,7 +930,7 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
             what = first if first.isalpha() and len(first) >= 5 and first not in NOISE and first not in _BRANDS \
                 and first not in (brand or "").split() else None
         if what and prefix:
-            searches.insert(1, f"{prefix} {what} {written}")
+            searches.insert(0, f"{prefix} {what} {written}")
         label = " ".join(x for x in (brand, written) if x)
         return SearchPlan("exact", searches, [Rule(groups, model=squashed, label=label)],
                           model=written.upper(), brand=brand,

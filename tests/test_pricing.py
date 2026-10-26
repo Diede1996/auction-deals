@@ -91,7 +91,7 @@ def test_exact_model_only_compares_that_model():
     assert est.kind == "exact" and est.model == "S27C366EAU"
     assert est.prices == [95.0, 110.0] and est.count == 2  # two listings of the same model are enough
     assert all("S27C366EAU" in l["title"].upper() for l in est.listings)
-    assert "samsung+s27c366eau" in calls[0] and len(calls) == 1
+    assert "samsung+monitor+s27c366eau" in calls[0] and len(calls) == 1
     assert est.url == "https://www.marktplaats.nl/q/samsung+s27c366eau/"
 
 
@@ -163,7 +163,7 @@ def test_brand_word_alone_is_never_a_comparison():
     finder = PriceFinder(FakeHttp([(url_has("marktplaats"), search)]), {}, NOW)
     est = finder.for_lot(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti Meetstatief PUA 25", "u", 20, None))
     assert est is None  # no price is better than a wrong one
-    assert len(calls) == 3 and "meetstatief" in calls[1] and "pua25" in calls[2]
+    assert len(calls) == 3 and "meetstatief" in calls[0] and "pua25" in calls[2]
     assert plan_for(WatchItem(name="Hilti", keywords=["hilti"]), Lot("pv", "1", "Hilti", "u", 1, None)).rules == []
 
 

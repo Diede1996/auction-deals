@@ -32,13 +32,13 @@ def test_type_number_from_the_description():
     lot = Lot("plaatsjebod", "371-002", "2 x Dell 24 inch monitor", "u", 10, None,
               description="2 x Dell 24 inch monitor type U2419 HC Tijdens de veiling kunnen wij actieve bieders")
     p = plan_for(MONITOR, lot)
-    assert p.kind == "exact" and p.searches == ["dell u2419", "dell monitor u2419", "u2419"] and "description" in p.note
+    assert p.kind == "exact" and p.searches == ["dell monitor u2419", "dell u2419", "u2419"] and "description" in p.note
     # a short code without the brand next to it may be anything: still a rough price
     vague = Lot("hnvi", "1", "Beeldscherm Dell", "u", 10, None, description="Kleur zwart, kabel HDMI, model P24")
     assert plan_for(MONITOR, vague).searches == ["monitor dell"]
     # the title wins when it has a type number
     titled = Lot("hnvi", "2", "Beeldscherm Dell P2419H", "u", 10, None, description="type U2719D")
-    assert plan_for(MONITOR, titled).searches[0] == "dell p2419h"
+    assert plan_for(MONITOR, titled).searches[0] == "dell monitor p2419h"
 
 
 def test_fill_descriptions_reads_each_lot_page_once():
