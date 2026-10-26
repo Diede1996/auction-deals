@@ -194,7 +194,7 @@ def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: st
             f"your max <b>{fmt_eur(f['maxBid'])}</b> · " if f.get("maxBid") is not None else "")
         lines.append(f'• <a href="{attr(f["url"])}">{esc(f["title"][:70])}</a>\n'
                      f"   {bid}{maxbid}closes {c.astimezone(AMS):%H:%M}")
-    lines.append("<i>I'll remind you again about an hour before each one closes.</i>")
+    lines.append("<i>I'll remind you again a few hours before each one closes and in the last hour.</i>")
     return "\n".join(lines)
 
 

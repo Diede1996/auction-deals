@@ -36,7 +36,7 @@ Every morning I check the auction sites for bankruptcy, business-closure, estate
 <b>/sellat</b> <i>percent</i> – what you expect to sell for, as % of the Marktplaats median, e.g. <code>/sellat 50</code>
 <b>/minmargin</b> <i>percent</i> – the max bid always leaves at least this margin (profit as % of what you pay), e.g. <code>/minmargin 30</code>
 <b>/scan</b> – check the auction sites now instead of waiting for tomorrow (max 3 times a day)
-<b>/favorites</b> – the lots you starred on the dashboard; I remind you about an hour before each one closes
+<b>/favorites</b> – the lots you starred on the dashboard; I remind you a few hours before each one closes and again in the last hour
 <b>/dashboard</b> – link to your list of lots
 <b>/status</b> – when the last scan ran and which sites worked
 <b>/help</b> – this message

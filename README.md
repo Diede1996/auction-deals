@@ -1,6 +1,6 @@
 # Auction deal bot
 
-Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **business-closure** (bedrijfsbeëindiging) and **estate** (nalatenschap, inboedel) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close and about an hour before.
+Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **business-closure** (bedrijfsbeëindiging) and **estate** (nalatenschap, inboedel) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close a few hours before and again in the last hour.
 
 | Site | What it checks |
 |---|---|
@@ -150,7 +150,7 @@ Max bids for selling at 85% of the Marktplaats median with at least 30% margin
 ⭐ Your favorites closing today
 • Philips HD7695/90 Intense koffiemachine
    bid €10 · your max €93 · closes 20:35
-I'll remind you again about an hour before each one closes.
+I'll remind you again a few hours before each one closes and in the last hour.
 
 ⏰ Closing within 24 hours
 • Beeldscherm 27 inch SAMSUNG S27C310EAU

@@ -517,3 +517,28 @@ def test_telegram_without_a_chat_prints_nothing(capsys):
     assert capsys.readouterr().out == ""
     Telegram(FakeHttp([]), "123:abc", None, dry_run=True).send("❤️ Samsonite")  # --dry-run on your own computer
     assert "Samsonite" in capsys.readouterr().out
+
+
+def test_early_favorite_reminder_when_github_runs_late(repo, monkeypatch):
+    (repo / "data").mkdir(exist_ok=True)
+    closes = NOW + timedelta(minutes=150)
+    (repo / "data" / "lots.json").write_text(json.dumps({"lots": [{"key": "hnvi:1", "closes": closes.isoformat()}]}))
+    (repo / "data" / "telegram.json").write_text(json.dumps({"offset": 1, "welcomed": "x"}))
+    favs = [{"key": "hnvi:1", "title": "Festool AGC 18", "url": "https://www.hnvi.nl/veiling-kavel/agc/1"}]
+    http = FakeHttp([(url_has("api.github.com"), issue_list(favs))])
+    tg = FakeTelegram([])
+    run = lambda at: run_commands(repo, at, http_cls=lambda **kw: http, telegram_cls=tg)  # noqa: E731
+    run(NOW)
+    assert len(tg.sent) == 1 and "Closes in 2 h 30 min" in tg.sent[0]
+    tg.sent.clear()
+    run(NOW + timedelta(minutes=30))  # still more than an hour left: nothing new
+    assert tg.sent == []
+    run(NOW + timedelta(minutes=100))  # the last hour: the usual reminder
+    assert len(tg.sent) == 1 and "Closes in 50 min" in tg.sent[0]
+    tg.sent.clear()
+    # a lot whose first check falls in the last hour gets only one reminder
+    later = NOW + timedelta(days=1)
+    (repo / "data" / "lots.json").write_text(json.dumps({"lots": [
+        {"key": "hnvi:1", "closes": (later + timedelta(minutes=30)).isoformat()}]}))
+    run(later)
+    assert len(tg.sent) == 1 and "Closes in 30 min" in tg.sent[0]

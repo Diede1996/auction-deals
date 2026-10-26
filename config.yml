@@ -221,6 +221,7 @@ condition:
 favorites:
   reminders: true               # the closing day (in the morning summary) and before closing
   remind_minutes_before: 60     # checked every 5 minutes, so reminders arrive 55-60 minutes before
+  early_reminder_minutes_before: 180  # and a first one in the last 3 hours (GitHub can start the check hours late); 0 = off
 
 http:
   delay_seconds: 1.5            # pause between requests to the same site
