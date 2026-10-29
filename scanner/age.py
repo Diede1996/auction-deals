@@ -257,14 +257,42 @@ def release_year(title: str, description: str = "") -> tuple[int, str] | None:
     return max(found) if found else None
 
 
-def too_old(item: WatchItem, lot: Lot, min_year: int) -> tuple[int, str] | None:
-    """(year, why) when this is an Apple product, laptop or phone from before min_year; else None.
+# Dell monitors carry their year in the type number: U2419H = 24 inch from 2019, P2214H = 2014, U3223QE = 2023
+_DELL_MONITOR_RE = re.compile(r"(?<![a-z0-9])[upesgc]([1-4][0-9])([0-2][0-9])[a-z]{0,4}(?![a-z0-9])")
+
+
+def stated_year(item: WatchItem, title: str, description: str = "") -> tuple[int, str] | None:
+    """(year, why) for anything else (power tools, monitors, appliances ...): only a year the lot states
+    ("Boorhamer, BOSCH, GBH 2-28 F, 2019", "bouwjaar 2012" in the description) or a Dell monitor's type number.
+    The age of other things in the lot doesn't count: they aren't what it's priced as."""
+    t = normalize(title)
+    found = [(y, str(y)) for y in _years_written(t)]
+    if "monitor" in item.name.lower() and "dell" in t:
+        found += [(2000 + int(m.group(2)), f"Dell {m.group(0).upper()}") for m in _DELL_MONITOR_RE.finditer(t)
+                  if 9 <= int(m.group(2)) <= 29]
+    if not found and description:
+        found = [(int(y), y) for y in _DESC_YEAR_RE.findall(normalize(description[:400]))]
+    return max(found) if found else None
+
+
+def too_old(item: WatchItem, lot: Lot, min_year: int, skip: tuple[str, ...] = ()) -> tuple[int, str] | None:
+    """(year, why) when the lot is from before min_year; else None. Apple products, laptops and phones go by
+    their model, chip or year; everything else only by a year the lot states (stated_year); items named in
+    skip (wine: a vintage isn't an age problem) never.
     It's about what the lot matched on: "Laptop Dell Latitude 7400 + monitor Samsung 24inch" found by the
     Monitor item is priced as a monitor, so the laptop's age doesn't count."""
-    if not device_kind(matched_keyword(item, lot.title), item.name):
+    if device_kind(matched_keyword(item, lot.title), item.name):
+        year = release_year(lot.title, lot.description)
+    elif item.name.lower() in {s.lower() for s in skip}:
         return None
-    year = release_year(lot.title, lot.description)
+    else:
+        year = stated_year(item, lot.title, lot.description)
     return year if year and year[0] < min_year else None
+
+
+def age_skip(config: dict) -> tuple[str, ...]:
+    """Watchlist items the age filter leaves alone (config.yml age_filter.skip_items)."""
+    return tuple((config.get("age_filter") or {}).get("skip_items") or ())
 
 
 def age_filter(config: dict) -> int | None:

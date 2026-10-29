@@ -11,8 +11,10 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from types import SimpleNamespace
 
 from . import dashboard
+from .age import age_filter, age_skip, too_old
 from .bot import run_commands
 from .evaluate import Settings
 from .matching import matches
@@ -50,6 +52,14 @@ def run(argv: list[str] | None = None) -> int:
         if items and data.get("lots"):
             data["lots"] = [lot for lot in data["lots"] if lot.get("followed") or lot.get("key") in favs
                             or lot.get("item") not in items or matches(items[lot["item"]], lot.get("title") or "")]
+        # and a stricter age filter (by title; the next scan also reads descriptions)
+        config = load_yaml(root / "config.yml")
+        min_year, skip = age_filter(config), age_skip(config)
+        if min_year and items and data.get("lots"):
+            data["lots"] = [lot for lot in data["lots"] if lot.get("followed") or lot.get("key") in favs
+                            or lot.get("item") not in items
+                            or not too_old(items[lot["item"]], SimpleNamespace(title=lot.get("title") or "",
+                                                                               description=""), min_year, skip)]
         dashboard.write(root / "site", data)
         return 0
     only = [s.strip() for s in args.sites.split(",")] if args.sites else None

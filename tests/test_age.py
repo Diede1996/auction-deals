@@ -80,9 +80,17 @@ def test_too_old_only_for_apple_laptops_and_phones():
     assert not too_old(LAPTOP, lot("Lenovo ThinkPad T14 Gen 1"), 2020)
     assert too_old(PHONE, lot("Apple iPhone 8 64GB"), 2020)
     assert not too_old(PHONE, lot("Apple iPhone 13 128GB"), 2020)
-    assert not too_old(POWER, lot("Makita accuboormachine 2015"), 2020)  # power tools have no cutoff
+    assert too_old(POWER, lot("Boorhamer, BOSCH, GBH 2-28 F, 2019"), 2020)  # everything else: a stated year
+    assert not too_old(POWER, lot("Accu-schroefboormachine, BOSCH, GSR 12V-15, 2023"), 2020)
+    assert not too_old(POWER, lot("Makita DHR243"), 2020)  # no year: stays
+    assert too_old(POWER, lot("Makita DHR243", description="Bouwjaar 2012, werkt goed"), 2020)
+    wine = WatchItem.from_dict({"name": "Wine", "keywords": ["wijn"]})
+    assert not too_old(wine, lot("Rode wijn 2014"), 2020, skip=("Wine",))
     monitor = WatchItem.from_dict({"name": "Monitor", "keywords": ["monitor"]})
     assert not too_old(monitor, lot("Laptop Dell Latitude 7400 + monitor Samsung 24inch"), 2020)  # priced as a monitor
+    assert too_old(monitor, lot("2 x Dell monitor U2419H"), 2020) == (2019, "Dell U2419H")
+    assert not too_old(monitor, lot("Dell monitor P2723QE"), 2020)
+    assert not too_old(monitor, lot("Beeldscherm IIYAMA Prolite E2407HDSD"), 2020)  # only Dell type numbers
     macbook = WatchItem.from_dict({"name": "MacBook", "keywords": ["macbook"]})
     assert too_old(macbook, lot("1 x Apple MacBook Pro laptop, type A1990"), 2020)
     assert not too_old(macbook, lot("Apple MacBook Pro 16, Apple M1 Max, 32 GB RAM"), 2020)

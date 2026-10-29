@@ -66,6 +66,9 @@ all_auctions:
 age_filter:
   enabled: true
   min_year: 2020
+  # Apple, laptops and phones by their model, chip or year; everything else only when the lot states its year
+  # ("..., 2019", "bouwjaar 2012") or, for monitors, a Dell type number (U2419H = 2019). Unknown age stays.
+  skip_items: [Wine]     # a wine's vintage is not an age problem
 
 # Buyer's costs per site, used to work out what you really pay.
 #   premium    buyer's premium (opgeld) as a fraction of the bid: 0.18 = 18%

@@ -22,7 +22,7 @@ from .details import fill_descriptions, fill_start_prices
 from .identify import brand_in, mac_plan, model_code, phone_plan, plan_for, quantity, useful_tokens
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
-from .age import age_filter, too_old
+from .age import age_filter, age_skip, too_old
 from .condition import defect, defect_filter
 from .matching import all_auctions_trial, auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
@@ -671,14 +671,15 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         defect_lots = len(matched) - len(kept)
         matched = kept
         log.info("%d lots with a defect left out", defect_lots)
-    # 1e. Apple products, laptops and phones from before 2020 resell poorly: leave them out entirely
-    min_year = age_filter(config)
+    # 1e. things from before 2020 resell poorly: leave them out entirely (Apple, laptops and phones by their
+    # model; everything else when the lot states its year)
+    min_year, skip = age_filter(config), age_skip(config)
     old_lots = 0
     if min_year:
-        kept = [(item, lot) for item, lot in matched if lot.key in fav_keys or not too_old(item, lot, min_year)]
+        kept = [(item, lot) for item, lot in matched if lot.key in fav_keys or not too_old(item, lot, min_year, skip)]
         old_lots = len(matched) - len(kept)
         matched = kept
-        log.info("%d Apple/laptop/phone lots from before %d left out", old_lots, min_year)
+        log.info("%d lots from before %d left out", old_lots, min_year)
     # 1f. lots you follow on Troostwijk (the heart): priced for the Telegram digest only, so the public
     # dashboard and repository never show what you follow. Like favorites, the filters above don't hide them.
     followed = list((mail_report or {}).get("followed") or []) if dry_run or (token and chat_id) else []
