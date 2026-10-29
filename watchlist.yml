@@ -10,6 +10,7 @@
 #                  need this margin instead; the transport estimate is still a cost
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
+#   min_profit     (optional) the suggested max bid also leaves at least this much profit in euros per lot
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard
@@ -23,13 +24,7 @@
 settings:
   resale_factor: 0.75
   min_margin: 0.25
-  margin_tiers:
-  - up_to: 100
-    min_margin: 0.5
-  - up_to: 250
-    min_margin: 0.4
-  - up_to: 500
-    min_margin: 0.3
+  min_profit: 25
   transport_margin: 0.15
   transport_min_value: 100
 items:

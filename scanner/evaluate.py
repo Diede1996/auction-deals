@@ -43,17 +43,19 @@ class Settings:
     # when they sell for at least transport_min_value, alone or with the lots collected at the same pickup
     transport_margin: float | None = None
     transport_min_value: float = 0.0
+    min_profit: float = 0.0  # the max bid also leaves at least this much profit in euros per lot
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
-        d = d or {}  # older watchlists may still have target_return / min_profit (in €); those are ignored
+        d = d or {}  # older watchlists may still have target_return; that is ignored
         tiers = sorted((float(t["up_to"]), float(t["min_margin"])) for t in d.get("margin_tiers") or []
                        if isinstance(t, dict) and t.get("up_to") is not None and t.get("min_margin") is not None)
         return cls(min_margin=float(d.get("min_margin", 0.30)), resale_factor=float(d.get("resale_factor", 0.85)),
                    selling_costs=float(d.get("selling_costs", 0)), include_trip=include_trip,
                    margin_tiers=tuple(tiers),
                    transport_margin=float(d["transport_margin"]) if d.get("transport_margin") is not None else None,
-                   transport_min_value=float(d.get("transport_min_value") or 0))
+                   transport_min_value=float(d.get("transport_min_value") or 0),
+                   min_profit=float(d.get("min_profit") or 0))
 
     def margin_for(self, sale_each: float | None, transport: bool = False) -> float:
         """The minimum margin for an item that sells for sale_each euros: transport_margin when a transporter
@@ -68,14 +70,17 @@ class Settings:
 
     def describe_margin(self) -> str:
         """e.g. "30% margin up to €50 per item, 25% above" or "50% margin"."""
+        profit = f", at least €{self.min_profit:g} profit per lot" if self.min_profit else ""
         if not self.margin_tiers:
-            return f"{self.min_margin:.0%} margin"
+            return f"{self.min_margin:.0%} margin" + profit + self._transport_text()
         parts = [f"{m:.0%} margin up to €{u:g}" for u, m in self.margin_tiers]
-        text = ", ".join(parts) + f" per item, {self.min_margin:.0%} above"
-        if self.transport_margin is not None:
-            above = f" for €{self.transport_min_value:g}+ per pickup" if self.transport_min_value else ""
-            text += f" ({self.transport_margin:.0%} when a transporter brings it{above})"
-        return text
+        return ", ".join(parts) + f" per item, {self.min_margin:.0%} above" + profit + self._transport_text()
+
+    def _transport_text(self) -> str:
+        if self.transport_margin is None:
+            return ""
+        above = f" for €{self.transport_min_value:g}+ per pickup" if self.transport_min_value else ""
+        return f" ({self.transport_margin:.0%} when a transporter brings it{above})"
 
 
 @dataclass
@@ -136,6 +141,8 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         profit = resale - cost
         margin = profit / cost if cost > 0 else None
         caps.append(resale / (1 + max(0.0, min_margin)))
+        if settings.min_profit > 0:
+            caps.append(resale - settings.min_profit)
     if item.max_price is not None:
         caps.append(item.max_price)
     if not caps:

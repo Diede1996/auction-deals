@@ -78,3 +78,17 @@ def test_transport_margin_only_from_the_minimum_value_alone_or_per_pickup():
     trips = {"Far 1, Groningen": type("T", (), {"cost": 0.0, "minutes": 200})()}
     rows = share_trips(rows, trips, set(), ev)
     assert [r[1].pickup_value for r in rows] == [180.0, 180.0] and [r[2].max_bid for r in rows] == [78, 78]
+
+
+def test_min_profit_per_lot_caps_the_max_bid_for_cheap_lots():
+    s, fees = Settings.from_dict({"min_margin": 0.25, "resale_factor": 0.75, "min_profit": 25}), Fees(premium=0.0, vat=0.0)
+    item = WatchItem(name="X", keywords=["x"])
+    est = lambda median: marktplaats.PriceEstimate(median=median, low=median, high=median, count=5, query="x")
+    lot = Lot("s", "1", "x", "u", 1.0, None)
+    # sells for 75: 25% would allow 60, but then the profit is only 15 -> pay at most 50
+    assert evaluate(item, lot, fees, s, est(100)).max_bid == 50
+    # sells for 750: 25% (pay 600, profit 150) is stricter than the 25 euros
+    assert evaluate(item, lot, fees, s, est(1000)).max_bid == 600
+    # sells for 20: no bid leaves 25 euros
+    assert evaluate(item, lot, fees, s, est(26.67)).max_bid == 0
+    assert s.describe_margin() == "25% margin, at least €25 profit per lot"

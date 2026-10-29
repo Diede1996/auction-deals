@@ -522,7 +522,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         "settings": {"min_margin": settings.min_margin,
                      "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
                      "transport_margin": settings.transport_margin,
-                     "transport_min_value": settings.transport_min_value,
+                     "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
         "kinds": auction_kinds(config, now),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,

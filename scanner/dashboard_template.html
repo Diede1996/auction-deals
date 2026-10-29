@@ -614,16 +614,18 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   var TIERS = (DATA.settings.margin_tiers || []).slice().sort(function (a, b) { return a.up_to - b.up_to; });
   /* a transporter brings it: this margin instead of the tiers, when it (or the lots collected with it) sells for enough */
   var TRANSPORT_MARGIN = DATA.settings.transport_margin, TRANSPORT_MIN = DATA.settings.transport_min_value || 0;
+  var MIN_PROFIT = DATA.settings.min_profit || 0;  /* watchlist min_profit: at least this much profit in euros per lot */
   function marginFor(saleEach, transport) {
     if (transport && TRANSPORT_MARGIN != null) return TRANSPORT_MARGIN * 100;
     if (saleEach != null) for (var i = 0; i < TIERS.length; i++) if (saleEach <= TIERS[i].up_to) return TIERS[i].min_margin * 100;
     return S.minMargin;
   }
   function marginText() {
-    return TIERS.length ? TIERS.map(function (t) { return Math.round(t.min_margin * 100) + "% up to €" + t.up_to; }).join(", ") +
-      ", " + S.minMargin + "% above" + (TRANSPORT_MARGIN != null ? " (" + Math.round(TRANSPORT_MARGIN * 100) + "% when a transporter brings it" +
-      (TRANSPORT_MIN ? " for €" + TRANSPORT_MIN + "+ per pickup" : "") + ")" : "") :
-      S.minMargin + "% margin";
+    return (TIERS.length ? TIERS.map(function (t) { return Math.round(t.min_margin * 100) + "% up to €" + t.up_to; }).join(", ") +
+      ", " + S.minMargin + "% above" : S.minMargin + "% margin") +
+      (MIN_PROFIT ? ", at least €" + MIN_PROFIT + " profit per lot" : "") +
+      (TRANSPORT_MARGIN != null ? " (" + Math.round(TRANSPORT_MARGIN * 100) + "% when a transporter brings it" +
+      (TRANSPORT_MIN ? " for €" + TRANSPORT_MIN + "+ per pickup" : "") + ")" : "");
   }
   function calc(lot) {
     var trip = tripCost(lot);
@@ -640,6 +642,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     if (market) {
       resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
       caps.push(resale / (1 + Math.max(0, minMargin) / 100));
+      if (MIN_PROFIT > 0) caps.push(resale - MIN_PROFIT);
     }
     if (lot.itemMaxPrice != null) caps.push(lot.itemMaxPrice);
     var out = { market: market, source: source, costNow: costNow, resale: resale, trip: trip,

@@ -133,7 +133,7 @@ The **Favorites** tab shows the lots you starred, also after they closed or drop
 At the top you set:
 
 - **You sell at**: the share of the Marktplaats median you expect to get. The default is 85%, because asking prices are higher than selling prices. Drag it to 50% to see your margin if you only get half the median.
-- **Minimum margin**: the suggested max bid always leaves at least this margin, as a % of what you pay (bid, premium, VAT and driving). At 30% you pay at most your sale price ÷ 1.3. The default is 30%. With `margin_tiers` in `watchlist.yml` cheaper things can need a higher margin, by expected sale price per item, e.g. 50% up to €100, 40% up to €250, 30% up to €500; above the last tier the minimum margin applies.
+- **Minimum margin**: the suggested max bid always leaves at least this margin, as a % of what you pay (bid, premium, VAT and driving). At 30% you pay at most your sale price ÷ 1.3. The default is 30%. With `margin_tiers` in `watchlist.yml` cheaper things can need a higher margin, by expected sale price per item, e.g. 50% up to €100, 40% up to €250, 30% up to €500; above the last tier the minimum margin applies. With `min_profit` (e.g. `25`) the max bid also leaves at least that many euros profit per lot, so cheap lots stay worth the pickup and the selling.
 - **Count driving costs**: include the drive to the pickup address in what you pay (on by default).
 
 Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
