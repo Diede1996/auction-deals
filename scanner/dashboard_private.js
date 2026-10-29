@@ -1102,7 +1102,9 @@
   function splitItem(it) {
     var n = qtyOf(it), names = Array.isArray(it.pieceNames) && it.pieceNames.length ? it.pieceNames : null;
     var rows = [], list = el("div", { "class": "psplit-rows" }), total = el("p", { "class": "small" });
-    var each = Math.round((it.paid || 0) / (names ? names.length : n) * 100) / 100;
+    /* pieceNames: a name per row, or { name, qty } for a set such as a suit (jacket + trousers) */
+    var pieces = names ? names.reduce(function (a, x) { return a + ((x && x.qty) || 1); }, 0) : n;
+    var each = Math.round((it.paid || 0) / pieces * 100) / 100;
     function addRow(name, pieces, cost) {
       var r = {
         name: el("input", { type: "text", value: name, "aria-label": "Name", required: true }),
@@ -1120,13 +1122,14 @@
         (Math.abs(t - (it.paid || 0)) > 0.01 ? ": they'll be scaled to add up to what you paid." : ".");
     }
     (names || Array.apply(null, Array(n)).map(function (_, i) { return (it.name || "Piece") + " (" + (i + 1) + "/" + n + ")"; }))
-      .forEach(function (nm) { addRow(nm, 1, each); });
+      .forEach(function (nm) { var q = (nm && nm.qty) || 1; addRow(typeof nm === "string" ? nm : nm.name, q, each * q); });
     sum();
     var err = el("p", { "class": "error", hidden: true });
     var form = el("form", { method: "dialog" },
       el("h2", { text: "Split: " + (it.name || "lot") }),
       el("p", { "class": "small", text: "Each row becomes its own item, with its own ad, photos and sale. They keep the invoice" + (it.pickup ? ", pickup" : "") +
-        " and where it came from. Selling a suit as one? Make it one row with 2 pieces and delete the other row." + (names ? " The names come from the invoice; check the labels." : "") }),
+        " and where it came from. Selling a suit as one? Make it one row with 2 pieces and delete the other row." +
+        (names ? " The names come from the invoice; check the labels." + (names.some(function (x) { return x && x.qty > 1; }) ? " Rows with 2 pieces are already set up as a suit." : "") : "") }),
       el("div", { "class": "psplit-row head", "aria-hidden": "true" }, el("span", { text: "Name" }), el("span", { text: "Pieces" }), el("span", { text: "Cost €" }), el("span")),
       list,
       el("button", { type: "button", "class": "btn-link", text: "+ Add a row", onclick: function () { addRow((it.name || "Piece") + " (" + (rows.length + 1) + ")", 1, 0); sum(); } }),
