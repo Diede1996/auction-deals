@@ -31,8 +31,8 @@ settings:
 items:
 - name: Monitor
   # only these brands (Diede, 2026-10-29)
-  keywords: [dell monitor, acer monitor, samsung monitor, hp monitor, dell beeldscherm, acer beeldscherm,
-    samsung beeldscherm, hp beeldscherm]
+  keywords: [dell monitor, acer monitor, samsung monitor, hp monitor, philips monitor, dell beeldscherm,
+    acer beeldscherm, samsung beeldscherm, hp beeldscherm, philips beeldscherm]
   exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard,
     kabel, baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
