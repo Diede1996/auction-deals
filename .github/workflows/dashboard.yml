@@ -11,6 +11,7 @@ on:
       - scanner/dashboard_template.html
       - scanner/dashboard_private.js
       - scanner/dashboard.py
+      - scanner/main.py
       - watchlist.yml           # new margins show on the page right away
       - .github/workflows/dashboard.yml
   workflow_dispatch: {}

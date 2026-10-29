@@ -15,6 +15,8 @@ from pathlib import Path
 from . import dashboard
 from .bot import run_commands
 from .evaluate import Settings
+from .matching import matches
+from .models import WatchItem
 from .scan import run_scan, settings_data
 from .storage import load_json, load_yaml
 from .util import utc_now
@@ -42,6 +44,12 @@ def run(argv: list[str] | None = None) -> int:
         watchlist = load_yaml(root / "watchlist.yml")
         if watchlist.get("settings"):
             data.setdefault("settings", {}).update(settings_data(Settings.from_dict(watchlist["settings"])))
+        # and so do keywords you removed: lots that no longer match their item go (favorites and followed lots stay)
+        items = {i.name: i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or [])}
+        favs = {f.get("key") for f in (data.get("favorites") or {}).get("items") or []}
+        if items and data.get("lots"):
+            data["lots"] = [lot for lot in data["lots"] if lot.get("followed") or lot.get("key") in favs
+                            or lot.get("item") not in items or matches(items[lot["item"]], lot.get("title") or "")]
         dashboard.write(root / "site", data)
         return 0
     only = [s.strip() for s in args.sites.split(",")] if args.sites else None

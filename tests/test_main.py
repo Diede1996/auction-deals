@@ -555,3 +555,18 @@ def test_dashboard_mode_rebuilds_the_page_from_the_last_scan(tmp_path):
     page = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
     assert "Dell XPS 15 9510" in page and "__DATA__" not in page and "/*__PRIVATE_JS__*/" not in page
     assert json.loads((tmp_path / "site" / "data.json").read_text(encoding="utf-8"))["lots"][0]["key"] == "hnvi:1"
+
+
+def test_dashboard_mode_drops_lots_whose_keyword_was_removed(tmp_path):
+    from scanner.main import run
+    (tmp_path / "data").mkdir()
+    (tmp_path / "watchlist.yml").write_text("items:\n- name: Power tools\n  keywords: [makita]\n", encoding="utf-8")
+    lots = [{"key": "a", "item": "Power tools", "title": "Makita boormachine"},
+            {"key": "b", "item": "Power tools", "title": "Hikoki invalzaag"},
+            {"key": "c", "item": "Power tools", "title": "Hikoki klopboor", "followed": True},
+            {"key": "d", "item": "Power tools", "title": "Hikoki accu"}]
+    (tmp_path / "data" / "lots.json").write_text(json.dumps({"lots": lots, "favorites": {"items": [{"key": "d"}]}}),
+                                                 encoding="utf-8")
+    assert run(["dashboard", "--root", str(tmp_path)]) == 0
+    kept = json.loads((tmp_path / "site" / "data.json").read_text(encoding="utf-8"))["lots"]
+    assert [lot["key"] for lot in kept] == ["a", "c", "d"]
