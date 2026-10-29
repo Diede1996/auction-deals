@@ -1619,7 +1619,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-29T10:52:36.810240+00:00",
+ "generated": "2026-10-29T11:57:02.032500+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -1637,7 +1637,7 @@
    "followed": true,
    "image": "https://media.tbauctions.com/image-media/60604b9c-cd38-40ab-ba0f-c53549c5bb2e/file",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -1684,7 +1684,7 @@
    "followed": true,
    "image": "https://media.tbauctions.com/image-media/a6cc9a82-a2d6-4e92-a2ba-4b722f4b0b73/file",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -1731,7 +1731,7 @@
    "followed": true,
    "image": "https://media.tbauctions.com/image-media/b2f76a3f-605c-40c3-8526-582d164d9400/file",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -2038,7 +2038,7 @@
    "followed": true,
    "image": "https://media.tbauctions.com/image-media/adac3416-3c36-468b-8749-cb0c4e57c5f9/file",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -2067,7 +2067,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 19.36,
+    "cost": 19.37,
     "from": "home",
     "km": 77.9,
     "min": 70
@@ -6351,10 +6351,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 2,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/14",
@@ -6433,10 +6433,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/16",
@@ -6486,10 +6486,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/20",
@@ -8043,7 +8043,7 @@
     "approx": false,
     "cost": 22.43,
     "from": "home",
-    "km": 90.2,
+    "km": 90.3,
     "min": 77
    },
    "units": 1,
@@ -8132,7 +8132,7 @@
     "approx": false,
     "cost": 22.43,
     "from": "home",
-    "km": 90.2,
+    "km": 90.3,
     "min": 77
    },
    "units": 1,
@@ -8425,7 +8425,7 @@
     "approx": false,
     "cost": 22.43,
     "from": "home",
-    "km": 90.2,
+    "km": 90.3,
     "min": 77
    },
    "units": 1,
@@ -8478,7 +8478,7 @@
     "approx": false,
     "cost": 22.43,
     "from": "home",
-    "km": 90.2,
+    "km": 90.3,
     "min": 77
    },
    "units": 1,
@@ -8531,7 +8531,7 @@
     "approx": false,
     "cost": 22.43,
     "from": "home",
-    "km": 90.2,
+    "km": 90.3,
     "min": 77
    },
    "units": 1,
@@ -8582,9 +8582,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8635,9 +8635,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8688,9 +8688,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8741,9 +8741,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8794,9 +8794,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8847,9 +8847,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8900,9 +8900,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8953,9 +8953,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -9006,9 +9006,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -9088,9 +9088,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 5,
@@ -9291,9 +9291,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 2,
@@ -9344,9 +9344,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 4,
@@ -9562,9 +9562,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 17,
@@ -9615,9 +9615,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -9697,9 +9697,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -9779,9 +9779,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 5,
@@ -10067,9 +10067,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -10170,9 +10170,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -10223,9 +10223,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -10276,9 +10276,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -10409,9 +10409,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -10512,9 +10512,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 2,
@@ -10615,9 +10615,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 2,
@@ -10934,9 +10934,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -10987,9 +10987,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -11220,9 +11220,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -11323,9 +11323,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -11376,9 +11376,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 3,
@@ -13346,7 +13346,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13399,7 +13399,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13481,7 +13481,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13563,7 +13563,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13616,7 +13616,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13669,7 +13669,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13722,7 +13722,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13775,7 +13775,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13828,7 +13828,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -13881,7 +13881,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14169,7 +14169,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14457,7 +14457,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14745,7 +14745,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14798,7 +14798,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14851,7 +14851,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -14933,7 +14933,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15015,7 +15015,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15104,7 +15104,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15157,7 +15157,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15210,7 +15210,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15263,7 +15263,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15316,7 +15316,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 49.85,
+    "cost": 49.86,
     "from": "home",
     "km": 200.6,
     "min": 159
@@ -15723,13 +15723,13 @@
    "itemMinMargin": null,
    "key": "openbareverkopen:757679",
    "location": "Ooigem",
-   "market": 107.5,
+   "market": 139.99,
    "marketSource": "marktplaats",
-   "maxBid": 37.0,
+   "maxBid": 52.0,
    "mp": {
-    "asOf": "2026-10-26T10:04:47.419265+00:00",
-    "count": 4,
-    "high": 199.25,
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 3,
+    "high": 219.0,
     "kind": "exact",
     "listings": [
      {
@@ -15737,12 +15737,6 @@
       "price": 50.0,
       "title": "Makita boormachine model Makita DTD153",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2457815941-makita-boormachine-model-makita-dtd153"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita DTD153 Body - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456857844-makita-dtd153-body-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -15757,13 +15751,12 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446693563-nieuwe-makita-dtd153-slagschroevendraaier-set"
      }
     ],
-    "low": 56.25,
-    "median": 107.5,
+    "low": 50.0,
+    "median": 139.99,
     "model": "DTD153",
     "outliers": [],
     "prices": [
      50.0,
-     75.0,
      139.99,
      219.0
     ],
@@ -15817,7 +15810,7 @@
    "marketSource": "marktplaats",
    "maxBid": 36.0,
    "mp": {
-    "asOf": "2026-10-26T10:04:47.419265+00:00",
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
     "count": 2,
     "high": 127.5,
     "kind": "exact",
@@ -15882,17 +15875,60 @@
    "fixed": 0.0,
    "followed": false,
    "image": "https://img.proveiling.nl/Image.aspx?img=15766|165869|3289348|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "proveiling:3289348",
    "location": "Wageningen",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 47.48,
+   "marketSource": "marktplaats",
+   "maxBid": 16.0,
+   "mp": {
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 4,
+    "high": 76.75,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 2.0,
+      "title": "Zelf gemaakt en geschilderd keramieken planten pot.",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2456237297-zelf-gemaakt-en-geschilderd-keramieken-planten-pot"
+     },
+     {
+      "kind": "fixed",
+      "price": 24.95,
+      "title": "West-Germany keramieken plantenzuil, 403-47",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-zuilen-en-pilaren/m2459152610-west-germany-keramieken-plantenzuil-403-47"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Monstera plant met witte keramieken pot 218 cm",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2455708866-monstera-plant-met-witte-keramieken-pot-218-cm"
+     },
+     {
+      "kind": "fixed",
+      "price": 79.0,
+      "title": "2 grote beige keramieken bloempotten inclusief planten",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kamerplanten/m2453399915-2-grote-beige-keramieken-bloempotten-inclusief-planten"
+     }
+    ],
+    "low": 7.74,
+    "median": 47.48,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     2.0,
+     24.95,
+     70.0,
+     79.0
+    ],
+    "query": "plant keramieken",
+    "url": "https://www.marktplaats.nl/q/plant+keramieken/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -15936,10 +15972,39 @@
    "itemMinMargin": null,
    "key": "hnvi:197370",
    "location": "'s-Hertogenbosch",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 130.0,
+   "marketSource": "marktplaats",
+   "maxBid": 45.0,
+   "mp": {
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 2,
+    "high": 130.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "makita reciprozaag. DJR188",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2452167746-makita-reciprozaag-djr188"
+     },
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "Makita DJR188 18V reciprozaag body – LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2451314716-makita-djr188-18v-reciprozaag-body-lxt"
+     }
+    ],
+    "low": 130.0,
+    "median": 130.0,
+    "model": "DJR188",
+    "outliers": [],
+    "prices": [
+     130.0,
+     130.0
+    ],
+    "query": "makita djr188",
+    "url": "https://www.marktplaats.nl/q/makita+recirpozaag+djr188/"
+   },
    "mpPlan": {
     "brand": "makita",
     "kind": "exact",
@@ -15959,7 +16024,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16012,7 +16077,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16065,7 +16130,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16147,7 +16212,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16271,7 +16336,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16460,7 +16525,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16513,7 +16578,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16595,7 +16660,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16684,7 +16749,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16766,7 +16831,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16848,7 +16913,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16930,7 +16995,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16983,7 +17048,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17036,7 +17101,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17181,7 +17246,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17263,7 +17328,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17316,7 +17381,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17505,7 +17570,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17558,7 +17623,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17588,35 +17653,35 @@
    "itemMinMargin": null,
    "key": "hnvi:197391",
    "location": "'s-Hertogenbosch",
-   "market": 115.0,
+   "market": 140.0,
    "marketSource": "marktplaats",
-   "maxBid": 39.0,
+   "maxBid": 52.0,
    "mp": {
-    "asOf": "2026-10-26T06:50:13.864459+00:00",
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
     "count": 2,
-    "high": 137.5,
+    "high": 155.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "Makita DVC750LZX1 Accu Stofzuiger met HEPA filter",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455642238-makita-dvc750lzx1-accu-stofzuiger-met-hepa-filter"
-     },
      {
       "kind": "bid",
       "price": 130.0,
       "title": "Makita DVC750L 18v stofzuiger zgan",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456482510-makita-dvc750l-18v-stofzuiger-zgan"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/compressors/m2459104002-makita-dvc750l-18v-stofzuiger-zgan"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Makita DVC750LZX1 Accu Stofzuiger - Compact en Krachtig",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2459088803-makita-dvc750lzx1-accu-stofzuiger-compact-en-krachtig"
      }
     ],
-    "low": 92.5,
-    "median": 115.0,
+    "low": 125.0,
+    "median": 140.0,
     "model": "DVC750L",
     "outliers": [],
     "prices": [
-     100.0,
-     130.0
+     130.0,
+     150.0
     ],
     "query": "makita dvc750l",
     "url": "https://www.marktplaats.nl/q/makita+dvc750l/"
@@ -17640,7 +17705,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17663,42 +17728,42 @@
    "fixed": 0.0,
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/RsSgPHdc_BE/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3MzkyLzAxMDYtYWNjdS1uYXQtZHJvb2d6dWlnZXItbWFraXRhLWR2Yzc1MGwtem9uZGVyLWFjY3UuanBn.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "hnvi:197392",
    "location": "'s-Hertogenbosch",
-   "market": 115.0,
+   "market": 140.0,
    "marketSource": "marktplaats",
-   "maxBid": 39.0,
+   "maxBid": 52.0,
    "mp": {
-    "asOf": "2026-10-26T06:50:13.864459+00:00",
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
     "count": 2,
-    "high": 137.5,
+    "high": 155.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "Makita DVC750LZX1 Accu Stofzuiger met HEPA filter",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455642238-makita-dvc750lzx1-accu-stofzuiger-met-hepa-filter"
-     },
      {
       "kind": "bid",
       "price": 130.0,
       "title": "Makita DVC750L 18v stofzuiger zgan",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456482510-makita-dvc750l-18v-stofzuiger-zgan"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/compressors/m2459104002-makita-dvc750l-18v-stofzuiger-zgan"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Makita DVC750LZX1 Accu Stofzuiger - Compact en Krachtig",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2459088803-makita-dvc750lzx1-accu-stofzuiger-compact-en-krachtig"
      }
     ],
-    "low": 92.5,
-    "median": 115.0,
+    "low": 125.0,
+    "median": 140.0,
     "model": "DVC750L",
     "outliers": [],
     "prices": [
-     100.0,
-     130.0
+     130.0,
+     150.0
     ],
     "query": "makita dvc750l",
     "url": "https://www.marktplaats.nl/q/makita+dvc750l/"
@@ -17722,7 +17787,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17911,7 +17976,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17941,20 +18006,20 @@
    "itemMinMargin": null,
    "key": "hnvi:197394",
    "location": "'s-Hertogenbosch",
-   "market": 99.95,
+   "market": 100.0,
    "marketSource": "marktplaats",
    "maxBid": 34.0,
    "mp": {
-    "asOf": "2026-10-26T06:50:13.864459+00:00",
-    "count": 43,
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 41,
     "high": 130.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "bid",
+      "kind": "fixed",
       "price": 15.0,
-      "title": "Makita Zijhandgreep voor Boormachine/Haakse Slijper",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2455776274-makita-zijhandgreep-voor-boormachine-haakse-slijper"
+      "title": "Makita haakse slijper op standaard",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458778300-makita-haakse-slijper-op-standaard"
      },
      {
       "kind": "bid",
@@ -17976,21 +18041,15 @@
      },
      {
       "kind": "bid",
+      "price": 40.0,
+      "title": "Makita slijptol haakse slijper groot model 230mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2459347692-makita-slijptol-haakse-slijper-groot-model-230mm"
+     },
+     {
+      "kind": "bid",
       "price": 45.0,
       "title": "Makita BGA452 Haakse Slijper 115mm",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2452159817-makita-bga452-haakse-slijper-115mm"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Makita haakse slijper 9558NB gebruikt, in goede staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2433824040-makita-haakse-slijper-9558nb-gebruikt-in-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Makita 9607NB haakse slijper 180 mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453640109-makita-9607nb-haakse-slijper-180-mm"
      },
      {
       "kind": "fixed",
@@ -18001,12 +18060,12 @@
      {
       "kind": "bid",
       "price": 50.0,
-      "title": "Makita Haakse Slijper GA9030S - Krachtig en Betrouwbaar",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451960661-makita-haakse-slijper-ga9030s-krachtig-en-betrouwbaar"
+      "title": "Makita 9607NB haakse slijper 180 mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453640109-makita-9607nb-haakse-slijper-180-mm"
      },
      {
-      "kind": "bid",
-      "price": 60.0,
+      "kind": "fixed",
+      "price": 50.0,
       "title": "Makita 9558HNR Haakse Slijper - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450986599-makita-9558hnr-haakse-slijper-zo-goed-als-nieuw"
      },
@@ -18027,12 +18086,6 @@
       "price": 69.99,
       "title": "Makita 9558HNRGK2 Haakse Slijper",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451633512-makita-9558hnrgk2-haakse-slijper"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Makita GA9012C Haakse Slijper 230 mm – 2000W",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456437133-makita-ga9012c-haakse-slijper-230-mm-2000w"
      },
      {
       "kind": "bid",
@@ -18061,26 +18114,26 @@
      {
       "kind": "bid",
       "price": 80.0,
-      "title": "Makita 9558HNRGK2 Haakse Slijper in Koffer gloednieuw",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2418637834-makita-9558hnrgk2-haakse-slijper-in-koffer-gloednieuw"
+      "title": "Makita DGA452Z Accu Haakse Slijper 18V (Body)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2459034162-makita-dga452z-accu-haakse-slijper-18v-body"
      },
      {
       "kind": "fixed",
-      "price": 90.0,
+      "price": 85.0,
       "title": "haakse slijper makita 230 mm",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453442286-haakse-slijper-makita-230-mm"
+     },
+     {
+      "kind": "bid",
+      "price": 89.99,
+      "title": "Makita DGA452 Haakse Slijper 18V - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458186405-makita-dga452-haakse-slijper-18v-gebruikt"
      },
      {
       "kind": "bid",
       "price": 99.0,
       "title": "Nieuwe Makita GA9010C Haakse Slijper",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2450483642-nieuwe-makita-ga9010c-haakse-slijper"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.95,
-      "title": "Makita GA5041R Haakse Slijper | BJ 2021 - Netjes",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2455208542-makita-ga5041r-haakse-slijper-bj-2021-netjes"
      },
      {
       "kind": "fixed",
@@ -18102,15 +18155,9 @@
      },
      {
       "kind": "bid",
-      "price": 105.0,
+      "price": 109.0,
       "title": "Nieuwe Makita 9558HNRGK2 haakse slijper 750W 125mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2451023997-nieuwe-makita-9558hnrgk2-haakse-slijper-750w-125mm"
-     },
-     {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Makita DGA504 18V LXT Haakse Slijper 125mm + 5.0Ah Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2454893463-makita-dga504-18v-lxt-haakse-slijper-125mm-5-0ah-accu"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458346869-nieuwe-makita-9558hnrgk2-haakse-slijper-750w-125mm"
      },
      {
       "kind": "bid",
@@ -18120,56 +18167,73 @@
      },
      {
       "kind": "fixed",
-      "price": 119.0,
-      "title": "MAKITA 18V HAAKSE SLIJPER DGA504ZJ 125mm BRUSHLESS SLIJPTOL",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458058043-makita-18v-haakse-slijper-dga504zj-125mm-brushless-slijptol"
+      "price": 110.0,
+      "title": "Makita DGA504 18V LXT Haakse Slijper 125mm + 5.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2454893463-makita-dga504-18v-lxt-haakse-slijper-125mm-5-0ah-accu"
      },
      {
       "kind": "fixed",
-      "price": 119.95,
-      "title": "Makita GA5041C Haakse Slijper | BJ 2024 - Netjes",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2455208535-makita-ga5041c-haakse-slijper-bj-2024-netjes"
+      "price": 119.0,
+      "title": "MAKITA 18V HAAKSE SLIJPER DGA504ZJ 125mm BRUSHLESS SLIJPTOL",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2459148461-makita-18v-haakse-slijper-dga504zj-125mm-brushless-slijptol"
+     },
+     {
+      "kind": "bid",
+      "price": 119.99,
+      "title": "Makita GA9020S Haakse Slijper met Slijpschijf",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2457406959-makita-ga9020s-haakse-slijper-met-slijpschijf"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Makita DGA504 Accu Haakse Slijper 18V - Zonder Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458193840-makita-dga504-accu-haakse-slijper-18v-zonder-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Makita Haakse Slijper in Metalen Koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456939742-makita-haakse-slijper-in-metalen-koffer"
      }
     ],
     "low": 65.0,
-    "median": 99.95,
+    "median": 100.0,
     "model": null,
     "outliers": [
-     350.0
+     235.0
     ],
     "prices": [
      15.0,
      19.0,
      20.0,
      25.0,
+     40.0,
      45.0,
-     45.0,
      50.0,
      50.0,
      50.0,
-     60.0,
      65.0,
      65.0,
      69.99,
      70.0,
      70.0,
-     70.0,
      74.99,
      75.0,
      80.0,
-     90.0,
+     85.0,
+     89.99,
      99.0,
-     99.95,
      100.0,
      100.0,
      100.0,
-     105.0,
+     109.0,
      110.0,
      110.0,
      119.0,
-     119.95,
      119.99,
+     120.0,
      125.0,
+     130.0,
      130.0,
      135.0,
      149.99,
@@ -18179,8 +18243,7 @@
      185.0,
      189.95,
      199.0,
-     200.0,
-     235.0
+     200.0
     ],
     "query": "makita haakse slijper",
     "url": "https://www.marktplaats.nl/q/makita+haakse+slijper/"
@@ -18204,7 +18267,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18257,7 +18320,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18310,7 +18373,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18363,7 +18426,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18445,7 +18508,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18527,7 +18590,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18609,7 +18672,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18662,7 +18725,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18758,7 +18821,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18840,7 +18903,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18985,7 +19048,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19174,7 +19237,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19263,7 +19326,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19345,7 +19408,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19441,7 +19504,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19537,7 +19600,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19633,7 +19696,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19729,7 +19792,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19825,7 +19888,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19921,7 +19984,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20017,7 +20080,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20113,7 +20176,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20209,7 +20272,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20305,7 +20368,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20401,7 +20464,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20497,7 +20560,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20593,7 +20656,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20689,7 +20752,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20785,7 +20848,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20881,7 +20944,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20977,7 +21040,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21073,7 +21136,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21169,7 +21232,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21265,7 +21328,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21288,42 +21351,42 @@
    "fixed": 0.0,
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/fFvQ0BaFIYw/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk3NDMwLzAxNDQtYWNjdS1uYXQtZHJvb2d6dWlnZXItbWFraXRhLWR2Yzc1MGwtem9uZGVyLWFjY3UuanBn.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "hnvi:197430",
    "location": "'s-Hertogenbosch",
-   "market": 115.0,
+   "market": 140.0,
    "marketSource": "marktplaats",
-   "maxBid": 39.0,
+   "maxBid": 52.0,
    "mp": {
-    "asOf": "2026-10-26T06:50:13.864459+00:00",
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
     "count": 2,
-    "high": 137.5,
+    "high": 155.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "Makita DVC750LZX1 Accu Stofzuiger met HEPA filter",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2455642238-makita-dvc750lzx1-accu-stofzuiger-met-hepa-filter"
-     },
      {
       "kind": "bid",
       "price": 130.0,
       "title": "Makita DVC750L 18v stofzuiger zgan",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456482510-makita-dvc750l-18v-stofzuiger-zgan"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/compressors/m2459104002-makita-dvc750l-18v-stofzuiger-zgan"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Makita DVC750LZX1 Accu Stofzuiger - Compact en Krachtig",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2459088803-makita-dvc750lzx1-accu-stofzuiger-compact-en-krachtig"
      }
     ],
-    "low": 92.5,
-    "median": 115.0,
+    "low": 125.0,
+    "median": 140.0,
     "model": "DVC750L",
     "outliers": [],
     "prices": [
-     100.0,
-     130.0
+     130.0,
+     150.0
     ],
     "query": "makita dvc750l",
     "url": "https://www.marktplaats.nl/q/makita+dvc750l/"
@@ -21347,7 +21410,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21400,7 +21463,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21589,7 +21652,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21642,7 +21705,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21695,7 +21758,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21791,7 +21854,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21873,7 +21936,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22062,7 +22125,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22179,7 +22242,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22232,7 +22295,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22285,7 +22348,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22367,7 +22430,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22449,7 +22512,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22531,7 +22594,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22584,7 +22647,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22738,7 +22801,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22827,7 +22890,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23100,7 +23163,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23153,7 +23216,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23235,7 +23298,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23288,7 +23351,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23341,7 +23404,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23430,7 +23493,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23483,7 +23546,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23565,7 +23628,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23654,7 +23717,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23707,7 +23770,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23760,7 +23823,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23813,7 +23876,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23866,7 +23929,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23978,7 +24041,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24031,7 +24094,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24084,7 +24147,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24166,7 +24229,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24391,7 +24454,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24713,7 +24776,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24938,7 +25001,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24991,7 +25054,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25044,7 +25107,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25097,7 +25160,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25419,7 +25482,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25732,7 +25795,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25971,7 +26034,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26024,7 +26087,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26332,7 +26395,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26533,7 +26596,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26841,7 +26904,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27010,7 +27073,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27179,7 +27242,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27348,7 +27411,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27517,7 +27580,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27686,7 +27749,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27855,7 +27918,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28024,7 +28087,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28077,7 +28140,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28130,7 +28193,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28299,7 +28362,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28468,7 +28531,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28637,7 +28700,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28719,7 +28782,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28888,7 +28951,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29057,7 +29120,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29226,7 +29289,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29395,7 +29458,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29564,7 +29627,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29733,7 +29796,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29815,7 +29878,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -29904,7 +29967,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30030,7 +30093,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30083,7 +30146,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30179,7 +30242,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30305,7 +30368,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30591,7 +30654,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30644,7 +30707,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30813,7 +30876,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -30982,7 +31045,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31064,7 +31127,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31117,7 +31180,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31229,7 +31292,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31282,7 +31345,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31408,7 +31471,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31577,7 +31640,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -31733,7 +31796,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -33144,9 +33207,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.65,
+    "cost": 25.66,
     "from": "home",
-    "km": 103.2,
+    "km": 103.3,
     "min": 88
    },
    "units": 1,
@@ -33621,7 +33684,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 27.33,
+    "cost": 27.34,
     "from": "home",
     "km": 110.0,
     "min": 94
@@ -33651,21 +33714,15 @@
    "itemMinMargin": null,
    "key": "plaatsjebod:60557",
    "location": "Amsterdam",
-   "market": 50.0,
+   "market": 212.5,
    "marketSource": "marktplaats",
-   "maxBid": 0.0,
+   "maxBid": 58.0,
    "mp": {
-    "asOf": "2026-10-19T04:42:12.193403+00:00",
-    "count": 5,
-    "high": 225.0,
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 6,
+    "high": 275.0,
     "kind": "general",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 12.5,
-      "title": "Philips HD7462 Koffiezetapparaat - Zwart/RVS",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2448407070-philips-hd7462-koffiezetapparaat-zwart-rvs"
-     },
      {
       "kind": "bid",
       "price": 30.0,
@@ -33674,9 +33731,9 @@
      },
      {
       "kind": "bid",
-      "price": 50.0,
-      "title": "Philips volautomatische espressomachine met melkopschuimer",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2450252530-philips-volautomatische-espressomachine-met-melkopschuimer"
+      "price": 30.0,
+      "title": "Philips SENSEO Latte Select koffiemachine met melkopschuimer",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiemachine-accessoires/m2423118781-philips-senseo-latte-select-koffiemachine-met-melkopschuimer"
      },
      {
       "kind": "bid",
@@ -33685,21 +33742,34 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445755250-philips-volautomatische-espressomachine-met-melkopschuimer"
      },
      {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Philips Volautomatische Espressomachine met Melkopschuimer",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456427266-philips-volautomatische-espressomachine-met-melkopschuimer"
+     },
+     {
+      "kind": "fixed",
+      "price": 275.0,
+      "title": "Philips LatteGo 4346/70 koffiemachine met Melkschuimer ZGAN",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447544537-philips-lattego-4346-70-koffiemachine-met-melkschuimer-zgan"
+     },
+     {
       "kind": "bid",
       "price": 275.0,
       "title": "Philips volautomatische espressomachine met melkopschuimer",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442223375-philips-volautomatische-espressomachine-met-melkopschuimer"
      }
     ],
-    "low": 21.25,
-    "median": 50.0,
+    "low": 30.0,
+    "median": 212.5,
     "model": null,
     "outliers": [],
     "prices": [
-     12.5,
      30.0,
-     50.0,
+     30.0,
      175.0,
+     250.0,
+     275.0,
      275.0
     ],
     "query": "koffiemachine philips",
@@ -33724,7 +33794,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 27.33,
+    "cost": 27.34,
     "from": "home",
     "km": 110.0,
     "min": 94
@@ -33959,17 +34029,60 @@
    "fixed": 0.0,
    "followed": false,
    "image": "https://img.vlavem.com/Image.aspx?img=6285|57969|1055738|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Plants / decor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
    "key": "vlavem:1055738",
    "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 35.0,
+   "marketSource": "marktplaats",
+   "maxBid": 3.0,
+   "mp": {
+    "asOf": "2026-10-29T11:57:02.032500+00:00",
+    "count": 4,
+    "high": 73.75,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 5.0,
+      "title": "plantenstaander",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bloempotten/m2455406570-plantenstaander"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "1 vintage plantenstaander, olifant *keramiek* *retro*",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2424031572-1-vintage-plantenstaander-olifant-keramiek-retro"
+     },
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Beeldhouwbok. Tuintafel. Tentoonstelling. Plantenstaander",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/tuintafels/m2439597902-beeldhouwbok-tuintafel-tentoonstelling-plantenstaander"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "1 vintage plantenstaander, olifant *keramiek* *retro*",
+      "url": "https://www.marktplaats.nl/v/antiek-en-kunst/antiek-keramiek-en-aardewerk/m2421893921-1-vintage-plantenstaander-olifant-keramiek-retro"
+     }
+    ],
+    "low": 11.25,
+    "median": 35.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     5.0,
+     30.0,
+     40.0,
+     85.0
+    ],
+    "query": "plant plantenstaander",
+    "url": "https://www.marktplaats.nl/q/plant+plantenstaander/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -34526,7 +34639,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 100,
+   "lots": 30,
    "name": "Marktplaats prices",
    "ok": true
   }
@@ -34835,5 +34948,18 @@
     }
    ]
   }
+ ],
+ "watchlist": [
+  "Monitor",
+  "MacBook",
+  "iPad",
+  "Laptop",
+  "Power tools",
+  "Coffee machine",
+  "Kitchen appliance",
+  "Suit / formalwear",
+  "Plants / decor",
+  "Phone",
+  "Wine"
  ]
 }

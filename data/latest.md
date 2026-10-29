@@ -1,6 +1,6 @@
 # Latest scan
 
-_Thursday 29 October 2026, 11:52 (Amsterdam time)_
+_Thursday 29 October 2026, 12:57 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -17,7 +17,7 @@ _Thursday 29 October 2026, 11:52 (Amsterdam time)_
 | Vlavem (BE) | ✅ 839 lots |
 | BellAuction (BE) | ✅ 0 lots |
 | Troostwijk | ✅ 91 lots |
-| Marktplaats prices | ✅ 100 price lookups |
+| Marktplaats prices | ✅ 30 price lookups |
 
 ## Matching lots (318)
 
@@ -157,10 +157,10 @@ _Thursday 29 October 2026, 11:52 (Amsterdam time)_
 |  | Laptop | [Nieuwe HP laptop batterij](https://www.inventarisveilingen.nl/veiling/index/productview/id/128/prodid/3313/) (Inventarisveilingen) | €20 | €42 | €5 | Wed 04 Nov 13:00 |
 |  | Laptop | [Nieuwe HP laptop batterij](https://www.inventarisveilingen.nl/veiling/index/productview/id/128/prodid/3313/) (Inventarisveilingen) | €20 | €42 | €5 | Wed 04 Nov 13:00 |
 |  | Power tools | [Lijnlaser Bosch Gll](https://www.openbare-verkopen.be/lot/757648) (Openbare Verkopen (BE)) | €50 | – | – | Thu 05 Nov 19:03 |
-|  | Power tools | [Makita Werkmateriaal](https://www.openbare-verkopen.be/lot/757679) (Openbare Verkopen (BE)) | €180 | €108 | €37 | Thu 05 Nov 19:10 |
+|  | Power tools | [Makita Werkmateriaal](https://www.openbare-verkopen.be/lot/757679) (Openbare Verkopen (BE)) | €180 | €140 | €52 | Thu 05 Nov 19:10 |
 | ✅ | Power tools | [Werfradio Makita](https://www.openbare-verkopen.be/lot/757680) (Openbare Verkopen (BE)) | €25 | €105 | €36 | Thu 05 Nov 19:10 |
-|  | Plants / decor | [Paar plantjes in keramieken potten](https://www.proveiling.nl/Paar-plantjes-in-keramieken-potten/3289348/detail) (ProVeiling) | €5 | – | – | Thu 05 Nov 19:30 |
-|  | Power tools | [Accu recirpozaag MAKITA DJR188 met accu in kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/accu-recirpozaag-makita-djr188-met-accu-in-kunststoffen-koffer/197370) (HNVI) | €65 | – | – | Thu 05 Nov 19:30 |
+| ✅ | Plants / decor | [Paar plantjes in keramieken potten](https://www.proveiling.nl/Paar-plantjes-in-keramieken-potten/3289348/detail) (ProVeiling) | €5 | €47 | €16 | Thu 05 Nov 19:30 |
+|  | Power tools | [Accu recirpozaag MAKITA DJR188 met accu in kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/accu-recirpozaag-makita-djr188-met-accu-in-kunststoffen-koffer/197370) (HNVI) | €65 | €130 | €45 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu schroefboormachine MAKITA DDF481ZJ met accu en kunststoffen koffe](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf481zj-met-accu-en-kunststoffen-koffer/197371) (HNVI) | €45 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Haakse accu slijptol MAKITA DGA506ZJ met accu en kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/haakse-accu-slijptol-makita-dga506zj-met-accu-en-kunststoffen-koffer/197372) (HNVI) | €50 | – | – | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Accu boorhamer MAKITA DHR242 met HEPA DX01 afzuiger met accu en kunsts](https://www.hnvi.nl/veiling-kavel/accu-boorhamer-makita-dhr242-met-hepa-dx01-afzuiger-met-accu-en-kunststoffen-koffer/197373) (HNVI) | €65 | €235 | €87 | Thu 05 Nov 19:30 |
@@ -179,8 +179,8 @@ _Thursday 29 October 2026, 11:52 (Amsterdam time)_
 |  | Power tools | [Decoupeerzaag METABO STED70QUICK](https://www.hnvi.nl/veiling-kavel/decoupeerzaag-metabo-sted70quick/197388) (HNVI) | €11 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu haakse slijper  MAKITA DGA504  met accu en kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/accu-haakse-slijper-makita-dga504-met-accu-en-kunststoffen-koffer/197389) (HNVI) | €45 | €120 | €41 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu schroefboormachine MAKITA DDF481ZJ met accu en kunststoffen koffe](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf481zj-met-accu-en-kunststoffen-koffer-842663/197390) (HNVI) | €45 | – | – | Thu 05 Nov 19:30 |
-|  | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L met accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-met-accu/197391) (HNVI) | €55 | €115 | €39 | Thu 05 Nov 19:30 |
-|  | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L zonder accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-zonder-accu/197392) (HNVI) | €45 | €115 | €39 | Thu 05 Nov 19:30 |
+|  | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L met accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-met-accu/197391) (HNVI) | €55 | €140 | €52 | Thu 05 Nov 19:30 |
+| ✅ | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L zonder accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-zonder-accu/197392) (HNVI) | €45 | €140 | €52 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  haakse slijper MAKITA DGA504 met accu](https://www.hnvi.nl/veiling-kavel/accu-haakse-slijper-makita-dga504-met-accu/197393) (HNVI) | €45 | €120 | €41 | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Haakse slijper MAKITA NN](https://www.hnvi.nl/veiling-kavel/haakse-slijper-makita-nn/197394) (HNVI) | €11 | €100 | €34 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu slagschroevendraaier  MAKITA  DDT153 met accu](https://www.hnvi.nl/veiling-kavel/accu-slagschroevendraaier-makita-ddt153-met-accu/197395) (HNVI) | €40 | – | – | Thu 05 Nov 19:30 |
@@ -216,7 +216,7 @@ _Thursday 29 October 2026, 11:52 (Amsterdam time)_
 | ✅ | Power tools | [Acculader MAKITA DC18RC](https://www.hnvi.nl/veiling-kavel/acculader-makita-dc18rc-335525/197425) (HNVI) | €11 | €55 | €19 | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Acculader MAKITA DC18RC](https://www.hnvi.nl/veiling-kavel/acculader-makita-dc18rc-644373/197426) (HNVI) | €11 | €55 | €19 | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Acculader MAKITA DC18RC](https://www.hnvi.nl/veiling-kavel/acculader-makita-dc18rc-234464/197427) (HNVI) | €11 | €55 | €19 | Thu 05 Nov 19:30 |
-|  | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L zonder accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-zonder-accu-268765/197430) (HNVI) | €45 | €115 | €39 | Thu 05 Nov 19:30 |
+| ✅ | Power tools | [Accu  nat/droogzuiger MAKITA  DVC750L zonder accu](https://www.hnvi.nl/veiling-kavel/accu-nat-droogzuiger-makita-dvc750l-zonder-accu-268765/197430) (HNVI) | €45 | €140 | €52 | Thu 05 Nov 19:30 |
 |  | Power tools | [Boorhamer MAKITA HR218F met koffer](https://www.hnvi.nl/veiling-kavel/boorhamer-makita-hr218f-met-koffer/197431) (HNVI) | €26 | – | – | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Accu haakse slijper  MAKITA DGA504  zonder accu met kunstsfoffen koffe](https://www.hnvi.nl/veiling-kavel/accu-haakse-slijper-makita-dga504-zonder-accu-met-kunstsfoffen-koffer/197432) (HNVI) | €19 | €120 | €41 | Thu 05 Nov 19:30 |
 |  | Power tools | [Haakse slijper MAKITA  GA50303R met kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/haakse-slijper-makita-ga50303r-met-kunststoffen-koffer/197433) (HNVI) | €16 | – | – | Thu 05 Nov 19:30 |
@@ -327,12 +327,12 @@ _Thursday 29 October 2026, 11:52 (Amsterdam time)_
 |  | Phone | [Kinderbed Galaxy met lade - wit](https://www.openbare-verkopen.be/lot/757786) (Openbare Verkopen (BE)) | €35 | – | – | Tue 10 Nov 18:53 |
 |  | Laptop | [Boekenkast Quinty met laptoptafel 95cm 3 legplanken - eik decor/ grijs](https://www.openbare-verkopen.be/lot/758174) (Openbare Verkopen (BE)) | €45 | – | – | Tue 10 Nov 20:13 |
 |  | Plants / decor | [1 x Partij diverse soorten planten](https://www.plaatsjebod.nl/nl/lots/1-x-partij-diverse-soorten-planten) (Plaats Je Bod) | €20 | – | – | Tue 10 Nov 20:17 |
-|  | Coffee machine | [1 x Philips volautomatische meerkeuze espressomachine en melkopschuime](https://www.plaatsjebod.nl/nl/lots/1-x-philips-volautomatische-meerkeuze-espressomachine-en-melkopschuimer) (Plaats Je Bod) | €70 | €50 | €0 | Tue 10 Nov 20:24 |
+|  | Coffee machine | [1 x Philips volautomatische meerkeuze espressomachine en melkopschuime](https://www.plaatsjebod.nl/nl/lots/1-x-philips-volautomatische-meerkeuze-espressomachine-en-melkopschuimer) (Plaats Je Bod) | €70 | €212 | €58 | Tue 10 Nov 20:24 |
 |  | Phone | [Galaxy Console / 100% MELAMINE / Wit](https://www.openbare-verkopen.be/lot/758227) (Openbare Verkopen (BE)) | €35 | – | – | Wed 11 Nov 19:02 |
 |  | Phone | [Galaxy Console / 100% MELAMINE / Wit](https://www.openbare-verkopen.be/lot/758228) (Openbare Verkopen (BE)) | €35 | – | – | Wed 11 Nov 19:02 |
 |  | Phone | [Galaxy Console / 100% MELAMINE / Wit](https://www.openbare-verkopen.be/lot/758229) (Openbare Verkopen (BE)) | €35 | – | – | Wed 11 Nov 19:02 |
 |  | Phone | [Commode Galaxy 4 laden - wit](https://www.openbare-verkopen.be/lot/758709) (Openbare Verkopen (BE)) | €35 | – | – | Wed 11 Nov 20:48 |
-|  | Plants / decor | [plantenstaander](https://www.vlavem.com/plantenstaander/1055738/detail) (Vlavem (BE)) | €1 | – | – | Sun 15 Nov 19:00 |
+| ✅ | Plants / decor | [plantenstaander](https://www.vlavem.com/plantenstaander/1055738/detail) (Vlavem (BE)) | €1 | €35 | €3 | Sun 15 Nov 19:00 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055449/detail) (Vlavem (BE)) | €1 | – | – | Sun 15 Nov 19:00 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055450/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055451/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
