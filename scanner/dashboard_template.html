@@ -367,6 +367,13 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 .pfield input[type=file] { border: 0; padding: 4px 0; min-height: 0; }
 .pdlg .buttons { align-items: center; }
 .pdlg .danger { color: var(--critical-text); border-color: var(--critical-text); background: var(--surface); }
+.pdlg .buttons .primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+.psplit-rows { display: flex; flex-direction: column; gap: 6px; max-height: 52vh; overflow: auto; margin: 6px 0; }
+.psplit-row { display: grid; grid-template-columns: minmax(0, 1fr) 64px 92px 28px; gap: 8px; align-items: center; }
+.psplit-row.head { font-size: 12px; color: var(--text-3); margin-top: 10px; }
+.psplit-row input { min-width: 0; height: 36px; padding: 0 8px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); font: inherit; font-size: 14px; }
+.psplit-row .pph-x { position: static; background: var(--neutral-bg); color: var(--text-2); }
+.psplit { background: var(--accent-bg); padding: 8px 10px; border-radius: 8px; }
 .pdlg .check { display: flex; gap: 8px; align-items: center; margin-top: 10px; font-size: 14px; }
 .pday { margin-top: 16px; }
 .pday-head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; padding: 14px 16px 10px; }

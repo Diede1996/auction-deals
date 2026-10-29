@@ -193,7 +193,7 @@
   function matches(it) {
     var q = pui.q.trim().toLowerCase();
     if (pui.cat && (it.category || "") !== pui.cat) return false;
-    return !q || [it.name, it.category, it.source, it.invoice, it.notes, it.ad && it.ad.title].join(" ").toLowerCase().indexOf(q) >= 0;
+    return !q || [it.name, it.category, it.source, it.invoice, it.notes, it.ad && it.ad.title, it.lotOf && it.lotOf.name].join(" ").toLowerCase().indexOf(q) >= 0;
   }
 
   /* ---------- connecting ---------- */
@@ -403,6 +403,7 @@
           st !== "stock" ? el("span", { "class": "tag muted", text: STATUS[st] }) : null,
           q > 1 ? el("span", { text: (st === "stock" ? left + " of " : "") + q + " pieces" }) : null,
           it.source ? el("span", { "class": "auction", text: it.source }) : null, invoiceLink(it),
+          it.lotOf ? el("span", { "class": "small", text: "from lot “" + it.lotOf.name + "”" }) : null,
           pending(it) ? el("span", { "class": "tag", text: "🚚 pickup " + (it.pickup.date ? dayLabel(it.pickup.date) : "not planned") }) : null)),
       el("div", { "data-label": "Bought" }, el("div", { "class": "num", text: showDay(it.bought) }), el("div", { "class": "small", text: ago(it.bought) })),
       el("div", { "data-label": "Paid" }, el("div", { "class": "strong num", text: money2(it.paid) }),
@@ -411,6 +412,7 @@
       el("div", { "data-label": "Online" }, st !== "stock" ? el("span", { "class": "small", text: "–" }) :
         ls.length ? el("div", { "class": "badges" }, ls.map(badge)) : el("span", { "class": "small soon", text: "Not listed" })),
       el("div", { "class": "c-actions" },
+        canSplit(it) ? el("button", { type: "button", "class": "pbtn", text: "Split…", title: "Make each piece its own item, with its own ad", onclick: function () { splitItem(it); } }) : null,
         st === "stock" ? el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }) : null,
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
   }
@@ -985,6 +987,8 @@
       el("div", { "class": "pgrid" }, field("Pickup day", inp.pDate), field("Address", inp.pAddr), field("From", inp.pFrom), field("Until", inp.pTo)),
       el("label", { "class": "check" }, inp.pDone, "Collected"),
       el("h3", { text: "Ad" }),
+      !isNew && canSplit(it) ? el("p", { "class": "small psplit" }, "This is a lot of " + qtyOf(it) + " pieces, so this is one ad for all of them. For an ad per piece: ",
+        el("button", { type: "button", "class": "btn-link", text: "split it into separate items", onclick: function () { closeDlg(); splitItem(find(P.data, it.id) || it); } }), ".") : null,
       el("div", { "class": "pgrid" }, field("Title", inp.adTitle), field("Asking price (€)", inp.adPrice)),
       field("Text", inp.adText),
       el("div", { "class": "pfield" }, el("label", { text: "Photos" }), strip, inp.photos, el("div", { "class": "small", text: "Photos are made smaller (1600 px) before they're saved." })),
@@ -1090,6 +1094,74 @@
     });
     openDlg(form);
     setTimeout(function () { price.focus(); }, 0);
+  }
+
+  /* a lot of several pieces becomes one item per piece (or per set), each with its own ad, photos and sale.
+     The price paid is split over them; they keep the invoice, pickup and where it came from. */
+  function canSplit(it) { return qtyOf(it) > 1 && !sales(it).length && statusOf(it) !== "sold"; }
+  function splitItem(it) {
+    var n = qtyOf(it), names = Array.isArray(it.pieceNames) && it.pieceNames.length ? it.pieceNames : null;
+    var rows = [], list = el("div", { "class": "psplit-rows" }), total = el("p", { "class": "small" });
+    var each = Math.round((it.paid || 0) / (names ? names.length : n) * 100) / 100;
+    function addRow(name, pieces, cost) {
+      var r = {
+        name: el("input", { type: "text", value: name, "aria-label": "Name", required: true }),
+        pieces: el("input", { type: "number", min: "1", step: "1", value: String(pieces || 1), "aria-label": "Pieces", title: "Pieces in this item, e.g. 2 for jacket + trousers" }),
+        cost: el("input", { type: "text", inputmode: "decimal", value: (cost || 0).toFixed(2).replace(".", ","), "aria-label": "Cost share (€)" })
+      };
+      r.row = el("div", { "class": "psplit-row" }, r.name, r.pieces, r.cost,
+        el("button", { type: "button", "class": "pph-x", "aria-label": "Remove row", text: "✕", onclick: function () { rows = rows.filter(function (x) { return x !== r; }); r.row.remove(); sum(); } }));
+      r.cost.addEventListener("input", sum);
+      rows.push(r); list.append(r.row);
+    }
+    function sum() {
+      var t = rows.reduce(function (a, r) { return a + (amount(r.cost.value) || 0); }, 0);
+      total.textContent = rows.length + (rows.length === 1 ? " item" : " items") + ", costs together " + money2(t) + " of " + money2(it.paid || 0) +
+        (Math.abs(t - (it.paid || 0)) > 0.01 ? ": they'll be scaled to add up to what you paid." : ".");
+    }
+    (names || Array.apply(null, Array(n)).map(function (_, i) { return (it.name || "Piece") + " (" + (i + 1) + "/" + n + ")"; }))
+      .forEach(function (nm) { addRow(nm, 1, each); });
+    sum();
+    var err = el("p", { "class": "error", hidden: true });
+    var form = el("form", { method: "dialog" },
+      el("h2", { text: "Split: " + (it.name || "lot") }),
+      el("p", { "class": "small", text: "Each row becomes its own item, with its own ad, photos and sale. They keep the invoice" + (it.pickup ? ", pickup" : "") +
+        " and where it came from. Selling a suit as one? Make it one row with 2 pieces and delete the other row." + (names ? " The names come from the invoice; check the labels." : "") }),
+      el("div", { "class": "psplit-row head", "aria-hidden": "true" }, el("span", { text: "Name" }), el("span", { text: "Pieces" }), el("span", { text: "Cost €" }), el("span")),
+      list,
+      el("button", { type: "button", "class": "btn-link", text: "+ Add a row", onclick: function () { addRow((it.name || "Piece") + " (" + (rows.length + 1) + ")", 1, 0); sum(); } }),
+      total, err,
+      el("div", { "class": "buttons" }, el("span", { "class": "spacer" }), el("button", { type: "button", text: "Cancel", onclick: closeDlg }),
+        el("button", { type: "submit", "class": "primary", text: "Split" })));
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var parts = rows.map(function (r) { return { name: r.name.value.trim(), qty: Math.max(1, parseInt(r.pieces.value, 10) || 1), cost: amount(r.cost.value) || 0 }; });
+      if (parts.length < 2) { err.textContent = "Keep at least two rows, or close this and leave it as one lot."; err.hidden = false; return; }
+      if (parts.some(function (x) { return !x.name; })) { err.textContent = "Every row needs a name."; err.hidden = false; return; }
+      var t = parts.reduce(function (a, x) { return a + x.cost; }, 0), paid = it.paid || 0;
+      parts.forEach(function (x) { x.cost = t > 0 ? x.cost * paid / t : paid / parts.length; });
+      var cents = parts.map(function (x) { return Math.round(x.cost * 100); });  /* round to cents and keep the exact total */
+      cents[cents.length - 1] += Math.round(paid * 100) - cents.reduce(function (a, c) { return a + c; }, 0);
+      closeDlg();
+      change("Split " + (it.name || it.id) + " into " + parts.length + " items", function (data) {
+        var x = find(data, it.id); if (!x || !canSplit(x)) return false;
+        var at = data.items.indexOf(x), stamp = Date.now().toString(36);
+        var made = parts.map(function (part, i) {
+          var y = JSON.parse(JSON.stringify(x));
+          ["pieceNames", "soldCost", "listings", "sales"].forEach(function (k) { delete y[k]; });
+          y.id = "s" + stamp + "-" + i; y.name = part.name; y.qty = part.qty; y.paid = cents[i] / 100;
+          y.newPrice = x.newPrice != null && paid > 0 ? Math.round(x.newPrice * cents[i] / Math.round(paid * 100) * 100) / 100 : x.newPrice;
+          y.lotOf = { id: x.id, name: x.name };
+          y.photos = i === 0 ? (x.photos || []) : [];
+          y.listings = []; y.sales = [];
+          y.ad = { title: part.name, text: (x.ad && x.ad.text) || "", price: null };
+          y.added = new Date().toISOString();
+          return y;
+        });
+        data.items.splice.apply(data.items, [at, 1].concat(made));
+      }).then(function () { toast("Split into " + parts.length + " items. Each has its own ad now."); }, function () {});
+    });
+    openDlg(form);
   }
 
   /* ---------- wiring ---------- */
