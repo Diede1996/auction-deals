@@ -1213,8 +1213,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       });
     });
   }
-  /* swiped away, too far, or the bid is already above your max bid (bids only go up); favorites always stay */
-  function isOver(r) { return r.c.status === "over" && !favs[r.lot.key] && !r.lot.followed && !hidden[r.lot.key] && !r.c.far; }
+  /* swiped away, too far, or the bid is already above your max bid (bids only go up) or no bid is profitable;
+     favorites always stay */
+  function isOver(r) { return (r.c.status === "over" || r.c.status === "never") && !favs[r.lot.key] && !r.lot.followed && !hidden[r.lot.key] && !r.c.far; }
   function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far || isOver(r); }
 
   /* ---------- sub-tabs ---------- */
@@ -1273,7 +1274,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var overCount = all.filter(isOver).length;
     var hcParts = [];
     if (farCount) hcParts.push(farCount + " too far");
-    if (overCount) hcParts.push(overCount + " above max");
+    if (overCount) hcParts.push(overCount + " above max or not profitable");
     if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
     document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key]; }).length);
@@ -1351,7 +1352,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       var rule = (DRIVING.tripRules || [])[0];
       var why = far ? "too far away for your trip rules" + (rule ? " (beyond " + duration(rule[0]) + " you need " + ((DRIVING.tripRules[1] || [0, 2])[1]) + "+ lots worth collecting at one address)" : "") : "";
       empty.append(hid.length + (hid.length === 1 ? " " + ui.item + " lot is" : " " + ui.item + " lots are") + " hidden: " +
-        (far === hid.length ? why : [far ? far + " " + why : "", over ? over + " already above your max bid" : "",
+        (far === hid.length ? why : [far ? far + " " + why : "", over ? over + " above your max bid or not profitable" : "",
           swiped ? swiped + " swiped away" : ""].filter(Boolean).join(", ")) + ". ",
         el("button", { type: "button", "class": "btn-link", text: "Show them", onclick: function () { uiSet("showHidden", true); $("showHidden").checked = true; } }));
     } else if (!shown.length) {
