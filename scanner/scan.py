@@ -84,6 +84,15 @@ def followed_item(title: str) -> WatchItem | None:
     return WatchItem(name="Troostwijk favourite", keywords=[word]) if word else None
 
 
+def settings_data(settings: Settings) -> dict:
+    """The watchlist settings the dashboard needs to work out max bids in the page."""
+    return {"min_margin": settings.min_margin,
+            "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
+            "transport_margin": settings.transport_margin,
+            "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit,
+            "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs}
+
+
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,
                only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
     """Scrape all enabled sites in parallel (one HTTP client per site). Returns (lots, report, requests)."""
@@ -519,11 +528,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
                  urlencode({"searchTerm": k, "countries": "nl"})} for k in item.keywords[:8]]})
     return {
         "generated": now.isoformat(),
-        "settings": {"min_margin": settings.min_margin,
-                     "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
-                     "transport_margin": settings.transport_margin,
-                     "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit,
-                     "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
+        "settings": settings_data(settings),
         "kinds": auction_kinds(config, now),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,

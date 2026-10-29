@@ -14,8 +14,9 @@ from pathlib import Path
 
 from . import dashboard
 from .bot import run_commands
-from .scan import run_scan
-from .storage import load_json
+from .evaluate import Settings
+from .scan import run_scan, settings_data
+from .storage import load_json, load_yaml
 from .util import utc_now
 
 
@@ -37,6 +38,10 @@ def run(argv: list[str] | None = None) -> int:
         if not data:
             logging.error("no data/lots.json yet: run a scan first")
             return 1
+        # margins changed in watchlist.yml since the scan count right away: the page works out the max bids
+        watchlist = load_yaml(root / "watchlist.yml")
+        if watchlist.get("settings"):
+            data.setdefault("settings", {}).update(settings_data(Settings.from_dict(watchlist["settings"])))
         dashboard.write(root / "site", data)
         return 0
     only = [s.strip() for s in args.sites.split(",")] if args.sites else None
