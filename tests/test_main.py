@@ -542,3 +542,15 @@ def test_early_favorite_reminder_when_github_runs_late(repo, monkeypatch):
         {"key": "hnvi:1", "closes": (later + timedelta(minutes=30)).isoformat()}]}))
     run(later)
     assert len(tg.sent) == 1 and "Closes in 30 min" in tg.sent[0]
+
+
+def test_dashboard_mode_rebuilds_the_page_from_the_last_scan(tmp_path):
+    from scanner.main import run
+    assert run(["dashboard", "--root", str(tmp_path)]) == 1  # nothing scanned yet
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "lots.json").write_text(json.dumps({"lots": [{"key": "hnvi:1", "title": "Dell XPS 15 9510"}]}),
+                                                 encoding="utf-8")
+    assert run(["dashboard", "--root", str(tmp_path)]) == 0
+    page = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
+    assert "Dell XPS 15 9510" in page and "__DATA__" not in page and "/*__PRIVATE_JS__*/" not in page
+    assert json.loads((tmp_path / "site" / "data.json").read_text(encoding="utf-8"))["lots"][0]["key"] == "hnvi:1"

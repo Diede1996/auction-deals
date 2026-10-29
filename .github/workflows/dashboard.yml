@@ -1,0 +1,75 @@
+name: Update dashboard
+
+# Publishes a new version of the dashboard page as soon as its code changes, without waiting for the next scan.
+# It rebuilds the page from the last scan's results (data/lots.json): it never contacts the auction sites or
+# Marktplaats and sends no Telegram messages. While a scan is running it leaves publishing to that scan, which
+# rebuilds the page with the newest code when it finishes.
+on:
+  push:
+    branches: [main]
+    paths:
+      - scanner/dashboard_template.html
+      - scanner/dashboard_private.js
+      - scanner/dashboard.py
+      - .github/workflows/dashboard.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write            # publish the dashboard
+  id-token: write
+  actions: read           # see whether a scan is running
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: true   # only the newest version matters
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      scanning: ${{ steps.scan.outputs.scanning }}
+    steps:
+      - name: Is a scan running?
+        id: scan
+        run: |
+          n=$(gh run list -R "$GITHUB_REPOSITORY" --workflow scan.yml --status in_progress --json databaseId --jq length)
+          echo "scanning=$n" >> "$GITHUB_OUTPUT"
+          if [ "$n" != "0" ]; then
+            echo "A scan is running: it publishes the new dashboard when it finishes." >> "$GITHUB_STEP_SUMMARY"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  publish:
+    needs: check
+    if: needs.check.outputs.scanning == '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main           # the newest code and the newest scan results
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build dashboard
+        run: python -m scanner dashboard
+
+      - name: Prepare dashboard
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Publish dashboard
+        id: deploy
+        uses: actions/deploy-pages@v4

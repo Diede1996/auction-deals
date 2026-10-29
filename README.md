@@ -44,7 +44,7 @@ It runs for free on GitHub, so your laptop can stay off. Each auction site is vi
    The repository must be public for the free dashboard link. Your Telegram token stays secret, but anyone who finds the repository or the link can see your watchlist and the lot list.
 3. On the new repository page, click **uploading an existing file**.
 4. Unzip `auction-deals.zip`. Drag **everything inside** the `auction-deals` folder into the browser, including the `.github` folder, then click **Commit changes**.
-5. Check that the folder `.github/workflows` contains `scan.yml` and `commands.yml`. If it's missing, create each file with **Add file → Create new file**, for example `.github/workflows/scan.yml`, and paste in the contents.
+5. Check that the folder `.github/workflows` contains `scan.yml`, `commands.yml` and `dashboard.yml`. If it's missing, create each file with **Add file → Create new file**, for example `.github/workflows/scan.yml`, and paste in the contents.
 
 ### 3. Settings
 
@@ -112,6 +112,8 @@ If the morning summary says it couldn't find lots in a Troostwijk email, their e
 ## The dashboard
 
 ![Example dashboard with example data](docs/example-dashboard.png)
+
+A change to the dashboard's code goes live within a few minutes, without a scan: the **Update dashboard** workflow rebuilds the page from the last scan's results (no auction sites, no Telegram). While a scan is running, that scan publishes the new version when it finishes.
 
 Each row is a lot from a running bankruptcy auction that matches your watchlist. Lots that are **new since the last scan** come first, with a small **NEW** label in the top-left corner.
 
@@ -283,5 +285,6 @@ Lots at different addresses close to each other (at most 25 km apart, `combine_w
 ```
 pip install -r requirements.txt pytest
 python -m scanner scan --dry-run      # prints the Telegram summary instead of sending it; the dashboard is written to site/index.html
+python -m scanner dashboard           # rebuilds site/index.html from the last scan (data/lots.json), without scanning
 python -m pytest                      # runs the tests
 ```

@@ -57,6 +57,12 @@ jobs:
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
           exit 1
 
+      - name: Use the newest dashboard code
+        # the page code may have changed while the scan ran: rebuild the page from this scan's results with it
+        run: |
+          git pull -q --ff-only || true
+          python -m scanner dashboard
+
       - name: Prepare dashboard
         uses: actions/upload-pages-artifact@v3
         with:
