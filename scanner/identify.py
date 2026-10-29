@@ -66,6 +66,10 @@ _NEEDS_MODEL = {CATEGORIES[1], CATEGORIES[10], CATEGORIES[12]}
 _WEAK = {"accu", "accus", "snoerloos", "snoerloze", "draadloos", "draadloze", "elektrisch", "elektrische",
          "electric", "cordless"}
 _CATEGORY_OF = {w: group for group in CATEGORIES for w in group}
+# Kinds of wine, not a wine: a lot needs a name, region or year besides these to get a price.
+_WINE_STYLE = {"wijn", "wijnen", "wine", "vin", "cava", "prosecco", "champagne", "rode", "witte", "rose", "rouge",
+               "blanc", "brut", "droog", "droge", "zoet", "zoete", "huiswijn", "mousserend", "mousserende", "bubbels",
+               "sekt", "frizzante", "spumante", "tafelwijn", "wijnpakket"}
 # In a lot like "HP desktop met beeldscherm" these words name other things in the bundle.
 _BUNDLE_WORDS = set(CATEGORIES[0] + CATEGORIES[1] + CATEGORIES[10] + CATEGORIES[11] + CATEGORIES[12])
 
@@ -655,6 +659,7 @@ def distinctive(code: str) -> bool:
 _UNIT_WORDS = {"inch", "cm", "mm", "m", "meter", "kg", "gr", "g", "gb", "tb", "mb", "v", "w", "watt", "x", "stuks",
                "st", "stk", "liter", "ltr", "l", "ml", "hz", "bar", "ah", "mah", "pk", "jaar", "dagen", "uur"}
 
+_WINE_LOT = re.compile(r"(?<![a-z])(?:wijn|wijnen|wine|vin|vins|cava|prosecco|champagne|flessen|fles)(?![a-z])")
 _NUM_WORDS = {"twee": 2, "drie": 3, "vier": 4, "vijf": 5, "zes": 6, "zeven": 7, "acht": 8, "negen": 9, "tien": 10}
 
 
@@ -664,6 +669,10 @@ def quantity(title: str) -> int:
     "Doos met 6 flessen Merlot" or "Merlot 6 x 75 cl" -> 6.
     Sizes such as "Tafel 180 x 90 cm" don't count. 1 when the title doesn't say."""
     t = normalize(title)
+    if _WINE_LOT.search(t):  # "4x cava 4x wijn" is 8 bottles
+        counts = [int(n) for n in re.findall(r"(?<![0-9a-z])(\d{1,3}) ?x (?!\d)", t)]
+        if len(counts) > 1:
+            return max(1, sum(counts))
     m = re.match(r"(?:ca |circa )?(\d{1,4}) ?x\b", t) or re.match(r"(?:ca |circa )?(\d{1,4}) (?:stuks|st|stk)\b", t)
     if m:
         return max(1, int(m.group(1)))
@@ -968,6 +977,8 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
     first = tokens[0] if tokens and tokens[0][0] < pos and tokens[0][1].isalpha() and len(tokens[0][1]) >= 5 else None
     ordered = ([first[1]] if first else []) + [t for t in after + before if not first or t != first[1]]
     weak = set() if is_battery_lot(lot.title) else _WEAK  # in "Accu Makita 12V" the accu is the product
+    if keyword in _WINE_STYLE or category(keyword) == category("wijn"):
+        weak = weak | _WINE_STYLE  # "4x cava 4x wijn" names no wine: "cava wijn" is € 4 or € 40, so no price
     ordered = [t for t in ordered if t not in weak] + [t for t in ordered if t in weak]  # "accu" last
     extras = ordered[:extra_words]
     volt = voltage(lot.title)  # "Accu Makita 12V": a 12 V battery, not an 18 V one

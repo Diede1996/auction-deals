@@ -107,6 +107,7 @@ def test_brand_in():
     ("Tafel 180 x 90 cm", 1),  # a size, not a quantity
     ("Doos met 6 flessen Merlot 2019", 6), ("Chateau Margaux 2015 12 x 75 cl", 12), ("Champagne, 3 fl.", 3),
     ("Fles rode wijn 75 cl", 1), ("Kist met twee flessen wijn", 2), ("Vin rouge 6 bouteilles", 6),
+    ("4x cava 4x wijn", 8), ("2x rode wijn 3x witte wijn", 5),
 ])
 def test_quantity(title, n):
     assert quantity(title) == n
@@ -384,3 +385,16 @@ def test_a_listing_of_several_is_priced_per_item():
                                  li_("Festool FS 800/2 geleiderail", 30)], rule, [])
     assert [f["price"] for f in found] == [12.5, 40, 45, 30]
     assert (found[0]["of"], found[0]["total"]) == (4, 50)
+
+
+@pytest.mark.parametrize("title, kind", [
+    ("4x cava 4x wijn", "unknown"), ("Prosecco 6 flessen", "unknown"), ("6 flessen rode wijn", "unknown"),
+    ("Doos met 6 flessen Merlot Chili 2019", "general"), ("12 x Champagne Moet & Chandon Brut 75 cl", "general"),
+    ("6 flessen rode wijn Rioja Reserva 2018", "general"),
+])
+def test_wine_needs_a_name_to_get_a_price(title, kind):
+    import yaml
+    w = next(i for i in yaml.safe_load(open("watchlist.yml"))["items"] if i["name"] == "Wine")
+    item = WatchItem(name="Wine", keywords=w["keywords"], exclude=w["exclude"])
+    lot = Lot(site="x", url="u", title=title, lot_id="1", current_bid=0, closes_at=None)
+    assert plan_for(item, lot).kind == kind
