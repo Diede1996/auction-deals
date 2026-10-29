@@ -140,6 +140,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .meta { margin-top: 4px; color: var(--text-2); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .meta .auction { color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .tag.heart { background: var(--critical-bg); color: var(--critical-text); }
+.tag.regular { background: var(--neutral-bg); color: var(--text-2); }
 .tag { display: inline-block; padding: 1px 8px; border-radius: 6px; background: var(--accent-bg); color: var(--accent); font-size: 12px; font-weight: 560; }
 .new-badge {
   position: absolute; top: 7px; left: 7px; z-index: 2; pointer-events: none;
@@ -1046,6 +1047,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
     var meta = el("div", { "class": "meta" },
       el("span", { "class": "tag", text: lot.item }),
+      lot.regular ? el("span", { "class": "tag regular", title: "Trial: from an ordinary auction, not a bankruptcy, closure, estate, Domeinen or IT auction" }, "🏷 regular auction") : null,
       lot.followed ? el("span", { "class": "tag heart", title: "You put a heart on it at Troostwijk: never hidden as too far" }, "❤️ you follow it") : null,
       el("span", { text: lot.siteName }),
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));

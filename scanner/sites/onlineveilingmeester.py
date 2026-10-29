@@ -127,7 +127,7 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     data = ctx.http.json(f"{BASE}/rest/nl/veilingen?status=open&domein=ONLINEVEILINGMEESTER")
     auctions = parse_auctions(data)
     types = ctx.settings.get("auction_types") or DEFAULT_TYPES
-    bankrupt = [a for a in auctions if wanted_auction(a, ctx.is_bankruptcy, types)]
+    bankrupt = [a for a in auctions if ctx.wants(a, wanted_auction(a, ctx.is_bankruptcy, types))]
     log.info("onlineveilingmeester: %d auctions, %d bankruptcy/Domeinen", len(auctions), len(bankrupt))
     lots: dict[str, Lot] = {}
     for a in bankrupt:

@@ -50,6 +50,15 @@ extra_auctions:
           informatica,   # informatica = Flemish for IT
           telefoon, smartphone, iphone, gsm]   # gsm = Flemish for mobile phone
 
+# A trial (Diede, 29 Oct 2026): also read every other auction, not only the ones above. Their lots are labelled
+# "regular auction" on the dashboard and in Telegram, and each scan counts per kind of auction how many lots it
+# found, priced and found room to bid on (data/state.json, trial_counts), to compare afterwards.
+# It stops by itself after `until`; set enabled: false to stop sooner.
+all_auctions:
+  enabled: true
+  until: 2026-11-12
+  max_auctions_per_site: 40     # at most this many of those other auctions per site per scan (0 = no limit)
+
 # Apple products, laptops and phones from before this year are left out entirely: they resell poorly (Macs only
 # from Apple Silicon, M1, late 2020). The year comes from the lot title (or description): a year ("MacBook Pro
 # 2017"), the chip (M1, Intel i5-8250U = 8th gen = 2018), or the model (iPhone 11, Galaxy S10, ThinkPad T480,

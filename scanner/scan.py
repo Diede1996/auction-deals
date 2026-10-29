@@ -24,7 +24,7 @@ from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .age import age_filter, too_old
 from .condition import defect, defect_filter
-from .matching import auction_filter, match_lots, search_terms
+from .matching import all_auctions_trial, auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
 from .routes import Combo, combined_pickups
@@ -88,6 +88,7 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
                only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
     """Scrape all enabled sites in parallel (one HTTP client per site). Returns (lots, report, requests)."""
     is_bankruptcy = auction_filter(config)
+    trial = all_auctions_trial(config, now)
     terms = search_terms(items)
     health = state.setdefault("health", {})
     site_cache = state.setdefault("site_cache", {})
@@ -105,7 +106,8 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
         if settings.get("enabled", True) is False or (only and site not in only):
             continue
         ctx = SiteContext(http=http_factory(), now=now, is_bankruptcy=is_bankruptcy, search_terms=terms,
-                          settings=settings, cache=site_cache.setdefault(site, {}))
+                          settings=settings, cache=site_cache.setdefault(site, {}), all_auctions=bool(trial),
+                          max_regular=(trial or {}).get("max_per_site", 0))
         jobs[site] = (fetch, ctx)
 
     lots: list[Lot] = []
@@ -122,6 +124,11 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
             report[site] = {"ok": False, "error": h["error"]}
             continue
         found = fut.result()
+        regular = jobs[site][1].regular
+        for lot in found:
+            lot.regular = lot.auction_title in regular
+        if regular:
+            log.info("%s: %d regular auctions read (trial)", site, len(regular))
         h.update(ok=True, lots=len(found), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
         report[site] = {"ok": True, "lots": len(found)}
         log.info("%s: %d lots", site, len(found))
@@ -160,6 +167,8 @@ def _line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None = Non
     drive = f" · 🚗 {trip.km:.0f} km" + (f" from {trip.origin}" if trip.origin and trip.origin != "home" else "") if trip else ""
     if lot.transport:
         drive = f" · 🚚 transport ≈ {fmt_eur(lot.trip_cost)}"
+    if lot.regular:
+        drive += " · 🏷 regular auction"
     if lot.bid_from_email:  # the current bid isn't known, only the max bid
         return (f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
                 f"   bid up to <b>{rough}{fmt_eur(v.max_bid)}</b>{margin} · Troostwijk · closes {when}{drive}")
@@ -283,8 +292,10 @@ def duration(minutes: float) -> str:
     return f"{m // 60}h {m % 60:02d}m" if m >= 60 else f"{m} min"
 
 
-def auction_kinds(config: dict) -> str:
+def auction_kinds(config: dict, now: datetime | None = None) -> str:
     """"bankruptcy, closure, estate, Domeinen or IT": which auctions the bot reads, for texts."""
+    if now is not None and all_auctions_trial(config, now):
+        return "bankruptcy, closure, estate, Domeinen, IT or other (trial)"
     extra = config.get("extra_auctions") or {}
     it = extra.get("enabled", True) is not False and bool(extra.get("words"))
     return "bankruptcy, closure, estate, Domeinen or IT" if it else "bankruptcy, closure, estate or Domeinen"
@@ -469,6 +480,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
             "trip": trip.as_dict() if trip else None, "transport": lot.transport, "followed": lot.followed,
+            "regular": lot.regular,
             "combo": combo_of.get(lot.key),
             "closes": lot.closes_at.isoformat() if lot.closes_at else None, "closesDay": lot.closes_day,
             "bidFromEmail": lot.bid_from_email,
@@ -512,7 +524,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
                      "transport_margin": settings.transport_margin,
                      "transport_min_value": settings.transport_min_value,
                      "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs},
-        "kinds": auction_kinds(config),
+        "kinds": auction_kinds(config, now),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,
         "watchlist": [item.name for item in items],
@@ -550,6 +562,32 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
     return text
 
 
+def trial_counts(rows: list[Row]) -> dict:
+    """Per kind of auction ("special": bankruptcy, closure, estate, Domeinen or IT; "regular": the others):
+    lots on your watchlist, lots with a Marktplaats price, and lots with room to bid."""
+    out = {kind: {"lots": 0, "priced": 0, "deals": 0} for kind in ("special", "regular")}
+    for item, lot, v, est in rows:
+        c = out["regular" if lot.regular else "special"]
+        c["lots"] += 1
+        c["priced"] += 1 if (est is not None or item.market_price is not None) else 0
+        c["deals"] += 1 if v.is_deal else 0
+    return out
+
+
+def record_trial(state: dict, rows: list[Row], now: datetime, on: bool, out_of_searches: bool) -> None:
+    """The all-auctions trial: per day, how many lots of each kind of auction the scan found, priced and found
+    room to bid on (kept 60 days), to see afterwards whether the other auctions are worth reading."""
+    days = state.setdefault("trial_counts", {})
+    if on:
+        day = now.astimezone(AMS).date().isoformat()
+        days[day] = {**trial_counts(rows), "out_of_searches": out_of_searches}
+    cutoff = (now.astimezone(AMS).date() - timedelta(days=60)).isoformat()
+    for day in [d for d in days if d < cutoff]:
+        del days[day]
+    if not days:
+        state.pop("trial_counts", None)
+
+
 # ---------------------------------------------------------------- run
 
 def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] | None = None,
@@ -585,7 +623,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             mail_lots, mail_report = collect_alert_lots(
                 mailbox, http_cls(delay=1.0), state, now, int(mail_cfg.get("keep_days", 14)),
                 is_bankruptcy=auction_filter(config),
-                only_bankruptcy=mail_cfg.get("only_bankruptcy", True) is not False)
+                only_bankruptcy=mail_cfg.get("only_bankruptcy", True) is not False,
+                all_auctions=bool(all_auctions_trial(config, now)))
             lots.extend(mail_lots)
             report["troostwijk"] = {"ok": True, "lots": len(mail_lots), "via": "email"}
             h.update(ok=True, lots=len(mail_lots), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
@@ -728,7 +767,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                          enabled=mp_cfg.get("enabled", True))
     site_fees = {s: Fees.from_dict(c) for s, c in (config.get("sites") or {}).items()}
     rows: list[Row] = []
-    for item, lot in sorted(matched, key=lambda m: closes_by(m[1], horizon)):
+    # favorites first, then the lots closing soonest: the ones that get a search when there are more than
+    # max_lookups_per_run (likelier during the all-auctions trial)
+    for item, lot in sorted(matched, key=lambda m: (m[1].key not in fav_keys, closes_by(m[1], horizon))):
         trip = trips.get(pickup_place(lot) or "")
         beyond = bool(trip and lots_needed(trip.minutes, driving["tripRules"]) is None and lot.key not in fav_keys
                       and not driving["transport"])
@@ -835,7 +876,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                           max_units=max_units, combos=combos)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
-    text = write_report(root / "data" / "latest.md", rows, report, now, url, auction_kinds(config))
+    text = write_report(root / "data" / "latest.md", rows, report, now, url, auction_kinds(config, now))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as fh:
@@ -847,7 +888,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]),
                           combos=combos)
             tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
-                                   favs=favs, trips=trips, kinds=auction_kinds(config), far=far,
+                                   favs=favs, trips=trips, kinds=auction_kinds(config, now), far=far,
                                    far_rules=driving["tripRules"], hearts=hearts, heart_trips=heart_trips,
                                    combos=combos))
         except Exception as e:
@@ -866,6 +907,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             log.warning("could not send a warning: %s", e)
 
     deals = sum(1 for r in rows if r[2].is_deal)
+    if all_auctions_trial(config, now) or state.get("trial_counts"):
+        record_trial(state, rows, now, all_auctions_trial(config, now) is not None, finder.lookups_left <= 0)
     requests = site_requests + http.request_count + geo_http.request_count - private_requests
     state["last_run"] = {"at": now.isoformat(), "lots": len(lots), "matches": len(rows), "deals": deals,
                          "new": len(new_keys), "requests": requests,

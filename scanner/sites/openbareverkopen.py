@@ -136,7 +136,7 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     for a in auctions:
         if a.auction_id not in known:
             known[a.auction_id] = ctx.is_bankruptcy(a.title, parse_description(ctx.http.text(a.url)))
-        if known[a.auction_id]:
+        if ctx.wants(a, known[a.auction_id]):
             wanted.append(a)
     log.info("openbareverkopen: %d running auctions, %d bankruptcy/closure", len(auctions), len(wanted))
     lots: list[Lot] = []

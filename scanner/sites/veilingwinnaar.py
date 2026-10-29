@@ -110,7 +110,7 @@ def fetch_lots(ctx: SiteContext) -> list[Lot]:
     for a in auctions:
         html = ctx.http.text(a.url)
         parse_auction_page(html, a)
-        if not ctx.is_bankruptcy(a.title, a.description):
+        if not ctx.wants(a, ctx.is_bankruptcy(a.title, a.description)):
             continue
         wanted += 1
         page, seen = 1, set()

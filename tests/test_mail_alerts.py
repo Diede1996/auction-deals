@@ -273,6 +273,11 @@ def test_only_bankruptcy_auctions_and_the_bid_is_from_the_email():
     assert len(lots) == 11 and report["other_auctions"] == 0
     mac = next(l for l in lots if l.lot_id == "A1-38890-11594")
     assert mac.auction_title.startswith("Computers, Tablets") and mac.current_bid == 50.0
+    assert mac.regular and not any(l.regular for l in lots if l.auction_title.startswith("Faillissement"))
+    # the all-auctions trial keeps the other auctions despite only_bankruptcy, labelled "regular auction"
+    lots, report = collect(box, NoRequests([]), state, NOW + timedelta(days=4), is_bankruptcy=is_bankruptcy,
+                           only_bankruptcy=True, all_auctions=True)
+    assert len(lots) == 11 and report["other_auctions"] == 0 and sum(l.regular for l in lots) == 2
 
 
 def test_subject_names_the_auction_when_the_page_doesnt():

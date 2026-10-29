@@ -105,7 +105,7 @@ def parse_lots(items: list, auction: Auction, now) -> list[Lot]:
 
 def fetch_lots(ctx: SiteContext) -> list[Lot]:
     auctions = parse_auctions(ctx.http.json(f"{API}/auctions/", headers=HEADERS), ctx.now)
-    wanted = [a for a in auctions if ctx.is_bankruptcy(a.title, a.description)]
+    wanted = [a for a in auctions if ctx.wants(a, ctx.is_bankruptcy(a.title, a.description))]
     log.info("bellauction: %d running auctions, %d closure/bankruptcy/estate", len(auctions), len(wanted))
     lots: list[Lot] = []
     for a in wanted:

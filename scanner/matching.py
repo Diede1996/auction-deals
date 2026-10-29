@@ -2,9 +2,10 @@
 from __future__ import annotations
 
 import re
+from datetime import date
 
 from .models import Lot, WatchItem
-from .util import normalize, phrase_in, token_in
+from .util import AMS, normalize, phrase_in, token_in
 
 
 def matches(item: WatchItem, title: str) -> bool:
@@ -60,3 +61,21 @@ def auction_filter(config: dict):
     extra = config.get("extra_auctions") or {}
     words = [str(w) for w in extra.get("words") or []] if extra.get("enabled", True) is not False else []
     return bankruptcy_matcher(keywords, words)
+
+
+def all_auctions_trial(config: dict, now) -> dict | None:
+    """The trial with every auction (config.yml all_auctions): {"until": date, "max_per_site": n} while it's on and
+    hasn't ended, else None. Lots of auctions that aren't a bankruptcy, closure, estate, Domeinen or IT auction are
+    read too and labelled "regular auction"."""
+    trial = config.get("all_auctions") or {}
+    if trial.get("enabled", False) is not True:
+        return None
+    until = trial.get("until")
+    if until is not None:
+        try:
+            until = until if isinstance(until, date) else date.fromisoformat(str(until))
+        except ValueError:
+            until = None
+        if until and now.astimezone(AMS).date() > until:
+            return None
+    return {"until": until, "max_per_site": int(trial.get("max_auctions_per_site", 0) or 0)}

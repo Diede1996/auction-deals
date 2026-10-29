@@ -21,6 +21,19 @@ class SiteContext:
     settings: dict = field(default_factory=dict)  # this site's block from config.yml
     cache: dict = field(default_factory=dict)  # persisted between runs (per site)
     max_pages: int = 25
+    all_auctions: bool = False  # the trial with every auction (config.yml all_auctions)
+    max_regular: int = 0  # at most this many of those other auctions per site (0 = no limit)
+    regular: set = field(default_factory=set)  # titles of the other auctions read, to label their lots
+
+    def wants(self, auction, special: bool) -> bool:
+        """Read this auction? Yes when it's a bankruptcy, closure, estate, Domeinen or IT auction (`special`), and
+        during the all-auctions trial also any other one, remembered so its lots get the "regular auction" label."""
+        if special:
+            return True
+        if not self.all_auctions or (self.max_regular and len(self.regular) >= self.max_regular):
+            return False
+        self.regular.add(auction.title)
+        return True
 
 
 _NEXT_RE = re.compile(r'<script id="__NEXT_DATA__" type="application/json"[^>]*>(.*?)</script>', re.S)

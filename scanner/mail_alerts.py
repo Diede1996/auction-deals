@@ -497,12 +497,13 @@ def _subject(msg: Message) -> str:
 
 
 def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int = 14,
-            is_bankruptcy=None, only_bankruptcy: bool = False) -> tuple[list[Lot], dict]:
+            is_bankruptcy=None, only_bankruptcy: bool = False, all_auctions: bool = False) -> tuple[list[Lot], dict]:
     """Read the alert emails, update the remembered Troostwijk lots and return the running ones.
     Saved-search emails (links to search pages, no lots) are passed on once each, for the digest, and lots
     you follow (reminders about a lot with a heart) are passed on as report["followed"], never stored.
     `is_bankruptcy(text)` tells bankruptcy/closure auctions by their name; with `only_bankruptcy`, lots of
-    other auctions (Troostwijk also sells for businesses, e.g. "Computers, Tablets, ...") are left out.
+    other auctions (Troostwijk also sells for businesses, e.g. "Computers, Tablets, ...") are left out, except during
+    the all-auctions trial (`all_auctions`), when they're kept with the "regular auction" label.
     The report says how many emails and lots were found, for the digest and the dashboard."""
     store = state.setdefault("troostwijk_alerts", {})
     lots_seen = store.setdefault("lots", {})
@@ -601,7 +602,8 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             del lots_seen[lot_id]
     lots = []
     for lot_id, rec in lots_seen.items():
-        if only_bankruptcy and rec.get("bankrupt") is False:
+        regular = rec.get("bankrupt") is False
+        if only_bankruptcy and regular and not all_auctions:
             report["other_auctions"] += 1
             continue
         mailed = datetime.fromisoformat(rec["mail"]) if rec.get("mail") else None
@@ -612,7 +614,7 @@ def collect(mailbox: Mailbox, http, state: dict, now: datetime, keep_days: int =
             current_bid=rec.get("bid"), bid_from_email=True, closes_at=closes,
             closes_day=day.isoformat() if day else None,  # Troostwijk lots close one after another that day
             auction_title=rec.get("auction") or ("Troostwijk alert" + (f" of {mailed:%d %b}" if mailed else "")),
-            image=rec.get("image"), location=rec.get("location"),
+            image=rec.get("image"), location=rec.get("location"), regular=regular,
         ))
     report["lots"] = len(lots)
     report["followed"] = followed_lots(followed, lots_seen, now)
