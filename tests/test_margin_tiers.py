@@ -91,4 +91,6 @@ def test_min_profit_per_lot_caps_the_max_bid_for_cheap_lots():
     assert evaluate(item, lot, fees, s, est(1000)).max_bid == 600
     # sells for 20: no bid leaves 25 euros
     assert evaluate(item, lot, fees, s, est(26.67)).max_bid == 0
-    assert s.describe_margin() == "25% margin, at least €25 profit per lot"
+    # 4 items selling for 75 each (300): 25% allows 240, but 4 x 25 euros profit allows only 200
+    assert evaluate(item, lot, fees, s, est(100), units=4).max_bid == 200
+    assert s.describe_margin() == "25% margin, at least €25 profit per item"

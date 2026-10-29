@@ -43,7 +43,7 @@ class Settings:
     # when they sell for at least transport_min_value, alone or with the lots collected at the same pickup
     transport_margin: float | None = None
     transport_min_value: float = 0.0
-    min_profit: float = 0.0  # the max bid also leaves at least this much profit in euros per lot
+    min_profit: float = 0.0  # the max bid also leaves at least this much profit in euros per item in the lot
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
@@ -70,7 +70,7 @@ class Settings:
 
     def describe_margin(self) -> str:
         """e.g. "30% margin up to €50 per item, 25% above" or "50% margin"."""
-        profit = f", at least €{self.min_profit:g} profit per lot" if self.min_profit else ""
+        profit = f", at least €{self.min_profit:g} profit per item" if self.min_profit else ""
         if not self.margin_tiers:
             return f"{self.min_margin:.0%} margin" + profit + self._transport_text()
         parts = [f"{m:.0%} margin up to €{u:g}" for u, m in self.margin_tiers]
@@ -142,7 +142,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         margin = profit / cost if cost > 0 else None
         caps.append(resale / (1 + max(0.0, min_margin)))
         if settings.min_profit > 0:
-            caps.append(resale - settings.min_profit)
+            caps.append(resale - settings.min_profit * max(1, units))
     if item.max_price is not None:
         caps.append(item.max_price)
     if not caps:

@@ -10,7 +10,8 @@
 #                  need this margin instead; the transport estimate is still a cost
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
-#   min_profit     (optional) the suggested max bid also leaves at least this much profit in euros per lot
+#   min_profit     (optional) the suggested max bid also leaves at least this much profit in euros per item
+#                  (a lot of 4 needs 4 x min_profit)
 #
 # items: one entry per thing you want to find
 #   name               label used in messages and on the dashboard
@@ -43,7 +44,7 @@ items:
   exclude: [tas, laptoptas, hoes, laptophoes, sleeve, lader, oplader, laptoplader, adapter, dock, docking,
     dockingstation, standaard, laptopstandaard, koeler, laptopkoeler, slot, kabel, moleskine, gelinieerd]
 - name: Power tools
-  keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, hikoki, bosch professional, bosch gsr,
+  keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, bosch professional, bosch gsr,
     bosch gsb, bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
   exclude: [koolborstel, koolborstels, onderdeel, onderdelen, reparatie, defect, diamantschijf, diamantschijven,
     zaagblad, zaagbladen, foudraal, t.b.v.]
