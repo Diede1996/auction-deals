@@ -209,6 +209,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .subtab[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
 .subtab .count { margin-left: 5px; opacity: .75; font-variant-numeric: tabular-nums; }
 .subtab[disabled] { opacity: .45; cursor: default; }
+.subtab.only-hidden:not([aria-pressed="true"]) { border-style: dashed; color: var(--text-3); }
 .fav-note { margin: 0; padding: 12px 16px; font-size: 13.5px; color: var(--text-2); background: var(--surface-2); border-bottom: 1px solid var(--border); }
 .row.is-gone .title { color: var(--text-2); }
 /* connect dialog */
@@ -1292,21 +1293,26 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     }
 
     var q = ui.q.trim().toLowerCase();
+    var perHidden = {};  /* per category: lots left out only because they're hidden (too far, or swiped away) */
     var listed = all.filter(function (r) {  /* everything the filters allow, any category */
       if (favs[r.lot.key]) return false;  /* favorites live under the Favorites tab */
-      if (!ui.showHidden && isHidden(r)) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.site && r.lot.site !== ui.site) return false;
       if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
+      if (!ui.showHidden && isHidden(r)) { (perHidden[r.lot.item] = perHidden[r.lot.item] || []).push(r); return false; }
       return true;
     });
     var perItem = {};
     listed.forEach(function (r) { perItem[r.lot.item] = (perItem[r.lot.item] || 0) + 1; });
-    /* one sub-tab per category (watchlist item), most lots first; empty ones only while selected */
-    var cats = items.filter(function (i) { return perItem[i] || i === ui.item; })
-      .sort(function (a, b) { return (perItem[b] || 0) - (perItem[a] || 0) || a.localeCompare(b); });
+    /* one sub-tab per category (watchlist item), most lots first; one with only hidden lots shows how many are hidden */
+    var cats = items.filter(function (i) { return perItem[i] || perHidden[i] || i === ui.item; })
+      .sort(function (a, b) { return (perItem[b] || 0) - (perItem[a] || 0) || (perHidden[b] || []).length - (perHidden[a] || []).length || a.localeCompare(b); });
     renderSubtabs(lots.length ? [chip("All", listed.length, !ui.item, function () { pickItem(""); })].concat(cats.map(function (i) {
-      return chip(i, perItem[i] || 0, ui.item === i, function () { pickItem(i); });
+      if (perItem[i] || !perHidden[i]) return chip(i, perItem[i] || 0, ui.item === i, function () { pickItem(i); });
+      var c = chip(i, perHidden[i].length + " hidden", ui.item === i, function () { pickItem(i); });
+      c.classList.add("only-hidden");
+      c.title = "All " + perHidden[i].length + " are hidden: too far away for your trip rules, or swiped away";
+      return c;
     })) : []);
     var shown = listed.filter(function (r) { return !ui.item || r.lot.item === ui.item; });
     sortRows(shown);
@@ -1319,6 +1325,13 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       empty.append("Nothing on your watchlist is in a running " + (DATA.kinds || "bankruptcy, closure, estate or Domeinen") + " auction right now. The next scan runs tomorrow morning.");
     } else if (!shown.length && favShown === all.length) {
       empty.append("Every lot is under ★ Favorites now.");
+    } else if (!shown.length && ui.item && perHidden[ui.item]) {
+      var hid = perHidden[ui.item], far = hid.filter(function (r) { return r.c.far && !hidden[r.lot.key]; }).length;
+      var rule = (DRIVING.tripRules || [])[0];
+      var why = far ? "too far away for your trip rules" + (rule ? " (beyond " + duration(rule[0]) + " you need " + ((DRIVING.tripRules[1] || [0, 2])[1]) + "+ lots worth collecting at one address)" : "") : "";
+      empty.append(hid.length + (hid.length === 1 ? " " + ui.item + " lot is" : " " + ui.item + " lots are") + " hidden: " +
+        (far === hid.length ? why : (far ? far + " " + why + ", " : "") + (hid.length - far) + " swiped away") + ". ",
+        el("button", { type: "button", "class": "btn-link", text: "Show them", onclick: function () { uiSet("showHidden", true); $("showHidden").checked = true; } }));
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
     }
