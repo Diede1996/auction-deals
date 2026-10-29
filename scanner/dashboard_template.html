@@ -1210,7 +1210,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       });
     });
   }
-  function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far; }
+  /* swiped away, too far, or the bid is already above your max bid (bids only go up); favorites always stay */
+  function isOver(r) { return r.c.status === "over" && !favs[r.lot.key] && !r.lot.followed && !hidden[r.lot.key] && !r.c.far; }
+  function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far || isOver(r); }
 
   /* ---------- sub-tabs ---------- */
   var dayParts = new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Europe/Amsterdam" });
@@ -1265,7 +1267,11 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     renderKpis(all);
     var farCount = all.filter(function (r) { return r.c.far && !hidden[r.lot.key]; }).length;
     var hc = document.getElementById("hiddenCount");
-    if (hc) hc.textContent = farCount ? " (incl. " + farCount + " too far)" : "";
+    var overCount = all.filter(isOver).length;
+    var hcParts = [];
+    if (farCount) hcParts.push(farCount + " too far");
+    if (overCount) hcParts.push(overCount + " above max");
+    if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
     document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key]; }).length);
     var hint = document.getElementById("swipeHint");
@@ -1338,10 +1344,12 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       empty.append("Every lot is under ★ Favorites now.");
     } else if (!shown.length && ui.item && perHidden[ui.item]) {
       var hid = perHidden[ui.item], far = hid.filter(function (r) { return r.c.far && !hidden[r.lot.key]; }).length;
+      var over = hid.filter(isOver).length, swiped = hid.length - far - over;
       var rule = (DRIVING.tripRules || [])[0];
       var why = far ? "too far away for your trip rules" + (rule ? " (beyond " + duration(rule[0]) + " you need " + ((DRIVING.tripRules[1] || [0, 2])[1]) + "+ lots worth collecting at one address)" : "") : "";
       empty.append(hid.length + (hid.length === 1 ? " " + ui.item + " lot is" : " " + ui.item + " lots are") + " hidden: " +
-        (far === hid.length ? why : (far ? far + " " + why + ", " : "") + (hid.length - far) + " swiped away") + ". ",
+        (far === hid.length ? why : [far ? far + " " + why : "", over ? over + " already above your max bid" : "",
+          swiped ? swiped + " swiped away" : ""].filter(Boolean).join(", ")) + ". ",
         el("button", { type: "button", "class": "btn-link", text: "Show them", onclick: function () { uiSet("showHidden", true); $("showHidden").checked = true; } }));
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
