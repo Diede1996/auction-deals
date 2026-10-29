@@ -582,6 +582,8 @@
       { label: "Money in stock", value: money(inStock), note: "paid for what's still for sale" }
     ]));
 
+    box.append(exportPanel());
+
     var chartPanel = el("section", { "class": "panel pchart" }, el("h2", { text: "Profit over time" }));
     chartPanel.append(profitChart(rows));
     box.append(chartPanel);
@@ -629,6 +631,43 @@
     if (all0.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
       el("p", { "class": "small", text: "Margin = profit as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price." })));
   }
+  /* one year of purchases and sales as a spreadsheet (for your tax return): opens in Excel with Dutch number format */
+  function exportPanel() {
+    var years = {};
+    items().forEach(function (it) {
+      if (validDay(it.bought)) years[it.bought.slice(0, 4)] = 1;
+      sales(it).forEach(function (x) { if (validDay(x.date)) years[x.date.slice(0, 4)] = 1; });
+    });
+    var list = Object.keys(years).sort().reverse();
+    var sel = el("select", { "aria-label": "Year" });
+    list.forEach(function (y) { sel.append(el("option", { value: y, text: y })); });
+    return el("section", { "class": "panel ptablebox" }, el("h2", { text: "Overview per year" }),
+      el("p", { "class": "small", text: "Everything you bought and sold in one year, with invoice numbers, as a spreadsheet: handy for your tax return. The invoices themselves are under each item (Edit)." }),
+      el("div", { "class": "padd" }, sel, el("button", { type: "button", "class": "pbtn primary", text: "Download (Excel, .csv)", onclick: function () { downloadYear(sel.value); } })));
+  }
+  function downloadYear(year) {
+    var num = function (v) { return v == null || !isFinite(v) ? "" : (Math.round(v * 100) / 100).toFixed(2).replace(".", ","); };
+    var cell = function (v) { v = v == null ? "" : String(v); return /[";\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    var rows = [["Type", "Date", "Item", "Category", "Pieces", "Paid, all in (€)", "Invoice", "Where from", "Sold for (€)", "Platform", "Cost of what was sold (€)", "Profit (€)", "Paid by buyer", "Status now"]];
+    items().forEach(function (it) {
+      if (String(it.bought || "").slice(0, 4) === year) {
+        rows.push(["Purchase", it.bought, it.name, it.category, qtyOf(it), num(it.paid), it.invoice, it.source, "", "", "", "", "", STATUS[statusOf(it)]]);
+      }
+      sales(it).forEach(function (x) {
+        if (String(x.date || "").slice(0, 4) !== year) return;
+        var c = saleCost(it, x);
+        rows.push(["Sale", x.date, it.name, it.category, x.qty || 1, "", it.invoice, it.source, num(x.price), x.platform ? platformLabel(x.platform) : "", num(c), num((x.price || 0) - c), x.unpaid ? "not yet" : "yes", STATUS[statusOf(it)]]);
+      });
+    });
+    var undated = items().reduce(function (n, it) { return n + sales(it).filter(function (x) { return !validDay(x.date); }).length; }, 0);
+    var text = "\ufeffsep=;\r\n" + rows.map(function (r) { return r.map(cell).join(";"); }).join("\r\n") + "\r\n";
+    var url = URL.createObjectURL(new Blob([text], { type: "text/csv;charset=utf-8" }));
+    var a = el("a", { href: url, download: "auction-overview-" + year + ".csv" });
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 60000);
+    toast((rows.length - 1) + " rows for " + year + "." + (undated ? " " + undated + " older sales have no date and aren't in any year." : ""));
+  }
+
   /* paid: the money is in. Not paid (fell through): the sale goes and the item is for sale again */
   function salePaid(it, i, paid) {
     var s0 = sales(it)[i];
