@@ -1619,7 +1619,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-10-29T12:37:48.732465+00:00",
+ "generated": "2026-10-29T12:41:42.778701+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -2067,7 +2067,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 19.36,
+    "cost": 19.37,
     "from": "home",
     "km": 77.9,
     "min": 70
@@ -3842,9 +3842,9 @@
   },
   {
    "auction": "Faillissementsveiling: Timmerbedrijf R.M. Smeenk B.V. deel 1; voorraad, gereedschap en inventaris",
-   "bid": 431.0,
+   "bid": 451.0,
    "bidFromEmail": false,
-   "bids": 29,
+   "bids": 30,
    "closes": "2026-10-29T18:53:09+00:00",
    "closesDay": null,
    "combo": null,
@@ -3951,7 +3951,7 @@
     "search": "https://www.marktplaats.nl/q/festool+dominofrees+df+500/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/festool+dominofrees+df+500/",
-   "nextBid": 451.0,
+   "nextBid": 471.0,
    "pickup": "Grindzuigerstraat 45, 1333MS Almere",
    "pickupWhen": "Wed 4 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -6351,10 +6351,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 2,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/14",
@@ -6433,10 +6433,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/16",
@@ -6486,10 +6486,10 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 28.32,
+    "cost": 28.33,
     "from": "home",
-    "km": 113.9,
-    "min": 100
+    "km": 114.0,
+    "min": 101
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/20",
@@ -6539,9 +6539,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6592,9 +6592,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6645,9 +6645,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6698,9 +6698,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6751,9 +6751,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6804,9 +6804,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6857,9 +6857,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6910,9 +6910,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -6963,9 +6963,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -7045,9 +7045,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 5,
@@ -7248,9 +7248,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 2,
@@ -7301,9 +7301,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 4,
@@ -7519,9 +7519,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 17,
@@ -7572,9 +7572,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -7654,9 +7654,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -7736,9 +7736,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 5,
@@ -8024,9 +8024,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8127,9 +8127,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8180,9 +8180,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8233,9 +8233,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8366,9 +8366,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 45.26,
+    "cost": 45.27,
     "from": "home",
-    "km": 182.1,
+    "km": 182.2,
     "min": 144
    },
    "units": 1,
@@ -8469,9 +8469,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 2,
@@ -8572,9 +8572,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 2,
@@ -8891,9 +8891,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -8944,9 +8944,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -9177,9 +9177,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -9280,9 +9280,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 1,
@@ -9333,9 +9333,9 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 55.42,
+    "cost": 55.44,
     "from": "home",
-    "km": 223.0,
+    "km": 223.1,
     "min": 175
    },
    "units": 3,
@@ -11868,7 +11868,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -11921,7 +11921,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -11974,7 +11974,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12056,7 +12056,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12180,7 +12180,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12369,7 +12369,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12422,7 +12422,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12504,7 +12504,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12593,7 +12593,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12675,7 +12675,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12757,7 +12757,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12839,7 +12839,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12892,7 +12892,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -12945,7 +12945,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13090,7 +13090,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13172,7 +13172,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13225,7 +13225,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13414,7 +13414,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13467,7 +13467,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13549,7 +13549,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13631,7 +13631,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -13820,7 +13820,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14111,7 +14111,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14164,7 +14164,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14217,7 +14217,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14270,7 +14270,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14352,7 +14352,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14434,7 +14434,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14516,7 +14516,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14569,7 +14569,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14665,7 +14665,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14747,7 +14747,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -14892,7 +14892,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15081,7 +15081,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15170,7 +15170,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15252,7 +15252,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15348,7 +15348,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15444,7 +15444,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15540,7 +15540,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15636,7 +15636,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15732,7 +15732,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15828,7 +15828,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -15924,7 +15924,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16020,7 +16020,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16116,7 +16116,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16212,7 +16212,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16308,7 +16308,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16404,7 +16404,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16500,7 +16500,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16596,7 +16596,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16692,7 +16692,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16788,7 +16788,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16884,7 +16884,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -16980,7 +16980,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17076,7 +17076,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17172,7 +17172,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17254,7 +17254,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17307,7 +17307,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17496,7 +17496,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17549,7 +17549,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17602,7 +17602,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17698,7 +17698,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17780,7 +17780,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -17969,7 +17969,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18086,7 +18086,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18139,7 +18139,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18192,7 +18192,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18274,7 +18274,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18356,7 +18356,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18438,7 +18438,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18491,7 +18491,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18645,7 +18645,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -18734,7 +18734,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19007,7 +19007,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19060,7 +19060,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19142,7 +19142,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19195,7 +19195,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19248,7 +19248,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19337,7 +19337,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19390,7 +19390,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19472,7 +19472,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19561,7 +19561,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19614,7 +19614,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19667,7 +19667,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19720,7 +19720,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19773,7 +19773,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19885,7 +19885,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19938,7 +19938,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -19991,7 +19991,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20073,7 +20073,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20298,7 +20298,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20620,7 +20620,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20845,7 +20845,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20898,7 +20898,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -20951,7 +20951,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21004,7 +21004,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21326,7 +21326,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21639,7 +21639,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21878,7 +21878,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -21931,7 +21931,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22239,7 +22239,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22440,7 +22440,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22748,7 +22748,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -22917,7 +22917,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23086,7 +23086,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23255,7 +23255,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23424,7 +23424,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23593,7 +23593,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23762,7 +23762,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23931,7 +23931,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -23984,7 +23984,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24037,7 +24037,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24206,7 +24206,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24375,7 +24375,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24544,7 +24544,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24626,7 +24626,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24795,7 +24795,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -24964,7 +24964,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25133,7 +25133,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25302,7 +25302,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25471,7 +25471,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25640,7 +25640,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25722,7 +25722,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25811,7 +25811,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25937,7 +25937,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -25990,7 +25990,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26086,7 +26086,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26212,7 +26212,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26498,7 +26498,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26551,7 +26551,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26720,7 +26720,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26889,7 +26889,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -26971,7 +26971,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27024,7 +27024,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27136,7 +27136,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27189,7 +27189,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27315,7 +27315,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27484,7 +27484,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -27640,7 +27640,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.28,
+    "cost": 3.29,
     "from": "home",
     "km": 13.2,
     "min": 18
@@ -28019,9 +28019,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.65,
+    "cost": 25.66,
     "from": "home",
-    "km": 103.2,
+    "km": 103.3,
     "min": 88
    },
    "units": 1,
@@ -28496,7 +28496,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 27.33,
+    "cost": 27.34,
     "from": "home",
     "km": 110.0,
     "min": 94
@@ -28606,7 +28606,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 27.33,
+    "cost": 27.34,
     "from": "home",
     "km": 110.0,
     "min": 94
@@ -29372,7 +29372,7 @@
  },
  "sites": [
   {
-   "error": "FetchError: Failed to perform, curl: (6) Could not resolve host: www.proveiling.nl (DNS server returned general failure). See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+   "error": "FetchError: Failed to perform, curl: (6) Could not resolve host: www.proveiling.nl (Timeout while contacting DNS servers). See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
    "id": "proveiling",
    "lots": 0,
    "name": "ProVeiling",

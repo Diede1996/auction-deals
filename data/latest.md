@@ -1,12 +1,12 @@
 # Latest scan
 
-_Thursday 29 October 2026, 13:37 (Amsterdam time)_
+_Thursday 29 October 2026, 13:41 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
 | Site | Status |
 |---|---|
-| ProVeiling | ⚠️ FetchError: Failed to perform, curl: (6) Could not resolve host: www.proveiling.nl (DNS server returned general failure) |
+| ProVeiling | ⚠️ FetchError: Failed to perform, curl: (6) Could not resolve host: www.proveiling.nl (Timeout while contacting DNS servers |
 | HNVI | ✅ 843 lots |
 | Plaats Je Bod | ✅ 73 lots |
 | Onlineveilingmeester | ✅ 1014 lots |
@@ -48,7 +48,7 @@ _Thursday 29 October 2026, 13:37 (Amsterdam time)_
 | ✅ | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/83) (Onlineveilingmeester) | €91 | €340 | €137 | Thu 29 Oct 19:50 |
 | ✅ | Power tools | [Excentrische schuurmachine Festool, RO FEQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/84) (Onlineveilingmeester) | €111 | €340 | €137 | Thu 29 Oct 19:50 |
 |  | Power tools | [4x Elektrisch gereedschap o.a. Metabo](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/89) (Onlineveilingmeester) | €14 | – | – | Thu 29 Oct 19:52 |
-|  | Power tools | [Dominofrees Festool, DF 500 Q](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/93) (Onlineveilingmeester) | €451 | €950 | €401 | Thu 29 Oct 19:53 |
+|  | Power tools | [Dominofrees Festool, DF 500 Q](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/93) (Onlineveilingmeester) | €471 | €950 | €401 | Thu 29 Oct 19:53 |
 | ✅ | Power tools | [Freesmachine Festool, OF1010EBQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/98) (Onlineveilingmeester) | €111 | €312 | €117 | Thu 29 Oct 19:54 |
 | ✅ | Power tools | [Frees Festool, OF1010EBQ](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/99) (Onlineveilingmeester) | €111 | €350 | €141 | Thu 29 Oct 19:54 |
 | ✅ | Power tools | [6x Elektrisch gereedschap o.a. Makita en Bosch](https://onlineveilingmeester.nl/nl/veilingen/9576/kavels/111) (Onlineveilingmeester) | €20 | €40 | €83 | Thu 29 Oct 19:57 |
