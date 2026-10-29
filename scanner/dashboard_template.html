@@ -192,6 +192,14 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .tab:hover { color: var(--text); }
 .tab[aria-selected="true"] { color: var(--text); font-weight: 600; border-bottom-color: var(--accent); }
 .tab .count { color: var(--text-3); font-weight: 500; margin-left: 5px; font-variant-numeric: tabular-nums; }
+/* sub-tabs: a category per watchlist item under All lots, closing week under Favorites */
+.subtabs { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px; border-bottom: 1px solid var(--border); }
+.subtabs[hidden] { display: none; }
+.chip { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2); border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; min-height: 30px; }
+.chip:hover { border-color: var(--accent); color: var(--text); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.chip .count { margin-left: 5px; opacity: .75; font-variant-numeric: tabular-nums; }
+.chip[disabled] { opacity: .45; cursor: default; }
 .fav-note { margin: 0; padding: 12px 16px; font-size: 13.5px; color: var(--text-2); background: var(--surface-2); border-bottom: 1px solid var(--border); }
 .row.is-gone .title { color: var(--text-2); }
 /* connect dialog */
@@ -339,6 +347,7 @@ footer td { padding: 2px 14px 2px 0; }
       <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
       <span class="swipe-hint" id="swipeHint" hidden></span>
     </div>
+    <div class="subtabs" id="subtabs" role="group" aria-label="Narrow the list"></div>
     <p class="fav-note" id="favNote" hidden></p>
     <div class="row head" aria-hidden="true">
       <div class="c-thumb"></div><div class="c-main">Lot</div><div class="c-closes">Closes</div>
@@ -412,7 +421,7 @@ footer td { padding: 2px 14px 2px 0; }
   delete S.r; delete S.minProfit;  /* older settings: target return, minimum profit in euros */
   var values = store.get("values", {});
   var hidden = store.get("hidden", {});
-  var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "", view: "all" }, store.get("ui", {}));
+  var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "", view: "all", when: "" }, store.get("ui", {}));
   var editing = null;
 
   var eur = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
@@ -1057,6 +1066,39 @@ footer td { padding: 2px 14px 2px 0; }
   }
   function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far; }
 
+  /* ---------- sub-tabs ---------- */
+  var dayParts = new Intl.DateTimeFormat("en-CA", { year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Europe/Amsterdam" });
+  function dayNo(t) {  /* days since 1 Jan 1970 of the Dutch calendar date */
+    var p = {}; dayParts.formatToParts(new Date(t)).forEach(function (x) { p[x.type] = x.value; });
+    return Math.round(Date.UTC(+p.year, +p.month - 1, +p.day) / 86400000);
+  }
+  function weekNo(day) { return Math.floor((day + 3) / 7); }  /* weeks start on Monday (1 Jan 1970 was a Thursday) */
+  var WHEN = [
+    { id: "", label: "All" },
+    { id: "today", label: "Today" },
+    { id: "week", label: "This week" },
+    { id: "next", label: "Next week" },
+    { id: "later", label: "Later" },
+    { id: "closed", label: "Closed" }
+  ];
+  function whenOf(t, now) {  /* every group the closing time t falls in ("today" is also "this week") */
+    if (t == null || !isFinite(t)) return ["later"];
+    if (t < now) return ["closed"];
+    var d = dayNo(t), today = dayNo(now), w = weekNo(d), thisWeek = weekNo(today);
+    if (w === thisWeek) return d === today ? ["today", "week"] : ["week"];
+    return w === thisWeek + 1 ? ["next"] : ["later"];
+  }
+  function chip(label, count, on, click) {
+    return el("button", { type: "button", "class": "chip", "aria-pressed": on ? "true" : "false", disabled: !count && !on ? "" : null, onclick: click },
+      label, el("span", { "class": "count", text: String(count) }));
+  }
+  function renderSubtabs(chips) {
+    var box = document.getElementById("subtabs");
+    box.textContent = "";
+    chips.forEach(function (c) { box.append(c); });
+    box.hidden = !chips.length;
+  }
+
   function render() {
     lots.forEach(function (l) { delete l._share; delete l._shareN; delete l._value; });
     var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
@@ -1087,7 +1129,16 @@ footer td { padding: 2px 14px 2px 0; }
       var list = favKeys.map(function (k) { return byKey[k] || { gone: favs[k] }; });
       var when = function (x) { var t = x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : far) : closesAt(x.lot, far); return t < Date.now() ? far + t : t; };  /* closing soonest first, closed ones last */
       list.sort(function (a, b) { return when(a) - when(b); });
-      list.forEach(function (r) {
+      var nowT = Date.now(), counts = { "": list.length };
+      list.forEach(function (x) {
+        x._when = whenOf(x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : null) : (x.lot.closes ? Date.parse(x.lot.closes) : null), nowT);
+        x._when.forEach(function (w) { counts[w] = (counts[w] || 0) + 1; });
+      });
+      if (ui.when && !counts[ui.when]) ui.when = "";  /* e.g. "Today" after the last one closed */
+      renderSubtabs(list.length ? WHEN.map(function (w) {
+        return chip(w.label, counts[w.id] || 0, ui.when === w.id, function () { uiSet("when", w.id); });
+      }) : []);
+      list.filter(function (x) { return !ui.when || x._when.indexOf(ui.when) >= 0; }).forEach(function (r) {
         if (r.gone) { box.append(goneRow(r.gone)); return; }
         box.append(row(r));
         if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
@@ -1097,15 +1148,23 @@ footer td { padding: 2px 14px 2px 0; }
     }
 
     var q = ui.q.trim().toLowerCase();
-    var shown = all.filter(function (r) {
+    var listed = all.filter(function (r) {  /* everything the filters allow, any category */
       if (favs[r.lot.key]) return false;  /* favorites live under the Favorites tab */
       if (!ui.showHidden && isHidden(r)) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
-      if (ui.item && r.lot.item !== ui.item) return false;
       if (ui.site && r.lot.site !== ui.site) return false;
       if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
+    var perItem = {};
+    listed.forEach(function (r) { perItem[r.lot.item] = (perItem[r.lot.item] || 0) + 1; });
+    /* one sub-tab per category (watchlist item), most lots first; empty ones only while selected */
+    var cats = items.filter(function (i) { return perItem[i] || i === ui.item; })
+      .sort(function (a, b) { return (perItem[b] || 0) - (perItem[a] || 0) || a.localeCompare(b); });
+    renderSubtabs(lots.length ? [chip("All", listed.length, !ui.item, function () { pickItem(""); })].concat(cats.map(function (i) {
+      return chip(i, perItem[i] || 0, ui.item === i, function () { pickItem(i); });
+    })) : []);
+    var shown = listed.filter(function (r) { return !ui.item || r.lot.item === ui.item; });
     sortRows(shown);
     shown.forEach(function (r) {
       box.append(row(r));
@@ -1429,6 +1488,7 @@ footer td { padding: 2px 14px 2px 0; }
     S[key] = v; store.set("settings", S); syncControls(); render();
   }
   function uiSet(key, v) { ui[key] = v; store.set("ui", ui); render(); }
+  function pickItem(i) { ui.item = i; store.set("ui", ui); $("item").value = i; render(); }
   function clearFilters() { ui.q = ""; ui.item = ""; ui.site = ""; ui.onlyRoom = false; store.set("ui", ui); syncControls(); render(); }
 
   $("factorRange").addEventListener("input", function (e) { setting("factor", Number(e.target.value)); });
