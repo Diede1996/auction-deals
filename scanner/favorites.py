@@ -51,7 +51,7 @@ def parse_body(body: str) -> list[dict]:
             continue
         seen.add(key)
         clean = {"key": key, "url": url, "title": str(f.get("title") or key)[:200]}
-        for k in ("site", "siteName", "auction", "item", "closes", "added", "pickup"):
+        for k in ("site", "siteName", "auction", "item", "closes", "added", "pickup", "pickupWhen"):
             if isinstance(f.get(k), str):
                 clean[k] = f[k][:200]
         for k in ("bid", "maxBid"):

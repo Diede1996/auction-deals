@@ -289,6 +289,7 @@ footer td { padding: 2px 14px 2px 0; }
 .ptoolbar .filters { border-top: 0; margin-top: 0; }
 .pstatus { display: block; margin-top: 8px; }
 .pbtn { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); border-radius: 8px; padding: 0 12px; min-height: 34px; font-size: 13.5px; cursor: pointer; white-space: nowrap; }
+a.pbtn { display: inline-flex; align-items: center; text-decoration: none; }
 .pbtn:hover { border-color: var(--accent); color: var(--accent); }
 .pbtn.primary, dialog .primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
 .pbtn.primary:hover { background: var(--accent-hover); color: var(--surface); }
@@ -365,6 +366,23 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 .pfield input[type=file] { border: 0; padding: 4px 0; min-height: 0; }
 .pdlg .buttons { align-items: center; }
 .pdlg .danger { color: var(--critical-text); border-color: var(--critical-text); background: var(--surface); }
+.pdlg .check { display: flex; gap: 8px; align-items: center; margin-top: 10px; font-size: 14px; }
+.pday { margin-top: 16px; }
+.pday-head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; padding: 14px 16px 10px; }
+.pday-head h2 { margin: 0; font-size: 16px; }
+.pday-head .late { color: var(--critical-text); font-weight: 600; }
+.pstop { display: grid; grid-template-columns: 104px minmax(0, 1fr) auto; gap: 14px; align-items: start; padding: 12px 16px; border-top: 1px solid var(--border); }
+.pstop > * { grid-area: auto; min-width: 0; }
+.pstop .ptime { font-variant-numeric: tabular-nums; font-weight: 600; }
+.pstop .paddr { font-weight: 560; overflow-wrap: anywhere; }
+.pstop ul { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 3px; font-size: 13.5px; }
+.pstop li { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; }
+.pstop.done { opacity: .7; }
+.pwon { border-top: 1px solid var(--border); padding: 12px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 14px; align-items: center; }
+.pwon > * { grid-area: auto; min-width: 0; }
+.ppanel-head { padding: 14px 16px 4px; }
+.ppanel-head h2 { margin: 0; font-size: 15px; }
+.ppanel-head p { margin: 4px 0 8px; }
 
 @media (max-width: 860px) {
   .row.head { display: none; }
@@ -396,6 +414,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   .pcard-head .c-actions { grid-column: 1 / 3; justify-content: flex-start; }
   .plistings, .pad { margin-left: 0; }
   .pgrid { grid-template-columns: minmax(0, 1fr); }
+  .pstop { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .pstop .c-actions, .pwon .c-actions { justify-content: flex-start; }
+  .pwon { grid-template-columns: minmax(0, 1fr); }
 }
 </style>
 </head>
@@ -413,6 +434,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">Lots<span class="count" id="count-all"></span></button>
     <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
     <span class="sep" aria-hidden="true"></span>
+    <button type="button" class="tab" role="tab" id="tab-pickup" aria-selected="false">Pickups<span class="count" id="count-pickup"></span></button>
     <button type="button" class="tab" role="tab" id="tab-stock" aria-selected="false">Stock<span class="count" id="count-stock"></span></button>
     <button type="button" class="tab" role="tab" id="tab-listings" aria-selected="false">Listings<span class="count" id="count-listings"></span></button>
     <button type="button" class="tab" role="tab" id="tab-money" aria-selected="false">Finance</button>
@@ -1211,9 +1233,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     box.hidden = !chips.length;
   }
 
-  var PRIVATE_VIEWS = { stock: 1, listings: 1, money: 1 };
+  var PRIVATE_VIEWS = { pickup: 1, stock: 1, listings: 1, money: 1 };
   function renderNav() {
-    ["all", "fav", "stock", "listings", "money"].forEach(function (v) {
+    ["all", "fav", "pickup", "stock", "listings", "money"].forEach(function (v) {
       document.getElementById("tab-" + v).setAttribute("aria-selected", (ui.view || "all") === v ? "true" : "false");
     });
     var priv = !!PRIVATE_VIEWS[ui.view];
@@ -1420,7 +1442,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   function snapshot(lot, c) {
     return { key: lot.key, title: lot.title, url: lot.url, site: lot.site, siteName: lot.siteName, auction: lot.auction,
              item: lot.item, closes: lot.closes, bid: lot.bid, maxBid: c && c.maxBid != null ? c.maxBid : (lot.maxBid != null ? lot.maxBid : null),
-             pickup: lot.pickup || lot.location || null, image: lot.image || null, added: new Date().toISOString() };
+             pickup: lot.pickup || lot.location || null, pickupWhen: lot.pickupWhen || null, image: lot.image || null, added: new Date().toISOString() };
   }
   /* returns false when it couldn't start (no GitHub token yet: the connect dialog opens instead) */
   function toggleFav(lot, c) {
@@ -1632,7 +1654,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   $("trip").addEventListener("change", function (e) { S.trip = e.target.checked; store.set("settings", S); render(); });
   $("tab-all").addEventListener("click", function () { uiSet("view", "all"); });
   $("tab-fav").addEventListener("click", function () { uiSet("view", "fav"); });
-  ["stock", "listings", "money"].forEach(function (v) { $("tab-" + v).addEventListener("click", function () { uiSet("view", v); }); });
+  ["pickup", "stock", "listings", "money"].forEach(function (v) { $("tab-" + v).addEventListener("click", function () { uiSet("view", v); }); });
   $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
   $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
   $("showHidden").addEventListener("change", function (e) { uiSet("showHidden", e.target.checked); });
@@ -1664,9 +1686,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   refreshFavs();
   setInterval(function () { if (!editing && !(dlg && dlg.open) && !PRIVATE_VIEWS[ui.view]) { renderHeader(); render(); } }, 60000);
 
-  /* for the Stock, Listings and Finance tabs (the script below) */
+  /* for the Pickups, Stock, Listings and Finance tabs (the script below) */
   window.__AD = { el: el, money: money, toast: toast, store: store, safeUrl: safeUrl, OWNER: OWNER, REPO: REPO,
-                  categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; } };
+                  categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; },
+                  lots: function () { return DATA.lots || []; }, favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
 })();
 </script>
 <script>

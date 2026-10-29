@@ -13,7 +13,7 @@ def body(favs):
 
 FAVS = [
     {"key": "hnvi:196601", "title": "Beeldscherm 27 inch ACER RG270", "url": "https://www.hnvi.nl/veiling-kavel/x/196601",
-     "closes": "2026-09-28T20:05:00+02:00", "maxBid": 45},
+     "closes": "2026-09-28T20:05:00+02:00", "maxBid": 45, "pickup": "De Hoogt 49, Loon op Zand", "pickupWhen": "Wed 30 Sep, 09:00–15:00"},
     {"key": "proveiling:3285252", "title": "Philips HD7695/90", "url": "https://www.proveiling.nl/x/3285252/detail",
      "closes": "2026-09-29T20:35:00+02:00"},
 ]
@@ -30,6 +30,7 @@ def test_parse_body_keeps_only_safe_entries():
     favs = parse_body(body(evil))
     assert [f["key"] for f in favs] == ["hnvi:196601", "proveiling:3285252"]
     assert favs[0]["maxBid"] == 45
+    assert favs[0]["pickupWhen"] == "Wed 30 Sep, 09:00–15:00"  # the Pickups tab prefills a won lot with it
     assert parse_body("no json here") == [] and parse_body(body([])) == []
 
 
