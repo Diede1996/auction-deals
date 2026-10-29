@@ -179,7 +179,13 @@
   }
   function piecesLeft(it) { return statusOf(it) === "stock" ? Math.max(0, qtyOf(it) - soldQty(it)) : 0; }
   function stockValue(it) { return statusOf(it) === "stock" ? Math.max(0, (it.paid || 0) - costOfSold(it)) : 0; }
-  function savedOf(it) { return it.newPrice == null ? null : it.newPrice - ((it.paid || 0) - revenue(it)); }
+  /* saved: only on what you kept for yourself, new price minus what it cost you (resales count under Earned).
+     For a lot you partly sold, only the share you kept. */
+  function savedOf(it) {
+    if (it.newPrice == null || statusOf(it) !== "kept") return null;
+    var keptShare = qtyOf(it) > 1 ? Math.max(0, 1 - soldQty(it) / qtyOf(it)) : (sales(it).length ? 0 : 1);
+    return it.newPrice * keptShare - Math.max(0, (it.paid || 0) - costOfSold(it));
+  }
   function listings(it) { return statusOf(it) === "stock" && Array.isArray(it.listings) ? it.listings : []; }
   function isStale(l) { var d = daysSince(l.since); return d != null && d >= STALE_DAYS; }
   function platformLabel(id) { var p = PLATFORMS.filter(function (x) { return x.id === id; })[0]; return p ? p.label : (id || "Other"); }
@@ -566,13 +572,13 @@
     var rev = rows.reduce(function (t, r) { return t + r.price; }, 0);
     var cost = rows.reduce(function (t, r) { return t + r.cost; }, 0);
     var soon = waiting.reduce(function (t, r) { return t + r.price - r.cost; }, 0);
-    var withNew = all.filter(function (it) { return it.newPrice != null; });
+    var withNew = all.filter(function (it) { return savedOf(it) != null; });
     var saved = withNew.reduce(function (t, it) { return t + savedOf(it); }, 0);
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
     box.append(tiles([
       { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
         (waiting.length ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
-      { label: "Saved", value: money(saved), note: "new price minus what you paid (net of resales), " + withNew.length + " items with a new price" },
+      { label: "Saved", value: money(saved), note: "new price minus what you paid, on the " + withNew.length + " items you kept for yourself" },
       { label: "Money in stock", value: money(inStock), note: "paid for what's still for sale" }
     ]));
 
