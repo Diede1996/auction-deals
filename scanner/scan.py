@@ -515,6 +515,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         "kinds": auction_kinds(config),
         "sites": sites, "fees": sorted(fees, key=lambda f: f["premium"]), "lots": lots,
         "troostwijk": troostwijk,
+        "watchlist": [item.name for item in items],
         "driving": driving or {"home": False},
         "favorites": favorites or {"issue": None, "items": []},
         "repo": os.environ.get("GITHUB_REPOSITORY", ""),

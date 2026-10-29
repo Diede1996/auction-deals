@@ -186,6 +186,15 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .fav-btn[aria-pressed="true"] { color: var(--warning-text); font-weight: 600; }
 .fav-btn[aria-pressed="true"] .star { color: var(--warning); }
 .fav-btn[disabled] { opacity: .6; cursor: progress; }
+/* main tabs: lots, favorites and your own stock, listings and money */
+.mainnav { position: sticky; top: 0; z-index: 10; background: var(--bg); margin: 12px 0 0; border-bottom: 1px solid var(--border);
+  display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.mainnav::-webkit-scrollbar { display: none; }
+.mainnav .tab { flex: none; font-size: 15px; padding: 11px 14px 12px; }
+.mainnav .sep { flex: none; width: 1px; background: var(--border); margin: 10px 6px; }
+.view-private .lots-only { display: none !important; }
+.swipe-bar { display: flex; padding: 8px 16px 0; }
+.swipe-bar[hidden] { display: none; }
 /* tabs: all lots / favorites */
 .tabs { display: flex; gap: 2px; padding: 6px 12px 0; border-bottom: 1px solid var(--border); }
 .tab { border: 0; background: none; padding: 9px 12px 10px; font-size: 14.5px; color: var(--text-2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
@@ -195,11 +204,11 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 /* sub-tabs: a category per watchlist item under All lots, closing week under Favorites */
 .subtabs { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px; border-bottom: 1px solid var(--border); }
 .subtabs[hidden] { display: none; }
-.chip { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2); border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; min-height: 30px; }
-.chip:hover { border-color: var(--accent); color: var(--text); }
-.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-.chip .count { margin-left: 5px; opacity: .75; font-variant-numeric: tabular-nums; }
-.chip[disabled] { opacity: .45; cursor: default; }
+.subtab { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2); border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; min-height: 30px; }
+.subtab:hover { border-color: var(--accent); color: var(--text); }
+.subtab[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+.subtab .count { margin-left: 5px; opacity: .75; font-variant-numeric: tabular-nums; }
+.subtab[disabled] { opacity: .45; cursor: default; }
 .fav-note { margin: 0; padding: 12px 16px; font-size: 13.5px; color: var(--text-2); background: var(--surface-2); border-bottom: 1px solid var(--border); }
 .row.is-gone .title { color: var(--text-2); }
 /* connect dialog */
@@ -275,6 +284,88 @@ footer table { border-collapse: collapse; font-size: 13px; }
 footer td { padding: 2px 14px 2px 0; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
+/* Stock, Listings and Finance (your private repository) */
+.ptoolbar { padding: 4px 16px 12px; margin: 16px 0 0; }
+.ptoolbar .filters { border-top: 0; margin-top: 0; }
+.pstatus { display: block; margin-top: 8px; }
+.pbtn { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); border-radius: 8px; padding: 0 12px; min-height: 34px; font-size: 13.5px; cursor: pointer; white-space: nowrap; }
+.pbtn:hover { border-color: var(--accent); color: var(--accent); }
+.pbtn.primary, dialog .primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.pbtn.primary:hover { background: var(--accent-hover); color: var(--surface); }
+.pempty { padding: 28px 16px; margin-top: 16px; color: var(--text-2); }
+.pconnect { padding: 20px 22px; margin-top: 16px; max-width: 760px; }
+.pconnect h2 { margin: 0 0 8px; font-size: 18px; }
+.pconnect p, .pconnect li { color: var(--text-2); font-size: 14px; }
+.pconnect li { margin-bottom: 10px; }
+.pconnect li strong { color: var(--text); }
+.pconnect input { display: block; width: 100%; max-width: 420px; height: 38px; margin-top: 6px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+.pconnect .error, .pdlg .error { color: var(--critical-text); font-size: 13.5px; }
+.pconnect .fine { font-size: 12.5px; color: var(--text-3); }
+.pconnect .buttons { display: flex; justify-content: flex-start; }
+.pconnect .buttons button { height: 38px; padding: 0 18px; border-radius: 8px; border: 1px solid var(--accent); cursor: pointer; }
+.pcontent .kpis { margin-top: 16px; }
+.prow { display: grid; gap: 14px; align-items: center; padding: 12px 16px; border-top: 1px solid var(--border);
+  grid-template-columns: 64px minmax(0, 2.4fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr) auto; }
+.prow > *, .pcard-head > * { grid-area: auto; min-width: 0; }  /* not the named areas of the lot rows */
+.prow.head { border-top: 0; padding-top: 8px; padding-bottom: 8px; color: var(--text-3); font-size: 12.5px; background: var(--surface-2); }
+.prow .thumb, .pcard-head .thumb { width: 64px; height: 64px; }
+.title.plain { background: none; border: 0; padding: 0; font: inherit; font-weight: 560; text-align: left; cursor: pointer; }
+.tag.muted { background: var(--neutral-bg); color: var(--text-2); }
+.c-actions { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+.badges { display: flex; flex-wrap: wrap; gap: 4px; }
+.pbadge { display: inline-block; padding: 1px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; background: var(--neutral-bg); color: var(--text-2); white-space: nowrap; }
+.pbadge.p-marktplaats { background: var(--warning-bg); color: var(--warning-text); }
+.pbadge.p-2dehands { background: var(--good-bg); color: var(--good-text); }
+.pbadge.p-vinted { background: var(--accent-bg); color: var(--accent); }
+.pbadge.stale { box-shadow: inset 0 0 0 1.5px var(--critical); }
+.pcard { border-top: 1px solid var(--border); padding: 14px 16px; }
+.pcard-head { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 14px; align-items: center; }
+.plistings { margin: 10px 0 0 78px; display: flex; flex-direction: column; gap: 6px; }
+.plisting { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13.5px; padding: 6px 0; border-top: 1px dashed var(--border); }
+.plisting.stale { background: var(--critical-bg); margin: 0 -8px; padding: 6px 8px; border-radius: 8px; border-top-color: transparent; }
+.spacer { flex: 1 1 auto; }
+.padd { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; padding-top: 8px; border-top: 1px dashed var(--border); }
+.padd select, .padd input { height: 34px; padding: 0 8px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); font-size: 13.5px; }
+.padd input[type=text] { width: 120px; }
+.padd input[type=url] { flex: 1 1 180px; min-width: 0; }
+.pad { margin: 12px 0 0 78px; padding: 12px; border-radius: 10px; background: var(--surface-2); }
+.pad-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.pad-title { margin-top: 8px; font-weight: 600; }
+.pad-text { margin-top: 4px; white-space: pre-wrap; font-size: 13.5px; color: var(--text-2); max-height: 9.5em; overflow: auto; }
+.pstrip { display: flex; gap: 8px; overflow-x: auto; margin-top: 10px; padding-bottom: 4px; }
+.pphoto { width: 92px; height: 92px; object-fit: cover; border-radius: 8px; background: var(--surface); flex: none; }
+.pph { position: relative; flex: none; }
+.pph-x { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; border-radius: 50%; border: 0; background: rgba(0, 0, 0, .6); color: #fff; cursor: pointer; font-size: 12px; }
+.pchart, .ptablebox { padding: 16px; margin-top: 16px; }
+.pchart h2, .ptablebox h2 { margin: 0 0 10px; font-size: 15px; }
+.pline { display: block; width: 100%; height: auto; max-height: 260px; overflow: visible; }
+.pline .grid { stroke: var(--grid); stroke-width: 1; }
+.pline .base { stroke: var(--axis); stroke-width: 1; }
+.pline text { fill: var(--text-3); font-size: 11px; font-variant-numeric: tabular-nums; }
+.pline .line { fill: none; stroke: var(--bar); stroke-width: 2.5; }
+.pline .dot { fill: var(--bar); stroke: var(--surface); stroke-width: 1.5; }
+.scrollx { overflow-x: auto; }
+.ptable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.ptable th { text-align: left; font-weight: 500; color: var(--text-3); font-size: 12.5px; padding: 0 10px 8px 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.ptable td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.ptable .amt { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ptable .good { color: var(--good-text); }
+.ptable .bad { color: var(--critical-text); }
+dialog.pdlg { width: min(720px, calc(100vw - 24px)); max-height: calc(100vh - 24px); overflow: auto; border: 1px solid var(--border-strong); border-radius: var(--radius);
+  background: var(--surface); color: var(--text); padding: 20px 22px; box-shadow: 0 12px 40px rgba(0, 0, 0, .25); }
+dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
+.pdlg h2 { margin: 0 0 12px; font-size: 18px; }
+.pdlg .buttons { display: flex; gap: 10px; margin-top: 16px; }
+.pdlg .buttons button { height: 38px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); cursor: pointer; }
+.pdlg h3 { margin: 18px 0 6px; font-size: 15px; }
+.pgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; }
+.pfield { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; font-size: 13px; color: var(--text-2); min-width: 0; }
+.pgrid .pfield { margin-top: 0; }
+.pfield input, .pfield select, .pfield textarea { width: 100%; min-height: 38px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); font: inherit; font-size: 14px; }
+.pfield input[type=file] { border: 0; padding: 4px 0; min-height: 0; }
+.pdlg .buttons { align-items: center; }
+.pdlg .danger { color: var(--critical-text); border-color: var(--critical-text); background: var(--surface); }
+
 @media (max-width: 860px) {
   .row.head { display: none; }
   .row {
@@ -291,6 +382,20 @@ footer td { padding: 2px 14px 2px 0; }
   .top h1 { font-size: 22px; }
   .spread-body { grid-template-columns: minmax(0, 1fr); }
   .tile .value { font-size: 26px; }
+  .mainnav { flex-wrap: wrap; overflow-x: visible; }
+  .mainnav .tab { padding: 9px 10px 10px; font-size: 14.5px; }
+  .mainnav .sep { display: none; }
+  .prow.head { display: none; }
+  .prow { grid-template-columns: 56px minmax(0, 1fr) minmax(0, 1fr); gap: 10px 12px; align-items: start; }
+  .prow > .c-thumb { grid-row: span 3; }
+  .prow > .c-main { grid-column: 2 / 4; }
+  .prow > .c-actions { grid-column: 2 / 4; justify-content: flex-start; }
+  .prow [data-label]::before { content: attr(data-label); display: block; font-size: 12px; color: var(--text-3); margin-bottom: 2px; }
+  .prow .thumb, .pcard-head .thumb { width: 56px; height: 56px; }
+  .pcard-head { grid-template-columns: 56px minmax(0, 1fr); }
+  .pcard-head .c-actions { grid-column: 1 / 3; justify-content: flex-start; }
+  .plistings, .pad { margin-left: 0; }
+  .pgrid { grid-template-columns: minmax(0, 1fr); }
 }
 </style>
 </head>
@@ -299,14 +404,22 @@ footer td { padding: 2px 14px 2px 0; }
   <div class="wrap">
     <h1>Auction deals</h1>
     <p class="sub" id="sub"></p>
-    <div class="sites" id="sites" aria-label="Sites checked in the last scan"></div>
-    <div id="banner"></div>
+    <div class="sites lots-only" id="sites" aria-label="Sites checked in the last scan"></div>
+    <div id="banner" class="lots-only"></div>
   </div>
 </header>
 <main class="wrap">
-  <section class="kpis" id="kpis" aria-label="Summary"></section>
+  <nav class="mainnav" role="tablist" aria-label="Dashboard">
+    <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">Lots<span class="count" id="count-all"></span></button>
+    <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
+    <span class="sep" aria-hidden="true"></span>
+    <button type="button" class="tab" role="tab" id="tab-stock" aria-selected="false">Stock<span class="count" id="count-stock"></span></button>
+    <button type="button" class="tab" role="tab" id="tab-listings" aria-selected="false">Listings<span class="count" id="count-listings"></span></button>
+    <button type="button" class="tab" role="tab" id="tab-money" aria-selected="false">Finance</button>
+  </nav>
+  <section class="kpis lots-only" id="kpis" aria-label="Summary"></section>
 
-  <section class="panel controls" aria-label="Targets and filters">
+  <section class="panel controls lots-only" aria-label="Targets and filters">
     <div class="targets">
       <div class="field">
         <label for="factor">You sell at</label>
@@ -341,12 +454,8 @@ footer td { padding: 2px 14px 2px 0; }
     </div>
   </section>
 
-  <section class="panel list" aria-label="Matching lots">
-    <div class="tabs" role="tablist" aria-label="Which lots">
-      <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">All lots<span class="count" id="count-all"></span></button>
-      <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
-      <span class="swipe-hint" id="swipeHint" hidden></span>
-    </div>
+  <section class="panel list lots-only" aria-label="Matching lots">
+    <div class="swipe-bar" id="swipeBar" hidden><span class="swipe-hint" id="swipeHint"></span></div>
     <div class="subtabs" id="subtabs" role="group" aria-label="Narrow the list"></div>
     <p class="fav-note" id="favNote" hidden></p>
     <div class="row head" aria-hidden="true">
@@ -358,13 +467,15 @@ footer td { padding: 2px 14px 2px 0; }
     <p class="empty" id="empty" hidden></p>
   </section>
 
-  <section class="panel tw" id="troostwijk" hidden aria-labelledby="tw-title">
+  <section id="private" hidden></section>
+
+  <section class="panel tw lots-only" id="troostwijk" hidden aria-labelledby="tw-title">
     <h2 id="tw-title">Troostwijk searches</h2>
     <p class="small">Troostwijk blocks automated visitors, so the bot never visits it. These links open Troostwijk's own search for your watchlist in the Netherlands. Save each search on Troostwijk and forward their alert emails to your alerts mailbox: the lots in those emails then appear here with a price and max bid (see README).</p>
     <div id="tw-links"></div>
   </section>
 
-  <footer>
+  <footer class="lots-only">
     <div>
       <h2>How the numbers work</h2>
       <p><strong>You pay</strong> = bid + buyer's premium, plus VAT on both, plus any fixed fee per lot, plus the drive to the pickup address if you count it.</p>
@@ -452,6 +563,7 @@ footer td { padding: 2px 14px 2px 0; }
     for (var i = 2; i < arguments.length; i++) {
       var c = arguments[i];
       if (c == null || c === false) continue;
+      if (Array.isArray(c)) { c.forEach(function (x) { if (x != null && x !== false) e.append(x.nodeType ? x : document.createTextNode(String(x))); }); continue; }
       e.append(c.nodeType ? c : document.createTextNode(String(c)));
     }
     return e;
@@ -1089,7 +1201,7 @@ footer td { padding: 2px 14px 2px 0; }
     return w === thisWeek + 1 ? ["next"] : ["later"];
   }
   function chip(label, count, on, click) {
-    return el("button", { type: "button", "class": "chip", "aria-pressed": on ? "true" : "false", disabled: !count && !on ? "" : null, onclick: click },
+    return el("button", { type: "button", "class": "subtab", "aria-pressed": on ? "true" : "false", disabled: !count && !on ? "" : null, onclick: click },
       label, el("span", { "class": "count", text: String(count) }));
   }
   function renderSubtabs(chips) {
@@ -1099,7 +1211,19 @@ footer td { padding: 2px 14px 2px 0; }
     box.hidden = !chips.length;
   }
 
+  var PRIVATE_VIEWS = { stock: 1, listings: 1, money: 1 };
+  function renderNav() {
+    ["all", "fav", "stock", "listings", "money"].forEach(function (v) {
+      document.getElementById("tab-" + v).setAttribute("aria-selected", (ui.view || "all") === v ? "true" : "false");
+    });
+    var priv = !!PRIVATE_VIEWS[ui.view];
+    document.body.classList.toggle("view-private", priv);
+    document.getElementById("private").hidden = !priv;
+    return priv;
+  }
+
   function render() {
+    if (renderNav()) { if (window.__ADP) window.__ADP.render(ui.view); return; }
     lots.forEach(function (l) { delete l._share; delete l._shareN; delete l._value; });
     var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
     shareTrips(all);
@@ -1111,11 +1235,9 @@ footer td { padding: 2px 14px 2px 0; }
     var favKeys = Object.keys(favs);
     document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key]; }).length);
     var hint = document.getElementById("swipeHint");
-    hint.hidden = !TOUCH || !lots.length;
+    document.getElementById("swipeBar").hidden = !TOUCH || !lots.length;
     hint.textContent = ui.view === "fav" ? "Swipe ← back to the list" : "Swipe → ★ favorite · ← hide";
     document.getElementById("count-fav").textContent = String(favKeys.length);
-    document.getElementById("tab-all").setAttribute("aria-selected", ui.view !== "fav" ? "true" : "false");
-    document.getElementById("tab-fav").setAttribute("aria-selected", ui.view === "fav" ? "true" : "false");
     favNote(favKeys.length);
     var box = document.getElementById("rows");
     var empty = document.getElementById("empty");
@@ -1510,6 +1632,7 @@ footer td { padding: 2px 14px 2px 0; }
   $("trip").addEventListener("change", function (e) { S.trip = e.target.checked; store.set("settings", S); render(); });
   $("tab-all").addEventListener("click", function () { uiSet("view", "all"); });
   $("tab-fav").addEventListener("click", function () { uiSet("view", "fav"); });
+  ["stock", "listings", "money"].forEach(function (v) { $("tab-" + v).addEventListener("click", function () { uiSet("view", v); }); });
   $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
   $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
   $("showHidden").addEventListener("change", function (e) { uiSet("showHidden", e.target.checked); });
@@ -1539,8 +1662,15 @@ footer td { padding: 2px 14px 2px 0; }
   renderGhState();
   render();
   refreshFavs();
-  setInterval(function () { if (!editing && !(dlg && dlg.open)) { renderHeader(); render(); } }, 60000);
+  setInterval(function () { if (!editing && !(dlg && dlg.open) && !PRIVATE_VIEWS[ui.view]) { renderHeader(); render(); } }, 60000);
+
+  /* for the Stock, Listings and Finance tabs (the script below) */
+  window.__AD = { el: el, money: money, toast: toast, store: store, safeUrl: safeUrl, OWNER: OWNER, REPO: REPO,
+                  categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; } };
 })();
+</script>
+<script>
+/*__PRIVATE_JS__*/
 </script>
 </body>
 </html>

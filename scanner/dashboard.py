@@ -9,12 +9,15 @@ import json
 from pathlib import Path
 
 TEMPLATE_PATH = Path(__file__).with_name("dashboard_template.html")
+# the Stock, Listings and Finance tabs: they read your private repository in the browser, nothing private is in the page
+PRIVATE_JS_PATH = Path(__file__).with_name("dashboard_private.js")
 
 
 def render(data: dict) -> str:
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     payload = payload.replace("<", "\\u003c")  # scraped text can never open or close a tag in the page
-    return TEMPLATE_PATH.read_text(encoding="utf-8").replace("__DATA__", payload)
+    page = TEMPLATE_PATH.read_text(encoding="utf-8").replace("/*__PRIVATE_JS__*/", PRIVATE_JS_PATH.read_text(encoding="utf-8"))
+    return page.replace("__DATA__", payload)
 
 
 def write(site_dir: Path, data: dict) -> Path:
