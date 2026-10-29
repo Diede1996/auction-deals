@@ -567,7 +567,6 @@
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
     box.append(tiles([
       { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you", primary: true },
-      { label: "Sold for", value: money(rev), note: rows.length + (rows.length === 1 ? " sale" : " sales") + ", bought for " + money(cost) },
       { label: "Saved", value: money(saved), note: "new price minus what you paid (net of resales), " + withNew.length + " items with a new price" },
       { label: "Money in stock", value: money(inStock), note: "paid for what's still for sale" }
     ]));
