@@ -556,17 +556,22 @@
     var all = items().filter(matches);
     var rows = [];
     all.forEach(function (it) {
-      sales(it).forEach(function (s) {
-        rows.push({ it: it, s: s, date: validDay(s.date) ? s.date : null, cost: saleCost(it, s), price: s.price || 0 });
+      sales(it).forEach(function (s, i) {
+        rows.push({ it: it, s: s, i: i, date: validDay(s.date) ? s.date : null, cost: saleCost(it, s), price: s.price || 0, unpaid: !!s.unpaid });
       });
     });
+    /* a sale the buyer hasn't paid yet counts once it's paid */
+    var waiting = rows.filter(function (r) { return r.unpaid; }), all0 = rows;
+    rows = rows.filter(function (r) { return !r.unpaid; });
     var rev = rows.reduce(function (t, r) { return t + r.price; }, 0);
     var cost = rows.reduce(function (t, r) { return t + r.cost; }, 0);
+    var soon = waiting.reduce(function (t, r) { return t + r.price - r.cost; }, 0);
     var withNew = all.filter(function (it) { return it.newPrice != null; });
     var saved = withNew.reduce(function (t, it) { return t + savedOf(it); }, 0);
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
     box.append(tiles([
-      { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you", primary: true },
+      { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
+        (waiting.length ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
       { label: "Saved", value: money(saved), note: "new price minus what you paid (net of resales), " + withNew.length + " items with a new price" },
       { label: "Money in stock", value: money(inStock), note: "paid for what's still for sale" }
     ]));
@@ -600,20 +605,37 @@
     var saleTable = el("table", { "class": "ptable" }, el("thead", null, el("tr", null,
       ["Sold on", "Item", "Where", "Sold for", "Cost", "Profit", "Margin"].map(function (h, i) { return el("th", { "class": i > 2 ? "amt" : "", text: h }); }))));
     var sb = el("tbody");
-    rows.slice().sort(function (a, b) { return String(b.date || b.it.bought || "").localeCompare(String(a.date || a.it.bought || "")); }).forEach(function (r) {
+    all0.slice().sort(function (a, b) { return (b.unpaid - a.unpaid) || String(b.date || b.it.bought || "").localeCompare(String(a.date || a.it.bought || "")); }).forEach(function (r) {
       var p = r.price - r.cost;
-      sb.append(el("tr", null,
+      sb.append(el("tr", r.unpaid ? { "class": "unpaid" } : null,
         el("td", { text: r.date ? showDay(r.date) : "date unknown" }),
         el("td", null, el("button", { type: "button", "class": "btn-link", text: r.it.name, onclick: function () { editItem(r.it); } }),
           (r.s.qty || 1) > 1 ? el("span", { "class": "small", text: " × " + r.s.qty }) : null,
-          r.s.note ? el("div", { "class": "small", text: r.s.note }) : null),
+          r.s.note ? el("div", { "class": "small", text: r.s.note }) : null,
+          r.unpaid ? el("div", { "class": "small" }, el("span", { "class": "tag muted", text: "⏳ not paid yet" }), " ",
+            el("button", { type: "button", "class": "pbtn", text: "Paid ✓", onclick: function () { salePaid(r.it, r.i, true); } }), " ",
+            el("button", { type: "button", "class": "btn-link", text: "Fell through", onclick: function () { salePaid(r.it, r.i, false); } })) : null),
         el("td", { text: r.s.platform ? platformLabel(r.s.platform) : "–" }),
         el("td", { "class": "amt", text: money2(r.price) }), el("td", { "class": "amt", text: money2(r.cost) }),
         el("td", { "class": "amt " + (p >= 0 ? "good" : "bad"), text: money2(p) }), el("td", { "class": "amt", text: pctOf(p, r.cost) })));
     });
     saleTable.append(sb);
-    if (rows.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
+    if (all0.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
       el("p", { "class": "small", text: "Margin = profit as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price." })));
+  }
+  /* paid: the money is in. Not paid (fell through): the sale goes and the item is for sale again */
+  function salePaid(it, i, paid) {
+    var s0 = sales(it)[i];
+    if (!s0) return;
+    if (!paid && !confirm("Remove this sale of “" + (it.name || "item") + "” and put it back up for sale?")) return;
+    change((paid ? "Paid: " : "Sale fell through: ") + (it.name || it.id), function (data) {
+      var x = find(data, it.id); if (!x) return false;
+      var k = (x.sales || []).findIndex(function (s) { return s.date === s0.date && s.price === s0.price && !!s.unpaid; });
+      if (k < 0) return false;
+      if (paid) { delete x.sales[k].unpaid; x.sales[k].paidOn = today(); return; }
+      x.sales.splice(k, 1);
+      if (soldQty(x) < qtyOf(x)) x.status = "stock";
+    }).then(function () { toast(paid ? "Marked as paid." : "Sale removed. It's for sale again."); }, function () {});
   }
   function svg(tag, attrs) {
     var e = document.createElementNS("http://www.w3.org/2000/svg", tag);
@@ -1066,11 +1088,13 @@
     var ls = listings(it);
     if (ls.length) where.value = ls[0].platform;
     var note = el("input", { type: "text", placeholder: "optional, e.g. which size" });
+    var unpaid = el("input", { type: "checkbox" });
     var err = el("p", { "class": "error", hidden: true });
     var form = el("form", { method: "dialog" },
       el("h2", { text: "Sold: " + (it.name || "item") }),
       el("div", { "class": "pgrid" }, field("Sold on", date), field("Sold for (€)", price, "What you received"),
         lots ? field("Pieces", qty, left + " of " + qtyOf(it) + " still for sale") : null, field("Where", where), field("Note", note)),
+      el("label", { "class": "check" }, unpaid, "Not paid yet (it counts in Finance once you tick it off as paid)"),
       ls.length ? el("p", { "class": "small", text: "Remember to take the ad offline on " + ls.map(function (l) { return platformLabel(l.platform); }).join(" and ") + "." }) : null,
       err,
       el("div", { "class": "buttons" }, el("span", { "class": "spacer" }), el("button", { type: "button", text: "Cancel", onclick: closeDlg }),
@@ -1081,6 +1105,7 @@
       if (p == null) { err.textContent = "Fill in what you sold it for."; err.hidden = false; return; }
       var n = lots ? Math.max(1, Math.min(left || 1, parseInt(qty.value, 10) || 1)) : 1;
       var sale = { date: validDay(date.value) ? date.value : today(), price: p, qty: n, platform: where.value, note: note.value.trim() || undefined };
+      if (unpaid.checked) sale.unpaid = true;
       closeDlg();
       change("Sold " + (it.name || it.id) + " for " + p, function (data) {
         var x = find(data, it.id); if (!x) return false;
