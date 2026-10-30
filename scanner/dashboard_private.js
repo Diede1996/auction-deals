@@ -96,7 +96,8 @@
   var chain = Promise.resolve();
   function change(message, edit) {
     P.saving++; drawStatus();
-    var p = chain.then(function () { return attempt(message, edit, 0); });
+    var files = fileQueue;  /* photos and invoices first: they're commits too */
+    var p = chain.then(function () { return files; }).then(function () { return attempt(message, edit, 0); });
     chain = p.catch(function () { /* reported below */ });
     return p.then(function () { P.saving--; draw(); }, function (e) { P.saving--; saveFailed(e); draw(); throw e; });
   }
@@ -117,10 +118,22 @@
     else if (e && (e.status === 403 || e.status === 404)) toast("GitHub refused to save: this key can't write to " + P.repo + ". Check that Contents is set to Read and write.");
     else toast("Couldn't save. Check your connection and try again.");
   }
+  /* Files go up one at a time: each upload is a commit, and GitHub refuses (409) a commit that starts while
+     another one is being written. If that still happens (another device), wait a moment and try again. */
+  var fileQueue = Promise.resolve();
   function putFile(path, b64, message) {
-    return gh(filePath(path), { method: "PUT", body: { message: message, content: b64 } })
-      .then(function (r) { return { path: path, sha: r.content.sha }; });
+    function once(tries) {
+      return gh(filePath(path), { method: "PUT", body: { message: message, content: b64 } })
+        .then(function (r) { return { path: path, sha: r.content.sha }; }, function (e) {
+          if (e.status === 409 && tries < 4) return wait(700 * (tries + 1)).then(function () { return once(tries + 1); });
+          throw e;
+        });
+    }
+    var p = fileQueue.then(function () { return once(0); });
+    fileQueue = p.catch(function () { /* the caller reports it */ });
+    return p;
   }
+  function wait(ms) { return new Promise(function (ok) { setTimeout(ok, ms); }); }
   function removeFile(f, message) {
     if (!f || !f.path || !f.sha) return Promise.resolve();
     return gh(filePath(f.path), { method: "DELETE", body: { message: message, sha: f.sha } })
