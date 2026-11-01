@@ -75,6 +75,7 @@ class WatchItem:
     market_price: float | None = None  # manual resale value, skips the Marktplaats lookup
     marktplaats_query: str | None = None
     min_margin: float | None = None  # overrides the global setting (0.4 = 40%)
+    price_check: bool = True  # False: shown without a Marktplaats price (mixed lots you judge yourself)
 
     @classmethod
     def from_dict(cls, d: dict) -> "WatchItem":
@@ -95,6 +96,7 @@ class WatchItem:
             market_price=_num(d.get("market_price")),
             marktplaats_query=(str(d["marktplaats_query"]).strip() if d.get("marktplaats_query") else None),
             min_margin=_num(d.get("min_margin")),
+            price_check=d.get("price_check", True) is not False,
         )
 
     def to_dict(self) -> dict:
@@ -105,6 +107,8 @@ class WatchItem:
             v = getattr(self, k)
             if v is not None:
                 out[k] = v
+        if not self.price_check:
+            out["price_check"] = False
         return out
 
 

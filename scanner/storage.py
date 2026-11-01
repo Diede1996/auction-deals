@@ -32,6 +32,7 @@ WATCHLIST_HEADER = """\
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
+#   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
 """
 
 

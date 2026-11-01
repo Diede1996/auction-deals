@@ -21,6 +21,7 @@
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
+#   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
 
 settings:
   resale_factor: 0.75
@@ -67,11 +68,12 @@ items:
   keywords: [plant, kantoorplant, planten, pot]
   exclude: [kunstplant, kunstboom, kunstbloemen]
 - name: Phone
-  keywords: [iphone, galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
+  # "samsung galaxy", not "galaxy": Galaxy is also a furniture brand (kinderbed, commode)
+  keywords: [iphone, samsung galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
     smartphone, mobiele telefoon]
   exclude: [hoes, hoesje, hoesjes, case, cover, screenprotector, oplader, lader, kabel, houder, standaard, tab,
     tablet, watch, buds, book, lens, scherm, accu, batterij, dummy, onderdeel, onderdelen, defect, pixelpuzzel,
-    pixelart, ministeck]
+    pixelart, ministeck, armband, armbanden, sportarmband]
 - name: Wine
   # wine from closing restaurants and bars; prices are per bottle ("6 flessen", "6 x 75 cl").
   # Named wines first, so "Rioja" is what Marktplaats listings must say (they often leave out "wijn").
@@ -82,3 +84,30 @@ items:
     wijnklimaat, wijnklimaatkast, wijnemmer, emmer, karaf, decanteer, decanter, opener, kurkentrekker, wijnazijn, azijn,
     wijnvat, vat, vaten, tap, wijntap, dispenser, pomp, stopper, wijnkaart, menukaart, boek, schilderij, poster,
     leeg, lege, inventaris, meubel, tafel, stoel, kruk, bar, wijnbar, rack, display]
+# added 2026-11-01 (Diede): garden tools, cameras, audio/beamers, Dyson/robot vacuums and mixed lots
+- name: Garden tools
+  keywords: [stihl, husqvarna, karcher, kärcher, honda grasmaaier, honda maaier, honda motorzeis, robotmaaier,
+    gardena robotmaaier]
+  exclude: [onderdeel, onderdelen, zaagketting, kettingolie, olie, maaidraad, draad, maaimes, messen, filter,
+    hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v., defect]
+- name: Camera
+  keywords: [canon eos, canon camera, canon objectief, canon lens, sony alpha, sony a7, sony camera,
+    sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
+  exclude: [tas, cameratas, hoes, riem, statief, accu, batterij, lader, oplader, filter, dummy, onderdeel,
+    onderdelen, beveiligingscamera, dashcam, printer, kopieerapparaat, defect]
+- name: Audio / beamer
+  keywords: [sonos, bose, epson beamer, epson projector, benq beamer, benq projector, beamer, projector]
+  exclude: [projectiescherm, scherm, doek, projectiedoek, beugel, plafondbeugel, wandbeugel, houder, standaard,
+    beamerlamp, lamp, kabel, afstandsbediening, tas, overheadprojector, overhead, onderdeel, onderdelen, defect]
+- name: Dyson / robot vacuum
+  keywords: [dyson, robotstofzuiger, roomba, irobot, roborock, ecovacs]
+  exclude: [onderdeel, onderdelen, accu, batterij, filter, borstel, opzetstuk, hulpstuk, lader, oplader, houder,
+    wandhouder, standaard, defect]
+- name: Mixed lot
+  # no Marktplaats price (too many different things in one lot): shown so you can judge it yourself.
+  # Last in the list, so a lot that fits another item ("partij Makita") gets that item's price instead.
+  keywords: [partij gereedschap, restpartij, gemengde partij, partij elektronica, partij laptops, partij telefoons,
+    partij apparatuur, diverse gereedschap, divers gereedschap, diverse elektronica, doos gereedschap,
+    kist gereedschap]
+  exclude: [lege, leeg, onderdeel, onderdelen]
+  price_check: false

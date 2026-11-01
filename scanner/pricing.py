@@ -77,7 +77,7 @@ class PriceFinder:
 
     def for_lot(self, item: WatchItem, lot: Lot, lookup: bool = True) -> PriceEstimate | None:
         """lookup=False: only a saved price, no new Marktplaats search (lots too far away to collect)."""
-        if not self.enabled or item.market_price is not None:
+        if not self.enabled or item.market_price is not None or not item.price_check:
             return None
         plan = plan_for(item, lot)
         if not plan or not plan.rules:  # no model in the title: no reliable comparison possible
