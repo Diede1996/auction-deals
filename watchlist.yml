@@ -64,9 +64,6 @@ items:
   keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer]
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
     deo]
-- name: Plants / decor
-  keywords: [plant, kantoorplant, planten, pot]
-  exclude: [kunstplant, kunstboom, kunstbloemen]
 - name: Phone
   # "samsung galaxy", not "galaxy": Galaxy is also a furniture brand (kinderbed, commode)
   keywords: [iphone, samsung galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
