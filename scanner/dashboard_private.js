@@ -14,6 +14,7 @@
     { id: "marktplaats", label: "Marktplaats" },
     { id: "2dehands", label: "2dehands" },
     { id: "vinted", label: "Vinted" },
+    { id: "ebay", label: "eBay.de" },
     { id: "other", label: "Other" }
   ];
   var STATUS = { stock: "For sale", kept: "Kept for myself", sold: "Sold" };
