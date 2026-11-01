@@ -219,3 +219,18 @@ def defect(title: str, description: str = "", condition: str = "") -> str | None
 def defect_filter(config: dict) -> bool:
     """hide_defects in config.yml (default on)."""
     return (config.get("condition") or {}).get("hide_defects", True) is not False
+
+
+def repair_settings(config: dict) -> dict | None:
+    """condition.repair in config.yml: {brands, margin} when on, else None."""
+    cfg = (config.get("condition") or {}).get("repair") or {}
+    if not cfg or cfg.get("enabled", True) is False or not cfg.get("brands"):
+        return None
+    return {"brands": [normalize(b) for b in cfg["brands"] if normalize(b)],
+            "margin": float(cfg.get("margin", 1.0))}
+
+
+def repair_brand(title: str, brands: list[str]) -> str | None:
+    """The first brand of the repair list in the lot title ("Makita accuboormachine defect" -> "makita")."""
+    text = f" {normalize(title)} "
+    return next((b for b in brands if f" {b} " in text), None)

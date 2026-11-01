@@ -1052,6 +1052,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
     var meta = el("div", { "class": "meta" },
       el("span", { "class": "tag", text: lot.item }),
+      lot.repair ? el("span", { "class": "tag repair", title: "Has a defect; priced like a working one on Marktplaats, with a higher margin for the repair (config.yml condition.repair)" }, "🔧 " + lot.repair + (lot.repairOf ? " · " + lot.repairOf : "")) : null,
       lot.regular ? el("span", { "class": "tag regular", title: "Trial: from an ordinary auction, not a bankruptcy, closure, estate, Domeinen or IT auction" }, "🏷 regular auction") : null,
       lot.followed ? el("span", { "class": "tag heart", title: "You put a heart on it at Troostwijk: never hidden as too far" }, "❤️ you follow it") : null,
       el("span", { text: lot.siteName }),

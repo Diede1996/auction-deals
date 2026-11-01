@@ -49,17 +49,17 @@ items:
 - name: Power tools
   keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, bosch professional, bosch gsr,
     bosch gsb, bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
-  exclude: [koolborstel, koolborstels, onderdeel, onderdelen, reparatie, defect, diamantschijf, diamantschijven,
+  exclude: [koolborstel, koolborstels, onderdeel, onderdelen, diamantschijf, diamantschijven,
     zaagblad, zaagbladen, foudraal, t.b.v.]
 - name: Coffee machine
   keywords: [jura, delonghi, de longhi, sage barista, sage bambino, sage oracle, sage dual boiler, nespresso,
     siemens eq, melitta, la marzocco, lelit, rancilio, gaggia, espressomachine, koffiemachine, volautomaat]
   exclude: [cups, capsules, capsule, bonen, koffiebonen, filter, filters, ontkalker, ontkalkingsmiddel,
-    reinigingstabletten, onderdeel, onderdelen, defect, kopjes, espressokopjes, koffiekopjes, schotels,
+    reinigingstabletten, onderdeel, onderdelen, kopjes, espressokopjes, koffiekopjes, schotels,
     servies, mokken, waterfilter, waterfilters, waterpomp, t.b.v.]
 - name: Kitchen appliance
   keywords: [kitchenaid, thermomix, airfryer, smeg, vitamix, magimix]
-  exclude: [onderdeel, onderdelen, hulpstuk, accessoire, accessoires, opzetstuk, defect]
+  exclude: [onderdeel, onderdelen, hulpstuk, accessoire, accessoires, opzetstuk]
 - name: Suit / formalwear
   keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer]
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
@@ -89,20 +89,20 @@ items:
   keywords: [stihl, husqvarna, karcher, kärcher, honda grasmaaier, honda maaier, honda motorzeis, robotmaaier,
     gardena robotmaaier]
   exclude: [onderdeel, onderdelen, zaagketting, kettingolie, olie, maaidraad, draad, maaimes, messen, filter,
-    hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v., defect]
+    hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v.]
 - name: Camera
   keywords: [canon eos, canon camera, canon objectief, canon lens, sony alpha, sony a7, sony camera,
     sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
   exclude: [tas, cameratas, hoes, riem, statief, accu, batterij, lader, oplader, filter, dummy, onderdeel,
-    onderdelen, beveiligingscamera, dashcam, printer, kopieerapparaat, defect]
+    onderdelen, beveiligingscamera, dashcam, printer, kopieerapparaat]
 - name: Audio / beamer
   keywords: [sonos, bose, epson beamer, epson projector, benq beamer, benq projector, beamer, projector]
   exclude: [projectiescherm, scherm, doek, projectiedoek, beugel, plafondbeugel, wandbeugel, houder, standaard,
-    beamerlamp, lamp, kabel, afstandsbediening, tas, overheadprojector, overhead, onderdeel, onderdelen, defect]
+    beamerlamp, lamp, kabel, afstandsbediening, tas, overheadprojector, overhead, onderdeel, onderdelen]
 - name: Dyson / robot vacuum
   keywords: [dyson, robotstofzuiger, roomba, irobot, roborock, ecovacs]
   exclude: [onderdeel, onderdelen, accu, batterij, filter, borstel, opzetstuk, hulpstuk, lader, oplader, houder,
-    wandhouder, standaard, defect]
+    wandhouder, standaard]
 - name: Mixed lot
   # no Marktplaats price (too many different things in one lot): shown so you can judge it yourself.
   # Last in the list, so a lot that fits another item ("partij Makita") gets that item's price instead.

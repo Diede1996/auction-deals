@@ -51,6 +51,7 @@ class Lot:
     pickup_value: float | None = None  # expected sale value of those lots together, this one included
     transport: bool = False  # too far to drive: a transporter brings it, trip_cost is the transport estimate
     regular: bool = False  # from an auction that isn't a bankruptcy, closure, estate, Domeinen or IT one (all-auctions trial)
+    repair: str | None = None  # the defect of a lot kept for repair (condition.repair in config.yml), e.g. "defect"
     followed: bool = False  # you put a heart on it at Troostwijk (shown on the dashboard when followed_on_dashboard)
 
     @property

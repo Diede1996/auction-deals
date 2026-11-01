@@ -23,7 +23,7 @@ from .identify import brand_in, mac_plan, model_code, phone_plan, plan_for, quan
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .age import age_filter, age_skip, too_old
-from .condition import defect, defect_filter
+from .condition import defect, defect_filter, repair_brand, repair_settings
 from .matching import all_auctions_trial, auction_filter, match_lots, search_terms
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
@@ -33,6 +33,8 @@ from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
 from .telegram import Telegram, attr, esc
 from .util import AMS, fmt_eur, normalize, phrase_in
+
+REPAIR_LABEL = "Repair"  # dashboard category of lots kept for repair
 
 log = logging.getLogger("scanner")
 
@@ -484,7 +486,8 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         place = pickup_place(lot)
         trip = trips.get(place) if place else None
         lots.append({
-            "key": lot.key, "item": item.name, "title": lot.title, "url": lot.url,
+            "key": lot.key, "item": REPAIR_LABEL if lot.repair else item.name, "repair": lot.repair,
+            "repairOf": item.name if lot.repair else None, "title": lot.title, "url": lot.url,
             "site": lot.site, "siteName": SITE_NAMES.get(lot.site, lot.site), "auction": lot.auction_title,
             "image": lot.image, "location": lot.location,
             "pickup": lot.pickup, "pickupWhen": lot.pickup_when, "delivery": lot.delivery,
@@ -557,7 +560,7 @@ def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: 
             title = lot.title.replace("|", "/")[:70]
             closes = lot.closes_at.astimezone(AMS).strftime("%a %d %b %H:%M") if lot.closes_at else (closing_day(lot) or "?")
             market = fmt_eur(est.median) if est else (fmt_eur(item.market_price) if item.market_price else "–")
-            lines.append(f"| {'✅' if v.is_deal else ''} | {item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
+            lines.append(f"| {'✅' if v.is_deal else ''} | {('🔧 ' if lot.repair else '') + item.name} | [{title}]({lot.url}) ({SITE_NAMES.get(lot.site)}) | "
                          f"{fmt_eur(v.bid)} | {market} | {fmt_eur(v.max_bid) if v.max_bid is not None else '–'} | {closes} |")
     else:
         lines.append(f"Nothing on your watchlist is in a running {kinds} auction right now.")
@@ -664,13 +667,23 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             limit=int(det_cfg.get("max_pages_per_run", 80)))
         log.info("read %d lot descriptions", read)
     # 1d. lots with a defect ("Scherm beschadigd", "werkt niet", "voor onderdelen"): leave them out entirely
+    # Except lots of a brand on the repair list (condition.repair, Diede 2026-11-01): those stay, labeled for
+    # repair, with a higher margin; the Marktplaats price is still that of working ones (damaged listings are left out)
     defect_lots = 0
     if defect_filter(config):
-        kept = [(item, lot) for item, lot in matched
-                if lot.key in fav_keys or not defect(lot.title, lot.description, lot.condition)]
+        repair = repair_settings(config)
+        kept = []
+        for item, lot in matched:
+            found = lot.key not in fav_keys and defect(lot.title, lot.description, lot.condition)
+            if not found:
+                kept.append((item, lot))
+            elif repair and repair_brand(lot.title, repair["brands"]):
+                lot.repair = found
+                kept.append((dataclasses.replace(item, min_margin=repair["margin"]), lot))
         defect_lots = len(matched) - len(kept)
         matched = kept
-        log.info("%d lots with a defect left out", defect_lots)
+        log.info("%d lots with a defect left out, %d kept for repair", defect_lots,
+                 sum(1 for _, lot in matched if lot.repair))
     # 1e. things from before 2020 resell poorly: leave them out entirely (Apple, laptops and phones by their
     # model; everything else when the lot states its year)
     min_year, skip = age_filter(config), age_skip(config)

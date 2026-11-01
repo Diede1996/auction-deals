@@ -228,6 +228,15 @@ descriptions:
 # "niet getest" don't count. Set hide_defects: false to see them again.
 condition:
   hide_defects: true
+  # ...except lots of these brands (Diede, 2026-11-01): shown in the dashboard category "Repair", priced like
+  # a working one on Marktplaats but with a higher margin for the repair risk and parts.
+  # margin 1.0 = 100%: you pay at most half of what it sells for when it works (75% of the Marktplaats median).
+  repair:
+    enabled: true
+    margin: 1.0
+    brands: [makita, dewalt, milwaukee, hilti, festool, metabo, bosch, stihl, husqvarna, karcher, honda, dyson,
+      roborock, irobot, roomba, jura, delonghi, sage, siemens, melitta, gaggia, lelit, rancilio, la marzocco,
+      kitchenaid, thermomix, smeg, vitamix, magimix, sonos, bose, canon, sony, nikon, fujifilm, dji, gopro]
 
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
