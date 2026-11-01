@@ -89,7 +89,8 @@ items:
   keywords: [stihl, husqvarna, karcher, kärcher, honda grasmaaier, honda maaier, honda motorzeis, robotmaaier,
     gardena robotmaaier]
   exclude: [onderdeel, onderdelen, zaagketting, kettingolie, olie, maaidraad, draad, maaimes, messen, filter,
-    hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v.]
+    hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v., reachtruck, heftruck, deurkruk, kruk, rozet, raab,
+    riem, v-riem, akkubox, acculader, lader, stroomgenerator, generator]
 - name: Camera
   keywords: [canon eos, canon camera, canon objectief, canon lens, sony alpha, sony a7, sony camera,
     sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
@@ -109,5 +110,6 @@ items:
   keywords: [partij gereedschap, restpartij, gemengde partij, partij elektronica, partij laptops, partij telefoons,
     partij apparatuur, diverse gereedschap, divers gereedschap, diverse elektronica, doos gereedschap,
     kist gereedschap]
-  exclude: [lege, leeg, onderdeel, onderdelen]
+  exclude: [lege, leeg, onderdeel, onderdelen, gereedschapshouders, houders, gereedschapstassen, tassen,
+    schoudertassen, gereedschapszakjes, zakjes, schort, voetbqschort]
   price_check: false
