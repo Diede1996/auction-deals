@@ -498,25 +498,43 @@
     return card;
   }
   function addListingForm(it) {
+    /* tick every site you placed the ad on: one listing per site, same price and day */
     var used = listings(it).map(function (l) { return l.platform; });
-    var sel = el("select", { "aria-label": "Site" });
-    PLATFORMS.forEach(function (p) { sel.append(el("option", { value: p.id, text: p.label })); });
-    var free = PLATFORMS.filter(function (p) { return used.indexOf(p.id) < 0; })[0];
-    sel.value = free ? free.id : "other";
+    var free = PLATFORMS.filter(function (p) { return used.indexOf(p.id) < 0; });
+    var first = (free[0] || PLATFORMS[PLATFORMS.length - 1]).id;
+    var boxes = PLATFORMS.map(function (p) {
+      var box = el("input", { type: "checkbox", value: p.id });
+      box.checked = p.id === first;
+      return { id: p.id, box: box, label: el("label", { "class": "psite" + (used.indexOf(p.id) >= 0 ? " used" : ""),
+        title: used.indexOf(p.id) >= 0 ? "Already online there" : "" }, box, " " + p.label) };
+    });
+    var sites = el("span", { "class": "psites", role: "group", "aria-label": "Sites" }, boxes.map(function (b) { return b.label; }));
     var price = el("input", { type: "text", inputmode: "decimal", placeholder: "Asking price €", "aria-label": "Asking price", value: it.ad && it.ad.price != null ? String(it.ad.price) : "" });
     var since = el("input", { type: "date", value: today(), "aria-label": "Online since" });
     var url = el("input", { type: "url", placeholder: "Link to the ad (optional)", "aria-label": "Link to the ad" });
-    var form = el("form", { "class": "padd" }, el("span", { "class": "small strong", text: "Add an ad:" }), sel, price, since, url,
-      el("button", { type: "submit", "class": "pbtn primary", text: "Add" }));
+    var add = el("button", { type: "submit", "class": "pbtn primary", text: "Add" });
+    function picked() { return boxes.filter(function (b) { return b.box.checked; }).map(function (b) { return b.id; }); }
+    function sync() {  /* one link belongs to one ad: with several sites ticked there's no link field */
+      var n = picked().length;
+      url.disabled = n > 1; url.placeholder = n > 1 ? "Links: one per site, so none here" : "Link to the ad (optional)";
+      if (n > 1) url.value = "";
+      add.disabled = !n; add.textContent = n > 1 ? "Add " + n + " ads" : "Add";
+    }
+    boxes.forEach(function (b) { b.box.addEventListener("change", sync); });
+    sync();
+    var form = el("form", { "class": "padd" }, el("span", { "class": "small strong", text: "Add an ad on:" }), sites, price, since, url, add);
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var entry = { id: newId(), platform: sel.value, since: validDay(since.value) ? since.value : today(), price: amount(price.value),
-                    url: safeUrl(url.value.trim()) || null };
-      change("Online: " + (it.name || it.id) + " on " + platformLabel(entry.platform), function (data) {
+      var ids = picked(); if (!ids.length) return;
+      var day = validDay(since.value) ? since.value : today(), cost = amount(price.value);
+      var entries = ids.map(function (id) {
+        return { id: newId(), platform: id, since: day, price: cost, url: ids.length === 1 ? safeUrl(url.value.trim()) || null : null };
+      });
+      change("Online: " + (it.name || it.id) + " on " + ids.map(platformLabel).join(", "), function (data) {
         var x = find(data, it.id); if (!x) return false;
-        x.listings = (x.listings || []).concat([entry]);
-        if (entry.price != null) { x.ad = x.ad || {}; x.ad.price = entry.price; }
-      }).then(function () { toast("Ad added."); }, function () {});
+        x.listings = (x.listings || []).concat(entries);
+        if (cost != null) { x.ad = x.ad || {}; x.ad.price = cost; }
+      }).then(function () { toast(entries.length > 1 ? entries.length + " ads added." : "Ad added."); }, function () {});
     });
     return form;
   }

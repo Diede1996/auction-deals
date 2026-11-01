@@ -331,6 +331,12 @@ a.pbtn { display: inline-flex; align-items: center; text-decoration: none; }
 .padd select, .padd input { height: 34px; padding: 0 8px; border-radius: 8px; border: 1px solid var(--border-strong); background: var(--surface); font-size: 13.5px; }
 .padd input[type=text] { width: 120px; }
 .padd input[type=url] { flex: 1 1 180px; min-width: 0; }
+.padd .psites { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.padd .psite { display: inline-flex; align-items: center; gap: 4px; height: 34px; padding: 0 10px; border: 1px solid var(--border-strong); border-radius: 8px; font-size: 13.5px; cursor: pointer; }
+.padd .psite:has(input:checked) { border-color: var(--accent); }
+.padd .psite.used { color: var(--text-3); }
+.padd input[type=checkbox] { height: auto; margin: 0; }
+.padd input[type=url]:disabled { opacity: .6; }
 .pad { margin: 12px 0 0 78px; padding: 12px; border-radius: 10px; background: var(--surface-2); }
 .pad-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
 .pad-title { margin-top: 8px; font-weight: 600; }
