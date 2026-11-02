@@ -37,15 +37,26 @@ items:
   exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard,
     kabel, baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
+  min_margin: 0.15  # phones, tablets, laptops, desktops, headphones: 15% (Diede, 2026-11-02)
   keywords: [macbook]
   exclude: [hoes, sleeve, tas, oplader, lader, adapter]
 - name: iPad
+  min_margin: 0.15
   keywords: [ipad]
   exclude: [hoes, hoesje, case, cover, houder, standaard, screenprotector]
 - name: Laptop
+  min_margin: 0.15
   keywords: [thinkpad, elitebook, probook, zbook, latitude, surface pro, surface laptop, laptop, notebook]
   exclude: [tas, laptoptas, hoes, laptophoes, sleeve, lader, oplader, laptoplader, adapter, dock, docking,
     dockingstation, standaard, laptopstandaard, koeler, laptopkoeler, slot, kabel, moleskine, gelinieerd]
+- name: Desktop
+  # added 2026-11-02 (Diede); a desktop without a model gets no price ("Model unknown")
+  min_margin: 0.15
+  keywords: [optiplex, elitedesk, prodesk, z2 mini, thinkcentre, thinkstation, mac mini, mac studio, imac,
+    desktop pc, desktop computer, desktopcomputer, gaming pc, workstation, mini pc]
+  exclude: [tas, hoes, kast, pc-kast, behuizing, tafel, computertafel, bureau, stoel, muis, toetsenbord, kabel,
+    voeding, ventilator, koeler, onderdeel, onderdelen, standaard, houder, cpu-houder, stofkap, software,
+    licentie, game, games, tafelblad, werkplek, t.b.v.]
 - name: Power tools
   keywords: [makita, dewalt, milwaukee, hilti, festool, metabo, bosch professional, bosch gsr,
     bosch gsb, bosch gbh, bosch gws, bosch gks, bosch gst, bosch gll, bosch gcm]
@@ -65,6 +76,7 @@ items:
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
     deo]
 - name: Phone
+  min_margin: 0.15
   # "samsung galaxy", not "galaxy": Galaxy is also a furniture brand (kinderbed, commode)
   keywords: [iphone, samsung galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
     smartphone, mobiele telefoon]
@@ -93,6 +105,14 @@ items:
     sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
   exclude: [tas, cameratas, hoes, riem, statief, accu, batterij, lader, oplader, filter, dummy, onderdeel,
     onderdelen, beveiligingscamera, dashcam, printer, kopieerapparaat]
+# expensive headphones before Audio / beamer, so Bose and Sony headphones get 15% (Diede, 2026-11-02)
+- name: Headphones
+  min_margin: 0.15
+  keywords: [sony wh-1000xm, sony wh1000xm, sony wf-1000xm, bose quietcomfort, bose qc, bose 700, bose noise cancelling,
+    airpods max, airpods pro, sennheiser momentum, sennheiser hd, beyerdynamic dt, beoplay h, bowers wilkins px,
+    beats studio]
+  exclude: [hoes, case, etui, oorkussens, kussens, kabel, standaard, houder, adapter, lader, oplader,
+    onderdeel, onderdelen, gehoorbescherming, gehoorbeschermer, speaker, luidspreker, soundbar, auto, autospeaker]
 - name: Audio / beamer
   keywords: [sonos, bose, epson beamer, epson projector, benq beamer, benq projector, beamer, projector]
   exclude: [projectiescherm, scherm, doek, projectiedoek, beugel, plafondbeugel, wandbeugel, houder, standaard,

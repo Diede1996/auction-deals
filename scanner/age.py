@@ -22,7 +22,8 @@ _PHONE_RE = re.compile(r"(?<![a-z0-9])(iphone|smartphones?|telefoons?|gsm|mobiel
                        r"|huawei|xiaomi|redmi|oppo|motorola|nokia|fairphone)(?![a-z0-9])")
 _LAPTOP_RE = re.compile(r"(?<![a-z0-9])(laptops?|notebooks?|ultrabook|chromebook|thinkpad|thinkbook|ideapad|yoga"
                         r"|elitebook|probook|zbook|latitude|xps|inspiron|vostro|precision|surface|vivobook|zenbook"
-                        r"|expertbook|travelmate|aspire|swift|spectre|envy|pavilion|macbook)(?![a-z0-9])")
+                        r"|expertbook|travelmate|aspire|swift|spectre|envy|pavilion|macbook"
+                        r"|optiplex|elitedesk|prodesk|thinkcentre|thinkstation|desktop)(?![a-z0-9])")
 
 
 def device_kind(title: str, item_name: str = "") -> str | None:
@@ -32,7 +33,7 @@ def device_kind(title: str, item_name: str = "") -> str | None:
         return "apple"
     if _PHONE_RE.search(t):
         return "phone"
-    if _LAPTOP_RE.search(t) or re.search(r"laptop|notebook", normalize(item_name)):
+    if _LAPTOP_RE.search(t) or re.search(r"laptop|notebook|desktop", normalize(item_name)):
         return "laptop"
     return None
 
