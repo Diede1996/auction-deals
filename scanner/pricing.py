@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 # Bump when what counts as a comparable listing changes: saved prices from older rules are checked again
 # (and still shown as a fallback until they are).
-RULES_VERSION = 5
+RULES_VERSION = 6
 
 
 def result_kind(plan: SearchPlan, rule_groups: list) -> str:

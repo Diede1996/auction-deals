@@ -260,3 +260,16 @@ def test_driving_costs_and_quantity_in_the_max_bid():
     # two consoles in one lot: resale 2 x 425 = 850
     two = evaluate(ps5, Lot("pjb", "2", "2 x PlayStation 5 slim", "u", 200.0, None), fees, Settings(min_margin=0.30), est, 2)
     assert two.resale == pytest.approx(850) and two.max_bid == 442
+
+
+def test_placeholder_price_is_not_a_price():
+    from scanner.marktplaats import summarize
+    est = summarize([1, 145, 150, 150, 160, 170], "q", 4)
+    assert 1 not in est.prices and est.median == 150
+
+
+def test_price_per_piece_written_with_slash():
+    from scanner.marktplaats import _EACH
+    from scanner.identify import normalize
+    assert _EACH.search(normalize("Sonos One Gen2 // 2 stuks // € 150/stuk"))
+    assert not _EACH.search(normalize("Sonos One Gen2 2 stuks"))

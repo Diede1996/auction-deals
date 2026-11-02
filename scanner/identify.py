@@ -649,6 +649,11 @@ def _cpu_skip(tokens: list[str]) -> set[int]:
 
 _PLATFORMS = {"m12", "m18", "m28"}
 # Versions of one model that sell for different prices: "L10s Ultra" is not an "L10s Pro Ultra"
+# a brand's other products: "Sonos One" is not a "Sonos Play:1", a "One SL" or a "2x One + Sub" bundle
+_PRODUCT_LINES = {
+    "sonos": ("one", "sl", "play", "sub", "beam", "arc", "five", "era", "move", "roam", "ray", "port", "amp",
+              "connect", "playbar", "playbase", "symfonisk", "ace"),
+}
 _VARIANTS = ("pro", "ultra", "plus", "max", "mini", "air", "omni", "heat", "complete", "lite", "slim", "combo")  # Milwaukee: "M18" alone is every tool, battery and case of the 18 V range
 
 
@@ -705,6 +710,9 @@ def quantity(title: str) -> int:
     m = re.match(r"(?:ca |circa )?(\d{1,4}) ?x\b", t) or re.match(r"(?:ca |circa )?(\d{1,4}) (?:stuks|st|stk)\b", t)
     if m:
         return max(1, int(m.group(1)))
+    m = re.match(r"(\d{1,2}) ([a-z]+)\b", t)
+    if m and m.group(2) in _BRANDS and int(m.group(1)) > 1:
+        return int(m.group(1))  # "2 Sonos One Gen 2 speakers"
     first = t.split(" ", 1)[0] if t else ""
     if first in _NUM_WORDS:
         return _NUM_WORDS[first]
@@ -769,8 +777,13 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
     if plan:
         plan = with_options(plan, lot, item)
         parts_ok, new_ok = is_part_listing(lot.title), says_new(normalize(lot.title))
+        toks = normalize(lot.title).split()
+        others = tuple(w for b, words in _PRODUCT_LINES.items() if b in toks for w in words if w not in toks
+                       and not (w == "one" and "play" in toks))  # "Play One" is the Play:1
         for rule in plan.rules:
             rule.parts_ok, rule.new_ok = parts_ok, new_ok
+            if others:  # "Sonos One": no "Play One", "One SL" or "2x One + Sub" bundle
+                rule.without = tuple(dict.fromkeys(tuple(rule.without) + others))
     return plan
 
 
@@ -977,7 +990,7 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
         rules = ([Rule(groups + [(v,) for v in lot_variants], model=squashed, label=f"{label} {' '.join(lot_variants)}")]
                  if lot_variants else []) + \
             [Rule(groups, model=squashed, label=label,
-                  without=tuple(v for v in _VARIANTS if v not in lot_variants) if lot_variants else ())]
+                  without=(tuple(v for v in _VARIANTS if v not in lot_variants) if lot_variants else ()))]
         return SearchPlan("exact", searches, rules,
                           model=written.upper(), brand=brand,
                           note=(f"exact model {(brand or '').title()} {written.upper()}".replace("  ", " ").strip()

@@ -433,3 +433,19 @@ def test_model_in_the_title_wins_over_a_code_in_the_description():
     p = plan_for(WatchItem(name="Dyson", keywords=["dyson"]), lot)
     assert (p.model, p.searches) == ("V8", ["dyson v8"])  # not "dyson aw 60", which found V15s and V12s
     assert not p.rules[-1].matches(normalize("Dyson V15 Detect")) and not p.rules[-1].matches(normalize("Dyson V12 Slim"))
+
+
+def test_sonos_other_products_and_bundles_left_out():
+    from scanner.identify import plan_for
+    from scanner.models import Lot, WatchItem
+    plan = plan_for(WatchItem(name="Audio", keywords=["sonos"]), Lot("x", "1", "Sonos One Gen 2 Slimme speaker S18", "u", 1, None))
+    rule = plan.rules[-1]
+    assert rule.matches(normalize("Sonos One (Gen 2) - Zwart"))
+    for title in ("Sonos play one gen 2", "2x Sonos One SL Gen 2", "2x Sonos One + Muurbeugels | Sub gen 2 Zwart"):
+        assert not rule.matches(normalize(title)), title
+
+
+def test_count_before_brand():
+    assert quantity("2 Sonos One Gen 2 speakers, 1 met originele doos") == 2
+    assert quantity("18 Makita accu") == 18
+    assert quantity("2 Sonos") == 2

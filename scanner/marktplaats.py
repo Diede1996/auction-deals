@@ -36,7 +36,7 @@ ALWAYS_EXCLUDE = ["gezocht", "gevraagd", "zoek", "defect", "kapot", "onderdelen"
                   "beschadigd", "beschadigde", "beschadiging", "schade", "gebarsten", "barst", "barsten",
                   "gebroken", "kapotte", "defecte", "broken", "cracked", "for parts", "werkt niet", "niet werkend"]
 # "€ 50 per stuk" for a photo of four: the price is for one
-_EACH = re.compile(r"(?<![a-z0-9])(?:per stuk|per stuks|p st|p stuk|pst|per st|stuksprijs|prijs per|per item|each|ps)"
+_EACH = re.compile(r"(?<![a-z0-9])(?:\d+ stuk(?!s)|per stuk|per stuks|p st|p stuk|pst|per st|stuksprijs|prijs per|per item|each|ps)"
                    r"(?![a-z0-9])")
 # "zonder accu", "excl. lader": what a listing does NOT include says nothing about what it is
 _WITHOUT = re.compile(r"(?<![a-z0-9])(?:zonder|excl|exclusief|geen|without|excluding)\s+[a-z0-9]+")
@@ -114,6 +114,12 @@ def summarize(found: list, query: str, min_count: int = 4) -> PriceEstimate | No
     items = [x if isinstance(x, dict) else {"price": float(x)} for x in found]
     if len(items) < min_count:
         return None
+    # "€ 1" or "€ 5" for a whole speaker is a placeholder ("bieden"), not a price: below a quarter of the median
+    floor = statistics.median(x["price"] for x in items) / 4
+    placeholders = [x["price"] for x in items if x["price"] < floor]
+    items = [x for x in items if x["price"] >= floor]
+    if len(items) < min_count:
+        return None
     prices = sorted(x["price"] for x in items)
     q1, _, q3 = statistics.quantiles(prices, n=4)
     iqr = q3 - q1
@@ -123,7 +129,7 @@ def summarize(found: list, query: str, min_count: int = 4) -> PriceEstimate | No
         kept, lo_fence, hi_fence = prices, float("-inf"), float("inf")
     if len(kept) < min_count:
         return None
-    outliers = [p for p in prices if not lo_fence <= p <= hi_fence]
+    outliers = sorted(placeholders + [p for p in prices if not lo_fence <= p <= hi_fence])
     lo, _, hi = statistics.quantiles(kept, n=4)
     shown = sorted((x for x in items if lo_fence <= x["price"] <= hi_fence and x.get("title")),
                    key=lambda x: x["price"])[:MAX_LISTINGS]
