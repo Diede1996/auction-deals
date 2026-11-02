@@ -1,6 +1,6 @@
 # Latest scan
 
-_Monday 02 November 2026, 08:25 (Amsterdam time)_
+_Monday 02 November 2026, 13:20 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -9,21 +9,21 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 | ProVeiling | ✅ 4099 lots |
 | HNVI | ✅ 843 lots |
 | Plaats Je Bod | ✅ 73 lots |
-| Onlineveilingmeester | ✅ 2679 lots |
+| Onlineveilingmeester | ✅ 2678 lots |
 | Veilingwinnaar | ✅ 46 lots |
 | Inventarisveilingen | ✅ 122 lots |
 | Nedveiling | ✅ 1687 lots |
-| Openbare Verkopen (BE) | ✅ 5266 lots |
+| Openbare Verkopen (BE) | ✅ 5267 lots |
 | Vlavem (BE) | ✅ 2980 lots |
 | BellAuction (BE) | ✅ 1009 lots |
-| Troostwijk | ✅ 270 lots |
+| Troostwijk | ✅ 288 lots |
 | Marktplaats prices | ✅ 150 price lookups |
 
 ## Matching lots (575)
 
 | | Item | Lot | Next bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
-|  | Phone | [Apple Iphone 14 (128GB) Mobiele telefoon](https://www.troostwijkauctions.com/nl/l/A1-50647-237) (Troostwijk) | €0 | €300 | €106 | Mon 02 Nov 10:25 |
+|  | Troostwijk favourite | [Brabantia - Prullenbak](https://www.troostwijkauctions.com/nl/l/A1-51126-93) (Troostwijk) | €0 | €41 | €0 | Mon 02 Nov 14:35 |
 |  | Kitchen appliance | [Magimix Power blender 4 white](https://www.troostwijkauctions.com/nl/l/A1-50925-519) (Troostwijk) | €0 | €142 | €39 | Mon 02 Nov 19:26 |
 |  | Kitchen appliance | [Magimix Blender power 4 zwart + blendcups bundle](https://www.troostwijkauctions.com/nl/l/A1-50925-516) (Troostwijk) | €0 | €65 | €0 | Mon 02 Nov 19:26 |
 |  | Kitchen appliance | [Magimix Le micro satin steel](https://www.troostwijkauctions.com/nl/l/A1-50925-520) (Troostwijk) | €0 | €28 | €0 | Mon 02 Nov 19:26 |
@@ -42,9 +42,9 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Audio / beamer | [SONOS Netwerk luidspreker PLAY:1](https://www.proveiling.nl/SONOS-Netwerk-luidspreker-PLAY1/3290370/detail) (ProVeiling) | €40 | €127 | €31 | Mon 02 Nov 20:00 |
 |  | Audio / beamer | [SONOS Streamingspeaker PLAY:1](https://www.proveiling.nl/SONOS-Streamingspeaker-PLAY1/3290365/detail) (ProVeiling) | €35 | – | – | Mon 02 Nov 20:00 |
 |  | Audio / beamer | [SONOS Multiroom luidspreker PLAY:1](https://www.proveiling.nl/SONOS-Multiroom-luidspreker-PLAY1/3290369/detail) (ProVeiling) | €35 | €120 | €27 | Mon 02 Nov 20:00 |
+|  | Audio / beamer | [Sonos Netwerk luidspreker PLAY:1](https://www.proveiling.nl/Sonos-Netwerk-luidspreker-PLAY1/3290414/detail) (ProVeiling) | €35 | €125 | €30 | Mon 02 Nov 20:00 |
 |  | Audio / beamer | [SONOS Multiroom luidspreker PLAY:1](https://www.proveiling.nl/SONOS-Multiroom-luidspreker-PLAY1/3290368/detail) (ProVeiling) | €30 | €120 | €27 | Mon 02 Nov 20:00 |
-| ✅ | Audio / beamer | [Sonos Netwerk luidspreker PLAY:1](https://www.proveiling.nl/Sonos-Netwerk-luidspreker-PLAY1/3290414/detail) (ProVeiling) | €30 | €125 | €30 | Mon 02 Nov 20:00 |
-|  | Audio / beamer | [SONOS Netwerkbridge BOOST](https://www.proveiling.nl/SONOS-Netwerkbridge-BOOST/3292740/detail) (ProVeiling) | €10 | – | – | Mon 02 Nov 20:00 |
+|  | Audio / beamer | [SONOS Netwerkbridge BOOST](https://www.proveiling.nl/SONOS-Netwerkbridge-BOOST/3292740/detail) (ProVeiling) | €13 | – | – | Mon 02 Nov 20:00 |
 |  | Power tools | [Bouwradio FM/AM Bluetooth, Makita, DMR108N](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/20) (Onlineveilingmeester) | €61 | – | – | Mon 02 Nov 20:04 |
 |  | Power tools | [Accugereedschapsset, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/34) (Onlineveilingmeester) | €91 | – | – | Mon 02 Nov 20:08 |
 |  | Power tools | [Accugereedschapsset, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/35) (Onlineveilingmeester) | €141 | – | – | Mon 02 Nov 20:08 |
@@ -54,13 +54,13 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Accugereedschapsset, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/39) (Onlineveilingmeester) | €121 | – | – | Mon 02 Nov 20:09 |
 |  | Power tools | [Accugereedschapsset, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/40) (Onlineveilingmeester) | €66 | – | – | Mon 02 Nov 20:09 |
 |  | Power tools | [Accugereedschapsset, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/41) (Onlineveilingmeester) | €66 | – | – | Mon 02 Nov 20:10 |
-|  | Power tools | [5x Stofzuigadapter met opvang, Makita, DX06](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/42) (Onlineveilingmeester) | €26 | €65 | €0 | Mon 02 Nov 20:10 |
-|  | Power tools | [2x Accu haakse slijper, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/43) (Onlineveilingmeester) | €131 | €130 | €47 | Mon 02 Nov 20:10 |
+| ✅ | Power tools | [5x Stofzuigadapter met opvang, Makita, DX06](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/42) (Onlineveilingmeester) | €31 | €65 | €64 | Mon 02 Nov 20:10 |
+|  | Power tools | [2x Accu haakse slijper, Makita](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/43) (Onlineveilingmeester) | €131 | €130 | €82 | Mon 02 Nov 20:10 |
 |  | Power tools | [4x Boorhamer, Makita, HR2501](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/44) (Onlineveilingmeester) | €46 | – | – | Mon 02 Nov 20:10 |
-|  | Power tools | [Ca. 17x Li-ion schuifaccu, Makita, BL1860B 18V](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/55) (Onlineveilingmeester) | €371 | €50 | €0 | Mon 02 Nov 20:13 |
+|  | Power tools | [Ca. 17x Li-ion schuifaccu, Makita, BL1860B 18V](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/55) (Onlineveilingmeester) | €371 | €50 | €130 | Mon 02 Nov 20:13 |
 |  | Power tools | [Hybride stofzuiger, Makita, DVC860L](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/56) (Onlineveilingmeester) | €121 | – | – | Mon 02 Nov 20:13 |
 |  | Power tools | [Accu-multitool, Makita, TM30D, incl. accu's en acculader](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/57) (Onlineveilingmeester) | €76 | €128 | €12 | Mon 02 Nov 20:14 |
-| ✅ | Power tools | [5x Stofzuigadapter met opvang, Makita, DX07](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/58) (Onlineveilingmeester) | €24 | €200 | €333 | Mon 02 Nov 20:14 |
+| ✅ | Power tools | [5x Stofzuigadapter met opvang, Makita, DX07](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/58) (Onlineveilingmeester) | €26 | €200 | €422 | Mon 02 Nov 20:14 |
 |  | Power tools | [Accu-combihamer en reciprozaag, Makita, incl. accu's](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/59) (Onlineveilingmeester) | €141 | €230 | €67 | Mon 02 Nov 20:14 |
 |  | Power tools | [Accu haakse slijper en reciprozaag, Makita, incl. accu's en koffer](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/60) (Onlineveilingmeester) | €151 | €60 | €0 | Mon 02 Nov 20:14 |
 |  | Power tools | [Professionele nat- en droogzuiger, Makita, VC4210L](https://onlineveilingmeester.nl/nl/veilingen/9554/kavels/105) (Onlineveilingmeester) | €201 | – | – | Mon 02 Nov 20:25 |
@@ -97,12 +97,12 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Accu haakse slijper  MAKITA DGA504  met accu en kunststoffen koffer](https://www.hnvi.nl/veiling-kavel/accu-haakse-slijper-makita-dga504-met-accu-en-kunststoffen-koffer/197389) (HNVI) | €45 | €130 | €32 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu schroefboormachine MAKITA DDF481ZJ met accu en kunststoffen koffe](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf481zj-met-accu-en-kunststoffen-koffer-842663/197390) (HNVI) | €45 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  haakse slijper MAKITA DGA504 met accu](https://www.hnvi.nl/veiling-kavel/accu-haakse-slijper-makita-dga504-met-accu/197393) (HNVI) | €45 | €130 | €32 | Thu 05 Nov 19:30 |
-|  | Power tools | [Accu slagschroevendraaier  MAKITA  DDT153 met accu](https://www.hnvi.nl/veiling-kavel/accu-slagschroevendraaier-makita-ddt153-met-accu/197395) (HNVI) | €45 | – | – | Thu 05 Nov 19:30 |
+|  | Power tools | [Accu slagschroevendraaier  MAKITA  DDT153 met accu](https://www.hnvi.nl/veiling-kavel/accu-slagschroevendraaier-makita-ddt153-met-accu/197395) (HNVI) | €50 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  schroefboormachine MAKITA DDF489  met accu](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf489-met-accu/197396) (HNVI) | €40 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  schroefboormachine MAKITA DDF489  met accu](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf489-met-accu-343375/197397) (HNVI) | €35 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  schroefboormachine MAKITA DDF481  met accu](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf481-met-accu/197398) (HNVI) | €35 | €55 | €0 | Thu 05 Nov 19:30 |
 | ✅ | Power tools | [Accu boorhamer MAKITA DHR242 met HEPA DX01 afzuiger met accu](https://www.hnvi.nl/veiling-kavel/accu-boorhamer-makita-dhr242-met-hepa-dx01-afzuiger-met-accu/197399) (HNVI) | €60 | €210 | €74 | Thu 05 Nov 19:30 |
-| ✅ | Power tools | [Accu boorhamer MAKITA DHR242 met HEPA DX01 afzuiger met accu](https://www.hnvi.nl/veiling-kavel/accu-boorhamer-makita-dhr242-met-hepa-dx01-afzuiger-met-accu-980853/197400) (HNVI) | €40 | €210 | €74 | Thu 05 Nov 19:30 |
+| ✅ | Power tools | [Accu boorhamer MAKITA DHR242 met HEPA DX01 afzuiger met accu](https://www.hnvi.nl/veiling-kavel/accu-boorhamer-makita-dhr242-met-hepa-dx01-afzuiger-met-accu-980853/197400) (HNVI) | €45 | €210 | €74 | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu slagschroevendraaier  MAKITA  DDT153 met accu](https://www.hnvi.nl/veiling-kavel/accu-slagschroevendraaier-makita-ddt153-met-accu-615587/197401) (HNVI) | €40 | – | – | Thu 05 Nov 19:30 |
 |  | Power tools | [Accu  schroefboormachine MAKITA DDF486  met accu](https://www.hnvi.nl/veiling-kavel/accu-schroefboormachine-makita-ddf486-met-accu/197402) (HNVI) | €35 | €118 | €26 | Thu 05 Nov 19:30 |
 |  | Power tools | [Lijnlaser DEWALT DW088CG in koffer](https://www.hnvi.nl/veiling-kavel/lijnlaser-dewalt-dw088cg-in-koffer-132168/197404) (HNVI) | €30 | €110 | €22 | Thu 05 Nov 19:30 |
@@ -124,11 +124,11 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Lijnlaser DEWALT TW088 met muurbeugel in kunststoffen koffer.](https://www.hnvi.nl/veiling-kavel/lijnlaser-dewalt-tw088-met-muurbeugel-in-kunststoffen-koffer/197679) (HNVI) | €40 | – | – | Thu 05 Nov 20:00 |
 |  | Power tools | [Lijnlaser DEWALT TW88 met muurbeugel in kunststoffen koffer.](https://www.hnvi.nl/veiling-kavel/lijnlaser-dewalt-tw88-met-muurbeugel-in-kunststoffen-koffer/197680) (HNVI) | €40 | – | – | Thu 05 Nov 20:00 |
 | ✅ | Monitor | [PC opstelling HP Z2 Tower G9, i9, 13900K, RAM 32GB, Grafische kaart 6G](https://www.hnvi.nl/veiling-kavel/pc-opstelling-hp-z2-tower-g9-i9-13900k-ram-32gb-grafische-kaart-6gb-1tb-opslag-v-v-twee-24-inch-monitoren-toetsenbord-muis-en-speakers/197707) (HNVI) | €550 | €1.574 | €656 | Thu 05 Nov 20:30 |
-|  | Monitor | [Twee monitoren 24 inch ACER, speakers en toetsenbord met muis.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-24-inch-acer-speakers-en-toetsenbord-met-muis/197711) (HNVI) | €30 | €25 | €0 | Thu 05 Nov 20:30 |
-|  | Monitor | [Twee monitoren 24 inch ACER, speakers en toetsenbord met muis.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-24-inch-acer-speakers-en-toetsenbord-met-muis-633295/197736) (HNVI) | €30 | €25 | €0 | Thu 05 Nov 20:30 |
-|  | Monitor | [Twee monitoren HP 24 inch.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-hp-24-inch/197741) (HNVI) | €30 | €82 | €15 | Thu 05 Nov 20:30 |
+|  | Monitor | [Twee monitoren 24 inch ACER, speakers en toetsenbord met muis.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-24-inch-acer-speakers-en-toetsenbord-met-muis/197711) (HNVI) | €30 | €22 | €0 | Thu 05 Nov 20:30 |
+|  | Monitor | [Twee monitoren 24 inch ACER, speakers en toetsenbord met muis.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-24-inch-acer-speakers-en-toetsenbord-met-muis-633295/197736) (HNVI) | €30 | €22 | €0 | Thu 05 Nov 20:30 |
+| ✅ | Monitor | [Twee monitoren HP 24 inch.](https://www.hnvi.nl/veiling-kavel/twee-monitoren-hp-24-inch/197741) (HNVI) | €30 | €90 | €58 | Thu 05 Nov 20:30 |
 |  | Audio / beamer | [Draadloos muzieksysteem SONOS ZonePlay S5](https://www.hnvi.nl/veiling-kavel/draadloos-muzieksysteem-sonos-zoneplay-s5/197766) (HNVI) | €55 | €80 | €6 | Thu 05 Nov 20:30 |
-|  | Dyson / robot vacuum | [Steelstofzuiger DYSON DC45](https://www.hnvi.nl/veiling-kavel/steelstofzuiger-dyson-dc45/197865) (HNVI) | €50 | – | – | Thu 05 Nov 21:00 |
+|  | Dyson / robot vacuum | [Steelstofzuiger DYSON DC45](https://www.hnvi.nl/veiling-kavel/steelstofzuiger-dyson-dc45/197865) (HNVI) | €55 | – | – | Thu 05 Nov 21:00 |
 | ✅ | Audio / beamer | [Vier dubbel BOSE speakers, draaibaar](https://www.hnvi.nl/veiling-kavel/vier-dubbel-bose-speakers-draaibaar/197967) (HNVI) | €25 | €85 | €38 | Thu 05 Nov 21:00 |
 |  | Coffee machine | [Koffiemachine KRUPS Nespresso](https://www.hnvi.nl/veiling-kavel/koffiemachine-krups-nespresso/197985) (HNVI) | €35 | €40 | €0 | Thu 05 Nov 21:00 |
 |  | Power tools | [Cirkelzaag DeWalt, D23650-qs](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/32) (Onlineveilingmeester) | €14 | – | – | Mon 09 Nov 20:07 |
@@ -136,19 +136,19 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 | ✅ | Power tools | [Accu schroefautomaat Makita, DFR550, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/48) (Onlineveilingmeester) | €41 | €238 | €70 | Mon 09 Nov 20:11 |
 |  | Power tools | [Elektrische schaaf DeWalt, D26500-qs](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/50) (Onlineveilingmeester) | €16 | – | – | Mon 09 Nov 20:12 |
 |  | Power tools | [Accu tacker Milwaukee, M18 FFN, bouwjaar 2022](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/56) (Onlineveilingmeester) | €211 | €370 | €140 | Mon 09 Nov 20:13 |
-|  | Power tools | [Accu tacker, Milwaukee, M18 FN15GA, 2024](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/57) (Onlineveilingmeester) | €191 | €450 | €183 | Mon 09 Nov 20:13 |
+|  | Power tools | [Accu tacker, Milwaukee, M18 FN15GA, 2024](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/57) (Onlineveilingmeester) | €201 | €450 | €183 | Mon 09 Nov 20:13 |
 |  | Power tools | [Cirkelzaag DeWalt, D23620-qs](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/65) (Onlineveilingmeester) | €14 | – | – | Mon 09 Nov 20:15 |
 |  | Power tools | [4x Diverse boormachine Makita en Bosch](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/66) (Onlineveilingmeester) | €12 | €42 | €0 | Mon 09 Nov 20:16 |
 |  | Power tools | [Bovenfrees DeWalt, DW614](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/68) (Onlineveilingmeester) | €16 | – | – | Mon 09 Nov 20:16 |
-|  | Power tools | [Accu decoupeerzaag Makita, DJV180, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/75) (Onlineveilingmeester) | €18 | €100 | €0 | Mon 09 Nov 20:18 |
-|  | Power tools | [2x Boormachine, Makita, DHP482, DDF 470](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/77) (Onlineveilingmeester) | €26 | €104 | €20 | Mon 09 Nov 20:18 |
+|  | Power tools | [Accu decoupeerzaag Makita, DJV180, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/75) (Onlineveilingmeester) | €20 | €100 | €0 | Mon 09 Nov 20:18 |
+| ✅ | Power tools | [2x Boormachine, Makita, DHP482, DDF 470](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/77) (Onlineveilingmeester) | €26 | €104 | €55 | Mon 09 Nov 20:18 |
 |  | Power tools | [Accu slagschroevendraaier, Makita, BTD130F](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/78) (Onlineveilingmeester) | €18 | – | – | Mon 09 Nov 20:19 |
-|  | Power tools | [2x Decoupeerzaag Makita](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/83) (Onlineveilingmeester) | €12 | €85 | €0 | Mon 09 Nov 20:20 |
-|  | Power tools | [2x Cirkelzaag DeWalt en Elu](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/94) (Onlineveilingmeester) | €12 | €95 | €10 | Mon 09 Nov 20:23 |
+| ✅ | Power tools | [2x Decoupeerzaag Makita](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/83) (Onlineveilingmeester) | €12 | €85 | €34 | Mon 09 Nov 20:20 |
+| ✅ | Power tools | [2x Cirkelzaag DeWalt en Elu](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/94) (Onlineveilingmeester) | €12 | €95 | €45 | Mon 09 Nov 20:23 |
 |  | Power tools | [Bovenfrees DeWalt, DW614](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/95) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:23 |
 |  | Power tools | [Elektrische meerpuntsluitingfrees met mal DeWalt, DW621](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/97) (Onlineveilingmeester) | €24 | €106 | €1 | Mon 09 Nov 20:23 |
 |  | Wine | [4x cava 4x wijn](https://www.openbare-verkopen.be/lot/755266) (Openbare Verkopen (BE)) | €14 | – | – | Mon 02 Nov 19:05 |
-|  | Coffee machine | [Koffiemachine, Philips](https://onlineveilingmeester.nl/nl/veilingen/9560/kavels/33) (Onlineveilingmeester) | €91 | €115 | €5 | Mon 02 Nov 19:08 |
+|  | Coffee machine | [Koffiemachine, Philips](https://onlineveilingmeester.nl/nl/veilingen/9560/kavels/33) (Onlineveilingmeester) | €101 | €115 | €5 | Mon 02 Nov 19:08 |
 |  | Phone | [Mobiele telefoon, Oppo, A16 / 32 GB](https://onlineveilingmeester.nl/nl/veilingen/9560/kavels/47) (Onlineveilingmeester) | €16 | – | – | Mon 02 Nov 19:11 |
 |  | Coffee machine | [Koffiemachine Caffitaly System](https://www.openbare-verkopen.be/lot/755822) (Openbare Verkopen (BE)) | €45 | – | – | Mon 02 Nov 19:12 |
 |  | Coffee machine | [Koffiemachine Caffitaly System](https://www.openbare-verkopen.be/lot/755823) (Openbare Verkopen (BE)) | €13 | – | – | Mon 02 Nov 19:13 |
@@ -159,9 +159,9 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Accu boorhamer (body) + SDS borenset, Makita, DHR 183Z](https://onlineveilingmeester.nl/nl/veilingen/9561/kavels/27) (Onlineveilingmeester) | €141 | – | – | Mon 02 Nov 19:21 |
 |  | Power tools | [Accu boormachine en slagschroevendraaier, Makita, CLX224A](https://onlineveilingmeester.nl/nl/veilingen/9561/kavels/35) (Onlineveilingmeester) | €191 | – | – | Mon 02 Nov 19:23 |
 |  | Power tools | [Accu schaafmachine (body), Makita, DKP 180Z](https://onlineveilingmeester.nl/nl/veilingen/9561/kavels/45) (Onlineveilingmeester) | €71 | €145 | €21 | Mon 02 Nov 19:25 |
-|  | Garden tools | [Stihl HSA -25 1x gebruikt](https://www.openbare-verkopen.be/lot/755404) (Openbare Verkopen (BE)) | €8 | – | – | Mon 02 Nov 19:26 |
+|  | Garden tools | [Stihl HSA -25 1x gebruikt](https://www.openbare-verkopen.be/lot/755404) (Openbare Verkopen (BE)) | €10 | – | – | Mon 02 Nov 19:26 |
 |  | Power tools | [MAKITA lamp + boormachine](https://www.openbare-verkopen.be/lot/755445) (Openbare Verkopen (BE)) | €66 | €45 | €0 | Mon 02 Nov 19:32 |
-|  | Garden tools | [Doorslijper, Husqvarna, K970, met zaagwagen en watertank](https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/3) (Onlineveilingmeester) | €431 | €550 | €213 | Mon 02 Nov 19:45 |
+|  | Garden tools | [Doorslijper, Husqvarna, K970, met zaagwagen en watertank](https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/3) (Onlineveilingmeester) | €471 | €550 | €213 | Mon 02 Nov 19:45 |
 |  | Power tools | [2x Acculader, Makita, DC18RC, en 1x Accu](https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/14) (Onlineveilingmeester) | €31 | €25 | €0 | Mon 02 Nov 19:48 |
 |  | Laptop | [Laptop, Asus, P1504J](https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/16) (Onlineveilingmeester) | €91 | €242 | €73 | Mon 02 Nov 19:48 |
 |  | Laptop | [Laptop, Asus, X515J, 2021](https://onlineveilingmeester.nl/nl/veilingen/9655/kavels/20) (Onlineveilingmeester) | €111 | – | – | Mon 02 Nov 19:49 |
@@ -173,7 +173,7 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Hilti Meetstatief PUA 25](https://www.proveiling.nl/Hilti-Meetstatief-PUA-25/3289198/detail) (ProVeiling) | €20 | – | – | Mon 02 Nov 20:00 |
 |  | Power tools | [Makita gereedschapskoffers - 2 stuks](https://www.proveiling.nl/Makita-gereedschapskoffers---2-stuks/3289228/detail) (ProVeiling) | €15 | €15 | €0 | Mon 02 Nov 20:00 |
 |  | Power tools | [DEWALT XRP Accu klopboormachine DC925 493905-01](https://www.proveiling.nl/DEWALT-XRP-Accu-klopboormachine-DC925-493905-01/3289221/detail) (ProVeiling) | €20 | – | – | Mon 02 Nov 20:00 |
-|  | iPad | [Apple iPad Pro Tablet A2378 MHNK3NF/A](https://www.proveiling.nl/Apple-iPad-Pro-Tablet-A2378-MHNK3NF-A/3292759/detail) (ProVeiling) | €191 | – | – | Mon 02 Nov 20:00 |
+|  | iPad | [Apple iPad Pro Tablet A2378 MHNK3NF/A](https://www.proveiling.nl/Apple-iPad-Pro-Tablet-A2378-MHNK3NF-A/3292759/detail) (ProVeiling) | €171 | – | – | Mon 02 Nov 20:00 |
 |  | Coffee machine | [JURA GIGA Volautomatische koffiemachine X3 15397](https://www.proveiling.nl/JURA-GIGA-Volautomatische-koffiemachine-X3-15397/3292725/detail) (ProVeiling) | €545 | €720 | €306 | Mon 02 Nov 20:00 |
 |  | Wine | [LVMH Champagne Nectar Impérial](https://www.proveiling.nl/LVMH-Champagne-Nectar-Imprial/3289915/detail) (ProVeiling) | €13 | – | – | Mon 02 Nov 20:00 |
 |  | Garden tools | [KARCHER Droge stofzuiger T 10/1 Adv 1.527-154.0](https://www.proveiling.nl/KARCHER-Droge-stofzuiger-T-10-1-Adv-1527-1540/3289940/detail) (ProVeiling) | €30 | – | – | Mon 02 Nov 20:00 |
@@ -259,7 +259,7 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Mixed lot | [Partij divers gereedschap](https://www.openbare-verkopen.be/lot/756158) (Openbare Verkopen (BE)) | €12 | – | – | Thu 05 Nov 19:06 |
 |  | Mixed lot | [Partij divers gereedschap](https://www.openbare-verkopen.be/lot/756160) (Openbare Verkopen (BE)) | €13 | – | – | Thu 05 Nov 19:07 |
 |  | Garden tools | [Kettingzaagmachine, Stihl](https://www.openbare-verkopen.be/lot/757676) (Openbare Verkopen (BE)) | €175 | – | – | Thu 05 Nov 19:09 |
-|  | Power tools | [Makita Werkmateriaal](https://www.openbare-verkopen.be/lot/757679) (Openbare Verkopen (BE)) | €180 | €108 | €21 | Thu 05 Nov 19:10 |
+|  | Power tools | [Makita Werkmateriaal](https://www.openbare-verkopen.be/lot/757679) (Openbare Verkopen (BE)) | €200 | €108 | €21 | Thu 05 Nov 19:10 |
 |  | Power tools | [Werfradio Makita](https://www.openbare-verkopen.be/lot/757680) (Openbare Verkopen (BE)) | €35 | €105 | €19 | Thu 05 Nov 19:10 |
 |  | Audio / beamer | [Projector Acer + soundbar JBL](https://www.openbare-verkopen.be/lot/756200) (Openbare Verkopen (BE)) | €221 | – | – | Thu 05 Nov 19:16 |
 |  | Power tools | [Cirkelzaag Dewalt + 2x accu klopboorhamer Arges](https://www.openbare-verkopen.be/lot/756201) (Openbare Verkopen (BE)) | €20 | €50 | €0 | Thu 05 Nov 19:16 |
@@ -311,8 +311,8 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Schroefboormachine MAKITA 6510LVR.](https://www.hnvi.nl/veiling-kavel/schroefboormachine-makita-6510lvr-950268/197558) (HNVI) | €11 | – | – | Thu 05 Nov 20:00 |
 | ✅ | Power tools | [Verstek/Afkortzaag MAKITA LS1018L.](https://www.hnvi.nl/veiling-kavel/verstek-afkortzaag-makita-ls1018l/197562) (HNVI) | €85 | €300 | €121 | Thu 05 Nov 20:00 |
 |  | Power tools | [Verstek/Afkortzaag MAKITA LS1013.](https://www.hnvi.nl/veiling-kavel/verstek-afkortzaag-makita-ls1013/197565) (HNVI) | €65 | – | – | Thu 05 Nov 20:00 |
-|  | Power tools | [Accuboorhamer MAKITA BHR261.](https://www.hnvi.nl/veiling-kavel/accuboorhamer-makita-bhr261/197574) (HNVI) | €30 | – | – | Thu 05 Nov 20:00 |
-|  | Power tools | [Haakse slijptol MAKITA  GA5030R in kunststoffen koffer.](https://www.hnvi.nl/veiling-kavel/haakse-slijptol-makita-ga5030r-in-kunststoffen-koffer/197576) (HNVI) | €35 | – | – | Thu 05 Nov 20:00 |
+| ✅ | Power tools | [Accuboorhamer MAKITA BHR261.](https://www.hnvi.nl/veiling-kavel/accuboorhamer-makita-bhr261/197574) (HNVI) | €30 | €150 | €43 | Thu 05 Nov 20:00 |
+|  | Power tools | [Haakse slijptol MAKITA  GA5030R in kunststoffen koffer.](https://www.hnvi.nl/veiling-kavel/haakse-slijptol-makita-ga5030r-in-kunststoffen-koffer/197576) (HNVI) | €35 | €70 | €1 | Thu 05 Nov 20:00 |
 |  | Power tools | [Borenkoffer MAKITA, incompleet.](https://www.hnvi.nl/veiling-kavel/borenkoffer-makita-incompleet/197585) (HNVI) | €11 | – | – | Thu 05 Nov 20:00 |
 |  | Power tools | [Bouwfohn METABO.](https://www.hnvi.nl/veiling-kavel/bouwfohn-metabo/197587) (HNVI) | €6 | – | – | Thu 05 Nov 20:00 |
 |  | Power tools | [Decoupeerzaag METABO ST50 in metalen kist.](https://www.hnvi.nl/veiling-kavel/decoupeerzaag-metabo-st50-in-metalen-kist/197589) (HNVI) | €11 | – | – | Thu 05 Nov 20:00 |
@@ -320,16 +320,16 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Audio / beamer | [Beamer OKE OPR30340 met afstandbediening.](https://www.hnvi.nl/veiling-kavel/beamer-oke-opr30340-met-afstandbediening/197726) (HNVI) | €35 | – | – | Thu 05 Nov 20:30 |
 |  | Power tools | [Vier dozen met bevestigingsnagels HILTI.](https://www.hnvi.nl/veiling-kavel/vier-dozen-met-bevestigingsnagels-hilti/197728) (HNVI) | €55 | – | – | Thu 05 Nov 20:30 |
 |  | Coffee machine | [Multigrill DELONGHI.](https://www.hnvi.nl/veiling-kavel/multigrill-delonghi/197772) (HNVI) | €6 | – | – | Thu 05 Nov 20:30 |
-|  | Kitchen appliance | [Airfryer PHILIPS 9240 zwart](https://www.hnvi.nl/veiling-kavel/airfryer-philips-9240-zwart/197775) (HNVI) | €16 | – | – | Thu 05 Nov 20:30 |
-|  | Kitchen appliance | [Airfryer PRINCESS XXL.](https://www.hnvi.nl/veiling-kavel/airfryer-princess-xxl/197776) (HNVI) | €8 | – | – | Thu 05 Nov 20:30 |
-|  | Kitchen appliance | [Airfryer PHILIPS 9240 wit.](https://www.hnvi.nl/veiling-kavel/airfryer-philips-9240-wit/197777) (HNVI) | €8 | – | – | Thu 05 Nov 20:30 |
-|  | Kitchen appliance | [Partij huis- en keukenartikelen w.o. servies, picknickmand, theepot, b](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/149) (Onlineveilingmeester) | €14 | – | – | Thu 05 Nov 20:37 |
-|  | Power tools | [15x Elektrisch gereedschap en handgereedschap W.o. Makita](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/155) (Onlineveilingmeester) | €22 | – | – | Thu 05 Nov 20:38 |
+|  | Kitchen appliance | [Airfryer PHILIPS 9240 zwart](https://www.hnvi.nl/veiling-kavel/airfryer-philips-9240-zwart/197775) (HNVI) | €16 | €50 | €0 | Thu 05 Nov 20:30 |
+|  | Kitchen appliance | [Airfryer PRINCESS XXL.](https://www.hnvi.nl/veiling-kavel/airfryer-princess-xxl/197776) (HNVI) | €8 | €38 | €0 | Thu 05 Nov 20:30 |
+|  | Kitchen appliance | [Airfryer PHILIPS 9240 wit.](https://www.hnvi.nl/veiling-kavel/airfryer-philips-9240-wit/197777) (HNVI) | €8 | €50 | €0 | Thu 05 Nov 20:30 |
+|  | Kitchen appliance | [Partij huis- en keukenartikelen w.o. servies, picknickmand, theepot, b](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/149) (Onlineveilingmeester) | €16 | – | – | Thu 05 Nov 20:37 |
+| ✅ | Power tools | [15x Elektrisch gereedschap en handgereedschap W.o. Makita](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/155) (Onlineveilingmeester) | €24 | €50 | €79 | Thu 05 Nov 20:38 |
 |  | Coffee machine | [Ca. 40x Keuken artikelen w.o. glaswerk, vergiet, snijplank W.o. Curver](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/219) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 20:54 |
 |  | Power tools | [Partij bouwartikelen w.o. accuboormachine, bouwradio, divers handgeree](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/237) (Onlineveilingmeester) | €14 | – | – | Thu 05 Nov 20:59 |
 |  | Mixed lot | [Partij bouwmarkt artikelen w.o. gereedschapskist, led paneel W.o. Blac](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/240) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 20:59 |
-|  | Power tools | [Accu stofzuiger MAKITADVC862L met twee accu's en lader](https://www.hnvi.nl/veiling-kavel/accu-stofzuiger-makitadvc862l-met-twee-accu-s-en-lader/197860) (HNVI) | €110 | – | – | Thu 05 Nov 21:00 |
-|  | Dyson / robot vacuum | [Stofzuiger DYSON DC08](https://www.hnvi.nl/veiling-kavel/stofzuiger-dyson-dc08/197962) (HNVI) | €40 | – | – | Thu 05 Nov 21:00 |
+|  | Power tools | [Accu stofzuiger MAKITADVC862L met twee accu's en lader](https://www.hnvi.nl/veiling-kavel/accu-stofzuiger-makitadvc862l-met-twee-accu-s-en-lader/197860) (HNVI) | €120 | – | – | Thu 05 Nov 21:00 |
+|  | Dyson / robot vacuum | [Stofzuiger DYSON DC08](https://www.hnvi.nl/veiling-kavel/stofzuiger-dyson-dc08/197962) (HNVI) | €40 | €37 | €0 | Thu 05 Nov 21:00 |
 |  | Monitor | [Beeldscherm ACER V246HL met toetsenbord en muis](https://www.hnvi.nl/veiling-kavel/beeldscherm-acer-v246hl-met-toetsenbord-en-muis/197975) (HNVI) | €6 | – | – | Thu 05 Nov 21:00 |
 |  | Monitor | [5x Kantoor artikelen w.o. projector, postbak, beeldscherm W.o. Mitsubi](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/245) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 21:01 |
 |  | Camera | [Partij elektronica en huishoudelijke artikelen W.o. Griffema, Leukosil](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/294) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 21:13 |
@@ -337,85 +337,85 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Mixed lot | [Partij autogereedschap, werkplaatsbenodigdheden en elektronica](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/396) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 21:38 |
 |  | Mixed lot | [Partij elektronica en merchandise W.o. Digitus, Profile](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/398) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 21:39 |
 |  | Mixed lot | [Partij beveiligingsapparatuur en elektronica](https://onlineveilingmeester.nl/nl/veilingen/9606/kavels/399) (Onlineveilingmeester) | €12 | – | – | Thu 05 Nov 21:39 |
-|  | Desktop | [PC Specialist Gaming](https://www.troostwijkauctions.com/nl/l/A1-50800-1) (Troostwijk) | €100 | – | – | Thu 5 Nov |
+|  | Desktop | [PC Specialist Gaming](https://www.troostwijkauctions.com/nl/l/A1-50800-1) (Troostwijk) | €100 | €750 | €325 | Thu 5 Nov |
 |  | Audio / beamer | [4K UHD 2200 lumen HDR10+ Beamer](https://www.troostwijkauctions.com/nl/l/A1-50800-214) (Troostwijk) | €100 | – | – | Thu 5 Nov |
 |  | Laptop | [Laptop - LENOVO -](https://www.troostwijkauctions.com/nl/l/A1-50800-8) (Troostwijk) | €100 | – | – | Thu 5 Nov |
-|  | Headphones | [Sennheiser HD 560 Ovation in originele doos](https://www.proveiling.nl/Sennheiser-HD-560-Ovation-in-originele-doos/3289641/detail) (ProVeiling) | €8 | – | – | Fri 06 Nov 19:30 |
+| ✅ | Headphones | [Sennheiser HD 560 Ovation in originele doos](https://www.proveiling.nl/Sennheiser-HD-560-Ovation-in-originele-doos/3289641/detail) (ProVeiling) | €10 | €112 | €24 | Fri 06 Nov 19:30 |
 |  | Headphones | [Vintage Sennheiser HD 424 dynamische stereo-hoofdtelefoon](https://www.proveiling.nl/Vintage-Sennheiser-HD-424-dynamische-stereo-hoofdtelefoon/3289668/detail) (ProVeiling) | €4 | – | – | Fri 06 Nov 19:30 |
 |  | Power tools | [Metabo Elektronik-Schlagbohrmaschine Sb E 450 R+L](https://www.proveiling.nl/Metabo-Elektronik-Schlagbohrmaschine-Sb-E-450-R-L/3289515/detail) (ProVeiling) | €8 | – | – | Fri 06 Nov 19:30 |
-|  | Power tools | [Metabo KS216M afkortzaag](https://www.proveiling.nl/Metabo-KS216M-afkortzaag/3292035/detail) (ProVeiling) | €155 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DJR186Z reciprozaag body](https://www.proveiling.nl/Makita-DJR186Z-reciprozaag-body/3292063/detail) (ProVeiling) | €105 | – | – | Sun 08 Nov 20:00 |
+|  | Power tools | [Metabo KS216M afkortzaag](https://www.proveiling.nl/Metabo-KS216M-afkortzaag/3292035/detail) (ProVeiling) | €155 | €85 | €9 | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DJR186Z reciprozaag body](https://www.proveiling.nl/Makita-DJR186Z-reciprozaag-body/3292063/detail) (ProVeiling) | €105 | €110 | €23 | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DGP180Z vetspuit body](https://www.proveiling.nl/Makita-DGP180Z-vetspuit-body/3292064/detail) (ProVeiling) | €275 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DTD152 slagschroevendraaier body](https://www.proveiling.nl/Makita-DTD152-slagschroevendraaier-body/3292065/detail) (ProVeiling) | €75 | – | – | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DTD152 slagschroevendraaier body](https://www.proveiling.nl/Makita-DTD152-slagschroevendraaier-body/3292065/detail) (ProVeiling) | €75 | €75 | €4 | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DK0053G haakse slijper set in koffer](https://www.proveiling.nl/Makita-DK0053G-haakse-slijper-set-in-koffer/3292066/detail) (ProVeiling) | €195 | – | – | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DMR108AR bouwradio body](https://www.proveiling.nl/Makita-DMR108AR-bouwradio-body/3292067/detail) (ProVeiling) | €125 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DMP180Z luchtpomp body](https://www.proveiling.nl/Makita-DMP180Z-luchtpomp-body/3292068/detail) (ProVeiling) | €65 | – | – | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DMP180Z luchtpomp body](https://www.proveiling.nl/Makita-DMP180Z-luchtpomp-body/3292068/detail) (ProVeiling) | €65 | €68 | €0 | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DDF453SYX5 boor-/schroefmachine set](https://www.proveiling.nl/Makita-DDF453SYX5-boor--schroefmachine-set/3292069/detail) (ProVeiling) | €70 | – | – | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita E-10883 gereedschapskoffer](https://www.proveiling.nl/Makita-E-10883-gereedschapskoffer/3292071/detail) (ProVeiling) | €95 | – | – | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DCL180ZB stofzuiger body](https://www.proveiling.nl/Makita-DCL180ZB-stofzuiger-body/3292072/detail) (ProVeiling) | €50 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DHR202Z boorhamer body](https://www.proveiling.nl/Makita-DHR202Z-boorhamer-body/3292073/detail) (ProVeiling) | €125 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DJV180Z decoupeerzaag body](https://www.proveiling.nl/Makita-DJV180Z-decoupeerzaag-body/3292074/detail) (ProVeiling) | €135 | – | – | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DHR202Z boorhamer body](https://www.proveiling.nl/Makita-DHR202Z-boorhamer-body/3292073/detail) (ProVeiling) | €125 | €122 | €29 | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DJV180Z decoupeerzaag body](https://www.proveiling.nl/Makita-DJV180Z-decoupeerzaag-body/3292074/detail) (ProVeiling) | €135 | €122 | €29 | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DC18RC snellader](https://www.proveiling.nl/Makita-DC18RC-snellader/3292075/detail) (ProVeiling) | €55 | €41 | €0 | Sun 08 Nov 20:00 |
 |  | Power tools | [Makita DGA504Z haakse slijper body](https://www.proveiling.nl/Makita-DGA504Z-haakse-slijper-body/3292076/detail) (ProVeiling) | €95 | – | – | Sun 08 Nov 20:00 |
-|  | Power tools | [Makita DML805 bouwlamp](https://www.proveiling.nl/Makita-DML805-bouwlamp/3292093/detail) (ProVeiling) | €125 | – | – | Sun 08 Nov 20:00 |
+|  | Power tools | [Makita DML805 bouwlamp](https://www.proveiling.nl/Makita-DML805-bouwlamp/3292093/detail) (ProVeiling) | €125 | €78 | €5 | Sun 08 Nov 20:00 |
 |  | Kitchen appliance | [SwissPro SP-AF12L AirFryer oven](https://www.proveiling.nl/SwissPro-SP-AF12L-AirFryer-oven/3292098/detail) (ProVeiling) | €85 | – | – | Sun 08 Nov 20:00 |
-|  | Audio / beamer | [8x LED Slim Projector 20W - 1650LM - IP65, Aigostar, 2147483647, grijs](https://onlineveilingmeester.nl/nl/veilingen/9608/kavels/93) (Onlineveilingmeester) | €12 | – | – | Sun 08 Nov 20:00 |
-|  | Coffee machine | [La pavoni 2 gr volumetrica nero dor. koffiemachine](https://veilingwinnaar.nl/auctions/393/lots/12145/) (Veilingwinnaar) | €250 | – | – | Mon 09 Nov 16:00 |
-|  | Dyson / robot vacuum | [Eureka E20 Plus Robotstofzuiger](https://www.openbare-verkopen.be/lot/760680) (Openbare Verkopen (BE)) | €100 | – | – | Mon 09 Nov 19:00 |
-|  | Dyson / robot vacuum | [ECOVACS DEEBOT X8 Pro OMNI Robotstofzuiger](https://www.openbare-verkopen.be/lot/760681) (Openbare Verkopen (BE)) | €360 | – | – | Mon 09 Nov 19:00 |
+|  | Audio / beamer | [8x LED Slim Projector 20W - 1650LM - IP65, Aigostar, 8433325213398, gr](https://onlineveilingmeester.nl/nl/veilingen/9608/kavels/93) (Onlineveilingmeester) | €12 | – | – | Sun 08 Nov 20:00 |
+| ✅ | Coffee machine | [La pavoni 2 gr volumetrica nero dor. koffiemachine](https://veilingwinnaar.nl/auctions/393/lots/12145/) (Veilingwinnaar) | €250 | €1.250 | €507 | Mon 09 Nov 16:00 |
+|  | Dyson / robot vacuum | [Eureka E20 Plus Robotstofzuiger](https://www.openbare-verkopen.be/lot/760680) (Openbare Verkopen (BE)) | €100 | €130 | €31 | Mon 09 Nov 19:00 |
+|  | Dyson / robot vacuum | [ECOVACS DEEBOT X8 Pro OMNI Robotstofzuiger](https://www.openbare-verkopen.be/lot/760681) (Openbare Verkopen (BE)) | €360 | €245 | €91 | Mon 09 Nov 19:00 |
 |  | Dyson / robot vacuum | [ECOVACS DEEBOT T80 OMNI-robotstofzuiger en -dweil](https://www.openbare-verkopen.be/lot/760682) (Openbare Verkopen (BE)) | €250 | – | – | Mon 09 Nov 19:00 |
-|  | Power tools | [Afkortzaak Festool + geleiding](https://www.openbare-verkopen.be/lot/759747) (Openbare Verkopen (BE)) | €290 | – | – | Mon 09 Nov 19:00 |
+| ✅ | Power tools | [Afkortzaak Festool + geleiding](https://www.openbare-verkopen.be/lot/759747) (Openbare Verkopen (BE)) | €290 | €1.000 | €410 | Mon 09 Nov 19:00 |
 |  | Wine | [6 x Champagneglas](https://www.vlavem.com/6-x-Champagneglas/1053901/detail) (Vlavem (BE)) | €3 | €8 | €0 | Mon 09 Nov 19:00 |
 |  | Dyson / robot vacuum | [ECOVACS Deebot T30S Pro Robotstofzuiger met Wisfunctie](https://www.openbare-verkopen.be/lot/760683) (Openbare Verkopen (BE)) | €250 | – | – | Mon 09 Nov 19:01 |
-|  | Dyson / robot vacuum | [ECOVACS X11 OMNICYCLONE Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760684) (Openbare Verkopen (BE)) | €300 | – | – | Mon 09 Nov 19:01 |
-|  | Dyson / robot vacuum | [MOVA Z60 Ultra Roller SA robotstofzuiger](https://www.openbare-verkopen.be/lot/760685) (Openbare Verkopen (BE)) | €200 | – | – | Mon 09 Nov 19:01 |
-|  | Dyson / robot vacuum | [ECOVACS X11 OMNICYCLONE Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760686) (Openbare Verkopen (BE)) | €450 | – | – | Mon 09 Nov 19:01 |
+|  | Dyson / robot vacuum | [ECOVACS X11 OMNICYCLONE Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760684) (Openbare Verkopen (BE)) | €300 | €212 | €74 | Mon 09 Nov 19:01 |
+| ✅ | Dyson / robot vacuum | [MOVA Z60 Ultra Roller SA robotstofzuiger](https://www.openbare-verkopen.be/lot/760685) (Openbare Verkopen (BE)) | €200 | €603 | €271 | Mon 09 Nov 19:01 |
+|  | Dyson / robot vacuum | [ECOVACS X11 OMNICYCLONE Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760686) (Openbare Verkopen (BE)) | €450 | €212 | €74 | Mon 09 Nov 19:01 |
 |  | Dyson / robot vacuum | [Ultenic Robotstofzuiger met dweilfunctie](https://www.openbare-verkopen.be/lot/760687) (Openbare Verkopen (BE)) | €55 | – | – | Mon 09 Nov 19:02 |
-|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweil](https://www.openbare-verkopen.be/lot/760688) (Openbare Verkopen (BE)) | €150 | – | – | Mon 09 Nov 19:02 |
-|  | Dyson / robot vacuum | [DREAME L10s Ultra Gen 3 Kit Robotstofzuiger met dweilfunctie](https://www.openbare-verkopen.be/lot/760689) (Openbare Verkopen (BE)) | €100 | – | – | Mon 09 Nov 19:02 |
-|  | Dyson / robot vacuum | [DREAME Matrix10 Ultra-robotstofzuiger en -dweil](https://www.openbare-verkopen.be/lot/760690) (Openbare Verkopen (BE)) | €400 | – | – | Mon 09 Nov 19:02 |
+|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweil](https://www.openbare-verkopen.be/lot/760688) (Openbare Verkopen (BE)) | €150 | €248 | €93 | Mon 09 Nov 19:02 |
+|  | Dyson / robot vacuum | [DREAME L10s Ultra Gen 3 Kit Robotstofzuiger met dweilfunctie](https://www.openbare-verkopen.be/lot/760689) (Openbare Verkopen (BE)) | €120 | – | – | Mon 09 Nov 19:02 |
+|  | Dyson / robot vacuum | [DREAME Matrix10 Ultra-robotstofzuiger en -dweil](https://www.openbare-verkopen.be/lot/760690) (Openbare Verkopen (BE)) | €400 | €661 | €298 | Mon 09 Nov 19:02 |
 |  | Garden tools | [MOVA ViAX 250 robotmaaier](https://www.openbare-verkopen.be/lot/756278) (Openbare Verkopen (BE)) | €140 | – | – | Mon 09 Nov 19:02 |
 |  | Dyson / robot vacuum | [iRobot Roomba Max 706 Combo robotstofzuiger](https://www.openbare-verkopen.be/lot/760691) (Openbare Verkopen (BE)) | €150 | – | – | Mon 09 Nov 19:03 |
-|  | Dyson / robot vacuum | [Mova Z60 Ultra Roller Complete robotstofzuiger](https://www.openbare-verkopen.be/lot/760692) (Openbare Verkopen (BE)) | €500 | – | – | Mon 09 Nov 19:03 |
-|  | Dyson / robot vacuum | [DREAME L40 Ultra AE robotstofzuiger](https://www.openbare-verkopen.be/lot/760693) (Openbare Verkopen (BE)) | €250 | – | – | Mon 09 Nov 19:03 |
-|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweil](https://www.openbare-verkopen.be/lot/760694) (Openbare Verkopen (BE)) | €130 | – | – | Mon 09 Nov 19:03 |
+|  | Dyson / robot vacuum | [Mova Z60 Ultra Roller Complete robotstofzuiger](https://www.openbare-verkopen.be/lot/760692) (Openbare Verkopen (BE)) | €500 | €603 | €271 | Mon 09 Nov 19:03 |
+|  | Dyson / robot vacuum | [DREAME L40 Ultra AE robotstofzuiger](https://www.openbare-verkopen.be/lot/760693) (Openbare Verkopen (BE)) | €250 | €400 | €172 | Mon 09 Nov 19:03 |
+|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweil](https://www.openbare-verkopen.be/lot/760694) (Openbare Verkopen (BE)) | €130 | €248 | €93 | Mon 09 Nov 19:03 |
 |  | Dyson / robot vacuum | [DREAME D10 Plus Gen 2 robotstofzuiger](https://www.openbare-verkopen.be/lot/760695) (Openbare Verkopen (BE)) | €150 | – | – | Mon 09 Nov 19:03 |
 |  | Power tools | [Elektrische handschuurmachine Makita](https://www.openbare-verkopen.be/lot/759756) (Openbare Verkopen (BE)) | €10 | – | – | Mon 09 Nov 19:03 |
-|  | Power tools | [Elektrische handschuurmachine Metabo](https://www.openbare-verkopen.be/lot/759757) (Openbare Verkopen (BE)) | €11 | – | – | Mon 09 Nov 19:03 |
+|  | Power tools | [Elektrische handschuurmachine Metabo](https://www.openbare-verkopen.be/lot/759757) (Openbare Verkopen (BE)) | €11 | €32 | €0 | Mon 09 Nov 19:03 |
 |  | Mixed lot | [Partij divers gereedschap](https://www.openbare-verkopen.be/lot/759762) (Openbare Verkopen (BE)) | €15 | – | – | Mon 09 Nov 19:04 |
-|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo + AutoWash Dock Robotstofzuiger met Dwei](https://www.openbare-verkopen.be/lot/760700) (Openbare Verkopen (BE)) | €200 | – | – | Mon 09 Nov 19:05 |
-|  | Dyson / robot vacuum | [Mova Z50 Ultra robotstofzuiger](https://www.openbare-verkopen.be/lot/760701) (Openbare Verkopen (BE)) | €200 | – | – | Mon 09 Nov 19:05 |
-|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo Robot + AutoWash™](https://www.openbare-verkopen.be/lot/760702) (Openbare Verkopen (BE)) | €200 | – | – | Mon 09 Nov 19:05 |
+|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo + AutoWash Dock Robotstofzuiger met Dwei](https://www.openbare-verkopen.be/lot/760700) (Openbare Verkopen (BE)) | €200 | €200 | €68 | Mon 09 Nov 19:05 |
+|  | Dyson / robot vacuum | [Mova Z50 Ultra robotstofzuiger](https://www.openbare-verkopen.be/lot/760701) (Openbare Verkopen (BE)) | €200 | €360 | €151 | Mon 09 Nov 19:05 |
+|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo Robot + AutoWash™](https://www.openbare-verkopen.be/lot/760702) (Openbare Verkopen (BE)) | €200 | €300 | €119 | Mon 09 Nov 19:05 |
 |  | Mixed lot | [2x Divers gereedschap Powerplus](https://www.openbare-verkopen.be/lot/759765) (Openbare Verkopen (BE)) | €11 | – | – | Mon 09 Nov 19:05 |
 |  | Mixed lot | [Partij diverse elektronica](https://www.openbare-verkopen.be/lot/757565) (Openbare Verkopen (BE)) | €13 | – | – | Mon 09 Nov 19:06 |
-|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweilcombinatie](https://www.openbare-verkopen.be/lot/760704) (Openbare Verkopen (BE)) | €350 | – | – | Mon 09 Nov 19:06 |
-|  | Dyson / robot vacuum | [EUREKA J15 Max Ultra robotstofzuiger](https://www.openbare-verkopen.be/lot/760705) (Openbare Verkopen (BE)) | €400 | – | – | Mon 09 Nov 19:06 |
-|  | Dyson / robot vacuum | [DREAME X40 Ultra Complete Robotstofzuiger](https://www.openbare-verkopen.be/lot/760706) (Openbare Verkopen (BE)) | €500 | – | – | Mon 09 Nov 19:06 |
-|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo Robot + AutoWash™](https://www.openbare-verkopen.be/lot/760707) (Openbare Verkopen (BE)) | €200 | – | – | Mon 09 Nov 19:06 |
-|  | Kitchen appliance | [Russell Hobbs Airfryer 4.3L](https://www.openbare-verkopen.be/lot/756309) (Openbare Verkopen (BE)) | €17 | – | – | Mon 09 Nov 19:06 |
-|  | Dyson / robot vacuum | [DREAME L40 Ultra Robotstofzuiger](https://www.openbare-verkopen.be/lot/760709) (Openbare Verkopen (BE)) | €80 | – | – | Mon 09 Nov 19:07 |
-|  | Dyson / robot vacuum | [LEFANT M2S PRO robotstofzuiger](https://www.openbare-verkopen.be/lot/760711) (Openbare Verkopen (BE)) | €35 | – | – | Mon 09 Nov 19:07 |
-|  | Dyson / robot vacuum | [Cecotec Robotstofzuiger](https://www.openbare-verkopen.be/lot/760712) (Openbare Verkopen (BE)) | €30 | – | – | Mon 09 Nov 19:07 |
+|  | Dyson / robot vacuum | [DREAME L10s Pro Ultra Heat Robotstofzuiger en dweilcombinatie](https://www.openbare-verkopen.be/lot/760704) (Openbare Verkopen (BE)) | €350 | €248 | €93 | Mon 09 Nov 19:06 |
+|  | Dyson / robot vacuum | [EUREKA J15 Max Ultra robotstofzuiger](https://www.openbare-verkopen.be/lot/760705) (Openbare Verkopen (BE)) | €400 | €372 | €157 | Mon 09 Nov 19:06 |
+|  | Dyson / robot vacuum | [DREAME X40 Ultra Complete Robotstofzuiger](https://www.openbare-verkopen.be/lot/760706) (Openbare Verkopen (BE)) | €500 | €675 | €304 | Mon 09 Nov 19:06 |
+|  | Dyson / robot vacuum | [iRobot Roomba® Plus 405 Combo Robot + AutoWash™](https://www.openbare-verkopen.be/lot/760707) (Openbare Verkopen (BE)) | €200 | €300 | €119 | Mon 09 Nov 19:06 |
+|  | Kitchen appliance | [Russell Hobbs Airfryer 4.3L](https://www.openbare-verkopen.be/lot/756309) (Openbare Verkopen (BE)) | €17 | €40 | €0 | Mon 09 Nov 19:06 |
+| ✅ | Dyson / robot vacuum | [DREAME L40 Ultra Robotstofzuiger](https://www.openbare-verkopen.be/lot/760709) (Openbare Verkopen (BE)) | €80 | €400 | €171 | Mon 09 Nov 19:07 |
+| ✅ | Dyson / robot vacuum | [LEFANT M2S PRO robotstofzuiger](https://www.openbare-verkopen.be/lot/760711) (Openbare Verkopen (BE)) | €35 | €182 | €58 | Mon 09 Nov 19:07 |
+| ✅ | Dyson / robot vacuum | [Cecotec Robotstofzuiger](https://www.openbare-verkopen.be/lot/760712) (Openbare Verkopen (BE)) | €30 | €149 | €41 | Mon 09 Nov 19:07 |
 |  | Mixed lot | [Partij divers gereedschap](https://www.openbare-verkopen.be/lot/759775) (Openbare Verkopen (BE)) | €6 | – | – | Mon 09 Nov 19:07 |
-|  | Coffee machine | [Cecotec Espressomachine](https://www.openbare-verkopen.be/lot/756311) (Openbare Verkopen (BE)) | €25 | – | – | Mon 09 Nov 19:07 |
+|  | Coffee machine | [Cecotec Espressomachine](https://www.openbare-verkopen.be/lot/756311) (Openbare Verkopen (BE)) | €25 | €40 | €0 | Mon 09 Nov 19:07 |
 |  | Garden tools | [Benzine betonboormachine Husqvarna](https://www.openbare-verkopen.be/lot/753867) (Openbare Verkopen (BE)) | €17 | – | – | Mon 09 Nov 19:08 |
 |  | Dyson / robot vacuum | [ZACO A10 Pro Robotstofzuiger met dweilfunctie](https://www.openbare-verkopen.be/lot/760714) (Openbare Verkopen (BE)) | €70 | – | – | Mon 09 Nov 19:08 |
-|  | Dyson / robot vacuum | [Shark PowerDetect 2-in-1 Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760715) (Openbare Verkopen (BE)) | €120 | – | – | Mon 09 Nov 19:08 |
-|  | Garden tools | [Benzine betonzaagmachine Husqvarna](https://www.openbare-verkopen.be/lot/753874) (Openbare Verkopen (BE)) | €66 | – | – | Mon 09 Nov 19:09 |
+|  | Dyson / robot vacuum | [Shark PowerDetect 2-in-1 Robotstofzuiger en Dweil](https://www.openbare-verkopen.be/lot/760715) (Openbare Verkopen (BE)) | €120 | €159 | €46 | Mon 09 Nov 19:08 |
+|  | Garden tools | [Benzine betonzaagmachine Husqvarna](https://www.openbare-verkopen.be/lot/753874) (Openbare Verkopen (BE)) | €66 | €150 | €38 | Mon 09 Nov 19:09 |
 |  | Power tools | [Bosch Professional accudecoupeerzaagmachine](https://www.openbare-verkopen.be/lot/756333) (Openbare Verkopen (BE)) | €20 | – | – | Mon 09 Nov 19:10 |
-|  | Dyson / robot vacuum | [DREAME X40 Ultra Complete Robotstofzuiger](https://www.openbare-verkopen.be/lot/756346) (Openbare Verkopen (BE)) | €220 | – | – | Mon 09 Nov 19:12 |
-|  | Kitchen appliance | [Russell Hobbs Airfryer](https://www.openbare-verkopen.be/lot/756350) (Openbare Verkopen (BE)) | €16 | – | – | Mon 09 Nov 19:13 |
-|  | Dyson / robot vacuum | [ECOVACS WINBOT Mini Raamreinigingsrobot](https://www.openbare-verkopen.be/lot/756364) (Openbare Verkopen (BE)) | €70 | – | – | Mon 09 Nov 19:15 |
-|  | Kitchen appliance | [Ninja 5-in-1 Indoor Grill & Airfryer](https://www.openbare-verkopen.be/lot/756386) (Openbare Verkopen (BE)) | €55 | – | – | Mon 09 Nov 19:18 |
-|  | Kitchen appliance | [Cecotec Cecofry & Grill Smokin' 6500 Plus Airfryer](https://www.openbare-verkopen.be/lot/756391) (Openbare Verkopen (BE)) | €25 | – | – | Mon 09 Nov 19:19 |
+| ✅ | Dyson / robot vacuum | [DREAME X40 Ultra Complete Robotstofzuiger](https://www.openbare-verkopen.be/lot/756346) (Openbare Verkopen (BE)) | €220 | €675 | €304 | Mon 09 Nov 19:12 |
+|  | Kitchen appliance | [Russell Hobbs Airfryer](https://www.openbare-verkopen.be/lot/756350) (Openbare Verkopen (BE)) | €16 | €43 | €0 | Mon 09 Nov 19:13 |
+|  | Dyson / robot vacuum | [ECOVACS WINBOT Mini Raamreinigingsrobot](https://www.openbare-verkopen.be/lot/756364) (Openbare Verkopen (BE)) | €70 | €125 | €28 | Mon 09 Nov 19:15 |
+|  | Kitchen appliance | [Ninja 5-in-1 Indoor Grill & Airfryer](https://www.openbare-verkopen.be/lot/756386) (Openbare Verkopen (BE)) | €55 | €90 | €10 | Mon 09 Nov 19:18 |
+|  | Kitchen appliance | [Cecotec Cecofry & Grill Smokin' 6500 Plus Airfryer](https://www.openbare-verkopen.be/lot/756391) (Openbare Verkopen (BE)) | €25 | €44 | €0 | Mon 09 Nov 19:19 |
 |  | Garden tools | [MOVA ViAX 500 robotmaaier](https://www.openbare-verkopen.be/lot/756397) (Openbare Verkopen (BE)) | €300 | – | – | Mon 09 Nov 19:20 |
 |  | Coffee machine | [Melitta Aromafresh Therm PRO X koffiezetapparaat](https://www.openbare-verkopen.be/lot/756404) (Openbare Verkopen (BE)) | €60 | – | – | Mon 09 Nov 19:21 |
-|  | Dyson / robot vacuum | [DREAME D20 Air Plus robotstofzuiger](https://www.openbare-verkopen.be/lot/756408) (Openbare Verkopen (BE)) | €60 | – | – | Mon 09 Nov 19:21 |
+|  | Dyson / robot vacuum | [DREAME D20 Air Plus robotstofzuiger](https://www.openbare-verkopen.be/lot/756408) (Openbare Verkopen (BE)) | €60 | €175 | €55 | Mon 09 Nov 19:21 |
 |  | Dyson / robot vacuum | [Dyson V8 Cyclone draadloze stofzuiger](https://www.openbare-verkopen.be/lot/756425) (Openbare Verkopen (BE)) | €140 | – | – | Mon 09 Nov 19:24 |
 |  | Dyson / robot vacuum | [Xiaomi X20 Max robotstofzuiger met dweilfunctie](https://www.openbare-verkopen.be/lot/756462) (Openbare Verkopen (BE)) | €75 | – | – | Mon 09 Nov 19:30 |
 |  | Dyson / robot vacuum | [ECOVACS DEEBOT X2 OMNI Zuig- en dweilrobot](https://www.openbare-verkopen.be/lot/756464) (Openbare Verkopen (BE)) | €120 | – | – | Mon 09 Nov 19:30 |
 |  | Dyson / robot vacuum | [Roborock F25 BX Draadloze Nat- en Droogstofzuiger](https://www.openbare-verkopen.be/lot/756465) (Openbare Verkopen (BE)) | €35 | – | – | Mon 09 Nov 19:30 |
-| ✅ | Wine | [2 x Vaas als champagneglas](https://www.vlavem.com/2-x-Vaas-als-champagneglas/1054273/detail) (Vlavem (BE)) | €4 | €328 | €276 | Mon 09 Nov 19:30 |
+| ✅ | Wine | [2 x Vaas als champagneglas](https://www.vlavem.com/2-x-Vaas-als-champagneglas/1054273/detail) (Vlavem (BE)) | €4 | €328 | €277 | Mon 09 Nov 19:30 |
 |  | Wine | [1 x Champagneglazen 6 stuks](https://www.vlavem.com/1-x-Champagneglazen-6-stuks/1054333/detail) (Vlavem (BE)) | €5 | €21 | €0 | Mon 09 Nov 19:30 |
 |  | Dyson / robot vacuum | [ECOVACS DEEBOT T30 PRO OMNI robotstofzuiger](https://www.openbare-verkopen.be/lot/756481) (Openbare Verkopen (BE)) | €120 | – | – | Mon 09 Nov 19:33 |
 |  | Dyson / robot vacuum | [Xiaomi Robotstofzuiger X20+](https://www.openbare-verkopen.be/lot/756487) (Openbare Verkopen (BE)) | €50 | – | – | Mon 09 Nov 19:33 |
@@ -439,11 +439,11 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Haakse slijper DeWalt, DW831-qs](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/67) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:16 |
 |  | Power tools | [Accu stofzuiger Makita, dvc750l, bouwjaar 2020](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/69) (Onlineveilingmeester) | €76 | – | – | Mon 09 Nov 20:16 |
 |  | Power tools | [3x Divers handgereedschap o.a. Makita](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/93) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:22 |
-|  | Mixed lot | [Restpartij div handel Doos A](https://www.nedveiling.nl/Restpartij-div-handel-Doos-A,name,1178372,auction_id,auction_details) (Nedveiling) | €6 | – | – | Mon 09 Nov 20:28 |
-|  | Mixed lot | [Restpartij div handel Doos B](https://www.nedveiling.nl/Restpartij-div-handel-Doos-B,name,1178373,auction_id,auction_details) (Nedveiling) | €6 | – | – | Mon 09 Nov 20:28 |
 |  | Mixed lot | [Restpartij div handel Doos C](https://www.nedveiling.nl/Restpartij-div-handel-Doos-C,name,1178723,auction_id,auction_details) (Nedveiling) | €5 | – | – | Mon 09 Nov 20:28 |
 |  | Mixed lot | [Restpartij div handel Doos D](https://www.nedveiling.nl/Restpartij-div-handel-Doos-D,name,1178724,auction_id,auction_details) (Nedveiling) | €5 | – | – | Mon 09 Nov 20:28 |
-|  | Power tools | [10x Acculader Makita](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/175) (Onlineveilingmeester) | €14 | – | – | Mon 09 Nov 20:43 |
+|  | Mixed lot | [Restpartij div handel Doos A](https://www.nedveiling.nl/Restpartij-div-handel-Doos-A,name,1178372,auction_id,auction_details) (Nedveiling) | €6 | – | – | Mon 09 Nov 20:29 |
+|  | Mixed lot | [Restpartij div handel Doos B](https://www.nedveiling.nl/Restpartij-div-handel-Doos-B,name,1178373,auction_id,auction_details) (Nedveiling) | €6 | – | – | Mon 09 Nov 20:29 |
+|  | Power tools | [10x Acculader Makita](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/175) (Onlineveilingmeester) | €16 | – | – | Mon 09 Nov 20:43 |
 |  | Power tools | [Haakse slijper Bosch, GWS 20-180](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/177) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:43 |
 |  | Power tools | [2x Accu tegelzaag Makita, 4190D](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/182) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:44 |
 |  | Mixed lot | [5x Diverse gereedschap, O.a. Black&Decker, Hitachi](https://onlineveilingmeester.nl/nl/veilingen/9522/kavels/188) (Onlineveilingmeester) | €12 | – | – | Mon 09 Nov 20:46 |
@@ -454,10 +454,10 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Wine | [Partij diverse wijnen](https://www.openbare-verkopen.be/lot/760107) (Openbare Verkopen (BE)) | €130 | – | – | Thu 12 Nov 19:01 |
 |  | Power tools | [Kist sanitair verbruiksmateriaal met Hilti HDM 500](https://www.bellauction.be/auctionlot/23371/kist-sanitair-verbruiksmateriaal-met-hilti-hdm-500) (BellAuction (BE)) | €11 | – | – | Thu 12 Nov 19:07 |
 |  | Power tools | [Metabo KHA 18 LTX accu-boorhamer met lader en toebehoren](https://www.bellauction.be/auctionlot/23372/metabo-kha-18-ltx-accu-boorhamer-met-lader-en-toebehoren) (BellAuction (BE)) | €11 | – | – | Thu 12 Nov 19:08 |
-|  | Wine | [Witte wijn 75 cl 12% custoza lovatti 2021 aantal 1 stuks.](https://www.nedveiling.nl/Witte-wijn-75-cl-12-custoza-lovatti-2021-aantal-1-stuks,name,1179530,auction_id,auction_details) (Nedveiling) | €2 | – | – | Fri 13 Nov 20:26 |
-|  | Wine | [Witte wijn 75cl 11,5 % beaumontia moelleux 2022 aantal 1 stuks.](https://www.nedveiling.nl/Witte-wijn-75cl-115--beaumontia-moelleux-2022-aantal-1-stuks,name,1179531,auction_id,auction_details) (Nedveiling) | €2 | – | – | Fri 13 Nov 20:26 |
-|  | Wine | [Cava brut movisa 11,5% 750 ml aantal 1 stuks.](https://www.nedveiling.nl/Cava-brut-movisa-115-750-ml-aantal-1-stuks,name,1179623,auction_id,auction_details) (Nedveiling) | €1 | – | – | Fri 13 Nov 20:26 |
-|  | Wine | [Lanae cava brut 750 ml 11,5% aantal 1 stuks.](https://www.nedveiling.nl/Lanae-cava-brut-750-ml-115-aantal-1-stuks,name,1179625,auction_id,auction_details) (Nedveiling) | €1 | – | – | Fri 13 Nov 20:26 |
+|  | Wine | [Witte wijn 75 cl 12% custoza lovatti 2021 aantal 1 stuks.](https://www.nedveiling.nl/Witte-wijn-75-cl-12-custoza-lovatti-2021-aantal-1-stuks,name,1179530,auction_id,auction_details) (Nedveiling) | €2 | – | – | Fri 13 Nov 20:27 |
+|  | Wine | [Witte wijn 75cl 11,5 % beaumontia moelleux 2022 aantal 1 stuks.](https://www.nedveiling.nl/Witte-wijn-75cl-115--beaumontia-moelleux-2022-aantal-1-stuks,name,1179531,auction_id,auction_details) (Nedveiling) | €2 | – | – | Fri 13 Nov 20:27 |
+|  | Wine | [Cava brut movisa 11,5% 750 ml aantal 1 stuks.](https://www.nedveiling.nl/Cava-brut-movisa-115-750-ml-aantal-1-stuks,name,1179623,auction_id,auction_details) (Nedveiling) | €1 | – | – | Fri 13 Nov 20:27 |
+|  | Wine | [Lanae cava brut 750 ml 11,5% aantal 1 stuks.](https://www.nedveiling.nl/Lanae-cava-brut-750-ml-115-aantal-1-stuks,name,1179625,auction_id,auction_details) (Nedveiling) | €1 | – | – | Fri 13 Nov 20:27 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055449/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055450/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055451/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
@@ -468,7 +468,7 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Wine | [wijn](https://www.vlavem.com/wijn/1055466/detail) (Vlavem (BE)) | €3 | – | – | Sun 15 Nov 19:00 |
 |  | Garden tools | [Karcher hogedrukreiniger K 5](https://www.openbare-verkopen.be/lot/760342) (Openbare Verkopen (BE)) | €130 | – | – | Mon 16 Nov 19:02 |
 |  | Power tools | [Makita Kettingzaag UC3041A](https://www.openbare-verkopen.be/lot/760343) (Openbare Verkopen (BE)) | €55 | – | – | Mon 16 Nov 19:03 |
-|  | Power tools | [Makita DLX4090TJ1 Combopack](https://www.openbare-verkopen.be/lot/760371) (Openbare Verkopen (BE)) | €370 | – | – | Mon 16 Nov 19:07 |
+|  | Power tools | [Makita DLX4090TJ1 Combopack](https://www.openbare-verkopen.be/lot/760371) (Openbare Verkopen (BE)) | €390 | – | – | Mon 16 Nov 19:07 |
 |  | Power tools | [Makita Radiale afkortzaag](https://www.openbare-verkopen.be/lot/760373) (Openbare Verkopen (BE)) | €160 | – | – | Mon 16 Nov 19:07 |
 |  | Power tools | [Dewalt DW084K-XJ Laser](https://www.openbare-verkopen.be/lot/760374) (Openbare Verkopen (BE)) | €120 | – | – | Mon 16 Nov 19:07 |
 |  | 🔧 Power tools | [Dewalt DCK732D2TT-QW SCHROEFBOORMACHINE](https://www.openbare-verkopen.be/lot/760382) (Openbare Verkopen (BE)) | €60 | – | – | Mon 16 Nov 19:09 |
@@ -554,7 +554,7 @@ _Monday 02 November 2026, 08:25 (Amsterdam time)_
 |  | Power tools | [Vlakschuurmachine (Festool) – RS 300 EQ-Set – in Systainer](https://www.bellauction.be/auctionlot/23121/vlakschuurmachine-festool-rs-300-eq-set-in-systainer) (BellAuction (BE)) | €60 | – | – | Thu 19 Nov 20:00 |
 |  | Power tools | [Accu boorhamer SDS-plus (Festool) – BHC 18 HPC 4,0 I-Plus](https://www.bellauction.be/auctionlot/23122/accu-boorhamer-sds-plus-festool-bhc-18-hpc-4-0-i-plus) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 20:00 |
 |  | Power tools | [Accu slagboorschroefmachine (Festool) – Quadrive TPC 18/4 5,0/4,0 I-Pl](https://www.bellauction.be/auctionlot/23123/accu-slagboorschroefmachine-festool-quadrive-tpc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €50 | – | – | Thu 19 Nov 20:00 |
-|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23124/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €50 | – | – | Thu 19 Nov 20:01 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23124/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 20:01 |
 |  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23125/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €50 | – | – | Thu 19 Nov 20:01 |
 |  | Power tools | [Invalcirkelzaag (Festool) – TS 75 EBQ-Plus – in Systainer](https://www.bellauction.be/auctionlot/23126/invalcirkelzaag-festool-ts-75-ebq-plus-in-systainer) (BellAuction (BE)) | €80 | – | – | Thu 19 Nov 20:01 |
 |  | Power tools | [Accu invalcirkelzaag (Festool) – TSC 55 KEB-Basic – solo, in Systainer](https://www.bellauction.be/auctionlot/23127/accu-invalcirkelzaag-festool-tsc-55-keb-basic-solo-in-systainer) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 20:02 |
