@@ -648,7 +648,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     if (market) {
       resale = market * S.factor / 100 - (DATA.settings.selling_costs || 0);
       caps.push(resale / (1 + Math.max(0, minMargin) / 100));
-      if (MIN_PROFIT > 0) caps.push(resale - MIN_PROFIT * Math.max(1, lot.units || 1));
+      var minProfit = lot.itemMinProfit != null ? lot.itemMinProfit : MIN_PROFIT;
+      var floor = Math.max(minProfit * Math.max(1, lot.units || 1), DATA.settings.min_lot_profit || 0);  /* min_lot_profit: per lot */
+      if (floor > 0) caps.push(resale - floor);
     }
     if (lot.itemMaxPrice != null) caps.push(lot.itemMaxPrice);
     var out = { market: market, source: source, costNow: costNow, resale: resale, trip: trip,

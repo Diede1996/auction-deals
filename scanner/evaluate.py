@@ -44,6 +44,7 @@ class Settings:
     transport_margin: float | None = None
     transport_min_value: float = 0.0
     min_profit: float = 0.0  # the max bid also leaves at least this much profit in euros per item in the lot
+    min_lot_profit: float = 0.0  # and at least this much for the whole lot (no driving for one item at €25)
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
@@ -55,7 +56,8 @@ class Settings:
                    margin_tiers=tuple(tiers),
                    transport_margin=float(d["transport_margin"]) if d.get("transport_margin") is not None else None,
                    transport_min_value=float(d.get("transport_min_value") or 0),
-                   min_profit=float(d.get("min_profit") or 0))
+                   min_profit=float(d.get("min_profit") or 0),
+                   min_lot_profit=float(d.get("min_lot_profit") or 0))
 
     def margin_for(self, sale_each: float | None, transport: bool = False) -> float:
         """The minimum margin for an item that sells for sale_each euros: transport_margin when a transporter
@@ -71,6 +73,7 @@ class Settings:
     def describe_margin(self) -> str:
         """e.g. "30% margin up to €50 per item, 25% above" or "50% margin"."""
         profit = f", at least €{self.min_profit:g} profit per item" if self.min_profit else ""
+        profit += f" and €{self.min_lot_profit:g} per lot" if self.min_lot_profit else ""
         if not self.margin_tiers:
             return f"{self.min_margin:.0%} margin" + profit + self._transport_text()
         parts = [f"{m:.0%} margin up to €{u:g}" for u, m in self.margin_tiers]
@@ -141,8 +144,10 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
         profit = resale - cost
         margin = profit / cost if cost > 0 else None
         caps.append(resale / (1 + max(0.0, min_margin)))
-        if settings.min_profit > 0:
-            caps.append(resale - settings.min_profit * max(1, units))
+        min_profit = item.min_profit if item.min_profit is not None else settings.min_profit
+        floor = max(min_profit * max(1, units), settings.min_lot_profit)
+        if floor > 0:
+            caps.append(resale - floor)
     if item.max_price is not None:
         caps.append(item.max_price)
     if not caps:

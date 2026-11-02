@@ -91,7 +91,7 @@ def settings_data(settings: Settings) -> dict:
     return {"min_margin": settings.min_margin,
             "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
             "transport_margin": settings.transport_margin,
-            "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit,
+            "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit, "min_lot_profit": settings.min_lot_profit,
             "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs}
 
 
@@ -510,7 +510,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "mpPlan": ({"kind": plan.kind, "model": plan.model, "brand": plan.brand, "note": plan.note,
                         "search": search_url(plan.searches[0])} if plan else None),
             "mpSearch": search_url(plan.searches[0] if plan else lot.title),
-            "itemMaxPrice": item.max_price, "itemMinMargin": item.min_margin,
+            "itemMaxPrice": item.max_price, "itemMinMargin": item.min_margin, "itemMinProfit": item.min_profit,
             "firstSeen": (seen.get(lot.key) or {}).get("first"), "isNew": lot.key in new_keys,
             "maxBid": v.max_bid, "isDeal": v.is_deal,
         })

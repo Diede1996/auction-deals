@@ -8,6 +8,7 @@
 #                  - {up_to: 50, min_margin: 0.3} = things selling for at most €50 need 30%, the rest min_margin
 #   transport_margin (optional) lots too far to drive that a transporter brings (config.yml driving.transport)
 #                  need this margin instead; the transport estimate is still a cost
+#   min_lot_profit minimum profit in euros for the whole lot, however few items (worth the drive)
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
 #   min_profit     (optional) the suggested max bid also leaves at least this much profit in euros per item
@@ -21,12 +22,14 @@
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
+#   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit
 #   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
 
 settings:
   resale_factor: 0.75
   min_margin: 0.25
-  min_profit: 50
+  min_profit: 25
+  min_lot_profit: 50
   transport_margin: 0.15
   transport_min_value: 100
 items:
@@ -37,21 +40,25 @@ items:
   exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard,
     kabel, baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
-  min_margin: 0.15  # electronics 15%: phones, tablets, laptops, desktops, headphones, cameras, audio, Dyson (Diede, 2026-11-02)
+  min_margin: 0.15  # electronics 15%: phones, tablets, laptops, desktops, headphones, cameras, audio, Dyson; min_profit €50 per item for these (Diede, 2026-11-02)
+  min_profit: 50
   keywords: [macbook]
   exclude: [hoes, sleeve, tas, oplader, lader, adapter]
 - name: iPad
   min_margin: 0.15
+  min_profit: 50
   keywords: [ipad]
   exclude: [hoes, hoesje, case, cover, houder, standaard, screenprotector]
 - name: Laptop
   min_margin: 0.15
+  min_profit: 50
   keywords: [thinkpad, elitebook, probook, zbook, latitude, surface pro, surface laptop, laptop, notebook]
   exclude: [tas, laptoptas, hoes, laptophoes, sleeve, lader, oplader, laptoplader, adapter, dock, docking,
     dockingstation, standaard, laptopstandaard, koeler, laptopkoeler, slot, kabel, moleskine, gelinieerd]
 - name: Desktop
   # added 2026-11-02 (Diede); a desktop without a model gets no price ("Model unknown")
   min_margin: 0.15
+  min_profit: 50
   keywords: [optiplex, elitedesk, prodesk, z2 mini, thinkcentre, thinkstation, mac mini, mac studio, imac,
     desktop pc, desktop computer, desktopcomputer, gaming pc, workstation, mini pc]
   exclude: [tas, hoes, kast, pc-kast, behuizing, tafel, computertafel, bureau, stoel, muis, toetsenbord, kabel,
@@ -77,6 +84,7 @@ items:
     deo]
 - name: Phone
   min_margin: 0.15
+  min_profit: 50
   # "samsung galaxy", not "galaxy": Galaxy is also a furniture brand (kinderbed, commode)
   keywords: [iphone, samsung galaxy, google pixel, pixel 4a, pixel 5, pixel 6, pixel 7, pixel 8, pixel 9, pixel 10, oneplus,
     smartphone, mobiele telefoon]
@@ -102,6 +110,7 @@ items:
     riem, v-riem, akkubox, acculader, lader, stroomgenerator, generator]
 - name: Camera
   min_margin: 0.15
+  min_profit: 50
   keywords: [canon eos, canon camera, canon objectief, canon lens, sony alpha, sony a7, sony camera,
     sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
   exclude: [tas, cameratas, hoes, riem, statief, accu, batterij, lader, oplader, filter, dummy, onderdeel,
@@ -109,6 +118,7 @@ items:
 # expensive headphones before Audio / beamer, so Bose and Sony headphones get 15% (Diede, 2026-11-02)
 - name: Headphones
   min_margin: 0.15
+  min_profit: 50
   keywords: [sony wh-1000xm, sony wh1000xm, sony wf-1000xm, bose quietcomfort, bose qc, bose 700, bose noise cancelling,
     airpods max, airpods pro, sennheiser momentum, sennheiser hd, beyerdynamic dt, beoplay h, bowers wilkins px,
     beats studio]
@@ -116,11 +126,13 @@ items:
     onderdeel, onderdelen, gehoorbescherming, gehoorbeschermer, speaker, luidspreker, soundbar, auto, autospeaker]
 - name: Audio / beamer
   min_margin: 0.15
+  min_profit: 50
   keywords: [sonos, bose, epson beamer, epson projector, benq beamer, benq projector, beamer, projector]
   exclude: [projectiescherm, scherm, doek, projectiedoek, beugel, plafondbeugel, wandbeugel, houder, standaard,
     beamerlamp, lamp, kabel, afstandsbediening, tas, overheadprojector, overhead, onderdeel, onderdelen]
 - name: Dyson / robot vacuum
   min_margin: 0.15
+  min_profit: 50
   keywords: [dyson, robotstofzuiger, roomba, irobot, roborock, ecovacs]
   exclude: [onderdeel, onderdelen, accu, batterij, filter, borstel, opzetstuk, hulpstuk, lader, oplader, houder,
     wandhouder, standaard]

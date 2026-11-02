@@ -21,6 +21,8 @@ WATCHLIST_HEADER = """\
 #                  - {up_to: 50, min_margin: 0.3} = things selling for at most €50 need 30%, the rest min_margin
 #   transport_margin (optional) lots too far to drive that a transporter brings (config.yml driving.transport)
 #                  need this margin instead; the transport estimate is still a cost
+#   min_profit     minimum profit in euros per item in the lot (x the number of items)
+#   min_lot_profit minimum profit in euros for the whole lot, however few items (worth the drive)
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
 #
@@ -32,6 +34,7 @@ WATCHLIST_HEADER = """\
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
+#   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit
 #   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
 """
 
