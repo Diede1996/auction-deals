@@ -72,7 +72,7 @@ def test_general_plans_are_rough_and_never_just_a_brand():
     assert p.searches[-1] == "kunstplant olijfboom"
     # "laptop hp" alone ranges from € 50 to € 1.000: the rough price needs one more word
     assert plan(LAPTOP, "Laptop HP i5-fcoxx. 8GB RAM. AMD Ryzen 3 7320u").searches == ["laptop hp fcoxx 8gb", "laptop hp fcoxx"]
-    assert plan(COFFEE, "Jura E8 volautomaat").searches == ["jura e8 volautomaat", "jura e8"]
+    assert plan(COFFEE, "Jura E8 volautomaat").searches == ["jura koffiemachine e8", "jura e8"]  # E8 right after the brand: exact
     assert plan(TOOLS, "Makita").rules == []
 
 
@@ -398,3 +398,30 @@ def test_wine_needs_a_name_to_get_a_price(title, kind):
     item = WatchItem(name="Wine", keywords=w["keywords"], exclude=w["exclude"])
     lot = Lot(site="x", url="u", title=title, lot_id="1", current_bid=0, closes_at=None)
     assert plan_for(item, lot).kind == kind
+
+
+def test_robot_vacuums_by_brand_line_and_generation():
+    robots = WatchItem(name="Dyson / robot vacuum", keywords=["dyson", "robotstofzuiger", "ecovacs"])
+    p = plan(robots, "DREAME L10s Ultra Gen 3 Kit Robotstofzuiger met dweilfunctie")
+    assert p.searches == ["dreame l10s ultra gen 3"]  # not "ultra g3": that found a BenQ monitor
+    rule = p.rules[-1]
+    assert rule.matches(normalize("Dreame L10s Ultra Gen 3 robotstofzuiger")) and not rule.matches(normalize("BenQ Ultra G3 monitor"))
+    assert not rule.matches(normalize("Dreame L10s Ultra robotstofzuiger"))
+    p = plan(robots, "MOVA Z60 Ultra Roller SA robotstofzuiger")
+    assert p.searches[0] == "mova robotstofzuiger z60" and p.rules[0].groups[0] == ("mova",)
+    heat = plan(robots, "DREAME L10s Pro Ultra Heat Robotstofzuiger en dweil").rules
+    assert heat[0].matches(normalize("Dreame L10s Pro Ultra Heat")) and not heat[0].matches(normalize("Dreame L10s Ultra"))
+    assert not heat[-1].matches(normalize("Dreame L10s Plus"))  # another variant
+    assert plan(robots, "Xiaomi Robotstofzuiger X20+").model == "X20"
+    assert plan(robots, "Dyson V8 Cyclone draadloze stofzuiger").model == "V8"
+    assert plan(robots, "Cecotec Robotstofzuiger").rules == []  # no model: no price
+
+
+def test_amazon_numbers_and_lumens_are_no_model():
+    assert model_code("Xiaomi robotstofzuiger B0DFHW2JTT") is None or model_code("Xiaomi robotstofzuiger B0DFHW2JTT")[0] != "b0dfhw2jtt"
+    assert model_code("4K UHD 2200 lumen HDR10+ Beamer") is None or "2200" not in model_code("4K UHD 2200 lumen HDR10+ Beamer")[0]
+
+
+def test_power_tool_model_keeps_sds_plus_listings():
+    rule = plan(TOOLS, "Accu boorhamer MAKITA DHR242 met accu").rules[-1]
+    assert rule.matches(normalize("Makita DHR242 18V SDS-Plus Boorhamer met accu"))

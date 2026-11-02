@@ -30,6 +30,7 @@ partij restpartij voorraad diverse div divers kavel lot set stuks stuk st stk pc
 v w watt gb tb inch type model merk bj bwjr bouwjaar ca circa oa etc zie foto fotos afbeelding afbeeldingen
 maat size nr no art artikel serie series gen generatie generation
 inc bv nv ltd gmbh corp corporation co nn
+hd uhd fhd qhd lumen lm
 zwart wit grijs zilver blauw rood groen bruin beige black white grey gray silver blue red
 twee drie vier vijf zes zeven acht negen tien
 ontbreekt ontbreken krasje kras krassen geen beschadigd beschadiging schade werkend werkt getest ongetest
@@ -57,11 +58,14 @@ CATEGORIES = [
     ("tablet", "tablets"),
     ("slagschroevendraaier", "slagschroevendraaiers", "slagschoevendraaier", "slagschroefmachine"),  # with a typo
     ("accu", "accus", "batterij", "battery", "akku"),
+    ("robotstofzuiger", "robotstofzuigers", "robot stofzuiger", "stofzuigerrobot", "zuigrobot", "dweilrobot"),
+    ("beamer", "beamers", "projector", "projectors"),
+    ("robotmaaier", "robotmaaiers", "maairobot", "grasmaairobot"),
     ("wijn", "wijnen", "wine", "vin"),
 ]
 _SPELLING = {"slagschoevendraaier": "slagschroevendraaier"}  # typos in lot titles, fixed in the Marktplaats search
 # Laptops, computers and tablets of one brand range from € 50 to € 2.000: without a model, no price at all.
-_NEEDS_MODEL = {CATEGORIES[1], CATEGORIES[10], CATEGORIES[12]}
+_NEEDS_MODEL = {CATEGORIES[1], CATEGORIES[10], CATEGORIES[12]} | {g for g in CATEGORIES if g[0] in ("robotstofzuiger", "beamer")}
 # Words that say how a tool works, not which tool it is: "Hilti accu" is not a product.
 _WEAK = {"accu", "accus", "snoerloos", "snoerloze", "draadloos", "draadloze", "elektrisch", "elektrische",
          "electric", "cordless"}
@@ -81,6 +85,8 @@ mafell kress skil kärcher karcher husqvarna stihl
 braun breville delonghi gaggia jura kenwood kitchenaid krups lelit magimix melitta miele moulinex nespresso
 rancilio saeco sage siemens smeg tefal thermomix vitamix dyson ninja cosori princess senseo bialetti rocket
 profitec
+dreame mova eureka ecovacs roborock irobot lefant zaco shark cecotec ultenic tineco rowenta
+sonos bose sennheiser beyerdynamic jbl marshall nikon fujifilm dji gopro oke aigostar gardena honda
 suitsupply boss boggi dsquared2 zara cavallaro oger
 """.split()
 MULTI_BRANDS = ["hugo boss", "de longhi", "la marzocco", "loro piana", "ralph lauren", "tommy hilfiger",
@@ -101,6 +107,8 @@ _SPEC_RE = re.compile(r"""^(?:
   | i[3579](?:\d{3,5}[a-z]{0,2})?
   | r[3579](?:\d{3,4}[a-z]{0,2})?
   | a\d{4}
+  | b0[a-z0-9]{8}                                      # Amazon numbers: "B0DFHW2JTT"
+  | hdr\d{1,2}
   | \d+(?:th|st|nd|rd)gen
   | (?:19|20)\d{2}s?
 )$""", re.X)
@@ -448,6 +456,13 @@ def _gen_tokens(text: str) -> list[str]:
     return gen_norm(normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", text or ""))).split()
 
 
+# Lines that name a laptop or PC without a number ("ZBook Firefly G10"); their brand stays out of the search
+_GEN_LINES = {"zbook", "elitebook", "probook", "elitedesk", "prodesk", "thinkpad", "thinkbook", "thinkcentre", "ideapad",
+              "latitude", "optiplex", "precision", "vostro", "inspiron", "yoga", "legion", "pavilion", "envy", "spectre",
+              "omen", "victus", "firefly", "fury", "studio", "power", "carbon", "elite", "pro"}
+_PC_BRANDS = {"hp", "lenovo", "dell", "fujitsu", "acer", "asus", "microsoft", "compaq", "toshiba", "medion", "msi"}
+
+
 def _generation(title: str) -> SearchPlan | None:
     tokens = _gen_tokens(title)
     gi = next((i for i, t in enumerate(tokens) if i and _GEN_TOKEN.fullmatch(t)), None)
@@ -466,18 +481,24 @@ def _generation(title: str) -> SearchPlan | None:
             break
         if re.fullmatch(r"1[0-8](?:inch)?", tok):  # "ZBook Studio 16 G10", "ThinkBook 15 G2": the screen size
             size = size or tok.replace("inch", "")
-        elif (tok.isdigit() and len(tok) == 3) or (tok.isalpha() and len(tok) >= 3) or re.fullmatch(r"[a-z]{1,2}\d{1,3}", tok):
+        elif (tok.isdigit() and len(tok) == 3) or (tok.isalpha() and len(tok) >= 3) \
+                or re.fullmatch(r"[a-z]{1,3}\d{1,4}[a-z]{0,2}", tok):  # "Dreame L10s Ultra Gen 3"
             words.insert(0, tok)  # "elitebook 840", "zbook firefly", "thinkpad t14", "x1 carbon"
         else:
             break
         j -= 1
     if not words:
         return None
+    if not brand and not any(any(c.isdigit() for c in w) or w in _GEN_LINES for w in words):
+        return None  # "Ultra Gen 3" alone is no model: which brand and line is it?
     gen = tokens[gi]
     groups: list[tuple[str, ...]] = [(w,) for w in words] + [(gen,)]
     if all(w.isdigit() for w in words):  # "HP 250 G8": the brand is part of the name
         if not brand:
             return None
+        groups.insert(0, (brand,))
+        words = [brand] + words
+    elif brand and brand not in _PC_BRANDS:  # "Dreame L10s Ultra G3": a Dreame, searched with the brand
         groups.insert(0, (brand,))
         words = [brand] + words
     name = " ".join(words)
@@ -490,7 +511,10 @@ def _generation(title: str) -> SearchPlan | None:
     for a, b in (("Zbook", "ZBook"), ("Elitebook", "EliteBook"), ("Probook", "ProBook"), ("Elitedesk", "EliteDesk"),
                  ("Prodesk", "ProDesk"), ("Thinkbook", "ThinkBook"), ("Thinkpad", "ThinkPad"), ("Ideapad", "IdeaPad")):
         shown = shown.replace(a, b)
-    return SearchPlan("exact", list(dict.fromkeys(r.label for r in rules)), rules, model=shown, brand=brand,
+    searches = list(dict.fromkeys(r.label for r in rules))
+    if brand and brand not in _PC_BRANDS:  # listings write "Dreame L10s Ultra Gen 3", not "G3"
+        searches = [re.sub(rf"\b{gen}$", "gen " + gen[1:], q) for q in searches]
+    return SearchPlan("exact", searches, rules, model=shown, brand=brand,
                       note=f"exact: {shown}")
 
 
@@ -623,7 +647,9 @@ def _cpu_skip(tokens: list[str]) -> set[int]:
     return out
 
 
-_PLATFORMS = {"m12", "m18", "m28"}  # Milwaukee: "M18" alone is every tool, battery and case of the 18 V range
+_PLATFORMS = {"m12", "m18", "m28"}
+# Versions of one model that sell for different prices: "L10s Ultra" is not an "L10s Pro Ultra"
+_VARIANTS = ("pro", "ultra", "plus", "max", "mini", "air", "omni", "heat", "complete", "lite", "slim", "combo")  # Milwaukee: "M18" alone is every tool, battery and case of the 18 V range
 
 
 def model_code(title: str) -> tuple[str, int] | None:
@@ -631,9 +657,11 @@ def model_code(title: str) -> tuple[str, int] | None:
     tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()  # 16” is a size
     cpu = _cpu_skip(tokens)
     for i, tok in enumerate(tokens):
+        prev = tokens[i - 1] if i else ""
+        if (prev in _BRANDS or prev in _CATEGORY_OF) and i not in cpu and re.fullmatch(r"[a-z]\d{1,3}[a-z]?", tok) and tok not in _PLATFORMS:
+            return tok, i  # right after the brand: "Dyson V8", "Xiaomi X20", "Sonos S5"
         if i in cpu or tok in _BRANDS or tok in NOISE or is_spec(tok):
             continue
-        prev = tokens[i - 1] if i else ""
         nxt = tokens[i + 1] if i + 1 < len(tokens) else ""
         short_prefix = (prev.isalpha() and 2 <= len(prev) <= 3 and prev not in NOISE and prev not in _BRANDS
                         and prev not in _CPU_WORDS and prev not in _CATEGORY_OF)
@@ -657,7 +685,8 @@ def distinctive(code: str) -> bool:
 
 
 _UNIT_WORDS = {"inch", "cm", "mm", "m", "meter", "kg", "gr", "g", "gb", "tb", "mb", "v", "w", "watt", "x", "stuks",
-               "st", "stk", "liter", "ltr", "l", "ml", "hz", "bar", "ah", "mah", "pk", "jaar", "dagen", "uur"}
+               "st", "stk", "liter", "ltr", "l", "ml", "hz", "bar", "ah", "mah", "pk", "jaar", "dagen", "uur",
+               "lumen", "lm"}
 
 _WINE_LOT = re.compile(r"(?<![a-z])(?:wijn|wijnen|wine|vin|vins|cava|prosecco|champagne|flessen|fles)(?![a-z])")
 _NUM_WORDS = {"twee": 2, "drie": 3, "vier": 4, "vijf": 5, "zes": 6, "zeven": 7, "acht": 8, "negen": 9, "tien": 10}
@@ -938,10 +967,18 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
                           and not re.fullmatch(r"\d+x?|x\d+", t)), "")
             what = first if first.isalpha() and len(first) >= 5 and first not in NOISE and first not in _BRANDS \
                 and first not in (brand or "").split() else None
-        if what and prefix:
+        if what and prefix and what not in prefix.split():
             searches.insert(0, f"{prefix} {what} {written}")
         label = " ".join(x for x in (brand, written) if x)
-        return SearchPlan("exact", searches, [Rule(groups, model=squashed, label=label)],
+        # "DREAME L10s Pro Ultra Heat": first listings of the same variant, then the model without other variants
+        toks = normalize(source).split()
+        start = next((i for i, t in enumerate(toks) if squashed.startswith(t) and t), len(toks))
+        lot_variants = tuple(dict.fromkeys(t for t in toks[start:start + 6] if t in _VARIANTS))
+        rules = ([Rule(groups + [(v,) for v in lot_variants], model=squashed, label=f"{label} {' '.join(lot_variants)}")]
+                 if lot_variants else []) + \
+            [Rule(groups, model=squashed, label=label,
+                  without=tuple(v for v in _VARIANTS if v not in lot_variants) if lot_variants else ())]
+        return SearchPlan("exact", searches, rules,
                           model=written.upper(), brand=brand,
                           note=(f"exact model {(brand or '').title()} {written.upper()}".replace("  ", " ").strip()
                                 + (" (type number from the lot description)" if from_description else "")))
