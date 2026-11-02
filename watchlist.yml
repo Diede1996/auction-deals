@@ -26,7 +26,7 @@
 settings:
   resale_factor: 0.75
   min_margin: 0.25
-  min_profit: 25
+  min_profit: 50
   transport_margin: 0.15
   transport_min_value: 100
 items:
@@ -37,7 +37,7 @@ items:
   exclude: [arm, monitorarm, beeldschermarm, beugel, monitorbeugel, houder, standaard, monitorstandaard,
     kabel, baby, babyfoon, monitoring, hartslag, tv, televisie]
 - name: MacBook
-  min_margin: 0.15  # phones, tablets, laptops, desktops, headphones: 15% (Diede, 2026-11-02)
+  min_margin: 0.15  # electronics 15%: phones, tablets, laptops, desktops, headphones, cameras, audio, Dyson (Diede, 2026-11-02)
   keywords: [macbook]
   exclude: [hoes, sleeve, tas, oplader, lader, adapter]
 - name: iPad
@@ -101,6 +101,7 @@ items:
     hoes, naaimachine, reinigingsmiddel, zeep, slang, t.b.v., reachtruck, heftruck, deurkruk, kruk, rozet, raab,
     riem, v-riem, akkubox, acculader, lader, stroomgenerator, generator]
 - name: Camera
+  min_margin: 0.15
   keywords: [canon eos, canon camera, canon objectief, canon lens, sony alpha, sony a7, sony camera,
     sony objectief, sony lens, nikon, fujifilm, dji, gopro, systeemcamera, spiegelreflex, spiegelreflexcamera]
   exclude: [tas, cameratas, hoes, riem, statief, accu, batterij, lader, oplader, filter, dummy, onderdeel,
@@ -114,10 +115,12 @@ items:
   exclude: [hoes, case, etui, oorkussens, kussens, kabel, standaard, houder, adapter, lader, oplader,
     onderdeel, onderdelen, gehoorbescherming, gehoorbeschermer, speaker, luidspreker, soundbar, auto, autospeaker]
 - name: Audio / beamer
+  min_margin: 0.15
   keywords: [sonos, bose, epson beamer, epson projector, benq beamer, benq projector, beamer, projector]
   exclude: [projectiescherm, scherm, doek, projectiedoek, beugel, plafondbeugel, wandbeugel, houder, standaard,
     beamerlamp, lamp, kabel, afstandsbediening, tas, overheadprojector, overhead, onderdeel, onderdelen]
 - name: Dyson / robot vacuum
+  min_margin: 0.15
   keywords: [dyson, robotstofzuiger, roomba, irobot, roborock, ecovacs]
   exclude: [onderdeel, onderdelen, accu, batterij, filter, borstel, opzetstuk, hulpstuk, lader, oplader, houder,
     wandhouder, standaard]
