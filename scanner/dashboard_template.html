@@ -526,7 +526,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       <h2>Buyer's premium per site</h2>
       <table id="fees"></table>
       <p id="drivingInfo" style="margin-top:12px"></p>
-      <p style="margin-top:8px">Your own values and hidden lots are stored only in this browser. <span id="ghState"></span></p>
+      <p style="margin-top:8px">Your own values are stored only in this browser; hidden lots too, unless your private repository is connected (Pickups tab): then they are the same on all your devices. <span id="ghState"></span></p>
     </div>
   </footer>
 </main>
@@ -571,6 +571,11 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   delete S.r; delete S.minProfit;  /* older settings: target return, minimum profit in euros */
   var values = store.get("values", {});
   var hidden = store.get("hidden", {});
+  /* when each lot was hidden or shown again (key -> { h: 1 or 0, at: ms }): with your private repository connected,
+     the Pickups script keeps this in sync between your devices, the latest change of a lot winning */
+  var hiddenLog = store.get("hiddenLog", {});
+  Object.keys(hidden).forEach(function (k) { if (!hiddenLog[k]) hiddenLog[k] = { h: 1, at: Date.now() }; });
+  store.set("hiddenLog", hiddenLog);
   var ui = Object.assign({ sort: "closing", onlyRoom: false, showHidden: false, item: "", site: "", q: "", view: "all", when: "" }, store.get("ui", {}));
   var editing = null;
 
@@ -1117,7 +1122,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   function toggleHidden(key) {
     var on = !hidden[key];
     if (on) hidden[key] = 1; else delete hidden[key];
-    store.set("hidden", hidden); render();
+    hiddenLog[key] = { h: on ? 1 : 0, at: Date.now() };
+    store.set("hidden", hidden); store.set("hiddenLog", hiddenLog); render();
+    if (window.__ADP && window.__ADP.hiddenChanged) window.__ADP.hiddenChanged();
     toast(on ? "Hidden. Tick “Show hidden” to see it again." : "Back in the list.", function () { toggleHidden(key); });
   }
 
@@ -1734,7 +1741,23 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   /* for the Pickups, Stock, Listings and Finance tabs (the script below) */
   window.__AD = { el: el, money: money, toast: toast, store: store, safeUrl: safeUrl, OWNER: OWNER, REPO: REPO,
                   categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; },
-                  lots: function () { return DATA.lots || []; }, favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
+                  lots: function () { return DATA.lots || []; },
+                  /* merge the hidden lots saved by your other devices; returns the merged list to save back */
+                  mergeHidden: function (remote) {
+                    var changed = false;
+                    Object.keys(remote || {}).forEach(function (k) {
+                      var r = remote[k], mine = hiddenLog[k];
+                      if (!r || typeof r.at !== "number" || (mine && mine.at >= r.at)) return;
+                      hiddenLog[k] = { h: r.h ? 1 : 0, at: r.at };
+                      if (r.h) hidden[k] = 1; else delete hidden[k];
+                      changed = true;
+                    });
+                    var cutoff = Date.now() - 120 * 86400000;  /* lots closed long ago */
+                    Object.keys(hiddenLog).forEach(function (k) { if (hiddenLog[k].at < cutoff) { delete hiddenLog[k]; if (hidden[k]) { delete hidden[k]; changed = true; } } });
+                    store.set("hidden", hidden); store.set("hiddenLog", hiddenLog);
+                    if (changed && !PRIVATE_VIEWS[ui.view]) render();
+                    return JSON.parse(JSON.stringify(hiddenLog));
+                  }, favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
 })();
 </script>
 <script>

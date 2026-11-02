@@ -136,7 +136,7 @@ At the top you set:
 - **Minimum margin**: the suggested max bid always leaves at least this margin, as a % of what you pay (bid, premium, VAT and driving). At 30% you pay at most your sale price ÷ 1.3. The default is 30%. With `margin_tiers` in `watchlist.yml` cheaper things can need a higher margin, by expected sale price per item, e.g. 50% up to €100, 40% up to €250, 30% up to €500; above the last tier the minimum margin applies. With `min_profit` (e.g. `25`) the max bid also leaves at least that many euros profit per item in the lot (a lot of 4 needs 4 × that), so every sale stays worth your time.
 - **Count driving costs**: include the drive to the pickup address in what you pay (on by default).
 
-Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values, hidden lots and settings are saved in that browser only.
+Every margin and max bid updates as soon as you change these. **Hide** removes lots you're not interested in. Your own values and settings are saved in that browser only. Hidden lots too, unless you connected your private repository (the Pickups tab, once per device): then they're kept in `data/hidden.json` there and are the same on your phone and laptop, the latest change of a lot winning.
 
 **Price spread.** Click the small bar chart (*22 listings ▾*) to open a histogram of all comparable Marktplaats asking prices. It marks the median and the price you expect to sell for, tells you how many listings ask less than that, and lists the cheapest listings with links. If most bars sit on the low side, many sellers undercut the median, so expect to sell lower or wait longer. Outliers, such as a €9.999 joke listing, are left out and named below the chart.
 

@@ -264,7 +264,7 @@
       }).then(function () {
         store.set("privToken", token); store.set("privRepo", repo); connectMessage = "";
         toast("Connected to " + repo + ".");
-        draw();
+        draw(); syncHidden();
       }, function (e) {
         P.token = null; ok.disabled = false;
         show(e && e.public ? repo + " is public, so everything in it can be read by anyone. Make it private on GitHub (Settings → Danger zone → Change visibility) or pick another repository." :
@@ -1268,10 +1268,43 @@
     openDlg(form);
   }
 
+  /* ---------- hidden lots, the same on all your devices: data/hidden.json in your private repository ---------- */
+  var HIDDEN_PATH = "data/hidden.json";
+  var H = { sha: null, chain: Promise.resolve(), timer: null, at: 0 };
+  function syncHidden() {
+    if (!P.token || !AD.mergeHidden) return Promise.resolve();
+    var p = H.chain.then(function () { return syncHiddenOnce(0); });
+    H.chain = p.catch(function () { /* tried again at the next change or visit */ });
+    return p;
+  }
+  function syncHiddenOnce(tries) {
+    return gh(filePath(HIDDEN_PATH)).then(function (f) {
+      return { sha: f.sha, items: (JSON.parse(fromB64(f.content || "") || "{}") || {}).items || {} };
+    }, function (e) {
+      if (e.status === 404) return { sha: null, items: {} };
+      throw e;
+    }).then(function (remote) {
+      H.sha = remote.sha; H.at = Date.now();
+      var merged = AD.mergeHidden(remote.items);
+      if (JSON.stringify(merged) === JSON.stringify(remote.items)) return null;
+      var body = { message: "Hidden lots", content: toB64(JSON.stringify({ version: 1, items: merged }) + "\n") };
+      if (H.sha) body.sha = H.sha;
+      return gh(filePath(HIDDEN_PATH), { method: "PUT", body: body }).then(function (r) { H.sha = r.content.sha; }, function (e) {
+        if ((e.status === 409 || e.status === 422) && tries < 2) return syncHiddenOnce(tries + 1);  /* another device saved */
+        throw e;
+      });
+    });
+  }
+
   /* ---------- wiring ---------- */
   window.__ADP = {
-    render: function (v) { view = v; draw(); }
+    render: function (v) { view = v; draw(); },
+    hiddenChanged: function () { clearTimeout(H.timer); H.timer = setTimeout(syncHidden, 1500); }
   };
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && P.token && Date.now() - H.at > 60000) syncHidden();
+  });
+  syncHidden();
   /* another device may have saved: read again when you come back to this tab after a while */
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible" && P.token && P.loaded && VIEWS[view] && Date.now() - P.loadedAt > 60000 && !P.saving && !dlg.open) {
