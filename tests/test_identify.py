@@ -425,3 +425,11 @@ def test_amazon_numbers_and_lumens_are_no_model():
 def test_power_tool_model_keeps_sds_plus_listings():
     rule = plan(TOOLS, "Accu boorhamer MAKITA DHR242 met accu").rules[-1]
     assert rule.matches(normalize("Makita DHR242 18V SDS-Plus Boorhamer met accu"))
+
+
+def test_model_in_the_title_wins_over_a_code_in_the_description():
+    lot = Lot("x", "1", "Dyson V8 Cyclone draadloze stofzuiger", "u", 1, None,
+              description="Dyson V8 Cyclone draadloze stofzuiger, type AW 60, incl. lader")
+    p = plan_for(WatchItem(name="Dyson", keywords=["dyson"]), lot)
+    assert (p.model, p.searches) == ("V8", ["dyson v8"])  # not "dyson aw 60", which found V15s and V12s
+    assert not p.rules[-1].matches(normalize("Dyson V15 Detect")) and not p.rules[-1].matches(normalize("Dyson V12 Slim"))
