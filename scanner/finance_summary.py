@@ -105,7 +105,21 @@ def summarize(data, now=None):
         "paidTotal": r(sum(float(it.get("paid") or 0) for it in items)),
         "items": len(items),
         "itemsByStatus": {s: sum(1 for it in items if _status(it) == s) for s in STATUSES},
+        # per item, for the charts in the wealth overview (the private repository only)
+        "keptItems": sorted(({"name": it.get("name") or "", "paid": r(_kept_new_value(it) - _saved(it)), "newValue": r(_kept_new_value(it))}
+                             for it in items if _saved(it) is not None), key=lambda x: x["paid"] - x["newValue"]),
+        "soldItems": sorted(_sold_rows(items), key=lambda x: x["cost"] - x["price"]),
     }
+
+
+def _sold_rows(items):
+    for it in items:
+        if it.get("personal"):
+            continue
+        paid_sales = [s for s in _sales(it) if not s.get("unpaid")]
+        if paid_sales:
+            yield {"name": it.get("name") or "", "cost": round(sum(_sale_cost(it, s) for s in paid_sales), 2),
+                   "price": round(sum(float(s.get("price") or 0) for s in paid_sales), 2)}
 
 
 def main(argv):
