@@ -594,6 +594,7 @@
     var all = items().filter(matches);
     var rows = [];
     all.forEach(function (it) {
+      if (it.personal) return;  /* bought for yourself and sold later to get rid of it: not resale profit */
       sales(it).forEach(function (s, i) {
         rows.push({ it: it, s: s, i: i, date: validDay(s.date) ? s.date : null, cost: saleCost(it, s), price: s.price || 0, unpaid: !!s.unpaid });
       });

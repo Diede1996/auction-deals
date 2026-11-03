@@ -24,3 +24,9 @@ def test_totals():
     assert s["earnedWhenPaid"] == 100
     assert s["moneyInStock"] == 80  # the unpaid sale already counts as sold
     assert s["updatedAt"] == "2026-11-03T00:00:00Z"
+
+
+def test_personal_item_sold_later_is_not_profit():
+    data = {"items": [{"status": "sold", "paid": 57.6, "personal": True, "sales": [{"price": 50}]}]}
+    s = summarize(data, NOW)
+    assert s["earned"] == 0 and s["sales"] == 0 and s["saved"] == 0

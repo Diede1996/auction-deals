@@ -75,6 +75,8 @@ def summarize(data, now=None):
     revenue = cost = waiting = 0.0
     sales_count = 0
     for it in items:
+        if it.get("personal"):  # bought for yourself, sold later to get rid of it: not resale profit
+            continue
         for s in _sales(it):
             price, c = float(s.get("price") or 0), _sale_cost(it, s)
             if s.get("unpaid"):
