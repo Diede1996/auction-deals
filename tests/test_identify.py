@@ -56,7 +56,7 @@ def test_exact_plans_search_brand_and_model():
     # the brand closest to the model: "HP COMPAQ LA2306x" -> compaq
     assert plan(MONITOR, "Twee beeldschermen HP COMPAQ LA2306x").searches[0] == "compaq monitor la2306x"
     # the watchlist keyword is the brand
-    assert plan(TOOLS, "Makita JR 3030T reciprozaag").searches == ["makita jr 3030t", "makita jr3030t"]
+    assert plan(TOOLS, "Makita JR 3030T reciprozaag").searches == ["makita reciprozaag jr 3030t", "makita jr 3030t", "makita jr3030t"]
     assert plan(LAPTOP, "Microsoft Surface Pro 1796 i5").searches == ["surface pro 1796"]
 
 
@@ -449,3 +449,11 @@ def test_count_before_brand():
     assert quantity("2 Sonos One Gen 2 speakers, 1 met originele doos") == 2
     assert quantity("18 Makita accu") == 18
     assert quantity("2 Sonos") == 2
+
+
+def test_product_type_after_the_model_goes_in_the_search():
+    item = WatchItem(name="Power tools", keywords=["makita", "metabo", "dyson"])
+    assert plan_for(item, Lot("x", "1", "Makita LS1214L Afkortzaag", "u", 1, None)).searches[0] == "makita afkortzaag ls1214l"
+    assert plan_for(item, Lot("x", "1", "Makita DGA504Z haakse slijper body", "u", 1, None)).searches[0] \
+        == "makita haakse slijper dga504z"
+    assert "cyclone" not in plan_for(item, Lot("x", "1", "Dyson V8 Cyclone draadloze stofzuiger", "u", 1, None)).searches[0]

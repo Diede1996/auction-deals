@@ -931,6 +931,12 @@ def model_words(title: str) -> list[str]:
     return list(dict.fromkeys(out))
 
 
+# what a tool or device is called: "afkortzaag", "boorhamer", "snellader", "bouwradio", "combopack"
+_PRODUCT_NOUN = re.compile(r"(?:zaag|slijper|slijpmachine|machine|frees|hamer|lader|lamp|radio|pomp|spuit|zuiger"
+                           r"|boor|schuurder|schaaf|tacker|nietmachine|meter|laser|pack|kit|blazer|trimmer|maaier"
+                           r"|reiniger|schroevendraaier|moersleutel|compressor|stofzuiger|speaker|blender)$")
+
+
 def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | None:
     mac = (mac_plan(lot.title) or ipad_plan(lot.title) or phone_plan(lot.title)
            or generation_plan(lot.title, lot.description))
@@ -978,8 +984,16 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
         if not what:  # the first word names the product: "Geleiderail Festool", "Accu vetspuit"
             first = next((t for t in toks if t not in _WEAK and t not in _BRANDS
                           and not re.fullmatch(r"\d+x?|x\d+", t)), "")
-            what = first if first.isalpha() and len(first) >= 5 and first not in NOISE and first not in _BRANDS \
-                and first not in (brand or "").split() else None
+            # or the word right after the type: "Makita LS1214L Afkortzaag"
+            last = written.split()[-1]
+            i = next((i for i, t in enumerate(toks[:-1]) if t == last), None)
+            after = toks[i + 1] if i is not None else ""
+            if after == "haakse" and i + 2 < len(toks):
+                after = f"haakse {toks[i + 2]}"  # "haakse slijper"
+            if not _PRODUCT_NOUN.search(after):
+                after = ""  # "Dyson V8 Cyclone", "UHE 22 Multi": a name, not what it is
+            what = next((w for w in (first, after) if w.replace(" ", "").isalpha() and len(w) >= 5 and w not in NOISE
+                         and w not in _BRANDS and w not in _WEAK and w not in (brand or "").split()), None)
         if what and prefix and what not in prefix.split():
             searches.insert(0, f"{prefix} {what} {written}")
         label = " ".join(x for x in (brand, written) if x)

@@ -144,7 +144,7 @@ def test_second_search_writes_the_model_differently():
 
     finder = PriceFinder(FakeHttp([(url_has("marktplaats.nl/lrp/api/search"), search)]), {}, NOW)
     est = finder.for_lot(WatchItem(name="Tools", keywords=["makita"]), Lot("h", "1", "Makita JR 3030T reciprozaag", "u", 25, None))
-    assert ["makita+jr+3030t" in calls[0], "makita+jr3030t" in calls[1]] == [True, True]
+    assert ["makita+reciprozaag+jr+3030t" in calls[0], "makita+jr+3030t" in calls[1], "makita+jr3030t" in calls[2]] == [True, True, True]
     assert est.count == 3 and est.model == "JR 3030T"  # both spellings count
 
 
