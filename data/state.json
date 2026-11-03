@@ -936,6 +936,34 @@
    "at": "2026-11-03T11:54:06.611271+00:00",
    "d": "1 x Festool elektrische invalcirkelzaag type TS55FEBQ met systainer Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens de veiling b"
   },
+  "plaatsjebod:61196": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Partij IP-telefoons waaronder Yealink T41S, Astra 6731, 5 x hoofdtelefoonstandaard, 1 x gebruikte Beats hoofdtelefoon, 2 x NANO station M5 Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te "
+  },
+  "plaatsjebod:61199": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Sonos One speaker Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens de veiling bereikbaar bent."
+  },
+  "plaatsjebod:61202": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Sonos One speaker Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens de veiling bereikbaar bent."
+  },
+  "plaatsjebod:61271": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Samsung 46 inch beeldscherm type UE46ES8000 met wandbeugel, Apple TV, webcam, ACER computer met toebehoren Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belang"
+  },
+  "plaatsjebod:61277": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x JURA Impressa XS9 meerkeuze espressomachine met melkopschuimer en toebehoren Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens"
+  },
+  "plaatsjebod:61307": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Karcher nat-/ droogzuiger model WD4 Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens de veiling bereikbaar bent."
+  },
+  "plaatsjebod:61310": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "d": "1 x Karcher nat-/ droogzuiger model WD2 Tijdens de veiling kunnen wij actieve bieders telefonisch of schriftelijk benaderen om biedingen te controleren. Dit doen we om bieders en het biedproces te beschermen. Het is daarom belangrijk dat je als bieder tijdens de veiling bereikbaar bent."
+  },
   "proveiling:3288151": {
    "at": "2026-10-09T10:31:12.826855+00:00",
    "d": "Onde Karlsson wandklok met een opvallend pixelart-ontwerp van Marilyn Monroe op de wijzerplaat. B29cm/. Verwachte opbrengst € 15,00 - € 25,00. Dit betreft een tijdens transport kwetsbaar product! Uw transportrisico voor deze kavel is zeker in combinatie met andere kavels hoog. Lees daarom a.u.b. ook"
@@ -1922,6 +1950,11 @@
    "lat": 50.9325481,
    "lon": 4.4810521
   },
+  "Vredeweg 1 B, Zaandam": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "lat": 52.42540799,
+   "lon": 4.8435031
+  },
   "Vrijlatenstraat 14 poort F, 8020 Ruddervoorde, België": {
    "at": "2026-10-29T13:18:54.319397+00:00",
    "fail": true
@@ -1949,117 +1982,117 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 996,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 843,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
-   "lots": 122,
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
+   "lots": 59,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
    "lots": 300,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 1690,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
-   "lots": 3562,
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
+   "lots": 3719,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
-   "lots": 5476,
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
+   "lots": 5477,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
-   "lots": 257,
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
+   "lots": 314,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 3515,
    "ok": true,
    "warned": false
   },
   "troostwijk": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
-   "error": "",
-   "fails": 0,
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "error": "alerts mailbox: abort: command: FETCH => socket error: EOF",
+   "fails": 1,
    "last_ok": "2026-11-03T11:54:06.611271+00:00",
    "lots": 331,
-   "ok": true
+   "ok": false
   },
   "veilingwinnaar": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 70,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-03T11:54:06.611271+00:00",
+   "last_ok": "2026-11-03T14:17:54.964117+00:00",
    "lots": 3201,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-11-03T11:54:06.611271+00:00",
-  "deals": 35,
+  "at": "2026-11-03T14:17:54.964117+00:00",
+  "deals": 37,
   "defects": 4,
-  "lots": 20063,
-  "matches": 596,
-  "new": 106,
-  "requests": 1027,
-  "too_old": 53
+  "lots": 19884,
+  "matches": 579,
+  "new": 7,
+  "requests": 1011,
+  "too_old": 52
  },
  "price_cache": {
   "exact acer beeldscherm monitor v246hl|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact acer monitor v246hl|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -2128,6 +2161,11 @@
     "search": "acer v246hl"
    },
    "v": 4
+  },
+  "exact airfryer af12l|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "exact airfryer airfryer af12l|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -2202,6 +2240,54 @@
    "at": "2026-10-27T09:47:29.605837+00:00",
    "est": null,
    "v": 4
+  },
+  "exact bosch gbh boorhamer 26f|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 4,
+    "high": 483.74,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "bosch proffesional combihamer boormachine gbh 18 v 26f",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2458570290-bosch-proffesional-combihamer-boormachine-gbh-18-v-26f"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "Bosch GBH 18v-26 F Accu Boorhamer SDS-plus",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2443359515-bosch-gbh-18v-26-f-accu-boorhamer-sds-plus"
+     },
+     {
+      "kind": "bid",
+      "price": 374.99,
+      "title": "Bosch Professional GBH 18V-26 F + 2 Accu's en Oplader |",
+      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2423982933-bosch-professional-gbh-18v-26-f-2-accu-s-en-oplader"
+     },
+     {
+      "kind": "fixed",
+      "price": 519.99,
+      "title": "Bosch Blauw GBH 18V-26 F Combihamer Compleet in Koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2450666085-bosch-blauw-gbh-18v-26-f-combihamer-compleet-in-koffer"
+     }
+    ],
+    "low": 142.5,
+    "median": 262.5,
+    "model": "26F",
+    "outliers": [],
+    "prices": [
+     140.0,
+     150.0,
+     374.99,
+     519.99
+    ],
+    "query": "bosch gbh 26f",
+    "search": "bosch gbh boorhamer 26f"
+   },
+   "v": 7
   },
   "exact bosch gbh boorhamer 36|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -2303,9 +2389,9 @@
    "v": 4
   },
   "exact bosch gbh boorhamer 36|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 257.5,
     "kind": "exact",
@@ -2334,7 +2420,7 @@
     "query": "bosch gbh 36 plus",
     "search": "bosch gbh boorhamer 36"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch gll bm1|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -2347,9 +2433,9 @@
    "v": 4
   },
   "exact bosch gll lijnlaser bm1|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch gsb schroefklopboormachine 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -2357,9 +2443,9 @@
    "v": 4
   },
   "exact bosch gsb schroefklopboormachine 14|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch gsr 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -2486,9 +2572,9 @@
    "v": 4
   },
   "exact bosch gsr accuschroefboormachine 14|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 201.24,
     "kind": "exact",
@@ -2531,7 +2617,7 @@
     "query": "bosch gsr 14",
     "search": "bosch gsr accuschroefboormachine 14"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch gst decoupeerzaag 150|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -2631,9 +2717,9 @@
    "v": 4
   },
   "exact bosch gst decoupeerzaag 150|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 10,
     "high": 153.75,
     "kind": "exact",
@@ -2718,7 +2804,7 @@
     "query": "bosch gst 150",
     "search": "bosch gst decoupeerzaag 150"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch gws 230|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -2832,9 +2918,9 @@
    "v": 4
   },
   "exact bosch gws 230|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 13,
     "high": 182.5,
     "kind": "exact",
@@ -2940,7 +3026,7 @@
     "query": "bosch gws 230",
     "search": "bosch gws 230"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch gws haakse 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -2948,9 +3034,9 @@
    "v": 4
   },
   "exact bosch gws haakse 14|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional al 1820|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T11:57:02.032500+00:00",
@@ -2958,9 +3044,9 @@
    "v": 4
   },
   "exact bosch professional al 1820|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional al 1860|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -2968,9 +3054,9 @@
    "v": 4
   },
   "exact bosch professional al 1860|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional dle 150|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T11:54:06.611271+00:00",
@@ -2983,9 +3069,9 @@
    "v": 4
   },
   "exact bosch professional dnm 1201l|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional gal 1880|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T11:57:02.032500+00:00",
@@ -2993,9 +3079,9 @@
    "v": 4
   },
   "exact bosch professional gal 1880|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional gsb 18|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -3032,9 +3118,9 @@
    "v": 4
   },
   "exact bosch professional gsb 18|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 157.5,
     "kind": "exact",
@@ -3063,7 +3149,7 @@
     "query": "bosch professional gsb 18",
     "search": "bosch professional gsb 18"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch professional gsr 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -3100,9 +3186,9 @@
    "v": 4
   },
   "exact bosch professional gsr 14|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 258.75,
     "kind": "exact",
@@ -3131,7 +3217,7 @@
     "query": "bosch professional gsr 14",
     "search": "bosch professional gsr 14"
    },
-   "v": 6
+   "v": 7
   },
   "exact bosch professional gws 1400|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -3207,9 +3293,9 @@
    "v": 4
   },
   "exact bosch professional gws 17|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional gws 21|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -3217,9 +3303,9 @@
    "v": 4
   },
   "exact bosch professional gws 21|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact bosch professional haakse gws 10|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -3227,14 +3313,48 @@
    "v": 4
   },
   "exact bosch professional haakse gws 10|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
+  },
+  "exact bosch professional haakse slijper gws 1400|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 68.75,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "BOSCH GWS1400 PROFESSIONAL haakse slijper. Bosch blauw!!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2461351292-bosch-gws1400-professional-haakse-slijper-bosch-blauw"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "Bosch GWS 1400 Professional haakse slijpmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447307177-bosch-gws-1400-professional-haakse-slijpmachine"
+     }
+    ],
+    "low": 46.25,
+    "median": 57.5,
+    "model": "GWS 1400",
+    "outliers": [],
+    "prices": [
+     50.0,
+     65.0
+    ],
+    "query": "bosch professional gws 1400",
+    "search": "bosch professional haakse slijper gws 1400"
+   },
+   "v": 7
   },
   "exact cava mobiel d20|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact compaq la2306x|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -4030,9 +4150,9 @@
    "v": 4
   },
   "exact dewalt bouwradio dc011|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 80.0,
     "kind": "exact",
@@ -4061,17 +4181,17 @@
     "query": "dewalt dc011",
     "search": "dewalt bouwradio dc011"
    },
-   "v": 6
+   "v": 7
   },
   "exact dewalt bovenfrees dw614|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt cirkelzaag d23620|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt cirkelzaag d23650|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -4079,9 +4199,9 @@
    "v": 4
   },
   "exact dewalt cirkelzaag d23650|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt cirkelzaagmachine dcs571nt|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T11:54:06.611271+00:00",
@@ -4358,9 +4478,9 @@
    "v": 4
   },
   "exact dewalt lijnlaser dw088cg|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 9,
     "high": 149.0,
     "kind": "exact",
@@ -4438,7 +4558,7 @@
     "query": "dewalt dw088cg",
     "search": "dewalt lijnlaser dw088cg"
    },
-   "v": 6
+   "v": 7
   },
   "exact dewalt lijnlaser tw088|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -4446,9 +4566,9 @@
    "v": 4
   },
   "exact dewalt lijnlaser tw088|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt lijnlaser tw88|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -4456,19 +4576,19 @@
    "v": 4
   },
   "exact dewalt lijnlaser tw88|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt meerpuntsluitingfrees dw621|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt schaaf d26500|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dewalt schaaf dw680|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -4535,14 +4655,14 @@
    "v": 4
   },
   "exact dyson steelstofzuiger dc45|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact dyson stofzuiger dc08|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 5,
     "high": 109.97,
     "kind": "exact",
@@ -4594,7 +4714,7 @@
     "query": "dyson dc08",
     "search": "dyson stofzuiger dc08"
    },
-   "v": 6
+   "v": 7
   },
   "exact ean 3491953978039|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -5452,9 +5572,9 @@
    "v": 4
   },
   "exact festool invalcirkelzaag ts 55|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 9,
     "high": 540.0,
     "kind": "exact",
@@ -5532,7 +5652,7 @@
     "query": "festool ts 55",
     "search": "festool invalcirkelzaag ts 55"
    },
-   "v": 6
+   "v": 7
   },
   "exact festool invalcirkelzaag ts 60|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -5576,9 +5696,9 @@
    "v": 4
   },
   "exact festool invalcirkelzaag ts 60|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 10.25,
     "kind": "exact",
@@ -5607,7 +5727,7 @@
     "query": "festool ts 60",
     "search": "festool invalcirkelzaag ts 60"
    },
-   "v": 6
+   "v": 7
   },
   "exact festool of1010ebq|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -6458,9 +6578,9 @@
    "v": 4
   },
   "exact hilti boorhamer te16|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact hilti boormachines sr 16|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -6468,9 +6588,9 @@
    "v": 4
   },
   "exact hilti boormachines sr 16|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact hilti bx3|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -6524,9 +6644,9 @@
    "v": 4
   },
   "exact hilti combihamer te 60|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact hilti dg 150|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -6583,9 +6703,9 @@
    "v": 4
   },
   "exact hilti schiethamer bx3|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 1006.25,
     "kind": "exact",
@@ -6614,7 +6734,7 @@
     "query": "hilti bx3",
     "search": "hilti schiethamer bx3"
    },
-   "v": 6
+   "v": 7
   },
   "exact hilti schiethamer bx4|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -6622,9 +6742,9 @@
    "v": 4
   },
   "exact hilti schiethamer bx4|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact hilti te 16|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-24T04:38:55.339053+00:00",
@@ -6685,9 +6805,9 @@
    "v": 4
   },
   "exact hp beeldscherm monitor la2306x|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact hp computer z240|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-29T10:52:36.810240+00:00",
@@ -7816,9 +7936,9 @@
    "v": 4
   },
   "exact iphone 13 pro max 256gb|accu,armband,armbanden,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,sportarmband,standaard,tab,tablet,watch": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 44,
     "high": 536.24,
     "kind": "exact",
@@ -8059,7 +8179,7 @@
     "query": "iphone 13 pro max 256gb",
     "search": "iphone 13 pro max 256gb"
    },
-   "v": 6
+   "v": 7
   },
   "exact iphone 13 pro max 256gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -8778,9 +8898,9 @@
    "v": 4
   },
   "exact karcher hogedrukreiniger k5|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 9,
     "high": 255.0,
     "kind": "exact",
@@ -8845,8 +8965,8 @@
     "model": "K5",
     "outliers": [
      15.0,
-     20.0,
      23.93,
+     25.0,
      30.0,
      65.0
     ],
@@ -8864,7 +8984,7 @@
     "query": "karcher k5",
     "search": "karcher hogedrukreiniger k5"
    },
-   "v": 6
+   "v": 7
   },
   "exact laptop ac1d|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -9687,9 +9807,9 @@
    "v": 4
   },
   "exact makita accuboorhamer bhr261|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 254.94,
     "kind": "exact",
@@ -9718,7 +9838,7 @@
     "query": "makita bhr261",
     "search": "makita accuboorhamer bhr261"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita acculader dc18ra|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -9776,9 +9896,9 @@
    "v": 4
   },
   "exact makita acculader dc18ra|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 5,
     "high": 75.0,
     "kind": "exact",
@@ -9828,7 +9948,7 @@
     "query": "makita dc18ra",
     "search": "makita acculader dc18ra"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita acculader dc18rc|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -9937,9 +10057,9 @@
    "v": 4
   },
   "exact makita acculader dc18rc|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 7,
     "high": 27.5,
     "kind": "exact",
@@ -10009,7 +10129,7 @@
     "query": "makita dc18rc",
     "search": "makita acculader dc18rc"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita afkortzaag dss611|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T10:04:47.419265+00:00",
@@ -10073,9 +10193,9 @@
    "v": 4
   },
   "exact makita bl1626|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita bl1860b|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -10398,6 +10518,40 @@
    "est": null,
    "v": 5
   },
+  "exact makita boorhamer dhr202z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 156.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DHR202z boormachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441668386-makita-dhr202z-boormachine"
+     },
+     {
+      "kind": "fixed",
+      "price": 145.0,
+      "title": "Makita DHR202Z 18V Li-Ion Accu SDS-plus combihamer body - 2J",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1880413462-makita-dhr202z-18v-li-ion-accu-sds-plus-combihamer-body-2j"
+     }
+    ],
+    "low": 88.75,
+    "median": 122.5,
+    "model": "DHR202Z",
+    "outliers": [],
+    "prices": [
+     100.0,
+     145.0
+    ],
+    "query": "makita dhr202z",
+    "search": "makita boorhamer dhr202z"
+   },
+   "v": 7
+  },
   "exact makita boorhamer dhr242|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
    "est": {
@@ -10440,9 +10594,9 @@
    "v": 4
   },
   "exact makita boorhamer dhr242|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 243.75,
     "kind": "exact",
@@ -10487,7 +10641,7 @@
     "query": "makita dhr242",
     "search": "makita boorhamer dhr242"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita boorhamer hp2051f|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -10559,9 +10713,9 @@
    "v": 4
   },
   "exact makita boorhamer hp2051f|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 8,
     "high": 100.0,
     "kind": "exact",
@@ -10632,7 +10786,7 @@
     "query": "makita hp2051f",
     "search": "makita boorhamer hp2051f"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita boorhamer hr218f|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -10640,9 +10794,9 @@
    "v": 4
   },
   "exact makita boorhamer hr218f|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita boorhamer hr2501|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -10655,9 +10809,9 @@
    "v": 5
   },
   "exact makita boormachine dhp482|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 8,
     "high": 171.75,
     "kind": "exact",
@@ -10728,7 +10882,62 @@
     "query": "makita dhp482",
     "search": "makita boormachine dhp482"
    },
-   "v": 6
+   "v": 7
+  },
+  "exact makita bouwlamp dml805|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 5,
+    "high": 112.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "makita bouwlamp. DML805",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2435399505-makita-bouwlamp-dml805"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Makita DML805 Bouwlamp / Werkspot",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2460183617-makita-dml805-bouwlamp-werkspot"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita DML805 Bouwlamp - Krachtige LED Werkverlichting",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2459958169-makita-dml805-bouwlamp-krachtige-led-werkverlichting"
+     },
+     {
+      "kind": "fixed",
+      "price": 110.0,
+      "title": "makita dml805 ledlamp bouwlamp",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1377741841-makita-dml805-ledlamp-bouwlamp"
+     },
+     {
+      "kind": "fixed",
+      "price": 115.0,
+      "title": "EX DEMO Makita DML805 - Met 1 jaar garantie!",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/lampen-overige/m2459517439-ex-demo-makita-dml805-met-1-jaar-garantie"
+     }
+    ],
+    "low": 72.5,
+    "median": 80.0,
+    "model": "DML805",
+    "outliers": [],
+    "prices": [
+     70.0,
+     75.0,
+     80.0,
+     110.0,
+     115.0
+    ],
+    "query": "makita dml805",
+    "search": "makita bouwlamp dml805"
+   },
+   "v": 7
   },
   "exact makita bouwradio dmr107|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -10797,6 +11006,11 @@
     "search": "makita bouwradio dmr107"
    },
    "v": 5
+  },
+  "exact makita bouwradio dmr108ar|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "exact makita bouwradio dmr108n|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -11101,19 +11315,13 @@
    "v": 4
   },
   "exact makita dc18rc|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 27,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 26,
     "high": 100.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Makita DC18RC Oplader voor Li-ion & Ni-MH Accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2461278860-makita-dc18rc-oplader-voor-li-ion-ni-mh-accu-s"
-     },
      {
       "kind": "bid",
       "of": 2,
@@ -11275,7 +11483,7 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1686105681-makita-dc18rc-accu-snellader-en-2x-makita-18v-5-0ah-accus"
      }
     ],
-    "low": 27.5,
+    "low": 29.38,
     "median": 41.95,
     "model": "DC18RC",
     "outliers": [
@@ -11285,7 +11493,6 @@
      229.0
     ],
     "prices": [
-     15.0,
      15.0,
      25.0,
      25.0,
@@ -11316,7 +11523,7 @@
     "query": "makita dc18rc",
     "search": "makita dc18rc"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita dcl180zb|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -11334,9 +11541,9 @@
    "v": 4
   },
   "exact makita ddf453syx5|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-02T12:20:08.132228+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 4
+   "v": 7
   },
   "exact makita ddf458|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -11524,10 +11731,44 @@
    "est": null,
    "v": 4
   },
-  "exact makita decoupeerzaag djv180|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+  "exact makita decoupeerzaag djv180z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 171.25,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 89.99,
+      "title": "Makita DJV180ZJ Decoupeerzaag | Incl garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456140261-makita-djv180zj-decoupeerzaag-incl-garantie"
+     },
+     {
+      "kind": "fixed",
+      "price": 155.0,
+      "title": "Makita DJV180Z 18V Li-Ion Accu decoupeerzaag body - D-greep",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1602911052-makita-djv180z-18v-li-ion-accu-decoupeerzaag-body-d-greep"
+     }
+    ],
+    "low": 73.74,
+    "median": 122.5,
+    "model": "DJV180Z",
+    "outliers": [],
+    "prices": [
+     89.99,
+     155.0
+    ],
+    "query": "makita djv180z",
+    "search": "makita decoupeerzaag djv180z"
+   },
+   "v": 7
+  },
+  "exact makita decoupeerzaag djv180|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 6,
     "high": 190.0,
     "kind": "exact",
@@ -11584,7 +11825,7 @@
     "query": "makita djv180",
     "search": "makita decoupeerzaag djv180"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita dga452|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -11814,9 +12055,9 @@
    "v": 4
   },
   "exact makita dhp453|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 105.0,
     "kind": "exact",
@@ -11845,7 +12086,7 @@
     "query": "makita dhp453",
     "search": "makita dhp453"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita dhp481|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -12493,9 +12734,9 @@
    "v": 4
   },
   "exact makita draadeindknipper dsc102|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita dsc102|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T06:50:13.864459+00:00",
@@ -12880,9 +13121,38 @@
    "v": 4
   },
   "exact makita dvc750l|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
-   "est": null,
-   "v": 6
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 142.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "Makita DVC750L 18v stofzuiger zgan",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/compressors/m2459104002-makita-dvc750l-18v-stofzuiger-zgan"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Makita nieuwe DVC750LZ Accu Stofzuiger LXT 18V (Zonder accu'",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2461215827-makita-nieuwe-dvc750lz-accu-stofzuiger-lxt-18v-zonder-accu"
+     }
+    ],
+    "low": 127.5,
+    "median": 135.0,
+    "model": "DVC750L",
+    "outliers": [],
+    "prices": [
+     130.0,
+     140.0
+    ],
+    "query": "makita dvc750l",
+    "search": "makita dvc750l"
+   },
+   "v": 7
   },
   "exact makita dvc860l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-24T04:38:55.339053+00:00",
@@ -13058,9 +13328,9 @@
    "v": 4
   },
   "exact makita haakse 5030r|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita haakse 9565cvr|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -13068,9 +13338,9 @@
    "v": 4
   },
   "exact makita haakse 9565cvr|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita haakse dga452|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T10:04:47.419265+00:00",
@@ -13262,9 +13532,9 @@
    "v": 4
   },
   "exact makita haakse dga504|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 15,
     "high": 199.0,
     "kind": "exact",
@@ -13386,7 +13656,7 @@
     "query": "makita dga504",
     "search": "makita haakse dga504"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita haakse dga506zj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -13394,9 +13664,9 @@
    "v": 4
   },
   "exact makita haakse dga506zj|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita haakse ga50303r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -13404,9 +13674,9 @@
    "v": 4
   },
   "exact makita haakse ga50303r|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita haakse ga5030r|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -13457,9 +13727,9 @@
    "v": 4
   },
   "exact makita haakse ga5030r|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 73.75,
     "kind": "exact",
@@ -13502,7 +13772,7 @@
     "query": "makita ga5030r",
     "search": "makita haakse ga5030r"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita haakse ga5040c|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T10:52:36.810240+00:00",
@@ -13515,9 +13785,48 @@
    "v": 4
   },
   "exact makita haakse ga5040r|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
+  },
+  "exact makita haakse slijper dga504z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 153.75,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 35.0,
+      "title": "Accu haakse slijper, Makita DGA504, zeer degelijke kopie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2461193472-accu-haakse-slijper-makita-dga504-zeer-degelijke-kopie"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Makita DGA504Z 18V Li-Ion Accu haakse slijper body - 125mm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1555660562-makita-dga504z-18v-li-ion-accu-haakse-slijper-body-125mm"
+     }
+    ],
+    "low": 11.25,
+    "median": 82.5,
+    "model": "DGA504Z",
+    "outliers": [],
+    "prices": [
+     35.0,
+     130.0
+    ],
+    "query": "makita dga504z",
+    "search": "makita haakse slijper dga504z"
+   },
+   "v": 7
+  },
+  "exact makita haakse slijper dk0053g|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "exact makita hepafilter dx01|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -13568,9 +13877,9 @@
    "v": 4
   },
   "exact makita hepafilter dx01|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 72.5,
     "kind": "exact",
@@ -13613,7 +13922,7 @@
     "query": "makita dx01",
     "search": "makita hepafilter dx01"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita hp2051f|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-23T04:39:33.788701+00:00",
@@ -13773,9 +14082,9 @@
    "v": 4
   },
   "exact makita kettingzaag uc4041a|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita klopboorhamer hr28111ft|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T10:52:36.810240+00:00",
@@ -13874,6 +14183,47 @@
    "est": null,
    "v": 6
   },
+  "exact makita luchtpomp dmp180z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 3,
+    "high": 70.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 40.0,
+      "title": "Makita DMP180Z Accu Compressor 18V (body)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2461372565-makita-dmp180z-accu-compressor-18v-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 65.0,
+      "title": "MAKITA 18V LUCHTPOMP DMP180Z BANDENPOMP 8,3 Bar LXT+LED POMP",
+      "url": "https://www.marktplaats.nl/v/caravans-en-kamperen/luchtpompen/m2461391527-makita-18v-luchtpomp-dmp180z-bandenpomp-8-3-bar-lxt-led-pomp"
+     },
+     {
+      "kind": "fixed",
+      "price": 70.0,
+      "title": "Makita DMP180Z Accu Compressor - 18V - Zonder accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2424375668-makita-dmp180z-accu-compressor-18v-zonder-accu-s"
+     }
+    ],
+    "low": 40.0,
+    "median": 65.0,
+    "model": "DMP180Z",
+    "outliers": [],
+    "prices": [
+     40.0,
+     65.0,
+     70.0
+    ],
+    "query": "makita dmp180z",
+    "search": "makita luchtpomp dmp180z"
+   },
+   "v": 7
+  },
   "exact makita makitadvc862l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-24T04:38:55.339053+00:00",
    "est": null,
@@ -13968,9 +14318,9 @@
    "v": 4
   },
   "exact makita multitool dtm51|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 10,
     "high": 162.49,
     "kind": "exact",
@@ -14057,7 +14407,7 @@
     "query": "makita dtm51",
     "search": "makita multitool dtm51"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita multitool dtm52zjx2|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T10:04:47.419265+00:00",
@@ -14109,9 +14459,38 @@
    "v": 4
   },
   "exact makita natdroogzuiger dvc750l|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
-   "est": null,
-   "v": 6
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 2,
+    "high": 142.5,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "Makita DVC750L 18v stofzuiger zgan",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/compressors/m2459104002-makita-dvc750l-18v-stofzuiger-zgan"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Makita nieuwe DVC750LZ Accu Stofzuiger LXT 18V (Zonder accu'",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2461215827-makita-nieuwe-dvc750lz-accu-stofzuiger-lxt-18v-zonder-accu"
+     }
+    ],
+    "low": 127.5,
+    "median": 135.0,
+    "model": "DVC750L",
+    "outliers": [],
+    "prices": [
+     130.0,
+     140.0
+    ],
+    "query": "makita dvc750l",
+    "search": "makita natdroogzuiger dvc750l"
+   },
+   "v": 7
   },
   "exact makita perstang ek12032cfm|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -14119,9 +14498,9 @@
    "v": 4
   },
   "exact makita perstang ek12032cfm|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita professionele vc4210l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -14133,10 +14512,51 @@
    "est": null,
    "v": 5
   },
-  "exact makita reciprozaag djr187|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+  "exact makita reciprozaag djr186z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 3,
+    "high": 130.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "fixed",
+      "price": 109.95,
+      "title": "MAKITA DJR186Z 18V ACCU SNOEIZAAG Lxt RECIPROZAAG ACTIE",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/snoeischaren/m2461417096-makita-djr186z-18v-accu-snoeizaag-lxt-reciprozaag-actie"
+     },
+     {
+      "kind": "fixed",
+      "price": 109.95,
+      "title": "MAKITA 18V ACCU TAKKENSCHAAR DJR186Z RECIPRO SNOEIZAAG Actie",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/takkenscharen/m2461359146-makita-18v-accu-takkenschaar-djr186z-recipro-snoeizaag-actie"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Makita DJR186Z 18V Li-Ion accu reciprozaag body - snelwissel",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1538306816-makita-djr186z-18v-li-ion-accu-reciprozaag-body-snelwissel"
+     }
+    ],
+    "low": 109.95,
+    "median": 109.95,
+    "model": "DJR186Z",
+    "outliers": [],
+    "prices": [
+     109.95,
+     109.95,
+     130.0
+    ],
+    "query": "makita djr186z",
+    "search": "makita reciprozaag djr186z"
+   },
+   "v": 7
+  },
+  "exact makita reciprozaag djr187|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 10,
     "high": 251.62,
     "kind": "exact",
@@ -14221,7 +14641,7 @@
     "query": "makita djr187",
     "search": "makita reciprozaag djr187"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita reciprozaag jr3050t|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14335,9 +14755,9 @@
    "v": 4
   },
   "exact makita reciprozaag jr3050t|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 12,
     "high": 116.75,
     "kind": "exact",
@@ -14436,7 +14856,7 @@
     "query": "makita jr3050t",
     "search": "makita reciprozaag jr3050t"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita recirpozaag djr188|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T11:57:02.032500+00:00",
@@ -14473,9 +14893,9 @@
    "v": 4
   },
   "exact makita recirpozaag djr188|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita rp0900|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T11:54:06.611271+00:00",
@@ -14594,9 +15014,9 @@
    "v": 4
   },
   "exact makita schroefautomaat dfr550|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 6,
     "high": 312.5,
     "kind": "exact",
@@ -14653,7 +15073,7 @@
     "query": "makita dfr550",
     "search": "makita schroefautomaat dfr550"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine 6510lvr|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -14661,9 +15081,9 @@
    "v": 4
   },
   "exact makita schroefboormachine 6510lvr|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine ddf458|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14707,9 +15127,9 @@
    "v": 4
   },
   "exact makita schroefboormachine ddf458|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 85.0,
     "kind": "exact",
@@ -14747,7 +15167,7 @@
     "query": "makita ddf458",
     "search": "makita schroefboormachine ddf458"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine ddf481zj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14755,9 +15175,9 @@
    "v": 4
   },
   "exact makita schroefboormachine ddf481zj|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine ddf481|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14794,9 +15214,9 @@
    "v": 4
   },
   "exact makita schroefboormachine ddf481|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 90.0,
     "kind": "exact",
@@ -14832,7 +15252,7 @@
     "query": "makita ddf481",
     "search": "makita schroefboormachine ddf481"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine ddf486|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14883,9 +15303,9 @@
    "v": 4
   },
   "exact makita schroefboormachine ddf486|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 250.0,
     "kind": "exact",
@@ -14923,7 +15343,7 @@
     "query": "makita ddf486",
     "search": "makita schroefboormachine ddf486"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine ddf489|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14931,9 +15351,9 @@
    "v": 4
   },
   "exact makita schroefboormachine ddf489|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita schroefboormachine hr2460|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -14984,9 +15404,9 @@
    "v": 4
   },
   "exact makita schroefboormachine hr2460|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 137.5,
     "kind": "exact",
@@ -15029,12 +15449,12 @@
     "query": "makita hr2460",
     "search": "makita schroefboormachine hr2460"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita slagschroevendraaier btd130f|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita slagschroevendraaier clx224a|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -15052,9 +15472,9 @@
    "v": 4
   },
   "exact makita slagschroevendraaier ddt153|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita slagschroevendraaier dlx2180tj|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-26T10:04:47.419265+00:00",
@@ -15138,9 +15558,9 @@
    "v": 4
   },
   "exact makita slagschroevendraaier dtd152|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 8,
     "high": 144.99,
     "kind": "exact",
@@ -15211,7 +15631,7 @@
     "query": "makita dtd152",
     "search": "makita slagschroevendraaier dtd152"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita sloophamer hr4013c|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -15219,9 +15639,192 @@
    "v": 4
   },
   "exact makita sloophamer hr4013c|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
+  },
+  "exact makita snellader dc18rc|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 23,
+    "high": 100.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 19.99,
+      "title": "Makita DC18RC Snellader 14.4V / 18V Li-ion | ZGAN",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2422106461-makita-dc18rc-snellader-14-4v-18v-li-ion-zgan"
+     },
+     {
+      "kind": "bid",
+      "price": 20.0,
+      "title": "Makita DC18RC Oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2457815176-makita-dc18rc-oplader"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DC18RC Oplader voor 7.2V-18V Li-ion Accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2460756597-makita-dc18rc-oplader-voor-7-2v-18v-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 25.0,
+      "title": "Makita DC18RC Snellader voor Li-ion en Ni-MH accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2453226970-makita-dc18rc-snellader-voor-li-ion-en-ni-mh-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita DC18RC  snellader voor Li-lon en Ni-MH accu's \n\n7,",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/opladers/m2457318000-makita-dc18rc-snellader-voor-li-lon-en-ni-mh-accu-s-7"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
+      "title": "Makita DC18RC Snellader voor Li-ion accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2460530575-makita-dc18rc-snellader-voor-li-ion-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 35.0,
+      "title": "makita DC18RC originele 18V snellader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2460196445-makita-dc18rc-originele-18v-snellader"
+     },
+     {
+      "kind": "bid",
+      "price": 39.0,
+      "title": "Makita DC18RC originele 18V snellader – LXT",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2459963468-makita-dc18rc-originele-18v-snellader-lxt"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Makita DC18RC 14.4V - 18V Li-Ion Accu snellader Acculader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1834413803-makita-dc18rc-14-4v-18v-li-ion-accu-snellader-acculader"
+     },
+     {
+      "kind": "fixed",
+      "price": 48.95,
+      "title": "Makita DC18RC snellader / oplader 14.4-18V – 6.5A",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/a1530081150-makita-dc18rc-snellader-oplader-14-4-18v-6-5a"
+     },
+     {
+      "kind": "fixed",
+      "price": 50.0,
+      "title": "Makita DC18RC Oplader met 18V 5.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2456068214-makita-dc18rc-oplader-met-18v-5-0ah-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 59.95,
+      "title": "Makita DC18RC Oplader voor Li-ion en Ni-MH/Ni-Cd accu's",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435588008-makita-dc18rc-oplader-voor-li-ion-en-ni-mh-ni-cd-accu-s"
+     },
+     {
+      "kind": "bid",
+      "price": 64.0,
+      "title": "MAKITA snellader DC18RC + accu BL1830B",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2450134229-makita-snellader-dc18rc-accu-bl1830b"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Makita DC18RC Oplader met 3.0Ah 18V Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2456330244-makita-dc18rc-oplader-met-3-0ah-18v-accu"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita Accu en Oplader 18V 3.0Ah DC18RC BL1830B",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2445519930-makita-accu-en-oplader-18v-3-0ah-dc18rc-bl1830b"
+     },
+     {
+      "kind": "bid",
+      "price": 90.0,
+      "title": "orginele Makita 18V 3.0Ah Accu met Snellader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2459377902-orginele-makita-18v-3-0ah-accu-met-snellader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Nieuwe Makita DC18RC Snellader met 5Ah Accu (14.4V/18V)",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/overige-tuin-en-terras/m2461213577-nieuwe-makita-dc18rc-snellader-met-5ah-accu-14-4v-18v"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "makita 1x 18V 5.0Ah accu met oplader dc18rc",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2427005853-makita-1x-18v-5-0ah-accu-met-oplader-dc18rc"
+     },
+     {
+      "kind": "bid",
+      "price": 135.0,
+      "title": "Makita Snellader DC18RC met 18V 5.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2460292768-makita-snellader-dc18rc-met-18v-5-0ah-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Makita Accu's 18V DC18RC 2x BL1830B",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-accu-s/m2460782729-makita-accu-s-18v-dc18rc-2x-bl1830b"
+     },
+     {
+      "kind": "fixed",
+      "price": 155.0,
+      "title": "Makita 18V Set: 2x 5.0Ah Accu's met Snellader DC18RC",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2441656318-makita-18v-set-2x-5-0ah-accu-s-met-snellader-dc18rc"
+     },
+     {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "Makita DC18RC Accu snellader en 2x makita 18v 5.0ah accus",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1686105681-makita-dc18rc-accu-snellader-en-2x-makita-18v-5-0ah-accus"
+     },
+     {
+      "kind": "bid",
+      "price": 229.0,
+      "title": "Makita DUC150Z set met 5 Ah accu en DC18RC lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2458237931-makita-duc150z-set-met-5-ah-accu-en-dc18rc-lader"
+     }
+    ],
+    "low": 30.0,
+    "median": 59.95,
+    "model": "DC18RC",
+    "outliers": [
+     320.0
+    ],
+    "prices": [
+     19.99,
+     20.0,
+     25.0,
+     25.0,
+     30.0,
+     30.0,
+     35.0,
+     39.0,
+     40.0,
+     48.95,
+     50.0,
+     59.95,
+     64.0,
+     70.0,
+     80.0,
+     90.0,
+     100.0,
+     100.0,
+     135.0,
+     150.0,
+     155.0,
+     180.0,
+     229.0
+    ],
+    "query": "makita dc18rc",
+    "search": "makita snellader dc18rc"
+   },
+   "v": 7
   },
   "exact makita stofzuigadapter dx06|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -15394,15 +15997,20 @@
    },
    "v": 5
   },
+  "exact makita stofzuiger dcl180zb|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
+  },
   "exact makita stofzuiger makitadvc862l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-28T10:33:10.248878+00:00",
    "est": null,
    "v": 4
   },
   "exact makita stofzuiger makitadvc862l|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita tm30d|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-24T04:38:55.339053+00:00",
@@ -15420,9 +16028,9 @@
    "v": 4
   },
   "exact makita verstek ls1013|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact makita verstek ls1018l|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -15473,9 +16081,9 @@
    "v": 4
   },
   "exact makita verstek ls1018l|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 400.0,
     "kind": "exact",
@@ -15511,7 +16119,12 @@
     "query": "makita ls1018l",
     "search": "makita verstek ls1018l"
    },
-   "v": 6
+   "v": 7
+  },
+  "exact makita vetspuit dgp180z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "exact makita werfradio dmr110|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T11:57:02.032500+00:00",
@@ -15548,9 +16161,9 @@
    "v": 4
   },
   "exact makita werfradio dmr110|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 127.5,
     "kind": "exact",
@@ -15579,7 +16192,7 @@
     "query": "makita dmr110",
     "search": "makita werfradio dmr110"
    },
-   "v": 6
+   "v": 7
   },
   "exact makita werkmateriaal dtd153|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T11:57:02.032500+00:00",
@@ -15623,9 +16236,9 @@
    "v": 4
   },
   "exact makita werkmateriaal dtd153|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 199.25,
     "kind": "exact",
@@ -15668,7 +16281,7 @@
     "query": "makita dtd153",
     "search": "makita werkmateriaal dtd153"
    },
-   "v": 6
+   "v": 7
   },
   "exact metabo acculader ac 30|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -15676,9 +16289,101 @@
    "v": 4
   },
   "exact metabo acculader ac 30|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
+  },
+  "exact metabo afkortzaag ks216m|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": {
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 10,
+    "high": 100.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Metabo KS 216 M Lasercut Afkortzaag - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2461351390-metabo-ks-216-m-lasercut-afkortzaag-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Metabo KS216M Afkortzaag - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2453261080-metabo-ks216m-afkortzaag-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 75.0,
+      "title": "Metabo KS216M",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2433573875-metabo-ks216m"
+     },
+     {
+      "kind": "bid",
+      "price": 79.99,
+      "title": "Metabo KS216M Afkortzaag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2457016006-metabo-ks216m-afkortzaag"
+     },
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Metabo KS 216 M Lasercut Afkortzaag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2434009883-metabo-ks-216-m-lasercut-afkortzaag"
+     },
+     {
+      "kind": "fixed",
+      "price": 85.0,
+      "title": "KS 216M laser Metabo zaag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2460332884-ks-216m-laser-metabo-zaag"
+     },
+     {
+      "kind": "fixed",
+      "price": 89.0,
+      "title": "METABO Afkortzaag KS 216 M | Pawn Eindhoven",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2435338687-metabo-afkortzaag-ks-216-m-pawn-eindhoven"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Metabo KS 216 M Lasercut Afkortzaag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2421420192-metabo-ks-216-m-lasercut-afkortzaag"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Metabo KS 216 M Lasercut Afkortzaag Z.G.A.N.",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2452131772-metabo-ks-216-m-lasercut-afkortzaag-z-g-a-n"
+     },
+     {
+      "kind": "bid",
+      "price": 135.0,
+      "title": "Metabo Afkortzaag KS 216 M Lasercut - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2424604728-metabo-afkortzaag-ks-216-m-lasercut-zo-goed-als-nieuw"
+     }
+    ],
+    "low": 75.0,
+    "median": 82.5,
+    "model": "KS216M",
+    "outliers": [
+     300.0
+    ],
+    "prices": [
+     60.0,
+     75.0,
+     75.0,
+     79.99,
+     80.0,
+     85.0,
+     89.0,
+     100.0,
+     100.0,
+     135.0
+    ],
+    "query": "metabo ks216m",
+    "search": "metabo afkortzaag ks216m"
+   },
+   "v": 7
   },
   "exact metabo bhe 24|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T11:54:06.611271+00:00",
@@ -15691,9 +16396,9 @@
    "v": 4
   },
   "exact metabo decoupeerzaag st50|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact metabo decoupeerzaag sted70quick|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -15701,9 +16406,9 @@
    "v": 4
   },
   "exact metabo decoupeerzaag sted70quick|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact metabo elektronik h26cm|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -15711,9 +16416,9 @@
    "v": 4
   },
   "exact metabo elektronik h26cm|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact metabo h26cm|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -15829,9 +16534,9 @@
    "v": 4
   },
   "exact metabo hs 8555|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact metabo ks216m|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -16086,9 +16791,9 @@
    "v": 4
   },
   "exact metabo schroefboormachine sb18|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 120.0,
     "kind": "exact",
@@ -16124,7 +16829,7 @@
     "query": "metabo sb18",
     "search": "metabo schroefboormachine sb18"
    },
-   "v": 6
+   "v": 7
   },
   "exact metabo sla 14|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -16132,9 +16837,9 @@
    "v": 4
   },
   "exact metabo sla 14|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact metabo st50|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-24T04:38:55.339053+00:00",
@@ -16396,9 +17101,9 @@
    "v": 3
   },
   "exact milwaukee tacker m18 ffn|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 3,
     "high": 449.0,
     "kind": "exact",
@@ -16434,12 +17139,12 @@
     "query": "milwaukee m18 ffn",
     "search": "milwaukee tacker m18 ffn"
    },
-   "v": 6
+   "v": 7
   },
   "exact milwaukee tacker m18 fn15ga|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 450.0,
     "kind": "exact",
@@ -16470,7 +17175,7 @@
     "query": "milwaukee m18 fn15ga",
     "search": "milwaukee tacker m18 fn15ga"
    },
-   "v": 6
+   "v": 7
   },
   "exact milwaukee vetspuit m18 gg|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -16478,9 +17183,9 @@
    "v": 4
   },
   "exact milwaukee vetspuit m18 gg|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact mobiele telefoon a16 32gb|accu,armband,armbanden,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,sportarmband,standaard,tab,tablet,watch": {
    "at": "2026-11-02T14:55:46.762768+00:00",
@@ -16633,9 +17338,9 @@
    "v": 4
   },
   "exact oke beamer opr30340|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact philips 241b8q|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -17586,14 +18291,14 @@
    "v": 4
   },
   "exact sennheiser hd h20cm|adapter,auto,autospeaker,case,etui,gehoorbeschermer,gehoorbescherming,hoes,houder,kabel,kussens,lader,luidspreker,onderdeel,onderdelen,oorkussens,oplader,soundbar,speaker,standaard": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact sennheiser hd h25cm|adapter,auto,autospeaker,case,etui,gehoorbeschermer,gehoorbescherming,hoes,houder,kabel,kussens,lader,luidspreker,onderdeel,onderdelen,oorkussens,oplader,soundbar,speaker,standaard": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact sonos one g2|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-01T14:52:18.700917+00:00",
@@ -17794,9 +18499,9 @@
    "v": 4
   },
   "exact stihl kettingzaag e140|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "exact stihl reachtruck fm14|draad,filter,hoes,kettingolie,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,reinigingsmiddel,slang,t b v,zaagketting,zeep": {
    "at": "2026-11-01T14:52:18.700917+00:00",
@@ -17814,9 +18519,9 @@
    "v": 4
   },
   "exact z2 tower 24 g9|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 2,
     "high": 1687.75,
     "kind": "exact",
@@ -17845,14 +18550,14 @@
     "query": "z2 tower g9",
     "search": "z2 tower 24 g9"
    },
-   "v": 6
+   "v": 7
   },
   "general acer monitor monitoren speakers toetsenbord|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 5,
-    "high": 37.5,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 6,
+    "high": 53.12,
     "kind": "general",
     "listings": [
      {
@@ -17890,6 +18595,14 @@
       "price": 50.0,
       "title": "Acer X223W Monitor, Toetsenbord & Labtec Speakerset",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2421913221-acer-x223w-monitor-toetsenbord-labtec-speakerset"
+     },
+     {
+      "kind": "fixed",
+      "of": 2,
+      "price": 62.5,
+      "title": "Acer G276HL 27 inch LED Monitor (2 stuks)",
+      "total": 125.0,
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2458009269-acer-g276hl-27-inch-led-monitor-2-stuks"
      }
     ],
     "low": 20.0,
@@ -17903,12 +18616,13 @@
      20.0,
      25.0,
      25.0,
-     50.0
+     50.0,
+     62.5
     ],
     "query": "acer monitor monitoren",
     "search": "acer monitor monitoren"
    },
-   "v": 6
+   "v": 7
   },
   "general airfryer cecotec cecofry grill|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -18516,11 +19230,11 @@
    "v": 4
   },
   "general airfryer philips|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 54,
-    "high": 80.27,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 52,
+    "high": 80.2,
     "kind": "general",
     "listings": [
      {
@@ -18664,14 +19378,14 @@
      {
       "kind": "bid",
       "price": 50.0,
-      "title": "Philips Airfryer - Werkt perfect",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2461259390-philips-airfryer-werkt-perfect"
+      "title": "Philips Airfryer XXL - Perfect voor gezonde maaltijden",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2461266406-philips-airfryer-xxl-perfect-voor-gezonde-maaltijden"
      },
      {
       "kind": "bid",
       "price": 50.0,
-      "title": "Philips Airfryer XXL - Perfect voor gezonde maaltijden",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2461266406-philips-airfryer-xxl-perfect-voor-gezonde-maaltijden"
+      "title": "Philips Airfryer - Werkt perfect",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2461259390-philips-airfryer-werkt-perfect"
      },
      {
       "kind": "bid",
@@ -18711,6 +19425,7 @@
      10.0,
      10.0,
      10.0,
+     160.0,
      164.99,
      178.0,
      603.0
@@ -18755,7 +19470,6 @@
      75.0,
      75.0,
      80.0,
-     80.0,
      80.27,
      80.27,
      80.27,
@@ -18766,7 +19480,6 @@
      89.95,
      90.0,
      98.99,
-     120.0,
      140.38,
      150.0,
      154.99
@@ -18774,7 +19487,7 @@
     "query": "airfryer philips",
     "search": "airfryer philips"
    },
-   "v": 6
+   "v": 7
   },
   "general airfryer princess xxl|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -18930,10 +19643,10 @@
    "v": 4
   },
   "general airfryer princess xxl|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 19,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 17,
     "high": 50.0,
     "kind": "general",
     "listings": [
@@ -18944,22 +19657,10 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2458434505-princess-xxl-airfryer-aerofryer"
      },
      {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "Princess airfryer XXL 182055  weinig",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2461157340-princess-airfryer-xxl-182055-weinig"
-     },
-     {
       "kind": "bid",
       "price": 10.0,
       "title": "Princess airfryer Aerofryer XXL - Gebruikt",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2433126285-princess-airfryer-aerofryer-xxl-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Princess Digitale Airfryer XXL",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2420456718-princess-digitale-airfryer-xxl"
      },
      {
       "kind": "bid",
@@ -19052,15 +19753,13 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/airfryers/m2457184259-princess-xxl-airfryer"
      }
     ],
-    "low": 20.0,
-    "median": 35.0,
+    "low": 22.5,
+    "median": 40.0,
     "model": null,
     "outliers": [],
     "prices": [
      10.0,
      10.0,
-     10.0,
-     15.0,
      20.0,
      20.0,
      25.0,
@@ -19080,7 +19779,7 @@
     "query": "airfryer princess xxl",
     "search": "airfryer princess xxl"
    },
-   "v": 6
+   "v": 7
   },
   "general airfryer russell 4 hobbs|accessoire,accessoires,defect,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -19637,14 +20336,14 @@
    "v": 4
   },
   "general beamer acer soundbar|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general beamer m8|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general bosch gbh gbh dfr 2 boorhamer elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -19709,9 +20408,9 @@
    "v": 4
   },
   "general bosch gbh gbh dfr 2 boorhamer elektrische|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 98.75,
     "kind": "exact",
@@ -19754,7 +20453,12 @@
     "query": "bosch gbh gbh dfr 2 boorhamer",
     "search": "bosch gbh gbh dfr 2 boorhamer"
    },
-   "v": 6
+   "v": 7
+  },
+  "general bosch gbh sds gbh rea boorhamer 2 2020|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "general bosch gsr 2023 schroefboormachine accu 12v|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -19762,9 +20466,9 @@
    "v": 4
   },
   "general bosch gsr 2023 schroefboormachine accu 12v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general bosch professional accudecoupeerzaagmachine|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -19782,9 +20486,9 @@
    "v": 4
   },
   "general bosch professional betonslijpmachine elektrische|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general bosch professional gbh 2 dv|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -19835,9 +20539,9 @@
    "v": 4
   },
   "general bosch professional gbh 2 dv|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 328.75,
     "kind": "general",
@@ -19880,7 +20584,7 @@
     "query": "bosch professional gbh",
     "search": "bosch professional gbh"
    },
-   "v": 6
+   "v": 7
   },
   "general bosch professional slagschroevendraaier accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -19888,9 +20592,9 @@
    "v": 4
   },
   "general bosch professional slagschroevendraaier accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general bosch professional slagschroevendraaier gdr li 18v|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -19898,9 +20602,9 @@
    "v": 4
   },
   "general bosch professional slagschroevendraaier gdr li 18v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general bose bose dubbel speakers draaibaar|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-02T07:25:51.068604+00:00",
@@ -20009,11 +20713,11 @@
    "v": 4
   },
   "general bose dubbel speakers draaibaar|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 9,
-    "high": 142.5,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 8,
+    "high": 151.25,
     "kind": "general",
     "listings": [
      {
@@ -20022,13 +20726,7 @@
       "price": 20.0,
       "title": "Bose dubbele cubes. 2x",
       "total": 40.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459824970-bose-dubbele-cubes-2x"
-     },
-     {
-      "kind": "bid",
-      "price": 39.0,
-      "title": "2 sets Bose Dubbele Kubusluidsprekers (Redline-serie)",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461194569-2-sets-bose-dubbele-kubusluidsprekers-redline-serie"
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461413216-bose-dubbele-cubes-2x"
      },
      {
       "kind": "fixed",
@@ -20073,8 +20771,8 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2441463674-bose-dubbel-cubes-set-van-5"
      }
     ],
-    "low": 43.75,
-    "median": 75.0,
+    "low": 48.88,
+    "median": 77.5,
     "model": null,
     "outliers": [
      3.0,
@@ -20082,7 +20780,6 @@
     ],
     "prices": [
      20.0,
-     39.0,
      48.5,
      50.0,
      75.0,
@@ -20094,7 +20791,7 @@
     "query": "bose dubbel",
     "search": "bose dubbel"
    },
-   "v": 6
+   "v": 7
   },
   "general brabantia prullenbak|": {
    "at": "2026-11-02T12:20:08.132228+00:00",
@@ -20355,6 +21052,21 @@
     "search": "brabantia prullenbak"
    },
    "v": 4
+  },
+  "general cabernet dr hand schoudertas amsterdam|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
+  },
+  "general cabernet dr telefoontas amsterdam|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
+  },
+  "general cabernet telefoontas dr amsterdam|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
+   "at": "2026-11-03T14:17:54.964117+00:00",
+   "est": null,
+   "v": 7
   },
   "general cava wijn|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -20805,14 +21517,14 @@
    "v": 4
   },
   "general colbert balmain|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general colbert chanel|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general colbert flymo bladzuiger twister 2000|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-10-29T10:52:36.810240+00:00",
@@ -20820,9 +21532,9 @@
    "v": 4
   },
   "general colbert gucci|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 6,
     "high": 150.0,
     "kind": "general",
@@ -20882,7 +21594,7 @@
     "query": "colbert gucci",
     "search": "colbert gucci"
    },
-   "v": 6
+   "v": 7
   },
   "general colbert hugo antera|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -20947,9 +21659,9 @@
    "v": 4
   },
   "general colbert oger|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 12,
     "high": 148.0,
     "kind": "general",
@@ -21051,7 +21763,7 @@
     "query": "colbert oger",
     "search": "colbert oger"
    },
-   "v": 6
+   "v": 7
   },
   "general dell beeldscherm muis toetsenbord logitech|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-11-02T14:55:46.762768+00:00",
@@ -21064,9 +21776,9 @@
    "v": 4
   },
   "general delonghi multigrill|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general delonghi radias radiator elektrische|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -21074,9 +21786,9 @@
    "v": 4
   },
   "general desktop pc vt ideacentre 3|behuizing,bureau,computertafel,cpu houder,game,games,hoes,houder,kabel,kast,koeler,licentie,muis,onderdeel,onderdelen,pc kast,software,standaard,stoel,stofkap,t b v,tafel,tafelblad,tas,toetsenbord,ventilator,voeding,werkplek": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general dewalt afkortzaag|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -21319,9 +22031,9 @@
    "v": 4
   },
   "general dewalt bouwartikelen accuboormachine bouwradio|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general dewalt bouwradio accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -21491,9 +22203,9 @@
    "v": 4
   },
   "general dewalt bouwradio accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 21,
     "high": 159.5,
     "kind": "general",
@@ -21655,12 +22367,12 @@
     "query": "dewalt bouwradio",
     "search": "dewalt bouwradio"
    },
-   "v": 6
+   "v": 7
   },
   "general dewalt cirkelzaag elu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 24,
     "high": 207.25,
     "kind": "general",
@@ -21849,7 +22561,7 @@
     "query": "dewalt cirkelzaag",
     "search": "dewalt cirkelzaag"
    },
-   "v": 6
+   "v": 7
   },
   "general dewalt cirkelzaag klopboorhamer arges|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -21902,11 +22614,11 @@
    "v": 4
   },
   "general dewalt cirkelzaag klopboorhamer arges|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 5,
-    "high": 142.5,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 4,
+    "high": 57.5,
     "kind": "general",
     "listings": [
      {
@@ -21936,29 +22648,22 @@
       "price": 65.0,
       "title": "Dewalt DW365 Cirkelzaag - Krachtig en Betrouwbaar",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2434701351-dewalt-dw365-cirkelzaag-krachtig-en-betrouwbaar"
-     },
-     {
-      "kind": "bid",
-      "price": 220.0,
-      "title": "Dewalt cirkelzaag dsc570xj WITH BATTERY",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2446301318-dewalt-cirkelzaag-dsc570xj-with-battery"
      }
     ],
-    "low": 11.25,
-    "median": 35.0,
+    "low": 10.62,
+    "median": 23.75,
     "model": null,
     "outliers": [],
     "prices": [
      10.0,
      12.5,
      35.0,
-     65.0,
-     220.0
+     65.0
     ],
     "query": "dewalt cirkelzaag",
     "search": "dewalt cirkelzaag"
    },
-   "v": 6
+   "v": 7
   },
   "general dewalt kettingzaag werfradio elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -21966,9 +22671,9 @@
    "v": 4
   },
   "general dewalt kettingzaag werfradio elektrische|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 250.0,
     "kind": "general",
@@ -22011,7 +22716,7 @@
     "query": "dewalt kettingzaag",
     "search": "dewalt kettingzaag"
    },
-   "v": 6
+   "v": 7
   },
   "general dewalt slotenfreesmachine mal|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-31T10:22:33.853912+00:00",
@@ -22029,9 +22734,9 @@
    "v": 4
   },
   "general dewalt werfradio|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general dewalt xr brushless tacker 18v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T11:54:06.611271+00:00",
@@ -22170,9 +22875,9 @@
    "v": 4
   },
   "general festool bovenfreesmachine 1400 ebq|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general festool bovenfrees|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -22535,9 +23240,9 @@
    "v": 4
   },
   "general festool duo plus bouwlamp syslite bouwstraler|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general festool geleiderail|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T10:52:36.810240+00:00",
@@ -23046,9 +23751,9 @@
    "v": 4
   },
   "general fujifilm elektronica huishoudelijke artikelen|accu,batterij,beveiligingscamera,cameratas,dashcam,dummy,filter,hoes,kopieerapparaat,lader,onderdeel,onderdelen,oplader,printer,riem,statief,tas": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general galaxy tapijt|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -23293,9 +23998,9 @@
    "v": 4
   },
   "general hilti dozen bevestigingsnagels|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general hilti roterende laser|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -23401,44 +24106,18 @@
    "v": 4
   },
   "general hp beeldscherm kantoor artikelen projector|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general hp monitor monitoren|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 40,
-    "high": 213.5,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 37,
+    "high": 219.5,
     "kind": "general",
     "listings": [
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 25.0,
-      "title": "HP 524pf monitor | AOC Q27G4X | 2 stuks | gebruikt",
-      "total": 50.0,
-      "url": "https://www.marktplaats.nl/v/computers-en-software/overige-computers-en-software/a1533446086-hp-524pf-monitor-aoc-q27g4x-2-stuks-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "computer monitor HP",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2457803546-computer-monitor-hp"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP Z22i IPS 22 inch monitor, werkt als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2460003731-hp-z22i-ips-22-inch-monitor-werkt-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HP 24 inch monitor met toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2459374704-hp-24-inch-monitor-met-toetsenbord"
-     },
      {
       "kind": "fixed",
       "price": 30.0,
@@ -23561,6 +24240,12 @@
      },
      {
       "kind": "fixed",
+      "price": 149.0,
+      "title": "Hp - Full HD  Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1502270034-hp-full-hd-monitor-23-8-inch"
+     },
+     {
+      "kind": "fixed",
       "price": 164.0,
       "title": "Hp - Full HD  Monitor - 23.8 inch",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1513036062-hp-full-hd-monitor-23-8-inch"
@@ -23579,7 +24264,7 @@
      },
      {
       "kind": "fixed",
-      "price": 193.0,
+      "price": 192.0,
       "title": "Hp - Full HD  Monitor - 23.8 inch",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1513620029-hp-full-hd-monitor-23-8-inch"
      },
@@ -23596,10 +24281,28 @@
       "price": 209.0,
       "title": "Hp - Full HD  Monitor - 21.5 inch",
       "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1502270037-hp-full-hd-monitor-21-5-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 215.0,
+      "title": "HP Series 7 Pro 724pu | 24 USB-C Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1528550595-hp-series-7-pro-724pu-24-usb-c-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 224.0,
+      "title": "Hp - Full HD  Monitor - 23.8 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1521244770-hp-full-hd-monitor-23-8-inch"
+     },
+     {
+      "kind": "fixed",
+      "price": 228.0,
+      "title": "Hp - QHD  Monitor - 27 inch",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/a1513036058-hp-qhd-monitor-27-inch"
      }
     ],
-    "low": 49.97,
-    "median": 122.5,
+    "low": 75.0,
+    "median": 140.0,
     "model": null,
     "outliers": [
      10.0,
@@ -23611,16 +24314,16 @@
      20.0,
      20.0,
      24.95,
+     25.0,
+     25.0,
+     25.0,
+     25.0,
      575.0,
      1099.0,
      1157.0,
      1177.0
     ],
     "prices": [
-     25.0,
-     25.0,
-     25.0,
-     25.0,
      30.0,
      35.0,
      40.0,
@@ -23641,10 +24344,11 @@
      140.0,
      140.0,
      147.0,
+     149.0,
      164.0,
      169.0,
      186.0,
-     193.0,
+     192.0,
      200.0,
      209.0,
      215.0,
@@ -23661,7 +24365,7 @@
     "query": "hp monitor monitoren",
     "search": "hp monitor monitoren"
    },
-   "v": 6
+   "v": 7
   },
   "general hugo boss karl colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -26709,9 +27413,9 @@
    "v": 4
   },
   "general laptop hp batterij|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 6,
     "high": 70.0,
     "kind": "general",
@@ -26768,7 +27472,7 @@
     "query": "laptop hp batterij",
     "search": "laptop hp batterij"
    },
-   "v": 6
+   "v": 7
   },
   "general laptop lenovo thinkbook g2 iap|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-10-22T08:24:38.737984+00:00",
@@ -27394,9 +28098,9 @@
    "v": 4
   },
   "general makita 10883 gereedschapskoffer|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-02T12:20:08.132228+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 4
+   "v": 7
   },
   "general makita accugereedschapsset|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -27414,14 +28118,14 @@
    "v": 4
   },
   "general makita betonboren maten 5|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general makita boormachine|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 18,
     "high": 85.0,
     "kind": "general",
@@ -27564,7 +28268,7 @@
     "query": "makita boormachine",
     "search": "makita boormachine"
    },
-   "v": 6
+   "v": 7
   },
   "general makita borenkoffer incompleet|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -27572,9 +28276,9 @@
    "v": 4
   },
   "general makita borenkoffer incompleet|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general makita combihamer reciprozaag accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-30T10:51:04.564074+00:00",
@@ -28057,11 +28761,11 @@
    "v": 5
   },
   "general makita decoupeerzaag|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 47,
-    "high": 130.0,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 46,
+    "high": 126.25,
     "kind": "general",
     "listings": [
      {
@@ -28105,12 +28809,6 @@
       "price": 39.95,
       "title": "Makita 4329 Decoupeerzaag | 417745",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2453359331-makita-4329-decoupeerzaag-417745"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Makita djv182 18 v decoupeerzaag",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2461371029-makita-djv182-18-v-decoupeerzaag"
      },
      {
       "kind": "bid",
@@ -28197,6 +28895,12 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2443156603-makita-decoupeerzaag-4304-met-accessoires"
      },
      {
+      "kind": "fixed",
+      "price": 90.0,
+      "title": "Makita JV0600 decoupeerzaag – inclusief originele koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2460395079-makita-jv0600-decoupeerzaag-inclusief-originele-koffer"
+     },
+     {
       "kind": "bid",
       "price": 95.0,
       "title": "Professioneel Makita decoupeerzaag 4351FCT zeer goed.",
@@ -28245,7 +28949,7 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2449782020-makita-zaagset-cirkelzaag-decoupeerzaag-opladers"
      }
     ],
-    "low": 44.0,
+    "low": 48.5,
     "median": 95.0,
     "model": null,
     "outliers": [
@@ -28268,7 +28972,6 @@
      40.0,
      40.0,
      40.0,
-     40.0,
      44.0,
      50.0,
      55.0,
@@ -28280,6 +28983,7 @@
      80.0,
      85.0,
      85.0,
+     90.0,
      95.0,
      95.0,
      100.0,
@@ -28298,7 +29002,6 @@
      150.0,
      150.0,
      165.0,
-     174.0,
      179.99,
      189.0,
      189.95,
@@ -28309,7 +29012,7 @@
     "query": "makita decoupeerzaag",
     "search": "makita decoupeerzaag"
    },
-   "v": 6
+   "v": 7
   },
   "general makita elektronica|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-25T09:07:56.432593+00:00",
@@ -28498,9 +29201,9 @@
    "v": 4
   },
   "general makita gereedschap handgereedschap elektrisch|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 6,
     "high": 98.75,
     "kind": "general",
@@ -28559,7 +29262,7 @@
     "query": "makita gereedschap",
     "search": "makita gereedschap"
    },
-   "v": 6
+   "v": 7
   },
   "general makita gereedschapskoffers|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -29427,11 +30130,11 @@
    "v": 4
   },
   "general makita haakse slijper|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 40,
-    "high": 128.75,
+    "high": 144.99,
     "kind": "general",
     "listings": [
      {
@@ -29517,12 +30220,6 @@
       "price": 70.0,
       "title": "Makita GA5040C Haakse Slijper 125mm 1400W",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2453796546-makita-ga5040c-haakse-slijper-125mm-1400w"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Makita GA9050 Haakse Slijper 2000W",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2447664105-makita-ga9050-haakse-slijper-2000w"
      },
      {
       "kind": "bid",
@@ -29613,12 +30310,19 @@
       "price": 125.0,
       "title": "Makita Haakse Slijper in Metalen Koffer",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2456939742-makita-haakse-slijper-in-metalen-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "Makita GA504 Accu Haakse Slijper 18V met 5Ah accu en Oplader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2460264405-makita-ga504-accu-haakse-slijper-18v-met-5ah-accu-en-oplader"
      }
     ],
     "low": 65.0,
-    "median": 87.5,
+    "median": 94.5,
     "model": null,
     "outliers": [
+     15.0,
      15.0,
      19.0
     ],
@@ -29635,7 +30339,6 @@
      65.0,
      65.0,
      69.99,
-     70.0,
      70.0,
      70.0,
      75.0,
@@ -29657,6 +30360,7 @@
      149.99,
      150.0,
      170.0,
+     170.0,
      175.0,
      179.99,
      185.0,
@@ -29667,7 +30371,7 @@
     "query": "makita haakse slijper",
     "search": "makita haakse slijper"
    },
-   "v": 6
+   "v": 7
   },
   "general makita handschuurmachine elektrische|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -29685,9 +30389,9 @@
    "v": 4
   },
   "general makita koppen accu perstang|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general makita lamp boormachine|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -29939,9 +30643,9 @@
    "v": 4
   },
   "general makita schroefboormachine accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 8,
     "high": 117.49,
     "kind": "general",
@@ -30014,7 +30718,7 @@
     "query": "makita schroefboormachine accu",
     "search": "makita schroefboormachine accu"
    },
-   "v": 6
+   "v": 7
   },
   "general makita slagschroevendraaier boormachine accu|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-22T04:39:55.562897+00:00",
@@ -30257,9 +30961,9 @@
    "v": 4
   },
   "general merlot 2023 la palma|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general metabo accu lihd 18v|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-29T13:18:54.319397+00:00",
@@ -30317,9 +31021,9 @@
    "v": 4
   },
   "general metabo accu lihd 18v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 298.75,
     "kind": "general",
@@ -30362,7 +31066,7 @@
     "query": "metabo accu 18v",
     "search": "metabo accu 18v"
    },
-   "v": 6
+   "v": 7
   },
   "general metabo bouwfohn|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -30370,9 +31074,9 @@
    "v": 4
   },
   "general metabo bouwfohn|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general metabo decoupeerzaag st50 metalen|defect,diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,reparatie,t b v,zaagblad,zaagbladen": {
    "at": "2026-10-21T04:40:00.127260+00:00",
@@ -32536,9 +33240,9 @@
    "v": 4
   },
   "general nespresso keuken artikelen glaswerk|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general nespresso koffiemachine|bonen,capsule,capsules,cups,defect,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-11-01T11:14:38.589007+00:00",
@@ -32780,19 +33484,13 @@
    "v": 4
   },
   "general nespresso koffiemachine|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 39,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 40,
     "high": 80.0,
     "kind": "general",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 13.0,
-      "title": "Nespresso De'Longhi koffiemachine - Zwart",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2461152435-nespresso-de-longhi-koffiemachine-zwart"
-     },
      {
       "kind": "fixed",
       "price": 15.0,
@@ -32816,6 +33514,18 @@
       "price": 15.0,
       "title": "Nespresso Vertuo Pop Koffiemachine - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2460540549-nespresso-vertuo-pop-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 15.0,
+      "title": "Nespresso Vertuo Next Koffiemachine Zwart",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2461387408-nespresso-vertuo-next-koffiemachine-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 25.0,
+      "title": "Nespresso Vertuo Pop Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2452990355-nespresso-vertuo-pop-koffiemachine-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -32843,15 +33553,15 @@
      },
      {
       "kind": "bid",
-      "price": 30.0,
-      "title": "Nespresso DeLonghi koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2455560262-nespresso-delonghi-koffiemachine"
+      "price": 40.0,
+      "title": "Nespresso De'Longhi koffiemachine",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2461294884-nespresso-de-longhi-koffiemachine"
      },
      {
       "kind": "bid",
       "price": 40.0,
-      "title": "Nespresso De'Longhi koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2461294884-nespresso-de-longhi-koffiemachine"
+      "title": "Nespresso Krups Koffiemachine - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2461431106-nespresso-krups-koffiemachine-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -32864,12 +33574,6 @@
       "price": 40.0,
       "title": "Nespresso Essenza Mini - Compacte koffiemachine",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2459798067-nespresso-essenza-mini-compacte-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Nespresso Vertuo Pop Koffiemachine - Wit/Zwart",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2458771523-nespresso-vertuo-pop-koffiemachine-wit-zwart"
      },
      {
       "kind": "bid",
@@ -32968,7 +33672,7 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2460988060-krups-nespresso-atelier-we-koffiemachine"
      }
     ],
-    "low": 30.0,
+    "low": 32.5,
     "median": 50.0,
     "model": null,
     "outliers": [
@@ -32976,13 +33680,13 @@
      680.0
     ],
     "prices": [
-     13.0,
+     15.0,
      15.0,
      15.0,
      15.0,
      15.0,
      25.0,
-     30.0,
+     25.0,
      30.0,
      30.0,
      30.0,
@@ -33014,12 +33718,13 @@
      100.0,
      108.0,
      120.0,
+     150.0,
      150.0
     ],
     "query": "nespresso koffiemachine",
     "search": "nespresso koffiemachine"
    },
-   "v": 6
+   "v": 7
   },
   "general plant bijzettafel afmeting bert|kunstbloemen,kunstboom,kunstplant": {
    "at": "2026-10-28T10:33:10.248878+00:00",
@@ -36979,9 +37684,9 @@
    "v": 5
   },
   "general sonos s5 zoneplay muzieksysteem draadloos|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 4,
     "high": 78.75,
     "kind": "exact",
@@ -37026,7 +37731,7 @@
     "query": "sonos s5",
     "search": "sonos s5"
    },
-   "v": 6
+   "v": 7
   },
   "general sonos sonos play multiroom luidspreker 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-01T14:52:18.700917+00:00",
@@ -37474,11 +38179,11 @@
    "v": 5
   },
   "general stihl bladblazer|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
-    "count": 48,
-    "high": 382.5,
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
+    "count": 47,
+    "high": 385.0,
     "kind": "general",
     "listings": [
      {
@@ -37552,12 +38257,6 @@
       "price": 175.0,
       "title": "Stihl bladblazer",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2415063162-stihl-bladblazer"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Stihl bg 86 bladblazer",
-      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2453396306-stihl-bg-86-bladblazer"
      },
      {
       "kind": "fixed",
@@ -37660,10 +38359,16 @@
       "price": 300.0,
       "title": "Stihl br700 bladblazer",
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2456910292-stihl-br700-bladblazer"
+     },
+     {
+      "kind": "fixed",
+      "price": 320.65,
+      "title": "STIHL BR 200 BLADBLAZER",
+      "url": "https://www.marktplaats.nl/v/tuin-en-terras/bladblazers/m2458577931-stihl-br-200-bladblazer"
      }
     ],
     "low": 175.0,
-    "median": 247.5,
+    "median": 250.0,
     "model": null,
     "outliers": [
      15.0,
@@ -37684,7 +38389,6 @@
      150.0,
      170.0,
      170.0,
-     175.0,
      175.0,
      175.0,
      185.0,
@@ -37711,13 +38415,13 @@
      375.0,
      375.0,
      385.0,
-     400.0,
-     400.0,
      450.0,
      450.0,
+     480.0,
      495.0,
      500.0,
      515.0,
+     650.0,
      650.0,
      650.0,
      694.18,
@@ -37726,12 +38430,12 @@
     "query": "stihl bladblazer",
     "search": "stihl bladblazer"
    },
-   "v": 6
+   "v": 7
   },
   "general stihl bosmaaier|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
-    "as_of": "2026-11-03T11:54:06.611271+00:00",
+    "as_of": "2026-11-03T14:17:54.964117+00:00",
     "count": 40,
     "high": 468.75,
     "kind": "general",
@@ -37968,12 +38672,12 @@
     "query": "stihl bosmaaier",
     "search": "stihl bosmaaier"
    },
-   "v": 6
+   "v": 7
   },
   "general stihl kettingzaagmachine|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general surface pro laptop 6|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-10-27T09:47:29.605837+00:00",
@@ -37986,9 +38690,9 @@
    "v": 4
   },
   "general thermomix huis keukenartikelen servies|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
-   "at": "2026-11-03T11:54:06.611271+00:00",
+   "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
-   "v": 6
+   "v": 7
   },
   "general wijn rode|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
    "at": "2026-10-27T09:47:29.605837+00:00",
@@ -39195,11 +39899,11 @@
    "first": "2026-10-27T09:47:29.605837+00:00"
   },
   "nedveiling:1178372": {
-   "closes": "2026-11-09T19:29:06.611271+00:00",
+   "closes": "2026-11-09T19:28:54.964117+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178373": {
-   "closes": "2026-11-09T19:29:06.611271+00:00",
+   "closes": "2026-11-09T19:28:54.964117+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178675": {
@@ -39239,11 +39943,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1178723": {
-   "closes": "2026-11-09T19:28:06.611271+00:00",
+   "closes": "2026-11-09T19:27:54.964117+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178724": {
-   "closes": "2026-11-09T19:28:06.611271+00:00",
+   "closes": "2026-11-09T19:27:54.964117+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178731": {
@@ -39311,11 +40015,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179530": {
-   "closes": "2026-11-13T19:27:06.611271+00:00",
+   "closes": "2026-11-13T19:26:54.964117+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179531": {
-   "closes": "2026-11-13T19:27:06.611271+00:00",
+   "closes": "2026-11-13T19:26:54.964117+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179569": {
@@ -39323,11 +40027,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179623": {
-   "closes": "2026-11-13T19:27:06.611271+00:00",
+   "closes": "2026-11-13T19:26:54.964117+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179625": {
-   "closes": "2026-11-13T19:27:06.611271+00:00",
+   "closes": "2026-11-13T19:26:54.964117+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179627": {
@@ -41110,6 +41814,34 @@
    "closes": "2026-11-24T21:20:00+01:00",
    "first": "2026-11-03T11:54:06.611271+00:00"
   },
+  "plaatsjebod:61196": {
+   "closes": "2026-11-25T19:36:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61199": {
+   "closes": "2026-11-25T19:37:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61202": {
+   "closes": "2026-11-25T19:37:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61271": {
+   "closes": "2026-11-25T19:49:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61277": {
+   "closes": "2026-11-25T19:50:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61307": {
+   "closes": "2026-11-25T19:55:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
+  "plaatsjebod:61310": {
+   "closes": "2026-11-25T19:55:00+01:00",
+   "first": "2026-11-03T14:17:54.964117+00:00"
+  },
   "proveiling:3288542": {
    "closes": "2026-11-03T20:00:00+01:00",
    "first": "2026-10-21T04:40:00.127260+00:00"
@@ -41945,14 +42677,14 @@
   "2026-11-03": {
    "out_of_searches": true,
    "regular": {
-    "deals": 8,
+    "deals": 9,
     "lots": 324,
-    "priced": 34
+    "priced": 36
    },
    "special": {
-    "deals": 27,
-    "lots": 272,
-    "priced": 107
+    "deals": 28,
+    "lots": 255,
+    "priced": 105
    }
   }
  },
