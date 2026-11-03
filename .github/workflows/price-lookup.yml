@@ -1,0 +1,48 @@
+name: Price lookup
+
+# One-off Marktplaats price check for something you want to sell: Actions > Price lookup > Run workflow,
+# type a search (e.g. "xps 15 9510"). The listings and their prices appear in the run's log.
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: "Marktplaats search"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Search Marktplaats
+        env:
+          QUERY: ${{ inputs.query }}
+        run: |
+          python - <<'EOF'
+          import os, html, statistics
+          from scanner.http import Http
+          from scanner.marktplaats import search
+          q = os.environ["QUERY"]
+          rows = []
+          for li in search(Http(), q):
+              info = li.get("priceInfo") or {}
+              cents = info.get("priceCents") or 0
+              title = html.unescape(li.get("title") or "")
+              desc = html.unescape(li.get("description") or "")[:160].replace("\n", " ")
+              rows.append((cents / 100, info.get("priceType"), title, desc, li.get("date") or "", li.get("vipUrl") or ""))
+          rows.sort()
+          for p, t, title, desc, date, url in rows:
+              print(f"EUR {p:8.2f} | {t} | {date} | {title} | {desc} | {url}")
+          prices = [r[0] for r in rows if r[0] > 50]
+          if prices:
+              print(f"\n{len(prices)} priced listings, median EUR {statistics.median(prices):.0f}")
+          EOF
