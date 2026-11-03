@@ -18,6 +18,9 @@ def test_totals():
     assert s["earned"] == round(90 - 50.4 + 50 - 18, 2)
     assert s["saved"] == round((60 * 0.5 - 18) + 300, 2)
     assert s["savedItems"] == 2
+    assert s["keptNewValue"] == 430
+    assert s["savedPct"] == round(312 / 430 * 100, 2)
+    assert s["marginPctOfPrice"] == round(s["earned"] / 140 * 100, 2)
     assert s["earnedWhenPaid"] == 100
     assert s["moneyInStock"] == 80  # the unpaid sale already counts as sold
     assert s["updatedAt"] == "2026-11-03T00:00:00Z"

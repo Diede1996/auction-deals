@@ -57,6 +57,15 @@ def _saved(it):
     return float(it["newPrice"]) * kept_share - max(0.0, float(it.get("paid") or 0) - _cost_of_sold(it))
 
 
+def _kept_new_value(it):
+    """the new price of what you kept: the base of the savings percentage"""
+    if it.get("newPrice") is None or _status(it) != "kept":
+        return None
+    if _qty(it) > 1:
+        return float(it["newPrice"]) * max(0.0, 1 - _sold_qty(it) / _qty(it))
+    return 0.0 if _sales(it) else float(it["newPrice"])
+
+
 def _in_stock(it):
     return max(0.0, float(it.get("paid") or 0) - _cost_of_sold(it)) if _status(it) == "stock" else 0.0
 
@@ -75,6 +84,7 @@ def summarize(data, now=None):
                 cost += c
                 sales_count += 1
     saved_items = [v for v in (_saved(it) for it in items) if v is not None]
+    new_value = sum(v for v in (_kept_new_value(it) for it in items) if v is not None)
     r = lambda x: round(x, 2)  # noqa: E731
     return {
         "updatedAt": (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -82,10 +92,13 @@ def summarize(data, now=None):
         "soldFor": r(revenue),
         "costOfSold": r(cost),
         "earnedPctOfCost": r((revenue - cost) / cost * 100) if cost else None,
+        "marginPctOfPrice": r((revenue - cost) / revenue * 100) if revenue else None,
         "sales": sales_count,
         "earnedWhenPaid": r(waiting),
         "saved": r(sum(saved_items)),
         "savedItems": len(saved_items),
+        "keptNewValue": r(new_value),
+        "savedPct": r(sum(saved_items) / new_value * 100) if new_value else None,
         "moneyInStock": r(sum(_in_stock(it) for it in items)),
         "paidTotal": r(sum(float(it.get("paid") or 0) for it in items)),
         "items": len(items),
