@@ -56,7 +56,7 @@
     var headers = { "Accept": opts.raw ? "application/vnd.github.raw+json" : "application/vnd.github+json",
                     "Authorization": "Bearer " + P.token, "X-GitHub-Api-Version": "2022-11-28" };
     if (opts.body) headers["Content-Type"] = "application/json";
-    return fetch(API + path, { method: opts.method || "GET", headers: headers, cache: "no-store",
+    return fetch(API + path, { method: opts.method || "GET", headers: headers, cache: "no-store", keepalive: !!opts.keepalive,
                                body: opts.body ? JSON.stringify(opts.body) : undefined })
       .then(function (r) {
         if (!r.ok) { var e = new Error("GitHub answered " + r.status); e.status = r.status; throw e; }
@@ -226,7 +226,7 @@
     P.token = null; store.set("privToken", null);
     P.data = null; P.loaded = false; P.sha = null;
     connectMessage = message || "";
-    draw();
+    draw(); hiddenStatus();
   }
   var connectMessage = "";
   function connectCard() {
@@ -1271,12 +1271,31 @@
 
   /* ---------- hidden lots, the same on all your devices: data/hidden.json in your private repository ---------- */
   var HIDDEN_PATH = "data/hidden.json";
-  var H = { sha: null, chain: Promise.resolve(), timer: null, at: 0 };
+  var H = { sha: null, chain: Promise.resolve(), timer: null, at: 0, ok: 0, failed: false };
+  /* says next to "Show hidden" whether hiding here reaches your other devices */
+  function hiddenStatus() {
+    var s = document.getElementById("hiddenSync");
+    if (!s) return;
+    var t = function (ms) { return new Intl.DateTimeFormat("nl-NL", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Amsterdam" }).format(new Date(ms)); };
+    s.textContent = !P.token ? "Hidden lots: only on this device (connect your private repository under Pickups to share them)"
+      : H.failed ? "Hidden lots: couldn't sync with " + P.repo + " just now; trying again"
+      : H.ok ? "Hidden lots: in sync with your other devices (" + t(H.ok) + ")" : "Hidden lots: syncing…";
+  }
   function syncHidden() {
-    if (!P.token || !AD.mergeHidden) return Promise.resolve();
+    clearTimeout(H.timer); H.timer = null;
+    if (!P.token || !AD.mergeHidden) { hiddenStatus(); return Promise.resolve(); }
     var p = H.chain.then(function () { return syncHiddenOnce(0); });
-    H.chain = p.catch(function () { /* tried again at the next change or visit */ });
+    H.chain = p.then(function () { H.ok = Date.now(); H.failed = false; hiddenStatus(); },
+                     function () { H.failed = true; hiddenStatus(); });
     return p;
+  }
+  /* leaving the page right after hiding a lot: send it now, with a request that outlives the page. When another
+     device saved in between, GitHub refuses it and nothing is lost: this device sends it at its next visit. */
+  function flushHidden() {
+    if (!H.timer || !P.token || !H.sha || !AD.mergeHidden) return;
+    clearTimeout(H.timer); H.timer = null;
+    var body = { message: "Hidden lots", sha: H.sha, content: toB64(JSON.stringify({ version: 1, items: AD.mergeHidden({}) }) + "\n") };
+    gh(filePath(HIDDEN_PATH), { method: "PUT", body: body, keepalive: true }).then(function (r) { H.sha = r.content.sha; }, function () {});
   }
   function syncHiddenOnce(tries) {
     return gh(filePath(HIDDEN_PATH)).then(function (f) {
@@ -1303,8 +1322,12 @@
     hiddenChanged: function () { clearTimeout(H.timer); H.timer = setTimeout(syncHidden, 1500); }
   };
   document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible" && P.token && Date.now() - H.at > 60000) syncHidden();
+    if (document.visibilityState === "hidden") flushHidden();
+    else if (P.token && Date.now() - H.at > 30000) syncHidden();
   });
+  window.addEventListener("pagehide", flushHidden);
+  /* while the page stays open (a phone keeps tabs open for days): pick up what your other devices hid */
+  setInterval(function () { if (document.visibilityState === "visible" && P.token && !H.timer && Date.now() - H.at > 120000) syncHidden(); }, 30000);
   syncHidden();
   /* another device may have saved: read again when you come back to this tab after a while */
   document.addEventListener("visibilitychange", function () {
