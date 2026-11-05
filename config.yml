@@ -79,12 +79,14 @@ sites:
     # On since 5 Nov 2026: Troostwijk's robots.txt allows reading auction and lot pages (not /search or filters)
     # and their terms only forbid making them public, so these lots go to your private repository, not the
     # public dashboard (secret PRIVATE_REPO_TOKEN). The bot reads the list of running auctions and the pages of
-    # the auctions that pass auction_keywords, with an honest bot name and a pause between pages.
+    # the auctions in your countries (see all_auctions), with an honest bot name and a pause between pages.
     # The alert emails (troostwijk_alerts below) keep working next to it.
     enabled: true
     countries: [nl, be]  # pickup places in these countries
     delay_seconds: 4     # pause between two Troostwijk pages
-    max_pages: 120       # at most this many Troostwijk pages per scan (an auction page holds 48 lots)
+    max_pages: 250       # at most this many Troostwijk pages per scan (an auction page holds 48 lots); the rest
+                         # is read in the next scans (an auction is read once, again only in its last 36 hours)
+    all_auctions: true   # Diede, 5 Nov 2026: every auction, not only auction_keywords ("regular auction" label)
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
     vat: 0.21
     fixed_fee: 0

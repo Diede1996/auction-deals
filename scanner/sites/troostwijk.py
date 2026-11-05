@@ -7,7 +7,8 @@ so the scan keeps these lots off the public dashboard (see private_repo.py).
 
 So this reader:
 1. Reads the list of running auctions (/nl/auctions?page=N, no filters) and keeps the auctions in your countries
-   (from their pickup places) that pass the same auction filter as the other sites.
+   (from their pickup places): all of them with `all_auctions: true`, else those that pass the same auction
+   filter as the other sites.
 2. Reads those auctions' own pages (/nl/a/<slug>?page=N, 48 lots a page) and keeps the lots whose title contains a
    watchlist phrase. An auction's lots are read once and then again only while it closes within a day and a
    half (for the current bids), with at most `max_pages` auction pages a run.
@@ -137,7 +138,7 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
     s = ctx.settings
     countries = {c.lower() for c in s.get("countries") or ["nl"]}
     reader = Reader(ctx, float(s.get("delay_seconds", 4)), session)
-    max_pages = int(s.get("max_pages", 120))
+    max_pages = int(s.get("max_pages", 250))
     phrases = [normalize(t) for t in ctx.search_terms if normalize(t)]
     cache = ctx.cache.setdefault("auctions", {})  # displayId -> {read: iso, lots: [records of watchlist lots]}
     now = ctx.now
@@ -147,7 +148,11 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
         if a.get("biddingStatus") not in (None, "BIDDING_OPEN") or not (countries_of(a) & countries):
             continue
         auction = parse_auction(a)
-        if not ctx.wants(auction, ctx.is_bankruptcy(auction.title, auction.description)):
+        special = ctx.is_bankruptcy(auction.title, auction.description)
+        if s.get("all_auctions"):  # Diede (5 Nov 2026): every Troostwijk auction, others labelled "regular"
+            if not special:
+                ctx.regular.add(auction.title)
+        elif not ctx.wants(auction, special):
             continue
         auctions.append((a, auction))
     # closing soonest first: their bids matter most, and new auctions are read before they close

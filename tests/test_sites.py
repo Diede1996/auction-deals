@@ -230,3 +230,15 @@ def test_drz_fees_in_the_math():
     site = Fees(premium=0.17, vat=0.21)
     assert round(total_cost(100, site, vat_lot), 2) == 133.10  # 100 x 1.10 x 1.21
     assert round(total_cost(100, site, margin_lot), 2) == 112.10  # 100 x 1.121
+
+
+def test_troostwijk_all_auctions():
+    pages = dict(TW_PAGES)
+    pages["/nl/a/led-binnen-en-buitenverlichting-A1-49452"] = (200, next_page({"lots": {
+        "results": [{**TW_SEARCH_LOTS[1], "location": {"city": "Venlo", "countryCode": "nl"}}], "hasNext": False}}))
+    session = FakeSession(pages)
+    c = ctx(FakeHttp([]), search_terms=["thinkpad"],
+            settings={"countries": ["nl", "be"], "delay_seconds": 0, "all_auctions": True})
+    lots = {l.lot_id: l for l in troostwijk.fetch_lots(c, session)}
+    assert set(lots) == {"A1-50096-100091", "A1-49452-77"}
+    assert lots["A1-49452-77"].regular and not lots["A1-50096-100091"].regular
