@@ -1062,6 +1062,10 @@
     Object.keys(STATUS).forEach(function (k) { inp.status.append(el("option", { value: k, text: STATUS[k] })); });
     inp.status.value = sell ? "stock" : statusOf(it);
     if (sell && !inp.adTitle.value) inp.adTitle.value = it.name || "";
+    /* Marktplaats allows 60 characters in a title */
+    var titleCount = el("span", { "class": "small" });
+    function countTitle() { var n = inp.adTitle.value.length; titleCount.textContent = n + " / 60 characters" + (n > 60 ? ": too long for Marktplaats" : ""); titleCount.className = "small" + (n > 60 ? " bad" : ""); }
+    inp.adTitle.addEventListener("input", countTitle); countTitle();
     var dl = el("datalist", { id: "pcats" });
     categories().forEach(function (c) { dl.append(el("option", { value: c })); });
 
@@ -1087,7 +1091,7 @@
     var saveLabel = isNew ? "Add" : sell ? "Put up for sale" : "Save";
     var save = el("button", { type: "submit", "class": "primary", text: saveLabel });
     var adPart = [
-      el("div", { "class": "pgrid" }, field("Title", inp.adTitle), field("Asking price (€)", inp.adPrice)),
+      el("div", { "class": "pgrid" }, el("div", null, field("Title", inp.adTitle), titleCount), field("Asking price (€)", inp.adPrice)),
       field("Text", inp.adText),
       el("div", { "class": "pfield" }, el("label", { text: "Photos" }), strip, inp.photos, el("div", { "class": "small", text: "Photos are made smaller (1600 px) before they're saved." }))];
     var form = sell ? el("form", { method: "dialog" },
