@@ -30,7 +30,7 @@ settings:
   resale_factor: 0.75
   min_margin: 0.25
   min_profit: 25
-  min_lot_profit: 50
+  min_lot_profit: 40  # Diede, 2026-11-05 (was 50)
   monthly_goal: 1000  # Diede, 2026-11-05
   transport_margin: 0.15
   transport_min_value: 100
