@@ -83,10 +83,11 @@ sites:
     # The alert emails (troostwijk_alerts below) keep working next to it.
     enabled: true
     countries: [nl, be]  # pickup places in these countries
-    delay_seconds: 3     # pause between two Troostwijk pages
+    delay_seconds: 8     # pause between two Troostwijk pages (the first scan, 4 s apart, got a 403 after ~8 min)
     window_days: 7       # Diede, 5 Nov 2026: only auctions closing within a week, read again every scan for
                          # the current bids
-    max_pages: 400       # at most this many Troostwijk pages per scan (an auction page holds 48 lots)
+    max_pages: 150       # at most this many Troostwijk pages per scan (an auction page holds 48 lots); when
+                         # Troostwijk refuses, the bot stops for that scan and keeps what it read
     all_auctions: true   # Diede, 5 Nov 2026: every auction, not only auction_keywords ("regular auction" label)
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
     vat: 0.21

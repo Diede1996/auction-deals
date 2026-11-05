@@ -137,8 +137,8 @@ def wanted(title: str, phrases: list[str]) -> bool:
 def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
     s = ctx.settings
     countries = {c.lower() for c in s.get("countries") or ["nl"]}
-    reader = Reader(ctx, float(s.get("delay_seconds", 3)), session)
-    max_pages = int(s.get("max_pages", 400))
+    reader = Reader(ctx, float(s.get("delay_seconds", 8)), session)
+    max_pages = int(s.get("max_pages", 150))
     phrases = [normalize(t) for t in ctx.search_terms if normalize(t)]
     window = float(s.get("window_days", 7))
     reread = float(s.get("reread_hours", 20))
@@ -167,16 +167,27 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
 
     lots: list[Lot] = []
     read = skipped = 0
+    refused = False
     for a, auction in auctions:
         entry = cache.get(auction.auction_id)
         # every scan reads the auctions of this week again, for the current bids (once per `reread_hours`)
         fresh = entry and entry.get("complete") and datetime.fromisoformat(entry["read"]) > now - timedelta(hours=reread)
         if not fresh:
             pages_left = max_pages - reader.pages
-            if pages_left <= 0:
+            records = None
+            if pages_left <= 0 or refused:
                 skipped += 1
             else:
-                records, complete = read_auction(reader, a.get("urlSlug", ""), pages_left)
+                try:
+                    records, complete = read_auction(reader, a.get("urlSlug", ""), pages_left)
+                except BlockedError:
+                    # Troostwijk said no for now: stop reading (never retry or work around it) and keep what
+                    # this scan read so far and the earlier reads of other auctions
+                    refused = True
+                    ctx.cache["refused"] = {"at": now.isoformat(), "after_pages": reader.pages}
+                    log.warning("troostwijk refused the bot after %d pages: no more pages this scan", reader.pages)
+                    skipped += 1
+            if records is not None:
                 entry = cache[auction.auction_id] = {
                     "read": now.isoformat(), "complete": complete,
                     "lots": [r for r in records if r["open"] and r["title"] and wanted(r["title"], phrases)]}

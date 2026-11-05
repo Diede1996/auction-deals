@@ -256,3 +256,15 @@ def test_troostwijk_only_this_weeks_auctions_and_fresh_bids():
     c.now = NOW + timedelta(days=3)  # the next day: read again for the current bids
     troostwijk.fetch_lots(c, session)
     assert "/nl/a/faillissement-fulfilment-magazijn-A1-50096" in session.asked
+
+
+def test_troostwijk_keeps_what_it_read_when_refused_halfway():
+    pages = dict(TW_PAGES)
+    pages["/nl/a/audiovisueel-en-horeca-materiaal-wegens-faillissement-virtulan-bv-A1-49861"] = (403, "Forbidden")
+    session = FakeSession(pages)
+    c = ctx(FakeHttp([]), search_terms=["thinkpad"],
+            settings={"countries": ["nl"], "delay_seconds": 0, "window_days": 14})
+    lots = troostwijk.fetch_lots(c, session)  # Virtulan closes later: read after the fulfilment auction
+    assert [l.lot_id for l in lots] == ["A1-50096-100091"]
+    assert c.cache["refused"]["after_pages"] == 4
+    assert session.asked[-1].startswith("/nl/a/audiovisueel")  # nothing asked after the refusal
