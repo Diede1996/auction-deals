@@ -1775,7 +1775,7 @@
  },
  "filter_words": "8ae1655c3722",
  "fuel": {
-  "at": "2026-11-04T12:04:43.774326+00:00",
+  "at": "2026-11-05T12:17:11.576904+00:00",
   "price": 1.905,
   "source": "Belgian maximum price Euro 95 E10 from 2026-11-04"
  },
@@ -2188,110 +2188,110 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 996,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 752,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
-   "lots": 117,
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
+   "lots": 107,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "lots": 92,
+   "lots": 5,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 1640,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
-   "lots": 3822,
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
+   "lots": 3821,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
-   "lots": 5158,
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
+   "lots": 5394,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
-   "lots": 473,
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
+   "lots": 474,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 3171,
    "ok": true,
    "warned": false
   },
   "troostwijk": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
-   "lots": 328,
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
+   "lots": 353,
    "ok": true
   },
   "veilingwinnaar": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 75,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-11-05T06:50:25.807484+00:00",
+   "at": "2026-11-05T12:17:11.576904+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-05T06:50:25.807484+00:00",
+   "last_ok": "2026-11-05T12:17:11.576904+00:00",
    "lots": 2788,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-11-05T06:50:25.807484+00:00",
-  "deals": 100,
+  "at": "2026-11-05T12:17:11.576904+00:00",
+  "deals": 104,
   "defects": 4,
-  "lots": 19320,
-  "matches": 590,
-  "new": 52,
-  "requests": 757,
+  "lots": 19571,
+  "matches": 583,
+  "new": 3,
+  "requests": 676,
   "too_old": 46
  },
  "price_cache": {
@@ -2367,6 +2367,11 @@
     "search": "acer v246hl"
    },
    "v": 4
+  },
+  "exact ag115dly1108|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-11-05T12:17:11.576904+00:00",
+   "est": null,
+   "v": 7
   },
   "exact airfryer af12l|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-11-03T14:17:54.964117+00:00",
@@ -7906,201 +7911,6 @@
    },
    "v": 4
   },
-  "exact galaxy s23 512gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 25,
-    "high": 477.5,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 265.0,
-      "title": "Samsung Galaxy S23 + plus 512GB Lavendel",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2433778608-samsung-galaxy-s23-plus-512gb-lavendel"
-     },
-     {
-      "kind": "bid",
-      "price": 299.99,
-      "title": "Samsung Galaxy S23 Plus 512GB - Zeer Goede Staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2452166765-samsung-galaxy-s23-plus-512gb-zeer-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Samsung Galaxy S23 Plus 512GB Zwart - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2452503371-samsung-galaxy-s23-plus-512gb-zwart-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Samsung Galaxy S23 plus 512GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2444808244-samsung-galaxy-s23-plus-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 375.0,
-      "title": "Samsung Galaxy S23+ 512GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2449270789-samsung-galaxy-s23-512gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 375.99,
-      "title": "Samsung Galaxy S23 Plus Dual SIM 512GB green",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1473169185-samsung-galaxy-s23-plus-dual-sim-512gb-green"
-     },
-     {
-      "kind": "fixed",
-      "price": 379.99,
-      "title": "Samsung Galaxy S23 Ultra 512GB - Gebruikte Staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2448453860-samsung-galaxy-s23-ultra-512gb-gebruikte-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 381.99,
-      "title": "Samsung Galaxy S23 Plus Dual SIM 512GB lime",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1482815246-samsung-galaxy-s23-plus-dual-sim-512gb-lime"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Samsung Galaxy S23 Plus 512GB zwart – ophalen in Kranenburg",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2454564699-samsung-galaxy-s23-plus-512gb-zwart-ophalen-in-kranenburg"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Samsung Galaxy S23+ 512GB -  in goede staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2451263286-samsung-galaxy-s23-512gb-in-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Samsung Galaxy S23+ 512GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2425354839-samsung-galaxy-s23-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 410.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2455133634-samsung-galaxy-s23-ultra-512gb-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 420.0,
-      "title": "Samsung Galaxy S23 Ultra - 512GB - Dual SIM -",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2444671230-samsung-galaxy-s23-ultra-512gb-dual-sim"
-     },
-     {
-      "kind": "bid",
-      "price": 425.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB - Gebruikt, Zonder Doos",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2456208948-samsung-galaxy-s23-ultra-512gb-gebruikt-zonder-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 425.0,
-      "title": "Samsung Galaxy S23 Ultra 12GB 512GB €€425 lees goed aub",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2450079341-samsung-galaxy-s23-ultra-12gb-512gb-425-lees-goed-aub"
-     },
-     {
-      "kind": "fixed",
-      "price": 447.99,
-      "title": "Samsung Galaxy S23 Ultra Dual SIM 512GB sky blue",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1485404964-samsung-galaxy-s23-ultra-dual-sim-512gb-sky-blue"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB – Phantom Black",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2452469880-samsung-galaxy-s23-ultra-512gb-phantom-black"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Samsung Galaxy S23 Ultra 512 GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2424461011-samsung-galaxy-s23-ultra-512-gb-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 475.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2439166361-samsung-galaxy-s23-ultra-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 479.99,
-      "title": "Samsung Galaxy S23 Ultra 5G 512GB | Incl. Doos | ZGAN",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2443614957-samsung-galaxy-s23-ultra-5g-512gb-incl-doos-zgan"
-     },
-     {
-      "kind": "fixed",
-      "price": 499.0,
-      "title": "Samsung Galaxy S23 Ultra (White, 512GB)",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2439561424-samsung-galaxy-s23-ultra-white-512gb"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB Lavender - in nieuwstaat!",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2451824260-samsung-galaxy-s23-ultra-512gb-lavender-in-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 500.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB Zwart. Ook teruil",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2445227425-samsung-galaxy-s23-ultra-512gb-zwart-ook-teruil"
-     },
-     {
-      "kind": "fixed",
-      "price": 522.99,
-      "title": "Samsung Galaxy S23 Ultra Dual SIM 512GB red",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/a1491545802-samsung-galaxy-s23-ultra-dual-sim-512gb-red"
-     },
-     {
-      "kind": "fixed",
-      "price": 550.0,
-      "title": "Samsung Galaxy S23 Ultra 512GB - goed onderhouden",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-overige-merken/m2430968144-samsung-galaxy-s23-ultra-512gb-goed-onderhouden"
-     }
-    ],
-    "low": 377.99,
-    "median": 420.0,
-    "model": "S23",
-    "outliers": [],
-    "prices": [
-     265.0,
-     299.99,
-     300.0,
-     300.0,
-     375.0,
-     375.99,
-     379.99,
-     381.99,
-     400.0,
-     400.0,
-     400.0,
-     410.0,
-     420.0,
-     425.0,
-     425.0,
-     447.99,
-     450.0,
-     450.0,
-     475.0,
-     479.99,
-     499.0,
-     500.0,
-     500.0,
-     522.99,
-     550.0
-    ],
-    "query": "galaxy s23 512gb",
-    "search": "galaxy s23 512gb"
-   },
-   "v": 4
-  },
   "exact galaxy s24 5g 256gb|accu,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,standaard,tab,tablet,watch": {
    "at": "2026-10-25T09:07:56.432593+00:00",
    "est": {
@@ -9458,56 +9268,6 @@
    "est": null,
    "v": 4
   },
-  "exact hugo 1xtom253x|": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss arti224e1x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss arti253x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss artim204x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss henry244f1x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss karel253x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss kari253x|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo boss kariw253|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo gos233f1x|": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "exact hugo hestenm204x|": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
   "exact husqvarna benzine 265px|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-04T12:04:43.774326+00:00",
    "est": null,
@@ -9897,176 +9657,6 @@
   "exact iiyama pl2495w|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
    "at": "2026-10-23T04:39:33.788701+00:00",
    "est": null,
-   "v": 4
-  },
-  "exact ipad air 5 64gb|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 21,
-    "high": 434.5,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Refurbished iPad Air 5 (2022) 64GB Wifi Space Gray",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2453059371-refurbished-ipad-air-5-2022-64gb-wifi-space-gray"
-     },
-     {
-      "kind": "fixed",
-      "price": 289.0,
-      "title": "iPad Air 5e 64GB grijs /85% batt /krasvrij /garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2450762075-ipad-air-5e-64gb-grijs-85-batt-krasvrij-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "iPad Air (5e generatie) 64GB - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448335143-ipad-air-5e-generatie-64gb-gebruikt"
-     },
-     {
-      "kind": "fixed",
-      "price": 309.0,
-      "title": "iPad Air 5e 64GB roze /94% batt /zeer net /garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2451116801-ipad-air-5e-64gb-roze-94-batt-zeer-net-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "iPad Air 5e generatie 64GB Wi-Fi Spacegrijs",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2444723445-ipad-air-5e-generatie-64gb-wi-fi-spacegrijs"
-     },
-     {
-      "kind": "bid",
-      "price": 325.0,
-      "title": "Apple iPad Air m1  (5e gen) 64GB Wi-Fi - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2452950993-apple-ipad-air-m1-5e-gen-64gb-wi-fi-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 340.0,
-      "title": "iPad Air 5 64gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2452116474-ipad-air-5-64gb"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "iPad Air 5 (64GB, Wi-Fi, Blauw) + Toetsenbordhoes + Apple Pe",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2448983052-ipad-air-5-64gb-wi-fi-blauw-toetsenbordhoes-apple-pe"
-     },
-     {
-      "kind": "fixed",
-      "price": 370.0,
-      "title": "iPad Air 5e Generatie m1 64GB | Blauw of Paars",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2454353100-ipad-air-5e-generatie-m1-64gb-blauw-of-paars"
-     },
-     {
-      "kind": "fixed",
-      "price": 379.0,
-      "title": "Apple iPad Air 5 WIFI 64GB M1",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/laptoptassen/m2421459159-apple-ipad-air-5-wifi-64gb-m1"
-     },
-     {
-      "kind": "fixed",
-      "price": 379.0,
-      "title": "Apple iPad Air 5e Gen M1 64GB Paars | WiFi | 1 Jaar Garantie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2453750089-apple-ipad-air-5e-gen-m1-64gb-paars-wifi-1-jaar-garantie"
-     },
-     {
-      "kind": "bid",
-      "price": 385.0,
-      "title": "Apple iPad Air (5e generatie) 64GB Wi-Fi + Cellular",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2455744886-apple-ipad-air-5e-generatie-64gb-wi-fi-cellular"
-     },
-     {
-      "kind": "fixed",
-      "price": 389.0,
-      "title": "Apple iPad Air 5 64GB Blauw Wifi | BTW | 80% | Gebruikt",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2445053301-apple-ipad-air-5-64gb-blauw-wifi-btw-80-gebruikt"
-     },
-     {
-      "kind": "fixed",
-      "price": 399.0,
-      "title": "Apple iPad Air 5 64GB Grijs Wifi | BTW | 84% | Nette staat!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2445898132-apple-ipad-air-5-64gb-grijs-wifi-btw-84-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Gloednieuwe Remarket iPad Air (M1, 5e Gen) 64GB Paars",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449868936-gloednieuwe-remarket-ipad-air-m1-5e-gen-64gb-paars"
-     },
-     {
-      "kind": "fixed",
-      "price": 419.99,
-      "title": "iPad Air 5th Gen 2022 64GB Wifi + 5G - Nette Staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2452599405-ipad-air-5th-gen-2022-64gb-wifi-5g-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 449.0,
-      "title": "A2588,  iPad Air 5 , Purple, 64GB, Wifi",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2454455138-a2588-ipad-air-5-purple-64gb-wifi"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Apple iPad Air (5e generatie) 64GB Wi-Fi + 5G Space Gr",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2445408260-apple-ipad-air-5e-generatie-64gb-wi-fi-5g-space-gr"
-     },
-     {
-      "kind": "fixed",
-      "price": 475.99,
-      "title": "Apple iPad Air 5 10,9 64GB [wifi + cellular] spacegrijs",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1481987582-apple-ipad-air-5-10-9-64gb-wifi-cellular-spacegrijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 496.99,
-      "title": "Apple iPad Air 5 10,9 64GB [wifi + cellular] sterrenlicht",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/a1480186420-apple-ipad-air-5-10-9-64gb-wifi-cellular-sterrenlicht"
-     },
-     {
-      "kind": "bid",
-      "price": 520.0,
-      "title": "iPad Air 5e generatie 2022-64GB–Wi-Fi+Cellular-Sterrenlicht",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2449269095-ipad-air-5e-generatie-2022-64gb-wi-fi-cellular-sterrenlicht"
-     }
-    ],
-    "low": 322.5,
-    "median": 379.0,
-    "model": "iPad Air 5th gen",
-    "outliers": [
-     115.0,
-     125.0
-    ],
-    "prices": [
-     250.0,
-     289.0,
-     300.0,
-     309.0,
-     320.0,
-     325.0,
-     340.0,
-     350.0,
-     370.0,
-     379.0,
-     379.0,
-     385.0,
-     389.0,
-     399.0,
-     400.0,
-     419.99,
-     449.0,
-     450.0,
-     475.99,
-     496.99,
-     520.0
-    ],
-    "query": "ipad air 2022 64gb",
-    "search": "ipad air 5 64gb"
-   },
    "v": 4
   },
   "exact ipad mhnk3nf 512gb|case,cover,hoes,hoesje,houder,screenprotector,standaard": {
@@ -11377,276 +10967,6 @@
     ],
     "query": "lg 35wn75c",
     "search": "lg monitor 35wn75c"
-   },
-   "v": 4
-  },
-  "exact macbook air m1|adapter,hoes,lader,oplader,sleeve,tas": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 67,
-    "high": 549.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 315.0,
-      "title": "MacBook Air M1 2020 – 8GB / 256GB – Space Gray – Goede staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2452907935-macbook-air-m1-2020-8gb-256gb-space-gray-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 325.0,
-      "title": "Apple MacBook Air M1 (2020) | 13 inch | 8GB | Originele doos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454306580-apple-macbook-air-m1-2020-13-inch-8gb-originele-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 349.0,
-      "title": "Macbook Air/Pro i7/i9/M1/M1Pro Ruime voorraad Incl BTW €349",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2232392616-macbook-air-pro-i7-i9-m1-m1pro-ruime-voorraad-incl-btw-349"
-     },
-     {
-      "kind": "fixed",
-      "price": 349.0,
-      "title": "MacBook Air M1 incl. doos & accesoires",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2452497403-macbook-air-m1-incl-doos-accesoires"
-     },
-     {
-      "kind": "fixed",
-      "price": 370.0,
-      "title": "Macbook Air M1.  13 inch. 7 core. 8 GB. 256GB.",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456338030-macbook-air-m1-13-inch-7-core-8-gb-256gb"
-     },
-     {
-      "kind": "bid",
-      "price": 375.0,
-      "title": "MacBook Air M1 2020 Rose Gold - 8GB RAM / 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454110683-macbook-air-m1-2020-rose-gold-8gb-ram-256gb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 380.0,
-      "title": "Macbook Air M1",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2455274825-macbook-air-m1"
-     },
-     {
-      "kind": "bid",
-      "price": 390.0,
-      "title": "Mooie Apple MacBook Air M1 (2020) 8GB/256GB, IZGS",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454744871-mooie-apple-macbook-air-m1-2020-8gb-256gb-izgs"
-     },
-     {
-      "kind": "bid",
-      "price": 399.0,
-      "title": "MacBook Air M1 2020 – 8GB RAM – 256GB SSD – 13 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2453760258-macbook-air-m1-2020-8gb-ram-256gb-ssd-13-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 399.0,
-      "title": "Macbook Air M1, 8GB , 512 GB Zilver/Spacegrijs, 89%",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2455019760-macbook-air-m1-8gb-512-gb-zilver-spacegrijs-89"
-     },
-     {
-      "kind": "fixed",
-      "price": 399.99,
-      "title": "MacBook Air 2020 M1 8GB 256GB - Nette staat (101 Cycli)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456173133-macbook-air-2020-m1-8gb-256gb-nette-staat-101-cycli"
-     },
-     {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "MacBook Air M1 2020 - 8GB RAM, 512GB opslag, 13.3 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2452842078-macbook-air-m1-2020-8gb-ram-512gb-opslag-13-3-inch"
-     },
-     {
-      "kind": "bid",
-      "price": 410.0,
-      "title": "Apple MacBook Air 13\" M1 (2020) Spacegrijs – 8GB / 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454317020-apple-macbook-air-13-m1-2020-spacegrijs-8gb-256gb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 415.0,
-      "title": "MacBook Air M1 2020 - 8GB RAM - 91% Batterijconditie",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456291182-macbook-air-m1-2020-8gb-ram-91-batterijconditie"
-     },
-     {
-      "kind": "bid",
-      "price": 420.0,
-      "title": "Apple MacBook Air M1 (2020)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454017218-apple-macbook-air-m1-2020"
-     },
-     {
-      "kind": "bid",
-      "price": 420.0,
-      "title": "Apple MacBook Air 13\" (M1, 2020) 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2450591476-apple-macbook-air-13-m1-2020-256gb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 425.0,
-      "title": "MacBook Air M1 2020 | 8GB 256GB | Compleet + accessoires",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454797509-macbook-air-m1-2020-8gb-256gb-compleet-accessoires"
-     },
-     {
-      "kind": "bid",
-      "price": 425.0,
-      "title": "MacBook Air M1 2020 | 8GB RAM | 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456377562-macbook-air-m1-2020-8gb-ram-256gb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 425.0,
-      "title": "Macbook Air 2020 M1 8GB/256GB lees de tekst aub",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2453884719-macbook-air-2020-m1-8gb-256gb-lees-de-tekst-aub"
-     },
-     {
-      "kind": "fixed",
-      "price": 449.0,
-      "title": "MacBook Air M1 2020 - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456405563-macbook-air-m1-2020-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 449.99,
-      "title": "Apple MacBook Air 2020 M1 8GB 256GB (86%) - Nette staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456285703-apple-macbook-air-2020-m1-8gb-256gb-86-nette-staat"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Apple MacBook Air 13 inch M1",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2455375825-apple-macbook-air-13-inch-m1"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Apple Macbook Air M1 256gb",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2455505496-apple-macbook-air-m1-256gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Macbook air m1 z.g.a.n",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2456114527-macbook-air-m1-z-g-a-n"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Macbook Air 13 inch M1",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454297122-macbook-air-13-inch-m1"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "MacBook Air M1 (2020)",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2454489004-macbook-air-m1-2020"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "M1 MacBook Air 2020 - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2455866472-m1-macbook-air-2020-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "Macbook Air M1",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2449680126-macbook-air-m1"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "MacBook Air M1 2020 - 8GB RAM, 256GB SSD, 13.3 inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2452462916-macbook-air-m1-2020-8gb-ram-256gb-ssd-13-3-inch"
-     },
-     {
-      "kind": "fixed",
-      "price": 450.0,
-      "title": "MacBook Air 13 inch M1, 8GB RAM, 256GB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2452075367-macbook-air-13-inch-m1-8gb-ram-256gb-ssd"
-     }
-    ],
-    "low": 425.0,
-    "median": 475.0,
-    "model": "MacBook Air M1",
-    "outliers": [
-     805.99,
-     1495.99
-    ],
-    "prices": [
-     315.0,
-     325.0,
-     349.0,
-     349.0,
-     370.0,
-     375.0,
-     380.0,
-     390.0,
-     399.0,
-     399.0,
-     399.99,
-     400.0,
-     410.0,
-     415.0,
-     420.0,
-     420.0,
-     425.0,
-     425.0,
-     425.0,
-     449.0,
-     449.99,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     450.0,
-     459.99,
-     469.0,
-     475.0,
-     475.0,
-     475.0,
-     495.0,
-     495.0,
-     495.0,
-     499.0,
-     499.0,
-     499.0,
-     499.0,
-     499.0,
-     499.99,
-     500.0,
-     500.0,
-     500.0,
-     500.0,
-     525.0,
-     525.0,
-     549.0,
-     550.0,
-     550.0,
-     556.99,
-     573.99,
-     599.0,
-     600.0,
-     600.0,
-     613.99,
-     620.0,
-     624.99,
-     640.99,
-     649.99,
-     660.99,
-     678.99,
-     719.99,
-     725.0
-    ],
-    "query": "macbook air m1",
-    "search": "macbook air m1"
    },
    "v": 4
   },
@@ -21808,54 +21128,6 @@
    "est": null,
    "v": 4
   },
-  "exact samsung np750xgj|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 4,
-    "high": 662.49,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 325.0,
-      "title": "Samsung Galaxy Book4 (NP750XGJ-KG4NL) - Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2427522353-samsung-galaxy-book4-np750xgj-kg4nl-nieuwstaat"
-     },
-     {
-      "kind": "fixed",
-      "price": 399.99,
-      "title": "Samsung Galaxy Book4 NP750XGJ-KG4NL",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1531384543-samsung-galaxy-book4-np750xgj-kg4nl"
-     },
-     {
-      "kind": "fixed",
-      "price": 549.99,
-      "title": "Samsung Galaxy Book4 NP750XGJ-KG2NL 512GB 16GB i5 Batt.100%",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/chromebooks/m2454308414-samsung-galaxy-book4-np750xgj-kg2nl-512gb-16gb-i5-batt-100"
-     },
-     {
-      "kind": "fixed",
-      "price": 699.99,
-      "title": "Samsung Galaxy Book4 NP750XGJ-KG1NL",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1530817319-samsung-galaxy-book4-np750xgj-kg1nl"
-     }
-    ],
-    "low": 343.75,
-    "median": 474.99,
-    "model": "NP750XGJ",
-    "outliers": [],
-    "prices": [
-     325.0,
-     399.99,
-     549.99,
-     699.99
-    ],
-    "query": "samsung np750xgj",
-    "search": "samsung np750xgj"
-   },
-   "v": 4
-  },
   "exact sennheiser hd 424|adapter,auto,autospeaker,case,etui,gehoorbeschermer,gehoorbescherming,hoes,houder,kabel,kussens,lader,luidspreker,onderdeel,onderdelen,oorkussens,oplader,soundbar,speaker,standaard": {
    "at": "2026-11-02T12:20:08.132228+00:00",
    "est": null,
@@ -25824,68 +25096,6 @@
    },
    "v": 7
   },
-  "general colbert hugo antera|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 6,
-    "high": 106.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 10.0,
-      "title": "hugo boss colbert maat 98 voor maar € 10,00",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2447917515-hugo-boss-colbert-maat-98-voor-maar-10-00"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Hugo Boss jasje/colbert, 100% wol!",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2431348599-hugo-boss-jasje-colbert-100-wol"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Hugo Boss colbert maat 98",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2444413028-hugo-boss-colbert-maat-98"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Hugo Colbert Jasje - Sportief & Stijlvol - Maat 46",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446283042-hugo-colbert-jasje-sportief-stijlvol-maat-46"
-     },
-     {
-      "kind": "fixed",
-      "price": 79.0,
-      "title": "Hugo Boss gestreept colbert",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2455012134-hugo-boss-gestreept-colbert"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Hugo Colbert Stijlvol Modern Blauw Geruit Maat 46",
-      "url": "https://www.marktplaats.nl/v/kleding-heren/kostuums-en-colberts/m2446333541-hugo-colbert-stijlvol-modern-blauw-geruit-maat-46"
-     }
-    ],
-    "low": 32.5,
-    "median": 62.5,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     10.0,
-     40.0,
-     50.0,
-     75.0,
-     79.0,
-     190.0
-    ],
-    "query": "colbert hugo",
-    "search": "colbert hugo"
-   },
-   "v": 4
-  },
   "general colbert oger|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
    "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
@@ -28943,16 +28153,6 @@
    "at": "2026-11-05T06:50:25.807484+00:00",
    "est": null,
    "v": 7
-  },
-  "general hugo boss karl colberts|deo,eau,etalagepop,hanger,hoes,kledinghanger,kostuumhanger,kostuumhoes,parfum,paspop": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
-  },
-  "general hugo hetana pantalon|": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": null,
-   "v": 4
   },
   "general husqvarna benzine betonzaagmachine|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-04T12:04:43.774326+00:00",
@@ -32754,6 +31954,16 @@
    "est": null,
    "v": 4
   },
+  "general laptop bamboehout laptoptafeltje|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-11-05T12:17:11.576904+00:00",
+   "est": null,
+   "v": 7
+  },
+  "general laptop dante wieltjes rustiek|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-11-05T12:17:11.576904+00:00",
+   "est": null,
+   "v": 7
+  },
   "general laptop hp batterij|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-11-03T14:17:54.964117+00:00",
    "est": {
@@ -32998,54 +32208,6 @@
     "search": "laptop hp omen gaming"
    },
    "v": 7
-  },
-  "general laptop lenovo thinkbook g2 iap|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-10-22T08:24:38.737984+00:00",
-   "est": {
-    "as_of": "2026-10-22T08:24:38.737984+00:00",
-    "count": 4,
-    "high": 616.75,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Lenovo ThinkBook 15 G2 ITL Laptop - Type 20VE",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2453531257-lenovo-thinkbook-15-g2-itl-laptop-type-20ve"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Lenovo Thinkbook G2 ITL Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2441464132-lenovo-thinkbook-g2-itl-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 520.0,
-      "title": "Lenovo Thinkbook 15 G2 ITL Laptop - i5-1135G7, 16GB RAM, 512",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2444968469-lenovo-thinkbook-15-g2-itl-laptop-i5-1135g7-16gb-ram-512"
-     },
-     {
-      "kind": "fixed",
-      "price": 649.0,
-      "title": "Lenovo laptop ThinkBook 15 G2 i5-1135G7 8GB 256GB 15.6F...",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1522180253-lenovo-laptop-thinkbook-15-g2-i5-1135g7-8gb-256gb-15-6f"
-     }
-    ],
-    "low": 225.0,
-    "median": 410.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     200.0,
-     300.0,
-     520.0,
-     649.0
-    ],
-    "query": "laptop lenovo thinkbook g2",
-    "search": "laptop lenovo thinkbook g2"
-   },
-   "v": 4
   },
   "general laptop werktassen|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-11-05T06:50:25.807484+00:00",
@@ -46585,11 +45747,11 @@
    "first": "2026-10-27T09:47:29.605837+00:00"
   },
   "nedveiling:1178372": {
-   "closes": "2026-11-09T19:29:25.807484+00:00",
+   "closes": "2026-11-09T19:29:11.576904+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178373": {
-   "closes": "2026-11-09T19:29:25.807484+00:00",
+   "closes": "2026-11-09T19:29:11.576904+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178675": {
@@ -46629,11 +45791,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1178723": {
-   "closes": "2026-11-09T19:28:25.807484+00:00",
+   "closes": "2026-11-09T19:29:11.576904+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178724": {
-   "closes": "2026-11-09T19:28:25.807484+00:00",
+   "closes": "2026-11-09T19:29:11.576904+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
   "nedveiling:1178731": {
@@ -46701,11 +45863,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179530": {
-   "closes": "2026-11-13T19:27:25.807484+00:00",
+   "closes": "2026-11-13T19:27:11.576904+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179531": {
-   "closes": "2026-11-13T19:27:25.807484+00:00",
+   "closes": "2026-11-13T19:27:11.576904+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179569": {
@@ -46713,11 +45875,11 @@
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179623": {
-   "closes": "2026-11-13T19:27:25.807484+00:00",
+   "closes": "2026-11-13T19:27:11.576904+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179625": {
-   "closes": "2026-11-13T19:27:25.807484+00:00",
+   "closes": "2026-11-13T19:27:11.576904+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "nedveiling:1179627": {
@@ -48076,6 +47238,18 @@
    "closes": "2026-11-09T18:07:00+00:00",
    "first": "2026-11-01T14:52:18.700917+00:00"
   },
+  "openbareverkopen:759901": {
+   "closes": "2026-11-18T18:05:00+00:00",
+   "first": "2026-11-05T12:17:11.576904+00:00"
+  },
+  "openbareverkopen:759904": {
+   "closes": "2026-11-18T18:05:00+00:00",
+   "first": "2026-11-05T12:17:11.576904+00:00"
+  },
+  "openbareverkopen:759906": {
+   "closes": "2026-11-18T18:06:00+00:00",
+   "first": "2026-11-05T12:17:11.576904+00:00"
+  },
   "openbareverkopen:760107": {
    "closes": "2026-11-12T18:01:00+00:00",
    "first": "2026-10-29T13:18:54.319397+00:00"
@@ -49244,10 +48418,6 @@
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
   },
-  "troostwijk:A1-50647-237": {
-   "closes": "2026-11-02T10:25:00+01:00",
-   "first": "2026-11-02T07:25:51.068604+00:00"
-  },
   "troostwijk:A1-50662-1015": {
    "closes": null,
    "first": "2026-10-14T04:42:39.335649+00:00"
@@ -49543,6 +48713,7 @@
     "5234": true,
     "5237": true,
     "5238": false,
+    "5239": true,
     "5240": true,
     "5241": false,
     "5242": true,
@@ -49677,14 +48848,14 @@
   "2026-11-05": {
    "out_of_searches": false,
    "regular": {
-    "deals": 52,
+    "deals": 53,
     "lots": 312,
     "priced": 148
    },
    "special": {
-    "deals": 48,
-    "lots": 278,
-    "priced": 143
+    "deals": 51,
+    "lots": 271,
+    "priced": 140
    }
   }
  },
@@ -50834,7 +50005,7 @@
     "image": "https://media.tbauctions.com/image-media/60074eca-bc00-4a5d-bfa8-f13dd24360bf/file",
     "location": "Boxmeer",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2024 - HD Ice Diode laserontharing apparaat",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-11"
    },
@@ -50847,7 +50018,7 @@
     "image": "https://media.tbauctions.com/image-media/cddd7d50-9efc-446a-8d1b-268a76a5d3af/file",
     "location": "Boxmeer",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2024 - SaniSlim Chrome Light Face Mask lichttherapie apparaat",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-12"
    },
@@ -50860,7 +50031,7 @@
     "image": "https://media.tbauctions.com/image-media/6e026abb-28d6-4081-95c5-0b4cf95e1ac5/file",
     "location": "Nijverdal",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Solutions - G111 - Back Extension systeem - 2022",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-19"
    },
@@ -50873,7 +50044,7 @@
     "image": "https://media.tbauctions.com/image-media/270c9911-0923-463b-bc05-bd02bfcff159/file",
     "location": "Zwolle",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "shelf racks | laad- en transportrekken (12x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-2"
    },
@@ -50886,7 +50057,7 @@
     "image": "https://media.tbauctions.com/image-media/81a04a09-11bc-4186-860c-32fab0f7684b/file",
     "location": "Loon op zand",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Gambro - PrismaFLex",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-2000"
    },
@@ -50899,7 +50070,7 @@
     "image": "https://media.tbauctions.com/image-media/751ee480-c03d-4f10-acc6-466bfe4d27ac/file",
     "location": "Loon op zand",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "WASP - Automatische microbiologische specimenprocessor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-2042"
    },
@@ -50912,7 +50083,7 @@
     "image": "https://media.tbauctions.com/image-media/4e315c3e-2793-4a1a-9a2a-0fce947d91d4/file",
     "location": "Loon op zand",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Elite S190 - endoscopietoren",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-207"
    },
@@ -50925,7 +50096,7 @@
     "image": "https://media.tbauctions.com/image-media/36c80b56-8307-412d-959d-bf598555b3a8/file",
     "location": "Gorinchem",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Crossvent beademingsapparaat (3x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-26"
    },
@@ -50938,7 +50109,7 @@
     "image": "https://media.tbauctions.com/image-media/90b98cee-17b2-49dc-94c5-8190b1a9130c/file",
     "location": "Utrecht",
     "mail": "2026-11-02T09:05:55+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2024 Acoustair",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41124-3"
    },
@@ -51058,6 +50229,123 @@
     "seen": "2026-11-03T11:54:06.611271+00:00",
     "title": "18x40x5,00 meter (ca. 720 m2)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-41180-9"
+   },
+   "A1-41281-1": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 1000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/0bdc016e-b707-4de5-8fec-f4efbaa4d08a/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "L High Speed CNC verticaal bewerkingscentrum",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-1"
+   },
+   "A1-41281-10": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 50.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/8e18a2e7-00f1-4ddb-9f0a-80ab82588940/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Gereedschapslijper",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-10"
+   },
+   "A1-41281-16": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 1000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/60368e33-3833-472a-92fb-4f7ad47f1b0d/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Industriële elektrische trekker",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-16"
+   },
+   "A1-41281-18": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 250.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/b4817e08-e356-45a1-8432-2df67d81191e/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Oppervlakteslijpmachine",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-18"
+   },
+   "A1-41281-24": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 1000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/886f6091-390c-492c-8dc9-4fc2cae04ca7/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "2005 Genie GS-3384 RT",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-24"
+   },
+   "A1-41281-26": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 100.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/edf973e1-7c18-49db-a986-2fcd334829e1/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Ampag Sprint Omsnoeringsmachine",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-26"
+   },
+   "A1-41281-40": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 100.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/1f42e3a6-1ab1-4872-b824-d9ff03b87c5d/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Gereedschap-voorinstelapparaat",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-40"
+   },
+   "A1-41281-46": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 250.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/7287eab7-92bd-474c-bc9b-8ca2ef7eb7ef/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Machinebouw B.V. 35500 Beslagfreesmachine",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-46"
+   },
+   "A1-41281-62": {
+    "auction": "Metaalbewerkingsmachines, bouwmachines en gereedschappen",
+    "bankrupt": false,
+    "bid": 50.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/b8b7cbb4-7339-4caf-9e83-5e52a3bbd14f/file",
+    "location": "Weerselo",
+    "mail": "2026-11-05T11:29:43+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Manutan Lockerkast",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-41281-62"
    },
    "A1-46381-1500": {
     "auction": "Zonnepanelen(sets), thuisbatterijen, omvormers en warmtepompen",
@@ -51185,7 +50473,7 @@
     "image": "https://media.tbauctions.com/image-media/29b59e23-6547-4a03-b0be-6bef7ad96d28/file",
     "location": "Kampen",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "en knipmachine staalbewerkingslijn met rollenbaan",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-1"
    },
@@ -51198,7 +50486,7 @@
     "image": "https://media.tbauctions.com/image-media/82bbd8e9-0b61-4fda-ab23-86da693f9def/file",
     "location": "Twijzel",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Formaatcirkelzaagmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-1001"
    },
@@ -51211,7 +50499,7 @@
     "image": "https://media.tbauctions.com/image-media/b32301fd-c736-4b9d-9e83-0e90dda5759d/file",
     "location": "Goirle",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "TFK-V-90-15-PP-OH Filterafzuiginstallatie",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-1750"
    },
@@ -51224,7 +50512,7 @@
     "image": "https://media.tbauctions.com/image-media/a386fc85-4fef-4d4c-9c44-a3de5824c5a8/file",
     "location": "Goor",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Palletiseerinstallatie",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-2"
    },
@@ -51237,7 +50525,7 @@
     "image": "https://media.tbauctions.com/image-media/231a45ca-5c43-4269-ad8c-c7a83bdf9979/file",
     "location": "Emmen",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "1997 Pottinger MP720",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-2501"
    },
@@ -51250,7 +50538,7 @@
     "image": "https://media.tbauctions.com/image-media/91d6ebda-e0cc-45a3-ac93-f0d11ad127be/file",
     "location": "Goor",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2000 CRT stretch hood verpakkingsmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-3"
    },
@@ -51263,7 +50551,7 @@
     "image": "https://media.tbauctions.com/image-media/74887d7a-6848-48cc-8eee-5bc8dd6ff65b/file",
     "location": "Daarle",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "35 ATS XL1 CNC-bewerkingscentrum",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-4"
    },
@@ -51276,7 +50564,7 @@
     "image": "https://media.tbauctions.com/image-media/116a93a5-dc34-43ac-af7f-d7494caa3a4d/file",
     "location": "Gorinchem",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "H250I LED grootformaat UV printer",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-400"
    },
@@ -51289,7 +50577,7 @@
     "image": "https://media.tbauctions.com/image-media/6f0701c8-a89b-4db5-811d-8e4272ef2e44/file",
     "location": "Gorinchem",
     "mail": "2026-11-02T14:02:11+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "BQ-270 Perfect Binder",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47367-401"
    },
@@ -51536,7 +50824,7 @@
     "image": "https://media.tbauctions.com/image-media/5314b11b-87fa-4166-9256-c4721f183b29/file",
     "location": "Boxtel",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "7250R Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-1"
    },
@@ -51549,7 +50837,7 @@
     "image": "https://media.tbauctions.com/image-media/1f3d4d90-2239-44f4-b9e5-b37b7a338085/file",
     "location": "Beringe",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "knikdumper – 41.000 kg laadvermogen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-2"
    },
@@ -51562,7 +50850,7 @@
     "image": "https://media.tbauctions.com/image-media/20ef2b67-f2a6-438c-8b2e-e98997574763/file",
     "location": "Maarheezerweg",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Manlift Toucan 1010 elektrische masthoogwerker – 10,10 m – 200 kg – 24 V",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-2250"
    },
@@ -51575,7 +50863,7 @@
     "image": "https://media.tbauctions.com/image-media/c549d58d-d70d-43f9-a7b6-0fd0c61bd256/file",
     "location": "Heerlen",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "D1R betonstortkubel – 500 liter – 1.200 kg",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-2251"
    },
@@ -51588,7 +50876,7 @@
     "image": "https://media.tbauctions.com/image-media/2b29ec0a-a19e-4ac7-bfca-dd966a2fe6ff/file",
     "location": "Beringe",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2018 Bomag BW 213 D-5",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-3"
    },
@@ -51601,7 +50889,7 @@
     "image": "https://media.tbauctions.com/image-media/62086386-799d-4afc-9c67-15608dce34eb/file",
     "location": "Holthees",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "T7.225 Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-5"
    },
@@ -51614,7 +50902,7 @@
     "image": "https://media.tbauctions.com/image-media/bcae8ff7-7823-49f1-a1a1-5c86af416cef/file",
     "location": "Venlo",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "D6K XL bulldozer – VPAT 6-way blad – 3-tands ripper",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-6"
    },
@@ -51627,7 +50915,7 @@
     "image": "https://media.tbauctions.com/image-media/85ed229e-036d-43e9-a70d-45c6c244ce97/file",
     "location": "Holthees",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Ranger 3070 Multifunctionele werktuigdrager",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-701"
    },
@@ -51640,7 +50928,7 @@
     "image": "https://media.tbauctions.com/image-media/e47e5a02-df76-47dc-a5a8-d97692467d71/file",
     "location": "Heijen",
     "mail": "2026-11-02T16:01:41+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "EC450AJ - Hoogwerker",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47396-825"
    },
@@ -51770,7 +51058,7 @@
     "image": "https://media.tbauctions.com/image-media/695b2847-7c56-4f2a-92fb-3dea5cf37aa6/file",
     "location": "Raalte",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2021 Porsche 911 4.0",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-1"
    },
@@ -51783,7 +51071,7 @@
     "image": "https://media.tbauctions.com/image-media/8d0ffa35-4ada-4694-9b81-4e4cda480bf3/file",
     "location": "Den haag",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "S-klasse 500 PLUG-IN L. Pres. Personenauto",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-1302"
    },
@@ -51796,7 +51084,7 @@
     "image": "https://media.tbauctions.com/image-media/f597ab98-1264-4cb3-a72a-ad470edd40d7/file",
     "location": "Weert",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "OSD-48-03V/L 3-assige uitschuifbare semi-dieplader – 45.000 kg – NL kenteken",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-2206"
    },
@@ -51809,7 +51097,7 @@
     "image": "https://media.tbauctions.com/image-media/49a6b6ad-9aca-4b99-bfd7-496365cf89aa/file",
     "location": "Nijmegen",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Alpine A290 GTS 2025",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-2368"
    },
@@ -51822,7 +51110,7 @@
     "image": "https://media.tbauctions.com/image-media/e6418e74-b1b7-4019-ae61-b3bc60428efa/file",
     "location": "Sappemeer",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Chopper 103 FLSTFB Fat B.Sp. Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-2500"
    },
@@ -51835,7 +51123,7 @@
     "image": "https://media.tbauctions.com/image-media/8919e248-2bcd-4b01-b16e-ee7c711904c1/file",
     "location": "Wapse",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Benimar SPORT 363",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-2517"
    },
@@ -51848,7 +51136,7 @@
     "image": "https://media.tbauctions.com/image-media/0f88c416-ea2a-4b2e-82eb-ff6d8ee3a641/file",
     "location": "Krimpen aan de lek",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Tecnoyacht Puma 2 -",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-3600"
    },
@@ -51861,7 +51149,7 @@
     "image": "https://media.tbauctions.com/image-media/54636dcc-4aa5-43ea-9182-5e81c9fe4cc3/file",
     "location": "Den haag",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Multitel D21E3E Autohoogwerker 16,3 m",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-7"
    },
@@ -51874,7 +51162,7 @@
     "image": "https://media.tbauctions.com/image-media/b4503e3c-39d9-4cb9-8122-60fcfb905c40/file",
     "location": "Heijen",
     "mail": "2026-11-02T17:04:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Scania - 2015 - R450",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-47424-837"
    },
@@ -51887,7 +51175,7 @@
     "image": "https://media.tbauctions.com/image-media/dfc4a9d7-4220-4e8a-b927-cda512cca57c/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "van 36 zonnepanelen (420 Wp) - Goodwe 15kW omvormer",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-18"
    },
@@ -51900,7 +51188,7 @@
     "image": "https://media.tbauctions.com/image-media/f7e82e6e-4fc5-40a2-8220-728266deacc8/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "zonnepanelen (410 Wp) - hybride omvormer - 17,2 kWh batterij",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-2"
    },
@@ -51913,7 +51201,7 @@
     "image": "https://media.tbauctions.com/image-media/1c293fa4-3fc1-4136-ae79-4dfc1382eabf/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "SolarEdge - SE9k -",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-2023"
    },
@@ -51926,7 +51214,7 @@
     "image": "https://media.tbauctions.com/image-media/a5fded17-d732-4f60-a1bc-518134c3d309/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Duo wit-wit - Laadpaal",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-26"
    },
@@ -51939,7 +51227,7 @@
     "image": "https://media.tbauctions.com/image-media/16f6761d-7733-44a6-b531-0c06acddf96c/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "zonnepanelen (410 wp) met hybride omvormer en 17,75 kWh batterij",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-3"
    },
@@ -51952,7 +51240,7 @@
     "image": "https://media.tbauctions.com/image-media/793e60bb-88f4-476f-bd23-2696c3a4ea2f/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "liter - RVS buffervat",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-43"
    },
@@ -51965,7 +51253,7 @@
     "image": "https://media.tbauctions.com/image-media/b0136103-c5f4-4d0c-8998-85740dbbed67/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Mercuria Ace 6kW (2x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-52"
    },
@@ -51978,7 +51266,7 @@
     "image": "https://media.tbauctions.com/image-media/b8418da4-adff-4622-b9e8-473930dce9cb/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "KTL-L1 - hybride omvormer t.b.v. zonnepanelen (8x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-77"
    },
@@ -51991,7 +51279,7 @@
     "image": "https://media.tbauctions.com/image-media/d684d20c-2d03-4541-8a9c-ef8d0023272b/file",
     "location": "Boxmeer",
     "mail": "2026-11-04T16:05:04+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Allimex - Golfhaak",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50174-96"
    },
@@ -52238,7 +51526,7 @@
     "image": "https://media.tbauctions.com/image-media/eae5efab-6864-4cba-801f-537a8a153c89/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "ZX250LC-6 Rupsgraafmachine (3268 h)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-1"
    },
@@ -52251,7 +51539,7 @@
     "image": "https://media.tbauctions.com/image-media/3070ae47-1880-4081-8c88-b1e8a9610d79/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Decontaminatie unit",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-11"
    },
@@ -52264,7 +51552,7 @@
     "image": "https://media.tbauctions.com/image-media/5c8410da-e00d-4768-8898-32c20f504deb/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Zelfvoorzienende vernevel installatie",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-13"
    },
@@ -52277,7 +51565,7 @@
     "image": "https://media.tbauctions.com/image-media/6e087fe7-3a20-472a-ae47-0e838460f530/file",
     "location": "Hardenberg",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-14"
    },
@@ -52290,7 +51578,7 @@
     "image": "https://media.tbauctions.com/image-media/662fccc9-42ed-4245-907a-985af5696a9f/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "ZX140W-3 Banden graafmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-2"
    },
@@ -52303,7 +51591,7 @@
     "image": "https://media.tbauctions.com/image-media/2842a78e-714c-4a07-ad8e-830f3dc2cbc0/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "8X4*4 HSA Streamline Euro V Vrachtwagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-3"
    },
@@ -52316,7 +51604,7 @@
     "image": "https://media.tbauctions.com/image-media/c3cbfc5d-2616-4753-a5d0-0afb3eb7eba4/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Caterpillar H130 S",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-30"
    },
@@ -52329,7 +51617,7 @@
     "image": "https://media.tbauctions.com/image-media/20fdceae-d4ee-41fc-9288-596e2429b97e/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Multiprocessor / Sloopschaar",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-31"
    },
@@ -52342,7 +51630,7 @@
     "image": "https://media.tbauctions.com/image-media/d9c91d88-5abc-407e-98ee-9cd01b5345db/file",
     "location": "Kloosterhaar",
     "mail": "2026-11-04T11:04:32+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Rijplaat (14x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50481-55"
    },
@@ -52355,7 +51643,7 @@
     "image": "https://media.tbauctions.com/image-media/fe7da783-ea17-41ab-8005-71431087e366/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-FONT 785 - FOIT 350 L",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-201"
    },
@@ -52368,7 +51656,7 @@
     "image": "https://media.tbauctions.com/image-media/c6a1bde4-218d-4db1-9474-7755a4c4475a/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-FOIT 300E - FOIT 320L",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-208"
    },
@@ -52381,7 +51669,7 @@
     "image": "https://media.tbauctions.com/image-media/f2322c7a-7965-4e92-aa30-40523bb00778/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-FOIT 300F - FOIT 320L",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-211"
    },
@@ -52407,7 +51695,7 @@
     "image": "https://media.tbauctions.com/image-media/7e5a6f0e-9c7c-4cac-bf84-3b2a76f029f2/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-XFOIT 616",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-215"
    },
@@ -52433,7 +51721,7 @@
     "image": "https://media.tbauctions.com/image-media/7111b968-2fb6-4de4-9587-4c8eed9ec126/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-FOIT 410",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-247"
    },
@@ -52472,7 +51760,7 @@
     "image": "https://media.tbauctions.com/image-media/7197efc8-9cfc-481d-81b1-984f829c52f8/file",
     "location": "Loenhout, Belgium",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Goldstar - Tafel - DiningTable-FOIT 300C - FOIT 317L",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50580-267"
    },
@@ -52853,17 +52141,6 @@
     "title": "Sprinter 516 2.2 CDI 366 HDDC Bedrijfswagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50665-7"
    },
-   "A1-50675-1": {
-    "auction": "Gebouwd voor het veldwerk: DEUTZ VT44 B51F-tractor in de veiling",
-    "bankrupt": false,
-    "bid": 8500.0,
-    "first": "2026-10-22T04:39:55.562897+00:00",
-    "image": "https://media.tbauctions.com/image-media/72505cc0-bc8c-4d26-b221-72bfbc467e53/file",
-    "mail": "2026-10-21T08:07:31+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Deutz VT44 B51F Tractor",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50675-1"
-   },
    "A1-50694-10": {
     "auction": "Olie en Gas, Boren, Hogedruktesten & Industriële Apparatuur",
     "bankrupt": false,
@@ -53185,7 +52462,7 @@
     "image": "https://media.tbauctions.com/image-media/317a09f9-dbf7-43c6-b8bb-d41a78769f98/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Autumn Canvas Hurricane (80x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-12"
    },
@@ -53198,7 +52475,7 @@
     "image": "https://media.tbauctions.com/image-media/5384b0ac-3348-4f9f-98a7-946dbd8dd2bc/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Sparkling Disco Ball Hurricane (72x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-123"
    },
@@ -53211,7 +52488,7 @@
     "image": "https://media.tbauctions.com/image-media/b6a55dc0-203b-4edc-9a65-a90f8982c115/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Brushed Brass Lantern (64x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-24"
    },
@@ -53224,7 +52501,7 @@
     "image": "https://media.tbauctions.com/image-media/9d5fbb2e-7318-4f74-879a-2242548be7f6/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Mini Chiminea Fragrance Warmer (216x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-272"
    },
@@ -53237,7 +52514,7 @@
     "image": "https://media.tbauctions.com/image-media/b7d41ca9-8cf4-4359-9c80-f207fa7745f2/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "G51X123 - GloLite Iced Snowberries Scented Jar Candle (576x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-414"
    },
@@ -53250,7 +52527,7 @@
     "image": "https://media.tbauctions.com/image-media/98574c97-482b-493f-861a-cf42883bd127/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Wood Grain Centerpiece (144x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-43"
    },
@@ -53263,7 +52540,7 @@
     "image": "https://media.tbauctions.com/image-media/1a955974-0808-4d9b-ae93-5cd82f14fd70/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "V091044 - GloLite Olive Grove Large Tealight set (720x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-697"
    },
@@ -53276,7 +52553,7 @@
     "image": "https://media.tbauctions.com/image-media/ccbc0e52-a381-485d-af23-960f250ec60e/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- SmartScents holder A-Z Bookends (192x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-73"
    },
@@ -53289,7 +52566,7 @@
     "image": "https://media.tbauctions.com/image-media/2a98449c-beb2-4487-ab61-038164520919/file",
     "location": "Tilburg",
     "mail": "2026-11-04T10:05:44+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- Perfect Pet Jar Candle - The Fresh Collection (32x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50775-856"
    },
@@ -53377,7 +52654,7 @@
     "image": "https://media.tbauctions.com/image-media/a41dc908-551c-4617-b089-be407c31188a/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Laptop - LENOVO - 82Y9",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-19"
    },
@@ -53416,7 +52693,7 @@
     "image": "https://media.tbauctions.com/image-media/9b53b05a-d95e-476c-a8f9-9a2a956203a3/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Laptop - LENOVO - 21CF002YMH - Thinkpad T14 gen3",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-20"
    },
@@ -53442,7 +52719,7 @@
     "image": "https://media.tbauctions.com/image-media/6a1af840-6f93-4579-83a7-16c175c4840f/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "HP Omen Gaming Laptop (16 inch)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-25"
    },
@@ -53455,7 +52732,7 @@
     "image": "https://media.tbauctions.com/image-media/9fdcbe01-34bb-400b-ba95-4f56415917c2/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "MSI Gaming Desktop",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-5"
    },
@@ -53468,7 +52745,7 @@
     "image": "https://media.tbauctions.com/image-media/9a6bd651-f7cf-464f-b47d-0d8f90c7b826/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Laptop - LENOVO - 82Y9",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-74"
    },
@@ -53481,7 +52758,7 @@
     "image": "https://media.tbauctions.com/image-media/26eff5d4-484f-46a7-b0f4-79d6678fdf77/file",
     "location": "Amsterdam",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Laptop - LENOVO - 83DH",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50800-8"
    },
@@ -53494,7 +52771,7 @@
     "image": "https://media.tbauctions.com/image-media/90e172df-ec2c-40a6-bf34-4049c5df50fb/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Ferguson 7620 Dyna-VT Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-1"
    },
@@ -53507,7 +52784,7 @@
     "image": "https://media.tbauctions.com/image-media/4fc8e146-2200-454d-9969-481e278b1a37/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "1996 FIAT-HITACHI FR",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-11"
    },
@@ -53520,7 +52797,7 @@
     "image": "https://media.tbauctions.com/image-media/730276a7-4d66-4efc-9b8a-343891e69fa8/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "1991 JAKO 11.000",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-15"
    },
@@ -53533,7 +52810,7 @@
     "image": "https://media.tbauctions.com/image-media/e69755e5-948a-4974-bf6c-efd0ea3f1a6f/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Ferguson 8110 Dynashift Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-2"
    },
@@ -53546,7 +52823,7 @@
     "image": "https://media.tbauctions.com/image-media/14a08211-8e7c-4780-8acb-1669156d0beb/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "1984 VAIA NL 140-14T",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-20"
    },
@@ -53559,7 +52836,7 @@
     "image": "https://media.tbauctions.com/image-media/018a7531-acb1-4754-b51e-84aa1024e200/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2005 KUHN GF 10601 TO",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-22"
    },
@@ -53572,7 +52849,7 @@
     "image": "https://media.tbauctions.com/image-media/5d43b0ef-91e8-4111-a9a2-0ab3b7de7dce/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Ferguson 6190 Dynashift Vierwielaangedreven landbouwtractor",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-3"
    },
@@ -53585,7 +52862,7 @@
     "image": "https://media.tbauctions.com/image-media/f896e5fb-ffc9-4322-8df1-efb1aa1b63e6/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "PH Veegmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-42"
    },
@@ -53598,7 +52875,7 @@
     "image": "https://media.tbauctions.com/image-media/9fd09e23-d52e-4d51-8099-7861a889244a/file",
     "location": "Dorst",
     "mail": "2026-11-04T15:07:00+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "1986 New Holland 1900",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50802-9"
    },
@@ -53611,7 +52888,7 @@
     "image": "https://media.tbauctions.com/image-media/a569b653-de0b-4361-b19f-4a237680fa29/file",
     "location": "Ijmuiden",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "710 S Center draaibank",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-1"
    },
@@ -53624,7 +52901,7 @@
     "image": "https://media.tbauctions.com/image-media/3f84a137-34ba-4d2c-aabe-da7fdfd2c6dc/file",
     "location": "Ijmuiden",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Express 1.5 dCi 75 Comfort+ Bedrijfswagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-18"
    },
@@ -53637,7 +52914,7 @@
     "image": "https://media.tbauctions.com/image-media/670e6306-761f-4cf5-b930-65b0a9864528/file",
     "location": "Ijmuiden",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Berlingo 1.6 BlueHDI 75 Comf Bedrijfswagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-20"
    },
@@ -53650,7 +52927,7 @@
     "image": "https://media.tbauctions.com/image-media/e38928d3-08d9-4e13-a3b7-e61445b90795/file",
     "location": "Ijmuiden",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2003 BAYKAL APH 2606",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-3"
    },
@@ -53663,7 +52940,7 @@
     "image": "https://media.tbauctions.com/image-media/2082f932-c7e6-4b43-b6db-eb145d3268fd/file",
     "location": "Ijmuiden",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "5000 MIG lasapparaat",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-41"
    },
@@ -53676,7 +52953,7 @@
     "image": "https://media.tbauctions.com/image-media/b7d8dea6-1426-459a-91a3-468d74e349af/file",
     "location": "Wormerveer",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "X-Trail 1.5 e-Power N-Con. Personenauto",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-499"
    },
@@ -53689,7 +52966,7 @@
     "image": "https://media.tbauctions.com/image-media/4114ed62-29a3-432f-aaf7-e5cd64fc4302/file",
     "location": "Wormerveer",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "350M 2.4 TDCI Bedrijfswagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-500"
    },
@@ -53702,7 +52979,7 @@
     "image": "https://media.tbauctions.com/image-media/97bf4f45-4f4c-4df6-b98a-e0cc6ad08430/file",
     "location": "Wormerveer",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "EFG 425K Vorkheftruck",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-501"
    },
@@ -53715,7 +52992,7 @@
     "image": "https://media.tbauctions.com/image-media/c9df8b96-6946-4caf-a3c8-af493f22935f/file",
     "location": "Wormerveer",
     "mail": "2026-11-03T10:05:26+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "inductie verwarmer",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50859-512"
    },
@@ -54187,18 +53464,6 @@
     "title": "- 350L - Rupsgraafmachine 52.4T",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50912-69"
    },
-   "A1-50914-1": {
-    "auction": "HPLC: 2023 Wyatt en Agilent Infinity - High-end laboratoriumanalysesysteem",
-    "bankrupt": false,
-    "bid": 25000.0,
-    "first": "2026-10-17T04:38:37.196269+00:00",
-    "image": "https://media.tbauctions.com/image-media/e81393be-39c8-432b-b274-6fc226311656/file",
-    "location": "Loon op zand",
-    "mail": "2026-10-16T08:04:36+00:00",
-    "seen": "2026-10-22T08:24:38.737984+00:00",
-    "title": "Wyatt en Agilent infinity - 2023 - Eclipse en Infinity - High-End Laboratory Analysis System – Wyatt MALS + FFF + Agilent HPLC",
-    "url": "https://www.troostwijkauctions.com/nl/l/A1-50914-1"
-   },
    "A1-50927-1": {
     "auction": "Restantvoorraad woonmeubilair waaronder Riviera Maison",
     "bankrupt": false,
@@ -54208,7 +53473,7 @@
     "image": "https://media.tbauctions.com/image-media/555c31bb-e803-46f9-b83a-70551f718fd2/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Flores Eetkamertafel 280x100",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-1"
    },
@@ -54221,7 +53486,7 @@
     "image": "https://media.tbauctions.com/image-media/a9a8bb8d-0834-46f4-bdee-3784b3aa2670/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Siroko Beach Ronde eetkamertafel 160cm",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-102"
    },
@@ -54234,7 +53499,7 @@
     "image": "https://media.tbauctions.com/image-media/091caee9-bee4-4c39-a8c0-d15ee5dacccb/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Riviera Maison Flores Eetkamertafel 400x100",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-142"
    },
@@ -54247,7 +53512,7 @@
     "image": "https://media.tbauctions.com/image-media/3dba4c7a-6a14-4f83-a8a0-cdc8f50938b7/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Savile Row Dac glosy flax Eetkamerstoel (6x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-218"
    },
@@ -54260,7 +53525,7 @@
     "image": "https://media.tbauctions.com/image-media/091caee9-bee4-4c39-a8c0-d15ee5dacccb/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Riviera Maison Flores Eetkamertafel 400x100",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-325"
    },
@@ -54273,7 +53538,7 @@
     "image": "https://media.tbauctions.com/image-media/a652f668-63d0-40d9-ae30-e91a1de8b6f9/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Graydon Salontafel 90x90cm",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-4"
    },
@@ -54286,7 +53551,7 @@
     "image": "https://media.tbauctions.com/image-media/091caee9-bee4-4c39-a8c0-d15ee5dacccb/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Riviera Maison Flores Eetkamertafel 400x100",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-406"
    },
@@ -54299,7 +53564,7 @@
     "image": "https://media.tbauctions.com/image-media/463cb416-43fa-4991-abc6-f7b9bd1123ed/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Rivièra Maison Del",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-450"
    },
@@ -54312,7 +53577,7 @@
     "image": "https://media.tbauctions.com/image-media/658d2b48-8cd0-45ef-ad5a-7a1d7c31667f/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Rivièra Maison Arosa",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-5"
    },
@@ -54325,7 +53590,7 @@
     "image": "https://media.tbauctions.com/image-media/cf38a071-a2ba-4729-84c0-0aa6ead060ae/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Cascais Bijzettafel",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-570"
    },
@@ -54338,7 +53603,7 @@
     "image": "https://media.tbauctions.com/image-media/414e54dd-50e4-4594-b93e-5220108e6b36/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Carnaby Draaibare eetkamerstoel (6x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-6"
    },
@@ -54351,7 +53616,7 @@
     "image": "https://media.tbauctions.com/image-media/37d44d99-8e43-48cb-88ad-e46cc0a3bd4b/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T18:03:24+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Carnaby Draaibare eetkamerstoel (6x)",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-661"
    },
@@ -54364,7 +53629,7 @@
     "image": "https://media.tbauctions.com/image-media/091caee9-bee4-4c39-a8c0-d15ee5dacccb/file",
     "location": "Boxmeer",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Riviera Maison Flores Eetkamertafel 400x100",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-50927-9"
    },
@@ -54377,7 +53642,7 @@
     "image": "https://media.tbauctions.com/image-media/cfbad670-60d5-4da2-9074-558611e2182d/file",
     "location": "Bergeijk",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Model J - Oldtimer Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-1"
    },
@@ -54390,7 +53655,7 @@
     "image": "https://media.tbauctions.com/image-media/636856e3-73e8-4d0c-8ed2-2b4eec98ba6b/file",
     "location": "Ysselsteyn",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Dodge - RAM - 1500 -",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-15"
    },
@@ -54403,7 +53668,7 @@
     "image": "https://media.tbauctions.com/image-media/84937c28-1c97-4a14-a591-3f6659dd2f74/file",
     "location": "Ysselsteyn",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Vandura - Limited Edition - Personenauto",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-18"
    },
@@ -54416,7 +53681,7 @@
     "image": "https://media.tbauctions.com/image-media/e041e208-4714-4408-ae90-d9d2d50d3fec/file",
     "location": "Bergeijk",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "50-WL Solo - Oldtimer Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-2"
    },
@@ -54429,7 +53694,7 @@
     "image": "https://media.tbauctions.com/image-media/aba1179e-412f-432d-95cd-4defd72164b3/file",
     "location": "Ysselsteyn",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "SAVANA - Limited SE - Personenauto",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-20"
    },
@@ -54442,7 +53707,7 @@
     "image": "https://media.tbauctions.com/image-media/8e284cee-bcd5-4271-b8ec-f099d7bf0a86/file",
     "location": "Ysselsteyn",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Terminator - Flipperkast",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-27"
    },
@@ -54455,7 +53720,7 @@
     "image": "https://media.tbauctions.com/image-media/b543bc63-7d49-49a2-a0f6-92d038382e4c/file",
     "location": "Bergeijk",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "DL - Oldtimer Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-3"
    },
@@ -54468,7 +53733,7 @@
     "image": "https://media.tbauctions.com/image-media/5c91db31-87ff-4310-ac7f-fcced63df4c8/file",
     "location": "Bergeijk",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "G Servi-Car - Oldtimer Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-4"
    },
@@ -54481,7 +53746,7 @@
     "image": "https://media.tbauctions.com/image-media/50e0b52b-0022-464d-8558-77d487633548/file",
     "location": "Bergeijk",
     "mail": "2026-11-03T17:04:35+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Oldtimer Motorfiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51125-6"
    },
@@ -54611,7 +53876,7 @@
     "image": "https://media.tbauctions.com/image-media/fbb02f5f-32c4-4003-8f36-f65e13a53bb7/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "TH 3.6 turbo 35 Km/h Telescopic Handlers",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-1"
    },
@@ -54624,7 +53889,7 @@
     "image": "https://media.tbauctions.com/image-media/5da9b992-25ff-46f5-848b-4ea898246240/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Ongebruikt Werkplaats",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-112"
    },
@@ -54637,7 +53902,7 @@
     "image": "https://media.tbauctions.com/image-media/5d2f7654-8065-47ae-a186-629c9f4a251d/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2007 Kubota KX71-3",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-12"
    },
@@ -54650,7 +53915,7 @@
     "image": "https://media.tbauctions.com/image-media/03f2408e-1a62-4009-8883-338116b9f702/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2020 Bomag BW71E-2",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-25"
    },
@@ -54663,7 +53928,7 @@
     "image": "https://media.tbauctions.com/image-media/585ecfd7-67be-4a06-97c4-4601be00a382/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "BPR60/65De Trilplaat",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-26"
    },
@@ -54676,7 +53941,7 @@
     "image": "https://media.tbauctions.com/image-media/7199734a-f47d-4dcb-a51c-ba2511b72d81/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2011 Giant D332SWT",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-3"
    },
@@ -54689,7 +53954,7 @@
     "image": "https://media.tbauctions.com/image-media/6113f84c-2fc3-4704-923a-a845d249ebad/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "25ZT Minigraafmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-6"
    },
@@ -54702,7 +53967,7 @@
     "image": "https://media.tbauctions.com/image-media/e7c47ae5-029a-41db-a870-d537664ad836/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "305.5E2 Midigraafmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-7"
    },
@@ -54715,7 +53980,7 @@
     "image": "https://media.tbauctions.com/image-media/0a6acdff-5908-4d76-a904-ed080302b5be/file",
     "location": "Breda",
     "mail": "2026-10-30T15:04:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "KX161-3SZ Midigraafmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51219-8"
    },
@@ -54728,9 +53993,126 @@
     "image": "https://media.tbauctions.com/image-media/f4286506-4d2f-4616-922b-dc2f74ec78e1/file",
     "location": "Regio west-brabant",
     "mail": "2026-11-03T12:42:53+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "STIHL AR 3000 Ruggedragen accu",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51246-103"
+   },
+   "A1-51257-300": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 4750.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/47360cf6-5532-44cb-bcb8-39555a3bee91/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "KRS100 - Straatveegmachine",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-300"
+   },
+   "A1-51257-301": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 9500.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/eed5a260-63d1-4745-b2e9-bb65233bf09e/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "- 150 KVA Noodstroomaggregaat Diesel",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-301"
+   },
+   "A1-51257-312": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 275.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/f7bc5761-3b7f-42de-aadf-8b021b73bcc4/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "GDA2500IS - Inverter generator 2200W 8.7A",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-312"
+   },
+   "A1-51257-314": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 8500.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/40c0b407-0495-499d-a9e7-44ac0f433336/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "CRE120 - Minigraafmachine Kubota Euro 5",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-314"
+   },
+   "A1-51257-321": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 550.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/0b923890-afe8-459e-979e-cb5586b69cd6/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "DARM80 - Vibratie Stamper 6.5PK",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-321"
+   },
+   "A1-51257-326": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 325.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/186d8372-517a-47ba-8f00-28f75920cf73/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Daewoo - DACNQ740S -",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-326"
+   },
+   "A1-51257-334": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 120.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/0d25bc55-3cf1-42cd-87c4-408947bad7bf/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "X-Finish - Pot verf 12L RAL9003 (4x)",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-334"
+   },
+   "A1-51257-347": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 5750.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/a84c8e38-c667-4d0f-8843-ba2caacac274/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "- Opslagtent 24400x10000x5200mm",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-347"
+   },
+   "A1-51257-349": {
+    "auction": "Werkplaatsapparatuur, generatoren, bouw- en schoonmaakapparatuur, comfortartikelen en meer",
+    "bankrupt": false,
+    "bid": 1050.0,
+    "closes_day": "2026-11-09",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/7990bf14-7414-433e-bb94-d845c0dd1087/file",
+    "location": "Hamburg, Germany",
+    "mail": "2026-11-05T08:09:49+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "- Opslagtent 12000x6000x2000m",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51257-349"
    },
    "A1-51269-1": {
     "auction": "Bedrijfsliquidatie – bouwmachines, opbouwapparatuur, werkplaats- en bedieningsapparatuur",
@@ -54741,7 +54123,7 @@
     "image": "https://media.tbauctions.com/image-media/49f37fee-2b6b-4c54-8800-945a862c9e81/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Hoog Lift Compact Wiellader",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-1"
    },
@@ -54754,7 +54136,7 @@
     "image": "https://media.tbauctions.com/image-media/e213715f-ca88-464f-93f8-d9660efd4412/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "m3 CAT. II-Z hydraulische bak",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-14"
    },
@@ -54767,7 +54149,7 @@
     "image": "https://media.tbauctions.com/image-media/29d28884-a4f9-4520-ba6e-0e47e7ed9dfd/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Jumbo-Clean Metaalbewerkingswasmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-23"
    },
@@ -54780,7 +54162,7 @@
     "image": "https://media.tbauctions.com/image-media/21beef94-adb5-438a-a920-b27c68224c73/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Esab Mig 500tw MIG",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-34"
    },
@@ -54793,7 +54175,7 @@
     "image": "https://media.tbauctions.com/image-media/2106fcba-0c02-44ed-9e73-2e8fc9dc79fb/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Mecalac wiellader",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-48"
    },
@@ -54806,7 +54188,7 @@
     "image": "https://media.tbauctions.com/image-media/72f9e200-2ac5-47e3-8449-9bc7e1666c93/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Chacana LFC 29\" Elektrische Fiets",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-536"
    },
@@ -54819,7 +54201,7 @@
     "image": "https://media.tbauctions.com/image-media/d070c7dc-4779-44dc-bd1f-f4696fd4dbdf/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "MAERSK SCI-40 Vriescontainer",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-68"
    },
@@ -54832,7 +54214,7 @@
     "image": "https://media.tbauctions.com/image-media/4f2cd3e5-435e-44ad-bdfb-69409a4e7554/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Roostertransportkar",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-879"
    },
@@ -54845,7 +54227,7 @@
     "image": "https://media.tbauctions.com/image-media/82533fd6-8f38-41e5-835d-5cf33c1c3e78/file",
     "location": "Büdelsdorf, Germany",
     "mail": "2026-11-04T10:03:16+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "2021 Lysco Trolley",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51269-988"
    },
@@ -54858,7 +54240,7 @@
     "image": "https://media.tbauctions.com/image-media/5110834e-8c4b-4fc0-9c66-7fa5cf282281/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Belle PCX 12/36",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-701"
    },
@@ -54871,7 +54253,7 @@
     "image": "https://media.tbauctions.com/image-media/a9253bed-fb3d-4e73-a213-1f9cb461c5b4/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Benassi BL6000 frees",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-707"
    },
@@ -54884,7 +54266,7 @@
     "image": "https://media.tbauctions.com/image-media/b2ee1de6-f99d-4e78-9ab7-ffe26161b4b2/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Bosch GSH 5 CE",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-724"
    },
@@ -54897,7 +54279,7 @@
     "image": "https://media.tbauctions.com/image-media/50eae462-9fe3-4124-81f0-68afddca4053/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "bouwdroger / ontvochtiger",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-731"
    },
@@ -54910,7 +54292,7 @@
     "image": "https://media.tbauctions.com/image-media/9b6af518-2036-4a6b-9e88-0cbbbeaec0e8/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Bosch GSH 16",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-789"
    },
@@ -54923,7 +54305,7 @@
     "image": "https://media.tbauctions.com/image-media/8309c0ab-e1b4-435b-9fda-723c9d857d36/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Draadloze Heggenschaar",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-796"
    },
@@ -54936,7 +54318,7 @@
     "image": "https://media.tbauctions.com/image-media/b7b6bed0-a96c-4ae8-bdcc-6c2b76f90444/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Eliet Major 4S V2",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-821"
    },
@@ -54949,7 +54331,7 @@
     "image": "https://media.tbauctions.com/image-media/fe0fb861-113c-468f-aff2-b7592e6eaaf5/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Hydraulische Veeger",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-891"
    },
@@ -54962,7 +54344,7 @@
     "image": "https://media.tbauctions.com/image-media/fcfb1ac7-c1a7-4497-890d-e950fbcdd3b7/file",
     "location": "Hamburg, Germany",
     "mail": "2026-11-02T08:07:14+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Draadloze Gemotoriseerde Kruiwagen",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51276-893"
    },
@@ -54975,7 +54357,7 @@
     "image": "https://media.tbauctions.com/image-media/90cc89db-954b-4bed-a4a6-cd41bba6df0a/file",
     "location": "Beziers, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Reactor - Roestvrij Staal",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-2"
    },
@@ -54988,7 +54370,7 @@
     "image": "https://media.tbauctions.com/image-media/97f0cf5e-4f93-44a5-a5fe-864e067018ea/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "LABCOAT III - Roestvrijstalen turbine-lamineermachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-202"
    },
@@ -55001,7 +54383,7 @@
     "image": "https://media.tbauctions.com/image-media/921cad2e-3f11-4a30-983c-d5dbd2dd5672/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Blister Cartoning Machine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-203"
    },
@@ -55014,7 +54396,7 @@
     "image": "https://media.tbauctions.com/image-media/64209ad2-c6fb-48ad-bd9a-83bc4b9c1e20/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "MARK 5 - Labelmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-204"
    },
@@ -55027,7 +54409,7 @@
     "image": "https://media.tbauctions.com/image-media/b109c8c9-1c04-44ab-b927-d6bab4ec0e67/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "- MINVIO - 2-koppige labelmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-209"
    },
@@ -55040,7 +54422,7 @@
     "image": "https://media.tbauctions.com/image-media/b42e4390-5ad9-47b9-8625-56a5e053a29e/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Automatische Buislabelmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-214"
    },
@@ -55053,7 +54435,7 @@
     "image": "https://media.tbauctions.com/image-media/17f9668f-1427-49a2-97c4-3f58f2a870b9/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "TIRELLI - MONOBLOC -",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-219"
    },
@@ -55066,7 +54448,7 @@
     "image": "https://media.tbauctions.com/image-media/faae8699-51e4-4082-9d5a-6ffbff9de245/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "Steriele lijn voor flesjes: tunnel was-vuller-krimpmachine",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-312"
    },
@@ -55079,9 +54461,126 @@
     "image": "https://media.tbauctions.com/image-media/8747e72c-a51a-4afc-815a-a68d6ba6cdc1/file",
     "location": "Thieux, France",
     "mail": "2026-11-03T09:05:17+00:00",
-    "seen": "2026-11-05T06:50:25.807484+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
     "title": "F.D.22/S - Productielijn voor zetpillen en ova",
     "url": "https://www.troostwijkauctions.com/nl/l/A1-51318-313"
+   },
+   "A1-51519-1009": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 200.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/a776f9df-9183-4464-8fec-c45e1b7c9000/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "m.Z. CAT II-IV Emmer",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1009"
+   },
+   "A1-51519-1020": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 200.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/ff486dac-ce6b-4a3a-9463-9b4c8f46187c/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Mecalac 2,4 m3 O.Z.",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1020"
+   },
+   "A1-51519-1028": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 3000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/3612992e-6a9e-45f3-a50c-216017bfd59a/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "2026 Deutz TCD 2.2 L3",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1028"
+   },
+   "A1-51519-1037": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 1000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/1b45aadf-f7d0-4821-8ef4-ec285b7437f2/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "A6VM060HA1U1 hydraulische pomp (10x)",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1037"
+   },
+   "A1-51519-1050": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 1000.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/80ea8cd5-bae5-41aa-8248-494fe2de49bc/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "2019 Perkins 403J-17T",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1050"
+   },
+   "A1-51519-1083": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 800.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/2d3fd66d-f3b9-4e95-9466-3a728378c62b/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "Mecalac 23108363 Fork",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1083"
+   },
+   "A1-51519-1131": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 220.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/6fbabab3-cf10-41dc-af57-e08552047662/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "gemengde batch grootlichtkoplampen",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1131"
+   },
+   "A1-51519-1138": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 1500.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/9d557f9b-1694-4841-a9f7-65fd0605ea15/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "KP30.38-A8K9-LBM/GF-CSC/PLP20.9 Tandwielpomp (15x)",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1138"
+   },
+   "A1-51519-1140": {
+    "auction": "Laatste ronde: Mecalac-aanbouwstukken, dieselmotoren / wielladermotoren, hydraulische pomp",
+    "bankrupt": false,
+    "bid": 1350.0,
+    "closes_day": "2026-11-16",
+    "first": "2026-11-05T12:17:11.576904+00:00",
+    "image": "https://media.tbauctions.com/image-media/82dc293d-bd4e-4061-85db-e70215de35b4/file",
+    "location": "Büdelsdorf, Germany",
+    "mail": "2026-11-05T09:09:58+00:00",
+    "seen": "2026-11-05T12:17:11.576904+00:00",
+    "title": "MSE02-2-123-R02-1120-YJ00 Asmotor (9x)",
+    "url": "https://www.troostwijkauctions.com/nl/l/A1-51519-1140"
    }
   },
   "searches_told": {
