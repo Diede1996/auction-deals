@@ -1,0 +1,27 @@
+name: Troostwijk probe
+
+# One-off: fetch ONE Troostwijk lot page and its auction page (allowed by their robots.txt; never /search)
+# with an honest user agent, and print the page structure so the bot can learn to read auction pages.
+on:
+  workflow_dispatch:
+    inputs:
+      lot:
+        description: "Lot code, e.g. A1-41124-11"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          LOT: ${{ inputs.lot }}
+        run: python tools/troostwijk_probe.py "$LOT"
