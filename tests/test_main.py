@@ -69,6 +69,12 @@ def repo(tmp_path, monkeypatch):
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "123:abc")
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
     monkeypatch.setenv("GITHUB_REPOSITORY", "Diede/auction-deals")
+    # Troostwijk's own pages: no running auctions (the tests use their alert emails)
+    import scanner.sites.troostwijk as tw
+    from test_sites import FakeSession
+    from fixtures import next_page
+    monkeypatch.setattr(tw.requests, "Session", lambda: FakeSession(
+        {"/nl/auctions": (200, next_page({"listData": [], "totalSize": 0, "pageSize": 48}))}))
     for var in ("GITHUB_STEP_SUMMARY", "GITHUB_OUTPUT", "DASHBOARD_URL"):
         monkeypatch.delenv(var, raising=False)
     return tmp_path

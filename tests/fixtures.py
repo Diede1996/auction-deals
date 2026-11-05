@@ -6,13 +6,16 @@ TW_AUCTION_LIST = [
     {"id": "5123f26c", "displayId": "A1-49861",
      "name": "Audiovisueel- en horeca materiaal wegens faillissement Virtulan bv",
      "urlSlug": "audiovisueel-en-horeca-materiaal-wegens-faillissement-virtulan-bv-A1-49861",
-     "biddingStatus": "BIDDING_OPEN", "endDate": 1791205200, "minEndDate": 1791205200, "lotCount": 70},
+     "biddingStatus": "BIDDING_OPEN", "endDate": 1791205200, "minEndDate": 1791205200, "lotCount": 70,
+     "collectionDays": [{"countryCode": "nl", "city": "Utrecht"}]},
     {"id": "9462b240", "displayId": "A1-50096", "name": "Faillissement fulfilment magazijn",
      "urlSlug": "faillissement-fulfilment-magazijn-A1-50096", "biddingStatus": "BIDDING_OPEN",
-     "endDate": 1790772000, "minEndDate": 1790772000, "lotCount": 400},
+     "endDate": 1790772000, "minEndDate": 1790772000, "lotCount": 400,
+     "collectionDays": [{"countryCode": "nl", "city": "Purmerend"}]},
     {"id": "028dbacb", "displayId": "A1-49452", "name": "LED binnen en buitenverlichting",
      "urlSlug": "led-binnen-en-buitenverlichting-A1-49452", "biddingStatus": "BIDDING_OPEN",
-     "endDate": 1790096400, "minEndDate": 1790096400, "lotCount": 467},
+     "endDate": 1790096400, "minEndDate": 1790096400, "lotCount": 467,
+     "collectionDays": [{"countryCode": "be", "city": "Puurs"}]},
 ]
 
 TW_SEARCH_LOTS = [

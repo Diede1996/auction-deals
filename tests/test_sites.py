@@ -17,30 +17,70 @@ def ctx(http, **kw):
     return SiteContext(http=http, now=NOW, is_bankruptcy=IS_B, **kw)
 
 
-def test_troostwijk():
-    def search(m, u, kw):
-        q = parse_qs(urlparse(u).query)
-        assert q["searchTerm"] == ["thinkpad"] and q["countries"] == ["nl"]
-        return next_page({"lots": TW_SEARCH_LOTS, "searchTotalSize": 2, "pageSize": 48})
+class FakeSession:
+    """requests.Session for the Troostwijk reader: answers by path, remembers what was asked."""
 
-    http = FakeHttp([
-        (url_has("/nl/auctions?"), next_page({"listData": TW_AUCTION_LIST, "totalSize": 3, "pageSize": 48})),
-        (url_has("/nl/search?"), search),
-    ])
-    lots = troostwijk.fetch_lots(ctx(http, search_terms=["thinkpad"], settings={"countries": ["nl"]}))
-    # the X1 belongs to a non-bankruptcy auction and must be dropped
+    def __init__(self, pages):
+        self.pages, self.headers, self.asked = pages, {}, []
+
+    def get(self, url, timeout=None):
+        path = url.replace("https://www.troostwijkauctions.com", "")
+        self.asked.append(path)
+        status, body = self.pages.get(path, (404, "not found"))
+
+        class R:
+            status_code, text = status, body
+
+            def raise_for_status(self):
+                if status >= 400:
+                    raise RuntimeError(status)
+        return R()
+
+
+TW_PAGES = {
+    "/nl/auctions": (200, next_page({"listData": TW_AUCTION_LIST, "totalSize": 3, "pageSize": 48})),
+    "/nl/a/faillissement-fulfilment-magazijn-A1-50096": (200, next_page({"lots": {
+        "results": [TW_SEARCH_LOTS[0], {**TW_SEARCH_LOTS[0], "displayId": "A1-50096-5", "title": "Bureaustoel"}],
+        "hasNext": True, "pageNumber": 1, "pageSize": 48, "totalSize": 50}})),
+    "/nl/a/faillissement-fulfilment-magazijn-A1-50096?page=2": (200, next_page({"lots": {
+        "results": [{**TW_SEARCH_LOTS[0], "displayId": "A1-50096-9", "title": "Lenovo ThinkPad T14",
+                     "urlSlug": "t14-A1-50096-9", "biddingStatus": "BIDDING_CLOSED"}],
+        "hasNext": False, "pageNumber": 2, "pageSize": 48, "totalSize": 50}})),
+    "/nl/a/audiovisueel-en-horeca-materiaal-wegens-faillissement-virtulan-bv-A1-49861": (200, next_page({"lots": {
+        "results": [], "hasNext": False}})),
+}
+
+
+def test_troostwijk():
+    session = FakeSession(TW_PAGES)
+    c = ctx(FakeHttp([]), search_terms=["thinkpad"], settings={"countries": ["nl"], "delay_seconds": 0})
+    lots = troostwijk.fetch_lots(c, session)
+    # the Belgian LED auction isn't a bankruptcy and isn't in the Netherlands: never opened; the chair isn't on
+    # the watchlist and the closed T14 is over
+    assert not any("search" in p or "countries=" in p for p in session.asked)
+    assert not any("led-binnen" in p for p in session.asked)
+    assert session.headers["User-Agent"].startswith("auction-deals personal bot")
     assert len(lots) == 1
     lot = lots[0]
     assert lot.lot_id == "A1-50096-100091"
-    assert lot.current_bid == 100.0
+    assert lot.current_bid == 100.0 and lot.bids == 2
     assert lot.auction_title == "Faillissement fulfilment magazijn"
     assert lot.url == "https://www.troostwijkauctions.com/nl/l/lenovo-thinkpad-t580-i5-8gb-256gb-15-3%22-laptop-A1-50096-100091"
     assert lot.closes_at == datetime.fromtimestamp(1790772000, tz=timezone.utc)
     assert lot.location == "Purmerend"
+    # the next scan reuses what it read (the auction closes in more than 36 hours): only the auction list again
+    session.asked.clear()
+    assert [l.lot_id for l in troostwijk.fetch_lots(c, session)] == ["A1-50096-100091"]
+    assert session.asked == ["/nl/auctions"]
 
 
-def test_troostwijk_display_id():
-    assert troostwijk.auction_display_id("A1-50096-100091") == "A1-50096"
+def test_troostwijk_stops_when_refused():
+    import pytest
+    from scanner.http import BlockedError
+    session = FakeSession({"/nl/auctions": (403, "Forbidden")})
+    with pytest.raises(BlockedError):
+        troostwijk.fetch_lots(ctx(FakeHttp([]), search_terms=["thinkpad"], settings={"delay_seconds": 0}), session)
+    assert session.asked == ["/nl/auctions"]
 
 
 def test_proveiling_home_and_lots():

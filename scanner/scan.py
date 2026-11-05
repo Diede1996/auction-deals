@@ -647,8 +647,15 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                 is_bankruptcy=auction_filter(config),
                 only_bankruptcy=mail_cfg.get("only_bankruptcy", True) is not False,
                 all_auctions=bool(all_auctions_trial(config, now)))
-            lots.extend(mail_lots)
-            report["troostwijk"] = {"ok": True, "lots": len(mail_lots), "via": "email"}
+            # a lot the bot also read on Troostwijk's own auction page keeps that (newer) bid
+            have = {lot.key for lot in lots}
+            extra = [lot for lot in mail_lots if lot.key not in have]
+            lots.extend(extra)
+            site = report.get("troostwijk") or {}
+            report["troostwijk"] = {"ok": True, "lots": (site.get("lots", 0) if site.get("ok") else 0) + len(extra),
+                                    "via": "site + email" if site.get("ok") else "email"}
+            if site and not site.get("ok"):  # the auction pages failed today: say so, the emails still came in
+                report["troostwijk"]["error"] = "auction pages: " + (site.get("error") or "")[:150]
             h.update(ok=True, lots=len(mail_lots), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
         except Exception as e:  # wrong app password, mailbox unreachable, ...
             log.error("troostwijk alerts mailbox failed: %s", type(e).__name__)
@@ -866,8 +873,9 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                 terms.setdefault(found["term"].lower(), found)
         links = " · ".join(f'<a href="{attr(t["url"])}">{esc(t["term"])}</a>' for t in terms.values())
         notes.append(f"🔎 Troostwijk has new lots for your saved searches: {links}\n"
-                     "<i>Their weekly email only links to Troostwijk's search page, and I don't visit Troostwijk, "
-                     "so these lots aren't priced on the dashboard. Tap a word to look yourself.</i>")
+                     "<i>Their weekly email only links to Troostwijk's search page, which the bot doesn't use "
+                     "(their robots.txt asks bots not to); it reads the auction pages instead. Tap a word to look "
+                     "yourself.</i>")
     if items:
         mh = state.setdefault("health", {}).setdefault("marktplaats", {})
         failed = finder.blocked or (finder.errors and finder.errors >= finder.lookups)

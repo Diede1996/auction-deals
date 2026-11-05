@@ -76,10 +76,15 @@ age_filter:
 #   fixed_fee  fixed costs per lot (excl. VAT), if the site charges them
 sites:
   troostwijk:
-    # Off: Troostwijk answers GitHub's servers with "403 Forbidden", so it refuses automated visitors.
-    # Troostwijk lots come from their own alert emails instead: see troostwijk_alerts below.
-    enabled: false
-    countries: [nl]      # add be, de, ... to include lots in other countries
+    # On since 5 Nov 2026: Troostwijk's robots.txt allows reading auction and lot pages (not /search or filters)
+    # and their terms only forbid making them public, so these lots go to your private repository, not the
+    # public dashboard (secret PRIVATE_REPO_TOKEN). The bot reads the list of running auctions and the pages of
+    # the auctions that pass auction_keywords, with an honest bot name and a pause between pages.
+    # The alert emails (troostwijk_alerts below) keep working next to it.
+    enabled: true
+    countries: [nl, be]  # pickup places in these countries
+    delay_seconds: 4     # pause between two Troostwijk pages
+    max_pages: 120       # at most this many Troostwijk pages per scan (an auction page holds 48 lots)
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
     vat: 0.21
     fixed_fee: 0

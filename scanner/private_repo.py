@@ -60,7 +60,7 @@ def put_json(path: str, data, message: str, config: dict | None = None, session=
 
 # ---------------------------------------------------------------- the bot's own Troostwijk memory
 
-SECRET_SECTIONS = ("troostwijk_alerts", "troostwijk_site")
+SECRET_SECTIONS = ("troostwijk_alerts",)
 
 
 def _secret() -> str | None:
@@ -82,6 +82,8 @@ def load_secret_state(state: dict, path) -> None:
     for k in SECRET_SECTIONS:
         if k in saved:
             state[k] = saved[k]
+    if "site_cache_troostwijk" in saved:
+        state.setdefault("site_cache", {})["troostwijk"] = saved["site_cache_troostwijk"]
 
 
 def save_secret_state(state: dict, path) -> None:
@@ -91,4 +93,6 @@ def save_secret_state(state: dict, path) -> None:
         return  # no key (a local run): it stays in state.json as before
     from .inventory import _fernet
     saved = {k: state.pop(k) for k in SECRET_SECTIONS if k in state}
+    if "troostwijk" in (state.get("site_cache") or {}):  # the lots read from Troostwijk's auction pages
+        saved["site_cache_troostwijk"] = state["site_cache"].pop("troostwijk")
     path.write_bytes(_fernet("troostwijk|" + secret).encrypt(json.dumps(saved, ensure_ascii=False, sort_keys=True).encode()))
