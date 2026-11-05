@@ -53,7 +53,7 @@ TW_PAGES = {
 
 def test_troostwijk():
     session = FakeSession(TW_PAGES)
-    c = ctx(FakeHttp([]), search_terms=["thinkpad"], settings={"countries": ["nl"], "delay_seconds": 0})
+    c = ctx(FakeHttp([]), search_terms=["thinkpad"], settings={"countries": ["nl"], "delay_seconds": 0, "window_days": 10})
     lots = troostwijk.fetch_lots(c, session)
     # the Belgian LED auction isn't a bankruptcy and isn't in the Netherlands: never opened; the chair isn't on
     # the watchlist and the closed T14 is over
@@ -68,7 +68,7 @@ def test_troostwijk():
     assert lot.url == "https://www.troostwijkauctions.com/nl/l/lenovo-thinkpad-t580-i5-8gb-256gb-15-3%22-laptop-A1-50096-100091"
     assert lot.closes_at == datetime.fromtimestamp(1790772000, tz=timezone.utc)
     assert lot.location == "Purmerend"
-    # the next scan reuses what it read (the auction closes in more than 36 hours): only the auction list again
+    # a second scan within reread_hours reuses what it read: only the auction list again
     session.asked.clear()
     assert [l.lot_id for l in troostwijk.fetch_lots(c, session)] == ["A1-50096-100091"]
     assert session.asked == ["/nl/auctions"]
@@ -238,7 +238,21 @@ def test_troostwijk_all_auctions():
         "results": [{**TW_SEARCH_LOTS[1], "location": {"city": "Venlo", "countryCode": "nl"}}], "hasNext": False}}))
     session = FakeSession(pages)
     c = ctx(FakeHttp([]), search_terms=["thinkpad"],
-            settings={"countries": ["nl", "be"], "delay_seconds": 0, "all_auctions": True})
+            settings={"countries": ["nl", "be"], "delay_seconds": 0, "all_auctions": True, "window_days": 10})
     lots = {l.lot_id: l for l in troostwijk.fetch_lots(c, session)}
     assert set(lots) == {"A1-50096-100091", "A1-49452-77"}
     assert lots["A1-49452-77"].regular and not lots["A1-50096-100091"].regular
+
+
+def test_troostwijk_only_this_weeks_auctions_and_fresh_bids():
+    from datetime import timedelta
+    session = FakeSession(TW_PAGES)
+    c = ctx(FakeHttp([]), search_terms=["thinkpad"], settings={"countries": ["nl"], "delay_seconds": 0})
+    assert troostwijk.fetch_lots(c, session) == []  # closes in 8 days: not this week yet
+    assert session.asked == ["/nl/auctions"]
+    c.now = NOW + timedelta(days=2)
+    assert len(troostwijk.fetch_lots(c, session)) == 1
+    session.asked.clear()
+    c.now = NOW + timedelta(days=3)  # the next day: read again for the current bids
+    troostwijk.fetch_lots(c, session)
+    assert "/nl/a/faillissement-fulfilment-magazijn-A1-50096" in session.asked

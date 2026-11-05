@@ -9,9 +9,9 @@ So this reader:
 1. Reads the list of running auctions (/nl/auctions?page=N, no filters) and keeps the auctions in your countries
    (from their pickup places): all of them with `all_auctions: true`, else those that pass the same auction
    filter as the other sites.
-2. Reads those auctions' own pages (/nl/a/<slug>?page=N, 48 lots a page) and keeps the lots whose title contains a
-   watchlist phrase. An auction's lots are read once and then again only while it closes within a day and a
-   half (for the current bids), with at most `max_pages` auction pages a run.
+2. Of the auctions that close within `window_days` (7: this week's), reads their own pages (/nl/a/<slug>?page=N,
+   48 lots a page) every scan for the current bids, and keeps the lots whose title contains a watchlist phrase;
+   at most `max_pages` pages a run, the auctions closing soonest first.
 It identifies itself honestly as a bot, waits a few seconds between pages and stops at the first refusal.
 Never the search page.
 """
@@ -137,9 +137,11 @@ def wanted(title: str, phrases: list[str]) -> bool:
 def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
     s = ctx.settings
     countries = {c.lower() for c in s.get("countries") or ["nl"]}
-    reader = Reader(ctx, float(s.get("delay_seconds", 4)), session)
-    max_pages = int(s.get("max_pages", 250))
+    reader = Reader(ctx, float(s.get("delay_seconds", 3)), session)
+    max_pages = int(s.get("max_pages", 400))
     phrases = [normalize(t) for t in ctx.search_terms if normalize(t)]
+    window = float(s.get("window_days", 7))
+    reread = float(s.get("reread_hours", 20))
     cache = ctx.cache.setdefault("auctions", {})  # displayId -> {read: iso, lots: [records of watchlist lots]}
     now = ctx.now
 
@@ -148,6 +150,8 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
         if a.get("biddingStatus") not in (None, "BIDDING_OPEN") or not (countries_of(a) & countries):
             continue
         auction = parse_auction(a)
+        if auction.closes_at and auction.closes_at > now + timedelta(days=window):
+            continue  # not this week yet: read once it gets close (Diede: only the auctions of this week)
         special = ctx.is_bankruptcy(auction.title, auction.description)
         if s.get("all_auctions"):  # Diede (5 Nov 2026): every Troostwijk auction, others labelled "regular"
             if not special:
@@ -165,9 +169,8 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
     read = skipped = 0
     for a, auction in auctions:
         entry = cache.get(auction.auction_id)
-        soon = auction.closes_at is not None and auction.closes_at - now < timedelta(hours=36)
-        fresh = entry and entry.get("complete") and (
-            not soon or datetime.fromisoformat(entry["read"]) > now - timedelta(hours=12))
+        # every scan reads the auctions of this week again, for the current bids (once per `reread_hours`)
+        fresh = entry and entry.get("complete") and datetime.fromisoformat(entry["read"]) > now - timedelta(hours=reread)
         if not fresh:
             pages_left = max_pages - reader.pages
             if pages_left <= 0:

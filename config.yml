@@ -83,9 +83,10 @@ sites:
     # The alert emails (troostwijk_alerts below) keep working next to it.
     enabled: true
     countries: [nl, be]  # pickup places in these countries
-    delay_seconds: 4     # pause between two Troostwijk pages
-    max_pages: 250       # at most this many Troostwijk pages per scan (an auction page holds 48 lots); the rest
-                         # is read in the next scans (an auction is read once, again only in its last 36 hours)
+    delay_seconds: 3     # pause between two Troostwijk pages
+    window_days: 7       # Diede, 5 Nov 2026: only auctions closing within a week, read again every scan for
+                         # the current bids
+    max_pages: 400       # at most this many Troostwijk pages per scan (an auction page holds 48 lots)
     all_auctions: true   # Diede, 5 Nov 2026: every auction, not only auction_keywords ("regular auction" label)
     premium: 0.18        # Troostwijk sets this per auction; 18% is an estimate, check the lot page
     vat: 0.21
@@ -169,7 +170,7 @@ marktplaats:
   min_listings_exact: 2         # exact model: this many listings of the same model are enough
   max_items_per_lot: 0          # "40x colbert" counts as 40 colberts (price, margin and max bid x 40); 0 = no limit.
                                 # Set e.g. 10 to count bigger bulk lots as one item instead.
-  max_lookups_per_run: 300      # at most this many Marktplaats searches per scan (300 since 2026-11-02; ~5.5 s each)
+  max_lookups_per_run: 500      # at most this many Marktplaats searches per scan (500 since 2026-11-05; ~5.5 s each)
   delay_seconds: 4              # pause between Marktplaats searches...
   extra_random_delay: 3         # ...plus a random 0-3 seconds
 
