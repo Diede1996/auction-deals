@@ -434,6 +434,7 @@
       el("div", { "class": "c-actions" },
         canSplit(it) ? el("button", { type: "button", "class": "pbtn", text: "Split…", title: "Make each piece its own item, with its own ad", onclick: function () { splitItem(it); } }) : null,
         st === "stock" ? el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }) : null,
+        st === "kept" ? el("button", { type: "button", "class": "pbtn", text: "Sell…", title: "Put it up for sale: write the ad and it moves to For sale", onclick: function () { editItem(it, "sell"); } }) : null,
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
   }
 
@@ -1017,8 +1018,9 @@
     return el("div", { "class": "pfield" }, el("label", { "for": id, text: label }), input, hint ? el("div", { "class": "small", text: hint }) : null);
   }
 
+  /* focus "sell": something you kept goes up for sale. Only the ad part is shown; saving sets it to For sale. */
   function editItem(it, focus, draft) {
-    var isNew = !it;
+    var isNew = !it, sell = !isNew && focus === "sell";
     it = it ? JSON.parse(JSON.stringify(it)) : Object.assign({ id: newId(), bought: today(), qty: 1, status: "stock", photos: [], listings: [], sales: [] }, draft || {});
     var pk = it.pickup || {};
     var inp = {
@@ -1047,7 +1049,8 @@
     inp.notes.value = it.notes || "";
     inp.adText.value = (it.ad && it.ad.text) || "";
     Object.keys(STATUS).forEach(function (k) { inp.status.append(el("option", { value: k, text: STATUS[k] })); });
-    inp.status.value = statusOf(it);
+    inp.status.value = sell ? "stock" : statusOf(it);
+    if (sell && !inp.adTitle.value) inp.adTitle.value = it.name || "";
     var dl = el("datalist", { id: "pcats" });
     categories().forEach(function (c) { dl.append(el("option", { value: c })); });
 
@@ -1070,8 +1073,19 @@
       el("button", { type: "button", "class": "btn-link", text: "Remove", onclick: function (e) { dropInvoice = true; e.target.parentNode.textContent = "Invoice will be removed when you save."; } })) : null;
 
     var err = el("p", { "class": "error", hidden: true });
-    var save = el("button", { type: "submit", "class": "primary", text: isNew ? "Add" : "Save" });
-    var form = el("form", { method: "dialog" },
+    var saveLabel = isNew ? "Add" : sell ? "Put up for sale" : "Save";
+    var save = el("button", { type: "submit", "class": "primary", text: saveLabel });
+    var adPart = [
+      el("div", { "class": "pgrid" }, field("Title", inp.adTitle), field("Asking price (€)", inp.adPrice)),
+      field("Text", inp.adText),
+      el("div", { "class": "pfield" }, el("label", { text: "Photos" }), strip, inp.photos, el("div", { "class": "small", text: "Photos are made smaller (1600 px) before they're saved." }))];
+    var form = sell ? el("form", { method: "dialog" },
+      el("h2", { text: "Sell: " + (it.name || "item") }),
+      el("p", { "class": "small", text: "It moves from “Kept for myself” to “For sale”. Write the ad now or later; the asking price is enough to start. " +
+        "Paid " + money2(it.paid) + (it.bought ? ", bought " + showDay(it.bought) : "") + "." }),
+      adPart, dl, err,
+      el("div", { "class": "buttons" }, el("span", { "class": "spacer" }), el("button", { type: "button", text: "Cancel", onclick: closeDlg }), save)) :
+    el("form", { method: "dialog" },
       el("h2", { text: isNew ? (it.lotKey ? "You won: add it to your stock" : "Add a purchase") : "Edit " + (it.name || "item") }),
       it._hint ? el("p", { "class": "small", text: it._hint }) : null,
       el("div", { "class": "pgrid" },
@@ -1088,9 +1102,7 @@
       el("h3", { text: "Ad" }),
       !isNew && canSplit(it) ? el("p", { "class": "small psplit" }, "This is a lot of " + qtyOf(it) + " pieces, so this is one ad for all of them. For an ad per piece: ",
         el("button", { type: "button", "class": "btn-link", text: "split it into separate items", onclick: function () { closeDlg(); splitItem(find(P.data, it.id) || it); } }), ".") : null,
-      el("div", { "class": "pgrid" }, field("Title", inp.adTitle), field("Asking price (€)", inp.adPrice)),
-      field("Text", inp.adText),
-      el("div", { "class": "pfield" }, el("label", { text: "Photos" }), strip, inp.photos, el("div", { "class": "small", text: "Photos are made smaller (1600 px) before they're saved." })),
+      adPart,
       dl, err,
       el("div", { "class": "buttons" },
         isNew ? null : el("button", { type: "button", "class": "danger", text: "Delete", onclick: function () {
@@ -1109,6 +1121,7 @@
       if (!name) { err.textContent = "Give it a name."; err.hidden = false; return; }
       var paid = amount(inp.paid.value);
       if (inp.paid.value.trim() && paid == null) { err.textContent = "The price paid isn't a number."; err.hidden = false; return; }
+      if (sell && amount(inp.adPrice.value) == null) { err.textContent = "Fill in an asking price."; err.hidden = false; return; }
       save.disabled = true; err.hidden = true; save.textContent = "Saving…";
       var stamp = Date.now().toString(36);
       var newPhotos = Array.prototype.slice.call(inp.photos.files || []);
@@ -1145,15 +1158,17 @@
           if (inv || dropInvoice) x.invoiceFile = inv || null;
         }).then(function () {
           var old = removed.concat((inv || dropInvoice) && oldInv && !sharedFile(oldInv.path, it.id) ? [oldInv] : []);
-          toast(isNew ? (values.pickup && !values.pickup.done ? "Added to your stock and your pickups." : "Added to your stock.") : "Saved.");
+          toast(isNew ? (values.pickup && !values.pickup.done ? "Added to your stock and your pickups." : "Added to your stock.") :
+            sell ? "Now for sale. Add where it's online under Listings." : "Saved.");
+          if (sell) setUi("stock", "stock");
           return Promise.all(old.map(function (f) { return removeFile(f, "Remove old file of " + name); }));
         });
       }).catch(function (e2) {
-        if (dlg.open) { save.disabled = false; save.textContent = isNew ? "Add" : "Save"; err.textContent = "Couldn't save: " + (e2 && e2.message || "error"); err.hidden = false; }
+        if (dlg.open) { save.disabled = false; save.textContent = saveLabel; err.textContent = "Couldn't save: " + (e2 && e2.message || "error"); err.hidden = false; }
       });
     });
     openDlg(form);
-    setTimeout(function () { (focus === "ad" ? inp.adTitle : inp.name).focus(); }, 0);
+    setTimeout(function () { (sell ? inp.adPrice : focus === "ad" ? inp.adTitle : inp.name).focus(); }, 0);
   }
 
   function sellItem(it) {
