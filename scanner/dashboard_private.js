@@ -648,6 +648,13 @@
     }).catch(function (e) {
       say("Save to folder");
       if (e && e.name === "AbortError") return;  /* picker cancelled */
+      /* the remembered folder was moved, renamed or deleted: forget it and ask again */
+      if (e && e.name === "NotFoundError" && !pickNew) {
+        dirStore("readwrite", function (st) { return st.delete("photoDir"); }).catch(function () {});
+        toast("Your photo folder can't be found any more (moved or renamed?). Pick it again.");
+        return savePhotosToFolder(it, true, btn);
+      }
+      if (e && e.name === "SecurityError") { toast("Click Save to folder once more to pick your photo folder."); return; }
       toast("Couldn't save the photos" + (e && e.message ? ": " + e.message : "") + ".");
     });
   }
