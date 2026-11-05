@@ -70,3 +70,21 @@ def test_reminders_once_per_closing_time():
     assert len(due_reminders(favs, lots, NOW + timedelta(minutes=15), 60, reminded)) == 1
     # already closed: no reminder
     assert due_reminders(favs, lots, NOW + timedelta(hours=2), 60, {}) == []
+
+
+def test_stage_reminders_3h_1h_15min():
+    from scanner.favorites import due_stage_reminders
+    favs = parse_body(body(FAVS))
+    lots = {"hnvi:196601": {"closes": (NOW + timedelta(hours=4)).isoformat()}}
+    sent = {}
+    stages = [180, 60, 15]
+    assert [s for *_, s in due_stage_reminders(favs, lots, NOW, stages, sent)] == []
+    t = NOW + timedelta(hours=1, minutes=5)  # 2h55 left -> 3 h reminder
+    due = due_stage_reminders(favs, lots, t, stages, sent)
+    assert [s for *_, s in due] == [180]
+    sent["hnvi:196601"] = {"closes": due[0][1].isoformat(), "stage": 180}
+    assert due_stage_reminders(favs, lots, t + timedelta(minutes=30), stages, sent) == []
+    t = NOW + timedelta(hours=3, minutes=50)  # 10 min left: a late run sends only the 15-minute one
+    assert [s for *_, s in due_stage_reminders(favs, lots, t, stages, sent)] == [15]
+    sent["hnvi:196601"]["stage"] = 15
+    assert due_stage_reminders(favs, lots, t, stages, sent) == []

@@ -241,8 +241,9 @@ condition:
 # Favorites: star lots on the dashboard (it asks for a GitHub token once, see README).
 favorites:
   reminders: true               # the closing day (in the morning summary) and before closing
-  remind_minutes_before: 60     # checked every 5 minutes, so reminders arrive 55-60 minutes before
-  early_reminder_minutes_before: 180  # and a first one in the last 3 hours (GitHub can start the check hours late); 0 = off
+  # Reminders this many minutes before closing, one Telegram message per closing time. Checked every 5 minutes
+  # (if GitHub starts the check on time; see auction-bot/externe-wekker-instellen.md). A late check sends only the nearest one.
+  reminder_minutes_before: [180, 60, 15]
 
 http:
   delay_seconds: 1.5            # pause between requests to the same site

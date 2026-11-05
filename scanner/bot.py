@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from . import commands, inventory
-from .favorites import FavoritesStore, closing, due_reminders
+from .favorites import FavoritesStore, closing, due_stage_reminders
 from .http import Http
 from .models import Lot, WatchItem
 from .sites import SITE_NAMES
@@ -40,8 +40,12 @@ def status_text(scan_state: dict, watchlist: dict, url: str | None) -> str:
     return "\n".join(lines)
 
 
-def reminder_text(fav: dict, closes: datetime, now: datetime, lot: dict | None) -> str:
+def _left(closes: datetime, now: datetime) -> str:
     mins = max(1, round((closes - now).total_seconds() / 60))
+    return f"{mins} min" if mins < 90 else f"{mins // 60} h {mins % 60:02d} min"
+
+
+def _fav_line(fav: dict, lot: dict | None) -> str:
     lot = lot or {}
     parts = []
     bid = lot.get("bid", fav.get("bid"))
@@ -53,10 +57,21 @@ def reminder_text(fav: dict, closes: datetime, now: datetime, lot: dict | None) 
     trip = lot.get("trip") or {}
     place = lot.get("pickup") or lot.get("location") or fav.get("pickup")
     pickup = f"\n📍 {esc(place)}" + (f" · {trip['km']:.0f} km" if trip.get("km") is not None else "") if place else ""
-    left = f"{mins} min" if mins < 90 else f"{mins // 60} h {mins % 60:02d} min"
-    return (f"⏰ <b>Closes in {left}</b> ({closes.astimezone(AMS):%H:%M})\n"
-            f'⭐ <a href="{attr(fav["url"])}">{esc(fav["title"][:80])}</a>\n'
-            + (" · ".join(parts)) + pickup)
+    return (f'⭐ <a href="{attr(fav["url"])}">{esc(fav["title"][:80])}</a>'
+            + ("\n" + " · ".join(parts) if parts else "") + pickup)
+
+
+def reminder_text(fav: dict, closes: datetime, now: datetime, lot: dict | None) -> str:
+    return f"⏰ <b>Closes in {_left(closes, now)}</b> ({closes.astimezone(AMS):%H:%M})\n" + _fav_line(fav, lot)
+
+
+def bundle_reminder_text(items: list[tuple[dict, dict | None]], closes: datetime, now: datetime) -> str:
+    """One message for all favorites closing at the same time, instead of one per lot."""
+    if len(items) == 1:
+        return reminder_text(items[0][0], closes, now, items[0][1])
+    lines = [f"⏰ <b>{len(items)} favorites close in {_left(closes, now)}</b> ({closes.astimezone(AMS):%H:%M})"]
+    lines += [_fav_line(f, lot) for f, lot in items]
+    return "\n\n".join(lines)
 
 
 def favorites_list(favs: list[dict], lots_by_key: dict[str, dict], now: datetime, url: str | None) -> str:
@@ -208,33 +223,26 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
                 "Send /list to see your watchlist, /help for all commands.")
         tg_state["welcomed"] = now.isoformat()
 
-    # ⏰ favorites closing within the hour (this job runs every 5 minutes)
-    # GitHub sometimes starts this job hours late, so a first reminder comes a few hours before closing too
-    reminded = tg_state.setdefault("reminded", {})
-    early_reminded = tg_state.setdefault("reminded_early", {})
-    minutes = int(fav_cfg.get("remind_minutes_before", 60))
-    early = int(fav_cfg.get("early_reminder_minutes_before", 0) or 0)
-    due = due_reminders(favs, lots_by_key, now, minutes, reminded)
-    soon = {f["key"] for f, _ in due}
-    if early > minutes:
-        for fav, closes in due_reminders(favs, lots_by_key, now, early, early_reminded):
-            if fav["key"] in soon:
-                continue  # the last-hour reminder goes out now anyway
-            try:
-                tg.send(reminder_text(fav, closes, now, lots_by_key.get(fav["key"])))
-                early_reminded[fav["key"]] = closes.isoformat()
-            except Exception as e:
-                log.warning("could not send a reminder: %s", e)
-    for fav, closes in due:
+    # ⏰ favorites closing soon: a reminder at each stage (by default 3 h, 1 h and 15 min before closing),
+    # one message per closing time. GitHub sometimes starts this job hours late; then only the nearest stage is sent.
+    sent = tg_state.setdefault("reminder_stages", {})
+    tg_state.pop("reminded", None)
+    tg_state.pop("reminded_early", None)
+    stages = fav_cfg.get("reminder_minutes_before")
+    if not stages:  # older config
+        stages = [int(fav_cfg.get("early_reminder_minutes_before", 0) or 0), int(fav_cfg.get("remind_minutes_before", 60))]
+    groups: dict[datetime, list] = {}
+    for fav, closes, stage in due_stage_reminders(favs, lots_by_key, now, stages, sent):
+        groups.setdefault(closes, []).append((fav, stage))
+    for closes, group in sorted(groups.items()):
         try:
-            tg.send(reminder_text(fav, closes, now, lots_by_key.get(fav["key"])))
-            reminded[fav["key"]] = closes.isoformat()
-            early_reminded[fav["key"]] = closes.isoformat()
+            tg.send(bundle_reminder_text([(f, lots_by_key.get(f["key"])) for f, _ in group], closes, now))
+            for fav, stage in group:
+                sent[fav["key"]] = {"closes": closes.isoformat(), "stage": stage}
         except Exception as e:
             log.warning("could not send a reminder: %s", e)
-    for done in (reminded, early_reminded):
-        for key in [k for k, v in done.items() if datetime.fromisoformat(v) < now - timedelta(days=2)]:
-            del done[key]
+    for key in [k for k, v in sent.items() if datetime.fromisoformat(v["closes"]) < now - timedelta(days=2)]:
+        del sent[key]
 
     # 🏷 once a day, from 9:00: things that don't sell at their asking price
     today_local = now.astimezone(AMS)

@@ -120,3 +120,23 @@ def due_reminders(favs: list[dict], lots_by_key: dict[str, dict], now: datetime,
         if reminded.get(f["key"]) != c.isoformat():
             due.append((f, c))
     return due
+
+
+def due_stage_reminders(favs: list[dict], lots_by_key: dict[str, dict], now: datetime, stages: list[int],
+                        sent: dict) -> list[tuple[dict, datetime, int]]:
+    """Favorites that have reached a reminder stage (e.g. 180, 60 or 15 minutes before closing) they haven't
+    had yet. Only the nearest stage counts: a run that starts late sends one reminder, not three.
+    `sent` maps a lot key to {"closes": iso, "stage": minutes of the last stage sent}; a new closing time
+    (someone bid in the last minutes) starts over."""
+    stages = sorted({int(s) for s in stages if int(s) > 0})
+    if not stages:
+        return []
+    due = []
+    for f, c in closing_between(favs, lots_by_key, now, now + timedelta(minutes=stages[-1])):
+        left = (c - now).total_seconds() / 60
+        stage = next(s for s in stages if left <= s)
+        prev = sent.get(f["key"]) or {}
+        if prev.get("closes") == c.isoformat() and int(prev.get("stage", 10**6)) <= stage:
+            continue
+        due.append((f, c, stage))
+    return due
