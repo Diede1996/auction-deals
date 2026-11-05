@@ -561,7 +561,7 @@
       ad.title ? copyBtn("Copy title", ad.title) : null,
       ad.text ? copyBtn("Copy text", ad.text) : null,
       photos.length ? el("button", { type: "button", "class": "pbtn", text: (navigator.canShare ? "Share" : "Save") + " " + photos.length + " photo" + (photos.length > 1 ? "s" : ""), onclick: function () { sharePhotos(it); } }) : null,
-      photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function () { savePhotosToFolder(it); } }) : null,
+      photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function (e) { savePhotosToFolder(it, e.shiftKey, e.currentTarget); } }) : null,
       el("button", { type: "button", "class": "btn-link", text: text || photos.length ? "Edit ad" : "Write the ad", onclick: function () { editItem(it, "ad"); } })));
     if (ad.title) block.append(el("div", { "class": "pad-title", text: ad.title }));
     if (ad.text) block.append(el("div", { "class": "pad-text", text: ad.text }));
@@ -626,8 +626,10 @@
       return h.requestPermission({ mode: "readwrite" }).then(function (p) { return p === "granted" ? h : pick(); }, pick);
     });
   }
-  function savePhotosToFolder(it, pickNew) {
+  function savePhotosToFolder(it, pickNew, btn) {
     var photos = it.photos || [], name = slug((it.ad && it.ad.title) || it.name) || it.id;
+    var say = function (t) { if (btn) { btn.textContent = t; btn.title = t + " (Shift+click: pick another folder)"; } };
+    say("Saving…");
     photoFolder(pickNew).then(function (root) {
       return root.getDirectoryHandle(name, { create: true }).then(function (dir) {
         return photos.reduce(function (chain, ph, i) {
@@ -640,9 +642,11 @@
           });
         }, Promise.resolve());
       }).then(function () {
+        say("Saved in " + root.name + "\\" + name.slice(0, 25) + "…");
         toast(photos.length + " photos saved in " + root.name + "\\" + name + ".");
       });
     }).catch(function (e) {
+      say("Save to folder");
       if (e && e.name === "AbortError") return;  /* picker cancelled */
       toast("Couldn't save the photos" + (e && e.message ? ": " + e.message : "") + ".");
     });
