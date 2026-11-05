@@ -407,7 +407,7 @@
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
       .sort(function (a, b) { return String(b.bought || "").localeCompare(String(a.bought || "")); });
     panel.append(el("div", { "class": "prow head", "aria-hidden": "true" }, el("div"), el("div", { text: "Item" }), el("div", { text: "Bought" }),
-      el("div", { text: "Paid" }), el("div", { text: "Online" }), el("div")));
+      el("div", { text: "Paid" }), el("div", { text: pui.stock === "sold" ? "Sold for" : pui.stock === "kept" ? "" : "Online" }), el("div")));
     shown.forEach(function (it) { panel.append(stockRow(it)); });
     if (!shown.length) panel.append(el("p", { "class": "empty" }, items().length ? "Nothing here with these filters." : "No purchases yet. ",
       items().length ? null : el("button", { type: "button", "class": "btn-link", text: "Add your first purchase", onclick: function () { editItem(null); } })));
@@ -428,7 +428,8 @@
       el("div", { "data-label": "Bought" }, el("div", { "class": "num", text: showDay(it.bought) }), el("div", { "class": "small", text: ago(it.bought) })),
       el("div", { "data-label": "Paid" }, el("div", { "class": "strong num", text: money2(it.paid) }),
         q > 1 ? el("div", { "class": "small", text: money2((it.paid || 0) / q) + " per piece" }) : null,
-        sales(it).length ? el("div", { "class": "small", text: "sold for " + money2(revenue(it)) }) : null),
+        sales(it).length && st !== "sold" ? el("div", { "class": "small", text: "sold for " + money2(revenue(it)) }) : null),
+      st === "sold" ? soldCell(it) :
       el("div", { "data-label": "Online" }, st !== "stock" ? el("span", { "class": "small", text: "–" }) :
         ls.length ? el("div", { "class": "badges" }, ls.map(badge)) : el("span", { "class": "small soon", text: "Not listed" })),
       el("div", { "class": "c-actions" },
@@ -436,6 +437,16 @@
         st === "stock" ? el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }) : null,
         st === "kept" ? el("button", { type: "button", "class": "pbtn", text: "Sell…", title: "Put it up for sale: write the ad and it moves to For sale", onclick: function () { editItem(it, "sell"); } }) : null,
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
+  }
+
+  /* sold: what it brought in, when, and the profit on it */
+  function soldCell(it) {
+    var got = revenue(it), profit = got - costOfSold(it);
+    var last = sales(it).map(function (s) { return s.date; }).filter(validDay).sort().pop();
+    return el("div", { "data-label": "Sold for" },
+      el("div", { "class": "strong num", text: sales(it).length ? money2(got) : "–" }),
+      sales(it).length ? el("div", { "class": "small " + (profit >= 0 ? "good" : "bad"), text: (profit >= 0 ? "+" : "−") + money2(Math.abs(profit)) + " profit" }) : null,
+      last ? el("div", { "class": "small", text: showDay(last) }) : null);
   }
 
   /* ---------- Listings ---------- */
