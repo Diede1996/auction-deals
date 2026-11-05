@@ -33,8 +33,15 @@ def get(url):
 
 lot = sys.argv[1]
 text, data = get(f"https://www.troostwijkauctions.com/nl/l/{lot}")
-slugs = sorted(set(re.findall(r'/a/([a-z0-9-]+-A1-\d+|[a-z0-9-]{8,})', text)))
-print("\nauction links on lot page:", slugs[:10])
-if slugs:
+slug = (((data or {}).get("props") or {}).get("pageProps") or {}).get("auction", {}).get("urlSlug")
+print("\nauction urlSlug:", slug)
+if slug:
     time.sleep(10)
-    get(f"https://www.troostwijkauctions.com/nl/a/{slugs[0]}")
+    t2, d2 = get(f"https://www.troostwijkauctions.com/nl/a/{slug}")
+    pp = ((d2 or {}).get("props") or {}).get("pageProps") or {}
+    for k, v in pp.items():
+        if isinstance(v, dict) and any(isinstance(x, list) and len(x) > 5 for x in v.values()):
+            print("candidate", k, {kk: (len(vv) if isinstance(vv, list) else vv) for kk, vv in v.items() if not isinstance(vv, dict)})
+time.sleep(10)
+r = S.get("https://www.troostwijkauctions.com/sitemap.xml", timeout=30)
+print("\n=== sitemap HTTP", r.status_code, len(r.text)); print(r.text[:3000])
