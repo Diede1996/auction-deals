@@ -22,23 +22,23 @@ def get(url):
     return r
 
 
-r = get(B + "/sitemap.xml")
-locs = re.findall(r"<loc>(.*?)</loc>", r.text)
-print(len(locs), "sitemaps;", Counter(re.sub(r"[0-9a-f-]{36}", "<id>", l) for l in locs).most_common(30))
-auc = [l for l in locs if "auction" in l.lower()]
-print("auction sitemaps:", auc[:10])
-if auc:
-    r = get(auc[0])
-    urls = re.findall(r"<loc>(.*?)</loc>", r.text)
-    print(len(urls), "urls; first:", urls[:8])
-    print(r.text[:1500])
-slug = sys.argv[1]
-r = get(f"{B}/nl/a/{slug}")
-lots = next_data(r.text).get("lots") or {}
-res = lots.get("results") or []
-print("lots keys:", list(lots.keys()), "n", len(res))
-if res:
-    print(json.dumps(res[0], ensure_ascii=False, indent=1)[:5000])
-r = get(f"{B}/nl/a/{slug}?page=2")
-l2 = next_data(r.text).get("lots") or {}
-print("page 2:", l2.get("pageNumber"), len(l2.get("results") or []), [x.get("displayId") for x in (l2.get("results") or [])[:3]])
+def shape(o, depth=0, maxd=5):
+    if depth > maxd:
+        return "..."
+    if isinstance(o, dict):
+        return {k: shape(v, depth + 1, maxd) for k, v in list(o.items())[:50]}
+    if isinstance(o, list):
+        return [f"list[{len(o)}]", shape(o[0], depth + 1, maxd)] if o else "list[0]"
+    if isinstance(o, str):
+        return o[:100]
+    return o
+
+
+for page in ("", "?page=2"):
+    r = get(f"{B}/nl/auctions{page}")
+    pp = next_data(r.text)
+    print("keys:", list(pp.keys()))
+    for k, v in pp.items():
+        if k in ("translations", "layout", "appLocaleData", "featureFlags", "menuCategories", "seoTags"):
+            continue
+        print(k, json.dumps(shape(v), ensure_ascii=False)[:4000])
