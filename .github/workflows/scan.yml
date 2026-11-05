@@ -45,6 +45,8 @@ jobs:
           ALERTS_APP_PASSWORD: ${{ secrets.ALERTS_APP_PASSWORD }}
           ALERTS_IMAP_HOST: ${{ secrets.ALERTS_IMAP_HOST }}   # optional, default imap.gmail.com
           GITHUB_TOKEN: ${{ github.token }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}   # writes Troostwijk lots to auction-private (not public)
+          INVENTORY_KEY: ${{ secrets.INVENTORY_KEY }}   # optional key for the encrypted files (else the Telegram token)
 
       - name: Save state
         if: always()

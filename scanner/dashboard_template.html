@@ -1756,6 +1756,15 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                   categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; },
                   lots: function () { return DATA.lots || []; },
                   settings: function () { return DATA.settings || {}; },
+                  /* lots kept in your private repository (Troostwijk: their terms don't allow showing them publicly) */
+                  addLots: function (list) {
+                    var have = {};
+                    DATA.lots.forEach(function (l) { have[l.key] = 1; });
+                    var added = 0;
+                    (list || []).forEach(function (l) { if (l && l.key && !have[l.key]) { DATA.lots.push(l); have[l.key] = 1; added++; } });
+                    if (added && !PRIVATE_VIEWS[ui.view]) render();
+                    return added;
+                  },
                   /* merge the hidden lots saved by your other devices; returns the merged list to save back */
                   mergeHidden: function (remote) {
                     var changed = false;

@@ -20,6 +20,7 @@ from .http import Http
 from .bidding import fill_next_bids, parse_steps
 from .details import fill_descriptions, fill_start_prices
 from .identify import brand_in, mac_plan, model_code, phone_plan, plan_for, quantity, useful_tokens
+from . import private_repo
 from .mail_alerts import Mailbox, collect as collect_alert_lots
 from .marktplaats import PriceEstimate, search_url
 from .age import age_filter, age_skip, too_old
@@ -542,6 +543,17 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
     }
 
 
+PRIVATE_SITES = {"troostwijk"}
+
+
+def split_private(data: dict) -> tuple[dict, list | None]:
+    """(the public dashboard data, the lots of sites whose terms don't allow showing them publicly)."""
+    private = [lot for lot in data.get("lots") or [] if lot.get("site") in PRIVATE_SITES]
+    if not private and not any(s.get("id") in PRIVATE_SITES for s in data.get("sites") or []):
+        return data, None
+    return {**data, "lots": [lot for lot in data["lots"] if lot.get("site") not in PRIVATE_SITES]}, private
+
+
 def write_report(path: Path, rows: list[Row], report: dict, now: datetime, url: str | None,
                  kinds: str = "bankruptcy, closure, estate or Domeinen") -> str:
     local = now.astimezone(AMS).strftime("%A %d %B %Y, %H:%M")
@@ -604,6 +616,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     watchlist = load_yaml(root / "watchlist.yml")
     state_path = root / "data" / "state.json"
     state = load_json(state_path)
+    secret_path = root / "data" / "troostwijk.enc"
+    private_repo.load_secret_state(state, secret_path)
     delay = float((config.get("http") or {}).get("delay_seconds", 1.0))
     url = dashboard_url(config)
 
@@ -893,9 +907,23 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items,
                           trips=trips, driving=driving, favorites={"issue": store.issue, "items": favs},
                           max_units=max_units, combos=combos)
+    # Troostwijk's terms don't allow making their lots publicly accessible (deeplinks included), and this
+    # repository and its dashboard are public: their lots go to your private repository, where the page reads them
+    data, private_lots = split_private(data)
+    if private_lots is not None:
+        saved = False if dry_run else private_repo.put_json(
+            "data/troostwijk-lots.json", {"generated": now.isoformat(), "lots": private_lots},
+            "Troostwijk lots", config)
+        for site in data["sites"]:
+            if site["id"] == "troostwijk":
+                site["private"] = True
+                site["privateSaved"] = saved
+        log.info("%d Troostwijk lots %s", len(private_lots),
+                 "saved in the private repository" if saved else "kept out of the public dashboard (Telegram only)")
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
-    text = write_report(root / "data" / "latest.md", rows, report, now, url, auction_kinds(config, now))
+    public_rows = [r for r in rows if r[1].site not in PRIVATE_SITES]
+    text = write_report(root / "data" / "latest.md", public_rows, report, now, url, auction_kinds(config, now))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as fh:
@@ -933,6 +961,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                          "new": len(new_keys), "requests": requests,
                          "too_old": old_lots, "defects": defect_lots}
     if not dry_run:  # a dry run must not change what counts as "new"
+        private_repo.save_secret_state(state, secret_path)
         save_json(state_path, state)
     log.info("done: %d lots, %d matches, %d with room to bid, %d new, %d requests",
              len(lots), len(rows), deals, len(new_keys), requests)

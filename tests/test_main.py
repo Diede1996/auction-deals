@@ -91,10 +91,33 @@ def scan_once(root, now, monkeypatch, fail_pjb=True):
     return tg
 
 
-def page_data(root):
+PRIVATE: dict = {}  # files the scan saved in the private repository, by path
+
+
+@pytest.fixture(autouse=True)
+def private_repo_files(monkeypatch):
+    """The private repository (auction-private), in memory."""
+    PRIVATE.clear()
+    import scanner.private_repo as pr
+
+    def put_json(path, data, message, config=None, session=None):
+        PRIVATE[path] = data
+        return True
+    monkeypatch.setattr(pr, "put_json", put_json)
+    return PRIVATE
+
+
+def public_page_data(root):
     html = (root / "site" / "index.html").read_text()
     start = html.index('<script id="data" type="application/json">') + len('<script id="data" type="application/json">')
     return html, json.loads(html[start:html.index("</script>", start)])
+
+
+def page_data(root):
+    """What a device connected to the private repository sees: the public page plus the private lots."""
+    html, data = public_page_data(root)
+    data["lots"] = data["lots"] + ((PRIVATE.get("data/troostwijk-lots.json") or {}).get("lots") or [])
+    return html, data
 
 
 def test_daily_scan_builds_dashboard_and_digest(repo, monkeypatch):
@@ -324,7 +347,7 @@ def test_scan_includes_troostwijk_alert_lots(repo, monkeypatch):
     tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
     assert [l["title"] for l in tw] == ["Apple iPhone 13 128GB via Troostwijk"]  # only watchlist matches
     assert tw[0]["premium"] == 0.18 and tw[0]["mp"]["count"] == 6 and tw[0]["maxBid"] > 0
-    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 3, "error": ""} in data["sites"]
+    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 3, "error": "", "private": True, "privateSaved": True} in data["sites"]
     assert any(f["id"] == "troostwijk" for f in data["fees"])
 
 
@@ -357,7 +380,7 @@ def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
     assert "0 with room to bid" in digest and "New from Troostwijk emails" in digest
     assert "HP Elite E241i Monitor (2x)</a>\n   bid up to <b>€" in digest and "closes Wed 7 Oct" in digest
     assert tw[0]["units"] == 2 and tw[0]["auction"].startswith("Faillissement Byldis")
-    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": ""} in data["sites"]
+    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": "", "private": True, "privateSaved": True} in data["sites"]
 
 
 def test_digest_names_troostwijk_emails_without_lots(repo, monkeypatch):
@@ -570,3 +593,16 @@ def test_dashboard_mode_drops_lots_whose_keyword_was_removed(tmp_path):
     assert run(["dashboard", "--root", str(tmp_path)]) == 0
     kept = json.loads((tmp_path / "site" / "data.json").read_text(encoding="utf-8"))["lots"]
     assert [lot["key"] for lot in kept] == ["a", "c", "d"]
+
+
+def test_troostwijk_lots_stay_off_the_public_page(repo, monkeypatch):
+    """Troostwijk's terms don't allow making their lots publicly accessible: they go to the private repository."""
+    test_scan_includes_troostwijk_alert_lots(repo, monkeypatch)
+    html, public = public_page_data(repo)
+    assert not [l for l in public["lots"] if l["site"] == "troostwijk"]
+    assert "troostwijkauctions.com/nl/l/" not in html
+    assert "troostwijkauctions.com/nl/l/" not in (repo / "data" / "lots.json").read_text()
+    assert "troostwijkauctions.com/nl/l/" not in (repo / "data" / "latest.md").read_text()
+    assert [l["title"] for l in PRIVATE["data/troostwijk-lots.json"]["lots"]] == ["Apple iPhone 13 128GB via Troostwijk"]
+    site = next(s for s in public["sites"] if s["id"] == "troostwijk")
+    assert site["private"] is True and site["privateSaved"] is True
