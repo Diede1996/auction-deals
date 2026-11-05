@@ -13,3 +13,8 @@ def test_item_min_profit_overrides_global():
 def test_lot_floor_setting():
     s = Settings.from_dict({"min_profit": 25, "min_lot_profit": 50})
     assert s.min_lot_profit == 50 and "€50 per lot" in s.describe_margin()
+
+
+def test_monthly_goal_setting():
+    assert Settings.from_dict({"monthly_goal": 1000}).monthly_goal == 1000
+    assert Settings.from_dict({}).monthly_goal == 0

@@ -678,6 +678,8 @@
     var withNew = all.filter(function (it) { return savedOf(it) != null; });
     var saved = withNew.reduce(function (t, it) { return t + savedOf(it); }, 0);
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
+    var goal = goalPanel();
+    if (goal) box.append(goal);
     box.append(tiles([
       { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
         (waiting.length ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
@@ -733,6 +735,47 @@
     saleTable.append(sb);
     if (all0.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
       el("p", { "class": "small", text: "Margin = profit as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price." })));
+  }
+  /* the monthly profit goal (watchlist.yml settings.monthly_goal): paid sales this calendar month against the goal,
+     always over everything (not the search or category filter), the same sums as "Earned" */
+  function goalPanel() {
+    var goal = AD.settings ? +(AD.settings().monthly_goal || 0) : 0;
+    if (!(goal > 0)) return null;
+    var now = today(), month = now.slice(0, 7);
+    var done = 0, n = 0, waiting = 0, last90 = [], since = new Date(Date.parse(now) - 90 * 86400000).toISOString().slice(0, 10);
+    items().forEach(function (it) {
+      if (it.personal) return;
+      sales(it).forEach(function (s) {
+        if (!validDay(s.date)) return;
+        var p = (s.price || 0) - saleCost(it, s);
+        if (s.unpaid) { if (s.date.slice(0, 7) === month) waiting += p; return; }
+        if (s.date.slice(0, 7) === month) { done += p; n++; }
+        if (s.date >= since) last90.push(p);
+      });
+    });
+    var y = +month.slice(0, 4), m = +month.slice(5, 7), days = new Date(Date.UTC(y, m, 0)).getUTCDate(), day = +now.slice(8, 10);
+    var left = days - day, togo = Math.max(0, goal - done);
+    var avg = last90.length ? last90.reduce(function (t, p) { return t + p; }, 0) / last90.length : null;
+    var bar = el("div", { "class": "goalbar", role: "progressbar", "aria-valuemin": "0", "aria-valuemax": String(goal), "aria-valuenow": String(Math.round(Math.max(0, done))) },
+      el("div", { "class": "fill" + (done >= goal ? " done" : ""), style: "width:" + Math.max(0, Math.min(100, done / goal * 100)).toFixed(1) + "%" }),
+      el("div", { "class": "pace", title: "Where you'd be on a steady pace today", style: "left:" + Math.min(100, day / days * 100).toFixed(1) + "%" }));
+    var lines = [];
+    if (done >= goal) lines.push("Goal reached this month 🎉");
+    else {
+      var pace = goal * day / days;
+      lines.push(money(togo) + " to go in " + left + (left === 1 ? " day" : " days") + " · " +
+        (done >= pace ? "ahead of" : "behind") + " a steady pace (" + money(pace) + " by today)");
+      if (avg != null && avg > 0) {
+        var need = Math.ceil(togo / avg);
+        lines.push("Your sales of the last 90 days made " + money(avg) + " profit each (" + last90.length + (last90.length === 1 ? " sale" : " sales") +
+          "): about " + need + " more " + (need === 1 ? "sale" : "sales") + " this month" + (left > 6 ? ", " + Math.ceil(need / Math.max(1, left / 7)) + " a week" : "") + ".");
+      } else lines.push("No paid sales in the last 90 days yet, so no estimate of how many sales that takes.");
+    }
+    if (waiting) lines.push(money(waiting) + " more once buyers of this month pay.");
+    return el("section", { "class": "panel pgoal" }, el("h2", { text: "Goal this month" }),
+      el("div", { "class": "goalnum num" }, money(done), el("span", { "class": "of", text: " of " + money(goal) + " profit · " + n + (n === 1 ? " sale" : " sales") })),
+      bar, lines.map(function (t) { return el("p", { "class": "small", text: t }); }),
+      el("p", { "class": "small", text: "Change the goal in watchlist.yml (settings → monthly_goal)." }));
   }
   /* one year of purchases and sales as a spreadsheet (for your tax return): opens in Excel with Dutch number format */
   function exportPanel() {

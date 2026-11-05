@@ -45,6 +45,7 @@ class Settings:
     transport_min_value: float = 0.0
     min_profit: float = 0.0  # the max bid also leaves at least this much profit in euros per item in the lot
     min_lot_profit: float = 0.0  # and at least this much for the whole lot (no driving for one item at €25)
+    monthly_goal: float = 0.0  # profit you aim for per calendar month (shown on the dashboard's Finance tab)
 
     @classmethod
     def from_dict(cls, d: dict | None, include_trip: bool = True) -> "Settings":
@@ -57,7 +58,8 @@ class Settings:
                    transport_margin=float(d["transport_margin"]) if d.get("transport_margin") is not None else None,
                    transport_min_value=float(d.get("transport_min_value") or 0),
                    min_profit=float(d.get("min_profit") or 0),
-                   min_lot_profit=float(d.get("min_lot_profit") or 0))
+                   min_lot_profit=float(d.get("min_lot_profit") or 0),
+                   monthly_goal=float(d.get("monthly_goal") or 0))
 
     def margin_for(self, sale_each: float | None, transport: bool = False) -> float:
         """The minimum margin for an item that sells for sale_each euros: transport_margin when a transporter

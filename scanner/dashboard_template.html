@@ -346,6 +346,15 @@ a.pbtn { display: inline-flex; align-items: center; text-decoration: none; }
 .pph { position: relative; flex: none; }
 .pph-x { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; border-radius: 50%; border: 0; background: rgba(0, 0, 0, .6); color: #fff; cursor: pointer; font-size: 12px; }
 .pchart, .ptablebox { padding: 16px; margin-top: 16px; }
+.pgoal { padding: 16px; margin-top: 16px; }
+.pgoal h2 { margin: 0 0 6px; font-size: 15px; }
+.pgoal .goalnum { font-size: 26px; font-weight: 600; }
+.pgoal .goalnum .of { font-size: 15px; font-weight: 400; color: var(--text-2); }
+.goalbar { position: relative; height: 12px; border-radius: 6px; background: var(--accent-bg); overflow: hidden; margin: 10px 0 8px; }
+.goalbar .fill { height: 100%; border-radius: 6px; background: var(--accent); }
+.goalbar .fill.done { background: var(--good); }
+.goalbar .pace { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--text-2); }
+.pgoal p { margin: 4px 0 0; }
 .pchart h2, .ptablebox h2 { margin: 0 0 10px; font-size: 15px; }
 .pline { display: block; width: 100%; height: auto; max-height: 260px; overflow: visible; }
 .pline .grid { stroke: var(--grid); stroke-width: 1; }
@@ -1746,6 +1755,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   window.__AD = { el: el, money: money, toast: toast, store: store, safeUrl: safeUrl, OWNER: OWNER, REPO: REPO,
                   categories: (DATA.watchlist || []).length ? DATA.watchlist : items, view: function () { return ui.view; },
                   lots: function () { return DATA.lots || []; },
+                  settings: function () { return DATA.settings || {}; },
                   /* merge the hidden lots saved by your other devices; returns the merged list to save back */
                   mergeHidden: function (remote) {
                     var changed = false;
