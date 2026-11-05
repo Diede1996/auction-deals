@@ -561,6 +561,7 @@
       ad.title ? copyBtn("Copy title", ad.title) : null,
       ad.text ? copyBtn("Copy text", ad.text) : null,
       photos.length ? el("button", { type: "button", "class": "pbtn", text: (navigator.canShare ? "Share" : "Save") + " " + photos.length + " photo" + (photos.length > 1 ? "s" : ""), onclick: function () { sharePhotos(it); } }) : null,
+      photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function () { savePhotosToFolder(it); } }) : null,
       el("button", { type: "button", "class": "btn-link", text: text || photos.length ? "Edit ad" : "Write the ad", onclick: function () { editItem(it, "ad"); } })));
     if (ad.title) block.append(el("div", { "class": "pad-title", text: ad.title }));
     if (ad.text) block.append(el("div", { "class": "pad-text", text: ad.text }));
@@ -599,6 +600,52 @@
         document.body.append(a); a.click(); a.remove();
       });
     }, function () { toast("Couldn't load the photos."); });
+  }
+
+  /* laptop (Chrome/Edge): photos go straight into <your folder>\<ad name>\. The folder you pick is remembered in this browser. */
+  function dirStore(mode, fn) {
+    return new Promise(function (ok, no) {
+      var rq = indexedDB.open("auction-dashboard", 1);
+      rq.onupgradeneeded = function () { rq.result.createObjectStore("kv"); };
+      rq.onerror = function () { no(rq.error); };
+      rq.onsuccess = function () {
+        var tx = rq.result.transaction("kv", mode), r = fn(tx.objectStore("kv"));
+        tx.oncomplete = function () { ok(r && r.result); }; tx.onerror = function () { no(tx.error); };
+      };
+    });
+  }
+  function photoFolder(pickNew) {
+    var pick = function () {
+      return window.showDirectoryPicker({ id: "verkopen", mode: "readwrite", startIn: "pictures" }).then(function (h) {
+        return dirStore("readwrite", function (st) { return st.put(h, "photoDir"); }).catch(function () {}).then(function () { return h; });
+      });
+    };
+    if (pickNew) return pick();
+    return dirStore("readonly", function (st) { return st.get("photoDir"); }).catch(function () { return null; }).then(function (h) {
+      if (!h) return pick();
+      return h.requestPermission({ mode: "readwrite" }).then(function (p) { return p === "granted" ? h : pick(); }, pick);
+    });
+  }
+  function savePhotosToFolder(it, pickNew) {
+    var photos = it.photos || [], name = slug((it.ad && it.ad.title) || it.name) || it.id;
+    photoFolder(pickNew).then(function (root) {
+      return root.getDirectoryHandle(name, { create: true }).then(function (dir) {
+        return photos.reduce(function (chain, ph, i) {
+          return chain.then(function () {
+            return blobUrl(ph.path, "image/jpeg").then(function (u) { return fetch(u).then(function (r) { return r.blob(); }); }).then(function (b) {
+              return dir.getFileHandle(name + "-" + (i + 1) + ".jpg", { create: true }).then(function (fh) {
+                return fh.createWritable().then(function (w) { return w.write(b).then(function () { return w.close(); }); });
+              });
+            });
+          });
+        }, Promise.resolve());
+      }).then(function () {
+        toast(photos.length + " photos saved in " + root.name + "\\" + name + ".");
+      });
+    }).catch(function (e) {
+      if (e && e.name === "AbortError") return;  /* picker cancelled */
+      toast("Couldn't save the photos" + (e && e.message ? ": " + e.message : "") + ".");
+    });
   }
 
   /* ---------- Finance ---------- */
