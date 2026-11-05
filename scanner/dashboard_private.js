@@ -759,7 +759,7 @@
 
   /* ---------- Pickups ---------- */
   var MONTHS = { jan: 0, feb: 1, mar: 2, mrt: 2, apr: 3, may: 4, mei: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, okt: 9, nov: 10, dec: 11 };
-  var WON_DAYS = 21;  /* favorites that closed in the last three weeks: did you win them? */
+  var WON_DAYS = 2;  /* favorites that closed in the last two days: did you win them? After that they leave the list (Diede, 5 Nov) */
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   /* the pickup text of the scan, "Fri 6 Nov, 08:45–12:00" (or Dutch "vr 6 nov 08:45-12:00"), as { date, from, to }.
      The year is the first one that puts the day on or after the closing day. */
