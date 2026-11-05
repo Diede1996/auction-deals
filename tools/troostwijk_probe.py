@@ -1,47 +1,44 @@
-"""Print the structure of one Troostwijk lot page and its auction page (two requests, 10 s apart)."""
+"""Learn Troostwijk's page structure: sitemap index, an auctions sitemap, and one auction page's lots (a few
+requests, 10 s apart, honest user agent; robots.txt allows these pages, never /search)."""
 import json, re, sys, time
+from collections import Counter
 import requests
 
 UA = "auction-deals personal bot (+https://github.com/diede1996/auction-deals)"
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "nl-NL,nl;q=0.9"})
+B = "https://www.troostwijkauctions.com"
 
 
-def shape(o, depth=0, maxd=4):
-    if depth > maxd:
-        return "..."
-    if isinstance(o, dict):
-        return {k: shape(v, depth + 1, maxd) for k, v in list(o.items())[:40]}
-    if isinstance(o, list):
-        return [f"list[{len(o)}]", shape(o[0], depth + 1, maxd)] if o else "list[0]"
-    if isinstance(o, str):
-        return o[:80]
-    return o
+def next_data(text):
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', text, re.S)
+    return json.loads(m.group(1))["props"]["pageProps"] if m else {}
 
 
 def get(url):
+    time.sleep(8)
     r = S.get(url, timeout=30)
-    print(f"\n=== {url}\nHTTP {r.status_code}, {len(r.text)} chars, server={r.headers.get('server')}")
-    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
-    if not m:
-        print("no __NEXT_DATA__; head:", r.text[:1500])
-        return r.text, None
-    data = json.loads(m.group(1))
-    print(json.dumps(shape(data.get("props", {}).get("pageProps", {})), ensure_ascii=False, indent=1)[:12000])
-    return r.text, data
+    print(f"\n=== {url}  HTTP {r.status_code}, {len(r.text)} chars")
+    return r
 
 
-lot = sys.argv[1]
-text, data = get(f"https://www.troostwijkauctions.com/nl/l/{lot}")
-slug = (((data or {}).get("props") or {}).get("pageProps") or {}).get("auction", {}).get("urlSlug")
-print("\nauction urlSlug:", slug)
-if slug:
-    time.sleep(10)
-    t2, d2 = get(f"https://www.troostwijkauctions.com/nl/a/{slug}")
-    pp = ((d2 or {}).get("props") or {}).get("pageProps") or {}
-    for k, v in pp.items():
-        if isinstance(v, dict) and any(isinstance(x, list) and len(x) > 5 for x in v.values()):
-            print("candidate", k, {kk: (len(vv) if isinstance(vv, list) else vv) for kk, vv in v.items() if not isinstance(vv, dict)})
-time.sleep(10)
-r = S.get("https://www.troostwijkauctions.com/sitemap.xml", timeout=30)
-print("\n=== sitemap HTTP", r.status_code, len(r.text)); print(r.text[:3000])
+r = get(B + "/sitemap.xml")
+locs = re.findall(r"<loc>(.*?)</loc>", r.text)
+print(len(locs), "sitemaps;", Counter(re.sub(r"[0-9a-f-]{36}", "<id>", l) for l in locs).most_common(30))
+auc = [l for l in locs if "auction" in l.lower()]
+print("auction sitemaps:", auc[:10])
+if auc:
+    r = get(auc[0])
+    urls = re.findall(r"<loc>(.*?)</loc>", r.text)
+    print(len(urls), "urls; first:", urls[:8])
+    print(r.text[:1500])
+slug = sys.argv[1]
+r = get(f"{B}/nl/a/{slug}")
+lots = next_data(r.text).get("lots") or {}
+res = lots.get("results") or []
+print("lots keys:", list(lots.keys()), "n", len(res))
+if res:
+    print(json.dumps(res[0], ensure_ascii=False, indent=1)[:5000])
+r = get(f"{B}/nl/a/{slug}?page=2")
+l2 = next_data(r.text).get("lots") or {}
+print("page 2:", l2.get("pageNumber"), len(l2.get("results") or []), [x.get("displayId") for x in (l2.get("results") or [])[:3]])

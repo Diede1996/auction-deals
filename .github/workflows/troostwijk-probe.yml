@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       lot:
-        description: "Lot code, e.g. A1-41124-11"
+        description: "Auction urlSlug"
         required: true
 
 permissions:
