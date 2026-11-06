@@ -55,7 +55,8 @@ def http_factory(blocked=False):
         if blocked:
             raise BlockedError("403")
         return {"listings": NEW if "sortBy=SORT_INDEX" in url else COMPARABLES}
-    return lambda **kw: FakeHttp([(lambda m, u, kw: "lrp/api/search" in u, route)])
+    return lambda **kw: FakeHttp([(lambda m, u, kw: "lrp/api/search" in u, route),
+                                  (lambda m, u, kw: "pdok" in u, {"response": {"docs": [{"postcode": "3511 AB"}]}})])
 
 
 def test_finds_only_new_cheap_listings_of_private_sellers(root):
@@ -91,6 +92,20 @@ def test_sleeps_at_night(root):
     tg = FakeTelegram()
     night = datetime(2026, 11, 6, 2, 0, tzinfo=timezone.utc)
     assert deals.run_deals(root, night, http_cls=lambda **kw: pytest.fail("no requests at night"), telegram_cls=tg) == 0
+
+
+def test_searches_near_home(root, monkeypatch):
+    root, _ = root
+    monkeypatch.setenv("HOME_ADDRESS", "Domplein 1, Utrecht")
+    made = []
+    base = http_factory()
+
+    def factory(**kw):
+        made.append(base(**kw))
+        return made[-1]
+    deals.run_deals(root, NOW, http_cls=factory, telegram_cls=FakeTelegram())
+    urls = [u for h in made for _, u, _ in h.calls if "SORT_INDEX" in u]
+    assert urls and all("postcode=3511AB" in u and "distanceMeters=50000" in u for u in urls)
 
 
 def test_rotation_takes_the_oldest_searches():

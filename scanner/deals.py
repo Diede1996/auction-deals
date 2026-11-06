@@ -105,9 +105,27 @@ def next_searches(all_searches: list[str], last: dict, n: int) -> list[str]:
     return [all_searches[i] for i in order[:n]]
 
 
-def newest(http, query: str, limit: int = 50) -> list[dict]:
+def home_postcode(http, address: str) -> str | None:
+    """The Dutch postcode of your HOME_ADDRESS (PDOK, the same lookup as the driving costs), so Marktplaats can
+    search near you. Kept only in the encrypted memory."""
+    from .geo import PDOK
+    if not address:
+        return None
+    try:
+        data = http.json(f"{PDOK}?{urlencode({'q': address, 'rows': 1, 'fl': 'postcode'})}")
+        docs = (data.get("response") or {}).get("docs") or []
+        code = (docs[0].get("postcode") if docs else "") or ""
+        return code.replace(" ", "").upper() or None
+    except Exception as e:
+        log.warning("postcode lookup failed: %s", type(e).__name__)
+        return None
+
+
+def newest(http, query: str, limit: int = 50, postcode: str | None = None, radius_km: float = 0) -> list[dict]:
     params = {"query": query, "limit": limit, "offset": 0, "searchInTitleAndDescription": "false",
               "viewOptions": "list-view", "sortBy": "SORT_INDEX", "sortOrder": "DECREASING"}
+    if postcode and radius_km:  # only listings near you
+        params.update(postcode=postcode, distanceMeters=int(radius_km * 1000))
     return http.json(f"{API}?{urlencode(params)}").get("listings") or []
 
 
@@ -191,13 +209,17 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     mp_cfg = config.get("marktplaats") or {}
     http = http_cls(delay=float(cfg.get("delay_seconds", mp_cfg.get("delay_seconds", 4))),
                     jitter=float(mp_cfg.get("extra_random_delay", 3)))
+    home = os.environ.get("HOME_ADDRESS", "").strip()
+    if home and not memory.get("postcode"):
+        memory["postcode"] = home_postcode(http_cls(delay=1.0), home)
+    radius = float(cfg.get("radius_km", 50))
     todo = next_searches(searches(items, cfg), last, int(cfg.get("searches_per_run", 12)))
     candidates: list[Lot] = []
     blocked = False
     for query in todo:
         first_time = normalize(query) not in last
         try:
-            listings = newest(http, query, int(cfg.get("listings_per_search", 50)))
+            listings = newest(http, query, int(cfg.get("listings_per_search", 50)), memory.get("postcode"), radius)
         except BlockedError as e:
             log.warning("marktplaats refused the bot (%s): stopping for this run", e)
             blocked = True
@@ -224,11 +246,12 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     min_year = age_filter(config)
     if min_year:
         matched = [(i, lot) for i, lot in matched if not too_old(i, lot, min_year, age_skip(config))]
-    log.info("marktplaats deals: %d searches, %d new private listings, %d match the watchlist",
-             len(todo), len(candidates), len(matched))
+    log.info("marktplaats deals: %d searches (%s), %d new private listings, %d match the watchlist",
+             len(todo), f"within {radius:g} km" if memory.get("postcode") else "all of NL: no postcode",
+             len(candidates), len(matched))
 
     # the drive to each seller's town
-    home, home2 = os.environ.get("HOME_ADDRESS", "").strip(), os.environ.get("HOME_ADDRESS_2", "").strip()
+    home2 = os.environ.get("HOME_ADDRESS_2", "").strip()
     trips: dict = {}
     places = {lot.pickup: None for _, lot in matched if lot.pickup}
     if places and (home or home2) and drv_cfg.get("enabled", True) is not False:
