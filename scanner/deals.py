@@ -291,6 +291,8 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
         units = quantity(lot.title) if quantity(lot.title) >= 2 else 1
         v = evaluate(item, lot, NO_FEES, settings, est, units)
         unpriced += est is None
+        if est is None and (finder.lookups_left <= 0 or finder.blocked):
+            seen.pop(lot.lot_id, None)  # no price searches left this run: look at it again next time
         if v.is_deal and (est is not None or item.market_price is not None):
             found.append((item, lot, v, est))
     memory["prices"] = {k: v for k, v in price_cache.items() if k not in shared_prices or shared_prices[k] != v}
