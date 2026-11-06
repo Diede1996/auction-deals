@@ -255,15 +255,19 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     finder = PriceFinder(http, price_cache, now, cache_days=float(mp_cfg.get("cache_days", 3)),
                          max_lookups=0 if blocked else int(cfg.get("max_price_lookups", 15)),
                          min_listings=int(mp_cfg.get("min_listings", 4)))
+    log.info("marktplaats deals: %d within %g min drive (%d towns located)", len(matched), max_minutes, len(trips))
     found = []
+    unpriced = 0
     for item, lot in matched:
         est = finder.for_lot(item, lot)
         units = quantity(lot.title) if quantity(lot.title) >= 2 else 1
         v = evaluate(item, lot, NO_FEES, settings, est, units)
+        unpriced += est is None
         if v.is_deal and (est is not None or item.market_price is not None):
             found.append((item, lot, v, est))
     memory["prices"] = {k: v for k, v in price_cache.items() if k not in shared_prices or shared_prices[k] != v}
-    log.info("marktplaats deals: %d price searches, %d bargains", finder.lookups, len(found))
+    log.info("marktplaats deals: %d price searches (%d left, blocked %s), %d without a price, %d bargains",
+             finder.lookups, finder.lookups_left, finder.blocked, unpriced, len(found))
 
     # remember, tell and save
     keep_days = float(cfg.get("keep_days", 7))
