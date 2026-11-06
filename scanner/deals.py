@@ -28,7 +28,7 @@ from . import private_repo
 from .age import age_filter, age_skip, too_old
 from .condition import defect, defect_filter
 from .evaluate import Fees, Settings, Verdict, evaluate
-from .geo import DrivingCosts, TripPlanner, fuel_price
+from .geo import FALLBACK_KMH, ROAD_FACTOR, DrivingCosts, Trip, fuel_price
 from .http import BlockedError, Http
 from .identify import quantity
 from .marktplaats import API, PriceEstimate
@@ -171,7 +171,7 @@ def message(found: list[tuple[WatchItem, Lot, Verdict, PriceEstimate | None]], t
     lines = [f"🛒 <b>Marktplaats: {len(found)} possible bargain{'s' if len(found) != 1 else ''}</b>"]
     for item, lot, v, est in found:
         trip = trips.get(lot.pickup or "")
-        drive = f" · 🚗 {trip.minutes:.0f} min" if trip else ""
+        drive = f" · 🚗 ≈{trip.km:.0f} km" if trip else ""
         rough = "≈" if est is not None and est.kind == "general" else ""
         profit = f" · profit ≈ {fmt_eur(v.profit)}" if v.profit is not None else ""
         median = f" (median {fmt_eur(est.median)}, {est.count} listings)" if est else ""
@@ -253,21 +253,23 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
              len(todo), f"within {radius:g} km" if memory.get("postcode") else "all of NL: no postcode",
              len(candidates), len(matched))
 
-    # the drive to each seller's town
-    home2 = os.environ.get("HOME_ADDRESS_2", "").strip()
+    # the drive to each seller: Marktplaats gives the straight-line distance from your postcode; roads are ~1.3x
+    # longer (looking the towns up on a map put several in the wrong place, so this is more reliable)
     trips: dict = {}
-    places = {lot.pickup: None for _, lot in matched if lot.pickup}
-    if places and (home or home2) and drv_cfg.get("enabled", True) is not False:
-        geo_http = http_cls(delay=1.0)
+    if drv_cfg.get("enabled", True) is not False and any(getattr(l, "distance_km", None) is not None for _, l in matched):
         shared = load_json(root / "data" / "state.json")  # read only: the daily scan owns state.json
-        price, _ = fuel_price(geo_http, {"fuel": dict(shared.get("fuel") or {})}, now,
+        price, _ = fuel_price(http_cls(delay=1.0), {"fuel": dict(shared.get("fuel") or {})}, now,
                               drv_cfg.get("fuel_price", "auto"), float(drv_cfg.get("fuel_price_fallback", 2.108)))
         costs = DrivingCosts(km_per_liter=float(drv_cfg.get("km_per_liter", 16)), fuel_price=price,
                              round_trip=drv_cfg.get("round_trip", True) is not False,
                              extra_per_km=float(drv_cfg.get("extra_cost_per_km", 0) or 0))
-        geo_cache = {**(shared.get("geo") or {}), **memory.get("geo", {})}
-        trips = TripPlanner(geo_http, geo_cache, now, costs, home, second_address=home2).plan(places)
-        memory["geo"] = {k: v for k, v in geo_cache.items() if k in places}
+        for _, lot in matched:
+            km = getattr(lot, "distance_km", None)
+            if km is None:
+                continue
+            road = km * ROAD_FACTOR
+            lot.pickup = lot.pickup or lot.location or lot.lot_id
+            trips.setdefault(lot.pickup, Trip(road, road / FALLBACK_KMH * 60, costs.cost(road), approx=True))  # same town: same drive
     max_minutes = float(cfg.get("max_minutes", 45))
     for _, lot in matched:
         trip = trips.get(lot.pickup or "")
@@ -281,12 +283,7 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     finder = PriceFinder(http, price_cache, now, cache_days=float(mp_cfg.get("cache_days", 3)),
                          max_lookups=0 if blocked else int(cfg.get("max_price_lookups", 15)),
                          min_listings=int(mp_cfg.get("min_listings", 4)))
-    mins = sorted(t.minutes for t in trips.values())
-    log.info("marktplaats deals: %d within %g min drive (%d towns located; drive %s min; Marktplaats distance %s km)",
-             len(matched), max_minutes, len(trips),
-             f"{mins[0]:.0f}-{mins[len(mins) // 2]:.0f}-{mins[-1]:.0f}" if mins else "-",
-             f"{min(dist):.0f}-{max(dist):.0f}" if (dist := [lot.distance_km for lot in candidates
-                                                            if getattr(lot, "distance_km", None) is not None]) else "-")
+    log.info("marktplaats deals: %d within %g min drive", len(matched), max_minutes)
     found = []
     unpriced = 0
     for item, lot in matched:

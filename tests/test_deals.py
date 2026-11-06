@@ -14,16 +14,16 @@ NOW = datetime(2026, 11, 6, 9, 0, tzinfo=timezone.utc)  # 10:00 in Amsterdam
 
 
 def listing(item_id, title, cents, date="Vandaag", ptype="FIXED", priority="NONE", traits=None, website=False,
-            city="Utrecht"):
+            city="Utrecht", meters=-1000):
     return {"itemId": item_id, "title": title, "priceInfo": {"priceCents": cents, "priceType": ptype},
             "vipUrl": f"/v/x/{item_id}-x", "date": date, "priorityProduct": priority,
             "traits": traits or ["PACKAGE_FREE"], "imageUrls": ["//images.marktplaats.com/1.jpg"],
             "sellerInformation": {"showWebsiteUrl": website, "sellerName": "someone"},
-            "location": {"cityName": city, "distanceMeters": -1000, "abroad": False}}
+            "location": {"cityName": city, "distanceMeters": meters, "abroad": False}}
 
 
 NEW = [
-    listing("m1", "Makita DHR243 combihamer", 9000),                     # bargain: others ask ~€250
+    listing("m1", "Makita DHR243 combihamer", 9000, meters=20000),                     # bargain: others ask ~€250
     listing("m2", "Makita DHR243 boorhamer zo goed als nieuw", 24000),   # normal price
     listing("m3", "Makita DHR243 topdeal", 8000, priority="DAGTOPPER"),  # paid placement: a shop
     listing("m4", "Makita DHR243 nieuw", 8000, website=True),            # shop with a website
@@ -65,7 +65,7 @@ def test_finds_only_new_cheap_listings_of_private_sellers(root):
     assert deals.run_deals(root, NOW, http_cls=http_factory(), telegram_cls=tg) == 0
     assert len(tg.sent) == 1
     msg = tg.sent[0]
-    assert "m1-x" in msg and "asks €90" in msg
+    assert "m1-x" in msg and "asks €90" in msg and "≈26 km" in msg
     for other in ("m2-x", "m3-x", "m4-x", "m5-x", "m6-x", "m7-x"):
         assert other not in msg
     lots = saved["data/marktplaats-deals.json"]["lots"]
