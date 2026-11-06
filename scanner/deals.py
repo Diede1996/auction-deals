@@ -238,6 +238,9 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
             if first_time and normalize(str(li.get("date") or "")) not in RECENT:
                 continue  # the first time a search runs, only today's and yesterday's listings count as new
             lot = to_lot(li, query)
+            meters = (li.get("location") or {}).get("distanceMeters")
+            if lot and isinstance(meters, (int, float)) and meters >= 0:
+                lot.distance_km = meters / 1000  # straight line from your postcode, says Marktplaats
             if lot:
                 candidates.append(lot)
     matched = match_lots(items, candidates)
@@ -278,7 +281,12 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     finder = PriceFinder(http, price_cache, now, cache_days=float(mp_cfg.get("cache_days", 3)),
                          max_lookups=0 if blocked else int(cfg.get("max_price_lookups", 15)),
                          min_listings=int(mp_cfg.get("min_listings", 4)))
-    log.info("marktplaats deals: %d within %g min drive (%d towns located)", len(matched), max_minutes, len(trips))
+    mins = sorted(t.minutes for t in trips.values())
+    log.info("marktplaats deals: %d within %g min drive (%d towns located; drive %s min; Marktplaats distance %s km)",
+             len(matched), max_minutes, len(trips),
+             f"{mins[0]:.0f}-{mins[len(mins) // 2]:.0f}-{mins[-1]:.0f}" if mins else "-",
+             f"{min(dist):.0f}-{max(dist):.0f}" if (dist := [lot.distance_km for lot in candidates
+                                                            if getattr(lot, "distance_km", None) is not None]) else "-")
     found = []
     unpriced = 0
     for item, lot in matched:
