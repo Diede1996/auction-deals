@@ -28,4 +28,5 @@ SITE_NAMES = {
     "vlavem": "Vlavem (BE)",
     "bellauction": "BellAuction (BE)",
     "marktplaats": "Marktplaats prices",
+    "mpdeal": "Marktplaats (private seller)",
 }

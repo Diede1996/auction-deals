@@ -2,6 +2,7 @@
 
 python -m scanner scan       the daily scan: auction sites -> Marktplaats prices -> dashboard + Telegram digest
 python -m scanner commands   read Telegram commands and reply (never contacts the auction sites)
+python -m scanner deals      Marktplaats bargains: new listings by private sellers below their usual price -> Telegram
 python -m scanner dashboard  rebuild the dashboard page from the last scan's results (data/lots.json), so new page code
                              goes live without a scan; no auction sites, no Telegram
 """
@@ -26,7 +27,7 @@ from .util import utc_now
 
 def run(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Dutch bankruptcy auction deal finder")
-    ap.add_argument("mode", nargs="?", default="scan", choices=["scan", "commands", "dashboard"])
+    ap.add_argument("mode", nargs="?", default="scan", choices=["scan", "commands", "dashboard", "deals"])
     ap.add_argument("--root", default=".", help="folder with config.yml and watchlist.yml")
     ap.add_argument("--dry-run", action="store_true", help="print Telegram messages instead of sending them")
     ap.add_argument("--sites", help="comma-separated subset of sites to scan")
@@ -35,6 +36,9 @@ def run(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     root = Path(args.root)
     now = utc_now()
+    if args.mode == "deals":
+        from .deals import run_deals
+        return run_deals(root, now, dry_run=args.dry_run)
     if args.mode == "commands":
         return run_commands(root, now, dry_run=args.dry_run)
     if args.mode == "dashboard":

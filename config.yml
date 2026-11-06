@@ -163,6 +163,20 @@ inventory:                      # your stock in Telegram: /koop, /verkocht, /voo
 dashboard:
   url: ""                       # leave empty to use the GitHub Pages address of this repository
 
+# Marktplaats bargains (python -m scanner deals, workflow "Marktplaats deals", Diede 2026-11-06): new listings
+# by private sellers that ask less than the max price worked out with the watchlist's margin rules (no premium,
+# no VAT, the drive counted). Bargains go to Telegram and to the private repository (dashboard), never public.
+marktplaats_deals:
+  enabled: true
+  hours: [7, 23]            # only between these hours (Dutch time)
+  searches_per_run: 12      # watchlist keywords per run, the ones searched longest ago first
+  listings_per_search: 50   # newest listings read per keyword
+  max_price_lookups: 15     # extra Marktplaats searches per run to price what's found (prices are reused 3 days)
+  max_minutes: 45           # skip sellers further than this drive (one way)
+  keep_days: 7              # bargains stay on the dashboard this long
+  skip_items: [Wine, Mixed lot]
+  delay_seconds: 4
+
 marktplaats:
   enabled: true
   cache_days: 3                 # reuse a lot's Marktplaats price for this many days (1 = check daily)

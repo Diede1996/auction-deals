@@ -1470,7 +1470,11 @@
      showing them on a public page. Only devices connected to that repository see them. */
   function loadPrivateLots() {
     if (!P.token || !AD.addLots) return;
-    gh(filePath("data/troostwijk-lots.json")).then(function (f) {
+    // Troostwijk lots, and Marktplaats bargains from private sellers (python -m scanner deals)
+    ["data/troostwijk-lots.json", "data/marktplaats-deals.json"].forEach(loadLotsFile);
+  }
+  function loadLotsFile(path) {
+    gh(filePath(path)).then(function (f) {
       if (f.content) return fromB64(f.content);
       return gh("/repos/" + P.repo + "/git/blobs/" + f.sha).then(function (b) { return fromB64(b.content); });
     }).then(function (text) {

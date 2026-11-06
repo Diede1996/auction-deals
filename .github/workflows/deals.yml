@@ -1,0 +1,50 @@
+name: Marktplaats deals
+
+# New listings by private sellers on Marktplaats that ask less than your max price (see config.yml
+# marktplaats_deals). Bargains go to Telegram and to the private repository for the dashboard.
+on:
+  schedule:
+    - cron: "7,37 6-21 * * *"   # twice an hour, 07:07-22:37 Dutch winter time (cron is UTC); the bot skips outside config hours
+  workflow_dispatch: {}
+
+permissions:
+  contents: write         # save the encrypted memory (data/deals.enc)
+
+concurrency:
+  group: deals
+  cancel-in-progress: false
+
+jobs:
+  deals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Look for bargains
+        run: python -m scanner deals
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INVENTORY_KEY: ${{ secrets.INVENTORY_KEY }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}
+          HOME_ADDRESS_2: ${{ secrets.HOME_ADDRESS_2 }}
+
+      - name: Save memory
+        run: |
+          git config user.name "auction-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ ! -f data/deals.enc ]; then exit 0; fi
+          git add data/deals.enc
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Marktplaats deals memory [skip ci]"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
