@@ -105,7 +105,7 @@ def test_searches_near_home(root, monkeypatch):
         return made[-1]
     deals.run_deals(root, NOW, http_cls=factory, telegram_cls=FakeTelegram())
     urls = [u for h in made for _, u, _ in h.calls if "SORT_INDEX" in u]
-    assert urls and all("postcode=3511AB" in u and "distanceMeters=50000" in u for u in urls)
+    assert urls and all("postcode=3511AB" in u and "distanceMeters=100000" in u for u in urls)
 
 
 def test_rotation_takes_the_oldest_searches():
