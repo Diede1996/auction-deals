@@ -273,3 +273,13 @@ def test_price_per_piece_written_with_slash():
     from scanner.identify import normalize
     assert _EACH.search(normalize("Sonos One Gen2 // 2 stuks // € 150/stuk"))
     assert not _EACH.search(normalize("Sonos One Gen2 2 stuks"))
+
+
+def test_only_private_sellers_count():
+    from scanner.identify import Rule
+    shop = {"title": "HP ProBook 460 G11 16GB", "priceInfo": {"priceType": "FIXED", "priceCents": 92500},
+            "sellerInformation": {"showWebsiteUrl": True}, "itemId": "a"}
+    private = {"title": "HP ProBook 460 G11 16GB", "priceInfo": {"priceType": "FIXED", "priceCents": 39900},
+               "sellerInformation": {"showWebsiteUrl": False}, "itemId": "b"}
+    found = marktplaats.comparable_listings([shop, private], Rule([("probook",)], label="probook"), [])
+    assert [x["price"] for x in found] == [399.0]

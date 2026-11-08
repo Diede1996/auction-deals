@@ -31,7 +31,7 @@ from .evaluate import Fees, Settings, Verdict, evaluate
 from .geo import FALLBACK_KMH, ROAD_FACTOR, DrivingCosts, Trip, fuel_price
 from .http import BlockedError, Http
 from .identify import quantity
-from .marktplaats import API, PriceEstimate
+from .marktplaats import API, PriceEstimate, is_business
 from .matching import match_lots
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
@@ -46,7 +46,6 @@ BASE = "https://www.marktplaats.nl"
 NO_FEES = Fees(premium=0.0, vat=0.0, fixed=0.0)
 PRICED = {"FIXED", "MIN_BID"}
 # shops and paid placements: "Dagtopper" and "Topadvertentie" ads are almost always shops
-BUSINESS_TRAITS = {"ADMARKT_CONSOLE", "PROFILE", "CONTACT_SALES_REPRESENTATIVES", "ETALAGE"}
 RECENT = {"vandaag", "gisteren"}  # Marktplaats' own "date" for listings from today and yesterday
 
 
@@ -127,15 +126,6 @@ def newest(http, query: str, limit: int = 50, postcode: str | None = None, radiu
     if postcode and radius_km:  # only listings near you
         params.update(postcode=postcode, distanceMeters=int(radius_km * 1000))
     return http.json(f"{API}?{urlencode(params)}").get("listings") or []
-
-
-def is_business(li: dict) -> bool:
-    seller = li.get("sellerInformation") or {}
-    if seller.get("showWebsiteUrl"):
-        return True
-    if (li.get("priorityProduct") or "NONE") != "NONE":
-        return True
-    return bool(BUSINESS_TRAITS & set(li.get("traits") or []))
 
 
 def price_of(li: dict) -> float | None:

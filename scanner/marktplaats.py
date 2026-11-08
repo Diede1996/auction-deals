@@ -71,6 +71,19 @@ def search_url(text: str) -> str:
     return f"https://www.marktplaats.nl/q/{quote(normalize(text).replace(' ', '+'), safe='+')}/"
 
 
+# a shop or company (Refurb Store B.V. and the like): a website link, paid placement or shop profile
+BUSINESS_TRAITS = {"ADMARKT_CONSOLE", "PROFILE", "CONTACT_SALES_REPRESENTATIVES", "ETALAGE"}
+
+
+def is_business(li: dict) -> bool:
+    seller = li.get("sellerInformation") or {}
+    if seller.get("showWebsiteUrl"):
+        return True
+    if (li.get("priorityProduct") or "NONE") != "NONE":
+        return True
+    return bool(BUSINESS_TRAITS & set(li.get("traits") or []))
+
+
 def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) -> list[dict]:
     """Listings that meet the rule and contain none of the excluded words."""
     label = normalize(rule.label)
@@ -88,6 +101,8 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
         norm = _WITHOUT.sub(" ", normalize(title))
         if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
+        if is_business(li):
+            continue  # only private sellers count (Diede, 8 Nov 2026): a refurbisher's price is not what she gets
         if (not rule.parts_ok and is_part_listing(title, battery_ok=bool(rule.model))) or (not rule.new_ok and says_new(norm)):
             continue  # only a battery or keyboard for it, or new in a shop
         vip = li.get("vipUrl") or ""
