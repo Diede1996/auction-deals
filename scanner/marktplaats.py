@@ -81,7 +81,17 @@ def is_business(li: dict) -> bool:
         return True
     if (li.get("priorityProduct") or "NONE") != "NONE":
         return True
+    if str(li.get("itemId") or "").startswith("a"):
+        return True  # "a1531206412": an Admarkt (business) ad; private ones are "m2455..."
     return bool(BUSINESS_TRAITS & set(li.get("traits") or []))
+
+
+def condition_of(li: dict) -> str:
+    """The condition the seller picked on Marktplaats: "gebruikt", "zo goed als nieuw", "refurbished", "nieuw"..."""
+    for a in (li.get("attributes") or []) + (li.get("extendedAttributes") or []):
+        if isinstance(a, dict) and a.get("key") == "condition":
+            return normalize(str(a.get("value") or ""))
+    return ""
 
 
 def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) -> list[dict]:
@@ -101,7 +111,9 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
         norm = _WITHOUT.sub(" ", normalize(title))
         if not rule.matches(norm) or any(token_in(x, norm) for x in excl) or (made_for and made_for.search(norm)):
             continue
-        if is_business(li):
+        cond = condition_of(li)  # Diede compares with "Gebruikt" and "Zo goed als nieuw"
+        if is_business(li) or cond == "refurbished" or (cond == "nieuw" and not rule.new_ok) \
+                or (cond in ("niet werkend", "defect") and not rule.parts_ok):
             continue  # only private sellers count (Diede, 8 Nov 2026): a refurbisher's price is not what she gets
         if (not rule.parts_ok and is_part_listing(title, battery_ok=bool(rule.model))) or (not rule.new_ok and says_new(norm)):
             continue  # only a battery or keyboard for it, or new in a shop

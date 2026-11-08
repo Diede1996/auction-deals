@@ -283,3 +283,15 @@ def test_only_private_sellers_count():
                "sellerInformation": {"showWebsiteUrl": False}, "itemId": "b"}
     found = marktplaats.comparable_listings([shop, private], Rule([("probook",)], label="probook"), [])
     assert [x["price"] for x in found] == [399.0]
+
+
+def test_only_used_condition_counts():
+    from scanner.identify import Rule
+    def li(i, cond, cents=50000):
+        return {"title": "HP ProBook 460 G11", "priceInfo": {"priceType": "FIXED", "priceCents": cents}, "itemId": f"m{i}",
+                "attributes": [{"key": "condition", "value": cond}]}
+    found = marktplaats.comparable_listings(
+        [li(1, "Gebruikt", 40000), li(2, "Zo goed als nieuw", 45000), li(3, "Refurbished"), li(4, "Nieuw"), li(5, "Niet werkend")],
+        Rule([("probook",)], label="probook"), [])
+    assert [x["price"] for x in found] == [400.0, 450.0]
+    assert marktplaats.is_business({"itemId": "a1531206412"}) and not marktplaats.is_business({"itemId": "m2455407838"})
