@@ -314,8 +314,9 @@
     cp.textContent = String(stops(false).length || "");
     cs.textContent = String(items().filter(function (it) { return statusOf(it) === "stock"; }).length);
     var stale = items().filter(function (it) { return listings(it).some(isStale); }).length;
-    cl.textContent = stale ? String(stale) + " ⚠" : String(items().filter(function (it) { return listings(it).length; }).length);
-    cl.title = stale ? stale + " online for more than a week" : "";
+    var todo = offlineTodo().length;
+    cl.textContent = todo ? todo + " to take offline ⚠" : stale ? String(stale) + " ⚠" : String(items().filter(function (it) { return listings(it).length; }).length);
+    cl.title = todo ? "Sold, but the ad is still online elsewhere" : stale ? stale + " online for more than a week" : "";
   }
   function draw() {
     counts();
@@ -341,6 +342,7 @@
   function drawContent() {
     if (!content) return;
     content.textContent = "";
+    offlineBanner(content);
     if (view === "pickup") pickupView(content);
     else if (view === "stock") stockView(content);
     else if (view === "listings") listingsView(content);
@@ -1287,6 +1289,58 @@
     setTimeout(function () { (sell ? inp.adPrice : focus === "ad" ? inp.adTitle : inp.name).focus(); }, 0);
   }
 
+  /* Sold on one site, still online on the others: a to-do per ad until it's taken offline,
+     so the same thing can't be sold twice (happened with the Ralph Lauren polo on eBay.de + 2dehands). */
+  function offlineTodo() {
+    var out = [];
+    items().forEach(function (it) { (Array.isArray(it.takeOffline) ? it.takeOffline : []).forEach(function (t) { out.push({ it: it, t: t }); }); });
+    return out;
+  }
+  function markOffline(it, t) {
+    return change("Ad offline: " + (it.name || it.id) + " on " + platformLabel(t.platform), function (data) {
+      var x = find(data, it.id); if (!x || !Array.isArray(x.takeOffline)) return false;
+      x.takeOffline = x.takeOffline.filter(function (y) { return y.id !== t.id; });
+      if (!x.takeOffline.length) delete x.takeOffline;
+    });
+  }
+  function offlineRow(it, t, after) {
+    var url = safeUrl(t.url);
+    return el("div", { "class": "plisting" },
+      el("span", { "class": "pbadge p-" + slug(t.platform), text: platformLabel(t.platform) }),
+      el("span", { "class": "strong", text: it.name || it.id }),
+      el("span", { "class": "small", text: "sold" + (t.soldVia ? " on " + platformLabel(t.soldVia) : "") + (t.soldOn ? " " + showDay(t.soldOn) : "") }),
+      url ? el("a", { href: url, target: "_blank", rel: "noopener", text: "Open ad ↗" }) : null,
+      el("span", { "class": "spacer" }),
+      el("button", { type: "button", "class": "pbtn", text: "Taken offline ✓", onclick: function () {
+        markOffline(it, t).then(function () { toast("Done: off " + platformLabel(t.platform) + "."); if (after) after(); }, function () {});
+      } }));
+  }
+  function offlineBanner(box) {
+    var todo = offlineTodo();
+    if (!todo.length) return;
+    var panel = el("section", { "class": "panel list offline-todo" },
+      el("p", { "class": "fav-note", text: "⚠ Sold, but still online here. Take these ads offline now, or someone else can buy it too." }));
+    todo.forEach(function (r) { panel.append(offlineRow(r.it, r.t)); });
+    box.append(panel);
+  }
+  function takeOfflineDialog(it) {
+    var rows = el("div");
+    function fill() {
+      var x = find(P.data, it.id), todo = x && Array.isArray(x.takeOffline) ? x.takeOffline : [];
+      if (!todo.length) { closeDlg(); return; }
+      rows.textContent = "";
+      todo.forEach(function (t) { rows.append(offlineRow(x, t, fill)); });
+    }
+    var form = el("form", { method: "dialog" },
+      el("h2", { text: "Take the other ads offline" }),
+      el("p", { text: (it.name || "This item") + " is sold. It's still online on the sites below: delete or pause those ads now, then tick them off." }),
+      rows,
+      el("div", { "class": "buttons" }, el("span", { "class": "spacer" }),
+        el("button", { type: "button", text: "Later (stays on top of the dashboard)", onclick: closeDlg })));
+    fill();
+    openDlg(form);
+  }
+
   function sellItem(it) {
     var left = piecesLeft(it), lots = qtyOf(it) > 1;
     var date = el("input", { type: "date", value: today() });
@@ -1304,7 +1358,7 @@
       el("div", { "class": "pgrid" }, field("Sold on", date), field("Sold for (€)", price, "What you received"),
         lots ? field("Pieces", qty, left + " of " + qtyOf(it) + " still for sale") : null, field("Where", where), field("Note", note)),
       el("label", { "class": "check" }, unpaid, "Not paid yet (it counts in Finance once you tick it off as paid)"),
-      ls.length ? el("p", { "class": "small", text: "Remember to take the ad offline on " + ls.map(function (l) { return platformLabel(l.platform); }).join(" and ") + "." }) : null,
+      ls.length > 1 ? el("p", { "class": "small soon", text: "Also online on " + ls.map(function (l) { return platformLabel(l.platform); }).join(", ") + ". After saving you get a list of the other ads to take offline right away, so nobody else buys it." }) : null,
       err,
       el("div", { "class": "buttons" }, el("span", { "class": "spacer" }), el("button", { type: "button", text: "Cancel", onclick: closeDlg }),
         el("button", { type: "submit", "class": "primary", text: "Save sale" })));
@@ -1319,10 +1373,20 @@
       change("Sold " + (it.name || it.id) + " for " + p, function (data) {
         var x = find(data, it.id); if (!x) return false;
         x.sales = (x.sales || []).concat([sale]);
-        if (soldQty(x) >= qtyOf(x)) { x.status = "sold"; x.listings = []; }
+        if (soldQty(x) >= qtyOf(x)) {
+          x.status = "sold";
+          var rest = (x.listings || []).slice(), i = rest.map(function (l) { return l.platform; }).indexOf(sale.platform);
+          if (i >= 0) rest.splice(i, 1);
+          if (rest.length) x.takeOffline = (x.takeOffline || []).concat(rest.map(function (l) {
+            return { id: l.id, platform: l.platform, url: l.url || null, soldOn: sale.date, soldVia: sale.platform };
+          }));
+          x.listings = [];
+        }
       }).then(function () {
         var cost = qtyOf(it) > 1 && it.soldCost == null ? (it.paid || 0) * n / qtyOf(it) : (it.paid || 0);
         toast("Sale saved: " + money2(p - cost) + " profit.");
+        var x = find(P.data, it.id);
+        if (x && (x.takeOffline || []).length) takeOfflineDialog(x);
       }, function () {});
     });
     openDlg(form);
