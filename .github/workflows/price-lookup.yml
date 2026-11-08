@@ -33,7 +33,11 @@ jobs:
           from scanner.marktplaats import search
           q = os.environ["QUERY"]
           rows = []
-          for li in search(Http(), q):
+          found = search(Http(), q)
+          for li in found[:3]:  # the fields Marktplaats sends, for checking filters (condition, seller)
+              print("FIELDS", sorted(li), "| attributes", li.get("attributes"), "| extended", li.get("extendedAttributes"),
+                    "| traits", li.get("traits"), "| seller keys", sorted(li.get("sellerInformation") or {}))
+          for li in found:
               info = li.get("priceInfo") or {}
               cents = info.get("priceCents") or 0
               title = html.unescape(li.get("title") or "")
