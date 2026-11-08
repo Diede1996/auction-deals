@@ -202,6 +202,13 @@
   }
   function listings(it) { return statusOf(it) === "stock" && Array.isArray(it.listings) ? it.listings : []; }
   function isStale(l) { var d = daysSince(l.since); return d != null && d >= STALE_DAYS; }
+  /* When selling started: something you used yourself first (ownUse, or kept and later put up for sale) counts from the day it went up
+     for sale, not from the day you bought it. Resale buys count from the purchase. Null = unknown, left out of "days" figures. */
+  function saleStart(it) {
+    if (validDay(it.forSaleSince)) return it.forSaleSince;
+    if (!it.ownUse) return it.bought;
+    return listings(it).reduce(function (m, l) { return validDay(l.since) && (!m || l.since < m) ? l.since : m; }, null);
+  }
   function platformLabel(id) { var p = PLATFORMS.filter(function (x) { return x.id === id; })[0]; return p ? p.label : (id || "Other"); }
   function items() { return P.data ? P.data.items : []; }
   function categories() {
@@ -391,13 +398,13 @@
     var all = items().filter(matches);
     var forSale = all.filter(function (it) { return statusOf(it) === "stock"; });
     var unlisted = forSale.filter(function (it) { return !listings(it).length; });
-    var oldest = forSale.reduce(function (m, it) { var d = daysSince(it.bought); return d != null && d > m ? d : m; }, 0);
+    var oldest = forSale.reduce(function (m, it) { var d = daysSince(saleStart(it)); return d != null && d > m ? d : m; }, 0);
     var pieces = forSale.reduce(function (s, it) { return s + piecesLeft(it); }, 0);
     box.append(tiles([
       { label: "For sale", value: String(pieces), note: forSale.length + (forSale.length === 1 ? " item" : " items") + (pieces !== forSale.length ? " (lots count per piece)" : ""), primary: true },
       { label: "Money in stock", value: money(forSale.reduce(function (s, it) { return s + stockValue(it); }, 0)), note: "what you paid for what's still for sale" },
       { label: "Not listed yet", value: String(unlisted.length), note: unlisted.length ? "add an ad under Listings" : "everything is online" },
-      { label: "Longest in stock", value: forSale.length ? oldest + " days" : "–", note: "since you bought it" }
+      { label: "Longest in stock", value: forSale.length ? oldest + " days" : "–", note: "since you bought it (or put it up for sale, for things you used yourself)" }
     ]));
     var defs = [
       { id: "stock", label: "For sale", count: forSale.length },
@@ -480,7 +487,7 @@
         el("button", { type: "button", "class": "title plain", text: it.name || "(no name)", onclick: function () { editItem(it); } }),
         el("div", { "class": "meta" }, it.category ? el("span", { "class": "tag", text: it.category }) : null,
           el("span", { text: "paid " + money2(it.paid) + (qtyOf(it) > 1 ? " for " + qtyOf(it) + " pieces" : "") }),
-          el("span", { text: "in stock " + (daysSince(it.bought) != null ? daysSince(it.bought) + " days" : "–") }))),
+          el("span", { text: "in stock " + (daysSince(saleStart(it)) != null ? daysSince(saleStart(it)) + " days" : "–") }))),
       el("div", { "class": "c-actions" }, el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } })));
     card.append(head);
 
@@ -700,7 +707,7 @@
     rows.forEach(function (r) {
       var c = r.it.category || "Other", g = cats[c] = cats[c] || { n: 0, rev: 0, cost: 0, days: [] };
       g.n += r.s.qty || 1; g.rev += r.price; g.cost += r.cost;
-      var d = r.date && validDay(r.it.bought) ? Math.round((Date.parse(r.date) - Date.parse(r.it.bought)) / 86400000) : null;
+      var st = saleStart(r.it), d = r.date && validDay(st) ? Math.round((Date.parse(r.date) - Date.parse(st)) / 86400000) : null;
       if (d != null && d >= 0) g.days.push(d);
     });
     var catTable = el("table", { "class": "ptable" }, el("thead", null, el("tr", null,
@@ -1271,6 +1278,7 @@
           var x = find(data, it.id);
           if (!x) { if (!isNew) return false; x = { id: it.id, photos: [], listings: [], sales: [], added: new Date().toISOString() }; data.items.push(x); }
           Object.keys(values).forEach(function (k) { x[k] = values[k]; });
+          if (sell) { x.ownUse = true; if (!validDay(x.forSaleSince)) x.forSaleSince = today(); }
           var gone = removed.map(function (p) { return p.path; });
           x.photos = (x.photos || []).filter(function (p) { return gone.indexOf(p.path) < 0; }).concat(added);
           if (inv || dropInvoice) x.invoiceFile = inv || null;
