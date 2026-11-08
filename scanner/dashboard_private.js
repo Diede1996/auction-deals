@@ -1278,7 +1278,7 @@
           var x = find(data, it.id);
           if (!x) { if (!isNew) return false; x = { id: it.id, photos: [], listings: [], sales: [], added: new Date().toISOString() }; data.items.push(x); }
           Object.keys(values).forEach(function (k) { x[k] = values[k]; });
-          if (sell) { x.ownUse = true; if (!validDay(x.forSaleSince)) x.forSaleSince = today(); }
+          if (sell) { x.ownUse = true; x.personal = true; if (!validDay(x.forSaleSince)) x.forSaleSince = today(); }  /* kept for yourself, sold later: not resale profit (Diede, 8-11) */
           var gone = removed.map(function (p) { return p.path; });
           x.photos = (x.photos || []).filter(function (p) { return gone.indexOf(p.path) < 0; }).concat(added);
           if (inv || dropInvoice) x.invoiceFile = inv || null;
