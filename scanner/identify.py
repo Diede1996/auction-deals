@@ -928,6 +928,11 @@ def model_words(title: str) -> list[str]:
             if nxt[:1].isupper() and nxt[1:].islower() and 3 <= len(nxt) <= 5 and normalize(nxt) not in NOISE \
                     and normalize(nxt) not in _BRANDS:
                 out.append(normalize(nxt))  # "CTL Midi": a Midi, not a Mini
+    # "Grasmaaier Husqvarna, Royal 53 s": a line name with its number is the model
+    for m in re.finditer(r"(?<![A-Za-z0-9])([A-Z][a-z]{2,8}) (\d{2,4})(?![\d,.]|\s?(?:[Cc][Mm]|[Mm][Mm]|inch|[VvLlWw]|kg|x)\b)", title or ""):
+        n = normalize(m.group(1))
+        if n not in _BRANDS and n not in NOISE and n not in _WEAK and not category(n) and not is_spec(n):
+            out += [n, m.group(2)]
     return list(dict.fromkeys(out))
 
 

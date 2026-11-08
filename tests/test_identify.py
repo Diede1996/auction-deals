@@ -457,3 +457,11 @@ def test_product_type_after_the_model_goes_in_the_search():
     assert plan_for(item, Lot("x", "1", "Makita DGA504Z haakse slijper body", "u", 1, None)).searches[0] \
         == "makita haakse slijper dga504z"
     assert "cyclone" not in plan_for(item, Lot("x", "1", "Dyson V8 Cyclone draadloze stofzuiger", "u", 1, None)).searches[0]
+
+
+def test_line_name_with_number_is_required():
+    item = WatchItem(name="Garden tools", keywords=["husqvarna"])
+    plan = plan_for(item, Lot("x", "1", "Grasmaaier Husqvarna, Royal 53 s", "u", 1, None))
+    assert all("royal" in s and "53" in s for s in plan.searches)
+    assert not any(r.matches(normalize("Husqvarna LC 347V grasmaaier met aandrijving")) for r in plan.rules)
+    assert any(r.matches(normalize("Husqvarna Royal 53 S benzine grasmaaier")) for r in plan.rules)
