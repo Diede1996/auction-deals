@@ -1434,15 +1434,31 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     return Array.isArray(list) ? list.filter(function (f) { return f && typeof f.key === "string" && safeUrl(f.url); }) : [];
   }
   function mdText(t) { return String(t || "").replace(/[\\`*_\[\]()<>#|]/g, function (ch) { return "\\" + ch; }); }
+  /* GitHub refuses an issue body over 262,144 characters (with 319 favorites the old format reached 260,000, so
+     every new favorite failed and jumped back). The readable list shows the next 30 to close; the data leaves out
+     empty fields, and the pictures when it grows large (closed lots first). */
+  var BODY_MAX = 200000, MD_LINES = 30;
+  function compact(f, image) {
+    var o = {};
+    Object.keys(f).forEach(function (k) { if (f[k] != null && f[k] !== "" && (k !== "image" || image(f))) o[k] = f[k]; });
+    return o;
+  }
   function buildBody(list) {
     var lines = [MARKER, "⭐ **Favorites** from the auction dashboard. The dashboard keeps this list up to date and the bot " +
       "reminds you in Telegram on the closing day and about an hour before each lot closes. Please don't edit it here.", ""];
-    list.forEach(function (f) {
+    var now = Date.now(), open = list.filter(function (f) { return !f.closes || Date.parse(f.closes) > now; })
+      .sort(function (a, b) { return (Date.parse(a.closes) || 8.64e15) - (Date.parse(b.closes) || 8.64e15); });
+    open.slice(0, MD_LINES).forEach(function (f) {
       lines.push("- [" + mdText(f.title) + "](" + String(f.url).replace(/\)/g, "%29") + ")" +
         (f.siteName ? " · " + mdText(f.siteName) : "") + (f.closes ? " · closes " + dtf.format(new Date(f.closes)) : ""));
     });
+    if (open.length > MD_LINES) lines.push("- _… and " + (open.length - MD_LINES) + " more_");
     if (!list.length) lines.push("_No favorites yet._");
-    lines.push("", "<details><summary>data</summary>", "", "```json", JSON.stringify(list).replace(/`/g, "\\u0060"), "```", "", "</details>");
+    var json = function (image) { return JSON.stringify(list.map(function (f) { return compact(f, image); })).replace(/`/g, "\\u0060"); };
+    var data = json(function () { return true; });
+    if (data.length > BODY_MAX) data = json(function (f) { return !f.closes || Date.parse(f.closes) > now; });
+    if (data.length > BODY_MAX) data = json(function () { return false; });
+    lines.push("", "<details><summary>data</summary>", "", "```json", data, "```", "", "</details>");
     return lines.join("\n");
   }
   function validIssue(issue) {
@@ -1468,8 +1484,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     }).catch(function () { /* offline or rate-limited: keep the list from the last scan */ });
   }
   function prune(list) {
-    var cutoff = Date.now() - 7 * 86400000;
-    return list.filter(function (f) { return !f.closes || new Date(f.closes).getTime() > cutoff; });
+    var cutoff = Date.now() - 7 * 86400000, stale = Date.now() - 30 * 86400000;
+    return list.filter(function (f) {  /* closed a week ago, or no closing time and added a month ago */
+      return f.closes ? new Date(f.closes).getTime() > cutoff : !(Date.parse(f.added) < stale);
+    });
   }
   /* one save at a time: each reads the issue fresh, so quick swipes one after another all land */
   function saveFavs(mutate) {
@@ -1500,6 +1518,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       openConnect(null, "GitHub no longer accepts your token (it may have expired). Create a new one to keep saving favorites.");
     } else if (e && (e.status === 403 || e.status === 404)) {
       toast("GitHub refused: this token can't edit issues of " + REPO + ". Connect again with the right token.");
+    } else if (e && e.status === 422) {
+      toast("GitHub refused to save: your favorites list is too long. Remove some favorites you no longer follow and try again.");
     } else {
       toast("Couldn't save your favorite. Check your connection and try again.");
     }
