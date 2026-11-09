@@ -689,6 +689,7 @@
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
     var goal = goalPanel();
     if (goal) box.append(goal);
+    box.append(platformPanel());
     box.append(tiles([
       { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
         (waiting.length ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
@@ -744,6 +745,36 @@
     saleTable.append(sb);
     if (all0.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
       el("p", { "class": "small", text: "Margin = profit as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price." })));
+  }
+  /* sold per platform this calendar year, EVERYTHING (also own stuff sold at € 0 cost, personal):
+     platforms report sellers to the tax office from 30 sales or € 2.000 a year per platform (DAC7, Diede 9-11) */
+  function platformPanel() {
+    var year = today().slice(0, 4), per = {};
+    items().forEach(function (it) {
+      sales(it).forEach(function (s) {
+        if (!validDay(s.date) || s.date.slice(0, 4) !== year) return;
+        var k = s.platform || "", g = per[k] = per[k] || { n: 0, rev: 0, waiting: 0 };
+        g.n += s.qty || 1;
+        if (s.unpaid) g.waiting += s.price || 0; else g.rev += s.price || 0;
+      });
+    });
+    var keys = Object.keys(per).sort(function (a, b) { return per[b].rev - per[a].rev; });
+    var LIMIT = 2000, MAXN = 30;
+    var tb = el("tbody");
+    keys.forEach(function (k) {
+      var g = per[k], warn = g.rev + g.waiting >= LIMIT * 0.75 || g.n >= MAXN * 0.75;
+      tb.append(el("tr", null, el("td", { text: k ? platformLabel(k) : "Unknown" }),
+        el("td", { "class": "amt" + (g.n >= MAXN ? " bad" : ""), text: g.n + " / " + MAXN }),
+        el("td", { "class": "amt" + (g.rev >= LIMIT ? " bad" : ""), text: money(g.rev) + " / " + money(LIMIT) +
+          (g.waiting ? " (+" + money(g.waiting) + " not paid yet)" : "") + (warn ? " ⚠" : "") })));
+    });
+    var tot = keys.reduce(function (t, k) { return t + per[k].rev; }, 0);
+    var table = el("table", { "class": "ptable" }, el("thead", null, el("tr", null,
+      ["Platform", "Sales", "Sold for"].map(function (h, i) { return el("th", { "class": i ? "amt" : "", text: h }); }))), tb);
+    return el("section", { "class": "panel ptablebox" }, el("h2", { text: "Sold per platform in " + year }),
+      keys.length ? el("div", { "class": "scrollx" }, table) : el("p", { "class": "empty", text: "No sales with a date in " + year + " yet." }),
+      el("p", { "class": "small", text: "All sales, also your own things sold at € 0 cost. Total " + money(tot) + ". A platform passes your data to the tax office once you reach 30 sales or " +
+        money(LIMIT) + " in a year on that platform (DAC7). ⚠ = 75% of either." }));
   }
   /* the monthly profit goal (watchlist.yml settings.monthly_goal): paid sales this calendar month against the goal,
      always over everything (not the search or category filter), the same sums as "Earned" */
