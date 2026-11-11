@@ -27,7 +27,7 @@ def lot_details(props: dict) -> dict:
 
 def main() -> int:
     slug = (os.environ.get("SLUG") or "").strip().split("?")[0].rstrip("/").split("/")[-1]
-    if not re.fullmatch(r"[a-z0-9-]+", slug or ""):
+    if not re.fullmatch(r"[A-Za-z0-9-]+", slug or ""):
         print("not an auction slug")
         return 1
     reader = Reader(SimpleNamespace(http=None), 8.0)
