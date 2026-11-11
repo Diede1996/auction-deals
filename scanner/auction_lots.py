@@ -36,7 +36,9 @@ def main() -> int:
         if os.environ.get("DESCRIPTIONS", "true").lower() == "true":
             for i, rec in enumerate(lots):
                 try:
-                    rec.update(lot_details(reader.props(f"/nl/l/{rec['slug']}")))
+                    props = reader.props(f"/nl/l/{rec['slug']}")
+                    rec.update(lot_details(props))
+                    rec["raw"] = props.get("lot")  # the page's own fields, in case the description sits elsewhere
                 except BlockedError:
                     raise
                 except Exception as e:  # one odd lot page shouldn't stop the rest
