@@ -78,6 +78,7 @@ class WatchItem:
     min_margin: float | None = None  # overrides the global setting (0.4 = 40%)
     min_profit: float | None = None  # overrides the global minimum profit in euros per item
     price_check: bool = True  # False: shown without a Marktplaats price (mixed lots you judge yourself)
+    always_show: bool = False  # True: never hidden by margins, max bid, distance, age or defects (wine, spirits)
 
     @classmethod
     def from_dict(cls, d: dict) -> "WatchItem":
@@ -100,6 +101,7 @@ class WatchItem:
             min_margin=_num(d.get("min_margin")),
             min_profit=_num(d.get("min_profit")),
             price_check=d.get("price_check", True) is not False,
+            always_show=d.get("always_show") is True,
         )
 
     def to_dict(self) -> dict:
@@ -112,6 +114,8 @@ class WatchItem:
                 out[k] = v
         if not self.price_check:
             out["price_check"] = False
+        if self.always_show:
+            out["always_show"] = True
         return out
 
 

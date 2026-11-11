@@ -25,6 +25,8 @@
 #   min_margin         (optional) overrides the default above for this item
 #   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit
 #   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
+#   always_show        (optional) true = always on the dashboard: never hidden for margin, max bid, distance, age or
+#                      defects (wine and spirits you share out among people you know; Diede 2026-11-11)
 
 settings:
   resale_factor: 0.75
@@ -103,6 +105,21 @@ items:
     wijnklimaat, wijnklimaatkast, wijnemmer, emmer, karaf, decanteer, decanter, opener, kurkentrekker, wijnazijn, azijn,
     wijnvat, vat, vaten, tap, wijntap, dispenser, pomp, stopper, wijnkaart, menukaart, boek, schilderij, poster,
     leeg, lege, inventaris, meubel, tafel, stoel, kruk, bar, wijnbar, rack, display]
+  always_show: true  # Diede 2026-11-11: shown whatever the margin, shared out among people Diede knows
+- name: Spirits
+  # cognac, whisky and other spirits (Diede 2026-11-11): shared out among people Diede knows, not resold, so no
+  # Marktplaats price or max bid; always shown. "port" alone would also find "portable", so only "portwijn".
+  keywords: [cognac, armagnac, brandy, calvados, whisky, whiskey, single malt, bourbon, rum, gin, vodka, wodka,
+    tequila, mezcal, jenever, likeur, likeuren, grappa, sherry, portwijn, sterke drank, drankpakket, drankenpakket,
+    hennessy, remy martin, courvoisier, martell, johnnie walker, jack daniels, jameson, glenfiddich, macallan,
+    chivas regal, bacardi, havana club, bombay sapphire, hendricks, tanqueray, absolut vodka, grey goose, smirnoff]
+  exclude: [glas, glazen, whiskyglas, whiskyglazen, cognacglas, cognacglazen, karaf, decanter, stenen, stones,
+    rek, kast, koelkast, koeler, dispenser, pomp, tap, opener, vat, vaten, leeg, lege, boek, schilderij, poster,
+    bord, reclame, reclamebord, lichtbak, spiegel, display, inventaris, meubel, tafel, stoel, kruk, barkruk,
+    aroma, smaakstof, essence, cake, bonbons, chocolade, parfum, geur, kaars, zeep, shampoo,
+    tape, ginseng, flessenrek, schort, shirt, pet]
+  price_check: false
+  always_show: true
 # added 2026-11-01 (Diede): garden tools, cameras, audio/beamers, Dyson/robot vacuums and mixed lots
 - name: Garden tools
   keywords: [stihl, husqvarna, karcher, kärcher, honda grasmaaier, honda maaier, honda motorzeis, robotmaaier,

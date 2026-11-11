@@ -512,6 +512,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
                         "search": search_url(plan.searches[0])} if plan else None),
             "mpSearch": search_url(plan.searches[0] if plan else lot.title),
             "itemMaxPrice": item.max_price, "itemMinMargin": item.min_margin, "itemMinProfit": item.min_profit,
+            "alwaysShow": item.always_show or None,
             "firstSeen": (seen.get(lot.key) or {}).get("first"), "isNew": lot.key in new_keys,
             "maxBid": v.max_bid, "isDeal": v.is_deal,
         })
@@ -695,7 +696,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         repair = repair_settings(config)
         kept = []
         for item, lot in matched:
-            found = lot.key not in fav_keys and defect(lot.title, lot.description, lot.condition)
+            found = lot.key not in fav_keys and not item.always_show and defect(lot.title, lot.description, lot.condition)
             if not found:
                 kept.append((item, lot))
             elif repair and repair_brand(lot.title, repair["brands"]):

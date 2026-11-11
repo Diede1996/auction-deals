@@ -37,6 +37,8 @@ WATCHLIST_HEADER = """\
 #   min_margin         (optional) overrides the default above for this item
 #   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit
 #   price_check        (optional) false = no Marktplaats price; the lot is shown for you to judge yourself
+#   always_show        (optional) true = always on the dashboard: never hidden for margin, max bid, distance, age or
+#                      defects (wine and spirits you share out among people you know; Diede 2026-11-11)
 """
 
 

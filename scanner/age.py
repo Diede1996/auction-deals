@@ -281,7 +281,10 @@ def too_old(item: WatchItem, lot: Lot, min_year: int, skip: tuple[str, ...] = ()
     their model, chip or year; everything else only by a year the lot states (stated_year); items named in
     skip (wine: a vintage isn't an age problem) never.
     It's about what the lot matched on: "Laptop Dell Latitude 7400 + monitor Samsung 24inch" found by the
-    Monitor item is priced as a monitor, so the laptop's age doesn't count."""
+    Monitor item is priced as a monitor, so the laptop's age doesn't count.
+    Items with always_show (wine, spirits: Diede 2026-11-11) are never too old."""
+    if getattr(item, "always_show", False):
+        return None
     if device_kind(matched_keyword(item, lot.title), item.name):
         year = release_year(lot.title, lot.description)
     elif item.name.lower() in {s.lower() for s in skip}:

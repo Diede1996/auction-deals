@@ -1080,6 +1080,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       el("span", { "class": "tag", text: lot.item }),
       lot.repair ? el("span", { "class": "tag repair", title: "Has a defect; priced like a working one on Marktplaats, with a higher margin for the repair (config.yml condition.repair)" }, "🔧 " + lot.repair + (lot.repairOf ? " · " + lot.repairOf : "")) : null,
       lot.regular ? el("span", { "class": "tag regular", title: "Trial: from an ordinary auction, not a bankruptcy, closure, estate, Domeinen or IT auction" }, "🏷 regular auction") : null,
+      lot.alwaysShow ? el("span", { "class": "tag", title: "Always shown, whatever the margin, max bid or distance (watchlist.yml always_show)" }, "🍷 always shown") : null,
       lot.followed ? el("span", { "class": "tag heart", title: "You put a heart on it at Troostwijk: never hidden as too far" }, "❤️ you follow it") : null,
       el("span", { text: lot.siteName }),
       el("span", { "class": "auction", title: lot.auction, text: lot.auction }));
@@ -1238,13 +1239,13 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       if (need !== null && worth >= need) return;
       if (g[0].lot.combo) return;  /* one drive past several addresses nearby (see the morning summary) */
       g.forEach(function (r) {
-        if (!favs[r.lot.key] && !r.lot.followed) r.c.far = { min: min, worth: worth, need: need, limit: rules[rules.length - 1][0] };
+        if (!favs[r.lot.key] && !r.lot.followed && !r.lot.alwaysShow) r.c.far = { min: min, worth: worth, need: need, limit: rules[rules.length - 1][0] };
       });
     });
   }
   /* swiped away, too far, or the bid is already above your max bid (bids only go up) or no bid is profitable;
-     favorites always stay */
-  function isOver(r) { return (r.c.status === "over" || r.c.status === "never") && !favs[r.lot.key] && !r.lot.followed && !hidden[r.lot.key] && !r.c.far; }
+     favorites always stay, and so do items with always_show (wine, spirits: Diede 2026-11-11) */
+  function isOver(r) { return (r.c.status === "over" || r.c.status === "never") && !favs[r.lot.key] && !r.lot.followed && !r.lot.alwaysShow && !hidden[r.lot.key] && !r.c.far; }
   function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far || isOver(r); }
 
   /* ---------- sub-tabs ---------- */

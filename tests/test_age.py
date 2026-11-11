@@ -114,3 +114,10 @@ def test_phone_plan_tells_variants_apart():
     pixel = phone_plan("Google Pixel 6")
     assert pixel.rules[0].matches("google pixel 6 128gb") and not pixel.rules[0].matches("google pixel 6a")
     assert phone_plan("Samsung Galaxy S21") is None  # Galaxy models have a type number: the usual exact search
+
+
+def test_always_show_items_are_never_too_old():
+    # wine and spirits Diede shares out (2026-11-11): a stated year never hides them
+    spirits = WatchItem.from_dict({"name": "Spirits", "keywords": ["cognac"], "always_show": True})
+    assert spirits.always_show and spirits.to_dict()["always_show"] is True
+    assert not too_old(spirits, lot("Cognac Hennessy, bouwjaar 1985"), 2020)
