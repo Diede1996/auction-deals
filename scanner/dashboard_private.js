@@ -431,6 +431,7 @@
         el("div", { "class": "meta" }, it.category ? el("span", { "class": "tag", text: it.category }) : null,
           st !== "stock" ? el("span", { "class": "tag muted", text: STATUS[st] }) : null,
           q > 1 ? el("span", { text: (st === "stock" ? left + " of " : "") + q + " pieces" }) : null,
+          q === 1 && it.pieces > 1 ? el("span", { text: "set of " + it.pieces + " pieces" }) : null,
           it.source ? el("span", { "class": "auction", text: it.source }) : null, invoiceLink(it),
           it.lotOf ? el("span", { "class": "small", text: "from lot “" + it.lotOf.name + "”" }) : null,
           pending(it) ? el("span", { "class": "tag", text: "🚚 pickup " + (it.pickup.date ? dayLabel(it.pickup.date) : "not planned") }) : null)),
@@ -1488,7 +1489,9 @@
         var made = parts.map(function (part, i) {
           var y = JSON.parse(JSON.stringify(x));
           ["pieceNames", "soldCost", "listings", "sales"].forEach(function (k) { delete y[k]; });
-          y.id = "s" + stamp + "-" + i; y.name = part.name; y.qty = part.qty; y.paid = cents[i] / 100;
+          /* a row is one thing you sell: a suit of 2 pieces is qty 1 (so one sale costs all of it), pieces 2 */
+          y.id = "s" + stamp + "-" + i; y.name = part.name; y.qty = 1; y.paid = cents[i] / 100;
+          if (part.qty > 1) y.pieces = part.qty; else delete y.pieces;
           y.newPrice = x.newPrice != null && paid > 0 ? Math.round(x.newPrice * cents[i] / Math.round(paid * 100) * 100) / 100 : x.newPrice;
           y.lotOf = { id: x.id, name: x.name };
           y.photos = i === 0 ? (x.photos || []) : [];
