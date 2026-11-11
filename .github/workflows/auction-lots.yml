@@ -1,0 +1,37 @@
+name: Auction lots
+
+# One-off: read every lot of one Troostwijk auction (its own pages, like the scan does, never /search) and save
+# them to the PRIVATE repository as lookups/<slug>.json, for Claude to sort or check. Troostwijk's terms forbid
+# making their lots public, so the log of this public repository only shows counts.
+# Actions > Auction lots > Run workflow, paste the auction's slug (the part after /a/, without ?...).
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Troostwijk auction slug, e.g. partij-wijnen-...-A1-51254"
+        required: true
+      descriptions:
+        description: "Also read each lot page for its description (slower, 8 s a lot)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Read the auction
+        env:
+          SLUG: ${{ inputs.slug }}
+          DESCRIPTIONS: ${{ inputs.descriptions }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+        run: python -m scanner.auction_lots
