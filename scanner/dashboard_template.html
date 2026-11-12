@@ -470,6 +470,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">Lots<span class="count" id="count-all"></span></button>
     <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
     <button type="button" class="tab" role="tab" id="tab-mp" aria-selected="false" title="Bargains from private sellers on Marktplaats (needs the private repo connected)">Marktplaats<span class="count" id="count-mp"></span></button>
+    <button type="button" class="tab" role="tab" id="tab-drink" aria-selected="false" title="Wine and spirits: always shown, whatever the price or distance">🍷 Drinks<span class="count" id="count-drink"></span></button>
     <span class="sep" aria-hidden="true"></span>
     <button type="button" class="tab" role="tab" id="tab-pickup" aria-selected="false">Pickups<span class="count" id="count-pickup"></span></button>
     <button type="button" class="tab" role="tab" id="tab-stock" aria-selected="false">Stock<span class="count" id="count-stock"></span></button>
@@ -1329,7 +1330,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
   var PRIVATE_VIEWS = { pickup: 1, stock: 1, listings: 1, money: 1 };
   function renderNav() {
-    ["all", "fav", "mp", "pickup", "stock", "listings", "money"].forEach(function (v) {
+    ["all", "fav", "mp", "drink", "pickup", "stock", "listings", "money"].forEach(function (v) {
       document.getElementById("tab-" + v).setAttribute("aria-selected", (ui.view || "all") === v ? "true" : "false");
     });
     var priv = !!PRIVATE_VIEWS[ui.view];
@@ -1356,8 +1357,12 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
     var isMp = function (r) { return r.lot.site === "mpdeal"; };  /* Marktplaats bargains have their own tab, auctions stay under Lots */
-    document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key] && !isMp(r); }).length);
-    document.getElementById("count-mp").textContent = String(all.filter(function (r) { return !favs[r.lot.key] && isMp(r); }).length);
+    /* wine and spirits have their own tab too (Diede, 12 Nov 2026) */
+    var isDrink = function (r) { return !isMp(r) && (!!r.lot.alwaysShow || r.lot.item === "Wine" || r.lot.item === "Spirits"); };
+    var tabOf = function (r) { return isMp(r) ? "mp" : isDrink(r) ? "drink" : "all"; };
+    ["all", "mp", "drink"].forEach(function (t) {
+      document.getElementById("count-" + t).textContent = String(all.filter(function (r) { return !favs[r.lot.key] && tabOf(r) === t; }).length);
+    });
     var hint = document.getElementById("swipeHint");
     document.getElementById("swipeBar").hidden = !TOUCH || !lots.length;
     hint.textContent = ui.view === "fav" ? "Swipe ← back to the list" : "Swipe → ★ favorite · ← hide";
@@ -1397,7 +1402,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var perHidden = {};  /* per category: lots left out only because they're hidden (too far, or swiped away) */
     var listed = all.filter(function (r) {  /* everything the filters allow, any category */
       if (favs[r.lot.key]) return false;  /* favorites live under the Favorites tab */
-      if (isMp(r) !== (ui.view === "mp")) return false;
+      if (tabOf(r) !== (ui.view === "mp" || ui.view === "drink" ? ui.view : "all")) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.site && r.lot.site !== ui.site) return false;
       if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
@@ -1795,6 +1800,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   $("tab-all").addEventListener("click", function () { uiSet("view", "all"); });
   $("tab-fav").addEventListener("click", function () { uiSet("view", "fav"); });
   $("tab-mp").addEventListener("click", function () { uiSet("view", "mp"); });
+  $("tab-drink").addEventListener("click", function () { uiSet("view", "drink"); });
   ["pickup", "stock", "listings", "money"].forEach(function (v) { $("tab-" + v).addEventListener("click", function () { uiSet("view", v); }); });
   $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
   $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
