@@ -66,6 +66,8 @@ def main() -> int:
             print("diagnosis failed:", type(e).__name__)
         print("0 lots read; earlier reading kept")
         return 1
+    print(f"check: {sum(1 for r in lots if r.get('title'))} with title, {sum(1 for r in lots if r.get('bid') is not None)} with bid, "
+          f"{sum(1 for r in lots if r.get('slug'))} with link")
     data = {"slug": slug, "read": datetime.now(timezone.utc).isoformat(), "complete": complete, "lots": lots}
     ok = private_repo.put_json(f"lookups/{slug}.json", data, f"Lots of auction {slug}")
     print(f"{len(lots)} lots read (complete: {complete}); saved to the private repository: {ok}")

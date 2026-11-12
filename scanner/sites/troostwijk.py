@@ -122,8 +122,14 @@ def read_auction(reader: Reader, slug: str, pages_left: int) -> tuple[list[dict]
         pages_left -= 1
         lots = props.get("lots") or {}
         results = lots.get("results") if isinstance(lots, dict) else lots
-        out.extend(lot_record(d) for d in results or [])
-        if not results or not (isinstance(lots, dict) and lots.get("hasNext")):
+        has_next = isinstance(lots, dict) and lots.get("hasNext")
+        if not results:  # page layout since Nov 2026: auctionListing.initialPage {items, totalCount}
+            first = ((props.get("auctionListing") or {}).get("initialPage") or {})
+            results = first.get("items") or []
+            total = first.get("totalCount")
+            has_next = bool(results) and isinstance(total, int) and len(out) + len(results) < total
+        out.extend(lot_record(d) for d in results or [] if isinstance(d, dict))
+        if not results or not has_next:
             return out, True
         page += 1
     return out, False
