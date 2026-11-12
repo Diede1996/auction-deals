@@ -161,7 +161,7 @@ commands:
   max_extra_scans_per_day: 3    # how often /scan may start an extra scan per day
 
 inventory:                      # your stock in Telegram: /koop, /verkocht, /voorraad, /winst (kept encrypted)
-  enabled: true                 # false = no reminders to lower the price
+  enabled: false                # false = no reminders to lower the price (Diede 2026-11-12: no Telegram)
   lower_price_after_days: 30    # remind you when something hasn't sold this many days after its asking price was set
   remind_every_days: 30         # and again after this many days
   price_drop: 0.1               # suggest lowering the asking price by 10%, never below the lowest price you'd accept
@@ -181,6 +181,7 @@ marktplaats_deals:
   radius_km: 100            # Marktplaats searches only this far around your HOME_ADDRESS postcode (straight line; Diede 2026-11-06)
   max_minutes: 105          # skip sellers further than this drive (one way); 105 = the whole 100 km radius
   keep_days: 7              # bargains stay on the dashboard this long
+  telegram: false           # Diede 2026-11-12: no Telegram, bargains only on the dashboard (Marktplaats tab)
   min_profit: 75            # profit (after fuel) a bargain must make: one drive per item (Diede 2026-11-12); unset = settings.min_lot_profit (€40)
   route_min_profit: 40      # ...but this is enough within route_km of the pickup address of a favorite auction lot
   route_km: 15              # straight line from the seller's town to that pickup address

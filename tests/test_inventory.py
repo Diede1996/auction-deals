@@ -119,6 +119,8 @@ def test_bot_sends_price_reminder_once_a_day(repo):  # noqa: F811
         {"id": 1, "name": "Dell monitor", "paid": 45, "bought": (NOW - timedelta(days=35)).isoformat(),
          "listed": (NOW - timedelta(days=35)).isoformat(), "ask": 120, "floor": 90, "category": "Monitor"}]},
         "123:abc")
+    cfg = repo / "config.yml"  # price reminders are switched off in Diede's config
+    cfg.write_text(cfg.read_text().replace("\n  enabled: false                # false = no reminders", "\n  enabled: true # false = no reminders"))
     (repo / "data" / "telegram.json").write_text(json.dumps({"offset": 1, "welcomed": "x"}))
     tg = FakeTelegram()
     morning = NOW + timedelta(hours=1)  # 09:00 in Amsterdam

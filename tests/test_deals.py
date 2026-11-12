@@ -39,6 +39,8 @@ COMPARABLES = [listing(f"c{i}", f"Makita DHR243 combihamer {c}", cents, date="2 
 def root(tmp_path, monkeypatch):
     for name in ("config.yml", "watchlist.yml"):
         shutil.copy(ROOT / name, tmp_path / name)
+    cfg = tmp_path / "config.yml"  # the tests check the Telegram message, which Diede has switched off
+    cfg.write_text(cfg.read_text().replace("\n  telegram: false ", "\n  telegram: true "))
     (tmp_path / "data").mkdir()
     monkeypatch.setenv("INVENTORY_KEY", "test-key")
     for var in ("HOME_ADDRESS", "HOME_ADDRESS_2", "TELEGRAM_BOT_TOKEN", "PRIVATE_REPO_TOKEN"):
