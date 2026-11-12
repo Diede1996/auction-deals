@@ -54,6 +54,6 @@ jobs:
 
       - name: Start a scan
         if: steps.bot.outputs.scan == 'true'
-        run: gh workflow run scan.yml --ref "${{ github.ref_name }}"
+        run: gh workflow run scan.yml --ref "${{ github.ref_name }}" -f summary=true
         env:
           GH_TOKEN: ${{ github.token }}

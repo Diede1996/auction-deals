@@ -1,6 +1,6 @@
 # Auction deal bot
 
-Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **business-closure** (bedrijfsbeëindiging) and **estate** (nalatenschap, inboedel) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. Every morning you get a short **Telegram** summary, and lots you star as **favorites** get a reminder on the day they close a few hours before and again in the last hour.
+Once a day this bot checks Dutch and Flemish **bankruptcy** (faillissement), **business-closure** (bedrijfsbeëindiging) and **estate** (nalatenschap, inboedel) auctions and **Domeinen Roerende Zaken** government sales for the items on your watchlist. It looks up what **that exact model** sells for on **Marktplaats**, works out the **driving costs** to the pickup address, and puts everything on a **dashboard** with your margin per lot and a **suggested maximum bid**. On **Sunday evening** you get a **Telegram** overview of the lots that close in the coming week (set `schedule: daily` under `digest` in `config.yml` for a summary after every daily scan instead; `/scan` always sends it right away), and lots you star as **favorites** get a reminder on the day they close a few hours before and again in the last hour.
 
 | Site | What it checks |
 |---|---|

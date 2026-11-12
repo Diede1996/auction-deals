@@ -5,7 +5,15 @@ on:
     # once a day at 04:17 UTC = 06:17 Dutch summer time (05:17 in winter).
     # GitHub may start scheduled runs a few minutes late.
     - cron: "17 4 * * *"
-  workflow_dispatch: {}   # "Run workflow" button, also used by the /scan command
+    # Sunday 17:17 UTC = 18:17 Dutch winter time: the weekly Telegram summary (digest schedule: weekly in
+    # config.yml). GitHub often starts it late; the Telegram job also starts it from Sunday 18:00.
+    - cron: "17 17 * * 0"
+  workflow_dispatch:      # "Run workflow" button, also used by the /scan command and the weekly summary
+    inputs:
+      summary:
+        description: "Send the Telegram summary (week overview) after this scan"
+        type: boolean
+        default: false
 
 permissions:
   contents: write         # save data/state.json
@@ -39,6 +47,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEND_SUMMARY: ${{ inputs.summary }}   # true for /scan and the weekly summary started by the Telegram job
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}   # for driving costs; never written to the repository
           HOME_ADDRESS_2: ${{ secrets.HOME_ADDRESS_2 }}   # optional second starting point: the closer one is used
           ALERTS_EMAIL: ${{ secrets.ALERTS_EMAIL }}   # mailbox with the forwarded Troostwijk alert emails

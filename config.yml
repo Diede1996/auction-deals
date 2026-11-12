@@ -143,10 +143,16 @@ sites:
 bidding:
   steps: [[0, 1], [20, 5], [100, 10], [500, 25], [1000, 50], [5000, 100]]
 
-# The daily Telegram summary (the scan itself runs once a day, see .github/workflows/scan.yml)
+# The Telegram summary of the auctions (the scan itself runs once a day, see .github/workflows/scan.yml)
 digest:
   enabled: true
-  per_section: 8                # lots listed under "closing within 24 hours" and "new"
+  # weekly (Diede, 2026-11-12): one overview on Sunday evening of what closes in the coming 7 days, instead of
+  # a summary after every daily scan (daily). The dashboard still updates every day, favorites still get their
+  # reminders before closing, and /scan still sends the overview right away.
+  schedule: weekly
+  weekly_from_hour: 18          # Sunday from this hour (Dutch time); a scan GitHub starts late sends it up to Monday
+  weekly_per_section: 25        # lots listed under "closing in the coming week"
+  per_section: 8                # daily schedule: lots listed under "closing within 24 hours" and "new"
   warn_after_failed_scans: 2    # warn in Telegram when a site failed this many daily scans in a row
   ignore_closing_after_days: 30
 

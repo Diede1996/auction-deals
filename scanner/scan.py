@@ -198,23 +198,24 @@ def _heart_line(item: WatchItem, lot: Lot, v: Verdict, est: PriceEstimate | None
     return _line(item, lot, v, est, trips)
 
 
-def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: str = "today") -> str | None:
-    """⭐ section: favorites that close before midnight (Dutch time)."""
+def favorites_message(favs: list[dict], rows: list[Row], now: datetime, verb: str = "today",
+                      until: datetime | None = None) -> str | None:
+    """⭐ section: favorites that close before midnight (Dutch time), or before `until` (the weekly summary)."""
     lots_by_key = {lot.key: {"closes": lot.closes_at.isoformat() if lot.closes_at else None} for _, lot, _, _ in rows}
     local = now.astimezone(AMS)
-    midnight = local.replace(hour=23, minute=59, second=59)
-    today = closing_between(favs, lots_by_key, now, midnight)
+    end = until or local.replace(hour=23, minute=59, second=59)
+    today = closing_between(favs, lots_by_key, now, end)
     if not today:
         return None
     by_key = {lot.key: (lot, v) for _, lot, v, _ in rows}
-    lines = [f"⭐ <b>Your favorites closing {verb}</b>"]
+    lines = [f"⭐ <b>Your favorites closing {'this week' if until else verb}</b>"]
     for f, c in today:
         lot, v = by_key.get(f["key"], (None, None))
         bid = f"next bid {fmt_eur(v.bid)} · " if v else ""
         maxbid = f"your max <b>{fmt_eur(v.max_bid)}</b> · " if v and v.max_bid is not None else (
             f"your max <b>{fmt_eur(f['maxBid'])}</b> · " if f.get("maxBid") is not None else "")
         lines.append(f'• <a href="{attr(f["url"])}">{esc(f["title"][:70])}</a>\n'
-                     f"   {bid}{maxbid}closes {c.astimezone(AMS):%H:%M}")
+                     f"   {bid}{maxbid}closes {c.astimezone(AMS):{'%a %d %b %H:%M' if until else '%H:%M'}}")
     lines.append("<i>I'll remind you again a few hours before each one closes and in the last hour.</i>")
     return "\n".join(lines)
 
@@ -223,13 +224,14 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
                    per_section: int = 8, notes: list[str] | None = None, favs: list[dict] | None = None,
                    trips: dict | None = None, kinds: str = "bankruptcy, closure, estate or Domeinen",
                    far: dict | None = None, far_rules: list | None = None, hearts: list[Row] | None = None,
-                   heart_trips: dict | None = None, combos: list[Combo] | None = None) -> str:
+                   heart_trips: dict | None = None, combos: list[Combo] | None = None, week: bool = False) -> str:
+    """The Telegram summary. week=True: the Sunday-evening overview of the coming 7 days (see weekly_summary_due)."""
     far = far or {}
     deals = [r for r in rows if r[2].is_deal and r[1].key not in far]
     day = now.astimezone(AMS).strftime("%a %d %b")
-    head = [f"☀️ <b>Auction scan</b> · {day}",
-            f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b> · "
-            f"{sum(1 for r in rows if r[1].key in new_keys)} new",
+    head = [f"🗓 <b>Auction week ahead</b> · {day}" if week else f"☀️ <b>Auction scan</b> · {day}",
+            f"{len(rows)} matching lots · <b>{len(deals)} with room to bid</b>" +
+            ("" if week else f" · {sum(1 for r in rows if r[1].key in new_keys)} new"),
             f"<i>Max bids for selling at {settings.resale_factor:.0%} of the Marktplaats median "
             f"with at least {settings.describe_margin()}</i>"]
     parts = ["\n".join(head)] + list(notes or [])
@@ -237,9 +239,12 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
         parts.append("❤️ <b>Lots you follow on Troostwijk</b> · <i>check the current bid on the lot page</i>\n" +
                      "\n".join(_heart_line(i, l, v, e, {**(heart_trips or {}), **(trips or {})})
                                for i, l, v, e in hearts[:per_section]))
-    fav_part = favorites_message(favs or [], rows, now)
+    fav_part = favorites_message(favs or [], rows, now, until=now + timedelta(days=7) if week else None)
     if fav_part:
         parts.append(fav_part)
+    if week:
+        return _week_parts(parts, rows, deals, settings, now, url, per_section, trips, kinds, far, far_rules,
+                           hearts, combos)
     soon = [r for r in deals if r[1].closes_at and r[1].closes_at - now <= timedelta(hours=24)]
     fresh = [r for r in deals if r[1].key in new_keys and r not in soon]
     if soon:
@@ -262,20 +267,96 @@ def digest_message(rows: list[Row], new_keys: set[str], settings: Settings, now:
     combo_part = combos_message(combos or [], far_rules or [])
     if combo_part:
         parts.append(combo_part)
-    over = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is None)
-    few = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is not None)
-    if far_rules and (few or over):
-        why = []
-        if over:
-            why.append(f"{over} more than {duration(far_rules[-1][0])} drive away")
-        if few:
-            why.append(f"{few} where too few lots are worth that drive")
-        parts.append(f"<i>🚗 Lots with room to bid left out: {'; '.join(why)}.</i>")
+    far_note = _far_note(rows, far, far_rules)
+    if far_note:
+        parts.append(far_note)
     if any(e is not None and e.kind == "general" for _, _, v, e in soon + fresh + check[:per_section]):
         parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
     if url:
         parts.append(f'📊 <a href="{attr(url)}">Open the dashboard</a>')
     return "\n\n".join(parts)
+
+
+def _far_note(rows: list[Row], far: dict, far_rules: list | None) -> str | None:
+    over = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is None)
+    few = sum(1 for r in rows if r[2].is_deal and r[1].key in far and far[r[1].key][2] is not None)
+    if not far_rules or not (few or over):
+        return None
+    why = []
+    if over:
+        why.append(f"{over} more than {duration(far_rules[-1][0])} drive away")
+    if few:
+        why.append(f"{few} where too few lots are worth that drive")
+    return f"<i>🚗 Lots with room to bid left out: {'; '.join(why)}.</i>"
+
+
+def _week_parts(parts: list[str], rows: list[Row], deals: list[Row], settings: Settings, now: datetime,
+                url: str | None, per_section: int, trips: dict | None, kinds: str, far: dict,
+                far_rules: list | None, hearts: list[Row] | None, combos: list[Combo] | None) -> str:
+    """Sunday evening: everything with room to bid that closes in the coming 7 days, per day."""
+    end = now + timedelta(days=7)
+    week = sorted((r for r in deals if r[1].closes_at and r[1].closes_at <= end), key=lambda r: r[1].closes_at)
+    later = [r for r in deals if r not in week]
+    later.sort(key=lambda r: -(r[2].max_bid or 0) + (r[2].bid or 0))
+    shown: list[Row] = []
+    if week:
+        lines, last_day = ["⏰ <b>Closing in the coming week</b>"], None
+        for r in week[:per_section]:
+            d = r[1].closes_at.astimezone(AMS)
+            label = f"{d:%a} {d.day} {d:%b}"
+            if label != last_day:
+                lines.append(f"\n<b>{label}</b>")
+                last_day = label
+            lines.append(_line(r[0], r[1], r[2], r[3], trips))
+        if len(week) > per_section:
+            lines.append(f"\n<i>+ {len(week) - per_section} more closing this week: see the dashboard.</i>")
+        parts.append("\n".join(lines))
+        shown += week[:per_section]
+    check = [r for r in rows if r[1].bid_from_email and (r[2].max_bid or 0) > 0 and r[1].key not in far
+             and r not in week]
+    if check:
+        check.sort(key=lambda r: -(r[2].max_bid or 0))
+        parts.append("🔎 <b>From Troostwijk emails</b> · <i>check the current bid on the lot page</i>\n" +
+                     "\n".join(_line(i, l, v, e, trips) for i, l, v, e in check[:per_section]))
+        shown += check[:per_section]
+    if later:
+        n = max(3, per_section // 3)
+        parts.append("📅 <b>Closing later, with room to bid</b>\n" +
+                     "\n".join(_line(i, l, v, e, trips) for i, l, v, e in later[:n]))
+        shown += later[:n]
+    if not rows:
+        parts.append(f"Nothing {'else ' if hearts else ''}on your watchlist is in a running {kinds} auction right now.")
+    elif not week and not check and not later:
+        parts.append("Nothing with room to bid this week.")
+    combo_part = combos_message(combos or [], far_rules or [])
+    if combo_part:
+        parts.append(combo_part)
+    far_note = _far_note(rows, far, far_rules)
+    if far_note:
+        parts.append(far_note)
+    if any(e is not None and e.kind == "general" for _, _, _, e in shown):
+        parts.append("<i>≈ rough price: no type number in the lot title, compared with similar items.</i>")
+    parts.append("<i>Auctions that open during the week aren't in here yet: they're on the dashboard after "
+                 "each daily scan. Favorites still get their reminders before closing.</i>")
+    if url:
+        parts.append(f'📊 <a href="{attr(url)}">Open the dashboard</a>')
+    return "\n\n".join(parts)
+
+
+def weekly_summary_due(alerts_cfg: dict, state: dict, now: datetime) -> str | None:
+    """The Sunday this scan's weekly summary belongs to (ISO date), or None when it isn't due.
+
+    Due from Sunday `weekly_from_hour` (Dutch time); a scan that GitHub starts late, up to Monday evening,
+    still sends it. Sent once per week: state["weekly_summary"] holds the last Sunday it was sent for."""
+    local = now.astimezone(AMS)
+    from_hour = int(alerts_cfg.get("weekly_from_hour", 18))
+    if local.weekday() == 6 and local.hour >= from_hour:
+        sunday = local.date()
+    elif local.weekday() == 0:
+        sunday = local.date() - timedelta(days=1)
+    else:
+        return None
+    return None if state.get("weekly_summary") == sunday.isoformat() else sunday.isoformat()
 
 
 def combos_message(combos: list[Combo], rules: list[tuple[float, int]], limit: int = 4) -> str | None:
@@ -860,6 +941,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     if old_lots:
         notes.append(f"<i>🗓 {old_lots} Apple, laptop or phone lot{'s' if old_lots != 1 else ''} from before {min_year} "
                      "left out (they resell poorly).</i>")
+    once_from = len(notes)  # notes about single emails, said only once: kept for the weekly summary
     if mail_report and mail_report.get("unreadable_emails"):  # each email is reported once
         bad = mail_report["unreadable_emails"]
         listed = "\n".join(f"• {esc(e['subject'] or '(no subject)')} ({e['date'].astimezone(AMS):%a %d %b})"
@@ -877,6 +959,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                      "<i>Their weekly email only links to Troostwijk's search page, which the bot doesn't use "
                      "(their robots.txt asks bots not to); it reads the auction pages instead. Tap a word to look "
                      "yourself.</i>")
+    once_notes = notes[once_from:]
     if items:
         mh = state.setdefault("health", {}).setdefault("marktplaats", {})
         failed = finder.blocked or (finder.errors and finder.errors >= finder.lookups)
@@ -938,18 +1021,32 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         with open(summary, "a", encoding="utf-8") as fh:
             fh.write(text)
 
-    # 7. telegram digest
-    if items and alerts_cfg.get("enabled", True):
+    # 7. telegram digest: every scan (schedule: daily) or once a week on Sunday evening (schedule: weekly).
+    # A scan you start with /scan (SEND_SUMMARY=true) always sends the week overview.
+    weekly = str(alerts_cfg.get("schedule", "daily")).lower() == "weekly"
+    forced = os.environ.get("SEND_SUMMARY", "").strip().lower() == "true"
+    sunday = weekly_summary_due(alerts_cfg, state, now) if weekly else None
+    send_now = not weekly or forced or sunday is not None
+    if items and alerts_cfg.get("enabled", True) and send_now:
+        if weekly:  # email notes from the scans since the last summary
+            notes = list(state.pop("pending_notes", None) or []) + notes
         try:
             far = too_far(rows, trips, fav_keys, driving["tripRules"], transport=bool(driving["transport"]),
                           combos=combos)
-            tg.send(digest_message(rows, new_keys, settings, now, url, int(alerts_cfg.get("per_section", 8)), notes,
+            per_section = int(alerts_cfg.get("weekly_per_section" if weekly else "per_section", 8))
+            tg.send(digest_message(rows, new_keys, settings, now, url, per_section, notes,
                                    favs=favs, trips=trips, kinds=auction_kinds(config, now), far=far,
                                    far_rules=driving["tripRules"], hearts=hearts, heart_trips=heart_trips,
-                                   combos=combos))
+                                   combos=combos, week=weekly))
+            if sunday:
+                state["weekly_summary"] = sunday
         except Exception as e:
             log.warning("could not send the digest: %s", e)
-    elif favs:
+    elif items and alerts_cfg.get("enabled", True) and weekly:
+        if once_notes:  # Troostwijk emails seen today: passed on in Sunday's summary (kept encrypted)
+            state["pending_notes"] = (list(state.get("pending_notes") or []) + once_notes)[-10:]
+        log.info("weekly summary: not sent now (Sunday from %s:00)", alerts_cfg.get("weekly_from_hour", 18))
+    elif favs and not weekly:
         fav_msg = favorites_message(favs, rows, now)
         if fav_msg:
             try:

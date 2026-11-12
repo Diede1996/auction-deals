@@ -60,7 +60,7 @@ def put_json(path: str, data, message: str, config: dict | None = None, session=
 
 # ---------------------------------------------------------------- the bot's own Troostwijk memory
 
-SECRET_SECTIONS = ("troostwijk_alerts",)
+SECRET_SECTIONS = ("troostwijk_alerts", "pending_notes")  # pending_notes: Troostwijk links for the weekly summary
 
 
 def _secret() -> str | None:

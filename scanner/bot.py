@@ -219,7 +219,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
         dash = f'\n📊 <a href="{attr(url)}">Your dashboard</a>' if url else ""
         tg.send("✅ <b>Your auction deal bot is connected.</b>\n"
                 f"Every morning it checks the auction sites (bankruptcy, business-closure, estate and Domeinen sales, plus IT auctions if switched on) for the "
-                f"{len(watchlist.get('items') or [])} items on your watchlist and sends you a summary.{dash}\n\n"
+                f"{len(watchlist.get('items') or [])} items on your watchlist; on Sunday evening it sends you an overview of the coming week.{dash}\n\n"
                 "Send /list to see your watchlist, /help for all commands.")
         tg_state["welcomed"] = now.isoformat()
 
@@ -259,6 +259,19 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
                     next(i for i in inv["items"] if i["id"] == d["id"])["nudged"] = now.isoformat()
             except Exception as e:
                 log.warning("could not send the stock reminder: %s", e)
+
+    # 🗓 the weekly summary (digest schedule: weekly): GitHub often starts the Sunday scan hours late, so from
+    # Sunday evening this job starts a scan itself while the summary for this week hasn't gone out yet
+    digest_cfg = config.get("digest") or {}
+    if (str(digest_cfg.get("schedule", "daily")).lower() == "weekly" and digest_cfg.get("enabled", True)
+            and not scan_requested and (watchlist.get("items") or [])):
+        from .scan import weekly_summary_due
+        sunday = weekly_summary_due(digest_cfg, scan_state, now)
+        started = tg_state.get("weekly_scan_started")
+        if sunday and not (started and now - datetime.fromisoformat(started) < timedelta(hours=3)):
+            scan_requested = True
+            tg_state["weekly_scan_started"] = now.isoformat()
+            log.info("starting the scan for the weekly summary of %s", sunday)
 
     tg_state["extra_scans"] = scans
     if not dry_run:

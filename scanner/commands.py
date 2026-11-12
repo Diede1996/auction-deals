@@ -21,7 +21,7 @@ from .telegram import attr, esc
 from .util import fmt_eur, normalize
 
 HELP = """<b>Auction deal bot</b>
-Every morning I check the auction sites for bankruptcy, business-closure, estate and Domeinen lots (and IT auctions, if switched on in config.yml) that match your watchlist and send you a summary.
+Every morning I check the auction sites for bankruptcy, business-closure, estate and Domeinen lots (and IT auctions, if switched on in config.yml) that match your watchlist. On Sunday evening I send you an overview of what closes in the coming week (digest schedule in config.yml); /scan sends it right away.
 
 <b>/add</b> <i>item</i> – watch an item. Words after <b>-</b> are excluded, options go at the end:
 <code>/add playstation 5 | ps5 -controller -game max=250</code>
