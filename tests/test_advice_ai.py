@@ -20,7 +20,7 @@ class Client:
 
 
 def J(keep, verdict="kopen"):
-    return {"keep": keep, "verdict": verdict, "model": "m", "confidence": "hoog", "reason": "r", "risks": "",
+    return {"modelKnown": True, "keep": keep, "verdict": verdict, "model": "m", "confidence": "hoog", "reason": "r", "risks": "",
             "dropUnseen": False}
 
 
@@ -74,3 +74,8 @@ def test_2dehands_for_a_lot_without_marktplaats_price(tmp_path):
 def test_query_of():
     assert advice_ai.query_of({"mpPlan": {"kind": "general"}}) is None
     assert advice_ai.query_of({"mpPlan": {"kind": "exact", "model": "X1", "search": "https://www.marktplaats.nl/q/bosch+x1/"}}) == "bosch x1"
+
+
+def test_unknown_model_keeps_nothing():
+    j = advice_ai.ask(Client([dict(J([0, 1]), modelKnown=False)]), "x")
+    assert j["keep"] == [] and j["verdict"] == "twijfel"

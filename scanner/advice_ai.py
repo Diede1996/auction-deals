@@ -39,9 +39,11 @@ thing as the lot, so the reseller's price is right. Be strict, when in doubt lea
   machines; not "defect" or "for parts";
 - private sellers only: leave out shops and traders. Signs: several listings with the same title where only a year,
   number or size differs, "Pack 2015", "BTW", "garantie", "factuur", "inruil", "leverbaar", a company name.
-If the lot itself doesn't say which model it is, keep nothing and say so.
-verdict: "kopen" = a good buy if the bid stays under the max; "twijfel" = unclear (model unknown, too few real
-listings, mixed lot); "niet" = defect, for parts, poor resale, or a trap.
+modelKnown = false when the lot itself doesn't say which model it is (only a brand and a kind of machine, or
+several different models in one lot): then keep nothing.
+verdict: "kopen" = the model is clear and at least 2 listings really compare (the bot works out the price and max
+bid from those; you don't know the bid, so never doubt because of the price); "twijfel" = model unknown, fewer
+than 2 real listings, or a mixed lot; "niet" = defect, for parts, poor resale, or a trap.
 dropUnseen = true when the search clearly mixes in other models (the dearer listings beyond the ones shown then
 don't count either). model = what the lot is, as precisely as it says. confidence: hoog / middel / laag.
 reason: one or two short sentences in Dutch: what compares, and what the bot got wrong if it did. risks: optional,
@@ -50,6 +52,7 @@ short, Dutch. Never guess a price."""
 SCHEMA = {
     "type": "object",
     "properties": {
+        "modelKnown": {"type": "boolean"},
         "keep": {"type": "array", "items": {"type": "integer"}},
         "verdict": {"type": "string", "enum": ["kopen", "twijfel", "niet"]},
         "model": {"type": "string"},
@@ -58,7 +61,7 @@ SCHEMA = {
         "risks": {"type": "string"},
         "dropUnseen": {"type": "boolean"},
     },
-    "required": ["keep", "verdict", "model", "confidence", "reason", "risks", "dropUnseen"],
+    "required": ["modelKnown", "keep", "verdict", "model", "confidence", "reason", "risks", "dropUnseen"],
     "additionalProperties": False,
 }
 
@@ -97,9 +100,12 @@ def ask(client, text: str) -> dict | None:
     if r.stop_reason != "end_turn":
         return None
     try:
-        return json.loads(next((b.text for b in r.content if b.type == "text"), ""))
+        j = json.loads(next((b.text for b in r.content if b.type == "text"), ""))
     except json.JSONDecodeError:
         return None
+    if j.get("modelKnown") is False:  # no type number in the lot: no listing can be "the same", whatever was kept
+        j["keep"], j["verdict"] = [], "niet" if j.get("verdict") == "niet" else "twijfel"
+    return j
 
 
 # ---------------------------------------------------------------- 2dehands for lots Marktplaats couldn't price
