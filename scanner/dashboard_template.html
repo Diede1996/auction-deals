@@ -1065,7 +1065,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   /* Claude's daily advice for this lot (loaded from your private repository, see dashboard_private.js) */
   var ADVICE = {};
   var ADVICE_LABEL = { "kopen": "Claude: kopen", "twijfel": "Claude: twijfel", "te duur": "Claude: te duur", "niet": "Claude: niet kopen" };
-  function adviceLine(lot) {
+  function adviceLine(lot, c) {
     var a = ADVICE[lot.key];
     if (!a && lot.claude) {  // a Marktplaats bargain Claude checked before it was sent ("kopen: reason")
       var m = /^(kopen|twijfel|niet): ?(.*)$/.exec(lot.claude) || [null, "", lot.claude];
@@ -1076,7 +1076,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var nums = [];
     if (a.price != null) nums.push("waard ± " + money(a.price) + " per stuk (" + a.used + " van " + a.seen + " advertenties)");
     else if (a.botPrice != null) nums.push("bot zei " + money(a.botPrice) + ", te weinig echte vergelijkingen");
-    if (a.maxBid != null) nums.push("max bod " + money(a.maxBid) + (a.botMaxBid != null && a.botMaxBid !== a.maxBid ? " (bot: " + money(a.botMaxBid) + ")" : ""));
+    /* the max bid as this page works it out now (your drive split over the lots you collect there), not the stored one */
+    var mb = c && c.source === "claude" && c.maxBid != null ? c.maxBid : a.maxBid;
+    if (mb != null) nums.push("max bod " + money(mb));
     return el("div", { "class": "advice", title: "Claude checked which Marktplaats listings really compare" + (a.judgedAt ? " on " + new Date(a.judgedAt).toLocaleDateString("nl-NL") : "") },
       el("span", { "class": "lbl " + String(a.label || "").replace(/\s+/g, "-"), text: ADVICE_LABEL[a.label] || ("Claude: " + a.label) }),
       a.model ? el("b", { text: a.model + " · " }) : null,
@@ -1158,7 +1160,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var art = el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
       lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
-      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot)),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot, c)),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
@@ -1392,7 +1394,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.site && r.lot.site !== ui.site) return false;
       if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
-      if (!ui.showHidden && isHidden(r)) { (perHidden[r.lot.item] = perHidden[r.lot.item] || []).push(r); return false; }
+      /* above the max bid, not profitable, or Claude says no: never listed (Diede, 12 Nov 2026); "Show hidden" brings back swiped and far lots */
+      if (isOver(r) || (!ui.showHidden && isHidden(r))) { (perHidden[r.lot.item] = perHidden[r.lot.item] || []).push(r); return false; }
       return true;
     });
     var perItem = {};
@@ -1428,7 +1431,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       empty.append(hid.length + (hid.length === 1 ? " " + ui.item + " lot is" : " " + ui.item + " lots are") + " hidden: " +
         (far === hid.length ? why : [far ? far + " " + why : "", over ? over + " above your max bid or not profitable" : "",
           swiped ? swiped + " swiped away" : ""].filter(Boolean).join(", ")) + ". ",
-        el("button", { type: "button", "class": "btn-link", text: "Show them", onclick: function () { uiSet("showHidden", true); $("showHidden").checked = true; } }));
+        far || swiped ? el("button", { type: "button", "class": "btn-link", text: "Show them", onclick: function () { uiSet("showHidden", true); $("showHidden").checked = true; } }) : null);
     } else if (!shown.length) {
       empty.append("No lots match these filters. ", el("button", { type: "button", "class": "btn-link", text: "Clear filters", onclick: clearFilters }));
     }
