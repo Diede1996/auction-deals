@@ -1,0 +1,29 @@
+name: Remove favorites
+
+# Takes a list of lots off the dashboard favorites at once (scanner/favorites_remove.py). The log shows what was
+# removed, so it can be put back. Actions > Remove favorites > Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      keys:
+        description: "Lot keys, separated by commas"
+        required: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python -m scanner.favorites_remove --keys "$KEYS"
+        env:
+          KEYS: ${{ inputs.keys }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
