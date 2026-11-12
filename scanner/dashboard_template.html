@@ -469,6 +469,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   <nav class="mainnav" role="tablist" aria-label="Dashboard">
     <button type="button" class="tab" role="tab" id="tab-all" aria-selected="true">Lots<span class="count" id="count-all"></span></button>
     <button type="button" class="tab" role="tab" id="tab-fav" aria-selected="false"><span aria-hidden="true">★ </span>Favorites<span class="count" id="count-fav"></span></button>
+    <button type="button" class="tab" role="tab" id="tab-mp" aria-selected="false" title="Bargains from private sellers on Marktplaats (needs the private repo connected)">Marktplaats<span class="count" id="count-mp"></span></button>
     <span class="sep" aria-hidden="true"></span>
     <button type="button" class="tab" role="tab" id="tab-pickup" aria-selected="false">Pickups<span class="count" id="count-pickup"></span></button>
     <button type="button" class="tab" role="tab" id="tab-stock" aria-selected="false">Stock<span class="count" id="count-stock"></span></button>
@@ -1313,7 +1314,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
   var PRIVATE_VIEWS = { pickup: 1, stock: 1, listings: 1, money: 1 };
   function renderNav() {
-    ["all", "fav", "pickup", "stock", "listings", "money"].forEach(function (v) {
+    ["all", "fav", "mp", "pickup", "stock", "listings", "money"].forEach(function (v) {
       document.getElementById("tab-" + v).setAttribute("aria-selected", (ui.view || "all") === v ? "true" : "false");
     });
     var priv = !!PRIVATE_VIEWS[ui.view];
@@ -1337,7 +1338,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     if (overCount) hcParts.push(overCount + " above max or not profitable");
     if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
-    document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key]; }).length);
+    var isMp = function (r) { return r.lot.site === "mpdeal"; };  /* Marktplaats bargains have their own tab, auctions stay under Lots */
+    document.getElementById("count-all").textContent = String(all.filter(function (r) { return !favs[r.lot.key] && !isMp(r); }).length);
+    document.getElementById("count-mp").textContent = String(all.filter(function (r) { return !favs[r.lot.key] && isMp(r); }).length);
     var hint = document.getElementById("swipeHint");
     document.getElementById("swipeBar").hidden = !TOUCH || !lots.length;
     hint.textContent = ui.view === "fav" ? "Swipe ← back to the list" : "Swipe → ★ favorite · ← hide";
@@ -1377,6 +1380,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var perHidden = {};  /* per category: lots left out only because they're hidden (too far, or swiped away) */
     var listed = all.filter(function (r) {  /* everything the filters allow, any category */
       if (favs[r.lot.key]) return false;  /* favorites live under the Favorites tab */
+      if (isMp(r) !== (ui.view === "mp")) return false;
       if (ui.onlyRoom && r.c.status !== "room") return false;
       if (ui.site && r.lot.site !== ui.site) return false;
       if (q && (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) < 0) return false;
@@ -1402,7 +1406,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
     });
     var favShown = all.filter(function (r) { return favs[r.lot.key]; }).length;
-    if (!lots.length) {
+    if (ui.view === "mp" && !all.some(isMp)) {
+      empty.append("No Marktplaats bargains from the last 7 days. The bot looks twice an hour and sends new ones to Telegram too.");
+    } else if (!lots.length) {
       empty.append("Nothing on your watchlist is in a running " + (DATA.kinds || "bankruptcy, closure, estate or Domeinen") + " auction right now. The next scan runs tomorrow morning.");
     } else if (!shown.length && favShown === all.length) {
       empty.append("Every lot is under ★ Favorites now.");
@@ -1770,6 +1776,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   $("trip").addEventListener("change", function (e) { S.trip = e.target.checked; store.set("settings", S); render(); });
   $("tab-all").addEventListener("click", function () { uiSet("view", "all"); });
   $("tab-fav").addEventListener("click", function () { uiSet("view", "fav"); });
+  $("tab-mp").addEventListener("click", function () { uiSet("view", "mp"); });
   ["pickup", "stock", "listings", "money"].forEach(function (v) { $("tab-" + v).addEventListener("click", function () { uiSet("view", v); }); });
   $("sort").addEventListener("change", function (e) { uiSet("sort", e.target.value); });
   $("onlyRoom").addEventListener("change", function (e) { uiSet("onlyRoom", e.target.checked); });
@@ -1812,7 +1819,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                     var have = {};
                     DATA.lots.forEach(function (l) { have[l.key] = 1; });
                     var added = 0;
-                    (list || []).forEach(function (l) { if (l && l.key && !have[l.key]) { DATA.lots.push(l); have[l.key] = 1; added++; } });
+                    (list || []).forEach(function (l) { if (l && l.key && !have[l.key]) {
+                      DATA.lots.push(l); have[l.key] = 1; added++;
+                      if (!l.closes || Date.parse(l.closes) > Date.now()) lots.push(l);  /* the list the page draws from */
+                    } });
                     if (added && !PRIVATE_VIEWS[ui.view]) render();
                     return added;
                   },
