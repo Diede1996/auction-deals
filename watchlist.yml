@@ -85,9 +85,11 @@ items:
   keywords: [kitchenaid, thermomix, airfryer, smeg, vitamix, magimix]
   exclude: [onderdeel, onderdelen, hulpstuk, accessoire, accessoires, opzetstuk]
 - name: Suit / formalwear
-  keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer]
+  # Ralph Lauren added 2026-11-12 (Diede); its home goods and perfume are left out
+  keywords: [suitsupply, hugo boss, boggi, kostuum, colbert, maatpak, smoking, blazer, ralph lauren]
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
-    deo]
+    deo, beddengoed, dekbed, dekbedovertrek, laken, lakens, kussen, kussens, handdoek, handdoeken, plaid, deken,
+    servies, lamp, bril, zonnebril, horloge]
 - name: Phone
   min_margin: 0.15
   min_profit: 50
