@@ -92,7 +92,7 @@ def ask(client, text: str) -> dict | None:
                                    output_config={"effort": "low", "format": {"type": "json_schema", "schema": SCHEMA}},
                                    messages=[{"role": "user", "content": text}])
     except Exception as e:
-        log.warning("advice: Claude call failed: %s", e)
+        log.warning("advice: Claude call failed: %s (%r)", e, getattr(e, "__cause__", None))
         return None
     if r.stop_reason != "end_turn":
         return None
@@ -201,6 +201,12 @@ def main(argv=None) -> int:
     ap.add_argument("--root", default=".")
     ap.add_argument("--private", required=True, help="a checkout of auction-private")
     a = ap.parse_args(argv)
+    import os
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if key:  # the shape only, never the key itself: a pasted space or line break inside breaks every call
+        k = key.strip()
+        print(f"API key: {len(k)} characters, starts with sk-ant-: {k.startswith('sk-ant-')}, "
+              f"plain ASCII without spaces: {k.isascii() and not any(c.isspace() for c in k)}")
     client = claude_check.client_from_env()
     if client is None:
         print("no ANTHROPIC_API_KEY: no Claude advice today")
