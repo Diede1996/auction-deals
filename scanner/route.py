@@ -17,6 +17,17 @@ log = logging.getLogger(__name__)
 MAX_LOOKUPS = 15  # new addresses looked up per run (PDOK, free); the rest wait for the next run
 
 
+def _cache(memory: dict) -> dict:
+    """Looked-up points, kept in the bot's encrypted memory; anything that isn't a (lat, lon) pair is dropped."""
+    cache = memory.get("route_points")
+    if not isinstance(cache, dict):
+        cache = memory["route_points"] = {}
+    for k, v in list(cache.items()):
+        if v is not None and not (isinstance(v, list) and len(v) == 2 and all(isinstance(x, (int, float)) for x in v)):
+            del cache[k]
+    return cache
+
+
 def pickup_spots(root: Path, now: datetime, cfg: dict, memory: dict, http_cls) -> list[dict]:
     """[{address, closes, point}] of favorites with a pickup address in the window."""
     favs = (load_json(root / "data" / "lots.json").get("favorites") or {}).get("items") or []
@@ -33,7 +44,7 @@ def pickup_spots(root: Path, now: datetime, cfg: dict, memory: dict, http_cls) -
             continue
         if before <= t <= after and addr not in addresses:
             addresses[addr] = closes
-    cache = memory.setdefault("geo", {})
+    cache = _cache(memory)
     lookups = 0
     http = None
     for addr, closes in addresses.items():
@@ -52,7 +63,7 @@ def near(lot, spots: list[dict], memory: dict, http_cls, km: float) -> str | Non
     """'Veghel (closes 14 Nov)' when the seller's town is within km of a pickup spot, else None."""
     if not spots or not lot.location:
         return None
-    cache = memory.setdefault("geo", {})
+    cache = _cache(memory)
     key = f"{lot.location}, Nederland"
     if key not in cache:
         p = geocode(http_cls(delay=1.0), key)
