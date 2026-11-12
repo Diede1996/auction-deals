@@ -25,7 +25,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from . import claude_check, private_repo
+from . import claude_check, private_repo, route
 from .age import age_filter, age_skip, too_old
 from .condition import defect, defect_filter
 from .evaluate import Fees, Settings, Verdict, evaluate
@@ -167,7 +167,9 @@ def message(found: list[tuple[WatchItem, Lot, Verdict, PriceEstimate | None]], t
         rough = "≈" if est is not None and est.kind == "general" else ""
         profit = f" · profit ≈ {fmt_eur(v.profit)}" if v.profit is not None else ""
         median = f" (median {fmt_eur(est.median)}, {est.count} listings)" if est else ""
+        near = lot.auction_title.split("📍 ")[1] if "📍 " in (lot.auction_title or "") else ""
         lines.append(f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
+                     + (f"   📍 {esc(near)}\n" if near else "") +
                      f"   asks {fmt_eur(v.bid)} · worth paying up to <b>{rough}{fmt_eur(v.max_bid)}</b>{median}"
                      f"{profit} · {esc(lot.location or '?')}{drive}")
         if (notes or {}).get(lot.key):
@@ -193,9 +195,12 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     drv_cfg = config.get("driving") or {}
     items = eligible_items([i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords],
                            cfg)
-    settings = Settings.from_dict(watchlist.get("settings"), include_trip=bool(drv_cfg.get("include_in_max_bid", True)))
+    base = Settings.from_dict(watchlist.get("settings"), include_trip=bool(drv_cfg.get("include_in_max_bid", True)))
+    settings = base
     if cfg.get("min_profit") is not None:  # one pickup per item on Marktplaats: may ask more profit than an auction lot
-        settings = dataclasses.replace(settings, min_lot_profit=float(cfg["min_profit"]))
+        settings = dataclasses.replace(base, min_lot_profit=float(cfg["min_profit"]))
+    # near a pickup address of an auction you're going to anyway, the usual lot minimum is enough (Diede 12 Nov 2026)
+    route_settings = dataclasses.replace(base, min_lot_profit=float(cfg.get("route_min_profit", base.min_lot_profit)))
     mem_path = root / "data" / "deals.enc"
     memory = load_memory(mem_path)
     seen: dict = memory.setdefault("seen", {})  # itemId -> first seen (ISO)
@@ -282,10 +287,22 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     log.info("marktplaats deals: %d within %g min drive", len(matched), max_minutes)
     found = []
     unpriced = 0
+    lot_settings: dict = {}  # lot key -> the settings it passed with
+    spots = None  # auction pickup addresses near which the lower minimum counts, looked up when first needed
     for item, lot in matched:
         est = finder.for_lot(item, lot)
         units = quantity(lot.title) if quantity(lot.title) >= 2 else 1
         v = evaluate(item, lot, NO_FEES, settings, est, units)
+        if not v.is_deal and route_settings is not settings and est is not None:
+            v2 = evaluate(item, lot, NO_FEES, route_settings, est, units)
+            if v2.is_deal:
+                if spots is None:
+                    spots = route.pickup_spots(root, now, cfg, memory, http_cls)
+                near = route.near(lot, spots, memory, http_cls, float(cfg.get("route_km", 15)))
+                if near:
+                    v = v2
+                    lot.auction_title = f"{lot.auction_title} · 📍 near your pickup in {near}"
+                    lot_settings[lot.key] = route_settings
         unpriced += est is None
         if est is None and (finder.lookups_left <= 0 or finder.blocked):
             seen.pop(lot.lot_id, None)  # no price searches left this run: look at it again next time
@@ -294,7 +311,7 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     memory["prices"] = {k: v for k, v in price_cache.items() if k not in shared_prices or shared_prices[k] != v}
     # Claude reads each bargain and the listings it was compared with (only with ANTHROPIC_API_KEY)
     found, notes = claude_check.check(found, lambda item, lot, est: evaluate(
-        item, lot, NO_FEES, settings, est, quantity(lot.title) if quantity(lot.title) >= 2 else 1))
+        item, lot, NO_FEES, lot_settings.get(lot.key, settings), est, quantity(lot.title) if quantity(lot.title) >= 2 else 1))
     log.info("marktplaats deals: %d price searches (%d left, blocked %s), %d without a price, %d bargains",
              finder.lookups, finder.lookups_left, finder.blocked, unpriced, len(found))
 
