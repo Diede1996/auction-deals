@@ -24,7 +24,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from . import private_repo
+from . import claude_check, private_repo
 from .age import age_filter, age_skip, too_old
 from .condition import defect, defect_filter
 from .evaluate import Fees, Settings, Verdict, evaluate
@@ -157,7 +157,8 @@ def to_lot(li: dict, query: str) -> Lot | None:
 
 # ---------------------------------------------------------------- the run
 
-def message(found: list[tuple[WatchItem, Lot, Verdict, PriceEstimate | None]], trips: dict) -> str:
+def message(found: list[tuple[WatchItem, Lot, Verdict, PriceEstimate | None]], trips: dict,
+            notes: dict | None = None) -> str:
     lines = [f"🛒 <b>Marktplaats: {len(found)} possible bargain{'s' if len(found) != 1 else ''}</b>"]
     for item, lot, v, est in found:
         trip = trips.get(lot.pickup or "")
@@ -168,6 +169,8 @@ def message(found: list[tuple[WatchItem, Lot, Verdict, PriceEstimate | None]], t
         lines.append(f'• <a href="{attr(lot.url)}">{esc(lot.title[:70])}</a>\n'
                      f"   asks {fmt_eur(v.bid)} · worth paying up to <b>{rough}{fmt_eur(v.max_bid)}</b>{median}"
                      f"{profit} · {esc(lot.location or '?')}{drive}")
+        if (notes or {}).get(lot.key):
+            lines[-1] += f"\n   🤖 Claude: {esc(notes[lot.key])}"
     lines.append("Check photos and description first: the price is a comparison of asking prices, not a guarantee.")
     return "\n".join(lines)
 
@@ -286,6 +289,9 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
         if v.is_deal and (est is not None or item.market_price is not None):
             found.append((item, lot, v, est))
     memory["prices"] = {k: v for k, v in price_cache.items() if k not in shared_prices or shared_prices[k] != v}
+    # Claude reads each bargain and the listings it was compared with (only with ANTHROPIC_API_KEY)
+    found, notes = claude_check.check(found, lambda item, lot, est: evaluate(
+        item, lot, NO_FEES, settings, est, quantity(lot.title) if quantity(lot.title) >= 2 else 1))
     log.info("marktplaats deals: %d price searches (%d left, blocked %s), %d without a price, %d bargains",
              finder.lookups, finder.lookups_left, finder.blocked, unpriced, len(found))
 
@@ -296,6 +302,9 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     if found:
         data = dashboard_data(found, {}, config, settings, {SITE: NO_FEES}, {lot.key for _, lot, _, _ in found},
                               {lot.key: {"first": now.isoformat()} for _, lot, _, _ in found}, now, items, trips)
+        for d in data["lots"]:
+            if notes.get(d.get("key")):
+                d["claude"] = notes[d["key"]]
         have = {d.get("key") for d in data["lots"]}
         kept[:] = data["lots"] + [d for d in kept if d.get("key") not in have]
     kept[:] = [d for d in kept if (d.get("firstSeen") or "") >= cutoff]
@@ -305,7 +314,7 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if found and cfg.get("telegram", True) is not False:
         tg = telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run)
-        tg.send(message(found, trips))
+        tg.send(message(found, trips, notes))
     if not dry_run and (found or not memory.get("saved_once")):
         if private_repo.put_json("data/marktplaats-deals.json", {"generated": now.isoformat(), "lots": kept},
                                  "Marktplaats bargains", config):

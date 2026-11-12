@@ -1058,6 +1058,11 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   var ADVICE_LABEL = { "kopen": "Claude: kopen", "twijfel": "Claude: twijfel", "te duur": "Claude: te duur", "niet": "Claude: niet kopen" };
   function adviceLine(lot) {
     var a = ADVICE[lot.key];
+    if (!a && lot.claude) {  // a Marktplaats bargain Claude checked before it was sent ("kopen: reason")
+      var m = /^(kopen|twijfel|niet): ?(.*)$/.exec(lot.claude) || [null, "", lot.claude];
+      return el("div", { "class": "advice", title: "Claude checked which Marktplaats listings really compare" },
+        el("span", { "class": "lbl " + m[1], text: ADVICE_LABEL[m[1]] || "Claude" }), el("span", { text: m[2] }));
+    }
     if (!a) return null;
     var nums = [];
     if (a.price != null) nums.push("waard ± " + money(a.price) + " per stuk (" + a.used + " van " + a.seen + " advertenties)");
