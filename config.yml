@@ -145,7 +145,7 @@ bidding:
 
 # The Telegram summary of the auctions (the scan itself runs once a day, see .github/workflows/scan.yml)
 digest:
-  enabled: true
+  enabled: false                # Diede 2026-11-12: no Telegram summary; the dashboard and Claude's Wednesday/Sunday check instead
   # weekly (Diede, 2026-11-12): one overview on Sunday evening of what closes in the coming 7 days, instead of
   # a summary after every daily scan (daily). The dashboard still updates every day, favorites still get their
   # reminders before closing, and /scan still sends the overview right away.

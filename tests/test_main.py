@@ -62,7 +62,8 @@ def make_lots(now):
 def repo(tmp_path, monkeypatch):
     shutil.copy(ROOT / "config.yml", tmp_path / "config.yml")
     # these tests check the summary after every scan; the weekly one has its own tests (test_weekly_summary.py)
-    cfg = (tmp_path / "config.yml").read_text().replace("  schedule: weekly\n", "  schedule: daily\n")
+    cfg = (tmp_path / "config.yml").read_text().replace("  schedule: weekly\n", "  schedule: daily\n").replace(
+        "digest:\n  enabled: false ", "digest:\n  enabled: true ")  # the tests check the summary Diede switched off
     (tmp_path / "config.yml").write_text(cfg)
     (tmp_path / "watchlist.yml").write_text(yaml.safe_dump({
         "settings": {"min_margin": 0.30, "resale_factor": 0.85},
