@@ -1,0 +1,45 @@
+name: Bot check
+
+# Once a day: does everything still work? Scheduled runs succeed, the scan's data is fresh, every auction site
+# gave lots, the private files are updated, and the dashboard shows lots in a real browser. Sends a Telegram
+# message only when something is wrong (scanner/health.py). Never contacts the auction sites or Marktplaats.
+on:
+  schedule:
+    - cron: "23 15 * * *"   # 16:23 Dutch winter time (GitHub often starts it later)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: read           # see how the other workflows ran
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build the dashboard page
+        run: python -m scanner dashboard
+
+      - name: Open it in a browser
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.49.1
+          npx playwright install --with-deps chromium
+          node scripts/dashboard_check.js site/index.html > browser.json || echo '{"problems": ["the browser check crashed"]}' > browser.json
+          cat browser.json
+
+      - name: Check and report
+        run: python -m scanner.health --browser browser.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}

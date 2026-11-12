@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .pytest_cache/
 site/
+node_modules/
+browser.json
