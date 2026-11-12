@@ -1185,7 +1185,10 @@
   /* ---------- dialogs ---------- */
   /* one invoice can cover several purchases: its file stays while another item still uses it */
   function sharedFile(path, exceptId) {
-    return items().some(function (x) { return x.id !== exceptId && x.invoiceFile && x.invoiceFile.path === path; });
+    /* an invoice or photo another item also uses (a lot's invoice, photos copied to a second item) is never deleted */
+    return items().some(function (x) {
+      return x.id !== exceptId && ((x.invoiceFile && x.invoiceFile.path === path) || (x.photos || []).some(function (p) { return p && p.path === path; }));
+    });
   }
   function find(data, id) { return data.items.filter(function (x) { return x.id === id; })[0] || null; }
   var dlg = el("dialog", { "class": "pdlg" });
@@ -1295,7 +1298,7 @@
         isNew ? null : el("button", { type: "button", "class": "danger", text: "Delete", onclick: function () {
           if (!confirm("Delete “" + (it.name || "this item") + "” with its photos and invoice? This can't be undone.")) return;
           closeDlg();
-          var files = (it.photos || []).concat(it.invoiceFile && !sharedFile(it.invoiceFile.path, it.id) ? [it.invoiceFile] : []);
+          var files = (it.photos || []).concat(it.invoiceFile ? [it.invoiceFile] : []).filter(function (f) { return f && !sharedFile(f.path, it.id); });
           change("Delete " + (it.name || it.id), function (data) { data.items = data.items.filter(function (x) { return x.id !== it.id; }); })
             .then(function () { return Promise.all(files.map(function (f) { return removeFile(f, "Delete file of " + (it.name || it.id)); })); })
             .then(function () { toast("Deleted."); }, function () {});
@@ -1345,7 +1348,7 @@
           x.photos = (x.photos || []).filter(function (p) { return gone.indexOf(p.path) < 0; }).concat(added);
           if (inv || dropInvoice) x.invoiceFile = inv || null;
         }).then(function () {
-          var old = removed.concat((inv || dropInvoice) && oldInv && !sharedFile(oldInv.path, it.id) ? [oldInv] : []);
+          var old = removed.filter(function (f) { return !sharedFile(f.path, it.id); }).concat((inv || dropInvoice) && oldInv && !sharedFile(oldInv.path, it.id) ? [oldInv] : []);
           toast(isNew ? (values.pickup && !values.pickup.done ? "Added to your stock and your pickups." : "Added to your stock.") :
             sell ? "Now for sale. Add where it's online under Listings." : "Saved.");
           if (sell) setUi("stock", "stock");
