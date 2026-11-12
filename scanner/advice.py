@@ -93,7 +93,8 @@ def next_bid(lot: dict) -> float | None:
     return None
 
 
-def candidates(data: dict, lots: list[dict], advice: dict, now: datetime) -> tuple[list[dict], list[dict]]:
+def candidates(data: dict, lots: list[dict], advice: dict, now: datetime,
+               max_judge: int = MAX_JUDGE) -> tuple[list[dict], list[dict]]:
     """(lots to judge, favorites without listings), most important first."""
     favs = favorite_keys(data)
     old = (advice or {}).get("lots") or {}
@@ -119,7 +120,7 @@ def candidates(data: dict, lots: list[dict], advice: dict, now: datetime) -> tup
             unpriced.append((closes, lot))
     priced.sort(key=lambda t: (t[0], t[1]))
     unpriced.sort(key=lambda t: t[0])
-    return [t[2] for t in priced[:MAX_JUDGE]], [t[1] for t in unpriced[:MAX_UNPRICED]]
+    return [t[2] for t in priced[:max_judge]], [t[1] for t in unpriced[:MAX_UNPRICED]]
 
 
 def _brief(lot: dict) -> dict:
@@ -127,10 +128,10 @@ def _brief(lot: dict) -> dict:
                                      "units", "count", "maxBid", "url") if lot.get(k) is not None}
 
 
-def prepare(root: Path, private: Path | None, now: datetime) -> dict:
+def prepare(root: Path, private: Path | None, now: datetime, max_judge: int = MAX_JUDGE) -> dict:
     data, lots = all_lots(root, private)
     advice = _load(private / ADVICE_PATH) if private else None
-    judge, unpriced = candidates(data, lots, advice or {}, now)
+    judge, unpriced = candidates(data, lots, advice or {}, now, max_judge)
     out = {"generated": now.isoformat(), "instructions": __doc__.split("JUDGMENT")[1].strip(), "lots": [],
            "unpriced": [_brief(lot) for lot in unpriced]}
     first_with: dict[str, str] = {}  # identical lots (ten of the same laptop) share their listings
@@ -242,7 +243,7 @@ def label(verdict: str | None, room: bool | None, price: float | None) -> str:
     return "kopen" if v.startswith("kopen") else "twijfel"
 
 
-def apply(root: Path, private: Path, judgments: dict, now: datetime) -> dict:
+def apply(root: Path, private: Path, judgments: dict, now: datetime, daily: bool | None = None) -> dict:
     data, lots = all_lots(root, private)
     settings = data.get("settings") or {}
     by_key = {lot.get("key"): lot for lot in lots}
@@ -282,8 +283,10 @@ def apply(root: Path, private: Path, judgments: dict, now: datetime) -> dict:
             "asOf": (lot.get("mp") or {}).get("asOf"), "closes": lot.get("closes") or (
                 lot["closesDay"] + "T22:59:00+00:00" if lot.get("closesDay") else None),
             "judgedAt": now.isoformat(), "title": lot.get("title"),
+            "source": j.get("source") or ("lookup" if j.get("listings") else "marktplaats"),
         }
-    result = {"generated": now.isoformat(), "lots": out}
+    # daily: the bot checks every promising lot each day (advice_ai.py), so the dashboard lists only checked lots
+    result = {"generated": now.isoformat(), "daily": bool(advice.get("daily")) if daily is None else daily, "lots": out}
     (private / "data").mkdir(parents=True, exist_ok=True)
     (private / ADVICE_PATH).write_text(json.dumps(result, ensure_ascii=False, indent=1) + "\n")
     return result

@@ -65,6 +65,20 @@ jobs:
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
           exit 1
 
+      - name: Claude checks the lots
+        # with the secret ANTHROPIC_API_KEY: a small Claude model judges every promising lot (which Marktplaats or
+        # 2dehands listings really compare) and saves the advice to the private repository (scanner/advice_ai.py)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ] || [ -z "$PRIVATE_REPO_TOKEN" ]; then echo "no API key: skipped"; exit 0; fi
+          git clone -q --depth 1 "https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/${GITHUB_REPOSITORY_OWNER}/auction-private" ../auction-private
+          python -m scanner.advice_ai --private ../auction-private
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
       - name: Use the newest dashboard code
         # the page code may have changed while the scan ran: rebuild the page from this scan's results with it
         run: |

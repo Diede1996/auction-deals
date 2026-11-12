@@ -27,7 +27,9 @@ code or other files; send no messages; write the advice in Dutch, short.
 5. Judge each lot and write `/tmp/advice-judgments.json`, one entry per lot key:
    - `keep`: the numbers of the listings that really are the same thing: same model and version, same
      storage/memory for laptops and phones, same year or chip for Apple, working, the device itself (not only
-     a battery, case or part, not a set with other machines). When in doubt leave it out.
+     a battery, case or part, not a set with other machines). The type number must match exactly (Kärcher
+     BR 30/1 is not BR 35/12). Leave out shops and traders: several listings with the same title where only a
+     year or number differs ("Pack 2015"), BTW, garantie, factuur, inruil, a company name. When in doubt leave it out.
    - `listings`: instead of `keep`, for a lot priced from your own lookup: `[{"price": 250, "title": "..."}]`
      with only the listings that really compare.
    - `dropUnseen: true` when the search mixes in other models or years, so the unseen dearer ones don't count.

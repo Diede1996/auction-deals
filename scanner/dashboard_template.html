@@ -671,6 +671,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var adv = own == null ? ADVICE[lot.key] : null, claudeNo = false;
     if (adv && adv.price != null && adv.verdict !== "niet") { market = adv.price * Math.max(1, lot.units || 1); source = "claude"; }
     else if (adv && (adv.verdict === "niet" || adv.price == null)) claudeNo = true;
+    var unchecked = CLAUDE_ONLY && own == null && !adv && lot.site !== "mpdeal";
     /* the bid you'd have to place now: the starting bid, or the current bid + one step */
     var bid = lot.nextBid != null ? lot.nextBid : (lot.bid || 0), costNow = cost(bid), resale = null, caps = [];
     var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 :
@@ -688,7 +689,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                 profitNow: resale != null ? resale - costNow : null,
                 returnNow: resale != null && costNow > 0 ? (resale - costNow) / costNow : null,
                 maxBid: null, status: "noprice", headroom: -Infinity };
-    if (claudeNo) { out.status = "never"; out.claudeNo = true; return out; }
+    if (claudeNo || unchecked) { out.status = "never"; out.claudeNo = claudeNo; out.unchecked = unchecked; return out; }
+    if (adv && adv.source) out.claudeSource = adv.source;
     if (!caps.length) return out;
     var maxTotal = Math.min.apply(null, caps);
     var maxBid = Math.max(0, Math.floor(bidFor(maxTotal)));
@@ -847,7 +849,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
         }
       } else {
         src = el("div", { "class": "small" }, c.source === "yours" ? "your value · " : c.source === "claude"
-          ? el("span", { title: "Claude checked which Marktplaats listings really compare" + (lot.market != null ? "; the bot said " + money(lot.market) : "") }, "Claude's price · ")
+          ? el("span", { title: "Claude checked which listings really compare" + (lot.market != null ? "; the bot said " + money(lot.market) : "") },
+              c.claudeSource === "2dehands" ? "Claude's price (2dehands.be) · " : c.claudeSource === "lookup" ? "Claude's price (own search) · " : "Claude's price · ")
           : "from watchlist · ", editBtn);
       }
       cell.append(src);
@@ -1064,6 +1067,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
   /* Claude's daily advice for this lot (loaded from your private repository, see dashboard_private.js) */
   var ADVICE = {};
+  /* once Claude checks every promising lot each day (scanner/advice_ai.py), only lots it checked are listed */
+  var CLAUDE_ONLY = false;
   var ADVICE_LABEL = { "kopen": "Claude: kopen", "twijfel": "Claude: twijfel", "te duur": "Claude: te duur", "niet": "Claude: niet kopen" };
   function adviceLine(lot, c) {
     var a = ADVICE[lot.key];
@@ -1345,7 +1350,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var overCount = all.filter(isOver).length;
     var hcParts = [];
     if (farCount) hcParts.push(farCount + " too far");
-    if (overCount) hcParts.push(overCount + " above max or not profitable");
+    var waitCount = all.filter(function (r) { return r.c.unchecked && isOver(r); }).length;
+    if (overCount - waitCount) hcParts.push((overCount - waitCount) + " above max or not profitable");
+    if (waitCount) hcParts.push(waitCount + " not checked by Claude yet");
     if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
     var isMp = function (r) { return r.lot.site === "mpdeal"; };  /* Marktplaats bargains have their own tab, auctions stay under Lots */
@@ -1854,7 +1861,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                     return JSON.parse(JSON.stringify(hiddenLog));
                   },
                   /* Claude's advice per lot: { key: {...} } */
-                  setAdvice: function (map) { ADVICE = map || {}; if (!PRIVATE_VIEWS[ui.view]) render(); },
+                  setAdvice: function (map, daily) { ADVICE = map || {}; CLAUDE_ONLY = !!daily; if (!PRIVATE_VIEWS[ui.view]) render(); },
                   favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
 })();
 </script>

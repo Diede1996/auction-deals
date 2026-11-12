@@ -1628,7 +1628,7 @@
     gh(filePath("data/claude-advice.json")).then(function (f) {
       if (f.content) return fromB64(f.content);
       return gh("/repos/" + P.repo + "/git/blobs/" + f.sha).then(function (b) { return fromB64(b.content); });
-    }).then(function (text) { AD.setAdvice((JSON.parse(text || "{}") || {}).lots || {}); }, function () { /* no advice yet */ });
+    }).then(function (text) { var d = JSON.parse(text || "{}") || {}; AD.setAdvice(d.lots || {}, !!d.daily); }, function () { /* no advice yet */ });
   }
   loadAdvice();
   if (P.token) load().then(function () { counts(); if (VIEWS[view]) draw(); }, function () { counts(); });
