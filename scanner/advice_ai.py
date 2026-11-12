@@ -46,7 +46,7 @@ bid from those; you don't know the bid, so never doubt because of the price); "t
 than 2 real listings, or a mixed lot; "niet" = defect, for parts, poor resale, or a trap.
 dropUnseen = true when the search clearly mixes in other models (the dearer listings beyond the ones shown then
 don't count either). model = what the lot is, as precisely as it says. confidence: hoog / middel / laag.
-reason: one or two short sentences in Dutch: what compares, and what the bot got wrong if it did. risks: optional,
+reason: one or two short sentences, ALWAYS in Dutch: what compares, and what the bot got wrong if it did. risks: optional,
 short, Dutch. Never guess a price."""
 
 SCHEMA = {
@@ -181,8 +181,13 @@ def judge(root: Path, private: Path, now: datetime, client, http=None) -> dict:
     if http is None:
         from .http import Http
         http = Http(delay=4.0, jitter=3.0)
+    done: dict = {}  # same search and title (ten identical lots): one search and one judgment
     for lot in lots_for_2dehands(lots, old, now):
         q = query_of(lot)
+        same = (q, lot.get("title"))
+        if same in done:
+            judgments[lot["key"]] = dict(judgments[done[same]])
+            continue
         try:
             found = search_2dehands(http, q)
         except Exception as e:  # blocked or down: the rest waits for tomorrow
@@ -198,6 +203,7 @@ def judge(root: Path, private: Path, now: datetime, client, http=None) -> dict:
         j["keep"] = []
         j["source"] = "2dehands"  # no listing kept: apply() gives no price (it needs 2 real listings)
         judgments[lot["key"]] = j
+        done[same] = lot["key"]
     return judgments
 
 
