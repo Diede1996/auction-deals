@@ -221,6 +221,8 @@ def price_from(lot: dict, judgment: dict) -> tuple[float | None, int, int]:
     mp = lot.get("mp") or {}
     shown = mp.get("listings") or []
     keep = {int(i) for i in judgment.get("keep") or [] if str(i).lstrip("-").isdigit()}
+    if not keep:  # nothing really compares: the dearer listings beyond the 30 shown don't make a price either
+        return None, 0, len(shown) + max(0, len(mp.get("prices") or []) - len(shown))
     prices = [float(li["price"]) for i, li in enumerate(shown) if i in keep and li.get("price")]
     rest = [] if judgment.get("dropUnseen") else sorted(mp.get("prices") or [])[len(shown):]
     prices += [float(p) for p in rest]

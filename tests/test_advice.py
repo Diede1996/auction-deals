@@ -51,3 +51,7 @@ def test_apply_writes_advice_and_copies_same_as(tmp_path):
                                     "s:2": {"sameAs": "s:1"}}, now)
     assert res["lots"]["s:1"]["label"] == "kopen" and res["lots"]["s:2"]["label"] == "te duur"
     assert (priv / "data" / "claude-advice.json").exists()
+
+
+def test_nothing_kept_means_no_price():
+    assert advice.price_from(lot(), {"keep": []})[0] is None
