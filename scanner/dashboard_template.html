@@ -666,6 +666,11 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var own = values[lot.key];
     var market = own != null ? own : lot.market;
     var source = own != null ? "yours" : lot.marketSource;
+    /* Claude's judgment wins over the bot's Marktplaats price (Diede, 12 Nov 2026): its price per item, and a lot
+       Claude says not to buy, or couldn't price from enough real comparisons, counts as not profitable */
+    var adv = own == null ? ADVICE[lot.key] : null, claudeNo = false;
+    if (adv && adv.price != null && adv.verdict !== "niet") { market = adv.price * Math.max(1, lot.units || 1); source = "claude"; }
+    else if (adv && (adv.verdict === "niet" || adv.price == null)) claudeNo = true;
     /* the bid you'd have to place now: the starting bid, or the current bid + one step */
     var bid = lot.nextBid != null ? lot.nextBid : (lot.bid || 0), costNow = cost(bid), resale = null, caps = [];
     var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 :
@@ -683,6 +688,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                 profitNow: resale != null ? resale - costNow : null,
                 returnNow: resale != null && costNow > 0 ? (resale - costNow) / costNow : null,
                 maxBid: null, status: "noprice", headroom: -Infinity };
+    if (claudeNo) { out.status = "never"; out.claudeNo = true; return out; }
     if (!caps.length) return out;
     var maxTotal = Math.min.apply(null, caps);
     var maxBid = Math.max(0, Math.floor(bidFor(maxTotal)));
@@ -840,7 +846,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
             " · ", editBtn);
         }
       } else {
-        src = el("div", { "class": "small" }, c.source === "yours" ? "your value · " : "from watchlist · ", editBtn);
+        src = el("div", { "class": "small" }, c.source === "yours" ? "your value · " : c.source === "claude"
+          ? el("span", { title: "Claude checked which Marktplaats listings really compare" + (lot.market != null ? "; the bot said " + money(lot.market) : "") }, "Claude's price · ")
+          : "from watchlist · ", editBtn);
       }
       cell.append(src);
     } else {
