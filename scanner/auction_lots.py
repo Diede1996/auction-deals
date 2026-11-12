@@ -52,8 +52,16 @@ def main() -> int:
         try:
             props = reader.props(f"/nl/a/{slug}")
             info = props.get("lots")
-            print("page keys:", sorted(props)[:40], "| lots type:", type(info).__name__,
-                  "| lots keys:", sorted(info)[:20] if isinstance(info, dict) else len(info or []))
+            al = props.get("auctionListing")
+            print("auctionListing:", type(al).__name__, sorted(al)[:30] if isinstance(al, dict) else len(al or []))
+            if isinstance(al, dict):
+                for k, v in al.items():
+                    if isinstance(v, dict):
+                        print(" ", k, "->", sorted(v)[:20])
+                    elif isinstance(v, list):
+                        print(" ", k, "-> list", len(v), sorted(v[0])[:30] if v and isinstance(v[0], dict) else "")
+                    else:
+                        print(" ", k, "->", type(v).__name__)
         except Exception as e:
             print("diagnosis failed:", type(e).__name__)
         print("0 lots read; earlier reading kept")
