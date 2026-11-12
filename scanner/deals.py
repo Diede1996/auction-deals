@@ -16,6 +16,7 @@ When Marktplaats refuses the bot, it stops for that run and doesn't try to get a
 """
 from __future__ import annotations
 
+import dataclasses
 import html
 import json
 import logging
@@ -193,6 +194,8 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     items = eligible_items([i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords],
                            cfg)
     settings = Settings.from_dict(watchlist.get("settings"), include_trip=bool(drv_cfg.get("include_in_max_bid", True)))
+    if cfg.get("min_profit") is not None:  # one pickup per item on Marktplaats: may ask more profit than an auction lot
+        settings = dataclasses.replace(settings, min_lot_profit=float(cfg["min_profit"]))
     mem_path = root / "data" / "deals.enc"
     memory = load_memory(mem_path)
     seen: dict = memory.setdefault("seen", {})  # itemId -> first seen (ISO)

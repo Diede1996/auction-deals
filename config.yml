@@ -181,6 +181,7 @@ marktplaats_deals:
   radius_km: 100            # Marktplaats searches only this far around your HOME_ADDRESS postcode (straight line; Diede 2026-11-06)
   max_minutes: 105          # skip sellers further than this drive (one way); 105 = the whole 100 km radius
   keep_days: 7              # bargains stay on the dashboard this long
+  # min_profit: 75          # profit (after fuel) a bargain must make; unset = settings.min_lot_profit of watchlist.yml (€40)
   skip_items: [Wine, Mixed lot]
   delay_seconds: 4
 
