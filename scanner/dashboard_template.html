@@ -176,6 +176,13 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .value-edit button.save { background: var(--accent); border-color: var(--accent); color: #fff; }
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 560; white-space: nowrap; }
 .pill .ic { font-size: 12px; line-height: 1; }
+/* Claude's advice on a lot (scanner/advice.py, kept in the private repository) */
+.advice { margin-top: 6px; padding: 6px 9px; border-radius: 8px; background: var(--surface-2); font-size: 13px; line-height: 1.4; color: var(--text-2); }
+.advice b { color: var(--text); }
+.advice .lbl { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 999px; font-weight: 650; font-size: 12px; }
+.advice .lbl.kopen { background: var(--good-bg); color: var(--good-text); }
+.advice .lbl.twijfel, .advice .lbl.te-duur { background: var(--warning-bg); color: var(--warning-text); }
+.advice .lbl.niet { background: var(--critical-bg); color: var(--critical-text); }
 .pill.good { background: var(--good-bg); color: var(--good-text); }
 .pill.critical { background: var(--critical-bg); color: var(--critical-text); }
 .pill.neutral { background: var(--neutral-bg); color: var(--text-2); }
@@ -1046,6 +1053,24 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     return m >= 60 ? Math.floor(m / 60) + "h " + String(m % 60).padStart(2, "0") + "m" : m + " min";
   }
 
+  /* Claude's daily advice for this lot (loaded from your private repository, see dashboard_private.js) */
+  var ADVICE = {};
+  var ADVICE_LABEL = { "kopen": "Claude: kopen", "twijfel": "Claude: twijfel", "te duur": "Claude: te duur", "niet": "Claude: niet kopen" };
+  function adviceLine(lot) {
+    var a = ADVICE[lot.key];
+    if (!a) return null;
+    var nums = [];
+    if (a.price != null) nums.push("waard ± " + money(a.price) + " per stuk (" + a.used + " van " + a.seen + " advertenties)");
+    else if (a.botPrice != null) nums.push("bot zei " + money(a.botPrice) + ", te weinig echte vergelijkingen");
+    if (a.maxBid != null) nums.push("max bod " + money(a.maxBid) + (a.botMaxBid != null && a.botMaxBid !== a.maxBid ? " (bot: " + money(a.botMaxBid) + ")" : ""));
+    return el("div", { "class": "advice", title: "Claude checked which Marktplaats listings really compare" + (a.judgedAt ? " on " + new Date(a.judgedAt).toLocaleDateString("nl-NL") : "") },
+      el("span", { "class": "lbl " + String(a.label || "").replace(/\s+/g, "-"), text: ADVICE_LABEL[a.label] || ("Claude: " + a.label) }),
+      a.model ? el("b", { text: a.model + " · " }) : null,
+      nums.length ? el("span", { text: nums.join(" · ") + ". " }) : null,
+      a.reason ? el("span", { text: a.reason + " " }) : null,
+      a.risks ? el("span", { text: "Let op: " + a.risks }) : null,
+      a.confidence ? el("span", { text: " (zekerheid: " + a.confidence + ")" }) : null);
+  }
   function pickupLine(lot, r) {
     if (lot.delivery) return el("div", { "class": "pickup" }, el("span", { text: "🚚 Delivered to you (no pickup)" }));
     var place = lot.pickup || lot.location;
@@ -1119,7 +1144,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var art = el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
       lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
-      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r)),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot)),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
@@ -1801,7 +1826,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                     store.set("hidden", hidden); store.set("hiddenLog", hiddenLog);
                     if (changed && !PRIVATE_VIEWS[ui.view]) render();
                     return JSON.parse(JSON.stringify(hiddenLog));
-                  }, favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
+                  },
+                  /* Claude's advice per lot: { key: {...} } */
+                  setAdvice: function (map) { ADVICE = map || {}; if (!PRIVATE_VIEWS[ui.view]) render(); },
+                  favorites: function () { return Object.keys(favs).map(function (k) { return favs[k]; }); } };
 })();
 </script>
 <script>

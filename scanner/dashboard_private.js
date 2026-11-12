@@ -1622,6 +1622,15 @@
     }, function () { /* not there yet: the bot saves it once it has the PRIVATE_REPO_TOKEN secret */ });
   }
   loadPrivateLots();
+  /* Claude's daily advice per lot (scanner/advice.py): which Marktplaats listings really compare, and a buy advice */
+  function loadAdvice() {
+    if (!P.token || !AD.setAdvice) return;
+    gh(filePath("data/claude-advice.json")).then(function (f) {
+      if (f.content) return fromB64(f.content);
+      return gh("/repos/" + P.repo + "/git/blobs/" + f.sha).then(function (b) { return fromB64(b.content); });
+    }).then(function (text) { AD.setAdvice((JSON.parse(text || "{}") || {}).lots || {}); }, function () { /* no advice yet */ });
+  }
+  loadAdvice();
   if (P.token) load().then(function () { counts(); if (VIEWS[view]) draw(); }, function () { counts(); });
   if (VIEWS[AD.view()]) { view = AD.view(); draw(); }
 })();
