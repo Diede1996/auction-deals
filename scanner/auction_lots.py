@@ -48,6 +48,16 @@ def main() -> int:
     except BlockedError as e:
         print(f"stopped: {e}")
         complete = False
+    if not lots:  # never overwrite an earlier reading with nothing
+        try:
+            props = reader.props(f"/nl/a/{slug}")
+            info = props.get("lots")
+            print("page keys:", sorted(props)[:40], "| lots type:", type(info).__name__,
+                  "| lots keys:", sorted(info)[:20] if isinstance(info, dict) else len(info or []))
+        except Exception as e:
+            print("diagnosis failed:", type(e).__name__)
+        print("0 lots read; earlier reading kept")
+        return 1
     data = {"slug": slug, "read": datetime.now(timezone.utc).isoformat(), "complete": complete, "lots": lots}
     ok = private_repo.put_json(f"lookups/{slug}.json", data, f"Lots of auction {slug}")
     print(f"{len(lots)} lots read (complete: {complete}); saved to the private repository: {ok}")
