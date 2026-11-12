@@ -121,7 +121,10 @@ items:
     rek, kast, koelkast, koeler, dispenser, pomp, tap, opener, vat, vaten, leeg, lege, boek, schilderij, poster,
     bord, reclame, reclamebord, lichtbak, spiegel, display, inventaris, meubel, tafel, stoel, kruk, barkruk,
     aroma, smaakstof, essence, cake, bonbons, chocolade, parfum, geur, kaars, zeep, shampoo,
-    tape, ginseng, flessenrek, schort, shirt, pet]
+    tape, ginseng, flessenrek, schort, shirt, pet,
+    # "cognac" is also a colour (Diede's dashboard 2026-11-12: leather bags, cushions, a boxing bag)
+    tas, tassen, schoudertas, herenschoudertas, handtas, bag, leer, leder, lederen, kussen, kussens, sierkussens,
+    boxzak, kleurig, kleur, plaid, schoenen, laarzen, jas, riem, portemonnee, plaat, dienblad, merchandising]
   price_check: false
   always_show: true
 # added 2026-11-01 (Diede): garden tools, cameras, audio/beamers, Dyson/robot vacuums and mixed lots
