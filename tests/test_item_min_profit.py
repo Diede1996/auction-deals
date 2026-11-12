@@ -18,3 +18,4 @@ def test_lot_floor_setting():
 def test_monthly_goal_setting():
     assert Settings.from_dict({"monthly_goal": 1000}).monthly_goal == 1000
     assert Settings.from_dict({}).monthly_goal == 0
+    assert Settings.from_dict({"capital_goal": 5000}).capital_goal == 5000

@@ -690,6 +690,8 @@
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
     var goal = goalPanel();
     if (goal) box.append(goal);
+    var cap = capitalPanel();
+    if (cap) box.append(cap);
     box.append(platformPanel());
     box.append(tiles([
       { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
@@ -817,6 +819,34 @@
       el("div", { "class": "goalnum num" }, money(done), el("span", { "class": "of", text: " of " + money(goal) + " profit · " + n + (n === 1 ? " sale" : " sales") })),
       bar, lines.map(function (t) { return el("p", { "class": "small", text: t }); }),
       el("p", { "class": "small", text: "Change the goal in watchlist.yml (settings → monthly_goal)." }));
+  }
+  /* working capital towards watchlist.yml settings.capital_goal (Diede, 2026-11-12: build up to € 5000 to buy lots,
+     then the monthly profit goes to the stock market). There is no cash ledger, so capital = what you paid for what's
+     still for sale + all profit on paid sales (the cost of what you sold is assumed to go into new lots).
+     Always over everything, without items bought for yourself (personal) or kept */
+  function capitalPanel() {
+    var goal = AD.settings ? +(AD.settings().capital_goal || 0) : 0;
+    if (!(goal > 0)) return null;
+    var stock = 0, profit = 0;
+    items().forEach(function (it) {
+      if (it.personal) return;
+      stock += stockValue(it);
+      sales(it).forEach(function (s) { if (!s.unpaid) profit += (s.price || 0) - saleCost(it, s); });
+    });
+    var have = stock + profit, reached = have >= goal;
+    var bar = el("div", { "class": "goalbar", role: "progressbar", "aria-valuemin": "0", "aria-valuemax": String(goal), "aria-valuenow": String(Math.round(Math.max(0, have))) },
+      el("div", { "class": "fill" + (reached ? " done" : ""), style: "width:" + Math.max(0, Math.min(100, have / goal * 100)).toFixed(1) + "%" }));
+    var monthly = AD.settings ? +(AD.settings().monthly_goal || 0) : 0, togo = Math.max(0, goal - have);
+    var lines = [money(stock) + " in stock (what you paid for what's still for sale) + " + money(profit) + " profit on everything you sold so far."];
+    if (reached) lines.push("Reached 🎉 From now on, put the profit of each month into the stock market and keep this amount for buying lots.");
+    else {
+      lines.push(money(togo) + " to go" + (monthly > 0 ? ": about " + Math.ceil(togo / monthly) + " months at " + money(monthly) + " profit a month" : "") + ".");
+      lines.push("Once you have " + money(goal) + ", the profit of each month goes to the stock market.");
+    }
+    return el("section", { "class": "panel pgoal" }, el("h2", { text: "Working capital" }),
+      el("div", { "class": "goalnum num" }, money(have), el("span", { "class": "of", text: " of " + money(goal) })),
+      bar, lines.map(function (t) { return el("p", { "class": "small", text: t }); }),
+      el("p", { "class": "small", text: "Change the goal in watchlist.yml (settings → capital_goal)." }));
   }
   /* one year of purchases and sales as a spreadsheet (for your tax return): opens in Excel with Dutch number format */
   function exportPanel() {

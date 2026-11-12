@@ -93,7 +93,7 @@ def settings_data(settings: Settings) -> dict:
             "margin_tiers": [{"up_to": u, "min_margin": m} for u, m in settings.margin_tiers],
             "transport_margin": settings.transport_margin,
             "transport_min_value": settings.transport_min_value, "min_profit": settings.min_profit, "min_lot_profit": settings.min_lot_profit,
-            "monthly_goal": settings.monthly_goal, "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs}
+            "monthly_goal": settings.monthly_goal, "capital_goal": settings.capital_goal, "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs}
 
 
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,

@@ -24,6 +24,7 @@ WATCHLIST_HEADER = """\
 #   min_profit     minimum profit in euros per item in the lot (x the number of items)
 #   min_lot_profit minimum profit in euros for the whole lot, however few items (worth the drive)
 #   monthly_goal   (optional) profit you aim for per month; the dashboard's Finance tab shows how far you are
+#   capital_goal   (optional) working capital to build up (stock at cost + all profit); also on the Finance tab
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
 #

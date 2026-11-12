@@ -10,6 +10,7 @@
 #                  need this margin instead; the transport estimate is still a cost
 #   min_lot_profit minimum profit in euros for the whole lot, however few items (worth the drive)
 #   monthly_goal   (optional) profit you aim for per month; the dashboard's Finance tab shows how far you are
+#   capital_goal   (optional) working capital to build up (stock at cost + all profit); also on the Finance tab
 #   transport_min_value (optional) only when the lot, or the lots collected at the same pickup together, sell
 #                  for at least this (at resale_factor); cheaper ones keep margin_tiers
 #   min_profit     (optional) the suggested max bid also leaves at least this much profit in euros per item
@@ -33,7 +34,8 @@ settings:
   min_margin: 0.25
   min_profit: 25
   min_lot_profit: 40  # Diede, 2026-11-05 (was 50)
-  monthly_goal: 1000  # Diede, 2026-11-05
+  monthly_goal: 500  # Diede, 2026-11-12 (was 1000)
+  capital_goal: 5000  # Diede, 2026-11-12: build up to this to buy lots, then monthly profit goes to stocks
   transport_margin: 0.15
   transport_min_value: 100
 items:
