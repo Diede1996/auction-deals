@@ -37,6 +37,7 @@ jobs:
           PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}
           HOME_ADDRESS_2: ${{ secrets.HOME_ADDRESS_2 }}
+          WORK_ADDRESS: ${{ secrets.WORK_ADDRESS }}   # optional: Marktplaats bargains near work need less profit
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Save memory

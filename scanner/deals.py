@@ -296,12 +296,14 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
         if not v.is_deal and route_settings is not settings and est is not None:
             v2 = evaluate(item, lot, NO_FEES, route_settings, est, units)
             if v2.is_deal:
-                if spots is None:
-                    spots = route.pickup_spots(root, now, cfg, memory, http_cls)
-                near = route.near(lot, spots, memory, http_cls, float(cfg.get("route_km", 15)))
+                near = "home" if route.near_home(lot, float(cfg.get("route_minutes", 20))) else None
+                if not near:
+                    if spots is None:
+                        spots = route.pickup_spots(root, now, cfg, memory, http_cls)
+                    near = route.near(lot, spots, memory, http_cls, float(cfg.get("route_km", 15)))
                 if near:
                     v = v2
-                    lot.auction_title = f"{lot.auction_title} · 📍 near your pickup in {near}"
+                    lot.auction_title = f"{lot.auction_title} · 📍 near " + (near if near in ("home", "your work") else f"your pickup in {near}")
                     lot_settings[lot.key] = route_settings
         unpriced += est is None
         if est is None and (finder.lookups_left <= 0 or finder.blocked):

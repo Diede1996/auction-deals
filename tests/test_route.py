@@ -32,3 +32,15 @@ def test_near_a_pickup(tmp_path, monkeypatch):
 
 def test_old_favorites_dont_count(tmp_path, monkeypatch):
     assert setup(tmp_path, monkeypatch, "2026-11-01T19:30:00+01:00") == []
+
+
+def test_near_home_and_work(tmp_path, monkeypatch):
+    POINTS["Kantoorweg 1, Utrecht"] = (52.09, 5.12)
+    POINTS["Zeist, Nederland"] = (52.09, 5.23)
+    monkeypatch.setenv("WORK_ADDRESS", "Kantoorweg 1, Utrecht")
+    spots = setup(tmp_path, monkeypatch, "2026-11-01T19:30:00+01:00")  # no auction pickups in the window
+    assert [s["label"] for s in spots] == ["work"]
+    assert route.near(NS(location="Zeist"), spots, {}, lambda **kw: None, 15) == "your work"
+    assert route.near(NS(location="Groningen"), spots, {}, lambda **kw: None, 15) is None
+    assert route.near_home(NS(distance_km=15), 20) and not route.near_home(NS(distance_km=30), 20)
+    assert not route.near_home(NS(distance_km=None), 20)

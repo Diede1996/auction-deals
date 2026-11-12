@@ -183,8 +183,9 @@ marktplaats_deals:
   keep_days: 7              # bargains stay on the dashboard this long
   telegram: false           # Diede 2026-11-12: no Telegram, bargains only on the dashboard (Marktplaats tab)
   min_profit: 75            # profit (after fuel) a bargain must make: one drive per item (Diede 2026-11-12); unset = settings.min_lot_profit (€40)
-  route_min_profit: 40      # ...but this is enough within route_km of the pickup address of a favorite auction lot
+  route_min_profit: 40      # ...but this is enough on the way: near a favorite auction lot's pickup address, home or work
   route_km: 15              # straight line from the seller's town to that pickup address
+  route_minutes: 20         # ...and €40 is also enough within this drive of home or of work (secret WORK_ADDRESS) (Diede 2026-11-12)
   route_days_after_close: 4 # favorites that closed up to this many days ago (you still have to collect them)...
   route_days_before_close: 7  # ...or close within this many days
   skip_items: [Wine, Mixed lot]
