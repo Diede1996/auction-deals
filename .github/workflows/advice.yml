@@ -1,0 +1,29 @@
+name: Claude advice
+
+# Claude checks the promising lots from the last scan (scanner/advice_ai.py), without scanning again. The daily
+# scan does the same at its end; this is for a run in between (Actions > Claude advice > Run workflow).
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  advice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Claude checks the lots
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ] || [ -z "$PRIVATE_REPO_TOKEN" ]; then echo "no API key: skipped"; exit 0; fi
+          git clone -q --depth 1 "https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/${GITHUB_REPOSITORY_OWNER}/auction-private" ../auction-private
+          python -m scanner.advice_ai --private ../auction-private
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
