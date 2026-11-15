@@ -319,9 +319,10 @@
     var cs = document.getElementById("count-stock"), cl = document.getElementById("count-listings"), cp = document.getElementById("count-pickup");
     if (!P.loaded) { cs.textContent = ""; cl.textContent = ""; cp.textContent = ""; return; }
     cp.textContent = String(stops(false).length || "");
-    cs.textContent = String(items().filter(function (it) { return statusOf(it) === "stock"; }).length);
     var stale = items().filter(function (it) { return listings(it).some(isStale); }).length;
     var todo = offlineTodo().length;
+    cs.textContent = String(items().filter(function (it) { return statusOf(it) === "stock"; }).length) + (todo ? " · " + todo + " to take offline ⚠" : stale ? " · " + stale + " ⚠" : "");
+    cs.title = todo ? "Sold, but the ad is still online elsewhere" : stale ? stale + " ads online for more than a week" : "";
     cl.textContent = todo ? todo + " to take offline ⚠" : stale ? String(stale) + " ⚠" : String(items().filter(function (it) { return listings(it).length; }).length);
     cl.title = todo ? "Sold, but the ad is still online elsewhere" : stale ? stale + " online for more than a week" : "";
   }
@@ -352,7 +353,7 @@
     offlineBanner(content);
     if (view === "pickup") pickupView(content);
     else if (view === "stock") stockView(content);
-    else if (view === "listings") listingsView(content);
+    else if (view === "listings") { pui.stock = "stock"; stockView(content); }  /* Listings now lives under Stock > For sale */
     else moneyView(content);
   }
   function tiles(list) {
@@ -403,7 +404,7 @@
     box.append(tiles([
       { label: "For sale", value: String(pieces), note: forSale.length + (forSale.length === 1 ? " item" : " items") + (pieces !== forSale.length ? " (lots count per piece)" : ""), primary: true },
       { label: "Money in stock", value: money(forSale.reduce(function (s, it) { return s + stockValue(it); }, 0)), note: "what you paid for what's still for sale" },
-      { label: "Not listed yet", value: String(unlisted.length), note: unlisted.length ? "add an ad under Listings" : "everything is online" },
+      { label: "Not listed yet", value: String(unlisted.length), note: unlisted.length ? "add an ad under For sale › Not listed yet" : "everything is online" },
       { label: "Longest in stock", value: forSale.length ? oldest + " days" : "–", note: "since you bought it (or put it up for sale, for things you used yourself)" }
     ]));
     var defs = [
@@ -415,6 +416,7 @@
     ];
     var panel = el("section", { "class": "panel list" }, subtabs(defs, "stock"));
     if (pui.stock === "overview") { overviewPanel(panel, forSale); box.append(panel); return; }
+    if (pui.stock === "stock") { listingsView(box, panel.firstChild); return; }  /* For sale = the ads: online, online > 7 days, not listed yet */
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
       .sort(function (a, b) { return byGroup(a, b) || String(b.bought || "").localeCompare(String(a.bought || "")); });
     panel.append(el("div", { "class": "prow head", "aria-hidden": "true" }, el("div"), el("div", { text: "Item" }), el("div", { text: "Bought" }),
@@ -503,12 +505,12 @@
   }
 
   /* ---------- Listings ---------- */
-  function listingsView(box) {
+  function listingsView(box, top) {
     var forSale = items().filter(function (it) { return statusOf(it) === "stock" && matches(it); });
     var online = forSale.filter(function (it) { return listings(it).length; });
     var stale = online.filter(function (it) { return listings(it).some(isStale); });
     var unlisted = forSale.filter(function (it) { return !listings(it).length; });
-    var panel = el("section", { "class": "panel list" }, subtabs([
+    var panel = el("section", { "class": "panel list" }, top || null, subtabs([
       { id: "online", label: "Online", count: online.length },
       { id: "stale", label: "Online > " + STALE_DAYS + " days", count: stale.length },
       { id: "unlisted", label: "Not listed yet", count: unlisted.length }
@@ -1393,7 +1395,7 @@
         }).then(function () {
           var old = removed.filter(function (f) { return !sharedFile(f.path, it.id); }).concat((inv || dropInvoice) && oldInv && !sharedFile(oldInv.path, it.id) ? [oldInv] : []);
           toast(isNew ? (values.pickup && !values.pickup.done ? "Added to your stock and your pickups." : "Added to your stock.") :
-            sell ? "Now for sale. Add where it's online under Listings." : "Saved.");
+            sell ? "Now for sale. Add where it's online under Stock › For sale." : "Saved.");
           if (sell) setUi("stock", "stock");
           return Promise.all(old.map(function (f) { return removeFile(f, "Remove old file of " + name); }));
         });
