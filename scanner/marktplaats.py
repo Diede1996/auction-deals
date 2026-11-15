@@ -13,6 +13,7 @@ import statistics
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
 
+from .matching import printed_matter
 from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, quantity, says_new
 from .util import normalize, token_in
 
@@ -117,6 +118,8 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
             continue  # only private sellers count (Diede, 8 Nov 2026): a refurbisher's price is not what she gets
         if (not rule.parts_ok and is_part_listing(title, battery_ok=bool(rule.model))) or (not rule.new_ok and says_new(norm)):
             continue  # only a battery or keyboard for it, or new in a shop
+        if printed_matter(title):
+            continue  # a book or manual about it ("Fotograferen met de Nikon D7000")
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))
         count = quantity(title)

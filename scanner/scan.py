@@ -143,6 +143,9 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
             log.info("%s: %d regular auctions read (trial)", site, len(regular))
         h.update(ok=True, lots=len(found), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
         report[site] = {"ok": True, "lots": len(found)}
+        ctx = jobs[site][1]
+        if ctx.auctions_seen:  # 0 lots is fine when the site listed auctions but none of the kind we read
+            report[site].update(auctions=ctx.auctions_seen, auctionsRead=ctx.auctions_read)
         log.info("%s: %d lots", site, len(found))
         lots.extend(found)
     requests = sum(getattr(ctx.http, "request_count", 0) for _, ctx in jobs.values())
@@ -598,7 +601,8 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "maxBid": v.max_bid, "isDeal": v.is_deal,
         })
     sites = [{"id": s, "name": SITE_NAMES.get(s, s), "ok": r.get("ok", False), "lots": r.get("lots", 0),
-              "error": r.get("error", "")} for s, r in report.items()]
+              "error": r.get("error", ""),
+              **{k: r[k] for k in ("auctions", "auctionsRead") if k in r}} for s, r in report.items()]
     site_cfg = config.get("sites") or {}
     notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
              "troostwijk": "an estimate: Troostwijk sets it per auction, check the lot page",

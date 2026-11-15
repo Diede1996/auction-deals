@@ -8,6 +8,28 @@ from .models import Lot, WatchItem
 from .util import AMS, normalize, phrase_in, token_in
 
 
+# Books, manuals and courses about a product, not the product ("Fotograferen met de Nikon D7000 en D80/D90",
+# asking EUR 25, was flagged as a cheap camera on 15 Nov 2026). Checked in the title; ISBN etc. also in the text.
+PRINTED_TITLE = ["boek", "boeken", "handboek", "fotoboek", "praktijkboek", "studieboek", "leerboek", "ebook",
+                 "user manual", "service manual", "owners manual", "cursus",
+                 "tijdschrift", "dummies", "paperback", "hardcover", "isbn", "fotograferen met", "gids"]
+# "Canon EOS 80D met doos en handleiding" is the camera: a manual only counts when the title starts with it
+PRINTED_START = ("handleiding", "gebruiksaanwijzing", "manual", "instructieboek", "werkplaatshandboek")
+PRINTED_TEXT = ["isbn", "paperback", "hardcover", "uitgeverij", "aantal paginas"]
+
+
+def _has(words: list[str], text_norm: str) -> bool:
+    """A word starts a word in the text (token_in); several words must stand together, in that order."""
+    return any(re.search(rf"(?<![a-z0-9]){re.escape(normalize(w))}(?![a-z0-9])", text_norm) if " " in w
+               else token_in(w, text_norm) for w in words)
+
+
+def printed_matter(title: str, description: str = "") -> bool:
+    """A book, manual, guide or magazine about a product rather than the product itself."""
+    t = normalize(title)
+    return _has(PRINTED_TITLE, t) or t.startswith(PRINTED_START) or _has(PRINTED_TEXT, normalize(description or ""))
+
+
 def matches(item: WatchItem, title: str) -> bool:
     text = normalize(title)
     if not any(phrase_in(k, text) for k in item.keywords):

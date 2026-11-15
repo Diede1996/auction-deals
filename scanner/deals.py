@@ -33,7 +33,7 @@ from .geo import FALLBACK_KMH, ROAD_FACTOR, DrivingCosts, Trip, fuel_price
 from .http import BlockedError, Http
 from .identify import quantity
 from .marktplaats import API, PriceEstimate, is_business
-from .matching import match_lots
+from .matching import match_lots, printed_matter
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
 from .storage import load_json, load_yaml
@@ -244,7 +244,8 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
                 lot.distance_km = meters / 1000  # straight line from your postcode, says Marktplaats
             if lot:
                 candidates.append(lot)
-    matched = match_lots(items, candidates)
+    matched = [(i, lot) for i, lot in match_lots(items, candidates)
+               if not printed_matter(lot.title, lot.description)]  # books and manuals about the product
     if defect_filter(config):
         matched = [(i, lot) for i, lot in matched if not defect(lot.title, lot.description)]
     min_year = age_filter(config)

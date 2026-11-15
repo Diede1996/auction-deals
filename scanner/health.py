@@ -67,6 +67,8 @@ def check_lots(lots: dict, now: datetime) -> list[str]:
         name = s.get("name") or s.get("id")
         if not s.get("ok"):
             out.append(f"{name}: couldn't be read in the last scan ({(s.get('error') or 'no reason given')[:120]}).")
+        elif not s.get("lots") and s.get("auctions") and not s.get("auctionsRead"):
+            continue  # the site listed auctions, just none of the kinds we read (bankruptcy, closure, ...)
         elif not s.get("lots"):
             out.append(f"{name}: read, but gave 0 lots (the site may have changed).")
         elif s.get("private") and s.get("privateSaved") is False:

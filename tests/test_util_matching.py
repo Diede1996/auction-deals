@@ -86,3 +86,14 @@ def test_shipped_config_includes_business_closures():
     assert is_b("Faillissementsveiling horeca-apparatuur")
     assert not is_b("Verzendveiling: Huishoudelijke artikelen, audio, witgoed")
     assert not is_b("Thuisbezorgveiling hardhout, douglas, vuren en overig")
+
+
+def test_books_and_manuals_are_not_the_product():
+    from scanner.matching import printed_matter
+    assert printed_matter("Hans Frederiks - Fotograferen met de Nikon D7000 en D80/D90")
+    assert printed_matter("Handleiding Nikon D7000")
+    assert printed_matter("Nikon D90", "Paperback, 240 blz, ISBN 9789059403000")
+    assert printed_matter("Photoshop voor Dummies")
+    for t in ["Canon EOS 80D incl. doos en handleiding", "Samyang 14mm manual focus", "Lenovo ThinkPad notebook",
+              "MacBook Air M1", "Nikon D7000 body"]:
+        assert not printed_matter(t), t

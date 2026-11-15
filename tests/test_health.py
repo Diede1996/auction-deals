@@ -48,3 +48,12 @@ def test_private_and_browser():
 
 def test_message_escapes():
     assert "&lt;b&gt;" in health.message(["<b>"])
+
+
+def test_no_alarm_when_a_site_simply_has_no_auction_of_our_kind():
+    # Nedveiling/BellAuction, Nov 2026: 6 running auctions, none a bankruptcy or closure: fine, not broken
+    quiet = {"name": "Nedveiling", "ok": True, "lots": 0, "auctions": 6, "auctionsRead": 0}
+    broken = {"name": "BellAuction", "ok": True, "lots": 0, "auctions": 6, "auctionsRead": 2}
+    none_listed = {"name": "Vlavem", "ok": True, "lots": 0, "auctions": 0}
+    p = health.check_lots({"generated": ago(5), "sites": [quiet, broken, none_listed]}, NOW)
+    assert len(p) == 2 and "BellAuction" in p[0] and "Vlavem" in p[1]
