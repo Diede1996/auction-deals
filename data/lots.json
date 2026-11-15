@@ -1852,7 +1852,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-11-15T11:55:31.814697+00:00",
+ "generated": "2026-11-15T20:32:36.491155+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -7147,475 +7147,11 @@
    "vat": 0.21
   },
   {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 3.0,
-   "bidFromEmail": false,
-   "bids": 2,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055449|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055449",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 4.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055449/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055450|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055450",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055450/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055451|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055451",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055451/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055452|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055452",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055452/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055453|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055453",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055453/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055454|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055454",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055454/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055465|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055465",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055465/detail",
-   "vat": 0.21
-  },
-  {
-   "alwaysShow": true,
-   "auction": "DIV. GOEDEREN UIT INBOEDELS EN NALATENSCHAPPEN: WO. MEUBELEN, ANTIEK, BROCANTE, CURIOSA, SCHILDERIJEN, TAPIJTEN, VINTAGE ENZ. (STEKENE)",
-   "bid": 2.0,
-   "bidFromEmail": false,
-   "bids": 1,
-   "closes": "2026-11-15T19:00:00+01:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-10-26T10:04:47.419265+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://img.vlavem.com/Image.aspx?img=6285|57974|1055466|FirstImage.jpg&x=200&y=200&stretch=1",
-   "isDeal": false,
-   "isNew": false,
-   "item": "Wine",
-   "itemMaxPrice": null,
-   "itemMinMargin": null,
-   "itemMinProfit": null,
-   "key": "vlavem:1055466",
-   "location": "Stekene",
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
-   "mpPlan": {
-    "brand": null,
-    "kind": "unknown",
-    "model": null,
-    "note": "model unknown: the lot title doesn't say which model, so no Marktplaats price",
-    "search": "https://www.marktplaats.nl/q/wijn/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/wijn/",
-   "nextBid": 3.0,
-   "pickup": "Oost-Eindeken 46a bus 1, 9190, Stekene, België",
-   "pickupWhen": "Mon 30 Nov, 10:00–13:00",
-   "premium": 0.17,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "vlavem",
-   "siteName": "Vlavem (BE)",
-   "stepEstimated": true,
-   "title": "wijn",
-   "transport": false,
-   "trip": {
-    "approx": false,
-    "cost": 11.15,
-    "from": "Gent",
-    "km": 48.4,
-    "min": 41
-   },
-   "units": 1,
-   "url": "https://www.vlavem.com/wijn/1055466/detail",
-   "vat": 0.21
-  },
-  {
    "alwaysShow": null,
    "auction": "Bestelwagen PEUGEOT + magazijn en werkplaatsinrichtingen",
-   "bid": 450.0,
+   "bid": 660.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 22,
    "closes": "2026-11-16T18:00:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -7645,7 +7181,7 @@
     "search": "https://www.marktplaats.nl/q/diverse+gereedschap+inboedel+materiaal+magazijn/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/diverse+gereedschap+inboedel+materiaal+magazijn/",
-   "nextBid": 460.0,
+   "nextBid": 685.0,
    "pickup": "Lekedorpstraat 135, 8600 LEKE (Diksmuide), België",
    "pickupWhen": "Tue 24 Nov, 09:00–09:30",
    "premium": 0.19,
@@ -7975,7 +7511,7 @@
    "marketSource": "marktplaats",
    "maxBid": 325.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
     "count": 2,
     "high": 762.5,
     "kind": "exact",
@@ -8189,9 +7725,9 @@
    "marketSource": "marktplaats",
    "maxBid": 40.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 9,
-    "high": 194.0,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 11,
+    "high": 189.0,
     "kind": "exact",
     "listings": [
      {
@@ -8201,14 +7737,20 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464741498-samsung-galaxy-a35-5g-128gb"
      },
      {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Samsung galaxy a35 5g 128gb",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464887148-samsung-galaxy-a35-5g-128gb"
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Samsung Galaxy A35 5G 128GB - Vaste PRIJS = €139,99",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466089050-samsung-galaxy-a35-5g-128gb-vaste-prijs-139-99"
      },
      {
       "kind": "bid",
-      "price": 155.0,
+      "price": 150.0,
+      "title": "Samsung galaxy a35 128gb 5g",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2465101880-samsung-galaxy-a35-128gb-5g"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
       "title": "Samsung Galaxy A35 5G 128GB Dual-Sim Navy - Zo goed als new!",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464613932-samsung-galaxy-a35-5g-128gb-dual-sim-navy-zo-goed-als-new"
      },
@@ -8228,7 +7770,13 @@
       "kind": "fixed",
       "price": 169.0,
       "title": "Samsung Galaxy A35 5G 128GB Awesome Navy / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2456935789-samsung-galaxy-a35-5g-128gb-awesome-navy-nieuwstaat"
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466330737-samsung-galaxy-a35-5g-128gb-awesome-navy-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 180.0,
+      "title": "Samsung galaxy A35 5g 128 gb",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466033908-samsung-galaxy-a35-5g-128-gb"
      },
      {
       "kind": "fixed",
@@ -8249,17 +7797,19 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-toebehoren-en-onderdelen/m2435117273-samsung-galaxy-a35-5g-128gb"
      }
     ],
-    "low": 152.5,
+    "low": 150.0,
     "median": 160.0,
     "model": "A35",
     "outliers": [],
     "prices": [
      125.0,
+     139.99,
      150.0,
-     155.0,
+     150.0,
      159.99,
      160.0,
      169.0,
+     180.0,
      189.0,
      199.0,
      200.0
@@ -8656,9 +8206,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 191.0,
+   "bid": 201.0,
    "bidFromEmail": false,
-   "bids": 28,
+   "bids": 29,
    "closes": "2026-11-16T18:33:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -8915,7 +8465,7 @@
     "search": "https://www.marktplaats.nl/q/macbook+pro+13+i5+8gb/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+13+i5+8gb/",
-   "nextBid": 201.0,
+   "nextBid": 211.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -9665,9 +9215,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 151.0,
+   "bid": 171.0,
    "bidFromEmail": false,
-   "bids": 22,
+   "bids": 24,
    "closes": "2026-11-16T18:36:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -9697,7 +9247,7 @@
     "search": "https://www.marktplaats.nl/q/thinkpad+l15+15+g1+8gb/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/thinkpad+l15+15+g1+8gb/",
-   "nextBid": 161.0,
+   "nextBid": 181.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -10179,32 +9729,26 @@
    "itemMinProfit": 50.0,
    "key": "onlineveilingmeester:1920611",
    "location": null,
-   "market": 175.0,
+   "market": 195.0,
    "marketSource": "marktplaats",
-   "maxBid": 13.0,
+   "maxBid": 24.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 26,
-    "high": 121.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 30,
+    "high": 125.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 60.0,
-      "title": "iPhone SE (2020) 64GB Wit - Goede staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464127449-iphone-se-2020-64gb-wit-goede-staat"
+      "price": 30.0,
+      "title": "iPhone se 2020 64GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465695050-iphone-se-2020-64gb"
      },
      {
       "kind": "bid",
       "price": 60.0,
       "title": "iPhone SE (2020) 64GB Wit - inclusief doos",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461170718-iphone-se-2020-64gb-wit-inclusief-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Apple iPhone SE (2020) - Zwart - 64GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2462462140-apple-iphone-se-2020-zwart-64gb"
      },
      {
       "kind": "bid",
@@ -10219,16 +9763,16 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456662225-iphone-se-2020-64gb-wit-zo-goed-als-nieuw"
      },
      {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "iphone se 2020 64gb wit  74%",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464838024-iphone-se-2020-64gb-wit-74"
-     },
-     {
       "kind": "bid",
       "price": 75.0,
       "title": "iPhone SE 2e generatie 2020 64GB",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464670459-iphone-se-2e-generatie-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Iphone SE 2020 Zwart 64 GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2450047169-iphone-se-2020-zwart-64-gb"
      },
      {
       "kind": "bid",
@@ -10250,15 +9794,15 @@
      },
      {
       "kind": "fixed",
-      "price": 84.99,
-      "title": "iPhone SE 2020, 64GB, wit, 84%, iOS 27.2",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464439889-iphone-se-2020-64gb-wit-84-ios-27-2"
+      "price": 85.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
       "price": 85.0,
-      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
+      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -10269,20 +9813,14 @@
      {
       "kind": "fixed",
       "price": 90.0,
-      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
       "title": "iPhone SE 2020 64GB Wit: met garantie, nieuwe baterij",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464635141-iphone-se-2020-64gb-wit-met-garantie-nieuwe-baterij"
      },
      {
       "kind": "bid",
       "price": 95.0,
-      "title": "iPhone SE (2020) 64GB Zwart - Zonder krassen",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464733552-iphone-se-2020-64gb-zwart-zonder-krassen"
+      "title": "Apple iPhone SE 2020 64GB Wit | Originele doos",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2435767719-apple-iphone-se-2020-64gb-wit-originele-doos"
      },
      {
       "kind": "bid",
@@ -10295,6 +9833,24 @@
       "price": 99.99,
       "title": "Apple iPhone SE (2020) | 64GB | Zwart | B-Grade (839081)",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2463864556-apple-iphone-se-2020-64gb-zwart-b-grade-839081"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Goede staat",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465745888-iphone-se-2020-64gb-zwart-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Wit - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453179767-iphone-se-2020-64gb-wit-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2458091181-iphone-se-2020-64gb-zwart-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -10317,8 +9873,26 @@
      {
       "kind": "bid",
       "price": 125.0,
+      "title": "Apple iPhone SE 2020 64GB Wit",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465830314-apple-iphone-se-2020-64gb-wit"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
       "title": "iPhone SE (2020) 64GB Wit - Zonder oplader",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2445225661-iphone-se-2020-64gb-wit-zonder-oplader"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE 2020 64gb",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2439449458-iphone-se-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw/wel gebruikt.",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2429342494-iphone-se-2020-rood-64gb-zo-goed-als-nieuw-wel-gebruikt"
      },
      {
       "kind": "bid",
@@ -10345,13 +9919,12 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453478944-iphone-se-2020-64gb-wit-a-grade"
      }
     ],
-    "low": 75.0,
-    "median": 87.5,
+    "low": 78.75,
+    "median": 97.5,
     "model": "iPhone SE 2020",
     "outliers": [],
     "prices": [
-     60.0,
-     60.0,
+     30.0,
      60.0,
      70.0,
      70.0,
@@ -10360,16 +9933,21 @@
      75.0,
      80.0,
      80.0,
-     84.99,
      85.0,
      85.0,
-     90.0,
+     85.0,
      90.0,
      95.0,
      95.0,
      99.99,
+     100.0,
+     100.0,
+     110.0,
      120.0,
      120.0,
+     125.0,
+     125.0,
+     125.0,
      125.0,
      125.0,
      130.0,
@@ -10408,9 +9986,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 221.0,
+   "bid": 231.0,
    "bidFromEmail": false,
-   "bids": 26,
+   "bids": 27,
    "closes": "2026-11-16T18:39:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -10667,7 +10245,7 @@
     "search": "https://www.marktplaats.nl/q/macbook+pro+13+i5+8gb/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/macbook+pro+13+i5+8gb/",
-   "nextBid": 231.0,
+   "nextBid": 251.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -11455,32 +11033,26 @@
    "itemMinProfit": 50.0,
    "key": "onlineveilingmeester:1920629",
    "location": null,
-   "market": 262.5,
+   "market": 292.5,
    "marketSource": "marktplaats",
-   "maxBid": 24.0,
+   "maxBid": 40.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 26,
-    "high": 121.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 30,
+    "high": 125.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 60.0,
-      "title": "iPhone SE (2020) 64GB Wit - Goede staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464127449-iphone-se-2020-64gb-wit-goede-staat"
+      "price": 30.0,
+      "title": "iPhone se 2020 64GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465695050-iphone-se-2020-64gb"
      },
      {
       "kind": "bid",
       "price": 60.0,
       "title": "iPhone SE (2020) 64GB Wit - inclusief doos",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461170718-iphone-se-2020-64gb-wit-inclusief-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Apple iPhone SE (2020) - Zwart - 64GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2462462140-apple-iphone-se-2020-zwart-64gb"
      },
      {
       "kind": "bid",
@@ -11495,16 +11067,16 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456662225-iphone-se-2020-64gb-wit-zo-goed-als-nieuw"
      },
      {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "iphone se 2020 64gb wit  74%",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464838024-iphone-se-2020-64gb-wit-74"
-     },
-     {
       "kind": "bid",
       "price": 75.0,
       "title": "iPhone SE 2e generatie 2020 64GB",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464670459-iphone-se-2e-generatie-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Iphone SE 2020 Zwart 64 GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2450047169-iphone-se-2020-zwart-64-gb"
      },
      {
       "kind": "bid",
@@ -11526,15 +11098,15 @@
      },
      {
       "kind": "fixed",
-      "price": 84.99,
-      "title": "iPhone SE 2020, 64GB, wit, 84%, iOS 27.2",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464439889-iphone-se-2020-64gb-wit-84-ios-27-2"
+      "price": 85.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
       "price": 85.0,
-      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
+      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -11545,20 +11117,14 @@
      {
       "kind": "fixed",
       "price": 90.0,
-      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
       "title": "iPhone SE 2020 64GB Wit: met garantie, nieuwe baterij",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464635141-iphone-se-2020-64gb-wit-met-garantie-nieuwe-baterij"
      },
      {
       "kind": "bid",
       "price": 95.0,
-      "title": "iPhone SE (2020) 64GB Zwart - Zonder krassen",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464733552-iphone-se-2020-64gb-zwart-zonder-krassen"
+      "title": "Apple iPhone SE 2020 64GB Wit | Originele doos",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2435767719-apple-iphone-se-2020-64gb-wit-originele-doos"
      },
      {
       "kind": "bid",
@@ -11571,6 +11137,24 @@
       "price": 99.99,
       "title": "Apple iPhone SE (2020) | 64GB | Zwart | B-Grade (839081)",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2463864556-apple-iphone-se-2020-64gb-zwart-b-grade-839081"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Goede staat",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465745888-iphone-se-2020-64gb-zwart-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Wit - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453179767-iphone-se-2020-64gb-wit-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2458091181-iphone-se-2020-64gb-zwart-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -11593,8 +11177,26 @@
      {
       "kind": "bid",
       "price": 125.0,
+      "title": "Apple iPhone SE 2020 64GB Wit",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465830314-apple-iphone-se-2020-64gb-wit"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
       "title": "iPhone SE (2020) 64GB Wit - Zonder oplader",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2445225661-iphone-se-2020-64gb-wit-zonder-oplader"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE 2020 64gb",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2439449458-iphone-se-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw/wel gebruikt.",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2429342494-iphone-se-2020-rood-64gb-zo-goed-als-nieuw-wel-gebruikt"
      },
      {
       "kind": "bid",
@@ -11621,13 +11223,12 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453478944-iphone-se-2020-64gb-wit-a-grade"
      }
     ],
-    "low": 75.0,
-    "median": 87.5,
+    "low": 78.75,
+    "median": 97.5,
     "model": "iPhone SE 2020",
     "outliers": [],
     "prices": [
-     60.0,
-     60.0,
+     30.0,
      60.0,
      70.0,
      70.0,
@@ -11636,16 +11237,21 @@
      75.0,
      80.0,
      80.0,
-     84.99,
      85.0,
      85.0,
-     90.0,
+     85.0,
      90.0,
      95.0,
      95.0,
      99.99,
+     100.0,
+     100.0,
+     110.0,
      120.0,
      120.0,
+     125.0,
+     125.0,
+     125.0,
      125.0,
      125.0,
      130.0,
@@ -12070,9 +11676,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 191.0,
+   "bid": 201.0,
    "bidFromEmail": false,
-   "bids": 31,
+   "bids": 32,
    "closes": "2026-11-16T18:47:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -12131,7 +11737,7 @@
     "search": "https://www.marktplaats.nl/q/probook+450+15+g10+8gb/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/probook+450+15+g10+8gb/",
-   "nextBid": 201.0,
+   "nextBid": 211.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -12175,7 +11781,7 @@
    "marketSource": "marktplaats",
    "maxBid": 58.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
     "count": 3,
     "high": 140.0,
     "kind": "exact",
@@ -12239,9 +11845,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 24.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-16T18:51:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -12493,7 +12099,7 @@
     "search": "https://www.marktplaats.nl/q/macbook+laptop+pro+15/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/macbook+laptop+pro+15/",
-   "nextBid": 26.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -12594,9 +12200,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling van: laptops, telefoons, monitoren en pc's",
-   "bid": 71.0,
+   "bid": 81.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-11-16T18:52:12+00:00",
    "closesDay": null,
    "combo": null,
@@ -12606,7 +12212,7 @@
    "fixed": 9.99,
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-04/602a410a-d215-4532-9758-e4eb08b036b9/89-0.jpeg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "MacBook",
    "itemMaxPrice": null,
@@ -12614,10 +12220,53 @@
    "itemMinProfit": 50.0,
    "key": "onlineveilingmeester:1920665",
    "location": null,
-   "market": null,
-   "marketSource": null,
-   "maxBid": null,
-   "mp": null,
+   "market": 1026.0,
+   "marketSource": "marktplaats",
+   "maxBid": 429.0,
+   "mp": {
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 4,
+    "high": 787.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "MacBook Air 2015 - Goed onderhouden laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2461595918-macbook-air-2015-goed-onderhouden-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 234.0,
+      "title": "Laptop macbook air 2020",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465292937-laptop-macbook-air-2020"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "MacBook Pro - Krachtige Laptop voor Professionals",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465125604-macbook-pro-krachtige-laptop-voor-professionals"
+     },
+     {
+      "kind": "bid",
+      "price": 900.0,
+      "title": "MacBook Pro 15 inch - Krachtige laptop voor werk en studie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465065076-macbook-pro-15-inch-krachtige-laptop-voor-werk-en-studie"
+     }
+    ],
+    "low": 133.5,
+    "median": 342.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     100.0,
+     234.0,
+     450.0,
+     900.0
+    ],
+    "query": "macbook laptop",
+    "url": "https://www.marktplaats.nl/q/macbook+laptop/"
+   },
    "mpPlan": {
     "brand": null,
     "kind": "general",
@@ -12626,7 +12275,7 @@
     "search": "https://www.marktplaats.nl/q/macbook+laptop+air+chromebook/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/macbook+laptop+air+chromebook/",
-   "nextBid": 76.0,
+   "nextBid": 91.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -13004,15 +12653,27 @@
    "itemMinProfit": 50.0,
    "key": "proveiling:3295169",
    "location": "Rotterdam",
-   "market": 112.5,
+   "market": 104.5,
    "marketSource": "marktplaats",
-   "maxBid": 19.0,
+   "maxBid": 15.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 18,
-    "high": 156.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 21,
+    "high": 137.5,
     "kind": "general",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Sonos Play:1 speaker - per stuk of als set",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465397710-sonos-play-1-speaker-per-stuk-of-als-set"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Sonos Play:1 Gen 1 - Compacte Smart Speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466094788-sonos-play-1-gen-1-compacte-smart-speaker"
+     },
      {
       "kind": "bid",
       "of": 2,
@@ -13032,20 +12693,6 @@
      {
       "kind": "bid",
       "of": 2,
-      "price": 80.0,
-      "title": "Sonos Play 1 Speakerset - Wit (2 stuks)",
-      "total": 160.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463695044-sonos-play-1-speakerset-wit-2-stuks"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "Sonos Play 1 - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457288640-sonos-play-1-compacte-smart-speaker"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
       "price": 87.5,
       "title": "2x Sonos Play:1 Speakerset - wit",
       "total": 175.0,
@@ -13058,6 +12705,26 @@
       "title": "Sonos Play:1 Speakerset - Wit (2 stuks)",
       "total": 175.0,
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2429110016-sonos-play-1-speakerset-wit-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Sonos Play:1 Slimme Speaker - Wit/Grijs",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466137224-sonos-play-1-slimme-speaker-wit-grijs"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
+      "price": 100.0,
+      "title": "2 Sonos Play 1 speakers - Zwart",
+      "total": 200.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466153680-2-sonos-play-1-speakers-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Sonos Play:1 / Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465025313-sonos-play-1-nieuwstaat"
      },
      {
       "kind": "bid",
@@ -13076,16 +12743,18 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464736447-sonos-play-1-speakerset-zwart-2-stuks"
      },
      {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Sonos Play 1 / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463248624-sonos-play-1-nieuwstaat"
+      "kind": "bid",
+      "of": 2,
+      "price": 112.5,
+      "title": "Sonos Play:5 Gen 1 (2 stuks) - Wit",
+      "total": 225.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465996129-sonos-play-5-gen-1-2-stuks-wit"
      },
      {
       "kind": "bid",
-      "price": 115.0,
-      "title": "Sonos Play:1 Wit - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459146910-sonos-play-1-wit-compacte-smart-speaker"
+      "price": 120.0,
+      "title": "3x Sonos Play:1 speakers - Perfect voor multiroom audio",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465778252-3x-sonos-play-1-speakers-perfect-voor-multiroom-audio"
      },
      {
       "kind": "bid",
@@ -13118,6 +12787,12 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2462013497-sonos-play-1-wit-setje-van-twee-s2"
      },
      {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Sonos Play 1 speakers - 3 stuks - Goede staat",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444788800-sonos-play-1-speakers-3-stuks-goede-staat"
+     },
+     {
       "kind": "bid",
       "price": 200.0,
       "title": "Sonos Play:5 (Gen 1) - Wit - Set van 2",
@@ -13128,29 +12803,28 @@
       "price": 200.0,
       "title": "Sonos set: 2x Play:3, 1x Play:1 en Sonos Bridge (wit)",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463511569-sonos-set-2x-play-3-1x-play-1-en-sonos-bridge-wit"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Sonos Play 1 speakers - 3 stuks - Goede staat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444788800-sonos-play-1-speakers-3-stuks-goede-staat"
      }
     ],
-    "low": 86.88,
-    "median": 112.5,
+    "low": 87.5,
+    "median": 104.5,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     400.0
+    ],
     "prices": [
+     50.0,
+     60.0,
      75.0,
      75.0,
-     80.0,
-     85.0,
      87.5,
      87.5,
      100.0,
+     100.0,
+     100.0,
+     100.0,
      104.5,
-     110.0,
-     115.0,
+     112.5,
+     120.0,
      120.0,
      125.0,
      125.0,
@@ -13217,20 +12891,20 @@
    "itemMinProfit": 50.0,
    "key": "proveiling:3295170",
    "location": "Rotterdam",
-   "market": 125.0,
+   "market": 120.0,
    "marketSource": "marktplaats",
-   "maxBid": 26.0,
+   "maxBid": 23.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 10,
-    "high": 206.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 11,
+    "high": 200.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Sonos Play 1 / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463248624-sonos-play-1-nieuwstaat"
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Sonos PLAY:5 (gen1)Draadloze HiFi Speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460721424-sonos-play-5-gen1-draadloze-hifi-speaker"
      },
      {
       "kind": "fixed",
@@ -13254,6 +12928,18 @@
      },
      {
       "kind": "fixed",
+      "price": 115.0,
+      "title": "Sonos PLAY:5 (1e generatie), wit, werkt met Sonos S1-app",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465600281-sonos-play-5-1e-generatie-wit-werkt-met-sonos-s1-app"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "3x Sonos Play:1 speakers - Perfect voor multiroom audio",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465778252-3x-sonos-play-1-speakers-perfect-voor-multiroom-audio"
+     },
+     {
+      "kind": "fixed",
       "price": 124.99,
       "title": "Sonos PLAY 1 - Wit",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464882861-sonos-play-1-wit"
@@ -13263,12 +12949,6 @@
       "price": 125.0,
       "title": "Sonos Play 1 Draadloze Speaker",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2456625771-sonos-play-1-draadloze-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Sonos play 1  - Compacte slimme speakerset",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464538988-sonos-play-1-compacte-slimme-speakerset"
      },
      {
       "kind": "fixed",
@@ -13289,20 +12969,21 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2431037597-sonos-play-5-generation-2-speaker"
      }
     ],
-    "low": 111.85,
-    "median": 125.0,
+    "low": 112.47,
+    "median": 120.0,
     "model": null,
     "outliers": [
      450.0
     ],
     "prices": [
-     110.0,
+     99.0,
      110.0,
      112.47,
      114.99,
+     115.0,
+     120.0,
      124.99,
      125.0,
-     200.0,
      200.0,
      225.0,
      325.0
@@ -13357,7 +13038,7 @@
    "followed": false,
    "image": "https://img.proveiling.nl/Image.aspx?img=15798|166142|3296645|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Audio / beamer",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -13537,7 +13218,7 @@
    "followed": false,
    "image": "https://img.proveiling.nl/Image.aspx?img=15798|166142|3296643|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Audio / beamer",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -13602,20 +13283,20 @@
    "itemMinProfit": 50.0,
    "key": "proveiling:3295172",
    "location": "Rotterdam",
-   "market": 125.0,
+   "market": 120.0,
    "marketSource": "marktplaats",
-   "maxBid": 23.0,
+   "maxBid": 21.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 10,
-    "high": 206.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 11,
+    "high": 200.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Sonos Play 1 / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463248624-sonos-play-1-nieuwstaat"
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Sonos PLAY:5 (gen1)Draadloze HiFi Speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460721424-sonos-play-5-gen1-draadloze-hifi-speaker"
      },
      {
       "kind": "fixed",
@@ -13639,6 +13320,18 @@
      },
      {
       "kind": "fixed",
+      "price": 115.0,
+      "title": "Sonos PLAY:5 (1e generatie), wit, werkt met Sonos S1-app",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465600281-sonos-play-5-1e-generatie-wit-werkt-met-sonos-s1-app"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "3x Sonos Play:1 speakers - Perfect voor multiroom audio",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465778252-3x-sonos-play-1-speakers-perfect-voor-multiroom-audio"
+     },
+     {
+      "kind": "fixed",
       "price": 124.99,
       "title": "Sonos PLAY 1 - Wit",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464882861-sonos-play-1-wit"
@@ -13648,12 +13341,6 @@
       "price": 125.0,
       "title": "Sonos Play 1 Draadloze Speaker",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2456625771-sonos-play-1-draadloze-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Sonos play 1  - Compacte slimme speakerset",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464538988-sonos-play-1-compacte-slimme-speakerset"
      },
      {
       "kind": "fixed",
@@ -13674,20 +13361,21 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2431037597-sonos-play-5-generation-2-speaker"
      }
     ],
-    "low": 111.85,
-    "median": 125.0,
+    "low": 112.47,
+    "median": 120.0,
     "model": null,
     "outliers": [
      450.0
     ],
     "prices": [
-     110.0,
+     99.0,
      110.0,
      112.47,
      114.99,
+     115.0,
+     120.0,
      124.99,
      125.0,
-     200.0,
      200.0,
      225.0,
      325.0
@@ -13742,7 +13430,7 @@
    "followed": false,
    "image": "https://img.proveiling.nl/Image.aspx?img=15798|166143|3296652|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Wine",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -13787,9 +13475,9 @@
   {
    "alwaysShow": null,
    "auction": "Faillissementsveiling voorraad en inventaris \"Elle & Moi B.V.\" te Rotterdam",
-   "bid": 500.0,
+   "bid": 520.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-16T20:30:00+01:00",
    "closesDay": null,
    "combo": null,
@@ -13800,7 +13488,7 @@
    "followed": false,
    "image": "https://img.proveiling.nl/Image.aspx?img=15798|166151|3296644|FirstImage.jpg&x=200&y=200&stretch=1",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -13871,7 +13559,7 @@
     "search": "https://www.marktplaats.nl/q/jura+koffiemachine+x3/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/jura+koffiemachine+x3/",
-   "nextBid": 500.0,
+   "nextBid": 545.0,
    "pickup": "Chris Bennekerslaan 25B, 3061EB Rotterdam",
    "pickupWhen": "Fri 20 Nov, 11:00–14:00",
    "premium": 0.16,
@@ -13880,7 +13568,7 @@
    "repairOf": null,
    "site": "proveiling",
    "siteName": "ProVeiling",
-   "stepEstimated": false,
+   "stepEstimated": true,
    "title": "JURA GIGA Volautomatische koffiemachine X3 15397",
    "transport": false,
    "trip": {
@@ -13955,9 +13643,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Bedrijfsinventaris",
-   "bid": 91.0,
+   "bid": 111.0,
    "bidFromEmail": false,
-   "bids": 21,
+   "bids": 23,
    "closes": "2026-11-16T19:39:26+00:00",
    "closesDay": null,
    "combo": null,
@@ -13987,7 +13675,7 @@
     "search": "https://www.marktplaats.nl/q/samsung+beeldscherm+monitor+dc55e/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/samsung+beeldscherm+monitor+dc55e/",
-   "nextBid": 101.0,
+   "nextBid": 121.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 19 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -14316,9 +14004,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Defensiegoederen",
-   "bid": 101.0,
+   "bid": 121.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 6,
    "closes": "2026-11-17T19:39:20+00:00",
    "closesDay": null,
    "combo": null,
@@ -14348,7 +14036,7 @@
     "search": "https://www.marktplaats.nl/q/hilti+klopboormachine+te60/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/hilti+klopboormachine+te60/",
-   "nextBid": 111.0,
+   "nextBid": 131.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 19 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -14874,9 +14562,9 @@
   {
    "alwaysShow": null,
    "auction": "SPOEDVEILING - Horecamateriaal en inrichtingen",
-   "bid": 25.0,
+   "bid": 35.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 4,
    "closes": "2026-11-18T18:05:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -14906,7 +14594,7 @@
     "search": "https://www.marktplaats.nl/q/airfryer+ice+maker+ijsblokmachine/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/airfryer+ice+maker+ijsblokmachine/",
-   "nextBid": 30.0,
+   "nextBid": 40.0,
    "pickup": "Leopold I esplanade 6, 8660 De Panne, België",
    "pickupWhen": "Thu 26 Nov, 09:00–12:00",
    "premium": 0.19,
@@ -14990,9 +14678,9 @@
   {
    "alwaysShow": null,
    "auction": "Emob meubelen en accessoires: VOLUME LOTEN",
-   "bid": 35.0,
+   "bid": 40.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-18T18:05:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -15022,7 +14710,7 @@
     "search": "https://www.marktplaats.nl/q/ag115dly1108/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/ag115dly1108/",
-   "nextBid": 40.0,
+   "nextBid": 45.0,
    "pickup": "Deken de Bostraat 70a, 8791 Beveren-Leie, België",
    "pickupWhen": "Wed 25 Nov, 08:45–15:00",
    "premium": 0.19,
@@ -15265,9 +14953,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Party centrum Tasmania Groningen",
-   "bid": 56.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 15,
+   "bids": 16,
    "closes": "2026-11-19T18:35:48+00:00",
    "closesDay": null,
    "combo": null,
@@ -15297,7 +14985,7 @@
     "search": "https://www.marktplaats.nl/q/beamer+acer/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/beamer+acer/",
-   "nextBid": 61.0,
+   "nextBid": 66.0,
    "pickup": "Timpweg 19, 9731 AK Groningen",
    "pickupWhen": "Mon 23 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -15497,9 +15185,9 @@
   {
    "alwaysShow": null,
    "auction": "Depot Design Brussel : rollend materieel + magazijnuitrusting",
-   "bid": 16.0,
+   "bid": 25.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 4,
    "closes": "2026-11-23T18:05:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -15510,7 +15198,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763308/IMG_9593.JPEG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -15588,7 +15276,7 @@
     "search": "https://www.marktplaats.nl/q/dewalt+tafelzaag+compressor+atlas/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dewalt+tafelzaag+compressor+atlas/",
-   "nextBid": 17.0,
+   "nextBid": 30.0,
    "pickup": "Rue Tielemans 2, 1000 Brussel, België",
    "pickupWhen": "Fri 27 Nov, 08:00–10:00",
    "premium": 0.19,
@@ -15666,9 +15354,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 121.0,
+   "bid": 141.0,
    "bidFromEmail": false,
-   "bids": 19,
+   "bids": 21,
    "closes": "2026-11-23T18:30:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -15741,7 +15429,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 131.0,
+   "nextBid": 151.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -15761,9 +15449,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 66.0,
+   "bid": 76.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-11-23T18:30:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -15793,7 +15481,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b220x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b220x/",
-   "nextBid": 71.0,
+   "nextBid": 81.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -15813,9 +15501,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 56.0,
+   "bid": 66.0,
    "bidFromEmail": false,
-   "bids": 15,
+   "bids": 17,
    "closes": "2026-11-23T18:30:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -15845,7 +15533,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+accumaaier+lc+142is/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+accumaaier+lc+142is/",
-   "nextBid": 61.0,
+   "nextBid": 71.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -15867,7 +15555,7 @@
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-23T18:31:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16021,9 +15709,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 9,
    "closes": "2026-11-23T18:32:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16053,7 +15741,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/",
-   "nextBid": 22.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16073,9 +15761,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 56.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 12,
    "closes": "2026-11-23T18:32:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16105,7 +15793,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b140x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b140x/",
-   "nextBid": 20.0,
+   "nextBid": 61.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16177,9 +15865,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 451.0,
+   "bid": 491.0,
    "bidFromEmail": false,
-   "bids": 31,
+   "bids": 33,
    "closes": "2026-11-23T18:32:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16319,7 +16007,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+320+nera/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+320+nera/",
-   "nextBid": 471.0,
+   "nextBid": 511.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16339,9 +16027,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:33:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16371,7 +16059,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+c750x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+c750x/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16443,9 +16131,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:33:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16475,7 +16163,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+c750x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+c750x/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16495,9 +16183,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 7,
    "closes": "2026-11-23T18:33:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16527,7 +16215,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200x/",
-   "nextBid": 18.0,
+   "nextBid": 24.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16547,9 +16235,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 311.0,
+   "bid": 331.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-23T18:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16689,7 +16377,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 331.0,
+   "nextBid": 351.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16709,9 +16397,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16741,7 +16429,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bijl/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bijl/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16761,9 +16449,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 41.0,
+   "bid": 71.0,
    "bidFromEmail": false,
-   "bids": 12,
+   "bids": 17,
    "closes": "2026-11-23T18:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16793,7 +16481,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 46.0,
+   "nextBid": 76.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16813,9 +16501,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 271.0,
+   "bid": 311.0,
    "bidFromEmail": false,
-   "bids": 31,
+   "bids": 33,
    "closes": "2026-11-23T18:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -16845,7 +16533,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+r4+robotmaaier+aspire/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+r4+robotmaaier+aspire/",
-   "nextBid": 291.0,
+   "nextBid": 331.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -16971,7 +16659,7 @@
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-23T18:35:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17073,9 +16761,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 36.0,
+   "bid": 101.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 13,
    "closes": "2026-11-23T18:36:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17148,7 +16836,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+body+kettingzaag+120/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+body+kettingzaag+120/",
-   "nextBid": 41.0,
+   "nextBid": 111.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17168,9 +16856,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 76.0,
+   "bid": 151.0,
    "bidFromEmail": false,
-   "bids": 19,
+   "bids": 21,
    "closes": "2026-11-23T18:36:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17278,7 +16966,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixpg/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixpg/",
-   "nextBid": 81.0,
+   "nextBid": 161.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17298,9 +16986,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-23T18:36:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17330,7 +17018,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200x/",
-   "nextBid": 20.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17452,9 +17140,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:37:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17484,7 +17172,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 16.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17504,9 +17192,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 76.0,
+   "bid": 131.0,
    "bidFromEmail": false,
-   "bids": 19,
+   "bids": 25,
    "closes": "2026-11-23T18:37:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17646,7 +17334,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 81.0,
+   "nextBid": 141.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17666,9 +17354,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 101.0,
+   "bid": 111.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 12,
    "closes": "2026-11-23T18:37:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17741,7 +17429,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 111.0,
+   "nextBid": 121.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17813,9 +17501,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T18:38:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17845,7 +17533,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokzaag/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokzaag/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17917,9 +17605,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T18:38:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17949,7 +17637,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b70/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b70/",
-   "nextBid": 18.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17969,9 +17657,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 24.0,
+   "bid": 66.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 9,
    "closes": "2026-11-23T18:39:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18001,7 +17689,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bosmaaier+520ilx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bosmaaier+520ilx/",
-   "nextBid": 26.0,
+   "nextBid": 71.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18021,9 +17709,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 31.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-23T18:39:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18053,7 +17741,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200x/",
-   "nextBid": 36.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18229,9 +17917,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 41.0,
+   "bid": 46.0,
    "bidFromEmail": false,
-   "bids": 12,
+   "bids": 13,
    "closes": "2026-11-23T18:40:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18261,7 +17949,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/",
-   "nextBid": 46.0,
+   "nextBid": 51.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18437,9 +18125,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 31.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 10,
    "closes": "2026-11-23T18:41:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18469,7 +18157,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+profi+trailer+zitmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+profi+trailer+zitmaaier/",
-   "nextBid": 22.0,
+   "nextBid": 36.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18489,9 +18177,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:41:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18521,7 +18209,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli20/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli20/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18593,9 +18281,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 24.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 11,
    "closes": "2026-11-23T18:42:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18625,7 +18313,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 26.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18645,9 +18333,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 61.0,
+   "bid": 71.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 18,
    "closes": "2026-11-23T18:42:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18677,7 +18365,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+accumaaier+lc+142is/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+accumaaier+lc+142is/",
-   "nextBid": 66.0,
+   "nextBid": 76.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18749,9 +18437,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 31.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 9,
+   "bids": 11,
    "closes": "2026-11-23T18:43:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18781,7 +18469,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+beschermhuis+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+beschermhuis+robotmaaier/",
-   "nextBid": 36.0,
+   "nextBid": 46.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18803,7 +18491,7 @@
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-23T18:43:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18853,9 +18541,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 36.0,
+   "bid": 91.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 21,
    "closes": "2026-11-23T18:43:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18885,7 +18573,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/",
-   "nextBid": 41.0,
+   "nextBid": 101.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19113,9 +18801,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T18:44:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19145,7 +18833,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b220x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b220x/",
-   "nextBid": 16.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19165,9 +18853,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T18:45:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19197,7 +18885,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b70/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b70/",
-   "nextBid": 14.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19217,9 +18905,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 201.0,
+   "bid": 431.0,
    "bidFromEmail": false,
-   "bids": 17,
+   "bids": 30,
    "closes": "2026-11-23T18:45:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19360,7 +19048,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+550+epos/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+550+epos/",
-   "nextBid": 211.0,
+   "nextBid": 451.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19432,9 +19120,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T18:45:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19464,7 +19152,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli20/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli20/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19536,9 +19224,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T18:46:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19568,7 +19256,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b220x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b220x/",
-   "nextBid": 14.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19802,9 +19490,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-11-23T18:47:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19834,7 +19522,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+werkschoen/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+werkschoen/",
-   "nextBid": 24.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19854,9 +19542,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-11-23T18:47:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19886,7 +19574,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+werkschoen/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+werkschoen/",
-   "nextBid": 24.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19906,9 +19594,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 9,
    "closes": "2026-11-23T18:47:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -19938,7 +19626,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b140x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b140x/",
-   "nextBid": 18.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -20010,9 +19698,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T18:48:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -20042,7 +19730,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530/",
-   "nextBid": 14.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -20166,9 +19854,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 66.0,
+   "bid": 76.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 18,
    "closes": "2026-11-23T18:49:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -20262,7 +19950,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t540/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t540/",
-   "nextBid": 71.0,
+   "nextBid": 81.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -20496,9 +20184,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 51.0,
+   "bid": 66.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 8,
    "closes": "2026-11-23T18:50:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -20528,7 +20216,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 56.0,
+   "nextBid": 71.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -20704,9 +20392,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 11,
    "closes": "2026-11-23T18:51:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -20736,7 +20424,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/",
-   "nextBid": 24.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21103,9 +20791,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 31.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 10,
    "closes": "2026-11-23T18:53:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21135,7 +20823,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kantenmaaier+bli10/",
-   "nextBid": 22.0,
+   "nextBid": 36.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21155,9 +20843,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-23T18:53:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21187,7 +20875,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b140x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b140x/",
-   "nextBid": 20.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21207,9 +20895,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 71.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 12,
    "closes": "2026-11-23T18:53:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21239,7 +20927,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 20.0,
+   "nextBid": 76.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21311,9 +20999,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 231.0,
+   "bid": 371.0,
    "bidFromEmail": false,
-   "bids": 22,
+   "bids": 24,
    "closes": "2026-11-23T18:54:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21343,7 +21031,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/",
-   "nextBid": 251.0,
+   "nextBid": 391.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21363,9 +21051,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 76.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 19,
    "closes": "2026-11-23T18:54:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21395,7 +21083,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/",
-   "nextBid": 20.0,
+   "nextBid": 81.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21467,9 +21155,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T18:54:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21499,7 +21187,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b140x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b140x/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21519,9 +21207,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T18:55:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21551,7 +21239,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b140x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b140x/",
-   "nextBid": 14.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21623,9 +21311,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 8,
    "closes": "2026-11-23T18:55:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21655,7 +21343,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 22.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21675,9 +21363,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 66.0,
+   "bid": 111.0,
    "bidFromEmail": false,
-   "bids": 17,
+   "bids": 20,
    "closes": "2026-11-23T18:55:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21707,7 +21395,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+410xe/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+410xe/",
-   "nextBid": 71.0,
+   "nextBid": 121.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21779,9 +21467,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 11,
    "closes": "2026-11-23T18:56:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21811,7 +21499,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+t542/",
-   "nextBid": 24.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21831,9 +21519,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 36.0,
+   "bid": 46.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 13,
    "closes": "2026-11-23T18:56:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -21927,7 +21615,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixp/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixp/",
-   "nextBid": 41.0,
+   "nextBid": 51.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -21999,9 +21687,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 46.0,
+   "bid": 51.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 11,
    "closes": "2026-11-23T18:57:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22031,7 +21719,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+405xe/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+405xe/",
-   "nextBid": 51.0,
+   "nextBid": 56.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22369,9 +22057,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 9,
    "closes": "2026-11-23T18:58:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22401,7 +22089,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+duwmaaier+lc+142is/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+duwmaaier+lc+142is/",
-   "nextBid": 14.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22577,9 +22265,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T18:59:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22609,7 +22297,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 14.0,
+   "nextBid": 26.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22629,9 +22317,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 9,
    "closes": "2026-11-23T18:59:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22734,7 +22422,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bladblazer+550+ibtx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bladblazer+550+ibtx/",
-   "nextBid": 22.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22754,9 +22442,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 351.0,
+   "bid": 391.0,
    "bidFromEmail": false,
-   "bids": 41,
+   "bids": 43,
    "closes": "2026-11-23T18:59:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22786,7 +22474,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/",
-   "nextBid": 371.0,
+   "nextBid": 411.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22806,9 +22494,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 16,
    "closes": "2026-11-23T19:00:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22838,7 +22526,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+duwmaaier+lc+142is/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+duwmaaier+lc+142is/",
-   "nextBid": 16.0,
+   "nextBid": 66.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22858,9 +22546,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 36.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 7,
    "closes": "2026-11-23T19:00:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22890,7 +22578,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+405xe/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+405xe/",
-   "nextBid": 41.0,
+   "nextBid": 46.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -22962,9 +22650,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:00:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -22994,7 +22682,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c15x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c15x/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23014,9 +22702,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 31.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 11,
    "closes": "2026-11-23T19:01:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23046,7 +22734,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bladblazer+b8x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bladblazer+b8x/",
-   "nextBid": 36.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23066,9 +22754,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 31.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 12,
    "closes": "2026-11-23T19:01:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23155,7 +22843,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/",
-   "nextBid": 36.0,
+   "nextBid": 46.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23227,9 +22915,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 5,
    "closes": "2026-11-23T19:02:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23259,7 +22947,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c15x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c15x/",
-   "nextBid": 16.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23331,9 +23019,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T19:02:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23363,7 +23051,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530/",
-   "nextBid": 14.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23581,9 +23269,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:03:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23613,7 +23301,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23633,9 +23321,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:03:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23665,7 +23353,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+aspire+huis+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+aspire+huis+robotmaaier/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -23685,9 +23373,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:03:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -23717,7 +23405,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24003,9 +23691,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:05:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24035,7 +23723,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24159,9 +23847,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T19:06:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24191,7 +23879,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+c750x/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+c750x/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24213,7 +23901,7 @@
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-23T19:06:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24315,9 +24003,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-23T19:07:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24347,7 +24035,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli20/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli20/",
-   "nextBid": 14.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24523,9 +24211,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 12.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 4,
    "closes": "2026-11-23T19:08:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24555,7 +24243,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+accu/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+accu/",
-   "nextBid": 14.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24731,9 +24419,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 41.0,
+   "bid": 46.0,
    "bidFromEmail": false,
-   "bids": 12,
+   "bids": 13,
    "closes": "2026-11-23T19:09:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24792,7 +24480,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/",
-   "nextBid": 46.0,
+   "nextBid": 51.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -24909,9 +24597,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 8,
    "closes": "2026-11-23T19:09:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24984,7 +24672,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 22.0,
+   "nextBid": 26.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25056,9 +24744,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 3,
    "closes": "2026-11-23T19:10:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -25088,7 +24776,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+b70/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+b70/",
-   "nextBid": 12.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25160,9 +24848,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:10:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -25235,7 +24923,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25520,9 +25208,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 11,
    "closes": "2026-11-23T19:11:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -25790,7 +25478,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/",
-   "nextBid": 22.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25810,9 +25498,9 @@
   {
    "alwaysShow": null,
    "auction": "Faillissementsveiling: Rijtuigen, agrarisch materieel en inboedel",
-   "bid": 18.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-11-23T19:11:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -25842,7 +25530,7 @@
     "search": "https://www.marktplaats.nl/q/divers+gereedschap+inhoud+ruimte+paarden/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/divers+gereedschap+inhoud+ruimte+paarden/",
-   "nextBid": 20.0,
+   "nextBid": 24.0,
    "pickup": "Stegerensallee 23, 7701PJ Dedemsvaart",
    "pickupWhen": "Fri 27 Nov, 09:00–15:00",
    "premium": 0.21,
@@ -26163,9 +25851,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:13:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26195,7 +25883,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+helm/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+helm/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -26215,9 +25903,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:13:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26276,7 +25964,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -26296,9 +25984,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 24.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 16,
    "closes": "2026-11-23T19:13:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26328,7 +26016,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+410xe/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+410xe/",
-   "nextBid": 26.0,
+   "nextBid": 66.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -26593,7 +26281,7 @@
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
    "bid": 10.0,
    "bidFromEmail": false,
-   "bids": 0,
+   "bids": 1,
    "closes": "2026-11-23T19:14:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26851,9 +26539,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:16:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26883,7 +26571,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -26955,9 +26643,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 56.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:17:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26987,7 +26675,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 16.0,
+   "nextBid": 61.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -27319,9 +27007,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:18:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -27351,7 +27039,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -27371,9 +27059,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T19:19:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -27513,7 +27201,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -27689,9 +27377,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 61.0,
+   "bid": 121.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 20,
    "closes": "2026-11-23T19:20:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -27808,7 +27496,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+kettingzaag+450+325/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+kettingzaag+450+325/",
-   "nextBid": 66.0,
+   "nextBid": 131.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -28005,9 +27693,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 7,
    "closes": "2026-11-23T19:21:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -28037,7 +27725,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+profi+trailer+zitmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+profi+trailer+zitmaaier/",
-   "nextBid": 22.0,
+   "nextBid": 24.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -28161,9 +27849,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:22:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -28303,7 +27991,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -28375,9 +28063,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-23T19:22:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -28436,7 +28124,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokkettingzaag+530ipx/",
-   "nextBid": 20.0,
+   "nextBid": 22.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -28456,9 +28144,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 46.0,
+   "bid": 81.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 11,
    "closes": "2026-11-23T19:23:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -28488,7 +28176,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542ixp/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542ixp/",
-   "nextBid": 51.0,
+   "nextBid": 91.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -28850,9 +28538,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:24:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -28992,7 +28680,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29168,9 +28856,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 24.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 11,
    "closes": "2026-11-23T19:25:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29200,7 +28888,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+heggenschaar+522ihd75/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+heggenschaar+522ihd75/",
-   "nextBid": 26.0,
+   "nextBid": 41.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29220,9 +28908,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-11-23T19:25:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29362,7 +29050,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 24.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29434,9 +29122,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:26:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29576,7 +29264,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29596,9 +29284,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:26:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29671,7 +29359,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29691,9 +29379,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 16,
    "closes": "2026-11-23T19:26:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29723,7 +29411,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 20.0,
+   "nextBid": 66.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -29795,9 +29483,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 24.0,
+   "bid": 26.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:27:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -29870,7 +29558,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/",
-   "nextBid": 26.0,
+   "nextBid": 31.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -30046,9 +29734,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 36.0,
+   "bid": 51.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 14,
    "closes": "2026-11-23T19:28:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -30188,7 +29876,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+320+nera/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier+320+nera/",
-   "nextBid": 41.0,
+   "nextBid": 56.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -30208,9 +29896,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 251.0,
+   "bid": 591.0,
    "bidFromEmail": false,
-   "bids": 15,
+   "bids": 29,
    "closes": "2026-11-23T19:28:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -30350,7 +30038,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 271.0,
+   "nextBid": 611.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -30370,9 +30058,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:28:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -30402,7 +30090,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -30422,9 +30110,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-11-23T19:28:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -30511,7 +30199,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/",
-   "nextBid": 20.0,
+   "nextBid": 24.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -31029,9 +30717,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:30:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -31104,7 +30792,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -31124,9 +30812,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 51.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 14,
    "closes": "2026-11-23T19:30:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -31156,7 +30844,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+verticuteermachine+s138i/",
-   "nextBid": 22.0,
+   "nextBid": 56.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -31384,9 +31072,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 3,
    "closes": "2026-11-23T19:31:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -31459,7 +31147,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+315+mark/",
-   "nextBid": 12.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -31479,9 +31167,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 56.0,
+   "bid": 66.0,
    "bidFromEmail": false,
-   "bids": 15,
+   "bids": 17,
    "closes": "2026-11-23T19:32:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -31598,7 +31286,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+kettingzaag+545+325/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+kettingzaag+545+325/",
-   "nextBid": 61.0,
+   "nextBid": 71.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -31774,9 +31462,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T19:33:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -31849,7 +31537,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+ii+robotmaaier+310+mark/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -32077,9 +31765,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 7,
    "closes": "2026-11-23T19:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -32109,7 +31797,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bosmaaier+520ilx/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bosmaaier+520ilx/",
-   "nextBid": 18.0,
+   "nextBid": 46.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -32527,9 +32215,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 121.0,
+   "bid": 371.0,
    "bidFromEmail": false,
-   "bids": 20,
+   "bids": 26,
    "closes": "2026-11-23T19:36:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -32559,7 +32247,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+c85/",
-   "nextBid": 131.0,
+   "nextBid": 391.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -32631,9 +32319,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 10,
    "closes": "2026-11-23T19:37:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -32901,7 +32589,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/",
-   "nextBid": 22.0,
+   "nextBid": 46.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -33129,9 +32817,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:38:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -33161,7 +32849,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+accu/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+accu/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -33181,9 +32869,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 7,
    "closes": "2026-11-23T19:39:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -33277,7 +32965,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixp/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixp/",
-   "nextBid": 22.0,
+   "nextBid": 24.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -33563,9 +33251,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 291.0,
+   "bid": 491.0,
    "bidFromEmail": false,
-   "bids": 15,
+   "bids": 23,
    "closes": "2026-11-23T19:40:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -33705,7 +33393,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 311.0,
+   "nextBid": 511.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -33725,9 +33413,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 8,
    "closes": "2026-11-23T19:40:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -33757,7 +33445,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+werkschoen/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+werkschoen/",
-   "nextBid": 20.0,
+   "nextBid": 26.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -33777,9 +33465,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:41:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -33809,7 +33497,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+bli200/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+bli200/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -34304,9 +33992,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 20.0,
+   "bid": 31.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 10,
    "closes": "2026-11-23T19:43:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -34336,7 +34024,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542ixp/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542ixp/",
-   "nextBid": 22.0,
+   "nextBid": 36.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -34458,9 +34146,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Houtkachels & materialen",
-   "bid": 31.0,
+   "bid": 41.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 12,
    "closes": "2026-11-23T19:43:51+00:00",
    "closesDay": null,
    "combo": null,
@@ -34490,7 +34178,7 @@
     "search": "https://www.marktplaats.nl/q/partij+gereedschap/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/partij+gereedschap/",
-   "nextBid": 36.0,
+   "nextBid": 46.0,
    "pickup": "Schellestraat 8A, 5131RJ Alphen",
    "pickupWhen": "Thu 26 Nov, 09:00–13:00",
    "premium": 0.17,
@@ -34678,9 +34366,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 121.0,
+   "bid": 291.0,
    "bidFromEmail": false,
-   "bids": 24,
+   "bids": 25,
    "closes": "2026-11-23T19:44:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -34710,7 +34398,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+xp+ii+kettingzaag+560+mark/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+xp+ii+kettingzaag+560+mark/",
-   "nextBid": 131.0,
+   "nextBid": 311.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -34782,9 +34470,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 18.0,
+   "bid": 56.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-23T19:44:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -34814,7 +34502,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+535ixp/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+535ixp/",
-   "nextBid": 20.0,
+   "nextBid": 61.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -38897,7 +38585,7 @@
    "fixed": 0.0,
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/46_JVF9Vj40/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk4MTg2LzAxNDYtYWNjdS1ib3V3bGFtcC1tYWtpdGEtZG1sODA1LXpvbmRlci1hY2N1LmpwZw.jpg",
-   "isDeal": false,
+   "isDeal": true,
    "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
@@ -38905,27 +38593,15 @@
    "itemMinProfit": null,
    "key": "hnvi:198186",
    "location": "Sint-Oedenrode",
-   "market": 77.5,
+   "market": 97.5,
    "marketSource": "marktplaats",
-   "maxBid": 12.0,
+   "maxBid": 22.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
-    "count": 4,
-    "high": 106.25,
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
+    "count": 2,
+    "high": 123.75,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "makita bouwlamp. DML805",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2435399505-makita-bouwlamp-dml805"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita DML805 accu LED Bouwlamp / Werklamp",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2462259047-makita-dml805-accu-led-bouwlamp-werklamp"
-     },
      {
       "kind": "bid",
       "price": 80.0,
@@ -38940,12 +38616,10 @@
      }
     ],
     "low": 71.25,
-    "median": 77.5,
+    "median": 97.5,
     "model": "DML805",
     "outliers": [],
     "prices": [
-     70.0,
-     75.0,
      80.0,
      115.0
     ],
@@ -40514,9 +40188,9 @@
   {
    "alwaysShow": null,
    "auction": "Faillissementsveiling Connectica Groep B.V. te Zaandam - kantoorinventaris",
-   "bid": 100.0,
+   "bid": 125.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-25T19:50:00+01:00",
    "closesDay": null,
    "combo": null,
@@ -40610,7 +40284,7 @@
     "search": "https://www.marktplaats.nl/q/jura+koffiemachine+xs9/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/jura+koffiemachine+xs9/",
-   "nextBid": 125.0,
+   "nextBid": 150.0,
    "pickup": "Vredeweg 1 B, Zaandam",
    "pickupWhen": null,
    "premium": 0.22,
@@ -44045,9 +43719,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling: Consumentengoederen, verf en partijen",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 2,
+   "bids": 3,
    "closes": "2026-11-26T18:39:25+00:00",
    "closesDay": null,
    "combo": null,
@@ -44077,7 +43751,7 @@
     "search": "https://www.marktplaats.nl/q/partij+elektronica/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/partij+elektronica/",
-   "nextBid": 14.0,
+   "nextBid": 16.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -44957,7 +44631,7 @@
    "marketSource": "marktplaats",
    "maxBid": 701.0,
    "mp": {
-    "asOf": "2026-11-12T12:40:06.090905+00:00",
+    "asOf": "2026-11-15T20:32:36.491155+00:00",
     "count": 8,
     "high": 2150.0,
     "kind": "general",
@@ -44972,7 +44646,7 @@
       "kind": "fixed",
       "price": 1375.0,
       "title": "KARCHER SCHROB-/ZUIGMACHINE BR 35/12 C Bp Pack 2013",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2448078930-karcher-schrob-zuigmachine-br-35-12-c-bp-pack-2013"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2353216908-karcher-schrob-zuigmachine-br-35-12-c-bp-pack-2013"
      },
      {
       "kind": "fixed",
@@ -45065,9 +44739,9 @@
   {
    "alwaysShow": true,
    "auction": "CLOVIS - INRICHTING TRAITEUR",
-   "bid": 18.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-30T18:25:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -45097,7 +44771,7 @@
     "search": "https://www.marktplaats.nl/q/merlot+ph+wijn/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/merlot+ph+wijn/",
-   "nextBid": 19.0,
+   "nextBid": 25.0,
    "pickup": "Markt 13, 8790 Waregem, België",
    "pickupWhen": "Fri 4 Dec, 09:00–11:00",
    "premium": 0.19,
@@ -45123,9 +44797,9 @@
   {
    "alwaysShow": true,
    "auction": "CLOVIS - INRICHTING TRAITEUR",
-   "bid": 12.0,
+   "bid": 14.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-30T18:25:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -45155,7 +44829,7 @@
     "search": "https://www.marktplaats.nl/q/merlot+ph+wijn/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/merlot+ph+wijn/",
-   "nextBid": 13.0,
+   "nextBid": 15.0,
    "pickup": "Markt 13, 8790 Waregem, België",
    "pickupWhen": "Fri 4 Dec, 09:00–11:00",
    "premium": 0.19,
@@ -45181,9 +44855,9 @@
   {
    "alwaysShow": true,
    "auction": "CLOVIS - INRICHTING TRAITEUR",
-   "bid": 40.0,
+   "bid": 60.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 8,
    "closes": "2026-11-30T18:26:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -45213,7 +44887,7 @@
     "search": "https://www.marktplaats.nl/q/gin+meyer+ginius/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/gin+meyer+ginius/",
-   "nextBid": 45.0,
+   "nextBid": 65.0,
    "pickup": "Markt 13, 8790 Waregem, België",
    "pickupWhen": "Fri 4 Dec, 09:00–11:00",
    "premium": 0.19,
@@ -46069,7 +45743,7 @@
    "followed": false,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-395-plaatsjebod-plata-foundation-010.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -46249,7 +45923,7 @@
    "followed": false,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-395-plaatsjebod-plata-foundation-058.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -46307,7 +45981,7 @@
    "followed": false,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-395-plaatsjebod-plata-foundation-063.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -46365,7 +46039,7 @@
    "followed": false,
    "image": "https://www.plaatsjebod.nl/media/lot/thumbnail/9999/26-395-plaatsjebod-plata-foundation-179.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Coffee machine",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -46596,6 +46270,8 @@
    "privateSaved": true
   },
   {
+   "auctions": 21,
+   "auctionsRead": 5,
    "error": "",
    "id": "proveiling",
    "lots": 793,
@@ -46603,6 +46279,8 @@
    "ok": true
   },
   {
+   "auctions": 5,
+   "auctionsRead": 5,
    "error": "",
    "id": "hnvi",
    "lots": 890,
@@ -46610,6 +46288,8 @@
    "ok": true
   },
   {
+   "auctions": 18,
+   "auctionsRead": 17,
    "error": "",
    "id": "plaatsjebod",
    "lots": 807,
@@ -46617,13 +46297,17 @@
    "ok": true
   },
   {
+   "auctions": 37,
+   "auctionsRead": 18,
    "error": "",
    "id": "onlineveilingmeester",
-   "lots": 1970,
+   "lots": 1870,
    "name": "Onlineveilingmeester",
    "ok": true
   },
   {
+   "auctions": 5,
+   "auctionsRead": 1,
    "error": "",
    "id": "veilingwinnaar",
    "lots": 41,
@@ -46631,6 +46315,8 @@
    "ok": true
   },
   {
+   "auctions": 3,
+   "auctionsRead": 2,
    "error": "",
    "id": "inventarisveilingen",
    "lots": 107,
@@ -46638,6 +46324,8 @@
    "ok": true
   },
   {
+   "auctions": 6,
+   "auctionsRead": 0,
    "error": "",
    "id": "nedveiling",
    "lots": 0,
@@ -46645,6 +46333,8 @@
    "ok": true
   },
   {
+   "auctions": 29,
+   "auctionsRead": 10,
    "error": "",
    "id": "openbareverkopen",
    "lots": 578,
@@ -46652,13 +46342,17 @@
    "ok": true
   },
   {
+   "auctions": 14,
+   "auctionsRead": 1,
    "error": "",
    "id": "vlavem",
-   "lots": 540,
+   "lots": 190,
    "name": "Vlavem (BE)",
    "ok": true
   },
   {
+   "auctions": 6,
+   "auctionsRead": 0,
    "error": "",
    "id": "bellauction",
    "lots": 0,
@@ -46668,7 +46362,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 103,
+   "lots": 32,
    "name": "Marktplaats prices",
    "ok": true
   }

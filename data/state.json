@@ -2435,110 +2435,110 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 0,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 890,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 107,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "lots": 103,
+   "lots": 32,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 0,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
-   "lots": 1970,
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
+   "lots": 1870,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 578,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 807,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 793,
    "ok": true,
    "warned": false
   },
   "troostwijk": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 72,
    "ok": true
   },
   "veilingwinnaar": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
    "lots": 41,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-15T11:55:31.814697+00:00",
-   "lots": 540,
+   "last_ok": "2026-11-15T20:32:36.491155+00:00",
+   "lots": 190,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-11-15T11:55:31.814697+00:00",
-  "deals": 98,
+  "at": "2026-11-15T20:32:36.491155+00:00",
+  "deals": 100,
   "defects": 10,
-  "lots": 5285,
-  "matches": 553,
-  "new": 10,
-  "requests": 324,
+  "lots": 4835,
+  "matches": 551,
+  "new": 6,
+  "requests": 235,
   "too_old": 23
  },
  "price_cache": {
@@ -2568,9 +2568,9 @@
    "v": 4
   },
   "exact alienware laptop m15 32gb|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
     "count": 2,
     "high": 762.5,
     "kind": "exact",
@@ -2649,6 +2649,40 @@
    "at": "2026-11-02T12:20:08.132228+00:00",
    "est": null,
    "v": 4
+  },
+  "exact asus monitor xg27acs|": {
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": {
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 2,
+    "high": 270.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "ASUS ROG Strix XG27ACS 27” QHD 180Hz Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2445769798-asus-rog-strix-xg27acs-27-qhd-180hz-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "ASUS ROG Strix XG27ACS Gaming Monitor (27 inch, 1440p, 180Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2458143682-asus-rog-strix-xg27acs-gaming-monitor-27-inch-1440p-180hz"
+     }
+    ],
+    "low": 150.0,
+    "median": 210.0,
+    "model": "XG27ACS",
+    "outliers": [],
+    "prices": [
+     170.0,
+     250.0
+    ],
+    "query": "asus xg27acs",
+    "search": "asus monitor xg27acs"
+   },
+   "v": 10
   },
   "exact beamer opr30340|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-02T12:20:08.132228+00:00",
@@ -4312,47 +4346,6 @@
    "est": null,
    "v": 10
   },
-  "exact dewalt accuboormachine dcf887|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 3,
-    "high": 249.95,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 69.99,
-      "title": "DeWalt DCF887 SlagSchroevendraaier + 18V 5AH Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2449271630-dewalt-dcf887-slagschroevendraaier-18v-5ah-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "DeWalt DCF887N Slagschroevendraaier",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2446997901-dewalt-dcf887n-slagschroevendraaier"
-     },
-     {
-      "kind": "bid",
-      "price": 249.95,
-      "title": "DeWALT DCD796 + DCF887 + originele koffer",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2448191214-dewalt-dcd796-dcf887-originele-koffer"
-     }
-    ],
-    "low": 69.99,
-    "median": 70.0,
-    "model": "DCF887",
-    "outliers": [],
-    "prices": [
-     69.99,
-     70.0,
-     249.95
-    ],
-    "query": "dewalt dcf887",
-    "search": "dewalt accuboormachine dcf887"
-   },
-   "v": 4
-  },
   "exact dewalt afkortzaag dw770|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": {
@@ -4529,11 +4522,6 @@
    "at": "2026-11-12T12:40:06.090905+00:00",
    "est": null,
    "v": 10
-  },
-  "exact dewalt dc925|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
   },
   "exact dewalt dcb100|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-12T12:40:06.090905+00:00",
@@ -4942,11 +4930,6 @@
    "est": null,
    "v": 10
   },
-  "exact dewalt stofzuiger dwv9350|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
-  },
   "exact dewalt tacker dcn660|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": {
@@ -5013,7 +4996,7 @@
    "v": 10
   },
   "exact dji camera 4k120|accu,batterij,beveiligingscamera,cameratas,dashcam,dummy,filter,hoes,kopieerapparaat,lader,onderdeel,onderdelen,oplader,printer,riem,statief,tas": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -7504,11 +7487,6 @@
    "est": null,
    "v": 10
   },
-  "exact gaggia koffiemachine hd8829|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
-  },
   "exact gardena robotmaaier 1000m2|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": {
@@ -7564,11 +7542,6 @@
    "at": "2026-11-09T12:49:34.022330+00:00",
    "est": null,
    "v": 10
-  },
-  "exact hilti boorhamer te 16|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
   },
   "exact hilti boorhamer te16|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T14:17:54.964117+00:00",
@@ -7867,7 +7840,7 @@
    "v": 10
   },
   "exact hilti klopboormachine te60|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -7875,11 +7848,6 @@
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": null,
    "v": 10
-  },
-  "exact hilti meetstatief pua 25|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
   },
   "exact hilti schiethamer bx3|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T14:17:54.964117+00:00",
@@ -8224,7 +8192,7 @@
    "v": 10
   },
   "exact hp 470 17 g9 8gb|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -8759,40 +8727,6 @@
    "at": "2026-11-02T07:25:51.068604+00:00",
    "est": {
     "as_of": "2026-11-02T07:25:51.068604+00:00",
-    "count": 2,
-    "high": 624.95,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 500.21,
-      "title": "HUSQVARNA K970 Kettensäge",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/a1529959175-husqvarna-k970-kettensage"
-     },
-     {
-      "kind": "bid",
-      "price": 600.0,
-      "title": "Husqvarna k970",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2445259228-husqvarna-k970"
-     }
-    ],
-    "low": 475.26,
-    "median": 550.11,
-    "model": "K970",
-    "outliers": [],
-    "prices": [
-     500.21,
-     600.0
-    ],
-    "query": "husqvarna k970",
-    "search": "husqvarna doorslijper k970"
-   },
-   "v": 4
-  },
-  "exact husqvarna doorslijper k970|draad,filter,hoes,kettingolie,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,reinigingsmiddel,slang,t b v,zaagketting,zeep": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
     "count": 2,
     "high": 624.95,
     "kind": "exact",
@@ -9685,30 +9619,24 @@
    "v": 4
   },
   "exact iphone se 2020 64gb|accu,armband,armbanden,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,sportarmband,standaard,tab,tablet,watch": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
-    "count": 26,
-    "high": 121.25,
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 30,
+    "high": 125.0,
     "kind": "exact",
     "listings": [
      {
       "kind": "fixed",
-      "price": 60.0,
-      "title": "iPhone SE (2020) 64GB Wit - Goede staat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464127449-iphone-se-2020-64gb-wit-goede-staat"
+      "price": 30.0,
+      "title": "iPhone se 2020 64GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465695050-iphone-se-2020-64gb"
      },
      {
       "kind": "bid",
       "price": 60.0,
       "title": "iPhone SE (2020) 64GB Wit - inclusief doos",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461170718-iphone-se-2020-64gb-wit-inclusief-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Apple iPhone SE (2020) - Zwart - 64GB",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2462462140-apple-iphone-se-2020-zwart-64gb"
      },
      {
       "kind": "bid",
@@ -9723,16 +9651,16 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2456662225-iphone-se-2020-64gb-wit-zo-goed-als-nieuw"
      },
      {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "iphone se 2020 64gb wit  74%",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464838024-iphone-se-2020-64gb-wit-74"
-     },
-     {
       "kind": "bid",
       "price": 75.0,
       "title": "iPhone SE 2e generatie 2020 64GB",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464670459-iphone-se-2e-generatie-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "Iphone SE 2020 Zwart 64 GB",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2450047169-iphone-se-2020-zwart-64-gb"
      },
      {
       "kind": "bid",
@@ -9754,15 +9682,15 @@
      },
      {
       "kind": "fixed",
-      "price": 84.99,
-      "title": "iPhone SE 2020, 64GB, wit, 84%, iOS 27.2",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464439889-iphone-se-2020-64gb-wit-84-ios-27-2"
+      "price": 85.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
       "price": 85.0,
-      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2461133904-iphone-se-2020-rood-64gb-zo-goed-als-nieuw"
+      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -9773,20 +9701,14 @@
      {
       "kind": "fixed",
       "price": 90.0,
-      "title": "iPhone SE (2020) 64GB Zwart 94% - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2460365678-iphone-se-2020-64gb-zwart-94-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
       "title": "iPhone SE 2020 64GB Wit: met garantie, nieuwe baterij",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464635141-iphone-se-2020-64gb-wit-met-garantie-nieuwe-baterij"
      },
      {
       "kind": "bid",
       "price": 95.0,
-      "title": "iPhone SE (2020) 64GB Zwart - Zonder krassen",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2464733552-iphone-se-2020-64gb-zwart-zonder-krassen"
+      "title": "Apple iPhone SE 2020 64GB Wit | Originele doos",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2435767719-apple-iphone-se-2020-64gb-wit-originele-doos"
      },
      {
       "kind": "bid",
@@ -9799,6 +9721,24 @@
       "price": 99.99,
       "title": "Apple iPhone SE (2020) | 64GB | Zwart | B-Grade (839081)",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2463864556-apple-iphone-se-2020-64gb-zwart-b-grade-839081"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Goede staat",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465745888-iphone-se-2020-64gb-zwart-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "iPhone SE (2020) 64GB Wit - Gebruikt",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453179767-iphone-se-2020-64gb-wit-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "iPhone SE (2020) 64GB Zwart - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2458091181-iphone-se-2020-64gb-zwart-zo-goed-als-nieuw"
      },
      {
       "kind": "bid",
@@ -9821,8 +9761,26 @@
      {
       "kind": "bid",
       "price": 125.0,
+      "title": "Apple iPhone SE 2020 64GB Wit",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2465830314-apple-iphone-se-2020-64gb-wit"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
       "title": "iPhone SE (2020) 64GB Wit - Zonder oplader",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2445225661-iphone-se-2020-64gb-wit-zonder-oplader"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE 2020 64gb",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2439449458-iphone-se-2020-64gb"
+     },
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "iPhone SE (2020) Rood 64GB - Zo goed als nieuw/wel gebruikt.",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2429342494-iphone-se-2020-rood-64gb-zo-goed-als-nieuw-wel-gebruikt"
      },
      {
       "kind": "bid",
@@ -9849,13 +9807,12 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-apple-iphone/m2453478944-iphone-se-2020-64gb-wit-a-grade"
      }
     ],
-    "low": 75.0,
-    "median": 87.5,
+    "low": 78.75,
+    "median": 97.5,
     "model": "iPhone SE 2020",
     "outliers": [],
     "prices": [
-     60.0,
-     60.0,
+     30.0,
      60.0,
      70.0,
      70.0,
@@ -9864,16 +9821,21 @@
      75.0,
      80.0,
      80.0,
-     84.99,
      85.0,
      85.0,
-     90.0,
+     85.0,
      90.0,
      95.0,
      95.0,
      99.99,
+     100.0,
+     100.0,
+     110.0,
      120.0,
      120.0,
+     125.0,
+     125.0,
+     125.0,
      125.0,
      125.0,
      130.0,
@@ -10397,47 +10359,6 @@
    },
    "v": 10
   },
-  "exact jura koffiemachine x3c|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 3,
-    "high": 850.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 650.0,
-      "title": "Jura giga x3c",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457309018-jura-giga-x3c"
-     },
-     {
-      "kind": "fixed",
-      "price": 720.0,
-      "title": "Jura GIGA X3c Incl Garantie en Onderhoud",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445826701-jura-giga-x3c-incl-garantie-en-onderhoud"
-     },
-     {
-      "kind": "bid",
-      "price": 850.0,
-      "title": "Jura Giga X3c Professional Koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456374832-jura-giga-x3c-professional-koffiemachine"
-     }
-    ],
-    "low": 650.0,
-    "median": 720.0,
-    "model": "X3C",
-    "outliers": [],
-    "prices": [
-     650.0,
-     720.0,
-     850.0
-    ],
-    "query": "jura x3c",
-    "search": "jura koffiemachine x3c"
-   },
-   "v": 4
-  },
   "exact jura koffiemachine x3|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-11-15T11:55:31.814697+00:00",
    "est": {
@@ -10857,6 +10778,47 @@
   "exact lefant robotstofzuiger m2s|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
+   "v": 10
+  },
+  "exact lenovo laptop 15irh8|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": {
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 3,
+    "high": 600.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 449.99,
+      "title": "Lenovo LOQ 15IRH8 i5-12th 8GB 512GB RTX2050 Laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2465742692-lenovo-loq-15irh8-i5-12th-8gb-512gb-rtx2050-laptop"
+     },
+     {
+      "kind": "bid",
+      "price": 550.0,
+      "title": "Lenovo LOQ 15IRH8 - Intel Core i5-12450H",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2461826971-lenovo-loq-15irh8-intel-core-i5-12450h"
+     },
+     {
+      "kind": "fixed",
+      "price": 600.0,
+      "title": "Lenovo IdeaPad Slim 3 15IRH8 83EM00CGMH",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2458876589-lenovo-ideapad-slim-3-15irh8-83em00cgmh"
+     }
+    ],
+    "low": 449.99,
+    "median": 550.0,
+    "model": "15IRH8",
+    "outliers": [],
+    "prices": [
+     449.99,
+     550.0,
+     600.0
+    ],
+    "query": "lenovo 15irh8",
+    "search": "lenovo laptop 15irh8"
+   },
    "v": 10
   },
   "exact lenovo laptop 82y9|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
@@ -12502,25 +12464,13 @@
    "v": 10
   },
   "exact makita bouwlamp dml805|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
-    "count": 4,
-    "high": 106.25,
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 2,
+    "high": 123.75,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "fixed",
-      "price": 70.0,
-      "title": "makita bouwlamp. DML805",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2435399505-makita-bouwlamp-dml805"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita DML805 accu LED Bouwlamp / Werklamp",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/bouwverlichting/m2462259047-makita-dml805-accu-led-bouwlamp-werklamp"
-     },
      {
       "kind": "bid",
       "price": 80.0,
@@ -12535,12 +12485,10 @@
      }
     ],
     "low": 71.25,
-    "median": 77.5,
+    "median": 97.5,
     "model": "DML805",
     "outliers": [],
     "prices": [
-     70.0,
-     75.0,
      80.0,
      115.0
     ],
@@ -15533,47 +15481,6 @@
    },
    "v": 6
   },
-  "exact makita schaafmachine dkp 180z|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 3,
-    "high": 150.0,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 139.0,
-      "title": "MAKITA DKP180ZJ 18V ACCU SCHAAFMACHINE LXT LI-ION SCHAAF",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/schaafmachines/m2460300242-makita-dkp180zj-18v-accu-schaafmachine-lxt-li-ion-schaaf"
-     },
-     {
-      "kind": "fixed",
-      "price": 145.0,
-      "title": "Makita DKP180Z 18V Li-Ion Accu schaafmachine body - 82mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m1555670448-makita-dkp180z-18v-li-ion-accu-schaafmachine-body-82mm"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Makita DKP180ZJ schuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2441667689-makita-dkp180zj-schuurmachine"
-     }
-    ],
-    "low": 139.0,
-    "median": 145.0,
-    "model": "DKP 180Z",
-    "outliers": [],
-    "prices": [
-     139.0,
-     145.0,
-     150.0
-    ],
-    "query": "makita dkp 180z",
-    "search": "makita schaafmachine dkp 180z"
-   },
-   "v": 4
-  },
   "exact makita schroefautomaat dfr550|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": {
@@ -16199,11 +16106,6 @@
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
    "v": 10
-  },
-  "exact makita slagschroevendraaier clx224a|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
   },
   "exact makita slagschroevendraaier ddt153|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T14:17:54.964117+00:00",
@@ -17640,6 +17542,80 @@
   "exact mova robotstofzuiger z60|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
+   "v": 10
+  },
+  "exact msi monitor g24c4|": {
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": {
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 7,
+    "high": 75.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "MSI Optix G24C4 Curved Gaming Monitor 24 inch Full HD 144Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2440035341-msi-optix-g24c4-curved-gaming-monitor-24-inch-full-hd-144hz"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "MSI G24C4 E2 Curved Gaming Monitor - 180Hz Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2463028647-msi-g24c4-e2-curved-gaming-monitor-180hz-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "MSI Optix G24C4 FULL HD Curved Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2450765691-msi-optix-g24c4-full-hd-curved-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "2x MSI G24C4 Monitor 144Hz 24 inch ( prijs per stuk) inc arm",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2465057394-2x-msi-g24c4-monitor-144hz-24-inch-prijs-per-stuk-inc-arm"
+     },
+     {
+      "kind": "fixed",
+      "of": 2,
+      "price": 75.0,
+      "title": "2x scherm MSI Optix G24C4 + bureaustandaard om op te hangen",
+      "total": 150.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/televisies/m2464189734-2x-scherm-msi-optix-g24c4-bureaustandaard-om-op-te-hangen"
+     },
+     {
+      "kind": "bid",
+      "price": 75.0,
+      "title": "MSI Optix G24C4 - Full HD Curved Gaming Monitor - 144Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2430828576-msi-optix-g24c4-full-hd-curved-gaming-monitor-144hz"
+     },
+     {
+      "kind": "bid",
+      "price": 79.0,
+      "title": "MSI Optix G24C4 Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2460997370-msi-optix-g24c4-gaming-monitor"
+     }
+    ],
+    "low": 70.0,
+    "median": 75.0,
+    "model": "G24C4",
+    "outliers": [
+     10.0,
+     100.0
+    ],
+    "prices": [
+     60.0,
+     70.0,
+     70.0,
+     75.0,
+     75.0,
+     75.0,
+     79.0
+    ],
+    "query": "msi g24c4",
+    "search": "msi monitor g24c4"
+   },
    "v": 10
   },
   "exact nikon d3400|accu,batterij,beveiligingscamera,cameratas,dashcam,dummy,filter,hoes,kopieerapparaat,lader,onderdeel,onderdelen,oplader,printer,riem,statief,tas": {
@@ -20348,7 +20324,7 @@
    "v": 4
   },
   "exact samsung beeldscherm monitor dc55e|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -20580,11 +20556,11 @@
    "v": 10
   },
   "exact samsung galaxy telefoon a35 5g 128gb|accu,armband,armbanden,batterij,book,buds,case,cover,defect,dummy,hoes,hoesje,hoesjes,houder,kabel,lader,lens,ministeck,onderdeel,onderdelen,oplader,pixelart,pixelpuzzel,scherm,screenprotector,sportarmband,standaard,tab,tablet,watch": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
-    "count": 9,
-    "high": 194.0,
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 11,
+    "high": 189.0,
     "kind": "exact",
     "listings": [
      {
@@ -20594,14 +20570,20 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464741498-samsung-galaxy-a35-5g-128gb"
      },
      {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Samsung galaxy a35 5g 128gb",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464887148-samsung-galaxy-a35-5g-128gb"
+      "kind": "fixed",
+      "price": 139.99,
+      "title": "Samsung Galaxy A35 5G 128GB - Vaste PRIJS = €139,99",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466089050-samsung-galaxy-a35-5g-128gb-vaste-prijs-139-99"
      },
      {
       "kind": "bid",
-      "price": 155.0,
+      "price": 150.0,
+      "title": "Samsung galaxy a35 128gb 5g",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2465101880-samsung-galaxy-a35-128gb-5g"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
       "title": "Samsung Galaxy A35 5G 128GB Dual-Sim Navy - Zo goed als new!",
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2464613932-samsung-galaxy-a35-5g-128gb-dual-sim-navy-zo-goed-als-new"
      },
@@ -20621,7 +20603,13 @@
       "kind": "fixed",
       "price": 169.0,
       "title": "Samsung Galaxy A35 5G 128GB Awesome Navy / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2456935789-samsung-galaxy-a35-5g-128gb-awesome-navy-nieuwstaat"
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466330737-samsung-galaxy-a35-5g-128gb-awesome-navy-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 180.0,
+      "title": "Samsung galaxy A35 5g 128 gb",
+      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-samsung/m2466033908-samsung-galaxy-a35-5g-128-gb"
      },
      {
       "kind": "fixed",
@@ -20642,17 +20630,19 @@
       "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-toebehoren-en-onderdelen/m2435117273-samsung-galaxy-a35-5g-128gb"
      }
     ],
-    "low": 152.5,
+    "low": 150.0,
     "median": 160.0,
     "model": "A35",
     "outliers": [],
     "prices": [
      125.0,
+     139.99,
      150.0,
-     155.0,
+     150.0,
      159.99,
      160.0,
      169.0,
+     180.0,
      189.0,
      199.0,
      200.0
@@ -20676,6 +20666,11 @@
    "at": "2026-11-02T12:20:08.132228+00:00",
    "est": null,
    "v": 4
+  },
+  "exact samsung monitor s80ud|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": null,
+   "v": 10
   },
   "exact sennheiser hd 424|adapter,auto,autospeaker,case,etui,gehoorbeschermer,gehoorbescherming,hoes,houder,kabel,kussens,lader,luidspreker,onderdeel,onderdelen,oorkussens,oplader,soundbar,speaker,standaard": {
    "at": "2026-11-02T12:20:08.132228+00:00",
@@ -20730,40 +20725,6 @@
    "at": "2026-11-09T12:49:34.022330+00:00",
    "est": null,
    "v": 10
-  },
-  "exact sonos one g2|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 2,
-    "high": 173.75,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 155.0,
-      "title": "Sonos One Gen2 Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457025913-sonos-one-gen2-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 170.0,
-      "title": "Sonos One Gen 2 smart speaker met voice control - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2453078048-sonos-one-gen-2-smart-speaker-met-voice-control-wit"
-     }
-    ],
-    "low": 151.25,
-    "median": 162.5,
-    "model": "Sonos One G2",
-    "outliers": [],
-    "prices": [
-     155.0,
-     170.0
-    ],
-    "query": "sonos one g2",
-    "search": "sonos one g2"
-   },
-   "v": 4
   },
   "exact sonos one gen 2|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-15T11:55:31.814697+00:00",
@@ -23989,11 +23950,6 @@
    "est": null,
    "v": 4
   },
-  "exact stihl hsa 25|draad,filter,hoes,kettingolie,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,reinigingsmiddel,slang,t b v,zaagketting,zeep": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
-  },
   "exact stihl hsa 56|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": {
@@ -25028,11 +24984,6 @@
    "est": null,
    "v": 10
   },
-  "exact stihl reachtruck fm14|draad,filter,hoes,kettingolie,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,reinigingsmiddel,slang,t b v,zaagketting,zeep": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
-  },
   "exact stihl rma 448|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-10T12:36:29.568640+00:00",
    "est": {
@@ -25254,9 +25205,9 @@
    "v": 10
   },
   "exact surface pro tablet win 11 4gb|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
     "count": 3,
     "high": 140.0,
     "kind": "exact",
@@ -30354,11 +30305,6 @@
    "est": null,
    "v": 10
   },
-  "general hilti doppen|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
-  },
   "general hilti dozen bevestigingsnagels|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-03T14:17:54.964117+00:00",
    "est": null,
@@ -34224,61 +34170,6 @@
    "est": null,
    "v": 10
   },
-  "general jura koffiemachine 746|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 5,
-    "high": 1100.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Jura Impressa C Limited Edition Koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2450217343-jura-impressa-c-limited-edition-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 249.0,
-      "title": "Jura Impressa C9 Piano Black volautomatische espressomachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2452267597-jura-impressa-c9-piano-black-volautomatische-espressomachine"
-     },
-     {
-      "kind": "bid",
-      "price": 420.0,
-      "title": "JURA - S8 EA Piano Black  - Volautomatische espressomachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2451270854-jura-s8-ea-piano-black-volautomatische-espressomachine"
-     },
-     {
-      "kind": "bid",
-      "price": 450.0,
-      "title": "Jura E8 dark inox volautomatische koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2457728269-jura-e8-dark-inox-volautomatische-koffiemachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 1750.0,
-      "title": "Jura GIGA X3 Professional Koffiemachine - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2426780181-jura-giga-x3-professional-koffiemachine-zo-goed-als-nieuw"
-     }
-    ],
-    "low": 164.5,
-    "median": 420.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     80.0,
-     249.0,
-     420.0,
-     450.0,
-     1750.0
-    ],
-    "query": "jura koffiemachine",
-    "search": "jura koffiemachine"
-   },
-   "v": 4
-  },
   "general jura koffiemachine ono|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-11-12T12:40:06.090905+00:00",
    "est": {
@@ -34333,250 +34224,6 @@
     "search": "jura koffiemachine ono"
    },
    "v": 10
-  },
-  "general jura melkkoeler|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 36,
-    "high": 113.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "Jura 1 L thermos melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456261448-jura-1-l-thermos-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Jura Melkkoeler RVS - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/keuken-keukenbenodigdheden/m2450427263-jura-melkkoeler-rvs-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Jura Cool Control Melkkoeler - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456153120-jura-cool-control-melkkoeler-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 25.0,
-      "title": "Melkkoeler Jura",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiemachine-accessoires/m2458001595-melkkoeler-jura"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "Jura Cool Control melkkoeler - Perfect voor uw koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2458000263-jura-cool-control-melkkoeler-perfect-voor-uw-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "Jura Melkkoeler - Zwart, Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2435092538-jura-melkkoeler-zwart-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Jura Melkkoeler / Melkdispenser - Cool Control",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2451432462-jura-melkkoeler-melkdispenser-cool-control"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "Jura Cool Control Melkkoeler - Perfect voor Koffieliefhebber",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/overige-witgoed-en-apparatuur/m2442662085-jura-cool-control-melkkoeler-perfect-voor-koffieliefhebber"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Jura Cool Control melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2458292476-jura-cool-control-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Jura Cool Control Melkkoeler (Zwart)",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456618706-jura-cool-control-melkkoeler-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Mooie witte Jura melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2458166348-mooie-witte-jura-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Jura Melkkoeler 0,6L met WiFi - Cool Control",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koelkasten-en-ijskasten/m2440443094-jura-melkkoeler-0-6l-met-wifi-cool-control"
-     },
-     {
-      "kind": "bid",
-      "price": 65.0,
-      "title": "Jura Cool Control Melkkoeler - Perfect voor uw koffie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2446359868-jura-cool-control-melkkoeler-perfect-voor-uw-koffie"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "Jura Cool Control Melkkoeler - Model 576",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2428174132-jura-cool-control-melkkoeler-model-576"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Jura Cool Control melkkoeler - Perfect voor uw koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2447699213-jura-cool-control-melkkoeler-perfect-voor-uw-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Jura Cool Control Melkkoeler - Zwart",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2442574636-jura-cool-control-melkkoeler-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 77.0,
-      "title": "Jura Cool Control 583W Melkkoeler - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456717823-jura-cool-control-583w-melkkoeler-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Jura Type 570 Melkkoeler - Zwart professional",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2454197292-jura-type-570-melkkoeler-zwart-professional"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Jura Melkkoeler 1 ltr- Perfect voor uw koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456259086-jura-melkkoeler-1-ltr-perfect-voor-uw-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Jura Cool Control  melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiemachine-accessoires/m2438050411-jura-cool-control-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Jura Cool Control 0.6 L melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2458601170-jura-cool-control-0-6-l-melkkoeler"
-     },
-     {
-      "kind": "fixed",
-      "price": 90.0,
-      "title": "Jura melkkoeler 1 liter - perfect voor uw koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2456624414-jura-melkkoeler-1-liter-perfect-voor-uw-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "Jura Cool Control melkkoeler (slangetje ontbreekt)",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/overige-witgoed-en-apparatuur/m2453291856-jura-cool-control-melkkoeler-slangetje-ontbreekt"
-     },
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "Jura Cool Control Melkkoeler (1L) - Zwart",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2423745350-jura-cool-control-melkkoeler-1l-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Jura Cool Control melkkoeler 1 liter - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2443290126-jura-cool-control-melkkoeler-1-liter-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Jura melkkoeler - Perfect voor uw koffiezetapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/onderdelen-en-toebehoren/m2444846045-jura-melkkoeler-perfect-voor-uw-koffiezetapparaat"
-     },
-     {
-      "kind": "bid",
-      "price": 110.0,
-      "title": "Jura Cool Control melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2445207604-jura-cool-control-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 115.0,
-      "title": "Jura melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiemachine-accessoires/m2450629823-jura-melkkoeler"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Jura melkkoeler - Perfect voor uw koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/keukenmixers/m2458151652-jura-melkkoeler-perfect-voor-uw-koffiemachine"
-     },
-     {
-      "kind": "bid",
-      "price": 135.0,
-      "title": "Jura Cool Control Melkkoeler",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiemachine-accessoires/m2459575767-jura-cool-control-melkkoeler"
-     }
-    ],
-    "low": 46.25,
-    "median": 80.0,
-    "model": null,
-    "outliers": [
-     425.0,
-     450.0,
-     475.0,
-     490.0,
-     650.0,
-     695.0,
-     999.0
-    ],
-    "prices": [
-     15.0,
-     20.0,
-     20.0,
-     25.0,
-     25.0,
-     30.0,
-     35.0,
-     40.0,
-     45.0,
-     50.0,
-     65.0,
-     65.0,
-     65.0,
-     75.0,
-     75.0,
-     75.0,
-     77.0,
-     80.0,
-     80.0,
-     80.0,
-     80.0,
-     90.0,
-     95.0,
-     100.0,
-     100.0,
-     100.0,
-     110.0,
-     115.0,
-     125.0,
-     135.0,
-     145.0,
-     150.0,
-     165.0,
-     175.0,
-     180.0,
-     250.0
-    ],
-    "query": "jura melkkoeler",
-    "search": "jura melkkoeler"
-   },
-   "v": 4
   },
   "general karcher 2 410 hogedrukreiniger|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-10T12:36:29.568640+00:00",
@@ -34725,11 +34372,6 @@
   },
   "general karcher droge stofzuiger 10|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-02T07:25:51.068604+00:00",
-   "est": null,
-   "v": 4
-  },
-  "general karcher droge stofzuiger 10|draad,filter,hoes,kettingolie,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,reinigingsmiddel,slang,t b v,zaagketting,zeep": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
    "est": null,
    "v": 4
   },
@@ -35468,9 +35110,9 @@
    "v": 10
   },
   "general karcher schrob zuigmachine accu|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
     "count": 8,
     "high": 2150.0,
     "kind": "general",
@@ -35485,7 +35127,7 @@
       "kind": "fixed",
       "price": 1375.0,
       "title": "KARCHER SCHROB-/ZUIGMACHINE BR 35/12 C Bp Pack 2013",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2448078930-karcher-schrob-zuigmachine-br-35-12-c-bp-pack-2013"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2353216908-karcher-schrob-zuigmachine-br-35-12-c-bp-pack-2013"
      },
      {
       "kind": "fixed",
@@ -37580,8 +37222,51 @@
    "v": 10
   },
   "general macbook laptop air chromebook|adapter,hoes,lader,oplader,sleeve,tas": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
-   "est": null,
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": {
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 4,
+    "high": 787.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "MacBook Air 2015 - Goed onderhouden laptop",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2461595918-macbook-air-2015-goed-onderhouden-laptop"
+     },
+     {
+      "kind": "fixed",
+      "price": 234.0,
+      "title": "Laptop macbook air 2020",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465292937-laptop-macbook-air-2020"
+     },
+     {
+      "kind": "bid",
+      "price": 450.0,
+      "title": "MacBook Pro - Krachtige Laptop voor Professionals",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465125604-macbook-pro-krachtige-laptop-voor-professionals"
+     },
+     {
+      "kind": "bid",
+      "price": 900.0,
+      "title": "MacBook Pro 15 inch - Krachtige laptop voor werk en studie",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/apple-macbooks/m2465065076-macbook-pro-15-inch-krachtige-laptop-voor-werk-en-studie"
+     }
+    ],
+    "low": 133.5,
+    "median": 342.0,
+    "model": null,
+    "outliers": [],
+    "prices": [
+     100.0,
+     234.0,
+     450.0,
+     900.0
+    ],
+    "query": "macbook laptop",
+    "search": "macbook laptop"
+   },
    "v": 10
   },
   "general macbook pro 13 i5 8gb|adapter,hoes,lader,oplader,sleeve,tas": {
@@ -40621,75 +40306,6 @@
    "est": null,
    "v": 10
   },
-  "general makita lamp boormachine|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 7,
-    "high": 190.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "Complete Makita 7,2V Boormachine Set met Lamp en 3 Accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2445664714-complete-makita-7-2v-boormachine-set-met-lamp-en-3-accu-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 25.0,
-      "title": "Nieuwe Makita Voor in het noodpakket Body lamp DML802 14.4",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2449452291-nieuwe-makita-voor-in-het-noodpakket-body-lamp-dml802-14-4"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "Makita HP2051F Klopboormachine 720W met LED-lamp",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2456009669-makita-hp2051f-klopboormachine-720w-met-led-lamp"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "De Makita 6260D i 9,6V accu-boorschroefmachine+lamp 5x batte",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441662156-de-makita-6260d-i-9-6v-accu-boorschroefmachine-lamp-5x-batte"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "Partij Makita schroefmachines, laders en lampen",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2442719423-partij-makita-schroefmachines-laders-en-lampen"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Makita set met boormachines, lamp en oplader",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2441179988-makita-set-met-boormachines-lamp-en-oplader"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Makita set: heggenschaar, boormachine, lamp, slagmoersleutel",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2434380387-makita-set-heggenschaar-boormachine-lamp-slagmoersleutel"
-     }
-    ],
-    "low": 25.0,
-    "median": 45.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     20.0,
-     25.0,
-     35.0,
-     45.0,
-     50.0,
-     190.0,
-     275.0
-    ],
-    "query": "makita lamp",
-    "search": "makita lamp"
-   },
-   "v": 4
-  },
   "general makita led zaklamp accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-10T12:36:29.568640+00:00",
    "est": {
@@ -41123,7 +40739,7 @@
    "v": 7
   },
   "general merlot ph wijn|azijn,bar,boek,decanteer,decanter,dispenser,display,emmer,glas,glazen,inventaris,karaf,kast,klimaat,koeler,koelkast,kruk,kurkentrekker,leeg,lege,menukaart,meubel,opener,pomp,poster,rack,rek,schilderij,stoel,stopper,tafel,tap,vat,vaten,wijnazijn,wijnbar,wijnemmer,wijnglas,wijnglazen,wijnkaart,wijnkast,wijnklimaat,wijnklimaatkast,wijnkoel,wijnrek,wijntap,wijnvat": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -43327,6 +42943,121 @@
    },
    "v": 10
   },
+  "general omen gaming monitor|": {
+   "at": "2026-11-15T20:32:36.491155+00:00",
+   "est": {
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 13,
+    "high": 182.5,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "HP Omen Full HD 24 inch Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2444340197-hp-omen-full-hd-24-inch-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "HP OMEN 25 Gaming Monitor – 24,5 inch – 144Hz – Full HD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2464779011-hp-omen-25-gaming-monitor-24-5-inch-144hz-full-hd"
+     },
+     {
+      "kind": "bid",
+      "price": 110.0,
+      "title": "OMEN 27-inch gaming monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2435545840-omen-27-inch-gaming-monitor"
+     },
+     {
+      "kind": "fixed",
+      "price": 110.0,
+      "title": "HP Omen 27q. 165Hz, 2560x1440, IPS, gaming-monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2428827875-hp-omen-27q-165hz-2560x1440-ips-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 129.99,
+      "title": "HP Omen 25 Gaming Monitor 144Hz | In Prima Staat",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2456881333-hp-omen-25-gaming-monitor-144hz-in-prima-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 130.0,
+      "title": "HP OMEN 27q G2 27” 1440p 180Hz Gaming Monitor",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2462458844-hp-omen-27q-g2-27-1440p-180hz-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 150.0,
+      "title": "HP OMEN Gaming Monitor 24,5 inch Full HD Z7Y57AA",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2455253208-hp-omen-gaming-monitor-24-5-inch-full-hd-z7y57aa"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "HP Omen 27i Gaming Monitor 165Hz",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2452575301-hp-omen-27i-gaming-monitor-165hz"
+     },
+     {
+      "kind": "fixed",
+      "of": 2,
+      "price": 175.0,
+      "title": "2x HP Omen 27i QHD 165Hz 1ms IPS Gaming Monitor",
+      "total": 350.0,
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2433170562-2x-hp-omen-27i-qhd-165hz-1ms-ips-gaming-monitor"
+     },
+     {
+      "kind": "bid",
+      "price": 180.0,
+      "title": "Hp Omen 27i gaming monitor\n\nwifi/Bluetooth İnternet rad",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2464096151-hp-omen-27i-gaming-monitor-wifi-bluetooth-internet-rad"
+     },
+     {
+      "kind": "bid",
+      "price": 185.0,
+      "title": "OMEN 32\" Gaming Monitor - 32c - QHD - 165 Hz - Curved",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2432384154-omen-32-gaming-monitor-32c-qhd-165-hz-curved"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "HP OMEN X 27 QHD 27\" Gaming Monitor 240Hz FreeSync",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2458153413-hp-omen-x-27-qhd-27-gaming-monitor-240hz-freesync"
+     },
+     {
+      "kind": "fixed",
+      "price": 280.0,
+      "title": "HP OMEN X 27 Gaming Monitor - 27 inch - 240Hz - 1440p QHD",
+      "url": "https://www.marktplaats.nl/v/computers-en-software/monitoren/m2465425160-hp-omen-x-27-gaming-monitor-27-inch-240hz-1440p-qhd"
+     }
+    ],
+    "low": 110.0,
+    "median": 150.0,
+    "model": null,
+    "outliers": [
+     349.0
+    ],
+    "prices": [
+     80.0,
+     100.0,
+     110.0,
+     110.0,
+     129.99,
+     130.0,
+     150.0,
+     175.0,
+     175.0,
+     180.0,
+     185.0,
+     250.0,
+     280.0
+    ],
+    "query": "omen gaming monitor",
+    "search": "omen gaming monitor"
+   },
+   "v": 10
+  },
   "general optiplex 3050 3060 desktop|behuizing,bureau,computertafel,cpu houder,game,games,hoes,houder,kabel,kast,koeler,licentie,muis,onderdeel,onderdelen,pc kast,software,standaard,stoel,stofkap,t b v,tafel,tafelblad,tas,toetsenbord,ventilator,voeding,werkplek": {
    "at": "2026-11-10T12:36:29.568640+00:00",
    "est": {
@@ -43537,11 +43268,6 @@
     "search": "optiplex optiplex 3060"
    },
    "v": 10
-  },
-  "general pot paar pate potten|kunstbloemen,kunstboom,kunstplant": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": null,
-   "v": 4
   },
   "general projector jbl soundbar|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-02T07:25:51.068604+00:00",
@@ -45688,13 +45414,25 @@
    "v": 10
   },
   "general sonos play multiroom luidspreker 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
-    "count": 18,
-    "high": 156.25,
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 21,
+    "high": 137.5,
     "kind": "general",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Sonos Play:1 speaker - per stuk of als set",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465397710-sonos-play-1-speaker-per-stuk-of-als-set"
+     },
+     {
+      "kind": "bid",
+      "price": 60.0,
+      "title": "Sonos Play:1 Gen 1 - Compacte Smart Speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466094788-sonos-play-1-gen-1-compacte-smart-speaker"
+     },
      {
       "kind": "bid",
       "of": 2,
@@ -45714,20 +45452,6 @@
      {
       "kind": "bid",
       "of": 2,
-      "price": 80.0,
-      "title": "Sonos Play 1 Speakerset - Wit (2 stuks)",
-      "total": 160.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463695044-sonos-play-1-speakerset-wit-2-stuks"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "Sonos Play 1 - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457288640-sonos-play-1-compacte-smart-speaker"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
       "price": 87.5,
       "title": "2x Sonos Play:1 Speakerset - wit",
       "total": 175.0,
@@ -45740,6 +45464,26 @@
       "title": "Sonos Play:1 Speakerset - Wit (2 stuks)",
       "total": 175.0,
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2429110016-sonos-play-1-speakerset-wit-2-stuks"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Sonos Play:1 Slimme Speaker - Wit/Grijs",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466137224-sonos-play-1-slimme-speaker-wit-grijs"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
+      "price": 100.0,
+      "title": "2 Sonos Play 1 speakers - Zwart",
+      "total": 200.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466153680-2-sonos-play-1-speakers-zwart"
+     },
+     {
+      "kind": "fixed",
+      "price": 100.0,
+      "title": "Sonos Play:1 / Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465025313-sonos-play-1-nieuwstaat"
      },
      {
       "kind": "bid",
@@ -45758,16 +45502,18 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464736447-sonos-play-1-speakerset-zwart-2-stuks"
      },
      {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Sonos Play 1 / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463248624-sonos-play-1-nieuwstaat"
+      "kind": "bid",
+      "of": 2,
+      "price": 112.5,
+      "title": "Sonos Play:5 Gen 1 (2 stuks) - Wit",
+      "total": 225.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465996129-sonos-play-5-gen-1-2-stuks-wit"
      },
      {
       "kind": "bid",
-      "price": 115.0,
-      "title": "Sonos Play:1 Wit - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459146910-sonos-play-1-wit-compacte-smart-speaker"
+      "price": 120.0,
+      "title": "3x Sonos Play:1 speakers - Perfect voor multiroom audio",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465778252-3x-sonos-play-1-speakers-perfect-voor-multiroom-audio"
      },
      {
       "kind": "bid",
@@ -45800,6 +45546,12 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2462013497-sonos-play-1-wit-setje-van-twee-s2"
      },
      {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Sonos Play 1 speakers - 3 stuks - Goede staat",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444788800-sonos-play-1-speakers-3-stuks-goede-staat"
+     },
+     {
       "kind": "bid",
       "price": 200.0,
       "title": "Sonos Play:5 (Gen 1) - Wit - Set van 2",
@@ -45810,29 +45562,28 @@
       "price": 200.0,
       "title": "Sonos set: 2x Play:3, 1x Play:1 en Sonos Bridge (wit)",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463511569-sonos-set-2x-play-3-1x-play-1-en-sonos-bridge-wit"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Sonos Play 1 speakers - 3 stuks - Goede staat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444788800-sonos-play-1-speakers-3-stuks-goede-staat"
      }
     ],
-    "low": 86.88,
-    "median": 112.5,
+    "low": 87.5,
+    "median": 104.5,
     "model": null,
-    "outliers": [],
+    "outliers": [
+     400.0
+    ],
     "prices": [
+     50.0,
+     60.0,
      75.0,
      75.0,
-     80.0,
-     85.0,
      87.5,
      87.5,
      100.0,
+     100.0,
+     100.0,
+     100.0,
      104.5,
-     110.0,
-     115.0,
+     112.5,
+     120.0,
      120.0,
      125.0,
      125.0,
@@ -45848,18 +45599,18 @@
    "v": 10
   },
   "general sonos play netwerk luidspreker 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": {
-    "as_of": "2026-11-12T12:40:06.090905+00:00",
-    "count": 10,
-    "high": 206.25,
+    "as_of": "2026-11-15T20:32:36.491155+00:00",
+    "count": 11,
+    "high": 200.0,
     "kind": "general",
     "listings": [
      {
-      "kind": "fixed",
-      "price": 110.0,
-      "title": "Sonos Play 1 / Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2463248624-sonos-play-1-nieuwstaat"
+      "kind": "bid",
+      "price": 99.0,
+      "title": "Sonos PLAY:5 (gen1)Draadloze HiFi Speaker",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460721424-sonos-play-5-gen1-draadloze-hifi-speaker"
      },
      {
       "kind": "fixed",
@@ -45883,6 +45634,18 @@
      },
      {
       "kind": "fixed",
+      "price": 115.0,
+      "title": "Sonos PLAY:5 (1e generatie), wit, werkt met Sonos S1-app",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465600281-sonos-play-5-1e-generatie-wit-werkt-met-sonos-s1-app"
+     },
+     {
+      "kind": "bid",
+      "price": 120.0,
+      "title": "3x Sonos Play:1 speakers - Perfect voor multiroom audio",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465778252-3x-sonos-play-1-speakers-perfect-voor-multiroom-audio"
+     },
+     {
+      "kind": "fixed",
       "price": 124.99,
       "title": "Sonos PLAY 1 - Wit",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464882861-sonos-play-1-wit"
@@ -45892,12 +45655,6 @@
       "price": 125.0,
       "title": "Sonos Play 1 Draadloze Speaker",
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2456625771-sonos-play-1-draadloze-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Sonos play 1  - Compacte slimme speakerset",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2464538988-sonos-play-1-compacte-slimme-speakerset"
      },
      {
       "kind": "fixed",
@@ -45918,20 +45675,21 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2431037597-sonos-play-5-generation-2-speaker"
      }
     ],
-    "low": 111.85,
-    "median": 125.0,
+    "low": 112.47,
+    "median": 120.0,
     "model": null,
     "outliers": [
      450.0
     ],
     "prices": [
-     110.0,
+     99.0,
      110.0,
      112.47,
      114.99,
+     115.0,
+     120.0,
      124.99,
      125.0,
-     200.0,
      200.0,
      225.0,
      325.0
@@ -45990,391 +45748,6 @@
     "search": "sonos s5"
    },
    "v": 7
-  },
-  "general sonos sonos play multiroom luidspreker 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 29,
-    "high": 177.5,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "of": 3,
-      "price": 25.0,
-      "title": "3x Sonos Play:5 (Gen 1) Wit - Krachtig Geluid",
-      "total": 75.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459682777-3x-sonos-play-5-gen-1-wit-krachtig-geluid"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.0,
-      "title": "Sonos play 3 doet niets",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2456617528-sonos-play-3-doet-niets"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "Sonos - Play 5 Luidspreker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/a1533066701-sonos-play-5-luidspreker"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 75.0,
-      "title": "2x Sonos Play:1 speakers - Goede staat, werken perfect",
-      "total": 150.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2441417080-2x-sonos-play-1-speakers-goede-staat-werken-perfect"
-     },
-     {
-      "kind": "bid",
-      "price": 85.0,
-      "title": "Sonos Play 1 - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2457288640-sonos-play-1-compacte-smart-speaker"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 87.5,
-      "title": "2x Sonos Play:1 Speakerset - wit",
-      "total": 175.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460584494-2x-sonos-play-1-speakerset-wit"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 87.5,
-      "title": "Sonos Play:1 Speakerset - Wit (2 stuks)",
-      "total": 175.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2429110016-sonos-play-1-speakerset-wit-2-stuks"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 90.0,
-      "title": "2x Sonos Play:1 speakers - Zo goed als nieuw",
-      "total": 180.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460286856-2x-sonos-play-1-speakers-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 90.0,
-      "title": "Sonos Play:5 (Gen 1) - 2 stuks - Werkt met S1 App",
-      "total": 180.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460360288-sonos-play-5-gen-1-2-stuks-werkt-met-s1-app"
-     },
-     {
-      "kind": "fixed",
-      "price": 99.0,
-      "title": "Sonos Play 1 zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/a1533262850-sonos-play-1-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Sonos Play:1 Slimme Speaker - Wit, Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459926979-sonos-play-1-slimme-speaker-wit-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.0,
-      "title": "Sonos Play 3 zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/a1532172041-sonos-play-3-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 109.0,
-      "title": "Sonos Play 3 Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/a1532162237-sonos-play-3-wit"
-     },
-     {
-      "kind": "bid",
-      "price": 115.0,
-      "title": "Sonos Play:1 Wit - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459146910-sonos-play-1-wit-compacte-smart-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Sonos One play 1",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459536768-sonos-one-play-1"
-     },
-     {
-      "kind": "fixed",
-      "price": 124.99,
-      "title": "Sonos PLAY 1 - Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/professionele-audio-tv-en-video-apparatuur/a1521922840-sonos-play-1-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Sonos Play:1 Zwart - Compacte Smart Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2454549983-sonos-play-1-zwart-compacte-smart-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 125.0,
-      "title": "Sonos PLAY:5 (Gen 1)",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2426044997-sonos-play-5-gen-1"
-     },
-     {
-      "kind": "bid",
-      "price": 150.0,
-      "title": "Sonos Play:5 Gen 1 Smart Speaker - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2425634064-sonos-play-5-gen-1-smart-speaker-wit"
-     },
-     {
-      "kind": "fixed",
-      "price": 159.95,
-      "title": "Sonos Play:5 (Gen 1) Speaker - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/overige-audio-tv-en-foto/a1523340744-sonos-play-5-gen-1-speaker-wit"
-     },
-     {
-      "kind": "bid",
-      "price": 160.0,
-      "title": "Sonos Play:1 Wit *SETJE VAN TWEE* (S2)",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459156137-sonos-play-1-wit-setje-van-twee-s2"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Sonos Play:1 Wit *SETJE VAN TWEE* (S2)",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459607321-sonos-play-1-wit-setje-van-twee-s2"
-     },
-     {
-      "kind": "bid",
-      "price": 180.0,
-      "title": "Sonos Play:1 Set - Compacte Smart Speakers",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2459676393-sonos-play-1-set-compacte-smart-speakers"
-     },
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 187.5,
-      "title": "Sonos PLAY:3 (2x) + PLAYBAR + Vloerstandaards",
-      "total": 375.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460676179-sonos-play-3-2x-playbar-vloerstandaards"
-     },
-     {
-      "kind": "bid",
-      "price": 195.0,
-      "title": "2 Sonos Play:5 (Gen 1) Wit - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2446628072-2-sonos-play-5-gen-1-wit-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Sonos Play:5 (Gen 1) - Wit - Set van 2",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2428609494-sonos-play-5-gen-1-wit-set-van-2"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Sonos Play 1 speakers - 3 stuks - Goede staat",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2444788800-sonos-play-1-speakers-3-stuks-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 280.0,
-      "title": "2 Sonos Play:1 speakers",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2456911524-2-sonos-play-1-speakers"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Sonos Speakerset: Play:5, boost  en Connect:Amp",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2446601564-sonos-speakerset-play-5-boost-en-connect-amp"
-     }
-    ],
-    "low": 88.75,
-    "median": 120.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     25.0,
-     50.0,
-     75.0,
-     75.0,
-     85.0,
-     87.5,
-     87.5,
-     90.0,
-     90.0,
-     99.0,
-     100.0,
-     109.0,
-     109.0,
-     115.0,
-     120.0,
-     124.99,
-     125.0,
-     125.0,
-     150.0,
-     159.95,
-     160.0,
-     175.0,
-     180.0,
-     187.5,
-     195.0,
-     200.0,
-     200.0,
-     280.0,
-     300.0
-    ],
-    "query": "sonos sonos play",
-    "search": "sonos sonos play"
-   },
-   "v": 4
-  },
-  "general sonos sonos play netwerk luidspreker 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-01T14:52:18.700917+00:00",
-   "est": {
-    "as_of": "2026-11-01T14:52:18.700917+00:00",
-    "count": 16,
-    "high": 178.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "of": 2,
-      "price": 90.0,
-      "title": "Sonos Play:5 (Gen 1) - 2 stuks - Werkt met S1 App",
-      "total": 180.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460360288-sonos-play-5-gen-1-2-stuks-werkt-met-s1-app"
-     },
-     {
-      "kind": "bid",
-      "price": 90.0,
-      "title": "Sonos Play 5\nwerkt alleen op sonos app 1\nDe speaker werkt g",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460306118-sonos-play-5-werkt-alleen-op-sonos-app-1-de-speaker-werkt-g"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Sonos Play:1 speaker met Bridge - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2458430986-sonos-play-1-speaker-met-bridge-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 114.99,
-      "title": "Sonos PLAY 1 - Zwart met kras of deukje",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2458370738-sonos-play-1-zwart-met-kras-of-deukje"
-     },
-     {
-      "kind": "fixed",
-      "price": 124.99,
-      "title": "Sonos PLAY 1 - Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/professionele-audio-tv-en-video-apparatuur/a1521922840-sonos-play-1-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 124.99,
-      "title": "Sonos PLAY 1 - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2450899732-sonos-play-1-wit"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 125.0,
-      "title": "2x Sonos Play 1 Wit | Luidspreker | Inclusief Garantie",
-      "total": 250.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2448748688-2x-sonos-play-1-wit-luidspreker-inclusief-garantie"
-     },
-     {
-      "kind": "fixed",
-      "of": 6,
-      "price": 125.0,
-      "title": "6x Sonos Play 1 Wit | Luidspreker | Inclusief Garantie",
-      "total": 750.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2448750111-6x-sonos-play-1-wit-luidspreker-inclusief-garantie"
-     },
-     {
-      "kind": "fixed",
-      "price": 129.95,
-      "title": "Sonos PLAY:1 Speaker - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/overige-audio-tv-en-foto/a1521524118-sonos-play-1-speaker-wit"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.95,
-      "title": "Sonos PLAY:1 Speaker - Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/overige-audio-tv-en-foto/a1517078809-sonos-play-1-speaker-wit"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 150.0,
-      "title": "2x Sonos Play 1 Zwart + Muurbeugels | Luidspreker | Incl Gar",
-      "total": 300.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2448747688-2x-sonos-play-1-zwart-muurbeugels-luidspreker-incl-gar"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Sonos play 1 set wifi speaker.",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2460078418-sonos-play-1-set-wifi-speaker"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 180.0,
-      "title": "2x Sonos Play 1 Wit + Play 5 Gen 1 S1 | Luidspreker",
-      "total": 360.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452503027-2x-sonos-play-1-wit-play-5-gen-1-s1-luidspreker"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 180.0,
-      "title": "2x Sonos Play 1 Wit + Play 5 Gen 1 | Luidspreker",
-      "total": 360.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2451774022-2x-sonos-play-1-wit-play-5-gen-1-luidspreker"
-     },
-     {
-      "kind": "fixed",
-      "of": 2,
-      "price": 190.0,
-      "title": "2x Sonos Play 1 Zwart + Play Gen 1 S1 | Luidspreker",
-      "total": 380.0,
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452500328-2x-sonos-play-1-zwart-play-gen-1-s1-luidspreker"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Mooie Sonos Set: 2x Play:5 (Gen 1) & 1x Play:1 – Wit",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2447603881-mooie-sonos-set-2x-play-5-gen-1-1x-play-1-wit"
-     }
-    ],
-    "low": 117.49,
-    "median": 127.47,
-    "model": null,
-    "outliers": [
-     450.0
-    ],
-    "prices": [
-     90.0,
-     90.0,
-     100.0,
-     114.99,
-     124.99,
-     124.99,
-     125.0,
-     125.0,
-     129.95,
-     149.95,
-     150.0,
-     175.0,
-     180.0,
-     180.0,
-     190.0,
-     200.0
-    ],
-    "query": "sonos sonos play",
-    "search": "sonos sonos play"
-   },
-   "v": 4
   },
   "general sonos sonos s5 zoneplay muzieksysteem draadloos|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
    "at": "2026-11-02T07:25:51.068604+00:00",
@@ -46437,7 +45810,7 @@
    "v": 10
   },
   "general sonos streamingspeaker play 1|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-12T12:40:06.090905+00:00",
+   "at": "2026-11-15T20:32:36.491155+00:00",
    "est": null,
    "v": 10
   },
@@ -50116,14 +49489,6 @@
    "closes": "2026-11-19T20:46:00+01:00",
    "first": "2026-10-30T10:51:04.564074+00:00"
   },
-  "bellauction:23371": {
-   "closes": "2026-11-12T19:07:00+01:00",
-   "first": "2026-10-31T10:22:33.853912+00:00"
-  },
-  "bellauction:23372": {
-   "closes": "2026-11-12T19:08:00+01:00",
-   "first": "2026-10-31T10:22:33.853912+00:00"
-  },
   "bellauction:23379": {
    "closes": "2026-11-19T20:54:00+01:00",
    "first": "2026-11-05T20:26:06.395158+00:00"
@@ -50656,86 +50021,6 @@
    "closes": "2026-11-18T19:22:55+00:00",
    "first": "2026-11-07T11:01:39.061622+00:00"
   },
-  "onlineveilingmeester:1918716": {
-   "closes": "2026-11-12T18:34:04+00:00",
-   "first": "2026-11-03T11:54:06.611271+00:00"
-  },
-  "onlineveilingmeester:1918805": {
-   "closes": "2026-11-12T18:56:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918807": {
-   "closes": "2026-11-12T18:57:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918898": {
-   "closes": "2026-11-12T19:19:04+00:00",
-   "first": "2026-11-03T11:54:06.611271+00:00"
-  },
-  "onlineveilingmeester:1918903": {
-   "closes": "2026-11-12T19:21:04+00:00",
-   "first": "2026-11-03T11:54:06.611271+00:00"
-  },
-  "onlineveilingmeester:1918911": {
-   "closes": "2026-11-12T19:23:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918914": {
-   "closes": "2026-11-12T19:23:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918917": {
-   "closes": "2026-11-12T19:24:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918920": {
-   "closes": "2026-11-12T19:25:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918921": {
-   "closes": "2026-11-12T19:25:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918922": {
-   "closes": "2026-11-12T19:25:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918929": {
-   "closes": "2026-11-12T19:27:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918936": {
-   "closes": "2026-11-12T19:29:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918942": {
-   "closes": "2026-11-12T19:30:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918945": {
-   "closes": "2026-11-12T19:31:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918946": {
-   "closes": "2026-11-12T19:31:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1918960": {
-   "closes": "2026-11-12T19:35:04+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "onlineveilingmeester:1919358": {
-   "closes": "2026-11-12T18:37:17+00:00",
-   "first": "2026-11-05T06:50:25.807484+00:00"
-  },
-  "onlineveilingmeester:1919368": {
-   "closes": "2026-11-12T18:39:17+00:00",
-   "first": "2026-11-05T06:50:25.807484+00:00"
-  },
-  "onlineveilingmeester:1919385": {
-   "closes": "2026-11-12T18:43:17+00:00",
-   "first": "2026-11-05T06:50:25.807484+00:00"
-  },
   "onlineveilingmeester:1919602": {
    "closes": "2026-11-17T19:09:31+00:00",
    "first": "2026-11-07T11:01:39.061622+00:00"
@@ -51003,10 +50288,6 @@
   "onlineveilingmeester:1920666": {
    "closes": "2026-11-16T18:52:12+00:00",
    "first": "2026-11-07T11:01:39.061622+00:00"
-  },
-  "onlineveilingmeester:1920671": {
-   "closes": "2026-11-12T18:02:04+00:00",
-   "first": "2026-11-09T12:49:34.022330+00:00"
   },
   "onlineveilingmeester:1920793": {
    "closes": "2026-11-23T19:12:28+00:00",
@@ -52312,18 +51593,6 @@
    "closes": "2026-11-26T19:44:25+00:00",
    "first": "2026-11-14T11:26:38.417587+00:00"
   },
-  "openbareverkopen:757362": {
-   "closes": "2026-11-12T18:17:00+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "openbareverkopen:757410": {
-   "closes": "2026-11-12T18:27:00+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "openbareverkopen:757443": {
-   "closes": "2026-11-12T18:33:00+00:00",
-   "first": "2026-10-29T13:18:54.319397+00:00"
-  },
   "openbareverkopen:759901": {
    "closes": "2026-11-18T18:05:00+00:00",
    "first": "2026-11-05T12:17:11.576904+00:00"
@@ -52335,22 +51604,6 @@
   "openbareverkopen:759906": {
    "closes": "2026-11-18T18:06:00+00:00",
    "first": "2026-11-05T12:17:11.576904+00:00"
-  },
-  "openbareverkopen:760104": {
-   "closes": "2026-11-12T18:00:00+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "openbareverkopen:760105": {
-   "closes": "2026-11-12T18:00:00+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "openbareverkopen:760106": {
-   "closes": "2026-11-12T18:00:00+00:00",
-   "first": "2026-11-12T12:40:06.090905+00:00"
-  },
-  "openbareverkopen:760107": {
-   "closes": "2026-11-12T18:01:00+00:00",
-   "first": "2026-10-29T13:18:54.319397+00:00"
   },
   "openbareverkopen:760342": {
    "closes": "2026-11-16T18:02:00+00:00",
@@ -53252,10 +52505,6 @@
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
   },
-  "troostwijk:A1-47367-2356": {
-   "closes": "2026-11-12T13:13:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
   "troostwijk:A1-48758-29": {
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
@@ -53275,6 +52524,30 @@
   "troostwijk:A1-50252-117": {
    "closes": null,
    "first": "2026-10-02T06:58:21.638896+00:00"
+  },
+  "troostwijk:A1-50581-174": {
+   "closes": "2026-11-16T20:11:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
+  },
+  "troostwijk:A1-50581-266": {
+   "closes": "2026-11-16T19:02:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
+  },
+  "troostwijk:A1-50581-407": {
+   "closes": "2026-11-16T20:11:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
+  },
+  "troostwijk:A1-50581-414": {
+   "closes": "2026-11-16T19:02:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
+  },
+  "troostwijk:A1-50581-438": {
+   "closes": "2026-11-16T20:11:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
+  },
+  "troostwijk:A1-50581-63": {
+   "closes": "2026-11-16T19:02:00+01:00",
+   "first": "2026-11-15T20:32:36.491155+00:00"
   },
   "troostwijk:A1-50662-1015": {
    "closes": null,
@@ -53343,266 +52616,6 @@
   "troostwijk:A1-50800-8": {
    "closes": null,
    "first": "2026-10-20T04:39:13.021990+00:00"
-  },
-  "troostwijk:A1-50885-160": {
-   "closes": "2026-11-12T13:32:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-171": {
-   "closes": "2026-11-12T13:35:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-172": {
-   "closes": "2026-11-12T13:36:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-173": {
-   "closes": "2026-11-12T13:36:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-174": {
-   "closes": "2026-11-12T13:36:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-175": {
-   "closes": "2026-11-12T13:37:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-178": {
-   "closes": "2026-11-12T13:38:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-179": {
-   "closes": "2026-11-12T13:38:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-180": {
-   "closes": "2026-11-12T13:38:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-181": {
-   "closes": "2026-11-12T13:39:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-182": {
-   "closes": "2026-11-12T13:39:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-184": {
-   "closes": "2026-11-12T13:40:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-185": {
-   "closes": "2026-11-12T13:40:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-188": {
-   "closes": "2026-11-12T13:41:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-189": {
-   "closes": "2026-11-12T13:41:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-193": {
-   "closes": "2026-11-12T13:43:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-194": {
-   "closes": "2026-11-12T13:43:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-196": {
-   "closes": "2026-11-12T13:44:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-198": {
-   "closes": "2026-11-12T13:44:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-199": {
-   "closes": "2026-11-12T13:45:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-200": {
-   "closes": "2026-11-12T13:45:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-201": {
-   "closes": "2026-11-12T13:45:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-202": {
-   "closes": "2026-11-12T13:46:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-203": {
-   "closes": "2026-11-12T13:46:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-204": {
-   "closes": "2026-11-12T13:46:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-205": {
-   "closes": "2026-11-12T13:47:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-206": {
-   "closes": "2026-11-12T13:47:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-207": {
-   "closes": "2026-11-12T13:47:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-208": {
-   "closes": "2026-11-12T13:48:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-209": {
-   "closes": "2026-11-12T13:48:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-210": {
-   "closes": "2026-11-12T13:48:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-211": {
-   "closes": "2026-11-12T13:49:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-212": {
-   "closes": "2026-11-12T13:49:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-213": {
-   "closes": "2026-11-12T13:49:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-214": {
-   "closes": "2026-11-12T13:50:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-215": {
-   "closes": "2026-11-12T13:50:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-216": {
-   "closes": "2026-11-12T13:50:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-217": {
-   "closes": "2026-11-12T13:51:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-218": {
-   "closes": "2026-11-12T13:51:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-219": {
-   "closes": "2026-11-12T13:51:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-220": {
-   "closes": "2026-11-12T13:52:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-221": {
-   "closes": "2026-11-12T13:52:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-222": {
-   "closes": "2026-11-12T13:52:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-223": {
-   "closes": "2026-11-12T13:53:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-224": {
-   "closes": "2026-11-12T13:53:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-225": {
-   "closes": "2026-11-12T13:53:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-226": {
-   "closes": "2026-11-12T13:54:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-227": {
-   "closes": "2026-11-12T13:54:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-231": {
-   "closes": "2026-11-12T13:55:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-232": {
-   "closes": "2026-11-12T13:56:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50885-236": {
-   "closes": "2026-11-12T13:57:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-50961-49": {
-   "closes": "2026-11-12T13:49:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-108": {
-   "closes": "2026-11-12T13:27:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-109": {
-   "closes": "2026-11-12T13:09:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-110": {
-   "closes": "2026-11-12T13:29:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-225": {
-   "closes": "2026-11-12T14:59:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-226": {
-   "closes": "2026-11-12T14:01:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-38": {
-   "closes": "2026-11-12T14:55:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-39": {
-   "closes": "2026-11-12T14:03:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-40": {
-   "closes": "2026-11-12T13:11:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-41": {
-   "closes": "2026-11-12T14:05:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-67": {
-   "closes": "2026-11-12T14:13:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-68": {
-   "closes": "2026-11-12T15:19:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-69": {
-   "closes": "2026-11-12T14:57:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
-  },
-  "troostwijk:A1-51058-70": {
-   "closes": "2026-11-12T14:03:00+00:00",
-   "first": "2026-11-11T11:51:30.111505+00:00"
   },
   "troostwijk:A1-51223-33": {
    "closes": "2026-11-16T10:59:00+01:00",
