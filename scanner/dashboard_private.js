@@ -25,7 +25,7 @@
     repo: store.get("privRepo", "") || (AD.OWNER ? AD.OWNER + "/auction-private" : ""),
     data: null, sha: null, loaded: false, loading: null, error: null, loadedAt: 0, saving: 0
   };
-  var pui = Object.assign({ pickup: "todo", stock: "stock", listings: "online", q: "", cat: "" }, store.get("privUi", {}));
+  var pui = Object.assign({ pickup: "todo", stock: "overview", listings: "online", q: "", cat: "" }, store.get("privUi", {}));
   var view = null;
   var box = document.getElementById("private");
 
@@ -407,12 +407,14 @@
       { label: "Longest in stock", value: forSale.length ? oldest + " days" : "–", note: "since you bought it (or put it up for sale, for things you used yourself)" }
     ]));
     var defs = [
+      { id: "overview", label: "Overview", count: pieces },
       { id: "stock", label: "For sale", count: forSale.length },
       { id: "kept", label: "Kept for myself", count: all.filter(function (it) { return statusOf(it) === "kept"; }).length },
       { id: "sold", label: "Sold", count: all.filter(function (it) { return statusOf(it) === "sold"; }).length },
       { id: "all", label: "All", count: all.length }
     ];
     var panel = el("section", { "class": "panel list" }, subtabs(defs, "stock"));
+    if (pui.stock === "overview") { overviewPanel(panel, forSale); box.append(panel); return; }
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
       .sort(function (a, b) { return String(b.bought || "").localeCompare(String(a.bought || "")); });
     panel.append(el("div", { "class": "prow head", "aria-hidden": "true" }, el("div"), el("div", { text: "Item" }), el("div", { text: "Bought" }),
@@ -446,6 +448,45 @@
         canSplit(it) ? el("button", { type: "button", "class": "pbtn", text: "Split…", title: "Make each piece its own item, with its own ad", onclick: function () { splitItem(it); } }) : null,
         st === "stock" ? el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }) : null,
         st === "kept" ? el("button", { type: "button", "class": "pbtn", text: "Sell…", title: "Put it up for sale: write the ad and it moves to For sale", onclick: function () { editItem(it, "sell"); } }) : null,
+        el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
+  }
+
+  /* Overview: what's for sale, grouped like Diede's own stock list (item.group / groupOrder / groupSize / groupNote).
+     item.suitPlan = { trousers, sellFrom, sellTo }: listed as a full suit, the matching trousers are bought online once it sells. */
+  function overviewPanel(panel, forSale) {
+    var groups = {}, order = [];
+    forSale.slice().sort(function (a, b) {
+      return (a.groupOrder || 999) - (b.groupOrder || 999) || (a.sizeOrder || 0) - (b.sizeOrder || 0) || String(a.name).localeCompare(String(b.name));
+    }).forEach(function (it) {
+      var g = it.group || "Other stock";
+      if (!groups[g]) { groups[g] = []; order.push(g); }
+      groups[g].push(it);
+    });
+    if (!order.length) { panel.append(el("p", { "class": "empty", text: "Nothing for sale right now." })); return; }
+    order.forEach(function (g) {
+      var list = groups[g], n = list.reduce(function (t, it) { return t + piecesLeft(it); }, 0);
+      var sec = el("div", { "class": "ogroup" }, el("h3", {}, g, el("span", { "class": "count", text: String(n) })));
+      list.forEach(function (it) { sec.append(overviewRow(it)); });
+      panel.append(sec);
+    });
+  }
+  function overviewRow(it) {
+    var left = piecesLeft(it), ls = listings(it), plan = it.suitPlan, per = (it.paid || 0) / qtyOf(it), planText = null;
+    if (plan) {
+      var cost = per + (plan.trousers || 0), lo = (plan.sellFrom || 0) - cost, hi = (plan.sellTo || plan.sellFrom || 0) - cost;
+      planText = "Sold as a suit: buy the trousers for ~" + money(plan.trousers) + " → cost ~" + money(cost) + ", sell " + money(plan.sellFrom) +
+        (plan.sellTo && plan.sellTo !== plan.sellFrom ? "–" + money(plan.sellTo) : "") + " = profit ~" + money(lo) + (hi !== lo ? "–" + money(hi) : "");
+    }
+    return el("article", { "class": "orow" },
+      el("div", { "class": "c-thumb" }, thumb(it)),
+      el("div", { "class": "c-main" },
+        el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + (left > 1 ? "  ×" + left : ""), title: it.name, onclick: function () { editItem(it); } }),
+        it.groupNote ? el("div", { "class": "meta", text: it.groupNote }) : null,
+        planText ? el("div", { "class": "small", text: planText }) : null),
+      el("div", { "data-label": "Paid" }, el("div", { "class": "num", text: money2(per) }), el("div", { "class": "small", text: left > 1 ? "per piece" : "paid" })),
+      el("div", { "data-label": "Online" }, ls.length ? el("div", { "class": "badges" }, ls.map(badge)) : el("span", { "class": "small soon", text: "Not listed" })),
+      el("div", { "class": "c-actions" },
+        el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }),
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
   }
 
