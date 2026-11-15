@@ -416,7 +416,7 @@
     var panel = el("section", { "class": "panel list" }, subtabs(defs, "stock"));
     if (pui.stock === "overview") { overviewPanel(panel, forSale); box.append(panel); return; }
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
-      .sort(function (a, b) { return String(b.bought || "").localeCompare(String(a.bought || "")); });
+      .sort(function (a, b) { return byGroup(a, b) || String(b.bought || "").localeCompare(String(a.bought || "")); });
     panel.append(el("div", { "class": "prow head", "aria-hidden": "true" }, el("div"), el("div", { text: "Item" }), el("div", { text: "Bought" }),
       el("div", { text: "Paid" }), el("div", { text: pui.stock === "sold" ? "Sold for" : pui.stock === "kept" ? "" : "Online" }), el("div")));
     shown.forEach(function (it) { panel.append(stockRow(it)); });
@@ -453,6 +453,8 @@
 
   /* Overview: what's for sale, grouped like Diede's own stock list (item.group / groupOrder / groupSize / groupNote).
      item.suitPlan = { trousers, sellFrom, sellTo }: listed as a full suit, the matching trousers are bought online once it sells. */
+  /* items from Diede's stock list first, in its order (blue, black, grey suits, smokings, women's suits), then the rest */
+  function byGroup(a, b) { return (a.groupOrder || 999) - (b.groupOrder || 999) || (a.sizeOrder || 0) - (b.sizeOrder || 0); }
   function overviewPanel(panel, forSale) {
     var groups = {}, order = [];
     forSale.slice().sort(function (a, b) {
@@ -517,7 +519,7 @@
     if (help) panel.append(el("p", { "class": "fav-note", text: help }));
     var list = pui.listings === "stale" ? stale : pui.listings === "unlisted" ? unlisted : online;
     var oldestAd = function (it) { return listings(it).reduce(function (m, l) { return l.since && l.since < m ? l.since : m; }, "9999"); };
-    list.slice().sort(function (a, b) { return oldestAd(a).localeCompare(oldestAd(b)); }).forEach(function (it) { panel.append(listingCard(it)); });
+    list.slice().sort(function (a, b) { return byGroup(a, b) || oldestAd(a).localeCompare(oldestAd(b)); }).forEach(function (it) { panel.append(listingCard(it)); });
     if (!list.length) panel.append(el("p", { "class": "empty", text: pui.listings === "stale" ? "No ads older than a week. 👍" :
       pui.listings === "unlisted" ? "Everything for sale is online." : "Nothing online yet. Add an ad from “Not listed yet”." }));
     box.append(panel);
