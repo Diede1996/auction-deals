@@ -415,7 +415,7 @@
       { id: "all", label: "All", count: all.length }
     ];
     var panel = el("section", { "class": "panel list" }, subtabs(defs, "stock"));
-    if (pui.stock === "overview") { overviewPanel(panel, forSale); box.append(panel); return; }
+    if (pui.stock === "overview") { overviewPanel(panel, forSale.concat(all.filter(function (it) { return it.toShip && statusOf(it) === "sold"; }))); box.append(panel); return; }
     if (pui.stock === "stock") { listingsView(box, panel.firstChild); return; }  /* For sale = the ads: online, online > 7 days, not listed yet */
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
       .sort(function (a, b) { return byGroup(a, b) || String(b.bought || "").localeCompare(String(a.bought || "")); });
@@ -475,6 +475,14 @@
     });
   }
   function overviewRow(it) {
+    if (it.toShip && statusOf(it) === "sold") {  /* sold, still to send: stays on the list until toShip is cleared */
+      return el("article", { "class": "orow" }, el("div", { "class": "c-thumb" }, thumb(it)),
+        el("div", { "class": "c-main" }, el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + " (" + (it.groupNote || "sold, still to send") + ")", title: it.name, onclick: function () { editItem(it); } })),
+        el("div"), el("div"),
+        el("div", { "class": "c-actions" }, el("button", { type: "button", "class": "pbtn", text: "Sent ✓", onclick: function () {
+          change("Sent " + (it.name || it.id), function (data) { var x = find(data, it.id); if (!x) return false; delete x.toShip; delete x.groupNote; }).then(function () { toast("Marked as sent."); }, function () {});
+        } })));
+    }
     var left = piecesLeft(it), ls = listings(it), plan = it.suitPlan, per = (it.paid || 0) / qtyOf(it), planText = null;
     if (plan) {
       var cost = per + (plan.trousers || 0), lo = (plan.sellFrom || 0) - cost, hi = (plan.sellTo || plan.sellFrom || 0) - cost;
@@ -484,9 +492,8 @@
     return el("article", { "class": "orow" },
       el("div", { "class": "c-thumb" }, thumb(it)),
       el("div", { "class": "c-main" },
-        el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + (left > 1 ? "  ×" + left : ""), title: it.name, onclick: function () { editItem(it); } }),
-        it.groupNote ? el("div", { "class": "meta", text: it.groupNote }) : null,
-        planText ? el("div", { "class": "small", text: planText }) : null),
+        el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + (left > 1 ? "  ×" + left : "") + (it.groupNote ? " (" + it.groupNote + ")" : ""),
+          title: it.name + (planText ? "\n" + planText : ""), onclick: function () { editItem(it); } })),
       el("div", { "data-label": "Paid" }, el("div", { "class": "num", text: money2(per) }), el("div", { "class": "small", text: left > 1 ? "per piece" : "paid" })),
       el("div", { "data-label": "Online" }, ls.length ? el("div", { "class": "badges" }, ls.map(badge)) : el("span", { "class": "small soon", text: "Not listed" })),
       el("div", { "class": "c-actions" },
