@@ -1,6 +1,6 @@
 # Latest scan
 
-_Tuesday 17 November 2026, 15:46 (Amsterdam time)_
+_Tuesday 17 November 2026, 16:05 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -10,19 +10,65 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 | ProVeiling | ✅ 513 lots |
 | HNVI | ✅ 1290 lots |
 | Plaats Je Bod | ✅ 806 lots |
-| Onlineveilingmeester | ✅ 1903 lots |
+| Onlineveilingmeester | ✅ 1939 lots |
 | Veilingwinnaar | ✅ 41 lots |
 | Inventarisveilingen | ✅ 58 lots |
 | Nedveiling | ✅ 0 lots |
 | Openbare Verkopen (BE) | ✅ 1290 lots |
 | Vlavem (BE) | ✅ 189 lots |
-| BellAuction (BE) | ✅ 0 lots |
-| Marktplaats prices | ✅ 0 price lookups |
+| BellAuction (BE) | ✅ 253 lots |
+| Marktplaats prices | ✅ 118 price lookups |
 
-## Matching lots (550)
+## Matching lots (639)
 
 | | Item | Lot | Next bid | Market | Max bid | Closes |
 |---|---|---|---|---|---|---|
+|  | Power tools | [Accu afkort- en verstekzaag (Bosch Professional) – GCM 18V-216 DC – BI](https://www.bellauction.be/auctionlot/23086/accu-afkort-en-verstekzaag-bosch-professional-gcm-18v-216-dc-biturbo) (BellAuction (BE)) | €180 | – | – | Thu 19 Nov 19:48 |
+|  | Power tools | [Accu afkort- en verstekzaag (Bosch Professional) – GCM 18V-216 DC – BI](https://www.bellauction.be/auctionlot/23087/accu-afkort-en-verstekzaag-bosch-professional-gcm-18v-216-dc-biturbo-solo) (BellAuction (BE)) | €170 | – | – | Thu 19 Nov 19:48 |
+|  | Power tools | [Boorhamer SDS-max (Bosch Professional) – GBH 7-45 DE – in koffer](https://www.bellauction.be/auctionlot/23090/boorhamer-sds-max-bosch-professional-gbh-7-45-de-in-koffer) (BellAuction (BE)) | €120 | €225 | €90 | Thu 19 Nov 19:49 |
+|  | Power tools | [Accu decoupeerzaag (Bosch Professional) – GST 18V-125 B – in L-BOXX, s](https://www.bellauction.be/auctionlot/23091/accu-decoupeerzaag-bosch-professional-gst-18v-125-b-in-l-boxx-solo) (BellAuction (BE)) | €60 | – | – | Thu 19 Nov 19:50 |
+|  | Power tools | [Accu tacker / nagelpistool (Bosch Professional) – GNH 18V-50 M – in L-](https://www.bellauction.be/auctionlot/23092/accu-tacker-nagelpistool-bosch-professional-gnh-18v-50-m-in-l-boxx-solo) (BellAuction (BE)) | €85 | – | – | Thu 19 Nov 19:50 |
+|  | Power tools | [Accu boorschroefmachine (Bosch Professional) – GSR 12V-35 HX](https://www.bellauction.be/auctionlot/23093/accu-boorschroefmachine-bosch-professional-gsr-12v-35-hx) (BellAuction (BE)) | €45 | – | – | Thu 19 Nov 19:50 |
+|  | Power tools | [Metaalafkortzaag (Bosch Professional) – GCO 14-24 J – 2400 W](https://www.bellauction.be/auctionlot/23094/metaalafkortzaag-bosch-professional-gco-14-24-j-2400-w) (BellAuction (BE)) | €80 | – | – | Thu 19 Nov 19:51 |
+|  | Power tools | [Slagmoeraanzetter 3/4" (Bosch Professional) – GDS 24](https://www.bellauction.be/auctionlot/23096/slagmoeraanzetter-3-4-bosch-professional-gds-24) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 19:51 |
+|  | Power tools | [Accu boorhamer SDS-plus (Bosch Professional) – GBH 18V-24 C – in L-BOX](https://www.bellauction.be/auctionlot/23097/accu-boorhamer-sds-plus-bosch-professional-gbh-18v-24-c-in-l-boxx-solo) (BellAuction (BE)) | €43 | – | – | Thu 19 Nov 19:52 |
+|  | Power tools | [Accu decoupeerzaag (Makita) – DJV182Z – 18V LXT, borstelloos, solo](https://www.bellauction.be/auctionlot/23101/accu-decoupeerzaag-makita-djv182z-18v-lxt-borstelloos-solo) (BellAuction (BE)) | €60 | €155 | €53 | Thu 19 Nov 19:53 |
+|  | Power tools | [Accu haakse slijper 125 mm (Makita) – DGA508Z – 18V LXT, solo](https://www.bellauction.be/auctionlot/23102/accu-haakse-slijper-125-mm-makita-dga508z-18v-lxt-solo) (BellAuction (BE)) | €90 | – | – | Thu 19 Nov 19:53 |
+| ✅ | Power tools | [Accu reciprozaag (Makita) – DJR187 – 18V LXT – gebruikt, in koffer](https://www.bellauction.be/auctionlot/23103/accu-reciprozaag-makita-djr187-18v-lxt-gebruikt-in-koffer) (BellAuction (BE)) | €27 | €150 | €51 | Thu 19 Nov 19:54 |
+|  | Power tools | [Accu slagschroevendraaier (Makita) – TD003GZ – 40V XGT, solo](https://www.bellauction.be/auctionlot/23104/accu-slagschroevendraaier-makita-td003gz-40v-xgt-solo) (BellAuction (BE)) | €31 | – | – | Thu 19 Nov 19:54 |
+|  | Power tools | [Accu stofzuiger (Makita) – DVC864LZX – 2x 18V, AWS, HEPA, solo](https://www.bellauction.be/auctionlot/23107/accu-stofzuiger-makita-dvc864lzx-2x-18v-aws-hepa-solo) (BellAuction (BE)) | €140 | – | – | Thu 19 Nov 19:55 |
+|  | Power tools | [Accu reciprozaag (Makita) – DJR186RTE – 18V LXT, 2x 5,0 Ah – in koffer](https://www.bellauction.be/auctionlot/23108/accu-reciprozaag-makita-djr186rte-18v-lxt-2x-5-0-ah-in-koffer) (BellAuction (BE)) | €170 | – | – | Thu 19 Nov 19:55 |
+|  | Power tools | [Accu reciprozaag (Makita) – DJR186RTE – 18V LXT, 2x 5,0 Ah – in koffer](https://www.bellauction.be/auctionlot/23109/accu-reciprozaag-makita-djr186rte-18v-lxt-2x-5-0-ah-in-koffer) (BellAuction (BE)) | €160 | – | – | Thu 19 Nov 19:56 |
+|  | Power tools | [Accu multitool (Makita) – TM30 – 10,8V CXT – in Makpac](https://www.bellauction.be/auctionlot/23110/accu-multitool-makita-tm30-10-8v-cxt-in-makpac) (BellAuction (BE)) | €35 | – | – | Thu 19 Nov 19:56 |
+|  | Power tools | [Accu boorschroefmachine (Makita) – DDF484RT3J – 18V LXT, 3x 5,0 Ah](https://www.bellauction.be/auctionlot/23111/accu-boorschroefmachine-makita-ddf484rt3j-18v-lxt-3x-5-0-ah) (BellAuction (BE)) | €100 | – | – | Thu 19 Nov 19:56 |
+|  | Power tools | [Accu haakse slijper 125 mm (Makita) – DGA508RTJ – 18V LXT, 2x 5,0 Ah](https://www.bellauction.be/auctionlot/23112/accu-haakse-slijper-125-mm-makita-dga508rtj-18v-lxt-2x-5-0-ah) (BellAuction (BE)) | €160 | – | – | Thu 19 Nov 19:57 |
+|  | Power tools | [Haakse slijper 125 mm (Makita) – 9565CVR – 1400 W](https://www.bellauction.be/auctionlot/23113/haakse-slijper-125-mm-makita-9565cvr-1400-w) (BellAuction (BE)) | €29 | – | – | Thu 19 Nov 19:57 |
+|  | Power tools | [Accu multitool (Makita) – TM30 – 10,8V CXT – in Makpac](https://www.bellauction.be/auctionlot/23114/accu-multitool-makita-tm30-10-8v-cxt-in-makpac) (BellAuction (BE)) | €37 | – | – | Thu 19 Nov 19:57 |
+|  | Power tools | [Accu reciprozaag (Makita) – JR105DZJ – 10,8V CXT, solo – in Makpac](https://www.bellauction.be/auctionlot/23115/accu-reciprozaag-makita-jr105dzj-10-8v-cxt-solo-in-makpac) (BellAuction (BE)) | €37 | – | – | Thu 19 Nov 19:58 |
+|  | Power tools | [Accu multitool (Makita) – TM30 – 10,8V CXT – in Makpac](https://www.bellauction.be/auctionlot/23117/accu-multitool-makita-tm30-10-8v-cxt-in-makpac) (BellAuction (BE)) | €37 | – | – | Thu 19 Nov 19:58 |
+|  | Power tools | [Accu reciprozaag (Makita) – JR105DZJ – 10,8V CXT, solo – in Makpac](https://www.bellauction.be/auctionlot/23118/accu-reciprozaag-makita-jr105dzj-10-8v-cxt-solo-in-makpac) (BellAuction (BE)) | €37 | – | – | Thu 19 Nov 19:59 |
+|  | Power tools | [Accu haakse slijper 125 mm (Makita) – GA026GZ – 40V XGT, solo](https://www.bellauction.be/auctionlot/23119/accu-haakse-slijper-125-mm-makita-ga026gz-40v-xgt-solo) (BellAuction (BE)) | €43 | – | – | Thu 19 Nov 19:59 |
+|  | Power tools | [Accu haakse slijper 125 mm (Makita) – GA026GZ – 40V XGT, solo](https://www.bellauction.be/auctionlot/23120/accu-haakse-slijper-125-mm-makita-ga026gz-40v-xgt-solo) (BellAuction (BE)) | €80 | – | – | Thu 19 Nov 19:59 |
+|  | Power tools | [Vlakschuurmachine (Festool) – RS 300 EQ-Set – in Systainer](https://www.bellauction.be/auctionlot/23121/vlakschuurmachine-festool-rs-300-eq-set-in-systainer) (BellAuction (BE)) | €85 | €200 | €77 | Thu 19 Nov 20:00 |
+|  | Power tools | [Accu slagboorschroefmachine (Festool) – Quadrive TPC 18/4 5,0/4,0 I-Pl](https://www.bellauction.be/auctionlot/23123/accu-slagboorschroefmachine-festool-quadrive-tpc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €60 | €150 | €51 | Thu 19 Nov 20:00 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23124/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €60 | – | – | Thu 19 Nov 20:01 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23125/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 20:01 |
+|  | Power tools | [Invalcirkelzaag (Festool) – TS 75 EBQ-Plus – in Systainer](https://www.bellauction.be/auctionlot/23126/invalcirkelzaag-festool-ts-75-ebq-plus-in-systainer) (BellAuction (BE)) | €250 | €498 | €210 | Thu 19 Nov 20:01 |
+| ✅ | Power tools | [Accu invalcirkelzaag (Festool) – TSC 55 KEB-Basic – solo, in Systainer](https://www.bellauction.be/auctionlot/23127/accu-invalcirkelzaag-festool-tsc-55-keb-basic-solo-in-systainer) (BellAuction (BE)) | €130 | €480 | €203 | Thu 19 Nov 20:02 |
+| ✅ | Power tools | [Accu invalcirkelzaag (Festool) – TSC 55 KEB-Basic – solo, in Systainer](https://www.bellauction.be/auctionlot/23129/accu-invalcirkelzaag-festool-tsc-55-keb-basic-solo-in-systainer) (BellAuction (BE)) | €120 | €480 | €203 | Thu 19 Nov 20:02 |
+| ✅ | Power tools | [Accu slagschroevendraaier (Festool) – TID 18 HPC 4,0 I-Plus](https://www.bellauction.be/auctionlot/23132/accu-slagschroevendraaier-festool-tid-18-hpc-4-0-i-plus) (BellAuction (BE)) | €45 | €232 | €94 | Thu 19 Nov 20:03 |
+| ✅ | Power tools | [Accu slagboorschroefmachine (Festool) – Quadrive TPC 18/4 5,0/4,0 I-Pl](https://www.bellauction.be/auctionlot/23133/accu-slagboorschroefmachine-festool-quadrive-tpc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €37 | €150 | €51 | Thu 19 Nov 20:04 |
+| ✅ | Power tools | [Accu slagboorschroefmachine (Festool) – Quadrive TPC 18/4 5,0/4,0 I-Pl](https://www.bellauction.be/auctionlot/23134/accu-slagboorschroefmachine-festool-quadrive-tpc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €35 | €150 | €51 | Thu 19 Nov 20:04 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23135/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €45 | – | – | Thu 19 Nov 20:04 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – Quadrive TDC 18/4 5,0/4,0 I-Plus](https://www.bellauction.be/auctionlot/23136/accu-boorschroefmachine-festool-quadrive-tdc-18-4-5-0-4-0-i-plus) (BellAuction (BE)) | €45 | – | – | Thu 19 Nov 20:05 |
+| ✅ | Power tools | [Accu reciprozaag (Festool) – RSC 18 EB-Basic – solo, in Systainer](https://www.bellauction.be/auctionlot/23137/accu-reciprozaag-festool-rsc-18-eb-basic-solo-in-systainer) (BellAuction (BE)) | €65 | €340 | €143 | Thu 19 Nov 20:05 |
+| ✅ | Power tools | [Accu rechte slijper (Metabo) – GA 18 LTX – 18V](https://www.bellauction.be/auctionlot/23160/accu-rechte-slijper-metabo-ga-18-ltx-18v) (BellAuction (BE)) | €30 | €160 | €56 | Thu 19 Nov 20:13 |
+|  | Power tools | [Accu decoupeerzaag (Metabo) – STA 18 LTX 140 – 18V](https://www.bellauction.be/auctionlot/23161/accu-decoupeerzaag-metabo-sta-18-ltx-140-18v) (BellAuction (BE)) | €50 | – | – | Thu 19 Nov 20:13 |
+|  | Power tools | [Haakse slijper 125 mm (Metabo) – WEPBA 19-125 Q DS M-Brush](https://www.bellauction.be/auctionlot/23162/haakse-slijper-125-mm-metabo-wepba-19-125-q-ds-m-brush) (BellAuction (BE)) | €25 | – | – | Thu 19 Nov 20:13 |
+|  | Power tools | [Haakse slijper 125 mm (Metabo) – WEPBA 19-125 Q DS M-Brush](https://www.bellauction.be/auctionlot/23163/haakse-slijper-125-mm-metabo-wepba-19-125-q-ds-m-brush) (BellAuction (BE)) | €27 | – | – | Thu 19 Nov 20:14 |
+|  | Power tools | [Accu stofzuiger (Milwaukee) – M12 HV-0 – 12V, solo](https://www.bellauction.be/auctionlot/23193/accu-stofzuiger-milwaukee-m12-hv-0-12v-solo) (BellAuction (BE)) | €13 | – | – | Thu 19 Nov 20:24 |
+|  | Power tools | [Accu haakse boormachine (Milwaukee) – M18 FRADH-0 – FUEL Super Hawg, s](https://www.bellauction.be/auctionlot/23194/accu-haakse-boormachine-milwaukee-m18-fradh-0-fuel-super-hawg-solo) (BellAuction (BE)) | €35 | – | – | Thu 19 Nov 20:24 |
+|  | Power tools | [Accu kantenfrees (Milwaukee) – M18 FTR8-0X – FUEL, solo](https://www.bellauction.be/auctionlot/23199/accu-kantenfrees-milwaukee-m18-ftr8-0x-fuel-solo) (BellAuction (BE)) | €60 | – | – | Thu 19 Nov 20:26 |
 | ✅ | Power tools | [3 x Festool zaaggeleiders](https://www.plaatsjebod.nl/nl/lots/3-x-festool-zaaggeleiders) (Plaats Je Bod) | €50 | €80 | €51 | Tue 24 Nov 21:02 |
 |  | Power tools | [1 x BOSCH Professional elektrische reciprozaag met toebehoren in koffe](https://www.plaatsjebod.nl/nl/lots/1-x-bosch-professional-elektrische-reciprozaag-met-toebehoren-in-koffer) (Plaats Je Bod) | €30 | – | – | Tue 24 Nov 21:04 |
 |  | Power tools | [1 x BOSCH Professional elektrische multitool](https://www.plaatsjebod.nl/nl/lots/1-x-bosch-professional-elektrische-multitool) (Plaats Je Bod) | €30 | – | – | Tue 24 Nov 21:04 |
@@ -77,6 +123,7 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 | ✅ | Power tools | [1 x Makita combihamer met stofzuigeradapter met HEPA-filter in koffer](https://www.plaatsjebod.nl/nl/lots/1-x-makita-combihamer-met-stofzuigeradapter-met-hepa-filter-in-koffer-3) (Plaats Je Bod) | €50 | €200 | €72 | Wed 25 Nov 20:49 |
 |  | Power tools | [1 x Milwaukee M12 PCSS Raptor accu-pijpsnijder met oplader in koffer](https://www.plaatsjebod.nl/nl/lots/1-x-milwaukee-m12-pcss-raptor-accu-pijpsnijder-met-oplader-in-koffer) (Plaats Je Bod) | €80 | €195 | €69 | Wed 25 Nov 20:53 |
 | ✅ | Power tools | [1 x Makita combihamer met stofzuigeradapter met HEPA-filter in koffer](https://www.plaatsjebod.nl/nl/lots/1-x-makita-combihamer-met-stofzuigeradapter-met-hepa-filter-in-koffer-4) (Plaats Je Bod) | €50 | €190 | €67 | Wed 25 Nov 20:54 |
+|  | Wine | [15x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762677) (Openbare Verkopen (BE)) | €30 | – | – | Mon 30 Nov 19:25 |
 |  | Power tools | [Klopboormachine, Hilti, TE60-A36, 2020](https://onlineveilingmeester.nl/nl/veilingen/9710/kavels/38) (Onlineveilingmeester) | €151 | – | – | Tue 17 Nov 20:39 |
 | ✅ | Coffee machine | [WMF 1400 koffiemachine](https://veilingwinnaar.nl/auctions/395/lots/12215/) (Veilingwinnaar) | €110 | €362 | €152 | Wed 18 Nov 16:00 |
 |  | Coffee machine | [Volautomaat mono koffieapparaat CARIMALI ARMONIA](https://www.openbare-verkopen.be/lot/762559) (Openbare Verkopen (BE)) | €280 | – | – | Wed 18 Nov 19:00 |
@@ -90,10 +137,50 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Power tools | [Makita batterij oplader](https://www.vlavem.com/Makita-batterij-oplader/1056433/detail) (Vlavem (BE)) | €30 | – | – | Wed 18 Nov 19:45 |
 |  | Power tools | [Makita batterij oplader](https://www.vlavem.com/Makita-batterij-oplader/1056434/detail) (Vlavem (BE)) | €30 | – | – | Wed 18 Nov 19:45 |
 |  | Power tools | [Metabo DG25 rechte perslucht slijper](https://www.vlavem.com/Metabo-DG25-rechte-perslucht-slijper/1056471/detail) (Vlavem (BE)) | €10 | – | – | Wed 18 Nov 19:55 |
+|  | Power tools | [Stofafzuigsysteem voor boorhamers SDS-plus (DeWalt) – D25301D](https://www.bellauction.be/auctionlot/23043/stofafzuigsysteem-voor-boorhamers-sds-plus-dewalt-d25301d) (BellAuction (BE)) | €30 | – | – | Thu 19 Nov 19:34 |
+|  | Power tools | [Stofafzuigsysteem voor boorhamers SDS-plus (DeWalt) – D25301D](https://www.bellauction.be/auctionlot/23044/stofafzuigsysteem-voor-boorhamers-sds-plus-dewalt-d25301d) (BellAuction (BE)) | €30 | – | – | Thu 19 Nov 19:34 |
+|  | Power tools | [Stofafzuigsysteem voor boorhamers SDS-plus (DeWalt) – D25301D](https://www.bellauction.be/auctionlot/23045/stofafzuigsysteem-voor-boorhamers-sds-plus-dewalt-d25301d) (BellAuction (BE)) | €30 | – | – | Thu 19 Nov 19:34 |
 |  | Audio / beamer | [Beamer Acer](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/24) (Onlineveilingmeester) | €66 | – | – | Thu 19 Nov 19:35 |
 |  | Audio / beamer | [Muziekinstallatie met diverse speakers o.a. Bose, JB systems](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/41c) (Onlineveilingmeester) | €371 | – | – | Thu 19 Nov 19:39 |
 |  | Monitor | [Computer met monitor  Dell, Optiplex 3070](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/46) (Onlineveilingmeester) | €56 | – | – | Thu 19 Nov 19:41 |
 |  | Coffee machine | [Koffiemachine Tornado](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/48) (Onlineveilingmeester) | €181 | – | – | Thu 19 Nov 19:41 |
+|  | Power tools | [Accu afkort- en verstekzaag (Bosch Professional) – GCM 18V-216 DC – BI](https://www.bellauction.be/auctionlot/23085/accu-afkort-en-verstekzaag-bosch-professional-gcm-18v-216-dc-biturbo-solo) (BellAuction (BE)) | €170 | – | – | Thu 19 Nov 19:48 |
+|  | Power tools | [Draagbare werktafel voor afkortzagen (Bosch Professional) – GTA 2600](https://www.bellauction.be/auctionlot/23088/draagbare-werktafel-voor-afkortzagen-bosch-professional-gta-2600) (BellAuction (BE)) | €70 | €70 | €8 | Thu 19 Nov 19:49 |
+|  | Power tools | [Draagbare werktafel voor afkortzagen (Bosch Professional) – GTA 2600](https://www.bellauction.be/auctionlot/23089/draagbare-werktafel-voor-afkortzagen-bosch-professional-gta-2600) (BellAuction (BE)) | €65 | €70 | €8 | Thu 19 Nov 19:49 |
+|  | Power tools | [Accu koel- en warmtebox (Makita) – DCW180Z – 18V, 20 l, solo](https://www.bellauction.be/auctionlot/23098/accu-koel-en-warmtebox-makita-dcw180z-18v-20-l-solo) (BellAuction (BE)) | €80 | – | – | Thu 19 Nov 19:52 |
+|  | Power tools | [Accu koel- en warmtebox (Makita) – DCW180Z – 18V, 20 l, solo](https://www.bellauction.be/auctionlot/23099/accu-koel-en-warmtebox-makita-dcw180z-18v-20-l-solo) (BellAuction (BE)) | €75 | – | – | Thu 19 Nov 19:52 |
+|  | Power tools | [Accu decoupeerzaag (Makita) – DJV182Z – 18V LXT, borstelloos, solo](https://www.bellauction.be/auctionlot/23100/accu-decoupeerzaag-makita-djv182z-18v-lxt-borstelloos-solo) (BellAuction (BE)) | €100 | €155 | €53 | Thu 19 Nov 19:53 |
+|  | Power tools | [Accu grasschaar (Makita) – BUM168Z – 18V LXT, solo](https://www.bellauction.be/auctionlot/23105/accu-grasschaar-makita-bum168z-18v-lxt-solo) (BellAuction (BE)) | €13 | – | – | Thu 19 Nov 19:54 |
+|  | Power tools | [Accu grasschaar (Makita) – BUM168Z – 18V LXT, solo](https://www.bellauction.be/auctionlot/23106/accu-grasschaar-makita-bum168z-18v-lxt-solo) (BellAuction (BE)) | €15 | – | – | Thu 19 Nov 19:55 |
+|  | Power tools | [Starterset accu's en lader (Makita) – in Makpac](https://www.bellauction.be/auctionlot/23116/starterset-accu-s-en-lader-makita-in-makpac) (BellAuction (BE)) | €43 | – | – | Thu 19 Nov 19:58 |
+|  | Power tools | [Accu boorhamer SDS-plus (Festool) – BHC 18 HPC 4,0 I-Plus](https://www.bellauction.be/auctionlot/23122/accu-boorhamer-sds-plus-festool-bhc-18-hpc-4-0-i-plus) (BellAuction (BE)) | €130 | €220 | €88 | Thu 19 Nov 20:00 |
+|  | Power tools | [Accu invalcirkelzaag (Festool) – TSC 55 5,0 KEBI-Plus/XL](https://www.bellauction.be/auctionlot/23128/accu-invalcirkelzaag-festool-tsc-55-5-0-kebi-plus-xl) (BellAuction (BE)) | €230 | €480 | €203 | Thu 19 Nov 20:02 |
+|  | Power tools | [Accu boorschroefmachine (Festool) – T 18+3 HPC 4,0 I-Plus](https://www.bellauction.be/auctionlot/23130/accu-boorschroefmachine-festool-t-18-3-hpc-4-0-i-plus) (BellAuction (BE)) | €55 | – | – | Thu 19 Nov 20:03 |
+| ✅ | Power tools | [Accu boorschroefmachine (Festool) – TXS 18 Basic-Set – solo](https://www.bellauction.be/auctionlot/23131/accu-boorschroefmachine-festool-txs-18-basic-set-solo) (BellAuction (BE)) | €45 | €148 | €49 | Thu 19 Nov 20:03 |
+|  | Power tools | [Filterzakken (Festool) – FIS-CT 33/5x – 1 doos](https://www.bellauction.be/auctionlot/23138/filterzakken-festool-fis-ct-33-5x-1-doos) (BellAuction (BE)) | €25 | – | – | Thu 19 Nov 20:05 |
+|  | Power tools | [Filterzakken (Festool) – FIS-CT 33/5x – 2 dozen](https://www.bellauction.be/auctionlot/23139/filterzakken-festool-fis-ct-33-5x-2-dozen) (BellAuction (BE)) | €11 | – | – | Thu 19 Nov 20:06 |
+|  | Power tools | [Partij schuurschijven Ø 150 mm (Festool Granat) – P40](https://www.bellauction.be/auctionlot/23141/partij-schuurschijven-150-mm-festool-granat-p40) (BellAuction (BE)) | €9 | – | – | Thu 19 Nov 20:06 |
+|  | Power tools | [Freesbits (Festool) – 4 stuks](https://www.bellauction.be/auctionlot/23142/freesbits-festool-4-stuks) (BellAuction (BE)) | €27 | – | – | Thu 19 Nov 20:07 |
+|  | Power tools | [Partij schuurpapier (Festool Granat) – Ø 150, Ø 125 en 80 x 133 mm](https://www.bellauction.be/auctionlot/23143/partij-schuurpapier-festool-granat-150-125-en-80-x-133-mm) (BellAuction (BE)) | €11 | – | – | Thu 19 Nov 20:07 |
+|  | Power tools | [Geleiderail (Festool) – FS 1400/2 – 1400 mm](https://www.bellauction.be/auctionlot/23145/geleiderail-festool-fs-1400-2-1400-mm) (BellAuction (BE)) | €33 | €72 | €9 | Thu 19 Nov 20:08 |
+|  | Power tools | [Laserstatief (Festool)](https://www.bellauction.be/auctionlot/23146/laserstatief-festool) (BellAuction (BE)) | €11 | – | – | Thu 19 Nov 20:08 |
+|  | Power tools | [Laserstatief (Festool)](https://www.bellauction.be/auctionlot/23147/laserstatief-festool) (BellAuction (BE)) | €11 | – | – | Thu 19 Nov 20:08 |
+|  | Power tools | [Accu boorschroefmachine (Metabo) – BS 18 Quick – 2 accu's + lader](https://www.bellauction.be/auctionlot/23158/accu-boorschroefmachine-metabo-bs-18-quick-2-accu-s-lader) (BellAuction (BE)) | €100 | €112 | €31 | Thu 19 Nov 20:12 |
+|  | Power tools | [Decoupeerzaag (Metabo) – STE 140 Plus Set](https://www.bellauction.be/auctionlot/23159/decoupeerzaag-metabo-ste-140-plus-set) (BellAuction (BE)) | €25 | €72 | €9 | Thu 19 Nov 20:12 |
+|  | Power tools | [Accu combiset (Metabo) – Combo Set 2.1.15 – klopboor + slagschroevendr](https://www.bellauction.be/auctionlot/23164/accu-combiset-metabo-combo-set-2-1-15-klopboor-slagschroevendraaier) (BellAuction (BE)) | €80 | €80 | €13 | Thu 19 Nov 20:14 |
+|  | Power tools | [Accu-set (Metabo) – Power Pack 4x 18V LiHD 5,5 Ah](https://www.bellauction.be/auctionlot/23165/accu-set-metabo-power-pack-4x-18v-lihd-5-5-ah) (BellAuction (BE)) | €43 | – | – | Thu 19 Nov 20:14 |
+| ✅ | Power tools | [Stofafzuiging voor boorhamer (Milwaukee) – M12 DE-0C – 12V](https://www.bellauction.be/auctionlot/23190/stofafzuiging-voor-boorhamer-milwaukee-m12-de-0c-12v) (BellAuction (BE)) | €25 | €140 | €45 | Thu 19 Nov 20:23 |
+| ✅ | Power tools | [Stofafzuiging voor boorhamer (Milwaukee) – M12 DE-0C – 12V](https://www.bellauction.be/auctionlot/23191/stofafzuiging-voor-boorhamer-milwaukee-m12-de-0c-12v) (BellAuction (BE)) | €25 | €140 | €45 | Thu 19 Nov 20:23 |
+|  | Power tools | [Accu-set (Milwaukee) – M18 NRG-903 – 3x 9,0 Ah + lader](https://www.bellauction.be/auctionlot/23192/accu-set-milwaukee-m18-nrg-903-3x-9-0-ah-lader) (BellAuction (BE)) | €95 | – | – | Thu 19 Nov 20:23 |
+|  | Power tools | [Hangende bouwlamp LED (Milwaukee) – HOBL 7000 – 7700 lumen](https://www.bellauction.be/auctionlot/23195/hangende-bouwlamp-led-milwaukee-hobl-7000-7700-lumen) (BellAuction (BE)) | €41 | – | – | Thu 19 Nov 20:24 |
+|  | Power tools | [Hangende bouwlamp LED (Milwaukee) – HOBL 7000 – 7700 lumen](https://www.bellauction.be/auctionlot/23196/hangende-bouwlamp-led-milwaukee-hobl-7000-7700-lumen) (BellAuction (BE)) | €39 | – | – | Thu 19 Nov 20:25 |
+|  | Power tools | [Hangende bouwlamp LED (Milwaukee) – HOBL 7000 – 7700 lumen](https://www.bellauction.be/auctionlot/23197/hangende-bouwlamp-led-milwaukee-hobl-7000-7700-lumen) (BellAuction (BE)) | €37 | – | – | Thu 19 Nov 20:25 |
+|  | Power tools | [Hangende bouwlampen LED (Milwaukee) – HOBL 7000 – 7700 lumen – 3 stuks](https://www.bellauction.be/auctionlot/23198/hangende-bouwlampen-led-milwaukee-hobl-7000-7700-lumen-3-stuks) (BellAuction (BE)) | €95 | – | – | Thu 19 Nov 20:25 |
+|  | Power tools | [Laserstatief (DeWalt) – DE0736](https://www.bellauction.be/auctionlot/23256/laserstatief-dewalt-de0736) (BellAuction (BE)) | €25 | – | – | Thu 19 Nov 20:45 |
+|  | Power tools | [Laserstatief (DeWalt) – DE0736](https://www.bellauction.be/auctionlot/23257/laserstatief-dewalt-de0736) (BellAuction (BE)) | €25 | – | – | Thu 19 Nov 20:45 |
+|  | Power tools | [Laserstatief (DeWalt) – DE0736](https://www.bellauction.be/auctionlot/23258/laserstatief-dewalt-de0736) (BellAuction (BE)) | €25 | – | – | Thu 19 Nov 20:45 |
+|  | Power tools | [Laserstatieven (DeWalt) – DE0736 – 2 stuks](https://www.bellauction.be/auctionlot/23259/laserstatieven-dewalt-de0736-2-stuks) (BellAuction (BE)) | €30 | – | – | Thu 19 Nov 20:46 |
+|  | Power tools | [Removersets voor reciprozaag (Milwaukee) – 52-76-5403 – 2 stuks](https://www.bellauction.be/auctionlot/23379/removersets-voor-reciprozaag-milwaukee-52-76-5403-2-stuks) (BellAuction (BE)) | €8 | – | – | Thu 19 Nov 20:54 |
 |  | Suit / formalwear | [Paar laarzen, maat 6 1/2B, Ralph Lauren](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/5) (Onlineveilingmeester) | €14 | – | – | Sun 22 Nov 20:31 |
 |  | Suit / formalwear | [Paar laarzen, maat 6 1/2B, Ralph Lauren](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/8) (Onlineveilingmeester) | €14 | – | – | Sun 22 Nov 20:31 |
 | ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/20) (Onlineveilingmeester) | €41 | €250 | €96 | Sun 22 Nov 20:34 |
@@ -144,8 +231,8 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/31) (Onlineveilingmeester) | €201 | €325 | €55.776 | Mon 23 Nov 19:37 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 310 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/32) (Onlineveilingmeester) | €141 | €412 | €166 | Mon 23 Nov 19:37 |
 |  | Garden tools | [Werklamp Husqvarna, WL8i](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/33) (Onlineveilingmeester) | €76 | – | – | Mon 23 Nov 19:38 |
-|  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/34) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 19:38 |
-|  | Garden tools | [Werkjack Husqvarna, Classic forest, Maat: L](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/35) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 19:38 |
+|  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/34) (Onlineveilingmeester) | €24 | – | – | Mon 23 Nov 19:38 |
+|  | Garden tools | [Werkjack Husqvarna, Classic forest, Maat: L](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/35) (Onlineveilingmeester) | €24 | – | – | Mon 23 Nov 19:38 |
 |  | Garden tools | [4x Accu Husqvarna, 40-B70 36V, 2,0Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/36) (Onlineveilingmeester) | €46 | – | – | Mon 23 Nov 19:38 |
 |  | Garden tools | [Bosmaaier Husqvarna, 520ilx](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/38) (Onlineveilingmeester) | €71 | – | – | Mon 23 Nov 19:39 |
 |  | Garden tools | [2x Accu Husqvarna, BLi200X 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/39) (Onlineveilingmeester) | €51 | – | – | Mon 23 Nov 19:39 |
@@ -302,7 +389,7 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/198) (Onlineveilingmeester) | €24 | – | – | Mon 23 Nov 20:19 |
 |  | Garden tools | [Bijl Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/200) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:19 |
 |  | Garden tools | [2x Accu Husqvarna, 40-B70 36V, 2,0Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/202) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:20 |
-|  | Garden tools | [Kettingzaag Husqvarna, 450 II 38 cm .325 Pixel](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/203) (Onlineveilingmeester) | €151 | €360 | €144 | Mon 23 Nov 20:20 |
+|  | Garden tools | [Kettingzaag Husqvarna, 450 II 38 cm .325 Pixel](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/203) (Onlineveilingmeester) | €171 | €360 | €144 | Mon 23 Nov 20:20 |
 |  | Garden tools | [Tuinbroek Husqvarna, maat 56](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/205) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:21 |
 | ✅ | Garden tools | [Bladblazer Husqvarna, 550 iBTX](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/206) (Onlineveilingmeester) | €24 | €422 | €170 | Mon 23 Nov 20:21 |
 |  | Garden tools | [Profi Trailer voor zitmaaier trailer, Husqvarna, Profi Trailer](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/207) (Onlineveilingmeester) | €56 | – | – | Mon 23 Nov 20:21 |
@@ -345,8 +432,11 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/246) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 20:31 |
 |  | Garden tools | [Robotmaaier Husqvarna, 305e nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/247) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:31 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 315 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/248) (Onlineveilingmeester) | €26 | €412 | €166 | Mon 23 Nov 20:31 |
-|  | Garden tools | [Kettingzaag Husqvarna, 545 II 38cm .325 autotune](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/249) (Onlineveilingmeester) | €181 | €360 | €144 | Mon 23 Nov 20:32 |
+|  | Monitor | [Partij diverse beeldschermen, O.a. Samsung/Sharp](https://onlineveilingmeester.nl/nl/veilingen/9720/kavels/6) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:31 |
+|  | Monitor | [Partij beeldschermen, O.a. Samsung, o.a. LH48DME](https://onlineveilingmeester.nl/nl/veilingen/9720/kavels/8) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:31 |
+|  | Garden tools | [Kettingzaag Husqvarna, 545 II 38cm .325 autotune](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/249) (Onlineveilingmeester) | €191 | €360 | €144 | Mon 23 Nov 20:32 |
 |  | Garden tools | [Installatiekit Husqvarna, Am l](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/251) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:32 |
+|  | Mixed lot | [Partij fitness apparatuur, O.a. Tomahawk](https://onlineveilingmeester.nl/nl/veilingen/9720/kavels/12) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:32 |
 |  | Garden tools | [Bladblazer Husqvarna, Aspire B8X-P4A set](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/253) (Onlineveilingmeester) | €56 | – | – | Mon 23 Nov 20:33 |
 |  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/254) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:33 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 310 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/255) (Onlineveilingmeester) | €31 | €412 | €166 | Mon 23 Nov 20:33 |
@@ -374,7 +464,7 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Garden tools | [Robotmaaier Husqvarna, 320 nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/279) (Onlineveilingmeester) | €181 | €325 | €129 | Mon 23 Nov 20:39 |
 |  | Garden tools | [Werkjack, Husqvarna, Classic forest, maat XL](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/280) (Onlineveilingmeester) | €20 | – | – | Mon 23 Nov 20:39 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 450X](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/281) (Onlineveilingmeester) | €511 | €325 | €61.974 | Mon 23 Nov 20:40 |
-|  | Garden tools | [Werkschoen, Husqvarna, maat 43](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/282) (Onlineveilingmeester) | €36 | – | – | Mon 23 Nov 20:40 |
+|  | Garden tools | [Werkschoen, Husqvarna, maat 43](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/282) (Onlineveilingmeester) | €46 | – | – | Mon 23 Nov 20:40 |
 |  | Garden tools | [2x Accu Husqvarna, BLi200 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/285) (Onlineveilingmeester) | €91 | – | – | Mon 23 Nov 20:41 |
 |  | Garden tools | [Robotmaaier Husqvarna, 550 Epos](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/287) (Onlineveilingmeester) | €431 | €350 | €139 | Mon 23 Nov 20:41 |
 |  | Camera | [Camera's, O.a. Nikon, Sony, Canon, Panasonic, Meerdere](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/50) (Onlineveilingmeester) | €18 | – | – | Mon 23 Nov 20:42 |
@@ -387,7 +477,7 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Garden tools | [4x Accu Husqvarna, BLi200 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/294) (Onlineveilingmeester) | €46 | – | – | Mon 23 Nov 20:43 |
 |  | Garden tools | [Kettingzaag Husqvarna, 542IXP](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/295) (Onlineveilingmeester) | €71 | – | – | Mon 23 Nov 20:43 |
 |  | Garden tools | [Kettingzaag Husqvarna, 560 XPG 45 cm .325](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/296) (Onlineveilingmeester) | €251 | €500 | €203 | Mon 23 Nov 20:43 |
-|  | Mixed lot | [Partij divers gereedschap](https://onlineveilingmeester.nl/nl/veilingen/9618/kavels/53) (Onlineveilingmeester) | €81 | – | – | Mon 23 Nov 20:43 |
+|  | Mixed lot | [Partij divers gereedschap](https://onlineveilingmeester.nl/nl/veilingen/9618/kavels/53) (Onlineveilingmeester) | €91 | – | – | Mon 23 Nov 20:43 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/297) (Onlineveilingmeester) | €161 | €325 | €55.776 | Mon 23 Nov 20:44 |
 |  | Garden tools | [Kettingzaag Husqvarna, 560 XP® G Mark II 45cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/298) (Onlineveilingmeester) | €331 | – | – | Mon 23 Nov 20:44 |
 |  | Garden tools | [Accu Husqvarna, 40-B220X Bluetooth](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/299) (Onlineveilingmeester) | €41 | – | – | Mon 23 Nov 20:44 |
@@ -531,8 +621,7 @@ _Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 |  | Dyson / robot vacuum | [Ca. 13x Deebot robot-stofzuigeronderdelen, ECOVACS, d-s663](https://onlineveilingmeester.nl/nl/veilingen/9780/kavels/299) (Onlineveilingmeester) | €12 | – | – | Thu 26 Nov 20:44 |
 |  | Audio / beamer | [1 x Partij divers waaronder diverse soorten kledinghangers, Sonos One,](https://www.plaatsjebod.nl/nl/lots/1-x-partij-divers-waaronder-diverse-soorten-kledinghangers-sonos-one-winkelinrichtingsmeubilair-kledingrekken-stoepbord-etc) (Plaats Je Bod) | €60 | – | – | Thu 26 Nov 20:52 |
 | ✅ | Camera | [1 x Canon digitale spiegelreflexcamera met Canon lens en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-canon-digitale-spiegelreflexcamera-met-canon-lens-en-toebehoren) (Plaats Je Bod) | €150 | €448 | €186 | Thu 26 Nov 20:57 |
-| ✅ | Garden tools | [Kärcher Accu schrob/zuigmachine](https://www.openbare-verkopen.be/lot/762627) (Openbare Verkopen (BE)) | €85 | €1.695 | €701 | Mon 30 Nov 19:08 |
-|  | Wine | [15x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762677) (Openbare Verkopen (BE)) | €30 | – | – | Mon 30 Nov 19:25 |
+| ✅ | Garden tools | [Kärcher Accu schrob/zuigmachine](https://www.openbare-verkopen.be/lot/762627) (Openbare Verkopen (BE)) | €85 | €1.695 | €703 | Mon 30 Nov 19:08 |
 |  | Wine | [10x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762678) (Openbare Verkopen (BE)) | €19 | – | – | Mon 30 Nov 19:25 |
 |  | Spirits | [18x Gin Meyer's & Ginius](https://www.openbare-verkopen.be/lot/762679) (Openbare Verkopen (BE)) | €65 | – | – | Mon 30 Nov 19:26 |
 |  | Coffee machine | [Koffiemachine Animo](https://www.openbare-verkopen.be/lot/763134) (Openbare Verkopen (BE)) | €110 | €262 | €103 | Mon 30 Nov 19:38 |
