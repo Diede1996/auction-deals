@@ -456,23 +456,46 @@
      item.suitPlan = { trousers, sellFrom, sellTo }: listed as a full suit, the matching trousers are bought online once it sells. */
   /* items from Diede's stock list first, in its order (blue, black, grey suits, smokings, women's suits), then the rest */
   function byGroup(a, b) { return (a.groupOrder || 999) - (b.groupOrder || 999) || (a.sizeOrder || 0) - (b.sizeOrder || 0); }
+  /* Diede 17-11: first all full suits, then loose jackets, then loose trousers; inside each by colour (blue, grey, black).
+     item.section overrides; otherwise read from the name (pak/smoking + trousers = suit, colbert = jacket, pantalon = trousers). */
+  var SECTIONS = ["Volledige pakken", "Losse colberts", "Losse pantalons", "Overig"];
+  var COLOURS = { blauw: 1, grijs: 2, zwart: 3, dames: 4 };
+  function sectionOf(it) {
+    if (it.section) return it.section;
+    if (!it.group) return "Overig";
+    var n = String(it.name || "").toLowerCase();
+    if (/\bpak\b|smoking[^,]*\+|pantalon bijkopen/.test(n)) return "Volledige pakken";
+    if (/colbert|jacket/.test(n)) return "Losse colberts";
+    if (/pantalon|broek/.test(n)) return "Losse pantalons";
+    return "Volledige pakken";
+  }
+  function colourRank(it) { return COLOURS[String(it.group || "").toLowerCase()] || it.groupOrder || 99; }
   function overviewPanel(panel, forSale) {
-    var groups = {}, order = [];
-    forSale.slice().sort(function (a, b) {
-      return (a.groupOrder || 999) - (b.groupOrder || 999) || (a.sizeOrder || 0) - (b.sizeOrder || 0) || String(a.name).localeCompare(String(b.name));
-    }).forEach(function (it) {
-      var g = it.group || "Other stock";
-      if (!groups[g]) { groups[g] = []; order.push(g); }
-      groups[g].push(it);
+    if (!forSale.length) { panel.append(el("p", { "class": "empty", text: "Nothing for sale right now." })); return; }
+    var sorted = forSale.slice().sort(function (a, b) {
+      return SECTIONS.indexOf(sectionOf(a)) - SECTIONS.indexOf(sectionOf(b)) || colourRank(a) - colourRank(b) ||
+        (a.sizeOrder || 0) - (b.sizeOrder || 0) || String(a.name).localeCompare(String(b.name));
     });
-    if (!order.length) { panel.append(el("p", { "class": "empty", text: "Nothing for sale right now." })); return; }
-    order.forEach(function (g) {
-      var list = groups[g], n = list.reduce(function (t, it) { return t + piecesLeft(it); }, 0);
-      var sec = el("div", { "class": "ogroup" }, el("h3", {}, g, el("span", { "class": "count", text: String(n) })));
-      list.forEach(function (it) { sec.append(overviewRow(it)); if (openAds[it.id] && statusOf(it) === "stock") sec.append(el("div", { "class": "oad" }, listingCard(it))); });
-      panel.append(sec);
+    var sec = null, grp = null, secName = null, grpName = null;
+    sorted.forEach(function (it) {
+      var sn = sectionOf(it), gn = it.group || "Other stock";
+      if (sn !== secName) {
+        secName = sn; grpName = null;
+        var count = sorted.filter(function (x) { return sectionOf(x) === sn; }).reduce(function (t, x) { return t + piecesLeft(x); }, 0);
+        sec = el("div", { "class": "osection" }, el("h2", {}, sn === "Overig" ? "Other stock" : sn, el("span", { "class": "count", text: String(count) })));
+        panel.append(sec);
+      }
+      if (gn !== grpName) {
+        grpName = gn;
+        var n = sorted.filter(function (x) { return sectionOf(x) === sn && (x.group || "Other stock") === gn; }).reduce(function (t, x) { return t + piecesLeft(x); }, 0);
+        grp = el("div", { "class": "ogroup" }, sn === "Overig" && gn === "Other stock" ? null : el("h3", {}, gn, el("span", { "class": "count", text: String(n) })));
+        sec.append(grp);
+      }
+      grp.append(overviewRow(it));
+      if (openAds[it.id] && statusOf(it) === "stock") grp.append(el("div", { "class": "oad" }, listingCard(it)));
     });
   }
+
   function overviewRow(it) {
     if (it.toShip && statusOf(it) === "sold") {  /* sold, still to send: stays on the list until toShip is cleared */
       return el("article", { "class": "orow" }, el("div", { "class": "c-thumb" }, thumb(it)),
