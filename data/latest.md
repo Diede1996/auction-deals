@@ -1,6 +1,6 @@
 # Latest scan
 
-_Tuesday 17 November 2026, 14:19 (Amsterdam time)_
+_Tuesday 17 November 2026, 15:46 (Amsterdam time)_
 
 **Dashboard:** https://diede1996.github.io/auction-deals/
 
@@ -17,7 +17,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 | Openbare Verkopen (BE) | ✅ 1290 lots |
 | Vlavem (BE) | ✅ 189 lots |
 | BellAuction (BE) | ✅ 0 lots |
-| Marktplaats prices | ✅ 194 price lookups |
+| Marktplaats prices | ✅ 0 price lookups |
 
 ## Matching lots (550)
 
@@ -70,7 +70,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 | ✅ | Audio / beamer | [1 x Sonos One speaker](https://www.plaatsjebod.nl/nl/lots/1-x-sonos-one-speaker-1) (Plaats Je Bod) | €45 | €320 | €126 | Wed 25 Nov 19:37 |
 | ✅ | Power tools | [8 x Makita stofafzuigsysteem met HEPA-filter](https://www.plaatsjebod.nl/nl/lots/8-x-makita-stofafzuigsysteem-met-hepa-filter) (Plaats Je Bod) | €110 | €219 | €709 | Wed 25 Nov 20:20 |
 |  | Power tools | [Haakse schroefmachine MAKITA, type DDA351, zonder accu en zonder lader](https://www.hnvi.nl/veiling-kavel/haakse-schroefmachine-makita-type-dda351-zonder-accu-en-zonder-lader/198558) (HNVI) | €40 | – | – | Wed 25 Nov 20:30 |
-| ✅ | Power tools | [Bedrijfsstofzuiger FESTOOL, CTL26e. Beschermkap defect](https://www.hnvi.nl/veiling-kavel/bedrijfsstofzuiger-festool-ctl26e-beschermkap-defect/198602) (HNVI) | €85 | €400 | €166 | Wed 25 Nov 20:30 |
+| ✅ | Power tools | [Bedrijfsstofzuiger FESTOOL, CTL26e. Beschermkap defect](https://www.hnvi.nl/veiling-kavel/bedrijfsstofzuiger-festool-ctl26e-beschermkap-defect/198602) (HNVI) | €115 | €400 | €166 | Wed 25 Nov 20:30 |
 | ✅ | Power tools | [Schuurmachine FESTOOL RO 150 FEQ met koffer](https://www.hnvi.nl/veiling-kavel/schuurmachine-festool-ro-150-feq-met-koffer/198619) (HNVI) | €80 | €340 | €141 | Wed 25 Nov 20:30 |
 | ✅ | Power tools | [1 x Makita combihamer met stofzuigeradapter met HEPA-filter in koffer](https://www.plaatsjebod.nl/nl/lots/1-x-makita-combihamer-met-stofzuigeradapter-met-hepa-filter-in-koffer-1) (Plaats Je Bod) | €60 | €190 | €67 | Wed 25 Nov 20:40 |
 | ✅ | Power tools | [1 x Makita combihamer met stofzuigeradapter met HEPA-filter in koffer](https://www.plaatsjebod.nl/nl/lots/1-x-makita-combihamer-met-stofzuigeradapter-met-hepa-filter-in-koffer-2) (Plaats Je Bod) | €60 | €190 | €67 | Wed 25 Nov 20:48 |
@@ -92,26 +92,26 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Power tools | [Metabo DG25 rechte perslucht slijper](https://www.vlavem.com/Metabo-DG25-rechte-perslucht-slijper/1056471/detail) (Vlavem (BE)) | €10 | – | – | Wed 18 Nov 19:55 |
 |  | Audio / beamer | [Beamer Acer](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/24) (Onlineveilingmeester) | €66 | – | – | Thu 19 Nov 19:35 |
 |  | Audio / beamer | [Muziekinstallatie met diverse speakers o.a. Bose, JB systems](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/41c) (Onlineveilingmeester) | €371 | – | – | Thu 19 Nov 19:39 |
-|  | Monitor | [Computer met monitor  Dell, Optiplex 3070](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/46) (Onlineveilingmeester) | €51 | – | – | Thu 19 Nov 19:41 |
+|  | Monitor | [Computer met monitor  Dell, Optiplex 3070](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/46) (Onlineveilingmeester) | €56 | – | – | Thu 19 Nov 19:41 |
 |  | Coffee machine | [Koffiemachine Tornado](https://onlineveilingmeester.nl/nl/veilingen/9342/kavels/48) (Onlineveilingmeester) | €181 | – | – | Thu 19 Nov 19:41 |
 |  | Suit / formalwear | [Paar laarzen, maat 6 1/2B, Ralph Lauren](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/5) (Onlineveilingmeester) | €14 | – | – | Sun 22 Nov 20:31 |
 |  | Suit / formalwear | [Paar laarzen, maat 6 1/2B, Ralph Lauren](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/8) (Onlineveilingmeester) | €14 | – | – | Sun 22 Nov 20:31 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/20) (Onlineveilingmeester) | €31 | €250 | €96 | Sun 22 Nov 20:34 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/21) (Onlineveilingmeester) | €26 | €250 | €96 | Sun 22 Nov 20:35 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/22) (Onlineveilingmeester) | €26 | €250 | €96 | Sun 22 Nov 20:35 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/26) (Onlineveilingmeester) | €24 | €250 | €96 | Sun 22 Nov 20:36 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/27) (Onlineveilingmeester) | €24 | €250 | €96 | Sun 22 Nov 20:36 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/28) (Onlineveilingmeester) | €31 | €250 | €96 | Sun 22 Nov 20:36 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/32) (Onlineveilingmeester) | €24 | €250 | €96 | Sun 22 Nov 20:37 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/33) (Onlineveilingmeester) | €24 | €250 | €96 | Sun 22 Nov 20:38 |
-| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/34) (Onlineveilingmeester) | €24 | €250 | €96 | Sun 22 Nov 20:38 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/20) (Onlineveilingmeester) | €41 | €250 | €96 | Sun 22 Nov 20:34 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/21) (Onlineveilingmeester) | €36 | €250 | €96 | Sun 22 Nov 20:35 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/22) (Onlineveilingmeester) | €41 | €250 | €96 | Sun 22 Nov 20:35 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/26) (Onlineveilingmeester) | €31 | €250 | €96 | Sun 22 Nov 20:36 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/27) (Onlineveilingmeester) | €31 | €250 | €96 | Sun 22 Nov 20:36 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/28) (Onlineveilingmeester) | €41 | €250 | €96 | Sun 22 Nov 20:36 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/32) (Onlineveilingmeester) | €26 | €250 | €96 | Sun 22 Nov 20:37 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/33) (Onlineveilingmeester) | €26 | €250 | €96 | Sun 22 Nov 20:38 |
+| ✅ | Dyson / robot vacuum | [Stijltang, Dyson, Airstrait](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/34) (Onlineveilingmeester) | €26 | €250 | €96 | Sun 22 Nov 20:38 |
 |  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/38) (Onlineveilingmeester) | €12 | – | – | Sun 22 Nov 20:39 |
 |  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/39) (Onlineveilingmeester) | €14 | – | – | Sun 22 Nov 20:39 |
 |  | Monitor | [Monitor, Samsung, OM55N](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/40) (Onlineveilingmeester) | €12 | – | – | Sun 22 Nov 20:39 |
 |  | Power tools | [Bouwradio, Makita, MR004G, 2021](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/41) (Onlineveilingmeester) | €26 | – | – | Sun 22 Nov 20:40 |
-| ✅ | Dyson / robot vacuum | [Föhn, Dyson, Airwrap](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/42) (Onlineveilingmeester) | €81 | €295 | €126 | Sun 22 Nov 20:40 |
+| ✅ | Dyson / robot vacuum | [Föhn, Dyson, Airwrap](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/42) (Onlineveilingmeester) | €101 | €295 | €126 | Sun 22 Nov 20:40 |
 |  | Audio / beamer | [Beamertas, Toshiba](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/48) (Onlineveilingmeester) | €7 | – | – | Sun 22 Nov 20:41 |
-| ✅ | Dyson / robot vacuum | [Steel stofzuiger, Dyson, Gen5Detect Absolute](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/50) (Onlineveilingmeester) | €51 | €462 | €238 | Sun 22 Nov 20:42 |
+| ✅ | Dyson / robot vacuum | [Steel stofzuiger, Dyson, Gen5Detect Absolute](https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/50) (Onlineveilingmeester) | €66 | €462 | €238 | Sun 22 Nov 20:42 |
 | ✅ | Power tools | [Tafelzaag Dewalt + Compressor Atlas Copco](https://www.openbare-verkopen.be/lot/763308) (Openbare Verkopen (BE)) | €75 | €438 | €173 | Mon 23 Nov 19:05 |
 |  | Garden tools | [Installatiekit Husqvarna, Am l](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/1) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 19:30 |
 |  | Garden tools | [Robotmaaier Husqvarna, 310 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/2) (Onlineveilingmeester) | €221 | €412 | €166 | Mon 23 Nov 19:30 |
@@ -137,7 +137,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Robotmaaier Husqvarna, 305e nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/23) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 19:35 |
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/24) (Onlineveilingmeester) | €56 | – | – | Mon 23 Nov 19:35 |
 |  | Garden tools | [Kettingzaag Husqvarna, 120 i 30 cm BODY](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/26) (Onlineveilingmeester) | €111 | €107 | €19 | Mon 23 Nov 19:36 |
-| ✅ | Garden tools | [Kettingzaag Husqvarna, 542 iXPG 40 cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/27) (Onlineveilingmeester) | €191 | €485 | €197 | Mon 23 Nov 19:36 |
+|  | Garden tools | [Kettingzaag Husqvarna, 542 iXPG 40 cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/27) (Onlineveilingmeester) | €201 | €485 | €197 | Mon 23 Nov 19:36 |
 |  | Garden tools | [2x Accu Husqvarna, BLi200X 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/28) (Onlineveilingmeester) | €66 | – | – | Mon 23 Nov 19:36 |
 |  | Garden tools | [Kettingzaag Husqvarna, 555 45 cm .325 Auto Tune](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/29) (Onlineveilingmeester) | €371 | €425 | €171 | Mon 23 Nov 19:37 |
 |  | Garden tools | [2x Accu Husqvarna, BLi200 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/30) (Onlineveilingmeester) | €46 | – | – | Mon 23 Nov 19:37 |
@@ -213,7 +213,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [2x Accu Husqvarna, 40-B70 36V, 2,0Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/105) (Onlineveilingmeester) | €16 | – | – | Mon 23 Nov 19:56 |
 |  | Garden tools | [Kettingzaag Husqvarna, T542 iXPG, 36 cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/106) (Onlineveilingmeester) | €201 | – | – | Mon 23 Nov 19:56 |
 | ✅ | Garden tools | [Kettingzaag Husqvarna, 542 iXP 40 cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/107) (Onlineveilingmeester) | €81 | €497 | €202 | Mon 23 Nov 19:56 |
-|  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/108) (Onlineveilingmeester) | €18 | – | – | Mon 23 Nov 19:56 |
+|  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/108) (Onlineveilingmeester) | €20 | – | – | Mon 23 Nov 19:56 |
 |  | Garden tools | [Robotmaaier Husqvarna, 405xe nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/109) (Onlineveilingmeester) | €151 | – | – | Mon 23 Nov 19:57 |
 |  | Garden tools | [2x Accu Husqvarna, 40-B70 36V, 2,0Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/110) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 19:57 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 415x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/111) (Onlineveilingmeester) | €371 | €325 | €57.153 | Mon 23 Nov 19:57 |
@@ -231,7 +231,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [2x Accu Husqvarna, BLi200 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/123) (Onlineveilingmeester) | €16 | – | – | Mon 23 Nov 20:00 |
 |  | Garden tools | [Kettingzaag Husqvarna, C15X-P4A](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/124) (Onlineveilingmeester) | €46 | – | – | Mon 23 Nov 20:00 |
 |  | Garden tools | [Bladblazer Husqvarna, Aspire B8X-P4A set](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/125) (Onlineveilingmeester) | €51 | – | – | Mon 23 Nov 20:01 |
-| ✅ | Garden tools | [Kettingzaag Husqvarna, 130 36 cm 3/8](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/126) (Onlineveilingmeester) | €66 | €272 | €106 | Mon 23 Nov 20:01 |
+| ✅ | Garden tools | [Kettingzaag Husqvarna, 130 36 cm 3/8](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/126) (Onlineveilingmeester) | €71 | €272 | €106 | Mon 23 Nov 20:01 |
 |  | Garden tools | [Tuinbroek Husqvarna, maat 54](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/127) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:01 |
 |  | Garden tools | [Kettingzaag Husqvarna, C15X-P4A](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/129) (Onlineveilingmeester) | €36 | – | – | Mon 23 Nov 20:02 |
 |  | Garden tools | [Tuinbroek Husqvarna, maat 50](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/130) (Onlineveilingmeester) | €16 | – | – | Mon 23 Nov 20:02 |
@@ -271,7 +271,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Lading houder voor zitmaaier Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/166) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:11 |
 |  | Garden tools | [Heggenschaar Husqvarna, HA860](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/167) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:11 |
 | ✅ | Garden tools | [Kettingzaag Husqvarna, 240i](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/168) (Onlineveilingmeester) | €61 | €250 | €95 | Mon 23 Nov 20:11 |
-|  | Mixed lot | [Inhoud ruimte: paarden harnassen en divers gereedschap](https://onlineveilingmeester.nl/nl/veilingen/9740/kavels/47) (Onlineveilingmeester) | €41 | – | – | Mon 23 Nov 20:11 |
+|  | Mixed lot | [Inhoud ruimte: paarden harnassen en divers gereedschap](https://onlineveilingmeester.nl/nl/veilingen/9740/kavels/47) (Onlineveilingmeester) | €51 | – | – | Mon 23 Nov 20:11 |
 |  | Power tools | [3x Accu combihamer en 1x accuboormachine, DeWalt, DCH263 en DCD709](https://onlineveilingmeester.nl/nl/veilingen/9431/kavels/51) (Onlineveilingmeester) | €161 | – | – | Mon 23 Nov 20:12 |
 |  | Garden tools | [Accu Husqvarna, 40-B220X Bluetooth](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/169) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:12 |
 |  | Garden tools | [Tuinbroek, Husqvarna, maat 58](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/170) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:12 |
@@ -314,14 +314,14 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Kettingzaag Husqvarna, 542IXP](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/213) (Onlineveilingmeester) | €101 | – | – | Mon 23 Nov 20:23 |
 |  | Garden tools | [Doorslijper Husqvarna, K540i](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/214) (Onlineveilingmeester) | €331 | – | – | Mon 23 Nov 20:23 |
 |  | Garden tools | [Kettingzaag Husqvarna, 225i 36 cm SET](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/215) (Onlineveilingmeester) | €121 | €250 | €95 | Mon 23 Nov 20:23 |
-| ✅ | Garden tools | [Robotmaaier, Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/217) (Onlineveilingmeester) | €24 | €325 | €55.776 | Mon 23 Nov 20:24 |
+| ✅ | Garden tools | [Robotmaaier, Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/217) (Onlineveilingmeester) | €26 | €325 | €55.776 | Mon 23 Nov 20:24 |
 |  | Garden tools | [Installatiekit Husqvarna, Am l](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/218) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:24 |
 |  | Garden tools | [Bijl Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/219) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 20:24 |
 |  | Garden tools | [Installatiekit Husqvarna, Am l](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/221) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:25 |
 |  | Garden tools | [Heggenschaar Husqvarna, 522IHD75](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/222) (Onlineveilingmeester) | €76 | – | – | Mon 23 Nov 20:25 |
-| ✅ | Garden tools | [Robotmaaier Husqvarna, 415x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/223) (Onlineveilingmeester) | €251 | €325 | €57.153 | Mon 23 Nov 20:25 |
+| ✅ | Garden tools | [Robotmaaier Husqvarna, 415x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/223) (Onlineveilingmeester) | €271 | €325 | €57.153 | Mon 23 Nov 20:25 |
 |  | Garden tools | [Robotmaaier Husqvarna, 305e nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/224) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:25 |
-| ✅ | Garden tools | [Robotmaaier Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/225) (Onlineveilingmeester) | €181 | €325 | €55.776 | Mon 23 Nov 20:26 |
+| ✅ | Garden tools | [Robotmaaier Husqvarna, 405x](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/225) (Onlineveilingmeester) | €191 | €325 | €55.776 | Mon 23 Nov 20:26 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 315 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/226) (Onlineveilingmeester) | €101 | €412 | €166 | Mon 23 Nov 20:26 |
 |  | Garden tools | [Verticuteermachine Husqvarna, S138i SET](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/227) (Onlineveilingmeester) | €76 | – | – | Mon 23 Nov 20:26 |
 | ✅ | Garden tools | [Accu oplader Husqvarna, QC250 250W](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/228) (Onlineveilingmeester) | €12 | €225 | €82 | Mon 23 Nov 20:26 |
@@ -336,7 +336,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/237) (Onlineveilingmeester) | €16 | – | – | Mon 23 Nov 20:29 |
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/238) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 20:29 |
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/239) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 20:29 |
-|  | Garden tools | [Kettingzaag Husqvarna, 225i 36 cm SET](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/240) (Onlineveilingmeester) | €181 | €250 | €95 | Mon 23 Nov 20:29 |
+|  | Garden tools | [Kettingzaag Husqvarna, 225i 36 cm SET](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/240) (Onlineveilingmeester) | €191 | €250 | €95 | Mon 23 Nov 20:29 |
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/241) (Onlineveilingmeester) | €18 | – | – | Mon 23 Nov 20:30 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 310 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/242) (Onlineveilingmeester) | €22 | €412 | €166 | Mon 23 Nov 20:30 |
 |  | Garden tools | [Verticuteermachine Husqvarna, S138i SET](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/243) (Onlineveilingmeester) | €71 | – | – | Mon 23 Nov 20:30 |
@@ -351,7 +351,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Stokzaag Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/254) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:33 |
 | ✅ | Garden tools | [Robotmaaier Husqvarna, 310 mark II](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/255) (Onlineveilingmeester) | €31 | €412 | €166 | Mon 23 Nov 20:33 |
 |  | Garden tools | [Accubox, Husqvarna, M](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/256) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:33 |
-|  | Garden tools | [Werkjack, Husqvarna, Classic forest, maat L](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/257) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:34 |
+|  | Garden tools | [Werkjack, Husqvarna, Classic forest, maat L](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/257) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:34 |
 |  | Garden tools | [Robotmaaier Husqvarna, 305e nera](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/258) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:34 |
 |  | Garden tools | [Aspire huis voor robotmaaier Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/259) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:34 |
 |  | Garden tools | [Bosmaaier Husqvarna, 520ilx](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/260) (Onlineveilingmeester) | €56 | – | – | Mon 23 Nov 20:34 |
@@ -377,8 +377,8 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Werkschoen, Husqvarna, maat 43](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/282) (Onlineveilingmeester) | €36 | – | – | Mon 23 Nov 20:40 |
 |  | Garden tools | [2x Accu Husqvarna, BLi200 36V, 5,2Ah](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/285) (Onlineveilingmeester) | €91 | – | – | Mon 23 Nov 20:41 |
 |  | Garden tools | [Robotmaaier Husqvarna, 550 Epos](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/287) (Onlineveilingmeester) | €431 | €350 | €139 | Mon 23 Nov 20:41 |
-|  | Camera | [Camera's, O.a. Nikon, Sony, Canon, Panasonic, Meerdere](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/50) (Onlineveilingmeester) | €16 | – | – | Mon 23 Nov 20:42 |
-|  | Dyson / robot vacuum | [Ca. 10x Robotstofzuiger, Aerova](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/51) (Onlineveilingmeester) | €20 | – | – | Mon 23 Nov 20:42 |
+|  | Camera | [Camera's, O.a. Nikon, Sony, Canon, Panasonic, Meerdere](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/50) (Onlineveilingmeester) | €18 | – | – | Mon 23 Nov 20:42 |
+|  | Dyson / robot vacuum | [Ca. 10x Robotstofzuiger, Aerova](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/51) (Onlineveilingmeester) | €24 | – | – | Mon 23 Nov 20:42 |
 |  | Garden tools | [Werkjack, Husqvarna, Classic forest, maat L](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/289) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:42 |
 |  | Garden tools | [Aspire huis voor robotmaaier Husqvarna](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/290) (Onlineveilingmeester) | €12 | – | – | Mon 23 Nov 20:42 |
 |  | Garden tools | [Kantenmaaier Husqvarna, 110 iL, incl. BLi10 en C80](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/291) (Onlineveilingmeester) | €20 | – | – | Mon 23 Nov 20:42 |
@@ -392,7 +392,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Garden tools | [Kettingzaag Husqvarna, 560 XP® G Mark II 45cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/298) (Onlineveilingmeester) | €331 | – | – | Mon 23 Nov 20:44 |
 |  | Garden tools | [Accu Husqvarna, 40-B220X Bluetooth](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/299) (Onlineveilingmeester) | €41 | – | – | Mon 23 Nov 20:44 |
 |  | Garden tools | [Accu kettingzaag, Husqvarna, 535iXP 35 cm](https://onlineveilingmeester.nl/nl/veilingen/9662/kavels/300) (Onlineveilingmeester) | €81 | – | – | Mon 23 Nov 20:44 |
-|  | Camera | [Ca. 50x Camera's, O.a Samsung, Olympus, Canon, Sony, Nikon, Meerdere](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/70) (Onlineveilingmeester) | €20 | – | – | Mon 23 Nov 20:46 |
+|  | Camera | [Ca. 50x Camera's, O.a Samsung, Olympus, Canon, Sony, Nikon, Meerdere](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/70) (Onlineveilingmeester) | €22 | – | – | Mon 23 Nov 20:46 |
 |  | Mixed lot | [Partij Elektronica en huishoudelijke apparatuur](https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/75) (Onlineveilingmeester) | €14 | – | – | Mon 23 Nov 20:48 |
 |  | Mixed lot | [1 x Verrijdbare expeditiewerktafel met divers gereedschap](https://www.plaatsjebod.nl/nl/lots/1-x-verrijdbare-expeditiewerktafel-met-divers-gereedschap) (Plaats Je Bod) | €25 | – | – | Tue 24 Nov 19:32 |
 |  | Power tools | [1 x Houten werktafel met Metabo afkort- en verstekzaag, etc](https://www.plaatsjebod.nl/nl/lots/1-x-houten-werktafel-met-metabo-afkort--en-verstekzaag-etc) (Plaats Je Bod) | €70 | €75 | €0 | Tue 24 Nov 20:28 |
@@ -469,13 +469,13 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 |  | Dyson / robot vacuum | [2x Robotstofzuiger - oplaadbaar SWEEPIN. ROBOT](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/54) (Onlineveilingmeester) | €12 | €72 | €0 | Wed 25 Nov 19:43 |
 |  | Dyson / robot vacuum | [4x Robotstofzuiger - oplaadbaar SWEEPIN. ROBOT](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/55) (Onlineveilingmeester) | €12 | €72 | €0 | Wed 25 Nov 19:43 |
 |  | Dyson / robot vacuum | [4x Robotstofzuiger - oplaadbaar SWEEPIN. ROBOT](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/56) (Onlineveilingmeester) | €14 | €72 | €0 | Wed 25 Nov 19:43 |
-| ✅ | Dyson / robot vacuum | [Ca. 10x Robotstofzuiger - oplaadbaar SWEEPIN. ROBOT](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/57) (Onlineveilingmeester) | €16 | €72 | €18 | Wed 25 Nov 19:44 |
+| ✅ | Dyson / robot vacuum | [Ca. 10x Robotstofzuiger - oplaadbaar SWEEPIN. ROBOT](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/57) (Onlineveilingmeester) | €18 | €72 | €18 | Wed 25 Nov 19:44 |
 |  | Monitor | [1 x Samsung 46 inch beeldscherm met wandbeugel en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-samsung-46-inch-beeldscherm-met-wandbeugel-en-toebehoren) (Plaats Je Bod) | €125 | – | – | Wed 25 Nov 19:49 |
 |  | Coffee machine | [1 x JURA Impressa XS9 meerkeuze espressomachine](https://www.plaatsjebod.nl/nl/lots/1-x-jura-impressa-xs9-meerkeuze-espressomachine) (Plaats Je Bod) | €150 | €200 | €72 | Wed 25 Nov 19:50 |
 |  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/94) (Onlineveilingmeester) | €14 | – | – | Wed 25 Nov 19:53 |
 |  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/95) (Onlineveilingmeester) | €12 | – | – | Wed 25 Nov 19:53 |
 |  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/96) (Onlineveilingmeester) | €14 | – | – | Wed 25 Nov 19:53 |
-|  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/97) (Onlineveilingmeester) | €12 | – | – | Wed 25 Nov 19:54 |
+|  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/97) (Onlineveilingmeester) | €14 | – | – | Wed 25 Nov 19:54 |
 |  | Kitchen appliance | [Airfryer Jocca](https://onlineveilingmeester.nl/nl/veilingen/9679/kavels/98) (Onlineveilingmeester) | €16 | – | – | Wed 25 Nov 19:54 |
 |  | Garden tools | [1 x Karcher nat-/ droogzuiger](https://www.plaatsjebod.nl/nl/lots/1-x-karcher-nat--droogzuiger-1) (Plaats Je Bod) | €30 | – | – | Wed 25 Nov 19:55 |
 |  | Garden tools | [1 x Karcher nat-/ droogzuiger](https://www.plaatsjebod.nl/nl/lots/1-x-karcher-nat--droogzuiger-2) (Plaats Je Bod) | €10 | €40 | €0 | Wed 25 Nov 19:55 |
@@ -533,7 +533,7 @@ _Tuesday 17 November 2026, 14:19 (Amsterdam time)_
 | ✅ | Camera | [1 x Canon digitale spiegelreflexcamera met Canon lens en toebehoren](https://www.plaatsjebod.nl/nl/lots/1-x-canon-digitale-spiegelreflexcamera-met-canon-lens-en-toebehoren) (Plaats Je Bod) | €150 | €448 | €186 | Thu 26 Nov 20:57 |
 | ✅ | Garden tools | [Kärcher Accu schrob/zuigmachine](https://www.openbare-verkopen.be/lot/762627) (Openbare Verkopen (BE)) | €85 | €1.695 | €701 | Mon 30 Nov 19:08 |
 |  | Wine | [15x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762677) (Openbare Verkopen (BE)) | €30 | – | – | Mon 30 Nov 19:25 |
-|  | Wine | [10x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762678) (Openbare Verkopen (BE)) | €17 | – | – | Mon 30 Nov 19:25 |
+|  | Wine | [10x Wijn Merlot Ph](https://www.openbare-verkopen.be/lot/762678) (Openbare Verkopen (BE)) | €19 | – | – | Mon 30 Nov 19:25 |
 |  | Spirits | [18x Gin Meyer's & Ginius](https://www.openbare-verkopen.be/lot/762679) (Openbare Verkopen (BE)) | €65 | – | – | Mon 30 Nov 19:26 |
 |  | Coffee machine | [Koffiemachine Animo](https://www.openbare-verkopen.be/lot/763134) (Openbare Verkopen (BE)) | €110 | €262 | €103 | Mon 30 Nov 19:38 |
 |  | Dyson / robot vacuum | [Robot Roomba](https://www.openbare-verkopen.be/lot/763137) (Openbare Verkopen (BE)) | €25 | €87 | €4 | Mon 30 Nov 19:39 |

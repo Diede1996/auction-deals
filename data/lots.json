@@ -1852,7 +1852,7 @@
    "vat": 0.21
   }
  ],
- "generated": "2026-11-17T13:19:59.965203+00:00",
+ "generated": "2026-11-17T14:46:17.258538+00:00",
  "kinds": "bankruptcy, closure, estate, Domeinen or IT",
  "lots": [
   {
@@ -1940,7 +1940,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -1998,7 +1998,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2056,7 +2056,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2114,7 +2114,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2229,7 +2229,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2344,7 +2344,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2459,7 +2459,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2574,7 +2574,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2689,7 +2689,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2804,7 +2804,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2891,7 +2891,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -2949,7 +2949,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -3007,7 +3007,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -3108,7 +3108,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3195,7 +3195,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3253,7 +3253,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3311,7 +3311,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3369,7 +3369,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3427,7 +3427,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3485,7 +3485,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3607,7 +3607,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3724,7 +3724,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3782,7 +3782,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -3962,7 +3962,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4020,7 +4020,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4128,7 +4128,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4186,7 +4186,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4322,7 +4322,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4458,7 +4458,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4516,7 +4516,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4574,7 +4574,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4710,7 +4710,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4890,7 +4890,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -4948,7 +4948,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5065,7 +5065,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5208,7 +5208,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5351,7 +5351,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5494,7 +5494,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5605,7 +5605,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5694,7 +5694,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5752,7 +5752,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5810,7 +5810,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5868,7 +5868,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -5976,7 +5976,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -6084,7 +6084,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -6194,7 +6194,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -6252,7 +6252,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -6264,7 +6264,7 @@
   {
    "alwaysShow": null,
    "auction": "Faillissement Vinitex Laboratorium inrichtingen BV 1D Kavels V509-V673",
-   "bid": 80.0,
+   "bid": 105.0,
    "bidFromEmail": false,
    "bids": null,
    "closes": "2026-11-25T20:30:00+01:00",
@@ -6332,7 +6332,7 @@
     "search": "https://www.marktplaats.nl/q/festool+bedrijfsstofzuiger+ctl26e/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/festool+bedrijfsstofzuiger+ctl26e/",
-   "nextBid": 85.0,
+   "nextBid": 115.0,
    "pickup": "Industrieweg 12A, Sint-Oedenrode",
    "pickupWhen": "Mon 30 Nov, 09:00–15:00",
    "premium": 0.19,
@@ -6346,7 +6346,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -6468,7 +6468,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -6632,7 +6632,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -6796,7 +6796,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -6925,7 +6925,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -7012,7 +7012,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -7176,7 +7176,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -7234,7 +7234,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -8138,9 +8138,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Party centrum Tasmania Groningen",
-   "bid": 46.0,
+   "bid": 51.0,
    "bidFromEmail": false,
-   "bids": 13,
+   "bids": 14,
    "closes": "2026-11-19T18:41:48+00:00",
    "closesDay": null,
    "combo": null,
@@ -8170,7 +8170,7 @@
     "search": "https://www.marktplaats.nl/q/dell+monitor+optiplex+3070+computer/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dell+monitor+optiplex+3070+computer/",
-   "nextBid": 51.0,
+   "nextBid": 56.0,
    "pickup": "Timpweg 19, 9731 AK Groningen",
    "pickupWhen": "Mon 23 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -8267,7 +8267,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/6afe419c-1472-458b-bf34-b84b8c3653a3/20261109_151822.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8300,7 +8300,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -8325,7 +8325,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/e7c5dd9b-e5f6-48aa-bacd-81bfb3067ea2/20261109_152739-no-background-1794820172749.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Suit / formalwear",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -8358,7 +8358,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -8370,9 +8370,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 26.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 9,
+   "bids": 11,
    "closes": "2026-11-22T19:34:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -8383,7 +8383,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/09c13980-e4de-443d-9900-f478ad90feef/20261110_092659-removebg-preview.png",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -8580,7 +8580,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 31.0,
+   "nextBid": 41.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -8594,7 +8594,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -8606,9 +8606,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 24.0,
+   "bid": 31.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 10,
    "closes": "2026-11-22T19:35:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -8619,7 +8619,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -8816,7 +8816,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 26.0,
+   "nextBid": 36.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -8830,7 +8830,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -8842,9 +8842,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 24.0,
+   "bid": 36.0,
    "bidFromEmail": false,
-   "bids": 8,
+   "bids": 11,
    "closes": "2026-11-22T19:35:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -8855,7 +8855,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -9052,7 +9052,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 26.0,
+   "nextBid": 41.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -9066,485 +9066,13 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/22",
-   "vat": 0.0
-  },
-  {
-   "alwaysShow": null,
-   "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 22.0,
-   "bidFromEmail": false,
-   "bids": 7,
-   "closes": "2026-11-22T19:36:56+00:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-11-17T13:19:59.965203+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Dyson / robot vacuum",
-   "itemMaxPrice": null,
-   "itemMinMargin": 0.15,
-   "itemMinProfit": 50.0,
-   "key": "onlineveilingmeester:1925133",
-   "location": "Groningen",
-   "market": 250.0,
-   "marketSource": "marktplaats",
-   "maxBid": 96.0,
-   "mp": {
-    "asOf": "2026-11-17T13:19:59.965203+00:00",
-    "count": 23,
-    "high": 310.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 140.0,
-      "title": "Dyson Airstrait Stijltang - goede staat",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2446420105-dyson-airstrait-stijltang-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463571661-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Dyson Corrale Stijltang - NIET de airstrait",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2437411243-dyson-corrale-stijltang-niet-de-airstrait"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Dyson Airstrait - Stijltang - Zilver/Koper",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463581656-dyson-airstrait-stijltang-zilver-koper"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2466398793-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Dyson Airstrait Stijltang",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2450523390-dyson-airstrait-stijltang"
-     },
-     {
-      "kind": "fixed",
-      "price": 220.0,
-      "title": "Dyson Corrale Stijltang Wet to Dry Airstrait - Grijs/Koper",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465304144-dyson-corrale-stijltang-wet-to-dry-airstrait-grijs-koper"
-     },
-     {
-      "kind": "bid",
-      "price": 235.0,
-      "title": "Dyson Airstrait - Nat naar droog stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2443002004-dyson-airstrait-nat-naar-droog-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 240.0,
-      "title": "Dyson Airstrait Stijltang met bon",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2466847142-dyson-airstrait-stijltang-met-bon"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461084537-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 250.0,
-      "title": "Dyson airstrait Stijltang letterlijk maar 1 keer gebruikt",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2438221158-dyson-airstrait-stijltang-letterlijk-maar-1-keer-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Dyson Airstrait wet-to-dry stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2429846820-dyson-airstrait-wet-to-dry-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 260.0,
-      "title": "Dyson Airstrait Wet-to-Dry Stijltang Ceramic Pink/Rose Gold",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2460006217-dyson-airstrait-wet-to-dry-stijltang-ceramic-pink-rose-gold"
-     },
-     {
-      "kind": "fixed",
-      "price": 265.0,
-      "title": "Dyson Airstrait Stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2450222001-dyson-airstrait-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Dyson Airstrait Stijltang - bijna niet gebruikt",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2458037273-dyson-airstrait-stijltang-bijna-niet-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 285.0,
-      "title": "Dyson Airstrait Wet-to-Dry Stijltang (Nikkel/Koper)",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2443416104-dyson-airstrait-wet-to-dry-stijltang-nikkel-koper"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Dyson Airstrait Stijltang - Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461224962-dyson-airstrait-stijltang-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 310.0,
-      "title": "Dyson Airstrait - Nat naar Droog Stijltang (Zo goed als nieu",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2455960689-dyson-airstrait-nat-naar-droog-stijltang-zo-goed-als-nieu"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "Dyson Airstrait wet-to-dry stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2431132773-dyson-airstrait-wet-to-dry-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 325.0,
-      "title": "Dyson Airstrait - Nat naar droog stijltang",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463475698-dyson-airstrait-nat-naar-droog-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait Stijltang - Rood/Goud - Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2464700374-dyson-airstrait-stijltang-rood-goud-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait Stijltang Onyx Zwart/Goud Limited Edition",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465423450-dyson-airstrait-stijltang-onyx-zwart-goud-limited-edition"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait - Nat naar Droog Stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2446170298-dyson-airstrait-nat-naar-droog-stijltang"
-     }
-    ],
-    "low": 200.0,
-    "median": 250.0,
-    "model": null,
-    "outliers": [
-     30.0
-    ],
-    "prices": [
-     140.0,
-     175.0,
-     190.0,
-     200.0,
-     200.0,
-     200.0,
-     220.0,
-     235.0,
-     240.0,
-     250.0,
-     250.0,
-     250.0,
-     260.0,
-     265.0,
-     275.0,
-     285.0,
-     300.0,
-     310.0,
-     320.0,
-     325.0,
-     350.0,
-     350.0,
-     350.0
-    ],
-    "query": "dyson stijltang airstrait",
-    "url": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 24.0,
-   "pickup": "De Hallen 1, 9723TW Groningen",
-   "pickupWhen": "Thu 26 Nov, 09:00–15:00",
-   "premium": 0.121,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "stepEstimated": false,
-   "title": "Stijltang, Dyson, Airstrait",
-   "transport": true,
-   "trip": {
-    "approx": false,
-    "cost": 51.01,
-    "from": "home",
-    "km": 224.3,
-    "min": 177
-   },
-   "units": 1,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/26",
-   "vat": 0.0
-  },
-  {
-   "alwaysShow": null,
-   "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 22.0,
-   "bidFromEmail": false,
-   "bids": 7,
-   "closes": "2026-11-22T19:36:56+00:00",
-   "closesDay": null,
-   "combo": null,
-   "count": 1,
-   "delivery": false,
-   "firstSeen": "2026-11-17T13:19:59.965203+00:00",
-   "fixed": 0.0,
-   "followed": false,
-   "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
-   "isDeal": true,
-   "isNew": true,
-   "item": "Dyson / robot vacuum",
-   "itemMaxPrice": null,
-   "itemMinMargin": 0.15,
-   "itemMinProfit": 50.0,
-   "key": "onlineveilingmeester:1925134",
-   "location": "Groningen",
-   "market": 250.0,
-   "marketSource": "marktplaats",
-   "maxBid": 96.0,
-   "mp": {
-    "asOf": "2026-11-17T13:19:59.965203+00:00",
-    "count": 23,
-    "high": 310.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 140.0,
-      "title": "Dyson Airstrait Stijltang - goede staat",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2446420105-dyson-airstrait-stijltang-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 175.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463571661-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 190.0,
-      "title": "Dyson Corrale Stijltang - NIET de airstrait",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2437411243-dyson-corrale-stijltang-niet-de-airstrait"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Dyson Airstrait - Stijltang - Zilver/Koper",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463581656-dyson-airstrait-stijltang-zilver-koper"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2466398793-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "Dyson Airstrait Stijltang",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2450523390-dyson-airstrait-stijltang"
-     },
-     {
-      "kind": "fixed",
-      "price": 220.0,
-      "title": "Dyson Corrale Stijltang Wet to Dry Airstrait - Grijs/Koper",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465304144-dyson-corrale-stijltang-wet-to-dry-airstrait-grijs-koper"
-     },
-     {
-      "kind": "bid",
-      "price": 235.0,
-      "title": "Dyson Airstrait - Nat naar droog stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2443002004-dyson-airstrait-nat-naar-droog-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 240.0,
-      "title": "Dyson Airstrait Stijltang met bon",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2466847142-dyson-airstrait-stijltang-met-bon"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461084537-dyson-airstrait-stijltang-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 250.0,
-      "title": "Dyson airstrait Stijltang letterlijk maar 1 keer gebruikt",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2438221158-dyson-airstrait-stijltang-letterlijk-maar-1-keer-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Dyson Airstrait wet-to-dry stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2429846820-dyson-airstrait-wet-to-dry-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 260.0,
-      "title": "Dyson Airstrait Wet-to-Dry Stijltang Ceramic Pink/Rose Gold",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2460006217-dyson-airstrait-wet-to-dry-stijltang-ceramic-pink-rose-gold"
-     },
-     {
-      "kind": "fixed",
-      "price": 265.0,
-      "title": "Dyson Airstrait Stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2450222001-dyson-airstrait-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Dyson Airstrait Stijltang - bijna niet gebruikt",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2458037273-dyson-airstrait-stijltang-bijna-niet-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 285.0,
-      "title": "Dyson Airstrait Wet-to-Dry Stijltang (Nikkel/Koper)",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2443416104-dyson-airstrait-wet-to-dry-stijltang-nikkel-koper"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "Dyson Airstrait Stijltang - Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461224962-dyson-airstrait-stijltang-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 310.0,
-      "title": "Dyson Airstrait - Nat naar Droog Stijltang (Zo goed als nieu",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2455960689-dyson-airstrait-nat-naar-droog-stijltang-zo-goed-als-nieu"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "Dyson Airstrait wet-to-dry stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2431132773-dyson-airstrait-wet-to-dry-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 325.0,
-      "title": "Dyson Airstrait - Nat naar droog stijltang",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463475698-dyson-airstrait-nat-naar-droog-stijltang"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait Stijltang - Rood/Goud - Nieuwstaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2464700374-dyson-airstrait-stijltang-rood-goud-nieuwstaat"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait Stijltang Onyx Zwart/Goud Limited Edition",
-      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465423450-dyson-airstrait-stijltang-onyx-zwart-goud-limited-edition"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Dyson Airstrait - Nat naar Droog Stijltang",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2446170298-dyson-airstrait-nat-naar-droog-stijltang"
-     }
-    ],
-    "low": 200.0,
-    "median": 250.0,
-    "model": null,
-    "outliers": [
-     30.0
-    ],
-    "prices": [
-     140.0,
-     175.0,
-     190.0,
-     200.0,
-     200.0,
-     200.0,
-     220.0,
-     235.0,
-     240.0,
-     250.0,
-     250.0,
-     250.0,
-     260.0,
-     265.0,
-     275.0,
-     285.0,
-     300.0,
-     310.0,
-     320.0,
-     325.0,
-     350.0,
-     350.0,
-     350.0
-    ],
-    "query": "dyson stijltang airstrait",
-    "url": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
-   },
-   "mpPlan": {
-    "brand": null,
-    "kind": "general",
-    "model": null,
-    "note": "no type number in the lot title, so this is a rough price for similar items",
-    "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
-   },
-   "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 24.0,
-   "pickup": "De Hallen 1, 9723TW Groningen",
-   "pickupWhen": "Thu 26 Nov, 09:00–15:00",
-   "premium": 0.121,
-   "regular": false,
-   "repair": null,
-   "repairOf": null,
-   "site": "onlineveilingmeester",
-   "siteName": "Onlineveilingmeester",
-   "stepEstimated": false,
-   "title": "Stijltang, Dyson, Airstrait",
-   "transport": true,
-   "trip": {
-    "approx": false,
-    "cost": 51.01,
-    "from": "home",
-    "km": 224.3,
-    "min": 177
-   },
-   "units": 1,
-   "url": "https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/27",
    "vat": 0.0
   },
   {
@@ -9563,12 +9091,12 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
    "itemMinProfit": 50.0,
-   "key": "onlineveilingmeester:1925135",
+   "key": "onlineveilingmeester:1925133",
    "location": "Groningen",
    "market": 250.0,
    "marketSource": "marktplaats",
@@ -9774,7 +9302,479 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
+    "from": "home",
+    "km": 224.3,
+    "min": 177
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/26",
+   "vat": 0.0
+  },
+  {
+   "alwaysShow": null,
+   "auction": "Domeinen · Consumentengoederen en gereedschap",
+   "bid": 26.0,
+   "bidFromEmail": false,
+   "bids": 9,
+   "closes": "2026-11-22T19:36:56+00:00",
+   "closesDay": null,
+   "combo": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-11-17T13:19:59.965203+00:00",
+   "fixed": 0.0,
+   "followed": false,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Dyson / robot vacuum",
+   "itemMaxPrice": null,
+   "itemMinMargin": 0.15,
+   "itemMinProfit": 50.0,
+   "key": "onlineveilingmeester:1925134",
+   "location": "Groningen",
+   "market": 250.0,
+   "marketSource": "marktplaats",
+   "maxBid": 96.0,
+   "mp": {
+    "asOf": "2026-11-17T13:19:59.965203+00:00",
+    "count": 23,
+    "high": 310.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Dyson Airstrait Stijltang - goede staat",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2446420105-dyson-airstrait-stijltang-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463571661-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 190.0,
+      "title": "Dyson Corrale Stijltang - NIET de airstrait",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2437411243-dyson-corrale-stijltang-niet-de-airstrait"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Dyson Airstrait - Stijltang - Zilver/Koper",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463581656-dyson-airstrait-stijltang-zilver-koper"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2466398793-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Dyson Airstrait Stijltang",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2450523390-dyson-airstrait-stijltang"
+     },
+     {
+      "kind": "fixed",
+      "price": 220.0,
+      "title": "Dyson Corrale Stijltang Wet to Dry Airstrait - Grijs/Koper",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465304144-dyson-corrale-stijltang-wet-to-dry-airstrait-grijs-koper"
+     },
+     {
+      "kind": "bid",
+      "price": 235.0,
+      "title": "Dyson Airstrait - Nat naar droog stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2443002004-dyson-airstrait-nat-naar-droog-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 240.0,
+      "title": "Dyson Airstrait Stijltang met bon",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2466847142-dyson-airstrait-stijltang-met-bon"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461084537-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Dyson airstrait Stijltang letterlijk maar 1 keer gebruikt",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2438221158-dyson-airstrait-stijltang-letterlijk-maar-1-keer-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "Dyson Airstrait wet-to-dry stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2429846820-dyson-airstrait-wet-to-dry-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 260.0,
+      "title": "Dyson Airstrait Wet-to-Dry Stijltang Ceramic Pink/Rose Gold",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2460006217-dyson-airstrait-wet-to-dry-stijltang-ceramic-pink-rose-gold"
+     },
+     {
+      "kind": "fixed",
+      "price": 265.0,
+      "title": "Dyson Airstrait Stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2450222001-dyson-airstrait-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 275.0,
+      "title": "Dyson Airstrait Stijltang - bijna niet gebruikt",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2458037273-dyson-airstrait-stijltang-bijna-niet-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 285.0,
+      "title": "Dyson Airstrait Wet-to-Dry Stijltang (Nikkel/Koper)",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2443416104-dyson-airstrait-wet-to-dry-stijltang-nikkel-koper"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "Dyson Airstrait Stijltang - Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461224962-dyson-airstrait-stijltang-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 310.0,
+      "title": "Dyson Airstrait - Nat naar Droog Stijltang (Zo goed als nieu",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2455960689-dyson-airstrait-nat-naar-droog-stijltang-zo-goed-als-nieu"
+     },
+     {
+      "kind": "bid",
+      "price": 320.0,
+      "title": "Dyson Airstrait wet-to-dry stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2431132773-dyson-airstrait-wet-to-dry-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 325.0,
+      "title": "Dyson Airstrait - Nat naar droog stijltang",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463475698-dyson-airstrait-nat-naar-droog-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait Stijltang - Rood/Goud - Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2464700374-dyson-airstrait-stijltang-rood-goud-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait Stijltang Onyx Zwart/Goud Limited Edition",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465423450-dyson-airstrait-stijltang-onyx-zwart-goud-limited-edition"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait - Nat naar Droog Stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2446170298-dyson-airstrait-nat-naar-droog-stijltang"
+     }
+    ],
+    "low": 200.0,
+    "median": 250.0,
+    "model": null,
+    "outliers": [
+     30.0
+    ],
+    "prices": [
+     140.0,
+     175.0,
+     190.0,
+     200.0,
+     200.0,
+     200.0,
+     220.0,
+     235.0,
+     240.0,
+     250.0,
+     250.0,
+     250.0,
+     260.0,
+     265.0,
+     275.0,
+     285.0,
+     300.0,
+     310.0,
+     320.0,
+     325.0,
+     350.0,
+     350.0,
+     350.0
+    ],
+    "query": "dyson stijltang airstrait",
+    "url": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
+   "nextBid": 31.0,
+   "pickup": "De Hallen 1, 9723TW Groningen",
+   "pickupWhen": "Thu 26 Nov, 09:00–15:00",
+   "premium": 0.121,
+   "regular": false,
+   "repair": null,
+   "repairOf": null,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "stepEstimated": false,
+   "title": "Stijltang, Dyson, Airstrait",
+   "transport": true,
+   "trip": {
+    "approx": false,
+    "cost": 51.0,
+    "from": "home",
+    "km": 224.3,
+    "min": 177
+   },
+   "units": 1,
+   "url": "https://onlineveilingmeester.nl/nl/veilingen/9725/kavels/27",
+   "vat": 0.0
+  },
+  {
+   "alwaysShow": null,
+   "auction": "Domeinen · Consumentengoederen en gereedschap",
+   "bid": 36.0,
+   "bidFromEmail": false,
+   "bids": 11,
+   "closes": "2026-11-22T19:36:56+00:00",
+   "closesDay": null,
+   "combo": null,
+   "count": 1,
+   "delivery": false,
+   "firstSeen": "2026-11-17T13:19:59.965203+00:00",
+   "fixed": 0.0,
+   "followed": false,
+   "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
+   "isDeal": true,
+   "isNew": false,
+   "item": "Dyson / robot vacuum",
+   "itemMaxPrice": null,
+   "itemMinMargin": 0.15,
+   "itemMinProfit": 50.0,
+   "key": "onlineveilingmeester:1925135",
+   "location": "Groningen",
+   "market": 250.0,
+   "marketSource": "marktplaats",
+   "maxBid": 96.0,
+   "mp": {
+    "asOf": "2026-11-17T13:19:59.965203+00:00",
+    "count": 23,
+    "high": 310.0,
+    "kind": "general",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Dyson Airstrait Stijltang - goede staat",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2446420105-dyson-airstrait-stijltang-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 175.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463571661-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 190.0,
+      "title": "Dyson Corrale Stijltang - NIET de airstrait",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2437411243-dyson-corrale-stijltang-niet-de-airstrait"
+     },
+     {
+      "kind": "bid",
+      "price": 200.0,
+      "title": "Dyson Airstrait - Stijltang - Zilver/Koper",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463581656-dyson-airstrait-stijltang-zilver-koper"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2466398793-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 200.0,
+      "title": "Dyson Airstrait Stijltang",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2450523390-dyson-airstrait-stijltang"
+     },
+     {
+      "kind": "fixed",
+      "price": 220.0,
+      "title": "Dyson Corrale Stijltang Wet to Dry Airstrait - Grijs/Koper",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465304144-dyson-corrale-stijltang-wet-to-dry-airstrait-grijs-koper"
+     },
+     {
+      "kind": "bid",
+      "price": 235.0,
+      "title": "Dyson Airstrait - Nat naar droog stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2443002004-dyson-airstrait-nat-naar-droog-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 240.0,
+      "title": "Dyson Airstrait Stijltang met bon",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2466847142-dyson-airstrait-stijltang-met-bon"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "Dyson Airstrait Stijltang - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461084537-dyson-airstrait-stijltang-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 250.0,
+      "title": "Dyson airstrait Stijltang letterlijk maar 1 keer gebruikt",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2438221158-dyson-airstrait-stijltang-letterlijk-maar-1-keer-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 250.0,
+      "title": "Dyson Airstrait wet-to-dry stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2429846820-dyson-airstrait-wet-to-dry-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 260.0,
+      "title": "Dyson Airstrait Wet-to-Dry Stijltang Ceramic Pink/Rose Gold",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2460006217-dyson-airstrait-wet-to-dry-stijltang-ceramic-pink-rose-gold"
+     },
+     {
+      "kind": "fixed",
+      "price": 265.0,
+      "title": "Dyson Airstrait Stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2450222001-dyson-airstrait-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 275.0,
+      "title": "Dyson Airstrait Stijltang - bijna niet gebruikt",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2458037273-dyson-airstrait-stijltang-bijna-niet-gebruikt"
+     },
+     {
+      "kind": "bid",
+      "price": 285.0,
+      "title": "Dyson Airstrait Wet-to-Dry Stijltang (Nikkel/Koper)",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2443416104-dyson-airstrait-wet-to-dry-stijltang-nikkel-koper"
+     },
+     {
+      "kind": "bid",
+      "price": 300.0,
+      "title": "Dyson Airstrait Stijltang - Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2461224962-dyson-airstrait-stijltang-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 310.0,
+      "title": "Dyson Airstrait - Nat naar Droog Stijltang (Zo goed als nieu",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2455960689-dyson-airstrait-nat-naar-droog-stijltang-zo-goed-als-nieu"
+     },
+     {
+      "kind": "bid",
+      "price": 320.0,
+      "title": "Dyson Airstrait wet-to-dry stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2431132773-dyson-airstrait-wet-to-dry-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 325.0,
+      "title": "Dyson Airstrait - Nat naar droog stijltang",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2463475698-dyson-airstrait-nat-naar-droog-stijltang"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait Stijltang - Rood/Goud - Nieuwstaat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2464700374-dyson-airstrait-stijltang-rood-goud-nieuwstaat"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait Stijltang Onyx Zwart/Goud Limited Edition",
+      "url": "https://www.marktplaats.nl/v/sieraden-tassen-en-uiterlijk/uiterlijk-haarverzorging/m2465423450-dyson-airstrait-stijltang-onyx-zwart-goud-limited-edition"
+     },
+     {
+      "kind": "bid",
+      "price": 350.0,
+      "title": "Dyson Airstrait - Nat naar Droog Stijltang",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/persoonlijke-verzorgingsapparatuur/m2446170298-dyson-airstrait-nat-naar-droog-stijltang"
+     }
+    ],
+    "low": 200.0,
+    "median": 250.0,
+    "model": null,
+    "outliers": [
+     30.0
+    ],
+    "prices": [
+     140.0,
+     175.0,
+     190.0,
+     200.0,
+     200.0,
+     200.0,
+     220.0,
+     235.0,
+     240.0,
+     250.0,
+     250.0,
+     250.0,
+     260.0,
+     265.0,
+     275.0,
+     285.0,
+     300.0,
+     310.0,
+     320.0,
+     325.0,
+     350.0,
+     350.0,
+     350.0
+    ],
+    "query": "dyson stijltang airstrait",
+    "url": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
+   },
+   "mpPlan": {
+    "brand": null,
+    "kind": "general",
+    "model": null,
+    "note": "no type number in the lot title, so this is a rough price for similar items",
+    "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
+   },
+   "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
+   "nextBid": 41.0,
+   "pickup": "De Hallen 1, 9723TW Groningen",
+   "pickupWhen": "Thu 26 Nov, 09:00–15:00",
+   "premium": 0.121,
+   "regular": false,
+   "repair": null,
+   "repairOf": null,
+   "site": "onlineveilingmeester",
+   "siteName": "Onlineveilingmeester",
+   "stepEstimated": false,
+   "title": "Stijltang, Dyson, Airstrait",
+   "transport": true,
+   "trip": {
+    "approx": false,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -9786,9 +9786,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 22.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-22T19:37:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -9799,7 +9799,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -9996,7 +9996,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 24.0,
+   "nextBid": 26.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -10010,7 +10010,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10022,9 +10022,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 22.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-22T19:38:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -10035,7 +10035,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -10232,7 +10232,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 24.0,
+   "nextBid": 26.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -10246,7 +10246,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10258,9 +10258,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 22.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-22T19:38:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -10271,7 +10271,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/794e5328-381b-4d6c-b4e5-f3e8c7f572b7/20261110_092659.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -10468,7 +10468,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+stijltang+airstrait/",
-   "nextBid": 24.0,
+   "nextBid": 26.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -10482,7 +10482,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10507,7 +10507,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/9aef7524-4199-4161-aa7b-b263579f000f/36f7822e-5a59-440f-9468-85a0393c251a-20260925_090447.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10540,7 +10540,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10565,7 +10565,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/0d33f25e-45b5-43af-9df5-3309eb528a7c/c249d528-355c-40bc-8c50-504ce1766e65-20260925_091654.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10598,7 +10598,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10623,7 +10623,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/08c5f29e-370c-4337-8f33-a1e8c2e3f170/be2c6e13-4505-43f9-919f-2c86d1c8891b-20260925_093205.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10656,7 +10656,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10681,7 +10681,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/e06f5dfe-b940-42ea-b231-a34a71769130/20261013_114612-removebg-preview.png",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -10714,7 +10714,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10726,9 +10726,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 76.0,
+   "bid": 91.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 9,
    "closes": "2026-11-22T19:40:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -10739,7 +10739,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-10-19/3479f049-059c-4216-8075-8cf9120e83c9/20261013_113414.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -10845,7 +10845,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+airwrap+fohn/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+airwrap+fohn/",
-   "nextBid": 81.0,
+   "nextBid": 101.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -10859,7 +10859,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10884,7 +10884,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-10-02/8f375a91-a00c-4a55-af64-907b483933bc/20260928_115144.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Audio / beamer",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -10917,7 +10917,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -10929,9 +10929,9 @@
   {
    "alwaysShow": null,
    "auction": "Domeinen · Consumentengoederen en gereedschap",
-   "bid": 46.0,
+   "bid": 61.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 9,
    "closes": "2026-11-22T19:42:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -10942,7 +10942,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/65081324-d51c-4790-aacc-2b98933ef6a7/20261110_121913.jpg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -10992,7 +10992,7 @@
     "search": "https://www.marktplaats.nl/q/dyson+steel+gen5detect/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/dyson+steel+gen5detect/",
-   "nextBid": 51.0,
+   "nextBid": 66.0,
    "pickup": "De Hallen 1, 9723TW Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.121,
@@ -11006,7 +11006,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 51.01,
+    "cost": 51.0,
     "from": "home",
     "km": 224.3,
     "min": 177
@@ -12733,9 +12733,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 181.0,
+   "bid": 191.0,
    "bidFromEmail": false,
-   "bids": 24,
+   "bids": 25,
    "closes": "2026-11-23T18:36:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -12745,7 +12745,7 @@
    "fixed": 9.99,
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/249d927e-3108-429f-a854-2028508c6fb8/27.webp",
-   "isDeal": true,
+   "isDeal": false,
    "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
@@ -12838,7 +12838,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixpg/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+542+ixpg/",
-   "nextBid": 191.0,
+   "nextBid": 201.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -17610,9 +17610,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 4,
+   "bids": 5,
    "closes": "2026-11-23T18:56:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -17642,7 +17642,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+stokzaag/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+stokzaag/",
-   "nextBid": 18.0,
+   "nextBid": 20.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -18751,9 +18751,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 61.0,
+   "bid": 66.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 17,
    "closes": "2026-11-23T19:01:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -18840,7 +18840,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag+130/",
-   "nextBid": 66.0,
+   "nextBid": 71.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -19209,7 +19209,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 34.54,
+    "cost": 34.53,
     "from": "home",
     "km": 151.9,
     "min": 127
@@ -21575,9 +21575,9 @@
   {
    "alwaysShow": null,
    "auction": "Faillissementsveiling: Rijtuigen, agrarisch materieel en inboedel",
-   "bid": 36.0,
+   "bid": 46.0,
    "bidFromEmail": false,
-   "bids": 11,
+   "bids": 13,
    "closes": "2026-11-23T19:11:56+00:00",
    "closesDay": null,
    "combo": null,
@@ -21607,7 +21607,7 @@
     "search": "https://www.marktplaats.nl/q/divers+gereedschap+inhoud+ruimte+paarden/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/divers+gereedschap+inhoud+ruimte+paarden/",
-   "nextBid": 41.0,
+   "nextBid": 51.0,
    "pickup": "Stegerensallee 23, 7701PJ Dedemsvaart",
    "pickupWhen": "Fri 27 Nov, 09:00–15:00",
    "premium": 0.21,
@@ -21621,7 +21621,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 34.54,
+    "cost": 34.53,
     "from": "home",
     "km": 151.9,
     "min": 127
@@ -21679,10 +21679,10 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 50.88,
+    "cost": 50.87,
     "from": "home",
-    "km": 223.8,
-    "min": 176
+    "km": 223.7,
+    "min": 175
    },
    "units": 3,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9431/kavels/51",
@@ -24676,9 +24676,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 22.0,
+   "bid": 24.0,
    "bidFromEmail": false,
-   "bids": 7,
+   "bids": 8,
    "closes": "2026-11-23T19:24:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -24840,7 +24840,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 24.0,
+   "nextBid": 26.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25068,9 +25068,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 231.0,
+   "bid": 251.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 17,
    "closes": "2026-11-23T19:25:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -25232,7 +25232,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 251.0,
+   "nextBid": 271.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -25304,9 +25304,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 171.0,
+   "bid": 181.0,
    "bidFromEmail": false,
-   "bids": 10,
+   "bids": 11,
    "closes": "2026-11-23T19:26:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -25468,7 +25468,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+robotmaaier/",
-   "nextBid": 181.0,
+   "nextBid": 191.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -26677,9 +26677,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 171.0,
+   "bid": 181.0,
    "bidFromEmail": false,
-   "bids": 16,
+   "bids": 17,
    "closes": "2026-11-23T19:29:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -26944,7 +26944,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+kettingzaag/",
-   "nextBid": 181.0,
+   "nextBid": 191.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -27864,9 +27864,9 @@
   {
    "alwaysShow": null,
    "auction": "Bedrijfsbeëindiging: Husqvarna tuinmachines en accessoires",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-23T19:34:45+00:00",
    "closesDay": null,
    "combo": null,
@@ -27896,7 +27896,7 @@
     "search": "https://www.marktplaats.nl/q/husqvarna+werkjack+classic+forest/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/husqvarna+werkjack+classic+forest/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -30109,9 +30109,9 @@
   {
    "alwaysShow": null,
    "auction": "Witgoed, horeca en ICT-apparatuur",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-23T19:42:35+00:00",
    "closesDay": null,
    "combo": null,
@@ -30122,7 +30122,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/d1dcd61c-415d-4be4-a5b3-59f340ebd20b/47957.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Camera",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -30141,7 +30141,7 @@
     "search": "https://www.marktplaats.nl/q/canon+camera+meerdere/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/canon+camera+meerdere/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": "Stavangerweg 10, 9723JC Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -30155,10 +30155,10 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 50.88,
+    "cost": 50.87,
     "from": "home",
-    "km": 223.8,
-    "min": 176
+    "km": 223.7,
+    "min": 175
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/50",
@@ -30167,9 +30167,9 @@
   {
    "alwaysShow": null,
    "auction": "Witgoed, horeca en ICT-apparatuur",
-   "bid": 18.0,
+   "bid": 22.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 7,
    "closes": "2026-11-23T19:42:35+00:00",
    "closesDay": null,
    "combo": null,
@@ -30180,7 +30180,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-10-06/b1bdeb63-77db-48cc-837f-d8fbced5651b/IMG_8896.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -30199,7 +30199,7 @@
     "search": "https://www.marktplaats.nl/q/robotstofzuiger+aerova/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/robotstofzuiger+aerova/",
-   "nextBid": 20.0,
+   "nextBid": 24.0,
    "pickup": "Stavangerweg 10, 9723JC Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -30213,10 +30213,10 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 50.88,
+    "cost": 50.87,
     "from": "home",
-    "km": 223.8,
-    "min": 176
+    "km": 223.7,
+    "min": 175
    },
    "units": 10,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/51",
@@ -31082,9 +31082,9 @@
   {
    "alwaysShow": null,
    "auction": "Witgoed, horeca en ICT-apparatuur",
-   "bid": 18.0,
+   "bid": 20.0,
    "bidFromEmail": false,
-   "bids": 5,
+   "bids": 6,
    "closes": "2026-11-23T19:46:35+00:00",
    "closesDay": null,
    "combo": null,
@@ -31095,7 +31095,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-10/45f07d0a-9caa-46df-b386-3270075aa8e8/47918.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Camera",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -31114,7 +31114,7 @@
     "search": "https://www.marktplaats.nl/q/canon+camera+olympus+meerdere/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/canon+camera+olympus+meerdere/",
-   "nextBid": 20.0,
+   "nextBid": 22.0,
    "pickup": "Stavangerweg 10, 9723JC Groningen",
    "pickupWhen": "Thu 26 Nov, 09:00–15:00",
    "premium": 0.17,
@@ -31128,10 +31128,10 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 50.88,
+    "cost": 50.87,
     "from": "home",
-    "km": 223.8,
-    "min": 176
+    "km": 223.7,
+    "min": 175
    },
    "units": 50,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/70",
@@ -31153,7 +31153,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-10-06/1e6c2a74-fa14-4e32-a729-f69c49580098/20261006_150039.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -31186,10 +31186,10 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 50.88,
+    "cost": 50.87,
     "from": "home",
-    "km": 223.8,
-    "min": 176
+    "km": 223.7,
+    "min": 175
    },
    "units": 1,
    "url": "https://onlineveilingmeester.nl/nl/veilingen/9668/kavels/75",
@@ -31244,7 +31244,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31361,7 +31361,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31419,7 +31419,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31477,7 +31477,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31571,7 +31571,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31629,7 +31629,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31687,7 +31687,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31745,7 +31745,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31839,7 +31839,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -31933,7 +31933,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -32048,7 +32048,7 @@
    "transport": true,
    "trip": {
     "approx": false,
-    "cost": 36.28,
+    "cost": 36.27,
     "from": "home",
     "km": 159.5,
     "min": 131
@@ -32106,7 +32106,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32193,7 +32193,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32251,7 +32251,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32309,7 +32309,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32403,7 +32403,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32546,7 +32546,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32604,7 +32604,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32662,7 +32662,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32720,7 +32720,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32778,7 +32778,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32836,7 +32836,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32894,7 +32894,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -32952,7 +32952,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33010,7 +33010,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33068,7 +33068,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33162,7 +33162,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33249,7 +33249,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33364,7 +33364,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33422,7 +33422,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33480,7 +33480,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33538,7 +33538,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33596,7 +33596,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33697,7 +33697,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33798,7 +33798,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33885,7 +33885,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -33993,7 +33993,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34051,7 +34051,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34162,7 +34162,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34220,7 +34220,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34278,7 +34278,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34400,7 +34400,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34536,7 +34536,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34623,7 +34623,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34681,7 +34681,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34739,7 +34739,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34797,7 +34797,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -34905,7 +34905,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35013,7 +35013,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35121,7 +35121,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35179,7 +35179,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35266,7 +35266,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35381,7 +35381,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35468,7 +35468,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35526,7 +35526,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35613,7 +35613,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35714,7 +35714,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35772,7 +35772,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -35915,7 +35915,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36058,7 +36058,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36116,7 +36116,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36261,7 +36261,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36319,7 +36319,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36377,7 +36377,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36487,7 +36487,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36545,7 +36545,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36603,7 +36603,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36661,7 +36661,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -36719,7 +36719,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -36744,7 +36744,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/0fef0aa5-4077-4b9a-9863-888e6cdeb2b9/51_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -36884,7 +36884,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/10f139fe-a85d-4319-b756-7202b2bd8ae0/52_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37024,7 +37024,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/252496e4-46c1-466c-9ae0-0ba8d6e4beb5/53_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37164,7 +37164,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/ca6ad180-c1cd-4e54-9003-fb4d857503ce/54_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37304,7 +37304,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/1c776dc5-7c48-4bc2-ab98-368e797970d7/55_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37444,7 +37444,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/37aae317-c3b1-439b-b8df-51e4e9d62b0e/56_1.jpeg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37571,9 +37571,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling: Keukens, meubels en partijhandel",
-   "bid": 14.0,
+   "bid": 16.0,
    "bidFromEmail": false,
-   "bids": 3,
+   "bids": 4,
    "closes": "2026-11-25T18:44:39+00:00",
    "closesDay": null,
    "combo": null,
@@ -37584,7 +37584,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/0aec207d-64e0-43cb-a292-0aa8a9cd1fe1/57_1.jpeg",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Dyson / robot vacuum",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -37691,7 +37691,7 @@
     "search": "https://www.marktplaats.nl/q/robotstofzuiger+robot+oplaadbaar+sweepin/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/robotstofzuiger+robot+oplaadbaar+sweepin/",
-   "nextBid": 16.0,
+   "nextBid": 18.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -37757,7 +37757,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -37893,7 +37893,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -37918,7 +37918,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/c2b22863-5cdd-445f-b456-032d4912ca42/94_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -37970,7 +37970,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/ba32317e-b25e-416a-a6d4-a56a7fc8475c/95_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -38022,7 +38022,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/9af384bf-5515-482f-be47-190c794fa06a/96_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -38061,9 +38061,9 @@
   {
    "alwaysShow": null,
    "auction": "Thuisbezorgveiling: Keukens, meubels en partijhandel",
-   "bid": 10.0,
+   "bid": 12.0,
    "bidFromEmail": false,
-   "bids": 1,
+   "bids": 2,
    "closes": "2026-11-25T18:54:39+00:00",
    "closesDay": null,
    "combo": null,
@@ -38074,7 +38074,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/a9a9a23c-bbc3-4204-8f01-3edd9716a1dd/97_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -38093,7 +38093,7 @@
     "search": "https://www.marktplaats.nl/q/airfryer+jocca/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/airfryer+jocca/",
-   "nextBid": 12.0,
+   "nextBid": 14.0,
    "pickup": null,
    "pickupWhen": null,
    "premium": 0.17,
@@ -38126,7 +38126,7 @@
    "followed": false,
    "image": "https://onlineveilingmeester.nl/images/original/2026-11-16/65436e7d-bb70-4543-b8fb-d76f4fcf8356/98_1.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Kitchen appliance",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -38211,7 +38211,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38307,7 +38307,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38365,7 +38365,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -38466,7 +38466,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -38524,7 +38524,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38582,7 +38582,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38640,7 +38640,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38698,7 +38698,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38756,7 +38756,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38814,7 +38814,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38872,7 +38872,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38930,7 +38930,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -38988,7 +38988,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -39046,7 +39046,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -39104,7 +39104,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -39305,7 +39305,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -39469,7 +39469,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -39527,7 +39527,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -39670,7 +39670,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -39932,7 +39932,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -39990,7 +39990,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -40048,7 +40048,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -40106,7 +40106,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -40164,7 +40164,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -40222,7 +40222,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40280,7 +40280,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40338,7 +40338,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40539,7 +40539,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40654,7 +40654,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40712,7 +40712,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40770,7 +40770,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40828,7 +40828,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -40992,7 +40992,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41050,7 +41050,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41108,7 +41108,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41166,7 +41166,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41281,7 +41281,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 3.92,
+    "cost": 3.91,
     "from": "home",
     "km": 17.2,
     "min": 20
@@ -41396,7 +41396,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41454,7 +41454,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41512,7 +41512,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41570,7 +41570,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 25.51,
+    "cost": 25.5,
     "from": "home",
     "km": 112.2,
     "min": 93
@@ -41791,7 +41791,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -41849,7 +41849,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42011,7 +42011,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42115,7 +42115,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42173,7 +42173,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42231,7 +42231,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42341,7 +42341,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42456,7 +42456,7 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 21.43,
+    "cost": 21.42,
     "from": "home",
     "km": 94.2,
     "min": 84
@@ -42658,9 +42658,9 @@
   {
    "alwaysShow": true,
    "auction": "CLOVIS - INRICHTING TRAITEUR",
-   "bid": 16.0,
+   "bid": 18.0,
    "bidFromEmail": false,
-   "bids": 6,
+   "bids": 7,
    "closes": "2026-11-30T18:25:00+00:00",
    "closesDay": null,
    "combo": null,
@@ -42690,7 +42690,7 @@
     "search": "https://www.marktplaats.nl/q/merlot+ph+wijn/"
    },
    "mpSearch": "https://www.marktplaats.nl/q/merlot+ph+wijn/",
-   "nextBid": 17.0,
+   "nextBid": 19.0,
    "pickup": "Markt 13, 8790 Waregem, België",
    "pickupWhen": "Fri 4 Dec, 09:00–11:00",
    "premium": 0.19,
@@ -44475,7 +44475,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/yzJByjpEnW8/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MDY4LzAwMTEtd2Vya3BsYWF0c3BlcnMtbWFoYWNvLWluY2x1c2llZi12ZXJyaWpkYmFyZS10YWZlbC1tZXQtZGl2ZXJzZS1nZXJlZWRzY2hhcHBlbi12ZXIuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44508,9 +44508,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44533,7 +44533,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/7TseLVPncwQ/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MTUwLzAwOTMtdmllci1kZXNrdG9wLWNvbXB1dGVycy13ZXJraW5nLW9uYmVrZW5kLWhhcmRlLXNjaGlqdmVuLW9udGJyZWtlbi5qcGc.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Desktop",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -44566,9 +44566,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 4,
@@ -44591,7 +44591,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/jTH2sL1Aghs/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MTUxLzAwOTQtcGMtb3BzdGVsbGluZy1kZWxsLW9wdGlwbGV4LTMwOTAtaW50ZWxjb3JlLWk1LW1ldC0yLWJlZWxkc2NoZXJtZW4tcGhpbGlwcy0yNDN2LWUuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44624,9 +44624,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44649,7 +44649,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/QY1a32tvEOU/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MTg2LzAxMjktcGMtY29uZmlndXJhdGllLWRlbGwtbWV0LWR1YmJlbC1iZWVsZHNjaGVybS10b2V0c2VuYm9yZC1lbi1tdWlzLmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44682,9 +44682,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44707,7 +44707,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/0HXFPoQHhno/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MTkyLzAxMzUtcGMtb3BzdGVsbGluZy1kZWxsLXByZWNpc2lvbi0zNjYwLW1ldC10d2VlLWJlZWxkc2NoZXJtZW4taWl5YW1hLWVuLWRlbGwtdG9ldHNlbmIuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Monitor",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44740,9 +44740,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44765,7 +44765,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/2PeyvddQQTk/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MjM0LzAxNzctZGl2ZXJzZS1mcmV6ZW4tZnJlZXNob3VkZXJzLWVuLWdlcmVlZHNjaGFwcGVuLWluLWxhZGUtNy12YW4ta2FzdC0yLmpwZw.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44798,9 +44798,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44823,7 +44823,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/N8-pILSgKxQ/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MjM1LzAxNzgtZGl2ZXJzZS1nZXJlZWRzY2hhcHBlbi1pbi1sYWRlLTgtdmFuLWthc3QtMi13LW8tc2Nocm9ldmVuZHJhYWllcnMtc2NodXVyYmxva2tlbi0uanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44856,9 +44856,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44881,7 +44881,7 @@
    "followed": false,
    "image": "https://assets.hnvi.nl/assets/2DgeJMVbkUw/fill/105/77/no/1/bG9jYWw6Ly8vZmlsZXMvcHJvZHVjdHMvMTk5MzI4LzAyNzEtZ2VyZWVkc2NoYXBwZW4td2Vya3RhZmVsLXZlcnJpamRiYWFyLW1ldC1vcGdlYm91d2RlLWJhbmtzY2hyb2VmLW9yZ2FuaXplci1lbi1kaXYuanBn.jpg",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -44914,9 +44914,9 @@
    "transport": false,
    "trip": {
     "approx": false,
-    "cost": 6.45,
+    "cost": 6.44,
     "from": "home",
-    "km": 28.4,
+    "km": 28.3,
     "min": 30
    },
    "units": 1,
@@ -44997,7 +44997,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763547/DSC01543_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45055,7 +45055,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763548/DSC01552_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45113,7 +45113,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763549/DSC01564_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45171,7 +45171,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763550/DSC01569_kleinOK.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45293,7 +45293,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763551/DSC01577_kleinOK.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45415,7 +45415,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763552/DSC01584_kleinOK.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45537,7 +45537,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763740/DSC02744_kleinOK.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45645,7 +45645,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763745/DSC02771_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Garden tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45819,7 +45819,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763802/DSC03270_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Mixed lot",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45877,7 +45877,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763867/DSC03970_kleinOK.JPG",
    "isDeal": true,
-   "isNew": true,
+   "isNew": false,
    "item": "Power tools",
    "itemMaxPrice": null,
    "itemMinMargin": null,
@@ -45964,7 +45964,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763943/DSC04607_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -46022,7 +46022,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763944/DSC04630_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -46080,7 +46080,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763947/DSC04648_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -46181,7 +46181,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763948/DSC04654_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Laptop",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -46239,7 +46239,7 @@
    "followed": false,
    "image": "https://www.openbare-verkopen.be/sites/default/files/styles/3_2_small/public/auto_import_lots/images/lots/763964/DSC04819_kleinOK.JPG",
    "isDeal": false,
-   "isNew": true,
+   "isNew": false,
    "item": "Audio / beamer",
    "itemMaxPrice": null,
    "itemMinMargin": 0.15,
@@ -46306,7 +46306,7 @@
    "privateSaved": true
   },
   {
-   "auctions": 19,
+   "auctions": 20,
    "auctionsRead": 4,
    "error": "",
    "id": "proveiling",
@@ -46360,7 +46360,7 @@
    "ok": true
   },
   {
-   "auctions": 6,
+   "auctions": 8,
    "auctionsRead": 0,
    "error": "",
    "id": "nedveiling",
@@ -46398,7 +46398,7 @@
   {
    "error": "",
    "id": "marktplaats",
-   "lots": 194,
+   "lots": 0,
    "name": "Marktplaats prices",
    "ok": true
   }
