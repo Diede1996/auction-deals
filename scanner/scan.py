@@ -33,7 +33,7 @@ from .sites import SITE_NAMES, SITES
 from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
 from .telegram import Telegram, attr, esc
-from .util import AMS, fmt_eur, normalize, phrase_in
+from .util import AMS, fmt_eur, from_iso, normalize, phrase_in
 
 REPAIR_LABEL = "Repair"  # dashboard category of lots kept for repair
 
@@ -96,8 +96,20 @@ def settings_data(settings: Settings) -> dict:
             "monthly_goal": settings.monthly_goal, "capital_goal": settings.capital_goal, "resale_factor": settings.resale_factor, "selling_costs": settings.selling_costs}
 
 
+def favorite_auctions(favs: list[dict], now: datetime) -> dict[str, set[str]]:
+    """Per site, the names of the auctions with a favorite that hasn't closed yet."""
+    out: dict[str, set[str]] = {}
+    for f in favs or []:
+        site, auction = f.get("site") or str(f.get("key", "")).split(":")[0], (f.get("auction") or "").strip()
+        closes = from_iso(f.get("closes"))
+        if site and auction and (closes is None or closes > now):
+            out.setdefault(site, set()).add(auction)
+    return out
+
+
 def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, now: datetime,
-               only: list[str] | None = None) -> tuple[list[Lot], dict, int]:
+               only: list[str] | None = None, favorites: dict[str, set[str]] | None = None
+               ) -> tuple[list[Lot], dict, int]:
     """Scrape all enabled sites in parallel (one HTTP client per site). Returns (lots, report, requests)."""
     is_bankruptcy = auction_filter(config)
     trial = all_auctions_trial(config, now)
@@ -119,7 +131,8 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
             continue
         ctx = SiteContext(http=http_factory(), now=now, is_bankruptcy=is_bankruptcy, search_terms=terms,
                           settings=settings, cache=site_cache.setdefault(site, {}), all_auctions=bool(trial),
-                          max_regular=(trial or {}).get("max_per_site", 0))
+                          max_regular=(trial or {}).get("max_per_site", 0),
+                          favorite_auctions=set((favorites or {}).get(site, ())))
         jobs[site] = (fetch, ctx)
 
     lots: list[Lot] = []
@@ -717,9 +730,15 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     max_units = int((config.get("marktplaats") or {}).get("max_items_per_lot", 0) or 0)
 
     # 1. scrape (skipped when the watchlist is empty)
+    # favorites (starred on the dashboard, kept in a GitHub issue): their auctions are always read, and the
+    # filters below never hide them
+    store = FavoritesStore(http_cls(delay=0.2))
+    favs = store.load() if items else []
+    fav_keys = {f["key"] for f in favs}
     lots, report, site_requests = ([], {}, 0)
     if items:
-        lots, report, site_requests = scan_sites(config, items, state, lambda: http_cls(delay=delay), now, only)
+        lots, report, site_requests = scan_sites(config, items, state, lambda: http_cls(delay=delay), now, only,
+                                                 favorites=favorite_auctions(favs, now))
 
     # 1b. Troostwijk lots from Troostwijk's own alert emails (the bot never visits Troostwijk itself)
     mail_cfg = config.get("troostwijk_alerts") or {}
@@ -753,11 +772,6 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     lots = [lot for lot in lots if lot.closes_at is None or now < lot.closes_at <= horizon]
     matched = match_lots(items, lots)
     log.info("%d lots scanned, %d match the watchlist", len(lots), len(matched))
-
-    # favorites (starred on the dashboard, kept in a GitHub issue): never hidden by the filters below
-    store = FavoritesStore(http_cls(delay=0.2))
-    favs = store.load() if items else []
-    fav_keys = {f["key"] for f in favs}
 
     # 1c. the description on the lot page: the type number when the title has none ("2 x Dell 24 inch monitor"),
     # a defect ("Scherm beschadigd"), storage or memory ("64 GB"). Lots without a type number in the title first,

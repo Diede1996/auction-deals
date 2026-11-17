@@ -24,14 +24,16 @@ class SiteContext:
     all_auctions: bool = False  # the trial with every auction (config.yml all_auctions)
     max_regular: int = 0  # at most this many of those other auctions per site (0 = no limit)
     regular: set = field(default_factory=set)  # titles of the other auctions read, to label their lots
+    favorite_auctions: set = field(default_factory=set)  # names of auctions with a favorite lot: always read
     auctions_seen: int = 0  # running auctions this site listed (counted by wants)
     auctions_read: int = 0  # of those, the ones whose lots were read
 
     def wants(self, auction, special: bool) -> bool:
         """Read this auction? Yes when it's a bankruptcy, closure, estate, Domeinen or IT auction (`special`), and
-        during the all-auctions trial also any other one, remembered so its lots get the "regular auction" label."""
+        during the all-auctions trial also any other one, remembered so its lots get the "regular auction" label.
+        An auction with one of your favorites is always read, so its lots keep their bid, photo and price."""
         self.auctions_seen += 1
-        if special:
+        if special or auction.title.strip() in self.favorite_auctions:
             self.auctions_read += 1
             return True
         if not self.all_auctions or (self.max_regular and len(self.regular) >= self.max_regular):

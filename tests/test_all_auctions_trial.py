@@ -44,3 +44,21 @@ def test_counts_per_kind_of_auction():
     assert state["trial_counts"]["2026-10-29"]["regular"]["lots"] == 1
     record_trial(state, rows, datetime(2027, 1, 30, tzinfo=timezone.utc), False, False)
     assert "trial_counts" not in state  # forgotten after 60 days
+
+
+def test_auction_with_a_favorite_is_always_read():
+    # BellAuction, Nov 2026: Bosch tools starred during the trial dropped out of the scan when the trial ended
+    from datetime import datetime, timezone
+    from types import SimpleNamespace
+    from scanner.scan import favorite_auctions
+    from scanner.sites.base import SiteContext
+    now = datetime(2026, 11, 17, 12, tzinfo=timezone.utc)
+    favs = [{"key": "bellauction:1", "site": "bellauction", "auction": "Elektrisch gereedschap en machines",
+             "closes": "2026-11-19T18:48:00+00:00"},
+            {"key": "bellauction:2", "site": "bellauction", "auction": "Oude veiling", "closes": "2026-11-01T18:00:00+00:00"}]
+    fav = favorite_auctions(favs, now)
+    assert fav == {"bellauction": {"Elektrisch gereedschap en machines"}}
+    ctx = SiteContext(http=None, now=now, is_bankruptcy=lambda *a: False, favorite_auctions=fav["bellauction"])
+    assert ctx.wants(SimpleNamespace(title="Elektrisch gereedschap en machines"), False)
+    assert not ctx.wants(SimpleNamespace(title="Oude veiling"), False)
+    assert (ctx.auctions_seen, ctx.auctions_read) == (2, 1)
