@@ -456,47 +456,60 @@
      item.suitPlan = { trousers, sellFrom, sellTo }: listed as a full suit, the matching trousers are bought online once it sells. */
   /* items from Diede's stock list first, in its order (blue, black, grey suits, smokings, women's suits), then the rest */
   function byGroup(a, b) { return (a.groupOrder || 999) - (b.groupOrder || 999) || (a.sizeOrder || 0) - (b.sizeOrder || 0); }
-  /* Diede 17-11: first all full suits, then loose jackets, then loose trousers; inside each by colour (blue, grey, black).
-     item.section overrides; otherwise read from the name (pak/smoking + trousers = suit, colbert = jacket, pantalon = trousers). */
-  var SECTIONS = ["Volledige pakken", "Losse colberts", "Losse pantalons", "Overig"];
+  /* Diede 17-11: per colour (blue, grey, black, women's) the sub-headings "Volledig pak", "Colbert los", "Pantalon los".
+     A suit whose trousers are bought on sale (suitPlan) shows twice: as a full suit and as a loose jacket, each with its own
+     listings (listing.kind "colbert" = the loose-jacket ad, item.adColbert its text), so buyers see both options. */
+  var KINDS = [["suit", "Volledig pak"], ["colbert", "Colbert los"], ["pantalon", "Pantalon los"], ["other", "Other"]];
   var COLOURS = { blauw: 1, grijs: 2, zwart: 3, dames: 4 };
-  function sectionOf(it) {
-    if (it.section) return it.section;
-    if (!it.group) return "Overig";
+  function kindsOf(it) {
+    if (it.section) return [it.section];
     var n = String(it.name || "").toLowerCase();
-    if (/\bpak\b|smoking[^,]*\+|pantalon bijkopen/.test(n)) return "Volledige pakken";
-    if (/colbert|jacket/.test(n)) return "Losse colberts";
-    if (/pantalon|broek/.test(n)) return "Losse pantalons";
-    return "Volledige pakken";
+    if (it.suitPlan && /\bpak\b/.test(n) && !/dames/.test(n)) return ["suit", "colbert"];
+    if (/\bpak\b|smoking[^,]*\+/.test(n)) return ["suit"];
+    if (/colbert|jacket/.test(n)) return ["colbert"];
+    if (/pantalon|broek/.test(n)) return ["pantalon"];
+    return [it.group ? "suit" : "other"];
   }
-  function colourRank(it) { return COLOURS[String(it.group || "").toLowerCase()] || it.groupOrder || 99; }
+  function colourRank(it) { return COLOURS[String(it.group || "").toLowerCase()] || (it.group ? 50 + (it.groupOrder || 0) : 99); }
   function overviewPanel(panel, forSale) {
     if (!forSale.length) { panel.append(el("p", { "class": "empty", text: "Nothing for sale right now." })); return; }
-    var sorted = forSale.slice().sort(function (a, b) {
-      return SECTIONS.indexOf(sectionOf(a)) - SECTIONS.indexOf(sectionOf(b)) || colourRank(a) - colourRank(b) ||
-        (a.sizeOrder || 0) - (b.sizeOrder || 0) || String(a.name).localeCompare(String(b.name));
+    var groups = [], byName = {};
+    forSale.slice().sort(function (a, b) {
+      return colourRank(a) - colourRank(b) || (a.sizeOrder || 0) - (b.sizeOrder || 0) || String(a.name).localeCompare(String(b.name));
+    }).forEach(function (it) {
+      var g = it.group || "Other stock";
+      if (!byName[g]) { byName[g] = { name: g, rows: {} }; groups.push(byName[g]); }
+      kindsOf(it).forEach(function (k) { (byName[g].rows[k] = byName[g].rows[k] || []).push(it); });
     });
-    var sec = null, grp = null, secName = null, grpName = null;
-    sorted.forEach(function (it) {
-      var sn = sectionOf(it), gn = it.group || "Other stock";
-      if (sn !== secName) {
-        secName = sn; grpName = null;
-        var count = sorted.filter(function (x) { return sectionOf(x) === sn; }).reduce(function (t, x) { return t + piecesLeft(x); }, 0);
-        sec = el("div", { "class": "osection" }, el("h2", {}, sn === "Overig" ? "Other stock" : sn, el("span", { "class": "count", text: String(count) })));
-        panel.append(sec);
-      }
-      if (gn !== grpName) {
-        grpName = gn;
-        var n = sorted.filter(function (x) { return sectionOf(x) === sn && (x.group || "Other stock") === gn; }).reduce(function (t, x) { return t + piecesLeft(x); }, 0);
-        grp = el("div", { "class": "ogroup" }, sn === "Overig" && gn === "Other stock" ? null : el("h3", {}, gn, el("span", { "class": "count", text: String(n) })));
+    groups.forEach(function (g) {
+      var sec = el("div", { "class": "osection" }, el("h2", {}, g.name));
+      KINDS.forEach(function (k) {
+        var list = g.rows[k[0]]; if (!list) return;
+        var n = list.reduce(function (t, x) { return t + piecesLeft(x); }, 0);
+        var grp = el("div", { "class": "ogroup" }, k[0] === "other" ? null : el("h3", {}, k[1], el("span", { "class": "count", text: String(n) })));
+        list.forEach(function (it) {
+          grp.append(overviewRow(it, k[0]));
+          if (openAds[it.id + k[0]] && statusOf(it) === "stock") grp.append(el("div", { "class": "oad" }, listingCard(viewAs(it, k[0]))));
+        });
         sec.append(grp);
-      }
-      grp.append(overviewRow(it));
-      if (openAds[it.id] && statusOf(it) === "stock") grp.append(el("div", { "class": "oad" }, listingCard(it)));
+      });
+      panel.append(sec);
     });
   }
+  /* the loose-jacket side of a suit: its own ad text and only its own listings */
+  function isColbertListing(l) { return l.kind === "colbert"; }
+  function viewAs(it, kind) {
+    if (!it.suitPlan || (kind !== "colbert" && kind !== "suit") || kindsOf(it).length < 2) return it;
+    var v = Object.assign({}, it);
+    v.listings = (it.listings || []).filter(function (l) { return kind === "colbert" ? isColbertListing(l) : !isColbertListing(l); });
+    v._kind = kind;
+    if (kind === "colbert") v.ad = it.adColbert || it.ad;
+    return v;
+  }
 
-  function overviewRow(it) {
+
+  function overviewRow(it0, kind) {
+    var it = viewAs(it0, kind);
     if (it.toShip && statusOf(it) === "sold") {  /* sold, still to send: stays on the list until toShip is cleared */
       return el("article", { "class": "orow" }, el("div", { "class": "c-thumb" }, thumb(it)),
         el("div", { "class": "c-main" }, el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + " (" + (it.groupNote || "sold, still to send") + ")", title: it.name, onclick: function () { editItem(it); } })),
@@ -505,7 +518,7 @@
           change("Sent " + (it.name || it.id), function (data) { var x = find(data, it.id); if (!x) return false; delete x.toShip; delete x.groupNote; }).then(function () { toast("Marked as sent."); }, function () {});
         } })));
     }
-    var left = piecesLeft(it), ls = listings(it), plan = it.suitPlan, per = (it.paid || 0) / qtyOf(it), planText = null;
+    var left = piecesLeft(it), ls = listings(it), plan = it._kind === "colbert" ? null : it.suitPlan, per = (it.paid || 0) / qtyOf(it), planText = null;
     if (plan) {
       var cost = per + (plan.trousers || 0), lo = (plan.sellFrom || 0) - cost, hi = (plan.sellTo || plan.sellFrom || 0) - cost;
       planText = "Sold as a suit: buy the trousers for ~" + money(plan.trousers) + " → cost ~" + money(cost) + ", sell " + money(plan.sellFrom) +
@@ -514,13 +527,13 @@
     return el("article", { "class": "orow" },
       el("div", { "class": "c-thumb" }, thumb(it)),
       el("div", { "class": "c-main" },
-        el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + (left > 1 ? "  ×" + left : "") + (it.groupNote ? " (" + it.groupNote + ")" : ""),
+        el("button", { type: "button", "class": "title plain", text: (it._kind === "colbert" ? String(it.groupSize || it.name).replace(/^Pak\b/, "Colbert") : (it.groupSize || it.name)) + (left > 1 ? "  ×" + left : "") + (it.groupNote ? " (" + it.groupNote + ")" : ""),
           title: it.name + (planText ? "\n" + planText : ""), onclick: function () { editItem(it); } })),
       el("div", { "data-label": "Paid" }, el("div", { "class": "num", text: money2(per) }), el("div", { "class": "small", text: left > 1 ? "per piece" : "paid" })),
       el("div", { "data-label": "Online" }, siteChecks(it)),
       el("div", { "class": "c-actions" },
-        el("button", { type: "button", "class": "pbtn", text: "Ad", "aria-expanded": String(!!openAds[it.id]), title: "Ad text, photos and where it's online", onclick: function () {
-          openAds[it.id] = !openAds[it.id]; drawContent(); } }),
+        el("button", { type: "button", "class": "pbtn", text: "Ad", "aria-expanded": String(!!openAds[it.id + kind]), title: "Ad text, photos and where it's online", onclick: function () {
+          openAds[it.id + kind] = !openAds[it.id + kind]; drawContent(); } }),
         el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }),
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
   }
@@ -535,10 +548,12 @@
       box.checked = !!on.length;
       box.addEventListener("change", function () {
         var add = box.checked;
-        change((add ? "Online: " : "Ad offline: ") + (it.name || it.id) + " on " + platformLabel(p[0]), function (data) {
+        change((add ? "Online: " : "Ad offline: ") + (it.name || it.id) + (it._kind === "colbert" ? " (loose jacket)" : "") + " on " + platformLabel(p[0]), function (data) {
           var x = find(data, it.id); if (!x) return false;
-          var rest = (x.listings || []).filter(function (l) { return l.platform !== p[0]; });
-          if (add) rest.push({ id: newId(), platform: p[0], since: today(), price: x.ad && x.ad.price != null ? x.ad.price : null, url: null });
+          var mine = function (l) { return l.platform === p[0] && (!it._kind || (it._kind === "colbert") === isColbertListing(l)); };
+          var rest = (x.listings || []).filter(function (l) { return !mine(l); });
+          var ad = it._kind === "colbert" ? x.adColbert || x.ad : x.ad;
+          if (add) rest.push(Object.assign({ id: newId(), platform: p[0], since: today(), price: ad && ad.price != null ? ad.price : null, url: null }, it._kind === "colbert" ? { kind: "colbert" } : {}));
           x.listings = rest;
         }).catch(function () {});
       });
@@ -650,12 +665,12 @@
       var ids = picked(); if (!ids.length) return;
       var day = validDay(since.value) ? since.value : today(), cost = amount(price.value);
       var entries = ids.map(function (id) {
-        return { id: newId(), platform: id, since: day, price: cost, url: ids.length === 1 ? safeUrl(url.value.trim()) || null : null };
+        return Object.assign({ id: newId(), platform: id, since: day, price: cost, url: ids.length === 1 ? safeUrl(url.value.trim()) || null : null }, it._kind === "colbert" ? { kind: "colbert" } : {});
       });
       change("Online: " + (it.name || it.id) + " on " + ids.map(platformLabel).join(", "), function (data) {
         var x = find(data, it.id); if (!x) return false;
         x.listings = (x.listings || []).concat(entries);
-        if (cost != null) { x.ad = x.ad || {}; x.ad.price = cost; }
+        if (cost != null) { var adKey = it._kind === "colbert" && x.adColbert ? "adColbert" : "ad"; x[adKey] = x[adKey] || {}; x[adKey].price = cost; }
       }).then(function () { toast(entries.length > 1 ? entries.length + " ads added." : "Ad added."); }, function () {});
     });
     return form;
@@ -671,6 +686,7 @@
       ad.text ? copyBtn("Copy text", ad.text) : null,
       photos.length ? el("button", { type: "button", "class": "pbtn", text: (navigator.canShare ? "Share" : "Save") + " " + photos.length + " photo" + (photos.length > 1 ? "s" : ""), onclick: function () { sharePhotos(it); } }) : null,
       photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function (e) { savePhotosToFolder(it, e.shiftKey, e.currentTarget); } }) : null,
+      it._kind === "colbert" ? el("span", { "class": "small", text: "loose-jacket ad (ask Claude to change it)" }) :
       el("button", { type: "button", "class": "btn-link", text: text || photos.length ? "Edit ad" : "Write the ad", onclick: function () { editItem(it, "ad"); } })));
     if (ad.title) block.append(el("div", { "class": "pad-title", text: ad.title }));
     if (ad.text) block.append(el("div", { "class": "pad-text", text: ad.text }));
