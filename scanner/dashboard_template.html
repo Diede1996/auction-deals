@@ -320,9 +320,14 @@ a.pbtn { display: inline-flex; align-items: center; text-decoration: none; }
 .prow.head { border-top: 0; padding-top: 8px; padding-bottom: 8px; color: var(--text-3); font-size: 12.5px; background: var(--surface-2); }
 .prow .thumb, .pcard-head .thumb { width: 64px; height: 64px; }
 .tab[hidden] { display: none !important; }
+.osites { display: flex; flex-wrap: wrap; gap: 6px; }
+.osite { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border: 1px solid var(--border-strong); border-radius: 6px; font-size: 12.5px; font-weight: 600; color: var(--text-3); cursor: pointer; white-space: nowrap; }
+.osite.on { color: var(--good-text); background: var(--good-bg); border-color: transparent; }
+.osite.stale { box-shadow: inset 0 0 0 1.5px var(--critical); }
+.oad { padding: 0 16px 12px 28px; }
 .ogroup h3 { margin: 0; padding: 14px 16px 6px; font-size: 15px; border-top: 1px solid var(--border); display: flex; gap: 8px; align-items: center; }
 .ogroup h3 .count { font-size: 12px; font-weight: 600; color: var(--text-3); background: var(--neutral-bg); border-radius: 6px; padding: 0 7px; }
-.orow { display: grid; gap: 12px; align-items: center; padding: 8px 16px 8px 28px; grid-template-columns: 44px minmax(0, 2.6fr) minmax(0, .8fr) minmax(0, 1.2fr) auto; }
+.orow { display: grid; gap: 12px; align-items: center; padding: 8px 16px 8px 28px; grid-template-columns: 44px minmax(0, 2fr) minmax(0, .7fr) minmax(250px, 1.3fr) auto; }
 .orow > * { min-width: 0; grid-area: auto; }
 .orow .c-actions { flex-wrap: nowrap; }
 .orow .thumb { width: 44px; height: 44px; }

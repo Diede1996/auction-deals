@@ -404,19 +404,18 @@
     box.append(tiles([
       { label: "For sale", value: String(pieces), note: forSale.length + (forSale.length === 1 ? " item" : " items") + (pieces !== forSale.length ? " (lots count per piece)" : ""), primary: true },
       { label: "Money in stock", value: money(forSale.reduce(function (s, it) { return s + stockValue(it); }, 0)), note: "what you paid for what's still for sale" },
-      { label: "Not listed yet", value: String(unlisted.length), note: unlisted.length ? "add an ad under For sale › Not listed yet" : "everything is online" },
+      { label: "Not listed yet", value: String(unlisted.length), note: unlisted.length ? "tick MP / 2de / VI / EB under For sale" : "everything is online" },
       { label: "Longest in stock", value: forSale.length ? oldest + " days" : "–", note: "since you bought it (or put it up for sale, for things you used yourself)" }
     ]));
     var defs = [
-      { id: "overview", label: "Overview", count: pieces },
-      { id: "stock", label: "For sale", count: forSale.length },
+      { id: "overview", label: "For sale", count: pieces },  /* Overview and For sale are one tab since 17-11 (Diede) */
       { id: "kept", label: "Kept for myself", count: all.filter(function (it) { return statusOf(it) === "kept"; }).length },
       { id: "sold", label: "Sold", count: all.filter(function (it) { return statusOf(it) === "sold"; }).length },
       { id: "all", label: "All", count: all.length }
     ];
     var panel = el("section", { "class": "panel list" }, subtabs(defs, "stock"));
     if (pui.stock === "overview") { overviewPanel(panel, forSale.concat(all.filter(function (it) { return it.toShip && statusOf(it) === "sold"; }))); box.append(panel); return; }
-    if (pui.stock === "stock") { listingsView(box, panel.firstChild); return; }  /* For sale = the ads: online, online > 7 days, not listed yet */
+    if (pui.stock === "stock") { pui.stock = "overview"; overviewPanel(panel, forSale); box.append(panel); return; }  /* old saved choice */
     var shown = all.filter(function (it) { return pui.stock === "all" || statusOf(it) === pui.stock; })
       .sort(function (a, b) { return byGroup(a, b) || String(b.bought || "").localeCompare(String(a.bought || "")); });
     panel.append(el("div", { "class": "prow head", "aria-hidden": "true" }, el("div"), el("div", { text: "Item" }), el("div", { text: "Bought" }),
@@ -470,7 +469,7 @@
     order.forEach(function (g) {
       var list = groups[g], n = list.reduce(function (t, it) { return t + piecesLeft(it); }, 0);
       var sec = el("div", { "class": "ogroup" }, el("h3", {}, g, el("span", { "class": "count", text: String(n) })));
-      list.forEach(function (it) { sec.append(overviewRow(it)); });
+      list.forEach(function (it) { sec.append(overviewRow(it)); if (openAds[it.id] && statusOf(it) === "stock") sec.append(el("div", { "class": "oad" }, listingCard(it))); });
       panel.append(sec);
     });
   }
@@ -495,10 +494,35 @@
         el("button", { type: "button", "class": "title plain", text: (it.groupSize || it.name) + (left > 1 ? "  ×" + left : "") + (it.groupNote ? " (" + it.groupNote + ")" : ""),
           title: it.name + (planText ? "\n" + planText : ""), onclick: function () { editItem(it); } })),
       el("div", { "data-label": "Paid" }, el("div", { "class": "num", text: money2(per) }), el("div", { "class": "small", text: left > 1 ? "per piece" : "paid" })),
-      el("div", { "data-label": "Online" }, ls.length ? el("div", { "class": "badges" }, ls.map(badge)) : el("span", { "class": "small soon", text: "Not listed" })),
+      el("div", { "data-label": "Online" }, siteChecks(it)),
       el("div", { "class": "c-actions" },
+        el("button", { type: "button", "class": "pbtn", text: "Ad", "aria-expanded": String(!!openAds[it.id]), title: "Ad text, photos and where it's online", onclick: function () {
+          openAds[it.id] = !openAds[it.id]; drawContent(); } }),
         el("button", { type: "button", "class": "pbtn", text: "Sold…", onclick: function () { sellItem(it); } }),
         el("button", { type: "button", "class": "pbtn", text: "Edit", onclick: function () { editItem(it); } })));
+  }
+  var openAds = {};
+  /* MP / 2de / VI / EB: ticked = the ad is online there (one listing per site); untick = taken offline */
+  var SITE_SHORT = [["marktplaats", "MP"], ["2dehands", "2de"], ["vinted", "VI"], ["ebay", "EB"]];
+  function siteChecks(it) {
+    var ls = listings(it);
+    return el("div", { "class": "osites", role: "group", "aria-label": "Online on" }, SITE_SHORT.map(function (p) {
+      var on = ls.filter(function (l) { return l.platform === p[0]; }), stale = on.some(isStale), d = on.length ? daysSince(on[0].since) : null;
+      var box = el("input", { type: "checkbox" });
+      box.checked = !!on.length;
+      box.addEventListener("change", function () {
+        var add = box.checked;
+        change((add ? "Online: " : "Ad offline: ") + (it.name || it.id) + " on " + platformLabel(p[0]), function (data) {
+          var x = find(data, it.id); if (!x) return false;
+          var rest = (x.listings || []).filter(function (l) { return l.platform !== p[0]; });
+          if (add) rest.push({ id: newId(), platform: p[0], since: today(), price: x.ad && x.ad.price != null ? x.ad.price : null, url: null });
+          x.listings = rest;
+        }).catch(function () {});
+      });
+      return el("label", { "class": "osite" + (on.length ? " on" : "") + (stale ? " stale" : ""),
+        title: platformLabel(p[0]) + (on.length ? ": online since " + showDay(on[0].since) + (d != null ? " (" + d + " days)" : "") + (stale ? ". Place it again: it has probably sunk in the search results." : "") : ": not online") },
+        box, " " + p[1]);
+    }));
   }
 
   /* sold: what it brought in, when, and the profit on it */
