@@ -463,6 +463,7 @@
   var COLOURS = { blauw: 1, grijs: 2, zwart: 3, dames: 4 };
   function kindsOf(it) {
     if (it.section) return [it.section];
+    if (!COLOURS[String(it.group || "").toLowerCase()]) return ["other"];  /* everything that isn't HUGO clothing: no sub-headings */
     var n = String(it.name || "").toLowerCase();
     if (it.suitPlan && /\bpak\b/.test(n) && !/dames/.test(n)) return ["suit", "colbert"];
     if (/\bpak\b|smoking[^,]*\+/.test(n)) return ["suit"];
