@@ -88,3 +88,13 @@ def test_stage_reminders_3h_1h_15min():
     assert [s for *_, s in due_stage_reminders(favs, lots, t, stages, sent)] == [15]
     sent["hnvi:196601"]["stage"] = 15
     assert due_stage_reminders(favs, lots, t, stages, sent) == []
+
+
+def test_favorites_of_every_site_are_kept():
+    from scanner.favorites import parse_body
+    urls = {"bellauction": "https://www.bellauction.be/auctionlot/1/x", "vlavem": "https://www.vlavem.com/lot/2",
+            "nedveiling": "https://www.nedveiling.nl/3,auction_id,auction_details",
+            "openbareverkopen": "https://www.openbare-verkopen.be/k/4", "veilingwinnaar": "https://veilingwinnaar.nl/5",
+            "inventarisveilingen": "https://www.inventarisveilingen.nl/6"}
+    body = "```json\n" + json.dumps([{"key": f"{s}:{i}", "url": u} for i, (s, u) in enumerate(urls.items())]) + "\n```"
+    assert len(parse_body(body)) == len(urls)

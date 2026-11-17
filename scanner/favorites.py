@@ -27,7 +27,12 @@ MARKER = "<!-- auction-deals:favorites -->"
 API = "https://api.github.com"
 ALLOWED_HOSTS = {"www.hnvi.nl", "hnvi.nl", "www.proveiling.nl", "proveiling.nl", "www.plaatsjebod.nl",
                  "plaatsjebod.nl", "onlineveilingmeester.nl", "www.onlineveilingmeester.nl",
-                 "www.troostwijkauctions.com"}
+                 "www.troostwijkauctions.com",
+                 # sites added later; their favorites were dropped here until 17 Nov 2026 (no reminders, and
+                 # BellAuction's auction wasn't read any more once the all-auctions trial ended)
+                 "veilingwinnaar.nl", "www.veilingwinnaar.nl", "www.inventarisveilingen.nl", "inventarisveilingen.nl",
+                 "www.nedveiling.nl", "nedveiling.nl", "www.openbare-verkopen.be", "openbare-verkopen.be",
+                 "www.vlavem.com", "vlavem.com", "www.bellauction.be", "bellauction.be", "www.marktplaats.nl"}
 _KEY_RE = re.compile(r"^[a-z]{2,30}:[A-Za-z0-9_.-]{1,80}$")
 _JSON_RE = re.compile(r"```json\s*(\[.*?\])\s*```", re.S)
 
