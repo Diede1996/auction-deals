@@ -2382,110 +2382,110 @@
  },
  "health": {
   "bellauction": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 253,
    "ok": true
   },
   "hnvi": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 1290,
    "ok": true
   },
   "inventarisveilingen": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 58,
    "ok": true
   },
   "marktplaats": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "lots": 89,
+   "lots": 86,
    "ok": true
   },
   "nedveiling": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 0,
    "ok": true
   },
   "onlineveilingmeester": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 1590,
    "ok": true
   },
   "openbareverkopen": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 1268,
    "ok": true
   },
   "plaatsjebod": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 805,
    "ok": true
   },
   "proveiling": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 513,
    "ok": true,
    "warned": false
   },
   "troostwijk": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
-   "lots": 90,
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
+   "lots": 108,
    "ok": true
   },
   "veilingwinnaar": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 41,
    "ok": true
   },
   "vlavem": {
-   "at": "2026-11-18T09:33:58.781741+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "error": "",
    "fails": 0,
-   "last_ok": "2026-11-18T09:33:58.781741+00:00",
+   "last_ok": "2026-11-18T12:59:56.851182+00:00",
    "lots": 189,
    "ok": true
   }
  },
  "last_run": {
-  "at": "2026-11-18T09:33:58.781741+00:00",
-  "deals": 117,
+  "at": "2026-11-18T12:59:56.851182+00:00",
+  "deals": 114,
   "defects": 0,
-  "lots": 5584,
+  "lots": 5602,
   "matches": 700,
-  "new": 58,
-  "requests": 314,
+  "new": 0,
+  "requests": 309,
   "too_old": 9
  },
  "price_cache": {
@@ -3364,12 +3364,12 @@
    "v": 10
   },
   "exact bosch professional gdp40|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact bosch professional gsa1100e|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -3415,9 +3415,9 @@
    "v": 10
   },
   "exact bosch professional gst90be|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 3,
     "high": 95.0,
     "kind": "exact",
@@ -4263,7 +4263,7 @@
    "v": 10
   },
   "exact dewalt lijnlaser dw088cwg|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -5145,11 +5145,11 @@
    "v": 10
   },
   "exact festool bedrijfsstofzuiger ctl26e|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 3,
-    "high": 600.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 5,
+    "high": 512.5,
     "kind": "exact",
     "listings": [
      {
@@ -5161,8 +5161,20 @@
      {
       "kind": "bid",
       "price": 400.0,
+      "title": "Festool CTL 26 E AC Stofzuiger met Autoclean",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466918046-festool-ctl-26-e-ac-stofzuiger-met-autoclean"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
       "title": "Festool CTL 26E-AC HD Industriële Stofzuiger",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2443334908-festool-ctl-26e-ac-hd-industriele-stofzuiger"
+     },
+     {
+      "kind": "fixed",
+      "price": 425.0,
+      "title": "Festool CTL 26 E bouwstofzuiger incl. slang – bouwjaar 2024",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2466674901-festool-ctl-26-e-bouwstofzuiger-incl-slang-bouwjaar-2024"
      },
      {
       "kind": "fixed",
@@ -5171,13 +5183,15 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2459193676-festool-ctl26e-stofzuiger"
      }
     ],
-    "low": 375.0,
+    "low": 387.5,
     "median": 400.0,
     "model": "CTL26E",
     "outliers": [],
     "prices": [
      375.0,
      400.0,
+     400.0,
+     425.0,
      600.0
     ],
     "query": "festool ctl26e",
@@ -5308,7 +5322,7 @@
    "v": 10
   },
   "exact festool bovenfrees mfx 700|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -5318,9 +5332,9 @@
    "v": 10
   },
   "exact festool decoupeerzaag ps300eq|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 3,
     "high": 275.0,
     "kind": "exact",
@@ -5571,11 +5585,11 @@
    "v": 10
   },
   "exact festool fs1400|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 3,
-    "high": 495.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 4,
+    "high": 391.25,
     "kind": "exact",
     "listings": [
      {
@@ -5583,6 +5597,12 @@
       "price": 25.0,
       "title": "Festool FS 1400 geleiderail",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2466020810-festool-fs-1400-geleiderail"
+     },
+     {
+      "kind": "bid",
+      "price": 70.0,
+      "title": "Festool geleiderail FS 1400/2",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2466960517-festool-geleiderail-fs-1400-2"
      },
      {
       "kind": "fixed",
@@ -5597,12 +5617,13 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2452716451-festool-ts-75-ebq-plus-fs-invalzaag-fs1400-staalzaagblad"
      }
     ],
-    "low": 25.0,
-    "median": 79.99,
+    "low": 36.25,
+    "median": 75.0,
     "model": "FS1400",
     "outliers": [],
     "prices": [
      25.0,
+     70.0,
      79.99,
      495.0
     ],
@@ -6328,19 +6349,13 @@
    "v": 10
   },
   "exact festool schuurmachine ro 150|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 7,
-    "high": 425.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 5,
+    "high": 427.5,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 249.99,
-      "title": "Festool RO 150 FEQ Excenterschuurmachine | Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2464966169-festool-ro-150-feq-excenterschuurmachine-gebruikt"
-     },
      {
       "kind": "bid",
       "price": 275.0,
@@ -6361,12 +6376,6 @@
      },
      {
       "kind": "bid",
-      "price": 400.0,
-      "title": "Festool Ro 150 schuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2443776945-festool-ro-150-schuurmachine"
-     },
-     {
-      "kind": "bid",
       "price": 425.0,
       "title": "Festool RO 150 FEQ Rotex Excentrische Schuurmachine",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2438263811-festool-ro-150-feq-rotex-excentrische-schuurmachine"
@@ -6383,11 +6392,9 @@
     "model": "RO 150",
     "outliers": [],
     "prices": [
-     249.99,
      275.0,
      275.0,
      339.99,
-     400.0,
      425.0,
      430.0
     ],
@@ -6753,14 +6760,43 @@
    "v": 10
   },
   "exact festool ts55febq|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
-   "est": null,
+   "at": "2026-11-18T12:59:56.851182+00:00",
+   "est": {
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 2,
+    "high": 413.75,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 295.0,
+      "title": "Festool TS 55 FEBQ invalzaag met toebehoren",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2463471807-festool-ts-55-febq-invalzaag-met-toebehoren"
+     },
+     {
+      "kind": "fixed",
+      "price": 390.0,
+      "title": "Festool TS 55 FEBQ",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2465848460-festool-ts-55-febq"
+     }
+    ],
+    "low": 271.25,
+    "median": 342.5,
+    "model": "TS55FEBQ",
+    "outliers": [],
+    "prices": [
+     295.0,
+     390.0
+    ],
+    "query": "festool ts55febq",
+    "search": "festool ts55febq"
+   },
    "v": 10
   },
   "exact festool ts75ebq|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 2,
     "high": 501.25,
     "kind": "exact",
@@ -6792,11 +6828,11 @@
    "v": 10
   },
   "exact festool valzaag ts55rebq|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 5,
-    "high": 462.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 7,
+    "high": 475.0,
     "kind": "exact",
     "listings": [
      {
@@ -6807,39 +6843,53 @@
      },
      {
       "kind": "bid",
+      "price": 290.0,
+      "title": "festool invalzaag. TS55 REBQ WEG=WEG!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2435209041-festool-invalzaag-ts55-rebq-weg-weg"
+     },
+     {
+      "kind": "bid",
       "price": 349.99,
       "title": "Festool TS 55 REBQ-Plus Invalcirkelzaag | In Nette Staat",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2458276802-festool-ts-55-rebq-plus-invalcirkelzaag-in-nette-staat"
      },
      {
-      "kind": "bid",
-      "price": 400.0,
-      "title": "Festool TS 55 REBQ-Plus invalzaag met diverse geleiders",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2464075483-festool-ts-55-rebq-plus-invalzaag-met-diverse-geleiders"
+      "kind": "fixed",
+      "price": 425.0,
+      "title": "Festool TS 55 REBQ-Plus",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2466616834-festool-ts-55-rebq-plus"
      },
      {
       "kind": "fixed",
       "price": 449.0,
       "title": "Festool TS 55 REBQ-PLUS invalcirkelzaag 1200W | prima staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2454345176-festool-ts-55-rebq-plus-invalcirkelzaag-1200w-prima-staat"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2466538783-festool-ts-55-rebq-plus-invalcirkelzaag-1200w-prima-staat"
      },
      {
       "kind": "bid",
       "price": 475.0,
       "title": "Festool invalzaag Ts55 REBQ",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/elektra-en-kabels/m2426773897-festool-invalzaag-ts55-rebq"
+     },
+     {
+      "kind": "fixed",
+      "price": 500.0,
+      "title": "Festool ts 55 REBQ dikke set",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-machine-onderdelen-en-toebehoren/m2466159922-festool-ts-55-rebq-dikke-set"
      }
     ],
-    "low": 292.5,
-    "median": 400.0,
+    "low": 290.0,
+    "median": 425.0,
     "model": "TS55REBQ",
     "outliers": [],
     "prices": [
      235.0,
+     290.0,
      349.99,
-     400.0,
+     425.0,
      449.0,
-     475.0
+     475.0,
+     500.0
     ],
     "query": "festool ts55rebq",
     "search": "festool valzaag ts55rebq"
@@ -9784,16 +9834,6 @@
    },
    "v": 10
   },
-  "exact lenovo laptop 82y9|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
-  },
-  "exact lenovo laptop 83dh|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
-  },
   "exact liebherr uks 4302|": {
    "at": "2026-11-13T12:10:07.073503+00:00",
    "est": null,
@@ -10260,7 +10300,7 @@
    "v": 10
   },
   "exact makita 4350t|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -10583,18 +10623,30 @@
    "v": 10
   },
   "exact makita boorhamer dhr242|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 6,
-    "high": 256.25,
+    "high": 250.0,
     "kind": "exact",
     "listings": [
      {
+      "kind": "fixed",
+      "price": 45.0,
+      "title": "Makita DX01 18V Stofafzuiging HEPA – SDS-Plus DHR242",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466677461-makita-dx01-18v-stofafzuiging-hepa-sds-plus-dhr242"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
+      "title": "Makita DHR242 Boormachine | Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2466704888-makita-dhr242-boormachine-nette-staat"
+     },
+     {
       "kind": "bid",
-      "price": 75.0,
-      "title": "Makita DHR242 18V Boorhamer - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2462143914-makita-dhr242-18v-boorhamer-gebruikt"
+      "price": 180.0,
+      "title": "Makita dhr242 boorhamer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466278390-makita-dhr242-boorhamer"
      },
      {
       "kind": "bid",
@@ -10604,42 +10656,30 @@
      },
      {
       "kind": "bid",
-      "price": 219.99,
-      "title": "Makita DHR242 + 2 Accu's en Dubbele Snellader",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2424581039-makita-dhr242-2-accu-s-en-dubbele-snellader"
-     },
-     {
-      "kind": "bid",
       "price": 250.0,
-      "title": "Makita DHR242 Boorhamer met DX06 stofafzuiging en accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465769229-makita-dhr242-boorhamer-met-dx06-stofafzuiging-en-accu"
+      "title": "Makita DHR242 Boorhamer met DX01 Stofafzuiging",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465081333-makita-dhr242-boorhamer-met-dx01-stofafzuiging"
      },
      {
       "kind": "bid",
       "price": 250.0,
       "title": "Makita DHR242 18V Accu Boorhamer met HEPA filter",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2457365545-makita-dhr242-18v-accu-boorhamer-met-hepa-filter"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "Makita DHR242 Boorhamer met DX01 Stofafzuiging",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465081333-makita-dhr242-boorhamer-met-dx01-stofafzuiging"
      }
     ],
-    "low": 168.75,
-    "median": 235.0,
+    "low": 123.74,
+    "median": 190.0,
     "model": "DHR242",
     "outliers": [
      29.0
     ],
     "prices": [
-     75.0,
+     45.0,
+     149.99,
+     180.0,
      200.0,
-     219.99,
      250.0,
-     250.0,
-     275.0
+     250.0
     ],
     "query": "makita dhr242",
     "search": "makita boorhamer dhr242"
@@ -10647,13 +10687,42 @@
    "v": 10
   },
   "exact makita boorhamer hp2051|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact makita boorhamer hp2071|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
-   "est": null,
+   "at": "2026-11-18T12:59:56.851182+00:00",
+   "est": {
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 2,
+    "high": 90.0,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 65.0,
+      "title": "Makita HP2071F Klopboormachine met koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2464179744-makita-hp2071f-klopboormachine-met-koffer"
+     },
+     {
+      "kind": "bid",
+      "price": 85.0,
+      "title": "Makita HP2071 Klopboormachine - 2 snelheden",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465873317-makita-hp2071-klopboormachine-2-snelheden"
+     }
+    ],
+    "low": 60.0,
+    "median": 75.0,
+    "model": "HP2071",
+    "outliers": [],
+    "prices": [
+     65.0,
+     85.0
+    ],
+    "query": "makita hp2071",
+    "search": "makita boorhamer hp2071"
+   },
    "v": 10
   },
   "exact makita boorhamer hr2470ftp|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
@@ -11186,7 +11255,7 @@
    "v": 10
   },
   "exact makita bouwradio dmr102|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -11196,19 +11265,13 @@
    "v": 10
   },
   "exact makita bouwradio dmr110|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 3,
-    "high": 120.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 2,
+    "high": 127.5,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 75.0,
-      "title": "Makita bouwradio DMR110",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2464761675-makita-bouwradio-dmr110"
-     },
      {
       "kind": "fixed",
       "price": 90.0,
@@ -11222,12 +11285,11 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2449575887-nette-dmr110-makita-bouwradio-radio-dab"
      }
     ],
-    "low": 75.0,
-    "median": 90.0,
+    "low": 82.5,
+    "median": 105.0,
     "model": "DMR110",
     "outliers": [],
     "prices": [
-     75.0,
      90.0,
      120.0
     ],
@@ -11242,37 +11304,8 @@
    "v": 10
   },
   "exact makita bovenfrees rp1800f|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
-   "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 2,
-    "high": 262.5,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Makita RP1800F Bovenfrees met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2455170296-makita-rp1800f-bovenfrees-met-accessoires"
-     },
-     {
-      "kind": "bid",
-      "price": 250.0,
-      "title": "Makita RP1800F Bovenfrees - nette machine as 12 mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-freesmachines/m2457382177-makita-rp1800f-bovenfrees-nette-machine-as-12-mm"
-     }
-    ],
-    "low": 187.5,
-    "median": 225.0,
-    "model": "RP1800F",
-    "outliers": [],
-    "prices": [
-     200.0,
-     250.0
-    ],
-    "query": "makita rp1800f",
-    "search": "makita bovenfrees rp1800f"
-   },
+   "at": "2026-11-18T12:59:56.851182+00:00",
+   "est": null,
    "v": 10
   },
   "exact makita breekhamer hm001g|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
@@ -11779,13 +11812,19 @@
    "v": 10
   },
   "exact makita decoupeerzaag djv 182|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 5,
-    "high": 198.25,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 8,
+    "high": 172.49,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 99.99,
+      "title": "Makita DJV182 Decoupeerzaag | Ex Accu | Garantie",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456225911-makita-djv182-decoupeerzaag-ex-accu-garantie"
+     },
      {
       "kind": "fixed",
       "price": 100.0,
@@ -11793,16 +11832,28 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2464405734-makita-djv182-decoupeerzaag-18v-body"
      },
      {
-      "kind": "fixed",
-      "price": 119.99,
-      "title": "Makita DJV182 Decoupeerzaag | Ex Accu | Garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456225911-makita-djv182-decoupeerzaag-ex-accu-garantie"
+      "kind": "bid",
+      "price": 120.0,
+      "title": "Makita DJV182 accu-decoupeerzagen (18V)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2466833020-makita-djv182-accu-decoupeerzagen-18v"
      },
      {
       "kind": "bid",
       "price": 120.0,
       "title": "Makita DJV182 Decoupeerzaag - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2462760710-makita-djv182-decoupeerzaag-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "fixed",
+      "price": 130.0,
+      "title": "Makita DJV182Z Decoupeerzaag + 6.0Ah Accu | TOPDEAL!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2461595670-makita-djv182z-decoupeerzaag-6-0ah-accu-topdeal"
+     },
+     {
+      "kind": "fixed",
+      "price": 150.0,
+      "title": "Makita DJV182 18V Decoupeerzaag - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2467035460-makita-djv182-18v-decoupeerzaag-zo-goed-als-nieuw"
      },
      {
       "kind": "fixed",
@@ -11817,17 +11868,20 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2459700030-makita-djv182-accu-decoupeerzaag-zo-goed-als-nieuw"
      }
     ],
-    "low": 110.0,
-    "median": 120.0,
+    "low": 105.0,
+    "median": 125.0,
     "model": "DJV 182",
     "outliers": [
      5.0,
      7.5
     ],
     "prices": [
+     99.99,
      100.0,
-     119.99,
      120.0,
+     120.0,
+     130.0,
+     150.0,
      179.99,
      216.5
     ],
@@ -11842,11 +11896,11 @@
    "v": 10
   },
   "exact makita decoupeerzaag djv180|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 5,
-    "high": 105.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 7,
+    "high": 100.0,
     "kind": "exact",
     "listings": [
      {
@@ -11862,10 +11916,16 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2444558636-makita-djv180-decoupeerzaag"
      },
      {
-      "kind": "fixed",
-      "price": 89.99,
-      "title": "Makita DJV180ZJ Decoupeerzaag | Incl garantie",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2456140261-makita-djv180zj-decoupeerzaag-incl-garantie"
+      "kind": "bid",
+      "price": 90.0,
+      "title": "Makita DJV180 Decoupeerzaag - Nette gebruikte staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2466349690-makita-djv180-decoupeerzaag-nette-gebruikte-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DJV180 LXT Decoupeerzaag",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2467183319-makita-djv180-lxt-decoupeerzaag"
      },
      {
       "kind": "bid",
@@ -11874,14 +11934,20 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2460541865-makita-djv180-decoupeerzaag-18v-gebruikt"
      },
      {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DJV180 Accu Decoupeerzaag 18V - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2466422545-makita-djv180-accu-decoupeerzaag-18v-zo-goed-als-nieuw"
+     },
+     {
       "kind": "fixed",
       "price": 110.0,
       "title": "Makita DJV180 Decoupeerzaag - Origineel en Weinig Gebruikt",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2457805526-makita-djv180-decoupeerzaag-origineel-en-weinig-gebruikt"
      }
     ],
-    "low": 77.5,
-    "median": 89.99,
+    "low": 80.0,
+    "median": 100.0,
     "model": "DJV180",
     "outliers": [
      20.0,
@@ -11890,7 +11956,9 @@
     "prices": [
      75.0,
      80.0,
-     89.99,
+     90.0,
+     100.0,
+     100.0,
      100.0,
      110.0
     ],
@@ -12671,30 +12739,18 @@
    "v": 10
   },
   "exact makita haakse dda351|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact makita haakse dga452|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 4,
-    "high": 87.5,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 2,
+    "high": 92.5,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 49.99,
-      "title": "Makita DGA452 Haakse Slijper 18V - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458186405-makita-dga452-haakse-slijper-18v-gebruikt"
-     },
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Makita DGA452 18V Accu Haakse Slijper (Met 4Ah Accu)",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2465114086-makita-dga452-18v-accu-haakse-slijper-met-4ah-accu"
-     },
      {
       "kind": "fixed",
       "price": 79.99,
@@ -12708,13 +12764,11 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2433360884-makita-haakseslijper-dga452"
      }
     ],
-    "low": 54.99,
-    "median": 75.0,
+    "low": 77.49,
+    "median": 85.0,
     "model": "DGA452",
     "outliers": [],
     "prices": [
-     49.99,
-     70.0,
      79.99,
      90.0
     ],
@@ -12724,37 +12778,13 @@
    "v": 10
   },
   "exact makita haakse dga504|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 15,
-    "high": 200.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 10,
+    "high": 204.99,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 70.0,
-      "title": "Makita DGA504 slijpmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2459866529-makita-dga504-slijpmachine"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "Makita DGA504 Haakse Slijper 18V",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2463628772-makita-dga504-haakse-slijper-18v"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "Makita DGA504 18V LXT Brushless Haakse Slijper 125mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2463059404-makita-dga504-18v-lxt-brushless-haakse-slijper-125mm"
-     },
-     {
-      "kind": "fixed",
-      "price": 80.0,
-      "title": "Makita DGA504 slijpmachine 18v",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465954781-makita-dga504-slijpmachine-18v"
-     },
      {
       "kind": "fixed",
       "price": 100.0,
@@ -12769,15 +12799,21 @@
      },
      {
       "kind": "bid",
-      "price": 135.0,
-      "title": "Makita DGA504 Accu Haakse Slijper 18V met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2465471357-makita-dga504-accu-haakse-slijper-18v-met-accessoires"
+      "price": 130.0,
+      "title": "Makita DGA504 Accu Haakse Slijper 18V met 3.0Ah Accu",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2466850104-makita-dga504-accu-haakse-slijper-18v-met-3-0ah-accu"
      },
      {
       "kind": "fixed",
       "price": 139.99,
       "title": "Makita DGA504 Haakse Slijper + 18V 5.0Ah Accu - Nette Staat",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2458025082-makita-dga504-haakse-slijper-18v-5-0ah-accu-nette-staat"
+     },
+     {
+      "kind": "bid",
+      "price": 140.0,
+      "title": "Makita DGA504 Haakse Slijper 18V met Accu en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2467192409-makita-dga504-haakse-slijper-18v-met-accu-en-lader"
      },
      {
       "kind": "fixed",
@@ -12799,18 +12835,6 @@
      },
      {
       "kind": "bid",
-      "price": 200.0,
-      "title": "Makita DGA504 Haakse Slijper met Accu  en mbox",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2465532578-makita-dga504-haakse-slijper-met-accu-en-mbox"
-     },
-     {
-      "kind": "bid",
-      "price": 200.0,
-      "title": "Makita DGA504 Type 2 BL 2x 5AH accu Haakse Slijper",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2465286190-makita-dga504-type-2-bl-2x-5ah-accu-haakse-slijper"
-     },
-     {
-      "kind": "bid",
       "price": 219.99,
       "title": "Makita DGA504ZJ in M-box",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2441260421-makita-dga504zj-in-m-box"
@@ -12822,26 +12846,21 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2461690364-makita-dga504-haakse-slijper-18v-125-mm-5-0ah-accu-lad"
      }
     ],
-    "low": 80.0,
-    "median": 139.99,
+    "low": 125.0,
+    "median": 154.5,
     "model": "DGA504",
     "outliers": [
      30.0
     ],
     "prices": [
-     70.0,
-     75.0,
-     80.0,
-     80.0,
      100.0,
      110.0,
-     135.0,
+     130.0,
      139.99,
+     140.0,
      169.0,
      179.99,
      199.99,
-     200.0,
-     200.0,
      219.99,
      225.0
     ],
@@ -13044,39 +13063,8 @@
    "v": 10
   },
   "exact makita kitspuit dcg180|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
-   "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 2,
-    "high": 122.5,
-    "kind": "exact",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 110.0,
-      "title": "makita kitspuit. DCG180",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2435425192-makita-kitspuit-dcg180"
-     },
-     {
-      "kind": "bid",
-      "price": 120.0,
-      "title": "Makita DCG180 electrische kitspuit 18V zonder accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465679814-makita-dcg180-electrische-kitspuit-18v-zonder-accu"
-     }
-    ],
-    "low": 107.5,
-    "median": 115.0,
-    "model": "DCG180",
-    "outliers": [
-     10.0
-    ],
-    "prices": [
-     110.0,
-     120.0
-    ],
-    "query": "makita dcg180",
-    "search": "makita kitspuit dcg180"
-   },
+   "at": "2026-11-18T12:59:56.851182+00:00",
+   "est": null,
    "v": 10
   },
   "exact makita klopboormachine bhr200|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
@@ -13126,8 +13114,37 @@
    "v": 10
   },
   "exact makita lamellenfrees dpj180|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
-   "est": null,
+   "at": "2026-11-18T12:59:56.851182+00:00",
+   "est": {
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 2,
+    "high": 183.75,
+    "kind": "exact",
+    "listings": [
+     {
+      "kind": "bid",
+      "price": 165.0,
+      "title": "Makita DPJ180 Lamellenfrees - Zo goed als nieuw",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2467061058-makita-dpj180-lamellenfrees-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 180.0,
+      "title": "Makita DPJ180 18V Lamellenfrees in koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2467022223-makita-dpj180-18v-lamellenfrees-in-koffer"
+     }
+    ],
+    "low": 161.25,
+    "median": 172.5,
+    "model": "DPJ180",
+    "outliers": [],
+    "prices": [
+     165.0,
+     180.0
+    ],
+    "query": "makita dpj180",
+    "search": "makita lamellenfrees dpj180"
+   },
    "v": 10
   },
   "exact makita lf1000|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
@@ -13508,24 +13525,18 @@
    "v": 10
   },
   "exact makita schroefboormachine ddf 483|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact makita schroefboormachine ddf 484|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 9,
     "high": 150.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita DDF484 accu boor-schroef machine.",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2464606982-makita-ddf484-accu-boor-schroef-machine"
-     },
      {
       "kind": "bid",
       "price": 69.95,
@@ -13537,6 +13548,12 @@
       "price": 79.99,
       "title": "Makita DDF484 Schroefboormachine + 3AhAccu  | Nette staat",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2460420571-makita-ddf484-schroefboormachine-3ahaccu-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita DDF484 Boor-Schroefmachine 18V Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466901799-makita-ddf484-boor-schroefmachine-18v-body"
      },
      {
       "kind": "fixed",
@@ -13560,7 +13577,7 @@
       "kind": "bid",
       "price": 129.99,
       "title": "Makita DDF484 Boormachine Incl: 2Accu's 14.4v+Oplaadstation",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454251651-makita-ddf484-boormachine-incl-2accu-s-14-4v-oplaadstation"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466439730-makita-ddf484-boormachine-incl-2accu-s-14-4v-oplaadstation"
      },
      {
       "kind": "bid",
@@ -13575,14 +13592,14 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453422748-makita-ddf484-boor-schroefmachine-met-accu-en-lader"
      }
     ],
-    "low": 74.97,
+    "low": 80.0,
     "median": 115.0,
     "model": "DDF 484",
     "outliers": [],
     "prices": [
-     60.0,
      69.95,
      79.99,
+     80.0,
      95.0,
      115.0,
      115.0,
@@ -13596,13 +13613,19 @@
    "v": 10
   },
   "exact makita schroefboormachine ddf 487|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 2,
-    "high": 125.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 5,
+    "high": 147.5,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 85.0,
+      "title": "Makita DDF487 Brushless Accu Boormachine 18V – 6.0Ah",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466624874-makita-ddf487-brushless-accu-boormachine-18v-6-0ah"
+     },
      {
       "kind": "bid",
       "price": 100.0,
@@ -13614,15 +13637,30 @@
       "price": 120.0,
       "title": "Makita DDF487 Boor-/Schroefmachine met 2x 18V accu en lader",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2464764655-makita-ddf487-boor-schroefmachine-met-2x-18v-accu-en-lader"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Makita DDF487Z 18V LXT – Accuboormachine 13 mm  | TOPDEAL!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2461499385-makita-ddf487z-18v-lxt-accuboormachine-13-mm-topdeal"
+     },
+     {
+      "kind": "bid",
+      "price": 170.0,
+      "title": "Makita DDF487 Schroefmachine met Accu, Lader en Koffer",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466323157-makita-ddf487-schroefmachine-met-accu-lader-en-koffer"
      }
     ],
-    "low": 95.0,
-    "median": 110.0,
+    "low": 92.5,
+    "median": 120.0,
     "model": "DDF 487",
     "outliers": [],
     "prices": [
+     85.0,
      100.0,
-     120.0
+     120.0,
+     125.0,
+     170.0
     ],
     "query": "makita ddf 487",
     "search": "makita schroefboormachine ddf 487"
@@ -13664,24 +13702,18 @@
    "v": 10
   },
   "exact makita schroefboormachine ddf483|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact makita schroefboormachine ddf484|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 10,
-    "high": 169.25,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 11,
+    "high": 169.0,
     "kind": "exact",
     "listings": [
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "Makita DDF484 accu boor-schroef machine.",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2464606982-makita-ddf484-accu-boor-schroef-machine"
-     },
      {
       "kind": "bid",
       "price": 69.95,
@@ -13696,9 +13728,21 @@
      },
      {
       "kind": "fixed",
+      "price": 80.0,
+      "title": "Makita DDF484 Boor-Schroefmachine 18V Body",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466901799-makita-ddf484-boor-schroefmachine-18v-body"
+     },
+     {
+      "kind": "fixed",
       "price": 95.0,
       "title": "Makita boor,schroefmachine  DDF484 met accu",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465165477-makita-boor-schroefmachine-ddf484-met-accu"
+     },
+     {
+      "kind": "fixed",
+      "price": 95.0,
+      "title": "Makita DDF484 Boor- en Schroefmachine met Accu en Lader",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466327911-makita-ddf484-boor-en-schroefmachine-met-accu-en-lader"
      },
      {
       "kind": "bid",
@@ -13716,13 +13760,13 @@
       "kind": "bid",
       "price": 129.99,
       "title": "Makita DDF484 Boormachine Incl: 2Accu's 14.4v+Oplaadstation",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454251651-makita-ddf484-boormachine-incl-2accu-s-14-4v-oplaadstation"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466439730-makita-ddf484-boormachine-incl-2accu-s-14-4v-oplaadstation"
      },
      {
       "kind": "bid",
       "price": 169.0,
       "title": "Makita DDF484 18V Brushless accuboormachine set – 4.0Ah accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2465069860-makita-ddf484-18v-brushless-accuboormachine-set-4-0ah-accu"
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466670594-makita-ddf484-18v-brushless-accuboormachine-set-4-0ah-accu"
      },
      {
       "kind": "bid",
@@ -13737,14 +13781,15 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2453422748-makita-ddf484-boor-schroefmachine-met-accu-en-lader"
      }
     ],
-    "low": 77.48,
-    "median": 117.5,
+    "low": 80.0,
+    "median": 115.0,
     "model": "DDF484",
     "outliers": [],
     "prices": [
-     60.0,
      69.95,
      79.99,
+     80.0,
+     95.0,
      95.0,
      115.0,
      119.99,
@@ -13759,7 +13804,7 @@
    "v": 10
   },
   "exact makita schroefboormachine ddf740|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -13812,18 +13857,36 @@
    "v": 10
   },
   "exact makita slagmoersleutel dtw285|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 5,
-    "high": 225.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 8,
+    "high": 191.24,
     "kind": "exact",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 80.0,
+      "title": "Makita DTW285 Accu Slagmoersleutel 18V – 280 Nm",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2466886416-makita-dtw285-accu-slagmoersleutel-18v-280-nm"
+     },
      {
       "kind": "bid",
       "price": 85.0,
       "title": "Makita DTW285 18V LXT Slagmoersleutel – 1/2\"",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2463422508-makita-dtw285-18v-lxt-slagmoersleutel-1-2"
+     },
+     {
+      "kind": "bid",
+      "price": 100.0,
+      "title": "Makita DTW285 18V Slagmoersleutel (body)",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2466349202-makita-dtw285-18v-slagmoersleutel-body"
+     },
+     {
+      "kind": "fixed",
+      "price": 125.0,
+      "title": "Makita DTW285 Slagmoersleutel + 6.0Ah Accu | TOPDEAL!",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2461597303-makita-dtw285-slagmoersleutel-6-0ah-accu-topdeal"
      },
      {
       "kind": "bid",
@@ -13850,12 +13913,15 @@
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2443216436-makita-18v-slagmoersleutel-dtw285-mbox-doppenset-accu-s"
      }
     ],
-    "low": 117.5,
-    "median": 165.0,
+    "low": 88.75,
+    "median": 137.5,
     "model": "DTW285",
     "outliers": [],
     "prices": [
+     80.0,
      85.0,
+     100.0,
+     125.0,
      150.0,
      165.0,
      199.99,
@@ -14856,9 +14922,9 @@
    "v": 10
   },
   "exact milwaukee pijpensnijder m12 pcss|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 2,
     "high": 262.49,
     "kind": "exact",
@@ -14890,12 +14956,12 @@
    "v": 10
   },
   "exact milwaukee schroefmachine m12 bdd|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
   "exact milwaukee schroefmachine m12 bd|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -16826,11 +16892,6 @@
    "est": null,
    "v": 10
   },
-  "exact panasonic ey7410|": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
-  },
   "exact philips airfryer na352|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-11-10T12:36:29.568640+00:00",
    "est": {
@@ -17905,7 +17966,7 @@
    "v": 10
   },
   "exact samsung monitor curved s34c652uau|arm,baby,babyfoon,beeldschermarm,beugel,hartslag,houder,kabel,monitorarm,monitorbeugel,monitoring,monitorstandaard,standaard,televisie,tv": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -18065,11 +18126,6 @@
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
    "v": 10
-  },
-  "exact steelseries m750|": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
   },
   "exact stihl ada 100|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-09T12:49:34.022330+00:00",
@@ -22653,11 +22709,6 @@
    "est": null,
    "v": 10
   },
-  "exact thinkpad t14 g3|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
-  },
   "exact tm1423|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
@@ -22740,68 +22791,6 @@
    "at": "2026-11-16T12:42:14.903606+00:00",
    "est": null,
    "v": 10
-  },
-  "general accu haakse slijper multitool|": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 6,
-    "high": 103.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "Accu haakse slijper met 2 accu's",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2430294222-accu-haakse-slijper-met-2-accu-s"
-     },
-     {
-      "kind": "bid",
-      "price": 60.0,
-      "title": "NIEUW️ ❗️Accu Haakse Slijper 21V - 2x Sterke Accu's - 125mm",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2307833686-nieuw-accu-haakse-slijper-21v-2x-sterke-accu-s-125mm"
-     },
-     {
-      "kind": "bid",
-      "price": 90.0,
-      "title": "Lux-Tools Accu Haakse Slijper 20V met Accu en Schijven",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2448691318-lux-tools-accu-haakse-slijper-20v-met-accu-en-schijven"
-     },
-     {
-      "kind": "bid",
-      "price": 100.0,
-      "title": "Hofftech Haakse Slijper 100mm - Li-ion Accu",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2439209759-hofftech-haakse-slijper-100mm-li-ion-accu"
-     },
-     {
-      "kind": "fixed",
-      "price": 100.0,
-      "title": "Draadloze Elektrische Haakse Slijper Met 2 batterij €100,00",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-slijpmachines/m2426157097-draadloze-elektrische-haakse-slijper-met-2-batterij-100-00"
-     },
-     {
-      "kind": "fixed",
-      "price": 115.0,
-      "title": "Einhell Accu Haakse Slijper Set met Tas en Accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2428622711-einhell-accu-haakse-slijper-set-met-tas-en-accessoires"
-     }
-    ],
-    "low": 60.0,
-    "median": 95.0,
-    "model": null,
-    "outliers": [],
-    "prices": [
-     59.99,
-     60.0,
-     90.0,
-     100.0,
-     100.0,
-     115.0
-    ],
-    "query": "accu haakse slijper",
-    "search": "accu haakse slijper"
-   },
-   "v": 7
   },
   "general airfryer cecotec cecofry grill smokin|accessoire,accessoires,hulpstuk,onderdeel,onderdelen,opzetstuk": {
    "at": "2026-11-08T11:15:04.501449+00:00",
@@ -24867,7 +24856,7 @@
    "v": 10
   },
   "general dewalt laserstatief foedraal|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -25136,9 +25125,9 @@
    "v": 10
   },
   "general dewalt schroefboormachine accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 6,
     "high": 149.99,
     "kind": "general",
@@ -25164,6 +25153,12 @@
      {
       "kind": "fixed",
       "price": 149.99,
+      "title": "DeWalt DCD791NT Inc Accu 18v schroefboormachine |Nette staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2466448119-dewalt-dcd791nt-inc-accu-18v-schroefboormachine-nette-staat"
+     },
+     {
+      "kind": "fixed",
+      "price": 149.99,
       "title": "DeWalt DCD791 Schroefboormachine Inc Accu | Inc garantie",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2458654596-dewalt-dcd791-schroefboormachine-inc-accu-inc-garantie"
      },
@@ -25172,12 +25167,6 @@
       "price": 149.99,
       "title": "DeWalt DCD791 Schroefboormachine | Met accu en lader",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2451852505-dewalt-dcd791-schroefboormachine-met-accu-en-lader"
-     },
-     {
-      "kind": "fixed",
-      "price": 149.99,
-      "title": "DeWalt DCD791NT Inc Accu 18v schroefboormachine |Nette staat",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-boormachines/m2454260587-dewalt-dcd791nt-inc-accu-18v-schroefboormachine-nette-staat"
      }
     ],
     "low": 101.24,
@@ -25265,16 +25254,16 @@
    "v": 10
   },
   "general dewalt tafelzaag compressor atlas|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 6,
     "high": 531.25,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 325.0,
+      "price": 295.0,
       "title": "Dewalt Tafelzaag DW745-QS incl. onderstel",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-zaagmachines/m2464665226-dewalt-tafelzaag-dw745-qs-incl-onderstel"
      },
@@ -25309,14 +25298,14 @@
       "url": "https://www.marktplaats.nl/v/tuin-en-terras/hand-tuingereedschap/m2458218601-dewalt-d27107-tafelzaag-afkortzaag-combinatiezaag-305mm"
      }
     ],
-    "low": 377.5,
+    "low": 370.0,
     "median": 437.5,
     "model": null,
     "outliers": [
      1050.0
     ],
     "prices": [
-     325.0,
+     295.0,
      395.0,
      425.0,
      450.0,
@@ -25956,18 +25945,30 @@
    "v": 10
   },
   "general festool ctl stofzuiger midi slang|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 4,
-    "high": 600.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 5,
+    "high": 437.5,
     "kind": "general",
     "listings": [
+     {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "Festool Cleantec CTL Mini Stofzuiger",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2467006662-festool-cleantec-ctl-mini-stofzuiger"
+     },
      {
       "kind": "fixed",
       "price": 400.0,
       "title": "Festool CTL MIDI I Stofzuiger - Perfect voor elke klus!",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2460020362-festool-ctl-midi-i-stofzuiger-perfect-voor-elke-klus"
+     },
+     {
+      "kind": "bid",
+      "price": 400.0,
+      "title": "Festool CTL 26 E AC Stofzuiger met Autoclean",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466918046-festool-ctl-26-e-ac-stofzuiger-met-autoclean"
      },
      {
       "kind": "bid",
@@ -25980,42 +25981,49 @@
       "price": 450.0,
       "title": "Festool CTL MIDI Stofzuiger - Krachtige Mobiele Afzuiger",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2453920060-festool-ctl-midi-stofzuiger-krachtige-mobiele-afzuiger"
-     },
-     {
-      "kind": "bid",
-      "price": 650.0,
-      "title": "Festool Cleantec CTL MIDI I Stofzuiger met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2454767719-festool-cleantec-ctl-midi-i-stofzuiger-met-accessoires"
      }
     ],
-    "low": 406.25,
-    "median": 437.5,
+    "low": 290.0,
+    "median": 400.0,
     "model": null,
     "outliers": [],
     "prices": [
+     180.0,
+     400.0,
      400.0,
      425.0,
-     450.0,
-     650.0
+     450.0
     ],
-    "query": "festool ctl stofzuiger midi",
-    "search": "festool ctl stofzuiger midi"
+    "query": "festool ctl stofzuiger",
+    "search": "festool ctl stofzuiger"
    },
    "v": 10
   },
   "general festool ctl stofzuiger mini slang|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 7,
-    "high": 600.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 6,
+    "high": 355.0,
     "kind": "general",
     "listings": [
+     {
+      "kind": "bid",
+      "price": 125.0,
+      "title": "Festool CTL Mini stofzuiger met schuurmachine",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-overige-machines/m2467176511-festool-ctl-mini-stofzuiger-met-schuurmachine"
+     },
      {
       "kind": "bid",
       "price": 175.0,
       "title": "Festool CTL Mini Stofzuiger - Compact en Krachtig",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2452635276-festool-ctl-mini-stofzuiger-compact-en-krachtig"
+     },
+     {
+      "kind": "fixed",
+      "price": 180.0,
+      "title": "Festool Cleantec CTL Mini Stofzuiger",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2467006662-festool-cleantec-ctl-mini-stofzuiger"
      },
      {
       "kind": "bid",
@@ -26030,45 +26038,26 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2458031975-festool-ctl-mini-stofzuiger"
      },
      {
-      "kind": "bid",
-      "price": 425.0,
-      "title": "Festool CTL MIDI I Stofzuiger met accessoires",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2448103675-festool-ctl-midi-i-stofzuiger-met-accessoires"
-     },
-     {
-      "kind": "bid",
-      "price": 475.0,
-      "title": "Festool stofzuiger ctl 36",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2464339467-festool-stofzuiger-ctl-36"
-     },
-     {
-      "kind": "bid",
-      "price": 600.0,
-      "title": "Festool CTL 36 E AC Cleantec Professionele Stofzuiger",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2462949780-festool-ctl-36-e-ac-cleantec-professionele-stofzuiger"
-     },
-     {
-      "kind": "bid",
-      "price": 650.0,
-      "title": "Festool Cleantec CTL MIDI I Stofzuiger met accessoires",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/reinigingsmachines/m2454767719-festool-cleantec-ctl-midi-i-stofzuiger-met-accessoires"
+      "kind": "fixed",
+      "price": 369.99,
+      "title": "Festool CTL MINI I Stofzuiger | Nette Staat",
+      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-handgereedschap/m2466704891-festool-ctl-mini-i-stofzuiger-nette-staat"
      }
     ],
-    "low": 260.0,
-    "median": 425.0,
+    "low": 162.5,
+    "median": 220.0,
     "model": null,
     "outliers": [],
     "prices": [
+     125.0,
      175.0,
+     180.0,
      260.0,
      350.0,
-     425.0,
-     475.0,
-     600.0,
-     650.0
+     369.99
     ],
-    "query": "festool ctl stofzuiger",
-    "search": "festool ctl stofzuiger"
+    "query": "festool ctl stofzuiger mini",
+    "search": "festool ctl stofzuiger mini"
    },
    "v": 10
   },
@@ -26148,7 +26137,7 @@
    "v": 10
   },
   "general festool kunststoffen schroefboormachine accu|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -26304,219 +26293,6 @@
    "at": "2026-11-10T12:36:29.568640+00:00",
    "est": null,
    "v": 10
-  },
-  "general gaming pc pc specialist|behuizing,bureau,computertafel,cpu houder,game,games,hoes,houder,kabel,kast,koeler,licentie,muis,onderdeel,onderdelen,pc kast,software,standaard,stoel,stofkap,t b v,tafel,tafelblad,tas,toetsenbord,ventilator,voeding,werkplek": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 27,
-    "high": 1499.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 210.0,
-      "title": "Gaming PC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2459816471-gaming-pc"
-     },
-     {
-      "kind": "fixed",
-      "price": 290.0,
-      "title": "Gaming PC |i7-5960X | 32GB RAM | GTX 980 4GB | SSD-256GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1530519256-gaming-pc-i7-5960x-32gb-ram-gtx-980-4gb-ssd-256gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 339.95,
-      "title": "Gaming PC | GTX 1060 | Intel Core i7-6700",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1533176335-gaming-pc-gtx-1060-intel-core-i7-6700"
-     },
-     {
-      "kind": "bid",
-      "price": 349.0,
-      "title": "Gaming PC | Intel i7-8700K | GTX 970 4GB | 16GB | SSD | RGB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461005089-gaming-pc-intel-i7-8700k-gtx-970-4gb-16gb-ssd-rgb"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "Gaming PC met MSI GeForce GTX 1080 en RGB verlichting",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461009850-gaming-pc-met-msi-geforce-gtx-1080-en-rgb-verlichting"
-     },
-     {
-      "kind": "fixed",
-      "price": 499.95,
-      "title": "Gaming PC | RX 5600 XT | Ryzen 5 3600",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1533494072-gaming-pc-rx-5600-xt-ryzen-5-3600"
-     },
-     {
-      "kind": "fixed",
-      "price": 519.95,
-      "title": "Gaming PC | GTX 1070 Ti | Ryzen 5 3600",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1533454883-gaming-pc-gtx-1070-ti-ryzen-5-3600"
-     },
-     {
-      "kind": "bid",
-      "price": 550.0,
-      "title": "Gaming PC Intel I7/ 4.20 GHz/16GB/ 512GB SSD + 1TB HDD Win11",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2459528703-gaming-pc-intel-i7-4-20-ghz-16gb-512gb-ssd-1tb-hdd-win11"
-     },
-     {
-      "kind": "bid",
-      "price": 595.0,
-      "title": "Gaming PC | RTX 3060 12GB | i5-10400F | 16GB RAM | 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461355233-gaming-pc-rtx-3060-12gb-i5-10400f-16gb-ram-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 610.0,
-      "title": "Nice gaming pc",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/games-pc/m2461558596-nice-gaming-pc"
-     },
-     {
-      "kind": "fixed",
-      "price": 629.0,
-      "title": "Budget Gaming PC – Ryzen 5 5600G | 16GB DDR4 | 512GB SSD | W",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2440853542-budget-gaming-pc-ryzen-5-5600g-16gb-ddr4-512gb-ssd-w"
-     },
-     {
-      "kind": "bid",
-      "price": 650.0,
-      "title": "Gaming PC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2460570195-gaming-pc"
-     },
-     {
-      "kind": "bid",
-      "price": 675.0,
-      "title": "Gaming pc rtx 4060",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461543866-gaming-pc-rtx-4060"
-     },
-     {
-      "kind": "bid",
-      "price": 700.0,
-      "title": "Gaming PC 14900KS",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2460103952-gaming-pc-14900ks"
-     },
-     {
-      "kind": "bid",
-      "price": 850.0,
-      "title": "Witte RGB Gaming PC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2460774912-witte-rgb-gaming-pc"
-     },
-     {
-      "kind": "bid",
-      "price": 950.0,
-      "title": "Flowup x msi gaming pc | rtx5060 | ryzen 7 5700x | 32gb ram",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461459779-flowup-x-msi-gaming-pc-rtx5060-ryzen-7-5700x-32gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 999.0,
-      "title": "Omen Gaming PC RTX 3060 Ryzen 7 met MSI 165Hz scherm + PS4",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2458920659-omen-gaming-pc-rtx-3060-ryzen-7-met-msi-165hz-scherm-ps4"
-     },
-     {
-      "kind": "bid",
-      "price": 1000.0,
-      "title": "Gaming PC met werkende LED-verlichting",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461783470-gaming-pc-met-werkende-led-verlichting"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "Gaming PC - AMD Ryzen 7 5800X, RTX 4060 Ti, 32GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461451510-gaming-pc-amd-ryzen-7-5800x-rtx-4060-ti-32gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 1350.0,
-      "title": "Krachtige Gaming PC - Perfect Gaming",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2461330330-krachtige-gaming-pc-perfect-gaming"
-     },
-     {
-      "kind": "fixed",
-      "price": 1499.0,
-      "title": "Gaming PC Wit Ryzen 7 5700X, 32GB RAM, RTX 5060 ti, 1TB SSD",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/a1533200388-gaming-pc-wit-ryzen-7-5700x-32gb-ram-rtx-5060-ti-1tb-ssd"
-     },
-     {
-      "kind": "bid",
-      "price": 1500.0,
-      "title": "Gaming Pc",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2447512327-gaming-pc"
-     },
-     {
-      "kind": "bid",
-      "price": 2250.0,
-      "title": "gaming pc , R7 7800x3d / rx 9070xt gaming oc",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/desktop-pc-s/m2459987537-gaming-pc-r7-7800x3d-rx-9070xt-gaming-oc"
-     },
-     {
-      "kind": "bid",
-      "price": 2499.99,
-      "title": "Mini-ITX Gaming PC 9070XT, Ryzen 7 7800X3D, 32GB DDR5",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/games-pc/m2458807633-mini-itx-gaming-pc-9070xt-ryzen-7-7800x3d-32gb-ddr5"
-     },
-     {
-      "kind": "bid",
-      "price": 2600.0,
-      "title": "Gaming PC",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/games-pc/m2461780059-gaming-pc"
-     },
-     {
-      "kind": "bid",
-      "price": 2799.99,
-      "title": "High-End Gaming PC 9070XT, Ryzen 7 7800X3D, 32GB DDR5",
-      "url": "https://www.marktplaats.nl/v/spelcomputers-en-games/games-pc/m2461523389-high-end-gaming-pc-9070xt-ryzen-7-7800x3d-32gb-ddr5"
-     },
-     {
-      "kind": "bid",
-      "price": 2850.0,
-      "title": "High end gaming pc",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/moederborden/m2455140706-high-end-gaming-pc"
-     }
-    ],
-    "low": 519.95,
-    "median": 700.0,
-    "model": null,
-    "outliers": [
-     0.19,
-     120.0,
-     3900.0
-    ],
-    "prices": [
-     210.0,
-     290.0,
-     339.95,
-     349.0,
-     350.0,
-     499.95,
-     519.95,
-     550.0,
-     595.0,
-     610.0,
-     629.0,
-     650.0,
-     675.0,
-     700.0,
-     850.0,
-     950.0,
-     999.0,
-     1000.0,
-     1200.0,
-     1350.0,
-     1499.0,
-     1500.0,
-     2250.0,
-     2499.99,
-     2600.0,
-     2799.99,
-     2850.0
-    ],
-    "query": "gaming pc pc",
-    "search": "gaming pc pc"
-   },
-   "v": 7
   },
   "general goalzero yeti stroomgenerator|": {
    "at": "2026-11-18T09:33:58.781741+00:00",
@@ -29758,262 +29534,6 @@
    },
    "v": 10
   },
-  "general hyperx gaming headset|": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 53,
-    "high": 94.5,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 17.99,
-      "title": "HyperX Cloud Mini - Bedrade Gaming Headset - Voor Jonge",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/a1517411819-hyperx-cloud-mini-bedrade-gaming-headset-voor-jonge"
-     },
-     {
-      "kind": "bid",
-      "price": 19.0,
-      "title": "Gebruikte HyperX Cloud Alpha Gaming Headset - Zwart/Rood",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2456141524-gebruikte-hyperx-cloud-alpha-gaming-headset-zwart-rood"
-     },
-     {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "HyperX Gaming Headset met Microfoon - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2421536991-hyperx-gaming-headset-met-microfoon-gebruikt"
-     },
-     {
-      "kind": "fixed",
-      "price": 20.0,
-      "title": "HyperX Gaming Headset met doos",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2429581031-hyperx-gaming-headset-met-doos"
-     },
-     {
-      "kind": "fixed",
-      "price": 24.99,
-      "title": "HyperX Cloud In-Ear Gaming Headset - Nintendo Switch - Rood",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1485923961-hyperx-cloud-in-ear-gaming-headset-nintendo-switch-rood"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "HyperX Cloud Alpha Pro Bedrade Gaming Headset",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2457084357-hyperx-cloud-alpha-pro-bedrade-gaming-headset"
-     },
-     {
-      "kind": "fixed",
-      "price": 29.0,
-      "title": "HyperX Cloud II Gaming Headset",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2447436340-hyperx-cloud-ii-gaming-headset"
-     },
-     {
-      "kind": "fixed",
-      "price": 30.0,
-      "title": "HyperX Cloud II Gaming Headset (Zwart) – Compleet in Doos!",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2456242187-hyperx-cloud-ii-gaming-headset-zwart-compleet-in-doos"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "HyperX Gaming Headset - Gebruikt",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2423195993-hyperx-gaming-headset-gebruikt"
-     },
-     {
-      "kind": "fixed",
-      "price": 33.0,
-      "title": "Hyperx -  Cloud Jet Dual Draadloos Gaming-headset  - Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1524213010-hyperx-cloud-jet-dual-draadloos-gaming-headset-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 33.11,
-      "title": "HyperX Cloud Mini - Draadloze Gaming Headset - Voor Jonge Ga",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1528576507-hyperx-cloud-mini-draadloze-gaming-headset-voor-jonge-ga"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "HyperX Gaming Headset - Comfortabel met Surround Sound",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2455621759-hyperx-gaming-headset-comfortabel-met-surround-sound"
-     },
-     {
-      "kind": "bid",
-      "price": 39.99,
-      "title": "HyperX Koptelefoon – Gaming Headset",
-      "url": "https://www.marktplaats.nl/v/hobby-en-vrije-tijd/overige-hobby-en-vrije-tijd/m2456221218-hyperx-koptelefoon-gaming-headset"
-     },
-     {
-      "kind": "fixed",
-      "price": 39.99,
-      "title": "HyperX Cloud Alpha Pro Gaming Headset - PC - Zwart/Rood",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/a1526761432-hyperx-cloud-alpha-pro-gaming-headset-pc-zwart-rood"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "HyperX gaming headset",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2459378674-hyperx-gaming-headset"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.0,
-      "title": "HyperX Cloud II Gaming Headset - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2452729052-hyperx-cloud-ii-gaming-headset-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "HyperX Cloud II Gaming Headset - Zwart/Grijs",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2422135859-hyperx-cloud-ii-gaming-headset-zwart-grijs"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "HyperX Cloud II Gaming Headset - Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2442302300-hyperx-cloud-ii-gaming-headset-zwart"
-     },
-     {
-      "kind": "fixed",
-      "price": 40.99,
-      "title": "HyperX Cloud III Gaming Headset - PC, PS5, Xbox Series X|S -",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1506060320-hyperx-cloud-iii-gaming-headset-pc-ps5-xbox-series-x-s"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Hyperx cloud 2 gaming headset goede staat. Geen microfoon",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2428458102-hyperx-cloud-2-gaming-headset-goede-staat-geen-microfoon"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "HyperX CloudX Flight Wireless Gaming Headset voor Xbox / PC",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2442641752-hyperx-cloudx-flight-wireless-gaming-headset-voor-xbox-pc"
-     },
-     {
-      "kind": "fixed",
-      "price": 48.99,
-      "title": "HyperX Cloud Stinger Core Draadloze Gaming Headset -",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/a1485922580-hyperx-cloud-stinger-core-draadloze-gaming-headset"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HyperX Cloud Alpha Gaming Headset - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2460761052-hyperx-cloud-alpha-gaming-headset-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 50.0,
-      "title": "HyperX Cloud II Gaming headset",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/m2447503678-hyperx-cloud-ii-gaming-headset"
-     },
-     {
-      "kind": "fixed",
-      "price": 50.99,
-      "title": "Gaming Headset - PC, PS4, PS5, Xbox One & Xbox Series HyperX",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1528576559-gaming-headset-pc-ps4-ps5-xbox-one-xbox-series-hyperx"
-     },
-     {
-      "kind": "fixed",
-      "price": 52.99,
-      "title": "HyperX Cloud Alpha Pro Gaming Headset - PC - Zwart/Rood",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/a1482876617-hyperx-cloud-alpha-pro-gaming-headset-pc-zwart-rood"
-     },
-     {
-      "kind": "fixed",
-      "price": 59.99,
-      "title": "HyperX Cloud III Gaming Headset - PC, PS5, Xbox Series X|S -",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/a1532471405-hyperx-cloud-iii-gaming-headset-pc-ps5-xbox-series-x-s"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.0,
-      "title": "HyperX Cloud II Gaming Headset - Zwart/Grijs",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/koptelefoons/m2457250032-hyperx-cloud-ii-gaming-headset-zwart-grijs"
-     },
-     {
-      "kind": "fixed",
-      "price": 61.0,
-      "title": "HyperX Cloud III Wireless - Gaming Headset - 53mm drivers -",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/headsets/a1512558572-hyperx-cloud-iii-wireless-gaming-headset-53mm-drivers"
-     },
-     {
-      "kind": "fixed",
-      "price": 61.99,
-      "title": "HyperX Cloud Alpha Pro Gaming Headset - PC - Zwart/Rood",
-      "url": "https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/a1488374451-hyperx-cloud-alpha-pro-gaming-headset-pc-zwart-rood"
-     }
-    ],
-    "low": 39.99,
-    "median": 59.99,
-    "model": null,
-    "outliers": [
-     5.0,
-     225.0
-    ],
-    "prices": [
-     17.99,
-     19.0,
-     20.0,
-     20.0,
-     24.99,
-     25.0,
-     29.0,
-     30.0,
-     30.0,
-     33.0,
-     33.11,
-     35.0,
-     39.99,
-     39.99,
-     40.0,
-     40.0,
-     40.0,
-     40.0,
-     40.99,
-     45.0,
-     45.0,
-     48.99,
-     50.0,
-     50.0,
-     50.99,
-     52.99,
-     59.99,
-     60.0,
-     61.0,
-     61.99,
-     69.0,
-     69.95,
-     73.0,
-     74.0,
-     74.0,
-     79.9,
-     79.99,
-     87.99,
-     90.0,
-     93.0,
-     96.0,
-     99.0,
-     99.0,
-     99.95,
-     99.95,
-     99.99,
-     100.61,
-     103.0,
-     109.0,
-     144.95,
-     150.0,
-     161.0,
-     179.99
-    ],
-    "query": "hyperx gaming headset",
-    "search": "hyperx gaming headset"
-   },
-   "v": 7
-  },
   "general jura cool control melkkoeler|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
    "at": "2026-11-11T11:51:30.111505+00:00",
    "est": {
@@ -30866,11 +30386,11 @@
    "v": 10
   },
   "general karcher nat droogzuiger|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 15,
-    "high": 100.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 18,
+    "high": 85.0,
     "kind": "general",
     "listings": [
      {
@@ -30888,8 +30408,20 @@
      {
       "kind": "bid",
       "price": 30.0,
+      "title": "Kärcher WD 2 Nat- en Droogzuiger - Krachtig en Veelzijdig",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466847208-karcher-wd-2-nat-en-droogzuiger-krachtig-en-veelzijdig"
+     },
+     {
+      "kind": "bid",
+      "price": 30.0,
       "title": "Kärcher Nat- en Droogzuiger",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2465738202-karcher-nat-en-droogzuiger"
+     },
+     {
+      "kind": "fixed",
+      "price": 40.0,
+      "title": "Kärcher WD 2 Plus Nat- en Droogzuiger (1000W / 12L)",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466643488-karcher-wd-2-plus-nat-en-droogzuiger-1000w-12l"
      },
      {
       "kind": "fixed",
@@ -30899,15 +30431,15 @@
      },
      {
       "kind": "bid",
-      "price": 40.0,
-      "title": "Kärcher Nat- en droogzuiger WD 2 Plus - 1000W - 12L",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2464229724-karcher-nat-en-droogzuiger-wd-2-plus-1000w-12l"
+      "price": 43.5,
+      "title": "Kärcher WD 3 Premium Nat-/Droogzuiger",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2467016644-karcher-wd-3-premium-nat-droogzuiger"
      },
      {
-      "kind": "fixed",
-      "price": 49.0,
-      "title": "Kärcher WD 2 Nat- en Droogzuiger - Krachtige Alleszuiger",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2455425833-karcher-wd-2-nat-en-droogzuiger-krachtige-alleszuiger"
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Kärcher WD 2 Nat- en Droogzuiger met Accessoires",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466112122-karcher-wd-2-nat-en-droogzuiger-met-accessoires"
      },
      {
       "kind": "bid",
@@ -30924,8 +30456,8 @@
      {
       "kind": "bid",
       "price": 50.0,
-      "title": "Kärcher WD 5 Nat- en Droogzuiger (Geen zakken)",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2462380609-karcher-wd-5-nat-en-droogzuiger-geen-zakken"
+      "title": "Kärcher WD 6 P Premium nat- en droogzuiger",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466643821-karcher-wd-6-p-premium-nat-en-droogzuiger"
      },
      {
       "kind": "bid",
@@ -30941,7 +30473,7 @@
      },
      {
       "kind": "fixed",
-      "price": 100.0,
+      "price": 80.0,
       "title": "Kärcher WD 4 Nat- en Droogzuiger - Krachtige Alleszuiger",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2462947723-karcher-wd-4-nat-en-droogzuiger-krachtige-alleszuiger"
      },
@@ -30959,32 +30491,42 @@
      },
      {
       "kind": "fixed",
+      "price": 150.0,
+      "title": "Kärcher WD 6 P Premium nat-/droogzuiger 1.348-270.0",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2466603114-karcher-wd-6-p-premium-nat-droogzuiger-1-348-270-0"
+     },
+     {
+      "kind": "fixed",
       "price": 170.0,
       "title": "Kärcher WD 6 P S Nat-/Droogzuiger - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2461224249-karcher-wd-6-p-s-nat-droogzuiger-zo-goed-als-nieuw"
      }
     ],
-    "low": 40.0,
+    "low": 37.5,
     "median": 50.0,
     "model": null,
     "outliers": [
+     7.0,
      550.0
     ],
     "prices": [
      20.0,
      25.0,
      30.0,
+     30.0,
      40.0,
      40.0,
-     49.0,
+     43.5,
+     50.0,
      50.0,
      50.0,
      50.0,
      60.0,
      62.99,
-     100.0,
+     80.0,
      100.0,
      125.0,
+     150.0,
      170.0
     ],
     "query": "karcher nat droogzuiger",
@@ -32523,18 +32065,18 @@
    "v": 10
   },
   "general koffiemachine senseo keukengerief waaronder|bonen,capsule,capsules,cups,espressokopjes,filter,filters,koffiebonen,koffiekopjes,kopjes,mokken,onderdeel,onderdelen,ontkalker,ontkalkingsmiddel,reinigingstabletten,schotels,servies,t b v,waterfilter,waterfilters,waterpomp": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
     "count": 13,
-    "high": 47.5,
+    "high": 50.0,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
-      "price": 15.0,
-      "title": "Senseo koffiezetapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465601365-senseo-koffiezetapparaat"
+      "price": 12.0,
+      "title": "Senseo koffiezetapparaat te koop!",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467174012-senseo-koffiezetapparaat-te-koop"
      },
      {
       "kind": "bid",
@@ -32544,57 +32086,57 @@
      },
      {
       "kind": "bid",
-      "price": 25.0,
-      "title": "Te koop Senseo koffiezetapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2464372056-te-koop-senseo-koffiezetapparaat"
+      "price": 20.0,
+      "title": "Philips Senseo Koffiezetapparaat Rood",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2466415390-philips-senseo-koffiezetapparaat-rood"
      },
      {
       "kind": "bid",
       "price": 25.0,
-      "title": "Philips Senseo pad koffiezetapparaat, blauw",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465329702-philips-senseo-pad-koffiezetapparaat-blauw"
+      "title": "Senseo koffiezetapparaat - Gebruikt, in goede staat",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467191139-senseo-koffiezetapparaat-gebruikt-in-goede-staat"
      },
      {
       "kind": "bid",
       "price": 25.0,
-      "title": "Te koop Philios Senseo koffiezetapparaat,",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465090621-te-koop-philios-senseo-koffiezetapparaat"
+      "title": "Te koop Philips Senseo koffiezetapparaat,",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467054817-te-koop-philips-senseo-koffiezetapparaat"
      },
      {
-      "kind": "fixed",
+      "kind": "bid",
       "price": 30.0,
-      "title": "Philips Senseo koffiezetapparaat rood",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2464699678-philips-senseo-koffiezetapparaat-rood"
+      "title": "Senseo quadrant koffiezetapparaat / pads.",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2466618038-senseo-quadrant-koffiezetapparaat-pads"
      },
      {
       "kind": "bid",
-      "price": 39.5,
-      "title": "senseo koffieapparaat, Senseo, koffie apparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465368341-senseo-koffieapparaat-senseo-koffie-apparaat"
+      "price": 30.0,
+      "title": "Senseo RVS edition, Philips koffiezetapparaat, koffie",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467242096-senseo-rvs-edition-philips-koffiezetapparaat-koffie"
      },
      {
       "kind": "bid",
-      "price": 42.5,
+      "price": 30.0,
       "title": "Senseo koffiezetapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2463529830-senseo-koffiezetapparaat"
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2466357774-senseo-koffiezetapparaat"
      },
      {
       "kind": "bid",
       "price": 45.0,
-      "title": "Senseo Koffieapparaat",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465068737-senseo-koffieapparaat"
-     },
-     {
-      "kind": "bid",
-      "price": 45.0,
-      "title": "Philips Senseo Sarista koffiemachine",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2462896009-philips-senseo-sarista-koffiemachine"
+      "title": "Senseo Koffiezetapparaat Mintgroen met Melkopschuimer",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467210248-senseo-koffiezetapparaat-mintgroen-met-melkopschuimer"
      },
      {
       "kind": "bid",
       "price": 50.0,
       "title": "Philips Senseo Sarista Koffiemachine - Zo goed als nieuw",
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2464537781-philips-senseo-sarista-koffiemachine-zo-goed-als-nieuw"
+     },
+     {
+      "kind": "bid",
+      "price": 50.0,
+      "title": "Senseo Philips Koffiemachine met Melkopschuimer",
+      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2467065260-senseo-philips-koffiemachine-met-melkopschuimer"
      },
      {
       "kind": "fixed",
@@ -32609,21 +32151,21 @@
       "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/koffiezetapparaten/m2465312731-senseo-philips-koffiemachine-als-nieuw"
      }
     ],
-    "low": 25.0,
-    "median": 39.5,
+    "low": 22.5,
+    "median": 30.0,
     "model": null,
     "outliers": [],
     "prices": [
-     15.0,
+     12.0,
+     20.0,
      20.0,
      25.0,
      25.0,
-     25.0,
      30.0,
-     39.5,
-     42.5,
+     30.0,
+     30.0,
      45.0,
-     45.0,
+     50.0,
      50.0,
      50.0,
      60.0
@@ -32944,189 +32486,6 @@
    "at": "2026-11-16T12:42:14.903606+00:00",
    "est": null,
    "v": 10
-  },
-  "general laptop hp omen gaming|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 23,
-    "high": 1599.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 300.0,
-      "title": "HP Omen Gaming Laptop – Intel i7 / GTX 1050 Ti / 16GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2460644680-hp-omen-gaming-laptop-intel-i7-gtx-1050-ti-16gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "HP Omen Gaming Laptop - i7 8th Gen, GTX, 16GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2460469688-hp-omen-gaming-laptop-i7-8th-gen-gtx-16gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 449.0,
-      "title": "HP OMEN 15-dc1970nd Gaming Laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2453984710-hp-omen-15-dc1970nd-gaming-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 475.0,
-      "title": "HP Omen 17 inch Gaming Laptop - i7-6700HQ, 24 GB RAM, GTX 10",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2455276907-hp-omen-17-inch-gaming-laptop-i7-6700hq-24-gb-ram-gtx-10"
-     },
-     {
-      "kind": "bid",
-      "price": 475.0,
-      "title": "HP Omen 17-cb0700nd Gaming Laptop i7-9th Gen RTX 2070",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2459566090-hp-omen-17-cb0700nd-gaming-laptop-i7-9th-gen-rtx-2070"
-     },
-     {
-      "kind": "fixed",
-      "price": 500.0,
-      "title": "HP omen gaming laptop",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2442277476-hp-omen-gaming-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 545.0,
-      "title": "Dikke HP Omen Gaming Laptop Ryzen 7 4800H / GTX 2060",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2461197483-dikke-hp-omen-gaming-laptop-ryzen-7-4800h-gtx-2060"
-     },
-     {
-      "kind": "fixed",
-      "price": 550.0,
-      "title": "HP Omen 15 Gaming Laptop | 2T | i7-8750H | GTX 1070 | 32GB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2461413521-hp-omen-15-gaming-laptop-2t-i7-8750h-gtx-1070-32gb"
-     },
-     {
-      "kind": "fixed",
-      "price": 599.0,
-      "title": "HP OMEN 15ek RTX2060 GAMING LAPTOP",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2433222260-hp-omen-15ek-rtx2060-gaming-laptop"
-     },
-     {
-      "kind": "bid",
-      "price": 675.0,
-      "title": "HP Omen 16 Gaming Laptop - R7 6800H, RTX 3060, 32GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2452620774-hp-omen-16-gaming-laptop-r7-6800h-rtx-3060-32gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "HP Omen 16 Gaming Laptop RTX 3070 165Hz 2K 1TB DDR5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2457272463-hp-omen-16-gaming-laptop-rtx-3070-165hz-2k-1tb-ddr5"
-     },
-     {
-      "kind": "bid",
-      "price": 750.0,
-      "title": "HP Omen 16 Gaming Laptop - i7-11800H, RTX 3060, 16GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2421750466-hp-omen-16-gaming-laptop-i7-11800h-rtx-3060-16gb-ram"
-     },
-     {
-      "kind": "bid",
-      "price": 800.0,
-      "title": "HP OMEN Gaming Laptop – NVIDIA RTX 4060 | AMD Ryzen",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2458627876-hp-omen-gaming-laptop-nvidia-rtx-4060-amd-ryzen"
-     },
-     {
-      "kind": "bid",
-      "price": 970.0,
-      "title": "HP OMEN 16 Gaming Laptop | i7 | RTX 3070 Ti | 16GB | 165Hz",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2461171572-hp-omen-16-gaming-laptop-i7-rtx-3070-ti-16gb-165hz"
-     },
-     {
-      "kind": "bid",
-      "price": 1200.0,
-      "title": "HP Omen 17 inch Gaming Laptop - Ryzen 7, Nvidia RTX 4070",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2446606283-hp-omen-17-inch-gaming-laptop-ryzen-7-nvidia-rtx-4070"
-     },
-     {
-      "kind": "bid",
-      "price": 1299.0,
-      "title": "HP Gaming Omen Laptop i7-13700H Krachtige Gaming",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2461706033-hp-gaming-omen-laptop-i7-13700h-krachtige-gaming"
-     },
-     {
-      "kind": "bid",
-      "price": 1500.0,
-      "title": "HP 17 Omen Gaming Laptop RTX 5070 QHD 240Hz 32GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2456948720-hp-17-omen-gaming-laptop-rtx-5070-qhd-240hz-32gb-ram"
-     },
-     {
-      "kind": "fixed",
-      "price": 1599.0,
-      "title": "Hp - Omen Gaming Laptop 16-ap0068nd - 16 inch - Shadow Black",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1523765079-hp-omen-gaming-laptop-16-ap0068nd-16-inch-shadow-black"
-     },
-     {
-      "kind": "bid",
-      "price": 1650.0,
-      "title": "HP OMEN Gaming Laptop 17-db1660nd - RTX 5070, 32GB RAM",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2443777740-hp-omen-gaming-laptop-17-db1660nd-rtx-5070-32gb-ram"
-     },
-     {
-      "kind": "fixed",
-      "price": 1690.11,
-      "title": "HP Omen 16WF0042NB - Gaming Laptop - I7-13700HX - 32GB - 1TB",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1527381048-hp-omen-16wf0042nb-gaming-laptop-i7-13700hx-32gb-1tb"
-     },
-     {
-      "kind": "bid",
-      "price": 1899.0,
-      "title": "HP OMEN MAX 16-ah0872nd - Gaming Laptop - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/m2454894199-hp-omen-max-16-ah0872nd-gaming-laptop-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "fixed",
-      "price": 1927.0,
-      "title": "HP Omen X 17-ap010nd - Gaming Laptop - Intel Core i7 -",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1518783447-hp-omen-x-17-ap010nd-gaming-laptop-intel-core-i7"
-     },
-     {
-      "kind": "fixed",
-      "price": 1927.0,
-      "title": "Renewed - OMEN X by HP 17-ap010nd - Gaming Laptop - 17 Inch",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/windows-laptops/a1501262041-renewed-omen-x-by-hp-17-ap010nd-gaming-laptop-17-inch"
-     }
-    ],
-    "low": 500.0,
-    "median": 750.0,
-    "model": null,
-    "outliers": [
-     180.0
-    ],
-    "prices": [
-     300.0,
-     300.0,
-     449.0,
-     475.0,
-     475.0,
-     500.0,
-     545.0,
-     550.0,
-     599.0,
-     675.0,
-     750.0,
-     750.0,
-     800.0,
-     970.0,
-     1200.0,
-     1299.0,
-     1500.0,
-     1599.0,
-     1650.0,
-     1690.11,
-     1899.0,
-     1927.0,
-     1927.0
-    ],
-    "query": "laptop hp omen gaming",
-    "search": "laptop hp omen gaming"
-   },
-   "v": 7
   },
   "general laptop povag trolley|adapter,dock,docking,dockingstation,gelinieerd,hoes,kabel,koeler,lader,laptophoes,laptopkoeler,laptoplader,laptopstandaard,laptoptas,moleskine,oplader,sleeve,slot,standaard,tas": {
    "at": "2026-11-06T12:04:08.419040+00:00",
@@ -33759,11 +33118,6 @@
    },
    "v": 10
   },
-  "general makita accugereedschap 18v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": null,
-   "v": 7
-  },
   "general makita accugereedschap|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
    "at": "2026-11-15T11:55:31.814697+00:00",
    "est": null,
@@ -33963,7 +33317,7 @@
    "v": 10
   },
   "general makita accuset bestaande schroefboormachine|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -33973,11 +33327,11 @@
    "v": 10
   },
   "general makita bandschuurmachine 9402|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 10,
-    "high": 125.62,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 7,
+    "high": 100.0,
     "kind": "general",
     "listings": [
      {
@@ -33985,12 +33339,6 @@
       "price": 50.0,
       "title": "Makita 9401 bandschuurmachine (opknapper!)",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2454753163-makita-9401-bandschuurmachine-opknapper"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "Makita 9401 bandschuurmachine",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2465400108-makita-9401-bandschuurmachine"
      },
      {
       "kind": "bid",
@@ -34027,18 +33375,6 @@
       "price": 125.0,
       "title": "Makita/ Wolf bandschuurmachine 1040 Watt in goede staat",
       "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2463585444-makita-wolf-bandschuurmachine-1040-watt-in-goede-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 127.5,
-      "title": "Makita bandschuurmachine 9401 te koop",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2463104409-makita-bandschuurmachine-9401-te-koop"
-     },
-     {
-      "kind": "bid",
-      "price": 180.0,
-      "title": "Makita bandschuurmachine 220v",
-      "url": "https://www.marktplaats.nl/v/doe-het-zelf-en-verbouw/gereedschap-schuurmachines/m2444769747-makita-bandschuurmachine-220v"
      }
     ],
     "low": 75.0,
@@ -34048,14 +33384,11 @@
     "prices": [
      50.0,
      75.0,
-     75.0,
      85.0,
      90.0,
      90.0,
      100.0,
-     125.0,
-     127.5,
-     180.0
+     125.0
     ],
     "query": "makita bandschuurmachine",
     "search": "makita bandschuurmachine"
@@ -34905,7 +34238,7 @@
    "v": 10
   },
   "general makita incompleet bit borenkoffer|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -34970,7 +34303,7 @@
    "v": 10
   },
   "general makita kunststoffen volt accu 10 8v|diamantschijf,diamantschijven,foudraal,koolborstel,koolborstels,onderdeel,onderdelen,t b v,zaagblad,zaagbladen": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": null,
    "v": 10
   },
@@ -39136,91 +38469,6 @@
    "est": null,
    "v": 10
   },
-  "general robotstofzuiger irobot roomba dweilfunctie plus|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 9,
-    "high": 327.5,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 95.0,
-      "title": "iRobot Roomba Combo Essential Robotstofzuiger Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2435663963-irobot-roomba-combo-essential-robotstofzuiger-dweilfunctie"
-     },
-     {
-      "kind": "fixed",
-      "price": 139.99,
-      "title": "iRobot Roomba® 105 Combo - Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/a1528835037-irobot-roomba-105-combo-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "fixed",
-      "price": 200.0,
-      "title": "iRobot Roomba Combo Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2457380697-irobot-roomba-combo-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "bid",
-      "price": 210.0,
-      "title": "iRobot Roomba i8 Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2443233388-irobot-roomba-i8-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "bid",
-      "price": 275.0,
-      "title": "iRobot Roomba J7+ Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2421223279-irobot-roomba-j7-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "bid",
-      "price": 280.0,
-      "title": "iRobot Roomba Combo j5+ Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2461360240-irobot-roomba-combo-j5-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "iRobot Roomba i8 Robotstofzuiger met dweilfunctie en station",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2450013987-irobot-roomba-i8-robotstofzuiger-met-dweilfunctie-en-station"
-     },
-     {
-      "kind": "bid",
-      "price": 335.0,
-      "title": "iRobot Roomba Combo i8+ - Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2428801471-irobot-roomba-combo-i8-robotstofzuiger-met-dweilfunctie"
-     },
-     {
-      "kind": "bid",
-      "price": 350.0,
-      "title": "iRobot Roomba Combo j7+ Robotstofzuiger met Dweilfunctie",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2450838906-irobot-roomba-combo-j7-robotstofzuiger-met-dweilfunctie"
-     }
-    ],
-    "low": 170.0,
-    "median": 275.0,
-    "model": null,
-    "outliers": [
-     27.5
-    ],
-    "prices": [
-     95.0,
-     139.99,
-     200.0,
-     210.0,
-     275.0,
-     280.0,
-     320.0,
-     335.0,
-     350.0
-    ],
-    "query": "robotstofzuiger irobot roomba dweilfunctie",
-    "search": "robotstofzuiger irobot roomba dweilfunctie"
-   },
-   "v": 7
-  },
   "general robotstofzuiger robot oplaadbaar sweepin|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
    "at": "2026-11-17T13:19:59.965203+00:00",
    "est": {
@@ -39416,63 +38664,6 @@
    "at": "2026-11-08T11:15:04.501449+00:00",
    "est": null,
    "v": 10
-  },
-  "general roomba plus 405 combo|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 5,
-    "high": 300.0,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "fixed",
-      "price": 253.36,
-      "title": "iRobot Roomba Plus 405 - Robotstofzuiger - 7000 Pa",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/a1521616399-irobot-roomba-plus-405-robotstofzuiger-7000-pa"
-     },
-     {
-      "kind": "fixed",
-      "price": 265.95,
-      "title": "iRobot Roomba 505 Plus met AutoWash - Als nieuw, 70% korting",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/a1533286601-irobot-roomba-505-plus-met-autowash-als-nieuw-70-korting"
-     },
-     {
-      "kind": "fixed",
-      "price": 299.35,
-      "title": "iRobot Roomba 405 Combo Plus - Robotstofzuiger - 7000 Pa",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/a1515795416-irobot-roomba-405-combo-plus-robotstofzuiger-7000-pa"
-     },
-     {
-      "kind": "fixed",
-      "price": 300.0,
-      "title": "Roomba J9 plus zelflegende robotstofzuiger met wifi",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2434996021-roomba-j9-plus-zelflegende-robotstofzuiger-met-wifi"
-     },
-     {
-      "kind": "bid",
-      "price": 300.0,
-      "title": "iRobot Roomba Plus 400  Series – Zo goed als nieuw!",
-      "url": "https://www.marktplaats.nl/v/witgoed-en-apparatuur/stofzuigers/m2455279638-irobot-roomba-plus-400-series-zo-goed-als-nieuw"
-     }
-    ],
-    "low": 259.65,
-    "median": 299.35,
-    "model": null,
-    "outliers": [
-     450.0
-    ],
-    "prices": [
-     253.36,
-     265.95,
-     299.35,
-     300.0,
-     300.0
-    ],
-    "query": "roomba plus",
-    "search": "roomba plus"
-   },
-   "v": 7
   },
   "general roomba robot|accu,batterij,borstel,filter,houder,hulpstuk,lader,onderdeel,onderdelen,oplader,opzetstuk,standaard,wandhouder": {
    "at": "2026-11-16T12:42:14.903606+00:00",
@@ -40175,30 +39366,50 @@
    "v": 10
   },
   "general sonos one speaker|afstandsbediening,beamerlamp,beugel,doek,houder,kabel,lamp,onderdeel,onderdelen,overhead,overheadprojector,plafondbeugel,projectiedoek,projectiescherm,scherm,standaard,tas,wandbeugel": {
-   "at": "2026-11-15T11:55:31.814697+00:00",
+   "at": "2026-11-18T12:59:56.851182+00:00",
    "est": {
-    "as_of": "2026-11-15T11:55:31.814697+00:00",
-    "count": 5,
-    "high": 365.0,
+    "as_of": "2026-11-18T12:59:56.851182+00:00",
+    "count": 7,
+    "high": 340.0,
     "kind": "general",
     "listings": [
      {
       "kind": "bid",
+      "of": 2,
+      "price": 125.0,
+      "title": "2 Sonos One speakers - zeer goede staat",
+      "total": 250.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466743642-2-sonos-one-speakers-zeer-goede-staat"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
+      "price": 142.5,
+      "title": "2 Sonos One Gen 2 slimme speakers",
+      "total": 285.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466770577-2-sonos-one-gen-2-slimme-speakers"
+     },
+     {
+      "kind": "bid",
+      "price": 145.0,
+      "title": "Sonos One (Gen 2) slimme speaker - Zwart",
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466770703-sonos-one-gen-2-slimme-speaker-zwart"
+     },
+     {
+      "kind": "fixed",
+      "of": 2,
+      "price": 147.5,
+      "title": "2x Sonos One speakers – Wit",
+      "total": 295.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2467042189-2x-sonos-one-speakers-wit"
+     },
+     {
+      "kind": "bid",
+      "of": 2,
       "price": 150.0,
-      "title": "Sonos One Gen 2 Slimme Speaker - Zwart",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2466025098-sonos-one-gen-2-slimme-speaker-zwart"
-     },
-     {
-      "kind": "bid",
-      "price": 160.0,
-      "title": "Sonos One Speaker",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2452200168-sonos-one-speaker"
-     },
-     {
-      "kind": "bid",
-      "price": 320.0,
-      "title": "Sonos One (Gen 2) - Set van 2 slimme speakers",
-      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2461664409-sonos-one-gen-2-set-van-2-slimme-speakers"
+      "title": "Sonos One Speakerset - Zwart (2 stuks)",
+      "total": 300.0,
+      "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2465670747-sonos-one-speakerset-zwart-2-stuks"
      },
      {
       "kind": "bid",
@@ -40213,14 +39424,16 @@
       "url": "https://www.marktplaats.nl/v/audio-tv-en-foto/luidsprekers/m2446736636-sonos-one-speakers-met-muurbeugels"
      }
     ],
-    "low": 155.0,
-    "median": 320.0,
+    "low": 142.5,
+    "median": 147.5,
     "model": null,
     "outliers": [],
     "prices": [
+     125.0,
+     142.5,
+     145.0,
+     147.5,
      150.0,
-     160.0,
-     320.0,
      340.0,
      390.0
     ],
@@ -40799,143 +40012,6 @@
     "search": "sony koptelefoon draadloze"
    },
    "v": 10
-  },
-  "general steelseries apex 100 gaming toetsenbord|": {
-   "at": "2026-11-04T12:04:43.774326+00:00",
-   "est": {
-    "as_of": "2026-11-04T12:04:43.774326+00:00",
-    "count": 16,
-    "high": 74.75,
-    "kind": "general",
-    "listings": [
-     {
-      "kind": "bid",
-      "price": 15.0,
-      "title": "SteelSeries Apex 300 Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2459983851-steelseries-apex-300-gaming-toetsenbord"
-     },
-     {
-      "kind": "bid",
-      "price": 20.0,
-      "title": "SteelSeries Apex 3 TKL RGB Gaming Toetsenbord - QWERTZ",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2442619425-steelseries-apex-3-tkl-rgb-gaming-toetsenbord-qwertz"
-     },
-     {
-      "kind": "bid",
-      "price": 25.0,
-      "title": "SteelSeries Apex 100 - Qwerty Membraan Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2458696628-steelseries-apex-100-qwerty-membraan-gaming-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 25.0,
-      "title": "Steelseries Apex 3",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2451363832-steelseries-apex-3"
-     },
-     {
-      "kind": "bid",
-      "price": 30.0,
-      "title": "SteelSeries Apex 3 Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2445203720-steelseries-apex-3-gaming-toetsenbord"
-     },
-     {
-      "kind": "bid",
-      "price": 35.0,
-      "title": "SteelSeries Apex 7 Gaming Toetsenbord - QWERTY",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2452484850-steelseries-apex-7-gaming-toetsenbord-qwerty"
-     },
-     {
-      "kind": "bid",
-      "price": 37.5,
-      "title": "SteelSeries Apex 3 Gaming Toetsenbord - Zo goed als nieuw",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2442848339-steelseries-apex-3-gaming-toetsenbord-zo-goed-als-nieuw"
-     },
-     {
-      "kind": "bid",
-      "price": 40.0,
-      "title": "Steelseries Apex 5 Gaming Toetsenbord - Nette Staat",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2437498391-steelseries-apex-5-gaming-toetsenbord-nette-staat"
-     },
-     {
-      "kind": "bid",
-      "price": 57.5,
-      "title": "Steelseries Apex 5 Qwerty Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2423496478-steelseries-apex-5-qwerty-gaming-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 60.0,
-      "title": "Steelseries Apex 350 toetsenbord + Rival 100 muis",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2452672075-steelseries-apex-350-toetsenbord-rival-100-muis"
-     },
-     {
-      "kind": "fixed",
-      "price": 69.99,
-      "title": "SteelSeries Apex 5 Mechanisch Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2459552716-steelseries-apex-5-mechanisch-gaming-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 74.0,
-      "title": "Steelseries Apex 3",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/a1489058579-steelseries-apex-3"
-     },
-     {
-      "kind": "fixed",
-      "price": 75.0,
-      "title": "Steelseries Apex Pro V2 Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2456462052-steelseries-apex-pro-v2-gaming-toetsenbord"
-     },
-     {
-      "kind": "bid",
-      "price": 79.95,
-      "title": "SteelSeries Apex Pro TKL 2023 Gaming Toetsenbord QWERTY",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2448061874-steelseries-apex-pro-tkl-2023-gaming-toetsenbord-qwerty"
-     },
-     {
-      "kind": "bid",
-      "price": 80.0,
-      "title": "SteelSeries Apex 5 Gaming Toetsenbord",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/m2461258756-steelseries-apex-5-gaming-toetsenbord"
-     },
-     {
-      "kind": "fixed",
-      "price": 139.0,
-      "title": "Steelseries Apex 5",
-      "url": "https://www.marktplaats.nl/v/computers-en-software/toetsenborden/a1489058583-steelseries-apex-5"
-     }
-    ],
-    "low": 26.25,
-    "median": 48.75,
-    "model": null,
-    "outliers": [
-     5.0,
-     10.0,
-     202.0,
-     249.0
-    ],
-    "prices": [
-     15.0,
-     20.0,
-     25.0,
-     25.0,
-     30.0,
-     35.0,
-     37.5,
-     40.0,
-     57.5,
-     60.0,
-     69.99,
-     74.0,
-     75.0,
-     79.95,
-     80.0,
-     139.0
-    ],
-    "query": "steelseries apex",
-    "search": "steelseries apex"
-   },
-   "v": 7
   },
   "general stihl aandrijving overig bos|acculader,akkubox,deurkruk,draad,filter,generator,heftruck,hoes,kettingolie,kruk,lader,maaidraad,maaimes,messen,naaimachine,olie,onderdeel,onderdelen,raab,reachtruck,reinigingsmiddel,riem,rozet,slang,stroomgenerator,t b v,v riem,zaagketting,zeep": {
    "at": "2026-11-11T11:51:30.111505+00:00",
