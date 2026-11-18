@@ -1,7 +1,7 @@
 """Totals for the wealth overview: same sums as the dashboard's Finance tab."""
 from datetime import datetime, timezone
 
-from scanner.finance_summary import summarize
+from scanner.finance_summary import read_goals, summarize
 
 NOW = datetime(2026, 11, 3, tzinfo=timezone.utc)
 
@@ -30,3 +30,23 @@ def test_personal_item_sold_later_is_not_profit():
     data = {"items": [{"status": "sold", "paid": 57.6, "personal": True, "sales": [{"price": 50}]}]}
     s = summarize(data, NOW)
     assert s["earned"] == 0 and s["sales"] == 0 and s["saved"] == 0
+
+
+def test_by_month_and_capital(tmp_path):
+    data = {"items": [
+        {"status": "sold", "paid": 100, "sales": [{"price": 250, "date": "2026-11-16"}]},
+        {"status": "sold", "paid": 40, "sales": [{"price": 90}]},  # no date
+        {"status": "sold", "paid": 10, "sales": [{"price": 30, "date": "2026-10-02"}, ]},
+        {"status": "stock", "paid": 60, "sales": [{"price": 99, "date": "2026-11-17", "unpaid": True}]},
+        {"status": "stock", "paid": 200},
+        {"status": "stock", "paid": 500, "personal": True},
+        {"status": "sold", "paid": 5, "personal": True, "sales": [{"price": 50, "date": "2026-11-03"}]},
+    ]}
+    w = tmp_path / "watchlist.yml"
+    w.write_text("settings:\n  monthly_goal: 500  # note\n  capital_goal: 5000\nitems: []\n")
+    s = summarize(data, NOW, read_goals(str(w)))
+    assert s["byMonth"] == [{"month": "2026-10", "profit": 20, "soldFor": 30, "sales": 1},
+                           {"month": "2026-11", "profit": 150, "soldFor": 250, "sales": 1}]
+    assert s["undatedProfit"] == 50
+    assert s["capital"] == {"inStock": 200, "profit": 220, "have": 420, "goal": 5000, "monthlyGoal": 500}
+    assert "goal" not in summarize(data, NOW)["capital"]

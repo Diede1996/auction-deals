@@ -4,13 +4,17 @@ Same sums as the Finance tab of the dashboard (scanner/dashboard_private.js):
   earned  = what paid sales brought in minus what the sold part cost you
   saved   = new price minus cost, only on what you kept for yourself (a partly sold lot: the kept share)
   inStock = paid for what's still for sale
+  byMonth = profit of paid sales per calendar month (sales without a date go in undatedProfit)
+  capital = working capital as on the Finance tab: stock at cost + all profit, without personal items,
+            next to settings.capital_goal and settings.monthly_goal from watchlist.yml (optional third argument)
 
 A workflow in the private repository runs this after every change of data/stock.json and saves the result
 as data/summary.json; a daily scheduled task copies that small file into the wealth overview.
 
-    python -m scanner.finance_summary data/stock.json data/summary.json
+    python -m scanner.finance_summary data/stock.json data/summary.json [watchlist.yml]
 """
 import json
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -70,7 +74,55 @@ def _in_stock(it):
     return max(0.0, float(it.get("paid") or 0) - _cost_of_sold(it)) if _status(it) == "stock" else 0.0
 
 
-def summarize(data, now=None):
+def _by_month(items):
+    months, undated = {}, 0.0
+    for it in items:
+        if it.get("personal"):
+            continue
+        for s in _sales(it):
+            if s.get("unpaid"):
+                continue
+            price = float(s.get("price") or 0)
+            profit = price - _sale_cost(it, s)
+            day = str(s.get("date") or "")
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day):
+                undated += profit
+                continue
+            m = months.setdefault(day[:7], {"month": day[:7], "profit": 0.0, "soldFor": 0.0, "sales": 0})
+            m["profit"] += profit
+            m["soldFor"] += price
+            m["sales"] += 1
+    rows = [{**m, "profit": round(m["profit"], 2), "soldFor": round(m["soldFor"], 2)} for _, m in sorted(months.items())]
+    return rows, round(undated, 2)
+
+
+def _capital(items, settings):
+    stock = sum(_in_stock(it) for it in items if not it.get("personal"))
+    profit = sum(float(s.get("price") or 0) - _sale_cost(it, s)
+                 for it in items if not it.get("personal") for s in _sales(it) if not s.get("unpaid"))
+    out = {"inStock": round(stock, 2), "profit": round(profit, 2), "have": round(stock + profit, 2)}
+    for key, name in (("capital_goal", "goal"), ("monthly_goal", "monthlyGoal")):
+        if (settings or {}).get(key):
+            out[name] = float(settings[key])
+    return out
+
+
+def read_goals(path):
+    """capital_goal and monthly_goal from the settings block of watchlist.yml (no YAML library needed)"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return {}
+    out = {}
+    for key in ("capital_goal", "monthly_goal"):
+        m = re.search(r"^[ \t]+" + key + r":[ \t]*([0-9]+(?:\.[0-9]+)?)", text, re.M)
+        if m:
+            out[key] = float(m.group(1))
+    return out
+
+
+def summarize(data, now=None, settings=None):
     items = data.get("items") or []
     revenue = cost = waiting = 0.0
     sales_count = 0
@@ -88,6 +140,7 @@ def summarize(data, now=None):
     saved_items = [v for v in (_saved(it) for it in items) if v is not None]
     new_value = sum(v for v in (_kept_new_value(it) for it in items) if v is not None)
     r = lambda x: round(x, 2)  # noqa: E731
+    by_month, undated = _by_month(items)
     return {
         "updatedAt": (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "earned": r(revenue - cost),
@@ -109,6 +162,9 @@ def summarize(data, now=None):
         "keptItems": sorted(({"name": it.get("name") or "", "paid": r(_kept_new_value(it) - _saved(it)), "newValue": r(_kept_new_value(it))}
                              for it in items if _saved(it) is not None), key=lambda x: x["paid"] - x["newValue"]),
         "soldItems": sorted(_sold_rows(items), key=lambda x: x["cost"] - x["price"]),
+        "byMonth": by_month,
+        "undatedProfit": undated,
+        "capital": _capital(items, settings),
     }
 
 
@@ -124,8 +180,9 @@ def _sold_rows(items):
 
 def main(argv):
     src, dst = argv[1], argv[2]
+    settings = read_goals(argv[3]) if len(argv) > 3 else None
     with open(src, encoding="utf-8") as f:
-        summary = summarize(json.load(f))
+        summary = summarize(json.load(f), settings=settings)
     try:
         with open(dst, encoding="utf-8") as f:
             old = json.load(f)
