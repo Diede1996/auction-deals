@@ -97,3 +97,10 @@ def test_books_and_manuals_are_not_the_product():
     for t in ["Canon EOS 80D incl. doos en handleiding", "Samyang 14mm manual focus", "Lenovo ThinkPad notebook",
               "MacBook Air M1", "Nikon D7000 body"]:
         assert not printed_matter(t), t
+
+
+def test_bosch_professional_type_numbers():
+    from scanner.identify import model_code
+    assert model_code("Accu afkort- en verstekzaag (Bosch Professional) – GCM 18V-216 DC – BITURBO")[0] == "gcm 18v 216"
+    assert model_code("Boorhamer SDS-max (Bosch Professional) – GBH 7-45 DE – in koffer")[0] == "gbh 7 45"
+    assert model_code("Metaalafkortzaag (Bosch Professional) – GCO 14-24 J – 2400 W")[0] == "gco 14 24"

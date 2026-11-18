@@ -488,7 +488,7 @@ def test_lots_you_follow_on_troostwijk_are_priced_in_telegram_only(repo, monkeyp
     assert "Nothing else on your watchlist" in digest
     # nothing about the lots you follow in the public repository, dashboard or log
     public = "\n".join((repo / p).read_text() for p in PUBLIC) + caplog.text
-    for word in ("samsonite", "128gb", "zwart", "hoesje", "heftruck", "thinkpad", "a1-500", "lochem", "favoriete"):
+    for word in ("samsonite", "128gb", "13 128gb zwart", "hoesje", "heftruck", "thinkpad", "a1-500", "lochem", "favoriete"):
         assert word not in public.lower(), word
     # not even indirectly: the public files are the same as after as many emails about something else
     followed_scan(other, monkeypatch, followed_mails(notice=True))

@@ -110,31 +110,40 @@ def ask(client, text: str) -> dict | None:
 
 # ---------------------------------------------------------------- 2dehands for lots Marktplaats couldn't price
 
-def query_of(lot: dict) -> str | None:
-    """The bot's own search (brand + type number) for a lot with a known model."""
+def query_of(lot: dict, rough: bool = False) -> str | None:
+    """The bot's own search (brand + type number) for a lot with a known model; with `rough`, also its search
+    for a lot without one (only for favorites: Diede wants a price for every lot she starred)."""
     plan = lot.get("mpPlan") or {}
-    if plan.get("kind") != "exact" or not plan.get("model"):
+    if not rough and (plan.get("kind") != "exact" or not plan.get("model")):
         return None
     url = plan.get("search") or lot.get("mpSearch") or ""
     path = urlparse(url).path
     if "/q/" in path:
         return unquote_plus(path.split("/q/", 1)[1].strip("/")).strip() or None
     q = parse_qs(urlparse(url).query).get("query")
-    return q[0] if q else " ".join(x for x in (plan.get("brand"), plan.get("model")) if x)
+    return q[0] if q else (" ".join(x for x in (plan.get("brand"), plan.get("model")) if x) or None)
 
 
-def lots_for_2dehands(lots: list[dict], old: dict, now: datetime, limit: int = MAX_2DEHANDS) -> list[dict]:
+def lots_for_2dehands(lots: list[dict], old: dict, now: datetime, limit: int = MAX_2DEHANDS,
+                      favorites: set | None = None) -> list[dict]:
+    """Lots without a Marktplaats price to search on 2dehands: favorites first (also without a type number, and
+    again each day while they have no price), then lots with a known model that weren't searched before."""
+    favorites = favorites or set()
     out = []
     for lot in lots:
-        if lot.get("mp") or lot.get("item") in advice.SKIP_ITEMS or lot.get("key") in old:
+        if lot.get("mp") or lot.get("item") in advice.SKIP_ITEMS:
+            continue
+        fav = lot.get("key") in favorites
+        prev = old.get(lot.get("key"))
+        if prev and not (fav and prev.get("price") is None):
             continue
         closes = advice._closes(lot)
         if not closes or closes < now or closes > now + timedelta(hours=advice.WINDOW_HOURS):
             continue
-        if query_of(lot):
-            out.append((closes, lot))
-    out.sort(key=lambda t: t[0])
-    return [lot for _, lot in out[:limit]]
+        if query_of(lot, rough=fav):
+            out.append((not fav, closes, lot))
+    out.sort(key=lambda t: (t[0], t[1]))
+    return [lot for *_, lot in out[:limit]]
 
 
 def search_2dehands(http, query: str) -> list[dict]:
@@ -182,8 +191,9 @@ def judge(root: Path, private: Path, now: datetime, client, http=None) -> dict:
         from .http import Http
         http = Http(delay=4.0, jitter=3.0)
     done: dict = {}  # same search and title (ten identical lots): one search and one judgment
-    for lot in lots_for_2dehands(lots, old, now):
-        q = query_of(lot)
+    favs = advice.favorite_keys(data)
+    for lot in lots_for_2dehands(lots, old, now, favorites=favs):
+        q = query_of(lot, rough=lot.get("key") in favs)
         same = (q, lot.get("title"))
         if same in done:
             judgments[lot["key"]] = dict(judgments[done[same]])

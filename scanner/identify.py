@@ -657,10 +657,20 @@ _PRODUCT_LINES = {
 _VARIANTS = ("pro", "ultra", "plus", "max", "mini", "air", "omni", "heat", "complete", "lite", "slim", "combo")  # Milwaukee: "M18" alone is every tool, battery and case of the 18 V range
 
 
+# Bosch Professional series: the letters, then the voltage or power class and a number ("GCM 18V-216", "GWS 7-125")
+_BOSCH_SERIES = {"gab", "gal", "gas", "gba", "gbh", "gcb", "gcl", "gcm", "gde", "gdr", "gds", "gdx", "ghg", "gho", "gkf",
+                 "gkm", "gks", "gks", "gkt", "gli", "gll", "glm", "gml", "gmf", "gnh", "gof", "gop", "gpb", "gpl", "gro",
+                 "gsa", "gsb", "gsr", "gst", "gta", "gtb", "gts", "gvs", "gws", "gxc", "gcy", "gsh", "gwx", "gex",
+                 "gss", "gus", "gpo", "gdb", "gcg", "gmb", "gco"}
+
+
 def model_code(title: str) -> tuple[str, int] | None:
     """(model as written, token position), e.g. ("jr 3030t", 1) for "Makita JR 3030T reciprozaag"."""
     tokens = normalize(_INCH_RE.sub(lambda m: f" {m.group(1)}inch ", title or "")).split()  # 16” is a size
     cpu = _cpu_skip(tokens)
+    for i, tok in enumerate(tokens[:-2]):  # Bosch Professional: "GCM 18V-216 DC", "GBH 7-45 DE", "GSR 12V-35 HX"
+        if tok in _BOSCH_SERIES and re.fullmatch(r"\d{1,2}v?", tokens[i + 1]) and re.fullmatch(r"\d{2,3}", tokens[i + 2]):
+            return f"{tok} {tokens[i + 1]} {tokens[i + 2]}", i
     for i, tok in enumerate(tokens):
         prev = tokens[i - 1] if i else ""
         if (prev in _BRANDS or prev in _CATEGORY_OF) and i not in cpu and re.fullmatch(r"[a-z]\d{1,3}[a-z]?", tok) and tok not in _PLATFORMS:
@@ -967,6 +977,8 @@ def _plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | N
             written = parts[1]  # keyword "surface pro" + "Pro 1796" -> model "1796"
         squashed = written.replace(" ", "")
         brand = brand or brand_in(source, before=pos) or brand_in(lot.title)
+        if brand == "bosch professional" and written.split()[0] in _BOSCH_SERIES:
+            brand = "bosch"  # sellers mostly write "Bosch GCM 18V-216": "professional" would leave them out
         groups: list[tuple[str, ...]] = []
         prefix = brand
         if brand and (not distinctive(written) or len(squashed) < 8):

@@ -44,7 +44,7 @@ ADVICE_PATH = "data/claude-advice.json"
 SKIP_ITEMS = {"Wine", "Spirits", "Mixed lot"}
 WINDOW_HOURS = 24 * 7  # lots closing within a week (judged once, then reused while the listings stay the same)
 MAX_JUDGE = 40  # lots to judge per run (Diede's Pro limit)
-MAX_UNPRICED = 5  # favorites without Marktplaats listings: Claude runs a Price lookup for these
+MAX_UNPRICED = 10  # favorites without Marktplaats listings: Claude runs a Price lookup for these (5 until 18 Nov 2026)
 NEAR_MAX = 1.3  # "close to room to bid": the next bid is at most 30% above the max bid
 KEEP_DAYS = 3  # advice of closed lots stays this long
 MAX_LOOKUPS = 10  # Marktplaats searches per "Advice lookup" run
@@ -116,7 +116,7 @@ def candidates(data: dict, lots: list[dict], advice: dict, now: datetime,
             if prev and prev.get("asOf") == mp.get("asOf"):
                 continue  # judged before on the same listings: apply() reuses it with today's bid
             priced.append((not fav, closes, lot))
-        elif fav and not prev:
+        elif fav and (not prev or prev.get("price") is None):  # again while a favorite still has no price
             unpriced.append((closes, lot))
     priced.sort(key=lambda t: (t[0], t[1]))
     unpriced.sort(key=lambda t: t[0])

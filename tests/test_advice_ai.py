@@ -79,3 +79,17 @@ def test_query_of():
 def test_unknown_model_keeps_nothing():
     j = advice_ai.ask(Client([dict(J([0, 1]), modelKnown=False)]), "x")
     assert j["keep"] == [] and j["verdict"] == "twijfel"
+
+
+def test_favorites_without_price_go_to_2dehands_first_even_without_type_number():
+    from datetime import datetime, timezone
+    from scanner.advice_ai import lots_for_2dehands
+    now = datetime(2026, 11, 18, 9, tzinfo=timezone.utc)
+    rough = {"key": "bellauction:1", "closes": "2026-11-19T18:48:00+00:00", "title": "Accu tacker Bosch",
+             "mpPlan": {"kind": "general", "search": "https://www.marktplaats.nl/q/bosch+tacker/"}}
+    exact = {"key": "hnvi:2", "closes": "2026-11-18T18:00:00+00:00", "title": "Makita DHR243",
+             "mpPlan": {"kind": "exact", "model": "DHR243", "search": "https://www.marktplaats.nl/q/makita+dhr243/"}}
+    assert lots_for_2dehands([exact, rough], {}, now) == [exact]
+    assert lots_for_2dehands([exact, rough], {}, now, favorites={"bellauction:1"}) == [rough, exact]
+    old = {"bellauction:1": {"price": None}, "hnvi:2": {"price": None}}
+    assert lots_for_2dehands([exact, rough], old, now, favorites={"bellauction:1"}) == [rough]
