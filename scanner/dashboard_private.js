@@ -570,6 +570,7 @@
     var last = sales(it).map(function (s) { return s.date; }).filter(validDay).sort().pop();
     return el("div", { "data-label": "Sold for" },
       el("div", { "class": "strong num", text: sales(it).length ? money2(got) : "–" }),
+      sales(it).length && it.personal ? el("div", { "class": "small", text: "own item, no profit", title: "Your own thing sold off: not counted as resale profit" }) :
       sales(it).length ? el("div", { "class": "small " + (profit >= 0 ? "good" : "bad"), text: (profit >= 0 ? "+" : "−") + money2(Math.abs(profit)) + " profit" }) : null,
       last ? el("div", { "class": "small", text: showDay(last) }) : null);
   }
