@@ -357,7 +357,7 @@ def test_scan_includes_troostwijk_alert_lots(repo, monkeypatch):
     tw = [l for l in data["lots"] if l["site"] == "troostwijk"]
     assert [l["title"] for l in tw] == ["Apple iPhone 13 128GB via Troostwijk"]  # only watchlist matches
     assert tw[0]["premium"] == 0.18 and tw[0]["mp"]["count"] == 6 and tw[0]["maxBid"] > 0
-    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 3, "error": "", "private": True, "privateSaved": True} in data["sites"]
+    assert any({"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 3, "error": "", "private": True, "privateSaved": True}.items() <= s.items() for s in data["sites"])
     assert any(f["id"] == "troostwijk" for f in data["fees"])
 
 
@@ -390,7 +390,7 @@ def test_scan_with_forwarded_troostwijk_auction_alert(repo, monkeypatch):
     assert "0 with room to bid" in digest and "New from Troostwijk emails" in digest
     assert "HP Elite E241i Monitor (2x)</a>\n   bid up to <b>€" in digest and "closes Wed 7 Oct" in digest
     assert tw[0]["units"] == 2 and tw[0]["auction"].startswith("Faillissement Byldis")
-    assert {"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": "", "private": True, "privateSaved": True} in data["sites"]
+    assert any({"id": "troostwijk", "name": "Troostwijk", "ok": True, "lots": 9, "error": "", "private": True, "privateSaved": True}.items() <= s.items() for s in data["sites"])
 
 
 def test_digest_names_troostwijk_emails_without_lots(repo, monkeypatch):

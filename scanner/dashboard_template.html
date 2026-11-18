@@ -68,6 +68,18 @@ button, input, select { font: inherit; color: inherit; }
 .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); flex: none; }
 .chip.bad { background: var(--critical-bg); border-color: transparent; color: var(--critical-text); }
 .chip.bad .dot { background: var(--critical); }
+.chip.warn { background: var(--warning-bg); border-color: transparent; color: var(--warning-text); }
+.chip.warn .dot { background: var(--warning-text); }
+.health { margin-top: 10px; font-size: 13px; color: var(--text-2); }
+.health summary { cursor: pointer; width: fit-content; }
+.health summary.bad { color: var(--warning-text); font-weight: 600; }
+.health .htable { overflow-x: auto; margin-top: 8px; }
+.health table { border-collapse: collapse; min-width: 100%; }
+.health th, .health td { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.health td.num, .health th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.health td.msg { white-space: normal; min-width: 180px; }
+.health tr.bad td { color: var(--warning-text); }
+.health p { margin: 8px 0 0; }
 .banner {
   margin: 16px 0 0; padding: 10px 14px; border-radius: var(--radius);
   background: var(--warning-bg); color: var(--warning-text);
@@ -479,6 +491,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     <h1>Auction deals</h1>
     <p class="sub" id="sub"></p>
     <div class="sites lots-only" id="sites" aria-label="Sites checked in the last scan"></div>
+    <details class="health lots-only" id="health"><summary id="health-sum">Scan health</summary><div id="health-body"></div></details>
     <div id="banner" class="lots-only"></div>
   </div>
 </header>
@@ -734,15 +747,48 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var sites = document.getElementById("sites");
     sites.textContent = "";
     DATA.sites.forEach(function (s) {
-      sites.append(el("span", { "class": "chip" + (s.ok ? "" : " bad"), title: s.ok ? "" : (s.error || "") },
+      sites.append(el("span", { "class": "chip" + (s.ok ? (s.warn ? " warn" : "") : " bad"), title: s.ok ? (s.warn || "") : (s.error || "") },
         el("span", { "class": "dot", "aria-hidden": "true" }),
         s.ok ? s.name + " · " + s.lots + (s.id === "marktplaats" ? (s.lots === 1 ? " lookup" : " lookups") : (s.lots === 1 ? " lot" : " lots"))
              : (s.id === "marktplaats" ? "⚠ Marktplaats blocked today · saved prices shown" : "⚠ " + s.name + " failed")));
     });
+    renderHealth();
     var banner = document.getElementById("banner");
     banner.textContent = "";
     if (DATA.demo) banner.append(el("p", { "class": "banner", text: "Example data. Your own list appears here after the first daily scan." }));
     else if (ageH > 30) banner.append(el("p", { "class": "banner", text: "This list hasn't been updated for " + Math.round(ageH / 24) + " day(s). Check the Actions tab on GitHub to see why the daily scan didn't run." }));
+  }
+
+  /* Scan health (Diede, 18 Nov 2026): per site what the last scan read, and a warning when a site suddenly
+     gives far fewer lots or auctions than usual (the site may have changed). */
+  function renderHealth() {
+    var box = document.getElementById("health"), body = document.getElementById("health-body");
+    var rows = DATA.sites.filter(function (s) { return s.id !== "marktplaats"; });
+    if (!rows.length) { box.hidden = true; return; }
+    var bad = rows.filter(function (s) { return !s.ok || s.warn; });
+    var total = rows.reduce(function (n, s) { return n + (s.lots || 0); }, 0);
+    var sum = document.getElementById("health-sum");
+    sum.textContent = bad.length ? "⚠ Scan health: " + bad.length + (bad.length === 1 ? " site needs" : " sites need") + " a look"
+                                 : "✓ Scan health: all " + rows.length + " sites read · " + total.toLocaleString("en") + " lots";
+    sum.className = bad.length ? "bad" : "";
+    if (bad.length) box.open = true;
+    function n(v) { return v === undefined || v === null ? "–" : String(v); }
+    var tb = el("tbody");
+    rows.forEach(function (s) {
+      var auctions = s.id === "troostwijk" ? n(s.siteAuctions) : (s.auctions !== undefined ? n(s.auctionsRead) + " of " + n(s.auctions) : "–");
+      var lots = s.id === "troostwijk" && s.siteLots !== undefined
+        ? n(s.siteLots) + " site + " + n(s.mailLots || 0) + " email" : n(s.lots);
+      var msg = !s.ok ? "⚠ " + (s.error || "couldn't be read") : s.warn ? "⚠ " + s.warn
+        : (s.auctions && !s.auctionsRead && !s.lots ? "OK: no bankruptcy/closure auction right now" : "OK");
+      tb.append(el("tr", { "class": (!s.ok || s.warn) ? "bad" : "" },
+        el("td", { text: s.name }), el("td", { "class": "num", text: auctions }), el("td", { "class": "num", text: lots }),
+        el("td", { "class": "num", text: n(s.usual) }), el("td", { "class": "msg", text: msg })));
+    });
+    body.textContent = "";
+    body.append(el("div", { "class": "htable" }, el("table", {},
+      el("thead", {}, el("tr", {}, el("th", { text: "Site" }), el("th", { "class": "num", text: "Auctions read" }),
+        el("th", { "class": "num", text: "Lots" }), el("th", { "class": "num", text: "Usually" }), el("th", { text: "Status" }))), tb)),
+      el("p", { text: "Lots = every lot the scan read on that site, before the filters. Of these, only lots in your categories with room to bid end up in the list below. Auctions read = auctions of the kinds the bot reads (bankruptcy, closure, estate, …) of all running auctions; for Troostwijk all running auctions on its auction list (site) plus the lots from its alert emails. Usually = the median of the last scans." }));
   }
 
   function fillSelect(id, options, current) {

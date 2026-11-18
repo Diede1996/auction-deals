@@ -60,14 +60,61 @@ class Reader:
         return next_data(r.text)["props"]["pageProps"]
 
 
+def _auction_like(d) -> bool:
+    return isinstance(d, dict) and bool(d.get("urlSlug")) and ("collectionDays" in d or "minEndDate" in d
+                                                                or "endDate" in d)
+
+
+def find_auction_list(props: dict) -> tuple[list[dict], int | None]:
+    """The auctions on a /nl/auctions page and the total count. Old layout: listData + totalSize; since Nov 2026
+    the page moved its data (like auction pages did to auctionListing.initialPage), so look for the largest list
+    of auction-like objects anywhere in the page data, with a totalCount/totalSize next to it."""
+    items = props.get("listData")
+    if items:
+        return items, props.get("totalSize")
+    best: tuple[list[dict], int | None] = ([], None)
+
+    def walk(node, depth=0):
+        nonlocal best
+        if depth > 8:
+            return
+        if isinstance(node, dict):
+            for v in node.values():
+                if isinstance(v, list) and v and sum(_auction_like(x) for x in v) >= max(1, len(v) // 2):
+                    if len(v) > len(best[0]):
+                        total = node.get("totalCount") or node.get("totalSize") or node.get("total")
+                        best = ([x for x in v if _auction_like(x)], total if isinstance(total, int) else None)
+                else:
+                    walk(v, depth + 1)
+        elif isinstance(node, list):
+            for v in node[:60]:
+                walk(v, depth + 1)
+
+    walk(props)
+    return best
+
+
+def shape(node, depth=0) -> str:
+    """Only the structure (keys, list lengths) of page data, never its content: for the public log."""
+    if depth > 3:
+        return "…"
+    if isinstance(node, dict):
+        return "{" + ", ".join(f"{k}: {shape(v, depth + 1)}" for k, v in list(node.items())[:25]) + "}"
+    if isinstance(node, list):
+        return f"[{len(node)}× {shape(node[0], depth + 1) if node else ''}]"
+    return type(node).__name__
+
+
 def list_auctions(reader: Reader, max_pages: int) -> list[dict]:
     out: list[dict] = []
     for page in range(1, max_pages + 1):
         props = reader.props("/nl/auctions" + (f"?page={page}" if page > 1 else ""))
-        items = props.get("listData") or []
+        items, total = find_auction_list(props)
+        if page == 1 and not items:
+            log.warning("troostwijk: no auctions found on the auction list page; page structure: %s", shape(props))
         out.extend(items)
         size = props.get("pageSize") or len(items) or 48
-        if not items or page * size >= (props.get("totalSize") or 0):
+        if not items or page * size >= (total or 0):
             break
     return out
 
@@ -152,7 +199,12 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
     now = ctx.now
 
     auctions = []
-    for a in list_auctions(reader, int(s.get("list_pages", 15))):
+    listed = list_auctions(reader, int(s.get("list_pages", 15)))
+    ctx.auctions_seen = len(listed)  # for the scan health: 0 means the auction list couldn't be read
+    if listed and not any(countries_of(a) & countries for a in listed):
+        log.warning("troostwijk: %d auctions listed but none with a pickup in %s; auction structure: %s",
+                    len(listed), "/".join(sorted(countries)), shape(listed[0]))
+    for a in listed:
         if a.get("biddingStatus") not in (None, "BIDDING_OPEN") or not (countries_of(a) & countries):
             continue
         auction = parse_auction(a)
@@ -165,6 +217,7 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
         elif not ctx.wants(auction, special):
             continue
         auctions.append((a, auction))
+    ctx.auctions_read = len(auctions)
     # closing soonest first: their bids matter most, and new auctions are read before they close
     auctions.sort(key=lambda p: p[1].closes_at or now + timedelta(days=365))
     running = {auction.auction_id for _, auction in auctions}
@@ -208,6 +261,6 @@ def fetch_lots(ctx: SiteContext, session=None) -> list[Lot]:
             lot = to_lot(rec, auction.title, regular)
             lot.location = lot.location or town or None
             lots.append(lot)
-    log.info("troostwijk: %d auctions in %s, %d read now (%d pages), %d left for the next scan, %d watchlist lots",
-             len(auctions), "/".join(sorted(countries)), read, reader.pages, skipped, len(lots))
+    log.info("troostwijk: %d auctions listed, %d in %s, %d read now (%d pages), %d left for the next scan, %d watchlist lots",
+             len(listed), len(auctions), "/".join(sorted(countries)), read, reader.pages, skipped, len(lots))
     return lots

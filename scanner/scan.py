@@ -12,7 +12,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from . import dashboard
+from . import scan_health, dashboard
 from .evaluate import Fees, Settings, Verdict, evaluate, lot_rates, market_value
 from .favorites import FavoritesStore, closing_between
 from .geo import DrivingCosts, TripPlanner, fuel_price
@@ -157,7 +157,9 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
         h.update(ok=True, lots=len(found), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
         report[site] = {"ok": True, "lots": len(found)}
         ctx = jobs[site][1]
-        if ctx.auctions_seen:  # 0 lots is fine when the site listed auctions but none of the kind we read
+        if site == "troostwijk":  # its own pages; the alert emails are added later (siteLots vs mailLots)
+            report[site].update(siteAuctions=ctx.auctions_seen, siteLots=len(found))
+        elif ctx.auctions_seen:  # 0 lots is fine when the site listed auctions but none of the kind we read
             report[site].update(auctions=ctx.auctions_seen, auctionsRead=ctx.auctions_read)
         log.info("%s: %d lots", site, len(found))
         lots.extend(found)
@@ -615,7 +617,8 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         })
     sites = [{"id": s, "name": SITE_NAMES.get(s, s), "ok": r.get("ok", False), "lots": r.get("lots", 0),
               "error": r.get("error", ""),
-              **{k: r[k] for k in ("auctions", "auctionsRead") if k in r}} for s, r in report.items()]
+              **{k: r[k] for k in ("auctions", "auctionsRead", "siteAuctions", "siteLots", "mailLots") if k in r}}
+             for s, r in report.items()]
     site_cfg = config.get("sites") or {}
     notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
              "troostwijk": "an estimate: Troostwijk sets it per auction, check the lot page",
@@ -758,7 +761,8 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
             lots.extend(extra)
             site = report.get("troostwijk") or {}
             report["troostwijk"] = {"ok": True, "lots": (site.get("lots", 0) if site.get("ok") else 0) + len(extra),
-                                    "via": "site + email" if site.get("ok") else "email"}
+                                    "via": "site + email" if site.get("ok") else "email", "mailLots": len(extra),
+                                    **{k: site[k] for k in ("siteAuctions", "siteLots") if k in site}}
             if site and not site.get("ok"):  # the auction pages failed today: say so, the emails still came in
                 report["troostwijk"]["error"] = "auction pages: " + (site.get("error") or "")[:150]
             h.update(ok=True, lots=len(mail_lots), fails=0, error="", at=now.isoformat(), last_ok=now.isoformat())
@@ -1030,6 +1034,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
                 site["privateSaved"] = saved
         log.info("%d Troostwijk lots %s", len(private_lots),
                  "saved in the private repository" if saved else "kept out of the public dashboard (Telegram only)")
+    scan_health.annotate(data["sites"], state, now, record=not only and not dry_run)
     dashboard.write(root / "site", data)
     save_json(root / "data" / "lots.json", data)
     public_rows = [r for r in rows if r[1].site not in PRIVATE_SITES]

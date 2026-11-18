@@ -65,6 +65,12 @@ def check_lots(lots: dict, now: datetime) -> list[str]:
         out.append(f"The daily scan hasn't saved new lots for {_ago(age) if age is not None else 'a long time'}.")
     for s in lots.get("sites") or []:
         name = s.get("name") or s.get("id")
+        if "warn" in s:  # the scan judged it against the usual counts (scanner/scan_health.py)
+            if s["warn"]:
+                out.append(f"{name}: {s['warn']}.")
+            elif s.get("private") and s.get("privateSaved") is False:
+                out.append(f"{name}: lots couldn't be saved to the private repository.")
+            continue
         if not s.get("ok"):
             out.append(f"{name}: couldn't be read in the last scan ({(s.get('error') or 'no reason given')[:120]}).")
         elif not s.get("lots") and s.get("auctions") and not s.get("auctionsRead"):
