@@ -1261,9 +1261,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     return new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" }).format(d).replace(",", "");
   }
 
-  function sortRows(rows) {
+  function sortBy() {
     var far = 8.64e15;
-    var by = {
+    return {
       closing: function (a, b) { return closesAt(a.lot, far) - closesAt(b.lot, far); },
       headroom: function (a, b) { return b.c.headroom - a.c.headroom; },
       "return": function (a, b) { return (b.c.returnNow != null ? b.c.returnNow : -far) - (a.c.returnNow != null ? a.c.returnNow : -far); },
@@ -1271,6 +1271,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       distance: function (a, b) { return (a.lot.trip ? a.lot.trip.km : far) - (b.lot.trip ? b.lot.trip.km : far); },
       "new": function (a, b) { return String(b.lot.firstSeen || "").localeCompare(String(a.lot.firstSeen || "")); }
     }[ui.sort] || function () { return 0; };
+  }
+  function sortRows(rows) {
+    var by = sortBy();
     /* lots that are new since the last scan always come first */
     return rows.sort(function (a, b) { return (b.lot.isNew ? 1 : 0) - (a.lot.isNew ? 1 : 0) || by(a, b); });
   }
@@ -1443,7 +1446,13 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       var far = 8.64e15;
       var list = favKeys.map(function (k) { return byKey[k] || { gone: favs[k] }; });
       var when = function (x) { var t = x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : far) : closesAt(x.lot, far); return t < Date.now() ? far + t : t; };  /* closing soonest first, closed ones last */
-      list.sort(function (a, b) { return when(a) - when(b); });
+      /* closed/gone favorites always last; open ones follow the chosen "Sort by" (default closing soonest) */
+      var favBy = ui.sort && ui.sort !== "closing" ? sortBy() : null;
+      list.sort(function (a, b) {
+        var ca = a.gone || when(a) >= far, cb = b.gone || when(b) >= far;
+        if (favBy && !ca && !cb) return favBy(a, b) || when(a) - when(b);
+        return when(a) - when(b);
+      });
       var nowT = Date.now(), counts = { "": list.length };
       list.forEach(function (x) {
         x._when = whenOf(x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : null) : (x.lot.closes ? Date.parse(x.lot.closes) : null), nowT);
