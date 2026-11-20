@@ -27,6 +27,7 @@ class SiteContext:
     favorite_auctions: set = field(default_factory=set)  # names of auctions with a favorite lot: always read
     auctions_seen: int = 0  # running auctions this site listed (counted by wants)
     auctions_read: int = 0  # of those, the ones whose lots were read
+    skipped: list = field(default_factory=list)  # names of the auctions not read (shown in Scan health, to check by eye)
 
     def wants(self, auction, special: bool) -> bool:
         """Read this auction? Yes when it's a bankruptcy, closure, estate, Domeinen or IT auction (`special`), and
@@ -37,6 +38,7 @@ class SiteContext:
             self.auctions_read += 1
             return True
         if not self.all_auctions or (self.max_regular and len(self.regular) >= self.max_regular):
+            self.skipped.append(" ".join(auction.title.split())[:80])
             return False
         self.regular.add(auction.title)
         self.auctions_read += 1

@@ -29,6 +29,8 @@ def run(conclusion, h):
 def test_runs():
     ok = {"scan.yml": [run("success", 10)], "deals.yml": [run("success", 1)], "commands.yml": [run("success", 1)]}
     assert health.check_runs(ok, NOW) == []
+    # GitHub starts the bargains workflow only 2-3 times a day: 17 h without a run isn't an alarm (19 Nov 2026)
+    assert health.check_runs(dict(ok, **{"deals.yml": [run("success", 17)]}), NOW) == []
     bad = dict(ok, **{"deals.yml": [run("failure", 0.5), run("failure", 1), run("success", 2)],
                       "scan.yml": [run("success", 40)]})
     p = health.check_runs(bad, NOW)

@@ -23,7 +23,6 @@ import requests
 from . import private_repo
 from .storage import load_json, load_yaml
 from .telegram import Telegram, esc
-from .util import AMS
 
 log = logging.getLogger(__name__)
 API = "https://api.github.com"
@@ -31,7 +30,9 @@ API = "https://api.github.com"
 # workflow file -> (name, hours without a successful run before it counts as stuck)
 WORKFLOWS = {
     "scan.yml": ("Daily scan", 36),
-    "deals.yml": ("Marktplaats bargains", 6),
+    # Scheduled twice an hour, but GitHub only starts it 2-3 times a day (gaps up to ~17 h, Nov 2026) until the
+    # external wake-up (cron-job.org) is set up; 6 h gave a false "not working" alarm on 19 Nov.
+    "deals.yml": ("Marktplaats bargains", 20),
     "commands.yml": ("Telegram commands and closing reminders", 12),
 }
 # private file -> (what it is, hours before it's old)
@@ -85,11 +86,8 @@ def check_lots(lots: dict, now: datetime) -> list[str]:
 def check_runs(runs_by_file: dict[str, list], now: datetime) -> list[str]:
     """runs_by_file: the newest scheduled/dispatched runs per workflow file (GitHub API 'workflow_runs')."""
     out = []
-    hour_nl = now.astimezone(AMS).hour
     for f, (name, max_h) in WORKFLOWS.items():
         runs = [r for r in runs_by_file.get(f) or [] if r.get("status") == "completed"]
-        if f == "deals.yml" and not 9 <= hour_nl <= 23:
-            max_h = 14  # it doesn't run at night
         ok = [r for r in runs if r.get("conclusion") == "success"]
         age = _age_h(ok[0].get("updated_at") if ok else None, now)
         if age is None or age > max_h:

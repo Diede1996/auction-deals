@@ -70,6 +70,8 @@ button, input, select { font: inherit; color: inherit; }
 .chip.bad .dot { background: var(--critical); }
 .chip.warn { background: var(--warning-bg); border-color: transparent; color: var(--warning-text); }
 .chip.warn .dot { background: var(--warning-text); }
+.chip.idle { border-style: dashed; color: var(--text-3); }
+.chip.idle .dot { background: transparent; border: 1.5px solid var(--text-3); width: 6px; height: 6px; }
 .health { margin-top: 10px; font-size: 13px; color: var(--text-2); }
 .health summary { cursor: pointer; width: fit-content; }
 .health summary.bad { color: var(--warning-text); font-weight: 600; }
@@ -747,10 +749,16 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var sites = document.getElementById("sites");
     sites.textContent = "";
     DATA.sites.forEach(function (s) {
-      sites.append(el("span", { "class": "chip" + (s.ok ? (s.warn ? " warn" : "") : " bad"), title: s.ok ? (s.warn || "") : (s.error || "") },
+      /* Green only when the site gave lots; grey when it was read but had no bankruptcy/closure auction to read
+         (Diede, 20 Nov 2026: three green chips with 0 lots didn't tell whether all went well). */
+      var idle = s.ok && !s.warn && !s.lots && s.id !== "marktplaats";
+      sites.append(el("span", { "class": "chip" + (s.ok ? (s.warn ? " warn" : idle ? " idle" : "") : " bad"),
+          title: s.ok ? (s.warn || (idle ? (s.auctions ? s.auctions + " auctions online, none bankruptcy/closure/estate: nothing to read" : "0 lots") : "")) : (s.error || "") },
         el("span", { "class": "dot", "aria-hidden": "true" }),
-        s.ok ? s.name + " · " + s.lots + (s.id === "marktplaats" ? (s.lots === 1 ? " lookup" : " lookups") : (s.lots === 1 ? " lot" : " lots"))
-             : (s.id === "marktplaats" ? "⚠ Marktplaats blocked today · saved prices shown" : "⚠ " + s.name + " failed")));
+        !s.ok ? (s.id === "marktplaats" ? "⚠ Marktplaats blocked today · saved prices shown" : "⚠ " + s.name + " failed")
+          : s.warn ? "⚠ " + s.name + " · " + s.lots + (s.lots === 1 ? " lot" : " lots")
+          : idle && s.auctions ? s.name + " · no bankruptcy auction"
+          : s.name + " · " + s.lots + (s.id === "marktplaats" ? (s.lots === 1 ? " lookup" : " lookups") : (s.lots === 1 ? " lot" : " lots"))));
     });
     renderHealth();
     var banner = document.getElementById("banner");
@@ -768,8 +776,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var bad = rows.filter(function (s) { return !s.ok || s.warn; });
     var total = rows.reduce(function (n, s) { return n + (s.lots || 0); }, 0);
     var sum = document.getElementById("health-sum");
+    var idleN = rows.filter(function (s) { return s.ok && !s.warn && !s.lots; }).length;
     sum.textContent = bad.length ? "⚠ Scan health: " + bad.length + (bad.length === 1 ? " site needs" : " sites need") + " a look"
-                                 : "✓ Scan health: all " + rows.length + " sites read · " + total.toLocaleString("en") + " lots";
+      : "✓ Scan health: all " + rows.length + " sites read · " + total.toLocaleString("en") + " lots"
+        + (idleN ? " · " + idleN + (idleN === 1 ? " site had" : " sites had") + " no bankruptcy auction" : "");
     sum.className = bad.length ? "bad" : "";
     if (bad.length) box.open = true;
     function n(v) { return v === undefined || v === null ? "–" : String(v); }
@@ -779,7 +789,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       var lots = s.id === "troostwijk" && s.siteLots !== undefined
         ? n(s.siteLots) + " site + " + n(s.mailLots || 0) + " email" : n(s.lots);
       var msg = !s.ok ? "⚠ " + (s.error || "couldn't be read") : s.warn ? "⚠ " + s.warn
-        : (s.auctions && !s.auctionsRead && !s.lots ? "OK: no bankruptcy/closure auction right now" : "OK");
+        : (s.auctions && !s.auctionsRead && !s.lots ? "OK: no bankruptcy/closure auction right now"
+            + (s.idle > 1 ? " (" + s.idle + " scans in a row)" : "") : "OK");
+      if (s.skipped && s.skipped.length && !s.lots) msg += ". Online now: " + s.skipped.join(" · ");
       tb.append(el("tr", { "class": (!s.ok || s.warn) ? "bad" : "" },
         el("td", { text: s.name }), el("td", { "class": "num", text: auctions }), el("td", { "class": "num", text: lots }),
         el("td", { "class": "num", text: n(s.usual) }), el("td", { "class": "msg", text: msg })));

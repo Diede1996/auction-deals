@@ -13,6 +13,7 @@ from statistics import median
 KEEP = 14          # scans remembered per site
 MIN_HISTORY = 3    # scans needed before "usual" means anything
 DROP = 0.25        # below a quarter of the usual count counts as a sudden drop
+IDLE_WARN = 10     # this many scans in a row with auctions listed but none read: check the auction filter
 
 
 def _usual(values: list[int]) -> int | None:
@@ -20,7 +21,12 @@ def _usual(values: list[int]) -> int | None:
     return int(median(vals)) if len(vals) >= MIN_HISTORY else None
 
 
-def warning(site: dict, usual_lots: int | None, usual_auctions: int | None) -> str:
+def idle(site: dict) -> bool:
+    """Read fine, but 0 lots because none of the listed auctions is a bankruptcy, closure, estate, ... one."""
+    return bool(site.get("ok", True) and not site.get("lots") and site.get("auctions") and not site.get("auctionsRead"))
+
+
+def warning(site: dict, usual_lots: int | None, usual_auctions: int | None, idle_scans: int = 0) -> str:
     """'' when all is well, else a short reason (English, like the rest of the dashboard)."""
     if not site.get("ok"):
         return "couldn't be read: " + (site.get("error") or "no reason given")[:120]
@@ -30,8 +36,11 @@ def warning(site: dict, usual_lots: int | None, usual_auctions: int | None) -> s
     if auctions == 0 and usual_auctions:
         return f"0 auctions found (usually {usual_auctions}): the site may have changed"
     if lots == 0:
-        if auctions and not read:
-            return ""  # auctions listed, just none of the kinds read (bankruptcy, closure, ...): fine
+        if auctions and not read:  # auctions listed, just none of the kinds read (bankruptcy, closure, ...)
+            if idle_scans >= IDLE_WARN:
+                return (f"no bankruptcy/closure auction for {idle_scans} scans in a row: check the auction names "
+                        "in Scan health, the filter may miss them")
+            return ""
         return f"0 lots (usually {usual_lots})" if usual_lots else "0 lots"
     if usual_lots and usual_lots >= 20 and lots < usual_lots * DROP and not (auctions and read and read < 2):
         return f"only {lots} lots (usually {usual_lots})"
@@ -49,7 +58,15 @@ def annotate(sites: list[dict], state: dict, now: datetime, record: bool = True)
         usual_auctions = _usual([p.get("auctions") for p in past if p.get("auctions") is not None])
         if usual_lots is not None:
             s["usual"] = usual_lots
-        s["warn"] = warning(s, usual_lots, usual_auctions)
+        streak = 0
+        if idle(s):
+            streak = 1
+            for p in reversed(past):
+                if not idle(p):
+                    break
+                streak += 1
+            s["idle"] = streak
+        s["warn"] = warning(s, usual_lots, usual_auctions, streak)
         if record:
             entry = {"at": now.isoformat(), "ok": bool(s.get("ok")), "lots": s.get("lots") or 0}
             for k in ("auctions", "auctionsRead", "siteAuctions", "siteLots", "mailLots"):

@@ -51,3 +51,25 @@ def test_history_is_capped():
     for _ in range(20):
         run([{"id": "hnvi", "ok": True, "lots": 5}], state)
     assert len(state["site_history"]["hnvi"]) == scan_health.KEEP
+
+
+def test_idle_streak_warns_after_many_scans():
+    idle_entry = {"ok": True, "lots": 0, "auctions": 8, "auctionsRead": 0}
+    site = {"id": "nedveiling", "ok": True, "lots": 0, "auctions": 8, "auctionsRead": 0}
+    state = {"site_history": {"nedveiling": [dict(idle_entry) for _ in range(3)]}}
+    s = scan_health.annotate([dict(site)], state, datetime(2026, 11, 20, tzinfo=timezone.utc))[0]
+    assert s["idle"] == 4 and s["warn"] == ""
+    state = {"site_history": {"nedveiling": [{"ok": True, "lots": 50, "auctions": 8, "auctionsRead": 1}]
+                              + [dict(idle_entry) for _ in range(scan_health.IDLE_WARN - 1)]}}
+    s = scan_health.annotate([dict(site)], state, datetime(2026, 11, 20, tzinfo=timezone.utc))[0]
+    assert s["idle"] == scan_health.IDLE_WARN and "scans in a row" in s["warn"]
+
+
+def test_skipped_auction_names_kept():
+    from scanner.sites.base import SiteContext
+
+    class A:
+        title = "  Voorraad   kantoorinventaris  "
+    ctx = SiteContext(http=None, now=None, is_bankruptcy=lambda *a: False)
+    assert ctx.wants(A(), False) is False
+    assert ctx.skipped == ["Voorraad kantoorinventaris"]

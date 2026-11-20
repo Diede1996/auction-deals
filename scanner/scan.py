@@ -161,6 +161,9 @@ def scan_sites(config: dict, items: list[WatchItem], state: dict, http_factory, 
             report[site].update(siteAuctions=ctx.auctions_seen, siteLots=len(found))
         elif ctx.auctions_seen:  # 0 lots is fine when the site listed auctions but none of the kind we read
             report[site].update(auctions=ctx.auctions_seen, auctionsRead=ctx.auctions_read)
+            if not found and ctx.skipped:  # which auctions it passed over, so you can check that by eye
+                report[site]["skipped"] = ctx.skipped[:12]
+                log.info("%s: not read (not bankruptcy/closure/estate): %s", site, " | ".join(ctx.skipped[:12]))
         log.info("%s: %d lots", site, len(found))
         lots.extend(found)
     requests = sum(getattr(ctx.http, "request_count", 0) for _, ctx in jobs.values())
@@ -617,7 +620,7 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
         })
     sites = [{"id": s, "name": SITE_NAMES.get(s, s), "ok": r.get("ok", False), "lots": r.get("lots", 0),
               "error": r.get("error", ""),
-              **{k: r[k] for k in ("auctions", "auctionsRead", "siteAuctions", "siteLots", "mailLots") if k in r}}
+              **{k: r[k] for k in ("auctions", "auctionsRead", "siteAuctions", "siteLots", "mailLots", "skipped") if k in r}}
              for s, r in report.items()]
     site_cfg = config.get("sites") or {}
     notes = {"onlineveilingmeester": "Domeinen lots 10%; margin-scheme lots 21% (Domeinen 12.1%) incl. VAT",
