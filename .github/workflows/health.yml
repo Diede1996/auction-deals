@@ -42,4 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}   # messages by email instead of Telegram (sent with the alerts mailbox below)
+          ALERTS_EMAIL: ${{ secrets.ALERTS_EMAIL }}
+          ALERTS_APP_PASSWORD: ${{ secrets.ALERTS_APP_PASSWORD }}
           PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}

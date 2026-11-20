@@ -32,6 +32,7 @@ from .routes import Combo, combined_pickups
 from .sites import SITE_NAMES, SITES
 from .sites.base import SiteContext
 from .storage import dashboard_url, load_json, load_yaml, save_json
+from .mailer import notifier
 from .telegram import Telegram, attr, esc
 from .util import AMS, fmt_eur, from_iso, normalize, phrase_in
 
@@ -728,7 +729,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    tg = telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run)
+    tg = notifier(telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run), dry_run)
 
     drv_cfg = config.get("driving") or {}
     items = [i for i in (WatchItem.from_dict(d) for d in watchlist.get("items") or []) if i.keywords]

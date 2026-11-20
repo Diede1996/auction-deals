@@ -37,6 +37,7 @@ from .matching import match_lots, printed_matter
 from .models import Lot, WatchItem
 from .pricing import PriceFinder
 from .storage import load_json, load_yaml
+from .mailer import notifier
 from .telegram import Telegram, attr, esc
 from .util import AMS, fmt_eur, normalize
 
@@ -336,7 +337,7 @@ def run_deals(root: Path, now: datetime, dry_run: bool = False, http_cls=Http, t
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if found and cfg.get("telegram", True) is not False:
-        tg = telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run)
+        tg = notifier(telegram_cls(http_cls(delay=0.5), token, chat_id if token else None, dry_run=dry_run), dry_run)
         tg.send(message(found, trips, notes))
     if not dry_run and (found or not memory.get("saved_once")):
         if private_repo.put_json("data/marktplaats-deals.json", {"generated": now.isoformat(), "lots": kept},

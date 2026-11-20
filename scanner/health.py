@@ -185,7 +185,11 @@ def run(root: Path, now: datetime, browser: dict | None, dry_run: bool = False, 
         return problems
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    if token or dry_run:
+    from .mailer import Mailer
+    mailer = Mailer.from_env(dry_run=dry_run)
+    if mailer:
+        mailer.send(message(problems))
+    elif token or dry_run:
         from .http import Http
         Telegram(Http(delay=0.5), token, chat_id if token else None, dry_run=dry_run).send(message(problems))
     return problems

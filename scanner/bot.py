@@ -12,6 +12,7 @@ from .http import Http
 from .models import Lot, WatchItem
 from .sites import SITE_NAMES
 from .storage import dashboard_url, github_output, load_json, load_yaml, save_json, save_watchlist
+from .mailer import Mailer
 from .telegram import Telegram, attr, esc
 from .util import AMS, fmt_eur
 
@@ -142,19 +143,23 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    if not token:
-        print("TELEGRAM_BOT_TOKEN is not set; nothing to do.")
+    # reminders and nudges go by email when MAIL_TO is set up (Diede 2026-11-20), else to Telegram
+    mailer = Mailer.from_env(dry_run=dry_run)
+    if not token and not mailer:
+        print("Neither TELEGRAM_BOT_TOKEN nor MAIL_TO is set; nothing to do.")
         return 0
-    tg = telegram_cls(http_cls(delay=0.3), token, chat_id, dry_run=dry_run)
-    if not chat_id:
+    tg = telegram_cls(http_cls(delay=0.3), token, chat_id, dry_run=dry_run) if token else None
+    if tg and not chat_id and not mailer:
         announce_chat_id(tg)
         return 0
+    notify = mailer or tg
 
-    try:
-        updates = tg.updates(tg_state.get("offset"))
-    except Exception as e:
-        log.warning("could not read Telegram messages: %s", e)
-        updates = []
+    updates = []
+    if tg and chat_id:  # Telegram commands still work when the bot token is there
+        try:
+            updates = tg.updates(tg_state.get("offset"))
+        except Exception as e:
+            log.warning("could not read Telegram messages: %s", e)
 
     fav_cfg = config.get("favorites") or {}
     store = FavoritesStore(http_cls(delay=0.2))
@@ -167,7 +172,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
     inv_path = root / "data" / "inventory.enc"
     inv_secret = os.environ.get("INVENTORY_KEY", "").strip() or token
     try:
-        inv = inventory.load(inv_path, inv_secret)
+        inv = inventory.load(inv_path, inv_secret) if inv_secret else None  # no key: leave the stock list alone
         inv_error = None
     except inventory.InventoryKeyError:
         inv, inv_error = None, ("⚠️ Ik kan je voorraadlijst niet openen: de sleutel is veranderd (een nieuw "
@@ -215,7 +220,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
         except Exception as e:
             log.warning("could not reply on Telegram: %s", e)
 
-    if not tg_state.get("welcomed"):
+    if tg and chat_id and not mailer and not tg_state.get("welcomed"):
         dash = f'\n📊 <a href="{attr(url)}">Your dashboard</a>' if url else ""
         tg.send("✅ <b>Your auction deal bot is connected.</b>\n"
                 f"Every morning it checks the auction sites (bankruptcy, business-closure, estate and Domeinen sales, plus IT auctions if switched on) for the "
@@ -236,7 +241,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
         groups.setdefault(closes, []).append((fav, stage))
     for closes, group in sorted(groups.items()):
         try:
-            tg.send(bundle_reminder_text([(f, lots_by_key.get(f["key"])) for f, _ in group], closes, now))
+            notify.send(bundle_reminder_text([(f, lots_by_key.get(f["key"])) for f, _ in group], closes, now))
             for fav, stage in group:
                 sent[fav["key"]] = {"closes": closes.isoformat(), "stage": stage}
         except Exception as e:
@@ -254,7 +259,7 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
                                    int(inv_cfg.get("remind_every_days", 7)), float(inv_cfg.get("price_drop", 0.1)))
         if due:
             try:
-                tg.send(inventory.nudge_text(due, now))
+                notify.send(inventory.nudge_text(due, now))
                 for d in due:
                     next(i for i in inv["items"] if i["id"] == d["id"])["nudged"] = now.isoformat()
             except Exception as e:

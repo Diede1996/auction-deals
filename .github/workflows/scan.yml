@@ -44,6 +44,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}   # messages by email instead of Telegram (sent with the alerts mailbox below)
           SEND_SUMMARY: ${{ inputs.summary }}   # true for /scan and the weekly summary started by the Telegram job
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}   # for driving costs; never written to the repository
           HOME_ADDRESS_2: ${{ secrets.HOME_ADDRESS_2 }}   # optional second starting point: the closer one is used

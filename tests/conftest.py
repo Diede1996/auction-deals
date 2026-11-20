@@ -53,3 +53,10 @@ def url_has(*parts, method=None):
 @pytest.fixture
 def fake_http():
     return FakeHttp
+
+
+@pytest.fixture(autouse=True)
+def no_real_mail(monkeypatch):
+    """Tests never send email: messages go to the fake Telegram unless a test sets MAIL_TO itself."""
+    for var in ("MAIL_TO", "MAIL_FROM", "MAIL_APP_PASSWORD", "ALERTS_EMAIL", "ALERTS_APP_PASSWORD"):
+        monkeypatch.delenv(var, raising=False)
