@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -558,6 +559,8 @@ def test_early_favorite_reminder_when_github_runs_late(repo, monkeypatch):
     closes = NOW + timedelta(minutes=150)
     (repo / "data" / "lots.json").write_text(json.dumps({"lots": [{"key": "hnvi:1", "closes": closes.isoformat()}]}))
     (repo / "data" / "telegram.json").write_text(json.dumps({"offset": 1, "welcomed": "x"}))
+    cfg = repo / "config.yml"  # Diede's config has one reminder (1 h); this tests the stages
+    cfg.write_text(re.sub(r"reminder_minutes_before: \[60\]", "reminder_minutes_before: [180, 60, 15]", cfg.read_text()))
     favs = [{"key": "hnvi:1", "title": "Festool AGC 18", "url": "https://www.hnvi.nl/veiling-kavel/agc/1"}]
     http = FakeHttp([(url_has("api.github.com"), issue_list(favs))])
     tg = FakeTelegram([])

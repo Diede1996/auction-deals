@@ -20,7 +20,7 @@ from pathlib import Path
 
 import requests
 
-from . import private_repo
+from . import private_repo, weekly_mail
 from .storage import load_json, load_yaml
 from .telegram import Telegram, esc
 
@@ -170,23 +170,44 @@ def message(problems: list[str]) -> str:
     return "\n".join(lines)
 
 
-def run(root: Path, now: datetime, browser: dict | None, dry_run: bool = False, session=None) -> list[str]:
+def weekly_message(root: Path, now: datetime, config: dict, private: dict, problems: list[str]) -> str:
+    from .favorites import FavoritesStore
+    from .http import Http
+    from .storage import dashboard_url
+    lots = list((load_json(root / "data" / "lots.json") or {}).get("lots") or [])
+    lots += list((private.get("data/troostwijk-lots.json") or {}).get("lots") or [])
+    lots_by_key = {lot["key"]: lot for lot in lots if isinstance(lot, dict) and lot.get("key")}
+    store = FavoritesStore(Http(delay=0.2))
+    favs = store.load()
+    if store.error:
+        problems = problems + [f"Favorites couldn't be read ({store.error[:100]})."]
+    return weekly_mail.message(favs, lots_by_key, problems, now, dashboard_url(config))
+
+
+def run(root: Path, now: datetime, browser: dict | None, dry_run: bool = False, session=None,
+        weekly: bool | None = None) -> list[str]:
     session = session or requests.Session()
     config = load_yaml(root / "config.yml") or {}
     repo = os.environ.get("GITHUB_REPOSITORY") or "Diede1996/auction-deals"
     problems = check_lots(load_json(root / "data" / "lots.json") or {}, now)
     problems += check_runs(fetch_runs(session, repo), now)
-    problems += check_private(fetch_private(session, config), now)
+    private = fetch_private(session, config)
+    problems += check_private(private, now)
     problems += check_browser(browser)
     for p in problems:
         log.info("health: %s", p)
+    from .mailer import Mailer
+    mailer = Mailer.from_env(dry_run=dry_run)
+    if mailer and (weekly or (weekly is None and weekly_mail.is_sunday(now)
+                              and os.environ.get("GITHUB_EVENT_NAME") == "schedule")):
+        # Sunday: one mail with the favorites closing this week and the Bot check, also when all is well
+        mailer.send(weekly_message(root, now, config, private, problems))
+        return problems
     if not problems:
         log.info("health: everything works")
         return problems
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    from .mailer import Mailer
-    mailer = Mailer.from_env(dry_run=dry_run)
     if mailer:
         mailer.send(message(problems))
     elif token or dry_run:
@@ -200,6 +221,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--browser", help="result file of scripts/dashboard_check.js")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--weekly", action="store_true", help="send the Sunday mail now (to try it)")
     a = ap.parse_args(argv)
     browser = None
     if a.browser:
@@ -207,7 +229,7 @@ def main(argv=None) -> int:
             browser = json.loads(Path(a.browser).read_text() or "null")
         except (OSError, ValueError):
             browser = None
-    run(Path("."), datetime.now(timezone.utc), browser, a.dry_run)
+    run(Path("."), datetime.now(timezone.utc), browser, a.dry_run, weekly=True if a.weekly else None)
     return 0
 
 

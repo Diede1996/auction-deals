@@ -74,3 +74,49 @@ def test_reminders_go_by_mail_without_telegram(repo, monkeypatch):  # noqa: F811
     tg = FakeTelegram()
     assert run_commands(repo, NOW + timedelta(hours=1), http_cls=lambda **kw: None, telegram_cls=tg) == 0
     assert tg.sent == [] and len(mailed) == 1 and "Dell monitor" in mailed[0]
+
+
+def test_sunday_mail(monkeypatch):
+    from datetime import datetime, timezone
+    from scanner import weekly_mail
+    now = datetime(2026, 11, 22, 16, 0, tzinfo=timezone.utc)  # Sunday 17:00 in Amsterdam
+    assert weekly_mail.is_sunday(now)
+    favs = [{"key": "hnvi:1", "title": "Festool AGC 18", "url": "https://www.hnvi.nl/k/1", "maxBid": 120},
+            {"key": "hnvi:2", "title": "Makita DHR243", "url": "https://www.hnvi.nl/k/2"},
+            {"key": "bva:3", "title": "Dell monitor", "url": "https://www.bva-auctions.com/k/3"},
+            {"key": "hnvi:4", "title": "Next month", "url": "https://www.hnvi.nl/k/4"}]
+    lots = {"hnvi:1": {"closes": "2026-11-24T19:30:00+01:00", "pickup": "Produktieweg 9, Emmeloord",
+                       "pickupWhen": "do 26 nov 10:00-12:00", "trip": {"km": 84}},
+            "hnvi:2": {"closes": "2026-11-24T19:32:00+01:00", "pickup": "Produktieweg 9, Emmeloord", "maxBid": 90},
+            "bva:3": {"closes": "2026-11-23T20:00:00+01:00"},
+            "hnvi:4": {"closes": "2026-12-20T20:00:00+01:00"}}
+    text = weekly_mail.message(favs, lots, [], now, "https://dash")
+    assert "3 favorieten sluiten deze week" in text and "Next month" not in text
+    assert text.index("Ophaaladres nog onbekend") < text.index("Produktieweg")  # the earliest closing first
+    assert text.count("Produktieweg 9, Emmeloord") == 1 and "do 26 nov 10:00-12:00" in text and "84 km" in text
+    assert "di 24 nov 19:30" in text and "je max bod € 120" in text.replace("€120", "€ 120")
+    assert "alles werkt" in text
+    bad = weekly_mail.message([], {}, ["Daily scan: no successful run for 2 days."], now)
+    assert "Er sluiten deze week geen favorieten" in bad and "1 ding werkt niet" in bad
+
+
+def test_health_sends_the_sunday_mail_on_the_scheduled_run(tmp_path, monkeypatch):
+    import shutil
+    from datetime import datetime, timezone
+    from pathlib import Path
+    from scanner import health
+    from scanner.favorites import FavoritesStore
+    shutil.copy(Path(__file__).resolve().parents[1] / "config.yml", tmp_path / "config.yml")
+    mail_env(monkeypatch)
+    mailed = []
+    monkeypatch.setattr(Mailer, "send", lambda self, text, **kw: mailed.append(text))
+    monkeypatch.setattr(health, "fetch_runs", lambda s, r: {})
+    monkeypatch.setattr(health, "fetch_private", lambda s, c: {})
+    monkeypatch.setattr(FavoritesStore, "load", lambda self: [])
+    sunday = datetime(2026, 11, 22, 16, 0, tzinfo=timezone.utc)
+    monkeypatch.setenv("GITHUB_EVENT_NAME", "workflow_dispatch")
+    health.run(tmp_path, sunday, {"problems": []}, session=object())
+    assert len(mailed) == 1 and "Bot check" in mailed[0] and "Weekoverzicht" not in mailed[0]  # problems only
+    monkeypatch.setenv("GITHUB_EVENT_NAME", "schedule")
+    health.run(tmp_path, sunday, {"problems": []}, session=object())
+    assert len(mailed) == 2 and "Weekoverzicht" in mailed[1] and "werkt niet" in mailed[1]  # no lots.json

@@ -109,6 +109,15 @@ If the morning summary says it couldn't find lots in a Troostwijk email, their e
 
 ---
 
+## Messages by email instead of Telegram
+
+Add the secret `MAIL_TO` (your own email address) and every message goes by email instead of Telegram. The bot sends it
+from the alerts mailbox of step 8 (`ALERTS_EMAIL` / `ALERTS_APP_PASSWORD`), so no new account is needed. You then get:
+- a reminder an hour before a favorite closes (`favorites.reminder_minutes_before`);
+- a "Bot check" mail when something is broken (the daily check, `.github/workflows/health.yml`);
+- on Sunday afternoon one week overview: which favorites close in the coming 7 days, grouped by pickup address with
+  the pickup times, plus the Bot check (also when all is well). Try it any time: Actions → Bot check → Run workflow → tick "Send the Sunday mail now".
+
 ## The dashboard
 
 ![Example dashboard with example data](docs/example-dashboard.png)

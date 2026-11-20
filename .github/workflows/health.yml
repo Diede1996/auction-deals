@@ -1,16 +1,22 @@
 name: Bot check
 
 # Once a day: does everything still work? Scheduled runs succeed, the scan's data is fresh, every auction site
-# gave lots, the private files are updated, and the dashboard shows lots in a real browser. Sends a Telegram
-# message only when something is wrong (scanner/health.py). Never contacts the auction sites or Marktplaats.
+# gave lots, the private files are updated, and the dashboard shows lots in a real browser. Sends a message
+# only when something is wrong (scanner/health.py); on Sunday it mails the week overview (scanner/weekly_mail.py) instead. Never contacts the auction sites or Marktplaats.
 on:
   schedule:
     - cron: "23 15 * * *"   # 16:23 Dutch winter time (GitHub often starts it later)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Send the Sunday mail now (favorites this week + bot check)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
   actions: read           # see how the other workflows ran
+  issues: read            # your favorites, for the Sunday mail
 
 jobs:
   check:
@@ -37,7 +43,7 @@ jobs:
           cat browser.json
 
       - name: Check and report
-        run: python -m scanner.health --browser browser.json
+        run: python -m scanner.health --browser browser.json ${{ inputs.weekly && '--weekly' || '' }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

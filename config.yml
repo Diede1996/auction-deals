@@ -279,7 +279,7 @@ favorites:
   reminders: true               # the closing day (in the morning summary) and before closing
   # Reminders this many minutes before closing, one Telegram message per closing time. Checked every 5 minutes
   # (if GitHub starts the check on time; see auction-bot/externe-wekker-instellen.md). A late check sends only the nearest one.
-  reminder_minutes_before: [180, 60, 15]
+  reminder_minutes_before: [60]   # Diede 2026-11-20: one mail an hour before closing (was 3 h, 1 h and 15 min)
 
 http:
   delay_seconds: 1.5            # pause between requests to the same site
