@@ -5,3 +5,4 @@ tzdata
 cryptography>=42
 requests>=2.31
 anthropic>=2.0
+Pillow>=10

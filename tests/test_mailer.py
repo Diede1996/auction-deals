@@ -120,3 +120,34 @@ def test_health_sends_the_sunday_mail_on_the_scheduled_run(tmp_path, monkeypatch
     monkeypatch.setenv("GITHUB_EVENT_NAME", "schedule")
     health.run(tmp_path, sunday, {"problems": []}, session=object())
     assert len(mailed) == 2 and "Weekoverzicht" in mailed[1] and "werkt niet" in mailed[1]  # no lots.json
+
+
+def test_pickup_map_in_the_mail(monkeypatch):
+    import io
+    from datetime import datetime, timezone
+    from PIL import Image
+    from scanner import mail_map, weekly_mail
+
+    def tile(z, x, y):
+        out = io.BytesIO()
+        Image.new("RGB", (256, 256), (200, 220, 200)).save(out, "PNG")
+        return out.getvalue()
+    now = datetime(2026, 11, 22, 16, 0, tzinfo=timezone.utc)
+    favs = [{"key": "hnvi:1", "title": "Festool", "url": "https://www.hnvi.nl/k/1"},
+            {"key": "hnvi:2", "title": "Makita", "url": "https://www.hnvi.nl/k/2"},
+            {"key": "hnvi:3", "title": "Dell", "url": "https://www.hnvi.nl/k/3"}]
+    lots = {"hnvi:1": {"closes": "2026-11-24T19:30:00+01:00", "pickup": "Handelsstraat 52, Hardenberg"},
+            "hnvi:2": {"closes": "2026-11-25T19:30:00+01:00", "pickup": "Industrieweg 12A, Sint-Oedenrode"},
+            "hnvi:3": {"closes": "2026-11-23T19:30:00+01:00", "pickup": "Nergens 1, Onbekend"}}
+    geo = {"Handelsstraat 52, Hardenberg": {"lat": 52.56, "lon": 6.63},
+           "Industrieweg 12A, Sint-Oedenrode": {"lat": 51.56, "lon": 5.48}}
+    pts = weekly_mail.map_points(favs, lots, now, geo)
+    assert pts == [(52.56, 6.63), (51.56, 5.48)]
+    png = mail_map.render(pts, tile)
+    assert Image.open(io.BytesIO(png)).size == (640, 480)
+    text = weekly_mail.message(favs, lots, [], now, geo=geo, with_map=True)
+    assert "cid:map" in text and "📍 1. " in text and "📍 2. " in text and "📍 <a" in text  # no pin for Onbekend
+    assert "google.com/maps" in text
+    msg = Mailer("bot@x", "pw", "me@x").build(text, images={"map": png})
+    assert any(p.get_content_type() == "image/png" and p["Content-ID"] == "<map>" for p in msg.walk())
+    assert mail_map.pickup_map(pts, get_tile=lambda z, x, y: 1 / 0) is None  # tiles down: mail without map

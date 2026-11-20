@@ -65,7 +65,7 @@ class Mailer:
         host = os.environ.get("MAIL_SMTP_HOST", "").strip() or "smtp.gmail.com"
         return cls(user, password, to, host=host, dry_run=dry_run, smtp_cls=smtp_cls)
 
-    def build(self, text: str, subject: str | None = None) -> EmailMessage:
+    def build(self, text: str, subject: str | None = None, images: dict[str, bytes] | None = None) -> EmailMessage:
         msg = EmailMessage()
         msg["Subject"] = subject or subject_of(text)
         msg["From"] = f"Veilingbot <{self.user}>"
@@ -74,13 +74,17 @@ class Mailer:
         msg["Message-ID"] = make_msgid(domain="veilingbot.local")
         msg.set_content(to_plain(text))
         msg.add_alternative(to_html(text), subtype="html")
+        html_part = msg.get_payload()[-1]
+        for cid, png in (images or {}).items():  # shown inside the mail where the text says <img src="cid:...">
+            html_part.add_related(png, maintype="image", subtype="png", cid=f"<{cid}>", filename=f"{cid}.png")
         return msg
 
-    def send(self, text: str, chat_id: str | None = None, preview: bool = False, subject: str | None = None) -> None:
+    def send(self, text: str, chat_id: str | None = None, preview: bool = False, subject: str | None = None,
+             images: dict[str, bytes] | None = None) -> None:
         if self.dry_run:
             print(f"\n[mail] {subject or subject_of(text)}\n" + text)
             return
-        msg = self.build(text, subject)
+        msg = self.build(text, subject, images)
         with self.smtp_cls(self.host, self.port, context=ssl.create_default_context(), timeout=30) as smtp:
             smtp.login(self.user, self.password)
             smtp.send_message(msg)

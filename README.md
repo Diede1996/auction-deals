@@ -116,7 +116,7 @@ from the alerts mailbox of step 8 (`ALERTS_EMAIL` / `ALERTS_APP_PASSWORD`), so n
 - a reminder an hour before a favorite closes (`favorites.reminder_minutes_before`);
 - a "Bot check" mail when something is broken (the daily check, `.github/workflows/health.yml`);
 - on Sunday afternoon one week overview: which favorites close in the coming 7 days, grouped by pickup address with
-  the pickup times, plus the Bot check (also when all is well). Try it any time: Actions → Bot check → Run workflow → tick "Send the Sunday mail now".
+  the pickup times and a map with a numbered pin per address, plus the Bot check (also when all is well). Try it any time: Actions → Bot check → Run workflow → tick "Send the Sunday mail now".
 
 ## The dashboard
 

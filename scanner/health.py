@@ -170,7 +170,7 @@ def message(problems: list[str]) -> str:
     return "\n".join(lines)
 
 
-def weekly_message(root: Path, now: datetime, config: dict, private: dict, problems: list[str]) -> str:
+def weekly_message(root: Path, now: datetime, config: dict, private: dict, problems: list[str]) -> tuple[str, dict | None]:
     from .favorites import FavoritesStore
     from .http import Http
     from .storage import dashboard_url
@@ -181,7 +181,11 @@ def weekly_message(root: Path, now: datetime, config: dict, private: dict, probl
     favs = store.load()
     if store.error:
         problems = problems + [f"Favorites couldn't be read ({store.error[:100]})."]
-    return weekly_mail.message(favs, lots_by_key, problems, now, dashboard_url(config))
+    geo = (load_json(root / "data" / "state.json") or {}).get("geo") or {}
+    from .mail_map import pickup_map
+    png = pickup_map(weekly_mail.map_points(favs, lots_by_key, now, geo))
+    text = weekly_mail.message(favs, lots_by_key, problems, now, dashboard_url(config), geo=geo, with_map=png is not None)
+    return text, ({"map": png} if png else None)
 
 
 def run(root: Path, now: datetime, browser: dict | None, dry_run: bool = False, session=None,
@@ -201,7 +205,8 @@ def run(root: Path, now: datetime, browser: dict | None, dry_run: bool = False, 
     if mailer and (weekly or (weekly is None and weekly_mail.is_sunday(now)
                               and os.environ.get("GITHUB_EVENT_NAME") == "schedule")):
         # Sunday: one mail with the favorites closing this week and the Bot check, also when all is well
-        mailer.send(weekly_message(root, now, config, private, problems))
+        text, images = weekly_message(root, now, config, private, problems)
+        mailer.send(text, images=images)
         return problems
     if not problems:
         log.info("health: everything works")
