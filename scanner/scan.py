@@ -409,7 +409,7 @@ def duration(minutes: float) -> str:
 def auction_kinds(config: dict, now: datetime | None = None) -> str:
     """"bankruptcy, closure, estate, Domeinen or IT": which auctions the bot reads, for texts."""
     if now is not None and all_auctions_trial(config, now):
-        return "bankruptcy, closure, estate, Domeinen, IT or other (trial)"
+        return "all"
     extra = config.get("extra_auctions") or {}
     it = extra.get("enabled", True) is not False and bool(extra.get("words"))
     return "bankruptcy, closure, estate, Domeinen or IT" if it else "bankruptcy, closure, estate or Domeinen"
