@@ -64,6 +64,12 @@ def run(argv: list[str] | None = None) -> int:
                             or lot.get("item") not in items
                             or not too_old(items[lot["item"]], SimpleNamespace(title=lot.get("title") or "",
                                                                                description=""), min_year, skip)]
+        # items that no longer get a Marktplaats price (price_check: false) lose the old one right away
+        if items and data.get("lots"):
+            for lot in data["lots"]:
+                item = items.get(lot.get("item"))
+                if item and not item.price_check and lot.get("marketSource") == "marktplaats":
+                    lot.update(market=None, marketSource=None, mp=None, maxBid=None, isDeal=False)
         dashboard.write(root / "site", data)
         return 0
     only = [s.strip() for s in args.sites.split(",")] if args.sites else None

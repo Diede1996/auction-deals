@@ -109,6 +109,10 @@ items:
     wijnklimaat, wijnklimaatkast, wijnemmer, emmer, karaf, decanteer, decanter, opener, kurkentrekker, wijnazijn, azijn,
     wijnvat, vat, vaten, tap, wijntap, dispenser, pomp, stopper, wijnkaart, menukaart, boek, schilderij, poster,
     leeg, lege, inventaris, meubel, tafel, stoel, kruk, bar, wijnbar, rack, display]
+  # Diede 2026-11-21: no Marktplaats price. Wine listings matched on words like "chateau" or "grand cru" gave
+  # a simple 2024 Bordeaux the price of Fieuzal 2009 and Grand-Puy-Lacoste (EUR 113/bottle, 1784% margin).
+  # Diede shares wine at cost and judges it by shop price, so like spirits it is shown without a price.
+  price_check: false
   always_show: true  # Diede 2026-11-11: shown whatever the margin, shared out among people Diede knows
 - name: Spirits
   # cognac, whisky and other spirits (Diede 2026-11-11): shared out among people Diede knows, not resold, so no
