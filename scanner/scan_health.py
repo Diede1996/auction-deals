@@ -26,7 +26,11 @@ def idle(site: dict) -> bool:
     return bool(site.get("ok", True) and not site.get("lots") and site.get("auctions") and not site.get("auctionsRead"))
 
 
-def warning(site: dict, usual_lots: int | None, usual_auctions: int | None, idle_scans: int = 0) -> str:
+FEW_AUCTIONS = 3   # a site reading this few auctions: its lot count follows which auctions run, so no "drop"
+
+
+def warning(site: dict, usual_lots: int | None, usual_auctions: int | None, idle_scans: int = 0,
+            usual_read: int | None = None) -> str:
     """'' when all is well, else a short reason (English, like the rest of the dashboard)."""
     if not site.get("ok"):
         return "couldn't be read: " + (site.get("error") or "no reason given")[:120]
@@ -42,7 +46,9 @@ def warning(site: dict, usual_lots: int | None, usual_auctions: int | None, idle
                         "in Scan health, the filter may miss them")
             return ""
         return f"0 lots (usually {usual_lots})" if usual_lots else "0 lots"
-    if usual_lots and usual_lots >= 20 and lots < usual_lots * DROP and not (auctions and read and read < 2):
+    # BellAuction, 20 Nov 2026: one auction of 253 lots closed, two smaller ones (59 lots) came: not broken
+    few = read is not None and (read <= FEW_AUCTIONS or (usual_read is not None and usual_read <= FEW_AUCTIONS))
+    if usual_lots and usual_lots >= 20 and lots < usual_lots * DROP and not few:
         return f"only {lots} lots (usually {usual_lots})"
     return ""
 
@@ -56,6 +62,7 @@ def annotate(sites: list[dict], state: dict, now: datetime, record: bool = True)
         past = hist.get(s["id"]) or []
         usual_lots = _usual([p.get("lots") for p in past if p.get("ok", True)])
         usual_auctions = _usual([p.get("auctions") for p in past if p.get("auctions") is not None])
+        usual_read = _usual([p.get("auctionsRead") for p in past if p.get("auctionsRead") is not None])
         if usual_lots is not None:
             s["usual"] = usual_lots
         streak = 0
@@ -66,7 +73,7 @@ def annotate(sites: list[dict], state: dict, now: datetime, record: bool = True)
                     break
                 streak += 1
             s["idle"] = streak
-        s["warn"] = warning(s, usual_lots, usual_auctions, streak)
+        s["warn"] = warning(s, usual_lots, usual_auctions, streak, usual_read)
         if record:
             entry = {"at": now.isoformat(), "ok": bool(s.get("ok")), "lots": s.get("lots") or 0}
             for k in ("auctions", "auctionsRead", "siteAuctions", "siteLots", "mailLots"):

@@ -73,3 +73,11 @@ def test_skipped_auction_names_kept():
     ctx = SiteContext(http=None, now=None, is_bankruptcy=lambda *a: False)
     assert ctx.wants(A(), False) is False
     assert ctx.skipped == ["Voorraad kantoorinventaris"]
+
+
+def test_fewer_lots_because_another_auction_runs_is_fine():
+    from scanner.scan_health import warning
+    # BellAuction 20 Nov 2026: the 253-lot auction closed, two smaller ones were read (59 lots)
+    assert warning({"id": "bellauction", "ok": True, "lots": 59, "auctions": 2, "auctionsRead": 2}, 253, 4, 0, 1) == ""
+    # a site that reads many auctions and suddenly gives far fewer lots is still flagged
+    assert "only 40" in warning({"id": "hnvi", "ok": True, "lots": 40, "auctions": 20, "auctionsRead": 18}, 900, 20, 0, 18)
