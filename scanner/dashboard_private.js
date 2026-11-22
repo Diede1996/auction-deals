@@ -721,7 +721,7 @@
       el("span", { "class": "spacer" }),
       ad.title ? copyBtn("Copy title", ad.title) : null,
       ad.text ? copyBtn("Copy text", ad.text) : null,
-      photos.length ? el("button", { type: "button", "class": "pbtn", text: (navigator.canShare ? "Share" : "Save") + " " + photos.length + " photo" + (photos.length > 1 ? "s" : ""), onclick: function () { sharePhotos(it); } }) : null,
+      photos.length ? el("button", { type: "button", "class": "pbtn", text: shareLabel(photos.length), onclick: function (e) { sharePhotos(it, e.currentTarget); } }) : null,
       photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function (e) { savePhotosToFolder(it, e.shiftKey, e.currentTarget); } }) : null,
       it._kind === "colbert" ? el("span", { "class": "small", text: "loose-jacket ad (ask Claude to change it)" }) :
       el("button", { type: "button", "class": "btn-link", text: text || photos.length ? "Edit ad" : "Write the ad", onclick: function () { editItem(it, "ad"); } })));
@@ -731,10 +731,11 @@
       var strip = el("div", { "class": "pstrip" });
       photos.forEach(function (ph) {
         var img = el("img", { alt: "", "class": "pphoto" });
-        blobUrl(ph.path).then(function (u) { img.src = u; }, function () { img.remove(); });
+        blobUrl(ph.path, photoType(ph.path)).then(function (u) { img.src = u; }, function () { img.remove(); });
         strip.append(img);
       });
       block.append(strip);
+      photoFiles(it);  /* have the photos ready, so a tap can share them straight away */
     }
     if (!text && !photos.length) block.append(el("p", { "class": "small", text: "No ad text or photos saved yet." }));
     return block;
@@ -747,21 +748,62 @@
     });
     return b;
   }
-  /* on a phone: straight into the Marktplaats or Vinted app; on a laptop: saved to your downloads */
-  function sharePhotos(it) {
-    var photos = it.photos || [];
-    Promise.all(photos.map(function (ph, i) {
-      return blobUrl(ph.path, "image/jpeg").then(function (u) { return fetch(u).then(function (r) { return r.blob(); }); })
-        .then(function (b) { return new File([b], slug(it.name) + "-" + (i + 1) + ".jpg", { type: "image/jpeg" }); });
-    })).then(function (files) {
-      if (navigator.canShare && navigator.canShare({ files: files })) {
-        return navigator.share({ files: files, title: (it.ad && it.ad.title) || it.name }).catch(function () { /* cancelled */ });
+  /* on a phone: straight into the Marktplaats or Vinted app; on a laptop: saved to your downloads.
+     A phone only opens the share sheet if share() is called right after the tap, so the photos are fetched
+     beforehand (when the ad is shown) and shared in groups of at most 10 (Android's limit per share). */
+  var SHARE_MAX = 10, fileCache = {}, shareNext = {};
+  function photoType(path) { return /\.png$/i.test(path || "") ? "image/png" : /\.webp$/i.test(path || "") ? "image/webp" : "image/jpeg"; }
+  function shareLabel(n) { return (navigator.canShare ? "Share" : "Save") + " " + n + " photo" + (n > 1 ? "s" : ""); }
+  function photoFiles(it) {
+    var photos = it.photos || [], key = it.id + "|" + photos.map(function (ph) { return ph.path; }).join(",");
+    if (!fileCache[key]) {
+      fileCache[key] = { files: null, p: Promise.all(photos.map(function (ph, i) {
+        var type = photoType(ph.path);
+        return blobUrl(ph.path, type).then(function (u) { return fetch(u).then(function (r) { return r.blob(); }); })
+          .then(function (b) { return new File([b], slug(it.name) + "-" + (i + 1) + "." + type.split("/")[1].replace("jpeg", "jpg"), { type: type }); });
+      })) };
+      fileCache[key].p.then(function (f) { if (fileCache[key]) fileCache[key].files = f; }, function () { delete fileCache[key]; });
+    }
+    return fileCache[key];
+  }
+  function sharePhotos(it, btn) {
+    var c = photoFiles(it), n = (it.photos || []).length;
+    var label = function (t) { if (btn) btn.textContent = t; };
+    if (!c.files) {  /* not downloaded yet: get them, then one more tap shares them */
+      label("Loading photos…");
+      c.p.then(function () { label(navigator.canShare ? "Tap again to share" : shareLabel(n)); },
+        function () { label(shareLabel(n)); toast("Couldn't load the photos. Check your connection and try again."); });
+      return;
+    }
+    var files = c.files;
+    if (navigator.canShare && navigator.share) {
+      var from = shareNext[it.id] || 0; if (from >= files.length) from = 0;
+      var part = files.slice(from, from + SHARE_MAX);
+      if (navigator.canShare({ files: part })) {
+        var more = from + part.length < files.length;
+        navigator.share({ files: part }).then(function () {
+          shareNext[it.id] = more ? from + part.length : 0;
+          label(more ? "Share photos " + (from + part.length + 1) + "–" + Math.min(files.length, from + part.length + SHARE_MAX) : shareLabel(n));
+          if (more) toast("Shared " + part.length + " photos. Tap again for the rest.");
+        }, function (e) {
+          if (e && e.name === "AbortError") return;  /* you closed the share sheet */
+          label(shareLabel(n));
+          toast("Sharing didn't work" + (e && e.message ? " (" + e.message + ")" : "") + ". Saving the photos to your downloads instead.");
+          downloadFiles(part);
+        });
+        return;
       }
-      files.forEach(function (f) {
+    }
+    downloadFiles(files);
+  }
+  function downloadFiles(files) {
+    files.forEach(function (f, i) {
+      setTimeout(function () {
         var a = el("a", { href: URL.createObjectURL(f), download: f.name });
         document.body.append(a); a.click(); a.remove();
-      });
-    }, function () { toast("Couldn't load the photos."); });
+      }, i * 300);  /* one at a time, otherwise the browser keeps only the first */
+    });
+    toast(files.length + " photo" + (files.length > 1 ? "s" : "") + " saved to your downloads.");
   }
 
   /* laptop (Chrome/Edge): photos go straight into <your folder>\<ad name>\. The folder you pick is remembered in this browser. */
@@ -771,43 +813,69 @@
       rq.onupgradeneeded = function () { rq.result.createObjectStore("kv"); };
       rq.onerror = function () { no(rq.error); };
       rq.onsuccess = function () {
-        var tx = rq.result.transaction("kv", mode), r = fn(tx.objectStore("kv"));
-        tx.oncomplete = function () { ok(r && r.result); }; tx.onerror = function () { no(tx.error); };
+        var tx, r;
+        try { tx = rq.result.transaction("kv", mode); r = fn(tx.objectStore("kv")); }
+        catch (e) { rq.result.close(); no(e); return; }  /* e.g. a folder that can't be stored: fail instead of hanging */
+        tx.oncomplete = function () { rq.result.close(); ok(r && r.result); }; tx.onerror = function () { rq.result.close(); no(tx.error); };
       };
     });
   }
-  function photoFolder(pickNew) {
+  /* a step that never answers (a hidden permission bubble, a stuck network request or file write) must not leave
+     the button on "Saving…" for ever: give up after ms with a message that says which step got stuck */
+  function within(ms, what, p) {
+    return new Promise(function (ok, no) {
+      var t = setTimeout(function () { var e = new Error(what + " took too long"); e.name = "TimeoutError"; no(e); }, ms);
+      p.then(function (v) { clearTimeout(t); ok(v); }, function (e) { clearTimeout(t); no(e); });
+    });
+  }
+  function photoFolder(pickNew, say) {
     var pick = function () {
+      say("Pick a folder…");
       return window.showDirectoryPicker({ id: "verkopen", mode: "readwrite", startIn: "pictures" }).then(function (h) {
-        return dirStore("readwrite", function (st) { return st.put(h, "photoDir"); }).catch(function () {}).then(function () { return h; });
+        return within(3000, "Remembering the folder", dirStore("readwrite", function (st) { return st.put(h, "photoDir"); })).catch(function () {}).then(function () { return h; });
       });
     };
     if (pickNew) return pick();
-    return dirStore("readonly", function (st) { return st.get("photoDir"); }).catch(function () { return null; }).then(function (h) {
+    return within(3000, "Opening the browser storage", dirStore("readonly", function (st) { return st.get("photoDir"); })).catch(function () { return null; }).then(function (h) {
       if (!h) return pick();
-      return h.requestPermission({ mode: "readwrite" }).then(function (p) { return p === "granted" ? h : pick(); }, pick);
+      /* ask only when needed: requestPermission shows a small bubble under the address bar that is easy to miss */
+      var q = h.queryPermission ? h.queryPermission({ mode: "readwrite" }) : Promise.resolve("prompt");
+      return q.then(function (p) {
+        if (p === "granted") return h;
+        say("Allow access in the bubble at the top…");
+        return within(60000, "Waiting for permission to use " + h.name, h.requestPermission({ mode: "readwrite" }))
+          .then(function (p2) { return p2 === "granted" ? h : pick(); });
+      });
     });
   }
   function savePhotosToFolder(it, pickNew, btn) {
     var photos = it.photos || [], name = slug((it.ad && it.ad.title) || it.name) || it.id;
     var say = function (t) { if (btn) { btn.textContent = t; btn.title = t + " (Shift+click: pick another folder)"; } };
+    if (btn && btn.dataset.busy) return;
+    if (btn) btn.dataset.busy = "1";
+    var done = function () { if (btn) delete btn.dataset.busy; };
     say("Saving…");
-    photoFolder(pickNew).then(function (root) {
-      return root.getDirectoryHandle(name, { create: true }).then(function (dir) {
+    photoFolder(pickNew, say).then(function (root) {
+      return within(15000, "Making the folder " + name, root.getDirectoryHandle(name, { create: true })).then(function (dir) {
         return photos.reduce(function (chain, ph, i) {
           return chain.then(function () {
-            return blobUrl(ph.path, "image/jpeg").then(function (u) { return fetch(u).then(function (r) { return r.blob(); }); }).then(function (b) {
-              return dir.getFileHandle(name + "-" + (i + 1) + ".jpg", { create: true }).then(function (fh) {
+            say("Saving " + (i + 1) + "/" + photos.length + "…");
+            var type = photoType(ph.path), file = name + "-" + (i + 1) + "." + type.split("/")[1].replace("jpeg", "jpg");
+            return within(30000, "Downloading photo " + (i + 1), blobUrl(ph.path, type).then(function (u) { return fetch(u).then(function (r) { return r.blob(); }); })).then(function (b) {
+              return within(30000, "Writing " + file, dir.getFileHandle(file, { create: true }).then(function (fh) {
                 return fh.createWritable().then(function (w) { return w.write(b).then(function () { return w.close(); }); });
-              });
+              }));
             });
           });
         }, Promise.resolve());
       }).then(function () {
-        say("Saved in " + root.name + "\\" + name.slice(0, 25) + "…");
+        done();
+        say("Saved ✓");
+        setTimeout(function () { say("Save to folder"); }, 4000);
         toast(photos.length + " photos saved in " + root.name + "\\" + name + ".");
       });
     }).catch(function (e) {
+      done();
       say("Save to folder");
       if (e && e.name === "AbortError") return;  /* picker cancelled */
       /* the remembered folder was moved, renamed or deleted: forget it and ask again */
@@ -817,6 +885,12 @@
         return savePhotosToFolder(it, true, btn);
       }
       if (e && e.name === "SecurityError") { toast("Click Save to folder once more to pick your photo folder."); return; }
+      if (e && e.name === "TimeoutError") {
+        toast(e.message + ". Click Save to folder again, or Shift+click to pick the folder again. Saving to your downloads now.");
+        var c = photoFiles(it);
+        within(30000, "Downloading the photos", c.p).then(downloadFiles, function () { toast("Couldn't load the photos either. Check your connection."); });
+        return;
+      }
       toast("Couldn't save the photos" + (e && e.message ? ": " + e.message : "") + ".");
     });
   }
