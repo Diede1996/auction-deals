@@ -1,10 +1,13 @@
 """Totals of your private stock (data/stock.json in the private repository) for the wealth overview.
 
 Same sums as the Finance tab of the dashboard (scanner/dashboard_private.js):
-  earned  = what paid sales brought in minus what the sold part cost you
+  earned  = REAL profit (Diede, 2026-11-22): per purchase (one invoice, or one lot split into pieces) a sale only
+            counts as profit once that purchase has been paid back (break-even); a loss counts once nothing is left
+            for sale. earnedPerPiece = the old sum: price minus the sold piece's share of the cost.
+  lots    = per purchase: what has come back from paid sales against what it cost (pieces you kept left out)
   saved   = new price minus cost, only on what you kept for yourself (a partly sold lot: the kept share)
   inStock = paid for what's still for sale
-  byMonth = profit of paid sales per calendar month (sales without a date go in undatedProfit)
+  byMonth = real profit of paid sales per calendar month (sales without a date go in undatedProfit)
   capital = working capital as on the Finance tab: stock at cost + all profit, without personal items,
             next to settings.capital_goal and settings.monthly_goal from watchlist.yml (optional third argument)
 
@@ -76,14 +79,15 @@ def _in_stock(it):
 
 def _by_month(items):
     months, undated = {}, 0.0
+    real, _ = real_profits(items)
     for it in items:
         if it.get("personal"):
             continue
-        for s in _sales(it):
+        for i, s in enumerate(_sales(it)):
             if s.get("unpaid"):
                 continue
             price = float(s.get("price") or 0)
-            profit = price - _sale_cost(it, s)
+            profit = real.get((id(it), i), 0.0)
             day = str(s.get("date") or "")
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day):
                 undated += profit
@@ -94,6 +98,57 @@ def _by_month(items):
             m["sales"] += 1
     rows = [{**m, "profit": round(m["profit"], 2), "soldFor": round(m["soldFor"], 2)} for _, m in sorted(months.items())]
     return rows, round(undated, 2)
+
+
+def _lot_key(it):
+    """one purchase: the invoice, else the lot the piece was split from, else the item itself"""
+    inv = str(it.get("invoice") or "").strip()
+    if inv:
+        return "inv:" + inv
+    lot = it.get("lotOf") or {}
+    return "lot:" + str(lot.get("id")) if lot.get("id") else "id:" + str(it.get("id") or id(it))
+
+
+def _lot_cost(it):
+    """what has to come back before the purchase is paid back: all of it, but for something you kept only the sold part"""
+    return _cost_of_sold(it) if _status(it) == "kept" else float(it.get("paid") or 0)
+
+
+def _day_key(s):
+    d = str(s.get("date") or "")
+    return d if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else ""
+
+
+def real_profits(items, with_unpaid=False):
+    """({(id(item), sale index): real profit}, [lot rows]): sales walk in date order (undated first) through
+    their purchase; only what comes in above the cost is profit, and a purchase with nothing left for sale and
+    less back than it cost books the loss on its last sale. Personal items are left out."""
+    groups = {}
+    for it in items:
+        if not it.get("personal"):
+            groups.setdefault(_lot_key(it), []).append(it)
+    real, lots = {}, []
+    for members in groups.values():
+        target = sum(_lot_cost(it) for it in members)
+        sales = [(it, i, s) for it in members for i, s in enumerate(_sales(it)) if with_unpaid or not s.get("unpaid")]
+        sales.sort(key=lambda x: _day_key(x[2]))
+        is_open = any(_status(it) == "stock" for it in members)
+        cum = 0.0
+        for it, i, s in sales:
+            before, cum = cum, cum + float(s.get("price") or 0)
+            real[(id(it), i)] = max(0.0, cum - target) - max(0.0, before - target)
+        if sales and not is_open and cum < target:
+            it, i, _ = sales[-1]
+            real[(id(it), i)] += cum - target
+        if target > 0 or sales:
+            names = [it.get("name") or "" for it in members]
+            lot = next((it.get("lotOf") for it in members if (it.get("lotOf") or {}).get("name")), None)
+            lots.append({"name": lot["name"] if lot else names[0] + (" + %d more" % (len(names) - 1) if len(names) > 1 else ""),
+                         "cost": round(target, 2), "back": round(cum, 2), "open": is_open,
+                         "paidBack": cum >= target, "profit": round(max(0.0, cum - target) if is_open else cum - target, 2),
+                         "pieces": len(members),
+                         "keptCost": round(sum(float(it.get("paid") or 0) - _cost_of_sold(it) for it in members if _status(it) == "kept"), 2)})
+    return real, lots
 
 
 def _capital(items, settings):
@@ -137,19 +192,24 @@ def summarize(data, now=None, settings=None):
                 revenue += price
                 cost += c
                 sales_count += 1
+    real, lots = real_profits(items)
+    real_all, _ = real_profits(items, with_unpaid=True)
+    earned = sum(real.values())
     saved_items = [v for v in (_saved(it) for it in items) if v is not None]
     new_value = sum(v for v in (_kept_new_value(it) for it in items) if v is not None)
     r = lambda x: round(x, 2)  # noqa: E731
     by_month, undated = _by_month(items)
     return {
         "updatedAt": (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "earned": r(revenue - cost),
+        "earned": r(earned),
+        "earnedPerPiece": r(revenue - cost),
         "soldFor": r(revenue),
         "costOfSold": r(cost),
         "earnedPctOfCost": r((revenue - cost) / cost * 100) if cost else None,
         "marginPctOfPrice": r((revenue - cost) / revenue * 100) if revenue else None,
         "sales": sales_count,
-        "earnedWhenPaid": r(waiting),
+        "earnedWhenPaid": r(sum(real_all.values()) - earned),
+        "earnedWhenPaidPerPiece": r(waiting),
         "saved": r(sum(saved_items)),
         "savedItems": len(saved_items),
         "keptNewValue": r(new_value),
@@ -165,6 +225,7 @@ def summarize(data, now=None, settings=None):
         "byMonth": by_month,
         "undatedProfit": undated,
         "capital": _capital(items, settings),
+        "lots": sorted(lots, key=lambda x: (not x["open"], x["back"] >= x["cost"], -x["cost"])),
     }
 
 

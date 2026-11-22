@@ -200,6 +200,41 @@
     var keptShare = qtyOf(it) > 1 ? Math.max(0, 1 - soldQty(it) / qtyOf(it)) : (sales(it).length ? 0 : 1);
     return it.newPrice * keptShare - Math.max(0, (it.paid || 0) - costOfSold(it));
   }
+  /* REAL profit (Diede, 2026-11-22): per purchase (one invoice, else the lot a piece was split from, else the item) a sale only
+     makes profit once the whole purchase has been paid back; a loss counts once nothing of it is left for sale. Pieces you
+     kept count only for what you sold of them (their value is under Saved). Same as scanner/finance_summary.py. */
+  function lotKey(it) {
+    var inv = String(it.invoice || "").trim();
+    return inv ? "inv:" + inv : it.lotOf && it.lotOf.id ? "lot:" + it.lotOf.id : "id:" + it.id;
+  }
+  function lotCost(it) { return statusOf(it) === "kept" ? costOfSold(it) : (it.paid || 0); }
+  function realProfits(withUnpaid) {
+    var groups = {}, order = [], real = new Map(), lots = [];
+    items().forEach(function (it) {
+      if (it.personal) return;
+      var k = lotKey(it);
+      if (!groups[k]) { groups[k] = []; order.push(k); }
+      groups[k].push(it);
+    });
+    order.forEach(function (k) {
+      var members = groups[k], target = members.reduce(function (t, it) { return t + lotCost(it); }, 0), list = [];
+      members.forEach(function (it) { sales(it).forEach(function (s) { if (withUnpaid || !s.unpaid) list.push(s); }); });
+      list.sort(function (a, b) { return (validDay(a.date) ? a.date : "").localeCompare(validDay(b.date) ? b.date : ""); });
+      var open = members.some(function (it) { return statusOf(it) === "stock"; }), cum = 0;
+      list.forEach(function (s) {
+        var before = cum; cum += s.price || 0;
+        real.set(s, Math.max(0, cum - target) - Math.max(0, before - target));
+      });
+      if (list.length && !open && cum < target) { var last = list[list.length - 1]; real.set(last, real.get(last) + cum - target); }
+      if (target > 0 || list.length) {
+        var lot = members.filter(function (it) { return it.lotOf && it.lotOf.name; })[0];
+        lots.push({ name: lot ? lot.lotOf.name : members[0].name + (members.length > 1 ? " + " + (members.length - 1) + " more" : ""),
+          members: members, cost: target, back: cum, open: open, profit: open ? Math.max(0, cum - target) : cum - target,
+          keptCost: members.reduce(function (t, it) { return t + (statusOf(it) === "kept" ? Math.max(0, (it.paid || 0) - costOfSold(it)) : 0); }, 0) });
+      }
+    });
+    return { real: real, lots: lots };
+  }
   function listings(it) { return statusOf(it) === "stock" && Array.isArray(it.listings) ? it.listings : []; }
   function isStale(l) { var d = daysSince(l.since); return d != null && d >= STALE_DAYS; }
   /* When selling started: something you used yourself first (ownUse, or kept and later put up for sale) counts from the day it went up
@@ -789,11 +824,13 @@
   /* ---------- Finance ---------- */
   function moneyView(box) {
     var all = items().filter(matches);
+    var R = realProfits(false), RA = realProfits(true);
     var rows = [];
     all.forEach(function (it) {
       if (it.personal) return;  /* bought for yourself and sold later to get rid of it: not resale profit */
       sales(it).forEach(function (s, i) {
-        rows.push({ it: it, s: s, i: i, date: validDay(s.date) ? s.date : null, cost: saleCost(it, s), price: s.price || 0, unpaid: !!s.unpaid });
+        rows.push({ it: it, s: s, i: i, date: validDay(s.date) ? s.date : null, cost: saleCost(it, s), price: s.price || 0, unpaid: !!s.unpaid,
+          real: s.unpaid ? null : R.real.get(s) || 0, realIfPaid: RA.real.get(s) || 0 });
       });
     });
     /* a sale the buyer hasn't paid yet counts once it's paid */
@@ -801,7 +838,8 @@
     rows = rows.filter(function (r) { return !r.unpaid; });
     var rev = rows.reduce(function (t, r) { return t + r.price; }, 0);
     var cost = rows.reduce(function (t, r) { return t + r.cost; }, 0);
-    var soon = waiting.reduce(function (t, r) { return t + r.price - r.cost; }, 0);
+    var real = rows.reduce(function (t, r) { return t + r.real; }, 0);
+    var soon = all0.reduce(function (t, r) { return t + r.realIfPaid; }, 0) - real;
     var withNew = all.filter(function (it) { return savedOf(it) != null; });
     var saved = withNew.reduce(function (t, it) { return t + savedOf(it); }, 0);
     var inStock = all.reduce(function (t, it) { return t + stockValue(it); }, 0);
@@ -811,33 +849,37 @@
     if (cap) box.append(cap);
     box.append(platformPanel());
     box.append(tiles([
-      { label: "Earned", value: money(rev - cost), note: "profit on what you sold: " + pctOf(rev - cost, cost) + " of what it cost you" +
-        (waiting.length ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
+      { label: "Earned", value: money(real), note: "real profit: only what came in after a purchase had paid itself back" +
+        " · per piece " + money(rev - cost) + " (" + pctOf(rev - cost, cost) + " of what the sold pieces cost)" +
+        (waiting.length && Math.abs(soon) >= 0.5 ? " · " + money(soon) + " more once " + (waiting.length === 1 ? "1 buyer pays" : waiting.length + " buyers pay") : ""), primary: true },
       { label: "Saved", value: money(saved), note: "new price minus what you paid, on the " + withNew.length + " items you kept for yourself" },
       { label: "Money in stock", value: money(inStock), note: "paid for what's still for sale" }
     ]));
 
+    var lotsBox = lotsPanel(R.lots);
+    if (lotsBox) box.append(lotsBox);
+
     box.append(exportPanel());
 
-    var chartPanel = el("section", { "class": "panel pchart" }, el("h2", { text: "Profit over time" }));
+    var chartPanel = el("section", { "class": "panel pchart" }, el("h2", { text: "Real profit over time" }));
     chartPanel.append(profitChart(rows));
     box.append(chartPanel);
 
     /* per category */
     var cats = {};
     rows.forEach(function (r) {
-      var c = r.it.category || "Other", g = cats[c] = cats[c] || { n: 0, rev: 0, cost: 0, days: [] };
-      g.n += r.s.qty || 1; g.rev += r.price; g.cost += r.cost;
+      var c = r.it.category || "Other", g = cats[c] = cats[c] || { n: 0, rev: 0, cost: 0, real: 0, days: [] };
+      g.n += r.s.qty || 1; g.rev += r.price; g.cost += r.cost; g.real += r.real;
       var st = saleStart(r.it), d = r.date && validDay(st) ? Math.round((Date.parse(r.date) - Date.parse(st)) / 86400000) : null;
       if (d != null && d >= 0) g.days.push(d);
     });
     var catTable = el("table", { "class": "ptable" }, el("thead", null, el("tr", null,
-      ["Category", "Sold", "Sold for", "Profit", "Margin", "Days to sell"].map(function (h, i) { return el("th", { "class": i ? "amt" : "", text: h }); }))));
+      ["Category", "Sold", "Sold for", "Real profit", "Margin per piece", "Days to sell"].map(function (h, i) { return el("th", { "class": i ? "amt" : "", text: h }); }))));
     var tb = el("tbody");
-    Object.keys(cats).sort(function (a, b) { return (cats[b].rev - cats[b].cost) - (cats[a].rev - cats[a].cost); }).forEach(function (c) {
+    Object.keys(cats).sort(function (a, b) { return (cats[b].real - cats[a].real) || ((cats[b].rev - cats[b].cost) - (cats[a].rev - cats[a].cost)); }).forEach(function (c) {
       var g = cats[c], med = g.days.length ? g.days.slice().sort(function (a, b) { return a - b; })[Math.floor(g.days.length / 2)] : null;
       tb.append(el("tr", null, el("td", { text: c }), el("td", { "class": "amt", text: String(g.n) }), el("td", { "class": "amt", text: money(g.rev) }),
-        el("td", { "class": "amt " + (g.rev - g.cost >= 0 ? "good" : "bad"), text: money(g.rev - g.cost) }), el("td", { "class": "amt", text: pctOf(g.rev - g.cost, g.cost) }),
+        el("td", { "class": "amt " + (g.real >= 0 ? "good" : "bad"), text: money(g.real) }), el("td", { "class": "amt", text: pctOf(g.rev - g.cost, g.cost) }),
         el("td", { "class": "amt", text: med != null ? med + " (median)" : "–" })));
     });
     catTable.append(tb);
@@ -846,7 +888,7 @@
 
     /* every sale */
     var saleTable = el("table", { "class": "ptable" }, el("thead", null, el("tr", null,
-      ["Sold on", "Item", "Where", "Sold for", "Cost", "Profit", "Margin"].map(function (h, i) { return el("th", { "class": i > 2 ? "amt" : "", text: h }); }))));
+      ["Sold on", "Item", "Where", "Sold for", "Cost", "Profit per piece", "Margin", "Real profit"].map(function (h, i) { return el("th", { "class": i > 2 ? "amt" : "", text: h }); }))));
     var sb = el("tbody");
     all0.slice().sort(function (a, b) { return (b.unpaid - a.unpaid) || String(b.date || b.it.bought || "").localeCompare(String(a.date || a.it.bought || "")); }).forEach(function (r) {
       var p = r.price - r.cost;
@@ -860,11 +902,12 @@
             el("button", { type: "button", "class": "btn-link", text: "Fell through", onclick: function () { salePaid(r.it, r.i, false); } })) : null),
         el("td", { text: r.s.platform ? platformLabel(r.s.platform) : "–" }),
         el("td", { "class": "amt", text: money2(r.price) }), el("td", { "class": "amt", text: money2(r.cost) }),
-        el("td", { "class": "amt " + (p >= 0 ? "good" : "bad"), text: money2(p) }), el("td", { "class": "amt", text: pctOf(p, r.cost) })));
+        el("td", { "class": "amt " + (p >= 0 ? "good" : "bad"), text: money2(p) }), el("td", { "class": "amt", text: pctOf(p, r.cost) }),
+        el("td", { "class": "amt " + ((r.unpaid ? r.realIfPaid : r.real) >= 0 ? "good" : "bad"), title: "What this sale added once its purchase had paid itself back", text: r.unpaid ? "(" + money2(r.realIfPaid) + ")" : money2(r.real) })));
     });
     saleTable.append(sb);
     if (all0.length) box.append(el("section", { "class": "panel ptablebox" }, el("h2", { text: "Every sale" }), el("div", { "class": "scrollx" }, saleTable),
-      el("p", { "class": "small", text: "Margin = profit as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price." })));
+      el("p", { "class": "small", text: "Margin = profit per piece as a share of what the sold piece cost you, the same as the max bids on the Lots tab. For a lot of several pieces each piece costs its share of the price. Real profit = what the sale added once its whole purchase had paid itself back; until then it is € 0." })));
   }
   /* sold per platform this calendar year, EVERYTHING (also own stuff sold at € 0 cost, personal):
      platforms report sellers to the tax office from 30 sales or € 2.000 a year per platform (DAC7, Diede 9-11) */
@@ -903,16 +946,18 @@
     if (!(goal > 0)) return null;
     var now = today(), month = now.slice(0, 7);
     var done = 0, n = 0, waiting = 0, last90 = [], since = new Date(Date.parse(now) - 90 * 86400000).toISOString().slice(0, 10);
+    var R = realProfits(false), RA = realProfits(true);
     items().forEach(function (it) {
       if (it.personal) return;
       sales(it).forEach(function (s) {
         if (!validDay(s.date)) return;
-        var p = (s.price || 0) - saleCost(it, s);
-        if (s.unpaid) { if (s.date.slice(0, 7) === month) waiting += p; return; }
-        if (s.date.slice(0, 7) === month) { done += p; n++; }
-        if (s.date >= since) last90.push(p);
+        if (s.unpaid) { if (s.date.slice(0, 7) === month) waiting += RA.real.get(s) || 0; return; }
+        if (s.date.slice(0, 7) === month) { done += R.real.get(s) || 0; n++; }
+        if (s.date >= since) last90.push((s.price || 0) - saleCost(it, s));
       });
     });
+    /* still to sell before the purchases with stock left have paid themselves back: no profit until then */
+    var toRecover = R.lots.reduce(function (t, l) { return t + (l.open ? Math.max(0, l.cost - l.back) : 0); }, 0);
     var y = +month.slice(0, 4), m = +month.slice(5, 7), days = new Date(Date.UTC(y, m, 0)).getUTCDate(), day = +now.slice(8, 10);
     var left = days - day, togo = Math.max(0, goal - done);
     var avg = last90.length ? last90.reduce(function (t, p) { return t + p; }, 0) / last90.length : null;
@@ -925,17 +970,41 @@
       var pace = goal * day / days;
       lines.push(money(togo) + " to go in " + left + (left === 1 ? " day" : " days") + " · " +
         (done >= pace ? "ahead of" : "behind") + " a steady pace (" + money(pace) + " by today)");
+      if (toRecover >= 1) lines.push("First " + money(toRecover) + " more in sales to pay back what you bought (see “Purchases paid back”); only what comes in after that is profit.");
       if (avg != null && avg > 0) {
         var need = Math.ceil(togo / avg);
-        lines.push("Your sales of the last 90 days made " + money(avg) + " profit each (" + last90.length + (last90.length === 1 ? " sale" : " sales") +
-          "): about " + need + " more " + (need === 1 ? "sale" : "sales") + " this month" + (left > 6 ? ", " + Math.ceil(need / Math.max(1, left / 7)) + " a week" : "") + ".");
+        lines.push("Your sales of the last 90 days made " + money(avg) + " profit per piece (" + last90.length + (last90.length === 1 ? " sale" : " sales") +
+          "): about " + need + " more " + (need === 1 ? "sale" : "sales") + (toRecover >= 1 ? " after that" : "") + " this month" + (left > 6 ? ", " + Math.ceil(need / Math.max(1, left / 7)) + " a week" : "") + ".");
       } else lines.push("No paid sales in the last 90 days yet, so no estimate of how many sales that takes.");
     }
-    if (waiting) lines.push(money(waiting) + " more once buyers of this month pay.");
+    if (Math.abs(waiting) >= 0.5) lines.push(money(waiting) + " more once buyers of this month pay.");
     return el("section", { "class": "panel pgoal" }, el("h2", { text: "Goal this month" }),
-      el("div", { "class": "goalnum num" }, money(done), el("span", { "class": "of", text: " of " + money(goal) + " profit · " + n + (n === 1 ? " sale" : " sales") })),
+      el("div", { "class": "goalnum num" }, money(done), el("span", { "class": "of", text: " of " + money(goal) + " real profit · " + n + (n === 1 ? " sale" : " sales") })),
       bar, lines.map(function (t) { return el("p", { "class": "small", text: t }); }),
       el("p", { "class": "small", text: "Change the goal in watchlist.yml (settings → monthly_goal)." }));
+  }
+  /* per purchase: what has come back from paid sales against what it cost; the ones still being paid back first */
+  function lotsPanel(lots) {
+    var show = lots.filter(function (l) { return l.back > 0 || l.open; });
+    if (!show.length) return null;
+    show.sort(function (a, b) {
+      var pa = a.back >= a.cost, pb = b.back >= b.cost;
+      return (b.open - a.open) || (pa - pb) || (b.cost - a.cost);
+    });
+    var list = el("div", { "class": "plots" });
+    show.forEach(function (l) {
+      var paid = l.back >= l.cost, pct = l.cost > 0 ? Math.min(100, l.back / l.cost * 100) : 100;
+      var bits = [paid ? (l.open ? "Paid back ✓ · " + money(l.profit) + " real profit so far" : (l.profit >= 0 ? "Paid back ✓ · " + money(l.profit) + " profit" : "Sold out · " + money(l.profit) + " loss"))
+        : money(l.cost - l.back) + " to go before it makes profit" + (l.open ? "" : " · sold out: " + money(l.profit) + " loss")];
+      if (l.keptCost >= 0.5) bits.push(money(l.keptCost) + " for pieces you kept is not counted (that's under Saved)");
+      list.append(el("div", { "class": "plot" },
+        el("div", { "class": "plot-head" }, el("strong", { text: l.name }), el("span", { "class": "num", text: money(l.back) + " of " + money(l.cost) + " back" })),
+        el("div", { "class": "goalbar", role: "progressbar", "aria-valuemin": "0", "aria-valuemax": String(Math.round(l.cost)), "aria-valuenow": String(Math.round(l.back)) },
+          el("div", { "class": "fill" + (paid ? " done" : ""), style: "width:" + pct.toFixed(1) + "%" })),
+        el("p", { "class": "small", text: bits.join(" · ") })));
+    });
+    return el("section", { "class": "panel pgoal" }, el("h2", { text: "Purchases paid back" }), list,
+      el("p", { "class": "small", text: "One purchase = one invoice (or one lot you split into pieces). Sales only count as profit once the purchase has paid itself back." }));
   }
   /* working capital towards watchlist.yml settings.capital_goal (Diede, 2026-11-12: build up to € 5000 to buy lots,
      then the monthly profit goes to the stock market). There is no cash ledger, so capital = what you paid for what's
@@ -954,7 +1023,7 @@
     var bar = el("div", { "class": "goalbar", role: "progressbar", "aria-valuemin": "0", "aria-valuemax": String(goal), "aria-valuenow": String(Math.round(Math.max(0, have))) },
       el("div", { "class": "fill" + (reached ? " done" : ""), style: "width:" + Math.max(0, Math.min(100, have / goal * 100)).toFixed(1) + "%" }));
     var monthly = AD.settings ? +(AD.settings().monthly_goal || 0) : 0, togo = Math.max(0, goal - have);
-    var lines = [money(stock) + " in stock (what you paid for what's still for sale) + " + money(profit) + " profit on everything you sold so far."];
+    var lines = [money(stock) + " in stock (what you paid for what's still for sale) + " + money(profit) + " that your sales brought in above what the sold pieces cost (per piece, so not the same as real profit)."];
     if (reached) lines.push("Reached 🎉 From now on, put the profit of each month into the stock market and keep this amount for buying lots.");
     else {
       lines.push(money(togo) + " to go" + (monthly > 0 ? ": about " + Math.ceil(togo / monthly) + " months at " + money(monthly) + " profit a month" : "") + ".");
@@ -1025,20 +1094,20 @@
   function profitChart(rows) {
     var undated = rows.filter(function (r) { return !r.date; });
     var dated = rows.filter(function (r) { return r.date; }).sort(function (a, b) { return a.date.localeCompare(b.date); });
-    var start = undated.reduce(function (t, r) { return t + r.price - r.cost; }, 0);
+    var start = undated.reduce(function (t, r) { return t + r.real; }, 0);
     if (!dated.length) {
       return el("p", { "class": "small", text: rows.length ? "Earned so far: " + money(start) + ". Sales you record from now on (with their date) build the line here." :
         "Your profit builds up here as you record sales." });
     }
     var pts = [{ t: Date.parse(dated[0].date) - 86400000 * 7, v: start }], run = start;
-    dated.forEach(function (r) { run += r.price - r.cost; pts.push({ t: Date.parse(r.date), v: run, r: r }); });
+    dated.forEach(function (r) { run += r.real; pts.push({ t: Date.parse(r.date), v: run, r: r }); });
     pts.push({ t: Math.max(Date.parse(today()), pts[pts.length - 1].t), v: run });
     var W = 760, H = 220, L = 56, R = 12, T = 12, B = 28;
     var t0 = pts[0].t, t1 = pts[pts.length - 1].t || t0 + 1;
     var vs = pts.map(function (p) { return p.v; }), lo = Math.min(0, Math.min.apply(null, vs)), hi = Math.max(1, Math.max.apply(null, vs));
     var x = function (t) { return L + (t - t0) / Math.max(1, t1 - t0) * (W - L - R); };
     var y = function (v) { return T + (hi - v) / (hi - lo) * (H - T - B); };
-    var s = svg("svg", { viewBox: "0 0 " + W + " " + H, "class": "pline", role: "img", "aria-label": "Cumulative profit, now " + money(run) });
+    var s = svg("svg", { viewBox: "0 0 " + W + " " + H, "class": "pline", role: "img", "aria-label": "Cumulative real profit, now " + money(run) });
     [lo, (lo + hi) / 2, hi].forEach(function (v) {
       s.append(svg("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), "class": "grid" }));
       s.append(svg("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end", text: money(v) }));
@@ -1050,7 +1119,7 @@
     pts.forEach(function (p) {
       if (!p.r) return;
       var c = svg("circle", { cx: x(p.t), cy: y(p.v), r: 3.5, "class": "dot" });
-      c.append(svg("title", { text: showDay(p.r.date) + ": " + p.r.it.name + " " + money2(p.r.price - p.r.cost) + " · total " + money(p.v) }));
+      c.append(svg("title", { text: showDay(p.r.date) + ": " + p.r.it.name + " " + money2(p.r.real) + " real profit · total " + money(p.v) }));
       s.append(c);
     });
     s.append(svg("text", { x: L, y: H - 8, text: showDay(new Date(t0).toISOString().slice(0, 10)) }));

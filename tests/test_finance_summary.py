@@ -50,3 +50,34 @@ def test_by_month_and_capital(tmp_path):
     assert s["undatedProfit"] == 50
     assert s["capital"] == {"inStock": 200, "profit": 220, "have": 420, "goal": 5000, "monthlyGoal": 500}
     assert "goal" not in summarize(data, NOW)["capital"]
+
+
+def test_real_profit_only_after_break_even():
+    """Diede 2026-11-22: a lot only makes profit once everything it cost has come back"""
+    lot = {"id": "hugo", "name": "HUGO"}
+    data = {"items": [
+        {"id": "a", "status": "sold", "paid": 60, "invoice": "INV1", "lotOf": lot, "sales": [{"price": 110, "date": "2026-11-10"}]},
+        {"id": "b", "status": "sold", "paid": 60, "invoice": "INV1", "lotOf": lot, "sales": [{"price": 120, "date": "2026-11-20"}]},
+        {"id": "c", "status": "stock", "paid": 180, "invoice": "INV1", "lotOf": lot},
+        {"id": "d", "status": "kept", "paid": 50, "invoice": "INV1", "lotOf": lot, "newPrice": 300},
+    ]}
+    s = summarize(data, NOW)
+    assert s["earnedPerPiece"] == 110
+    assert s["earned"] == 0  # 230 of 300 back (the kept piece is not counted)
+    [row] = s["lots"]
+    assert row["cost"] == 300 and row["back"] == 230 and not row["paidBack"] and row["keptCost"] == 50
+    data["items"][2]["sales"] = [{"price": 100, "date": "2026-11-25"}]
+    data["items"][2]["status"] = "sold"
+    s = summarize(data, NOW)
+    assert s["earned"] == 30
+    assert s["byMonth"] == [{"month": "2026-11", "profit": 30, "soldFor": 330, "sales": 3}]
+
+
+def test_loss_counts_once_nothing_is_left():
+    data = {"items": [
+        {"id": "a", "status": "sold", "paid": 100, "invoice": "X", "sales": [{"price": 30, "date": "2026-11-01"}]},
+        {"id": "b", "status": "stock", "paid": 100, "invoice": "X"},
+    ]}
+    assert summarize(data, NOW)["earned"] == 0
+    data["items"][1].update(status="sold", sales=[{"price": 50, "date": "2026-11-02"}])
+    assert summarize(data, NOW)["earned"] == -120
