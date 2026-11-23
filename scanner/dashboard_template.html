@@ -82,6 +82,11 @@ button, input, select { font: inherit; color: inherit; }
 .health td.msg { white-space: normal; min-width: 180px; }
 .health tr.bad td { color: var(--warning-text); }
 .health p { margin: 8px 0 0; }
+/* lots Claude checked and doesn't recommend: collapsed under the list (Diede, 23 Nov 2026) */
+.rejected { margin-top: 18px; }
+.rejected > summary { cursor: pointer; width: fit-content; font-size: 14px; color: var(--text-2); padding: 6px 0; }
+.rejected .rej-note { font-size: 13px; color: var(--text-2); margin: 4px 0 10px; }
+.rejected h3 { font-size: 14px; margin: 14px 0 6px; color: var(--text-2); }
 .banner {
   margin: 16px 0 0; padding: 10px 14px; border-radius: var(--radius);
   background: var(--warning-bg); color: var(--warning-text);
@@ -562,6 +567,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     </div>
     <div id="rows"></div>
     <p class="empty" id="empty" hidden></p>
+    <details class="rejected lots-only" id="rejected" hidden><summary id="rejected-sum"></summary><p class="rej-note">Kavels die Claude heeft bekeken maar niet aanraadt, met de reden. Kijk hier af en toe of je het met Claude eens bent; denk je dat een kavel wél goed is, maak hem dan favoriet.</p><div id="rejected-rows"></div></details>
   </section>
 
   <section id="private" hidden></section>
@@ -728,6 +734,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                 maxBid: null, status: "noprice", headroom: -Infinity };
     if (claudeNo || unchecked) { out.status = "never"; out.claudeNo = claudeNo; out.unchecked = unchecked; return out; }
     if (adv && adv.source) out.claudeSource = adv.source;
+    /* Claude doubts it (type unknown, mixed lot, few comparisons): left out of the list like a "no" (Diede, 23 Nov 2026:
+       only show what Claude thinks I can make a profit on); still priced, so a favorite keeps its max bid */
+    if (adv && adv.verdict === "twijfel") out.claudeDoubt = true;
     if (!caps.length) return out;
     var maxTotal = Math.min.apply(null, caps);
     var maxBid = Math.max(0, Math.floor(bidFor(maxTotal)));
@@ -864,6 +873,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   function statusPill(c) {
     if (c.status === "room") return el("span", { "class": "pill good" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✓" }), "Room to bid");
     if (c.status === "over") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Above max");
+    if (c.claudeNo) return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Claude: nee");
     if (c.status === "never") return el("span", { "class": "pill critical" }, el("span", { "class": "ic", "aria-hidden": "true", text: "✕" }), "Not profitable");
     if (c.status === "check") return el("span", { "class": "pill neutral", title: "The bid in Troostwijk's email is old (usually the starting bid). Open the lot: bid only if the current bid is below the max bid." },
       el("span", { "class": "ic", "aria-hidden": "true", text: "↗" }), "Check current bid");
@@ -1150,14 +1160,22 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   /* once Claude checks every promising lot each day (scanner/advice_ai.py), only lots it checked are listed */
   var CLAUDE_ONLY = false;
   var ADVICE_LABEL = { "kopen": "Claude: kopen", "twijfel": "Claude: twijfel", "te duur": "Claude: te duur", "niet": "Claude: niet kopen" };
-  function adviceLine(lot, c) {
+  /* full: with Claude's reason (the "Rejected by Claude" section, favorites); otherwise only the label and max bid,
+     the reason in the tooltip (Diede, 23 Nov 2026: "ik wil niet helemaal lezen waarom") */
+  function adviceLine(lot, c, full) {
     var a = ADVICE[lot.key];
     if (!a && lot.claude) {  // a Marktplaats bargain Claude checked before it was sent ("kopen: reason")
       var m = /^(kopen|twijfel|niet): ?(.*)$/.exec(lot.claude) || [null, "", lot.claude];
-      return el("div", { "class": "advice", title: "Claude checked which Marktplaats listings really compare" },
-        el("span", { "class": "lbl " + m[1], text: ADVICE_LABEL[m[1]] || "Claude" }), el("span", { text: m[2] }));
+      return el("div", { "class": "advice", title: full ? "Claude checked which Marktplaats listings really compare" : m[2] },
+        el("span", { "class": "lbl " + m[1], text: ADVICE_LABEL[m[1]] || "Claude" }), full ? el("span", { text: m[2] }) : null);
     }
     if (!a) return null;
+    if (!full) {
+      var mb0 = c && c.source === "claude" && c.maxBid != null ? c.maxBid : a.maxBid;
+      return el("div", { "class": "advice", title: [a.model, a.reason, a.risks ? "Let op: " + a.risks : ""].filter(Boolean).join(" · ") },
+        el("span", { "class": "lbl " + String(a.label || "").replace(/\s+/g, "-"), text: ADVICE_LABEL[a.label] || ("Claude: " + a.label) }),
+        mb0 != null ? el("span", { text: "max bod " + money(mb0) }) : null);
+    }
     var nums = [];
     if (a.price != null) nums.push("waard ± " + money(a.price) + " per stuk (" + a.used + " van " + a.seen + " advertenties)");
     else if (a.botPrice != null) nums.push("bot zei " + money(a.botPrice) + ", te weinig echte vergelijkingen");
@@ -1245,7 +1263,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var art = el("article", { "class": "row" + (isHidden(r) ? " is-hidden" : "") + (c.status === "over" ? " is-over" : ""), "data-key": lot.key },
       lot.isNew ? el("span", { "class": "new-badge", title: "New since the last scan" }, "New") : null,
       el("div", { "class": "c-thumb" }, url ? el("a", { href: url, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" }, thumb) : thumb),
-      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot, c)),
+      el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot, c, r.full || favs[lot.key])),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
         closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
@@ -1374,7 +1392,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   }
   /* swiped away, too far, or the bid is already above your max bid (bids only go up) or no bid is profitable;
      favorites always stay, and so do items with always_show (wine, spirits: Diede 2026-11-11) */
-  function isOver(r) { return (r.c.status === "over" || r.c.status === "never") && !favs[r.lot.key] && !r.lot.followed && !r.lot.alwaysShow && !hidden[r.lot.key] && !r.c.far; }
+  function isOver(r) { return (r.c.status === "over" || r.c.status === "never" || r.c.claudeDoubt) && !favs[r.lot.key] && !r.lot.followed && !r.lot.alwaysShow && !hidden[r.lot.key] && !r.c.far; }
   function isHidden(r) { return !!hidden[r.lot.key] || !!r.c.far || isOver(r); }
 
   /* ---------- sub-tabs ---------- */
@@ -1423,6 +1441,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   }
 
   function render() {
+    document.getElementById("rejected").hidden = true;  /* renderRejected shows it again on the Lots tab */
     if (renderNav()) { if (window.__ADP) window.__ADP.render(ui.view); return; }
     lots.forEach(function (l) { delete l._share; delete l._shareN; delete l._value; });
     var all = lots.map(function (l) { return { lot: l, c: calc(l) }; });
@@ -1435,7 +1454,9 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var hcParts = [];
     if (farCount) hcParts.push(farCount + " too far");
     var waitCount = all.filter(function (r) { return r.c.unchecked && isOver(r); }).length;
-    if (overCount - waitCount) hcParts.push((overCount - waitCount) + " above max or not profitable");
+    var rejCount = all.filter(function (r) { return isOver(r) && !r.c.unchecked && ADVICE[r.lot.key]; }).length;
+    if (overCount - waitCount - rejCount) hcParts.push((overCount - waitCount - rejCount) + " above max or not profitable");
+    if (rejCount) hcParts.push(rejCount + " rejected by Claude (see below the list)");
     if (waitCount) hcParts.push(waitCount + " not checked by Claude yet");
     if (hc) hc.textContent = hcParts.length ? " (incl. " + hcParts.join(", ") + ")" : "";
     var favKeys = Object.keys(favs);
@@ -1513,6 +1534,13 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     })) : []);
     var shown = listed.filter(function (r) { return !ui.item || r.lot.item === ui.item; });
     sortRows(shown);
+    renderRejected(all.filter(function (r) {  /* same tab, category and search as the list; not swiped, not too far */
+      if (favs[r.lot.key] || hidden[r.lot.key] || r.c.far || tabOf(r) !== "all" || ui.view !== "all") return false;
+      if (!ADVICE[r.lot.key] || values[r.lot.key] != null || !isOver(r)) return false;
+      if (ui.item && r.lot.item !== ui.item) return false;
+      if (ui.site && r.lot.site !== ui.site) return false;
+      return !q || (r.lot.title + " " + r.lot.auction + " " + r.lot.item + " " + (r.lot.pickup || r.lot.location || "")).toLowerCase().indexOf(q) >= 0;
+    }));
     shown.forEach(function (r) {
       box.append(row(r));
       if (openSpread[r.lot.key] && r.lot.mp && r.lot.mp.prices && r.lot.mp.prices.length) box.append(spreadPanel(r.lot, r.c));
@@ -1538,6 +1566,42 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     }
     empty.hidden = !!shown.length;
   }
+
+  /* Lots Claude checked and doesn't recommend (no, doubt, or the bid is already above Claude's max), collapsed below
+     the list so you can spot-check Claude. Rows are only drawn when opened. */
+  var rejOpen = false, rejList = [];
+  function rejGroup(r) {
+    if (r.c.claudeNo) return 0;
+    if (r.c.claudeDoubt) return 1;
+    return r.c.status === "over" ? 2 : 3;
+  }
+  var REJ_TITLES = ["Niet kopen of geen betrouwbare prijs", "Twijfel", "Te duur: het bod is al boven Claude's max bod", "Niet winstgevend"];
+  function renderRejected(list) {
+    rejList = list;
+    var box = document.getElementById("rejected");
+    if (!box) return;
+    box.hidden = !list.length;
+    document.getElementById("rejected-sum").textContent = "Afgekeurd door Claude (" + list.length + ")";
+    if (box.open !== rejOpen) box.open = rejOpen;
+    drawRejected();
+  }
+  function drawRejected() {
+    var body = document.getElementById("rejected-rows");
+    body.textContent = "";
+    if (!rejOpen) return;
+    var groups = [[], [], [], []];
+    rejList.forEach(function (r) { groups[rejGroup(r)].push(r); });
+    groups.forEach(function (g, i) {
+      if (!g.length) return;
+      sortRows(g);
+      body.append(el("h3", { text: REJ_TITLES[i] + " (" + g.length + ")" }));
+      g.forEach(function (r) { body.append(row(Object.assign({}, r, { full: true }))); });
+    });
+  }
+  document.getElementById("rejected").addEventListener("toggle", function (e) {
+    if (e.target.open === rejOpen) return;
+    rejOpen = e.target.open; drawRejected();
+  });
 
   /* ---------- favorites: kept in one GitHub issue of this repository ----------
      The page reads the issue without logging in (the repository is public) and edits it with a token
