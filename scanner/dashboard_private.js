@@ -721,12 +721,18 @@
       el("span", { "class": "spacer" }),
       ad.title ? copyBtn("Copy title", ad.title) : null,
       ad.text ? copyBtn("Copy text", ad.text) : null,
+      ad.titleDe ? copyBtn("DE title", ad.titleDe) : null,
+      ad.textDe ? copyBtn("DE text", ad.textDe) : null,
       photos.length ? el("button", { type: "button", "class": "pbtn", text: shareLabel(photos.length), onclick: function (e) { sharePhotos(it, e.currentTarget); } }) : null,
       photos.length && window.showDirectoryPicker ? el("button", { type: "button", "class": "pbtn", text: "Save to folder", title: "Saves the photos in a folder named after this ad, inside a folder you pick once (e.g. Pictures\\verkopen)", onclick: function (e) { savePhotosToFolder(it, e.shiftKey, e.currentTarget); } }) : null,
       it._kind === "colbert" ? el("span", { "class": "small", text: "loose-jacket ad (ask Claude to change it)" }) :
       el("button", { type: "button", "class": "btn-link", text: text || photos.length ? "Edit ad" : "Write the ad", onclick: function () { editItem(it, "ad"); } })));
     if (ad.title) block.append(el("div", { "class": "pad-title", text: ad.title }));
     if (ad.text) block.append(el("div", { "class": "pad-text", text: ad.text }));
+    if (ad.textDe) block.append(el("details", { "class": "small" }, el("summary", { text: "German text (eBay.de / Vinted.de)" + (ad.floor != null ? " · lowest price " + money2(ad.floor) : "") }),
+      ad.titleDe ? el("div", { "class": "pad-title", text: ad.titleDe }) : null,
+      el("div", { "class": "pad-text", text: ad.textDe }),
+      ad.textDeNl ? el("div", { "class": "pad-text small", text: "Dutch translation: " + ad.textDeNl }) : null));
     if (photos.length) {
       var strip = el("div", { "class": "pstrip" });
       photos.forEach(function (ph) {
