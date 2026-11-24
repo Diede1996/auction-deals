@@ -1,7 +1,7 @@
 name: Brand survey
 
 # Which clothing brands sell well second-hand? Per search: number of private listings, median asking price and how
-# long they have been online, on Marktplaats and Vinted (scanner/brand_survey.py). Results are in the run's log.
+# long they have been online, on Marktplaats (scanner/brand_survey.py). Results are in the run's log.
 on:
   workflow_dispatch:
     inputs:
@@ -10,10 +10,7 @@ on:
         required: true
       pages:
         description: "Marktplaats pages of 100 per search"
-        default: "4"
-      vinted_pages:
-        description: "Vinted pages of 96 per search (0 = skip Vinted)"
-        default: "3"
+        default: "10"
 
 permissions:
   contents: read
@@ -33,5 +30,4 @@ jobs:
         env:
           QUERIES: ${{ inputs.queries }}
           PAGES: ${{ inputs.pages }}
-          VINTED_PAGES: ${{ inputs.vinted_pages }}
-        run: python -m scanner.brand_survey --queries "$QUERIES" --pages "$PAGES" --vinted-pages "$VINTED_PAGES"
+        run: python -m scanner.brand_survey --queries "$QUERIES" --pages "$PAGES"

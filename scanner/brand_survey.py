@@ -1,9 +1,8 @@
-"""Brand survey (workflow "Brand survey"): which clothing brands sell well second-hand?
+"""Brand survey (workflow "Brand survey"): which clothing brands sell well second-hand on Marktplaats?
 
 For each search it pages through Marktplaats (private sellers only) and reports how many listings there are,
 the median asking price and how long they have been online (Diede, 24 Nov 2026: "many listings from September
-means it doesn't sell quickly"). It also tries Vinted's catalogue, where the upload time of the first photo
-gives the age of a listing. Asking prices, not sale prices.
+means it doesn't sell quickly"). Asking prices, not sale prices.
 """
 from __future__ import annotations
 
@@ -99,79 +98,20 @@ def marktplaats(http: Http, query: str, today: date, pages: int, min_price: floa
     return head, rows
 
 
-def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int, debug: bool) -> str:
-    """Vinted catalogue (shows only unsold items). Age = upload time of the first photo."""
-    items = []
-    try:
-        if not http.session.cookies.get("access_token_web"):
-            r = http.get("https://www.vinted.nl/")
-            if debug:
-                print("VINTED home", r.status_code, sorted(http.session.cookies.keys()), flush=True)
-                probe_vinted(http, query)
-        for page in range(1, pages + 1):
-            data = http.json("https://www.vinted.nl/api/v2/catalog/items?" + urlencode(
-                {"search_text": query, "per_page": 96, "page": page, "order": "relevance"}),
-                headers={"Referer": "https://www.vinted.nl/catalog"})
-            items += data.get("items") or []
-            if len(data.get("items") or []) < 96:
-                break
-    except Exception as e:  # blocked or changed: say so, don't stop the Marktplaats part
-        if not items:
-            return f"VINTED {query}: failed ({type(e).__name__}: {str(e)[:120]})"
-    rows, favs = [], []
-    for it in items:
-        price = it.get("price")
-        amount = float(price.get("amount") if isinstance(price, dict) else price or 0)
-        if amount < min_price:
-            continue
-        ts = ((it.get("photo") or {}).get("high_resolution") or {}).get("timestamp")
-        age = (now - datetime.fromtimestamp(ts, timezone.utc)).days if ts else None
-        rows.append((amount, age))
-        favs.append(it.get("favourite_count") or 0)
-    fav = f" | favourites median {statistics.median(favs):.0f}" if favs else ""
-    return summary(f"VINTED {query}", rows) + f" | {len(items)} read{fav}"
-
-
-def probe_vinted(http: Http, query: str) -> None:
-    """Vinted moved its search API: try known paths and list the API paths the search page mentions."""
-    q = urlencode({"search_text": query, "per_page": 20, "page": 1})
-    for path, hdr in (("/api/v2/svc-catalogue/items", {"X-Next-App": "marketplace-web", "X-Platform": "web"}),
-                      ("/web/api/core/svc-catalogue/items", {"X-Next-App": "marketplace-web", "X-Platform": "web"}),
-                      ("/api/v2/svc-catalogue/items", {"x-next-app": "marketplace-web", "platform": "web"})):
-        try:
-            r = http.session.get("https://www.vinted.nl" + path + "?" + q, headers={"Accept": "application/json", **hdr},
-                                 timeout=30)
-            print("VINTED probe", path, r.status_code, r.text[:150].replace("\n", " "), flush=True)
-        except Exception as e:
-            print("VINTED probe", path, type(e).__name__, flush=True)
-    try:
-        page = http.session.get("https://www.vinted.nl/catalog?" + urlencode({"search_text": query}), timeout=30).text
-        paths = sorted(set(re.findall(r"(?:web\\?/api\\?/core|api\\?/v2)[A-Za-z0-9_\\/{}.-]+", page)))
-        print("VINTED page", len(page), "chars | api paths", paths[:60], flush=True)
-        hits = [page[max(0, m.start() - 100):m.end() + 200].replace("\n", " ")
-                for m in re.finditer(r"(?i)gateway|apiBase|api_base|baseUrl", page)]
-        print("VINTED page config", len(hits), hits[:8], flush=True)
-    except Exception as e:
-        print("VINTED page", type(e).__name__, flush=True)
-
-
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--queries", required=True, help="searches separated by ;")
     ap.add_argument("--pages", type=int, default=4, help="Marktplaats pages of 100 per search")
     ap.add_argument("--min-price", type=float, default=15)
-    ap.add_argument("--vinted-pages", type=int, default=3, help="Vinted pages of 96; 0 = skip Vinted")
     args = ap.parse_args()
     now = datetime.now(timezone.utc)
-    mp, vt = Http(delay=2.0, jitter=1.0), Http(delay=3.0, jitter=1.5)
+    mp = Http(delay=2.0, jitter=1.0)
     queries = [x.strip() for x in args.queries.split(";") if x.strip()]
     for q in queries:
         try:
             print(marktplaats(mp, q, now.date(), args.pages, args.min_price)[0], flush=True)
         except Exception as e:
             print(f"MP {q}: failed ({type(e).__name__}: {str(e)[:120]})", flush=True)
-        if args.vinted_pages:
-            print(vinted(vt, q, now, args.min_price, args.vinted_pages, debug=(q == queries[0])), flush=True)
 
 
 if __name__ == "__main__":
