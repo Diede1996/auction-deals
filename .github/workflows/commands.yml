@@ -55,6 +55,14 @@ jobs:
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
           exit 1
 
+      - name: Start the favorite reminders
+        if: steps.bot.outputs.watch == 'true'
+        run: |
+          busy=$(gh run list --workflow reminders.yml --json status --jq '[.[] | select(.status != "completed")] | length' --limit 5)
+          if [ "$busy" = "0" ]; then gh workflow run reminders.yml --ref "${{ github.ref_name }}"; fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Start a scan
         if: steps.bot.outputs.scan == 'true'
         run: gh workflow run scan.yml --ref "${{ github.ref_name }}" -f summary=true

@@ -228,7 +228,13 @@ def run_commands(root: Path, now: datetime, dry_run: bool = False, http_cls=Http
                 "Send /list to see your watchlist, /help for all commands.")
         tg_state["welcomed"] = now.isoformat()
 
-    # ⏰ favorites closing soon: a reminder at each stage (by default 3 h, 1 h and 15 min before closing),
+    # ⏰ favorites closing soon. With favorites.watcher (default) the reminders job sends them (scanner/reminders.py,
+    # it stays awake so they arrive on time); this job only starts that one while favorites are coming up.
+    if fav_cfg.get("watcher", True) is not False:
+        from .reminders import coming_up
+        github_output("watch", "true" if favs and coming_up(favs, lots_by_key, now) else "false")
+        favs = []  # nothing for the old reminder code below
+    # (old way) a reminder at each stage (by default 3 h, 1 h and 15 min before closing),
     # one message per closing time. GitHub sometimes starts this job hours late; then only the nearest stage is sent.
     sent = tg_state.setdefault("reminder_stages", {})
     tg_state.pop("reminded", None)

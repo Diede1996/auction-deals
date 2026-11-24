@@ -27,10 +27,11 @@ from .util import utc_now
 
 def run(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Dutch bankruptcy auction deal finder")
-    ap.add_argument("mode", nargs="?", default="scan", choices=["scan", "commands", "dashboard", "deals"])
+    ap.add_argument("mode", nargs="?", default="scan", choices=["scan", "commands", "dashboard", "deals", "reminders"])
     ap.add_argument("--root", default=".", help="folder with config.yml and watchlist.yml")
     ap.add_argument("--dry-run", action="store_true", help="print Telegram messages instead of sending them")
     ap.add_argument("--sites", help="comma-separated subset of sites to scan")
+    ap.add_argument("--minutes", type=float, default=345, help="reminders: how long to stay awake")
     args = ap.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
@@ -39,6 +40,9 @@ def run(argv: list[str] | None = None) -> int:
     if args.mode == "deals":
         from .deals import run_deals
         return run_deals(root, now, dry_run=args.dry_run)
+    if args.mode == "reminders":
+        from .reminders import main as reminders_main
+        return reminders_main(root, args.minutes, args.dry_run)
     if args.mode == "commands":
         return run_commands(root, now, dry_run=args.dry_run)
     if args.mode == "dashboard":

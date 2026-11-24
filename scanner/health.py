@@ -33,7 +33,8 @@ WORKFLOWS = {
     # Scheduled twice an hour, but GitHub only starts it 2-3 times a day (gaps up to ~17 h, Nov 2026) until the
     # external wake-up (cron-job.org) is set up; 6 h gave a false "not working" alarm on 19 Nov.
     "deals.yml": ("Marktplaats bargains", 20),
-    "commands.yml": ("Telegram commands and closing reminders", 12),
+    "commands.yml": ("Telegram commands", 12),
+    "reminders.yml": ("Favorite reminders", 24),
 }
 # private file -> (what it is, hours before it's old)
 PRIVATE_FILES = {
@@ -87,6 +88,8 @@ def check_runs(runs_by_file: dict[str, list], now: datetime) -> list[str]:
     """runs_by_file: the newest scheduled/dispatched runs per workflow file (GitHub API 'workflow_runs')."""
     out = []
     for f, (name, max_h) in WORKFLOWS.items():
+        if f not in runs_by_file:
+            continue  # couldn't look
         runs = [r for r in runs_by_file.get(f) or [] if r.get("status") == "completed"]
         ok = [r for r in runs if r.get("conclusion") == "success"]
         age = _age_h(ok[0].get("updated_at") if ok else None, now)

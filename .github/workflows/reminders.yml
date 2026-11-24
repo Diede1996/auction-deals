@@ -1,0 +1,53 @@
+name: Favorite reminders
+
+# Mails you an hour before a favorite closes (favorites.reminder_minutes_before in config.yml).
+# GitHub starts scheduled jobs hours late, so this job doesn't rely on a schedule: it stays awake up to ~5¾ hours,
+# checks your favorites every few minutes and sends each reminder on time, then starts itself again while
+# favorites are still coming up (scanner/reminders.py). The "Telegram commands" job starts it too.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "41 */6 * * *"   # a backup start, in case the chain ever stops
+
+permissions:
+  contents: write         # remember which reminders went out (data/reminders.json)
+  actions: write          # start itself again
+  issues: read            # your favorites
+
+concurrency:
+  group: reminders
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Send reminders when due
+        id: watch
+        run: |
+          git config user.name "auction-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python -m scanner reminders --minutes 345
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}   # by email when set (sent with the alerts mailbox below)
+          ALERTS_EMAIL: ${{ secrets.ALERTS_EMAIL }}
+          ALERTS_APP_PASSWORD: ${{ secrets.ALERTS_APP_PASSWORD }}
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Start again
+        if: steps.watch.outputs.again == 'true'
+        run: gh workflow run reminders.yml --ref "${{ github.ref_name }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
