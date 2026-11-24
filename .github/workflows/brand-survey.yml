@@ -1,0 +1,37 @@
+name: Brand survey
+
+# Which clothing brands sell well second-hand? Per search: number of private listings, median asking price and how
+# long they have been online, on Marktplaats and Vinted (scanner/brand_survey.py). Results are in the run's log.
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "Searches, separated by ;"
+        required: true
+      pages:
+        description: "Marktplaats pages of 100 per search"
+        default: "4"
+      vinted_pages:
+        description: "Vinted pages of 96 per search (0 = skip Vinted)"
+        default: "3"
+
+permissions:
+  contents: read
+
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Survey
+        env:
+          QUERIES: ${{ inputs.queries }}
+          PAGES: ${{ inputs.pages }}
+          VINTED_PAGES: ${{ inputs.vinted_pages }}
+        run: python -m scanner.brand_survey --queries "$QUERIES" --pages "$PAGES" --vinted-pages "$VINTED_PAGES"
