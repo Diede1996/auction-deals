@@ -148,17 +148,9 @@ def probe_vinted(http: Http, query: str) -> None:
         page = http.session.get("https://www.vinted.nl/catalog?" + urlencode({"search_text": query}), timeout=30).text
         paths = sorted(set(re.findall(r"(?:web\\?/api\\?/core|api\\?/v2)[A-Za-z0-9_\\/{}.-]+", page)))
         print("VINTED page", len(page), "chars | api paths", paths[:60], flush=True)
-        srcs = sorted(set(re.findall(r'src="([^"]+\.js)"', page)))
-        found = set()
-        for src in srcs[:80]:
-            url = src if src.startswith("http") else "https://www.vinted.nl" + src
-            try:
-                js = http.session.get(url, timeout=30).text
-            except Exception:
-                continue
-            for m in re.finditer(r"X_NEXT_APP:|A\.Default\b|Default:\"|\.Default\]=", js):
-                found.add(js[max(0, m.start() - 150):m.end() + 150].replace("\n", " "))
-        print("VINTED js", len(srcs), "scripts | context", sorted(found)[:15], flush=True)
+        hits = [page[max(0, m.start() - 100):m.end() + 200].replace("\n", " ")
+                for m in re.finditer(r"(?i)gateway|apiBase|api_base|baseUrl", page)]
+        print("VINTED page config", len(hits), hits[:8], flush=True)
     except Exception as e:
         print("VINTED page", type(e).__name__, flush=True)
 
