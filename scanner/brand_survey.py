@@ -107,6 +107,7 @@ def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int, 
             r = http.get("https://www.vinted.nl/")
             if debug:
                 print("VINTED home", r.status_code, sorted(http.session.cookies.keys()), flush=True)
+                probe_vinted(http, query)
         for page in range(1, pages + 1):
             data = http.json("https://www.vinted.nl/api/v2/catalog/items?" + urlencode(
                 {"search_text": query, "per_page": 96, "page": page, "order": "relevance"}),
@@ -129,6 +130,25 @@ def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int, 
         favs.append(it.get("favourite_count") or 0)
     fav = f" | favourites median {statistics.median(favs):.0f}" if favs else ""
     return summary(f"VINTED {query}", rows) + f" | {len(items)} read{fav}"
+
+
+def probe_vinted(http: Http, query: str) -> None:
+    """Vinted moved its search API: try known paths and list the API paths the search page mentions."""
+    q = urlencode({"search_text": query, "per_page": 20, "page": 1})
+    for path in ("/api/v2/catalog/items", "/web/api/core/catalog/items", "/api/v2/catalog/search", "/api/v2/items"):
+        try:
+            r = http.session.get("https://www.vinted.nl" + path + "?" + q, headers={"Accept": "application/json"},
+                                 timeout=30)
+            print("VINTED probe", path, r.status_code, r.text[:150].replace("\n", " "), flush=True)
+        except Exception as e:
+            print("VINTED probe", path, type(e).__name__, flush=True)
+    try:
+        page = http.session.get("https://www.vinted.nl/catalog?" + urlencode({"search_text": query}), timeout=30).text
+        paths = sorted(set(re.findall(r"/(?:web/)?api/[A-Za-z0-9_/{}.-]+", page)))
+        print("VINTED page", len(page), "chars | api paths", paths[:40], "| timestamp" in page,
+              page.count('"favourite_count"'), page.count("high_resolution"), flush=True)
+    except Exception as e:
+        print("VINTED page", type(e).__name__, flush=True)
 
 
 def main() -> None:
