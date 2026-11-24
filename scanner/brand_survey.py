@@ -135,9 +135,11 @@ def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int, 
 def probe_vinted(http: Http, query: str) -> None:
     """Vinted moved its search API: try known paths and list the API paths the search page mentions."""
     q = urlencode({"search_text": query, "per_page": 20, "page": 1})
-    for path in ("/api/v2/svc-catalogue/items", "/web/api/core/svc-catalogue/items"):
+    for path, hdr in (("/api/v2/svc-catalogue/items", {"X-Next-App": "marketplace-web", "X-Platform": "web"}),
+                      ("/web/api/core/svc-catalogue/items", {"X-Next-App": "marketplace-web", "X-Platform": "web"}),
+                      ("/api/v2/svc-catalogue/items", {"x-next-app": "marketplace-web", "platform": "web"})):
         try:
-            r = http.session.get("https://www.vinted.nl" + path + "?" + q, headers={"Accept": "application/json"},
+            r = http.session.get("https://www.vinted.nl" + path + "?" + q, headers={"Accept": "application/json", **hdr},
                                  timeout=30)
             print("VINTED probe", path, r.status_code, r.text[:150].replace("\n", " "), flush=True)
         except Exception as e:
@@ -154,8 +156,8 @@ def probe_vinted(http: Http, query: str) -> None:
                 js = http.session.get(url, timeout=30).text
             except Exception:
                 continue
-            for m in re.finditer(r"baseURL:|\"/api/v2\"|\"/web/api[^\"]*\"", js):
-                found.add(js[max(0, m.start() - 80):m.end() + 120].replace("\n", " "))
+            for m in re.finditer(r"X_NEXT_APP:|A\.Default\b|Default:\"|\.Default\]=", js):
+                found.add(js[max(0, m.start() - 150):m.end() + 150].replace("\n", " "))
         print("VINTED js", len(srcs), "scripts | context", sorted(found)[:15], flush=True)
     except Exception as e:
         print("VINTED page", type(e).__name__, flush=True)
