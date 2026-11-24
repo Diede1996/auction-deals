@@ -27,7 +27,8 @@ jobs:
         if: ${{ inputs.query == 'DIAG' }}
         env:
           N: "120"
-        run: PYTHONPATH=. python scripts/diag_type.py
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: PYTHONPATH=. python scripts/diag_ai.py
       - name: Search Marktplaats
         if: ${{ inputs.query != 'DIAG' }}
         env:
