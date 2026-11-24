@@ -27,7 +27,7 @@ jobs:
         if: ${{ inputs.query == 'DIAG' }}
         env:
           N: "120"
-        run: python scripts/diag_unpriced.py
+        run: PYTHONPATH=. python scripts/diag_unpriced.py
       - name: Search Marktplaats
         if: ${{ inputs.query != 'DIAG' }}
         env:
