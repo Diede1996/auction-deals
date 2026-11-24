@@ -146,10 +146,18 @@ def probe_vinted(http: Http, query: str) -> None:
         page = http.session.get("https://www.vinted.nl/catalog?" + urlencode({"search_text": query}), timeout=30).text
         paths = sorted(set(re.findall(r"(?:web\\?/api\\?/core|api\\?/v2)[A-Za-z0-9_\\/{}.-]+", page)))
         print("VINTED page", len(page), "chars | api paths", paths[:60], flush=True)
-        for word in ("favourite_count", "high_resolution", "catalogItems", "search_text"):
-            i = page.find(word)
-            print("VINTED page", word, page.count(word), page[max(0, i - 150):i + 250].replace("\n", " ") if i >= 0 else "",
-                  flush=True)
+        srcs = sorted(set(re.findall(r'src="([^"]+\.js)"', page)))
+        found = set()
+        for src in srcs[:80]:
+            url = src if src.startswith("http") else "https://www.vinted.nl" + src
+            try:
+                js = http.session.get(url, timeout=30).text
+            except Exception:
+                continue
+            for m in re.finditer(r"[\"'`]([^\"'`\s]{0,40}catalog[^\"'`\s]{0,60})[\"'`]", js):
+                if "/" in m[1]:
+                    found.add(m[1])
+        print("VINTED js", len(srcs), "scripts | catalog strings", sorted(found)[:80], flush=True)
     except Exception as e:
         print("VINTED page", type(e).__name__, flush=True)
 
