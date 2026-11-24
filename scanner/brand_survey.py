@@ -154,11 +154,9 @@ def probe_vinted(http: Http, query: str) -> None:
                 js = http.session.get(url, timeout=30).text
             except Exception:
                 continue
-            if "svc-catalogue/items" not in js:
-                continue
-            for m in re.finditer(r"baseURL|\blh=", js):
-                found.add(js[max(0, m.start() - 120):m.end() + 160].replace("\n", " "))
-        print("VINTED js", len(srcs), "scripts | context", sorted(found)[:12], flush=True)
+            for m in re.finditer(r"baseURL:|\"/api/v2\"|\"/web/api[^\"]*\"", js):
+                found.add(js[max(0, m.start() - 80):m.end() + 120].replace("\n", " "))
+        print("VINTED js", len(srcs), "scripts | context", sorted(found)[:15], flush=True)
     except Exception as e:
         print("VINTED page", type(e).__name__, flush=True)
 
