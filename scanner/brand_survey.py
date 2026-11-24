@@ -61,11 +61,11 @@ def summary(label: str, rows: list[tuple[float, int | None]]) -> str:
 
 
 def marktplaats(http: Http, query: str, today: date, pages: int, min_price: float) -> tuple[str, list]:
-    rows, total, raw_dates = [], None, []
-    seen = set()
+    """Newest first. Time online (Little's law): stock of private listings / new private listings per day."""
+    rows, total, seen, n_all, n_private, last_page_full = [], None, set(), 0, 0, False
     for page in range(pages):
         params = {"query": query, "limit": 100, "offset": page * 100, "searchInTitleAndDescription": "false",
-                  "viewOptions": "list-view"}
+                  "viewOptions": "list-view", "sortBy": "SORT_INDEX", "sortOrder": "DECREASING"}
         data = http.json(f"{API}?{urlencode(params)}")
         total = data.get("totalResultCount", total)
         found = data.get("listings") or []
@@ -73,30 +73,44 @@ def marktplaats(http: Http, query: str, today: date, pages: int, min_price: floa
             key = li.get("itemId")
             info = li.get("priceInfo") or {}
             title = html.unescape(li.get("title") or "")
-            if key in seen or is_business(li) or WANTED.search(title):
+            if key in seen or WANTED.search(title):
                 continue
             seen.add(key)
+            n_all += 1
+            if is_business(li):
+                continue
+            n_private += 1
             if info.get("priceType") not in PRICED_TYPES or (info.get("priceCents") or 0) / 100 < min_price:
                 continue
             day = listing_day(str(li.get("date") or ""), today)
-            if len(raw_dates) < 4 and day and (today - day).days > 2:
-                raw_dates.append(str(li.get("date")))
             rows.append((info["priceCents"] / 100, (today - day).days if day else None))
-        if len(found) < 100:
+        last_page_full = len(found) >= 100
+        if not last_page_full:
             break
-    head = summary(f"MP {query}", rows) + f" | total on MP (incl. shops) {total} | date samples {raw_dates}"
+    ages = [a for _, a in rows if a is not None]
+    complete = not last_page_full
+    head = summary(f"MP {query}", rows) + f" | total on MP (incl. shops) {total} | {'ALL' if complete else 'newest'} {n_all} read"
+    if ages and n_all:
+        window = 30 if complete else max(1, max(ages))  # days the newest listings cover
+        new_per_day = sum(a <= window for a in ages) / window
+        stock = len(rows) if complete else (total or n_all) * len(rows) / n_all
+        if new_per_day:
+            head += f" | new/day {new_per_day:.1f} | stock ~{stock:.0f} | est. days online {stock / new_per_day:.0f}"
     return head, rows
 
 
-def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int) -> str:
+def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int, debug: bool) -> str:
     """Vinted catalogue (shows only unsold items). Age = upload time of the first photo."""
-    items, data = [], {}
+    items = []
     try:
         if not http.session.cookies.get("access_token_web"):
-            http.get("https://www.vinted.nl/")
+            r = http.get("https://www.vinted.nl/")
+            if debug:
+                print("VINTED home", r.status_code, sorted(http.session.cookies.keys()), flush=True)
         for page in range(1, pages + 1):
             data = http.json("https://www.vinted.nl/api/v2/catalog/items?" + urlencode(
-                {"search_text": query, "per_page": 96, "page": page, "order": "relevance"}))
+                {"search_text": query, "per_page": 96, "page": page, "order": "relevance"}),
+                headers={"Referer": "https://www.vinted.nl/catalog"})
             items += data.get("items") or []
             if len(data.get("items") or []) < 96:
                 break
@@ -113,9 +127,8 @@ def vinted(http: Http, query: str, now: datetime, min_price: float, pages: int) 
         age = (now - datetime.fromtimestamp(ts, timezone.utc)).days if ts else None
         rows.append((amount, age))
         favs.append(it.get("favourite_count") or 0)
-    total = (data.get("search_tracking_params") or {}).get("total") or (data.get("pagination") or {}).get("total_entries")
     fav = f" | favourites median {statistics.median(favs):.0f}" if favs else ""
-    return summary(f"VINTED {query}", rows) + f" | total {total}{fav}"
+    return summary(f"VINTED {query}", rows) + f" | {len(items)} read{fav}"
 
 
 def main() -> None:
@@ -127,13 +140,14 @@ def main() -> None:
     args = ap.parse_args()
     now = datetime.now(timezone.utc)
     mp, vt = Http(delay=2.0, jitter=1.0), Http(delay=3.0, jitter=1.5)
-    for q in [x.strip() for x in args.queries.split(";") if x.strip()]:
+    queries = [x.strip() for x in args.queries.split(";") if x.strip()]
+    for q in queries:
         try:
             print(marktplaats(mp, q, now.date(), args.pages, args.min_price)[0], flush=True)
         except Exception as e:
             print(f"MP {q}: failed ({type(e).__name__}: {str(e)[:120]})", flush=True)
         if args.vinted_pages:
-            print(vinted(vt, q, now, args.min_price, args.vinted_pages), flush=True)
+            print(vinted(vt, q, now, args.min_price, args.vinted_pages, debug=(q == queries[0])), flush=True)
 
 
 if __name__ == "__main__":
