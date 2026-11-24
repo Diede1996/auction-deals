@@ -54,6 +54,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}   # writes Troostwijk lots to auction-private (not public)
           INVENTORY_KEY: ${{ secrets.INVENTORY_KEY }}   # optional key for the encrypted files (else the Telegram token)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # Claude names the type number of lots without a price (ai_search)
 
       - name: Save state
         if: always()

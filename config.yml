@@ -190,6 +190,13 @@ marktplaats_deals:
   skip_items: [Wine, Mixed lot]
   delay_seconds: 4
 
+
+# Lots the bot couldn't price: Claude (Haiku) names the type number and product word, the bot searches Marktplaats
+# again with that (Diede, 24 Nov 2026; scanner/ai_query.py). Needs the secret ANTHROPIC_API_KEY. Answers are saved
+# 30 days, so each lot is asked about once; the extra searches count toward marktplaats.max_lookups_per_run.
+ai_search:
+  enabled: true
+  max_lots_per_run: 120         # new lots asked about per scan (in batches of 30)
 marktplaats:
   enabled: true
   cache_days: 3                 # reuse a lot's Marktplaats price for this many days (1 = check daily)

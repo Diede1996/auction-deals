@@ -82,7 +82,11 @@ class PriceFinder:
         plan = plan_for(item, lot)
         if not plan or not plan.rules:  # no model in the title: no reliable comparison possible
             return None
-        key = marktplaats.cache_key(f"{plan.kind}:{plan.searches[0]}", item.exclude)
+        return self.for_plan(item, plan, lookup)
+
+    def for_plan(self, item: WatchItem, plan: SearchPlan, lookup: bool = True, prefix: str = "") -> PriceEstimate | None:
+        """The price for a ready search plan (also one Claude made: prefix "ai", kept apart in the saved prices)."""
+        key = marktplaats.cache_key(f"{prefix}{plan.kind}:{plan.searches[0]}", item.exclude)
         entry = self.cache.get(key)
         if entry and self._age(entry) <= timedelta(days=self.cache_days) and entry.get("v") == RULES_VERSION:
             return PriceEstimate(**entry["est"]) if entry.get("est") else None

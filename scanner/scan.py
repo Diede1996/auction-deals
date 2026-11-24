@@ -578,14 +578,14 @@ def pickup_place(lot: Lot) -> str | None:
 def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settings, site_fees: dict[str, Fees],
                    new_keys: set[str], seen: dict, now: datetime, items: list[WatchItem] | None = None,
                    trips: dict | None = None, driving: dict | None = None, favorites: dict | None = None,
-                   max_units: int = 0, combos: list[Combo] | None = None) -> dict:
+                   max_units: int = 0, combos: list[Combo] | None = None, plans: dict | None = None) -> dict:
     items = items or []
     trips = trips or {}
     combo_of = {key: " + ".join(p.split(",")[0] for p, _, _ in c.places) for c in combos or [] for key in c.keys}
     lots = []
     for item, lot, v, est in rows:
         fees = site_fees.get(lot.site, Fees())
-        plan = plan_for(item, lot)
+        plan = (plans or {}).get(lot.key) or plan_for(item, lot)  # Claude's search when that gave the price
         units = units_of(lot, max_units)
         place = pickup_place(lot)
         trip = trips.get(place) if place else None
@@ -924,6 +924,26 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
         est = finder.for_lot(item, lot, lookup=not beyond)  # too far to drive: no Marktplaats search spent on it
         verdict = evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est, units_of(lot, max_units))
         rows.append((item, lot, verdict, est))
+    # 3a. lots still without a price: Claude (Haiku) names the type number and product, the bot searches again
+    # (Diede, 24 Nov 2026; scanner/ai_query.py). Only lots worth a search, and only within the search budget.
+    ai_cfg = config.get("ai_search") or {}
+    ai_plans: dict = {}
+    if ai_cfg.get("enabled", True) is not False and finder.enabled and not finder.blocked:
+        from . import ai_query
+        from .claude_check import client_from_env
+        client = client_from_env()
+        if client:
+            def searchable(lot: Lot) -> bool:
+                trip = trips.get(pickup_place(lot) or "")
+                return not (trip and lots_needed(trip.minutes, driving["tripRules"]) is None
+                            and lot.key not in fav_keys and not driving["transport"])
+
+            rows, ai_plans = ai_query.reprice(
+                rows, finder, state.setdefault("ai_models", {}), now, client,
+                lambda item, lot, est: evaluate(item, lot, site_fees.get(lot.site, Fees()), settings, est,
+                                                units_of(lot, max_units)),
+                searchable, max_ask=int(ai_cfg.get("max_lots_per_run", 120)))
+            ai_query.prune(state["ai_models"], now)
     finder.prune()
 
     # 3b. lots at one pickup share the trip
@@ -1024,7 +1044,7 @@ def run_scan(root: Path, now: datetime, dry_run: bool = False, only: list[str] |
     # 6. dashboard + report
     data = dashboard_data(rows, report, config, settings, site_fees, new_keys, seen, now, items,
                           trips=trips, driving=driving, favorites={"issue": store.issue, "items": favs},
-                          max_units=max_units, combos=combos)
+                          max_units=max_units, combos=combos, plans=ai_plans)
     # Troostwijk's terms don't allow making their lots publicly accessible (deeplinks included), and this
     # repository and its dashboard are public: their lots go to your private repository, where the page reads them
     data, private_lots = split_private(data)
