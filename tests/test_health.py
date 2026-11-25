@@ -59,3 +59,15 @@ def test_no_alarm_when_a_site_simply_has_no_auction_of_our_kind():
     none_listed = {"name": "Vlavem", "ok": True, "lots": 0, "auctions": 0}
     p = health.check_lots({"generated": ago(5), "sites": [quiet, broken, none_listed]}, NOW)
     assert len(p) == 2 and "BellAuction" in p[0] and "Vlavem" in p[1]
+
+
+def test_a_running_reminders_job_is_not_an_alarm():
+    from datetime import datetime, timezone
+    from scanner.health import check_runs
+    now = datetime(2026, 11, 24, 23, 56, tzinfo=timezone.utc)
+    runs = {"reminders.yml": [
+        {"status": "in_progress", "run_started_at": "2026-11-24T22:06:30Z"},
+        {"status": "completed", "conclusion": "cancelled", "updated_at": "2026-11-24T22:06:41Z"}]}
+    assert check_runs(runs, now) == []
+    runs["reminders.yml"][0]["run_started_at"] = "2026-11-24T10:00:00Z"  # stuck for 14 h: that is a problem
+    assert any("Favorite reminders" in p for p in check_runs(runs, now))

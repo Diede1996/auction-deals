@@ -93,7 +93,11 @@ def check_runs(runs_by_file: dict[str, list], now: datetime) -> list[str]:
         runs = [r for r in runs_by_file.get(f) or [] if r.get("status") == "completed"]
         ok = [r for r in runs if r.get("conclusion") == "success"]
         age = _age_h(ok[0].get("updated_at") if ok else None, now)
-        if age is None or age > max_h:
+        # a run that is still going counts as working: the reminders job stays awake up to ~6 h per run
+        # (a false "no successful run" on 25 Nov 2026 came from its first, still-running run)
+        running = [r for r in runs_by_file.get(f) or [] if r.get("status") in ("in_progress", "queued")
+                   and (_age_h(r.get("run_started_at") or r.get("created_at"), now) or 99) < 7]
+        if (age is None or age > max_h) and not running:
             out.append(f"{name}: no successful run for {_ago(age) if age is not None else 'a long time'}.")
         failed = 0
         for r in runs:  # failures in a row, newest first
