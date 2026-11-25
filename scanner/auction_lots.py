@@ -25,7 +25,48 @@ def lot_details(props: dict) -> dict:
             "startBid": ((lot.get("startingBid") or lot.get("initialAmount") or {}) or {}).get("cents")}
 
 
+def read_hnvi(url: str) -> int:
+    """One HNVI auction (all listing pages): title, price and the box's own text (shows closed/sold)."""
+    from bs4 import BeautifulSoup
+    from .http import Http
+    from .models import Auction
+    from .sites import hnvi
+    m = re.search(r"hnvi\.nl/online-veiling/[^/]+/(\d+)", url)
+    if not m:
+        print("not an HNVI auction link")
+        return 1
+    base = url.split("?")[0].rstrip("/")
+    http = Http(delay=3.0)
+    auction = Auction(site="hnvi", auction_id=m.group(1), title="", url=base)
+    lots, page, pages = [], 1, 1
+    while page <= pages and page <= 20:
+        html = http.text(base if page == 1 else f"{base}/page:{page}")
+        boxes = {}
+        for box in BeautifulSoup(html, "html.parser").select("div.ui-product-box-list-item"):
+            a = box.select_one("a[href*='/veiling-kavel/']")
+            k = re.search(r"/veiling-kavel/[^/]+/(\d+)", a.get("href", "")) if a else None
+            if k:
+                boxes[k.group(1)] = box.get_text(" ", strip=True)[:400]
+        found = hnvi.parse_lots(html, auction)
+        if not found:
+            break
+        for lot in found:
+            lots.append({"id": lot.lot_id, "title": lot.title, "bid": lot.current_bid, "url": lot.url,
+                         "closes": lot.closes_at.isoformat() if lot.closes_at else None, "box": boxes.get(lot.lot_id, "")})
+        pages = max(pages, hnvi.last_page(html))
+        page += 1
+    print(f"{len(lots)} lots read, {sum(1 for r in lots if r['bid'] is not None)} with price")
+    if not lots:
+        return 1
+    data = {"slug": f"hnvi-{m.group(1)}", "url": base, "read": datetime.now(timezone.utc).isoformat(), "lots": lots}
+    ok = private_repo.put_json(f"lookups/hnvi-{m.group(1)}.json", data, f"Lots of HNVI auction {m.group(1)}")
+    print(f"saved to the private repository: {ok}")
+    return 0 if ok else 1
+
+
 def main() -> int:
+    if "hnvi.nl" in (os.environ.get("SLUG") or ""):
+        return read_hnvi(os.environ["SLUG"].strip())
     slug = (os.environ.get("SLUG") or "").strip().split("?")[0].rstrip("/").split("/")[-1]
     if not re.fullmatch(r"[A-Za-z0-9-]+", slug or ""):
         print("not an auction slug")
