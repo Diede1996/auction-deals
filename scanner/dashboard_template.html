@@ -652,6 +652,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   function shortDate(d) { var t = dtf.format(d); return t.slice(0, t.indexOf(",")); }
   function money(v) { return v == null || !isFinite(v) ? "–" : eur.format(v); }
   function pct(v) { return v == null || !isFinite(v) ? "–" : Math.round(v * 100) + "%"; }
+  /* Most auction sites add a few minutes after a late bid, so a lot can still be open after its closing time.
+     Keep it on the page for EXTEND_MS after that time, marked "extension possible" (Diede, 25 Nov 2026). */
+  var EXTEND_MS = 2 * 3600000;
+  function stillOpen(l, t) { return !l.closes || Date.parse(l.closes) + EXTEND_MS > (t || Date.now()); }
   function timeLeft(ms) {
     if (ms <= 0) return "closed";
     var m = Math.floor(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
@@ -825,7 +829,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   }
 
   var now = Date.now();
-  var lots = DATA.lots.filter(function (l) { return !l.closes || new Date(l.closes).getTime() > now; });
+  var lots = DATA.lots.filter(function (l) { return stillOpen(l, now); });
   var items = Array.from(new Set(lots.map(function (l) { return l.item; }))).sort();
   fillSelect("item", items.map(function (i) { return { value: i, label: i }; }), ui.item);
   fillSelect("site", DATA.sites.filter(function (s) { return s.id !== "marktplaats"; }).map(function (s) { return { value: s.id, label: s.name }; }), ui.site);
@@ -1268,7 +1272,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       el("div", { "class": "c-main" }, url ? el("a", { "class": "title", href: url, target: "_blank", rel: "noopener", text: lot.title }) : el("span", { "class": "title", text: lot.title }), meta, pickupLine(lot, r), adviceLine(lot, c, r.full || favs[lot.key])),
       el("div", { "class": "c-closes", "data-label": "Closes" },
         el("div", { "class": "num", text: lot.closes ? dtf.format(new Date(lot.closes)) : lot.closesDay ? dayOnly(lot.closesDay) : "unknown" }),
-        closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
+        closesMs != null && closesMs <= 0 ? el("div", { "class": "small soon", title: "Past the closing time, but a late bid adds a few minutes. Check the lot page; it leaves this page " + (EXTEND_MS / 3600000) + " hours after closing time." }, "⏳ extension possible, check site")
+          : closesMs != null ? el("div", { "class": "small" + (soon ? " soon" : "") }, soon ? "⏰ " : "", "in " + timeLeft(closesMs))
           : lot.closesDay ? el("div", { "class": "small", text: "time on the lot page" }) : null),
       bidCell, valueCell(lot, c), maxBidCell(lot, c), status);
     /* swipe right: favorite (moves it to the Favorites tab); left: hide. Under Favorites, left takes it back to the list. */
@@ -1414,7 +1419,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   ];
   function whenOf(t, now) {  /* every group the closing time t falls in ("today" is also "this week") */
     if (t == null || !isFinite(t)) return ["later"];
-    if (t < now) return ["closed"];
+    if (t + EXTEND_MS < now) return ["closed"];
+    if (t < now) return ["today", "week"];  /* past closing time but maybe extended */
     var d = dayNo(t), today = dayNo(now), w = weekNo(d), thisWeek = weekNo(today);
     if (w === thisWeek) return d === today ? ["today", "week"] : ["week"];
     return w === thisWeek + 1 ? ["next"] : ["later"];
@@ -1484,7 +1490,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
       all.forEach(function (r) { byKey[r.lot.key] = r; });
       var far = 8.64e15;
       var list = favKeys.map(function (k) { return byKey[k] || { gone: favs[k] }; });
-      var when = function (x) { var t = x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : far) : closesAt(x.lot, far); return t < Date.now() ? far + t : t; };  /* closing soonest first, closed ones last */
+      var when = function (x) { var t = x.gone ? (x.gone.closes ? Date.parse(x.gone.closes) : far) : closesAt(x.lot, far); return t + EXTEND_MS < Date.now() ? far + t : t; };  /* closing soonest first, closed ones last */
       /* closed/gone favorites always last; open ones follow the chosen "Sort by" (default closing soonest) */
       var favBy = ui.sort && ui.sort !== "closing" ? sortBy() : null;
       list.sort(function (a, b) {
@@ -1838,6 +1844,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
 
   function goneRow(f) {
     var closes = f.closes ? new Date(f.closes) : null, closed = closes && closes.getTime() < Date.now();
+    var extending = closed && closes.getTime() + EXTEND_MS > Date.now();
     var url = safeUrl(f.url), img = safeUrl(f.image);
     var thumb = img ? el("img", { "class": "thumb", src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
                     : el("div", { "class": "thumb empty", "aria-hidden": "true", text: "▦" });
@@ -1849,11 +1856,11 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
           el("span", { text: f.siteName || f.site || "" }), f.auction ? el("span", { "class": "auction", text: f.auction }) : null),
         f.pickup ? el("div", { "class": "pickup" }, el("span", { "class": "addr", text: "📍 " + f.pickup })) : null),
       el("div", { "class": "c-closes", "data-label": "Closes" }, el("div", { "class": "num", text: closes ? dtf.format(closes) : "unknown" }),
-        el("div", { "class": "small", text: closed ? "closed" : "not in today's scan" })),
+        el("div", { "class": "small" + (extending ? " soon" : ""), text: extending ? "⏳ extension possible, check site" : closed ? "closed" : "not in today's scan" })),
       el("div", { "class": "c-bid", "data-label": "Bid" }, el("div", { "class": "strong num", text: money(f.bid) }), el("div", { "class": "small", text: "when you saved it" })),
       el("div", { "class": "c-value", "data-label": "Marktplaats value" }, el("div", { "class": "small", text: "–" })),
       el("div", { "class": "c-maxbid", "data-label": "Max bid" }, el("div", { "class": "big", text: money(f.maxBid) }), el("div", { "class": "small", text: "max bid when you saved it" })),
-      el("div", { "class": "c-status" }, el("span", { "class": "pill neutral", title: closed ? "" : "This lot wasn't in this morning's scan: it may no longer match your watchlist, or its site failed.", text: closed ? "Closed" : "Not in scan" }),
+      el("div", { "class": "c-status" }, el("span", { "class": "pill neutral", title: closed ? "" : "This lot wasn't in this morning's scan: it may no longer match your watchlist, or its site failed.", text: extending ? "Closing" : closed ? "Closed" : "Not in scan" }),
         el("div", { "class": "actions" }, favButton(f, null))));
     art._swipe = { left: { label: "Remove", run: function () { return toggleFav(f, null); } } };
     return art;
@@ -1986,7 +1993,10 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
   renderGhState();
   render();
   refreshFavs();
-  setInterval(function () { if (!editing && !(dlg && dlg.open) && !PRIVATE_VIEWS[ui.view]) { renderHeader(); render(); } }, 60000);
+  setInterval(function () {
+    lots = lots.filter(function (l) { return stillOpen(l); });  /* drop lots whose extension window has passed */
+    if (!editing && !(dlg && dlg.open) && !PRIVATE_VIEWS[ui.view]) { renderHeader(); render(); }
+  }, 60000);
 
   /* for the Pickups, Stock, Listings and Finance tabs (the script below) */
   window.__AD = { el: el, money: money, toast: toast, store: store, safeUrl: safeUrl, OWNER: OWNER, REPO: REPO,
@@ -2000,7 +2010,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
                     var added = 0;
                     (list || []).forEach(function (l) { if (l && l.key && !have[l.key]) {
                       DATA.lots.push(l); have[l.key] = 1; added++;
-                      if (!l.closes || Date.parse(l.closes) > Date.now()) lots.push(l);  /* the list the page draws from */
+                      if (stillOpen(l)) lots.push(l);  /* the list the page draws from */
                     } });
                     if (added && !PRIVATE_VIEWS[ui.view]) render();
                     return added;
