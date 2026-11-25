@@ -34,6 +34,8 @@ WATCHLIST_HEADER = """\
 #   exclude            lots whose title contains any of these words are skipped
 #   max_price          (optional) never suggest paying more than this in total (bid + premium + VAT)
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
+#   price_table        (optional) your own resale value per kind of thing: [{match: [hugo smoking], price: 250}],
+#                      first matching entry wins, "unless: [pantalon]" skips it; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
 #   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit

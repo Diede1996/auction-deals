@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import datetime
+from .util import normalize, phrase_in, token_in
 
 
 @dataclass
@@ -79,6 +80,10 @@ class WatchItem:
     min_profit: float | None = None  # overrides the global minimum profit in euros per item
     price_check: bool = True  # False: shown without a Marktplaats price (mixed lots you judge yourself)
     always_show: bool = False  # True: never hidden by margins, max bid, distance, age or defects (wine, spirits)
+    # your own prices by kind of thing, first match wins: [{"match": ["hugo smoking", "boss smoking"], "price": 250}];
+    # "unless": [words] skips the entry when the title has one of them
+    # (clothing priced from Diede's Vinted sales instead of Marktplaats; Diede 2026-11-25)
+    price_table: list = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, d: dict) -> "WatchItem":
@@ -102,6 +107,9 @@ class WatchItem:
             min_profit=_num(d.get("min_profit")),
             price_check=d.get("price_check", True) is not False,
             always_show=d.get("always_show") is True,
+            price_table=[{"match": as_list(e.get("match")), "price": _num(e.get("price")),
+                          **({"unless": as_list(e["unless"])} if e.get("unless") else {})}
+                         for e in (d.get("price_table") or []) if isinstance(e, dict) and _num(e.get("price"))],
         )
 
     def to_dict(self) -> dict:
@@ -116,7 +124,20 @@ class WatchItem:
             out["price_check"] = False
         if self.always_show:
             out["always_show"] = True
+        if self.price_table:
+            out["price_table"] = [dict(e) for e in self.price_table]
         return out
+
+    def table_price(self, title: str) -> float | None:
+        """Your own price per item for this lot: the first price_table entry with a phrase whose words are all in
+        the title ("hugo smoking" matches "HUGO Arti smoking zwart 52")."""
+        norm = normalize(title or "")
+        for entry in self.price_table:
+            if any(token_in(w, norm) for w in entry.get("unless") or []):
+                continue
+            if any(phrase_in(p, norm) for p in entry["match"]):
+                return entry["price"]
+        return None
 
 
 def _num(v):

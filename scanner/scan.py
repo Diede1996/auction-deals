@@ -605,8 +605,9 @@ def dashboard_data(rows: list[Row], report: dict, config: dict, settings: Settin
             "premium": lot_rates(fees, lot)[0], "vat": lot_rates(fees, lot)[1],
             "fixed": round(fees.fixed + lot.extra_fee, 2),
             "units": units, "count": quantity(lot.title),
-            "market": market_value(item, est, units), "marketSource": ("manual" if item.market_price is not None else
-                                                                       "marktplaats" if est else None),
+            "market": market_value(item, est, units, lot.title),
+            "marketSource": ("manual" if item.market_price is not None else
+                             "table" if item.table_price(lot.title) is not None else "marktplaats" if est else None),
             "mp": ({"median": est.median, "low": est.low, "high": est.high, "count": est.count,
                     "query": est.query, "url": est.url, "prices": est.prices, "outliers": est.outliers,
                     "listings": est.listings, "asOf": est.as_of, "kind": est.kind, "model": est.model}
@@ -695,7 +696,7 @@ def trial_counts(rows: list[Row]) -> dict:
     for item, lot, v, est in rows:
         c = out["regular" if lot.regular else "special"]
         c["lots"] += 1
-        c["priced"] += 1 if (est is not None or item.market_price is not None) else 0
+        c["priced"] += 1 if (est is not None or item.market_price is not None or item.table_price(lot.title) is not None) else 0
         c["deals"] += 1 if v.is_deal else 0
     return out
 

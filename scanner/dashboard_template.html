@@ -714,7 +714,8 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
     var adv = own == null ? ADVICE[lot.key] : null, claudeNo = false;
     if (adv && adv.price != null && adv.verdict !== "niet") { market = adv.price * Math.max(1, lot.units || 1); source = "claude"; }
     else if (adv && (adv.verdict === "niet" || adv.price == null)) claudeNo = true;
-    var unchecked = CLAUDE_ONLY && own == null && !adv && lot.site !== "mpdeal";
+    /* a lot priced from your own price table (clothing, from your Vinted sales) needs no Claude check */
+    var unchecked = CLAUDE_ONLY && own == null && !adv && lot.site !== "mpdeal" && lot.marketSource !== "table";
     /* the bid you'd have to place now: the starting bid, or the current bid + one step */
     var bid = lot.nextBid != null ? lot.nextBid : (lot.bid || 0), costNow = cost(bid), resale = null, caps = [];
     var minMargin = lot.itemMinMargin != null ? lot.itemMinMargin * 100 :
@@ -942,7 +943,7 @@ dialog.pdlg::backdrop { background: rgba(10, 10, 9, .45); }
         src = el("div", { "class": "small" }, c.source === "yours" ? "your value · " : c.source === "claude"
           ? el("span", { title: "Claude checked which listings really compare" + (lot.market != null ? "; the bot said " + money(lot.market) : "") },
               c.claudeSource === "2dehands" ? "Claude's price (2dehands.be) · " : c.claudeSource === "lookup" ? "Claude's price (own search) · " : "Claude's price · ")
-          : "from watchlist · ", editBtn);
+          : c.source === "table" ? "your price table (Vinted sales) · " : "from watchlist · ", editBtn);
       }
       cell.append(src);
     } else {

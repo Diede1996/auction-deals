@@ -157,7 +157,7 @@ def reprice(rows: list, finder, cache: dict, now: datetime, client, reevaluate, 
     lots that got a price this way."""
     todo = [lot for item, lot, v, est in rows
             if est is None and item.price_check and item.market_price is None and not item.always_show
-            and searchable(lot)]
+            and item.table_price(lot.title) is None and searchable(lot)]
     if not todo:
         return rows, {}
     answers = answers_for(todo, cache, now, client, max_ask)

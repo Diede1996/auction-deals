@@ -122,10 +122,12 @@ def bid_for_total(total: float, fees: Fees, lot: Lot, trip: float = 0.0) -> floa
     return ((total - trip) / (1 + vat) - fees.fixed - lot.extra_fee) / (1 + premium)
 
 
-def market_value(item: WatchItem, estimate: PriceEstimate | None, units: int = 1) -> float | None:
-    """Resale value of the whole lot: your own price for the item, else the Marktplaats median, times the
-    number of items when the title says there are a few ("2 x ...")."""
-    unit = item.market_price if item.market_price is not None else (estimate.median if estimate else None)
+def market_value(item: WatchItem, estimate: PriceEstimate | None, units: int = 1, title: str = "") -> float | None:
+    """Resale value of the whole lot: your own price for the item (market_price, or the price_table entry for this
+    title), else the Marktplaats median, times the number of items when the title says there are a few ("2 x ...")."""
+    unit = item.market_price if item.market_price is not None else item.table_price(title)
+    if unit is None and estimate:
+        unit = estimate.median
     return unit * units if unit is not None else None
 
 
@@ -134,7 +136,7 @@ def evaluate(item: WatchItem, lot: Lot, fees: Fees, settings: Settings,
     bid = next_bid_of(lot)  # what you'd have to bid now, not the current bid
     trip = (lot.trip_cost or 0.0) if settings.include_trip else 0.0
     cost = total_cost(bid, fees, lot, trip)
-    market = market_value(item, estimate, units)
+    market = market_value(item, estimate, units, lot.title)
     sale_each = market / max(1, units) * settings.resale_factor if market else None
     # a transporter brings it: the transport margin when it (or what's collected with it) sells for enough
     pickup_value = max(market * settings.resale_factor if market else 0.0, lot.pickup_value or 0.0)

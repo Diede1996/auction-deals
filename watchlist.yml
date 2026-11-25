@@ -22,6 +22,8 @@
 #   exclude            lots whose title contains any of these words are skipped
 #   max_price          (optional) never suggest paying more than this in total (bid + premium + VAT)
 #   market_price       (optional) your own resale value; skips the Marktplaats lookup
+#   price_table        (optional) your own resale value per kind of thing: [{match: [hugo smoking], price: 250}],
+#                      first matching entry wins, "unless: [pantalon]" skips it; skips the Marktplaats lookup
 #   marktplaats_query  (optional) exact Marktplaats search to use for the resale value
 #   min_margin         (optional) overrides the default above for this item
 #   min_profit         (optional) minimum profit in euros per item for this item, instead of settings.min_profit
@@ -90,6 +92,28 @@ items:
   exclude: [kostuumhoes, hoes, hanger, kledinghanger, kostuumhanger, paspop, etalagepop, parfum, eau,
     deo, beddengoed, dekbed, dekbedovertrek, laken, lakens, kussen, kussens, handdoek, handdoeken, plaid, deken,
     servies, lamp, bril, zonnebril, horloge]
+  # Own prices instead of Marktplaats (Diede, 2026-11-25), first match wins. Like a Marktplaats median, the max bid
+  # assumes selling at resale_factor (75%) of this. HUGO: Diede's Vinted asking prices; sold for 80-90% of them
+  # (pak €225, smoking €200, colbert €110-150, Nov 2026). Suitsupply: Marktplaats median of 24 Nov 2026 (mostly
+  # used), no own sales yet.
+  price_table:
+  - {match: [hugo smoking colbert, boss smoking colbert, hugo smokingcolbert, boss smokingcolbert], price: 125,
+     unless: [pantalon, broek, set, compleet]}
+  - {match: [hugo smoking, boss smoking], price: 250}
+  - {match: [hugo pak, boss pak, hugo kostuum, boss kostuum, hugo suit, boss suit], price: 250}
+  - {match: [hugo colbert, boss colbert, hugo blazer, boss blazer], price: 125}
+  - {match: [hugo pantalon, boss pantalon], price: 70}
+  - {match: [suitsupply pak, suitsupply kostuum, suitsupply suit], price: 138}
+  - {match: [suitsupply colbert, suitsupply blazer], price: 100}
+- name: Outdoor jacket
+  # Diede, 2026-11-25: sell quickly on Marktplaats (survey 24 Nov 2026: Arc'teryx ~41 days, Barbour ~52 days online).
+  # Prices: Marktplaats medians of private listings that day (mostly used), no own sales yet.
+  keywords: [arc'teryx, arcteryx, barbour]
+  exclude: [hoes, hanger, onderhoud, dressing, reparatie, hondenmand, mand, mok, beker, sokken, muts, handschoenen,
+    rugzak, tas, sjaal, riem, schoenen, laarzen]
+  price_table:  # only jackets get a price; other Arc'teryx or Barbour things stay unpriced
+  - {match: [arc'teryx jas, arc'teryx jack, arc'teryx jacket, arcteryx jas, arcteryx jack, arcteryx jacket], price: 180}
+  - {match: [barbour jas, barbour jack, barbour jacket, barbour waxjas, barbour bodywarmer], price: 100}
 - name: Phone
   min_margin: 0.15
   min_profit: 50
