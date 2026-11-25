@@ -1647,7 +1647,7 @@
     return el("div", { "class": "plisting" },
       el("span", { "class": "pbadge p-" + slug(t.platform), text: platformLabel(t.platform) }),
       el("span", { "class": "strong", text: it.name || it.id }),
-      el("span", { "class": "small", text: "sold" + (t.soldVia ? " on " + platformLabel(t.soldVia) : "") + (t.soldOn ? " " + showDay(t.soldOn) : "") }),
+      el("span", { "class": "small", text: t.kept ? "kept for yourself" + (t.keptOn ? " " + showDay(t.keptOn) : "") : "sold" + (t.soldVia ? " on " + platformLabel(t.soldVia) : "") + (t.soldOn ? " " + showDay(t.soldOn) : "") }),
       url ? el("a", { href: url, target: "_blank", rel: "noopener", text: "Open ad ↗" }) : null,
       el("span", { "class": "spacer" }),
       el("button", { type: "button", "class": "pbtn", text: "Taken offline ✓", onclick: function () {
@@ -1658,7 +1658,7 @@
     var todo = offlineTodo();
     if (!todo.length) return;
     var panel = el("section", { "class": "panel list offline-todo" },
-      el("p", { "class": "fav-note", text: "⚠ Sold, but still online here. Take these ads offline now, or someone else can buy it too." }));
+      el("p", { "class": "fav-note", text: "⚠ Sold or kept, but still online here. Take these ads offline now, or someone else can buy it." }));
     todo.forEach(function (r) { panel.append(offlineRow(r.it, r.t)); });
     box.append(panel);
   }
