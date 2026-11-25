@@ -23,7 +23,7 @@ import re
 from datetime import datetime, timedelta
 
 from . import claude_check
-from .identify import Rule, SearchPlan
+from .identify import Rule, SearchPlan, battery_kit
 from .util import normalize
 
 log = logging.getLogger(__name__)
@@ -166,6 +166,8 @@ def reprice(rows: list, finder, cache: dict, now: datetime, client, reevaluate, 
         plan = plan_from(answers.get(lot.key)) if est is None and lot.key in answers else None
         if plan:
             tried += 1
+            for rule in plan.rules:  # "zonder accu": compare with bare machines only
+                rule.kit = battery_kit(lot.title, item.name) or battery_kit(lot.description or "", item.name)
             new = finder.for_plan(item, plan, prefix="ai")
             if new:
                 plans[lot.key] = plan

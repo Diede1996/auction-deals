@@ -28,7 +28,9 @@ code or other files; send no messages; write the advice in Dutch, short.
    - `keep`: the numbers of the listings that really are the same thing: same model and version, same
      storage/memory for laptops and phones, same year or chip for Apple, working, the device itself (not only
      a battery, case or part, not a set with other machines). The type number must match exactly (Kärcher
-     BR 30/1 is not BR 35/12). Leave out shops and traders: several listings with the same title where only a
+     BR 30/1 is not BR 35/12). Cordless tools: a lot "zonder accu" / "excl. accu" / "body" / "solo" / Makita
+     ...Z(J) is the bare machine: keep only bare listings, never ones "met accu", with Ah or a kit code (RTJ, SFE);
+     a lot with batteries: leave out the bare ones. Leave out shops and traders: several listings with the same title where only a
      year or number differs ("Pack 2015"), BTW, garantie, factuur, inruil, a company name. When in doubt leave it out.
    - `listings`: instead of `keep`, for a lot priced from your own lookup: `[{"price": 250, "title": "..."}]`
      with only the listings that really compare.

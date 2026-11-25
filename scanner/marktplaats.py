@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
 
 from .matching import printed_matter
-from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, quantity, says_new
+from .identify import BRANDS, MULTI_BRANDS, Rule, is_part_listing, kit_compares, listing_kit, quantity, says_new
 from .util import normalize, token_in
 
 log = logging.getLogger(__name__)
@@ -120,6 +120,8 @@ def comparable_listings(listings: list[dict], rule: Rule, exclude: list[str]) ->
             continue  # only a battery or keyboard for it, or new in a shop
         if printed_matter(title):
             continue  # a book or manual about it ("Fotograferen met de Nikon D7000")
+        if rule.kit and not kit_compares(rule.kit, listing_kit(title, li.get("description") or "")):
+            continue  # "zonder accu" lot vs a listing with batteries, or the other way round
         vip = li.get("vipUrl") or ""
         key = (li.get("itemId") or vip, title, info.get("priceCents"))
         count = quantity(title)

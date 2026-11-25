@@ -21,6 +21,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, unquote_plus, urlencode, urlparse
 
 from . import advice, claude_check, private_repo
+from .identify import battery_kit, kit_compares, listing_kit
 
 log = logging.getLogger(__name__)
 
@@ -37,6 +38,10 @@ thing as the lot, so the reseller's price is right. Be strict, when in doubt lea
   year or chip for Apple;
 - the whole device in working order: not only a battery, charger, case, attachment or part; not a set with other
   machines; not "defect" or "for parts";
+- cordless tools: a lot "zonder accu", "excl. accu", "body", "solo" or Makita ...Z/ZJ is the bare machine; then
+  keep ONLY listings that are bare too, never one "met accu", with Ah, accu's, lader or a kit code like RTJ/SFE.
+  A lot with batteries: leave out the bare listings. Read the lot title word for word; the line "Battery:" says
+  what the bot read there;
 - private sellers only: leave out shops and traders. Signs: several listings with the same title where only a year,
   number or size differs, "Pack 2015", "BTW", "garantie", "factuur", "inruil", "leverbaar", a company name.
 modelKnown = false when the lot itself doesn't say which model it is (only a brand and a kind of machine, or
@@ -74,7 +79,36 @@ def _lot_text(lot: dict) -> list[str]:
         out.append(f"Description: {str(lot['description'])[:600]}")
     if lot.get("auction"):
         out.append(f"Auction: {lot['auction']}")
+    kit = lot_kit(lot)
+    if kit == "bare":
+        out.append("Battery: the lot is WITHOUT battery and charger (bare machine): only bare listings compare")
+    elif kit == "battery":
+        out.append("Battery: the lot comes WITH battery: bare listings ('zonder accu', 'body', 'solo') don't compare")
     return out
+
+
+def lot_kit(lot: dict) -> str | None:
+    """"bare" / "battery" for a cordless tool lot whose title (or else description) says so."""
+    item = lot.get("item") or ""
+    return battery_kit(lot.get("title") or "", item) or battery_kit(str(lot.get("description") or ""), item)
+
+
+def drop_wrong_kit(j: dict, lot: dict, listings: list[dict]) -> dict:
+    """Claude kept a listing with batteries for a "zonder accu" lot (or the other way round): drop it, so the price
+    only comes from what really compares (Diede, 25 Nov 2026: MAKITA DDF484 zonder accu priced as one with accu)."""
+    kit = lot_kit(lot)
+    if not kit or not j.get("keep"):
+        return j
+    keep = [i for i in j["keep"] if not (isinstance(i, int) and 0 <= i < len(listings))
+            or kit_compares(kit, listing_kit(listings[i].get("title") or "", listings[i].get("desc") or ""))]
+    if len(keep) < len(j["keep"]):
+        j["keep"] = keep
+        if len(keep) < 2 and j.get("verdict") == "kopen":
+            j["verdict"] = "twijfel"
+        what = "zonder accu" if kit == "bare" else "met accu"
+        j["reason"] = (j.get("reason") or "").rstrip() + f" [Bot: kavel is {what}; advertenties met het andere " \
+            f"pakket weggelaten, {len(keep)} over.]"
+    return j
 
 
 def prompt(lot: dict, listings: list[dict], unseen: int = 0, where: str = "Marktplaats") -> str:
@@ -184,6 +218,7 @@ def judge(root: Path, private: Path, now: datetime, client, http=None) -> dict:
         lot = by_key.get(entry["key"]) or entry
         j = ask(client, prompt(lot, mp.get("listings") or [], mp.get("notShown") or 0))
         if j:
+            j = drop_wrong_kit(j, lot, mp.get("listings") or [])
             j["source"] = "marktplaats"
             judgments[entry["key"]] = j
     judgments = {k: j for k, j in judgments.items() if not j.get("sameAs") or j["sameAs"] in judgments}
@@ -208,6 +243,7 @@ def judge(root: Path, private: Path, now: datetime, client, http=None) -> dict:
         j = ask(client, prompt(lot, found, where="2dehands.be"))
         if not j:
             continue
+        j = drop_wrong_kit(j, lot, found)
         keep = {i for i in j.get("keep") or [] if isinstance(i, int) and 0 <= i < len(found)}
         j["listings"] = [found[i] for i in sorted(keep)]
         j["keep"] = []

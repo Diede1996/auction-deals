@@ -56,7 +56,7 @@ def test_answers_are_saved_by_text_hash_and_reused():
 
 
 def test_reprice_prices_a_lot_the_bot_could_not(monkeypatch):
-    results = [listing(1, "Makita DGA504Z haakse slijper", 90), listing(2, "Makita DGA504 18V slijper", 110),
+    results = [listing(1, "Makita DGA504RTJ haakse slijper", 90), listing(2, "Makita DGA504 18V slijper", 110),
                listing(3, "Makita DGA506 slijper", 300)]
     monkeypatch.setattr(marktplaats, "search", lambda http, q: results)
     finder = PriceFinder(None, {}, NOW, max_lookups=10)

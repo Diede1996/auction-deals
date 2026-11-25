@@ -133,6 +133,7 @@ class Rule:
     ram: str | None = None  # memory the listing must mention: "32" -> "32GB" / "32 GB"
     parts_ok: bool = False  # the lot is a battery, charger or keyboard itself: such listings count
     new_ok: bool = False  # the lot is new itself: new (shop) listings count
+    kit: str | None = None  # cordless tool: "bare" (zonder accu) or "battery" (met accu); see battery_kit()
 
     def matches(self, title_norm: str) -> bool:
         if self.gen_norm:
@@ -554,6 +555,53 @@ def is_battery_lot(title: str) -> bool:
     return any(token_in(w, t) for w in _BATTERY_WORDS) and not any(part in t for part in TOOL_PARTS)
 
 
+# Cordless tools come bare ("zonder accu", "body", "solo", Makita DDF484Z/ZJ) or with batteries ("met 2 accu's",
+# "5.0Ah", Makita DDF484RTJ). A bare lot is worth far less than one with batteries, so it is only compared with bare
+# listings, and a lot with batteries only with listings that have them (Diede, 25 Nov 2026: a "MAKITA DDF484 zonder
+# accu" lot was priced on listings with a 3Ah battery).
+KIT_ITEMS = {"power tools", "garden tools"}
+_NO_BATTERY = re.compile(
+    r"(?<![a-z])(?:zonder|excl\.?|exclusief|excluding|geen|without|no)\s+(?:de\s+|2\s+|twee\s+)?"
+    r"(?:(?:lader|oplader|charger)\s*(?:en|of|&|/|,|\+)\s*)?(?:accu|akku|batterij|batterie|batter(?:y|ies))"
+    r"|(?:accu|akku|batterij|battery)(?:'?s)?(?:\s*(?:en|&|/|\+)\s*(?:op)?lader)?\s+(?:niet|not)\s+"
+    r"(?:inbegrepen|meegeleverd|bijgeleverd|inclusief|included)")
+_BODY = re.compile(r"(?<![a-z])(?:body|solo|naked|tool only|body only|kale machine|losse machine)(?![a-z])")
+_CORDLESS = re.compile(r"(?<![a-z])(?:accu|akku|lxt|xgt|cxt|li-?ion)|(?<![0-9])(?:10\.8|12|14\.4|18|36|40)\s*v(?![a-z])")
+_WITH_BATTERY = re.compile(
+    r"(?:(?<![a-z])(?:met|incl\.?|inclusief|including|with|en)|\+|&)\s*(?:\d+\s*x?\s*|twee\s+|een\s+)?"
+    r"(?:\d+(?:[.,]\d)?\s*ah\s+)?(?:accu|akku|batterij|batter(?:y|ies)|(?:op)?lader|charger)"
+    r"|(?<![a-z0-9])\d+(?:[.,]\d)?\s*ah(?![a-z])|(?<![a-z0-9])\d\s*x\s*(?:accu|akku)|(?:accu|akku)'?s(?![a-z])")
+_MAKITA_CODE = re.compile(r"(?<![a-z0-9])[a-z]{2,4}\d{3}[a-z]?(z[jk]?|r[a-z0-9]{1,3}|s[a-z][a-z0-9]{0,2})(?![a-z0-9])")
+
+
+def battery_kit(text: str, item_name: str | None = None) -> str | None:
+    """"bare" for a cordless tool without battery, "battery" for one with, None when the text doesn't say (or it's
+    not a cordless tool). item_name: only for power and garden tools ("Nikon D7000 body" is a camera without lens)."""
+    if item_name is not None and item_name.strip().lower() not in KIT_ITEMS:
+        return None
+    t = (text or "").lower()
+    if _NO_BATTERY.search(t):
+        return "bare"
+    if _WITH_BATTERY.search(t):
+        return "battery"
+    if "makita" in t:  # Makita's kit code: DDF484Z / ZJ = bare, DDF484RTJ / SFE = with batteries and charger
+        for m in _MAKITA_CODE.finditer(t):
+            return "bare" if m.group(1).startswith("z") else "battery"
+    if _BODY.search(t) and (_CORDLESS.search(t) or item_name):
+        return "bare"
+    return None
+
+
+def listing_kit(title: str, desc: str = "") -> str | None:
+    """A cordless-tool listing's kit: its title says it, else its description."""
+    return battery_kit(title, "power tools") or battery_kit(desc or "", "power tools")
+
+
+def kit_compares(lot_kit: str | None, other: str | None) -> bool:
+    """A bare lot never compares with a listing that has batteries, and the other way round."""
+    return not lot_kit or not other or lot_kit == other
+
+
 # A listing that sells only a battery, charger or keyboard for the device: "Hilti B22 5.2 Accu", "Dell Laptop Accu",
 # "Origineel Surface Pro Toetsenbord". What comes after "met", "+", a comma or a dash is what's included, so
 # "Boorhamer met accu" and "Surface Pro 3 | i5 | Pen + Toetsenbord" are the device.
@@ -800,8 +848,9 @@ def plan_for(item: WatchItem, lot: Lot, extra_words: int = 3) -> SearchPlan | No
         toks = normalize(lot.title).split()
         others = tuple(w for b, words in _PRODUCT_LINES.items() if b in toks for w in words if w not in toks
                        and not (w == "one" and "play" in toks))  # "Play One" is the Play:1
+        kit = battery_kit(lot.title, item.name) or battery_kit(getattr(lot, "description", "") or "", item.name)
         for rule in plan.rules:
-            rule.parts_ok, rule.new_ok = parts_ok, new_ok
+            rule.parts_ok, rule.new_ok, rule.kit = parts_ok, new_ok, kit
             if others:  # "Sonos One": no "Play One", "One SL" or "2x One + Sub" bundle
                 rule.without = tuple(dict.fromkeys(tuple(rule.without) + others))
     return plan
